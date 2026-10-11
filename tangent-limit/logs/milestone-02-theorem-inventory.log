@@ -1,0 +1,29 @@
+def TangentLimit.PiDiophantine : Prop :=
+∀ (ν : ℝ), 2 < ν → ∃ Q, ∀ (q : ℕ), Q ≤ q → 0 < q → ∀ (p : ℤ), ↑q ^ (-ν) ≤ |Real.pi - ↑p / ↑q|
+TangentLimit.poleIndex (n : ℕ) : ℕ
+TangentLimit.poleDenom (n : ℕ) : ℕ
+TangentLimit.poleOffset (n : ℕ) : ℝ
+TangentLimit.poleDenom_pos (n : ℕ) : 0 < TangentLimit.poleDenom n
+TangentLimit.poleDenom_odd (n : ℕ) : Odd (TangentLimit.poleDenom n)
+TangentLimit.abs_poleOffset_le (n : ℕ) : |TangentLimit.poleOffset n| ≤ Real.pi / 2
+TangentLimit.poleDenom_le_two_mul (n : ℕ) (hn : 1 ≤ n) : ↑(TangentLimit.poleDenom n) ≤ 2 * ↑n
+TangentLimit.eventually_poleDenom_ge (Q : ℕ) : ∀ᶠ (n : ℕ) in Filter.atTop, Q ≤ TangentLimit.poleDenom n
+TangentLimit.poleOffset_nearest (n : ℕ) (r : ℤ) (hr : Odd r) : |TangentLimit.poleOffset n| ≤ |↑n - ↑r * Real.pi / 2|
+TangentLimit.abs_cos_eq_abs_sin_offset (x : ℝ) (k : ℕ) : |Real.cos x| = |Real.sin (x - ↑(2 * k + 1) * Real.pi / 2)|
+TangentLimit.chord_cos_bound (x : ℝ) (k : ℕ) (hb : |x - ↑(2 * k + 1) * Real.pi / 2| ≤ Real.pi / 2) :
+  2 / Real.pi * |x - ↑(2 * k + 1) * Real.pi / 2| ≤ |Real.cos x|
+TangentLimit.tan_le_of_pole_distance {x : ℝ} {k : ℕ} (hb : |x - ↑(2 * k + 1) * Real.pi / 2| ≤ Real.pi / 2)
+  (hd : 0 < |x - ↑(2 * k + 1) * Real.pi / 2|) : |Real.tan x| ≤ Real.pi / (2 * |x - ↑(2 * k + 1) * Real.pi / 2|)
+TangentLimit.pole_distance_identity (x q : ℝ) (hq : 0 < q) : |x - q * Real.pi / 2| = q / 2 * |Real.pi - 2 * x / q|
+TangentLimit.pole_distance_lower_bound (x q ν : ℝ) (hq : 0 < q) (happrox : q ^ (-ν) ≤ |Real.pi - 2 * x / q|) :
+  1 / 2 * q ^ (1 - ν) ≤ |x - q * Real.pi / 2|
+TangentLimit.eventually_tan_le_pole_rpow (h : TangentLimit.PiDiophantine) (ν : ℝ) (hν : 2 < ν) :
+  ∀ᶠ (n : ℕ) in Filter.atTop, |Real.tan ↑n| ≤ Real.pi * ↑(TangentLimit.poleDenom n) ^ (ν - 1)
+TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq {f : ℕ → ℝ} {C : ℝ}
+  (h : ∀ᶠ (n : ℕ) in Filter.atTop, |f n| ≤ C * ↑n ^ 2) : Filter.Tendsto (fun n => f n / ↑n ^ 3) Filter.atTop (nhds 0)
+TangentLimit.cos_intCast_ne_zero (n : ℤ) : Real.cos ↑n ≠ 0
+TangentLimit.cos_natCast_ne_zero (n : ℕ) : Real.cos ↑n ≠ 0
+'TangentLimit.poleOffset_nearest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.eventually_tan_le_pole_rpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.cos_intCast_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
