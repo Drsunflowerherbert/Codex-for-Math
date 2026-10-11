@@ -1,0 +1,145 @@
+{
+  "status": "pass",
+  "reviewed_at_utc": "2026-10-11T03:35:53.742700+00:00",
+  "verification_command": "bash scripts/verify.sh",
+  "verification_exit_code": 0,
+  "fresh_project_build": true,
+  "project_build_jobs": 7360,
+  "lean_version": "4.24.0",
+  "lean_commit": "797c613eb9b6d4ec95db23e3e00af9ac6657f24b",
+  "lean_binary_sha256": "8fadc3ed92cc9decb94c96ee9c0876e91e03a3a5e69138f32114f02789e2766c",
+  "mathlib_revision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "mathlib_tracked_files_clean": true,
+  "declarations_audited": 85,
+  "observed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "distinct_standard_axiom_count": 3,
+  "new_axioms_or_sorryAx": false,
+  "source_trust_scan": "pass",
+  "audited_symbols_equal_independently_scanned_source_symbols": true,
+  "main_and_optional_declarations": {
+    "FiniteFieldMixing.uniform_product_fourier_bound": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "exact_printed_type": "@FiniteFieldMixing.uniform_product_fourier_bound : \u2200 {p : \u2115} [inst : Fact (Nat.Prime p)] (A B : Finset (ZMod p)),\n  A.Nonempty \u2192\n    B.Nonempty \u2192\n      \u2200 (r : ZMod p),\n        r \u2260 0 \u2192 \u2016FiniteFieldMixing.normalizedProductCoeff ZMod.stdAddChar A B r\u2016 \u2264 \u221a(\u2191p / (\u2191A.card * \u2191B.card))"
+    },
+    "FiniteFieldMixing.productDensity_coeff": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "exact_printed_type": "@FiniteFieldMixing.productDensity_coeff : \u2200 {p : \u2115} [inst : Fact (Nat.Prime p)] (\u03c7 : AddChar (ZMod p) \u2102)\n  (H : Finset (ZMod p)) (r : ZMod p),\n  FiniteFieldMixing.coeff \u03c7 (FiniteFieldMixing.productDensity H) r = FiniteFieldMixing.normalizedProductCoeff \u03c7 H H r"
+    },
+    "FiniteFieldMixing.productSumProbability_lower_bound": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "exact_printed_type": "@FiniteFieldMixing.productSumProbability_lower_bound : \u2200 {p : \u2115} [inst : Fact (Nat.Prime p)] (H : Finset (ZMod p)),\n  H.Nonempty \u2192\n    \u2200 (k : \u2115) (z : ZMod p), (1 - (\u2191p - 1) * (\u221a\u2191p / \u2191H.card) ^ k) / \u2191p \u2264 FiniteFieldMixing.productSumProbability H k z"
+    },
+    "FiniteFieldMixing.productSum_cover_of_strict_bound": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "exact_printed_type": "@FiniteFieldMixing.productSum_cover_of_strict_bound : \u2200 {p : \u2115} [Fact (Nat.Prime p)] (H : Finset (ZMod p)),\n  H.Nonempty \u2192\n    \u2200 (k : \u2115),\n      (\u2191p - 1) * (\u221a\u2191p / \u2191H.card) ^ k < 1 \u2192\n        \u2200 (z : ZMod p), \u2203 a b, (\u2200 (i : Fin k), a i \u2208 H) \u2227 (\u2200 (i : Fin k), b i \u2208 H) \u2227 \u2211 i, a i * b i = z"
+    },
+    "FiniteFieldMixing.nonempty_of_fourth_power_threshold": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "exact_printed_type": "@FiniteFieldMixing.nonempty_of_fourth_power_threshold : \u2200 {p : \u2115} [Fact (Nat.Prime p)] (H : Finset (ZMod p)),\n  p ^ 3 \u2264 H.card ^ 4 \u2192 H.Nonempty"
+    },
+    "FiniteFieldMixing.four_product_probability_lower_bound": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "exact_printed_type": "@FiniteFieldMixing.four_product_probability_lower_bound : \u2200 {p : \u2115} [inst : Fact (Nat.Prime p)] (H : Finset (ZMod p)),\n  p ^ 3 \u2264 H.card ^ 4 \u2192 \u2200 (z : ZMod p), 1 / \u2191p ^ 2 \u2264 FiniteFieldMixing.productSumProbability H 4 z"
+    },
+    "FiniteFieldMixing.four_products_cover": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "exact_printed_type": "@FiniteFieldMixing.four_products_cover : \u2200 {p : \u2115} [Fact (Nat.Prime p)] (H : Finset (ZMod p)),\n  p ^ 3 \u2264 H.card ^ 4 \u2192 \u2200 (z : ZMod p), \u2203 a b, (\u2200 (i : Fin 4), a i \u2208 H) \u2227 (\u2200 (i : Fin 4), b i \u2208 H) \u2227 \u2211 i, a i * b i = z"
+    },
+    "FiniteFieldMixing.four_product_nat_lift": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "exact_printed_type": "@FiniteFieldMixing.four_product_nat_lift : \u2200 {p : \u2115} [inst : Fact (Nat.Prime p)] (D : Finset \u2115),\n  p ^ 3 \u2264 (Finset.image Nat.cast D).card ^ 4 \u2192\n    \u2203 a b, (\u2200 (i : Fin 4), a i \u2208 D) \u2227 (\u2200 (i : Fin 4), b i \u2208 D) \u2227 p \u2223 \u2211 i, a i * b i"
+    },
+    "FiniteFieldMixing.divisor_four_product_lift": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "exact_printed_type": "@FiniteFieldMixing.divisor_four_product_lift : \u2200 {p : \u2115} [inst : Fact (Nat.Prime p)] (Q : \u2115),\n  0 < Q \u2192\n    \u2200 (D : Finset \u2115),\n      (\u2200 d \u2208 D, 0 < d \u2227 d \u2223 Q) \u2192\n        p ^ 3 \u2264 (Finset.image Nat.cast D).card ^ 4 \u2192\n          \u2203 a b m,\n            (\u2200 (i : Fin 4), a i \u2208 D) \u2227\n              (\u2200 (i : Fin 4), b i \u2208 D) \u2227 0 < m \u2227 \u2211 i, a i * b i = p * m \u2227 \u2200 (i : Fin 4), a i * b i \u2223 Q ^ 2"
+    },
+    "FiniteFieldMixing.rational_lift_four_products": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "exact_printed_type": "FiniteFieldMixing.rational_lift_four_products : \u2200 (a b : Fin 4 \u2192 \u2115) (p m : \u2115),\n  0 < m \u2192 \u2211 i, a i * b i = p * m \u2192 \u2191p = \u2211 i, \u2191(a i * b i) / \u2191m"
+    },
+    "FiniteFieldMixing.divisor_four_product_rational_lift": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "exact_printed_type": "@FiniteFieldMixing.divisor_four_product_rational_lift : \u2200 {p : \u2115} [inst : Fact (Nat.Prime p)] (Q : \u2115),\n  0 < Q \u2192\n    \u2200 (D : Finset \u2115),\n      (\u2200 d \u2208 D, 0 < d \u2227 d \u2223 Q) \u2192\n        p ^ 3 \u2264 (Finset.image Nat.cast D).card ^ 4 \u2192\n          \u2203 a b m,\n            (\u2200 (i : Fin 4), a i \u2208 D) \u2227\n              (\u2200 (i : Fin 4), b i \u2208 D) \u2227\n                0 < m \u2227 \u2211 i, a i * b i = p * m \u2227 (\u2200 (i : Fin 4), a i * b i \u2223 Q ^ 2) \u2227 \u2191p = \u2211 i, \u2191(a i * b i) / \u2191m"
+    }
+  },
+  "smoke_tests": "pass, empty diagnostics, exit 0",
+  "tangent_source_hashes_unchanged": true,
+  "tangent_git_status": "clean",
+  "lean_source_hashes": {
+    "FiniteFieldMixing.lean": "b312862229a027ebbd31e190cbaee4b991c545af91fc2fc04b058d066365e4a1",
+    "FiniteFieldMixing/Bilinear.lean": "a0b8cd783ae6c4ffad4a827404080f38454ea3a04ef3ba0e0b53d495c61471aa",
+    "FiniteFieldMixing/Counting.lean": "37c26836ca79f7bd66be031d6f71b8982069ea46dbf4c0bf72a4d2821a5f5bd0",
+    "FiniteFieldMixing/DivisorLift.lean": "b71a6f8759dd1b262e9d884b6459f784d505b18dbd6711e9ba96e0f0e1681bf0",
+    "FiniteFieldMixing/Fourier.lean": "9cd038dce2236aff8549400073687b022812c84bb84d840e13d78dca7b80ec3c",
+    "FiniteFieldMixing/FourierBounds.lean": "a8cf89386c577ede1f6fd45556a5c53beb58eee89cc4fb786403322a26febdc2",
+    "FiniteFieldMixing/Mixing.lean": "b1c3bf778f67944a379d1718dd4ea09337b5f4e63cb1de5e86906fef27217a8f",
+    "FiniteFieldMixing/Normalization.lean": "db255a17625d4cc166df198ccacb63e73994e074c14408db1ced98c6cf7f4a02",
+    "FiniteFieldMixing/Threshold.lean": "81ec5f1e8bf4627b1874ecb002c4d36c8ebaf3f9c4cadd11babdc7ea2487f3e9"
+  },
+  "supporting_artifact_hashes": {
+    "evidence/final-build.log": "6d42c2fde2d2e71bc75cd9e86eacee4f3683f58a2f14ef690d6617175b5caf3c",
+    "evidence/final-theorem-inventory.log": "4b142ad6f5e4103924b73b43a69c66d6bbb6ee40fdd51aaaf9f9ccc984c6d467",
+    "evidence/lean-smoke-tests.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/source-audit.json": "09afd3b6e90e9174e5d4b5bb5d07acb7ff0c3014d3f7cd8cc0e872dd0200a7c3",
+    "evidence/small-prime-tests.json": "22265d85e40c0af8fe9cc42df73012bef5e76ebd379f2b4aed12ac3fd0a4c7b3",
+    "scripts/check_small_primes.py": "6a790c22bb869b006537c55e8183cd7be29d7b228e6e53860e6c3a26098d3db4",
+    "evidence/portable-source-check.json": "b84eac6deceb957a83af855809a91057ef1c268c13009376021745faa48eafe1"
+  },
+  "formal_scope_limits": [
+    "General heterogeneous FF005 is not declared.",
+    "FF006 is formalized for diagonal repeated sets using the radical strict criterion.",
+    "FF007 has formal tuple-count normalization and total mass; its displayed squared count bound is not separately declared.",
+    "FF008 probability and covering are formalized for the diagonal set H.",
+    "FF009 lifting machinery is formalized for k=4; FF010 local four-product rational lift is formalized.",
+    "No novelty, optimality, distinctness, or global Egyptian-fraction constant claim."
+  ],
+  "remaining_blockers": []
+}

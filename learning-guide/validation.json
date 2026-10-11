@@ -1,0 +1,18 @@
+{
+  "artifact": "verified-techniques.md",
+  "status_date_utc": "2026-10-11T03:32:00Z",
+  "publication_evidence_commit": "e8b12891144385544976c0db277a64144837383d",
+  "upstream_source_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "sha256": "89331a70131ad5c28c5a162ab7457b6ea85ce2ea192d35f6dfe7817b50bfd155",
+  "bytes": 40523,
+  "word_count_whitespace": 4650,
+  "numbered_methods": 9,
+  "unexpected_control_characters": 0,
+  "display_math_pairs": 54,
+  "local_or_private_links": [],
+  "publication_links_verified_against_remote_tree": 22,
+  "checks_scope": "Document structure, exact provenance links, and mathematical synthesis; no Lean or software builds executed for this guide.",
+  "ordinary_mathematical_review": "accepted",
+  "review_report": "independent-review.md",
+  "reviewed_guide_sha256": "89331a70131ad5c28c5a162ab7457b6ea85ce2ea192d35f6dfe7817b50bfd155"
+}

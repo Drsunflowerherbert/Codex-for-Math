@@ -1,0 +1,28 @@
+{
+  "main_requested_targets": "complete and independently audited",
+  "optional_divisor_lift": "complete and independently audited",
+  "ordinary_record_mapping": {
+    "FF001": "Formal character_sum for primitive characters; standard character instantiated by final results.",
+    "FF002": "Formal rectangular bilinear squared/radical bounds and normalized Cartesian expectation.",
+    "FF003": "Formal finite complex-density Fourier inversion.",
+    "FF004": "Formal generic two-density convolution and homogeneous convolution-power mixing; heterogeneous k-variable statement not exported.",
+    "FF005": "Ordinary reviewed theorem only; heterogeneous rectangular coefficient/shift probability theorem not exported.",
+    "FF006": "Formal diagonal probability lower bound and strict radical covering criterion; rectangular and radical-free equivalences not exported.",
+    "FF007": "Formal tuple count, convolution recurrence, mass and exact normalization; quantitative squared count theorem not exported.",
+    "FF008": "Formal diagonal fourth-power threshold, probability at least 1/p^2, and four-product witnesses; rectangular threshold scalar lemma present, rectangular probability extension not exported.",
+    "FF009": "Formal local positive-divisor lift at k=4; arbitrary-k version remains ordinary-only.",
+    "FF010": "Formal density-to-four-divisor-products rational lift."
+  },
+  "remaining_main_targets": [],
+  "not_claimed": [
+    "global Egyptian-fraction constant improvement",
+    "novelty",
+    "optimal product count",
+    "distinct factors or distinct products",
+    "complete formalization of every broader supplied record"
+  ],
+  "fresh_build": "pass: 7360 jobs",
+  "audited_declarations": 85,
+  "remaining_blockers": [],
+  "completed_at_utc": "2026-10-11T03:36:40.229597+00:00"
+}

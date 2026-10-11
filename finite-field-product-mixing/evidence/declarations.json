@@ -1,0 +1,427 @@
+[
+  {
+    "name": "FiniteFieldMixing.bilinearSum",
+    "file": "FiniteFieldMixing/Bilinear.lean",
+    "line": 20
+  },
+  {
+    "name": "FiniteFieldMixing.normalizedProductCoeff",
+    "file": "FiniteFieldMixing/Bilinear.lean",
+    "line": 26
+  },
+  {
+    "name": "FiniteFieldMixing.normalizedProductCoeff_eq_uniform_expect",
+    "file": "FiniteFieldMixing/Bilinear.lean",
+    "line": 32
+  },
+  {
+    "name": "FiniteFieldMixing.bilinear_energy",
+    "file": "FiniteFieldMixing/Bilinear.lean",
+    "line": 51
+  },
+  {
+    "name": "FiniteFieldMixing.bilinearSum_norm_sq_le",
+    "file": "FiniteFieldMixing/Bilinear.lean",
+    "line": 87
+  },
+  {
+    "name": "FiniteFieldMixing.bilinearSum_norm_le_sqrt",
+    "file": "FiniteFieldMixing/Bilinear.lean",
+    "line": 115
+  },
+  {
+    "name": "FiniteFieldMixing.normalizedProductCoeff_norm_le_sqrt",
+    "file": "FiniteFieldMixing/Bilinear.lean",
+    "line": 123
+  },
+  {
+    "name": "FiniteFieldMixing.normalizedProductCoeff_self_norm_le",
+    "file": "FiniteFieldMixing/Bilinear.lean",
+    "line": 145
+  },
+  {
+    "name": "FiniteFieldMixing.normalizedProductCoeff_zero",
+    "file": "FiniteFieldMixing/Bilinear.lean",
+    "line": 155
+  },
+  {
+    "name": "FiniteFieldMixing.productCount",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 10
+  },
+  {
+    "name": "FiniteFieldMixing.natConvolution",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 14
+  },
+  {
+    "name": "FiniteFieldMixing.convolutionCount",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 18
+  },
+  {
+    "name": "FiniteFieldMixing.convolutionCount_zero",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 21
+  },
+  {
+    "name": "FiniteFieldMixing.convolutionCount_succ",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 24
+  },
+  {
+    "name": "FiniteFieldMixing.productCount_sum",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 30
+  },
+  {
+    "name": "FiniteFieldMixing.productCount_weighted_sum",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 37
+  },
+  {
+    "name": "FiniteFieldMixing.productCount_weighted_sum_pairs",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 55
+  },
+  {
+    "name": "FiniteFieldMixing.productCount_pos_iff",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 65
+  },
+  {
+    "name": "FiniteFieldMixing.natConvolution_pos_iff",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 72
+  },
+  {
+    "name": "FiniteFieldMixing.natConvolution_comm",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 77
+  },
+  {
+    "name": "FiniteFieldMixing.sum_sub_right",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 85
+  },
+  {
+    "name": "FiniteFieldMixing.natConvolution_sum",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 90
+  },
+  {
+    "name": "FiniteFieldMixing.convolutionCount_sum",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 98
+  },
+  {
+    "name": "FiniteFieldMixing.TupleSpace",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 108
+  },
+  {
+    "name": "FiniteFieldMixing.tupleSum",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 111
+  },
+  {
+    "name": "FiniteFieldMixing.tupleCount",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 115
+  },
+  {
+    "name": "FiniteFieldMixing.tupleSpace_card",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 120
+  },
+  {
+    "name": "FiniteFieldMixing.tupleCount_eq_sum",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 127
+  },
+  {
+    "name": "FiniteFieldMixing.tupleCount_zero",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 134
+  },
+  {
+    "name": "FiniteFieldMixing.tupleCount_succ",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 141
+  },
+  {
+    "name": "FiniteFieldMixing.convolutionCount_eq_tupleCount",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 171
+  },
+  {
+    "name": "FiniteFieldMixing.convolutionCount_pos_iff",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 180
+  },
+  {
+    "name": "FiniteFieldMixing.four_products_of_count_pos",
+    "file": "FiniteFieldMixing/Counting.lean",
+    "line": 222
+  },
+  {
+    "name": "FiniteFieldMixing.four_product_nat_lift",
+    "file": "FiniteFieldMixing/DivisorLift.lean",
+    "line": 19
+  },
+  {
+    "name": "FiniteFieldMixing.divisor_four_product_lift",
+    "file": "FiniteFieldMixing/DivisorLift.lean",
+    "line": 41
+  },
+  {
+    "name": "FiniteFieldMixing.rational_lift_four_products",
+    "file": "FiniteFieldMixing/DivisorLift.lean",
+    "line": 63
+  },
+  {
+    "name": "FiniteFieldMixing.divisor_four_product_rational_lift",
+    "file": "FiniteFieldMixing/DivisorLift.lean",
+    "line": 74
+  },
+  {
+    "name": "FiniteFieldMixing.coeff",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 18
+  },
+  {
+    "name": "FiniteFieldMixing.convolution",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 23
+  },
+  {
+    "name": "FiniteFieldMixing.convolutionPow",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 27
+  },
+  {
+    "name": "FiniteFieldMixing.coeff_zero",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 30
+  },
+  {
+    "name": "FiniteFieldMixing.character_sum",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 36
+  },
+  {
+    "name": "FiniteFieldMixing.fourier_inversion_mul",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 42
+  },
+  {
+    "name": "FiniteFieldMixing.fourier_inversion",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 64
+  },
+  {
+    "name": "FiniteFieldMixing.coeff_convolution",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 72
+  },
+  {
+    "name": "FiniteFieldMixing.coeff_pointMass",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 89
+  },
+  {
+    "name": "FiniteFieldMixing.coeff_convolutionPow",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 95
+  },
+  {
+    "name": "FiniteFieldMixing.convolution_sum",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 103
+  },
+  {
+    "name": "FiniteFieldMixing.convolutionPow_sum",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 109
+  },
+  {
+    "name": "FiniteFieldMixing.coeff_const_mul",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 115
+  },
+  {
+    "name": "FiniteFieldMixing.convolution_const_mul",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 121
+  },
+  {
+    "name": "FiniteFieldMixing.convolutionPow_const_mul",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 130
+  },
+  {
+    "name": "FiniteFieldMixing.convolutionPow_div",
+    "file": "FiniteFieldMixing/Fourier.lean",
+    "line": 147
+  },
+  {
+    "name": "FiniteFieldMixing.norm_sub_mass_le_of_expansion",
+    "file": "FiniteFieldMixing/FourierBounds.lean",
+    "line": 18
+  },
+  {
+    "name": "FiniteFieldMixing.re_lower_bound_of_expansion",
+    "file": "FiniteFieldMixing/FourierBounds.lean",
+    "line": 42
+  },
+  {
+    "name": "FiniteFieldMixing.norm_sub_mean_le",
+    "file": "FiniteFieldMixing/FourierBounds.lean",
+    "line": 56
+  },
+  {
+    "name": "FiniteFieldMixing.re_lower_bound_of_coeff_bound",
+    "file": "FiniteFieldMixing/FourierBounds.lean",
+    "line": 75
+  },
+  {
+    "name": "FiniteFieldMixing.norm_sub_uniform_le",
+    "file": "FiniteFieldMixing/FourierBounds.lean",
+    "line": 84
+  },
+  {
+    "name": "FiniteFieldMixing.coeff_convolutionPow_norm_le",
+    "file": "FiniteFieldMixing/FourierBounds.lean",
+    "line": 93
+  },
+  {
+    "name": "FiniteFieldMixing.convolutionPow_norm_sub_uniform_le",
+    "file": "FiniteFieldMixing/FourierBounds.lean",
+    "line": 101
+  },
+  {
+    "name": "FiniteFieldMixing.convolutionPow_re_lower_bound",
+    "file": "FiniteFieldMixing/FourierBounds.lean",
+    "line": 111
+  },
+  {
+    "name": "FiniteFieldMixing.uniform_product_fourier_bound",
+    "file": "FiniteFieldMixing/Mixing.lean",
+    "line": 22
+  },
+  {
+    "name": "FiniteFieldMixing.productDensity_coeff",
+    "file": "FiniteFieldMixing/Mixing.lean",
+    "line": 31
+  },
+  {
+    "name": "FiniteFieldMixing.productSumProbability_lower_bound",
+    "file": "FiniteFieldMixing/Mixing.lean",
+    "line": 40
+  },
+  {
+    "name": "FiniteFieldMixing.productSum_cover_of_strict_bound",
+    "file": "FiniteFieldMixing/Mixing.lean",
+    "line": 59
+  },
+  {
+    "name": "FiniteFieldMixing.nonempty_of_fourth_power_threshold",
+    "file": "FiniteFieldMixing/Mixing.lean",
+    "line": 73
+  },
+  {
+    "name": "FiniteFieldMixing.four_product_probability_lower_bound",
+    "file": "FiniteFieldMixing/Mixing.lean",
+    "line": 83
+  },
+  {
+    "name": "FiniteFieldMixing.four_products_cover",
+    "file": "FiniteFieldMixing/Mixing.lean",
+    "line": 92
+  },
+  {
+    "name": "FiniteFieldMixing.productDensity",
+    "file": "FiniteFieldMixing/Normalization.lean",
+    "line": 21
+  },
+  {
+    "name": "FiniteFieldMixing.productSumProbability",
+    "file": "FiniteFieldMixing/Normalization.lean",
+    "line": 25
+  },
+  {
+    "name": "FiniteFieldMixing.productSumProbability_eq_tuple_probability",
+    "file": "FiniteFieldMixing/Normalization.lean",
+    "line": 30
+  },
+  {
+    "name": "FiniteFieldMixing.convolution_natCast",
+    "file": "FiniteFieldMixing/Normalization.lean",
+    "line": 37
+  },
+  {
+    "name": "FiniteFieldMixing.convolutionPow_natCast",
+    "file": "FiniteFieldMixing/Normalization.lean",
+    "line": 43
+  },
+  {
+    "name": "FiniteFieldMixing.convolutionPow_productDensity",
+    "file": "FiniteFieldMixing/Normalization.lean",
+    "line": 55
+  },
+  {
+    "name": "FiniteFieldMixing.productSumProbability_eq_re",
+    "file": "FiniteFieldMixing/Normalization.lean",
+    "line": 63
+  },
+  {
+    "name": "FiniteFieldMixing.productSumProbability_nonneg",
+    "file": "FiniteFieldMixing/Normalization.lean",
+    "line": 72
+  },
+  {
+    "name": "FiniteFieldMixing.productSumProbability_sum",
+    "file": "FiniteFieldMixing/Normalization.lean",
+    "line": 77
+  },
+  {
+    "name": "FiniteFieldMixing.productSumProbability_pos_iff",
+    "file": "FiniteFieldMixing/Normalization.lean",
+    "line": 85
+  },
+  {
+    "name": "FiniteFieldMixing.threshold_from_fourth_power",
+    "file": "FiniteFieldMixing/Threshold.lean",
+    "line": 7
+  },
+  {
+    "name": "FiniteFieldMixing.sqrt_ratio_fourth_power_le",
+    "file": "FiniteFieldMixing/Threshold.lean",
+    "line": 23
+  },
+  {
+    "name": "FiniteFieldMixing.rectangular_threshold",
+    "file": "FiniteFieldMixing/Threshold.lean",
+    "line": 40
+  },
+  {
+    "name": "FiniteFieldMixing.sqrt_div_mul_self",
+    "file": "FiniteFieldMixing/Threshold.lean",
+    "line": 48
+  },
+  {
+    "name": "FiniteFieldMixing.diagonal_threshold",
+    "file": "FiniteFieldMixing/Threshold.lean",
+    "line": 53
+  },
+  {
+    "name": "FiniteFieldMixing.rectangular_threshold_nat",
+    "file": "FiniteFieldMixing/Threshold.lean",
+    "line": 63
+  },
+  {
+    "name": "FiniteFieldMixing.diagonal_threshold_nat",
+    "file": "FiniteFieldMixing/Threshold.lean",
+    "line": 79
+  }
+]

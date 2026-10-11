@@ -4,7 +4,9 @@
   "excludes": [
     "publication/FILES.json",
     "unchanged original tangent-limit tree",
-    "ignored dependencies/tooling/build caches"
+    "ignored dependencies/tooling/build caches",
+    "finite-field-product-mixing tree: covered by FINITE-FIELD-GUIDE-FILES.json",
+    "learning-guide tree: covered by FINITE-FIELD-GUIDE-FILES.json"
   ],
   "files": {
     ".gitignore": {
@@ -12,8 +14,8 @@
       "sha256": "c6c552c7e805f1e656622f8eb99df8213fc90dcaf531c8b118a2f389ada83fbb"
     },
     "README.md": {
-      "bytes": 2109,
-      "sha256": "a55222dd42efa2702a5a64cfc3b10781c6ad363e52cfa238bf20c69cda459fc5"
+      "bytes": 2553,
+      "sha256": "9f3333039ecce326c564f5b63b4280dc9d3be25ae489f40c08e76adfe99bee6f"
     },
     "THIRD-PARTY.md": {
       "bytes": 2022,
@@ -312,8 +314,8 @@
       "sha256": "327ba9608edd8ca32344e5e75d5c4a139e1fa293b91ae7d3ca1103a8930930fa"
     },
     "publication/README.md": {
-      "bytes": 2936,
-      "sha256": "eadb02bb2001f9318a949e0a7593e618a3a8895cd5807bfa57310a4c19c15a23"
+      "bytes": 4527,
+      "sha256": "e1a70fb1478eb23a4cdc65ab1edaae80ef9fa6e3e368a1cc9c0c3a0c2aa7d100"
     },
     "publication/REVIEW.md": {
       "bytes": 3709,
@@ -1690,6 +1692,17 @@
     "tangent-sharp/verification.supplied.json": {
       "bytes": 1157,
       "sha256": "cadbbacc184925d8726e3c680b01827abe2e4842eaffa4618e97ac23864f55c9"
+    },
+    "publication/FINITE-FIELD-GUIDE-FILES.json": {
+      "bytes": 5346,
+      "sha256": "3c75567a57321860089551d1000617978fd49595e503dce0f679e3a09e4760a1"
+    },
+    "publication/FINITE-FIELD-GUIDE-SOURCE-MAP.json": {
+      "bytes": 24092,
+      "sha256": "44f9da47c9bc342a83bbbb90c1b77f2a760346dfc6ddc84974484022ebd47133"
     }
-  }
+  },
+  "supplemental_manifests": [
+    "publication/FINITE-FIELD-GUIDE-FILES.json"
+  ]
 }

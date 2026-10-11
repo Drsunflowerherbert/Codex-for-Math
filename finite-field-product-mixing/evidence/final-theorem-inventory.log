@@ -1,0 +1,317 @@
+@FiniteFieldMixing.bilinearSum : {p : ℕ} →
+  [inst : Fact (Nat.Prime p)] → AddChar (ZMod p) ℂ → Finset (ZMod p) → Finset (ZMod p) → ZMod p → ℂ
+'FiniteFieldMixing.bilinearSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.normalizedProductCoeff : {p : ℕ} →
+  [inst : Fact (Nat.Prime p)] → AddChar (ZMod p) ℂ → Finset (ZMod p) → Finset (ZMod p) → ZMod p → ℂ
+'FiniteFieldMixing.normalizedProductCoeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.normalizedProductCoeff_eq_uniform_expect : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)]
+  (ψ : AddChar (ZMod p) ℂ) (A B : Finset (ZMod p)) (r : ZMod p),
+  FiniteFieldMixing.normalizedProductCoeff ψ A B r = Finset.univ.expect fun z => ψ (r * ↑z.1 * ↑z.2)
+'FiniteFieldMixing.normalizedProductCoeff_eq_uniform_expect' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.bilinear_energy : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (ψ : AddChar (ZMod p) ℂ),
+  ψ.IsPrimitive → ∀ (B : Finset (ZMod p)) (r : ZMod p), r ≠ 0 → ∑ a, ‖∑ b ∈ B, ψ (r * a * b)‖ ^ 2 = ↑p * ↑B.card
+'FiniteFieldMixing.bilinear_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.bilinearSum_norm_sq_le : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (ψ : AddChar (ZMod p) ℂ),
+  ψ.IsPrimitive →
+    ∀ (A B : Finset (ZMod p)) (r : ZMod p), r ≠ 0 → ‖FiniteFieldMixing.bilinearSum ψ A B r‖ ^ 2 ≤ ↑A.card * ↑p * ↑B.card
+'FiniteFieldMixing.bilinearSum_norm_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.bilinearSum_norm_le_sqrt : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (ψ : AddChar (ZMod p) ℂ),
+  ψ.IsPrimitive →
+    ∀ (A B : Finset (ZMod p)) (r : ZMod p), r ≠ 0 → ‖FiniteFieldMixing.bilinearSum ψ A B r‖ ≤ √(↑A.card * ↑p * ↑B.card)
+'FiniteFieldMixing.bilinearSum_norm_le_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.normalizedProductCoeff_norm_le_sqrt : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (ψ : AddChar (ZMod p) ℂ),
+  ψ.IsPrimitive →
+    ∀ (A B : Finset (ZMod p)),
+      A.Nonempty →
+        B.Nonempty →
+          ∀ (r : ZMod p), r ≠ 0 → ‖FiniteFieldMixing.normalizedProductCoeff ψ A B r‖ ≤ √(↑p / (↑A.card * ↑B.card))
+'FiniteFieldMixing.normalizedProductCoeff_norm_le_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.normalizedProductCoeff_self_norm_le : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (ψ : AddChar (ZMod p) ℂ),
+  ψ.IsPrimitive →
+    ∀ (H : Finset (ZMod p)),
+      H.Nonempty → ∀ (r : ZMod p), r ≠ 0 → ‖FiniteFieldMixing.normalizedProductCoeff ψ H H r‖ ≤ √↑p / ↑H.card
+'FiniteFieldMixing.normalizedProductCoeff_self_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.normalizedProductCoeff_zero : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (ψ : AddChar (ZMod p) ℂ)
+  (A B : Finset (ZMod p)), A.Nonempty → B.Nonempty → FiniteFieldMixing.normalizedProductCoeff ψ A B 0 = 1
+'FiniteFieldMixing.normalizedProductCoeff_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.productCount : {p : ℕ} → Finset (ZMod p) → ZMod p → ℕ
+'FiniteFieldMixing.productCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.natConvolution : {p : ℕ} → [NeZero p] → (ZMod p → ℕ) → (ZMod p → ℕ) → ZMod p → ℕ
+'FiniteFieldMixing.natConvolution' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolutionCount : {p : ℕ} → [NeZero p] → Finset (ZMod p) → ℕ → ZMod p → ℕ
+'FiniteFieldMixing.convolutionCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolutionCount_zero : ∀ {p : ℕ} [inst : NeZero p] (H : Finset (ZMod p)) (x : ZMod p),
+  FiniteFieldMixing.convolutionCount H 0 x = if x = 0 then 1 else 0
+'FiniteFieldMixing.convolutionCount_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolutionCount_succ : ∀ {p : ℕ} [inst : NeZero p] (H : Finset (ZMod p)) (k : ℕ) (x : ZMod p),
+  FiniteFieldMixing.convolutionCount H (k + 1) x =
+    FiniteFieldMixing.natConvolution (FiniteFieldMixing.convolutionCount H k) (FiniteFieldMixing.productCount H) x
+'FiniteFieldMixing.convolutionCount_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.productCount_sum : ∀ {p : ℕ} [inst : NeZero p] (H : Finset (ZMod p)),
+  ∑ x, FiniteFieldMixing.productCount H x = H.card ^ 2
+'FiniteFieldMixing.productCount_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.productCount_weighted_sum : ∀ {p : ℕ} [inst : NeZero p] {R : Type u_1} [inst_1 : Semiring R]
+  (H : Finset (ZMod p)) (F : ZMod p → R), ∑ x, ↑(FiniteFieldMixing.productCount H x) * F x = ∑ a ∈ H, ∑ b ∈ H, F (a * b)
+'FiniteFieldMixing.productCount_weighted_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.productCount_weighted_sum_pairs : ∀ {p : ℕ} [inst : NeZero p] {R : Type u_1} [inst_1 : Semiring R]
+  (H : Finset (ZMod p)) (F : ZMod p → R), ∑ x, ↑(FiniteFieldMixing.productCount H x) * F x = ∑ ab, F ((↑ab).1 * (↑ab).2)
+'FiniteFieldMixing.productCount_weighted_sum_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.productCount_pos_iff : ∀ {p : ℕ} (H : Finset (ZMod p)) (x : ZMod p),
+  0 < FiniteFieldMixing.productCount H x ↔ ∃ a ∈ H, ∃ b ∈ H, a * b = x
+'FiniteFieldMixing.productCount_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.natConvolution_pos_iff : ∀ {p : ℕ} [inst : NeZero p] (f g : ZMod p → ℕ) (x : ZMod p),
+  0 < FiniteFieldMixing.natConvolution f g x ↔ ∃ y, 0 < f y ∧ 0 < g (x - y)
+'FiniteFieldMixing.natConvolution_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.natConvolution_comm : ∀ {p : ℕ} [inst : NeZero p] (f g : ZMod p → ℕ) (t : ZMod p),
+  FiniteFieldMixing.natConvolution f g t = FiniteFieldMixing.natConvolution g f t
+'FiniteFieldMixing.natConvolution_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.sum_sub_right : ∀ {p : ℕ} [inst : NeZero p] (f : ZMod p → ℕ) (y : ZMod p), ∑ x, f (x - y) = ∑ x, f x
+'FiniteFieldMixing.sum_sub_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.natConvolution_sum : ∀ {p : ℕ} [inst : NeZero p] (f g : ZMod p → ℕ),
+  ∑ x, FiniteFieldMixing.natConvolution f g x = (∑ x, f x) * ∑ x, g x
+'FiniteFieldMixing.natConvolution_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolutionCount_sum : ∀ {p : ℕ} [inst : NeZero p] (H : Finset (ZMod p)) (k : ℕ),
+  ∑ x, FiniteFieldMixing.convolutionCount H k x = H.card ^ (2 * k)
+'FiniteFieldMixing.convolutionCount_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.TupleSpace : {p : ℕ} → Finset (ZMod p) → ℕ → Type
+'FiniteFieldMixing.TupleSpace' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.tupleSum : {p : ℕ} → {H : Finset (ZMod p)} → {k : ℕ} → FiniteFieldMixing.TupleSpace H k → ZMod p
+'FiniteFieldMixing.tupleSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.tupleCount : {p : ℕ} → Finset (ZMod p) → ℕ → ZMod p → ℕ
+'FiniteFieldMixing.tupleCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.tupleSpace_card : ∀ {p : ℕ} (H : Finset (ZMod p)) (k : ℕ),
+  Fintype.card (FiniteFieldMixing.TupleSpace H k) = H.card ^ (2 * k)
+'FiniteFieldMixing.tupleSpace_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.tupleCount_eq_sum : ∀ {p : ℕ} (H : Finset (ZMod p)) (k : ℕ) (t : ZMod p),
+  FiniteFieldMixing.tupleCount H k t = ∑ v, if FiniteFieldMixing.tupleSum v = t then 1 else 0
+'FiniteFieldMixing.tupleCount_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.tupleCount_zero : ∀ {p : ℕ} (H : Finset (ZMod p)) (t : ZMod p),
+  FiniteFieldMixing.tupleCount H 0 t = if t = 0 then 1 else 0
+'FiniteFieldMixing.tupleCount_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.tupleCount_succ : ∀ {p : ℕ} [inst : NeZero p] (H : Finset (ZMod p)) (k : ℕ) (t : ZMod p),
+  FiniteFieldMixing.tupleCount H (k + 1) t =
+    FiniteFieldMixing.natConvolution (FiniteFieldMixing.tupleCount H k) (FiniteFieldMixing.productCount H) t
+'FiniteFieldMixing.tupleCount_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolutionCount_eq_tupleCount : ∀ {p : ℕ} [inst : NeZero p] (H : Finset (ZMod p)) (k : ℕ)
+  (t : ZMod p), FiniteFieldMixing.convolutionCount H k t = FiniteFieldMixing.tupleCount H k t
+'FiniteFieldMixing.convolutionCount_eq_tupleCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolutionCount_pos_iff : ∀ {p : ℕ} [inst : NeZero p] (H : Finset (ZMod p)) (k : ℕ) (t : ZMod p),
+  0 < FiniteFieldMixing.convolutionCount H k t ↔
+    ∃ a b, (∀ (i : Fin k), a i ∈ H) ∧ (∀ (i : Fin k), b i ∈ H) ∧ ∑ i, a i * b i = t
+'FiniteFieldMixing.convolutionCount_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.four_products_of_count_pos : ∀ {p : ℕ} [inst : NeZero p] (H : Finset (ZMod p)) (t : ZMod p),
+  0 < FiniteFieldMixing.convolutionCount H 4 t →
+    ∃ a b, (∀ (i : Fin 4), a i ∈ H) ∧ (∀ (i : Fin 4), b i ∈ H) ∧ ∑ i, a i * b i = t
+'FiniteFieldMixing.four_products_of_count_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.four_product_nat_lift : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (D : Finset ℕ),
+  p ^ 3 ≤ (Finset.image Nat.cast D).card ^ 4 →
+    ∃ a b, (∀ (i : Fin 4), a i ∈ D) ∧ (∀ (i : Fin 4), b i ∈ D) ∧ p ∣ ∑ i, a i * b i
+'FiniteFieldMixing.four_product_nat_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.divisor_four_product_lift : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (Q : ℕ),
+  0 < Q →
+    ∀ (D : Finset ℕ),
+      (∀ d ∈ D, 0 < d ∧ d ∣ Q) →
+        p ^ 3 ≤ (Finset.image Nat.cast D).card ^ 4 →
+          ∃ a b m,
+            (∀ (i : Fin 4), a i ∈ D) ∧
+              (∀ (i : Fin 4), b i ∈ D) ∧ 0 < m ∧ ∑ i, a i * b i = p * m ∧ ∀ (i : Fin 4), a i * b i ∣ Q ^ 2
+'FiniteFieldMixing.divisor_four_product_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+FiniteFieldMixing.rational_lift_four_products : ∀ (a b : Fin 4 → ℕ) (p m : ℕ),
+  0 < m → ∑ i, a i * b i = p * m → ↑p = ∑ i, ↑(a i * b i) / ↑m
+'FiniteFieldMixing.rational_lift_four_products' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.divisor_four_product_rational_lift : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (Q : ℕ),
+  0 < Q →
+    ∀ (D : Finset ℕ),
+      (∀ d ∈ D, 0 < d ∧ d ∣ Q) →
+        p ^ 3 ≤ (Finset.image Nat.cast D).card ^ 4 →
+          ∃ a b m,
+            (∀ (i : Fin 4), a i ∈ D) ∧
+              (∀ (i : Fin 4), b i ∈ D) ∧
+                0 < m ∧ ∑ i, a i * b i = p * m ∧ (∀ (i : Fin 4), a i * b i ∣ Q ^ 2) ∧ ↑p = ∑ i, ↑(a i * b i) / ↑m
+'FiniteFieldMixing.divisor_four_product_rational_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.coeff : {p : ℕ} → [inst : Fact (Nat.Prime p)] → AddChar (ZMod p) ℂ → (ZMod p → ℂ) → ZMod p → ℂ
+'FiniteFieldMixing.coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolution : {p : ℕ} → [Fact (Nat.Prime p)] → (ZMod p → ℂ) → (ZMod p → ℂ) → ZMod p → ℂ
+'FiniteFieldMixing.convolution' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolutionPow : {p : ℕ} → [Fact (Nat.Prime p)] → (ZMod p → ℂ) → ℕ → ZMod p → ℂ
+'FiniteFieldMixing.convolutionPow' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.coeff_zero : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ) (f : ZMod p → ℂ),
+  FiniteFieldMixing.coeff χ f 0 = ∑ x, f x
+'FiniteFieldMixing.coeff_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.character_sum : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ),
+  χ.IsPrimitive → ∀ (b : ZMod p), ∑ t, χ (t * b) = if b = 0 then ↑p else 0
+'FiniteFieldMixing.character_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.fourier_inversion_mul : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ),
+  χ.IsPrimitive → ∀ (f : ZMod p → ℂ) (z : ZMod p), ↑p * f z = ∑ t, FiniteFieldMixing.coeff χ f t * χ (-(t * z))
+'FiniteFieldMixing.fourier_inversion_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.fourier_inversion : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ),
+  χ.IsPrimitive → ∀ (f : ZMod p → ℂ) (z : ZMod p), f z = (↑p)⁻¹ * ∑ t, FiniteFieldMixing.coeff χ f t * χ (-(t * z))
+'FiniteFieldMixing.fourier_inversion' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.coeff_convolution : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ) (f g : ZMod p → ℂ)
+  (t : ZMod p),
+  FiniteFieldMixing.coeff χ (FiniteFieldMixing.convolution f g) t =
+    FiniteFieldMixing.coeff χ f t * FiniteFieldMixing.coeff χ g t
+'FiniteFieldMixing.coeff_convolution' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.coeff_pointMass : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ) (t : ZMod p),
+  FiniteFieldMixing.coeff χ (fun z => if z = 0 then 1 else 0) t = 1
+'FiniteFieldMixing.coeff_pointMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.coeff_convolutionPow : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ)
+  (f : ZMod p → ℂ) (n : ℕ) (t : ZMod p),
+  FiniteFieldMixing.coeff χ (FiniteFieldMixing.convolutionPow f n) t = FiniteFieldMixing.coeff χ f t ^ n
+'FiniteFieldMixing.coeff_convolutionPow' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolution_sum : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (f g : ZMod p → ℂ),
+  ∑ z, FiniteFieldMixing.convolution f g z = (∑ x, f x) * ∑ y, g y
+'FiniteFieldMixing.convolution_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolutionPow_sum : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (f : ZMod p → ℂ) (n : ℕ),
+  ∑ z, FiniteFieldMixing.convolutionPow f n z = (∑ x, f x) ^ n
+'FiniteFieldMixing.convolutionPow_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.coeff_const_mul : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ) (c : ℂ)
+  (f : ZMod p → ℂ) (t : ZMod p), FiniteFieldMixing.coeff χ (fun x => c * f x) t = c * FiniteFieldMixing.coeff χ f t
+'FiniteFieldMixing.coeff_const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolution_const_mul : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (c d : ℂ) (f g : ZMod p → ℂ)
+  (z : ZMod p),
+  FiniteFieldMixing.convolution (fun x => c * f x) (fun x => d * g x) z = c * d * FiniteFieldMixing.convolution f g z
+'FiniteFieldMixing.convolution_const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolutionPow_const_mul : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (c : ℂ) (f : ZMod p → ℂ) (n : ℕ)
+  (z : ZMod p), FiniteFieldMixing.convolutionPow (fun x => c * f x) n z = c ^ n * FiniteFieldMixing.convolutionPow f n z
+'FiniteFieldMixing.convolutionPow_const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolutionPow_div : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (c : ℂ) (f : ZMod p → ℂ) (n : ℕ)
+  (z : ZMod p), FiniteFieldMixing.convolutionPow (fun x => f x / c) n z = FiniteFieldMixing.convolutionPow f n z / c ^ n
+'FiniteFieldMixing.convolutionPow_div' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.norm_sub_mass_le_of_expansion : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ)
+  (a : ZMod p → ℂ) (v M : ℂ) (C : ℝ) (z : ZMod p),
+  ↑p * v = ∑ t, a t * χ (-(t * z)) → a 0 = M → (∀ (t : ZMod p), t ≠ 0 → ‖a t‖ ≤ C) → ‖↑p * v - M‖ ≤ (↑p - 1) * C
+'FiniteFieldMixing.norm_sub_mass_le_of_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.re_lower_bound_of_expansion : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ)
+  (a : ZMod p → ℂ) (v : ℂ) (M C : ℝ) (z : ZMod p),
+  ↑p * v = ∑ t, a t * χ (-(t * z)) → a 0 = ↑M → (∀ (t : ZMod p), t ≠ 0 → ‖a t‖ ≤ C) → (M - (↑p - 1) * C) / ↑p ≤ v.re
+'FiniteFieldMixing.re_lower_bound_of_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.norm_sub_mean_le : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ),
+  χ.IsPrimitive →
+    ∀ (f : ZMod p → ℂ) (M : ℂ) (C : ℝ),
+      FiniteFieldMixing.coeff χ f 0 = M →
+        (∀ (t : ZMod p), t ≠ 0 → ‖FiniteFieldMixing.coeff χ f t‖ ≤ C) →
+          ∀ (z : ZMod p), ‖f z - M / ↑p‖ ≤ (↑p - 1) / ↑p * C
+'FiniteFieldMixing.norm_sub_mean_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.re_lower_bound_of_coeff_bound : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ),
+  χ.IsPrimitive →
+    ∀ (f : ZMod p → ℂ) (M C : ℝ),
+      FiniteFieldMixing.coeff χ f 0 = ↑M →
+        (∀ (t : ZMod p), t ≠ 0 → ‖FiniteFieldMixing.coeff χ f t‖ ≤ C) →
+          ∀ (z : ZMod p), (M - (↑p - 1) * C) / ↑p ≤ (f z).re
+'FiniteFieldMixing.re_lower_bound_of_coeff_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.norm_sub_uniform_le : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ),
+  χ.IsPrimitive →
+    ∀ (f : ZMod p → ℂ) (β : ℝ),
+      ∑ x, f x = 1 →
+        (∀ (t : ZMod p), t ≠ 0 → ‖FiniteFieldMixing.coeff χ f t‖ ≤ β) →
+          ∀ (z : ZMod p), ‖f z - (↑p)⁻¹‖ ≤ (↑p - 1) / ↑p * β
+'FiniteFieldMixing.norm_sub_uniform_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.coeff_convolutionPow_norm_le : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ)
+  (f : ZMod p → ℂ) (β : ℝ),
+  (∀ (t : ZMod p), t ≠ 0 → ‖FiniteFieldMixing.coeff χ f t‖ ≤ β) →
+    ∀ (n : ℕ) (t : ZMod p), t ≠ 0 → ‖FiniteFieldMixing.coeff χ (FiniteFieldMixing.convolutionPow f n) t‖ ≤ β ^ n
+'FiniteFieldMixing.coeff_convolutionPow_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolutionPow_norm_sub_uniform_le : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ),
+  χ.IsPrimitive →
+    ∀ (f : ZMod p → ℂ) (β : ℝ),
+      ∑ x, f x = 1 →
+        (∀ (t : ZMod p), t ≠ 0 → ‖FiniteFieldMixing.coeff χ f t‖ ≤ β) →
+          ∀ (n : ℕ) (z : ZMod p), ‖FiniteFieldMixing.convolutionPow f n z - (↑p)⁻¹‖ ≤ (↑p - 1) / ↑p * β ^ n
+'FiniteFieldMixing.convolutionPow_norm_sub_uniform_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolutionPow_re_lower_bound : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ),
+  χ.IsPrimitive →
+    ∀ (f : ZMod p → ℂ) (M C : ℝ),
+      FiniteFieldMixing.coeff χ f 0 = ↑M →
+        (∀ (t : ZMod p), t ≠ 0 → ‖FiniteFieldMixing.coeff χ f t‖ ≤ C) →
+          ∀ (n : ℕ) (z : ZMod p), (M ^ n - (↑p - 1) * C ^ n) / ↑p ≤ (FiniteFieldMixing.convolutionPow f n z).re
+'FiniteFieldMixing.convolutionPow_re_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.uniform_product_fourier_bound : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (A B : Finset (ZMod p)),
+  A.Nonempty →
+    B.Nonempty →
+      ∀ (r : ZMod p),
+        r ≠ 0 → ‖FiniteFieldMixing.normalizedProductCoeff ZMod.stdAddChar A B r‖ ≤ √(↑p / (↑A.card * ↑B.card))
+'FiniteFieldMixing.uniform_product_fourier_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.productDensity_coeff : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (χ : AddChar (ZMod p) ℂ)
+  (H : Finset (ZMod p)) (r : ZMod p),
+  FiniteFieldMixing.coeff χ (FiniteFieldMixing.productDensity H) r = FiniteFieldMixing.normalizedProductCoeff χ H H r
+'FiniteFieldMixing.productDensity_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.productSumProbability_lower_bound : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (H : Finset (ZMod p)),
+  H.Nonempty →
+    ∀ (k : ℕ) (z : ZMod p), (1 - (↑p - 1) * (√↑p / ↑H.card) ^ k) / ↑p ≤ FiniteFieldMixing.productSumProbability H k z
+'FiniteFieldMixing.productSumProbability_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.productSum_cover_of_strict_bound : ∀ {p : ℕ} [Fact (Nat.Prime p)] (H : Finset (ZMod p)),
+  H.Nonempty →
+    ∀ (k : ℕ),
+      (↑p - 1) * (√↑p / ↑H.card) ^ k < 1 →
+        ∀ (z : ZMod p), ∃ a b, (∀ (i : Fin k), a i ∈ H) ∧ (∀ (i : Fin k), b i ∈ H) ∧ ∑ i, a i * b i = z
+'FiniteFieldMixing.productSum_cover_of_strict_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.nonempty_of_fourth_power_threshold : ∀ {p : ℕ} [Fact (Nat.Prime p)] (H : Finset (ZMod p)),
+  p ^ 3 ≤ H.card ^ 4 → H.Nonempty
+'FiniteFieldMixing.nonempty_of_fourth_power_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.four_product_probability_lower_bound : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (H : Finset (ZMod p)),
+  p ^ 3 ≤ H.card ^ 4 → ∀ (z : ZMod p), 1 / ↑p ^ 2 ≤ FiniteFieldMixing.productSumProbability H 4 z
+'FiniteFieldMixing.four_product_probability_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.four_products_cover : ∀ {p : ℕ} [Fact (Nat.Prime p)] (H : Finset (ZMod p)),
+  p ^ 3 ≤ H.card ^ 4 → ∀ (z : ZMod p), ∃ a b, (∀ (i : Fin 4), a i ∈ H) ∧ (∀ (i : Fin 4), b i ∈ H) ∧ ∑ i, a i * b i = z
+'FiniteFieldMixing.four_products_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.productDensity : {p : ℕ} → Finset (ZMod p) → ZMod p → ℂ
+'FiniteFieldMixing.productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.productSumProbability : {p : ℕ} → [Fact (Nat.Prime p)] → Finset (ZMod p) → ℕ → ZMod p → ℝ
+'FiniteFieldMixing.productSumProbability' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.productSumProbability_eq_tuple_probability : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)]
+  (H : Finset (ZMod p)) (k : ℕ) (z : ZMod p),
+  FiniteFieldMixing.productSumProbability H k z =
+    ↑(FiniteFieldMixing.tupleCount H k z) / ↑(Fintype.card (FiniteFieldMixing.TupleSpace H k))
+'FiniteFieldMixing.productSumProbability_eq_tuple_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@FiniteFieldMixing.convolution_natCast : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (f g : ZMod p → ℕ) (z : ZMod p),
+  FiniteFieldMixing.convolution (fun x => ↑(f x)) (fun x => ↑(g x)) z = ↑(FiniteFieldMixing.natConvolution f g z)
+'FiniteFieldMixing.convolution_natCast' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolutionPow_natCast : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (H : Finset (ZMod p)) (k : ℕ)
+  (z : ZMod p),
+  FiniteFieldMixing.convolutionPow (fun x => ↑(FiniteFieldMixing.productCount H x)) k z =
+    ↑(FiniteFieldMixing.convolutionCount H k z)
+'FiniteFieldMixing.convolutionPow_natCast' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.convolutionPow_productDensity : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (H : Finset (ZMod p)) (k : ℕ)
+  (z : ZMod p),
+  FiniteFieldMixing.convolutionPow (FiniteFieldMixing.productDensity H) k z =
+    ↑(FiniteFieldMixing.convolutionCount H k z) / ↑H.card ^ (2 * k)
+'FiniteFieldMixing.convolutionPow_productDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.productSumProbability_eq_re : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (H : Finset (ZMod p)) (k : ℕ)
+  (z : ZMod p),
+  FiniteFieldMixing.productSumProbability H k z =
+    (FiniteFieldMixing.convolutionPow (FiniteFieldMixing.productDensity H) k z).re
+'FiniteFieldMixing.productSumProbability_eq_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.productSumProbability_nonneg : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (H : Finset (ZMod p)) (k : ℕ)
+  (z : ZMod p), 0 ≤ FiniteFieldMixing.productSumProbability H k z
+'FiniteFieldMixing.productSumProbability_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.productSumProbability_sum : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (H : Finset (ZMod p)),
+  H.Nonempty → ∀ (k : ℕ), ∑ z, FiniteFieldMixing.productSumProbability H k z = 1
+'FiniteFieldMixing.productSumProbability_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteFieldMixing.productSumProbability_pos_iff : ∀ {p : ℕ} [inst : Fact (Nat.Prime p)] (H : Finset (ZMod p)),
+  H.Nonempty →
+    ∀ (k : ℕ) (z : ZMod p),
+      0 < FiniteFieldMixing.productSumProbability H k z ↔
+        ∃ a b, (∀ (i : Fin k), a i ∈ H) ∧ (∀ (i : Fin k), b i ∈ H) ∧ ∑ i, a i * b i = z
+'FiniteFieldMixing.productSumProbability_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+FiniteFieldMixing.threshold_from_fourth_power : ∀ (p ε : ℝ),
+  1 ≤ p → ε ^ 4 ≤ 1 / p → 1 / p ^ 2 ≤ (1 - (p - 1) * ε ^ 4) / p
+'FiniteFieldMixing.threshold_from_fourth_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+FiniteFieldMixing.sqrt_ratio_fourth_power_le : ∀ (p n : ℝ), 1 ≤ p → 0 < n → p ^ 3 ≤ n ^ 2 → √(p / n) ^ 4 ≤ 1 / p
+'FiniteFieldMixing.sqrt_ratio_fourth_power_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+FiniteFieldMixing.rectangular_threshold : ∀ (p n : ℝ),
+  1 ≤ p → 0 < n → p ^ 3 ≤ n ^ 2 → 1 / p ^ 2 ≤ (1 - (p - 1) * √(p / n) ^ 4) / p
+'FiniteFieldMixing.rectangular_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+FiniteFieldMixing.sqrt_div_mul_self : ∀ (p h : ℝ), 0 ≤ p → 0 < h → √(p / (h * h)) = √p / h
+'FiniteFieldMixing.sqrt_div_mul_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+FiniteFieldMixing.diagonal_threshold : ∀ (p h : ℝ),
+  1 ≤ p → 0 < h → p ^ 3 ≤ h ^ 4 → 1 / p ^ 2 ≤ (1 - (p - 1) * (√p / h) ^ 4) / p
+'FiniteFieldMixing.diagonal_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+FiniteFieldMixing.rectangular_threshold_nat : ∀ (p n : ℕ),
+  1 ≤ p → p ^ 3 ≤ n ^ 2 → 1 / ↑p ^ 2 ≤ (1 - (↑p - 1) * √(↑p / ↑n) ^ 4) / ↑p
+'FiniteFieldMixing.rectangular_threshold_nat' depends on axioms: [propext, Classical.choice, Quot.sound]
+FiniteFieldMixing.diagonal_threshold_nat : ∀ (p h : ℕ),
+  1 ≤ p → p ^ 3 ≤ h ^ 4 → 1 / ↑p ^ 2 ≤ (1 - (↑p - 1) * (√↑p / ↑h) ^ 4) / ↑p
+'FiniteFieldMixing.diagonal_threshold_nat' depends on axioms: [propext, Classical.choice, Quot.sound]

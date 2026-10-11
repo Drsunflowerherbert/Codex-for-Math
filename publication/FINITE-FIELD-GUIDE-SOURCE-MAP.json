@@ -1,0 +1,447 @@
+{
+  "schema": 1,
+  "batch": "finite-field-and-learning-guide-2026-10-11",
+  "publication_base_commit": "e8b12891144385544976c0db277a64144837383d",
+  "review_scope": "Read-only file, privacy, provenance and receipt-consistency inspection, followed by documentation-only public packaging. No archived code, Lean build, proof tests or regression programs were executed.",
+  "inputs": [
+    {
+      "archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "sha256": "2ffd8511ff23a66260e7b494fa3ce614a4488edec66a0d8a7cf23b337f65838a",
+      "bytes": 539549
+    },
+    {
+      "archive": "verified-mathematical-techniques-2026-10-11.zip",
+      "sha256": "3d04cb6039b09edfe9ccf5097b8d96f5f7417fdd5cd44595c2d0ba55b638ee3a",
+      "bytes": 18419
+    }
+  ],
+  "receipt_boundary": "Byte-identical historical evidence describes its original supplied snapshot. Some hashes refer to omitted artifacts. Modified documentation has a new public hash and does not receive a retroactive original review verdict.",
+  "records": [
+    {
+      "source_archive": null,
+      "source_path": null,
+      "source_sha256": null,
+      "disposition": "new-publication-documentation",
+      "public_path": "learning-guide/STATUS-2026-10-11.md",
+      "public_sha256": "4888dadf6a58c2c039c88f89af50101e79ce3c9f4ba96d4ad77627c69344a311",
+      "bytes": 1749,
+      "transformation": "Dated addendum preserves the reviewed guide and updates finite-field completion and the uncompleted formalization scope at the usage cutoff."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/.gitignore",
+      "source_sha256": "9f200edee71c21b9c3845d2160f60bb3fc1becc14a72b9cd4cde76cab11a0379",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/.gitignore",
+      "public_sha256": "9f200edee71c21b9c3845d2160f60bb3fc1becc14a72b9cd4cde76cab11a0379",
+      "bytes": 54
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/FiniteFieldMixing.lean",
+      "source_sha256": "b312862229a027ebbd31e190cbaee4b991c545af91fc2fc04b058d066365e4a1",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/FiniteFieldMixing.lean",
+      "public_sha256": "b312862229a027ebbd31e190cbaee4b991c545af91fc2fc04b058d066365e4a1",
+      "bytes": 69
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/FiniteFieldMixing/Bilinear.lean",
+      "source_sha256": "a0b8cd783ae6c4ffad4a827404080f38454ea3a04ef3ba0e0b53d495c61471aa",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/FiniteFieldMixing/Bilinear.lean",
+      "public_sha256": "a0b8cd783ae6c4ffad4a827404080f38454ea3a04ef3ba0e0b53d495c61471aa",
+      "bytes": 7084
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/FiniteFieldMixing/Counting.lean",
+      "source_sha256": "37c26836ca79f7bd66be031d6f71b8982069ea46dbf4c0bf72a4d2821a5f5bd0",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/FiniteFieldMixing/Counting.lean",
+      "public_sha256": "37c26836ca79f7bd66be031d6f71b8982069ea46dbf4c0bf72a4d2821a5f5bd0",
+      "bytes": 9698
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/FiniteFieldMixing/DivisorLift.lean",
+      "source_sha256": "b71a6f8759dd1b262e9d884b6459f784d505b18dbd6711e9ba96e0f0e1681bf0",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/FiniteFieldMixing/DivisorLift.lean",
+      "public_sha256": "b71a6f8759dd1b262e9d884b6459f784d505b18dbd6711e9ba96e0f0e1681bf0",
+      "bytes": 3629
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/FiniteFieldMixing/Fourier.lean",
+      "source_sha256": "9cd038dce2236aff8549400073687b022812c84bb84d840e13d78dca7b80ec3c",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/FiniteFieldMixing/Fourier.lean",
+      "public_sha256": "9cd038dce2236aff8549400073687b022812c84bb84d840e13d78dca7b80ec3c",
+      "bytes": 6086
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/FiniteFieldMixing/FourierBounds.lean",
+      "source_sha256": "a8cf89386c577ede1f6fd45556a5c53beb58eee89cc4fb786403322a26febdc2",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/FiniteFieldMixing/FourierBounds.lean",
+      "public_sha256": "a8cf89386c577ede1f6fd45556a5c53beb58eee89cc4fb786403322a26febdc2",
+      "bytes": 6027
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/FiniteFieldMixing/Mixing.lean",
+      "source_sha256": "b1c3bf778f67944a379d1718dd4ea09337b5f4e63cb1de5e86906fef27217a8f",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/FiniteFieldMixing/Mixing.lean",
+      "public_sha256": "b1c3bf778f67944a379d1718dd4ea09337b5f4e63cb1de5e86906fef27217a8f",
+      "bytes": 4664
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/FiniteFieldMixing/Normalization.lean",
+      "source_sha256": "db255a17625d4cc166df198ccacb63e73994e074c14408db1ced98c6cf7f4a02",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/FiniteFieldMixing/Normalization.lean",
+      "public_sha256": "db255a17625d4cc166df198ccacb63e73994e074c14408db1ced98c6cf7f4a02",
+      "bytes": 4382
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/FiniteFieldMixing/Threshold.lean",
+      "source_sha256": "81ec5f1e8bf4627b1874ecb002c4d36c8ebaf3f9c4cadd11babdc7ea2487f3e9",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/FiniteFieldMixing/Threshold.lean",
+      "public_sha256": "81ec5f1e8bf4627b1874ecb002c4d36c8ebaf3f9c4cadd11babdc7ea2487f3e9",
+      "bytes": 3840
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/README.md",
+      "source_sha256": "e7ead614b9ea3582a5544fcf2753d9831d422e127136df7c4ca0ddef66dbf55a",
+      "disposition": "edited-documentation",
+      "public_path": "finite-field-product-mixing/README.md",
+      "public_sha256": "8f8ef4ce044d04470ed051c6e950d13747235d5effa955a79f8e6c0285229aef",
+      "bytes": 5377,
+      "transformation": "Removed private source identifiers and internal workflow details; linked existing public ordinary sources; clarified formal scope, historical receipt boundary, omitted reproduction programs and license attribution."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/SOURCE-SHA256.json",
+      "source_sha256": "b18300b6e56f7873c250295e2bf5ee2c557791a978bf00681f4bbf8dbb44a58c",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Original whole-archive manifest covers excluded and edited files; source/public mappings and a new scoped public manifest replace it without changing historical evidence."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/adversarial-review.md",
+      "source_sha256": "c8ddc1b1ee3e6702c6ce80badb09d51084b1c01453477d138df1640e32460862",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Historical full review depends on omitted private/environment-specific input packaging and execution instructions; selected formal audit is retained instead."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/declarations.json",
+      "source_sha256": "126520348439b2391779a4e3909f9af6850ff153960a12ddca21f03321f8b81c",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/evidence/declarations.json",
+      "public_sha256": "126520348439b2391779a4e3909f9af6850ff153960a12ddca21f03321f8b81c",
+      "bytes": 10884
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/divisor-lift-axioms.txt",
+      "source_sha256": "a50a2adc8d29dbc6449de92e216cf9a9e4cb71250cff7e80bf81f6d2c2b067fc",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Intermediate partial axiom receipt superseded by retained final all-declaration inventory."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/environment.log",
+      "source_sha256": "b1501c5481549786b401fa7d0faf5f3a3e0c4d52f2707c745af10bbeab6f9a2f",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/evidence/environment.log",
+      "public_sha256": "b1501c5481549786b401fa7d0faf5f3a3e0c4d52f2707c745af10bbeab6f9a2f",
+      "bytes": 470
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/final-build.log",
+      "source_sha256": "6d42c2fde2d2e71bc75cd9e86eacee4f3683f58a2f14ef690d6617175b5caf3c",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Historical compiler path is environment-specific; retained final audit preserves this log hash and build summary without editing the hashed receipt."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/final-independent-audit.json",
+      "source_sha256": "0f21d9a9710607337cfa649f866d8f85a1f8def41ebc9f93ccceb4c7d46e6d72",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/evidence/final-independent-audit.json",
+      "public_sha256": "0f21d9a9710607337cfa649f866d8f85a1f8def41ebc9f93ccceb4c7d46e6d72",
+      "bytes": 9048
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/final-theorem-inventory.log",
+      "source_sha256": "4b142ad6f5e4103924b73b43a69c66d6bbb6ee40fdd51aaaf9f9ccc984c6d467",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/evidence/final-theorem-inventory.log",
+      "public_sha256": "4b142ad6f5e4103924b73b43a69c66d6bbb6ee40fdd51aaaf9f9ccc984c6d467",
+      "bytes": 28056
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/formal-scope.json",
+      "source_sha256": "8325c382dda907018a0b9ebdc0c5f10fa68bdaa8f782d7f55c760eb9a87a976c",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/evidence/formal-scope.json",
+      "public_sha256": "8325c382dda907018a0b9ebdc0c5f10fa68bdaa8f782d7f55c760eb9a87a976c",
+      "bytes": 1803
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/fourier-axioms.txt",
+      "source_sha256": "d3e498ff02188556f54704bc8e7af3805e5498b2f0517ff6759130001d89c236",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Intermediate partial axiom receipt superseded by retained final all-declaration inventory."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/lean-smoke-tests.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Empty historical diagnostics file; the retained final audit records its empty-file hash and successful exit status."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/portable-source-check.json",
+      "source_sha256": "b84eac6deceb957a83af855809a91057ef1c268c13009376021745faa48eafe1",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Receipt describes the omitted reference ZIP and original checker, not the public subset."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/provenance.json",
+      "source_sha256": "47ebbefd06529462bbc87073e0c85ed188f6733176f7733f9b3f55da215ec371",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Contains private source identifiers and internal runtime/coordination metadata."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/small-prime-tests.json",
+      "source_sha256": "22265d85e40c0af8fe9cc42df73012bef5e76ebd379f2b4aed12ac3fd0a4c7b3",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Contains an absolute source-materialization path and refers to omitted checker/input artifacts; preserved historical receipt is not silently rewritten."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/source-audit.json",
+      "source_sha256": "09afd3b6e90e9174e5d4b5bb5d07acb7ff0c3014d3f7cd8cc0e872dd0200a7c3",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/evidence/source-audit.json",
+      "public_sha256": "09afd3b6e90e9174e5d4b5bb5d07acb7ff0c3014d3f7cd8cc0e872dd0200a7c3",
+      "bytes": 1272
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/source-audit.log",
+      "source_sha256": "09afd3b6e90e9174e5d4b5bb5d07acb7ff0c3014d3f7cd8cc0e872dd0200a7c3",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Exact duplicate of the retained source-audit.json."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/evidence/tangent-source-before.json",
+      "source_sha256": "45d36b2846afb5a7e37a4c463767b70c561944c246fc78c3ceae79bc64eb7fc8",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Historical unrelated-project inventory with absolute environment paths."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/lake-manifest.json",
+      "source_sha256": "e9f6485d1e52897c6bf15bdc8edfb8868c334ee1baa57827b5421aa2765a4e07",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/lake-manifest.json",
+      "public_sha256": "e9f6485d1e52897c6bf15bdc8edfb8868c334ee1baa57827b5421aa2765a4e07",
+      "bytes": 3554
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/lakefile.toml",
+      "source_sha256": "bd25c73d19a519fbccd1f3d5c512283888efe9ccbe09007f361a3b9d8d9409f9",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/lakefile.toml",
+      "public_sha256": "bd25c73d19a519fbccd1f3d5c512283888efe9ccbe09007f361a3b9d8d9409f9",
+      "bytes": 306
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/lean-toolchain",
+      "source_sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/lean-toolchain",
+      "public_sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+      "bytes": 25
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/logs/bilinear-axioms.log",
+      "source_sha256": "52d29a39b669b65a8b66e4e3085a2a35815090a02592d554222ddc50654bc586",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Intermediate partial axiom receipt superseded by retained final all-declaration inventory."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/notes/proof-notes.md",
+      "source_sha256": "2e5190e4429528b04b6a0212ecebcf3bc0b38272d4386571c26bf83199be8f19",
+      "disposition": "edited-documentation",
+      "public_path": "finite-field-product-mixing/notes/proof-notes.md",
+      "public_sha256": "f8e20defccdf4191355dfcce549bb22e3d46111c0dc5d5f5b28be7d10b70550c",
+      "bytes": 5916,
+      "transformation": "Replaced embedded/private reference metadata with a revision-pinned public study link; described omitted historical evidence without altering the mathematical argument."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/reference/openai-math-reviewed-supplement-2026-10-11.zip",
+      "source_sha256": "9e03b1ce33dc5d5fa62ab9478b06998bcb0eb32635fc11bccac065223e892a74",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Nested original input package is omitted; existing reviewed public study links provide the appropriate source context."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/reference/source-identity.json",
+      "source_sha256": "73f51442312cf45d2e8cc76e5b2dabc351a93690474eeb2c5e799b63ba4ae08f",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Contains private source identifiers and an absolute materialization path."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/scripts/SmokeTests.lean",
+      "source_sha256": "cd42b604fb2ffb50865e6e419a6986e52a15044f3c6fdd0b874349996af428f9",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/scripts/SmokeTests.lean",
+      "public_sha256": "cd42b604fb2ffb50865e6e419a6986e52a15044f3c6fdd0b874349996af428f9",
+      "bytes": 876
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/scripts/TheoremInventory.lean",
+      "source_sha256": "46902b57af26780aeba64b2ca700ac5bf41a7dbe1038a05bc8a8f069caff9c0e",
+      "disposition": "byte-identical",
+      "public_path": "finite-field-product-mixing/scripts/TheoremInventory.lean",
+      "public_sha256": "46902b57af26780aeba64b2ca700ac5bf41a7dbe1038a05bc8a8f069caff9c0e",
+      "bytes": 8923
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/scripts/audit_sources.py",
+      "source_sha256": "88f5fac671351c5833901cd8c9afb258595a4f7a90cf1d5037829e3ac710e124",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Environment-specific historical program depends on omitted unrelated-project inventory; implementation is left unchanged and not shipped."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/scripts/check_small_primes.py",
+      "source_sha256": "6a790c22bb869b006537c55e8183cd7be29d7b228e6e53860e6c3a26098d3db4",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Historical program depends on omitted original input ZIP and original workspace layout; implementation is left unchanged and not shipped."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/scripts/checkpoint.py",
+      "source_sha256": "d9dc6ff47e0c0bc846d084147fff791abd2e7cbdf2bfe3abd0706ba634f32e7b",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Original packaging helper is unnecessary for the public mathematical source subset."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/scripts/environment.sh",
+      "source_sha256": "80e9189110d1986ae31d085f4405783d0b9b6031fe34650d844e714d0f0a6120",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Original environment-selection helper refers to a separate private workspace layout."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/scripts/generate_inventory.py",
+      "source_sha256": "67dd14e27c5b829a375c227868d37ef44a4cf301ad24afddf5dba34437b50094",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Optional generator is unnecessary because the exact complete Lean inventory is retained; omitted to keep the minimal set."
+    },
+    {
+      "source_archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "source_path": "finite-field-product-mixing/scripts/verify.sh",
+      "source_sha256": "07da5b090ffe5da955bfdad591587ae829daf1620df3629c693ad31acc6d4d99",
+      "disposition": "excluded",
+      "public_path": null,
+      "public_sha256": null,
+      "reason": "Historical wrapper depends on omitted environment and audit helpers; its receipt is retained but the wrapper is not represented as portable."
+    },
+    {
+      "source_archive": "verified-mathematical-techniques-2026-10-11.zip",
+      "source_path": "learning-guide/independent-review.md",
+      "source_sha256": "0ddd8426cd99224735b19d89cb9588ac5f29d26221a46fdd3cf27333db9d03d7",
+      "disposition": "byte-identical",
+      "public_path": "learning-guide/independent-review.md",
+      "public_sha256": "0ddd8426cd99224735b19d89cb9588ac5f29d26221a46fdd3cf27333db9d03d7",
+      "bytes": 4664
+    },
+    {
+      "source_archive": "verified-mathematical-techniques-2026-10-11.zip",
+      "source_path": "learning-guide/validation.json",
+      "source_sha256": "c33f6704aae4c00258792c2be9768a0a7b4ff8fe9d144e99b665075f5a8629a4",
+      "disposition": "byte-identical",
+      "public_path": "learning-guide/validation.json",
+      "public_sha256": "c33f6704aae4c00258792c2be9768a0a7b4ff8fe9d144e99b665075f5a8629a4",
+      "bytes": 877
+    },
+    {
+      "source_archive": "verified-mathematical-techniques-2026-10-11.zip",
+      "source_path": "learning-guide/verified-techniques.md",
+      "source_sha256": "89331a70131ad5c28c5a162ab7457b6ea85ce2ea192d35f6dfe7817b50bfd155",
+      "disposition": "byte-identical",
+      "public_path": "learning-guide/verified-techniques.md",
+      "public_sha256": "89331a70131ad5c28c5a162ab7457b6ea85ce2ea192d35f6dfe7817b50bfd155",
+      "bytes": 40523
+    }
+  ]
+}

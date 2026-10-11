@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "scope": "Only this finite-field/guide publication batch. This manifest excludes itself to avoid self-reference.",
+  "files": [
+    {
+      "path": "finite-field-product-mixing/.gitignore",
+      "sha256": "9f200edee71c21b9c3845d2160f60bb3fc1becc14a72b9cd4cde76cab11a0379",
+      "bytes": 54
+    },
+    {
+      "path": "finite-field-product-mixing/FiniteFieldMixing/Bilinear.lean",
+      "sha256": "a0b8cd783ae6c4ffad4a827404080f38454ea3a04ef3ba0e0b53d495c61471aa",
+      "bytes": 7084
+    },
+    {
+      "path": "finite-field-product-mixing/FiniteFieldMixing/Counting.lean",
+      "sha256": "37c26836ca79f7bd66be031d6f71b8982069ea46dbf4c0bf72a4d2821a5f5bd0",
+      "bytes": 9698
+    },
+    {
+      "path": "finite-field-product-mixing/FiniteFieldMixing/DivisorLift.lean",
+      "sha256": "b71a6f8759dd1b262e9d884b6459f784d505b18dbd6711e9ba96e0f0e1681bf0",
+      "bytes": 3629
+    },
+    {
+      "path": "finite-field-product-mixing/FiniteFieldMixing/Fourier.lean",
+      "sha256": "9cd038dce2236aff8549400073687b022812c84bb84d840e13d78dca7b80ec3c",
+      "bytes": 6086
+    },
+    {
+      "path": "finite-field-product-mixing/FiniteFieldMixing/FourierBounds.lean",
+      "sha256": "a8cf89386c577ede1f6fd45556a5c53beb58eee89cc4fb786403322a26febdc2",
+      "bytes": 6027
+    },
+    {
+      "path": "finite-field-product-mixing/FiniteFieldMixing/Mixing.lean",
+      "sha256": "b1c3bf778f67944a379d1718dd4ea09337b5f4e63cb1de5e86906fef27217a8f",
+      "bytes": 4664
+    },
+    {
+      "path": "finite-field-product-mixing/FiniteFieldMixing/Normalization.lean",
+      "sha256": "db255a17625d4cc166df198ccacb63e73994e074c14408db1ced98c6cf7f4a02",
+      "bytes": 4382
+    },
+    {
+      "path": "finite-field-product-mixing/FiniteFieldMixing/Threshold.lean",
+      "sha256": "81ec5f1e8bf4627b1874ecb002c4d36c8ebaf3f9c4cadd11babdc7ea2487f3e9",
+      "bytes": 3840
+    },
+    {
+      "path": "finite-field-product-mixing/FiniteFieldMixing.lean",
+      "sha256": "b312862229a027ebbd31e190cbaee4b991c545af91fc2fc04b058d066365e4a1",
+      "bytes": 69
+    },
+    {
+      "path": "finite-field-product-mixing/README.md",
+      "sha256": "8f8ef4ce044d04470ed051c6e950d13747235d5effa955a79f8e6c0285229aef",
+      "bytes": 5377
+    },
+    {
+      "path": "finite-field-product-mixing/evidence/declarations.json",
+      "sha256": "126520348439b2391779a4e3909f9af6850ff153960a12ddca21f03321f8b81c",
+      "bytes": 10884
+    },
+    {
+      "path": "finite-field-product-mixing/evidence/environment.log",
+      "sha256": "b1501c5481549786b401fa7d0faf5f3a3e0c4d52f2707c745af10bbeab6f9a2f",
+      "bytes": 470
+    },
+    {
+      "path": "finite-field-product-mixing/evidence/final-independent-audit.json",
+      "sha256": "0f21d9a9710607337cfa649f866d8f85a1f8def41ebc9f93ccceb4c7d46e6d72",
+      "bytes": 9048
+    },
+    {
+      "path": "finite-field-product-mixing/evidence/final-theorem-inventory.log",
+      "sha256": "4b142ad6f5e4103924b73b43a69c66d6bbb6ee40fdd51aaaf9f9ccc984c6d467",
+      "bytes": 28056
+    },
+    {
+      "path": "finite-field-product-mixing/evidence/formal-scope.json",
+      "sha256": "8325c382dda907018a0b9ebdc0c5f10fa68bdaa8f782d7f55c760eb9a87a976c",
+      "bytes": 1803
+    },
+    {
+      "path": "finite-field-product-mixing/evidence/source-audit.json",
+      "sha256": "09afd3b6e90e9174e5d4b5bb5d07acb7ff0c3014d3f7cd8cc0e872dd0200a7c3",
+      "bytes": 1272
+    },
+    {
+      "path": "finite-field-product-mixing/lake-manifest.json",
+      "sha256": "e9f6485d1e52897c6bf15bdc8edfb8868c334ee1baa57827b5421aa2765a4e07",
+      "bytes": 3554
+    },
+    {
+      "path": "finite-field-product-mixing/lakefile.toml",
+      "sha256": "bd25c73d19a519fbccd1f3d5c512283888efe9ccbe09007f361a3b9d8d9409f9",
+      "bytes": 306
+    },
+    {
+      "path": "finite-field-product-mixing/lean-toolchain",
+      "sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+      "bytes": 25
+    },
+    {
+      "path": "finite-field-product-mixing/notes/proof-notes.md",
+      "sha256": "f8e20defccdf4191355dfcce549bb22e3d46111c0dc5d5f5b28be7d10b70550c",
+      "bytes": 5916
+    },
+    {
+      "path": "finite-field-product-mixing/scripts/SmokeTests.lean",
+      "sha256": "cd42b604fb2ffb50865e6e419a6986e52a15044f3c6fdd0b874349996af428f9",
+      "bytes": 876
+    },
+    {
+      "path": "finite-field-product-mixing/scripts/TheoremInventory.lean",
+      "sha256": "46902b57af26780aeba64b2ca700ac5bf41a7dbe1038a05bc8a8f069caff9c0e",
+      "bytes": 8923
+    },
+    {
+      "path": "learning-guide/STATUS-2026-10-11.md",
+      "sha256": "4888dadf6a58c2c039c88f89af50101e79ce3c9f4ba96d4ad77627c69344a311",
+      "bytes": 1749
+    },
+    {
+      "path": "learning-guide/independent-review.md",
+      "sha256": "0ddd8426cd99224735b19d89cb9588ac5f29d26221a46fdd3cf27333db9d03d7",
+      "bytes": 4664
+    },
+    {
+      "path": "learning-guide/validation.json",
+      "sha256": "c33f6704aae4c00258792c2be9768a0a7b4ff8fe9d144e99b665075f5a8629a4",
+      "bytes": 877
+    },
+    {
+      "path": "learning-guide/verified-techniques.md",
+      "sha256": "89331a70131ad5c28c5a162ab7457b6ea85ce2ea192d35f6dfe7817b50bfd155",
+      "bytes": 40523
+    },
+    {
+      "path": "publication/FINITE-FIELD-GUIDE-SOURCE-MAP.json",
+      "sha256": "44f9da47c9bc342a83bbbb90c1b77f2a760346dfc6ddc84974484022ebd47133",
+      "bytes": 24092
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+2026-10-11 03:25:34 UTC
+Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)
+Lake version 5.0.0-src+797c613 (Lean version 4.24.0)
+f897ebcf72cd16f89ab4577d0c826cd14afaafc7
+42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434  lean-toolchain
+bd25c73d19a519fbccd1f3d5c512283888efe9ccbe09007f361a3b9d8d9409f9  lakefile.toml
+e9f6485d1e52897c6bf15bdc8edfb8868c334ee1baa57827b5421aa2765a4e07  lake-manifest.json

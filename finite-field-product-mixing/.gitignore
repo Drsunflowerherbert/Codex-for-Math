@@ -1,0 +1,5 @@
+.lake/
+.lake-packages-shared
+scratch/
+*.olean
+*.ilean

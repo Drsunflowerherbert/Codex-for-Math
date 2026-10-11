@@ -9,6 +9,8 @@ bundles on 11 October 2026:
 | [Radial contact](radial-contact/README.md) | 47 audited Lean declarations in arbitrary real normed spaces; explicit assumptions, independent review, reproducibility checks and 27 regression tests. |
 | [Exact-length Egyptian fractions](egyptian-exact/README.md) | 42 Lean theorems for exact-length cleanup, finite-state termination and marker-preserving padding, with reviews and exact checks. |
 | [Sharp tangent series](tangent-sharp/README.md) | Conditional absolute summability iff real s > 1, and unconditional nonsummability for s ≤ 1; 78 declaration audits. PiDiophantine remains assumed. |
+| [Finite-field product mixing](finite-field-product-mixing/README.md) | 85 audited declarations, including the four-product covering criterion and local divisor lift; supplied completed build evidence, with publication-only receipt inspection. |
+| [Verified techniques guide](learning-guide/verified-techniques.md) | Nine reusable proof methods, examples and study plan; see the dated [status addendum](learning-guide/STATUS-2026-10-11.md). |
 
 All Lean projects pin Lean/mathlib 4.24.0. Mathematical scope, current versus
 historical evidence, exclusions, privacy review and reproduction records are

@@ -1,0 +1,24 @@
+{
+  "status": "pass",
+  "declarations_audited": 85,
+  "observed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "no_placeholders": true,
+  "no_new_axiom_declarations": true,
+  "tangent_source_hashes_unchanged": true,
+  "tangent_git_status": "clean",
+  "lean_source_hashes": {
+    "FiniteFieldMixing.lean": "b312862229a027ebbd31e190cbaee4b991c545af91fc2fc04b058d066365e4a1",
+    "FiniteFieldMixing/Bilinear.lean": "a0b8cd783ae6c4ffad4a827404080f38454ea3a04ef3ba0e0b53d495c61471aa",
+    "FiniteFieldMixing/Counting.lean": "37c26836ca79f7bd66be031d6f71b8982069ea46dbf4c0bf72a4d2821a5f5bd0",
+    "FiniteFieldMixing/DivisorLift.lean": "b71a6f8759dd1b262e9d884b6459f784d505b18dbd6711e9ba96e0f0e1681bf0",
+    "FiniteFieldMixing/Fourier.lean": "9cd038dce2236aff8549400073687b022812c84bb84d840e13d78dca7b80ec3c",
+    "FiniteFieldMixing/FourierBounds.lean": "a8cf89386c577ede1f6fd45556a5c53beb58eee89cc4fb786403322a26febdc2",
+    "FiniteFieldMixing/Mixing.lean": "b1c3bf778f67944a379d1718dd4ea09337b5f4e63cb1de5e86906fef27217a8f",
+    "FiniteFieldMixing/Normalization.lean": "db255a17625d4cc166df198ccacb63e73994e074c14408db1ced98c6cf7f4a02",
+    "FiniteFieldMixing/Threshold.lean": "81ec5f1e8bf4627b1874ecb002c4d36c8ebaf3f9c4cadd11babdc7ea2487f3e9"
+  }
+}
