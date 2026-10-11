@@ -1,0 +1,18 @@
+COMMAND: lean --version
+Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)
+COMMAND: lake --version
+Lake version 5.0.0-src+797c613 (Lean version 4.24.0)
+PIN lean-toolchain 42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434
+PIN lakefile.toml 8a0795707a9dfe1849a315b5c4295c81ae017ad372a7944464fa1cb01eaa186a
+PIN lake-manifest.json b944c3b78c23f888779246046dcb33f0d3e3483470ee200e2732a51ef68c49ad
+DEPENDENCY mathlib f897ebcf72cd16f89ab4577d0c826cd14afaafc7
+DEPENDENCY plausible dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805
+DEPENDENCY LeanSearchClient 99657ad92e23804e279f77ea6dbdeebaa1317b98
+DEPENDENCY importGraph d768126816be17600904726ca7976b185786e6b9
+DEPENDENCY proofwidgets 556caed0eadb7901e068131d1be208dd907d07a2
+DEPENDENCY aesop 725ac8cd67acd70a7beaf47c3725e23484c1ef50
+DEPENDENCY Qq dea6a3361fa36d5a13f87333dc506ada582e025c
+DEPENDENCY batteries 8da40b72fece29b7d3fe3d768bac4c8910ce9bee
+DEPENDENCY Cli 91c18fa62838ad0ab7384c03c9684d99d306e1da
+PASS exact compiler and all nine dependency pins
+EXIT: 0

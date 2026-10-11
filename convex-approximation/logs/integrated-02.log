@@ -1,0 +1,12 @@
+✖ [7357/7361] Building ConvexApprox.Approximation (4.6s)
+trace: .> LEAN_PATH=<project>/.lake/packages/Cli/.lake/build/lib/lean:<project>/.lake/packages/batteries/.lake/build/lib/lean:<project>/.lake/packages/Qq/.lake/build/lib/lean:<project>/.lake/packages/aesop/.lake/build/lib/lean:<project>/.lake/packages/proofwidgets/.lake/build/lib/lean:<project>/.lake/packages/importGraph/.lake/build/lib/lean:<project>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<project>/.lake/packages/plausible/.lake/build/lib/lean:<project>/.lake/packages/mathlib/.lake/build/lib/lean:<project>/.lake/build/lib/lean <lean-4.24.0>/bin/lean <project>/ConvexApprox/Approximation.lean -o <project>/.lake/build/lib/lean/ConvexApprox/Approximation.olean -i <project>/.lake/build/lib/lean/ConvexApprox/Approximation.ilean -c <project>/.lake/build/ir/ConvexApprox/Approximation.c --setup <project>/.lake/build/ir/ConvexApprox/Approximation.setup.json --json
+error: ConvexApprox/Approximation.lean:275:34: Type mismatch
+  LT.lt.le ?m.108
+has type
+  ?m.106 ≤ ?m.107
+but is expected to have type
+  x✝ ∈ {x | supportBarrier K D ε t x ≤ 1}
+error: Lean exited with code 1
+Some required targets logged failures:
+- ConvexApprox.Approximation
+error: build failed

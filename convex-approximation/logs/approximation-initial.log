@@ -1,0 +1,37 @@
+⚠ [7352/7356] Replayed ConvexApprox.Sublevels
+warning: ConvexApprox/Sublevels.lean:144:112: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ConvexApprox/Sublevels.lean:173:4: Try this:
+  ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✖ [7356/7356] Building ConvexApprox.Approximation (4.4s)
+trace: .> LEAN_PATH=<project>/.lake/packages/Cli/.lake/build/lib/lean:<project>/.lake/packages/batteries/.lake/build/lib/lean:<project>/.lake/packages/Qq/.lake/build/lib/lean:<project>/.lake/packages/aesop/.lake/build/lib/lean:<project>/.lake/packages/proofwidgets/.lake/build/lib/lean:<project>/.lake/packages/importGraph/.lake/build/lib/lean:<project>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<project>/.lake/packages/plausible/.lake/build/lib/lean:<project>/.lake/packages/mathlib/.lake/build/lib/lean:<project>/.lake/build/lib/lean <lean-4.24.0>/bin/lean <project>/ConvexApprox/Approximation.lean -o <project>/.lake/build/lib/lean/ConvexApprox/Approximation.olean -i <project>/.lake/build/lib/lean/ConvexApprox/Approximation.ilean -c <project>/.lake/build/ir/ConvexApprox/Approximation.c --setup <project>/.lake/build/ir/ConvexApprox/Approximation.setup.json --json
+error: ConvexApprox/Approximation.lean:26:8: typeclass instance problem is stuck, it is often due to metavariables
+  AddCommMonoid ?m.31
+error: ConvexApprox/Approximation.lean:49:8: failed to synthesize
+  Fintype E
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ConvexApprox/Approximation.lean:51:2: No goals to be solved
+error: ConvexApprox/Approximation.lean:93:42: Unknown identifier `hne`
+error: ConvexApprox/Approximation.lean:103:42: Unknown identifier `hne`
+error: ConvexApprox/Approximation.lean:116:23: Invalid field notation: Type is not of the form `C ...` where C is a constant
+  u
+has type
+  E
+error: ConvexApprox/Approximation.lean:115:8: failed to synthesize
+  Fintype E
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ConvexApprox/Approximation.lean:118:2: No goals to be solved
+error: ConvexApprox/Approximation.lean:161:38: Unknown identifier `hne`
+error: ConvexApprox/Approximation.lean:171:38: Unknown identifier `hne`
+error: ConvexApprox/Approximation.lean:182:38: Unknown identifier `hne`
+error: Lean exited with code 1
+Some required targets logged failures:
+- ConvexApprox.Approximation
+error: build failed

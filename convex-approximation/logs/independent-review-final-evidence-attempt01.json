@@ -1,0 +1,763 @@
+{
+  "started_utc": "2026-10-11T04:36:39.654572+00:00",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "logs/independent-review-types-axioms.lean"
+  ],
+  "exit_status": 1,
+  "source_and_pin_sha256": {
+    "ConvexApprox.lean": "ce9651297454f7d041f743c902140ce1dc1169d323e069b306fa27c9e0079b83",
+    "ConvexApprox/Approximation.lean": "03fb55cef6fcd918ccc5afb2600999100536a3a705732b451b1e96e5772b0b96",
+    "ConvexApprox/Barrier.lean": "4c0780c81888cf24f8c8471d1479d926b48568355a21e58971dd87a6568ee98a",
+    "ConvexApprox/Construction.lean": "00c83e18bde1c8c61bc619d548e40f2267cd1fec1b5c4d8663653d0f923cf14f",
+    "ConvexApprox/Examples.lean": "d99dac7d3f6f1b5a489b728f4d9645ebaac364eb02ef1ae6ef49d7ba8584afe1",
+    "ConvexApprox/Geometry.lean": "54dfd0e3a0547dd3f13055f907c85a428a675b6c4793914d41879e75e37e4ea6",
+    "ConvexApprox/Nesting.lean": "8cbe72a7fbe85c4f58befaa1a1556e068d404b21e35abec2c81debe3aa29b3a9",
+    "ConvexApprox/OuterApprox.lean": "85fa97680a78ad7f842c9afa9208923399bdf1dee24b4d83c2762e1ff7704452",
+    "ConvexApprox/Quantitative.lean": "3c6ebd065abd02f613738efc6cf0e1ab17b3e7fc6e84a2b98f631f8d4bb50dae",
+    "ConvexApprox/Sublevels.lean": "18c9fb9d73eba349073616fed1f066c8facdcef5a669e53964b24e0800efe1a2",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lakefile.toml": "8a0795707a9dfe1849a315b5c4295c81ae017ad372a7944464fa1cb01eaa186a",
+    "lake-manifest.json": "b944c3b78c23f888779246046dcb33f0d3e3483470ee200e2732a51ef68c49ad"
+  },
+  "source_unchanged_during_audit": true,
+  "module_count": 9,
+  "declaration_count": 145,
+  "theorem_count": 124,
+  "inventory": [
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "def",
+      "name": "ConvexApprox.supportBarrier"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.supportBarrier_eq_sum"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.supportBarrier_eq_barrier"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.contDiff_supportBarrier"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.supportBarrier_halfspace"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.supportBarrier_lt_one"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.net_positive_cover"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.supportValue_sub_inner_le_diam"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.exp_lower_supportBarrier"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.isCompact_supportBarrier_sublevel"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.tendsto_supportBarrier_atTop"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.supportBarrier_inner_tube"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.strictConvexOn_supportBarrier"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.supportBarrier_outer_error"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.supportBarrier_hausdorff_error"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.closure_supportBarrier_lt"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.frontier_supportBarrier_lt"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.fderiv_supportBarrier_ne_zero"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.supportBarrier_certified_nesting"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.supportBarrier_hessian_pos"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.supportBarrier_outer_approximation"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.supportBarrier_open_chord"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.strictConvex_supportBarrier_closed"
+    },
+    {
+      "source": "ConvexApprox/Approximation.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.convex_supportBarrier_open"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "def",
+      "name": "ConvexApprox.barrier"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "def",
+      "name": "ConvexApprox.barrierDeriv"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "def",
+      "name": "ConvexApprox.barrierHessian"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.hasFDerivAt_barrier"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.hasFDerivAt_barrierDeriv"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.fderiv_barrier"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.fderiv_barrierDeriv"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.barrierDeriv_apply"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.barrierHessian_apply"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.barrierHessian_diag"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.contDiff_barrier"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.fderiv_fderiv_barrier"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.barrierHessian_symmetric"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.barrierHessian_nonneg"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.barrierHessian_pos_of_exists"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.barrierHessian_pos"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "lemma",
+      "name": "ConvexApprox.affineCombination"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "lemma",
+      "name": "ConvexApprox.convexOn_barrier"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "lemma",
+      "name": "ConvexApprox.strictConvexOn_barrier"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.barrier_supporting"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.barrierDeriv_apply_pos_of_level"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.barrierDeriv_ne_zero_of_level"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.closure_barrier_lt"
+    },
+    {
+      "source": "ConvexApprox/Barrier.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.frontier_barrier_lt"
+    },
+    {
+      "source": "ConvexApprox/Construction.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.exists_outer_parameters_containing"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "def",
+      "name": "ConvexApprox.Examples.horizontal"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "def",
+      "name": "ConvexApprox.Examples.vertical"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "def",
+      "name": "ConvexApprox.Examples.planarSegment"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.horizontal_norm"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.vertical_norm"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "def",
+      "name": "ConvexApprox.Examples.planarAxes"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.planarAxes_unit"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.exists_planarNet"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.planarSegment_nonempty"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.planarSegment_compact"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.planarSegment_convex"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.planarSegment_eq_image"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.horizontal_mem_planarSegment"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.horizontal_ne_zero"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.planarSegment_diam"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.planarSegment_vertical_zero"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.planarSegment_interior_empty"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.planarSegment_infDist_le_exact_outer_error"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.planarSingleton_norm_le_outer_error"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.planarSegment_barrier_compact"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.planarSegment_barrier_lt_one"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.planarSegment_barrier_hausdorff_error"
+    },
+    {
+      "source": "ConvexApprox/Examples.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.Examples.planarSingleton_barrier_radius"
+    },
+    {
+      "source": "ConvexApprox/Geometry.lean",
+      "kind": "def",
+      "name": "ConvexApprox.IsChordalNet"
+    },
+    {
+      "source": "ConvexApprox/Geometry.lean",
+      "kind": "def",
+      "name": "ConvexApprox.supportValue"
+    },
+    {
+      "source": "ConvexApprox/Geometry.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.exists_support_maximizer"
+    },
+    {
+      "source": "ConvexApprox/Geometry.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.exists_supportValue_eq"
+    },
+    {
+      "source": "ConvexApprox/Geometry.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.inner_le_supportValue"
+    },
+    {
+      "source": "ConvexApprox/Geometry.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.nearest_point_normal"
+    },
+    {
+      "source": "ConvexApprox/Geometry.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.exists_chordalNet_containing"
+    },
+    {
+      "source": "ConvexApprox/Geometry.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.IsChordalNet.exists_inner_ge"
+    },
+    {
+      "source": "ConvexApprox/Geometry.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.IsChordalNet.exists_inner_ge_norm"
+    },
+    {
+      "source": "ConvexApprox/Geometry.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.IsChordalNet.exists_inner_pos"
+    },
+    {
+      "source": "ConvexApprox/Geometry.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.IsChordalNet.separates_points"
+    },
+    {
+      "source": "ConvexApprox/Geometry.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.IsChordalNet.eq_zero_of_inner_eq_zero"
+    },
+    {
+      "source": "ConvexApprox/Geometry.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.IsChordalNet.nonempty"
+    },
+    {
+      "source": "ConvexApprox/Geometry.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.IsChordalNet.two_le_card"
+    },
+    {
+      "source": "ConvexApprox/Geometry.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.IsChordalNet.span_eq_top"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "structure",
+      "name": "ConvexApprox.BarrierData"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "def",
+      "name": "ConvexApprox.BarrierData.error"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "def",
+      "name": "ConvexApprox.BarrierData.tubeMargin"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "def",
+      "name": "ConvexApprox.BarrierData.openSet"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "def",
+      "name": "ConvexApprox.BarrierData.closedSet"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.BarrierData.error_nonneg"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.BarrierData.tubeMargin_pos"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.exists_barrierData_error_lt"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "def",
+      "name": "ConvexApprox.chosenBarrierData"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.chosenBarrierData_error_lt"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "def",
+      "name": "ConvexApprox.nestedBarrierData"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.nestedBarrierData_error_lt"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.nestedBarrierData_gap"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.nestedBarrierData_compactly_nested"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.nestedBarrierData_compact_closure"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.nestedBarrierData_error_tendsto"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.nestedBarrierData_intersections"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.BarrierData.hausdorff_error"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.nestedBarrierData_hausdorff_tendsto"
+    },
+    {
+      "source": "ConvexApprox/Nesting.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.exists_smooth_outer_approximation"
+    },
+    {
+      "source": "ConvexApprox/OuterApprox.lean",
+      "kind": "def",
+      "name": "ConvexApprox.outerErrorBound"
+    },
+    {
+      "source": "ConvexApprox/OuterApprox.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.outerErrorBound_nonneg"
+    },
+    {
+      "source": "ConvexApprox/OuterApprox.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.infDist_le_outerErrorBound"
+    },
+    {
+      "source": "ConvexApprox/OuterApprox.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.outer_set_subset_tube"
+    },
+    {
+      "source": "ConvexApprox/OuterApprox.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.hausdorffDist_le_outerErrorBound"
+    },
+    {
+      "source": "ConvexApprox/OuterApprox.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.outerErrorBound_le_simple"
+    },
+    {
+      "source": "ConvexApprox/OuterApprox.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.infDist_le_exact_outer_error"
+    },
+    {
+      "source": "ConvexApprox/OuterApprox.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.hausdorffDist_le_exact_outer_error"
+    },
+    {
+      "source": "ConvexApprox/OuterApprox.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.singleton_norm_le_outer_error"
+    },
+    {
+      "source": "ConvexApprox/Quantitative.lean",
+      "kind": "def",
+      "name": "ConvexApprox.chordalCos"
+    },
+    {
+      "source": "ConvexApprox/Quantitative.lean",
+      "kind": "def",
+      "name": "ConvexApprox.chordalSin"
+    },
+    {
+      "source": "ConvexApprox/Quantitative.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.chordalCos_pos"
+    },
+    {
+      "source": "ConvexApprox/Quantitative.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.chordal_sq_lt_two"
+    },
+    {
+      "source": "ConvexApprox/Quantitative.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.unit_inner_eq_one_sub_half_sq"
+    },
+    {
+      "source": "ConvexApprox/Quantitative.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.chordalCos_le_inner"
+    },
+    {
+      "source": "ConvexApprox/Quantitative.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.unit_tangent_norm_sq"
+    },
+    {
+      "source": "ConvexApprox/Quantitative.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.chordalSin_nonneg"
+    },
+    {
+      "source": "ConvexApprox/Quantitative.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.chordalSin_sq"
+    },
+    {
+      "source": "ConvexApprox/Quantitative.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.unit_tangent_norm_le_chordalSin"
+    },
+    {
+      "source": "ConvexApprox/Quantitative.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.chordalSin_le"
+    },
+    {
+      "source": "ConvexApprox/Quantitative.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.support_displacement_le_chordalSin"
+    },
+    {
+      "source": "ConvexApprox/Quantitative.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.local_outer_error"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "def",
+      "name": "ConvexApprox.directionalBarrier"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.directionalBarrier_le"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.directionalBarrier_halfspace"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.directionalBarrier_tube"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.directionalBarrier_eq_barrier"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.contDiff_directionalBarrier"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.convexOn_directionalBarrier"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.strictConvexOn_directionalBarrier"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.directionalBarrier_lt_one_of_support"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.exp_lower_directionalBarrier"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.directionalBarrier_sublevel_radius"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.tendsto_directionalBarrier_atTop"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.isCompact_directionalBarrier_sublevel"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.cardinal_margin_iff"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.inner_margin_pos"
+    },
+    {
+      "source": "ConvexApprox/Sublevels.lean",
+      "kind": "theorem",
+      "name": "ConvexApprox.inner_margin_cardinal_eq"
+    }
+  ],
+  "placeholder_or_axiom_findings": [],
+  "observed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "unexpected_axioms": []
+}

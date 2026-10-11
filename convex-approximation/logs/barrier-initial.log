@@ -1,0 +1,25 @@
+ConvexApprox/Barrier.lean:96:2: error: linarith failed to find a contradiction
+case h1.h
+E : Type u_1
+inst✝¹ : NormedAddCommGroup E
+inst✝ : NormedSpace ℝ E
+L : E →L[ℝ] ℝ
+d : ℝ
+x y : E
+a c : ℝ
+h : a + c = 1
+a✝ : a * L x + c * L y - d < a * (L x - d) + c * (L y - d)
+⊢ False
+failed
+ConvexApprox/Barrier.lean:105:24: error(lean.unknownIdentifier): Unknown identifier `mem_univ`
+ConvexApprox/Barrier.lean:105:37: error(lean.unknownIdentifier): Unknown identifier `mem_univ`
+ConvexApprox/Barrier.lean:115:26: error(lean.unknownIdentifier): Unknown identifier `mem_univ`
+ConvexApprox/Barrier.lean:115:39: error(lean.unknownIdentifier): Unknown identifier `mem_univ`
+ConvexApprox/Barrier.lean:119:32: error(lean.unknownIdentifier): Unknown identifier `mem_univ`
+ConvexApprox/Barrier.lean:119:45: error(lean.unknownIdentifier): Unknown identifier `mem_univ`
+ConvexApprox/Barrier.lean:120:4: error: Type mismatch: After simplification, term
+  hi
+ has type
+  (L i) x ≠ (L i) y
+but is expected to have type
+  (L i) x - b i ≠ (L i) y - b i

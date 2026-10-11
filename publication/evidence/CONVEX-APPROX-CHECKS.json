@@ -1,0 +1,64 @@
+{
+  "schema": "convex-publication-fresh-checks-v1",
+  "checked_utc": "2026-10-11T04:49:59.048810+00:00",
+  "build_exit": 0,
+  "inventoried_type_axiom_audit_exit": 0,
+  "source_audit_exit": 0,
+  "supplemental_abbreviation_audit_exit": 0,
+  "modules": 9,
+  "inventoried_declarations_audited": 145,
+  "inventoried_theorem_lemma_statements": 124,
+  "inventoried_definitions": 20,
+  "inventoried_structures": 1,
+  "supplemental_abbreviations_audited": 1,
+  "explicit_named_source_declarations": 146,
+  "supplemental_name": "ConvexApprox.Examples.Plane",
+  "generated_structure_fields_separately_counted": false,
+  "observed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_and_pins_unchanged": true,
+  "source_and_pin_sha256": {
+    "ConvexApprox.lean": "ce9651297454f7d041f743c902140ce1dc1169d323e069b306fa27c9e0079b83",
+    "ConvexApprox/Approximation.lean": "03fb55cef6fcd918ccc5afb2600999100536a3a705732b451b1e96e5772b0b96",
+    "ConvexApprox/Barrier.lean": "4c0780c81888cf24f8c8471d1479d926b48568355a21e58971dd87a6568ee98a",
+    "ConvexApprox/Construction.lean": "00c83e18bde1c8c61bc619d548e40f2267cd1fec1b5c4d8663653d0f923cf14f",
+    "ConvexApprox/Examples.lean": "d99dac7d3f6f1b5a489b728f4d9645ebaac364eb02ef1ae6ef49d7ba8584afe1",
+    "ConvexApprox/Geometry.lean": "54dfd0e3a0547dd3f13055f907c85a428a675b6c4793914d41879e75e37e4ea6",
+    "ConvexApprox/Nesting.lean": "8cbe72a7fbe85c4f58befaa1a1556e068d404b21e35abec2c81debe3aa29b3a9",
+    "ConvexApprox/OuterApprox.lean": "85fa97680a78ad7f842c9afa9208923399bdf1dee24b4d83c2762e1ff7704452",
+    "ConvexApprox/Quantitative.lean": "3c6ebd065abd02f613738efc6cf0e1ab17b3e7fc6e84a2b98f631f8d4bb50dae",
+    "ConvexApprox/Sublevels.lean": "18c9fb9d73eba349073616fed1f066c8facdcef5a669e53964b24e0800efe1a2",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lakefile.toml": "8a0795707a9dfe1849a315b5c4295c81ae017ad372a7944464fa1cb01eaa186a",
+    "lake-manifest.json": "b944c3b78c23f888779246046dcb33f0d3e3483470ee200e2732a51ef68c49ad"
+  },
+  "lean": "4.24.0",
+  "mathlib_commit": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "trust": "Project sources freshly compiled against clean exact pinned cached dependency OLeans; dependencies not rebuilt from source. Elaborated complete declaration types printed and axiom closures checked; this is not an independently programmed expected-type-equality gate. Independent mathematical statement review is separate.",
+  "logs": {
+    "fresh-project-build.log": {
+      "bytes": 553,
+      "sha256": "01e552dd0d06ef463c4037fe112fb4cafd5189c0bf02a0fbd5c103bbc6e83c65"
+    },
+    "fresh-type-axiom-audit.log": {
+      "bytes": 1156022,
+      "sha256": "9e9222a2acf8a729a863461553fb14c6c3538c08b917332408bcfa9a4e2b230c"
+    },
+    "fresh-source-audit.log": {
+      "bytes": 1146,
+      "sha256": "8ff412d0ce1dfd9ec68efd66dfa42569964c24bcef82453d23cca686b15a623f"
+    },
+    "fresh-supplemental-audit.log": {
+      "bytes": 124,
+      "sha256": "401ba401533b827c248801946440f84e2d3b98a832ec4a5de7bd461c555c7e47"
+    }
+  },
+  "deferred": [
+    "analytic boundary manifold charts",
+    "sphere/Jordan analytic parametrizations"
+  ],
+  "initial_directory_command": "A preliminary build command outside the project returned exit 1: no default toolchain configured. The subsequent command in the project directory selected its pinned toolchain and completed the fresh build. No installation or default-toolchain setting was changed; the preliminary failure is not counted as a pass."
+}

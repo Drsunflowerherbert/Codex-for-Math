@@ -1,0 +1,62 @@
+{
+  "checkpoint_manifest_entries": 27,
+  "dependency_sources": [
+    {
+      "name": "mathlib",
+      "commit": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "plausible",
+      "commit": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "commit": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "importGraph",
+      "commit": "d768126816be17600904726ca7976b185786e6b9",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "proofwidgets",
+      "commit": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "aesop",
+      "commit": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "Qq",
+      "commit": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "batteries",
+      "commit": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "Cli",
+      "commit": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "tracked_sources_clean": true
+    }
+  ],
+  "core_source_sha256": {
+    "ConvexApprox.lean": "ce9651297454f7d041f743c902140ce1dc1169d323e069b306fa27c9e0079b83",
+    "ConvexApprox/Approximation.lean": "03fb55cef6fcd918ccc5afb2600999100536a3a705732b451b1e96e5772b0b96",
+    "ConvexApprox/Barrier.lean": "4c0780c81888cf24f8c8471d1479d926b48568355a21e58971dd87a6568ee98a",
+    "ConvexApprox/Construction.lean": "00c83e18bde1c8c61bc619d548e40f2267cd1fec1b5c4d8663653d0f923cf14f",
+    "ConvexApprox/Examples.lean": "d99dac7d3f6f1b5a489b728f4d9645ebaac364eb02ef1ae6ef49d7ba8584afe1",
+    "ConvexApprox/Geometry.lean": "54dfd0e3a0547dd3f13055f907c85a428a675b6c4793914d41879e75e37e4ea6",
+    "ConvexApprox/Nesting.lean": "8cbe72a7fbe85c4f58befaa1a1556e068d404b21e35abec2c81debe3aa29b3a9",
+    "ConvexApprox/OuterApprox.lean": "85fa97680a78ad7f842c9afa9208923399bdf1dee24b4d83c2762e1ff7704452",
+    "ConvexApprox/Quantitative.lean": "3c6ebd065abd02f613738efc6cf0e1ab17b3e7fc6e84a2b98f631f8d4bb50dae",
+    "ConvexApprox/Sublevels.lean": "18c9fb9d73eba349073616fed1f066c8facdcef5a669e53964b24e0800efe1a2"
+  }
+}

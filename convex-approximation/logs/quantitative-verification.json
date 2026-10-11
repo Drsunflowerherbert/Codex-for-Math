@@ -1,0 +1,77 @@
+{
+  "created_utc": "2026-10-11T04:28:09.068361+00:00",
+  "scope": "Quantitative.lean and OuterApprox.lean only; integrated build and independent final review are separate",
+  "files": {
+    "ConvexApprox/Quantitative.lean": {
+      "bytes": 5761,
+      "sha256": "3c6ebd065abd02f613738efc6cf0e1ab17b3e7fc6e84a2b98f631f8d4bb50dae"
+    },
+    "ConvexApprox/OuterApprox.lean": {
+      "bytes": 6623,
+      "sha256": "85fa97680a78ad7f842c9afa9208923399bdf1dee24b4d83c2762e1ff7704452"
+    },
+    "notes/quantitative.md": {
+      "bytes": 3227,
+      "sha256": "8c1c139d18f19ffac5b24f31f826d6fe77f4eae9dddd9d4f197a69c00c8ea761"
+    },
+    "lean-toolchain": {
+      "bytes": 25,
+      "sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434"
+    },
+    "lake-manifest.json": {
+      "bytes": 3540,
+      "sha256": "b944c3b78c23f888779246046dcb33f0d3e3483470ee200e2732a51ef68c49ad"
+    },
+    "logs/quantitative-audit.lean": {
+      "bytes": 1893,
+      "sha256": "5ab8d990d519c215ff3b87b5c7503cd612add08e2c9101f6212ba6d5bff244fa"
+    }
+  },
+  "toolchain_observation": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "successful_checks": [
+    {
+      "command": "source scripts/environment.sh; lake env lean ConvexApprox/Quantitative.lean",
+      "log": "logs/quantitative-local.log",
+      "exit_code": 0
+    },
+    {
+      "command": "source scripts/environment.sh; lake build ConvexApprox.Quantitative",
+      "log": "logs/quantitative-build.log",
+      "exit_code": 0
+    },
+    {
+      "command": "source scripts/environment.sh; lake build ConvexApprox.OuterApprox",
+      "log": "logs/quantitative-outer-build-02.log",
+      "exit_code": 0
+    },
+    {
+      "command": "source scripts/environment.sh; lake env lean logs/quantitative-audit.lean",
+      "log": "logs/quantitative-audit.log",
+      "exit_code": 0
+    }
+  ],
+  "failed_iterations_preserved": [
+    {
+      "log": "logs/quantitative-initial.log",
+      "result": "compiler reported section-closing error; exact compiler exit status not separately captured"
+    },
+    {
+      "log": "logs/quantitative-outer-first.log",
+      "exit_code": 1,
+      "result": "Geometry.olean dependency not yet emitted"
+    },
+    {
+      "log": "logs/quantitative-outer-build.log",
+      "exit_code": 1,
+      "result": "doc comment preceding omit syntax; fixed in final source"
+    }
+  ],
+  "axiom_inspection": {
+    "theorem_count": 19,
+    "only_propext_Classical_choice_Quot_sound": true
+  },
+  "source_placeholder_scan": {
+    "pattern": "\\b(sorry|admit|axiom)\\b",
+    "matches": []
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "completed_at_utc": "2026-10-11T04:37:49.378335+00:00",
+  "input": {
+    "filename": "convex-approx-checkpoint-2026-10-11.zip",
+    "bytes": 558341,
+    "sha256": "c3c64e17ae69ef244c5355dd41a526b5ac810059f1b0e9353e7101591ea07aa3"
+  },
+  "checkpoint_manifest_entries_verified": 27,
+  "lean": "4.24.0",
+  "lean_commit": "797c613eb9b6d4ec95db23e3e00af9ac6657f24b",
+  "mathlib_commit": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "modules": 9,
+  "declarations_audited": 145,
+  "build_exit_code": 0,
+  "type_axiom_audit_exit_code": 0,
+  "source_audit_exit_code": 0,
+  "observed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "compiled_scope": [
+    "finite chordal nets containing prescribed unit directions",
+    "attained support and nearest-point normality",
+    "finite CLM exponential barrier derivatives and pointwise positive Hessian",
+    "strict function and closed-set convexity with open-chord property",
+    "open enclosure and explicit inner tube",
+    "coercivity and compact closed sublevels",
+    "exact distance and Hausdorff formula",
+    "closure/frontier identification and nonzero level derivative",
+    "arbitrary positive accuracy",
+    "actual compactly nested sequence, intersections=K, Hausdorff convergence",
+    "singleton and empty-interior planar segment examples"
+  ],
+  "deferred": [
+    "analytic boundary manifold charts",
+    "sphere/Jordan analytic parametrizations"
+  ],
+  "independent_review": "PASS",
+  "independent_review_declarations": 145,
+  "independent_review_named_theorems_and_lemmas": 124,
+  "historical_status_notice": "Supplied finalization receipt for the original frozen source; fresh publication verification and declaration-count clarification are separate."
+}

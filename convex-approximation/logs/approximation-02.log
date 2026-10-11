@@ -1,0 +1,16 @@
+✔ [7355/7356] Built ConvexApprox.Sublevels (4.5s)
+✖ [7356/7356] Building ConvexApprox.Approximation (3.0s)
+trace: .> LEAN_PATH=<project>/.lake/packages/Cli/.lake/build/lib/lean:<project>/.lake/packages/batteries/.lake/build/lib/lean:<project>/.lake/packages/Qq/.lake/build/lib/lean:<project>/.lake/packages/aesop/.lake/build/lib/lean:<project>/.lake/packages/proofwidgets/.lake/build/lib/lean:<project>/.lake/packages/importGraph/.lake/build/lib/lean:<project>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<project>/.lake/packages/plausible/.lake/build/lib/lean:<project>/.lake/packages/mathlib/.lake/build/lib/lean:<project>/.lake/build/lib/lean <lean-4.24.0>/bin/lean <project>/ConvexApprox/Approximation.lean -o <project>/.lake/build/lib/lean/ConvexApprox/Approximation.olean -i <project>/.lake/build/lib/lean/ConvexApprox/Approximation.ilean -c <project>/.lake/build/ir/ConvexApprox/Approximation.c --setup <project>/.lake/build/ir/ConvexApprox/Approximation.setup.json --json
+error: ConvexApprox/Approximation.lean:118:23: Invalid field notation: Type is not of the form `C ...` where C is a constant
+  u
+has type
+  E
+error: ConvexApprox/Approximation.lean:117:8: failed to synthesize
+  Fintype E
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ConvexApprox/Approximation.lean:120:2: No goals to be solved
+error: Lean exited with code 1
+Some required targets logged failures:
+- ConvexApprox.Approximation
+error: build failed

@@ -1,0 +1,13 @@
+COMMAND: remove only the task-local .lake/build and run lake build (all root imports)
+✔ [7351/7361] Built ConvexApprox.Geometry (15s)
+✔ [7352/7361] Built ConvexApprox.Quantitative (16s)
+✔ [7353/7361] Built ConvexApprox.Barrier (24s)
+✔ [7354/7361] Built ConvexApprox.OuterApprox (12s)
+✔ [7355/7361] Built ConvexApprox.Sublevels (13s)
+✔ [7356/7361] Built ConvexApprox.Approximation (16s)
+✔ [7357/7361] Built ConvexApprox.Construction (20s)
+✔ [7358/7361] Built ConvexApprox.Examples (16s)
+✔ [7359/7361] Built ConvexApprox.Nesting (14s)
+✔ [7360/7361] Built ConvexApprox (6.8s)
+Build completed successfully (7361 jobs).
+EXIT: 0

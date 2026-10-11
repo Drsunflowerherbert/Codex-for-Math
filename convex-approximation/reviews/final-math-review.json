@@ -1,0 +1,199 @@
+{
+  "schema": "independent-convex-final-math-review-v1",
+  "created_utc": "2026-10-11T04:53:55.393074+00:00",
+  "verdict": "accepted_within_verified_nine_module_core",
+  "mathematical_blockers": [],
+  "proof_gaps_found": [],
+  "source_holes_found": [],
+  "unexpected_axioms_found": [],
+  "read_only_source_review": true,
+  "source_scripts_executed": false,
+  "reviewer_executed_lean": false,
+  "repository_edits_commits_pushes": false,
+  "proof_scope_expanded": false,
+  "frozen_manifest": {
+    "entries": 131,
+    "files": 132,
+    "mismatches": [],
+    "extra": [
+      "DELIVERABLE-MANIFEST-SHA256.json"
+    ],
+    "missing": []
+  },
+  "modules": 9,
+  "umbrella": 1,
+  "production_lean_files": 10,
+  "all_lean_files_inspected": 22,
+  "explicit_named_declarations": 146,
+  "explicit_theorem_lemma_count": 124,
+  "theorem_count": 121,
+  "lemma_count": 3,
+  "definition_count": 20,
+  "structure_count": 1,
+  "abbreviation_count": 1,
+  "private_named_helper_count": 0,
+  "generated_structure_declarations_in_count": false,
+  "historical_inventoried_declarations": 145,
+  "historical_inventory_omission": "ConvexApprox.Examples.Plane",
+  "historical_corrected_audit_passed": true,
+  "historical_axiom_records": 145,
+  "fresh_combined_axiom_records": 146,
+  "axioms_per_audited_declaration": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "publisher_fresh_build_type_axiom_source_supplemental_exits": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "publisher_fresh_receipt": {
+    "path": "publication/evidence/CONVEX-APPROX-CHECKS.json",
+    "bytes": 3538,
+    "sha256": "09530e120daef87849d5be47c17087ee7be57150d4fac191cc9440748bcf33f6"
+  },
+  "publisher_fresh_logs_hash_verified": true,
+  "frozen_and_public_assembly_13_source_pin_files_equal": true,
+  "dependency_build_trust": "Project sources rebuilt against clean exact pinned cached dependency OLeans; dependencies were not rebuilt from source. Type printing/axiom closure audit is distinct from programmed expected-type equality.",
+  "lean_version": "4.24.0",
+  "lean_commit": "797c613eb9b6d4ec95db23e3e00af9ac6657f24b",
+  "mathlib_commit": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "exact_error_formula": "(epsilon + delta * sqrt(1-delta^2/4) * Metric.diam K)/(1-delta^2/2)",
+  "main_assumptions": [
+    "finite-dimensional nontrivial real inner-product ambient space",
+    "K compact, nonempty, convex",
+    "D finite unit chordal delta-net",
+    "0 <= delta < sqrt 2",
+    "epsilon > 0",
+    "t > 0",
+    "card D * exp(-t*epsilon) < 1"
+  ],
+  "ambient_interior_of_K_required": false,
+  "positive_diameter_required": false,
+  "actual_recursive_sequence_verified": true,
+  "actual_sequence_successor_inclusion": "closedSet(P[n+1]) subset openSet(P[n])",
+  "actual_sequence_error_schedule": "error(P[n]) < 1/(n+1)",
+  "actual_sequence_conclusions": [
+    "compact closures",
+    "open neighborhoods containing K",
+    "closed successor contained in preceding open set",
+    "error tends to zero",
+    "Hausdorff distance tends to zero",
+    "both open and closed intersections equal K"
+  ],
+  "module_scope": [
+    {
+      "module": "Geometry",
+      "explicit_names": 15,
+      "theorems_lemmas": 13,
+      "status": "accepted",
+      "scope": "finite unit chordal nets; support attainment; nearest-point normal; positive cover/separation/span/cardinality",
+      "assumptions": "compact nonempty K for support; additionally convex K for normal; finite-dimensional E and delta>0 for net existence; delta squared<2 for positive cover; nontrivial E for nonempty/two-card; finite-dimensional E for span"
+    },
+    {
+      "module": "Quantitative",
+      "explicit_names": 13,
+      "theorems_lemmas": 11,
+      "status": "accepted",
+      "scope": "exact cosine and tangential sine constants; local nearest-normal error",
+      "assumptions": "unit directions and chordal closeness; delta squared<2; nonnegative residual and numerical support/normal/diameter premises"
+    },
+    {
+      "module": "OuterApprox",
+      "explicit_names": 9,
+      "theorems_lemmas": 8,
+      "status": "accepted",
+      "scope": "exact point-distance and Hausdorff bounds; weaker numerator; singleton bound",
+      "assumptions": "compact nonempty convex K; unit net; 0<=delta<sqrt2; epsilon>=0; directional support inequalities; generic Hausdorff result additionally K subset C"
+    },
+    {
+      "module": "Barrier",
+      "explicit_names": 24,
+      "theorems_lemmas": 21,
+      "status": "accepted",
+      "scope": "actual Frechet derivatives/iterated derivative, all-order ContDiff, pointwise positive Hessian, strict function convexity, anchored level/closure/frontier",
+      "assumptions": "finite type and continuous real linear forms; separation for strict Hessian/convexity; strict anchor for regular level/closure/frontier; no finite-dimensional/nonempty-index assumption in generic barrier"
+    },
+    {
+      "module": "Sublevels",
+      "explicit_names": 16,
+      "theorems_lemmas": 15,
+      "status": "accepted",
+      "scope": "directional barrier halfspaces/tube; positive-cover coercivity; all compact closed sublevels; positive cardinal margin",
+      "assumptions": "unit directions for geometric estimates; positive scale for halfspaces/tube/coercivity; positive cover constant and bounded offsets for coercivity; ProperSpace for compactness; nonempty finite index for logarithmic identities/strict tube bounds"
+    },
+    {
+      "module": "Approximation",
+      "explicit_names": 24,
+      "theorems_lemmas": 23,
+      "status": "accepted",
+      "scope": "actual support barrier; compact sublevels/coercivity; exact outer estimate; strict-convex sets/open chords; regular level/frontier; certified successor inclusion",
+      "assumptions": "integrated certificate: finite-dimensional nontrivial E; compact nonempty convex K; finite chordal net; 0<=delta<sqrt2; epsilon>0; scale>0; strict cardinal margin"
+    },
+    {
+      "module": "Construction",
+      "explicit_names": 1,
+      "theorems_lemmas": 1,
+      "status": "accepted",
+      "scope": "actual parameters/net preserving finite prescribed unit directions with numerical error below arbitrary rho>0",
+      "assumptions": "finite-dimensional nontrivial E; prescribed unit family; rho>0; K arbitrary for numerical parameter conclusion only"
+    },
+    {
+      "module": "Nesting",
+      "explicit_names": 20,
+      "theorems_lemmas": 13,
+      "status": "accepted",
+      "scope": "actual chosen and recursive BarrierData; certified compact nesting; compact closures; errors/Hausdorff convergence; intersections equal K; positive accuracy",
+      "assumptions": "finite-dimensional nontrivial E; compact nonempty convex K for geometric conclusions; BarrierData stores net/positive/fine-resolution/strict-margin hypotheses"
+    },
+    {
+      "module": "Examples",
+      "explicit_names": 24,
+      "theorems_lemmas": 19,
+      "status": "accepted",
+      "scope": "actual singleton and diameter-one planar segment with empty ambient interior; actual barrier radius/enclosure/compactness/Hausdorff bounds",
+      "assumptions": "Plane abbreviation; appropriate net, fine-resolution and positive-scale/cardinal-margin conditions"
+    }
+  ],
+  "deferred_or_unexported_scope": [
+    "analytic boundary manifold charts and embedded analytic hypersurface conclusion",
+    "analytic sphere/Jordan parametrizations and global radial diffeomorphisms",
+    "principal-curvature/second-fundamental-form theorems",
+    "packing upper bounds for net cardinality",
+    "exact iff criteria for positive spanning/coercivity and Hessian positivity",
+    "arbitrary prescribed accuracy sequence and alternative source-style nesting schedule",
+    "quantitative distance of successor closure to preceding complement",
+    "exact arcosh interval/coordinate-singleton formulas",
+    "ball-specific quadratic error",
+    "finite-direction angular lower obstructions and singleton asymptotic sharpness",
+    "continuous maximum convergence"
+  ],
+  "ordinary_study_record_count": 19,
+  "ordinary_study_records_all_formalized": false,
+  "full_source_analytic_lemma_formalized": false,
+  "manuscript_complete": false,
+  "headline_Crouzeix_certified": false,
+  "whole_paper_certified": false,
+  "novelty_claim": false,
+  "native_mrs_import": false,
+  "original_interrupted_checkpoint_status": "historical uncompiled draft; preserved separately from verified project",
+  "source_revision_remotely_authenticated": false,
+  "source_coverage_artifact": {
+    "path": "final-source-coverage.json",
+    "bytes": 1462309,
+    "sha256": "c8d75814c9f728b0ddee6296328f4212ee0ecd738b2c478b627929f3f6dd0e71",
+    "original_review_sha256": "4e9e23ac61d503b3275e97f74dca63aedd943e7275493199e3ca5214306b91c0",
+    "original_review_bytes": 1451590
+  },
+  "written_review_artifact": {
+    "path": "final-math-review.md",
+    "bytes": 24940,
+    "sha256": "ebdfa6e3ce0ccaabace6529a8190ef2da2eee00f21cf67e41a4f5c13ab3d57fa",
+    "original_review_sha256": "8717467740dce65b1d56ef509c1c1d6a5d51ebd03d921f2c2738a8f07cd83efa",
+    "original_review_bytes": 24371
+  },
+  "publication_notice": "Internal task/private root omitted; current report locators/hashes separately identify privacy-adapted publication copies. Verdict and mathematical/axiom/source scope unchanged. Original review hash retained separately.",
+  "original_review_sha256": "7a2eb87c62326e422a33c3af94f06897c5a2853452efce99b40b12500bbf6402"
+}

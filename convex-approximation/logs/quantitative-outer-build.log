@@ -1,0 +1,7 @@
+✖ [7353/7353] Building ConvexApprox.OuterApprox (3.5s)
+trace: .> LEAN_PATH=<project>/.lake/packages/Cli/.lake/build/lib/lean:<project>/.lake/packages/batteries/.lake/build/lib/lean:<project>/.lake/packages/Qq/.lake/build/lib/lean:<project>/.lake/packages/aesop/.lake/build/lib/lean:<project>/.lake/packages/proofwidgets/.lake/build/lib/lean:<project>/.lake/packages/importGraph/.lake/build/lib/lean:<project>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<project>/.lake/packages/plausible/.lake/build/lib/lean:<project>/.lake/packages/mathlib/.lake/build/lib/lean:<project>/.lake/build/lib/lean <lean-4.24.0>/bin/lean <project>/ConvexApprox/OuterApprox.lean -o <project>/.lake/build/lib/lean/ConvexApprox/OuterApprox.olean -i <project>/.lake/build/lib/lean/ConvexApprox/OuterApprox.ilean -c <project>/.lake/build/ir/ConvexApprox/OuterApprox.c --setup <project>/.lake/build/ir/ConvexApprox/OuterApprox.setup.json --json
+error: ConvexApprox/OuterApprox.lean:84:79: unexpected token 'omit'; expected 'lemma'
+error: Lean exited with code 1
+Some required targets logged failures:
+- ConvexApprox.OuterApprox
+error: build failed

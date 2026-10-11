@@ -1,0 +1,48 @@
+✖ [7358/7358] Building ConvexApprox.Nesting (4.1s)
+trace: .> LEAN_PATH=<project>/.lake/packages/Cli/.lake/build/lib/lean:<project>/.lake/packages/batteries/.lake/build/lib/lean:<project>/.lake/packages/Qq/.lake/build/lib/lean:<project>/.lake/packages/aesop/.lake/build/lib/lean:<project>/.lake/packages/proofwidgets/.lake/build/lib/lean:<project>/.lake/packages/importGraph/.lake/build/lib/lean:<project>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<project>/.lake/packages/plausible/.lake/build/lib/lean:<project>/.lake/packages/mathlib/.lake/build/lib/lean:<project>/.lake/build/lib/lean <lean-4.24.0>/bin/lean <project>/ConvexApprox/Nesting.lean -o <project>/.lake/build/lib/lean/ConvexApprox/Nesting.olean -i <project>/.lake/build/lib/lean/ConvexApprox/Nesting.ilean -c <project>/.lake/build/ir/ConvexApprox/Nesting.c --setup <project>/.lake/build/ir/ConvexApprox/Nesting.setup.json --json
+warning: ConvexApprox/Nesting.lean:41:0: automatically included section variable(s) unused in theorem `ConvexApprox.BarrierData.error_nonneg`:
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+error: ConvexApprox/Nesting.lean:50:2: Tactic `apply` failed: could not unify the conclusion of `inner_margin_pos P.scale_pos`
+  0 < ?m.56 - Real.log ↑(Fintype.card { u // u ∈ P.directions }) / P.scale
+with the goal
+  0 < P.tubeMargin
+
+Note: The full type of `inner_margin_pos P.scale_pos` is
+  ↑(Fintype.card { u // u ∈ P.directions }) * Real.exp (-P.scale * ?m.56) < 1 →
+    0 < ?m.56 - Real.log ↑(Fintype.card { u // u ∈ P.directions }) / P.scale
+
+E : Type u_1
+inst✝² : NormedAddCommGroup E
+inst✝¹ : InnerProductSpace ℝ E
+inst✝ : Nontrivial E
+K : Set E
+P : BarrierData K
+this : Nonempty { u // u ∈ P.directions } :=
+  Exists.casesOn (IsChordalNet.nonempty P.net) fun u hu => Nonempty.intro ⟨u, hu⟩
+⊢ 0 < P.tubeMargin
+error: ConvexApprox/Nesting.lean:83:4: Type mismatch: After simplification, term
+  LT.lt.trans_le hh (min_le_right ((nestedBarrierData K n).tubeMargin / 2) (1 / (↑n + 2)))
+ has type
+  (chosenBarrierData K (min ((nestedBarrierData K n).tubeMargin / 2) (↑n + 2)⁻¹) ⋯).error < (↑n + 2)⁻¹
+but is expected to have type
+  (chosenBarrierData K (min ((nestedBarrierData K n).tubeMargin / 2) (↑n + 2)⁻¹) ⋯).error < (↑n + (1 + 1))⁻¹
+error: ConvexApprox/Nesting.lean:154:43: Type mismatch
+  LT.lt.le ?m.311
+has type
+  ?m.309 ≤ ?m.310
+but is expected to have type
+  x ∈ (nestedBarrierData K n).closedSet
+error: ConvexApprox/Nesting.lean:157:43: Type mismatch
+  LT.lt.le ?m.336
+has type
+  ?m.334 ≤ ?m.335
+but is expected to have type
+  x ∈ (nestedBarrierData K n).closedSet
+error: Lean exited with code 1
+Some required targets logged failures:
+- ConvexApprox.Nesting
+error: build failed

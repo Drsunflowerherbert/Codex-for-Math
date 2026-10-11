@@ -1,0 +1,15 @@
+✖ [7351/7351] Building ConvexApprox.Geometry (3.5s)
+trace: .> LEAN_PATH=<project>/.lake/packages/Cli/.lake/build/lib/lean:<project>/.lake/packages/batteries/.lake/build/lib/lean:<project>/.lake/packages/Qq/.lake/build/lib/lean:<project>/.lake/packages/aesop/.lake/build/lib/lean:<project>/.lake/packages/proofwidgets/.lake/build/lib/lean:<project>/.lake/packages/importGraph/.lake/build/lib/lean:<project>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<project>/.lake/packages/plausible/.lake/build/lib/lean:<project>/.lake/packages/mathlib/.lake/build/lib/lean:<project>/.lake/build/lib/lean <lean-4.24.0>/bin/lean <project>/ConvexApprox/Geometry.lean -o <project>/.lake/build/lib/lean/ConvexApprox/Geometry.olean -i <project>/.lake/build/lib/lean/ConvexApprox/Geometry.ilean -c <project>/.lake/build/ir/ConvexApprox/Geometry.c --setup <project>/.lake/build/ir/ConvexApprox/Geometry.setup.json --json
+error: ConvexApprox/Geometry.lean:98:2: Type mismatch: After simplification, term
+  hmul
+ has type
+  ‖v‖ * (1 - δ ^ 2 / 2) ≤ ‖v‖ * (⟪u, v⟫_ℝ * ‖v‖⁻¹)
+but is expected to have type
+  ‖v‖ * (1 - δ ^ 2 / 2) ≤ ⟪u, v⟫_ℝ
+error: ConvexApprox/Geometry.lean:148:31: `simp` made no progress
+error: ConvexApprox/Geometry.lean:158:10: Unknown constant `Submodule.mem_bot.mpr`
+error: ConvexApprox/Geometry.lean:159:4: No goals to be solved
+error: Lean exited with code 1
+Some required targets logged failures:
+- ConvexApprox.Geometry
+error: build failed

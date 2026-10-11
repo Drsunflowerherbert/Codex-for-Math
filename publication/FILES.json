@@ -83,12 +83,428 @@
       "sha256": "c6c552c7e805f1e656622f8eb99df8213fc90dcaf531c8b118a2f389ada83fbb"
     },
     "README.md": {
-      "bytes": 3092,
-      "sha256": "949316ee0df7a7d0c1d362513b08417ba6392fa0be616b9f81beda59daaddc7d"
+      "bytes": 3680,
+      "sha256": "67d9b86c04bed3c259ac7a602ca1f8dce479120a39d030161468dc57cc0abc87"
     },
     "THIRD-PARTY.md": {
       "bytes": 2718,
       "sha256": "fa53ca2a3d3c1fa9a73c36b9bb28b236e7aea1149286d10d667b568fb68e1342"
+    },
+    "convex-approximation/.gitignore": {
+      "bytes": 41,
+      "sha256": "cf83ed34232664d6b9bc720cf663e03380138e406c20537c7b579ae646be12a2"
+    },
+    "convex-approximation/ConvexApprox.lean": {
+      "bytes": 276,
+      "sha256": "ce9651297454f7d041f743c902140ce1dc1169d323e069b306fa27c9e0079b83"
+    },
+    "convex-approximation/ConvexApprox/Approximation.lean": {
+      "bytes": 14933,
+      "sha256": "03fb55cef6fcd918ccc5afb2600999100536a3a705732b451b1e96e5772b0b96"
+    },
+    "convex-approximation/ConvexApprox/Barrier.lean": {
+      "bytes": 8517,
+      "sha256": "4c0780c81888cf24f8c8471d1479d926b48568355a21e58971dd87a6568ee98a"
+    },
+    "convex-approximation/ConvexApprox/Construction.lean": {
+      "bytes": 3317,
+      "sha256": "00c83e18bde1c8c61bc619d548e40f2267cd1fec1b5c4d8663653d0f923cf14f"
+    },
+    "convex-approximation/ConvexApprox/Examples.lean": {
+      "bytes": 7548,
+      "sha256": "d99dac7d3f6f1b5a489b728f4d9645ebaac364eb02ef1ae6ef49d7ba8584afe1"
+    },
+    "convex-approximation/ConvexApprox/Geometry.lean": {
+      "bytes": 8081,
+      "sha256": "54dfd0e3a0547dd3f13055f907c85a428a675b6c4793914d41879e75e37e4ea6"
+    },
+    "convex-approximation/ConvexApprox/Nesting.lean": {
+      "bytes": 10131,
+      "sha256": "8cbe72a7fbe85c4f58befaa1a1556e068d404b21e35abec2c81debe3aa29b3a9"
+    },
+    "convex-approximation/ConvexApprox/OuterApprox.lean": {
+      "bytes": 6623,
+      "sha256": "85fa97680a78ad7f842c9afa9208923399bdf1dee24b4d83c2762e1ff7704452"
+    },
+    "convex-approximation/ConvexApprox/Quantitative.lean": {
+      "bytes": 5761,
+      "sha256": "3c6ebd065abd02f613738efc6cf0e1ab17b3e7fc6e84a2b98f631f8d4bb50dae"
+    },
+    "convex-approximation/ConvexApprox/Sublevels.lean": {
+      "bytes": 9796,
+      "sha256": "18c9fb9d73eba349073616fed1f066c8facdcef5a669e53964b24e0800efe1a2"
+    },
+    "convex-approximation/DELIVERABLE-MANIFEST-SHA256.supplied.json": {
+      "bytes": 20766,
+      "sha256": "1961a73737105cb55e3969e6e0616b8790bdacbbadcc71a8da56fa0d34f882d3"
+    },
+    "convex-approximation/PUBLICATION-NOTICE.md": {
+      "bytes": 1667,
+      "sha256": "8bc026391919a03b9ba9aaa2e5dc7ad4cb5ae000d4f5122d0b83701827ae9eb2"
+    },
+    "convex-approximation/README.md": {
+      "bytes": 5134,
+      "sha256": "b475a7a08d5fd0efa79a3dbe02d0e95f2822ad47110e1999e9bb09cf7a104157"
+    },
+    "convex-approximation/evidence/FINAL-STATUS.json": {
+      "bytes": 1742,
+      "sha256": "da84d87252a470d8d9aa459be56f6439ff3aa8709186f1da6cecfc76eb1fc584"
+    },
+    "convex-approximation/evidence/declaration-inventory.json": {
+      "bytes": 6366,
+      "sha256": "2b73091dc1faae1928c73972d90451da500ebb47a5d37cee5e6059da38ec1e3c"
+    },
+    "convex-approximation/evidence/input-identity.json": {
+      "bytes": 159,
+      "sha256": "3a77549c0254925322736f030583f2daa9d584d4f0bc682a3994bb573c041f97"
+    },
+    "convex-approximation/evidence/source-pin-hashes.json": {
+      "bytes": 2343,
+      "sha256": "f4570ce601899db569909f35900b2be486e171b6277424afa65e0bd2cd65b881"
+    },
+    "convex-approximation/lake-manifest.json": {
+      "bytes": 3540,
+      "sha256": "b944c3b78c23f888779246046dcb33f0d3e3483470ee200e2732a51ef68c49ad"
+    },
+    "convex-approximation/lakefile.toml": {
+      "bytes": 282,
+      "sha256": "8a0795707a9dfe1849a315b5c4295c81ae017ad372a7944464fa1cb01eaa186a"
+    },
+    "convex-approximation/lean-toolchain": {
+      "bytes": 25,
+      "sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434"
+    },
+    "convex-approximation/logs/approximation-02.log": {
+      "bytes": 1508,
+      "sha256": "2009d667813aa44d43432fb15d55161d6ba4a597ab0b5fbb26f7297c2834be38"
+    },
+    "convex-approximation/logs/approximation-03.log": {
+      "bytes": 98,
+      "sha256": "a0c3a7c8dbae6e4b87a703107273d4c2d16e9844edf8aac75638a8e70024b335"
+    },
+    "convex-approximation/logs/approximation-04.log": {
+      "bytes": 1122,
+      "sha256": "7944082ae2b3c1ec63098880ef035dc411ee967a110dea3e2f6f6b8177e171be"
+    },
+    "convex-approximation/logs/approximation-05.log": {
+      "bytes": 98,
+      "sha256": "0233dc77a9a2dec0598c2ff0d2108e18f6b840f1652253711dca1d7ecf1c9b5e"
+    },
+    "convex-approximation/logs/approximation-06.log": {
+      "bytes": 98,
+      "sha256": "113a20abe78736706130e4601d7f15b8fe458eeda442b14ce26ddef4f43bb9f6"
+    },
+    "convex-approximation/logs/approximation-initial.log": {
+      "bytes": 2772,
+      "sha256": "cb4cc8cc5b66789cc196f950869720923e0ee6ca2b3ae196f9db87f6c2125b78"
+    },
+    "convex-approximation/logs/barrier-audit.lean": {
+      "bytes": 1857,
+      "sha256": "a0d93f699d8b304b49a7c005c0759696f60323ed5ff04a5243a230e84fb4ce65"
+    },
+    "convex-approximation/logs/barrier-audit.log": {
+      "bytes": 7994,
+      "sha256": "2a0951cdd031708e9040a62d36e52c13bb75998ab5520ba40c8cc95eb3a56b5a"
+    },
+    "convex-approximation/logs/barrier-build-core.log": {
+      "bytes": 92,
+      "sha256": "cb3587660b776048b468ee8253f0605a490e988853f8c4c124ce4ccc7152c956"
+    },
+    "convex-approximation/logs/barrier-build-final.log": {
+      "bytes": 92,
+      "sha256": "0ba6c17d6b2e1c36ab03f2dff6a1ccab38ecf012dcbb9912d7990a87531d646e"
+    },
+    "convex-approximation/logs/barrier-core.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "convex-approximation/logs/barrier-environment.log": {
+      "bytes": 485,
+      "sha256": "be09aee9afa2209ab187159ec74996a8726fb9ca0e630d30f65626f6eb8fb721"
+    },
+    "convex-approximation/logs/barrier-evidence.json": {
+      "bytes": 990,
+      "sha256": "f22446cd99a65128515e0ce4717ddc6048847770a943c7fbe2d0c5840d7ead0d"
+    },
+    "convex-approximation/logs/barrier-initial.log": {
+      "bytes": 1053,
+      "sha256": "086e26129c9f264479338e907153e5d7019fb48967aee520e3884090324e145c"
+    },
+    "convex-approximation/logs/barrier-level-final.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "convex-approximation/logs/barrier-level-initial.log": {
+      "bytes": 1202,
+      "sha256": "d8a698d51025c40c0a83c73aff513f8880c4ae3f719c5c4057da20505cb0ef63"
+    },
+    "convex-approximation/logs/barrier-placeholder-scan.log": {
+      "bytes": 83,
+      "sha256": "15d56d52f8929d1f4dd23ae2c3ceda688e3b6fbcee6d992cef02afc5195d77ac"
+    },
+    "convex-approximation/logs/construction-audit.lean": {
+      "bytes": 180,
+      "sha256": "17ab07bbafed8fe1494235d862dc853c4c711c21ccabbfd108e873a82d6c6d03"
+    },
+    "convex-approximation/logs/construction-audit.log": {
+      "bytes": 1107,
+      "sha256": "1f863f8f357e555e5558fa9b4e63a328ce8cb7867e3dedaeb55b9a5c2d0d73c9"
+    },
+    "convex-approximation/logs/construction-build-01.log": {
+      "bytes": 1122,
+      "sha256": "a20a3e49c5a27b3eb062f28fdd62f9eb865074b7daceca7abaa457fe3e0a76b1"
+    },
+    "convex-approximation/logs/construction-build-02.log": {
+      "bytes": 97,
+      "sha256": "0c48bcaa45140fd058be94e984b22985c5ea9a4a9425a10791e254b7a8ebd696"
+    },
+    "convex-approximation/logs/construction-build-03.log": {
+      "bytes": 97,
+      "sha256": "24b4041f39cd80e35634a3065fe34ae0820e9c8589eaff5a9d2516fd1c2e49df"
+    },
+    "convex-approximation/logs/construction-verification.json": {
+      "bytes": 1576,
+      "sha256": "239f597097f01f6b89e36025dd382fcbe8c662afe36dfa7720191741f0a7dc2b"
+    },
+    "convex-approximation/logs/final-build.log": {
+      "bytes": 652,
+      "sha256": "67120c110f2f2fc32ae840df1caf521b7fa6dfde155d23501ae437bdfd23266d"
+    },
+    "convex-approximation/logs/final-environment.log": {
+      "bytes": 1070,
+      "sha256": "ab5939855a4f8083c2c273efd51e17e924466842b11266f74cfa759a67c8ab45"
+    },
+    "convex-approximation/logs/final-source-audit.log": {
+      "bytes": 1146,
+      "sha256": "8ff412d0ce1dfd9ec68efd66dfa42569964c24bcef82453d23cca686b15a623f"
+    },
+    "convex-approximation/logs/final-type-axiom-audit.log": {
+      "bytes": 1156072,
+      "sha256": "ed9f8bdad4ab9e613d5bfe4628477e1c7883a0f4c1c4592461726de21e81d689"
+    },
+    "convex-approximation/logs/geometry-build-01.log": {
+      "bytes": 842,
+      "sha256": "47b70184a803edc4673bbeaf97e6f1b9e910fe756aab602406fb264e83c75cd1"
+    },
+    "convex-approximation/logs/geometry-build-02.log": {
+      "bytes": 136,
+      "sha256": "5dc3778621bfe8d775eac0915b07b4f3b04d880a7974225c97ca6542bd478dca"
+    },
+    "convex-approximation/logs/geometry-build-03.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "convex-approximation/logs/geometry-build-04.log": {
+      "bytes": 1488,
+      "sha256": "44b8e9bbd8725337a58564273de731d59abc50b5dc5a923925e7a5774d3f704e"
+    },
+    "convex-approximation/logs/geometry-build-05.log": {
+      "bytes": 93,
+      "sha256": "6b4d310dc1bc46f823fd0e8a49fed8ac28b6c2d6386b837e5fd84a7570ee85ca"
+    },
+    "convex-approximation/logs/geometry-examples-build-01.log": {
+      "bytes": 93,
+      "sha256": "cb13bcec6225c6c10932d36e0a90b5032bba17ad87766208c50c5118f3ac5166"
+    },
+    "convex-approximation/logs/geometry-examples-build-02.log": {
+      "bytes": 93,
+      "sha256": "89d64f2c4ec34b3ebee7e073f903dabcfd718c6801853d41f9e13ea260be49b4"
+    },
+    "convex-approximation/logs/geometry-examples-build-03.log": {
+      "bytes": 115,
+      "sha256": "9c80b53fbbf643039bca0c3471e907b778994f8fa93bfb870e013b80800da102"
+    },
+    "convex-approximation/logs/geometry-examples-type-axiom-inspection.lean": {
+      "bytes": 2262,
+      "sha256": "56f93b299c215917ad298f4dcd2019b897479a4e1d1604844f77b7a06e2a4e78"
+    },
+    "convex-approximation/logs/geometry-examples-type-axiom-inspection.log": {
+      "bytes": 7466,
+      "sha256": "25bf53a72449d148f2630d8dda462b73761a6756cfa4735d6e452c3e9fa71ca6"
+    },
+    "convex-approximation/logs/geometry-final-evidence.json": {
+      "bytes": 1344,
+      "sha256": "6ce6d78787bf54db2d1ab53d7fb200e52f09221c9845d9ab1168e0d36f4b3e54"
+    },
+    "convex-approximation/logs/geometry-source-pin-sha256.log": {
+      "bytes": 259,
+      "sha256": "8f865416acd8471656cac9c0bc1995564f983af41f72b774de8e3417b56aaad2"
+    },
+    "convex-approximation/logs/geometry-type-axiom-inspection.lean": {
+      "bytes": 1472,
+      "sha256": "e13c28f535c1b94db47ac85b4ceabc42e3fdd175e7b10474cc202144705c9f28"
+    },
+    "convex-approximation/logs/geometry-type-axiom-inspection.log": {
+      "bytes": 28119,
+      "sha256": "2b7ba27f3c5e29cbc7c4f10cda5db6a03ae74b92b701557f328492da4614514f"
+    },
+    "convex-approximation/logs/independent-review-audit.py": {
+      "bytes": 4138,
+      "sha256": "e055182349399b5c0155ef19c5bdc22bc19be4d7c66cf66d525ad0dcc0709051"
+    },
+    "convex-approximation/logs/independent-review-environment.log": {
+      "bytes": 698,
+      "sha256": "3778caa520e1b612e64a610cb661bf6aac0caa230144fa411974587702f501dc"
+    },
+    "convex-approximation/logs/independent-review-final-evidence-attempt01.json": {
+      "bytes": 22025,
+      "sha256": "e33ecfc1030c0f6867c2514b28c88ba602513865b77ab721dd409b88e957b1ed"
+    },
+    "convex-approximation/logs/independent-review-final-evidence.json": {
+      "bytes": 22025,
+      "sha256": "38577a00702679d92186044702ecde981787cd073b8cbb9d82a561217bbb97e3"
+    },
+    "convex-approximation/logs/independent-review-types-axioms-attempt01.lean": {
+      "bytes": 14595,
+      "sha256": "f9f9f2d28c0be5f924688668375042322d4a27707a5e5b64c635767d623f0b4e"
+    },
+    "convex-approximation/logs/independent-review-types-axioms-attempt01.log": {
+      "bytes": 1152218,
+      "sha256": "cf48d12cecc0e7bf723080e2944dc2e60b20da6b8cea67fb1621cf3ff35db2e1"
+    },
+    "convex-approximation/logs/independent-review-types-axioms.lean": {
+      "bytes": 14544,
+      "sha256": "a0696b6190473fdc4a642f6d156392e321f4b59cd6c6f126424e7d8cff5f435b"
+    },
+    "convex-approximation/logs/independent-review-types-axioms.log": {
+      "bytes": 1152058,
+      "sha256": "0b56259950f5a00bd61ae8a60437b9cc70f16bc7d30aa642a63e783a17b156c5"
+    },
+    "convex-approximation/logs/integrated-02.log": {
+      "bytes": 1246,
+      "sha256": "7a259b31a7bd9876566ecce0c7aa7d0799e4807890976f3f1b102d8434b3dd1f"
+    },
+    "convex-approximation/logs/integrated-first.log": {
+      "bytes": 185,
+      "sha256": "838660077d4831e0d72e1efd4b1294797f2050b3859e1a28eca74660c339144f"
+    },
+    "convex-approximation/logs/nesting-02.log": {
+      "bytes": 92,
+      "sha256": "30a99bf16301e1eadf6cd0a9ae99a22588425cd79fd107f591aa505f045d3ee2"
+    },
+    "convex-approximation/logs/nesting-initial.log": {
+      "bytes": 2984,
+      "sha256": "4c37e933f43cc8f9e58fa340ab12abb15c7ff04579af5871dd9a77064fdf01c4"
+    },
+    "convex-approximation/logs/quantitative-audit.lean": {
+      "bytes": 1893,
+      "sha256": "5ab8d990d519c215ff3b87b5c7503cd612add08e2c9101f6212ba6d5bff244fa"
+    },
+    "convex-approximation/logs/quantitative-audit.log": {
+      "bytes": 12706,
+      "sha256": "9e39c26faef38fd77e2ef6e1a0123d72bfe817f142368c8b87ecf8b9d11a6a6b"
+    },
+    "convex-approximation/logs/quantitative-build.log": {
+      "bytes": 97,
+      "sha256": "f3336106abfbfd45557c11df2343ad43bb5f18a9fb4e08053137294e237ca6a2"
+    },
+    "convex-approximation/logs/quantitative-initial.log": {
+      "bytes": 309,
+      "sha256": "6dfba10147d6239000624a9c7b00248c9aec06274f7cc11b10ae773e6b87ed90"
+    },
+    "convex-approximation/logs/quantitative-local.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "convex-approximation/logs/quantitative-outer-build-02.log": {
+      "bytes": 96,
+      "sha256": "d6bc2809780b4ae8412ab23ebaeb7a0896f2931170ebf9bdd99af0b40d7ec13d"
+    },
+    "convex-approximation/logs/quantitative-outer-build.log": {
+      "bytes": 1132,
+      "sha256": "c90bcd85e7f39bc808c5f01ede9d72dacea472cd9c0f69363be3c914a7f6932d"
+    },
+    "convex-approximation/logs/quantitative-outer-first.log": {
+      "bytes": 162,
+      "sha256": "277a7386e65f4359f48db365f63846e1b2aed8e8fe73efafab676f6fa80e0504"
+    },
+    "convex-approximation/logs/quantitative-outer.log": {
+      "bytes": 1556,
+      "sha256": "02a082f6eef5687c393a60737b1a705f5ebf88fddb4ee5efd4ca9a9593e85cbb"
+    },
+    "convex-approximation/logs/quantitative-toolchain.log": {
+      "bytes": 106,
+      "sha256": "36c0bbaf090c97bc8217c6ff497ff9144fd83d9003f12cd505162b943aaaee77"
+    },
+    "convex-approximation/logs/quantitative-verification.json": {
+      "bytes": 2624,
+      "sha256": "ec201fc7e67b6d6ffa93ca5df1771caa72b68bcfe0435d08d08cf5d183f644eb"
+    },
+    "convex-approximation/logs/sublevels-02.log": {
+      "bytes": 1055,
+      "sha256": "8fb6f2d661d5c9e2e9f7679b03df7dbe1ef845fc9fc95cf3929b9031bea13715"
+    },
+    "convex-approximation/logs/sublevels-build.log": {
+      "bytes": 614,
+      "sha256": "26f36ff6d04957b82eac0f1514f70f91bf7f4bf56cb19bb2723d2cf58032fb9c"
+    },
+    "convex-approximation/logs/sublevels-initial.log": {
+      "bytes": 2179,
+      "sha256": "be0158e4e4be7d0722c399dfaeb472b6fbd9f9d3fdf9fe9cd353f7a46066675b"
+    },
+    "convex-approximation/notes/barrier.md": {
+      "bytes": 5209,
+      "sha256": "bbb6fd8292979db2fdb92c9f4a02a3f807eaae651dcce7e94a9b1aeed7d19bc9"
+    },
+    "convex-approximation/notes/construction.md": {
+      "bytes": 2252,
+      "sha256": "fd7a18d13330146dd67cd6ea991ebddde3934c0f3ced7472ad72e9b11638a316"
+    },
+    "convex-approximation/notes/examples.md": {
+      "bytes": 2022,
+      "sha256": "1468e6b52c64f2f6400de417cee5f7e4df22f37022742d3b51113879f351fff6"
+    },
+    "convex-approximation/notes/geometry.md": {
+      "bytes": 3053,
+      "sha256": "a16a7e5a6ca4cb5654fa5e32bd52b5f830203143c30dac7dddfa37df4c834c11"
+    },
+    "convex-approximation/notes/independent-review.md": {
+      "bytes": 9168,
+      "sha256": "7b1983d1a0de4ef496f4546740161ebd4942eebba2a3dc434e993351e353c4dd"
+    },
+    "convex-approximation/notes/integrated-proof.md": {
+      "bytes": 3646,
+      "sha256": "dd77940bbe82e38dab92f4b16b4b9afd0e73a16d59ef75e14b49773323132410"
+    },
+    "convex-approximation/notes/quantitative.md": {
+      "bytes": 3288,
+      "sha256": "e27169ca0c12b21fc753de531538750c8f49a6eec9b1e270f025b7abcc90bf28"
+    },
+    "convex-approximation/reviews/REVIEW-HASHES.json": {
+      "bytes": 635,
+      "sha256": "dc8a93ba5adba0bd22297500e61c987873ee32dceb1b68510e765ce6eebf6e69"
+    },
+    "convex-approximation/reviews/final-math-review.json": {
+      "bytes": 9398,
+      "sha256": "43ec78d8bf1edc934bb629c26c6566938c2da32d028411837bd07d8a66a08f31"
+    },
+    "convex-approximation/reviews/final-math-review.md": {
+      "bytes": 24940,
+      "sha256": "ebdfa6e3ce0ccaabace6529a8190ef2da2eee00f21cf67e41a4f5c13ab3d57fa"
+    },
+    "convex-approximation/reviews/final-source-coverage.json": {
+      "bytes": 1462309,
+      "sha256": "c8d75814c9f728b0ddee6296328f4212ee0ecd738b2c478b627929f3f6dd0e71"
+    },
+    "convex-approximation/scripts/Audit.lean": {
+      "bytes": 14604,
+      "sha256": "aeab40636d94375617dcfe38f74ce287033a527d24f3d9d74cae07d8607eca9c"
+    },
+    "convex-approximation/scripts/SupplementalAudit.lean": {
+      "bytes": 155,
+      "sha256": "de035dfa622617223b332766e60c7547b7c6b2772d8c411f97ecc8bb2bbcc3f6"
+    },
+    "convex-approximation/scripts/environment.sh": {
+      "bytes": 391,
+      "sha256": "1d48ccfab59659bc7b09b797bc292a0e45f2140b0c7ef1c1e7313273cd779104"
+    },
+    "convex-approximation/scripts/verify-evidence.py": {
+      "bytes": 1939,
+      "sha256": "76088ba0b40254981f3504c5a2554c57ce59298f3bff235ba600a46da8003a8e"
+    },
+    "convex-approximation/scripts/verify.sh": {
+      "bytes": 1130,
+      "sha256": "47e82525dd6e517239265957e7628eebb18573cfbc9499c28ba3b448da9d811d"
     },
     "egyptian-exact/Egyptian.lean": {
       "bytes": 108,
@@ -475,8 +891,8 @@
       "sha256": "4888dadf6a58c2c039c88f89af50101e79ce3c9f4ba96d4ad77627c69344a311"
     },
     "learning-guide/STATUS-FINALIZATION-2026-10-11.md": {
-      "bytes": 1567,
-      "sha256": "b8372b2ab5415dc762a08027696b2758680dd389ca22ce3891b104691dd997ed"
+      "bytes": 2808,
+      "sha256": "87d35f6e70d4db970bb901ac8f3e4f738b9c30821144f7d7780d19e4381d32f7"
     },
     "learning-guide/independent-review.md": {
       "bytes": 4664,
@@ -1131,28 +1547,44 @@
       "sha256": "44f9da47c9bc342a83bbbb90c1b77f2a760346dfc6ddc84974484022ebd47133"
     },
     "publication/INPUT-ARCHIVES.json": {
-      "bytes": 2242,
-      "sha256": "bca0fd65d510f101410a388112e893812a4e6fa99abe63752914268b7efe3fbc"
+      "bytes": 2475,
+      "sha256": "bc8847909235b12e8df8d3d68d68d53a7296a599f315623f80a2fefae997ab82"
+    },
+    "publication/PENDING-TRANSFER.json": {
+      "bytes": 1386,
+      "sha256": "1b12ab705b71cfb6ca5606bda842b127b40f13a61d41446aa70a5ae80c91ef75"
     },
     "publication/README.md": {
-      "bytes": 7134,
-      "sha256": "ea906ed36e543d4ac78074db146cbd6342b7977896ccda83e4a7a035536cfb9e"
+      "bytes": 9752,
+      "sha256": "6efe689eba4612a9c4713d480ff53bfcb3c58e192b831f2b8d17dfedceb89d20"
     },
     "publication/REVIEW.md": {
-      "bytes": 6390,
-      "sha256": "aa9076bd9b031a93e040eb4a6b941dfb42930286aa399ea121c87a48c8b083ff"
+      "bytes": 7448,
+      "sha256": "65db2ee345fe497663dc461db420fe4c7e384c5009c3434021b8d7d5e326adc4"
     },
     "publication/SOURCE-MAP.json": {
-      "bytes": 284930,
-      "sha256": "52f7d10d102ac83cbb4394a6d50083fadaa11f7b5c3ceabc088f7a9c906d5ee9"
+      "bytes": 376322,
+      "sha256": "a9f7ab4da406096b7e17ca183ce25b348de228ff54da3250185700ec4d76c8ff"
     },
     "publication/TOOLKIT-SOURCE-MAP.json": {
       "bytes": 2681789,
       "sha256": "7de5846f50ec7e39b622fde7cd49fadf58f9164a6c680a80fc6167aa0940fbd7"
     },
+    "publication/evidence/CONVEX-APPROX-CHECKS.json": {
+      "bytes": 3538,
+      "sha256": "09530e120daef87849d5be47c17087ee7be57150d4fac191cc9440748bcf33f6"
+    },
+    "publication/evidence/CONVEX-PORTABLE-CHECKS.json": {
+      "bytes": 2404,
+      "sha256": "d68196d8a68d7f68b88a7a62c0ee104a16eaa28a0f6888da2be524941df1a88b"
+    },
     "publication/evidence/CURRENT-CHECKS.json": {
       "bytes": 4837,
       "sha256": "d94ea0fd5c5c07a6b59d4c5222d6cb093e213ef6e92f508e0e1c680336c7a1db"
+    },
+    "publication/evidence/FINAL-INTEGRITY-CHECKS.json": {
+      "bytes": 1880,
+      "sha256": "0327eb7cc87eb15ead180b299f0aee6364f88d530b9c5abe5748944f5d4a10e7"
     },
     "publication/evidence/INTEGRITY-CHECKS.json": {
       "bytes": 1384,
@@ -1165,6 +1597,42 @@
     "publication/evidence/TOOLKIT-PACKAGE-CHECKS.json": {
       "bytes": 7825,
       "sha256": "fc21b5869762fe19e8e9f182748f5adde35c005f135723b75094ccf0031cee4b"
+    },
+    "publication/evidence/convex-approximation/fresh-project-build.log": {
+      "bytes": 553,
+      "sha256": "01e552dd0d06ef463c4037fe112fb4cafd5189c0bf02a0fbd5c103bbc6e83c65"
+    },
+    "publication/evidence/convex-approximation/fresh-source-audit.log": {
+      "bytes": 1146,
+      "sha256": "8ff412d0ce1dfd9ec68efd66dfa42569964c24bcef82453d23cca686b15a623f"
+    },
+    "publication/evidence/convex-approximation/fresh-supplemental-audit.log": {
+      "bytes": 124,
+      "sha256": "401ba401533b827c248801946440f84e2d3b98a832ec4a5de7bd461c555c7e47"
+    },
+    "publication/evidence/convex-approximation/fresh-type-axiom-audit.log": {
+      "bytes": 1156022,
+      "sha256": "9e9222a2acf8a729a863461553fb14c6c3538c08b917332408bcfa9a4e2b230c"
+    },
+    "publication/evidence/convex-approximation/portable-final-build.log": {
+      "bytes": 643,
+      "sha256": "1911c5f671b0b4035877f59d8b3b0239bd8668550591365b40c2ad5be0491c9a"
+    },
+    "publication/evidence/convex-approximation/portable-final-environment.log": {
+      "bytes": 1070,
+      "sha256": "ab5939855a4f8083c2c273efd51e17e924466842b11266f74cfa759a67c8ab45"
+    },
+    "publication/evidence/convex-approximation/portable-final-source-audit.log": {
+      "bytes": 1146,
+      "sha256": "8ff412d0ce1dfd9ec68efd66dfa42569964c24bcef82453d23cca686b15a623f"
+    },
+    "publication/evidence/convex-approximation/portable-final-type-axiom-audit.log": {
+      "bytes": 1156072,
+      "sha256": "ed9f8bdad4ab9e613d5bfe4628477e1c7883a0f4c1c4592461726de21e81d689"
+    },
+    "publication/evidence/convex-approximation/portable-supplemental-type-axiom-audit.log": {
+      "bytes": 124,
+      "sha256": "401ba401533b827c248801946440f84e2d3b98a832ec4a5de7bd461c555c7e47"
     },
     "publication/evidence/egyptian-build.log": {
       "bytes": 600,
@@ -1259,8 +1727,8 @@
       "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
     },
     "publication/verify.py": {
-      "bytes": 5321,
-      "sha256": "135795e20c86252c2e10afeb6f38108f2fca771634bcc95d170271e6765a9d95"
+      "bytes": 5330,
+      "sha256": "f2e0aa69fba6552f2be07f26a448c1224512b62d002ae8dd416c635d8b9d54ee"
     },
     "radial-contact/ASSUMPTIONS.md": {
       "bytes": 2392,

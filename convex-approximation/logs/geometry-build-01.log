@@ -1,0 +1,17 @@
+ConvexApprox/Geometry.lean:23:28: error: unexpected identifier; expected ')', ',' or ':'
+ConvexApprox/Geometry.lean:27:38: error: unexpected identifier; expected ':=', 'where' or '|'
+ConvexApprox/Geometry.lean:27:32: error: type expected, got
+  (⟪u, w⟫ : ℝ)
+ConvexApprox/Geometry.lean:31:48: error: unexpected identifier; expected ':=', 'where' or '|'
+ConvexApprox/Geometry.lean:38:41: error: unexpected identifier; expected ':=', 'where' or '|'
+ConvexApprox/Geometry.lean:50:29: error: unexpected identifier; expected ':=', 'where' or '|'
+ConvexApprox/Geometry.lean:50:15: error: type expected, got
+  (⟪x - w, v - w⟫ : ℝ)
+ConvexApprox/Geometry.lean:73:62: error: Application type mismatch: The argument
+  hdist
+has type
+  v ∈ Metric.ball u δ
+but is expected to have type
+  ‖v - u‖ < δ
+in the application
+  LT.lt.le hdist

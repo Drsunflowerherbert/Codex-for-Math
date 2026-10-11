@@ -1,0 +1,1 @@
+ConvexApprox/OuterApprox.lean:1:0: error: object file '<project>/.lake/build/lib/lean/ConvexApprox/Geometry.olean' of module ConvexApprox.Geometry does not exist

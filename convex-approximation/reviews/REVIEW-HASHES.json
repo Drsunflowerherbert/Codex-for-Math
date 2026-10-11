@@ -1,0 +1,18 @@
+{
+  "schema": "public-convex-review-file-hashes-v1",
+  "scope": "Current published review copies; original reviewed source/pin hashes and report identities are within the reports.",
+  "files": {
+    "final-math-review.json": {
+      "bytes": 9398,
+      "sha256": "43ec78d8bf1edc934bb629c26c6566938c2da32d028411837bd07d8a66a08f31"
+    },
+    "final-math-review.md": {
+      "bytes": 24940,
+      "sha256": "ebdfa6e3ce0ccaabace6529a8190ef2da2eee00f21cf67e41a4f5c13ab3d57fa"
+    },
+    "final-source-coverage.json": {
+      "bytes": 1462309,
+      "sha256": "c8d75814c9f728b0ddee6296328f4212ee0ecd738b2c478b627929f3f6dd0e71"
+    }
+  }
+}

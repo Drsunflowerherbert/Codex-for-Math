@@ -1,0 +1,200 @@
+@ConvexApprox.chordalCos_pos : ∀ {δ : Real},
+  LT.lt.{0} (HPow.hPow.{0, 0, 0} δ 2) 2 → LT.lt.{0} 0 (ConvexApprox.chordalCos δ)
+@ConvexApprox.chordal_sq_lt_two : ∀ {δ : Real},
+  LE.le.{0} 0 δ → LT.lt.{0} δ (Real.sqrt 2) → LT.lt.{0} (HPow.hPow.{0, 0, 0} δ 2) 2
+@ConvexApprox.unit_inner_eq_one_sub_half_sq.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : InnerProductSpace.{0, u_1} Real E] {u v : E},
+  Eq.{1} (norm.{u_1} u) 1 →
+    Eq.{1} (norm.{u_1} v) 1 →
+      Eq.{1} (inner.{0, u_1} Real u v)
+        (HSub.hSub.{0, 0, 0} 1
+          (HDiv.hDiv.{0, 0, 0} (HPow.hPow.{0, 0, 0} (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} u v)) 2) 2))
+@ConvexApprox.chordalCos_le_inner.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : InnerProductSpace.{0, u_1} Real E] {u v : E} {δ : Real},
+  Eq.{1} (norm.{u_1} u) 1 →
+    Eq.{1} (norm.{u_1} v) 1 →
+      LE.le.{0} (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} u v)) δ →
+        LE.le.{0} (ConvexApprox.chordalCos δ) (inner.{0, u_1} Real u v)
+@ConvexApprox.unit_tangent_norm_sq.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : InnerProductSpace.{0, u_1} Real E] {u v : E},
+  Eq.{1} (norm.{u_1} u) 1 →
+    Eq.{1} (norm.{u_1} v) 1 →
+      Eq.{1}
+        (HPow.hPow.{0, 0, 0}
+          (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} u (HSMul.hSMul.{0, u_1, u_1} (inner.{0, u_1} Real u v) v))) 2)
+        (HSub.hSub.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (inner.{0, u_1} Real u v) 2))
+@ConvexApprox.chordalSin_nonneg : ∀ {δ : Real}, LE.le.{0} 0 δ → LE.le.{0} 0 (ConvexApprox.chordalSin δ)
+@ConvexApprox.chordalSin_sq : ∀ {δ : Real},
+  LE.le.{0} (HPow.hPow.{0, 0, 0} δ 2) 4 →
+    Eq.{1} (HPow.hPow.{0, 0, 0} (ConvexApprox.chordalSin δ) 2)
+      (HSub.hSub.{0, 0, 0} 1 (HPow.hPow.{0, 0, 0} (ConvexApprox.chordalCos δ) 2))
+@ConvexApprox.unit_tangent_norm_le_chordalSin.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : InnerProductSpace.{0, u_1} Real E] {u v : E} {δ : Real},
+  Eq.{1} (norm.{u_1} u) 1 →
+    Eq.{1} (norm.{u_1} v) 1 →
+      LE.le.{0} (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} u v)) δ →
+        LT.lt.{0} (HPow.hPow.{0, 0, 0} δ 2) 2 →
+          LE.le.{0} (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} u (HSMul.hSMul.{0, u_1, u_1} (inner.{0, u_1} Real u v) v)))
+            (ConvexApprox.chordalSin δ)
+@ConvexApprox.chordalSin_le : ∀ {δ : Real}, LE.le.{0} 0 δ → LE.le.{0} (ConvexApprox.chordalSin δ) δ
+@ConvexApprox.support_displacement_le_chordalSin.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : InnerProductSpace.{0, u_1} Real E] {u ν v w : E} {δ L : Real},
+  Eq.{1} (norm.{u_1} u) 1 →
+    Eq.{1} (norm.{u_1} ν) 1 →
+      LE.le.{0} (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} u ν)) δ →
+        LT.lt.{0} (HPow.hPow.{0, 0, 0} δ 2) 2 →
+          LE.le.{0} (inner.{0, u_1} Real ν (HSub.hSub.{u_1, u_1, u_1} v w)) 0 →
+            LE.le.{0} (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} v w)) L →
+              LE.le.{0} (inner.{0, u_1} Real u (HSub.hSub.{u_1, u_1, u_1} v w))
+                (HMul.hMul.{0, 0, 0} (ConvexApprox.chordalSin δ) L)
+@ConvexApprox.local_outer_error.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : InnerProductSpace.{0, u_1} Real E] {u ν x v w : E} {δ ε L r : Real},
+  Eq.{1} (norm.{u_1} u) 1 →
+    Eq.{1} (norm.{u_1} ν) 1 →
+      LE.le.{0} (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} u ν)) δ →
+        LT.lt.{0} (HPow.hPow.{0, 0, 0} δ 2) 2 →
+          LE.le.{0} 0 r →
+            Eq.{u_1 + 1} (HSub.hSub.{u_1, u_1, u_1} x w) (HSMul.hSMul.{0, u_1, u_1} r ν) →
+              LE.le.{0} (inner.{0, u_1} Real ν (HSub.hSub.{u_1, u_1, u_1} v w)) 0 →
+                LE.le.{0} (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} v w)) L →
+                  LE.le.{0} (inner.{0, u_1} Real u x) (HAdd.hAdd.{0, 0, 0} (inner.{0, u_1} Real u v) ε) →
+                    LE.le.{0} r
+                      (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} ε (HMul.hMul.{0, 0, 0} (ConvexApprox.chordalSin δ) L))
+                        (ConvexApprox.chordalCos δ))
+@ConvexApprox.outerErrorBound_nonneg.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E] {K : Set.{u_1} E}
+  {δ ε : Real},
+  LE.le.{0} 0 δ →
+    LT.lt.{0} (HPow.hPow.{0, 0, 0} δ 2) 2 → LE.le.{0} 0 ε → LE.le.{0} 0 (ConvexApprox.outerErrorBound.{u_1} K δ ε)
+@ConvexApprox.infDist_le_outerErrorBound.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : InnerProductSpace.{0, u_1} Real E] {K : Set.{u_1} E} {D : Finset.{u_1} E} {δ ε : Real},
+  IsCompact.{u_1} K →
+    Set.Nonempty.{u_1} K →
+      Convex.{0, u_1} Real K →
+        ConvexApprox.IsChordalNet.{u_1} D δ →
+          LE.le.{0} 0 δ →
+            LT.lt.{0} (HPow.hPow.{0, 0, 0} δ 2) 2 →
+              LE.le.{0} 0 ε →
+                ∀ {x : E},
+                  (∀ (u : E),
+                      Membership.mem.{u_1, u_1} D u →
+                        LE.le.{0} (inner.{0, u_1} Real u x)
+                          (HAdd.hAdd.{0, 0, 0} (ConvexApprox.supportValue.{u_1} K u) ε)) →
+                    LE.le.{0} (Metric.infDist.{u_1} x K) (ConvexApprox.outerErrorBound.{u_1} K δ ε)
+@ConvexApprox.outer_set_subset_tube.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : InnerProductSpace.{0, u_1} Real E] {K C : Set.{u_1} E} {D : Finset.{u_1} E} {δ ε : Real},
+  IsCompact.{u_1} K →
+    Set.Nonempty.{u_1} K →
+      Convex.{0, u_1} Real K →
+        ConvexApprox.IsChordalNet.{u_1} D δ →
+          LE.le.{0} 0 δ →
+            LT.lt.{0} (HPow.hPow.{0, 0, 0} δ 2) 2 →
+              LE.le.{0} 0 ε →
+                (∀ (x : E),
+                    Membership.mem.{u_1, u_1} C x →
+                      ∀ (u : E),
+                        Membership.mem.{u_1, u_1} D u →
+                          LE.le.{0} (inner.{0, u_1} Real u x)
+                            (HAdd.hAdd.{0, 0, 0} (ConvexApprox.supportValue.{u_1} K u) ε)) →
+                  Subset.{u_1} C
+                    (setOf.{u_1} fun x =>
+                      LE.le.{0} (Metric.infDist.{u_1} x K) (ConvexApprox.outerErrorBound.{u_1} K δ ε))
+@ConvexApprox.hausdorffDist_le_outerErrorBound.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : InnerProductSpace.{0, u_1} Real E] {K C : Set.{u_1} E} {D : Finset.{u_1} E} {δ ε : Real},
+  IsCompact.{u_1} K →
+    Set.Nonempty.{u_1} K →
+      Convex.{0, u_1} Real K →
+        ConvexApprox.IsChordalNet.{u_1} D δ →
+          LE.le.{0} 0 δ →
+            LT.lt.{0} (HPow.hPow.{0, 0, 0} δ 2) 2 →
+              LE.le.{0} 0 ε →
+                Subset.{u_1} K C →
+                  (∀ (x : E),
+                      Membership.mem.{u_1, u_1} C x →
+                        ∀ (u : E),
+                          Membership.mem.{u_1, u_1} D u →
+                            LE.le.{0} (inner.{0, u_1} Real u x)
+                              (HAdd.hAdd.{0, 0, 0} (ConvexApprox.supportValue.{u_1} K u) ε)) →
+                    LE.le.{0} (Metric.hausdorffDist.{u_1} C K) (ConvexApprox.outerErrorBound.{u_1} K δ ε)
+@ConvexApprox.outerErrorBound_le_simple.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E] {K : Set.{u_1} E}
+  {δ ε : Real},
+  LE.le.{0} 0 δ →
+    LT.lt.{0} (HPow.hPow.{0, 0, 0} δ 2) 2 →
+      LE.le.{0} (ConvexApprox.outerErrorBound.{u_1} K δ ε)
+        (HDiv.hDiv.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} ε (HMul.hMul.{0, 0, 0} δ (Metric.diam.{u_1} K)))
+          (ConvexApprox.chordalCos δ))
+@ConvexApprox.infDist_le_exact_outer_error.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : InnerProductSpace.{0, u_1} Real E] {K : Set.{u_1} E} {D : Finset.{u_1} E} {δ ε : Real},
+  IsCompact.{u_1} K →
+    Set.Nonempty.{u_1} K →
+      Convex.{0, u_1} Real K →
+        ConvexApprox.IsChordalNet.{u_1} D δ →
+          LE.le.{0} 0 δ →
+            LT.lt.{0} δ (Real.sqrt 2) →
+              LE.le.{0} 0 ε →
+                ∀ {x : E},
+                  (∀ (u : E),
+                      Membership.mem.{u_1, u_1} D u →
+                        LE.le.{0} (inner.{0, u_1} Real u x)
+                          (HAdd.hAdd.{0, 0, 0} (ConvexApprox.supportValue.{u_1} K u) ε)) →
+                    LE.le.{0} (Metric.infDist.{u_1} x K)
+                      (HDiv.hDiv.{0, 0, 0}
+                        (HAdd.hAdd.{0, 0, 0} ε
+                          (HMul.hMul.{0, 0, 0}
+                            (HMul.hMul.{0, 0, 0} δ
+                              (Real.sqrt (HSub.hSub.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} (HPow.hPow.{0, 0, 0} δ 2) 4))))
+                            (Metric.diam.{u_1} K)))
+                        (HSub.hSub.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} (HPow.hPow.{0, 0, 0} δ 2) 2)))
+@ConvexApprox.hausdorffDist_le_exact_outer_error.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : InnerProductSpace.{0, u_1} Real E] {K C : Set.{u_1} E} {D : Finset.{u_1} E} {δ ε : Real},
+  IsCompact.{u_1} K →
+    Set.Nonempty.{u_1} K →
+      Convex.{0, u_1} Real K →
+        ConvexApprox.IsChordalNet.{u_1} D δ →
+          LE.le.{0} 0 δ →
+            LT.lt.{0} δ (Real.sqrt 2) →
+              LE.le.{0} 0 ε →
+                Subset.{u_1} K C →
+                  (∀ (x : E),
+                      Membership.mem.{u_1, u_1} C x →
+                        ∀ (u : E),
+                          Membership.mem.{u_1, u_1} D u →
+                            LE.le.{0} (inner.{0, u_1} Real u x)
+                              (HAdd.hAdd.{0, 0, 0} (ConvexApprox.supportValue.{u_1} K u) ε)) →
+                    LE.le.{0} (Metric.hausdorffDist.{u_1} C K)
+                      (HDiv.hDiv.{0, 0, 0}
+                        (HAdd.hAdd.{0, 0, 0} ε
+                          (HMul.hMul.{0, 0, 0}
+                            (HMul.hMul.{0, 0, 0} δ
+                              (Real.sqrt (HSub.hSub.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} (HPow.hPow.{0, 0, 0} δ 2) 4))))
+                            (Metric.diam.{u_1} K)))
+                        (HSub.hSub.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} (HPow.hPow.{0, 0, 0} δ 2) 2)))
+@ConvexApprox.singleton_norm_le_outer_error.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : InnerProductSpace.{0, u_1} Real E] {D : Finset.{u_1} E} {δ ε : Real} (p : E),
+  ConvexApprox.IsChordalNet.{u_1} D δ →
+    LE.le.{0} 0 δ →
+      LT.lt.{0} (HPow.hPow.{0, 0, 0} δ 2) 2 →
+        LE.le.{0} 0 ε →
+          ∀ {x : E},
+            (∀ (u : E),
+                Membership.mem.{u_1, u_1} D u →
+                  LE.le.{0} (inner.{0, u_1} Real u x) (HAdd.hAdd.{0, 0, 0} (inner.{0, u_1} Real u p) ε)) →
+              LE.le.{0} (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} x p)) (HDiv.hDiv.{0, 0, 0} ε (ConvexApprox.chordalCos δ))
+'ConvexApprox.chordalCos_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.chordal_sq_lt_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.unit_inner_eq_one_sub_half_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.chordalCos_le_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.unit_tangent_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.chordalSin_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.chordalSin_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.unit_tangent_norm_le_chordalSin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.chordalSin_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.support_displacement_le_chordalSin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.local_outer_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.outerErrorBound_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.infDist_le_outerErrorBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.outer_set_subset_tube' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.hausdorffDist_le_outerErrorBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.outerErrorBound_le_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.infDist_le_exact_outer_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.hausdorffDist_le_exact_outer_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.singleton_norm_le_outer_error' depends on axioms: [propext, Classical.choice, Quot.sound]

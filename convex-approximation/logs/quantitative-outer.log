@@ -1,0 +1,26 @@
+ConvexApprox/OuterApprox.lean:24:0: warning: automatically included section variable(s) unused in theorem `ConvexApprox.outerErrorBound_nonneg`:
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ConvexApprox/OuterApprox.lean:44:24: warning: This simp argument is unused:
+  Real.norm_eq_abs
+
+Hint: Omit it from the simp argument list.
+  simp [ν, norm_smul, R̵e̵a̵l̵.̵n̵o̵r̵m̵_̵e̵q̵_̵a̵b̵s̵,̵ ̵abs_of_pos (inv_pos.mpr hr), ne_of_gt hr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ConvexApprox/OuterApprox.lean:44:42: warning: This simp argument is unused:
+  abs_of_pos (inv_pos.mpr hr)
+
+Hint: Omit it from the simp argument list.
+  simp [ν, norm_smul, Real.norm_eq_abs, a̵b̵s̵_̵o̵f̵_̵p̵o̵s̵ ̵(̵i̵n̵v̵_̵p̵o̵s̵.̵m̵p̵r̵ ̵h̵r̵)̵,̵ ̵ne_of_gt hr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ConvexApprox/OuterApprox.lean:84:0: warning: automatically included section variable(s) unused in theorem `ConvexApprox.outerErrorBound_le_simple`:
+  [InnerProductSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [InnerProductSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

@@ -1,0 +1,45 @@
+{
+  "schema": "convex-portable-reproduction-check-v1",
+  "checked_utc": "2026-10-11T04:58:55.114976+00:00",
+  "command": "ELAN_HOME=INSPECTED_LOCAL_ELAN_HOME CONVEX_LEAN_BIN=INSPECTED_LEAN_4_24_BIN bash scripts/verify.sh EXTERNAL_OUTPUT_DIRECTORY",
+  "actual_exit": 0,
+  "fresh_project_build_exit": 0,
+  "inventoried_type_axiom_audit_exit": 0,
+  "source_and_pin_audit_exit": 0,
+  "supplemental_abbreviation_audit_exit": 0,
+  "output_routing": "New external output directory; supplied original receipts and source/pin files preserved.",
+  "current_scripts_sha256": {
+    "scripts/environment.sh": "1d48ccfab59659bc7b09b797bc292a0e45f2140b0c7ef1c1e7313273cd779104",
+    "scripts/verify.sh": "47e82525dd6e517239265957e7628eebb18573cfbc9499c28ba3b448da9d811d",
+    "scripts/verify-evidence.py": "76088ba0b40254981f3504c5a2554c57ce59298f3bff235ba600a46da8003a8e",
+    "scripts/SupplementalAudit.lean": "de035dfa622617223b332766e60c7547b7c6b2772d8c411f97ecc8bb2bbcc3f6"
+  },
+  "output_files": {
+    "final-source-audit.log": {
+      "public_file": "publication/evidence/convex-approximation/portable-final-source-audit.log",
+      "bytes": 1146,
+      "sha256": "8ff412d0ce1dfd9ec68efd66dfa42569964c24bcef82453d23cca686b15a623f"
+    },
+    "final-type-axiom-audit.log": {
+      "public_file": "publication/evidence/convex-approximation/portable-final-type-axiom-audit.log",
+      "bytes": 1156072,
+      "sha256": "ed9f8bdad4ab9e613d5bfe4628477e1c7883a0f4c1c4592461726de21e81d689"
+    },
+    "final-build.log": {
+      "public_file": "publication/evidence/convex-approximation/portable-final-build.log",
+      "bytes": 643,
+      "sha256": "1911c5f671b0b4035877f59d8b3b0239bd8668550591365b40c2ad5be0491c9a"
+    },
+    "final-environment.log": {
+      "public_file": "publication/evidence/convex-approximation/portable-final-environment.log",
+      "bytes": 1070,
+      "sha256": "ab5939855a4f8083c2c273efd51e17e924466842b11266f74cfa759a67c8ab45"
+    },
+    "supplemental-type-axiom-audit.log": {
+      "public_file": "publication/evidence/convex-approximation/portable-supplemental-type-axiom-audit.log",
+      "bytes": 124,
+      "sha256": "401ba401533b827c248801946440f84e2d3b98a832ec4a5de7bd461c555c7e47"
+    }
+  },
+  "trust": "Fresh project compilation with pinned cached dependency OLeans, no complete dependency rebuild. Complete source statement review is separate from type printing/axiom auditing."
+}

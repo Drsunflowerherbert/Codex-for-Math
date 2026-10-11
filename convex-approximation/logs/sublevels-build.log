@@ -1,0 +1,11 @@
+⚠ [7352/7352] Built ConvexApprox.Sublevels (5.0s)
+warning: ConvexApprox/Sublevels.lean:144:112: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ConvexApprox/Sublevels.lean:173:4: Try this:
+  ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Build completed successfully (7352 jobs).

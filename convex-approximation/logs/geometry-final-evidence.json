@@ -1,0 +1,40 @@
+{
+  "source_frozen": true,
+  "geometry_theorems_audited": 13,
+  "examples_theorems_audited": 19,
+  "placeholders_present": false,
+  "files": {
+    "ConvexApprox/Geometry.lean": {
+      "bytes": 8081,
+      "sha256": "54dfd0e3a0547dd3f13055f907c85a428a675b6c4793914d41879e75e37e4ea6"
+    },
+    "ConvexApprox/Examples.lean": {
+      "bytes": 7548,
+      "sha256": "d99dac7d3f6f1b5a489b728f4d9645ebaac364eb02ef1ae6ef49d7ba8584afe1"
+    },
+    "lean-toolchain": {
+      "bytes": 25,
+      "sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434"
+    },
+    "lake-manifest.json": {
+      "bytes": 3540,
+      "sha256": "b944c3b78c23f888779246046dcb33f0d3e3483470ee200e2732a51ef68c49ad"
+    },
+    "logs/geometry-build-05.log": {
+      "bytes": 93,
+      "sha256": "6b4d310dc1bc46f823fd0e8a49fed8ac28b6c2d6386b837e5fd84a7570ee85ca"
+    },
+    "logs/geometry-type-axiom-inspection.log": {
+      "bytes": 28119,
+      "sha256": "2b7ba27f3c5e29cbc7c4f10cda5db6a03ae74b92b701557f328492da4614514f"
+    },
+    "logs/geometry-examples-build-03.log": {
+      "bytes": 115,
+      "sha256": "9c80b53fbbf643039bca0c3471e907b778994f8fa93bfb870e013b80800da102"
+    },
+    "logs/geometry-examples-type-axiom-inspection.log": {
+      "bytes": 7466,
+      "sha256": "25bf53a72449d148f2630d8dda462b73761a6756cfa4735d6e452c3e9fa71ca6"
+    }
+  }
+}

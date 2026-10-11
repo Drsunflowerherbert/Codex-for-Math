@@ -114,3 +114,43 @@ for the earlier full tangent gate. Historical 32 ZIP checks differ from the 29
 self-contained public cases. Trusted pinned dependency OLeans, host runtime,
 same-kernel replay, monomorphic full gates, the unproved PiDiophantine premise
 and unvalidated native Mac/MRS integration remain explicit limits.
+
+## Convex approximation core
+
+The [nine-module project](../convex-approximation/README.md) has accepted independent
+source review and fresh project-source compilation, declaration/axiom checks and
+portable reproduction. See [CONVEX-APPROX-CHECKS.json](evidence/CONVEX-APPROX-CHECKS.json),
+[CONVEX-PORTABLE-CHECKS.json](evidence/CONVEX-PORTABLE-CHECKS.json) and their
+[raw public logs](evidence/convex-approximation/). The supplied audit contains 145
+inventoried declarations; the separate Plane abbreviation audit completes coverage
+of 146 explicitly named declarations: 124 theorem/lemma statements, 20 definitions,
+one structure and one abbreviation. Generated structure declarations are not
+separately counted. Type printing has ordinary proof-argument pretty-printer
+elisions; original source statements and independent statement review remain
+inspectable. There is no programmed expected-type-equality gate for this project.
+
+The compiled scope includes the exact quantitative outer estimate, actual barrier
+derivatives, inner tube, coercivity, compact strictly convex sublevels, nonzero
+level derivatives and an actual certified compactly nested approximation sequence,
+including singleton/lower-dimensional examples. Analytic boundary charts and
+sphere/Jordan parametrizations remain deferred. The source manuscript is broader.
+
+All 132 original archive candidates have dispositions in the source map: 97
+retained, including 75 unchanged copies and 22 metadata/path/routing edits; 35
+omitted, including duplicate existing-study/source links. All 21 original Lean
+source/audit and pin files are unchanged. Nested archives, recovery/draft handoffs,
+tangent coordination metadata and the package helper are excluded. Existing
+ordinary study and attributed source are linked. The failed first printer audit
+remains exit 1; the corrected historical audit remains exit 0. Fresh logs and
+reviews do not overwrite either supplied receipt. No overall license is invented.
+
+## Final round status
+
+All completed artifacts actually retrieved for this publication are included,
+with final source/privacy/status reviews and separate fresh reproduction records.
+The [mixed-moment finalization](PENDING-TRANSFER.json) was reported completed and
+independently accepted in its separate task, but final source/evidence transfer
+failed before an accessible artifact existed. Its reported fingerprint is not
+a publisher-verified archive hash. Final transfer and publication remain pending;
+no older checkpoint or ordinary study is promoted into the final proof project.
+This round closes with that limitation explicitly preserved.

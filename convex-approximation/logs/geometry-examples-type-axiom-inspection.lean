@@ -1,0 +1,43 @@
+import ConvexApprox.Examples
+
+set_option pp.universes true
+
+#check ConvexApprox.Examples.horizontal_norm
+#check ConvexApprox.Examples.vertical_norm
+#check ConvexApprox.Examples.planarAxes_unit
+#check ConvexApprox.Examples.exists_planarNet
+#check ConvexApprox.Examples.planarSegment_nonempty
+#check ConvexApprox.Examples.planarSegment_compact
+#check ConvexApprox.Examples.planarSegment_convex
+#check ConvexApprox.Examples.planarSegment_eq_image
+#check ConvexApprox.Examples.horizontal_mem_planarSegment
+#check ConvexApprox.Examples.horizontal_ne_zero
+#check ConvexApprox.Examples.planarSegment_diam
+#check ConvexApprox.Examples.planarSegment_vertical_zero
+#check ConvexApprox.Examples.planarSegment_interior_empty
+#check ConvexApprox.Examples.planarSegment_infDist_le_exact_outer_error
+#check ConvexApprox.Examples.planarSingleton_norm_le_outer_error
+#check ConvexApprox.Examples.planarSegment_barrier_compact
+#check ConvexApprox.Examples.planarSegment_barrier_lt_one
+#check ConvexApprox.Examples.planarSegment_barrier_hausdorff_error
+#check ConvexApprox.Examples.planarSingleton_barrier_radius
+
+#print axioms ConvexApprox.Examples.horizontal_norm
+#print axioms ConvexApprox.Examples.vertical_norm
+#print axioms ConvexApprox.Examples.planarAxes_unit
+#print axioms ConvexApprox.Examples.exists_planarNet
+#print axioms ConvexApprox.Examples.planarSegment_nonempty
+#print axioms ConvexApprox.Examples.planarSegment_compact
+#print axioms ConvexApprox.Examples.planarSegment_convex
+#print axioms ConvexApprox.Examples.planarSegment_eq_image
+#print axioms ConvexApprox.Examples.horizontal_mem_planarSegment
+#print axioms ConvexApprox.Examples.horizontal_ne_zero
+#print axioms ConvexApprox.Examples.planarSegment_diam
+#print axioms ConvexApprox.Examples.planarSegment_vertical_zero
+#print axioms ConvexApprox.Examples.planarSegment_interior_empty
+#print axioms ConvexApprox.Examples.planarSegment_infDist_le_exact_outer_error
+#print axioms ConvexApprox.Examples.planarSingleton_norm_le_outer_error
+#print axioms ConvexApprox.Examples.planarSegment_barrier_compact
+#print axioms ConvexApprox.Examples.planarSegment_barrier_lt_one
+#print axioms ConvexApprox.Examples.planarSegment_barrier_hausdorff_error
+#print axioms ConvexApprox.Examples.planarSingleton_barrier_radius

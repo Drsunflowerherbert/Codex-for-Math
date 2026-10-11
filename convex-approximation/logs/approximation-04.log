@@ -1,0 +1,7 @@
+✖ [7356/7356] Building ConvexApprox.Approximation (4.6s)
+trace: .> LEAN_PATH=<project>/.lake/packages/Cli/.lake/build/lib/lean:<project>/.lake/packages/batteries/.lake/build/lib/lean:<project>/.lake/packages/Qq/.lake/build/lib/lean:<project>/.lake/packages/aesop/.lake/build/lib/lean:<project>/.lake/packages/proofwidgets/.lake/build/lib/lean:<project>/.lake/packages/importGraph/.lake/build/lib/lean:<project>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<project>/.lake/packages/plausible/.lake/build/lib/lean:<project>/.lake/packages/mathlib/.lake/build/lib/lean:<project>/.lake/build/lib/lean <lean-4.24.0>/bin/lean <project>/ConvexApprox/Approximation.lean -o <project>/.lake/build/lib/lean/ConvexApprox/Approximation.olean -i <project>/.lake/build/lib/lean/ConvexApprox/Approximation.ilean -c <project>/.lake/build/ir/ConvexApprox/Approximation.c --setup <project>/.lake/build/ir/ConvexApprox/Approximation.setup.json --json
+error: ConvexApprox/Approximation.lean:228:15: expected token
+error: Lean exited with code 1
+Some required targets logged failures:
+- ConvexApprox.Approximation
+error: build failed

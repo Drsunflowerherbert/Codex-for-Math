@@ -1,0 +1,34 @@
+ConvexApprox/Barrier.lean:162:2: warning: Try `simp at hpos` instead of `simpa using hpos`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+ConvexApprox/Barrier.lean:169:31: error: don't know how to synthesize implicit argument `n`
+  @ContDiff.continuous ℝ DenselyNormedField.toNontriviallyNormedField E inst✝² inst✝¹ ℝ Real.normedAddCommGroup
+    RCLike.toInnerProductSpaceReal.toNormedSpace (barrier L b) ?m.71 (contDiff_barrier L b)
+context:
+E : Type u_1
+ι : Type u_2
+inst✝² : NormedAddCommGroup E
+inst✝¹ : NormedSpace ℝ E
+inst✝ : Fintype ι
+L : ι → E →L[ℝ] ℝ
+b : ι → ℝ
+p : E
+c : ℝ
+hp : barrier L b p < c
+⊢ WithTop ℕ∞
+ConvexApprox/Barrier.lean:169:32: error: don't know how to synthesize implicit argument `n`
+  @contDiff_barrier E ι inst✝² inst✝¹ inst✝ L b ?m.71
+context:
+E : Type u_1
+ι : Type u_2
+inst✝² : NormedAddCommGroup E
+inst✝¹ : NormedSpace ℝ E
+inst✝ : Fintype ι
+L : ι → E →L[ℝ] ℝ
+b : ι → ℝ
+p : E
+c : ℝ
+hp : barrier L b p < c
+⊢ WithTop ℕ∞
+ConvexApprox/Barrier.lean:191:8: error: typeclass instance problem is stuck, it is often due to metavariables
+  PartialOrder ?m.86

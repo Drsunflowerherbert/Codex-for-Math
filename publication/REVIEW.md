@@ -100,3 +100,20 @@ receipts and cached copies were excluded; historical summaries use a distinct
 derivative schema and preserve the difference between byte consistency and a
 newly observed Lean result. Fresh tests and extracted-package evidence are
 separate publication-session records with their actual counts and trust limits.
+
+## Convex approximation publication review
+
+Independent mathematical review accepts the frozen nine-module core with no
+mathematical blocker, confirms zero/lower-dimensional scope and exact constants,
+and preserves all deferred analytic and unexported ordinary-study claims. It
+verified the supplied 145-name inventory and fresh 145+Plane checks, source/pin
+hashes, failed/corrected audit distinction and actual nesting conclusions.
+
+Independent privacy review read all 132 input files and 136 regular entries in
+the two unique nested ZIPs without executing their contents. The assembled copy
+preserves all 21 original Lean/audit/pin files exactly; nine private-path diagnostic
+logs differ only by documented prefix normalization. Library/transport/task
+identities and coordination prose were removed. Existing ordinary-study/source
+files are linked, their prior attribution remains intact, and new code receives
+no invented license. New review locators and current/original report hashes remain
+separate, with the mathematical verdict and scope preserved.

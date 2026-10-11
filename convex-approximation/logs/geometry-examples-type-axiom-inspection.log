@@ -1,0 +1,92 @@
+ConvexApprox.Examples.horizontal_norm : Eq.{1} (norm.{0} ConvexApprox.Examples.horizontal) 1
+ConvexApprox.Examples.vertical_norm : Eq.{1} (norm.{0} ConvexApprox.Examples.vertical) 1
+ConvexApprox.Examples.planarAxes_unit (u : ConvexApprox.Examples.Plane) :
+  Membership.mem.{0, 0} ConvexApprox.Examples.planarAxes u → Eq.{1} (norm.{0} u) 1
+ConvexApprox.Examples.exists_planarNet {δ : Real} (hδ : LT.lt.{0} 0 δ) :
+  ∃ D, And (Subset.{0} ConvexApprox.Examples.planarAxes D) (ConvexApprox.IsChordalNet.{0} D δ)
+ConvexApprox.Examples.planarSegment_nonempty : Set.Nonempty.{0} ConvexApprox.Examples.planarSegment
+ConvexApprox.Examples.planarSegment_compact : IsCompact.{0} ConvexApprox.Examples.planarSegment
+ConvexApprox.Examples.planarSegment_convex : Convex.{0, 0} Real ConvexApprox.Examples.planarSegment
+ConvexApprox.Examples.planarSegment_eq_image :
+  Eq.{1} ConvexApprox.Examples.planarSegment
+    (Set.image.{0, 0} (fun a => HSMul.hSMul.{0, 0, 0} a ConvexApprox.Examples.horizontal) (Set.Icc.{0} 0 1))
+ConvexApprox.Examples.horizontal_mem_planarSegment :
+  Membership.mem.{0, 0} ConvexApprox.Examples.planarSegment ConvexApprox.Examples.horizontal
+ConvexApprox.Examples.horizontal_ne_zero : Ne.{1} ConvexApprox.Examples.horizontal 0
+ConvexApprox.Examples.planarSegment_diam : Eq.{1} (Metric.diam.{0} ConvexApprox.Examples.planarSegment) 1
+ConvexApprox.Examples.planarSegment_vertical_zero {z : ConvexApprox.Examples.Plane}
+  (hz : Membership.mem.{0, 0} ConvexApprox.Examples.planarSegment z) : Eq.{1} (z 1) 0
+ConvexApprox.Examples.planarSegment_interior_empty :
+  Eq.{1} (interior.{0} ConvexApprox.Examples.planarSegment) EmptyCollection.emptyCollection.{0}
+ConvexApprox.Examples.planarSegment_infDist_le_exact_outer_error {D : Finset.{0} ConvexApprox.Examples.Plane}
+  {δ ε : Real} (hnet : ConvexApprox.IsChordalNet.{0} D δ) (hδ₀ : LE.le.{0} 0 δ) (hδ : LT.lt.{0} δ (Real.sqrt 2))
+  (hε : LE.le.{0} 0 ε) {x : ConvexApprox.Examples.Plane}
+  (hslack :
+    ∀ (u : ConvexApprox.Examples.Plane),
+      Membership.mem.{0, 0} D u →
+        LE.le.{0} (inner.{0, 0} Real u x)
+          (HAdd.hAdd.{0, 0, 0} (ConvexApprox.supportValue.{0} ConvexApprox.Examples.planarSegment u) ε)) :
+  LE.le.{0} (Metric.infDist.{0} x ConvexApprox.Examples.planarSegment)
+    (HDiv.hDiv.{0, 0, 0}
+      (HAdd.hAdd.{0, 0, 0} ε
+        (HMul.hMul.{0, 0, 0} δ (Real.sqrt (HSub.hSub.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} (HPow.hPow.{0, 0, 0} δ 2) 4)))))
+      (HSub.hSub.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} (HPow.hPow.{0, 0, 0} δ 2) 2)))
+ConvexApprox.Examples.planarSingleton_norm_le_outer_error {D : Finset.{0} ConvexApprox.Examples.Plane} {δ ε : Real}
+  (p : ConvexApprox.Examples.Plane) (hnet : ConvexApprox.IsChordalNet.{0} D δ) (hδ₀ : LE.le.{0} 0 δ)
+  (hδ : LT.lt.{0} (HPow.hPow.{0, 0, 0} δ 2) 2) (hε : LE.le.{0} 0 ε) {x : ConvexApprox.Examples.Plane}
+  (hslack :
+    ∀ (u : ConvexApprox.Examples.Plane),
+      Membership.mem.{0, 0} D u → LE.le.{0} (inner.{0, 0} Real u x) (HAdd.hAdd.{0, 0, 0} (inner.{0, 0} Real u p) ε)) :
+  LE.le.{0} (norm.{0} (HSub.hSub.{0, 0, 0} x p)) (HDiv.hDiv.{0, 0, 0} ε (ConvexApprox.chordalCos δ))
+ConvexApprox.Examples.planarSegment_barrier_compact {D : Finset.{0} ConvexApprox.Examples.Plane} {δ ε t : Real}
+  (hnet : ConvexApprox.IsChordalNet.{0} D δ) (hδ : LT.lt.{0} (HPow.hPow.{0, 0, 0} δ 2) 2) (ht : LT.lt.{0} 0 t)
+  (A : Real) :
+  IsCompact.{0}
+    (setOf.{0} fun x => LE.le.{0} (ConvexApprox.supportBarrier.{0} ConvexApprox.Examples.planarSegment D ε t x) A)
+ConvexApprox.Examples.planarSegment_barrier_lt_one {D : Finset.{0} ConvexApprox.Examples.Plane} {ε t : Real}
+  (ht : LE.le.{0} 0 t)
+  (hmargin :
+    LT.lt.{0} (HMul.hMul.{0, 0, 0} (↑(Finset.card.{0} D)) (Real.exp (HMul.hMul.{0, 0, 0} (Neg.neg.{0} t) ε))) 1)
+  {x : ConvexApprox.Examples.Plane} (hx : Membership.mem.{0, 0} ConvexApprox.Examples.planarSegment x) :
+  LT.lt.{0} (ConvexApprox.supportBarrier.{0} ConvexApprox.Examples.planarSegment D ε t x) 1
+ConvexApprox.Examples.planarSegment_barrier_hausdorff_error {D : Finset.{0} ConvexApprox.Examples.Plane} {δ ε t : Real}
+  (hnet : ConvexApprox.IsChordalNet.{0} D δ) (hδ₀ : LE.le.{0} 0 δ) (hδ : LT.lt.{0} δ (Real.sqrt 2)) (hε : LE.le.{0} 0 ε)
+  (ht : LT.lt.{0} 0 t)
+  (hmargin :
+    LT.lt.{0} (HMul.hMul.{0, 0, 0} (↑(Finset.card.{0} D)) (Real.exp (HMul.hMul.{0, 0, 0} (Neg.neg.{0} t) ε))) 1) :
+  LE.le.{0}
+    (Metric.hausdorffDist.{0}
+      (setOf.{0} fun x => LE.le.{0} (ConvexApprox.supportBarrier.{0} ConvexApprox.Examples.planarSegment D ε t x) 1)
+      ConvexApprox.Examples.planarSegment)
+    (HDiv.hDiv.{0, 0, 0}
+      (HAdd.hAdd.{0, 0, 0} ε
+        (HMul.hMul.{0, 0, 0} δ (Real.sqrt (HSub.hSub.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} (HPow.hPow.{0, 0, 0} δ 2) 4)))))
+      (HSub.hSub.{0, 0, 0} 1 (HDiv.hDiv.{0, 0, 0} (HPow.hPow.{0, 0, 0} δ 2) 2)))
+ConvexApprox.Examples.planarSingleton_barrier_radius {D : Finset.{0} ConvexApprox.Examples.Plane} {δ ε t : Real}
+  (p : ConvexApprox.Examples.Plane) (hnet : ConvexApprox.IsChordalNet.{0} D δ) (hδ₀ : LE.le.{0} 0 δ)
+  (hδ : LT.lt.{0} (HPow.hPow.{0, 0, 0} δ 2) 2) (hε : LE.le.{0} 0 ε) (ht : LT.lt.{0} 0 t)
+  {x : ConvexApprox.Examples.Plane} (hx : LE.le.{0} (ConvexApprox.supportBarrier.{0} (singleton.{0, 0} p) D ε t x) 1) :
+  LE.le.{0} (norm.{0} (HSub.hSub.{0, 0, 0} x p)) (HDiv.hDiv.{0, 0, 0} ε (ConvexApprox.chordalCos δ))
+'ConvexApprox.Examples.horizontal_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.vertical_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.planarAxes_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.exists_planarNet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.planarSegment_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.planarSegment_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.planarSegment_convex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.planarSegment_eq_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.horizontal_mem_planarSegment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.horizontal_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.planarSegment_diam' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.planarSegment_vertical_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.planarSegment_interior_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.planarSegment_infDist_le_exact_outer_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ConvexApprox.Examples.planarSingleton_norm_le_outer_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.planarSegment_barrier_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.planarSegment_barrier_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.planarSegment_barrier_hausdorff_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConvexApprox.Examples.planarSingleton_barrier_radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Compiler exit status: 0

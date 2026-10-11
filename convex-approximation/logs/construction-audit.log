@@ -1,0 +1,20 @@
+@ConvexApprox.exists_outer_parameters_containing.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : InnerProductSpace.{0, u_1} Real E] [FiniteDimensional.{0, u_1} Real E] [Nontrivial.{u_1} E]
+  (K : Set.{u_1} E) (A : Finset.{u_1} E),
+  (∀ (u : E), Membership.mem.{u_1, u_1} A u → Eq.{1} (norm.{u_1} u) 1) →
+    ∀ {ρ : Real},
+      LT.lt.{0} 0 ρ →
+        ∃ D δ ε t,
+          And (Subset.{u_1} A D)
+            (And (ConvexApprox.IsChordalNet.{u_1} D δ)
+              (And (LT.lt.{0} 0 δ)
+                (And (LT.lt.{0} δ (Real.sqrt 2))
+                  (And (LT.lt.{0} 0 ε)
+                    (And (LT.lt.{0} 0 t)
+                      (And
+                        (LT.lt.{0}
+                          (HMul.hMul.{0, 0, 0} (↑(Finset.card.{u_1} D))
+                            (Real.exp (HMul.hMul.{0, 0, 0} (Neg.neg.{0} t) ε)))
+                          1)
+                        (LT.lt.{0} (ConvexApprox.outerErrorBound.{u_1} K δ ε) ρ)))))))
+'ConvexApprox.exists_outer_parameters_containing' depends on axioms: [propext, Classical.choice, Quot.sound]

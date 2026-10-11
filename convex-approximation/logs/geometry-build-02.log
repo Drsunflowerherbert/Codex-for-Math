@@ -1,0 +1,2 @@
+ConvexApprox/Geometry.lean:28:8: error: typeclass instance problem is stuck, it is often due to metavariables
+  ClosedIciTopology ?m.47

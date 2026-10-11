@@ -1,0 +1,4 @@
+import ConvexApprox.Construction
+set_option pp.universes true
+#check @ConvexApprox.exists_outer_parameters_containing
+#print axioms ConvexApprox.exists_outer_parameters_containing

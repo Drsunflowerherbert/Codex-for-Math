@@ -1,0 +1,80 @@
+@ConvexApprox.hasFDerivAt_barrier : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (x : E),
+  HasFDerivAt (ConvexApprox.barrier L b) (ConvexApprox.barrierDeriv L b x) x
+'ConvexApprox.hasFDerivAt_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.hasFDerivAt_barrierDeriv : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (x : E),
+  HasFDerivAt (ConvexApprox.barrierDeriv L b) (ConvexApprox.barrierHessian L b x) x
+'ConvexApprox.hasFDerivAt_barrierDeriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.fderiv_barrier : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E]
+  [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (x : E),
+  fderiv ℝ (ConvexApprox.barrier L b) x = ConvexApprox.barrierDeriv L b x
+'ConvexApprox.fderiv_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.fderiv_barrierDeriv : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (x : E),
+  fderiv ℝ (ConvexApprox.barrierDeriv L b) x = ConvexApprox.barrierHessian L b x
+'ConvexApprox.fderiv_barrierDeriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.barrierDeriv_apply : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (x y : E),
+  (ConvexApprox.barrierDeriv L b x) y = ∑ i, Real.exp ((L i) x - b i) * (L i) y
+'ConvexApprox.barrierDeriv_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.barrierHessian_apply : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (x y z : E),
+  ((ConvexApprox.barrierHessian L b x) y) z = ∑ i, Real.exp ((L i) x - b i) * (L i) y * (L i) z
+'ConvexApprox.barrierHessian_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.barrierHessian_diag : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (x y : E),
+  ((ConvexApprox.barrierHessian L b x) y) y = ∑ i, Real.exp ((L i) x - b i) * (L i) y ^ 2
+'ConvexApprox.barrierHessian_diag' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.contDiff_barrier : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) {n : WithTop ℕ∞},
+  ContDiff ℝ n (ConvexApprox.barrier L b)
+'ConvexApprox.contDiff_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.fderiv_fderiv_barrier : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (x : E),
+  fderiv ℝ (fun z => fderiv ℝ (ConvexApprox.barrier L b) z) x = ConvexApprox.barrierHessian L b x
+'ConvexApprox.fderiv_fderiv_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.barrierHessian_symmetric : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (x y z : E),
+  ((ConvexApprox.barrierHessian L b x) y) z = ((ConvexApprox.barrierHessian L b x) z) y
+'ConvexApprox.barrierHessian_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.barrierHessian_nonneg : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (x y : E),
+  0 ≤ ((ConvexApprox.barrierHessian L b x) y) y
+'ConvexApprox.barrierHessian_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.barrierHessian_pos_of_exists : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (x y : E),
+  (∃ i, (L i) y ≠ 0) → 0 < ((ConvexApprox.barrierHessian L b x) y) y
+'ConvexApprox.barrierHessian_pos_of_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.barrierHessian_pos : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ),
+  (∀ (y : E), y ≠ 0 → ∃ i, (L i) y ≠ 0) → ∀ (x y : E), y ≠ 0 → 0 < ((ConvexApprox.barrierHessian L b x) y) y
+'ConvexApprox.barrierHessian_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.convexOn_barrier : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ),
+  ConvexOn ℝ Set.univ (ConvexApprox.barrier L b)
+'ConvexApprox.convexOn_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.strictConvexOn_barrier : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ),
+  (∀ (v : E), v ≠ 0 → ∃ i, (L i) v ≠ 0) → StrictConvexOn ℝ Set.univ (ConvexApprox.barrier L b)
+'ConvexApprox.strictConvexOn_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.barrier_supporting : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (x y : E),
+  ConvexApprox.barrier L b x + (ConvexApprox.barrierDeriv L b x) (y - x) ≤ ConvexApprox.barrier L b y
+'ConvexApprox.barrier_supporting' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.barrierDeriv_apply_pos_of_level : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (p x : E) (c : ℝ),
+  ConvexApprox.barrier L b p < c → ConvexApprox.barrier L b x = c → 0 < (ConvexApprox.barrierDeriv L b x) (x - p)
+'ConvexApprox.barrierDeriv_apply_pos_of_level' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.barrierDeriv_ne_zero_of_level : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (p x : E) (c : ℝ),
+  ConvexApprox.barrier L b p < c → ConvexApprox.barrier L b x = c → ConvexApprox.barrierDeriv L b x ≠ 0
+'ConvexApprox.barrierDeriv_ne_zero_of_level' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.closure_barrier_lt : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (p : E) (c : ℝ),
+  ConvexApprox.barrier L b p < c → closure {x | ConvexApprox.barrier L b x < c} = {x | ConvexApprox.barrier L b x ≤ c}
+'ConvexApprox.closure_barrier_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+@ConvexApprox.frontier_barrier_lt : ∀ {E : Type u_1} {ι : Type u_2} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] [inst_2 : Fintype ι] (L : ι → E →L[ℝ] ℝ) (b : ι → ℝ) (p : E) (c : ℝ),
+  ConvexApprox.barrier L b p < c → frontier {x | ConvexApprox.barrier L b x < c} = {x | ConvexApprox.barrier L b x = c}
+'ConvexApprox.frontier_barrier_lt' depends on axioms: [propext, Classical.choice, Quot.sound]

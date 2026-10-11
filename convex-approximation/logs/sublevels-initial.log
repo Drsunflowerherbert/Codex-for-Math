@@ -1,0 +1,59 @@
+ConvexApprox/Sublevels.lean:140:10: error(lean.unknownIdentifier): Unknown constant `tendsto_norm_cobounded_atTop.atTop_sub`
+ConvexApprox/Sublevels.lean:141:14: error: Invalid field `atTop_sub`: The environment does not contain `Function.atTop_sub`
+  Filter.Tendsto.const_mul_atTop hc hn
+has type
+  ?m.82 ∈ Filter.atTop → ?m.82 ∈ Filter.map (fun x => c * ‖x - p‖) (Bornology.cobounded E)
+ConvexApprox/Sublevels.lean:137:88: error: unsolved goals
+E : Type u_1
+ι : Type u_2
+inst✝² : NormedAddCommGroup E
+inst✝¹ : InnerProductSpace ℝ E
+inst✝ : Fintype ι
+u : ι → E
+h : ι → ℝ
+ε t c R : ℝ
+p : E
+ht : 0 < t
+hc : 0 < c
+hcover : ∀ (y : E), ∃ i, c * ‖y‖ ≤ ⟪u i, y⟫_ℝ
+hsupport : ∀ (i : ι), h i - ⟪u i, p⟫_ℝ ≤ R
+hn : Filter.Tendsto (fun x => ‖x - p‖) (Bornology.cobounded E) Filter.atTop
+⊢ Filter.Tendsto (directionalBarrier u h ε t) (Bornology.cobounded E) Filter.atTop
+ConvexApprox/Sublevels.lean:154:22: error: don't know how to synthesize implicit argument `n`
+  @ContDiff.continuous ℝ DenselyNormedField.toNontriviallyNormedField E inst✝³ inst✝².toNormedSpace ℝ
+    Real.normedAddCommGroup RCLike.toInnerProductSpaceReal.toNormedSpace (directionalBarrier u h ε t) ?m.73
+    (contDiff_directionalBarrier u h ε t)
+context:
+E : Type u_1
+ι : Type u_2
+inst✝³ : NormedAddCommGroup E
+inst✝² : InnerProductSpace ℝ E
+inst✝¹ : Fintype ι
+inst✝ : ProperSpace E
+u : ι → E
+h : ι → ℝ
+ε t c R A : ℝ
+p : E
+ht : 0 < t
+hc : 0 < c
+hcover : ∀ (y : E), ∃ i, c * ‖y‖ ≤ ⟪u i, y⟫_ℝ
+hsupport : ∀ (i : ι), h i - ⟪u i, p⟫_ℝ ≤ R
+⊢ WithTop ℕ∞
+ConvexApprox/Sublevels.lean:154:23: error: don't know how to synthesize implicit argument `n`
+  @contDiff_directionalBarrier E ι inst✝³ inst✝² inst✝¹ u h ε t ?m.73
+context:
+E : Type u_1
+ι : Type u_2
+inst✝³ : NormedAddCommGroup E
+inst✝² : InnerProductSpace ℝ E
+inst✝¹ : Fintype ι
+inst✝ : ProperSpace E
+u : ι → E
+h : ι → ℝ
+ε t c R A : ℝ
+p : E
+ht : 0 < t
+hc : 0 < c
+hcover : ∀ (y : E), ∃ i, c * ‖y‖ ≤ ⟪u i, y⟫_ℝ
+hsupport : ∀ (i : ι), h i - ⟪u i, p⟫_ℝ ≤ R
+⊢ WithTop ℕ∞

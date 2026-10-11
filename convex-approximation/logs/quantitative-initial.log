@@ -1,0 +1,4 @@
+ConvexApprox/Quantitative.lean:81:0: error: Unexpected name `ConvexApprox` after `end`: The current section is unnamed
+
+Hint: Delete the name `ConvexApprox` to end the current unnamed scope; outer named scopes can then be closed using additional `end` command(s):
+  end ̵C̵o̵n̵v̵e̵x̵A̵p̵p̵r̵o̵x̵

@@ -1,0 +1,24 @@
+ConvexApprox/Sublevels.lean:141:6: error: typeclass instance problem is stuck, it is often due to metavariables
+  IsOrderedAddMonoid ?m.69
+ConvexApprox/Sublevels.lean:144:56: error: Application type mismatch: The argument
+  Filter.Tendsto.const_mul_atTop hc hn
+has type
+  Filter.Tendsto (fun x => c * ‖x - p‖) (Bornology.cobounded E) Filter.atTop
+of sort `Prop` but is expected to have type
+  ?m.114
+of sort `Type ?u.25436` in the application
+  Filter.tendsto_atTop_add_const_right ?m.124 (Filter.Tendsto.const_mul_atTop hc hn)
+Try this:
+  ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+ConvexApprox/Sublevels.lean:182:34: error: Application type mismatch: The argument
+  h
+has type
+  Real.log ↑(Fintype.card ι) < t * ε
+but is expected to have type
+  ?m.49 < ?m.48 * t
+in the application
+  (div_lt_iff₀ ht).mpr h
