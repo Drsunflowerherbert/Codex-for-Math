@@ -1,0 +1,1584 @@
+{
+  "schema": "math-exchange/v1",
+  "project": {
+    "repository": "https://github.com/Drsunflowerherbert/Codex-for-Math",
+    "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+    "branch": "codex/tangent-limit",
+    "lean_toolchain": "leanprover/lean4:v4.24.0",
+    "mathlib_revision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7"
+  },
+  "files": [
+    {
+      "path": "tangent-limit/README.md",
+      "sha256": "5be38954d69d42c1a0fb6a109983574b728b88c361af32cc9cb0d48e627f295a",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/TangentLimit.lean",
+      "sha256": "98c74e84ab564605a18c9cb87fb6112f8b7bf999349dfba1f9e3ead868faac02",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/TangentLimit/Diophantine.lean",
+      "sha256": "74116a224783c4d91265c73f276eab0e280f5d047c3cb32260ee10a6204807bf",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/TangentLimit/Hypothesis.lean",
+      "sha256": "6f9fb3e7a25e2ba27fba29faf93e88add77a8c0aa3a8de59be72ae7b9ea2562a",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/TangentLimit/Limit.lean",
+      "sha256": "05ea71aef2541bdc9137c8dd110c3d11d8e2ffc5b851e931aeeef027fdfb0336",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/TangentLimit/LimitComparison.lean",
+      "sha256": "9250070b23a25f76ad620c8fee0b353ffc5b04b5823177e4bf6b92a28473813c",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/TangentLimit/NearestPole.lean",
+      "sha256": "b6321c174149a6e7f264d1d31b4813954dfba14900b9ab15c21c4701a3dc4cec",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/TangentLimit/NonPole.lean",
+      "sha256": "3ca47fd29a14a8e1299782ed729f96252a6768a84c67742bc075fb1273496710",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/TangentLimit/Summability.lean",
+      "sha256": "b6308da63a70ae2e7d45719afc2a5af71935061f8c9ec383740010a3613bf273",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/TangentLimit/Trigonometry.lean",
+      "sha256": "169ede182499acaf928a19eacb4605c32c0f71a52e17ae7edc0e26912eb40039",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/docs/SOURCES.md",
+      "sha256": "fd1e849579926531aac21e4f5743e1c8d6460740c1bc9ecbdde6a050f67473c7",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/docs/independent-review.md",
+      "sha256": "5026dedb437641910b1583a8d81121457ef1755e79e7558f461d0d0f8d07f2eb",
+      "role": "review"
+    },
+    {
+      "path": "tangent-limit/docs/mathematical-proof.md",
+      "sha256": "f52aa95b1c5829f26d1c72c4aa244b6fde7e9491f61d01dd52b9ebffd67d93d1",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/docs/theorem-statements.md",
+      "sha256": "aeade1452a9747b370e4c9b67cdcdeba14a6fab9915f7716c18ffb869533ae34",
+      "role": "statement_inventory"
+    },
+    {
+      "path": "tangent-limit/docs/verification-summary.json",
+      "sha256": "dbeb8a2389d6fb0f549e433f6484b013ded7a755de5888be0fcdb01917e09af6",
+      "role": "legacy_log"
+    },
+    {
+      "path": "tangent-limit/lake-manifest.json",
+      "sha256": "8f871ddcf1917c176ac801f24bc66c975e4562d4d7aab8193c45ef7f31d5ad03",
+      "role": "lockfile"
+    },
+    {
+      "path": "tangent-limit/lakefile.toml",
+      "sha256": "dbb3f4f563156a8062f93ceb0aa660a12b60650d2f47fb0de4f32308fb25e451",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/lean-toolchain",
+      "sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+      "role": "toolchain"
+    },
+    {
+      "path": "tangent-limit/logs/final-build.log",
+      "sha256": "0a34f9325b605efffd2947f7345a15c0dcfb9ec5d86aedbeb512aebe3bf67524",
+      "role": "legacy_log"
+    },
+    {
+      "path": "tangent-limit/logs/final-theorem-inventory.log",
+      "sha256": "b6e66b3382e58831c6972b116617ada1d308f9d1157399d6fa96f124ad96ad57",
+      "role": "legacy_log"
+    },
+    {
+      "path": "tangent-limit/logs/source-audit.log",
+      "sha256": "77b40abe9cb9340a20700fcf5fa745f233c5afe8724ebda3a4e7574360b2763d",
+      "role": "legacy_log"
+    },
+    {
+      "path": "tangent-limit/scripts/TheoremInventory.lean",
+      "sha256": "0a5e8810ccc28e617482e5cd9ca9bf72f69d98e4e50651bd09488450a1993fa9",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/scripts/build.sh",
+      "sha256": "fbb7dcd71745678a3f18875cd75139db615be6377c14658641db52dcd8a40b1b",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/scripts/environment.sh",
+      "sha256": "701d4155694efb2b3893f01b20f3a496224ffea91f6595b60dcc4392eaf4e373",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/scripts/setup.sh",
+      "sha256": "e2a8c6ce4c6af2fd7387be5a043694cc017b8af4bad6fe143b3f03f819bd5e9b",
+      "role": "source"
+    },
+    {
+      "path": "tangent-limit/scripts/verify.sh",
+      "sha256": "d9d5890f76eda58e5451ff320f8315cd54ee491938ca9c7f4b61f6853b881fa1",
+      "role": "source"
+    }
+  ],
+  "records": [
+    {
+      "id": "TangentLimit.PiDiophantine",
+      "kind": "assumption",
+      "name": "TangentLimit.PiDiophantine",
+      "statement": {
+        "text": "def PiDiophantine : Prop :=\n  ∀ ν : ℝ, 2 < ν → ∃ Q : ℕ, ∀ q : ℕ, Q ≤ q → 0 < q →\n    ∀ p : ℤ, (q : ℝ) ^ (-ν) ≤ |Real.pi - (p : ℝ) / (q : ℝ)|",
+        "source_path": "tangent-limit/TangentLimit/Hypothesis.lean",
+        "source_excerpt": "def PiDiophantine : Prop :=\n  ∀ ν : ℝ, 2 < ν → ∃ Q : ℕ, ∀ q : ℕ, Q ≤ q → 0 < q →\n    ∀ p : ℤ, (q : ℝ) ^ (-ν) ≤ |Real.pi - (p : ℝ) / (q : ℝ)|",
+        "sha256": "019661f0b94d661a9f84a9a54b3e270bfed25c0bedb41b043a84c6ff8a7d2ea2"
+      },
+      "assumptions": [],
+      "dependencies": [],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Hypothesis.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.PiDiophantine"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.abs_cos_eq_abs_sin_offset",
+      "kind": "theorem",
+      "name": "TangentLimit.abs_cos_eq_abs_sin_offset",
+      "statement": {
+        "text": "theorem abs_cos_eq_abs_sin_offset (x : ℝ) (k : ℕ) :\n    |Real.cos x| =\n      |Real.sin (x - ((2 * k + 1 : ℕ) : ℝ) * Real.pi / 2)|",
+        "source_path": "tangent-limit/TangentLimit/Trigonometry.lean",
+        "source_excerpt": "theorem abs_cos_eq_abs_sin_offset (x : ℝ) (k : ℕ) :\n    |Real.cos x| =\n      |Real.sin (x - ((2 * k + 1 : ℕ) : ℝ) * Real.pi / 2)|",
+        "sha256": "f098aec24abb330cf83fc1b1887c4bf375a158d74c4437dadc91525942946ac8"
+      },
+      "assumptions": [],
+      "dependencies": [],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Trigonometry.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.abs_cos_eq_abs_sin_offset"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.abs_poleOffset_le",
+      "kind": "theorem",
+      "name": "TangentLimit.abs_poleOffset_le",
+      "statement": {
+        "text": "theorem abs_poleOffset_le (n : ℕ) : |poleOffset n| ≤ Real.pi / 2",
+        "source_path": "tangent-limit/TangentLimit/NearestPole.lean",
+        "source_excerpt": "theorem abs_poleOffset_le (n : ℕ) : |poleOffset n| ≤ Real.pi / 2",
+        "sha256": "632a88abef2072a271698a526f66c4d693c32fca2fae051679c7eb3ac1071fcb"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.lt_poleIndex_add_one_mul_pi",
+        "TangentLimit.poleDenom",
+        "TangentLimit.poleIndex_mul_pi_le",
+        "TangentLimit.poleOffset"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/NearestPole.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.abs_poleOffset_le"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.abs_tan_div_cube_eq",
+      "kind": "theorem",
+      "name": "TangentLimit.abs_tan_div_cube_eq",
+      "statement": {
+        "text": "theorem abs_tan_div_cube_eq (n : ℕ) :\n    |Real.tan (n : ℝ) / (n : ℝ) ^ 3| = |Real.tan (n : ℝ)| / (n : ℝ) ^ 3",
+        "source_path": "tangent-limit/TangentLimit/Summability.lean",
+        "source_excerpt": "theorem abs_tan_div_cube_eq (n : ℕ) :\n    |Real.tan (n : ℝ) / (n : ℝ) ^ 3| = |Real.tan (n : ℝ)| / (n : ℝ) ^ 3",
+        "sha256": "0e25f2c580016fc65aa57f36b87e218a00b14eb41e6a652f59faf5af09c716d9"
+      },
+      "assumptions": [],
+      "dependencies": [],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Summability.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.abs_tan_div_cube_eq"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.chord_cos_bound",
+      "kind": "theorem",
+      "name": "TangentLimit.chord_cos_bound",
+      "statement": {
+        "text": "theorem chord_cos_bound (x : ℝ) (k : ℕ)\n    (hb : |x - ((2 * k + 1 : ℕ) : ℝ) * Real.pi / 2| ≤ Real.pi / 2) :\n    (2 / Real.pi) * |x - ((2 * k + 1 : ℕ) : ℝ) * Real.pi / 2| ≤\n      |Real.cos x|",
+        "source_path": "tangent-limit/TangentLimit/Trigonometry.lean",
+        "source_excerpt": "theorem chord_cos_bound (x : ℝ) (k : ℕ)\n    (hb : |x - ((2 * k + 1 : ℕ) : ℝ) * Real.pi / 2| ≤ Real.pi / 2) :\n    (2 / Real.pi) * |x - ((2 * k + 1 : ℕ) : ℝ) * Real.pi / 2| ≤\n      |Real.cos x|",
+        "sha256": "a3778c8dfd411dda04f8e478d69f2dced4e98c1285c3f8dd4179796009476fac"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.abs_cos_eq_abs_sin_offset"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Trigonometry.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.chord_cos_bound"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.cos_intCast_ne_zero",
+      "kind": "theorem",
+      "name": "TangentLimit.cos_intCast_ne_zero",
+      "statement": {
+        "text": "theorem cos_intCast_ne_zero (n : ℤ) : Real.cos (n : ℝ) ≠ 0",
+        "source_path": "tangent-limit/TangentLimit/NonPole.lean",
+        "source_excerpt": "theorem cos_intCast_ne_zero (n : ℤ) : Real.cos (n : ℝ) ≠ 0",
+        "sha256": "f42ee038a1190f3c4f2e9ce5c2aa338282fe708f4e0a5472158f773f795b6b09"
+      },
+      "assumptions": [],
+      "dependencies": [],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/NonPole.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.cos_intCast_ne_zero"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.cos_natCast_ne_zero",
+      "kind": "theorem",
+      "name": "TangentLimit.cos_natCast_ne_zero",
+      "statement": {
+        "text": "theorem cos_natCast_ne_zero (n : ℕ) : Real.cos (n : ℝ) ≠ 0",
+        "source_path": "tangent-limit/TangentLimit/NonPole.lean",
+        "source_excerpt": "theorem cos_natCast_ne_zero (n : ℕ) : Real.cos (n : ℝ) ≠ 0",
+        "sha256": "8222929c2475bd8d98b5821034940153a0c8bfd30b2292258d85470690ba8403"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.cos_intCast_ne_zero"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/NonPole.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.cos_natCast_ne_zero"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.eventual_abs_tan_div_cube_le_rpow",
+      "kind": "theorem",
+      "name": "TangentLimit.eventual_abs_tan_div_cube_le_rpow",
+      "statement": {
+        "text": "theorem eventual_abs_tan_div_cube_le_rpow (h : PiDiophantine) :\n    ∀ᶠ n : ℕ in atTop,\n      |Real.tan (n : ℝ)| / (n : ℝ) ^ 3 ≤\n        (Real.pi * (2 : ℝ) ^ (3 / 2 : ℝ)) * (n : ℝ) ^ (-(3 / 2 : ℝ))",
+        "source_path": "tangent-limit/TangentLimit/Summability.lean",
+        "source_excerpt": "theorem eventual_abs_tan_div_cube_le_rpow (h : PiDiophantine) :\n    ∀ᶠ n : ℕ in atTop,\n      |Real.tan (n : ℝ)| / (n : ℝ) ^ 3 ≤\n        (Real.pi * (2 : ℝ) ^ (3 / 2 : ℝ)) * (n : ℝ) ^ (-(3 / 2 : ℝ))",
+        "sha256": "497bb56607d0d035109a70b4b7fa3b68ae4b39aa83aef15c4b34f52c7d437190"
+      },
+      "assumptions": [
+        "TangentLimit.PiDiophantine"
+      ],
+      "dependencies": [
+        "TangentLimit.eventually_tan_le_pole_rpow",
+        "TangentLimit.poleDenom",
+        "TangentLimit.poleDenom_le_two_mul"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Summability.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.eventual_abs_tan_div_cube_le_rpow"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.eventually_abs_tan_le_quadratic",
+      "kind": "theorem",
+      "name": "TangentLimit.eventually_abs_tan_le_quadratic",
+      "statement": {
+        "text": "theorem eventually_abs_tan_le_quadratic (h : PiDiophantine) :\n    ∀ᶠ n : ℕ in atTop, |Real.tan (n : ℝ)| ≤ 4 * Real.pi * (n : ℝ) ^ 2",
+        "source_path": "tangent-limit/TangentLimit/Limit.lean",
+        "source_excerpt": "theorem eventually_abs_tan_le_quadratic (h : PiDiophantine) :\n    ∀ᶠ n : ℕ in atTop, |Real.tan (n : ℝ)| ≤ 4 * Real.pi * (n : ℝ) ^ 2",
+        "sha256": "7371495f2d56903080c102becc7529215090a00c1cddc1001f90670d74271995"
+      },
+      "assumptions": [
+        "TangentLimit.PiDiophantine"
+      ],
+      "dependencies": [
+        "TangentLimit.eventually_tan_le_pole_rpow",
+        "TangentLimit.poleDenom",
+        "TangentLimit.poleDenom_le_two_mul"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Limit.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.eventually_abs_tan_le_quadratic"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.eventually_poleDenom_ge",
+      "kind": "theorem",
+      "name": "TangentLimit.eventually_poleDenom_ge",
+      "statement": {
+        "text": "theorem eventually_poleDenom_ge (Q : ℕ) :\n    ∀ᶠ n : ℕ in atTop, Q ≤ poleDenom n",
+        "source_path": "tangent-limit/TangentLimit/NearestPole.lean",
+        "source_excerpt": "theorem eventually_poleDenom_ge (Q : ℕ) :\n    ∀ᶠ n : ℕ in atTop, Q ≤ poleDenom n",
+        "sha256": "dbc9c7d401a21ce12a31108c7d74149dd5febf9ed952c283cf3aa05ba0bf8ce9"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.lt_poleIndex_add_one_mul_pi",
+        "TangentLimit.poleDenom",
+        "TangentLimit.poleIndex"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/NearestPole.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.eventually_poleDenom_ge"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.eventually_tan_le_pole_rpow",
+      "kind": "theorem",
+      "name": "TangentLimit.eventually_tan_le_pole_rpow",
+      "statement": {
+        "text": "theorem eventually_tan_le_pole_rpow (h : PiDiophantine)\n    (ν : ℝ) (hν : 2 < ν) :\n    ∀ᶠ n : ℕ in Filter.atTop,\n      |Real.tan (n : ℝ)| ≤ Real.pi * (poleDenom n : ℝ) ^ (ν - 1)",
+        "source_path": "tangent-limit/TangentLimit/Diophantine.lean",
+        "source_excerpt": "theorem eventually_tan_le_pole_rpow (h : PiDiophantine)\n    (ν : ℝ) (hν : 2 < ν) :\n    ∀ᶠ n : ℕ in Filter.atTop,\n      |Real.tan (n : ℝ)| ≤ Real.pi * (poleDenom n : ℝ) ^ (ν - 1)",
+        "sha256": "bb4d7e8c0151307e51dbd95440d70d29c1b6ef4971f7d963f478758a257e8c47"
+      },
+      "assumptions": [
+        "TangentLimit.PiDiophantine"
+      ],
+      "dependencies": [
+        "TangentLimit.abs_poleOffset_le",
+        "TangentLimit.eventually_poleDenom_ge",
+        "TangentLimit.poleDenom",
+        "TangentLimit.poleDenom_pos",
+        "TangentLimit.poleIndex",
+        "TangentLimit.tan_le_pole_power"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Diophantine.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.eventually_tan_le_pole_rpow"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.lt_poleIndex_add_one_mul_pi",
+      "kind": "theorem",
+      "name": "TangentLimit.lt_poleIndex_add_one_mul_pi",
+      "statement": {
+        "text": "theorem lt_poleIndex_add_one_mul_pi (n : ℕ) :\n    (n : ℝ) < ((poleIndex n : ℝ) + 1) * Real.pi",
+        "source_path": "tangent-limit/TangentLimit/NearestPole.lean",
+        "source_excerpt": "theorem lt_poleIndex_add_one_mul_pi (n : ℕ) :\n    (n : ℝ) < ((poleIndex n : ℝ) + 1) * Real.pi",
+        "sha256": "4fe3e5e713fd05bdd61822acdfb8b4a16900eb858e182bf43f53c497db836263"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.poleIndex"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/NearestPole.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.lt_poleIndex_add_one_mul_pi"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.poleDenom",
+      "kind": "definition",
+      "name": "TangentLimit.poleDenom",
+      "statement": {
+        "text": "def poleDenom (n : ℕ) : ℕ := 2 * poleIndex n + 1",
+        "source_path": "tangent-limit/TangentLimit/NearestPole.lean",
+        "source_excerpt": "def poleDenom (n : ℕ) : ℕ := 2 * poleIndex n + 1",
+        "sha256": "a3201328bf4ff01096660d7780b61a8ea94edf96547273056e357ffd0ee4991e"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.poleIndex"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/NearestPole.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.poleDenom"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.poleDenom_le_two_mul",
+      "kind": "theorem",
+      "name": "TangentLimit.poleDenom_le_two_mul",
+      "statement": {
+        "text": "theorem poleDenom_le_two_mul (n : ℕ) (hn : 1 ≤ n) :\n    (poleDenom n : ℝ) ≤ 2 * (n : ℝ)",
+        "source_path": "tangent-limit/TangentLimit/NearestPole.lean",
+        "source_excerpt": "theorem poleDenom_le_two_mul (n : ℕ) (hn : 1 ≤ n) :\n    (poleDenom n : ℝ) ≤ 2 * (n : ℝ)",
+        "sha256": "2e9b831e7fdc4e28bf94fdcc1ae87978efb7a4b62001d8e10e38c6091c9eeb6c"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.poleDenom",
+        "TangentLimit.poleIndex",
+        "TangentLimit.poleIndex_mul_pi_le"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/NearestPole.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.poleDenom_le_two_mul"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.poleDenom_odd",
+      "kind": "theorem",
+      "name": "TangentLimit.poleDenom_odd",
+      "statement": {
+        "text": "theorem poleDenom_odd (n : ℕ) : Odd (poleDenom n)",
+        "source_path": "tangent-limit/TangentLimit/NearestPole.lean",
+        "source_excerpt": "theorem poleDenom_odd (n : ℕ) : Odd (poleDenom n)",
+        "sha256": "b20fda5ce9308d92abff7759bf0ae439456ed72175c9b24336c9efe998d3dd01"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.poleDenom",
+        "TangentLimit.poleIndex"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/NearestPole.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.poleDenom_odd"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.poleDenom_pos",
+      "kind": "theorem",
+      "name": "TangentLimit.poleDenom_pos",
+      "statement": {
+        "text": "theorem poleDenom_pos (n : ℕ) : 0 < poleDenom n",
+        "source_path": "tangent-limit/TangentLimit/NearestPole.lean",
+        "source_excerpt": "theorem poleDenom_pos (n : ℕ) : 0 < poleDenom n",
+        "sha256": "cc1aee38919c45a6f4513bfc7dd417a1c5a26ff36d6995772ead3ee8a40e2f1c"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.poleDenom"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/NearestPole.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.poleDenom_pos"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.poleIndex",
+      "kind": "definition",
+      "name": "TangentLimit.poleIndex",
+      "statement": {
+        "text": "def poleIndex (n : ℕ) : ℕ := Nat.floor ((n : ℝ) / Real.pi)",
+        "source_path": "tangent-limit/TangentLimit/NearestPole.lean",
+        "source_excerpt": "def poleIndex (n : ℕ) : ℕ := Nat.floor ((n : ℝ) / Real.pi)",
+        "sha256": "86cc26b70845e34620c3bbb6be399368ca85332738973da9bd7ccb31c5be598b"
+      },
+      "assumptions": [],
+      "dependencies": [],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/NearestPole.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.poleIndex"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.poleIndex_mul_pi_le",
+      "kind": "theorem",
+      "name": "TangentLimit.poleIndex_mul_pi_le",
+      "statement": {
+        "text": "theorem poleIndex_mul_pi_le (n : ℕ) : (poleIndex n : ℝ) * Real.pi ≤ (n : ℝ)",
+        "source_path": "tangent-limit/TangentLimit/NearestPole.lean",
+        "source_excerpt": "theorem poleIndex_mul_pi_le (n : ℕ) : (poleIndex n : ℝ) * Real.pi ≤ (n : ℝ)",
+        "sha256": "9e111ccc64c6e9d8f3c7797f8336e48a3e3343f8db0502349436a8bd177b32ff"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.poleIndex"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/NearestPole.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.poleIndex_mul_pi_le"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.poleOffset",
+      "kind": "definition",
+      "name": "TangentLimit.poleOffset",
+      "statement": {
+        "text": "def poleOffset (n : ℕ) : ℝ := (n : ℝ) - (poleDenom n : ℝ) * Real.pi / 2",
+        "source_path": "tangent-limit/TangentLimit/NearestPole.lean",
+        "source_excerpt": "def poleOffset (n : ℕ) : ℝ := (n : ℝ) - (poleDenom n : ℝ) * Real.pi / 2",
+        "sha256": "d04f005fb901e73f3c12940aae3d50e4014f97b8081e2d58d0f645ee300b70a5"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.poleDenom"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/NearestPole.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.poleOffset"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.poleOffset_nearest",
+      "kind": "theorem",
+      "name": "TangentLimit.poleOffset_nearest",
+      "statement": {
+        "text": "theorem poleOffset_nearest (n : ℕ) (r : ℤ) (hr : Odd r) :\n    |poleOffset n| ≤ |(n : ℝ) - (r : ℝ) * Real.pi / 2|",
+        "source_path": "tangent-limit/TangentLimit/NearestPole.lean",
+        "source_excerpt": "theorem poleOffset_nearest (n : ℕ) (r : ℤ) (hr : Odd r) :\n    |poleOffset n| ≤ |(n : ℝ) - (r : ℝ) * Real.pi / 2|",
+        "sha256": "40f70e35a6f0a47da26bf3fcc5774f738a143f19165da6798d4fb8d20ce46d0b"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.abs_poleOffset_le",
+        "TangentLimit.lt_poleIndex_add_one_mul_pi",
+        "TangentLimit.poleDenom",
+        "TangentLimit.poleIndex",
+        "TangentLimit.poleIndex_mul_pi_le",
+        "TangentLimit.poleOffset"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/NearestPole.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.poleOffset_nearest"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.pole_distance_identity",
+      "kind": "theorem",
+      "name": "TangentLimit.pole_distance_identity",
+      "statement": {
+        "text": "theorem pole_distance_identity (x q : ℝ) (hq : 0 < q) :\n    |x - q * Real.pi / 2| = (q / 2) * |Real.pi - (2 * x) / q|",
+        "source_path": "tangent-limit/TangentLimit/Diophantine.lean",
+        "source_excerpt": "theorem pole_distance_identity (x q : ℝ) (hq : 0 < q) :\n    |x - q * Real.pi / 2| = (q / 2) * |Real.pi - (2 * x) / q|",
+        "sha256": "da46e9602ac0b76d37b6ccd2c573e0516d4edb182c94b704e78b6079c93e40e2"
+      },
+      "assumptions": [],
+      "dependencies": [],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Diophantine.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.pole_distance_identity"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.pole_distance_lower_bound",
+      "kind": "theorem",
+      "name": "TangentLimit.pole_distance_lower_bound",
+      "statement": {
+        "text": "theorem pole_distance_lower_bound (x q ν : ℝ) (hq : 0 < q)\n    (happrox : q ^ (-ν) ≤ |Real.pi - (2 * x) / q|) :\n    (1 / 2 : ℝ) * q ^ (1 - ν) ≤ |x - q * Real.pi / 2|",
+        "source_path": "tangent-limit/TangentLimit/Diophantine.lean",
+        "source_excerpt": "theorem pole_distance_lower_bound (x q ν : ℝ) (hq : 0 < q)\n    (happrox : q ^ (-ν) ≤ |Real.pi - (2 * x) / q|) :\n    (1 / 2 : ℝ) * q ^ (1 - ν) ≤ |x - q * Real.pi / 2|",
+        "sha256": "1d344319f4a2639cf7f200a7da20653512ff5c53e6cae61c26364d399c3a102e"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.pole_distance_identity"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Diophantine.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.pole_distance_lower_bound"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.pole_distance_lower_bound_of_piDiophantine",
+      "kind": "theorem",
+      "name": "TangentLimit.pole_distance_lower_bound_of_piDiophantine",
+      "statement": {
+        "text": "theorem pole_distance_lower_bound_of_piDiophantine (h : PiDiophantine)\n    (ν : ℝ) (hν : 2 < ν) :\n    ∃ Q : ℕ, ∀ n q : ℕ, Q ≤ q → 0 < q →\n      (1 / 2 : ℝ) * (q : ℝ) ^ (1 - ν) ≤\n        |(n : ℝ) - (q : ℝ) * Real.pi / 2|",
+        "source_path": "tangent-limit/TangentLimit/Diophantine.lean",
+        "source_excerpt": "theorem pole_distance_lower_bound_of_piDiophantine (h : PiDiophantine)\n    (ν : ℝ) (hν : 2 < ν) :\n    ∃ Q : ℕ, ∀ n q : ℕ, Q ≤ q → 0 < q →\n      (1 / 2 : ℝ) * (q : ℝ) ^ (1 - ν) ≤\n        |(n : ℝ) - (q : ℝ) * Real.pi / 2|",
+        "sha256": "cdfba30746e6f63e48641b6ff43e306e0d46606175062b76236957c995b5131f"
+      },
+      "assumptions": [
+        "TangentLimit.PiDiophantine"
+      ],
+      "dependencies": [
+        "TangentLimit.pole_distance_lower_bound"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Diophantine.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.pole_distance_lower_bound_of_piDiophantine"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.reciprocal_pole_power",
+      "kind": "theorem",
+      "name": "TangentLimit.reciprocal_pole_power",
+      "statement": {
+        "text": "theorem reciprocal_pole_power (q ν : ℝ) (hq : 0 < q) :\n    1 / (q ^ (1 - ν) / Real.pi) = Real.pi * q ^ (ν - 1)",
+        "source_path": "tangent-limit/TangentLimit/Diophantine.lean",
+        "source_excerpt": "theorem reciprocal_pole_power (q ν : ℝ) (hq : 0 < q) :\n    1 / (q ^ (1 - ν) / Real.pi) = Real.pi * q ^ (ν - 1)",
+        "sha256": "1fc3a7506c70105da8de4c990e860a1f976264bd49c650088f2858d31afa7596"
+      },
+      "assumptions": [],
+      "dependencies": [],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Diophantine.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.reciprocal_pole_power"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.summable_abs_tan_div_cube",
+      "kind": "theorem",
+      "name": "TangentLimit.summable_abs_tan_div_cube",
+      "statement": {
+        "text": "theorem summable_abs_tan_div_cube (h : PiDiophantine) :\n    Summable (fun n : ℕ => |Real.tan (n : ℝ)| / (n : ℝ) ^ 3)",
+        "source_path": "tangent-limit/TangentLimit/Summability.lean",
+        "source_excerpt": "theorem summable_abs_tan_div_cube (h : PiDiophantine) :\n    Summable (fun n : ℕ => |Real.tan (n : ℝ)| / (n : ℝ) ^ 3)",
+        "sha256": "0a560016f7f44789f255288ef6d087c18a0f3459d402ce7fc56ebb38036471a9"
+      },
+      "assumptions": [
+        "TangentLimit.PiDiophantine"
+      ],
+      "dependencies": [
+        "TangentLimit.eventual_abs_tan_div_cube_le_rpow"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Summability.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.summable_abs_tan_div_cube"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.summable_abs_tan_div_cube_positive",
+      "kind": "theorem",
+      "name": "TangentLimit.summable_abs_tan_div_cube_positive",
+      "statement": {
+        "text": "theorem summable_abs_tan_div_cube_positive (h : PiDiophantine) :\n    Summable (fun n : ℕ => |Real.tan ((n + 1 : ℕ) : ℝ)| /\n      ((n + 1 : ℕ) : ℝ) ^ 3)",
+        "source_path": "tangent-limit/TangentLimit/Summability.lean",
+        "source_excerpt": "theorem summable_abs_tan_div_cube_positive (h : PiDiophantine) :\n    Summable (fun n : ℕ => |Real.tan ((n + 1 : ℕ) : ℝ)| /\n      ((n + 1 : ℕ) : ℝ) ^ 3)",
+        "sha256": "ab903c454836df1ecc5d4959a927c91b34359a8393b4d5a571ee8c5a7635be46"
+      },
+      "assumptions": [
+        "TangentLimit.PiDiophantine"
+      ],
+      "dependencies": [
+        "TangentLimit.summable_abs_tan_div_cube"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Summability.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.summable_abs_tan_div_cube_positive"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.summable_abs_tan_div_cube_quotient",
+      "kind": "theorem",
+      "name": "TangentLimit.summable_abs_tan_div_cube_quotient",
+      "statement": {
+        "text": "theorem summable_abs_tan_div_cube_quotient (h : PiDiophantine) :\n    Summable (fun n : ℕ => |Real.tan (n : ℝ) / (n : ℝ) ^ 3|)",
+        "source_path": "tangent-limit/TangentLimit/Summability.lean",
+        "source_excerpt": "theorem summable_abs_tan_div_cube_quotient (h : PiDiophantine) :\n    Summable (fun n : ℕ => |Real.tan (n : ℝ) / (n : ℝ) ^ 3|)",
+        "sha256": "34c431aa6f0e4baad83a0172b130a7fb20121cc0fc00b7210e9472d428b088b3"
+      },
+      "assumptions": [
+        "TangentLimit.PiDiophantine"
+      ],
+      "dependencies": [
+        "TangentLimit.abs_tan_div_cube_eq",
+        "TangentLimit.summable_abs_tan_div_cube"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Summability.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.summable_abs_tan_div_cube_quotient"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.summable_abs_tan_div_cube_quotient_positive",
+      "kind": "theorem",
+      "name": "TangentLimit.summable_abs_tan_div_cube_quotient_positive",
+      "statement": {
+        "text": "theorem summable_abs_tan_div_cube_quotient_positive (h : PiDiophantine) :\n    Summable (fun n : ℕ => |Real.tan ((n + 1 : ℕ) : ℝ) /\n      ((n + 1 : ℕ) : ℝ) ^ 3|)",
+        "source_path": "tangent-limit/TangentLimit/Summability.lean",
+        "source_excerpt": "theorem summable_abs_tan_div_cube_quotient_positive (h : PiDiophantine) :\n    Summable (fun n : ℕ => |Real.tan ((n + 1 : ℕ) : ℝ) /\n      ((n + 1 : ℕ) : ℝ) ^ 3|)",
+        "sha256": "c8411a43ea8a80bb9469f318467fa54ae799e1058d526cb716e38fd78939eebf"
+      },
+      "assumptions": [
+        "TangentLimit.PiDiophantine"
+      ],
+      "dependencies": [
+        "TangentLimit.summable_abs_tan_div_cube_quotient"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Summability.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.summable_abs_tan_div_cube_quotient_positive"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.summable_tan_div_cube",
+      "kind": "theorem",
+      "name": "TangentLimit.summable_tan_div_cube",
+      "statement": {
+        "text": "theorem summable_tan_div_cube (h : PiDiophantine) :\n    Summable (fun n : ℕ => Real.tan (n : ℝ) / (n : ℝ) ^ 3)",
+        "source_path": "tangent-limit/TangentLimit/Summability.lean",
+        "source_excerpt": "theorem summable_tan_div_cube (h : PiDiophantine) :\n    Summable (fun n : ℕ => Real.tan (n : ℝ) / (n : ℝ) ^ 3)",
+        "sha256": "349dff7bf1fb9220653a38f161ae074ee795c9e19f430569eb3d605742c3bc6d"
+      },
+      "assumptions": [
+        "TangentLimit.PiDiophantine"
+      ],
+      "dependencies": [
+        "TangentLimit.summable_abs_tan_div_cube_quotient"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Summability.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.summable_tan_div_cube"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.summable_tan_div_cube_positive",
+      "kind": "theorem",
+      "name": "TangentLimit.summable_tan_div_cube_positive",
+      "statement": {
+        "text": "theorem summable_tan_div_cube_positive (h : PiDiophantine) :\n    Summable (fun n : ℕ => Real.tan ((n + 1 : ℕ) : ℝ) /\n      ((n + 1 : ℕ) : ℝ) ^ 3)",
+        "source_path": "tangent-limit/TangentLimit/Summability.lean",
+        "source_excerpt": "theorem summable_tan_div_cube_positive (h : PiDiophantine) :\n    Summable (fun n : ℕ => Real.tan ((n + 1 : ℕ) : ℝ) /\n      ((n + 1 : ℕ) : ℝ) ^ 3)",
+        "sha256": "1f3c63bd780ce6194b05d52395ad42c072ea17148887ffc37978946159381e98"
+      },
+      "assumptions": [
+        "TangentLimit.PiDiophantine"
+      ],
+      "dependencies": [
+        "TangentLimit.summable_tan_div_cube"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Summability.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.summable_tan_div_cube_positive"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.tan_div_cube_positive_tendsto_zero",
+      "kind": "theorem",
+      "name": "TangentLimit.tan_div_cube_positive_tendsto_zero",
+      "statement": {
+        "text": "theorem tan_div_cube_positive_tendsto_zero (h : PiDiophantine) :\n    Tendsto (fun n : ℕ => Real.tan ((n + 1 : ℕ) : ℝ) /\n      ((n + 1 : ℕ) : ℝ) ^ 3) atTop (nhds 0)",
+        "source_path": "tangent-limit/TangentLimit/Limit.lean",
+        "source_excerpt": "theorem tan_div_cube_positive_tendsto_zero (h : PiDiophantine) :\n    Tendsto (fun n : ℕ => Real.tan ((n + 1 : ℕ) : ℝ) /\n      ((n + 1 : ℕ) : ℝ) ^ 3) atTop (nhds 0)",
+        "sha256": "1f963aa6cd786f6ffd5603103562cea3d8aae619521b99ff157b13d0a561dab4"
+      },
+      "assumptions": [
+        "TangentLimit.PiDiophantine"
+      ],
+      "dependencies": [
+        "TangentLimit.tan_div_cube_tendsto_zero"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Limit.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.tan_div_cube_positive_tendsto_zero"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.tan_div_cube_tendsto_zero",
+      "kind": "theorem",
+      "name": "TangentLimit.tan_div_cube_tendsto_zero",
+      "statement": {
+        "text": "theorem tan_div_cube_tendsto_zero (h : PiDiophantine) :\n    Tendsto (fun n : ℕ => Real.tan (n : ℝ) / (n : ℝ) ^ 3) atTop (nhds 0)",
+        "source_path": "tangent-limit/TangentLimit/Limit.lean",
+        "source_excerpt": "theorem tan_div_cube_tendsto_zero (h : PiDiophantine) :\n    Tendsto (fun n : ℕ => Real.tan (n : ℝ) / (n : ℝ) ^ 3) atTop (nhds 0)",
+        "sha256": "ff3ce48922be9a018dba3feb1909c1bd75bf1db9e28b60c9dfd9f9271ec5c6e6"
+      },
+      "assumptions": [
+        "TangentLimit.PiDiophantine"
+      ],
+      "dependencies": [
+        "TangentLimit.eventually_abs_tan_le_quadratic",
+        "TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Limit.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.tan_div_cube_tendsto_zero"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.tan_le_of_cos_lower_bound",
+      "kind": "theorem",
+      "name": "TangentLimit.tan_le_of_cos_lower_bound",
+      "statement": {
+        "text": "theorem tan_le_of_cos_lower_bound {x B : ℝ}\n    (hB : 0 < B) (hcos : B ≤ |Real.cos x|) :\n    |Real.tan x| ≤ 1 / B",
+        "source_path": "tangent-limit/TangentLimit/Trigonometry.lean",
+        "source_excerpt": "theorem tan_le_of_cos_lower_bound {x B : ℝ}\n    (hB : 0 < B) (hcos : B ≤ |Real.cos x|) :\n    |Real.tan x| ≤ 1 / B",
+        "sha256": "7a96ebea58dd917089b760e36b94bc7ebdbee1baafd754dd5bca868273f03cb9"
+      },
+      "assumptions": [],
+      "dependencies": [],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Trigonometry.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.tan_le_of_cos_lower_bound"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.tan_le_of_pole_distance",
+      "kind": "theorem",
+      "name": "TangentLimit.tan_le_of_pole_distance",
+      "statement": {
+        "text": "theorem tan_le_of_pole_distance {x : ℝ} {k : ℕ}\n    (hb : |x - ((2 * k + 1 : ℕ) : ℝ) * Real.pi / 2| ≤ Real.pi / 2)\n    (hd : 0 < |x - ((2 * k + 1 : ℕ) : ℝ) * Real.pi / 2|) :\n    |Real.tan x| ≤\n      Real.pi / (2 * |x - ((2 * k + 1 : ℕ) : ℝ) * Real.pi / 2|)",
+        "source_path": "tangent-limit/TangentLimit/Trigonometry.lean",
+        "source_excerpt": "theorem tan_le_of_pole_distance {x : ℝ} {k : ℕ}\n    (hb : |x - ((2 * k + 1 : ℕ) : ℝ) * Real.pi / 2| ≤ Real.pi / 2)\n    (hd : 0 < |x - ((2 * k + 1 : ℕ) : ℝ) * Real.pi / 2|) :\n    |Real.tan x| ≤\n      Real.pi / (2 * |x - ((2 * k + 1 : ℕ) : ℝ) * Real.pi / 2|)",
+        "sha256": "f0354c2e53693e29aa0675a50c20d1bfcdfe51f55da0baf3389975f95ed6ee6c"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.chord_cos_bound",
+        "TangentLimit.tan_le_of_cos_lower_bound"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Trigonometry.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.tan_le_of_pole_distance"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.tan_le_pole_power",
+      "kind": "theorem",
+      "name": "TangentLimit.tan_le_pole_power",
+      "statement": {
+        "text": "theorem tan_le_pole_power (x ν : ℝ) (k : ℕ)\n    (hb : |x - ((2 * k + 1 : ℕ) : ℝ) * Real.pi / 2| ≤ Real.pi / 2)\n    (happrox : ((2 * k + 1 : ℕ) : ℝ) ^ (-ν) ≤\n      |Real.pi - (2 * x) / ((2 * k + 1 : ℕ) : ℝ)|) :\n    |Real.tan x| ≤ Real.pi * ((2 * k + 1 : ℕ) : ℝ) ^ (ν - 1)",
+        "source_path": "tangent-limit/TangentLimit/Diophantine.lean",
+        "source_excerpt": "theorem tan_le_pole_power (x ν : ℝ) (k : ℕ)\n    (hb : |x - ((2 * k + 1 : ℕ) : ℝ) * Real.pi / 2| ≤ Real.pi / 2)\n    (happrox : ((2 * k + 1 : ℕ) : ℝ) ^ (-ν) ≤\n      |Real.pi - (2 * x) / ((2 * k + 1 : ℕ) : ℝ)|) :\n    |Real.tan x| ≤ Real.pi * ((2 * k + 1 : ℕ) : ℝ) ^ (ν - 1)",
+        "sha256": "c44a1041793fe04fc113d6ce11b55c95c60e16c28a76fa3d6723a59d9c6d9318"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.chord_cos_bound",
+        "TangentLimit.pole_distance_lower_bound",
+        "TangentLimit.reciprocal_pole_power",
+        "TangentLimit.tan_le_of_cos_lower_bound"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/Diophantine.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.tan_le_pole_power"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq",
+      "kind": "theorem",
+      "name": "TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq",
+      "statement": {
+        "text": "theorem tendsto_div_cube_of_eventually_abs_le_sq {f : ℕ → ℝ} {C : ℝ}\n    (h : ∀ᶠ n in atTop, |f n| ≤ C * (n : ℝ) ^ 2) :\n    Tendsto (fun n => f n / (n : ℝ) ^ 3) atTop (nhds 0)",
+        "source_path": "tangent-limit/TangentLimit/LimitComparison.lean",
+        "source_excerpt": "theorem tendsto_div_cube_of_eventually_abs_le_sq {f : ℕ → ℝ} {C : ℝ}\n    (h : ∀ᶠ n in atTop, |f n| ≤ C * (n : ℝ) ^ 2) :\n    Tendsto (fun n => f n / (n : ℝ) ^ 3) atTop (nhds 0)",
+        "sha256": "422d70c3b10878c0d91be043641a85a80fa3a5388c7a346de797c3a40c6d8280"
+      },
+      "assumptions": [],
+      "dependencies": [],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/LimitComparison.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    },
+    {
+      "id": "TangentLimit.tendsto_div_cube_positive_of_eventually_abs_le_sq",
+      "kind": "theorem",
+      "name": "TangentLimit.tendsto_div_cube_positive_of_eventually_abs_le_sq",
+      "statement": {
+        "text": "theorem tendsto_div_cube_positive_of_eventually_abs_le_sq {f : ℕ → ℝ} {C : ℝ}\n    (h : ∀ᶠ n in atTop, |f (n + 1)| ≤ C * ((n + 1 : ℕ) : ℝ) ^ 2) :\n    Tendsto (fun n => f (n + 1) / ((n + 1 : ℕ) : ℝ) ^ 3) atTop (nhds 0)",
+        "source_path": "tangent-limit/TangentLimit/LimitComparison.lean",
+        "source_excerpt": "theorem tendsto_div_cube_positive_of_eventually_abs_le_sq {f : ℕ → ℝ} {C : ℝ}\n    (h : ∀ᶠ n in atTop, |f (n + 1)| ≤ C * ((n + 1 : ℕ) : ℝ) ^ 2) :\n    Tendsto (fun n => f (n + 1) / ((n + 1 : ℕ) : ℝ) ^ 3) atTop (nhds 0)",
+        "sha256": "b10dcf8d0a699a8a02c8afefcc82a05ad2279fe4322cbd8ea589bbc224bd4cea"
+      },
+      "assumptions": [],
+      "dependencies": [
+        "TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/TangentLimit/LimitComparison.lean",
+          "revision": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+          "locator": "TangentLimit.tendsto_div_cube_positive_of_eventually_abs_le_sq"
+        }
+      ],
+      "review": {
+        "status": "review_reported",
+        "evidence": [
+          "tangent-limit/docs/independent-review.md"
+        ]
+      },
+      "experiments": [],
+      "lean": {
+        "status": "historical_report",
+        "evidence": [
+          "tangent-limit/logs/final-build.log",
+          "tangent-limit/logs/final-theorem-inventory.log",
+          "tangent-limit/logs/source-audit.log"
+        ],
+        "reason": "Published historical build and axiom-audit report only; no live compilation, type-matching check, or kernel replay in this session."
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+import TangentLimit
+
+#print TangentLimit.PiDiophantine
+#check TangentLimit.pole_distance_identity
+#check TangentLimit.pole_distance_lower_bound
+#check TangentLimit.reciprocal_pole_power
+#check TangentLimit.pole_distance_lower_bound_of_piDiophantine
+#check TangentLimit.tan_le_pole_power
+#check TangentLimit.eventually_tan_le_pole_rpow
+#check TangentLimit.PiDiophantine
+#check TangentLimit.eventually_abs_tan_le_quadratic
+#check TangentLimit.tan_div_cube_tendsto_zero
+#check TangentLimit.tan_div_cube_positive_tendsto_zero
+#check TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq
+#check TangentLimit.tendsto_div_cube_positive_of_eventually_abs_le_sq
+#check TangentLimit.poleIndex
+#check TangentLimit.poleDenom
+#check TangentLimit.poleOffset
+#check TangentLimit.poleDenom_pos
+#check TangentLimit.poleDenom_odd
+#check TangentLimit.poleIndex_mul_pi_le
+#check TangentLimit.lt_poleIndex_add_one_mul_pi
+#check TangentLimit.abs_poleOffset_le
+#check TangentLimit.poleDenom_le_two_mul
+#check TangentLimit.eventually_poleDenom_ge
+#check TangentLimit.poleOffset_nearest
+#check TangentLimit.cos_intCast_ne_zero
+#check TangentLimit.cos_natCast_ne_zero
+#check TangentLimit.eventual_abs_tan_div_cube_le_rpow
+#check TangentLimit.summable_abs_tan_div_cube
+#check TangentLimit.summable_abs_tan_div_cube_positive
+#check TangentLimit.abs_tan_div_cube_eq
+#check TangentLimit.summable_abs_tan_div_cube_quotient
+#check TangentLimit.summable_tan_div_cube
+#check TangentLimit.summable_abs_tan_div_cube_quotient_positive
+#check TangentLimit.summable_tan_div_cube_positive
+#check TangentLimit.abs_cos_eq_abs_sin_offset
+#check TangentLimit.chord_cos_bound
+#check TangentLimit.tan_le_of_cos_lower_bound
+#check TangentLimit.tan_le_of_pole_distance
+
+#print axioms TangentLimit.pole_distance_identity
+#print axioms TangentLimit.pole_distance_lower_bound
+#print axioms TangentLimit.reciprocal_pole_power
+#print axioms TangentLimit.pole_distance_lower_bound_of_piDiophantine
+#print axioms TangentLimit.tan_le_pole_power
+#print axioms TangentLimit.eventually_tan_le_pole_rpow
+#print axioms TangentLimit.PiDiophantine
+#print axioms TangentLimit.eventually_abs_tan_le_quadratic
+#print axioms TangentLimit.tan_div_cube_tendsto_zero
+#print axioms TangentLimit.tan_div_cube_positive_tendsto_zero
+#print axioms TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq
+#print axioms TangentLimit.tendsto_div_cube_positive_of_eventually_abs_le_sq
+#print axioms TangentLimit.poleIndex
+#print axioms TangentLimit.poleDenom
+#print axioms TangentLimit.poleOffset
+#print axioms TangentLimit.poleDenom_pos
+#print axioms TangentLimit.poleDenom_odd
+#print axioms TangentLimit.poleIndex_mul_pi_le
+#print axioms TangentLimit.lt_poleIndex_add_one_mul_pi
+#print axioms TangentLimit.abs_poleOffset_le
+#print axioms TangentLimit.poleDenom_le_two_mul
+#print axioms TangentLimit.eventually_poleDenom_ge
+#print axioms TangentLimit.poleOffset_nearest
+#print axioms TangentLimit.cos_intCast_ne_zero
+#print axioms TangentLimit.cos_natCast_ne_zero
+#print axioms TangentLimit.eventual_abs_tan_div_cube_le_rpow
+#print axioms TangentLimit.summable_abs_tan_div_cube
+#print axioms TangentLimit.summable_abs_tan_div_cube_positive
+#print axioms TangentLimit.abs_tan_div_cube_eq
+#print axioms TangentLimit.summable_abs_tan_div_cube_quotient
+#print axioms TangentLimit.summable_tan_div_cube
+#print axioms TangentLimit.summable_abs_tan_div_cube_quotient_positive
+#print axioms TangentLimit.summable_tan_div_cube_positive
+#print axioms TangentLimit.abs_cos_eq_abs_sin_offset
+#print axioms TangentLimit.chord_cos_bound
+#print axioms TangentLimit.tan_le_of_cos_lower_bound
+#print axioms TangentLimit.tan_le_of_pole_distance

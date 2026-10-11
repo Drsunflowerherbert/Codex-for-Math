@@ -88,3 +88,15 @@ pass without Git; unexpected files, missing audit source, changed positive-block
 proofs, changed original tangent proofs and symlink directories are rejected;
 restoration passes. These are integrity checks, not mathematical certification.
 The current verifier protects all 68 original tangent files against the base.
+
+## Toolkit publication review
+
+Independent read-only review inspected all 5,833 original files, 268 nested ZIP
+entries, the minimal public assembly and narrow source/test changes. No actual
+credential or private identifier remains in the public assembly. No third-party
+binary/source dependency is redistributed; selected sample tangent files retain
+their existing public provenance. No new blanket license is assigned. Raw full
+receipts and cached copies were excluded; historical summaries use a distinct
+derivative schema and preserve the difference between byte consistency and a
+newly observed Lean result. Fresh tests and extracted-package evidence are
+separate publication-session records with their actual counts and trust limits.

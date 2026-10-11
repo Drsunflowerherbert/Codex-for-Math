@@ -11,6 +11,7 @@ bundles on 11 October 2026:
 | [Sharp tangent series](tangent-sharp/README.md) | Conditional absolute summability iff real s > 1, and unconditional nonsummability for s ≤ 1; 78 declaration audits. PiDiophantine remains assumed. |
 | [Finite-field product mixing](finite-field-product-mixing/README.md) | 85 audited declarations, including the four-product covering criterion and local divisor lift; supplied completed build evidence, with publication-only receipt inspection. |
 | [Positive-block matrix inequalities](positive-blocks/README.md) | 142 public Lean declarations, full equality classification and common-support normal form; completed independent source review and fresh build/type/axiom checks. |
+| [Math evidence toolkit](math-evidence/README.md) | Source/assumption/dependency records, safe byte intake and separate fixed live gate; 283 fresh suite checks and eight extracted consumer commands, with explicit trust limits. |
 | [Verified techniques guide](learning-guide/verified-techniques.md) | Nine reusable proof methods, examples and study plan; see the dated [initial addendum](learning-guide/STATUS-2026-10-11.md) and [finalization update](learning-guide/STATUS-FINALIZATION-2026-10-11.md). |
 
 All Lean projects pin Lean/mathlib 4.24.0. Mathematical scope, current versus

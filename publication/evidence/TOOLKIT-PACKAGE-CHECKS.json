@@ -1,0 +1,198 @@
+{
+  "schema": "public-toolkit-package-and-consumer-checks-v1",
+  "checked_utc": "2026-10-11T04:45:07.669613+00:00",
+  "source_manifest_sha256": "ae8f3bc8e4355fd6cf83a55fa22cabaeae8b4c39cf07e294cd8092a81468ce2c",
+  "package": {
+    "bytes": 200225,
+    "expandedBytes": 715216,
+    "sha256": "6b4a7c806895c15fb18a07c08ad726ff419e1e17b0f5b09f3b3e867814d3ab5b",
+    "files": 93
+  },
+  "two_deterministic_archives_equal": true,
+  "archive_inspection": {
+    "bytes": 200225,
+    "extractedOrExecutedContents": false,
+    "files": 93,
+    "importedLeanPasses": 0,
+    "kind": "checkpoint_byte_integrity_only",
+    "ok": true,
+    "sha256": "6b4a7c806895c15fb18a07c08ad726ff419e1e17b0f5b09f3b3e867814d3ab5b"
+  },
+  "extracted_consumer": {
+    "exit": 0,
+    "command": "node consumer-smoke.cjs EXTRACTED_TOOLKIT INSPECTED_PINNED_REPOSITORY NEW_EXTERNAL_OUTPUT",
+    "phase_count": 8,
+    "phases": [
+      {
+        "name": "inherited-tests",
+        "exit": 0,
+        "success": true,
+        "stdout_bytes": 317,
+        "stdout_sha256": "724e8ddb11d5af9c7f312b857b787bfc2fce91081311e5ff42357977bbc069bc",
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "accept-pinned-bundle",
+        "exit": 0,
+        "success": true,
+        "stdout_bytes": 2989,
+        "stdout_sha256": "fb8075ee695e4e5fb5a4359ba8e187e157f601ca5c1ddad01f4b6074f5a76fca",
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "validate-relocated-tree",
+        "exit": 0,
+        "success": true,
+        "stdout_bytes": 2499,
+        "stdout_sha256": "237682c1f96c7a0033a2e142b1bea22453a407069c816b389a098928fa597cce",
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "bundle-a",
+        "exit": 0,
+        "success": true,
+        "stdout_bytes": 154,
+        "stdout_sha256": "6c7357e180ef39280eb1c91fb26e1a72cf23293229a0f8a1903471b491edaead",
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "bundle-b",
+        "exit": 0,
+        "success": true,
+        "stdout_bytes": 154,
+        "stdout_sha256": "6c7357e180ef39280eb1c91fb26e1a72cf23293229a0f8a1903471b491edaead",
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "verify-public-sources",
+        "exit": 0,
+        "success": true,
+        "stdout_bytes": 47,
+        "stdout_sha256": "0340f14a08f36d4aede456283a388a88c4f138981ab002bddc7b1273c3700987",
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "fresh-consumer-live-valid",
+        "exit": 0,
+        "success": true,
+        "stdout_bytes": 578,
+        "stdout_sha256": "51672492e301c5859dc4bab15a32440906e53caff26347d2f0ee0d1e69686e73",
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "inspect-fresh-consumer-receipt",
+        "exit": 0,
+        "success": true,
+        "stdout_bytes": 343,
+        "stdout_sha256": "e88a394abc1609d3b2de0750129ed39519993b6999e6f639bafd1f36925d9851",
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "all_source_hashes_unchanged": true,
+    "results": {
+      "inheritedTests": 157,
+      "pinnedBundleAcceptance": true,
+      "relocatedSourceValidation": true,
+      "deterministicTangentBundleSha256": "841e041ac0e31b9263b440a81cb5fd525c81ff001e61db7f05661fbde1cd1966",
+      "publicSourceIntegrity": {
+        "ok": true,
+        "checkedFiles": 89,
+        "leanPass": false
+      },
+      "freshLocallyObservedLeanPass": true,
+      "freshReceiptInspection": {
+        "ok": true,
+        "kind": "receipt_integrity_only",
+        "integrityStatus": "complete_reported_execution_closure",
+        "reportedOutcome": "all_required_live_phases_succeeded",
+        "evidenceFiles": 172,
+        "locallyObservedLeanPass": false,
+        "leanPass": false,
+        "receiptAuthenticity": "not_established",
+        "independentKernelReplay": "not_performed"
+      }
+    }
+  },
+  "fresh_valid_live_result": {
+    "plan": "valid",
+    "target": "ReceiptFixture.valid",
+    "started": "2026-10-11T04:42:19.361Z",
+    "finished": "2026-10-11T04:43:37.041Z",
+    "checks": {
+      "axiomAudit": "passed",
+      "compilation": "passed",
+      "compilerIdentity": "passed",
+      "definitionBodyMatching": "not_applicable",
+      "expectedTypeMatching": "passed",
+      "independentKernelReplay": "not_performed",
+      "packageIdentity": "passed",
+      "sourceIdentity": "passed",
+      "targetKernelReplay": "passed"
+    },
+    "replay": [
+      {
+        "baseModules": [
+          "Mathlib",
+          "EvidenceHarness"
+        ],
+        "independentKernelReplay": "not_performed",
+        "replayedDeclarations": 1,
+        "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+        "targets": [
+          "ReceiptFixture.valid"
+        ]
+      }
+    ],
+    "observed_markers": [
+      {
+        "source_log": "expected-type-and-axiom-audit.stdout",
+        "original_log_sha256": "fc328d666aad6302676c5bf986a453d868e59731181ed95bdc84a0f91216c437",
+        "marker": {
+          "axioms": [],
+          "declarationKind": "theorem",
+          "observedType": "1 + 1 = 2",
+          "target": "ReceiptFixture.valid",
+          "targetKernelReplay": "separate_phase_required",
+          "typeMatching": "closed_whole_type_kernel_definitional_equality"
+        }
+      },
+      {
+        "source_log": "target-kernel-replay.stdout",
+        "original_log_sha256": "e54a8f874808dab337af00f475af1c0b82d8d0d1fdb81b2b865803bd6262556b",
+        "marker": {
+          "baseModules": [
+            "Mathlib",
+            "EvidenceHarness"
+          ],
+          "independentKernelReplay": "not_performed",
+          "replayedDeclarations": 1,
+          "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+          "targets": [
+            "ReceiptFixture.valid"
+          ]
+        }
+      }
+    ],
+    "original_raw_receipt_sha256": "96395d4bb55b967cf2ef86dbc25c8758667510bb2446ff9369def4a101f29669",
+    "boundaries": {
+      "assumptions": "fixture_specific",
+      "dependencyCompilation": "trusted_existing_pinned_olean_cache",
+      "importedReceiptCanGrantPass": false,
+      "independentKernelReplay": "not_performed",
+      "nativeMRS": "unavailable_unvalidated",
+      "receiptAuthenticity": "not_established_by_hashes",
+      "sourceRevisionAttestation": "exact_published_project_file_pins"
+    }
+  },
+  "notice": "Derivative publication record omits private paths, process environments and raw receipt closure. Captured mathematical markers, source hashes, exits and byte hashes are preserved. This file is not a consumable complete live receipt and cannot grant an imported Lean pass. Fresh execution checks only the valid fixture here; the full tangent gate and negative live cases remain separately labeled original historical evidence.",
+  "independent_publication_review": "All5833original files and268embeddedZIPentries reviewed; clean assembly73preserved and32live-gate/fixture files byte-exact. Review performed read-only without executing project programs.",
+  "source_suites": "math-evidence/verification/PUBLIC-VERIFICATION.json:283passedcases across six actual/mock-labeled suites; public ZIP29 differs from original32."
+}

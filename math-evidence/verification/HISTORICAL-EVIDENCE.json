@@ -1,0 +1,291 @@
+{
+  "schema": "public-toolkit-historical-evidence-summary-v1",
+  "derivative_not_live_receipt": true,
+  "original_archive_sha256": "d71a34e420fcdcec814cb13e3bfb19ab6871c3e101aaacea4cacc15583bc94fb",
+  "original_records": [
+    {
+      "source_file": "verification/adversarial-review/archive-report.json",
+      "source_bytes": 14375,
+      "source_sha256": "b191ae559d80b48c83c0a8736bc3ffc893de9b76857e2336a8542cf0562e4ac4",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/adversarial-review/interruption-report.json",
+      "source_bytes": 3454,
+      "source_sha256": "9cff30002fe82ae22b2422c16175bae9f6c3651f1682a8a023e6ca4396f19be2",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/adversarial-review/latest-report.json",
+      "source_bytes": 25789,
+      "source_sha256": "b2cbd9e0620839620921983304e8382f857f08f169378281258d7ac41d04520c",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/adversarial-review/live-report.json",
+      "source_bytes": 290108,
+      "source_sha256": "33bb6c6ec3cfe05727bc7b3d7a695b8ce7fb6aec58f530ba0afa2105c3a5877a",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/consumer-smoke/report.json",
+      "source_bytes": 14065,
+      "source_sha256": "e7e4066dbd9eedb7f9f9000689828cb3e1e792435488035cc9253bf921a8b9e1",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/corpora/corpus-tests-v2.json",
+      "source_bytes": 2399,
+      "source_sha256": "8be204f662de126bcc8c8f4d4b9b699f66f96d672c44d7dc939a2f4601def7a1",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/implementation-review/approval.json",
+      "source_bytes": 3123,
+      "source_sha256": "5bccae383770795dca18eb79e3547313ece0542aba02164839a40c4eb2aafaab",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/implementation-review/corpus-artifact-validation-v1.json",
+      "source_bytes": 675,
+      "source_sha256": "6d5bd69ac16439ddaa866b10731513d6685ac9b358a60ed6f9811cac6656f6f9",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/implementation-review/corpus-compilation-v1.json",
+      "source_bytes": 352182,
+      "source_sha256": "e55e93a8140ab0b5dd4a7658da38db299ee4c1d8ce1e5b5f349a89b45d76d283",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/implementation-review/corpus-semantic-v2.json",
+      "source_bytes": 3475,
+      "source_sha256": "374d7c12ca0a6699d7e85d12ee70ae1846deb32d8cbe0db408754caea3719c1d",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/live/os-interruptions.json",
+      "source_bytes": 2566,
+      "source_sha256": "fc34dccdc2a437964911e75750474175170bb58facc756e20766903358e6a41c",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/live/process-tests.json",
+      "source_bytes": 9415,
+      "source_sha256": "a4873dda0ed4212228bc58b38e71a55cd1689b5811a03778542005163b9a9867",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/live/tangent-final/logs/definition-body-matching.stdout",
+      "source_bytes": 2092,
+      "source_sha256": "dc60898ab9655f4bf0d750757f6c01c63f293ecdfd275f6865bd8a047881541c",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/live/tangent-final/logs/expected-type-and-axiom-audit.stdout",
+      "source_bytes": 36093,
+      "source_sha256": "61326a2624461c8eea208a996ab8a27d89053939024066b82716c37bfdc45377",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/live/tangent-final/logs/target-kernel-replay.stdout",
+      "source_bytes": 2052,
+      "source_sha256": "74e7e1ce3e11b78124e29a3773a3cbc8841d77c5ac9ce2a615372dc40ddba257",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/live/tangent-final/receipt.json",
+      "source_bytes": 115051,
+      "source_sha256": "b054c8ca19e22090f0379a34640d57c728ebda786b1dadf91c3832240b9a2eaf",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/live/toolchain-byte-audit.json",
+      "source_bytes": 2225,
+      "source_sha256": "bb45e177a59c22835a24d942c26250a2bb7d46844347527b296dff95fc37c7ec",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    },
+    {
+      "source_file": "verification/packaging-tests.json",
+      "source_bytes": 1922,
+      "source_sha256": "7aa256429fe59efab81dd73eb6d506041f5dc59112e3dd5d0b5affe3e74e788a",
+      "disposition": "summary_only_original_raw_record_and_closure_omitted"
+    }
+  ],
+  "original_tests": {
+    "node_filesystem": {
+      "passed": 69,
+      "total": 69
+    },
+    "zip_filesystem": {
+      "passed": 32,
+      "total": 32
+    },
+    "live_adversarial": {
+      "passed": 31,
+      "total": 31
+    },
+    "extracted_consumer_commands": 8
+  },
+  "original_full_tangent": {
+    "sha256": "b054c8ca19e22090f0379a34640d57c728ebda786b1dadf91c3832240b9a2eaf",
+    "phaseCount": 70,
+    "targetCount": 37,
+    "definitionCount": 4,
+    "replay": [
+      {
+        "baseModules": [
+          "Mathlib",
+          "EvidenceHarness"
+        ],
+        "independentKernelReplay": "not_performed",
+        "replayedDeclarations": 59,
+        "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+        "targets": [
+          "TangentLimit.PiDiophantine",
+          "TangentLimit.abs_cos_eq_abs_sin_offset",
+          "TangentLimit.abs_poleOffset_le",
+          "TangentLimit.abs_tan_div_cube_eq",
+          "TangentLimit.chord_cos_bound",
+          "TangentLimit.cos_intCast_ne_zero",
+          "TangentLimit.cos_natCast_ne_zero",
+          "TangentLimit.eventual_abs_tan_div_cube_le_rpow",
+          "TangentLimit.eventually_abs_tan_le_quadratic",
+          "TangentLimit.eventually_poleDenom_ge",
+          "TangentLimit.eventually_tan_le_pole_rpow",
+          "TangentLimit.lt_poleIndex_add_one_mul_pi",
+          "TangentLimit.poleDenom",
+          "TangentLimit.poleDenom_le_two_mul",
+          "TangentLimit.poleDenom_odd",
+          "TangentLimit.poleDenom_pos",
+          "TangentLimit.poleIndex",
+          "TangentLimit.poleIndex_mul_pi_le",
+          "TangentLimit.poleOffset",
+          "TangentLimit.poleOffset_nearest",
+          "TangentLimit.pole_distance_identity",
+          "TangentLimit.pole_distance_lower_bound",
+          "TangentLimit.pole_distance_lower_bound_of_piDiophantine",
+          "TangentLimit.reciprocal_pole_power",
+          "TangentLimit.summable_abs_tan_div_cube",
+          "TangentLimit.summable_abs_tan_div_cube_positive",
+          "TangentLimit.summable_abs_tan_div_cube_quotient",
+          "TangentLimit.summable_abs_tan_div_cube_quotient_positive",
+          "TangentLimit.summable_tan_div_cube",
+          "TangentLimit.summable_tan_div_cube_positive",
+          "TangentLimit.tan_div_cube_positive_tendsto_zero",
+          "TangentLimit.tan_div_cube_tendsto_zero",
+          "TangentLimit.tan_le_of_cos_lower_bound",
+          "TangentLimit.tan_le_of_pole_distance",
+          "TangentLimit.tan_le_pole_power",
+          "TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq",
+          "TangentLimit.tendsto_div_cube_positive_of_eventually_abs_le_sq"
+        ]
+      }
+    ],
+    "artifactCount": 208,
+    "checks": {
+      "axiomAudit": "passed",
+      "compilation": "passed",
+      "compilerIdentity": "passed",
+      "definitionBodyMatching": "passed",
+      "expectedTypeMatching": "passed",
+      "independentKernelReplay": "not_performed",
+      "packageIdentity": "passed",
+      "sourceIdentity": "passed",
+      "targetKernelReplay": "passed"
+    },
+    "boundaries": {
+      "assumptions": "explicit_PiDiophantine_premise_remains_unproved",
+      "dependencyCompilation": "trusted_existing_pinned_olean_cache",
+      "importedReceiptCanGrantPass": false,
+      "independentKernelReplay": "not_performed",
+      "nativeMRS": "unavailable_unvalidated",
+      "receiptAuthenticity": "not_established_by_hashes",
+      "sourceRevisionAttestation": "exact_published_project_file_pins"
+    },
+    "capturedMarkers": {
+      "expected-type-and-axiom-audit": {
+        "count": 37,
+        "matchReceipt": true
+      },
+      "definition-body-matching": {
+        "count": 4,
+        "matchReceipt": true
+      },
+      "target-kernel-replay": {
+        "count": 1,
+        "matchReceipt": true
+      }
+    },
+    "runnerCopiedMatchesIntake": {
+      "bounded-io.cjs": true,
+      "bundle.cjs": true,
+      "cli.cjs": true,
+      "core.cjs": true,
+      "hash-io.cjs": true,
+      "lean/EvidenceHarness.lean": true,
+      "lean/expected/tangent-definitions.lean": true,
+      "lean/expected/tangent-replay.lean": true,
+      "lean/expected/tangent-types.lean": true,
+      "live-plans.cjs": true,
+      "live.cjs": true,
+      "materialize.cjs": true,
+      "process.cjs": true,
+      "samples/catalog.json": true,
+      "strict-json.cjs": true,
+      "tangent-pins.cjs": true
+    }
+  },
+  "original_implementation_review": {
+    "schema": "independent-implementation-approval/v1",
+    "reviewedAt": "2026-10-11T03:39:20.624519+00:00",
+    "decision": "approved_with_explicit_execution_boundaries",
+    "sources": {
+      "live.cjs": "6de9af7a157b857decc81f862c70261ebbc7571ab625449346a8449806a95699",
+      "hash-io.cjs": "84c523647252b9821a6465fdb0beb0ad07475a8831cf5d161505fd795bc81269",
+      "process.cjs": "86bad6a76b6313d15ebe245ef82046ca766ad957e142e5a27c91cb2ba07fcdf9",
+      "live-plans.cjs": "9596338e326943b7cc539c34670b0efaba8f7e9d7f7ebe3f1f959817ebba76c3",
+      "lean/EvidenceHarness.lean": "bb71282fcb088498a9c40b0460694f1663e8f3a145fc15469050b8ade2f390dc",
+      "materialize.cjs": "3fc388d739a22c476de9319fd14affec41156fcf40cb943f654da5fb75b883fd",
+      "archive-intake.py": "9497d1808ca10ee269e98261c6ca6f735942161375530a31fe6fb6880a847ab0",
+      "corpus.cjs": "34f276751e9ec4f845de79b478c6a5606ccaca313e758c94e6c4e971dabb669a"
+    },
+    "blockingFindingsRemaining": [],
+    "repairedFindings": [
+      "symlinked output-parent containment before mutation",
+      "compiler kernel shared-library pre/post identity",
+      "dependency pre/post identity and tracked source cleanliness",
+      "inherited compiler-loader/Git override sanitization",
+      "whole successful receipt closure validation without granting a live pass",
+      "successful saved receipt working inputs match corresponding preserved fixed source bytes",
+      "exact selected official Linux release member bytes before compiler execution",
+      "directory ancestry opened component by component through anchored descriptors",
+      "initial live attempt marker uses anchored new-tree writer",
+      "nested native corpus attachments and contradictory reported review layers preserved explicitly"
+    ],
+    "boundaries": [
+      "trusted workspace without hostile concurrent filesystem mutation",
+      "trusted existing pinned dependency oleans, not rebuilt from source",
+      "local declaration closure replay through the same pinned Lean kernel",
+      "monomorphic declarations only",
+      "definition equality does not prove an assumption predicate",
+      "imported receipt integrity is not event authenticity or a newly observed pass",
+      "native MRS and Mac live runner not tested"
+    ],
+    "corpusImportDecision": "approved_lossless_manifest_pinned_data_intake_no_status_translation",
+    "optionalCorpusLeanDecision": "fresh_compilation_and_completed_type_axiom_inventory_only_no_expected_type_matching_or_replay"
+  },
+  "publication_changes": "Raw paths, private identities, transport metadata and artifact trees omitted. Source hashes and selected scoped counts preserved. This derivative has no complete raw receipt closure.",
+  "imported_lean_passes": 0,
+  "fresh_execution_by_summary_generation": false,
+  "trust_limits": [
+    "trusted existing pinned dependency .olean caches and host runtime; no full dependency source rebuild",
+    "same-kernel local declaration replay against imported dependency baseline; no independent verifier",
+    "monomorphic full expected-type/body gate targets",
+    "PiDiophantine remains unproved explicit theorem premise; definition-body match does not prove it",
+    "no native Mac or installed MRS validation",
+    "stored/imported receipts and records grant no new Lean pass",
+    "hashes establish byte/internal consistency, not historical event authenticity",
+    "trusted inspected fixed source workspace; no OS sandbox claim against hostile Lean or concurrent attackers"
+  ]
+}

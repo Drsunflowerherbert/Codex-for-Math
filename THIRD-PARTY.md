@@ -35,3 +35,10 @@ No third-party dependency source tree is redistributed. Lean and mathlib are
 referenced by official URLs and exact dependency pins. The upstream Apache
 license is not assigned to the independently written studies, checkers, or Lean
 projects by this publication.
+
+The toolkit's `math-evidence/samples/source-tree/tangent-limit/` files and bundled
+hex representation reproduce the 26 selected original public project files at
+`d00a89dd9ce6c8ef782234d28c93e69cb712c947`, unchanged. Their source attribution
+remains within the sample documentation. The toolkit does not redistribute
+mathlib dependencies, Lean binaries, original private input archives or compiled
+products, and publication assigns no license to new toolkit code.

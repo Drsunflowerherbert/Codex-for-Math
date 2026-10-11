@@ -56,6 +56,13 @@
       "sha256": "81c17b89446400997b60cfe55177c248ee01a6155459778868f3398b3ecd84fa",
       "files": 73,
       "uncompressed": 1157092
+    },
+    {
+      "archive": "Codex-Math-Evidence-Toolkit-2026-10-11.zip",
+      "size": 15208044,
+      "sha256": "d71a34e420fcdcec814cb13e3bfb19ab6871c3e101aaacea4cacc15583bc94fb",
+      "files": 5833,
+      "uncompressed": 52734343
     }
   ]
 }

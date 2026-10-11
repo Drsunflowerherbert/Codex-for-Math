@@ -4,18 +4,19 @@ This publication is based on exact commit
 `d00a89dd9ce6c8ef782234d28c93e69cb712c947`, on branch
 `codex/research-2026-10-11`. The original tangent files are unchanged.
 
-[INPUT-ARCHIVES.json](INPUT-ARCHIVES.json) records the eight supplied archive
-fingerprints. All eight archives were retrieved and their SHA256 values verified
+[INPUT-ARCHIVES.json](INPUT-ARCHIVES.json) records supplied archive
+fingerprints. All listed archives were retrieved and their SHA256 values verified
 in this publication environment before extraction. Entry paths and file types
 were inspected first; no traversal entries or symlinks were present. No archive
 script was executed automatically.
 
 [SOURCE-MAP.json](SOURCE-MAP.json) records each candidate's source hash and its
-publication disposition. Exclusion records give filenames and reasons without
-private contents. Modified files have both original and published hashes.
+publication disposition for retained project inputs. The separate toolkit source
+map covers every toolkit candidate. Exclusion records give filenames and reasons
+without private contents. Modified files have original and published hashes.
 [FILES.json](FILES.json) now binds the whole published repository, including
 the original tangent tree, finite-field and guide additions, and positive-block
-library. It excludes itself to avoid self-reference. Run
+library and evidence toolkit. It excludes itself to avoid self-reference. Run
 `python3 publication/verify.py` for exact file-set, byte/hash, provenance, pin
 and explicit historical-status checks. It also works on extracted snapshots
 with `--root <snapshot-directory>`. Dependencies and build caches are excluded.
@@ -91,3 +92,25 @@ original hashes stay separate from the new review and new compiler receipts.
 The guide's original text and initial addendum remain unchanged; its
 [later update](../learning-guide/STATUS-FINALIZATION-2026-10-11.md) records this
 finished scope. No overall license or novelty claim has been added.
+
+## Math evidence toolkit
+
+The source-only [toolkit](../math-evidence/README.md) retains 86 reviewed original
+source/doc/test candidates. All 5,833 input files have dispositions in
+[TOOLKIT-SOURCE-MAP.json](TOOLKIT-SOURCE-MAP.json); archives, binaries, cached
+inputs and raw receipt trees are excluded. New public manifests and derivative
+reports are separately bound by the current whole-repository file manifest.
+
+All 73 preserved inputs and 32 live-gate/fixture files are byte-identical. Seven
+metadata/smoke/test-path adaptations and six documentation rewrites are recorded
+by original and public hashes. Fresh public tests passed 283 cases across six
+suites. Two source archives are byte-identical; their inspected extracted package
+passed eight fixed consumer commands including a fresh valid Lean fixture and
+integrity-only inspection returning no imported pass.
+
+See [TOOLKIT-PACKAGE-CHECKS.json](evidence/TOOLKIT-PACKAGE-CHECKS.json) for actual
+package/consumer evidence and the [historical summary](../math-evidence/verification/HISTORICAL-EVIDENCE.json)
+for the earlier full tangent gate. Historical 32 ZIP checks differ from the 29
+self-contained public cases. Trusted pinned dependency OLeans, host runtime,
+same-kernel replay, monomorphic full gates, the unproved PiDiophantine premise
+and unvalidated native Mac/MRS integration remain explicit limits.
