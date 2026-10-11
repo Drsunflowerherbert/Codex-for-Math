@@ -36,6 +36,11 @@
     "ordinary_study_lean_status_upgraded": false,
     "mathematical_and_publication_checks": "publication/evidence/MIXED-MOMENT-CHECKS.json",
     "publisher_independently_checked_final_source": true,
-    "fresh_build_full_audits_exact_checks": "passed; actual process exits zero"
+    "fresh_build_full_audits_exact_checks": "passed; actual process exits zero",
+    "publication": "published_and_remote_verified",
+    "verified_core_publication_commit": "1bed0b82847300dc6dfe0a0dbd06f46fe04be180",
+    "verified_at_utc": "2026-10-11T06:50:17.656775+00:00",
+    "remote_verification_receipt": "publication/evidence/MIXED-MOMENT-PUBLICATION.json",
+    "scope_notice": "Historical transfer failure retained above; direct GitHub core publication was subsequently observed and verified. No Library access was required."
   }
 }

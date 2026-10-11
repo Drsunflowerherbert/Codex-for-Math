@@ -1939,8 +1939,8 @@
       "sha256": "bab9255e53992b809436f2f079c899fce071ef6cce1cacfc331b3718da35ebe5"
     },
     "publication/PENDING-TRANSFER.json": {
-      "bytes": 2514,
-      "sha256": "575e63c2cca66c67fae7cb253f75092f229da0d9eef851cc408f0ac23386c215"
+      "bytes": 2968,
+      "sha256": "0133312a8cefa7920a4a370c506348e41a29263ef845d03e6a5512b3c4dd7573"
     },
     "publication/README.md": {
       "bytes": 11158,
@@ -1985,6 +1985,10 @@
     "publication/evidence/MIXED-MOMENT-INTEGRITY-CHECKS.json": {
       "bytes": 2943,
       "sha256": "22eedf2b7a4ee57a8a27ee127d8eb29cb182a60316d1f9d3e74a9f665d1b9813"
+    },
+    "publication/evidence/MIXED-MOMENT-PUBLICATION.json": {
+      "bytes": 1889,
+      "sha256": "e2ef6381a77e774afc92a3597bf967d5d9d0c5e5371a1a502a84fb526e473c5a"
     },
     "publication/evidence/POSITIVE-BLOCK-CHECKS.json": {
       "bytes": 2166,

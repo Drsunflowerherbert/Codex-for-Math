@@ -1,0 +1,42 @@
+{
+  "schema": "mixed-moment-github-publication-confirmation-v1",
+  "status": "published_and_remote_verified",
+  "verified_at_utc": "2026-10-11T06:50:17.656775+00:00",
+  "repository": "Drsunflowerherbert/Codex-for-Math",
+  "branch": "codex/research-2026-10-11",
+  "commit": "1bed0b82847300dc6dfe0a0dbd06f46fe04be180",
+  "parent_commit": "89dda80447504a1f0ea59318fdc2f7fc7ffa4e54",
+  "root_tree": "f1720db9fc1f6b7b7eca2fd4ebde8c1e2a437ba2",
+  "complete_remote_tree_untruncated": true,
+  "all_paths_modes_types_and_blob_shas_match": true,
+  "remote_entries": 1030,
+  "remote_blob_files": 913,
+  "current_publication_manifest_sha256": "6ab0ab95558af9cc40d43716d1c715569766089344e2f70d6f2ade71e9ca9c75",
+  "whole_repository_integrity": {
+    "status": "passed",
+    "publication_files": 912,
+    "original_tangent_files_unchanged": 68,
+    "unchanged_formal_source_and_pin_files": 139,
+    "pinned_lean_projects": [
+      "convex-approximation",
+      "egyptian-exact",
+      "finite-field-product-mixing",
+      "mixed-moment",
+      "positive-blocks",
+      "radial-contact",
+      "tangent-limit",
+      "tangent-sharp"
+    ],
+    "ordinary_core_records": 81,
+    "scope": "Whole published repository integrity and explicit status/pin checks; no new mathematical proof certification."
+  },
+  "publication_worktree_clean": true,
+  "original_tangent_checkout_branch_head_and_cleanliness_preserved": true,
+  "original_tangent_file_hashes_unchanged": 68,
+  "original_source_evidence_archive_unchanged": true,
+  "normal_push_without_force": true,
+  "pull_request_or_merge": false,
+  "credentials_or_permissions_changed": false,
+  "library_access_required": false,
+  "record_scope": "This receipt binds the first core-publication snapshot at its explicit commit and verification time; metadata containing the receipt is committed subsequently. Current FILES.json binds current public metadata."
+}
