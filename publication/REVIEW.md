@@ -58,3 +58,33 @@ No additional mathematical, privacy or redistribution blocker remains for this
 five-bundle publication. Supplied archival end-of-file blank lines are retained
 for byte provenance; whitespace diagnostics on those original inputs are
 documented rather than changing source snapshots.
+
+## Positive-block finalization and whole-repository integrity
+
+The independent final source/type/axiom review accepts the requested positive-block
+scope with no unresolved core proof gap or required proof correction. It inspected
+all 17 Lean production/review files and all 142 public declaration records
+(131 theorems and 11 definitions), including four private helpers transitively.
+The supplied unfinished written verdict was excluded; the new completed review
+is explicitly separate. Earlier reviewer authorship disclosures remain intact.
+
+Fresh publication-session commands passed: a project-source rebuild, ten
+independent source compilations, all 142 declaration/axiom checks, and 16 named
+plus 180 seeded exact examples. Dependencies reuse clean cached OLeans at the
+recorded pins. Only `propext`, `Classical.choice`, and `Quot.sound` appear.
+The formal scope includes complete zero/nonzero common-support normal-form
+classification; optional broader study corollaries are documented separately.
+
+Independent privacy inspection covers all 73 checkpoint candidates, with 63
+retained and ten excluded. Proof sources and pins are byte-identical. The generic
+license template, internal handoffs and packaging/recovery coordination records
+were omitted. Retained upstream TeX has the existing pinned Apache 2.0 provenance;
+no new license is assigned to the proof code. Every current publication root is
+covered by the new whole-repository manifest, while the earlier finite-field/guide
+batch manifests remain immutable historical records.
+
+Seven integrity regressions passed on a disposable snapshot: complete snapshots
+pass without Git; unexpected files, missing audit source, changed positive-block
+proofs, changed original tangent proofs and symlink directories are rejected;
+restoration passes. These are integrity checks, not mathematical certification.
+The current verifier protects all 68 original tangent files against the base.

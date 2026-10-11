@@ -1,0 +1,74 @@
+PositiveBlocks.HasCommonSupportNormalForm.{u_1, u_2} {m : Type u_1} {n : Type u_2} [Fintype m] [Fintype n]
+  (A : Matrix m m ℂ) (B : Matrix m n ℂ) (C : Matrix n n ℂ) : Prop
+PositiveBlocks.exists_posDef_compression.{u_5} {r : Type u_5} [Fintype r] [DecidableEq r] (P : Matrix r r ℂ)
+  (hP : P.PosSemidef) (hP0 : P ≠ 0) :
+  ∃ k, ∃ (_ : 0 < k), ∃ W H, W.conjTranspose * W = 1 ∧ H.PosDef ∧ P = W * H * W.conjTranspose
+PositiveBlocks.hasCommonSupportNormalForm_of_gram_proportional.{u_1, u_2, u_5} {m : Type u_1} {n : Type u_2} [Fintype m]
+  [Fintype n] {r : Type u_5} [Fintype r] [DecidableEq r] (X : Matrix r m ℂ) (Y : Matrix r n ℂ) (hX0 : X ≠ 0) (t : ℝ)
+  (ht : 0 < t) (hQ : Y * Y.conjTranspose = t • (X * X.conjTranspose)) :
+  PositiveBlocks.HasCommonSupportNormalForm (X.conjTranspose * X) (X.conjTranspose * Y) (Y.conjTranspose * Y)
+PositiveBlocks.gram_product_eq_iff_commonSupportNormalForm.{u_1, u_2, u_5} {m : Type u_1} {n : Type u_2} [Fintype m]
+  [Fintype n] {r : Type u_5} [Fintype r] [DecidableEq r] (X : Matrix r m ℂ) (Y : Matrix r n ℂ) (hX0 : X ≠ 0)
+  (hY0 : Y ≠ 0) :
+  PositiveBlocks.hsSq (X.conjTranspose * Y) =
+      PositiveBlocks.hsNorm (X.conjTranspose * X) * PositiveBlocks.hsNorm (Y.conjTranspose * Y) ↔
+    PositiveBlocks.HasCommonSupportNormalForm (X.conjTranspose * X) (X.conjTranspose * Y) (Y.conjTranspose * Y)
+PositiveBlocks.gram_product_eq_iff_zero_or_commonSupportNormalForm.{u_1, u_2, u_5} {m : Type u_1} {n : Type u_2}
+  [Fintype m] [Fintype n] {r : Type u_5} [Fintype r] [DecidableEq r] (X : Matrix r m ℂ) (Y : Matrix r n ℂ) :
+  PositiveBlocks.hsSq (X.conjTranspose * Y) =
+      PositiveBlocks.hsNorm (X.conjTranspose * X) * PositiveBlocks.hsNorm (Y.conjTranspose * Y) ↔
+    X = 0 ∨
+      Y = 0 ∨
+        PositiveBlocks.HasCommonSupportNormalForm (X.conjTranspose * X) (X.conjTranspose * Y) (Y.conjTranspose * Y)
+PositiveBlocks.HasCommonSupportNormalForm.rank_eq.{u_1, u_2} {m : Type u_1} {n : Type u_2} [Fintype m] [Fintype n]
+  {A : Matrix m m ℂ} {B : Matrix m n ℂ} {C : Matrix n n ℂ} (h : PositiveBlocks.HasCommonSupportNormalForm A B C) :
+  A.rank = B.rank ∧ A.rank = C.rank ∧ 0 < A.rank ∧ A.rank ≤ Fintype.card m ∧ A.rank ≤ Fintype.card n
+PositiveBlocks.HasCommonSupportNormalForm.exists_rank_witness.{u_1, u_2} {m : Type u_1} {n : Type u_2} [Fintype m]
+  [Fintype n] {A : Matrix m m ℂ} {B : Matrix m n ℂ} {C : Matrix n n ℂ}
+  (h : PositiveBlocks.HasCommonSupportNormalForm A B C) :
+  ∃ U V H t,
+    H.PosDef ∧
+      0 < t ∧
+        U.conjTranspose * U = 1 ∧
+          V.conjTranspose * V = 1 ∧
+            A = U * H * U.conjTranspose ∧ B = √t • (U * H * V.conjTranspose) ∧ C = t • (V * H * V.conjTranspose)
+PositiveBlocks.gram_product_eq_rank_eq.{u_1, u_2, u_5} {m : Type u_1} {n : Type u_2} [Fintype m] [Fintype n]
+  {r : Type u_5} [Fintype r] [DecidableEq r] (X : Matrix r m ℂ) (Y : Matrix r n ℂ) (hX0 : X ≠ 0) (hY0 : Y ≠ 0)
+  (heq :
+    PositiveBlocks.hsSq (X.conjTranspose * Y) =
+      PositiveBlocks.hsNorm (X.conjTranspose * X) * PositiveBlocks.hsNorm (Y.conjTranspose * Y)) :
+  X.rank = Y.rank ∧ 0 < X.rank ∧ X.rank ≤ Fintype.card r ∧ X.rank ≤ Fintype.card m ∧ X.rank ≤ Fintype.card n
+PositiveBlocks.HasCommonSupportNormalForm.exists_normRatio_witness.{u_1, u_2} {m : Type u_1} {n : Type u_2} [Fintype m]
+  [Fintype n] {A : Matrix m m ℂ} {B : Matrix m n ℂ} {C : Matrix n n ℂ}
+  (h : PositiveBlocks.HasCommonSupportNormalForm A B C) :
+  ∃ U V H,
+    H.PosDef ∧
+      U.conjTranspose * U = 1 ∧
+        V.conjTranspose * V = 1 ∧
+          A = U * H * U.conjTranspose ∧
+            B = √(PositiveBlocks.hsNorm C / PositiveBlocks.hsNorm A) • (U * H * V.conjTranspose) ∧
+              C = (PositiveBlocks.hsNorm C / PositiveBlocks.hsNorm A) • (V * H * V.conjTranspose)
+PositiveBlocks.HasCommonSupportNormalForm.block_rank.{u_1, u_2} {m : Type u_1} {n : Type u_2} [Fintype m] [Fintype n]
+  {A : Matrix m m ℂ} {B : Matrix m n ℂ} {C : Matrix n n ℂ} (h : PositiveBlocks.HasCommonSupportNormalForm A B C) :
+  (Matrix.fromBlocks A B B.conjTranspose C).rank = A.rank
+'PositiveBlocks.exists_posDef_compression' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveBlocks.exists_invSqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveBlocks.hasCommonSupportNormalForm_of_gram_proportional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PositiveBlocks.gram_product_eq_iff_commonSupportNormalForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveBlocks.gram_product_eq_iff_zero_or_commonSupportNormalForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PositiveBlocks.HasCommonSupportNormalForm.posSemidef_and_hsNorm_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PositiveBlocks.HasCommonSupportNormalForm.rank_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveBlocks.HasCommonSupportNormalForm.exists_rank_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PositiveBlocks.gram_product_eq_rank_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveBlocks.HasCommonSupportNormalForm.exists_normRatio_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PositiveBlocks.HasCommonSupportNormalForm.block_rank' depends on axioms: [propext, Classical.choice, Quot.sound]

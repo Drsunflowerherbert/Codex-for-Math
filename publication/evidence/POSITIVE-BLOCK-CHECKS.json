@@ -1,0 +1,50 @@
+{
+  "record_scope": "Fresh publication-session results, separate from supplied checkpoint receipts and from the read-only independent final written review.",
+  "checked_utc": "2026-10-11T04:32:09.238384+00:00",
+  "source_archive_sha256": "81c17b89446400997b60cfe55177c248ee01a6155459778868f3398b3ecd84fa",
+  "lean_version": "4.24.0",
+  "mathlib_commit": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "dependency_method": "Clean pinned dependency source and previously provisioned dependency OLeans; fresh compilation of this project, not a source rebuild of all mathlib.",
+  "fresh_project_build": {
+    "command": "python3 scripts/verify.py --output <outside-project>/fresh-build",
+    "exit_code": 0,
+    "receipt": "publication/evidence/positive-blocks/fresh-build.json"
+  },
+  "separate_import_closure_compilation": {
+    "command": "python3 reviews/audit_frozen_source.py --output <outside-project>/fresh-independent",
+    "exit_code": 0,
+    "module_exits": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "public_declarations": 142,
+    "public_theorems": 131,
+    "public_definitions": 11,
+    "private_helper_theorems": 4,
+    "declaration_audit_exit_code": 0,
+    "observed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "receipt": "publication/evidence/positive-blocks/final-source-audit.json"
+  },
+  "exact_examples": {
+    "command": "python3 examples/independent-check-examples.py examples/exact-examples.json",
+    "exit_code": 0,
+    "named_cases": 16,
+    "seeded_fixtures": 180,
+    "receipt": "publication/evidence/positive-blocks/fresh-exact-examples.json",
+    "scope": "Finite Gaussian-rational regression checks; not universal proof certification."
+  },
+  "read_only_independent_final_source_review": "accepted, no unresolved core proof gaps; source/verdict under positive-blocks/reviews/final-source-review.md",
+  "command_path_normalization": "Private runtime compiler/cache/report paths replaced by portable labels; arguments, actual exits, source hashes and log contents otherwise preserved. Use FILES.json for current normalized receipt bytes."
+}

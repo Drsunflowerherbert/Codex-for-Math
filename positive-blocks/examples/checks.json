@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "python_version": "3.12.14",
+  "dependencies": "Python standard library only",
+  "arithmetic": "fractions.Fraction pairs for Gaussian rationals; no floating point",
+  "named_examples": 16,
+  "positive_semidefinite_named_examples": 12,
+  "non_psd_named_examples": 4,
+  "seeded_gram_fixtures": 180,
+  "all_exact_checks_passed": true,
+  "checked_identities": [
+    "Delta=Z*Z",
+    "||A||HS^2=||XX*||HS^2",
+    "||C||HS^2=||YY*||HS^2",
+    "||B||HS^2=tr(XX*YY*)",
+    "sum deficit identity",
+    "product inequality squared with nonnegative sides",
+    "sum equality iff P=Q",
+    "product equality normalized Gram and intrinsic block identities",
+    "rank bound and equal-rank consequence in nonzero equality cases",
+    "negative quadratic form witnesses"
+  ],
+  "script_sha256": "056023a525bd5c855961ac8870afa9b6d868d7f9acada6a97efadb28caebbfde",
+  "examples_sha256": "5e7f79ee684eb8f8d55a3f641e63fdad9abc5c3a37142679db023a6c8031bc51",
+  "external_code_executed": false,
+  "formal_verification": false,
+  "universal_proof_location": "study.md"
+}

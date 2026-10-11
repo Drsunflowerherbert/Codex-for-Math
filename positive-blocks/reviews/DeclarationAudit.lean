@@ -1,0 +1,286 @@
+import PositiveBlocks
+set_option pp.universes true
+#check @PositiveBlocks.hsSq
+#print axioms PositiveBlocks.hsSq
+#check @PositiveBlocks.hsNorm
+#print axioms PositiveBlocks.hsNorm
+#check @PositiveBlocks.hsInner
+#print axioms PositiveBlocks.hsInner
+#check @PositiveBlocks.hsSq_eq_sum
+#print axioms PositiveBlocks.hsSq_eq_sum
+#check @PositiveBlocks.hsSq_nonneg
+#print axioms PositiveBlocks.hsSq_nonneg
+#check @PositiveBlocks.hsSq_zero
+#print axioms PositiveBlocks.hsSq_zero
+#check @PositiveBlocks.hsSq_eq_zero_iff
+#print axioms PositiveBlocks.hsSq_eq_zero_iff
+#check @PositiveBlocks.hsNorm_nonneg
+#print axioms PositiveBlocks.hsNorm_nonneg
+#check @PositiveBlocks.hsNorm_sq
+#print axioms PositiveBlocks.hsNorm_sq
+#check @PositiveBlocks.hsNorm_zero
+#print axioms PositiveBlocks.hsNorm_zero
+#check @PositiveBlocks.hsNorm_eq_zero_iff
+#print axioms PositiveBlocks.hsNorm_eq_zero_iff
+#check @PositiveBlocks.hsInner_self
+#print axioms PositiveBlocks.hsInner_self
+#check @PositiveBlocks.hsInner_comm
+#print axioms PositiveBlocks.hsInner_comm
+#check @PositiveBlocks.hsInner_sub_left
+#print axioms PositiveBlocks.hsInner_sub_left
+#check @PositiveBlocks.hsInner_sub_right
+#print axioms PositiveBlocks.hsInner_sub_right
+#check @PositiveBlocks.hsInner_real_smul_left
+#print axioms PositiveBlocks.hsInner_real_smul_left
+#check @PositiveBlocks.hsInner_real_smul_right
+#print axioms PositiveBlocks.hsInner_real_smul_right
+#check @PositiveBlocks.hsSq_real_smul
+#print axioms PositiveBlocks.hsSq_real_smul
+#check @PositiveBlocks.hsNorm_real_smul
+#print axioms PositiveBlocks.hsNorm_real_smul
+#check @PositiveBlocks.hsSq_sub
+#print axioms PositiveBlocks.hsSq_sub
+#check @PositiveBlocks.hsSq_weighted_sub
+#print axioms PositiveBlocks.hsSq_weighted_sub
+#check @PositiveBlocks.hsSq_swap_gram
+#print axioms PositiveBlocks.hsSq_swap_gram
+#check @PositiveBlocks.hsInner_gram
+#print axioms PositiveBlocks.hsInner_gram
+#check @PositiveBlocks.hsNorm_eq_frobenius
+#print axioms PositiveBlocks.hsNorm_eq_frobenius
+#check @PositiveBlocks.gram_eq_zero_iff
+#print axioms PositiveBlocks.gram_eq_zero_iff
+#check @PositiveBlocks.gram_hsNorm_eq_zero_iff
+#print axioms PositiveBlocks.gram_hsNorm_eq_zero_iff
+#check @PositiveBlocks.gram_hsSq_eq_zero_iff
+#print axioms PositiveBlocks.gram_hsSq_eq_zero_iff
+#check @PositiveBlocks.gram_sum_gap
+#print axioms PositiveBlocks.gram_sum_gap
+#check @PositiveBlocks.gram_sum_le
+#print axioms PositiveBlocks.gram_sum_le
+#check @PositiveBlocks.gram_sum_eq_iff
+#print axioms PositiveBlocks.gram_sum_eq_iff
+#check @PositiveBlocks.gram_product_deficit
+#print axioms PositiveBlocks.gram_product_deficit
+#check @PositiveBlocks.gram_product_le
+#print axioms PositiveBlocks.gram_product_le
+#check @PositiveBlocks.gram_product_eq_iff
+#print axioms PositiveBlocks.gram_product_eq_iff
+#check @PositiveBlocks.gram_product_eq_iff_normalized
+#print axioms PositiveBlocks.gram_product_eq_iff_normalized
+#check @PositiveBlocks.fromBlocks_gram
+#print axioms PositiveBlocks.fromBlocks_gram
+#check @PositiveBlocks.posSemidef_fromBlocks_gram
+#print axioms PositiveBlocks.posSemidef_fromBlocks_gram
+#check @PositiveBlocks.exists_gram_of_posSemidef_fromBlocks
+#print axioms PositiveBlocks.exists_gram_of_posSemidef_fromBlocks
+#check @PositiveBlocks.posSemidef_fromBlocks_iff_exists_gram
+#print axioms PositiveBlocks.posSemidef_fromBlocks_iff_exists_gram
+#check @PositiveBlocks.block_offdiag_eq_zero_of_left_eq_zero
+#print axioms PositiveBlocks.block_offdiag_eq_zero_of_left_eq_zero
+#check @PositiveBlocks.block_offdiag_eq_zero_of_right_eq_zero
+#print axioms PositiveBlocks.block_offdiag_eq_zero_of_right_eq_zero
+#check @PositiveBlocks.block_hs_product_le
+#print axioms PositiveBlocks.block_hs_product_le
+#check @PositiveBlocks.block_hs_sum_le
+#print axioms PositiveBlocks.block_hs_sum_le
+#check @PositiveBlocks.block_hsNorm_product_le
+#print axioms PositiveBlocks.block_hsNorm_product_le
+#check @PositiveBlocks.block_hsNorm_sum_le
+#print axioms PositiveBlocks.block_hsNorm_sum_le
+#check @PositiveBlocks.block_hs_sum_gap_of_gram
+#print axioms PositiveBlocks.block_hs_sum_gap_of_gram
+#check @PositiveBlocks.block_hsNorm_sum_gap_of_gram
+#print axioms PositiveBlocks.block_hsNorm_sum_gap_of_gram
+#check @PositiveBlocks.block_hs_product_deficit_of_gram
+#print axioms PositiveBlocks.block_hs_product_deficit_of_gram
+#check @PositiveBlocks.block_hs_sum_eq_iff_of_gram
+#print axioms PositiveBlocks.block_hs_sum_eq_iff_of_gram
+#check @PositiveBlocks.block_hs_product_eq_iff_of_gram
+#print axioms PositiveBlocks.block_hs_product_eq_iff_of_gram
+#check @PositiveBlocks.block_hsNorm_product_eq_iff_of_gram
+#print axioms PositiveBlocks.block_hsNorm_product_eq_iff_of_gram
+#check @PositiveBlocks.block_hsNorm_sum_eq_iff_of_gram
+#print axioms PositiveBlocks.block_hsNorm_sum_eq_iff_of_gram
+#check @PositiveBlocks.block_hs_product_eq_iff_normalized_of_gram
+#print axioms PositiveBlocks.block_hs_product_eq_iff_normalized_of_gram
+#check @PositiveBlocks.block_hs_sum_gap_exists
+#print axioms PositiveBlocks.block_hs_sum_gap_exists
+#check @PositiveBlocks.block_hs_sum_eq_iff_exists_gram
+#print axioms PositiveBlocks.block_hs_sum_eq_iff_exists_gram
+#check @PositiveBlocks.block_hs_product_eq_iff_exists_gram
+#print axioms PositiveBlocks.block_hs_product_eq_iff_exists_gram
+#check @PositiveBlocks.block_hsNorm_product_eq_iff_exists_gram
+#print axioms PositiveBlocks.block_hsNorm_product_eq_iff_exists_gram
+#check @PositiveBlocks.block_hsNorm_sum_eq_iff_exists_gram
+#print axioms PositiveBlocks.block_hsNorm_sum_eq_iff_exists_gram
+#check @PositiveBlocks.fromBlocks_compression
+#print axioms PositiveBlocks.fromBlocks_compression
+#check @PositiveBlocks.posSemidef_fromBlocks_compression
+#print axioms PositiveBlocks.posSemidef_fromBlocks_compression
+#check @PositiveBlocks.exists_compression_gram
+#print axioms PositiveBlocks.exists_compression_gram
+#check @PositiveBlocks.compression_hs_product_le
+#print axioms PositiveBlocks.compression_hs_product_le
+#check @PositiveBlocks.compression_hsNorm_product_le
+#print axioms PositiveBlocks.compression_hsNorm_product_le
+#check @PositiveBlocks.compression_hs_sum_le
+#print axioms PositiveBlocks.compression_hs_sum_le
+#check @PositiveBlocks.compression_hsNorm_sum_le
+#print axioms PositiveBlocks.compression_hsNorm_sum_le
+#check @PositiveBlocks.gram_proportional_mul_conjTranspose
+#print axioms PositiveBlocks.gram_proportional_mul_conjTranspose
+#check @PositiveBlocks.gram_proportional_conjTranspose_mul
+#print axioms PositiveBlocks.gram_proportional_conjTranspose_mul
+#check @PositiveBlocks.gram_proportional_intertwine
+#print axioms PositiveBlocks.gram_proportional_intertwine
+#check @PositiveBlocks.gram_proportional_intrinsic
+#print axioms PositiveBlocks.gram_proportional_intrinsic
+#check @PositiveBlocks.gram_product_eq_proportional
+#print axioms PositiveBlocks.gram_product_eq_proportional
+#check @PositiveBlocks.gram_product_eq_intrinsic
+#print axioms PositiveBlocks.gram_product_eq_intrinsic
+#check @PositiveBlocks.gram_product_normalized_deficit
+#print axioms PositiveBlocks.gram_product_normalized_deficit
+#check @PositiveBlocks.gram_product_eq_iff_mul_conjTranspose
+#print axioms PositiveBlocks.gram_product_eq_iff_mul_conjTranspose
+#check @PositiveBlocks.gram_product_eq_iff_intrinsic
+#print axioms PositiveBlocks.gram_product_eq_iff_intrinsic
+#check @PositiveBlocks.gram_sum_eq_iff_intrinsic
+#print axioms PositiveBlocks.gram_sum_eq_iff_intrinsic
+#check @PositiveBlocks.block_hs_product_eq_iff_mul_conjTranspose
+#print axioms PositiveBlocks.block_hs_product_eq_iff_mul_conjTranspose
+#check @PositiveBlocks.block_hs_product_eq_iff_intrinsic
+#print axioms PositiveBlocks.block_hs_product_eq_iff_intrinsic
+#check @PositiveBlocks.block_hs_sum_eq_iff_intrinsic
+#print axioms PositiveBlocks.block_hs_sum_eq_iff_intrinsic
+#check @PositiveBlocks.block_hs_product_normalized_deficit_of_gram
+#print axioms PositiveBlocks.block_hs_product_normalized_deficit_of_gram
+#check @PositiveBlocks.gram_normalized_product_deficit
+#print axioms PositiveBlocks.gram_normalized_product_deficit
+#check @PositiveBlocks.hs_sum_deficit_decomposition
+#print axioms PositiveBlocks.hs_sum_deficit_decomposition
+#check @PositiveBlocks.block_sum_eq_iff_product_eq_and_norms_eq
+#print axioms PositiveBlocks.block_sum_eq_iff_product_eq_and_norms_eq
+#check @PositiveBlocks.hsSq_single
+#print axioms PositiveBlocks.hsSq_single
+#check @PositiveBlocks.single_sharp_block_posSemidef
+#print axioms PositiveBlocks.single_sharp_block_posSemidef
+#check @PositiveBlocks.exists_sharp_block
+#print axioms PositiveBlocks.exists_sharp_block
+#check @PositiveBlocks.hsSq_isometry_mul
+#print axioms PositiveBlocks.hsSq_isometry_mul
+#check @PositiveBlocks.hsSq_mul_isometry_conjTranspose
+#print axioms PositiveBlocks.hsSq_mul_isometry_conjTranspose
+#check @PositiveBlocks.hsSq_isometry_mul_mul_conjTranspose
+#print axioms PositiveBlocks.hsSq_isometry_mul_mul_conjTranspose
+#check @PositiveBlocks.hsNorm_isometry_mul
+#print axioms PositiveBlocks.hsNorm_isometry_mul
+#check @PositiveBlocks.hsNorm_mul_isometry_conjTranspose
+#print axioms PositiveBlocks.hsNorm_mul_isometry_conjTranspose
+#check @PositiveBlocks.hsNorm_isometry_mul_mul_conjTranspose
+#print axioms PositiveBlocks.hsNorm_isometry_mul_mul_conjTranspose
+#check @PositiveBlocks.normalForm_posSemidef
+#print axioms PositiveBlocks.normalForm_posSemidef
+#check @PositiveBlocks.normalForm_hsNorm_eq
+#print axioms PositiveBlocks.normalForm_hsNorm_eq
+#check @PositiveBlocks.isometry_rank
+#print axioms PositiveBlocks.isometry_rank
+#check @PositiveBlocks.isometry_card_le
+#print axioms PositiveBlocks.isometry_card_le
+#check @PositiveBlocks.rank_isometry_mul_mul_conjTranspose
+#print axioms PositiveBlocks.rank_isometry_mul_mul_conjTranspose
+#check @PositiveBlocks.rank_congruence_of_leftInverse
+#print axioms PositiveBlocks.rank_congruence_of_leftInverse
+#check @PositiveBlocks.normalForm_block_rank
+#print axioms PositiveBlocks.normalForm_block_rank
+#check @PositiveBlocks.normalForm_ranks
+#print axioms PositiveBlocks.normalForm_ranks
+#check @PositiveBlocks.HasCommonSupportNormalForm
+#print axioms PositiveBlocks.HasCommonSupportNormalForm
+#check @PositiveBlocks.HasCommonSupportNormalForm.posSemidef_and_hsNorm_eq
+#print axioms PositiveBlocks.HasCommonSupportNormalForm.posSemidef_and_hsNorm_eq
+#check @PositiveBlocks.HasCommonSupportNormalForm.rank_eq
+#print axioms PositiveBlocks.HasCommonSupportNormalForm.rank_eq
+#check @PositiveBlocks.HasCommonSupportNormalForm.exists_rank_witness
+#print axioms PositiveBlocks.HasCommonSupportNormalForm.exists_rank_witness
+#check @PositiveBlocks.HasCommonSupportNormalForm.ne_zero
+#print axioms PositiveBlocks.HasCommonSupportNormalForm.ne_zero
+#check @PositiveBlocks.HasCommonSupportNormalForm.block_rank
+#print axioms PositiveBlocks.HasCommonSupportNormalForm.block_rank
+#check @PositiveBlocks.HasCommonSupportNormalForm.exists_normRatio_witness
+#print axioms PositiveBlocks.HasCommonSupportNormalForm.exists_normRatio_witness
+#check @PositiveBlocks.unitary_columns_isometry
+#print axioms PositiveBlocks.unitary_columns_isometry
+#check @PositiveBlocks.restrict_diagonal_support
+#print axioms PositiveBlocks.restrict_diagonal_support
+#check @PositiveBlocks.exists_posDef_compression
+#print axioms PositiveBlocks.exists_posDef_compression
+#check @PositiveBlocks.exists_invSqrt
+#print axioms PositiveBlocks.exists_invSqrt
+#check @PositiveBlocks.projection_fixes_factor
+#print axioms PositiveBlocks.projection_fixes_factor
+#check @PositiveBlocks.gramCompression_isometry
+#print axioms PositiveBlocks.gramCompression_isometry
+#check @PositiveBlocks.gramCompression_cross
+#print axioms PositiveBlocks.gramCompression_cross
+#check @PositiveBlocks.hasCommonSupportNormalForm_of_gram_proportional
+#print axioms PositiveBlocks.hasCommonSupportNormalForm_of_gram_proportional
+#check @PositiveBlocks.gram_product_eq_iff_commonSupportNormalForm
+#print axioms PositiveBlocks.gram_product_eq_iff_commonSupportNormalForm
+#check @PositiveBlocks.gram_product_eq_iff_zero_or_commonSupportNormalForm
+#print axioms PositiveBlocks.gram_product_eq_iff_zero_or_commonSupportNormalForm
+#check @PositiveBlocks.gram_product_eq_rank_eq
+#print axioms PositiveBlocks.gram_product_eq_rank_eq
+#check @PositiveBlocks.block_hs_product_eq_iff_commonSupportNormalForm
+#print axioms PositiveBlocks.block_hs_product_eq_iff_commonSupportNormalForm
+#check @PositiveBlocks.block_hsNorm_product_eq_iff_commonSupportNormalForm
+#print axioms PositiveBlocks.block_hsNorm_product_eq_iff_commonSupportNormalForm
+#check @PositiveBlocks.block_hs_product_eq_iff_zero_or_commonSupportNormalForm
+#print axioms PositiveBlocks.block_hs_product_eq_iff_zero_or_commonSupportNormalForm
+#check @PositiveBlocks.block_hsNorm_product_eq_iff_zero_or_commonSupportNormalForm
+#print axioms PositiveBlocks.block_hsNorm_product_eq_iff_zero_or_commonSupportNormalForm
+#check @PositiveBlocks.block_hs_product_eq_ranks
+#print axioms PositiveBlocks.block_hs_product_eq_ranks
+#check @PositiveBlocks.block_hsNorm_product_eq_ranks
+#print axioms PositiveBlocks.block_hsNorm_product_eq_ranks
+#check @PositiveBlocks.block_hsNorm_product_eq_exists_bounded_normalForm
+#print axioms PositiveBlocks.block_hsNorm_product_eq_exists_bounded_normalForm
+#check @PositiveBlocks.Examples.scalarOne
+#print axioms PositiveBlocks.Examples.scalarOne
+#check @PositiveBlocks.Examples.scalarPhase
+#print axioms PositiveBlocks.Examples.scalarPhase
+#check @PositiveBlocks.Examples.scalar_sharp_values
+#print axioms PositiveBlocks.Examples.scalar_sharp_values
+#check @PositiveBlocks.Examples.scalar_complex_value
+#print axioms PositiveBlocks.Examples.scalar_complex_value
+#check @PositiveBlocks.Examples.scalarOne_gram
+#print axioms PositiveBlocks.Examples.scalarOne_gram
+#check @PositiveBlocks.Examples.scalar_sharp_positive
+#print axioms PositiveBlocks.Examples.scalar_sharp_positive
+#check @PositiveBlocks.Examples.product_coefficient_ge_one
+#print axioms PositiveBlocks.Examples.product_coefficient_ge_one
+#check @PositiveBlocks.Examples.sum_coefficient_le_two
+#print axioms PositiveBlocks.Examples.sum_coefficient_le_two
+#check @PositiveBlocks.Examples.rectangularX
+#print axioms PositiveBlocks.Examples.rectangularX
+#check @PositiveBlocks.Examples.rectangularY
+#print axioms PositiveBlocks.Examples.rectangularY
+#check @PositiveBlocks.Examples.rectangularA
+#print axioms PositiveBlocks.Examples.rectangularA
+#check @PositiveBlocks.Examples.rectangularB
+#print axioms PositiveBlocks.Examples.rectangularB
+#check @PositiveBlocks.Examples.rectangularC
+#print axioms PositiveBlocks.Examples.rectangularC
+#check @PositiveBlocks.Examples.rectangular_gram
+#print axioms PositiveBlocks.Examples.rectangular_gram
+#check @PositiveBlocks.Examples.rectangular_positive
+#print axioms PositiveBlocks.Examples.rectangular_positive
+#check @PositiveBlocks.Examples.rectangular_squared_norms
+#print axioms PositiveBlocks.Examples.rectangular_squared_norms
+#check @PositiveBlocks.Examples.rectangular_sum_and_product_equality
+#print axioms PositiveBlocks.Examples.rectangular_sum_and_product_equality
+#check @PositiveBlocks.Examples.zero_rectangular
+#print axioms PositiveBlocks.Examples.zero_rectangular
+#check @PositiveBlocks.Examples.empty_columns
+#print axioms PositiveBlocks.Examples.empty_columns

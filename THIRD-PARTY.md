@@ -18,6 +18,10 @@ URLs and hashes in the source manifests identify the recorded inputs. These
 snapshots support scoped study/checking programs; they do not certify the
 upstream manuscripts' headline claims.
 
+The duplicate `positive-blocks/docs/study-source-main.tex` retains the same
+byte-identical upstream Crouzeix source snapshot and attribution under this
+existing license. No license is assigned to the new positive-block proof code.
+
 Modification notices: the starter catalog reorganizes source information and
 adds explicit verification-status and revision annotations. The affine
 `02-periodic.tex` excerpt has one fewer final newline than the catalog copy;

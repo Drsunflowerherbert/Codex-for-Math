@@ -35,6 +35,27 @@
       "size": 172267,
       "sha256": "d9e0d17e7f4067651cdff3953812b54b77ec18e6ed8e15ec9b43f8898535bbd2",
       "supplied_manifest_file_hashes_verified": 127
+    },
+    {
+      "archive": "verified-mathematical-techniques-2026-10-11.zip",
+      "size": 18419,
+      "sha256": "3d04cb6039b09edfe9ccf5097b8d96f5f7417fdd5cd44595c2d0ba55b638ee3a",
+      "files": 3,
+      "uncompressed": 46064
+    },
+    {
+      "archive": "finite-field-product-mixing-20261011T033640Z.zip",
+      "size": 539549,
+      "sha256": "2ffd8511ff23a66260e7b494fa3ce614a4488edec66a0d8a7cf23b337f65838a",
+      "files": 43,
+      "uncompressed": 712455
+    },
+    {
+      "archive": "positive-blocks-lean-4.24.0-checkpoint-2026-10-11.zip",
+      "size": 178895,
+      "sha256": "81c17b89446400997b60cfe55177c248ee01a6155459778868f3398b3ecd84fa",
+      "files": 73,
+      "uncompressed": 1157092
     }
   ]
 }

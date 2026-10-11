@@ -1,25 +1,94 @@
 {
-  "schema": "current-publication-manifest-v1",
+  "schema": "whole-repository-publication-manifest-v2",
   "base_commit": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+  "scope": "All published repository files, including the unchanged original tangent tree and every added root. File integrity is separate from mathematical verification.",
   "excludes": [
-    "publication/FILES.json",
-    "unchanged original tangent-limit tree",
-    "ignored dependencies/tooling/build caches",
-    "finite-field-product-mixing tree: covered by FINITE-FIELD-GUIDE-FILES.json",
-    "learning-guide tree: covered by FINITE-FIELD-GUIDE-FILES.json"
+    "publication/FILES.json itself",
+    "unpublished dependency/toolchain caches and generated build artifacts"
   ],
+  "historical_batch_manifest": "publication/FINITE-FIELD-GUIDE-FILES.json binds the earlier af92d20 publication snapshot, not revised documentation.",
+  "unchanged_original_tangent_files": {
+    "tangent-limit/.gitignore": "a8cbc708009b7452b6d462bc031146f61c9c8f76046b48e7c545d839340eee63",
+    "tangent-limit/PROGRESS.md": "f1d448f38f9c2ae5e48d93c767534b059b8398ecffa479dbadb01f2d9ae27878",
+    "tangent-limit/PUBLISHED-FILES-SHA256.json": "a21cd120471f140b0442fb92013bab38a986cc8663cb16ce107d780e46c53569",
+    "tangent-limit/README.md": "5be38954d69d42c1a0fb6a109983574b728b88c361af32cc9cb0d48e627f295a",
+    "tangent-limit/TangentLimit.lean": "98c74e84ab564605a18c9cb87fb6112f8b7bf999349dfba1f9e3ead868faac02",
+    "tangent-limit/TangentLimit/Diophantine.lean": "74116a224783c4d91265c73f276eab0e280f5d047c3cb32260ee10a6204807bf",
+    "tangent-limit/TangentLimit/Hypothesis.lean": "6f9fb3e7a25e2ba27fba29faf93e88add77a8c0aa3a8de59be72ae7b9ea2562a",
+    "tangent-limit/TangentLimit/Limit.lean": "05ea71aef2541bdc9137c8dd110c3d11d8e2ffc5b851e931aeeef027fdfb0336",
+    "tangent-limit/TangentLimit/LimitComparison.lean": "9250070b23a25f76ad620c8fee0b353ffc5b04b5823177e4bf6b92a28473813c",
+    "tangent-limit/TangentLimit/NearestPole.lean": "b6321c174149a6e7f264d1d31b4813954dfba14900b9ab15c21c4701a3dc4cec",
+    "tangent-limit/TangentLimit/NonPole.lean": "3ca47fd29a14a8e1299782ed729f96252a6768a84c67742bc075fb1273496710",
+    "tangent-limit/TangentLimit/Summability.lean": "b6308da63a70ae2e7d45719afc2a5af71935061f8c9ec383740010a3613bf273",
+    "tangent-limit/TangentLimit/Trigonometry.lean": "169ede182499acaf928a19eacb4605c32c0f71a52e17ae7edc0e26912eb40039",
+    "tangent-limit/docs/SOURCES.md": "fd1e849579926531aac21e4f5743e1c8d6460740c1bc9ecbdde6a050f67473c7",
+    "tangent-limit/docs/independent-review.md": "5026dedb437641910b1583a8d81121457ef1755e79e7558f461d0d0f8d07f2eb",
+    "tangent-limit/docs/mathematical-proof.md": "f52aa95b1c5829f26d1c72c4aa244b6fde7e9491f61d01dd52b9ebffd67d93d1",
+    "tangent-limit/docs/publication.md": "7db5e7fc11ef63648ef04d373e07e1c30af3f7138fcd8668ef3da115dcc1dc72",
+    "tangent-limit/docs/starter-assessment.md": "7984ddae79ed33f24a531239cd41b9ec3e10a8eb622270e74cce67d5e657dc50",
+    "tangent-limit/docs/starter-reference/inspection.json": "fe17380bfae46d8d59a0b775ac93d00f7655d458e5845f18f1d7e37fb8338d59",
+    "tangent-limit/docs/starter-reference/pi-bridge/study.md": "8d24f900a83f41b8ec55e582531b814ccf755c7a7e90175cf1f81f0a160ec1d8",
+    "tangent-limit/docs/starter-reference/reviews/pi-review-validation.json": "b4bc3c54daeaa6c973261fafb3ded20e970f1e418697ffc87433f019caffd997",
+    "tangent-limit/docs/starter-reference/reviews/pi-review.md": "f3c3eaa567bff7000f50ff30939ade22ff7f9ca89315405670fb3654f9cb876f",
+    "tangent-limit/docs/theorem-statements.md": "aeade1452a9747b370e4c9b67cdcdeba14a6fab9915f7716c18ffb869533ae34",
+    "tangent-limit/docs/verification-summary.json": "dbeb8a2389d6fb0f549e433f6484b013ded7a755de5888be0fcdb01917e09af6",
+    "tangent-limit/lake-manifest.json": "8f871ddcf1917c176ac801f24bc66c975e4562d4d7aab8193c45ef7f31d5ad03",
+    "tangent-limit/lakefile.toml": "dbb3f4f563156a8062f93ceb0aa660a12b60650d2f47fb0de4f32308fb25e451",
+    "tangent-limit/lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "tangent-limit/logs/27-main-v424-lean-version.log": "36c0bbaf090c97bc8217c6ff497ff9144fd83d9003f12cd505162b943aaaee77",
+    "tangent-limit/logs/28-main-v424-mathlib-commit.log": "cc49bfc965afbc1ef5877d1d1b12648323cb6d44f015d37593c63c2cd1d731c0",
+    "tangent-limit/logs/30-final-package-pins.json": "80525498cf3b9822d9784ebc3ce47c834db6cb641a07c5ed80a03e2c38223aaf",
+    "tangent-limit/logs/33-manifest-preservation.log": "1a9c4a12d56719de0596ada8722e91d174778c51066752c52dc38001dbae714e",
+    "tangent-limit/logs/axiom-allowlist-check.log": "9b5c54238541bd3042f320e420ed2362697605a6cc6fdd0103e7f641f0011ff1",
+    "tangent-limit/logs/diophantine-04.log": "0237689462486f279aae7570bb5b469e9d7eb9d35ef02542ae04b00ee52ef142",
+    "tangent-limit/logs/final-build.log": "0a34f9325b605efffd2947f7345a15c0dcfb9ec5d86aedbeb512aebe3bf67524",
+    "tangent-limit/logs/final-theorem-inventory.log": "b6e66b3382e58831c6972b116617ada1d308f9d1157399d6fa96f124ad96ad57",
+    "tangent-limit/logs/limit-01.log": "a1b0881800e331399323cc104bc23b573f30b6c8a66f3c6be046cdb99b0b6c76",
+    "tangent-limit/logs/limit-comparison-05.log": "1a080671fdfe1e5c1b10580333241e4d0950271c98cbae744ff8722faf97ed6c",
+    "tangent-limit/logs/milestone-02-theorem-inventory.log": "bf916aa8779966d47554572a2e1a843384258e2482fbbd3f3e3725f3faea2d19",
+    "tangent-limit/logs/milestone-03-theorem-inventory.log": "f6a443dcd3d172ac260a7fc16e2fcc6a5f5485daf7d7bbea30a2b2f69448ec76",
+    "tangent-limit/logs/nearest-pole-04.log": "f25d87b61fc1d73a844c1e78c162ebebf98191f1b0e157f3937a17438f89d4cf",
+    "tangent-limit/logs/nonpole-03.log": "2485aefbb611e8bfe9c3ab26312ffac69b69128ac3358cc1eeab9d8bb5646fe9",
+    "tangent-limit/logs/source-audit.log": "77b40abe9cb9340a20700fcf5fa745f233c5afe8724ebda3a4e7574360b2763d",
+    "tangent-limit/logs/summability-01.log": "e18747347d1ea9b71c3ea878bf056c190b8e080cda44a2acb5c19a430e4ceec8",
+    "tangent-limit/logs/summability-03.log": "dc6c0febc4d3da9ac4bccac8c6d61303cd4bf6f30f7cd75b7bfe074b83f870c7",
+    "tangent-limit/logs/summability-theorem-statements.log": "0474fcf560181999e3bef3920750330c5e6d2af9885fd8490b366c40d7a2e04c",
+    "tangent-limit/logs/trigonometry-03.log": "824557cce61c4fd9ec43061c8b6adcc62cadd3776cf7a107c47f5c7faf6f6eb8",
+    "tangent-limit/milestones/01-Hypothesis.lean.txt": "8f63af2ef0ac8da51537a7b66727ce9f08993ac1edbd34c7f3f147470865f081",
+    "tangent-limit/milestones/01-mathematical-proof.md": "1b81d341146d3bf36a2ce967dc5dfd9bfe4b66de57e4ec04574af146cdd223ff",
+    "tangent-limit/milestones/01-theorem-statements.md": "1bf0a5037a6b0236c135b3f6447600a8e4a802727bf146a1a1fb81782a9de96c",
+    "tangent-limit/milestones/01-timestamp.txt": "c5b50b64e45f287275391b2c096d1be24652ea57cbaf46b342206e03d778407e",
+    "tangent-limit/milestones/02-reusable-lemmas.md": "94a27c12260ec7dc4a4c3c8a19a38d8adc6019d20985a5db38e842f19b2fab74",
+    "tangent-limit/milestones/02-timestamp.txt": "e8556056d41ed2fb2a8a0cf15f3783504930f13892dbd5eb35c5091f27a1487a",
+    "tangent-limit/milestones/03-limit-theorem.md": "6e9a13b80a0acd5251b20307973fe01c46abd9490aed7706dbec70e498544944",
+    "tangent-limit/milestones/03-timestamp.txt": "3286b44f4d849d7b9ec412fe64b93083160dc3e04c09206b4a1df4471e3b19d8",
+    "tangent-limit/milestones/04-absolute-convergence.md": "a607000999c509e2dad6bb31f5809eb79a0178f155fbb6ed486aea075f3119e8",
+    "tangent-limit/milestones/04-timestamp.txt": "a465fcd50604e7e58bbeeb95cf6ac2c6b063640f077cb503afe9df4528bb987f",
+    "tangent-limit/milestones/05-final-verification.md": "f81fef0b576d943c4ea7c8f33129491a182af570aac1f6b7612a29ac2d063d05",
+    "tangent-limit/milestones/05-timestamp.txt": "a465fcd50604e7e58bbeeb95cf6ac2c6b063640f077cb503afe9df4528bb987f",
+    "tangent-limit/milestones/06-publication-verification.md": "7c465ef6de58d4625d038d38de9ef8063c9d3be1db02c593e26c98e879752f4d",
+    "tangent-limit/milestones/06-timestamp.txt": "e8a825803f24c3751ccc38375f1dc154138922a538f217d921698f368b224a81",
+    "tangent-limit/scripts/MainInventory.lean": "a9220d288b4dc28f3ad107cf4e99fa1eea477eba540118df7749a600bdb92295",
+    "tangent-limit/scripts/ReusableInventory.lean": "ad272ea6ab3486f3bca552161875341e386940e7bed5d2465614035804c9e72f",
+    "tangent-limit/scripts/TheoremInventory.lean": "0a5e8810ccc28e617482e5cd9ca9bf72f69d98e4e50651bd09488450a1993fa9",
+    "tangent-limit/scripts/build.sh": "fbb7dcd71745678a3f18875cd75139db615be6377c14658641db52dcd8a40b1b",
+    "tangent-limit/scripts/checkpoint.sh": "5ce0e3e2802da1e79d486d161b898a499871a750e4ad4a43d48f144af0305484",
+    "tangent-limit/scripts/environment.sh": "701d4155694efb2b3893f01b20f3a496224ffea91f6595b60dcc4392eaf4e373",
+    "tangent-limit/scripts/setup.sh": "e2a8c6ce4c6af2fd7387be5a043694cc017b8af4bad6fe143b3f03f819bd5e9b",
+    "tangent-limit/scripts/verify.sh": "d9d5890f76eda58e5451ff320f8315cd54ee491938ca9c7f4b61f6853b881fa1"
+  },
   "files": {
     ".gitignore": {
       "bytes": 72,
       "sha256": "c6c552c7e805f1e656622f8eb99df8213fc90dcaf531c8b118a2f389ada83fbb"
     },
     "README.md": {
-      "bytes": 2553,
-      "sha256": "9f3333039ecce326c564f5b63b4280dc9d3be25ae489f40c08e76adfe99bee6f"
+      "bytes": 2862,
+      "sha256": "0e64016d7eca3c5cca3d87b8e35796c9dc1498f047f79f8211e6dddcb6c3b52b"
     },
     "THIRD-PARTY.md": {
-      "bytes": 2022,
-      "sha256": "5c30d66f3b7579587e2dd0f92e345c059573692916d84d39b0bb4ab57f446428"
+      "bytes": 2254,
+      "sha256": "d725d6a05665d99d2fed9ae1f8496d437ed99be3bbd1f13c280593f1de709c76"
     },
     "egyptian-exact/Egyptian.lean": {
       "bytes": 108,
@@ -309,25 +378,417 @@
       "bytes": 4899,
       "sha256": "bba47f0a2c56667876faa907c0763a4592213e81c124889092f00215999f7d95"
     },
+    "finite-field-product-mixing/.gitignore": {
+      "bytes": 54,
+      "sha256": "9f200edee71c21b9c3845d2160f60bb3fc1becc14a72b9cd4cde76cab11a0379"
+    },
+    "finite-field-product-mixing/FiniteFieldMixing.lean": {
+      "bytes": 69,
+      "sha256": "b312862229a027ebbd31e190cbaee4b991c545af91fc2fc04b058d066365e4a1"
+    },
+    "finite-field-product-mixing/FiniteFieldMixing/Bilinear.lean": {
+      "bytes": 7084,
+      "sha256": "a0b8cd783ae6c4ffad4a827404080f38454ea3a04ef3ba0e0b53d495c61471aa"
+    },
+    "finite-field-product-mixing/FiniteFieldMixing/Counting.lean": {
+      "bytes": 9698,
+      "sha256": "37c26836ca79f7bd66be031d6f71b8982069ea46dbf4c0bf72a4d2821a5f5bd0"
+    },
+    "finite-field-product-mixing/FiniteFieldMixing/DivisorLift.lean": {
+      "bytes": 3629,
+      "sha256": "b71a6f8759dd1b262e9d884b6459f784d505b18dbd6711e9ba96e0f0e1681bf0"
+    },
+    "finite-field-product-mixing/FiniteFieldMixing/Fourier.lean": {
+      "bytes": 6086,
+      "sha256": "9cd038dce2236aff8549400073687b022812c84bb84d840e13d78dca7b80ec3c"
+    },
+    "finite-field-product-mixing/FiniteFieldMixing/FourierBounds.lean": {
+      "bytes": 6027,
+      "sha256": "a8cf89386c577ede1f6fd45556a5c53beb58eee89cc4fb786403322a26febdc2"
+    },
+    "finite-field-product-mixing/FiniteFieldMixing/Mixing.lean": {
+      "bytes": 4664,
+      "sha256": "b1c3bf778f67944a379d1718dd4ea09337b5f4e63cb1de5e86906fef27217a8f"
+    },
+    "finite-field-product-mixing/FiniteFieldMixing/Normalization.lean": {
+      "bytes": 4382,
+      "sha256": "db255a17625d4cc166df198ccacb63e73994e074c14408db1ced98c6cf7f4a02"
+    },
+    "finite-field-product-mixing/FiniteFieldMixing/Threshold.lean": {
+      "bytes": 3840,
+      "sha256": "81ec5f1e8bf4627b1874ecb002c4d36c8ebaf3f9c4cadd11babdc7ea2487f3e9"
+    },
+    "finite-field-product-mixing/README.md": {
+      "bytes": 5377,
+      "sha256": "8f8ef4ce044d04470ed051c6e950d13747235d5effa955a79f8e6c0285229aef"
+    },
+    "finite-field-product-mixing/evidence/declarations.json": {
+      "bytes": 10884,
+      "sha256": "126520348439b2391779a4e3909f9af6850ff153960a12ddca21f03321f8b81c"
+    },
+    "finite-field-product-mixing/evidence/environment.log": {
+      "bytes": 470,
+      "sha256": "b1501c5481549786b401fa7d0faf5f3a3e0c4d52f2707c745af10bbeab6f9a2f"
+    },
+    "finite-field-product-mixing/evidence/final-independent-audit.json": {
+      "bytes": 9048,
+      "sha256": "0f21d9a9710607337cfa649f866d8f85a1f8def41ebc9f93ccceb4c7d46e6d72"
+    },
+    "finite-field-product-mixing/evidence/final-theorem-inventory.log": {
+      "bytes": 28056,
+      "sha256": "4b142ad6f5e4103924b73b43a69c66d6bbb6ee40fdd51aaaf9f9ccc984c6d467"
+    },
+    "finite-field-product-mixing/evidence/formal-scope.json": {
+      "bytes": 1803,
+      "sha256": "8325c382dda907018a0b9ebdc0c5f10fa68bdaa8f782d7f55c760eb9a87a976c"
+    },
+    "finite-field-product-mixing/evidence/source-audit.json": {
+      "bytes": 1272,
+      "sha256": "09afd3b6e90e9174e5d4b5bb5d07acb7ff0c3014d3f7cd8cc0e872dd0200a7c3"
+    },
+    "finite-field-product-mixing/lake-manifest.json": {
+      "bytes": 3554,
+      "sha256": "e9f6485d1e52897c6bf15bdc8edfb8868c334ee1baa57827b5421aa2765a4e07"
+    },
+    "finite-field-product-mixing/lakefile.toml": {
+      "bytes": 306,
+      "sha256": "bd25c73d19a519fbccd1f3d5c512283888efe9ccbe09007f361a3b9d8d9409f9"
+    },
+    "finite-field-product-mixing/lean-toolchain": {
+      "bytes": 25,
+      "sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434"
+    },
+    "finite-field-product-mixing/notes/proof-notes.md": {
+      "bytes": 5916,
+      "sha256": "f8e20defccdf4191355dfcce549bb22e3d46111c0dc5d5f5b28be7d10b70550c"
+    },
+    "finite-field-product-mixing/scripts/SmokeTests.lean": {
+      "bytes": 876,
+      "sha256": "cd42b604fb2ffb50865e6e419a6986e52a15044f3c6fdd0b874349996af428f9"
+    },
+    "finite-field-product-mixing/scripts/TheoremInventory.lean": {
+      "bytes": 8923,
+      "sha256": "46902b57af26780aeba64b2ca700ac5bf41a7dbe1038a05bc8a8f069caff9c0e"
+    },
+    "learning-guide/STATUS-2026-10-11.md": {
+      "bytes": 1749,
+      "sha256": "4888dadf6a58c2c039c88f89af50101e79ce3c9f4ba96d4ad77627c69344a311"
+    },
+    "learning-guide/STATUS-FINALIZATION-2026-10-11.md": {
+      "bytes": 1567,
+      "sha256": "b8372b2ab5415dc762a08027696b2758680dd389ca22ce3891b104691dd997ed"
+    },
+    "learning-guide/independent-review.md": {
+      "bytes": 4664,
+      "sha256": "0ddd8426cd99224735b19d89cb9588ac5f29d26221a46fdd3cf27333db9d03d7"
+    },
+    "learning-guide/validation.json": {
+      "bytes": 877,
+      "sha256": "c33f6704aae4c00258792c2be9768a0a7b4ff8fe9d144e99b665075f5a8629a4"
+    },
+    "learning-guide/verified-techniques.md": {
+      "bytes": 40523,
+      "sha256": "89331a70131ad5c28c5a162ab7457b6ea85ce2ea192d35f6dfe7817b50bfd155"
+    },
+    "positive-blocks/.gitignore": {
+      "bytes": 61,
+      "sha256": "7d84052335bc53a87e5414d853d20623ec85383b8871384cead83bfe91779512"
+    },
+    "positive-blocks/CHECKPOINT-SHA256.supplied.json": {
+      "bytes": 10296,
+      "sha256": "35e761125aace66a46d36622655371d46623be0758aa6804385aa6ccc380eaec"
+    },
+    "positive-blocks/PositiveBlocks.lean": {
+      "bytes": 283,
+      "sha256": "172a370711ed194392f1489e878d4a202e35e5d554e4c859f2c049b2396007b8"
+    },
+    "positive-blocks/PositiveBlocks/Basic.lean": {
+      "bytes": 5158,
+      "sha256": "aa32109f23367aecde51d21179015007577ecdcfdb9b50903251a46b09b7eb45"
+    },
+    "positive-blocks/PositiveBlocks/Blocks.lean": {
+      "bytes": 15974,
+      "sha256": "36dddf5ca7c8eb43080728e1ef13e9ccb9cb938c76dc0a98b1d5e900c60d9cb9"
+    },
+    "positive-blocks/PositiveBlocks/Classification.lean": {
+      "bytes": 5089,
+      "sha256": "90864094f9a16fba4ecf3e0087529f43e112069e832f38413f342478daf7a12d"
+    },
+    "positive-blocks/PositiveBlocks/Corollaries.lean": {
+      "bytes": 1924,
+      "sha256": "7f020e5cbadb6f56de4fbbf649d2dba738d9d19b0a9e25b98ec5790b01bbc861"
+    },
+    "positive-blocks/PositiveBlocks/Examples.lean": {
+      "bytes": 4459,
+      "sha256": "6d3c381ce5829a482385dacace066f9489baf8b3a310895112780c92df55b9eb"
+    },
+    "positive-blocks/PositiveBlocks/Gram.lean": {
+      "bytes": 6036,
+      "sha256": "bb332f13fe9edadc82647f932f62c8a55399fd138b2647471f9f264daf27673d"
+    },
+    "positive-blocks/PositiveBlocks/Intrinsic.lean": {
+      "bytes": 10198,
+      "sha256": "dcaf52c30231c3c16f7d930cc0e689451e3c46f8263526b13bfe2ea9cdd311c7"
+    },
+    "positive-blocks/PositiveBlocks/NormalForm.lean": {
+      "bytes": 24748,
+      "sha256": "32512a1aec69f99002b32155460b16336bddc656f352d34b4586e7bb2245ea8d"
+    },
+    "positive-blocks/PositiveBlocks/Sharpness.lean": {
+      "bytes": 1758,
+      "sha256": "acf8f5c68b858290ccd28dc5c1b5a3b0af0f691b01fe7ae7064bd613c50b454f"
+    },
+    "positive-blocks/README.md": {
+      "bytes": 6214,
+      "sha256": "91b873b517c34a52da38a9e2dfc0a8d204d1ca944d0e60e351a16931fd433378"
+    },
+    "positive-blocks/docs/completion-report.supplied.md": {
+      "bytes": 4952,
+      "sha256": "242810a7a7e8fa318f36389f977f92fe6fffac1f105345f14e66054216594c80"
+    },
+    "positive-blocks/docs/study-independent-review.json": {
+      "bytes": 5425,
+      "sha256": "979f438d66dd042e8790e1ee1d92ab80e0b381f134fad6522fb697bb58b50abf"
+    },
+    "positive-blocks/docs/study-independent-review.md": {
+      "bytes": 4051,
+      "sha256": "84b4104c01bfb601b5b5a56c5f758cd1594a1e6eebfeea5595cf5851673ea2f7"
+    },
+    "positive-blocks/docs/study-parent-independent-review.md": {
+      "bytes": 8337,
+      "sha256": "08c3f84d0d0dd28b8279e632b87e4a2656d451a30aa5235e60f40c2080148353"
+    },
+    "positive-blocks/docs/study-provenance.json": {
+      "bytes": 1967,
+      "sha256": "109e48221bafd00df88f31f3d0a71c7784c290805df01967594d481fec07d33b"
+    },
+    "positive-blocks/docs/study-source-main.tex": {
+      "bytes": 35175,
+      "sha256": "164f56cc3f5ecbfb65ddba0d0438cacf44f325919ef7dfb742d073c948fddabd"
+    },
+    "positive-blocks/docs/study-study.md": {
+      "bytes": 17071,
+      "sha256": "fec0fdca335159320f13c572e34f77fa0dad3578ec76de4da6e4ae437a9c60af"
+    },
+    "positive-blocks/docs/study-theorem-records.json": {
+      "bytes": 16256,
+      "sha256": "8276d9642256c65907271f84d3b2082f970909fc3b624cb1639c860e2649c203"
+    },
+    "positive-blocks/examples/check_exact_examples.py": {
+      "bytes": 12515,
+      "sha256": "056023a525bd5c855961ac8870afa9b6d868d7f9acada6a97efadb28caebbfde"
+    },
+    "positive-blocks/examples/checks.json": {
+      "bytes": 1073,
+      "sha256": "d7aedbac738fe5bfdc864dd5ce3b2b4662243dfc4e44b20d32614939723a7aa4"
+    },
+    "positive-blocks/examples/exact-examples.json": {
+      "bytes": 527684,
+      "sha256": "5e7f79ee684eb8f8d55a3f641e63fdad9abc5c3a37142679db023a6c8031bc51"
+    },
+    "positive-blocks/examples/independent-check-examples.py": {
+      "bytes": 5524,
+      "sha256": "14b49462b0a45d7e797b211e26f92641452d60ef50da2c476758eb10a6e3de1f"
+    },
+    "positive-blocks/lake-manifest.json": {
+      "bytes": 3542,
+      "sha256": "fc51e6fc0babcb506fdf287f91de95466abfc7adbea060fcc1c91766cafc3cab"
+    },
+    "positive-blocks/lakefile.toml": {
+      "bytes": 288,
+      "sha256": "3846fc2d4153b1b0a83057353cc1ab6ef49a827fd39f44c7a5fbfe38a53a715c"
+    },
+    "positive-blocks/lean-toolchain": {
+      "bytes": 25,
+      "sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434"
+    },
+    "positive-blocks/logs/fresh-build.json": {
+      "bytes": 1504,
+      "sha256": "e80adfff842a7c288f8ae42c2b91b9d9a387bf58cbec8c6e573b05f2692ae107"
+    },
+    "positive-blocks/logs/fresh-build.log": {
+      "bytes": 560,
+      "sha256": "388c52c049f8787fcbd6baa3af584522c2f41586923d796dc9763ec00c261081"
+    },
+    "positive-blocks/logs/gram-author-normal-form-axioms.log": {
+      "bytes": 5421,
+      "sha256": "68336501f7239ebd63e6f930d67ffe6d2d6f43c57c3c6b799b7f6f885e6ceaae"
+    },
+    "positive-blocks/logs/gram-author-normal-form-compile.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "positive-blocks/logs/gram-intrinsic-axioms.log": {
+      "bytes": 2476,
+      "sha256": "975c5f39d83b06ab0d07e2fa6a93f08423172ea173b4c1c2ff378b8663b41895"
+    },
+    "positive-blocks/logs/independent-exact-example-results.json": {
+      "bytes": 732,
+      "sha256": "8683e373b12ef727d0494c0b7371e1bb4125b700d0c2495148868e33adc7cbd2"
+    },
+    "positive-blocks/logs/input-verification.json": {
+      "bytes": 590,
+      "sha256": "71b8fa897dca583eee7ee3175ad733be7234de4b29d3df1d684ad33768b2f8e6"
+    },
+    "positive-blocks/logs/normal-form-axioms.log": {
+      "bytes": 1688,
+      "sha256": "3b518465fee00dcef7b8d2b471ea6568ca1e563140851fddd4b4204fdebe7079"
+    },
+    "positive-blocks/logs/toolchain-verification.json": {
+      "bytes": 611,
+      "sha256": "836344e6fafd4dee4729b60fa8a265ecfc9a75b516b985657b8aa1f53ed09c1a"
+    },
+    "positive-blocks/reviews/DeclarationAudit.lean": {
+      "bytes": 15149,
+      "sha256": "dcb922f3a67189ef2bef36d22bedf9e4db64e38059bec52036f893eb94883b4a"
+    },
+    "positive-blocks/reviews/audit_frozen_source.py": {
+      "bytes": 6420,
+      "sha256": "3d00e4da4ac6412b998576b49a5aee030a8bf238d561263afdd7fae8399e334e"
+    },
+    "positive-blocks/reviews/basic-axioms.lean": {
+      "bytes": 500,
+      "sha256": "068f28055fc0748fffa5db88754dcf1e8f25cbe15cb0079b6991bea13ee3d18e"
+    },
+    "positive-blocks/reviews/block-axioms.lean": {
+      "bytes": 2937,
+      "sha256": "1cd277598161b6652cb463743ce12709f26940ac6c362f82f48f6d7726334f6b"
+    },
+    "positive-blocks/reviews/classification-axioms.lean": {
+      "bytes": 562,
+      "sha256": "1221ee78198924e3a2e7029704fde7f9bdd2dca1b62b26ee382c522350fd2134"
+    },
+    "positive-blocks/reviews/compile-PositiveBlocks-Basic.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "positive-blocks/reviews/compile-PositiveBlocks-Blocks.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "positive-blocks/reviews/compile-PositiveBlocks-Classification.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "positive-blocks/reviews/compile-PositiveBlocks-Corollaries.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "positive-blocks/reviews/compile-PositiveBlocks-Examples.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "positive-blocks/reviews/compile-PositiveBlocks-Gram.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "positive-blocks/reviews/compile-PositiveBlocks-Intrinsic.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "positive-blocks/reviews/compile-PositiveBlocks-NormalForm.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "positive-blocks/reviews/compile-PositiveBlocks-Sharpness.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "positive-blocks/reviews/compile-PositiveBlocks.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "positive-blocks/reviews/core-independent-checks.lean": {
+      "bytes": 5666,
+      "sha256": "1d1ce1bcccd34f014f18084c985f8a94826172eccd08cd1c2acd60fd1fa7a094"
+    },
+    "positive-blocks/reviews/core-independent-proof-review.md": {
+      "bytes": 7967,
+      "sha256": "710db5829a4c37d092baa7187ac08a1e497d3c3acd5e65f6daca71b7ca958d2e"
+    },
+    "positive-blocks/reviews/declaration-audit-initial-printer-error.log": {
+      "bytes": 136118,
+      "sha256": "b6c4a06b66ee13285da0ca0296f91d2eaa6c56a8d323f7a6f6100b09d87bdbeb"
+    },
+    "positive-blocks/reviews/declaration-audit.log": {
+      "bytes": 136050,
+      "sha256": "1f3bcb4ce1c32c299cdb83a04484a29c934593614098514eaca1c91614ca795b"
+    },
+    "positive-blocks/reviews/exact-example-review-rerun.json": {
+      "bytes": 732,
+      "sha256": "8683e373b12ef727d0494c0b7371e1bb4125b700d0c2495148868e33adc7cbd2"
+    },
+    "positive-blocks/reviews/final-source-audit.json": {
+      "bytes": 29925,
+      "sha256": "b2736b97a249383a29b0ed00e845c48f35a625555e849552d9fbfd9503cea911"
+    },
+    "positive-blocks/reviews/final-source-coverage.json": {
+      "bytes": 222613,
+      "sha256": "8b826a6f76d7f87a6401cc878891d7fb204320b8941c8d92a3ad34b82933360b"
+    },
+    "positive-blocks/reviews/final-source-review.json": {
+      "bytes": 4106,
+      "sha256": "b394d394b0ef135cc1e83c484b4239daed898490603b686036b20197bc0e4549"
+    },
+    "positive-blocks/reviews/final-source-review.md": {
+      "bytes": 16242,
+      "sha256": "533b218bae8cf013ad419fd248eb0a977e1801bd9a39398eca6aa396ff6a9331"
+    },
+    "positive-blocks/reviews/gram-author-normal-form-review.md": {
+      "bytes": 4141,
+      "sha256": "27d6463d93cf56470c0beb98caf395b42f121b48ef8a3854964ad84de482b9c5"
+    },
+    "positive-blocks/reviews/gram-axioms.lean": {
+      "bytes": 1998,
+      "sha256": "0bc5ad39ca44c24aca5ae41993dbb8c46fba3a826761594fb6dcd4d7ba8ccbbb"
+    },
+    "positive-blocks/reviews/independent-proof-review.md": {
+      "bytes": 15645,
+      "sha256": "2d59225ffb36d81503a27b763198b9839363bb59eaf6205bdc7da17d8cf5f757"
+    },
+    "positive-blocks/reviews/normal-form-axioms.lean": {
+      "bytes": 1006,
+      "sha256": "86ab13dbf6a966f5d82972787732301e275bce73cddec24fd5508c11d1a34592"
+    },
+    "positive-blocks/scripts/verify.py": {
+      "bytes": 2850,
+      "sha256": "a6b36d871dfcfbda8e67c13025bf57d0a6b0161f4a780e408ce8a213d6bc7595"
+    },
+    "publication/FINITE-FIELD-GUIDE-FILES.json": {
+      "bytes": 5346,
+      "sha256": "3c75567a57321860089551d1000617978fd49595e503dce0f679e3a09e4760a1"
+    },
+    "publication/FINITE-FIELD-GUIDE-SOURCE-MAP.json": {
+      "bytes": 24092,
+      "sha256": "44f9da47c9bc342a83bbbb90c1b77f2a760346dfc6ddc84974484022ebd47133"
+    },
     "publication/INPUT-ARCHIVES.json": {
-      "bytes": 1296,
-      "sha256": "327ba9608edd8ca32344e5e75d5c4a139e1fa293b91ae7d3ca1103a8930930fa"
+      "bytes": 2006,
+      "sha256": "3ea276dde78b5b2d7856846bde8be304471a0ebdfe1a9f3e9a457b0bad1adf42"
     },
     "publication/README.md": {
-      "bytes": 4527,
-      "sha256": "e1a70fb1478eb23a4cdc65ab1edaae80ef9fa6e3e368a1cc9c0c3a0c2aa7d100"
+      "bytes": 5668,
+      "sha256": "b439ac2a88bb751ebb72028efb0845aece37818a1a7690924f52141b3116a147"
     },
     "publication/REVIEW.md": {
-      "bytes": 3709,
-      "sha256": "cc61f872898ac7c9a960bda9f6594f30c7f6a168c35ceb8ad671bdf4c5327bee"
+      "bytes": 5650,
+      "sha256": "c306434131e09f5f325d94fecc1e8f25c4273bdc643ad9a8bf30cd45371eae18"
     },
     "publication/SOURCE-MAP.json": {
-      "bytes": 196132,
-      "sha256": "43d4a7f21223e685426a6f56f2f7978a34c633b9584c2442039af17017562937"
+      "bytes": 232451,
+      "sha256": "a9441edb9087eec612144c9cf75d761ccd540ed05e1a4da1a2a71709e782ce4e"
     },
     "publication/evidence/CURRENT-CHECKS.json": {
       "bytes": 4837,
       "sha256": "d94ea0fd5c5c07a6b59d4c5222d6cb093e213ef6e92f508e0e1c680336c7a1db"
+    },
+    "publication/evidence/INTEGRITY-CHECKS.json": {
+      "bytes": 1384,
+      "sha256": "22181224066cb602929f5e933a28f63202bdb61adbfb1ee0e66f802d89b5ef75"
+    },
+    "publication/evidence/POSITIVE-BLOCK-CHECKS.json": {
+      "bytes": 2166,
+      "sha256": "bee42ff545d4893e66a7d0012f65acc3d5f92eefbcb3c4b81dfa7fbbcdd560da"
     },
     "publication/evidence/egyptian-build.log": {
       "bytes": 600,
@@ -340,6 +801,66 @@
     "publication/evidence/egyptian-types-and-axioms.log": {
       "bytes": 12550,
       "sha256": "237ab250c2009c1da989029d64799160b8f70deb600efe74e8a1126b59a0093b"
+    },
+    "publication/evidence/positive-blocks/compile-PositiveBlocks-Basic.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "publication/evidence/positive-blocks/compile-PositiveBlocks-Blocks.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "publication/evidence/positive-blocks/compile-PositiveBlocks-Classification.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "publication/evidence/positive-blocks/compile-PositiveBlocks-Corollaries.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "publication/evidence/positive-blocks/compile-PositiveBlocks-Examples.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "publication/evidence/positive-blocks/compile-PositiveBlocks-Gram.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "publication/evidence/positive-blocks/compile-PositiveBlocks-Intrinsic.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "publication/evidence/positive-blocks/compile-PositiveBlocks-NormalForm.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "publication/evidence/positive-blocks/compile-PositiveBlocks-Sharpness.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "publication/evidence/positive-blocks/compile-PositiveBlocks.lean.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "publication/evidence/positive-blocks/declaration-audit.log": {
+      "bytes": 136050,
+      "sha256": "1f3bcb4ce1c32c299cdb83a04484a29c934593614098514eaca1c91614ca795b"
+    },
+    "publication/evidence/positive-blocks/final-source-audit.json": {
+      "bytes": 30154,
+      "sha256": "e3cbef23e9ee2a3c5e2af27ead13ff45aa0ec3bb9ded96ecd18ee3fdeee39193"
+    },
+    "publication/evidence/positive-blocks/fresh-build.json": {
+      "bytes": 1504,
+      "sha256": "1d314f0eb057807bf7cbafedf13a5f8db9e9759e85a1b6d93104a919e5639003"
+    },
+    "publication/evidence/positive-blocks/fresh-build.log": {
+      "bytes": 559,
+      "sha256": "b5f43a4ecda41df995e9f54889ea0dff5e7bc012566894db3862de8592445899"
+    },
+    "publication/evidence/positive-blocks/fresh-exact-examples.json": {
+      "bytes": 732,
+      "sha256": "8683e373b12ef727d0494c0b7371e1bb4125b700d0c2495148868e33adc7cbd2"
     },
     "publication/evidence/sharp/build.log": {
       "bytes": 1077,
@@ -362,8 +883,8 @@
       "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
     },
     "publication/verify.py": {
-      "bytes": 3437,
-      "sha256": "6f501ea264dbd69cc53049cfdbae41023cafec15f6c6d3ff73753c9369628c38"
+      "bytes": 5321,
+      "sha256": "135795e20c86252c2e10afeb6f38108f2fca771634bcc95d170271e6765a9d95"
     },
     "radial-contact/ASSUMPTIONS.md": {
       "bytes": 2392,
@@ -1193,6 +1714,278 @@
       "bytes": 331,
       "sha256": "1f58920a10baaf2bc0677c2763abd42bdaaac22d50d41b9ca3527777ebf95472"
     },
+    "tangent-limit/.gitignore": {
+      "bytes": 54,
+      "sha256": "a8cbc708009b7452b6d462bc031146f61c9c8f76046b48e7c545d839340eee63"
+    },
+    "tangent-limit/PROGRESS.md": {
+      "bytes": 3405,
+      "sha256": "f1d448f38f9c2ae5e48d93c767534b059b8398ecffa479dbadb01f2d9ae27878"
+    },
+    "tangent-limit/PUBLISHED-FILES-SHA256.json": {
+      "bytes": 8026,
+      "sha256": "a21cd120471f140b0442fb92013bab38a986cc8663cb16ce107d780e46c53569"
+    },
+    "tangent-limit/README.md": {
+      "bytes": 4576,
+      "sha256": "5be38954d69d42c1a0fb6a109983574b728b88c361af32cc9cb0d48e627f295a"
+    },
+    "tangent-limit/TangentLimit.lean": {
+      "bytes": 86,
+      "sha256": "98c74e84ab564605a18c9cb87fb6112f8b7bf999349dfba1f9e3ead868faac02"
+    },
+    "tangent-limit/TangentLimit/Diophantine.lean": {
+      "bytes": 4437,
+      "sha256": "74116a224783c4d91265c73f276eab0e280f5d047c3cb32260ee10a6204807bf"
+    },
+    "tangent-limit/TangentLimit/Hypothesis.lean": {
+      "bytes": 596,
+      "sha256": "6f9fb3e7a25e2ba27fba29faf93e88add77a8c0aa3a8de59be72ae7b9ea2562a"
+    },
+    "tangent-limit/TangentLimit/Limit.lean": {
+      "bytes": 1812,
+      "sha256": "05ea71aef2541bdc9137c8dd110c3d11d8e2ffc5b851e931aeeef027fdfb0336"
+    },
+    "tangent-limit/TangentLimit/LimitComparison.lean": {
+      "bytes": 2040,
+      "sha256": "9250070b23a25f76ad620c8fee0b353ffc5b04b5823177e4bf6b92a28473813c"
+    },
+    "tangent-limit/TangentLimit/NearestPole.lean": {
+      "bytes": 3900,
+      "sha256": "b6321c174149a6e7f264d1d31b4813954dfba14900b9ab15c21c4701a3dc4cec"
+    },
+    "tangent-limit/TangentLimit/NonPole.lean": {
+      "bytes": 1141,
+      "sha256": "3ca47fd29a14a8e1299782ed729f96252a6768a84c67742bc075fb1273496710"
+    },
+    "tangent-limit/TangentLimit/Summability.lean": {
+      "bytes": 4873,
+      "sha256": "b6308da63a70ae2e7d45719afc2a5af71935061f8c9ec383740010a3613bf273"
+    },
+    "tangent-limit/TangentLimit/Trigonometry.lean": {
+      "bytes": 2672,
+      "sha256": "169ede182499acaf928a19eacb4605c32c0f71a52e17ae7edc0e26912eb40039"
+    },
+    "tangent-limit/docs/SOURCES.md": {
+      "bytes": 2546,
+      "sha256": "fd1e849579926531aac21e4f5743e1c8d6460740c1bc9ecbdde6a050f67473c7"
+    },
+    "tangent-limit/docs/independent-review.md": {
+      "bytes": 7574,
+      "sha256": "5026dedb437641910b1583a8d81121457ef1755e79e7558f461d0d0f8d07f2eb"
+    },
+    "tangent-limit/docs/mathematical-proof.md": {
+      "bytes": 5491,
+      "sha256": "f52aa95b1c5829f26d1c72c4aa244b6fde7e9491f61d01dd52b9ebffd67d93d1"
+    },
+    "tangent-limit/docs/publication.md": {
+      "bytes": 1368,
+      "sha256": "7db5e7fc11ef63648ef04d373e07e1c30af3f7138fcd8668ef3da115dcc1dc72"
+    },
+    "tangent-limit/docs/starter-assessment.md": {
+      "bytes": 1296,
+      "sha256": "7984ddae79ed33f24a531239cd41b9ec3e10a8eb622270e74cce67d5e657dc50"
+    },
+    "tangent-limit/docs/starter-reference/inspection.json": {
+      "bytes": 1109,
+      "sha256": "fe17380bfae46d8d59a0b775ac93d00f7655d458e5845f18f1d7e37fb8338d59"
+    },
+    "tangent-limit/docs/starter-reference/pi-bridge/study.md": {
+      "bytes": 20426,
+      "sha256": "8d24f900a83f41b8ec55e582531b814ccf755c7a7e90175cf1f81f0a160ec1d8"
+    },
+    "tangent-limit/docs/starter-reference/reviews/pi-review-validation.json": {
+      "bytes": 1294,
+      "sha256": "b4bc3c54daeaa6c973261fafb3ded20e970f1e418697ffc87433f019caffd997"
+    },
+    "tangent-limit/docs/starter-reference/reviews/pi-review.md": {
+      "bytes": 10674,
+      "sha256": "f3c3eaa567bff7000f50ff30939ade22ff7f9ca89315405670fb3654f9cb876f"
+    },
+    "tangent-limit/docs/theorem-statements.md": {
+      "bytes": 8999,
+      "sha256": "aeade1452a9747b370e4c9b67cdcdeba14a6fab9915f7716c18ffb869533ae34"
+    },
+    "tangent-limit/docs/verification-summary.json": {
+      "bytes": 1069,
+      "sha256": "dbeb8a2389d6fb0f549e433f6484b013ded7a755de5888be0fcdb01917e09af6"
+    },
+    "tangent-limit/lake-manifest.json": {
+      "bytes": 3158,
+      "sha256": "8f871ddcf1917c176ac801f24bc66c975e4562d4d7aab8193c45ef7f31d5ad03"
+    },
+    "tangent-limit/lakefile.toml": {
+      "bytes": 300,
+      "sha256": "dbb3f4f563156a8062f93ceb0aa660a12b60650d2f47fb0de4f32308fb25e451"
+    },
+    "tangent-limit/lean-toolchain": {
+      "bytes": 25,
+      "sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434"
+    },
+    "tangent-limit/logs/27-main-v424-lean-version.log": {
+      "bytes": 106,
+      "sha256": "36c0bbaf090c97bc8217c6ff497ff9144fd83d9003f12cd505162b943aaaee77"
+    },
+    "tangent-limit/logs/28-main-v424-mathlib-commit.log": {
+      "bytes": 41,
+      "sha256": "cc49bfc965afbc1ef5877d1d1b12648323cb6d44f015d37593c63c2cd1d731c0"
+    },
+    "tangent-limit/logs/30-final-package-pins.json": {
+      "bytes": 1522,
+      "sha256": "80525498cf3b9822d9784ebc3ce47c834db6cb641a07c5ed80a03e2c38223aaf"
+    },
+    "tangent-limit/logs/33-manifest-preservation.log": {
+      "bytes": 199,
+      "sha256": "1a9c4a12d56719de0596ada8722e91d174778c51066752c52dc38001dbae714e"
+    },
+    "tangent-limit/logs/axiom-allowlist-check.log": {
+      "bytes": 155,
+      "sha256": "9b5c54238541bd3042f320e420ed2362697605a6cc6fdd0103e7f641f0011ff1"
+    },
+    "tangent-limit/logs/diophantine-04.log": {
+      "bytes": 96,
+      "sha256": "0237689462486f279aae7570bb5b469e9d7eb9d35ef02542ae04b00ee52ef142"
+    },
+    "tangent-limit/logs/final-build.log": {
+      "bytes": 656,
+      "sha256": "0a34f9325b605efffd2947f7345a15c0dcfb9ec5d86aedbeb512aebe3bf67524"
+    },
+    "tangent-limit/logs/final-theorem-inventory.log": {
+      "bytes": 8628,
+      "sha256": "b6e66b3382e58831c6972b116617ada1d308f9d1157399d6fa96f124ad96ad57"
+    },
+    "tangent-limit/logs/limit-01.log": {
+      "bytes": 90,
+      "sha256": "a1b0881800e331399323cc104bc23b573f30b6c8a66f3c6be046cdb99b0b6c76"
+    },
+    "tangent-limit/logs/limit-comparison-05.log": {
+      "bytes": 100,
+      "sha256": "1a080671fdfe1e5c1b10580333241e4d0950271c98cbae744ff8722faf97ed6c"
+    },
+    "tangent-limit/logs/milestone-02-theorem-inventory.log": {
+      "bytes": 2626,
+      "sha256": "bf916aa8779966d47554572a2e1a843384258e2482fbbd3f3e3725f3faea2d19"
+    },
+    "tangent-limit/logs/milestone-03-theorem-inventory.log": {
+      "bytes": 2078,
+      "sha256": "f6a443dcd3d172ac260a7fc16e2fcc6a5f5485daf7d7bbea30a2b2f69448ec76"
+    },
+    "tangent-limit/logs/nearest-pole-04.log": {
+      "bytes": 96,
+      "sha256": "f25d87b61fc1d73a844c1e78c162ebebf98191f1b0e157f3937a17438f89d4cf"
+    },
+    "tangent-limit/logs/nonpole-03.log": {
+      "bytes": 92,
+      "sha256": "2485aefbb611e8bfe9c3ab26312ffac69b69128ac3358cc1eeab9d8bb5646fe9"
+    },
+    "tangent-limit/logs/source-audit.log": {
+      "bytes": 469,
+      "sha256": "77b40abe9cb9340a20700fcf5fa745f233c5afe8724ebda3a4e7574360b2763d"
+    },
+    "tangent-limit/logs/summability-01.log": {
+      "bytes": 95,
+      "sha256": "e18747347d1ea9b71c3ea878bf056c190b8e080cda44a2acb5c19a430e4ceec8"
+    },
+    "tangent-limit/logs/summability-03.log": {
+      "bytes": 95,
+      "sha256": "dc6c0febc4d3da9ac4bccac8c6d61303cd4bf6f30f7cd75b7bfe074b83f870c7"
+    },
+    "tangent-limit/logs/summability-theorem-statements.log": {
+      "bytes": 1922,
+      "sha256": "0474fcf560181999e3bef3920750330c5e6d2af9885fd8490b366c40d7a2e04c"
+    },
+    "tangent-limit/logs/trigonometry-03.log": {
+      "bytes": 97,
+      "sha256": "824557cce61c4fd9ec43061c8b6adcc62cadd3776cf7a107c47f5c7faf6f6eb8"
+    },
+    "tangent-limit/milestones/01-Hypothesis.lean.txt": {
+      "bytes": 561,
+      "sha256": "8f63af2ef0ac8da51537a7b66727ce9f08993ac1edbd34c7f3f147470865f081"
+    },
+    "tangent-limit/milestones/01-mathematical-proof.md": {
+      "bytes": 896,
+      "sha256": "1b81d341146d3bf36a2ce967dc5dfd9bfe4b66de57e4ec04574af146cdd223ff"
+    },
+    "tangent-limit/milestones/01-theorem-statements.md": {
+      "bytes": 1157,
+      "sha256": "1bf0a5037a6b0236c135b3f6447600a8e4a802727bf146a1a1fb81782a9de96c"
+    },
+    "tangent-limit/milestones/01-timestamp.txt": {
+      "bytes": 21,
+      "sha256": "c5b50b64e45f287275391b2c096d1be24652ea57cbaf46b342206e03d778407e"
+    },
+    "tangent-limit/milestones/02-reusable-lemmas.md": {
+      "bytes": 1549,
+      "sha256": "94a27c12260ec7dc4a4c3c8a19a38d8adc6019d20985a5db38e842f19b2fab74"
+    },
+    "tangent-limit/milestones/02-timestamp.txt": {
+      "bytes": 21,
+      "sha256": "e8556056d41ed2fb2a8a0cf15f3783504930f13892dbd5eb35c5091f27a1487a"
+    },
+    "tangent-limit/milestones/03-limit-theorem.md": {
+      "bytes": 1164,
+      "sha256": "6e9a13b80a0acd5251b20307973fe01c46abd9490aed7706dbec70e498544944"
+    },
+    "tangent-limit/milestones/03-timestamp.txt": {
+      "bytes": 21,
+      "sha256": "3286b44f4d849d7b9ec412fe64b93083160dc3e04c09206b4a1df4471e3b19d8"
+    },
+    "tangent-limit/milestones/04-absolute-convergence.md": {
+      "bytes": 1192,
+      "sha256": "a607000999c509e2dad6bb31f5809eb79a0178f155fbb6ed486aea075f3119e8"
+    },
+    "tangent-limit/milestones/04-timestamp.txt": {
+      "bytes": 21,
+      "sha256": "a465fcd50604e7e58bbeeb95cf6ac2c6b063640f077cb503afe9df4528bb987f"
+    },
+    "tangent-limit/milestones/05-final-verification.md": {
+      "bytes": 1629,
+      "sha256": "f81fef0b576d943c4ea7c8f33129491a182af570aac1f6b7612a29ac2d063d05"
+    },
+    "tangent-limit/milestones/05-timestamp.txt": {
+      "bytes": 21,
+      "sha256": "a465fcd50604e7e58bbeeb95cf6ac2c6b063640f077cb503afe9df4528bb987f"
+    },
+    "tangent-limit/milestones/06-publication-verification.md": {
+      "bytes": 1605,
+      "sha256": "7c465ef6de58d4625d038d38de9ef8063c9d3be1db02c593e26c98e879752f4d"
+    },
+    "tangent-limit/milestones/06-timestamp.txt": {
+      "bytes": 33,
+      "sha256": "e8a825803f24c3751ccc38375f1dc154138922a538f217d921698f368b224a81"
+    },
+    "tangent-limit/scripts/MainInventory.lean": {
+      "bytes": 806,
+      "sha256": "a9220d288b4dc28f3ad107cf4e99fa1eea477eba540118df7749a600bdb92295"
+    },
+    "tangent-limit/scripts/ReusableInventory.lean": {
+      "bytes": 1072,
+      "sha256": "ad272ea6ab3486f3bca552161875341e386940e7bed5d2465614035804c9e72f"
+    },
+    "tangent-limit/scripts/TheoremInventory.lean": {
+      "bytes": 3647,
+      "sha256": "0a5e8810ccc28e617482e5cd9ca9bf72f69d98e4e50651bd09488450a1993fa9"
+    },
+    "tangent-limit/scripts/build.sh": {
+      "bytes": 369,
+      "sha256": "fbb7dcd71745678a3f18875cd75139db615be6377c14658641db52dcd8a40b1b"
+    },
+    "tangent-limit/scripts/checkpoint.sh": {
+      "bytes": 829,
+      "sha256": "5ce0e3e2802da1e79d486d161b898a499871a750e4ad4a43d48f144af0305484"
+    },
+    "tangent-limit/scripts/environment.sh": {
+      "bytes": 405,
+      "sha256": "701d4155694efb2b3893f01b20f3a496224ffea91f6595b60dcc4392eaf4e373"
+    },
+    "tangent-limit/scripts/setup.sh": {
+      "bytes": 885,
+      "sha256": "e2a8c6ce4c6af2fd7387be5a043694cc017b8af4bad6fe143b3f03f819bd5e9b"
+    },
+    "tangent-limit/scripts/verify.sh": {
+      "bytes": 1633,
+      "sha256": "d9d5890f76eda58e5451ff320f8315cd54ee491938ca9c7f4b61f6853b881fa1"
+    },
     "tangent-sharp/.gitignore": {
       "bytes": 54,
       "sha256": "a8cbc708009b7452b6d462bc031146f61c9c8f76046b48e7c545d839340eee63"
@@ -1692,17 +2485,6 @@
     "tangent-sharp/verification.supplied.json": {
       "bytes": 1157,
       "sha256": "cadbbacc184925d8726e3c680b01827abe2e4842eaffa4618e97ac23864f55c9"
-    },
-    "publication/FINITE-FIELD-GUIDE-FILES.json": {
-      "bytes": 5346,
-      "sha256": "3c75567a57321860089551d1000617978fd49595e503dce0f679e3a09e4760a1"
-    },
-    "publication/FINITE-FIELD-GUIDE-SOURCE-MAP.json": {
-      "bytes": 24092,
-      "sha256": "44f9da47c9bc342a83bbbb90c1b77f2a760346dfc6ddc84974484022ebd47133"
     }
-  },
-  "supplemental_manifests": [
-    "publication/FINITE-FIELD-GUIDE-FILES.json"
-  ]
+  }
 }

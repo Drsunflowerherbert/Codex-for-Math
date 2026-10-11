@@ -1,0 +1,25 @@
+'PositiveBlocks.hsNorm_isometry_mul_mul_conjTranspose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveBlocks.normalForm_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveBlocks.normalForm_hsNorm_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveBlocks.normalForm_ranks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveBlocks.normalForm_block_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveBlocks.HasCommonSupportNormalForm.posSemidef_and_hsNorm_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PositiveBlocks.HasCommonSupportNormalForm.rank_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveBlocks.HasCommonSupportNormalForm.exists_rank_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PositiveBlocks.HasCommonSupportNormalForm.exists_normRatio_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PositiveBlocks.HasCommonSupportNormalForm.block_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveBlocks.exists_posDef_compression' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveBlocks.hasCommonSupportNormalForm_of_gram_proportional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PositiveBlocks.gram_product_eq_iff_commonSupportNormalForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveBlocks.gram_product_eq_iff_zero_or_commonSupportNormalForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PositiveBlocks.gram_product_eq_rank_eq' depends on axioms: [propext, Classical.choice, Quot.sound]

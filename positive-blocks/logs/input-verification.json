@@ -1,0 +1,10 @@
+{
+  "archive_bytes": 523782,
+  "archive_sha256": "9e03b1ce33dc5d5fa62ab9478b06998bcb0eb32635fc11bccac065223e892a74",
+  "positive_blocks_manifest_passed": true,
+  "local_tex_bytes": 35175,
+  "local_tex_sha256": "164f56cc3f5ecbfb65ddba0d0438cacf44f325919ef7dfb742d073c948fddabd",
+  "source_revision_attribution": "Supplied archive; no independent remote authentication",
+  "source_archive": "openai-math-reviewed-supplement-2026-10-11.zip",
+  "publication_change_notice": "Private transfer identity and internal model settings omitted; source fingerprints and verification facts retained."
+}

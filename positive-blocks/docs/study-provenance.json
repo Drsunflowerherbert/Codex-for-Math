@@ -1,0 +1,34 @@
+{
+  "repository": "https://github.com/openai/math",
+  "revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "family_id": "325",
+  "source_path": "preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/build/main.tex",
+  "source_url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/build/main.tex#L434-L445",
+  "local_source_relative": "study-source-main.tex",
+  "source_sha256": "164f56cc3f5ecbfb65ddba0d0438cacf44f325919ef7dfb742d073c948fddabd",
+  "source_bytes": 35175,
+  "source_locator": {
+    "section_label": "sec:matrix",
+    "paragraph": "The positive block comparison",
+    "lines": [
+      434,
+      445
+    ]
+  },
+  "revision_attribution": "Pinned revision and repository path supplied by the existing local catalog; local bytes independently fingerprinted and matched to catalog source_manifest.json.",
+  "source_inspection": "Read supplied local TeX, including full positive-block comparison and its surrounding source context. No source implementation executed.",
+  "scope": "Finite-dimensional positive-block comparison only; no review or certification of the complete Crouzeix theorem.",
+  "source_relation": {
+    "PB1": "Source elementary sum comparison, rederived and generalized to rectangular off-diagonal blocks.",
+    "PB2_to_PB5": "Elementary consequences, complete equality analysis, and reusable compression corollary developed in this study; no novelty claim."
+  },
+  "formalization": {
+    "lean_executed": false,
+    "support_lemma_formal_match_established": false,
+    "source_scope_url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/325.md"
+  },
+  "external_program_execution": false,
+  "publication": false,
+  "native_mrs_import": false,
+  "publication_path_note": "Original catalog-relative path updated to this retained byte-identical source copy."
+}

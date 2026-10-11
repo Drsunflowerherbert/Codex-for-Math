@@ -1,0 +1,119 @@
+{
+  "schema": "positive-block-independent-final-review-v1",
+  "reviewed_utc": "2026-10-11T04:27:07.252989+00:00",
+  "status": "accepted_scoped_final_source_type_axiom_review",
+  "written_verdict_completed": true,
+  "report": "final-source-review.md",
+  "source_coverage": "final-source-coverage.json",
+  "reviewer_authored_production_source": false,
+  "reviewer_edited_production_source": false,
+  "counts": {
+    "production_lean_files": 10,
+    "review_lean_files": 7,
+    "all_lean_files_inspected": 17,
+    "public_named_declarations": 142,
+    "public_theorems": 131,
+    "public_definitions": 11,
+    "private_helper_theorems": 4,
+    "total_named_production_declarations": 146,
+    "total_named_production_theorems": 135,
+    "public_types_and_axiom_records": 142,
+    "checkpoint_files": 73,
+    "checkpoint_manifest_entries": 72
+  },
+  "unresolved_core_proof_gaps": [],
+  "required_proof_corrections": [],
+  "source_and_receipt_hashes_verified": true,
+  "checkpoint_manifest_verified": true,
+  "archived_independent_source_compilation_exits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "archived_corrected_declaration_audit_exit": 0,
+  "archived_audit_log": {
+    "bytes": 136050,
+    "sha256": "1f3bcb4ce1c32c299cdb83a04484a29c934593614098514eaca1c91614ca795b"
+  },
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "production_hashes": {
+    "PositiveBlocks/Basic.lean": {
+      "bytes": 5158,
+      "sha256": "aa32109f23367aecde51d21179015007577ecdcfdb9b50903251a46b09b7eb45"
+    },
+    "PositiveBlocks/Blocks.lean": {
+      "bytes": 15974,
+      "sha256": "36dddf5ca7c8eb43080728e1ef13e9ccb9cb938c76dc0a98b1d5e900c60d9cb9"
+    },
+    "PositiveBlocks/Classification.lean": {
+      "bytes": 5089,
+      "sha256": "90864094f9a16fba4ecf3e0087529f43e112069e832f38413f342478daf7a12d"
+    },
+    "PositiveBlocks/Corollaries.lean": {
+      "bytes": 1924,
+      "sha256": "7f020e5cbadb6f56de4fbbf649d2dba738d9d19b0a9e25b98ec5790b01bbc861"
+    },
+    "PositiveBlocks/Examples.lean": {
+      "bytes": 4459,
+      "sha256": "6d3c381ce5829a482385dacace066f9489baf8b3a310895112780c92df55b9eb"
+    },
+    "PositiveBlocks/Gram.lean": {
+      "bytes": 6036,
+      "sha256": "bb332f13fe9edadc82647f932f62c8a55399fd138b2647471f9f264daf27673d"
+    },
+    "PositiveBlocks/Intrinsic.lean": {
+      "bytes": 10198,
+      "sha256": "dcaf52c30231c3c16f7d930cc0e689451e3c46f8263526b13bfe2ea9cdd311c7"
+    },
+    "PositiveBlocks/NormalForm.lean": {
+      "bytes": 24748,
+      "sha256": "32512a1aec69f99002b32155460b16336bddc656f352d34b4586e7bb2245ea8d"
+    },
+    "PositiveBlocks/Sharpness.lean": {
+      "bytes": 1758,
+      "sha256": "acf8f5c68b858290ccd28dc5c1b5a3b0af0f691b01fe7ae7064bd613c50b454f"
+    },
+    "PositiveBlocks.lean": {
+      "bytes": 283,
+      "sha256": "172a370711ed194392f1489e878d4a202e35e5d554e4c859f2c049b2396007b8"
+    }
+  },
+  "fresh_lean_or_exact_checker_execution_by_this_reviewer": false,
+  "study_dependency_validation": {
+    "background": 5,
+    "theorem_records": 10,
+    "unique_ids": true,
+    "all_references_resolve": true,
+    "acyclic": true
+  },
+  "scope_limits": [
+    "combined signature-matrix equations and alternative SJS trace proof",
+    "standalone right-square-only product equality criterion",
+    "general kernel inclusions and general arbitrary-PSD off-diagonal rank bound",
+    "standalone positive-definite strictness and unequal-dimension strictness",
+    "equal-size unitary reformulation",
+    "positive-definite limiting sharpness families and limit theorems",
+    "separately named smallest right sum coefficient 1/2 theorem",
+    "separately named reciprocal-weighted Gram gap or full complex mixed-trace equality/reality theorem"
+  ],
+  "nonclaims": [
+    "complete Crouzeix theorem",
+    "novelty",
+    "publication",
+    "native theorem-record schema import",
+    "fresh compilation by this reviewer",
+    "remote source revision authentication"
+  ],
+  "publication_fresh_verification": "Separate publication-session commands and logs; see publication/evidence/POSITIVE-BLOCK-CHECKS.json."
+}

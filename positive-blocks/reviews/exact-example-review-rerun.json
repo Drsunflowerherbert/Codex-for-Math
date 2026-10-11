@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "named_count": 16,
+  "named_ids": [
+    "E01",
+    "E02",
+    "E03",
+    "E04",
+    "E05",
+    "E06",
+    "E07",
+    "E08",
+    "E09",
+    "E10",
+    "E11",
+    "E12",
+    "E13",
+    "E14",
+    "E15",
+    "E16"
+  ],
+  "seeded_count": 180,
+  "input_sha256": "5e7f79ee684eb8f8d55a3f641e63fdad9abc5c3a37142679db023a6c8031bc51",
+  "verifier_sha256": "14b49462b0a45d7e797b211e26f92641452d60ef50da2c476758eb10a6e3de1f",
+  "arithmetic": "independent Fraction-pair parser and matrix operations; standard library only",
+  "claims": "Finite examples, weighted gaps, intrinsic sum and product equality iff tests, kernels/ranks, and signed quadratic-form certificates; not a universal proof or formal verification."
+}

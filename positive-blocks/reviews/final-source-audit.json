@@ -1,0 +1,1078 @@
+{
+  "reviewed_utc": "2026-10-11T03:42:59.786662+00:00",
+  "source_unchanged_during_audit": true,
+  "source_fingerprints": {
+    "PositiveBlocks/Basic.lean": {
+      "bytes": 5158,
+      "sha256": "aa32109f23367aecde51d21179015007577ecdcfdb9b50903251a46b09b7eb45"
+    },
+    "PositiveBlocks/Gram.lean": {
+      "bytes": 6036,
+      "sha256": "bb332f13fe9edadc82647f932f62c8a55399fd138b2647471f9f264daf27673d"
+    },
+    "PositiveBlocks/Blocks.lean": {
+      "bytes": 15974,
+      "sha256": "36dddf5ca7c8eb43080728e1ef13e9ccb9cb938c76dc0a98b1d5e900c60d9cb9"
+    },
+    "PositiveBlocks/Intrinsic.lean": {
+      "bytes": 10198,
+      "sha256": "dcaf52c30231c3c16f7d930cc0e689451e3c46f8263526b13bfe2ea9cdd311c7"
+    },
+    "PositiveBlocks/Corollaries.lean": {
+      "bytes": 1924,
+      "sha256": "7f020e5cbadb6f56de4fbbf649d2dba738d9d19b0a9e25b98ec5790b01bbc861"
+    },
+    "PositiveBlocks/Sharpness.lean": {
+      "bytes": 1758,
+      "sha256": "acf8f5c68b858290ccd28dc5c1b5a3b0af0f691b01fe7ae7064bd613c50b454f"
+    },
+    "PositiveBlocks/NormalForm.lean": {
+      "bytes": 24748,
+      "sha256": "32512a1aec69f99002b32155460b16336bddc656f352d34b4586e7bb2245ea8d"
+    },
+    "PositiveBlocks/Classification.lean": {
+      "bytes": 5089,
+      "sha256": "90864094f9a16fba4ecf3e0087529f43e112069e832f38413f342478daf7a12d"
+    },
+    "PositiveBlocks/Examples.lean": {
+      "bytes": 4459,
+      "sha256": "6d3c381ce5829a482385dacace066f9489baf8b3a310895112780c92df55b9eb"
+    },
+    "PositiveBlocks.lean": {
+      "bytes": 283,
+      "sha256": "172a370711ed194392f1489e878d4a202e35e5d554e4c859f2c049b2396007b8"
+    }
+  },
+  "imports": {
+    "PositiveBlocks.lean": [
+      "PositiveBlocks.Basic",
+      "PositiveBlocks.Gram",
+      "PositiveBlocks.Intrinsic",
+      "PositiveBlocks.Blocks",
+      "PositiveBlocks.Corollaries",
+      "PositiveBlocks.Sharpness",
+      "PositiveBlocks.NormalForm",
+      "PositiveBlocks.Classification",
+      "PositiveBlocks.Examples"
+    ],
+    "PositiveBlocks/Basic.lean": [
+      "Mathlib"
+    ],
+    "PositiveBlocks/Gram.lean": [
+      "PositiveBlocks.Basic"
+    ],
+    "PositiveBlocks/Intrinsic.lean": [
+      "PositiveBlocks.Blocks"
+    ],
+    "PositiveBlocks/Blocks.lean": [
+      "Mathlib.Analysis.Matrix.Order",
+      "Mathlib.Data.Matrix.ColumnRowPartitioned",
+      "PositiveBlocks.Gram"
+    ],
+    "PositiveBlocks/Corollaries.lean": [
+      "PositiveBlocks.Blocks"
+    ],
+    "PositiveBlocks/Sharpness.lean": [
+      "PositiveBlocks.Blocks"
+    ],
+    "PositiveBlocks/NormalForm.lean": [
+      "PositiveBlocks.Gram"
+    ],
+    "PositiveBlocks/Classification.lean": [
+      "PositiveBlocks.Blocks",
+      "PositiveBlocks.NormalForm"
+    ],
+    "PositiveBlocks/Examples.lean": [
+      "PositiveBlocks.Basic",
+      "PositiveBlocks.Blocks"
+    ]
+  },
+  "declarations": [
+    {
+      "name": "PositiveBlocks.hsSq",
+      "kind": "def",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 17
+    },
+    {
+      "name": "PositiveBlocks.hsNorm",
+      "kind": "def",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 21
+    },
+    {
+      "name": "PositiveBlocks.hsInner",
+      "kind": "def",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 25
+    },
+    {
+      "name": "PositiveBlocks.hsSq_eq_sum",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 28
+    },
+    {
+      "name": "PositiveBlocks.hsSq_nonneg",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 35
+    },
+    {
+      "name": "PositiveBlocks.hsSq_zero",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 40
+    },
+    {
+      "name": "PositiveBlocks.hsSq_eq_zero_iff",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 43
+    },
+    {
+      "name": "PositiveBlocks.hsNorm_nonneg",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 52
+    },
+    {
+      "name": "PositiveBlocks.hsNorm_sq",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 55
+    },
+    {
+      "name": "PositiveBlocks.hsNorm_zero",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 58
+    },
+    {
+      "name": "PositiveBlocks.hsNorm_eq_zero_iff",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 61
+    },
+    {
+      "name": "PositiveBlocks.hsInner_self",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 64
+    },
+    {
+      "name": "PositiveBlocks.hsInner_comm",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 66
+    },
+    {
+      "name": "PositiveBlocks.hsInner_sub_left",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 70
+    },
+    {
+      "name": "PositiveBlocks.hsInner_sub_right",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 74
+    },
+    {
+      "name": "PositiveBlocks.hsInner_real_smul_left",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 78
+    },
+    {
+      "name": "PositiveBlocks.hsInner_real_smul_right",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 82
+    },
+    {
+      "name": "PositiveBlocks.hsSq_real_smul",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 86
+    },
+    {
+      "name": "PositiveBlocks.hsNorm_real_smul",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 91
+    },
+    {
+      "name": "PositiveBlocks.hsSq_sub",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 95
+    },
+    {
+      "name": "PositiveBlocks.hsSq_weighted_sub",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 101
+    },
+    {
+      "name": "PositiveBlocks.hsSq_swap_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 108
+    },
+    {
+      "name": "PositiveBlocks.hsInner_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 116
+    },
+    {
+      "name": "PositiveBlocks.hsNorm_eq_frobenius",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Basic.lean",
+      "line": 128
+    },
+    {
+      "name": "PositiveBlocks.gram_eq_zero_iff",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Gram.lean",
+      "line": 21
+    },
+    {
+      "name": "PositiveBlocks.gram_hsNorm_eq_zero_iff",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Gram.lean",
+      "line": 25
+    },
+    {
+      "name": "PositiveBlocks.gram_hsSq_eq_zero_iff",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Gram.lean",
+      "line": 30
+    },
+    {
+      "name": "PositiveBlocks.gram_sum_gap",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Gram.lean",
+      "line": 35
+    },
+    {
+      "name": "PositiveBlocks.gram_sum_le",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Gram.lean",
+      "line": 41
+    },
+    {
+      "name": "PositiveBlocks.gram_sum_eq_iff",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Gram.lean",
+      "line": 48
+    },
+    {
+      "name": "PositiveBlocks.gram_product_deficit",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Gram.lean",
+      "line": 59
+    },
+    {
+      "name": "PositiveBlocks.gram_product_le",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Gram.lean",
+      "line": 68
+    },
+    {
+      "name": "PositiveBlocks.gram_product_eq_iff",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Gram.lean",
+      "line": 90
+    },
+    {
+      "name": "PositiveBlocks.gram_product_eq_iff_normalized",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Gram.lean",
+      "line": 138
+    },
+    {
+      "name": "PositiveBlocks.fromBlocks_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 22
+    },
+    {
+      "name": "PositiveBlocks.posSemidef_fromBlocks_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 30
+    },
+    {
+      "name": "PositiveBlocks.exists_gram_of_posSemidef_fromBlocks",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 37
+    },
+    {
+      "name": "PositiveBlocks.posSemidef_fromBlocks_iff_exists_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 57
+    },
+    {
+      "name": "PositiveBlocks.block_offdiag_eq_zero_of_left_eq_zero",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 68
+    },
+    {
+      "name": "PositiveBlocks.block_offdiag_eq_zero_of_right_eq_zero",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 78
+    },
+    {
+      "name": "PositiveBlocks.block_hs_product_le",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 88
+    },
+    {
+      "name": "PositiveBlocks.block_hs_sum_le",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 96
+    },
+    {
+      "name": "PositiveBlocks.block_hsNorm_product_le",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 104
+    },
+    {
+      "name": "PositiveBlocks.block_hsNorm_sum_le",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 112
+    },
+    {
+      "name": "PositiveBlocks.block_hs_sum_gap_of_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 120
+    },
+    {
+      "name": "PositiveBlocks.block_hsNorm_sum_gap_of_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 129
+    },
+    {
+      "name": "PositiveBlocks.block_hs_product_deficit_of_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 140
+    },
+    {
+      "name": "PositiveBlocks.block_hs_sum_eq_iff_of_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 151
+    },
+    {
+      "name": "PositiveBlocks.block_hs_product_eq_iff_of_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 161
+    },
+    {
+      "name": "PositiveBlocks.block_hsNorm_product_eq_iff_of_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 172
+    },
+    {
+      "name": "PositiveBlocks.block_hsNorm_sum_eq_iff_of_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 183
+    },
+    {
+      "name": "PositiveBlocks.block_hs_product_eq_iff_normalized_of_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 193
+    },
+    {
+      "name": "PositiveBlocks.block_hs_sum_gap_exists",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 206
+    },
+    {
+      "name": "PositiveBlocks.block_hs_sum_eq_iff_exists_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 217
+    },
+    {
+      "name": "PositiveBlocks.block_hs_product_eq_iff_exists_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 232
+    },
+    {
+      "name": "PositiveBlocks.block_hsNorm_product_eq_iff_exists_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 248
+    },
+    {
+      "name": "PositiveBlocks.block_hsNorm_sum_eq_iff_exists_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 260
+    },
+    {
+      "name": "PositiveBlocks.fromBlocks_compression",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 272
+    },
+    {
+      "name": "PositiveBlocks.posSemidef_fromBlocks_compression",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 283
+    },
+    {
+      "name": "PositiveBlocks.exists_compression_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 293
+    },
+    {
+      "name": "PositiveBlocks.compression_hs_product_le",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 314
+    },
+    {
+      "name": "PositiveBlocks.compression_hsNorm_product_le",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 320
+    },
+    {
+      "name": "PositiveBlocks.compression_hs_sum_le",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 327
+    },
+    {
+      "name": "PositiveBlocks.compression_hsNorm_sum_le",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Blocks.lean",
+      "line": 333
+    },
+    {
+      "name": "PositiveBlocks.gram_proportional_mul_conjTranspose",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Intrinsic.lean",
+      "line": 17
+    },
+    {
+      "name": "PositiveBlocks.gram_proportional_conjTranspose_mul",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Intrinsic.lean",
+      "line": 30
+    },
+    {
+      "name": "PositiveBlocks.gram_proportional_intertwine",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Intrinsic.lean",
+      "line": 43
+    },
+    {
+      "name": "PositiveBlocks.gram_proportional_intrinsic",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Intrinsic.lean",
+      "line": 55
+    },
+    {
+      "name": "PositiveBlocks.gram_product_eq_proportional",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Intrinsic.lean",
+      "line": 67
+    },
+    {
+      "name": "PositiveBlocks.gram_product_eq_intrinsic",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Intrinsic.lean",
+      "line": 78
+    },
+    {
+      "name": "PositiveBlocks.gram_product_normalized_deficit",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Intrinsic.lean",
+      "line": 91
+    },
+    {
+      "name": "PositiveBlocks.gram_product_eq_iff_mul_conjTranspose",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Intrinsic.lean",
+      "line": 118
+    },
+    {
+      "name": "PositiveBlocks.gram_product_eq_iff_intrinsic",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Intrinsic.lean",
+      "line": 139
+    },
+    {
+      "name": "PositiveBlocks.gram_sum_eq_iff_intrinsic",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Intrinsic.lean",
+      "line": 153
+    },
+    {
+      "name": "PositiveBlocks.block_hs_product_eq_iff_mul_conjTranspose",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Intrinsic.lean",
+      "line": 176
+    },
+    {
+      "name": "PositiveBlocks.block_hs_product_eq_iff_intrinsic",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Intrinsic.lean",
+      "line": 186
+    },
+    {
+      "name": "PositiveBlocks.block_hs_sum_eq_iff_intrinsic",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Intrinsic.lean",
+      "line": 198
+    },
+    {
+      "name": "PositiveBlocks.block_hs_product_normalized_deficit_of_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Intrinsic.lean",
+      "line": 207
+    },
+    {
+      "name": "PositiveBlocks.gram_normalized_product_deficit",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Corollaries.lean",
+      "line": 14
+    },
+    {
+      "name": "PositiveBlocks.hs_sum_deficit_decomposition",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Corollaries.lean",
+      "line": 26
+    },
+    {
+      "name": "PositiveBlocks.block_sum_eq_iff_product_eq_and_norms_eq",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Corollaries.lean",
+      "line": 35
+    },
+    {
+      "name": "PositiveBlocks.hsSq_single",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Sharpness.lean",
+      "line": 14
+    },
+    {
+      "name": "PositiveBlocks.single_sharp_block_posSemidef",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Sharpness.lean",
+      "line": 22
+    },
+    {
+      "name": "PositiveBlocks.exists_sharp_block",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Sharpness.lean",
+      "line": 32
+    },
+    {
+      "name": "PositiveBlocks.hsSq_isometry_mul",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 25
+    },
+    {
+      "name": "PositiveBlocks.hsSq_mul_isometry_conjTranspose",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 33
+    },
+    {
+      "name": "PositiveBlocks.hsSq_isometry_mul_mul_conjTranspose",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 43
+    },
+    {
+      "name": "PositiveBlocks.hsNorm_isometry_mul",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 49
+    },
+    {
+      "name": "PositiveBlocks.hsNorm_mul_isometry_conjTranspose",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 54
+    },
+    {
+      "name": "PositiveBlocks.hsNorm_isometry_mul_mul_conjTranspose",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 60
+    },
+    {
+      "name": "PositiveBlocks.normalForm_posSemidef",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 68
+    },
+    {
+      "name": "PositiveBlocks.normalForm_hsNorm_eq",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 82
+    },
+    {
+      "name": "PositiveBlocks.isometry_rank",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 94
+    },
+    {
+      "name": "PositiveBlocks.isometry_card_le",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 99
+    },
+    {
+      "name": "PositiveBlocks.rank_isometry_mul_mul_conjTranspose",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 105
+    },
+    {
+      "name": "PositiveBlocks.rank_congruence_of_leftInverse",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 122
+    },
+    {
+      "name": "PositiveBlocks.normalForm_block_rank",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 138
+    },
+    {
+      "name": "PositiveBlocks.normalForm_ranks",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 160
+    },
+    {
+      "name": "PositiveBlocks.HasCommonSupportNormalForm",
+      "kind": "def",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 186
+    },
+    {
+      "name": "PositiveBlocks.HasCommonSupportNormalForm.posSemidef_and_hsNorm_eq",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 195
+    },
+    {
+      "name": "PositiveBlocks.HasCommonSupportNormalForm.rank_eq",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 208
+    },
+    {
+      "name": "PositiveBlocks.HasCommonSupportNormalForm.exists_rank_witness",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 220
+    },
+    {
+      "name": "PositiveBlocks.HasCommonSupportNormalForm.ne_zero",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 236
+    },
+    {
+      "name": "PositiveBlocks.HasCommonSupportNormalForm.block_rank",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 249
+    },
+    {
+      "name": "PositiveBlocks.HasCommonSupportNormalForm.exists_normRatio_witness",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 261
+    },
+    {
+      "name": "PositiveBlocks.unitary_columns_isometry",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 286
+    },
+    {
+      "name": "PositiveBlocks.restrict_diagonal_support",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 296
+    },
+    {
+      "name": "PositiveBlocks.exists_posDef_compression",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 316
+    },
+    {
+      "name": "PositiveBlocks.exists_invSqrt",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 357
+    },
+    {
+      "name": "PositiveBlocks.projection_fixes_factor",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 368
+    },
+    {
+      "name": "PositiveBlocks.gramCompression_isometry",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 377
+    },
+    {
+      "name": "PositiveBlocks.gramCompression_cross",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 396
+    },
+    {
+      "name": "PositiveBlocks.hasCommonSupportNormalForm_of_gram_proportional",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 411
+    },
+    {
+      "name": "PositiveBlocks.gram_product_eq_iff_commonSupportNormalForm",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 461
+    },
+    {
+      "name": "PositiveBlocks.gram_product_eq_iff_zero_or_commonSupportNormalForm",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 482
+    },
+    {
+      "name": "PositiveBlocks.gram_product_eq_rank_eq",
+      "kind": "theorem",
+      "source": "PositiveBlocks/NormalForm.lean",
+      "line": 496
+    },
+    {
+      "name": "PositiveBlocks.block_hs_product_eq_iff_commonSupportNormalForm",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Classification.lean",
+      "line": 20
+    },
+    {
+      "name": "PositiveBlocks.block_hsNorm_product_eq_iff_commonSupportNormalForm",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Classification.lean",
+      "line": 32
+    },
+    {
+      "name": "PositiveBlocks.block_hs_product_eq_iff_zero_or_commonSupportNormalForm",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Classification.lean",
+      "line": 42
+    },
+    {
+      "name": "PositiveBlocks.block_hsNorm_product_eq_iff_zero_or_commonSupportNormalForm",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Classification.lean",
+      "line": 54
+    },
+    {
+      "name": "PositiveBlocks.block_hs_product_eq_ranks",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Classification.lean",
+      "line": 64
+    },
+    {
+      "name": "PositiveBlocks.block_hsNorm_product_eq_ranks",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Classification.lean",
+      "line": 74
+    },
+    {
+      "name": "PositiveBlocks.block_hsNorm_product_eq_exists_bounded_normalForm",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Classification.lean",
+      "line": 85
+    },
+    {
+      "name": "PositiveBlocks.Examples.scalarOne",
+      "kind": "def",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 16
+    },
+    {
+      "name": "PositiveBlocks.Examples.scalarPhase",
+      "kind": "def",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 18
+    },
+    {
+      "name": "PositiveBlocks.Examples.scalar_sharp_values",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 20
+    },
+    {
+      "name": "PositiveBlocks.Examples.scalar_complex_value",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 26
+    },
+    {
+      "name": "PositiveBlocks.Examples.scalarOne_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 29
+    },
+    {
+      "name": "PositiveBlocks.Examples.scalar_sharp_positive",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 35
+    },
+    {
+      "name": "PositiveBlocks.Examples.product_coefficient_ge_one",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 40
+    },
+    {
+      "name": "PositiveBlocks.Examples.sum_coefficient_le_two",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 48
+    },
+    {
+      "name": "PositiveBlocks.Examples.rectangularX",
+      "kind": "def",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 56
+    },
+    {
+      "name": "PositiveBlocks.Examples.rectangularY",
+      "kind": "def",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 58
+    },
+    {
+      "name": "PositiveBlocks.Examples.rectangularA",
+      "kind": "def",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 61
+    },
+    {
+      "name": "PositiveBlocks.Examples.rectangularB",
+      "kind": "def",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 63
+    },
+    {
+      "name": "PositiveBlocks.Examples.rectangularC",
+      "kind": "def",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 66
+    },
+    {
+      "name": "PositiveBlocks.Examples.rectangular_gram",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 69
+    },
+    {
+      "name": "PositiveBlocks.Examples.rectangular_positive",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 91
+    },
+    {
+      "name": "PositiveBlocks.Examples.rectangular_squared_norms",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 97
+    },
+    {
+      "name": "PositiveBlocks.Examples.rectangular_sum_and_product_equality",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 102
+    },
+    {
+      "name": "PositiveBlocks.Examples.zero_rectangular",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 112
+    },
+    {
+      "name": "PositiveBlocks.Examples.empty_columns",
+      "kind": "theorem",
+      "source": "PositiveBlocks/Examples.lean",
+      "line": 114
+    }
+  ],
+  "compilation": [
+    {
+      "command": [
+        "lean",
+        "-o",
+        "reviews/lean-cache/PositiveBlocks/Basic.olean",
+        "PositiveBlocks/Basic.lean"
+      ],
+      "exit_code": 0,
+      "log": "reviews/compile-PositiveBlocks-Basic.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "reviews/lean-cache/PositiveBlocks/Gram.olean",
+        "PositiveBlocks/Gram.lean"
+      ],
+      "exit_code": 0,
+      "log": "reviews/compile-PositiveBlocks-Gram.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "reviews/lean-cache/PositiveBlocks/Blocks.olean",
+        "PositiveBlocks/Blocks.lean"
+      ],
+      "exit_code": 0,
+      "log": "reviews/compile-PositiveBlocks-Blocks.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "reviews/lean-cache/PositiveBlocks/Intrinsic.olean",
+        "PositiveBlocks/Intrinsic.lean"
+      ],
+      "exit_code": 0,
+      "log": "reviews/compile-PositiveBlocks-Intrinsic.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "reviews/lean-cache/PositiveBlocks/Corollaries.olean",
+        "PositiveBlocks/Corollaries.lean"
+      ],
+      "exit_code": 0,
+      "log": "reviews/compile-PositiveBlocks-Corollaries.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "reviews/lean-cache/PositiveBlocks/Sharpness.olean",
+        "PositiveBlocks/Sharpness.lean"
+      ],
+      "exit_code": 0,
+      "log": "reviews/compile-PositiveBlocks-Sharpness.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "reviews/lean-cache/PositiveBlocks/NormalForm.olean",
+        "PositiveBlocks/NormalForm.lean"
+      ],
+      "exit_code": 0,
+      "log": "reviews/compile-PositiveBlocks-NormalForm.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "reviews/lean-cache/PositiveBlocks/Classification.olean",
+        "PositiveBlocks/Classification.lean"
+      ],
+      "exit_code": 0,
+      "log": "reviews/compile-PositiveBlocks-Classification.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "reviews/lean-cache/PositiveBlocks/Examples.olean",
+        "PositiveBlocks/Examples.lean"
+      ],
+      "exit_code": 0,
+      "log": "reviews/compile-PositiveBlocks-Examples.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "lean",
+        "-o",
+        "reviews/lean-cache/PositiveBlocks.olean",
+        "PositiveBlocks.lean"
+      ],
+      "exit_code": 0,
+      "log": "reviews/compile-PositiveBlocks.lean.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "declaration_audit": {
+    "command": [
+      "lean",
+      "reviews/DeclarationAudit.lean"
+    ],
+    "exit_code": 0,
+    "log": "reviews/declaration-audit.log",
+    "bytes": 136050,
+    "sha256": "1f3bcb4ce1c32c299cdb83a04484a29c934593614098514eaca1c91614ca795b"
+  },
+  "fresh_review_cache": "reviews/lean-cache",
+  "method": "Each production module compiled directly from source in dependency order; own imports resolved first against independently compiled review OLeans. Mathlib uses the supplied pinned build cache."
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "publication-integrity-regression-v1",
+  "checked_utc": "2026-10-11T04:36:53.397821+00:00",
+  "checker_sha256": "135795e20c86252c2e10afeb6f38108f2fca771634bcc95d170271e6765a9d95",
+  "tests": [
+    {
+      "case": "complete extracted snapshot without Git",
+      "expected": "pass",
+      "observed_exit": 0,
+      "matched_expectation": true
+    },
+    {
+      "case": "unexpected guide file",
+      "expected": "reject",
+      "observed_exit": 1,
+      "matched_expectation": true
+    },
+    {
+      "case": "missing finite-field audit source",
+      "expected": "reject",
+      "observed_exit": 1,
+      "matched_expectation": true
+    },
+    {
+      "case": "changed positive-block proof bytes",
+      "expected": "reject",
+      "observed_exit": 1,
+      "matched_expectation": true
+    },
+    {
+      "case": "changed original tangent proof bytes",
+      "expected": "reject",
+      "observed_exit": 1,
+      "matched_expectation": true
+    },
+    {
+      "case": "unexpected symlink directory",
+      "expected": "reject",
+      "observed_exit": 1,
+      "matched_expectation": true
+    },
+    {
+      "case": "restored complete snapshot",
+      "expected": "pass",
+      "observed_exit": 0,
+      "matched_expectation": true
+    }
+  ],
+  "scope": "Integrity rejection tests on a disposable extracted snapshot; no production proof mutation or Lean compilation."
+}

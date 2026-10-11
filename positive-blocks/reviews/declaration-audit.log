@@ -1,0 +1,1933 @@
+@PositiveBlocks.hsSq.{u_1,
+    u_2} : {m : Type u_1} →
+  {n : Type u_2} → [Fintype.{u_1} m] → [Fintype.{u_2} n] → Matrix.{u_1, u_2, 0} m n Complex → Real
+'PositiveBlocks.hsSq' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsNorm.{u_1,
+    u_2} : {m : Type u_1} →
+  {n : Type u_2} → [Fintype.{u_1} m] → [Fintype.{u_2} n] → Matrix.{u_1, u_2, 0} m n Complex → Real
+'PositiveBlocks.hsNorm' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsInner.{u_1,
+    u_2} : {m : Type u_1} →
+  {n : Type u_2} →
+    [Fintype.{u_1} m] → [Fintype.{u_2} n] → Matrix.{u_1, u_2, 0} m n Complex → Matrix.{u_1, u_2, 0} m n Complex → Real
+'PositiveBlocks.hsInner' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsSq_eq_sum.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  (M : Matrix.{u_1, u_2, 0} m n Complex), Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} M) (∑ i, ∑ j, Complex.normSq (M i j))
+'PositiveBlocks.hsSq_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsSq_nonneg.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  (M : Matrix.{u_1, u_2, 0} m n Complex), LE.le.{0} 0 (PositiveBlocks.hsSq.{u_1, u_2} M)
+'PositiveBlocks.hsSq_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsSq_zero.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n],
+  Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} 0) 0
+'PositiveBlocks.hsSq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsSq_eq_zero_iff.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  (M : Matrix.{u_1, u_2, 0} m n Complex),
+  Iff (Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} M) 0) (Eq.{max (u_1 + 1) (u_2 + 1)} M 0)
+'PositiveBlocks.hsSq_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsNorm_nonneg.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  (M : Matrix.{u_1, u_2, 0} m n Complex), LE.le.{0} 0 (PositiveBlocks.hsNorm.{u_1, u_2} M)
+'PositiveBlocks.hsNorm_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsNorm_sq.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  (M : Matrix.{u_1, u_2, 0} m n Complex),
+  Eq.{1} (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_2} M) 2) (PositiveBlocks.hsSq.{u_1, u_2} M)
+'PositiveBlocks.hsNorm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsNorm_zero.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n],
+  Eq.{1} (PositiveBlocks.hsNorm.{u_1, u_2} 0) 0
+'PositiveBlocks.hsNorm_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsNorm_eq_zero_iff.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  (M : Matrix.{u_1, u_2, 0} m n Complex),
+  Iff (Eq.{1} (PositiveBlocks.hsNorm.{u_1, u_2} M) 0) (Eq.{max (u_1 + 1) (u_2 + 1)} M 0)
+'PositiveBlocks.hsNorm_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsInner_self.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  (P : Matrix.{u_1, u_2, 0} m n Complex),
+  Eq.{1} (PositiveBlocks.hsInner.{u_1, u_2} P P) (PositiveBlocks.hsSq.{u_1, u_2} P)
+'PositiveBlocks.hsInner_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsInner_comm.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  (P Q : Matrix.{u_1, u_2, 0} m n Complex),
+  Eq.{1} (PositiveBlocks.hsInner.{u_1, u_2} P Q) (PositiveBlocks.hsInner.{u_1, u_2} Q P)
+'PositiveBlocks.hsInner_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsInner_sub_left.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  (P Q R : Matrix.{u_1, u_2, 0} m n Complex),
+  Eq.{1} (PositiveBlocks.hsInner.{u_1, u_2} (HSub.hSub.{max u_1 u_2, max u_1 u_2, max u_1 u_2} P Q) R)
+    (HSub.hSub.{0, 0, 0} (PositiveBlocks.hsInner.{u_1, u_2} P R) (PositiveBlocks.hsInner.{u_1, u_2} Q R))
+'PositiveBlocks.hsInner_sub_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsInner_sub_right.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  (P Q R : Matrix.{u_1, u_2, 0} m n Complex),
+  Eq.{1} (PositiveBlocks.hsInner.{u_1, u_2} P (HSub.hSub.{max u_1 u_2, max u_1 u_2, max u_1 u_2} Q R))
+    (HSub.hSub.{0, 0, 0} (PositiveBlocks.hsInner.{u_1, u_2} P Q) (PositiveBlocks.hsInner.{u_1, u_2} P R))
+'PositiveBlocks.hsInner_sub_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsInner_real_smul_left.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n] (s : Real)
+  (P Q : Matrix.{u_1, u_2, 0} m n Complex),
+  Eq.{1} (PositiveBlocks.hsInner.{u_1, u_2} (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} s P) Q)
+    (HMul.hMul.{0, 0, 0} s (PositiveBlocks.hsInner.{u_1, u_2} P Q))
+'PositiveBlocks.hsInner_real_smul_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsInner_real_smul_right.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n] (s : Real)
+  (P Q : Matrix.{u_1, u_2, 0} m n Complex),
+  Eq.{1} (PositiveBlocks.hsInner.{u_1, u_2} P (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} s Q))
+    (HMul.hMul.{0, 0, 0} s (PositiveBlocks.hsInner.{u_1, u_2} P Q))
+'PositiveBlocks.hsInner_real_smul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsSq_real_smul.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n] (s : Real)
+  (M : Matrix.{u_1, u_2, 0} m n Complex),
+  Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} s M))
+    (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} s 2) (PositiveBlocks.hsSq.{u_1, u_2} M))
+'PositiveBlocks.hsSq_real_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsNorm_real_smul.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n] (s : Real)
+  (M : Matrix.{u_1, u_2, 0} m n Complex),
+  Eq.{1} (PositiveBlocks.hsNorm.{u_1, u_2} (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} s M))
+    (HMul.hMul.{0, 0, 0} (abs.{0} s) (PositiveBlocks.hsNorm.{u_1, u_2} M))
+'PositiveBlocks.hsNorm_real_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsSq_sub.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  (P Q : Matrix.{u_1, u_2, 0} m n Complex),
+  Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} (HSub.hSub.{max u_1 u_2, max u_1 u_2, max u_1 u_2} P Q))
+    (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (PositiveBlocks.hsSq.{u_1, u_2} P) (PositiveBlocks.hsSq.{u_1, u_2} Q))
+      (HMul.hMul.{0, 0, 0} 2 (PositiveBlocks.hsInner.{u_1, u_2} P Q)))
+'PositiveBlocks.hsSq_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsSq_weighted_sub.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n] (s t : Real)
+  (P Q : Matrix.{u_1, u_2, 0} m n Complex),
+  Eq.{1}
+    (PositiveBlocks.hsSq.{u_1, u_2}
+      (HSub.hSub.{max u_1 u_2, max u_1 u_2, max u_1 u_2} (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} s P)
+        (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} t Q)))
+    (HSub.hSub.{0, 0, 0}
+      (HAdd.hAdd.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} s 2) (PositiveBlocks.hsSq.{u_1, u_2} P))
+        (HMul.hMul.{0, 0, 0} (HPow.hPow.{0, 0, 0} t 2) (PositiveBlocks.hsSq.{u_1, u_2} Q)))
+      (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 s) t) (PositiveBlocks.hsInner.{u_1, u_2} P Q)))
+'PositiveBlocks.hsSq_weighted_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsSq_swap_gram.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  (X : Matrix.{u_1, u_2, 0} m n Complex),
+  Eq.{1}
+    (PositiveBlocks.hsSq.{u_2, u_2}
+      (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+    (PositiveBlocks.hsSq.{u_1, u_1}
+      (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} X (Matrix.conjTranspose.{0, u_1, u_2} X)))
+'PositiveBlocks.hsSq_swap_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsInner_gram.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} r] (X : Matrix.{u_3, u_1, 0} r m Complex) (Y : Matrix.{u_3, u_2, 0} r n Complex),
+  Eq.{1}
+    (PositiveBlocks.hsInner.{u_3, u_3}
+      (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} X (Matrix.conjTranspose.{0, u_3, u_1} X))
+      (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} Y (Matrix.conjTranspose.{0, u_3, u_2} Y)))
+    (PositiveBlocks.hsSq.{u_1, u_2}
+      (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y))
+'PositiveBlocks.hsInner_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsNorm_eq_frobenius.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  (M : Matrix.{u_1, u_2, 0} m n Complex), Eq.{1} (PositiveBlocks.hsNorm.{u_1, u_2} M) (norm.{max u_1 u_2} M)
+'PositiveBlocks.hsNorm_eq_frobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_eq_zero_iff.{u_1,
+    u_2} : ∀ {r : Type u_1} {m : Type u_2} [inst : Fintype.{u_1} r] (X : Matrix.{u_1, u_2, 0} r m Complex),
+  Iff (Eq.{u_2 + 1} (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X) 0)
+    (Eq.{max (u_1 + 1) (u_2 + 1)} X 0)
+'PositiveBlocks.gram_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_hsNorm_eq_zero_iff.{u_1,
+    u_2} : ∀ {r : Type u_1} {m : Type u_2} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  (X : Matrix.{u_1, u_2, 0} r m Complex),
+  Iff
+    (Eq.{1}
+      (PositiveBlocks.hsNorm.{u_2, u_2}
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+      0)
+    (Eq.{max (u_1 + 1) (u_2 + 1)} X 0)
+'PositiveBlocks.gram_hsNorm_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_hsSq_eq_zero_iff.{u_1,
+    u_2} : ∀ {r : Type u_1} {m : Type u_2} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  (X : Matrix.{u_1, u_2, 0} r m Complex),
+  Iff
+    (Eq.{1}
+      (PositiveBlocks.hsSq.{u_2, u_2}
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+      0)
+    (Eq.{max (u_1 + 1) (u_2 + 1)} X 0)
+'PositiveBlocks.gram_hsSq_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_sum_gap.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex),
+  Eq.{1}
+    (HSub.hSub.{0, 0, 0}
+      (HAdd.hAdd.{0, 0, 0}
+        (PositiveBlocks.hsSq.{u_2, u_2}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+        (PositiveBlocks.hsSq.{u_3, u_3}
+          (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)))
+      (HMul.hMul.{0, 0, 0} 2
+        (PositiveBlocks.hsSq.{u_2, u_3}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))))
+    (PositiveBlocks.hsSq.{u_1, u_1}
+      (HSub.hSub.{u_1, u_1, u_1} (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} X (Matrix.conjTranspose.{0, u_1, u_2} X))
+        (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} Y (Matrix.conjTranspose.{0, u_1, u_3} Y))))
+'PositiveBlocks.gram_sum_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_sum_le.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex),
+  LE.le.{0}
+    (HMul.hMul.{0, 0, 0} 2
+      (PositiveBlocks.hsSq.{u_2, u_3}
+        (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))
+    (HAdd.hAdd.{0, 0, 0}
+      (PositiveBlocks.hsSq.{u_2, u_2}
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+      (PositiveBlocks.hsSq.{u_3, u_3}
+        (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)))
+'PositiveBlocks.gram_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_sum_eq_iff.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex),
+  Iff
+    (Eq.{1}
+      (HMul.hMul.{0, 0, 0} 2
+        (PositiveBlocks.hsSq.{u_2, u_3}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))
+      (HAdd.hAdd.{0, 0, 0}
+        (PositiveBlocks.hsSq.{u_2, u_2}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+        (PositiveBlocks.hsSq.{u_3, u_3}
+          (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))))
+    (Eq.{u_1 + 1} (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} X (Matrix.conjTranspose.{0, u_1, u_2} X))
+      (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} Y (Matrix.conjTranspose.{0, u_1, u_3} Y)))
+'PositiveBlocks.gram_sum_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_product_deficit.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex),
+  Eq.{1}
+    (PositiveBlocks.hsSq.{u_1, u_1}
+      (HSub.hSub.{u_1, u_1, u_1}
+        (HSMul.hSMul.{0, u_1, u_1}
+          (PositiveBlocks.hsNorm.{u_3, u_3}
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+          (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} X (Matrix.conjTranspose.{0, u_1, u_2} X)))
+        (HSMul.hSMul.{0, u_1, u_1}
+          (PositiveBlocks.hsNorm.{u_2, u_2}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+          (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} Y (Matrix.conjTranspose.{0, u_1, u_3} Y)))))
+    (HMul.hMul.{0, 0, 0}
+      (HMul.hMul.{0, 0, 0}
+        (HMul.hMul.{0, 0, 0} 2
+          (PositiveBlocks.hsNorm.{u_2, u_2}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)))
+        (PositiveBlocks.hsNorm.{u_3, u_3}
+          (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)))
+      (HSub.hSub.{0, 0, 0}
+        (HMul.hMul.{0, 0, 0}
+          (PositiveBlocks.hsNorm.{u_2, u_2}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+          (PositiveBlocks.hsNorm.{u_3, u_3}
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)))
+        (PositiveBlocks.hsSq.{u_2, u_3}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))))
+'PositiveBlocks.gram_product_deficit' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_product_le.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex),
+  LE.le.{0}
+    (PositiveBlocks.hsSq.{u_2, u_3}
+      (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))
+    (HMul.hMul.{0, 0, 0}
+      (PositiveBlocks.hsNorm.{u_2, u_2}
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+      (PositiveBlocks.hsNorm.{u_3, u_3}
+        (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)))
+'PositiveBlocks.gram_product_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_product_eq_iff.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex),
+  Iff
+    (Eq.{1}
+      (PositiveBlocks.hsSq.{u_2, u_3}
+        (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))
+      (HMul.hMul.{0, 0, 0}
+        (PositiveBlocks.hsNorm.{u_2, u_2}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+        (PositiveBlocks.hsNorm.{u_3, u_3}
+          (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))))
+    (Eq.{u_1 + 1}
+      (HSMul.hSMul.{0, u_1, u_1}
+        (PositiveBlocks.hsNorm.{u_3, u_3}
+          (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} X (Matrix.conjTranspose.{0, u_1, u_2} X)))
+      (HSMul.hSMul.{0, u_1, u_1}
+        (PositiveBlocks.hsNorm.{u_2, u_2}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+        (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} Y (Matrix.conjTranspose.{0, u_1, u_3} Y))))
+'PositiveBlocks.gram_product_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_product_eq_iff_normalized.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex),
+  LT.lt.{0} 0
+      (PositiveBlocks.hsNorm.{u_2, u_2}
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)) →
+    LT.lt.{0} 0
+        (PositiveBlocks.hsNorm.{u_3, u_3}
+          (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)) →
+      Iff
+        (Eq.{1}
+          (PositiveBlocks.hsSq.{u_2, u_3}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))
+          (HMul.hMul.{0, 0, 0}
+            (PositiveBlocks.hsNorm.{u_2, u_2}
+              (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+            (PositiveBlocks.hsNorm.{u_3, u_3}
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))))
+        (Eq.{u_1 + 1}
+          (HSMul.hSMul.{0, u_1, u_1}
+            (HDiv.hDiv.{0, 0, 0} 1
+              (PositiveBlocks.hsNorm.{u_2, u_2}
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)))
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} X (Matrix.conjTranspose.{0, u_1, u_2} X)))
+          (HSMul.hSMul.{0, u_1, u_1}
+            (HDiv.hDiv.{0, 0, 0} 1
+              (PositiveBlocks.hsNorm.{u_3, u_3}
+                (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)))
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} Y (Matrix.conjTranspose.{0, u_1, u_3} Y))))
+'PositiveBlocks.gram_product_eq_iff_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.fromBlocks_gram.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_3} r]
+  (X : Matrix.{u_3, u_1, 0} r m Complex) (Y : Matrix.{u_3, u_2, 0} r n Complex),
+  Eq.{max (u_1 + 1) (u_2 + 1)}
+    (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0}
+      (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X)
+      (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y)
+      (Matrix.conjTranspose.{0, u_1, u_2}
+        (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y))
+      (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y))
+    (HMul.hMul.{max (max u_1 u_2) u_3, max (max u_1 u_2) u_3, max u_1 u_2}
+      (Matrix.conjTranspose.{0, u_3, max u_2 u_1} (Matrix.fromCols.{0, u_3, u_1, u_2} X Y))
+      (Matrix.fromCols.{0, u_3, u_1, u_2} X Y))
+'PositiveBlocks.fromBlocks_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.posSemidef_fromBlocks_gram.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} r] (X : Matrix.{u_3, u_1, 0} r m Complex) (Y : Matrix.{u_3, u_2, 0} r n Complex),
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+    (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0}
+      (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X)
+      (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y)
+      (Matrix.conjTranspose.{0, u_1, u_2}
+        (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y))
+      (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y))
+'PositiveBlocks.posSemidef_fromBlocks_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.exists_gram_of_posSemidef_fromBlocks.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    ∃ X Y,
+      And (Eq.{u_1 + 1} A (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X) X))
+        (And
+          (Eq.{max (u_1 + 1) (u_2 + 1)} B
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X) Y))
+          (Eq.{u_2 + 1} C (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, max u_1 u_2, u_2} Y) Y)))
+'PositiveBlocks.exists_gram_of_posSemidef_fromBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.posSemidef_fromBlocks_iff_exists_gram.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  (A : Matrix.{u_1, u_1, 0} m m Complex) (B : Matrix.{u_1, u_2, 0} m n Complex) (C : Matrix.{u_2, u_2, 0} n n Complex),
+  Iff
+    (Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C))
+    (∃ X Y,
+      And (Eq.{u_1 + 1} A (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X) X))
+        (And
+          (Eq.{max (u_1 + 1) (u_2 + 1)} B
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X) Y))
+          (Eq.{u_2 + 1} C
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, max u_1 u_2, u_2} Y) Y))))
+'PositiveBlocks.posSemidef_fromBlocks_iff_exists_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_offdiag_eq_zero_of_left_eq_zero.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    Eq.{u_1 + 1} A 0 → Eq.{max (u_1 + 1) (u_2 + 1)} B 0
+'PositiveBlocks.block_offdiag_eq_zero_of_left_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_offdiag_eq_zero_of_right_eq_zero.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    Eq.{u_2 + 1} C 0 → Eq.{max (u_1 + 1) (u_2 + 1)} B 0
+'PositiveBlocks.block_offdiag_eq_zero_of_right_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hs_product_le.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    LE.le.{0} (PositiveBlocks.hsSq.{u_1, u_2} B)
+      (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C))
+'PositiveBlocks.block_hs_product_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hs_sum_le.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    LE.le.{0} (HMul.hMul.{0, 0, 0} 2 (PositiveBlocks.hsSq.{u_1, u_2} B))
+      (HAdd.hAdd.{0, 0, 0} (PositiveBlocks.hsSq.{u_1, u_1} A) (PositiveBlocks.hsSq.{u_2, u_2} C))
+'PositiveBlocks.block_hs_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hsNorm_product_le.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    LE.le.{0} (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_2} B) 2)
+      (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C))
+'PositiveBlocks.block_hsNorm_product_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hsNorm_sum_le.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    LE.le.{0} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_2} B) 2))
+      (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) 2)
+        (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_2, u_2} C) 2))
+'PositiveBlocks.block_hsNorm_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hs_sum_gap_of_gram.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} r] {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex}
+  {C : Matrix.{u_2, u_2, 0} n n Complex} (X : Matrix.{u_3, u_1, 0} r m Complex) (Y : Matrix.{u_3, u_2, 0} r n Complex),
+  Eq.{u_1 + 1} A (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X) →
+    Eq.{max (u_1 + 1) (u_2 + 1)} B
+        (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y) →
+      Eq.{u_2 + 1} C (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y) →
+        Eq.{1}
+          (HSub.hSub.{0, 0, 0}
+            (HAdd.hAdd.{0, 0, 0} (PositiveBlocks.hsSq.{u_1, u_1} A) (PositiveBlocks.hsSq.{u_2, u_2} C))
+            (HMul.hMul.{0, 0, 0} 2 (PositiveBlocks.hsSq.{u_1, u_2} B)))
+          (PositiveBlocks.hsSq.{u_3, u_3}
+            (HSub.hSub.{u_3, u_3, u_3}
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} X (Matrix.conjTranspose.{0, u_3, u_1} X))
+              (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} Y (Matrix.conjTranspose.{0, u_3, u_2} Y))))
+'PositiveBlocks.block_hs_sum_gap_of_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hsNorm_sum_gap_of_gram.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} r] {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex}
+  {C : Matrix.{u_2, u_2, 0} n n Complex} (X : Matrix.{u_3, u_1, 0} r m Complex) (Y : Matrix.{u_3, u_2, 0} r n Complex),
+  Eq.{u_1 + 1} A (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X) →
+    Eq.{max (u_1 + 1) (u_2 + 1)} B
+        (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y) →
+      Eq.{u_2 + 1} C (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y) →
+        Eq.{1}
+          (HSub.hSub.{0, 0, 0}
+            (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) 2)
+              (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_2, u_2} C) 2))
+            (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_2} B) 2)))
+          (HPow.hPow.{0, 0, 0}
+            (PositiveBlocks.hsNorm.{u_3, u_3}
+              (HSub.hSub.{u_3, u_3, u_3}
+                (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} X (Matrix.conjTranspose.{0, u_3, u_1} X))
+                (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} Y (Matrix.conjTranspose.{0, u_3, u_2} Y))))
+            2)
+'PositiveBlocks.block_hsNorm_sum_gap_of_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hs_product_deficit_of_gram.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} r] {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex}
+  {C : Matrix.{u_2, u_2, 0} n n Complex} (X : Matrix.{u_3, u_1, 0} r m Complex) (Y : Matrix.{u_3, u_2, 0} r n Complex),
+  Eq.{u_1 + 1} A (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X) →
+    Eq.{max (u_1 + 1) (u_2 + 1)} B
+        (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y) →
+      Eq.{u_2 + 1} C (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y) →
+        Eq.{1}
+          (PositiveBlocks.hsSq.{u_3, u_3}
+            (HSub.hSub.{u_3, u_3, u_3}
+              (HSMul.hSMul.{0, u_3, u_3} (PositiveBlocks.hsNorm.{u_2, u_2} C)
+                (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} X (Matrix.conjTranspose.{0, u_3, u_1} X)))
+              (HSMul.hSMul.{0, u_3, u_3} (PositiveBlocks.hsNorm.{u_1, u_1} A)
+                (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} Y (Matrix.conjTranspose.{0, u_3, u_2} Y)))))
+          (HMul.hMul.{0, 0, 0}
+            (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (PositiveBlocks.hsNorm.{u_1, u_1} A))
+              (PositiveBlocks.hsNorm.{u_2, u_2} C))
+            (HSub.hSub.{0, 0, 0}
+              (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C))
+              (PositiveBlocks.hsSq.{u_1, u_2} B)))
+'PositiveBlocks.block_hs_product_deficit_of_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hs_sum_eq_iff_of_gram.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} r] {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex}
+  {C : Matrix.{u_2, u_2, 0} n n Complex} (X : Matrix.{u_3, u_1, 0} r m Complex) (Y : Matrix.{u_3, u_2, 0} r n Complex),
+  Eq.{u_1 + 1} A (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X) →
+    Eq.{max (u_1 + 1) (u_2 + 1)} B
+        (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y) →
+      Eq.{u_2 + 1} C (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y) →
+        Iff
+          (Eq.{1} (HMul.hMul.{0, 0, 0} 2 (PositiveBlocks.hsSq.{u_1, u_2} B))
+            (HAdd.hAdd.{0, 0, 0} (PositiveBlocks.hsSq.{u_1, u_1} A) (PositiveBlocks.hsSq.{u_2, u_2} C)))
+          (Eq.{u_3 + 1} (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} X (Matrix.conjTranspose.{0, u_3, u_1} X))
+            (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} Y (Matrix.conjTranspose.{0, u_3, u_2} Y)))
+'PositiveBlocks.block_hs_sum_eq_iff_of_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hs_product_eq_iff_of_gram.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} r] {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex}
+  {C : Matrix.{u_2, u_2, 0} n n Complex} (X : Matrix.{u_3, u_1, 0} r m Complex) (Y : Matrix.{u_3, u_2, 0} r n Complex),
+  Eq.{u_1 + 1} A (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X) →
+    Eq.{max (u_1 + 1) (u_2 + 1)} B
+        (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y) →
+      Eq.{u_2 + 1} C (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y) →
+        Iff
+          (Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} B)
+            (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)))
+          (Eq.{u_3 + 1}
+            (HSMul.hSMul.{0, u_3, u_3} (PositiveBlocks.hsNorm.{u_2, u_2} C)
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} X (Matrix.conjTranspose.{0, u_3, u_1} X)))
+            (HSMul.hSMul.{0, u_3, u_3} (PositiveBlocks.hsNorm.{u_1, u_1} A)
+              (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} Y (Matrix.conjTranspose.{0, u_3, u_2} Y))))
+'PositiveBlocks.block_hs_product_eq_iff_of_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hsNorm_product_eq_iff_of_gram.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} r] {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex}
+  {C : Matrix.{u_2, u_2, 0} n n Complex} (X : Matrix.{u_3, u_1, 0} r m Complex) (Y : Matrix.{u_3, u_2, 0} r n Complex),
+  Eq.{u_1 + 1} A (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X) →
+    Eq.{max (u_1 + 1) (u_2 + 1)} B
+        (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y) →
+      Eq.{u_2 + 1} C (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y) →
+        Iff
+          (Eq.{1} (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_2} B) 2)
+            (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)))
+          (Eq.{u_3 + 1}
+            (HSMul.hSMul.{0, u_3, u_3} (PositiveBlocks.hsNorm.{u_2, u_2} C)
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} X (Matrix.conjTranspose.{0, u_3, u_1} X)))
+            (HSMul.hSMul.{0, u_3, u_3} (PositiveBlocks.hsNorm.{u_1, u_1} A)
+              (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} Y (Matrix.conjTranspose.{0, u_3, u_2} Y))))
+'PositiveBlocks.block_hsNorm_product_eq_iff_of_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hsNorm_sum_eq_iff_of_gram.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} r] {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex}
+  {C : Matrix.{u_2, u_2, 0} n n Complex} (X : Matrix.{u_3, u_1, 0} r m Complex) (Y : Matrix.{u_3, u_2, 0} r n Complex),
+  Eq.{u_1 + 1} A (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X) →
+    Eq.{max (u_1 + 1) (u_2 + 1)} B
+        (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y) →
+      Eq.{u_2 + 1} C (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y) →
+        Iff
+          (Eq.{1} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_2} B) 2))
+            (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) 2)
+              (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_2, u_2} C) 2)))
+          (Eq.{u_3 + 1} (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} X (Matrix.conjTranspose.{0, u_3, u_1} X))
+            (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} Y (Matrix.conjTranspose.{0, u_3, u_2} Y)))
+'PositiveBlocks.block_hsNorm_sum_eq_iff_of_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hs_product_eq_iff_normalized_of_gram.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} r] {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex}
+  {C : Matrix.{u_2, u_2, 0} n n Complex} (X : Matrix.{u_3, u_1, 0} r m Complex) (Y : Matrix.{u_3, u_2, 0} r n Complex),
+  Eq.{u_1 + 1} A (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X) →
+    Eq.{max (u_1 + 1) (u_2 + 1)} B
+        (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y) →
+      Eq.{u_2 + 1} C (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y) →
+        LT.lt.{0} 0 (PositiveBlocks.hsNorm.{u_1, u_1} A) →
+          LT.lt.{0} 0 (PositiveBlocks.hsNorm.{u_2, u_2} C) →
+            Iff
+              (Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} B)
+                (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)))
+              (Eq.{u_3 + 1}
+                (HSMul.hSMul.{0, u_3, u_3} (HDiv.hDiv.{0, 0, 0} 1 (PositiveBlocks.hsNorm.{u_1, u_1} A))
+                  (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} X (Matrix.conjTranspose.{0, u_3, u_1} X)))
+                (HSMul.hSMul.{0, u_3, u_3} (HDiv.hDiv.{0, 0, 0} 1 (PositiveBlocks.hsNorm.{u_2, u_2} C))
+                  (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} Y (Matrix.conjTranspose.{0, u_3, u_2} Y))))
+'PositiveBlocks.block_hs_product_eq_iff_normalized_of_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hs_sum_gap_exists.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    ∃ X Y,
+      And (Eq.{u_1 + 1} A (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X) X))
+        (And
+          (Eq.{max (u_1 + 1) (u_2 + 1)} B
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X) Y))
+          (And
+            (Eq.{u_2 + 1} C
+              (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, max u_1 u_2, u_2} Y) Y))
+            (Eq.{1}
+              (HSub.hSub.{0, 0, 0}
+                (HAdd.hAdd.{0, 0, 0} (PositiveBlocks.hsSq.{u_1, u_1} A) (PositiveBlocks.hsSq.{u_2, u_2} C))
+                (HMul.hMul.{0, 0, 0} 2 (PositiveBlocks.hsSq.{u_1, u_2} B)))
+              (PositiveBlocks.hsSq.{max u_1 u_2, max u_1 u_2}
+                (HSub.hSub.{max u_1 u_2, max u_1 u_2, max u_1 u_2}
+                  (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} X (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X))
+                  (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} Y
+                    (Matrix.conjTranspose.{0, max u_1 u_2, u_2} Y)))))))
+'PositiveBlocks.block_hs_sum_gap_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hs_sum_eq_iff_exists_gram.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    Iff
+      (Eq.{1} (HMul.hMul.{0, 0, 0} 2 (PositiveBlocks.hsSq.{u_1, u_2} B))
+        (HAdd.hAdd.{0, 0, 0} (PositiveBlocks.hsSq.{u_1, u_1} A) (PositiveBlocks.hsSq.{u_2, u_2} C)))
+      (∃ X Y,
+        And
+          (Eq.{u_1 + 1} A (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X) X))
+          (And
+            (Eq.{max (u_1 + 1) (u_2 + 1)} B
+              (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X) Y))
+            (And
+              (Eq.{u_2 + 1} C
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, max u_1 u_2, u_2} Y) Y))
+              (Eq.{max (u_1 + 1) (u_2 + 1)}
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} X (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X))
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} Y (Matrix.conjTranspose.{0, max u_1 u_2, u_2} Y))))))
+'PositiveBlocks.block_hs_sum_eq_iff_exists_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hs_product_eq_iff_exists_gram.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    Iff
+      (Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} B)
+        (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)))
+      (∃ X Y,
+        And
+          (Eq.{u_1 + 1} A (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X) X))
+          (And
+            (Eq.{max (u_1 + 1) (u_2 + 1)} B
+              (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X) Y))
+            (And
+              (Eq.{u_2 + 1} C
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, max u_1 u_2, u_2} Y) Y))
+              (Eq.{max (u_1 + 1) (u_2 + 1)}
+                (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} (PositiveBlocks.hsNorm.{u_2, u_2} C)
+                  (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} X (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X)))
+                (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} (PositiveBlocks.hsNorm.{u_1, u_1} A)
+                  (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} Y
+                    (Matrix.conjTranspose.{0, max u_1 u_2, u_2} Y)))))))
+'PositiveBlocks.block_hs_product_eq_iff_exists_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hsNorm_product_eq_iff_exists_gram.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    Iff
+      (Eq.{1} (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_2} B) 2)
+        (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)))
+      (∃ X Y,
+        And
+          (Eq.{u_1 + 1} A (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X) X))
+          (And
+            (Eq.{max (u_1 + 1) (u_2 + 1)} B
+              (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X) Y))
+            (And
+              (Eq.{u_2 + 1} C
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, max u_1 u_2, u_2} Y) Y))
+              (Eq.{max (u_1 + 1) (u_2 + 1)}
+                (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} (PositiveBlocks.hsNorm.{u_2, u_2} C)
+                  (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} X (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X)))
+                (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} (PositiveBlocks.hsNorm.{u_1, u_1} A)
+                  (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} Y
+                    (Matrix.conjTranspose.{0, max u_1 u_2, u_2} Y)))))))
+'PositiveBlocks.block_hsNorm_product_eq_iff_exists_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hsNorm_sum_eq_iff_exists_gram.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    Iff
+      (Eq.{1} (HMul.hMul.{0, 0, 0} 2 (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_2} B) 2))
+        (HAdd.hAdd.{0, 0, 0} (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) 2)
+          (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_2, u_2} C) 2)))
+      (∃ X Y,
+        And
+          (Eq.{u_1 + 1} A (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X) X))
+          (And
+            (Eq.{max (u_1 + 1) (u_2 + 1)} B
+              (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X) Y))
+            (And
+              (Eq.{u_2 + 1} C
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, max u_1 u_2, u_2} Y) Y))
+              (Eq.{max (u_1 + 1) (u_2 + 1)}
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} X (Matrix.conjTranspose.{0, max u_1 u_2, u_1} X))
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, max u_1 u_2} Y (Matrix.conjTranspose.{0, max u_1 u_2, u_2} Y))))))
+'PositiveBlocks.block_hsNorm_sum_eq_iff_exists_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.fromBlocks_compression.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_3} r]
+  (S : Matrix.{u_3, u_3, 0} r r Complex),
+  Matrix.IsHermitian.{0, u_3} S →
+    ∀ (U : Matrix.{u_3, u_1, 0} r m Complex) (V : Matrix.{u_3, u_2, 0} r n Complex),
+      Eq.{max (u_1 + 1) (u_2 + 1)}
+        (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0}
+          (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1}
+            (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) U)
+          (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2}
+            (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) V)
+          (Matrix.conjTranspose.{0, u_1, u_2}
+            (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2}
+              (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) V))
+          (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2}
+            (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_3, u_2} V) S) V))
+        (HMul.hMul.{max (max u_1 u_2) u_3, max (max u_1 u_2) u_3, max u_1 u_2}
+          (HMul.hMul.{max (max u_1 u_2) u_3, u_3, max (max u_1 u_2) u_3}
+            (Matrix.conjTranspose.{0, u_3, max u_2 u_1} (Matrix.fromCols.{0, u_3, u_1, u_2} U V)) S)
+          (Matrix.fromCols.{0, u_3, u_1, u_2} U V))
+'PositiveBlocks.fromBlocks_compression' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.posSemidef_fromBlocks_compression.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} r] {S : Matrix.{u_3, u_3, 0} r r Complex},
+  Matrix.PosSemidef.{u_3, 0} S →
+    ∀ (U : Matrix.{u_3, u_1, 0} r m Complex) (V : Matrix.{u_3, u_2, 0} r n Complex),
+      Matrix.PosSemidef.{max u_1 u_2, 0}
+        (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0}
+          (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1}
+            (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) U)
+          (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2}
+            (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) V)
+          (Matrix.conjTranspose.{0, u_1, u_2}
+            (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2}
+              (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) V))
+          (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2}
+            (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_3, u_2} V) S) V))
+'PositiveBlocks.posSemidef_fromBlocks_compression' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.exists_compression_gram.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_3} r]
+  {S : Matrix.{u_3, u_3, 0} r r Complex},
+  Matrix.PosSemidef.{u_3, 0} S →
+    ∀ (U : Matrix.{u_3, u_1, 0} r m Complex) (V : Matrix.{u_3, u_2, 0} r n Complex),
+      ∃ X Y,
+        And
+          (Eq.{u_1 + 1}
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1}
+              (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) U)
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X))
+          (And
+            (Eq.{max (u_1 + 1) (u_2 + 1)}
+              (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2}
+                (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) V)
+              (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y))
+            (Eq.{u_2 + 1}
+              (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2}
+                (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_3, u_2} V) S) V)
+              (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y)))
+'PositiveBlocks.exists_compression_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.compression_hs_product_le.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} r] {S : Matrix.{u_3, u_3, 0} r r Complex},
+  Matrix.PosSemidef.{u_3, 0} S →
+    ∀ (U : Matrix.{u_3, u_1, 0} r m Complex) (V : Matrix.{u_3, u_2, 0} r n Complex),
+      LE.le.{0}
+        (PositiveBlocks.hsSq.{u_1, u_2}
+          (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2}
+            (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) V))
+        (HMul.hMul.{0, 0, 0}
+          (PositiveBlocks.hsNorm.{u_1, u_1}
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1}
+              (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) U))
+          (PositiveBlocks.hsNorm.{u_2, u_2}
+            (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2}
+              (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_3, u_2} V) S) V)))
+'PositiveBlocks.compression_hs_product_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.compression_hsNorm_product_le.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} r] {S : Matrix.{u_3, u_3, 0} r r Complex},
+  Matrix.PosSemidef.{u_3, 0} S →
+    ∀ (U : Matrix.{u_3, u_1, 0} r m Complex) (V : Matrix.{u_3, u_2, 0} r n Complex),
+      LE.le.{0}
+        (HPow.hPow.{0, 0, 0}
+          (PositiveBlocks.hsNorm.{u_1, u_2}
+            (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2}
+              (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) V))
+          2)
+        (HMul.hMul.{0, 0, 0}
+          (PositiveBlocks.hsNorm.{u_1, u_1}
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1}
+              (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) U))
+          (PositiveBlocks.hsNorm.{u_2, u_2}
+            (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2}
+              (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_3, u_2} V) S) V)))
+'PositiveBlocks.compression_hsNorm_product_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.compression_hs_sum_le.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} r] {S : Matrix.{u_3, u_3, 0} r r Complex},
+  Matrix.PosSemidef.{u_3, 0} S →
+    ∀ (U : Matrix.{u_3, u_1, 0} r m Complex) (V : Matrix.{u_3, u_2, 0} r n Complex),
+      LE.le.{0}
+        (HMul.hMul.{0, 0, 0} 2
+          (PositiveBlocks.hsSq.{u_1, u_2}
+            (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2}
+              (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) V)))
+        (HAdd.hAdd.{0, 0, 0}
+          (PositiveBlocks.hsSq.{u_1, u_1}
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1}
+              (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) U))
+          (PositiveBlocks.hsSq.{u_2, u_2}
+            (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2}
+              (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_3, u_2} V) S) V)))
+'PositiveBlocks.compression_hs_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.compression_hsNorm_sum_le.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {r : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} r] {S : Matrix.{u_3, u_3, 0} r r Complex},
+  Matrix.PosSemidef.{u_3, 0} S →
+    ∀ (U : Matrix.{u_3, u_1, 0} r m Complex) (V : Matrix.{u_3, u_2, 0} r n Complex),
+      LE.le.{0}
+        (HMul.hMul.{0, 0, 0} 2
+          (HPow.hPow.{0, 0, 0}
+            (PositiveBlocks.hsNorm.{u_1, u_2}
+              (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2}
+                (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) V))
+            2))
+        (HAdd.hAdd.{0, 0, 0}
+          (HPow.hPow.{0, 0, 0}
+            (PositiveBlocks.hsNorm.{u_1, u_1}
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1}
+                (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} (Matrix.conjTranspose.{0, u_3, u_1} U) S) U))
+            2)
+          (HPow.hPow.{0, 0, 0}
+            (PositiveBlocks.hsNorm.{u_2, u_2}
+              (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2}
+                (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_3, u_2} V) S) V))
+            2))
+'PositiveBlocks.compression_hsNorm_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_proportional_mul_conjTranspose.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex) (t : Real),
+  Eq.{u_1 + 1} (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} Y (Matrix.conjTranspose.{0, u_1, u_3} Y))
+      (HSMul.hSMul.{0, u_1, u_1} t
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} X (Matrix.conjTranspose.{0, u_1, u_2} X))) →
+    Eq.{u_2 + 1}
+      (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2}
+        (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)
+        (Matrix.conjTranspose.{0, u_2, u_3}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))
+      (HSMul.hSMul.{0, u_2, u_2} t
+        (HMul.hMul.{u_2, u_2, u_2} (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)
+          (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)))
+'PositiveBlocks.gram_proportional_mul_conjTranspose' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_proportional_conjTranspose_mul.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex) (t : Real),
+  Eq.{u_1 + 1} (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} Y (Matrix.conjTranspose.{0, u_1, u_3} Y))
+      (HSMul.hSMul.{0, u_1, u_1} t
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} X (Matrix.conjTranspose.{0, u_1, u_2} X))) →
+    Eq.{u_3 + 1}
+      (HMul.hMul.{u_3, u_3, u_3} (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)
+        (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+      (HSMul.hSMul.{0, u_3, u_3} t
+        (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3}
+          (Matrix.conjTranspose.{0, u_2, u_3}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))
+          (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))
+'PositiveBlocks.gram_proportional_conjTranspose_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_proportional_intertwine.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex) (t : Real),
+  Eq.{u_1 + 1} (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} Y (Matrix.conjTranspose.{0, u_1, u_3} Y))
+      (HSMul.hSMul.{0, u_1, u_1} t
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} X (Matrix.conjTranspose.{0, u_1, u_2} X))) →
+    Eq.{max (u_2 + 1) (u_3 + 1)}
+      (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3}
+        (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)
+        (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+      (HSMul.hSMul.{0, max u_2 u_3, max u_2 u_3} t
+        (HMul.hMul.{u_2, max u_2 u_3, max u_2 u_3}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)
+          (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))
+'PositiveBlocks.gram_proportional_intertwine' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_proportional_intrinsic.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex) (t : Real),
+  Eq.{u_1 + 1} (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} Y (Matrix.conjTranspose.{0, u_1, u_3} Y))
+      (HSMul.hSMul.{0, u_1, u_1} t
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} X (Matrix.conjTranspose.{0, u_1, u_2} X))) →
+    And
+      (Eq.{u_2 + 1}
+        (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)
+          (Matrix.conjTranspose.{0, u_2, u_3}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))
+        (HSMul.hSMul.{0, u_2, u_2} t
+          (HMul.hMul.{u_2, u_2, u_2}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))))
+      (And
+        (Eq.{u_3 + 1}
+          (HMul.hMul.{u_3, u_3, u_3}
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+          (HSMul.hSMul.{0, u_3, u_3} t
+            (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3}
+              (Matrix.conjTranspose.{0, u_2, u_3}
+                (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))
+              (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))))
+        (Eq.{max (u_2 + 1) (u_3 + 1)}
+          (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+          (HSMul.hSMul.{0, max u_2 u_3, max u_2 u_3} t
+            (HMul.hMul.{u_2, max u_2 u_3, max u_2 u_3}
+              (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)
+              (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))))
+'PositiveBlocks.gram_proportional_intrinsic' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_product_eq_proportional.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex),
+  LT.lt.{0} 0
+      (PositiveBlocks.hsNorm.{u_2, u_2}
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)) →
+    Eq.{1}
+        (PositiveBlocks.hsSq.{u_2, u_3}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))
+        (HMul.hMul.{0, 0, 0}
+          (PositiveBlocks.hsNorm.{u_2, u_2}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+          (PositiveBlocks.hsNorm.{u_3, u_3}
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))) →
+      Eq.{u_1 + 1} (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} Y (Matrix.conjTranspose.{0, u_1, u_3} Y))
+        (HSMul.hSMul.{0, u_1, u_1}
+          (HDiv.hDiv.{0, 0, 0}
+            (PositiveBlocks.hsNorm.{u_3, u_3}
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+            (PositiveBlocks.hsNorm.{u_2, u_2}
+              (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)))
+          (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} X (Matrix.conjTranspose.{0, u_1, u_2} X)))
+'PositiveBlocks.gram_product_eq_proportional' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_product_eq_intrinsic.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex),
+  LT.lt.{0} 0
+      (PositiveBlocks.hsNorm.{u_2, u_2}
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)) →
+    Eq.{1}
+        (PositiveBlocks.hsSq.{u_2, u_3}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))
+        (HMul.hMul.{0, 0, 0}
+          (PositiveBlocks.hsNorm.{u_2, u_2}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+          (PositiveBlocks.hsNorm.{u_3, u_3}
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))) →
+      And
+        (Eq.{u_2 + 1}
+          (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)
+            (Matrix.conjTranspose.{0, u_2, u_3}
+              (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))
+          (HSMul.hSMul.{0, u_2, u_2}
+            (HDiv.hDiv.{0, 0, 0}
+              (PositiveBlocks.hsNorm.{u_3, u_3}
+                (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+              (PositiveBlocks.hsNorm.{u_2, u_2}
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)))
+            (HMul.hMul.{u_2, u_2, u_2}
+              (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)
+              (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))))
+        (And
+          (Eq.{u_3 + 1}
+            (HMul.hMul.{u_3, u_3, u_3}
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+            (HSMul.hSMul.{0, u_3, u_3}
+              (HDiv.hDiv.{0, 0, 0}
+                (PositiveBlocks.hsNorm.{u_3, u_3}
+                  (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+                (PositiveBlocks.hsNorm.{u_2, u_2}
+                  (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)))
+              (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3}
+                (Matrix.conjTranspose.{0, u_2, u_3}
+                  (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))
+                (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))))
+          (Eq.{max (u_2 + 1) (u_3 + 1)}
+            (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3}
+              (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+            (HSMul.hSMul.{0, max u_2 u_3, max u_2 u_3}
+              (HDiv.hDiv.{0, 0, 0}
+                (PositiveBlocks.hsNorm.{u_3, u_3}
+                  (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+                (PositiveBlocks.hsNorm.{u_2, u_2}
+                  (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)))
+              (HMul.hMul.{u_2, max u_2 u_3, max u_2 u_3}
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)
+                (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))))
+'PositiveBlocks.gram_product_eq_intrinsic' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_product_normalized_deficit.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex),
+  LT.lt.{0} 0
+      (PositiveBlocks.hsNorm.{u_2, u_2}
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)) →
+    LT.lt.{0} 0
+        (PositiveBlocks.hsNorm.{u_3, u_3}
+          (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)) →
+      Eq.{1}
+        (HSub.hSub.{0, 0, 0}
+          (HMul.hMul.{0, 0, 0}
+            (PositiveBlocks.hsNorm.{u_2, u_2}
+              (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+            (PositiveBlocks.hsNorm.{u_3, u_3}
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)))
+          (PositiveBlocks.hsSq.{u_2, u_3}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))
+        (HMul.hMul.{0, 0, 0}
+          (HDiv.hDiv.{0, 0, 0}
+            (HMul.hMul.{0, 0, 0}
+              (PositiveBlocks.hsNorm.{u_2, u_2}
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+              (PositiveBlocks.hsNorm.{u_3, u_3}
+                (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)))
+            2)
+          (PositiveBlocks.hsSq.{u_1, u_1}
+            (HSub.hSub.{u_1, u_1, u_1}
+              (HSMul.hSMul.{0, u_1, u_1}
+                (HDiv.hDiv.{0, 0, 0} 1
+                  (PositiveBlocks.hsNorm.{u_2, u_2}
+                    (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)))
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} X (Matrix.conjTranspose.{0, u_1, u_2} X)))
+              (HSMul.hSMul.{0, u_1, u_1}
+                (HDiv.hDiv.{0, 0, 0} 1
+                  (PositiveBlocks.hsNorm.{u_3, u_3}
+                    (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)))
+                (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} Y (Matrix.conjTranspose.{0, u_1, u_3} Y))))))
+'PositiveBlocks.gram_product_normalized_deficit' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_product_eq_iff_mul_conjTranspose.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex),
+  LT.lt.{0} 0
+      (PositiveBlocks.hsNorm.{u_2, u_2}
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)) →
+    Iff
+      (Eq.{1}
+        (PositiveBlocks.hsSq.{u_2, u_3}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))
+        (HMul.hMul.{0, 0, 0}
+          (PositiveBlocks.hsNorm.{u_2, u_2}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+          (PositiveBlocks.hsNorm.{u_3, u_3}
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))))
+      (Eq.{u_2 + 1}
+        (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)
+          (Matrix.conjTranspose.{0, u_2, u_3}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))
+        (HSMul.hSMul.{0, u_2, u_2}
+          (HDiv.hDiv.{0, 0, 0}
+            (PositiveBlocks.hsNorm.{u_3, u_3}
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+            (PositiveBlocks.hsNorm.{u_2, u_2}
+              (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)))
+          (HMul.hMul.{u_2, u_2, u_2}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))))
+'PositiveBlocks.gram_product_eq_iff_mul_conjTranspose' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_product_eq_iff_intrinsic.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex),
+  LT.lt.{0} 0
+      (PositiveBlocks.hsNorm.{u_2, u_2}
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)) →
+    Iff
+      (Eq.{1}
+        (PositiveBlocks.hsSq.{u_2, u_3}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))
+        (HMul.hMul.{0, 0, 0}
+          (PositiveBlocks.hsNorm.{u_2, u_2}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+          (PositiveBlocks.hsNorm.{u_3, u_3}
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))))
+      (And
+        (Eq.{u_2 + 1}
+          (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)
+            (Matrix.conjTranspose.{0, u_2, u_3}
+              (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))
+          (HSMul.hSMul.{0, u_2, u_2}
+            (HDiv.hDiv.{0, 0, 0}
+              (PositiveBlocks.hsNorm.{u_3, u_3}
+                (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+              (PositiveBlocks.hsNorm.{u_2, u_2}
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)))
+            (HMul.hMul.{u_2, u_2, u_2}
+              (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)
+              (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))))
+        (And
+          (Eq.{u_3 + 1}
+            (HMul.hMul.{u_3, u_3, u_3}
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+            (HSMul.hSMul.{0, u_3, u_3}
+              (HDiv.hDiv.{0, 0, 0}
+                (PositiveBlocks.hsNorm.{u_3, u_3}
+                  (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+                (PositiveBlocks.hsNorm.{u_2, u_2}
+                  (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)))
+              (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3}
+                (Matrix.conjTranspose.{0, u_2, u_3}
+                  (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))
+                (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))))
+          (Eq.{max (u_2 + 1) (u_3 + 1)}
+            (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3}
+              (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+            (HSMul.hSMul.{0, max u_2 u_3, max u_2 u_3}
+              (HDiv.hDiv.{0, 0, 0}
+                (PositiveBlocks.hsNorm.{u_3, u_3}
+                  (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+                (PositiveBlocks.hsNorm.{u_2, u_2}
+                  (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)))
+              (HMul.hMul.{u_2, max u_2 u_3, max u_2 u_3}
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)
+                (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))))))
+'PositiveBlocks.gram_product_eq_iff_intrinsic' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_sum_eq_iff_intrinsic.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex),
+  Iff
+    (Eq.{1}
+      (HMul.hMul.{0, 0, 0} 2
+        (PositiveBlocks.hsSq.{u_2, u_3}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))
+      (HAdd.hAdd.{0, 0, 0}
+        (PositiveBlocks.hsSq.{u_2, u_2}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+        (PositiveBlocks.hsSq.{u_3, u_3}
+          (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))))
+    (And
+      (Eq.{u_2 + 1}
+        (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)
+          (Matrix.conjTranspose.{0, u_2, u_3}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))
+        (HMul.hMul.{u_2, u_2, u_2} (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)
+          (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)))
+      (And
+        (Eq.{u_3 + 1}
+          (HMul.hMul.{u_3, u_3, u_3}
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+          (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3}
+            (Matrix.conjTranspose.{0, u_2, u_3}
+              (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y))
+            (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))
+        (Eq.{max (u_2 + 1) (u_3 + 1)}
+          (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y))
+          (HMul.hMul.{u_2, max u_2 u_3, max u_2 u_3}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)
+            (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))))
+'PositiveBlocks.gram_sum_eq_iff_intrinsic' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hs_product_eq_iff_mul_conjTranspose.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    LT.lt.{0} 0 (PositiveBlocks.hsNorm.{u_1, u_1} A) →
+      Iff
+        (Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} B)
+          (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)))
+        (Eq.{u_1 + 1} (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} B (Matrix.conjTranspose.{0, u_1, u_2} B))
+          (HSMul.hSMul.{0, u_1, u_1}
+            (HDiv.hDiv.{0, 0, 0} (PositiveBlocks.hsNorm.{u_2, u_2} C) (PositiveBlocks.hsNorm.{u_1, u_1} A))
+            (HMul.hMul.{u_1, u_1, u_1} A A)))
+'PositiveBlocks.block_hs_product_eq_iff_mul_conjTranspose' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hs_product_eq_iff_intrinsic.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    LT.lt.{0} 0 (PositiveBlocks.hsNorm.{u_1, u_1} A) →
+      Iff
+        (Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} B)
+          (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)))
+        (And
+          (Eq.{u_1 + 1} (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} B (Matrix.conjTranspose.{0, u_1, u_2} B))
+            (HSMul.hSMul.{0, u_1, u_1}
+              (HDiv.hDiv.{0, 0, 0} (PositiveBlocks.hsNorm.{u_2, u_2} C) (PositiveBlocks.hsNorm.{u_1, u_1} A))
+              (HMul.hMul.{u_1, u_1, u_1} A A)))
+          (And
+            (Eq.{u_2 + 1} (HMul.hMul.{u_2, u_2, u_2} C C)
+              (HSMul.hSMul.{0, u_2, u_2}
+                (HDiv.hDiv.{0, 0, 0} (PositiveBlocks.hsNorm.{u_2, u_2} C) (PositiveBlocks.hsNorm.{u_1, u_1} A))
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} B) B)))
+            (Eq.{max (u_1 + 1) (u_2 + 1)} (HMul.hMul.{max u_1 u_2, u_2, max u_1 u_2} B C)
+              (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2}
+                (HDiv.hDiv.{0, 0, 0} (PositiveBlocks.hsNorm.{u_2, u_2} C) (PositiveBlocks.hsNorm.{u_1, u_1} A))
+                (HMul.hMul.{u_1, max u_1 u_2, max u_1 u_2} A B)))))
+'PositiveBlocks.block_hs_product_eq_iff_intrinsic' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hs_sum_eq_iff_intrinsic.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    Iff
+      (Eq.{1} (HMul.hMul.{0, 0, 0} 2 (PositiveBlocks.hsSq.{u_1, u_2} B))
+        (HAdd.hAdd.{0, 0, 0} (PositiveBlocks.hsSq.{u_1, u_1} A) (PositiveBlocks.hsSq.{u_2, u_2} C)))
+      (And
+        (Eq.{u_1 + 1} (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} B (Matrix.conjTranspose.{0, u_1, u_2} B))
+          (HMul.hMul.{u_1, u_1, u_1} A A))
+        (And
+          (Eq.{u_2 + 1} (HMul.hMul.{u_2, u_2, u_2} C C)
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} B) B))
+          (Eq.{max (u_1 + 1) (u_2 + 1)} (HMul.hMul.{max u_1 u_2, u_2, max u_1 u_2} B C)
+            (HMul.hMul.{u_1, max u_1 u_2, max u_1 u_2} A B))))
+'PositiveBlocks.block_hs_sum_eq_iff_intrinsic' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hs_product_normalized_deficit_of_gram.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] {A : Matrix.{u_2, u_2, 0} m m Complex} {B : Matrix.{u_2, u_3, 0} m n Complex}
+  {C : Matrix.{u_3, u_3, 0} n n Complex} (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex),
+  Eq.{u_2 + 1} A (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X) →
+    Eq.{max (u_2 + 1) (u_3 + 1)} B
+        (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y) →
+      Eq.{u_3 + 1} C (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y) →
+        LT.lt.{0} 0 (PositiveBlocks.hsNorm.{u_2, u_2} A) →
+          LT.lt.{0} 0 (PositiveBlocks.hsNorm.{u_3, u_3} C) →
+            Eq.{1}
+              (HSub.hSub.{0, 0, 0}
+                (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_2, u_2} A) (PositiveBlocks.hsNorm.{u_3, u_3} C))
+                (PositiveBlocks.hsSq.{u_2, u_3} B))
+              (HMul.hMul.{0, 0, 0}
+                (HDiv.hDiv.{0, 0, 0}
+                  (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_2, u_2} A) (PositiveBlocks.hsNorm.{u_3, u_3} C)) 2)
+                (PositiveBlocks.hsSq.{u_1, u_1}
+                  (HSub.hSub.{u_1, u_1, u_1}
+                    (HSMul.hSMul.{0, u_1, u_1} (HDiv.hDiv.{0, 0, 0} 1 (PositiveBlocks.hsNorm.{u_2, u_2} A))
+                      (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} X (Matrix.conjTranspose.{0, u_1, u_2} X)))
+                    (HSMul.hSMul.{0, u_1, u_1} (HDiv.hDiv.{0, 0, 0} 1 (PositiveBlocks.hsNorm.{u_3, u_3} C))
+                      (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} Y (Matrix.conjTranspose.{0, u_1, u_3} Y))))))
+'PositiveBlocks.block_hs_product_normalized_deficit_of_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_normalized_product_deficit.{u_1, u_2,
+    u_3} : ∀ {r : Type u_1} {m : Type u_2} {n : Type u_3} [inst : Fintype.{u_1} r] [inst_1 : Fintype.{u_2} m]
+  [inst_2 : Fintype.{u_3} n] (X : Matrix.{u_1, u_2, 0} r m Complex) (Y : Matrix.{u_1, u_3, 0} r n Complex),
+  LT.lt.{0} 0
+      (PositiveBlocks.hsNorm.{u_2, u_2}
+        (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)) →
+    LT.lt.{0} 0
+        (PositiveBlocks.hsNorm.{u_3, u_3}
+          (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)) →
+      Eq.{1}
+        (HSub.hSub.{0, 0, 0}
+          (HMul.hMul.{0, 0, 0}
+            (PositiveBlocks.hsNorm.{u_2, u_2}
+              (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+            (PositiveBlocks.hsNorm.{u_3, u_3}
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)))
+          (PositiveBlocks.hsSq.{u_2, u_3}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_3, max u_2 u_3} (Matrix.conjTranspose.{0, u_1, u_2} X) Y)))
+        (HMul.hMul.{0, 0, 0}
+          (HDiv.hDiv.{0, 0, 0}
+            (HMul.hMul.{0, 0, 0}
+              (PositiveBlocks.hsNorm.{u_2, u_2}
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X))
+              (PositiveBlocks.hsNorm.{u_3, u_3}
+                (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)))
+            2)
+          (PositiveBlocks.hsSq.{u_1, u_1}
+            (HSub.hSub.{u_1, u_1, u_1}
+              (HSMul.hSMul.{0, u_1, u_1}
+                (HDiv.hDiv.{0, 0, 0} 1
+                  (PositiveBlocks.hsNorm.{u_2, u_2}
+                    (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} X) X)))
+                (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} X (Matrix.conjTranspose.{0, u_1, u_2} X)))
+              (HSMul.hSMul.{0, u_1, u_1}
+                (HDiv.hDiv.{0, 0, 0} 1
+                  (PositiveBlocks.hsNorm.{u_3, u_3}
+                    (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} Y) Y)))
+                (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} Y (Matrix.conjTranspose.{0, u_1, u_3} Y))))))
+'PositiveBlocks.gram_normalized_product_deficit' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hs_sum_deficit_decomposition.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  (A : Matrix.{u_1, u_1, 0} m m Complex) (B : Matrix.{u_1, u_2, 0} m n Complex) (C : Matrix.{u_2, u_2, 0} n n Complex),
+  Eq.{1}
+    (HSub.hSub.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} (PositiveBlocks.hsSq.{u_1, u_1} A) (PositiveBlocks.hsSq.{u_2, u_2} C))
+      (HMul.hMul.{0, 0, 0} 2 (PositiveBlocks.hsSq.{u_1, u_2} B)))
+    (HAdd.hAdd.{0, 0, 0}
+      (HPow.hPow.{0, 0, 0}
+        (HSub.hSub.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)) 2)
+      (HMul.hMul.{0, 0, 0} 2
+        (HSub.hSub.{0, 0, 0}
+          (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C))
+          (PositiveBlocks.hsSq.{u_1, u_2} B))))
+'PositiveBlocks.hs_sum_deficit_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_sum_eq_iff_product_eq_and_norms_eq.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    Iff
+      (Eq.{1} (HMul.hMul.{0, 0, 0} 2 (PositiveBlocks.hsSq.{u_1, u_2} B))
+        (HAdd.hAdd.{0, 0, 0} (PositiveBlocks.hsSq.{u_1, u_1} A) (PositiveBlocks.hsSq.{u_2, u_2} C)))
+      (And
+        (Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} B)
+          (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)))
+        (Eq.{1} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)))
+'PositiveBlocks.block_sum_eq_iff_product_eq_and_norms_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsSq_single.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : DecidableEq.{u_1 + 1} m] [inst_3 : DecidableEq.{u_2 + 1} n] (i : m) (j : n) (z : Complex),
+  Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} (Matrix.single.{u_1, u_2, 0} i j z)) (Complex.normSq z)
+'PositiveBlocks.hsSq_single' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.single_sharp_block_posSemidef.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : DecidableEq.{u_1 + 1} m] [inst_3 : DecidableEq.{u_2 + 1} n] (i : m) (j : n),
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+    (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} (Matrix.single.{u_1, u_1, 0} i i 1) (Matrix.single.{u_1, u_2, 0} i j 1)
+      (Matrix.conjTranspose.{0, u_1, u_2} (Matrix.single.{u_1, u_2, 0} i j 1)) (Matrix.single.{u_2, u_2, 0} j j 1))
+'PositiveBlocks.single_sharp_block_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.exists_sharp_block.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n] [DecidableEq.{u_1 + 1} m]
+  [DecidableEq.{u_2 + 1} n] [Nonempty.{u_1 + 1} m] [Nonempty.{u_2 + 1} n],
+  ∃ A B C,
+    And
+      (Matrix.PosSemidef.{max u_1 u_2, 0}
+        (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C))
+      (And (Eq.{1} (PositiveBlocks.hsSq.{u_1, u_1} A) 1)
+        (And (Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} B) 1) (Eq.{1} (PositiveBlocks.hsSq.{u_2, u_2} C) 1)))
+'PositiveBlocks.exists_sharp_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsSq_isometry_mul.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {k : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} k] [inst_3 : DecidableEq.{u_3 + 1} k] (U : Matrix.{u_1, u_3, 0} m k Complex),
+  Eq.{u_3 + 1} (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} U) U) 1 →
+    ∀ (M : Matrix.{u_3, u_2, 0} k n Complex),
+      Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} U M))
+        (PositiveBlocks.hsSq.{u_3, u_2} M)
+'PositiveBlocks.hsSq_isometry_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsSq_mul_isometry_conjTranspose.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {k : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} k] [inst_3 : DecidableEq.{u_3 + 1} k] (V : Matrix.{u_2, u_3, 0} n k Complex),
+  Eq.{u_3 + 1} (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} (Matrix.conjTranspose.{0, u_2, u_3} V) V) 1 →
+    ∀ (M : Matrix.{u_1, u_3, 0} m k Complex),
+      Eq.{1}
+        (PositiveBlocks.hsSq.{u_1, u_2}
+          (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} M (Matrix.conjTranspose.{0, u_2, u_3} V)))
+        (PositiveBlocks.hsSq.{u_1, u_3} M)
+'PositiveBlocks.hsSq_mul_isometry_conjTranspose' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsSq_isometry_mul_mul_conjTranspose.{u_1, u_2, u_3,
+    u_4} : ∀ {m : Type u_1} {n : Type u_2} {p : Type u_3} {k : Type u_4} [inst : Fintype.{u_1} m]
+  [inst_1 : Fintype.{u_2} n] [inst_2 : Fintype.{u_3} p] [inst_3 : Fintype.{u_4} k] [inst_4 : DecidableEq.{u_4 + 1} k]
+  [inst_5 : DecidableEq.{u_3 + 1} p] (U : Matrix.{u_1, u_4, 0} m k Complex) (V : Matrix.{u_2, u_3, 0} n p Complex),
+  Eq.{u_4 + 1} (HMul.hMul.{max u_1 u_4, max u_1 u_4, u_4} (Matrix.conjTranspose.{0, u_1, u_4} U) U) 1 →
+    Eq.{u_3 + 1} (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} (Matrix.conjTranspose.{0, u_2, u_3} V) V) 1 →
+      ∀ (M : Matrix.{u_4, u_3, 0} k p Complex),
+        Eq.{1}
+          (PositiveBlocks.hsSq.{u_1, u_2}
+            (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (HMul.hMul.{max u_1 u_4, max u_3 u_4, max u_1 u_3} U M)
+              (Matrix.conjTranspose.{0, u_2, u_3} V)))
+          (PositiveBlocks.hsSq.{u_4, u_3} M)
+'PositiveBlocks.hsSq_isometry_mul_mul_conjTranspose' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsNorm_isometry_mul.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {k : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} k] [inst_3 : DecidableEq.{u_3 + 1} k] (U : Matrix.{u_1, u_3, 0} m k Complex),
+  Eq.{u_3 + 1} (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} U) U) 1 →
+    ∀ (M : Matrix.{u_3, u_2, 0} k n Complex),
+      Eq.{1} (PositiveBlocks.hsNorm.{u_1, u_2} (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} U M))
+        (PositiveBlocks.hsNorm.{u_3, u_2} M)
+'PositiveBlocks.hsNorm_isometry_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsNorm_mul_isometry_conjTranspose.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {k : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} k] [inst_3 : DecidableEq.{u_3 + 1} k] (V : Matrix.{u_2, u_3, 0} n k Complex),
+  Eq.{u_3 + 1} (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} (Matrix.conjTranspose.{0, u_2, u_3} V) V) 1 →
+    ∀ (M : Matrix.{u_1, u_3, 0} m k Complex),
+      Eq.{1}
+        (PositiveBlocks.hsNorm.{u_1, u_2}
+          (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} M (Matrix.conjTranspose.{0, u_2, u_3} V)))
+        (PositiveBlocks.hsNorm.{u_1, u_3} M)
+'PositiveBlocks.hsNorm_mul_isometry_conjTranspose' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hsNorm_isometry_mul_mul_conjTranspose.{u_1, u_2, u_3,
+    u_4} : ∀ {m : Type u_1} {n : Type u_2} {p : Type u_3} {k : Type u_4} [inst : Fintype.{u_1} m]
+  [inst_1 : Fintype.{u_2} n] [inst_2 : Fintype.{u_3} p] [inst_3 : Fintype.{u_4} k] [inst_4 : DecidableEq.{u_4 + 1} k]
+  [inst_5 : DecidableEq.{u_3 + 1} p] (U : Matrix.{u_1, u_4, 0} m k Complex) (V : Matrix.{u_2, u_3, 0} n p Complex),
+  Eq.{u_4 + 1} (HMul.hMul.{max u_1 u_4, max u_1 u_4, u_4} (Matrix.conjTranspose.{0, u_1, u_4} U) U) 1 →
+    Eq.{u_3 + 1} (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} (Matrix.conjTranspose.{0, u_2, u_3} V) V) 1 →
+      ∀ (M : Matrix.{u_4, u_3, 0} k p Complex),
+        Eq.{1}
+          (PositiveBlocks.hsNorm.{u_1, u_2}
+            (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (HMul.hMul.{max u_1 u_4, max u_3 u_4, max u_1 u_3} U M)
+              (Matrix.conjTranspose.{0, u_2, u_3} V)))
+          (PositiveBlocks.hsNorm.{u_4, u_3} M)
+'PositiveBlocks.hsNorm_isometry_mul_mul_conjTranspose' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.normalForm_posSemidef.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {k : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} k] (U : Matrix.{u_1, u_3, 0} m k Complex) (V : Matrix.{u_2, u_3, 0} n k Complex)
+  (H : Matrix.{u_3, u_3, 0} k k Complex),
+  Matrix.PosSemidef.{u_3, 0} H →
+    ∀ (t : Real),
+      LE.le.{0} 0 t →
+        Matrix.PosSemidef.{max u_1 u_2, 0}
+          (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0}
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} U H)
+              (Matrix.conjTranspose.{0, u_1, u_3} U))
+            (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} (Real.sqrt t)
+              (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} U H)
+                (Matrix.conjTranspose.{0, u_2, u_3} V)))
+            (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} (Real.sqrt t)
+              (HMul.hMul.{max u_2 u_3, max u_1 u_3, max u_1 u_2} (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3} V H)
+                (Matrix.conjTranspose.{0, u_1, u_3} U)))
+            (HSMul.hSMul.{0, u_2, u_2} t
+              (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3} V H)
+                (Matrix.conjTranspose.{0, u_2, u_3} V))))
+'PositiveBlocks.normalForm_posSemidef' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.normalForm_hsNorm_eq.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {k : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} k] [inst_3 : DecidableEq.{u_3 + 1} k] (U : Matrix.{u_1, u_3, 0} m k Complex)
+  (V : Matrix.{u_2, u_3, 0} n k Complex) (H : Matrix.{u_3, u_3, 0} k k Complex),
+  Eq.{u_3 + 1} (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} U) U) 1 →
+    Eq.{u_3 + 1} (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} (Matrix.conjTranspose.{0, u_2, u_3} V) V) 1 →
+      ∀ (t : Real),
+        LE.le.{0} 0 t →
+          Eq.{1}
+            (HPow.hPow.{0, 0, 0}
+              (PositiveBlocks.hsNorm.{u_1, u_2}
+                (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} (Real.sqrt t)
+                  (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} U H)
+                    (Matrix.conjTranspose.{0, u_2, u_3} V))))
+              2)
+            (HMul.hMul.{0, 0, 0}
+              (PositiveBlocks.hsNorm.{u_1, u_1}
+                (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} U H)
+                  (Matrix.conjTranspose.{0, u_1, u_3} U)))
+              (PositiveBlocks.hsNorm.{u_2, u_2}
+                (HSMul.hSMul.{0, u_2, u_2} t
+                  (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3} V H)
+                    (Matrix.conjTranspose.{0, u_2, u_3} V)))))
+'PositiveBlocks.normalForm_hsNorm_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.isometry_rank.{u_1,
+    u_2} : ∀ {m : Type u_1} {k : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} k]
+  [inst_2 : DecidableEq.{u_2 + 1} k] (U : Matrix.{u_1, u_2, 0} m k Complex),
+  Eq.{u_2 + 1} (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} U) U) 1 →
+    Eq.{1} (Matrix.rank.{u_1, u_2, 0} U) (Fintype.card.{u_2} k)
+'PositiveBlocks.isometry_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.isometry_card_le.{u_1,
+    u_2} : ∀ {m : Type u_1} {k : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} k]
+  [inst_2 : DecidableEq.{u_2 + 1} k] (U : Matrix.{u_1, u_2, 0} m k Complex),
+  Eq.{u_2 + 1} (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} (Matrix.conjTranspose.{0, u_1, u_2} U) U) 1 →
+    LE.le.{0} (Fintype.card.{u_2} k) (Fintype.card.{u_1} m)
+'PositiveBlocks.isometry_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.rank_isometry_mul_mul_conjTranspose.{u_1, u_2, u_3,
+    u_4} : ∀ {m : Type u_1} {n : Type u_2} {p : Type u_3} {k : Type u_4} [inst : Fintype.{u_1} m]
+  [inst_1 : Fintype.{u_2} n] [inst_2 : Fintype.{u_3} p] [inst_3 : Fintype.{u_4} k] [inst_4 : DecidableEq.{u_4 + 1} k]
+  [inst_5 : DecidableEq.{u_3 + 1} p] (U : Matrix.{u_1, u_4, 0} m k Complex) (V : Matrix.{u_2, u_3, 0} n p Complex),
+  Eq.{u_4 + 1} (HMul.hMul.{max u_1 u_4, max u_1 u_4, u_4} (Matrix.conjTranspose.{0, u_1, u_4} U) U) 1 →
+    Eq.{u_3 + 1} (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} (Matrix.conjTranspose.{0, u_2, u_3} V) V) 1 →
+      ∀ (M : Matrix.{u_4, u_3, 0} k p Complex),
+        Eq.{1}
+          (Matrix.rank.{u_1, u_2, 0}
+            (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (HMul.hMul.{max u_1 u_4, max u_3 u_4, max u_1 u_3} U M)
+              (Matrix.conjTranspose.{0, u_2, u_3} V)))
+          (Matrix.rank.{u_4, u_3, 0} M)
+'PositiveBlocks.rank_isometry_mul_mul_conjTranspose' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.rank_congruence_of_leftInverse.{u_1,
+    u_2} : ∀ {m : Type u_1} {k : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} k]
+  [inst_2 : DecidableEq.{u_2 + 1} k] (T : Matrix.{u_1, u_2, 0} m k Complex) (L : Matrix.{u_2, u_1, 0} k m Complex),
+  Eq.{u_2 + 1} (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} L T) 1 →
+    ∀ (H : Matrix.{u_2, u_2, 0} k k Complex),
+      Eq.{1}
+        (Matrix.rank.{u_1, u_1, 0}
+          (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1} (HMul.hMul.{max u_1 u_2, u_2, max u_1 u_2} T H)
+            (Matrix.conjTranspose.{0, u_1, u_2} T)))
+        (Matrix.rank.{u_2, u_2, 0} H)
+'PositiveBlocks.rank_congruence_of_leftInverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.normalForm_block_rank.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {k : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} k] [inst_3 : DecidableEq.{u_3 + 1} k] (U : Matrix.{u_1, u_3, 0} m k Complex)
+  (V : Matrix.{u_2, u_3, 0} n k Complex) (H : Matrix.{u_3, u_3, 0} k k Complex),
+  Eq.{u_3 + 1} (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} U) U) 1 →
+    Matrix.PosDef.{u_3, 0} H →
+      ∀ (t : Real),
+        LE.le.{0} 0 t →
+          Eq.{1}
+            (Matrix.rank.{max u_1 u_2, max u_1 u_2, 0}
+              (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0}
+                (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} U H)
+                  (Matrix.conjTranspose.{0, u_1, u_3} U))
+                (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} (Real.sqrt t)
+                  (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} U H)
+                    (Matrix.conjTranspose.{0, u_2, u_3} V)))
+                (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} (Real.sqrt t)
+                  (HMul.hMul.{max u_2 u_3, max u_1 u_3, max u_1 u_2} (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3} V H)
+                    (Matrix.conjTranspose.{0, u_1, u_3} U)))
+                (HSMul.hSMul.{0, u_2, u_2} t
+                  (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3} V H)
+                    (Matrix.conjTranspose.{0, u_2, u_3} V)))))
+            (Fintype.card.{u_3} k)
+'PositiveBlocks.normalForm_block_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.normalForm_ranks.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} {k : Type u_3} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  [inst_2 : Fintype.{u_3} k] [inst_3 : DecidableEq.{u_3 + 1} k] (U : Matrix.{u_1, u_3, 0} m k Complex)
+  (V : Matrix.{u_2, u_3, 0} n k Complex) (H : Matrix.{u_3, u_3, 0} k k Complex),
+  Eq.{u_3 + 1} (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} (Matrix.conjTranspose.{0, u_1, u_3} U) U) 1 →
+    Eq.{u_3 + 1} (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} (Matrix.conjTranspose.{0, u_2, u_3} V) V) 1 →
+      Matrix.PosDef.{u_3, 0} H →
+        ∀ (t : Real),
+          LT.lt.{0} 0 t →
+            And
+              (Eq.{1}
+                (Matrix.rank.{u_1, u_1, 0}
+                  (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} U H)
+                    (Matrix.conjTranspose.{0, u_1, u_3} U)))
+                (Fintype.card.{u_3} k))
+              (And
+                (Eq.{1}
+                  (Matrix.rank.{u_1, u_2, 0}
+                    (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} (Real.sqrt t)
+                      (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3} U H)
+                        (Matrix.conjTranspose.{0, u_2, u_3} V))))
+                  (Fintype.card.{u_3} k))
+                (Eq.{1}
+                  (Matrix.rank.{u_2, u_2, 0}
+                    (HSMul.hSMul.{0, u_2, u_2} t
+                      (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3} V H)
+                        (Matrix.conjTranspose.{0, u_2, u_3} V))))
+                  (Fintype.card.{u_3} k)))
+'PositiveBlocks.normalForm_ranks' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.HasCommonSupportNormalForm.{u_1,
+    u_2} : {m : Type u_1} →
+  {n : Type u_2} →
+    [Fintype.{u_1} m] →
+      [Fintype.{u_2} n] →
+        Matrix.{u_1, u_1, 0} m m Complex → Matrix.{u_1, u_2, 0} m n Complex → Matrix.{u_2, u_2, 0} n n Complex → Prop
+'PositiveBlocks.HasCommonSupportNormalForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.HasCommonSupportNormalForm.posSemidef_and_hsNorm_eq.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  PositiveBlocks.HasCommonSupportNormalForm.{u_1, u_2} A B C →
+    And
+      (Matrix.PosSemidef.{max u_1 u_2, 0}
+        (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C))
+      (Eq.{1} (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_2} B) 2)
+        (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)))
+'PositiveBlocks.HasCommonSupportNormalForm.posSemidef_and_hsNorm_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@PositiveBlocks.HasCommonSupportNormalForm.rank_eq.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  PositiveBlocks.HasCommonSupportNormalForm.{u_1, u_2} A B C →
+    And (Eq.{1} (Matrix.rank.{u_1, u_1, 0} A) (Matrix.rank.{u_1, u_2, 0} B))
+      (And (Eq.{1} (Matrix.rank.{u_1, u_1, 0} A) (Matrix.rank.{u_2, u_2, 0} C))
+        (And (LT.lt.{0} 0 (Matrix.rank.{u_1, u_1, 0} A))
+          (And (LE.le.{0} (Matrix.rank.{u_1, u_1, 0} A) (Fintype.card.{u_1} m))
+            (LE.le.{0} (Matrix.rank.{u_1, u_1, 0} A) (Fintype.card.{u_2} n)))))
+'PositiveBlocks.HasCommonSupportNormalForm.rank_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.HasCommonSupportNormalForm.exists_rank_witness.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  PositiveBlocks.HasCommonSupportNormalForm.{u_1, u_2} A B C →
+    ∃ U V H t,
+      And (Matrix.PosDef.{0, 0} H)
+        (And (LT.lt.{0} 0 t)
+          (And (Eq.{1} (HMul.hMul.{u_1, u_1, 0} (Matrix.conjTranspose.{0, u_1, 0} U) U) 1)
+            (And (Eq.{1} (HMul.hMul.{u_2, u_2, 0} (Matrix.conjTranspose.{0, u_2, 0} V) V) 1)
+              (And
+                (Eq.{u_1 + 1} A
+                  (HMul.hMul.{u_1, u_1, u_1} (HMul.hMul.{u_1, 0, u_1} U H) (Matrix.conjTranspose.{0, u_1, 0} U)))
+                (And
+                  (Eq.{max (u_1 + 1) (u_2 + 1)} B
+                    (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} (Real.sqrt t)
+                      (HMul.hMul.{u_1, u_2, max u_1 u_2} (HMul.hMul.{u_1, 0, u_1} U H)
+                        (Matrix.conjTranspose.{0, u_2, 0} V))))
+                  (Eq.{u_2 + 1} C
+                    (HSMul.hSMul.{0, u_2, u_2} t
+                      (HMul.hMul.{u_2, u_2, u_2} (HMul.hMul.{u_2, 0, u_2} V H)
+                        (Matrix.conjTranspose.{0, u_2, 0} V)))))))))
+'PositiveBlocks.HasCommonSupportNormalForm.exists_rank_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@PositiveBlocks.HasCommonSupportNormalForm.ne_zero.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  PositiveBlocks.HasCommonSupportNormalForm.{u_1, u_2} A B C →
+    And (Ne.{u_1 + 1} A 0) (And (Ne.{max (u_1 + 1) (u_2 + 1)} B 0) (Ne.{u_2 + 1} C 0))
+'PositiveBlocks.HasCommonSupportNormalForm.ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.HasCommonSupportNormalForm.block_rank.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  PositiveBlocks.HasCommonSupportNormalForm.{u_1, u_2} A B C →
+    Eq.{1}
+      (Matrix.rank.{max u_1 u_2, max u_1 u_2, 0}
+        (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C))
+      (Matrix.rank.{u_1, u_1, 0} A)
+'PositiveBlocks.HasCommonSupportNormalForm.block_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.HasCommonSupportNormalForm.exists_normRatio_witness.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  PositiveBlocks.HasCommonSupportNormalForm.{u_1, u_2} A B C →
+    ∃ U V H,
+      And (Matrix.PosDef.{0, 0} H)
+        (And (Eq.{1} (HMul.hMul.{u_1, u_1, 0} (Matrix.conjTranspose.{0, u_1, 0} U) U) 1)
+          (And (Eq.{1} (HMul.hMul.{u_2, u_2, 0} (Matrix.conjTranspose.{0, u_2, 0} V) V) 1)
+            (And
+              (Eq.{u_1 + 1} A
+                (HMul.hMul.{u_1, u_1, u_1} (HMul.hMul.{u_1, 0, u_1} U H) (Matrix.conjTranspose.{0, u_1, 0} U)))
+              (And
+                (Eq.{max (u_1 + 1) (u_2 + 1)} B
+                  (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2}
+                    (Real.sqrt
+                      (HDiv.hDiv.{0, 0, 0} (PositiveBlocks.hsNorm.{u_2, u_2} C) (PositiveBlocks.hsNorm.{u_1, u_1} A)))
+                    (HMul.hMul.{u_1, u_2, max u_1 u_2} (HMul.hMul.{u_1, 0, u_1} U H)
+                      (Matrix.conjTranspose.{0, u_2, 0} V))))
+                (Eq.{u_2 + 1} C
+                  (HSMul.hSMul.{0, u_2, u_2}
+                    (HDiv.hDiv.{0, 0, 0} (PositiveBlocks.hsNorm.{u_2, u_2} C) (PositiveBlocks.hsNorm.{u_1, u_1} A))
+                    (HMul.hMul.{u_2, u_2, u_2} (HMul.hMul.{u_2, 0, u_2} V H) (Matrix.conjTranspose.{0, u_2, 0} V))))))))
+'PositiveBlocks.HasCommonSupportNormalForm.exists_normRatio_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@PositiveBlocks.unitary_columns_isometry.{u_1,
+    u_2} : ∀ {k : Type u_1} {r : Type u_2} [inst : Fintype.{u_2} r] [inst_1 : DecidableEq.{u_2 + 1} r]
+  [inst_2 : DecidableEq.{u_1 + 1} k] (E : ↥(Matrix.unitaryGroup.{u_2, 0} r Complex)) (f : k → r),
+  Function.Injective.{u_1 + 1, u_2 + 1} f →
+    Eq.{u_1 + 1}
+      (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_1}
+        (Matrix.conjTranspose.{0, u_2, u_1} (Matrix.submatrix.{0, u_2, u_2, u_2, u_1} (↑E) id.{u_2 + 1} f))
+        (Matrix.submatrix.{0, u_2, u_2, u_2, u_1} (↑E) id.{u_2 + 1} f))
+      1
+'PositiveBlocks.unitary_columns_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.restrict_diagonal_support.{u_1} : ∀ {r : Type u_1} [inst : Fintype.{u_1} r]
+  [inst_1 : DecidableEq.{u_1 + 1} r] (E : Matrix.{u_1, u_1, 0} r r Complex) (d : r → Real) (p : r → Prop)
+  [inst_2 : DecidablePred.{u_1 + 1} p],
+  (∀ (i : r), Not (p i) → Eq.{1} (d i) 0) →
+    have W := Matrix.submatrix.{0, u_1, u_1, u_1, u_1} E id.{u_1 + 1} Subtype.val.{u_1 + 1};
+    Eq.{u_1 + 1}
+      (HMul.hMul.{u_1, u_1, u_1} (HMul.hMul.{u_1, u_1, u_1} W (Matrix.diagonal.{0, u_1} fun i => ↑(d ↑i)))
+        (Matrix.conjTranspose.{0, u_1, u_1} W))
+      (HMul.hMul.{u_1, u_1, u_1} (HMul.hMul.{u_1, u_1, u_1} E (Matrix.diagonal.{0, u_1} fun i => ↑(d i)))
+        (Matrix.conjTranspose.{0, u_1, u_1} E))
+'PositiveBlocks.restrict_diagonal_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.exists_posDef_compression.{u_1} : ∀ {r : Type u_1} [inst : Fintype.{u_1} r] [DecidableEq.{u_1 + 1} r]
+  (P : Matrix.{u_1, u_1, 0} r r Complex),
+  Matrix.PosSemidef.{u_1, 0} P →
+    Ne.{u_1 + 1} P 0 →
+      ∃ k,
+        ∃ (_ : LT.lt.{0} 0 k),
+          ∃ W H,
+            And (Eq.{1} (HMul.hMul.{u_1, u_1, 0} (Matrix.conjTranspose.{0, u_1, 0} W) W) 1)
+              (And (Matrix.PosDef.{0, 0} H)
+                (Eq.{u_1 + 1} P
+                  (HMul.hMul.{u_1, u_1, u_1} (HMul.hMul.{u_1, 0, u_1} W H) (Matrix.conjTranspose.{0, u_1, 0} W))))
+'PositiveBlocks.exists_posDef_compression' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.exists_invSqrt.{u_1} : ∀ {k : Type u_1} [inst : Fintype.{u_1} k] [inst_1 : DecidableEq.{u_1 + 1} k]
+  (H : Matrix.{u_1, u_1, 0} k k Complex),
+  Matrix.PosDef.{u_1, 0} H →
+    ∃ L,
+      And (Matrix.IsHermitian.{0, u_1} L) (Eq.{u_1 + 1} (HMul.hMul.{u_1, u_1, u_1} (HMul.hMul.{u_1, u_1, u_1} L H) L) 1)
+'PositiveBlocks.exists_invSqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.projection_fixes_factor.{u_1,
+    u_2} : ∀ {m : Type u_1} [inst : Fintype.{u_1} m] {r : Type u_2} [inst_1 : Fintype.{u_2} r] [DecidableEq.{u_2 + 1} r]
+  (X : Matrix.{u_2, u_1, 0} r m Complex) (E : Matrix.{u_2, u_2, 0} r r Complex),
+  Eq.{u_2 + 1}
+      (HMul.hMul.{u_2, u_2, u_2} E (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} X (Matrix.conjTranspose.{0, u_2, u_1} X)))
+      (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2} X (Matrix.conjTranspose.{0, u_2, u_1} X)) →
+    Eq.{max (u_1 + 1) (u_2 + 1)} (HMul.hMul.{u_2, max u_1 u_2, max u_1 u_2} E X) X
+'PositiveBlocks.projection_fixes_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gramCompression_isometry.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {k : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} k] {r : Type u_3}
+  [inst_2 : Fintype.{u_3} r] [inst_3 : DecidableEq.{u_2 + 1} k] (X : Matrix.{u_3, u_1, 0} r m Complex)
+  (W : Matrix.{u_3, u_2, 0} r k Complex) (H L : Matrix.{u_2, u_2, 0} k k Complex),
+  Eq.{u_2 + 1} (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} W) W) 1 →
+    Eq.{u_3 + 1} (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} X (Matrix.conjTranspose.{0, u_3, u_1} X))
+        (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} (HMul.hMul.{max u_2 u_3, u_2, max u_2 u_3} W H)
+          (Matrix.conjTranspose.{0, u_3, u_2} W)) →
+      Matrix.IsHermitian.{0, u_2} L →
+        Eq.{u_2 + 1} (HMul.hMul.{u_2, u_2, u_2} (HMul.hMul.{u_2, u_2, u_2} L H) L) 1 →
+          Eq.{u_2 + 1}
+            (HMul.hMul.{max u_1 u_2, max u_1 u_2, u_2}
+              (Matrix.conjTranspose.{0, u_1, u_2}
+                (HMul.hMul.{max u_1 u_2, u_2, max u_1 u_2}
+                  (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) W) L))
+              (HMul.hMul.{max u_1 u_2, u_2, max u_1 u_2}
+                (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) W) L))
+            1
+'PositiveBlocks.gramCompression_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gramCompression_cross.{u_1, u_2, u_3,
+    u_4} : ∀ {m : Type u_1} {n : Type u_2} {k : Type u_3} [inst : Fintype.{u_3} k] {r : Type u_4}
+  [inst_1 : Fintype.{u_4} r] [inst_2 : DecidableEq.{u_3 + 1} k] (X : Matrix.{u_4, u_1, 0} r m Complex)
+  (Y : Matrix.{u_4, u_2, 0} r n Complex) (W : Matrix.{u_4, u_3, 0} r k Complex)
+  (H L : Matrix.{u_3, u_3, 0} k k Complex),
+  Matrix.IsHermitian.{0, u_3} L →
+    Eq.{u_3 + 1} (HMul.hMul.{u_3, u_3, u_3} (HMul.hMul.{u_3, u_3, u_3} L H) L) 1 →
+      Eq.{max (u_2 + 1) (u_4 + 1)}
+          (HMul.hMul.{u_4, max u_2 u_4, max u_2 u_4}
+            (HMul.hMul.{max u_3 u_4, max u_3 u_4, u_4} W (Matrix.conjTranspose.{0, u_4, u_3} W)) Y)
+          Y →
+        Eq.{max (u_1 + 1) (u_2 + 1)}
+          (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2}
+            (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3}
+              (HMul.hMul.{max u_1 u_3, u_3, max u_1 u_3}
+                (HMul.hMul.{max u_1 u_4, max u_3 u_4, max u_1 u_3} (Matrix.conjTranspose.{0, u_4, u_1} X) W) L)
+              H)
+            (Matrix.conjTranspose.{0, u_2, u_3}
+              (HMul.hMul.{max u_2 u_3, u_3, max u_2 u_3}
+                (HMul.hMul.{max u_2 u_4, max u_3 u_4, max u_2 u_3} (Matrix.conjTranspose.{0, u_4, u_2} Y) W) L)))
+          (HMul.hMul.{max u_1 u_4, max u_2 u_4, max u_1 u_2} (Matrix.conjTranspose.{0, u_4, u_1} X) Y)
+'PositiveBlocks.gramCompression_cross' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.hasCommonSupportNormalForm_of_gram_proportional.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n] {r : Type u_3}
+  [inst_2 : Fintype.{u_3} r] [DecidableEq.{u_3 + 1} r] (X : Matrix.{u_3, u_1, 0} r m Complex)
+  (Y : Matrix.{u_3, u_2, 0} r n Complex),
+  Ne.{max (u_1 + 1) (u_3 + 1)} X 0 →
+    ∀ (t : Real),
+      LT.lt.{0} 0 t →
+        Eq.{u_3 + 1} (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_3} Y (Matrix.conjTranspose.{0, u_3, u_2} Y))
+            (HSMul.hSMul.{0, u_3, u_3} t
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_3} X (Matrix.conjTranspose.{0, u_3, u_1} X))) →
+          PositiveBlocks.HasCommonSupportNormalForm.{u_1, u_2}
+            (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X)
+            (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y)
+            (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y)
+'PositiveBlocks.hasCommonSupportNormalForm_of_gram_proportional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@PositiveBlocks.gram_product_eq_iff_commonSupportNormalForm.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n] {r : Type u_3}
+  [inst_2 : Fintype.{u_3} r] [DecidableEq.{u_3 + 1} r] (X : Matrix.{u_3, u_1, 0} r m Complex)
+  (Y : Matrix.{u_3, u_2, 0} r n Complex),
+  Ne.{max (u_1 + 1) (u_3 + 1)} X 0 →
+    Ne.{max (u_2 + 1) (u_3 + 1)} Y 0 →
+      Iff
+        (Eq.{1}
+          (PositiveBlocks.hsSq.{u_1, u_2}
+            (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y))
+          (HMul.hMul.{0, 0, 0}
+            (PositiveBlocks.hsNorm.{u_1, u_1}
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X))
+            (PositiveBlocks.hsNorm.{u_2, u_2}
+              (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y))))
+        (PositiveBlocks.HasCommonSupportNormalForm.{u_1, u_2}
+          (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X)
+          (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y)
+          (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y))
+'PositiveBlocks.gram_product_eq_iff_commonSupportNormalForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.gram_product_eq_iff_zero_or_commonSupportNormalForm.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n] {r : Type u_3}
+  [inst_2 : Fintype.{u_3} r] [DecidableEq.{u_3 + 1} r] (X : Matrix.{u_3, u_1, 0} r m Complex)
+  (Y : Matrix.{u_3, u_2, 0} r n Complex),
+  Iff
+    (Eq.{1}
+      (PositiveBlocks.hsSq.{u_1, u_2}
+        (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y))
+      (HMul.hMul.{0, 0, 0}
+        (PositiveBlocks.hsNorm.{u_1, u_1}
+          (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X))
+        (PositiveBlocks.hsNorm.{u_2, u_2}
+          (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y))))
+    (Or (Eq.{max (u_1 + 1) (u_3 + 1)} X 0)
+      (Or (Eq.{max (u_2 + 1) (u_3 + 1)} Y 0)
+        (PositiveBlocks.HasCommonSupportNormalForm.{u_1, u_2}
+          (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X)
+          (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y)
+          (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y))))
+'PositiveBlocks.gram_product_eq_iff_zero_or_commonSupportNormalForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@PositiveBlocks.gram_product_eq_rank_eq.{u_1, u_2,
+    u_3} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n] {r : Type u_3}
+  [inst_2 : Fintype.{u_3} r] [DecidableEq.{u_3 + 1} r] (X : Matrix.{u_3, u_1, 0} r m Complex)
+  (Y : Matrix.{u_3, u_2, 0} r n Complex),
+  Ne.{max (u_1 + 1) (u_3 + 1)} X 0 →
+    Ne.{max (u_2 + 1) (u_3 + 1)} Y 0 →
+      Eq.{1}
+          (PositiveBlocks.hsSq.{u_1, u_2}
+            (HMul.hMul.{max u_1 u_3, max u_2 u_3, max u_1 u_2} (Matrix.conjTranspose.{0, u_3, u_1} X) Y))
+          (HMul.hMul.{0, 0, 0}
+            (PositiveBlocks.hsNorm.{u_1, u_1}
+              (HMul.hMul.{max u_1 u_3, max u_1 u_3, u_1} (Matrix.conjTranspose.{0, u_3, u_1} X) X))
+            (PositiveBlocks.hsNorm.{u_2, u_2}
+              (HMul.hMul.{max u_2 u_3, max u_2 u_3, u_2} (Matrix.conjTranspose.{0, u_3, u_2} Y) Y))) →
+        And (Eq.{1} (Matrix.rank.{u_3, u_1, 0} X) (Matrix.rank.{u_3, u_2, 0} Y))
+          (And (LT.lt.{0} 0 (Matrix.rank.{u_3, u_1, 0} X))
+            (And (LE.le.{0} (Matrix.rank.{u_3, u_1, 0} X) (Fintype.card.{u_3} r))
+              (And (LE.le.{0} (Matrix.rank.{u_3, u_1, 0} X) (Fintype.card.{u_1} m))
+                (LE.le.{0} (Matrix.rank.{u_3, u_1, 0} X) (Fintype.card.{u_2} n)))))
+'PositiveBlocks.gram_product_eq_rank_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hs_product_eq_iff_commonSupportNormalForm.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    Ne.{u_1 + 1} A 0 →
+      Ne.{u_2 + 1} C 0 →
+        Iff
+          (Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} B)
+            (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)))
+          (PositiveBlocks.HasCommonSupportNormalForm.{u_1, u_2} A B C)
+'PositiveBlocks.block_hs_product_eq_iff_commonSupportNormalForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@PositiveBlocks.block_hsNorm_product_eq_iff_commonSupportNormalForm.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    Ne.{u_1 + 1} A 0 →
+      Ne.{u_2 + 1} C 0 →
+        Iff
+          (Eq.{1} (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_2} B) 2)
+            (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)))
+          (PositiveBlocks.HasCommonSupportNormalForm.{u_1, u_2} A B C)
+'PositiveBlocks.block_hsNorm_product_eq_iff_commonSupportNormalForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@PositiveBlocks.block_hs_product_eq_iff_zero_or_commonSupportNormalForm.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    Iff
+      (Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} B)
+        (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)))
+      (Or (Eq.{u_1 + 1} A 0) (Or (Eq.{u_2 + 1} C 0) (PositiveBlocks.HasCommonSupportNormalForm.{u_1, u_2} A B C)))
+'PositiveBlocks.block_hs_product_eq_iff_zero_or_commonSupportNormalForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@PositiveBlocks.block_hsNorm_product_eq_iff_zero_or_commonSupportNormalForm.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    Iff
+      (Eq.{1} (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_2} B) 2)
+        (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)))
+      (Or (Eq.{u_1 + 1} A 0) (Or (Eq.{u_2 + 1} C 0) (PositiveBlocks.HasCommonSupportNormalForm.{u_1, u_2} A B C)))
+'PositiveBlocks.block_hsNorm_product_eq_iff_zero_or_commonSupportNormalForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@PositiveBlocks.block_hs_product_eq_ranks.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    Ne.{u_1 + 1} A 0 →
+      Ne.{u_2 + 1} C 0 →
+        Eq.{1} (PositiveBlocks.hsSq.{u_1, u_2} B)
+            (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)) →
+          And (Eq.{1} (Matrix.rank.{u_1, u_1, 0} A) (Matrix.rank.{u_1, u_2, 0} B))
+            (And (Eq.{1} (Matrix.rank.{u_1, u_1, 0} A) (Matrix.rank.{u_2, u_2, 0} C))
+              (And (LT.lt.{0} 0 (Matrix.rank.{u_1, u_1, 0} A))
+                (LE.le.{0} (Matrix.rank.{u_1, u_1, 0} A) (min.{0} (Fintype.card.{u_1} m) (Fintype.card.{u_2} n)))))
+'PositiveBlocks.block_hs_product_eq_ranks' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hsNorm_product_eq_ranks.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    Ne.{u_1 + 1} A 0 →
+      Ne.{u_2 + 1} C 0 →
+        Eq.{1} (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_2} B) 2)
+            (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)) →
+          And (Eq.{1} (Matrix.rank.{u_1, u_1, 0} A) (Matrix.rank.{u_1, u_2, 0} B))
+            (And (Eq.{1} (Matrix.rank.{u_1, u_1, 0} A) (Matrix.rank.{u_2, u_2, 0} C))
+              (And (LT.lt.{0} 0 (Matrix.rank.{u_1, u_1, 0} A))
+                (LE.le.{0} (Matrix.rank.{u_1, u_1, 0} A) (min.{0} (Fintype.card.{u_1} m) (Fintype.card.{u_2} n)))))
+'PositiveBlocks.block_hsNorm_product_eq_ranks' depends on axioms: [propext, Classical.choice, Quot.sound]
+@PositiveBlocks.block_hsNorm_product_eq_exists_bounded_normalForm.{u_1,
+    u_2} : ∀ {m : Type u_1} {n : Type u_2} [inst : Fintype.{u_1} m] [inst_1 : Fintype.{u_2} n]
+  {A : Matrix.{u_1, u_1, 0} m m Complex} {B : Matrix.{u_1, u_2, 0} m n Complex} {C : Matrix.{u_2, u_2, 0} n n Complex},
+  Matrix.PosSemidef.{max u_1 u_2, 0}
+      (Matrix.fromBlocks.{u_1, u_2, u_1, u_2, 0} A B (Matrix.conjTranspose.{0, u_1, u_2} B) C) →
+    Ne.{u_1 + 1} A 0 →
+      Ne.{u_2 + 1} C 0 →
+        Eq.{1} (HPow.hPow.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_2} B) 2)
+            (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{u_1, u_1} A) (PositiveBlocks.hsNorm.{u_2, u_2} C)) →
+          ∃ k,
+            ∃ (_ : LT.lt.{0} 0 k) (_ : LE.le.{0} k (min.{0} (Fintype.card.{u_1} m) (Fintype.card.{u_2} n))),
+              ∃ U V H t,
+                And (Matrix.PosDef.{0, 0} H)
+                  (And (LT.lt.{0} 0 t)
+                    (And (Eq.{1} (HMul.hMul.{u_1, u_1, 0} (Matrix.conjTranspose.{0, u_1, 0} U) U) 1)
+                      (And (Eq.{1} (HMul.hMul.{u_2, u_2, 0} (Matrix.conjTranspose.{0, u_2, 0} V) V) 1)
+                        (And
+                          (Eq.{u_1 + 1} A
+                            (HMul.hMul.{u_1, u_1, u_1} (HMul.hMul.{u_1, 0, u_1} U H)
+                              (Matrix.conjTranspose.{0, u_1, 0} U)))
+                          (And
+                            (Eq.{max (u_1 + 1) (u_2 + 1)} B
+                              (HSMul.hSMul.{0, max u_1 u_2, max u_1 u_2} (Real.sqrt t)
+                                (HMul.hMul.{u_1, u_2, max u_1 u_2} (HMul.hMul.{u_1, 0, u_1} U H)
+                                  (Matrix.conjTranspose.{0, u_2, 0} V))))
+                            (Eq.{u_2 + 1} C
+                              (HSMul.hSMul.{0, u_2, u_2} t
+                                (HMul.hMul.{u_2, u_2, u_2} (HMul.hMul.{u_2, 0, u_2} V H)
+                                  (Matrix.conjTranspose.{0, u_2, 0} V)))))))))
+'PositiveBlocks.block_hsNorm_product_eq_exists_bounded_normalForm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PositiveBlocks.Examples.scalarOne : Matrix.{0, 0, 0} (Fin 1) (Fin 1) Complex
+'PositiveBlocks.Examples.scalarOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.scalarPhase : Matrix.{0, 0, 0} (Fin 1) (Fin 1) Complex
+'PositiveBlocks.Examples.scalarPhase' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.scalar_sharp_values : And
+  (Eq.{1} (PositiveBlocks.hsSq.{0, 0} PositiveBlocks.Examples.scalarOne) 1)
+  (Eq.{1} (PositiveBlocks.hsNorm.{0, 0} PositiveBlocks.Examples.scalarOne) 1)
+'PositiveBlocks.Examples.scalar_sharp_values' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.scalar_complex_value : Eq.{1} (PositiveBlocks.hsSq.{0, 0} PositiveBlocks.Examples.scalarPhase) 4
+'PositiveBlocks.Examples.scalar_complex_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.scalarOne_gram : Eq.{1}
+  (HMul.hMul.{0, 0, 0} (Matrix.conjTranspose.{0, 0, 0} PositiveBlocks.Examples.scalarOne)
+    PositiveBlocks.Examples.scalarOne)
+  PositiveBlocks.Examples.scalarOne
+'PositiveBlocks.Examples.scalarOne_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.scalar_sharp_positive : Matrix.PosSemidef.{0, 0}
+  (Matrix.fromBlocks.{0, 0, 0, 0, 0} PositiveBlocks.Examples.scalarOne PositiveBlocks.Examples.scalarOne
+    (Matrix.conjTranspose.{0, 0, 0} PositiveBlocks.Examples.scalarOne) PositiveBlocks.Examples.scalarOne)
+'PositiveBlocks.Examples.scalar_sharp_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.product_coefficient_ge_one : ∀ (K : Real),
+  (∀ (A B C : Matrix.{0, 0, 0} (Fin 1) (Fin 1) Complex),
+      Matrix.PosSemidef.{0, 0} (Matrix.fromBlocks.{0, 0, 0, 0, 0} A B (Matrix.conjTranspose.{0, 0, 0} B) C) →
+        LE.le.{0} (PositiveBlocks.hsSq.{0, 0} B)
+          (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} K (PositiveBlocks.hsNorm.{0, 0} A))
+            (PositiveBlocks.hsNorm.{0, 0} C))) →
+    LE.le.{0} 1 K
+'PositiveBlocks.Examples.product_coefficient_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.sum_coefficient_le_two : ∀ (K : Real),
+  (∀ (A B C : Matrix.{0, 0, 0} (Fin 1) (Fin 1) Complex),
+      Matrix.PosSemidef.{0, 0} (Matrix.fromBlocks.{0, 0, 0, 0, 0} A B (Matrix.conjTranspose.{0, 0, 0} B) C) →
+        LE.le.{0} (HMul.hMul.{0, 0, 0} K (PositiveBlocks.hsSq.{0, 0} B))
+          (HAdd.hAdd.{0, 0, 0} (PositiveBlocks.hsSq.{0, 0} A) (PositiveBlocks.hsSq.{0, 0} C))) →
+    LE.le.{0} K 2
+'PositiveBlocks.Examples.sum_coefficient_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.rectangularX : Matrix.{0, 0, 0} (Fin 2) (Fin 2) Complex
+'PositiveBlocks.Examples.rectangularX' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.rectangularY : Matrix.{0, 0, 0} (Fin 2) (Fin 3) Complex
+'PositiveBlocks.Examples.rectangularY' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.rectangularA : Matrix.{0, 0, 0} (Fin 2) (Fin 2) Complex
+'PositiveBlocks.Examples.rectangularA' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.rectangularB : Matrix.{0, 0, 0} (Fin 2) (Fin 3) Complex
+'PositiveBlocks.Examples.rectangularB' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.rectangularC : Matrix.{0, 0, 0} (Fin 3) (Fin 3) Complex
+'PositiveBlocks.Examples.rectangularC' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.rectangular_gram : And
+  (Eq.{1} PositiveBlocks.Examples.rectangularA
+    (HMul.hMul.{0, 0, 0} (Matrix.conjTranspose.{0, 0, 0} PositiveBlocks.Examples.rectangularX)
+      PositiveBlocks.Examples.rectangularX))
+  (And
+    (Eq.{1} PositiveBlocks.Examples.rectangularB
+      (HMul.hMul.{0, 0, 0} (Matrix.conjTranspose.{0, 0, 0} PositiveBlocks.Examples.rectangularX)
+        PositiveBlocks.Examples.rectangularY))
+    (Eq.{1} PositiveBlocks.Examples.rectangularC
+      (HMul.hMul.{0, 0, 0} (Matrix.conjTranspose.{0, 0, 0} PositiveBlocks.Examples.rectangularY)
+        PositiveBlocks.Examples.rectangularY)))
+'PositiveBlocks.Examples.rectangular_gram' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.rectangular_positive : Matrix.PosSemidef.{0, 0}
+  (Matrix.fromBlocks.{0, 0, 0, 0, 0} PositiveBlocks.Examples.rectangularA PositiveBlocks.Examples.rectangularB
+    (Matrix.conjTranspose.{0, 0, 0} PositiveBlocks.Examples.rectangularB) PositiveBlocks.Examples.rectangularC)
+'PositiveBlocks.Examples.rectangular_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.rectangular_squared_norms : And
+  (Eq.{1} (PositiveBlocks.hsSq.{0, 0} PositiveBlocks.Examples.rectangularA) 17)
+  (And (Eq.{1} (PositiveBlocks.hsSq.{0, 0} PositiveBlocks.Examples.rectangularB) 17)
+    (Eq.{1} (PositiveBlocks.hsSq.{0, 0} PositiveBlocks.Examples.rectangularC) 17))
+'PositiveBlocks.Examples.rectangular_squared_norms' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.rectangular_sum_and_product_equality : And
+  (Eq.{1} (HMul.hMul.{0, 0, 0} 2 (PositiveBlocks.hsSq.{0, 0} PositiveBlocks.Examples.rectangularB))
+    (HAdd.hAdd.{0, 0, 0} (PositiveBlocks.hsSq.{0, 0} PositiveBlocks.Examples.rectangularA)
+      (PositiveBlocks.hsSq.{0, 0} PositiveBlocks.Examples.rectangularC)))
+  (Eq.{1} (PositiveBlocks.hsSq.{0, 0} PositiveBlocks.Examples.rectangularB)
+    (HMul.hMul.{0, 0, 0} (PositiveBlocks.hsNorm.{0, 0} PositiveBlocks.Examples.rectangularA)
+      (PositiveBlocks.hsNorm.{0, 0} PositiveBlocks.Examples.rectangularC)))
+'PositiveBlocks.Examples.rectangular_sum_and_product_equality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+PositiveBlocks.Examples.zero_rectangular : Eq.{1} (PositiveBlocks.hsSq.{0, 0} 0) 0
+'PositiveBlocks.Examples.zero_rectangular' depends on axioms: [propext, Classical.choice, Quot.sound]
+PositiveBlocks.Examples.empty_columns : ∀ (M : Matrix.{0, 0, 0} (Fin 2) (Fin 0) Complex),
+  Eq.{1} (PositiveBlocks.hsNorm.{0, 0} M) 0
+'PositiveBlocks.Examples.empty_columns' depends on axioms: [propext, Classical.choice, Quot.sound]

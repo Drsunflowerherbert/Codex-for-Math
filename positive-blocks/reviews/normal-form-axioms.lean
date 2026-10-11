@@ -1,0 +1,16 @@
+import PositiveBlocks.NormalForm
+#print axioms PositiveBlocks.hsNorm_isometry_mul_mul_conjTranspose
+#print axioms PositiveBlocks.normalForm_posSemidef
+#print axioms PositiveBlocks.normalForm_hsNorm_eq
+#print axioms PositiveBlocks.normalForm_ranks
+#print axioms PositiveBlocks.normalForm_block_rank
+#print axioms PositiveBlocks.HasCommonSupportNormalForm.posSemidef_and_hsNorm_eq
+#print axioms PositiveBlocks.HasCommonSupportNormalForm.rank_eq
+#print axioms PositiveBlocks.HasCommonSupportNormalForm.exists_rank_witness
+#print axioms PositiveBlocks.HasCommonSupportNormalForm.exists_normRatio_witness
+#print axioms PositiveBlocks.HasCommonSupportNormalForm.block_rank
+#print axioms PositiveBlocks.exists_posDef_compression
+#print axioms PositiveBlocks.hasCommonSupportNormalForm_of_gram_proportional
+#print axioms PositiveBlocks.gram_product_eq_iff_commonSupportNormalForm
+#print axioms PositiveBlocks.gram_product_eq_iff_zero_or_commonSupportNormalForm
+#print axioms PositiveBlocks.gram_product_eq_rank_eq

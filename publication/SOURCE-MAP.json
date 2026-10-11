@@ -1,6 +1,9 @@
 {
   "schema": "publication-source-map-v1",
-  "interpretation": "Source hashes describe original supplied archive files; published hashes describe reviewed public copies. Historical nested receipt hashes are not rewritten or upgraded. Excluded contents are not included.",
+  "interpretation": "Source hashes bind original supplied archives; published hashes bind reviewed public copies. Original nested receipts are historical and are not retroactively upgraded by edited documentation. Excluded contents are not published.",
+  "historical_source_maps": [
+    "publication/FINITE-FIELD-GUIDE-SOURCE-MAP.json"
+  ],
   "files": [
     {
       "bundle": "starter",
@@ -29,7 +32,7 @@
       "published_file": "research/starter/README.txt",
       "published_sha256": "2d1aff18d7f79a85506aa8f2f0d7a2e40668c7bbef94e19077aec8545692e763",
       "published_bytes": 1843,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "starter",
@@ -40,7 +43,7 @@
       "published_file": "research/starter/affine-avoidance/mrs-provisional-records.json",
       "published_sha256": "8c20c775de9fc6b19392843ee4adaf74fb3e7bf06b6af0a9293a883a128582fe",
       "published_bytes": 14975,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "starter",
@@ -131,7 +134,7 @@
       "published_file": "research/starter/catalog/shortlist.json",
       "published_sha256": "cc15654e5bcd860d09b0bd68e2acb9ee413eab8482516437519ad2a967dc49dd",
       "published_bytes": 13519,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "starter",
@@ -192,7 +195,7 @@
       "published_file": "research/starter/egyptian-fractions/study.md",
       "published_sha256": "af2ccf4dc660dec8384890f9521b36a6cb9846cfefeebaed4ba2bd583ec56b13",
       "published_bytes": 8119,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "starter",
@@ -273,7 +276,7 @@
       "published_file": "research/starter/radial-maps/checks.json",
       "published_sha256": "6fa1c578bc3d8558870f0ffb98b16e050ac6d45ac309eb870b922a74041de1e3",
       "published_bytes": 1516,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "starter",
@@ -294,7 +297,7 @@
       "published_file": "research/starter/radial-maps/provenance.json",
       "published_sha256": "1a58e0722c12fe1ecb010cd3422f6fa125c2ffcb05a4c20be75ceb6b34cc7b10",
       "published_bytes": 2723,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "starter",
@@ -325,7 +328,7 @@
       "published_file": "research/starter/radial-maps/theorems.json",
       "published_sha256": "fe7e4024626701f0f1756cd88eb0211721fa299ce011159ac35f2fd9da5f1a1c",
       "published_bytes": 18713,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "starter",
@@ -356,7 +359,7 @@
       "published_file": "research/starter/reviews/radial-review.json",
       "published_sha256": "85a9c810a94e693ea19e06b4fa6a77fd7876aa87898f101df36505c83edf30c4",
       "published_bytes": 958,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "starter",
@@ -397,7 +400,7 @@
       "published_file": "research/starter/transport-stability/theorems.json",
       "published_sha256": "871d3f713d75b724afb5235d475432529a27755f603ae8e6f900b6a29695a50d",
       "published_bytes": 14861,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -418,7 +421,7 @@
       "published_file": "research/supplement/PACKAGE-PROVENANCE.json",
       "published_sha256": "8632c9559035ce5b6f553e74c10f6b2cefe96bea7881948da5a00f75538f0ba3",
       "published_bytes": 22979,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -429,7 +432,7 @@
       "published_file": "research/supplement/PACKAGING-VALIDATION.json",
       "published_sha256": "fa40fe13d711ce80d49bafaf76874313153d8d97bd78c2167b9656c0cbf9a1f4",
       "published_bytes": 3435,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -440,7 +443,7 @@
       "published_file": "research/supplement/README.md",
       "published_sha256": "29874d16dd0cbc27141664eaf0a11582f200042ff9b435b2111c39ad9b28016f",
       "published_bytes": 8277,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -471,7 +474,7 @@
       "published_file": "research/supplement/affine-avoidance/mrs-provisional-records.json",
       "published_sha256": "8c20c775de9fc6b19392843ee4adaf74fb3e7bf06b6af0a9293a883a128582fe",
       "published_bytes": 14975,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -652,7 +655,7 @@
       "published_file": "research/supplement/convex-approximation/source-provenance.json",
       "published_sha256": "14cce9074ba9d43847aa98f1abeb7621322dd1014b7f52083de690b00c6e7e5e",
       "published_bytes": 1297,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -723,7 +726,7 @@
       "published_file": "research/supplement/egyptian-fractions/study.md",
       "published_sha256": "af2ccf4dc660dec8384890f9521b36a6cb9846cfefeebaed4ba2bd583ec56b13",
       "published_bytes": 8119,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -804,7 +807,7 @@
       "published_file": "research/supplement/finite-field-mixing/study.md",
       "published_sha256": "728c6161c88f252c61dff1e42284c29ea77a75921a76e3a2452f565de73f799d",
       "published_bytes": 21336,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -815,7 +818,7 @@
       "published_file": "research/supplement/finite-field-mixing/theorems.json",
       "published_sha256": "6c299581f4e993474c8d4d71b783ac70d4d510c2ab68cde4e20bfb3eff1daac3",
       "published_bytes": 15578,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -916,7 +919,7 @@
       "published_file": "research/supplement/mixed-moments/theorems.json",
       "published_sha256": "2945b25b62e8cf109bb5c6fe7e5a22a7b3bb3fdfcaa07edd2e9923da267257b0",
       "published_bytes": 18198,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -1057,7 +1060,7 @@
       "published_file": "research/supplement/reproduce_checks.py",
       "published_sha256": "81b5117169e2ce86b37f096be770e52f024ca5e083107f02699f6a0614ebac59",
       "published_bytes": 5838,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -1068,7 +1071,7 @@
       "published_file": "research/supplement/reviews/affine/audit_records.py",
       "published_sha256": "90a367aed8effeb31db969215b1e93fbbb47cdd675653527eb05105128b69608",
       "published_bytes": 15217,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -1099,7 +1102,7 @@
       "published_file": "research/supplement/reviews/affine/mrs-provisional-records.reviewed.json",
       "published_sha256": "860cf529496ef86b705e2fbc0d1e87efcd9f5bb8edb939862da84b445cc9cbef",
       "published_bytes": 17499,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -1150,7 +1153,7 @@
       "published_file": "research/supplement/reviews/egyptian/corrected/study.md",
       "published_sha256": "d55fa211f374f6e990d39b3fd0403a8583f467c0630ed31d99c8d302f228836e",
       "published_bytes": 10449,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -1221,7 +1224,7 @@
       "published_file": "research/supplement/reviews/egyptian/original-sha256-after.txt",
       "published_sha256": "c018debf530d444288c6198a800a40808b6fc2fbf525f3edaec8526f24e50617",
       "published_bytes": 512,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -1232,7 +1235,7 @@
       "published_file": "research/supplement/reviews/egyptian/original-sha256-before.txt",
       "published_sha256": "c018debf530d444288c6198a800a40808b6fc2fbf525f3edaec8526f24e50617",
       "published_bytes": 512,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -1303,7 +1306,7 @@
       "published_file": "research/supplement/reviews/finite-field-mixing/independent-review.md",
       "published_sha256": "18dab88b862b7a56be44ac42a7449e8006f14da0b0bf59ac2636b6fa5391b7a3",
       "published_bytes": 11594,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -1314,7 +1317,7 @@
       "published_file": "research/supplement/reviews/finite-field-mixing/independent_check.py",
       "published_sha256": "62e4d7b9bcf94c9b2fa7c80bdf107e9890ff343203f5bc5c0c1650b452e6327f",
       "published_bytes": 13017,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -1355,7 +1358,7 @@
       "published_file": "research/supplement/reviews/positive-blocks/parent-independent-review.json",
       "published_sha256": "c62d8fced6d237345e9c9c28d3bfcc8e6bc4390b65d4620a91b42116287d39d0",
       "published_bytes": 2699,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -1366,7 +1369,7 @@
       "published_file": "research/supplement/reviews/positive-blocks/parent-independent-review.md",
       "published_sha256": "de42eb5bf06b5ddbfdccc308b8b10b88d2c2e14113526c5841af70fe14e307bb",
       "published_bytes": 8337,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -1437,7 +1440,7 @@
       "published_file": "research/supplement/reviews/transport/review-record.json",
       "published_sha256": "f63ef5e675478292136515245f4829c188f97c29d753d4f4ab143828e2696b4c",
       "published_bytes": 9539,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -1478,7 +1481,7 @@
       "published_file": "research/supplement/transport-stability/theorems.json",
       "published_sha256": "871d3f713d75b724afb5235d475432529a27755f603ae8e6f900b6a29695a50d",
       "published_bytes": 14861,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "supplement",
@@ -1489,7 +1492,7 @@
       "published_file": "research/supplement/verify_package.py",
       "published_sha256": "1f58920a10baaf2bc0677c2763abd42bdaaac22d50d41b9ca3527777ebf95472",
       "published_bytes": 331,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1520,7 +1523,7 @@
       "published_file": "radial-contact/README.md",
       "published_sha256": "2cc8b37cfcbb4cb1f4fe2a4f08fbc9dc573faf60bdb8339b0c6bc89f01e32190",
       "published_bytes": 6897,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1601,7 +1604,7 @@
       "published_file": "radial-contact/evidence/build-history.json",
       "published_sha256": "cae31dda9598bad1eca85e8f53909b15ed1cfbdeff5b4f5959538292af140daf",
       "published_bytes": 5824,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1632,7 +1635,7 @@
       "published_file": "radial-contact/evidence/final-build.log",
       "published_sha256": "1a5c62bef6f352279865ddc9bdc6d4d8a5f993dd16235952661b006fc6e47ef8",
       "published_bytes": 289,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1643,7 +1646,7 @@
       "published_file": "radial-contact/evidence/formal-review.md",
       "published_sha256": "bf30a43623eedb5304ecd0d2d0d432a7a5212cc2bd5eb380182a572bc366eb6c",
       "published_bytes": 13020,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1664,7 +1667,7 @@
       "published_file": "radial-contact/evidence/milestone-1-attempt-1.log",
       "published_sha256": "a0fe174cb26ab05b8835be61038d445ccd6338b79681b3f87b89468113a13914",
       "published_bytes": 91362,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1685,7 +1688,7 @@
       "published_file": "radial-contact/evidence/milestone-2-attempt-1.log",
       "published_sha256": "7a591617c78c7309fff0cb5501084e1e50e13d2ebf45b34641ccfe4262c4eb2a",
       "published_bytes": 2708,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1716,7 +1719,7 @@
       "published_file": "radial-contact/evidence/milestone-3-attempt-2.log",
       "published_sha256": "a700a9c7ad22dcc69baf81f15f6536bdea940afd411ad74fc7283ee5f9fc1daa",
       "published_bytes": 1205,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1737,7 +1740,7 @@
       "published_file": "radial-contact/evidence/milestone-4-attempt-1.log",
       "published_sha256": "7fb05cd164e1c638319891e84c679a9e4357e6f25958de0dc3fb0e2f3d938ef6",
       "published_bytes": 1205,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1758,7 +1761,7 @@
       "published_file": "radial-contact/evidence/ordinary-review.md",
       "published_sha256": "1b5b4add036f4042236f9600f18b025516392e101adcb660daa4a167a045c489",
       "published_bytes": 9015,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1819,7 +1822,7 @@
       "published_file": "radial-contact/evidence/original/verification-run.log",
       "published_sha256": "c76b6c5028bb537f9f3b22dd30e5128867aa51dd0a3006b87086602a0e0c5d17",
       "published_bytes": 75,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1830,7 +1833,7 @@
       "published_file": "radial-contact/evidence/original-deliverable.json",
       "published_sha256": "b8dd9b70ed512cdc3597d1fcecfe3ba9d28f079d4dc3fa615cd7c6d2b8c9261c",
       "published_bytes": 249,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1851,7 +1854,7 @@
       "published_file": "radial-contact/evidence/regression-tests.log",
       "published_sha256": "ab9084a0fc3d41a4bb9b1ac22edaff319baa78a59714f8ae75f91cf8b3163cc8",
       "published_bytes": 3458,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1862,7 +1865,7 @@
       "published_file": "radial-contact/evidence/reproducibility-assessment.json",
       "published_sha256": "599060b0ec8b405b378301de521da6a7a2b5326baac14a1857e0feb8e3da06bd",
       "published_bytes": 3206,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1891,7 +1894,7 @@
       "published_file": "radial-contact/evidence/source-provenance.json",
       "published_sha256": "e82e4d8eacc3b31edec927443067a31afd0ecdc95e66fcf51ab88083462cb87f",
       "published_bytes": 767,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1962,7 +1965,7 @@
       "published_file": "radial-contact/evidence/validation.json",
       "published_sha256": "d85aa0ed94734ac086a6fd812fe49ded97d2c434763da86460f4dd2ba618abe6",
       "published_bytes": 10474,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1973,7 +1976,7 @@
       "published_file": "radial-contact/evidence/verification-attempt-1.log",
       "published_sha256": "35e5895ce0cd2516ff2984ea313e137756d1336ee351447fb001d7f13d88d87d",
       "published_bytes": 75,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -1984,7 +1987,7 @@
       "published_file": "radial-contact/evidence/verification-run.log",
       "published_sha256": "c76b6c5028bb537f9f3b22dd30e5128867aa51dd0a3006b87086602a0e0c5d17",
       "published_bytes": 75,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "radial",
@@ -2185,7 +2188,7 @@
       "published_file": "egyptian-exact/README.md",
       "published_sha256": "00ffe31b12e63cfeb6fe8d25612585568811b99ec0f23420111d2df86061deec",
       "published_bytes": 5630,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "egyptian",
@@ -2196,7 +2199,7 @@
       "published_file": "egyptian-exact/docs/mathematics.md",
       "published_sha256": "2b67a71c4d9aa2eb7b1561155d0c77d15cbbc304a9e0436ee622a5b887b2de83",
       "published_bytes": 3499,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "egyptian",
@@ -2237,7 +2240,7 @@
       "published_file": "egyptian-exact/evidence/checkpoints/20261011T023518Z.json",
       "published_sha256": "ae1b5a852463dd208816254d688c30d02cb7e9985ac84a249f99d2fdef5419ec",
       "published_bytes": 2070,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "egyptian",
@@ -2266,7 +2269,7 @@
       "published_file": "egyptian-exact/evidence/commands.txt",
       "published_sha256": "c291a046fa5d26d1c3e348386470d1230e13223e47f4c465ba6eb5ae068c82bf",
       "published_bytes": 1602,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "egyptian",
@@ -2327,7 +2330,7 @@
       "published_file": "egyptian-exact/evidence/final-verification.json",
       "published_sha256": "391aeb631460468b805145191aae07be5cd9a3f8df59faacf4d6a0f3a2c31fa4",
       "published_bytes": 1548,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "egyptian",
@@ -2348,7 +2351,7 @@
       "published_file": "egyptian-exact/evidence/first-basic-build.log",
       "published_sha256": "fabb706d2cd88e82ee28f7109188f4d98dab14712c8b7a2e1908a7eedaf48b33",
       "published_bytes": 51511,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "egyptian",
@@ -2485,7 +2488,7 @@
       "published_file": "egyptian-exact/evidence/safe-split-build.log",
       "published_sha256": "ee6e53571a685185041557500c647197b3edbd8b74fc5acb569496c5d4c28703",
       "published_bytes": 1385,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "egyptian",
@@ -2496,7 +2499,7 @@
       "published_file": "egyptian-exact/evidence/setup-mathlib.log",
       "published_sha256": "1ebda54f5a253a4b576078d7320fdb5bb372b9df41492125bee1940cbc298431",
       "published_bytes": 2458,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "egyptian",
@@ -2517,7 +2520,7 @@
       "published_file": "egyptian-exact/evidence/source-transfer.json",
       "published_sha256": "e82e4d8eacc3b31edec927443067a31afd0ecdc95e66fcf51ab88083462cb87f",
       "published_bytes": 767,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "egyptian",
@@ -2578,7 +2581,7 @@
       "published_file": "egyptian-exact/review/AllStatementsAudit.md",
       "published_sha256": "e6a0322c9f9c9975b33a9f0a539963a7dd2be9d2aeff92d13f486fa23475391e",
       "published_bytes": 4648,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "egyptian",
@@ -2639,7 +2642,7 @@
       "published_file": "egyptian-exact/review/FiniteStateAudit.md",
       "published_sha256": "ef6044210caf00370ca8e65a92522ccd7490e9b8cd09dba05302df70d6a39139",
       "published_bytes": 7382,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "egyptian",
@@ -2680,7 +2683,7 @@
       "published_file": "egyptian-exact/review/HypothesesAudit.md",
       "published_sha256": "6ac906570a58f78d49ec065625d985f8181b877aa694e0ed12754851c68c4d3d",
       "published_bytes": 6147,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "egyptian",
@@ -2701,7 +2704,7 @@
       "published_file": "egyptian-exact/review/MarkerPaddingAudit.md",
       "published_sha256": "c1e57d8fc11944330ae34a336c446276201e22ef9d9344e9451c9d0fe0f109db",
       "published_bytes": 10107,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "egyptian",
@@ -2856,7 +2859,7 @@
       "published_file": "tangent-sharp/BASELINE-PROGRESS.md",
       "published_sha256": "4e0ff995c6cb3db4a4ec6d90e3ea013b9c3e23a202bafef114095eb878332d48",
       "published_bytes": 3719,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "sharp",
@@ -2877,7 +2880,7 @@
       "published_file": "tangent-sharp/BASELINE-README.md",
       "published_sha256": "ab03a4d211c40b134f6688f4e794f973d2f977f780ed04310b43e4e9789874b8",
       "published_bytes": 4890,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "sharp",
@@ -2888,7 +2891,7 @@
       "published_file": "tangent-sharp/README.md",
       "published_sha256": "7ef4cf1e2754d23ae0aa7155cd39a37c52efff58c21fce5f6ff5ccc32c17f19f",
       "published_bytes": 3168,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "sharp",
@@ -3059,7 +3062,7 @@
       "published_file": "tangent-sharp/docs/SOURCES.md",
       "published_sha256": "ad145bce85a5481b3426b28c148fe33d992740ffaab902cc98716ffb74e5ba49",
       "published_bytes": 2860,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "sharp",
@@ -3100,7 +3103,7 @@
       "published_file": "tangent-sharp/docs/sharp-independent-review.md",
       "published_sha256": "5f6185258c29d0b38a65f27cb10609483480a0647ce768c5dd707c021b1b2307",
       "published_bytes": 12645,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "sharp",
@@ -3121,7 +3124,7 @@
       "published_file": "tangent-sharp/docs/sharp-verification.md",
       "published_sha256": "7531679e39c268bd94cf7fdc67a709dc2a837e1776c584998f2672a7c34273ad",
       "published_bytes": 7066,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "sharp",
@@ -3132,7 +3135,7 @@
       "published_file": "tangent-sharp/docs/starter-assessment.md",
       "published_sha256": "0e866ffab10b13418949d7e4d59f50ba85009096a9045c20b3fc75a4a6b91b21",
       "published_bytes": 1610,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "sharp",
@@ -3143,7 +3146,7 @@
       "published_file": "tangent-sharp/docs/starter-reference/inspection.json",
       "published_sha256": "4d5eae62b8ce211fe52ead0aeb91ad543ef3129b1b744916144f3ed177ac15c3",
       "published_bytes": 1201,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "sharp",
@@ -3194,7 +3197,7 @@
       "published_file": "tangent-sharp/docs/verification-summary.json",
       "published_sha256": "2a184deafa00098fa0a2c992eb1ee80ba1b6098226d2ef083a79d49f177295ec",
       "published_bytes": 1161,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "sharp",
@@ -3505,7 +3508,7 @@
       "published_file": "tangent-sharp/logs/sharp-20261011/components/divergence/PROOF-NOTE.md",
       "published_sha256": "3d654f276faca3bbd8485009061398b1a7337d1cdeea504e5ddd0f09a2dd6f27",
       "published_bytes": 2670,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "sharp",
@@ -3536,7 +3539,7 @@
       "published_file": "tangent-sharp/logs/sharp-20261011/components/divergence/verification-metadata.txt",
       "published_sha256": "860b0cbe86d869b0a2948650f1a8dfaa74ca8fed09e679c173025534dd092bd2",
       "published_bytes": 645,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "sharp",
@@ -3557,7 +3560,7 @@
       "published_file": "tangent-sharp/logs/sharp-20261011/components/dyadic/README.md",
       "published_sha256": "33edf190f869dfaaad16696f24dd9e692e29724277d77aa19f7a50e14b30cb45",
       "published_bytes": 2341,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "sharp",
@@ -3598,7 +3601,7 @@
       "published_file": "tangent-sharp/logs/sharp-20261011/components/packing/README.md",
       "published_sha256": "e7ed0670d2c9a4db6f1a1d11b9d8a48209747684b385c62cb072f2dbe2ea5ee3",
       "published_bytes": 2754,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "sharp",
@@ -3649,7 +3652,7 @@
       "published_file": "tangent-sharp/logs/sharp-20261011/components/spacing/divergence-dyadic-review.md",
       "published_sha256": "93c980bb6eda5a10737eb6922707b173fa162eab1503bb307259ab5ac08c922c",
       "published_bytes": 5007,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "sharp",
@@ -3710,7 +3713,7 @@
       "published_file": "tangent-sharp/logs/sharp-20261011/components/uniform/spacing-block-review.md",
       "published_sha256": "6c16bc562d901930592502108aa214a35b2386040277736b44e1911b2a61edd1",
       "published_bytes": 4684,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     },
     {
       "bundle": "sharp",
@@ -4099,7 +4102,729 @@
       "published_file": "tangent-sharp/verification.supplied.json",
       "published_sha256": "cadbbacc184925d8726e3c680b01827abe2e4842eaffa4618e97ac23864f55c9",
       "published_bytes": 1157,
-      "change_scope": "Privacy/path/review-role metadata, historical-scope documentation or reproducibility routing; proof source and exact dependency pins preserved."
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": ".gitignore",
+      "source_sha256": "7d84052335bc53a87e5414d853d20623ec85383b8871384cead83bfe91779512",
+      "source_bytes": 61,
+      "action": "copied",
+      "published_file": "positive-blocks/.gitignore",
+      "published_sha256": "7d84052335bc53a87e5414d853d20623ec85383b8871384cead83bfe91779512",
+      "published_bytes": 61
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "CHECKPOINT-SHA256.json",
+      "source_sha256": "35e761125aace66a46d36622655371d46623be0758aa6804385aa6ccc380eaec",
+      "source_bytes": 10296,
+      "action": "copied_and_renamed",
+      "published_file": "positive-blocks/CHECKPOINT-SHA256.supplied.json",
+      "published_sha256": "35e761125aace66a46d36622655371d46623be0758aa6804385aa6ccc380eaec",
+      "published_bytes": 10296
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "CONTINUATION.md",
+      "source_sha256": "f864a2806bd25b4179851458417fe54e0d7234ab6e8446a27b590b4f20124c0f",
+      "source_bytes": 6539,
+      "action": "excluded",
+      "reason": "Internal recovery handoff; precise unfinished historical review status is summarized in the final public review."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "LICENSE",
+      "source_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "source_bytes": 11357,
+      "action": "excluded",
+      "reason": "Generic license template does not establish authorized licensing of new proof code; existing upstream attribution/license covers retained third-party text."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "PositiveBlocks/Basic.lean",
+      "source_sha256": "aa32109f23367aecde51d21179015007577ecdcfdb9b50903251a46b09b7eb45",
+      "source_bytes": 5158,
+      "action": "copied",
+      "published_file": "positive-blocks/PositiveBlocks/Basic.lean",
+      "published_sha256": "aa32109f23367aecde51d21179015007577ecdcfdb9b50903251a46b09b7eb45",
+      "published_bytes": 5158
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "PositiveBlocks/Blocks.lean",
+      "source_sha256": "36dddf5ca7c8eb43080728e1ef13e9ccb9cb938c76dc0a98b1d5e900c60d9cb9",
+      "source_bytes": 15974,
+      "action": "copied",
+      "published_file": "positive-blocks/PositiveBlocks/Blocks.lean",
+      "published_sha256": "36dddf5ca7c8eb43080728e1ef13e9ccb9cb938c76dc0a98b1d5e900c60d9cb9",
+      "published_bytes": 15974
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "PositiveBlocks/Classification.lean",
+      "source_sha256": "90864094f9a16fba4ecf3e0087529f43e112069e832f38413f342478daf7a12d",
+      "source_bytes": 5089,
+      "action": "copied",
+      "published_file": "positive-blocks/PositiveBlocks/Classification.lean",
+      "published_sha256": "90864094f9a16fba4ecf3e0087529f43e112069e832f38413f342478daf7a12d",
+      "published_bytes": 5089
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "PositiveBlocks/Corollaries.lean",
+      "source_sha256": "7f020e5cbadb6f56de4fbbf649d2dba738d9d19b0a9e25b98ec5790b01bbc861",
+      "source_bytes": 1924,
+      "action": "copied",
+      "published_file": "positive-blocks/PositiveBlocks/Corollaries.lean",
+      "published_sha256": "7f020e5cbadb6f56de4fbbf649d2dba738d9d19b0a9e25b98ec5790b01bbc861",
+      "published_bytes": 1924
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "PositiveBlocks/Examples.lean",
+      "source_sha256": "6d3c381ce5829a482385dacace066f9489baf8b3a310895112780c92df55b9eb",
+      "source_bytes": 4459,
+      "action": "copied",
+      "published_file": "positive-blocks/PositiveBlocks/Examples.lean",
+      "published_sha256": "6d3c381ce5829a482385dacace066f9489baf8b3a310895112780c92df55b9eb",
+      "published_bytes": 4459
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "PositiveBlocks/Gram.lean",
+      "source_sha256": "bb332f13fe9edadc82647f932f62c8a55399fd138b2647471f9f264daf27673d",
+      "source_bytes": 6036,
+      "action": "copied",
+      "published_file": "positive-blocks/PositiveBlocks/Gram.lean",
+      "published_sha256": "bb332f13fe9edadc82647f932f62c8a55399fd138b2647471f9f264daf27673d",
+      "published_bytes": 6036
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "PositiveBlocks/Intrinsic.lean",
+      "source_sha256": "dcaf52c30231c3c16f7d930cc0e689451e3c46f8263526b13bfe2ea9cdd311c7",
+      "source_bytes": 10198,
+      "action": "copied",
+      "published_file": "positive-blocks/PositiveBlocks/Intrinsic.lean",
+      "published_sha256": "dcaf52c30231c3c16f7d930cc0e689451e3c46f8263526b13bfe2ea9cdd311c7",
+      "published_bytes": 10198
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "PositiveBlocks/NormalForm.lean",
+      "source_sha256": "32512a1aec69f99002b32155460b16336bddc656f352d34b4586e7bb2245ea8d",
+      "source_bytes": 24748,
+      "action": "copied",
+      "published_file": "positive-blocks/PositiveBlocks/NormalForm.lean",
+      "published_sha256": "32512a1aec69f99002b32155460b16336bddc656f352d34b4586e7bb2245ea8d",
+      "published_bytes": 24748
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "PositiveBlocks/Sharpness.lean",
+      "source_sha256": "acf8f5c68b858290ccd28dc5c1b5a3b0af0f691b01fe7ae7064bd613c50b454f",
+      "source_bytes": 1758,
+      "action": "copied",
+      "published_file": "positive-blocks/PositiveBlocks/Sharpness.lean",
+      "published_sha256": "acf8f5c68b858290ccd28dc5c1b5a3b0af0f691b01fe7ae7064bd613c50b454f",
+      "published_bytes": 1758
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "PositiveBlocks.lean",
+      "source_sha256": "172a370711ed194392f1489e878d4a202e35e5d554e4c859f2c049b2396007b8",
+      "source_bytes": 283,
+      "action": "copied",
+      "published_file": "positive-blocks/PositiveBlocks.lean",
+      "published_sha256": "172a370711ed194392f1489e878d4a202e35e5d554e4c859f2c049b2396007b8",
+      "published_bytes": 283
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "README.md",
+      "source_sha256": "c956e49dab88604927a014f52a4138c01c52c9bd0a041997a1cdf2b7241389e9",
+      "source_bytes": 6084,
+      "action": "sanitized_or_documented",
+      "published_file": "positive-blocks/README.md",
+      "published_sha256": "91b873b517c34a52da38a9e2dfc0a8d204d1ca944d0e60e351a16931fd433378",
+      "published_bytes": 6214,
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "docs/completion-report.md",
+      "source_sha256": "6ec098c59b90371c8991ff18dc5ab97f9a67a1f0257412fd0e87fb9f6ac799da",
+      "source_bytes": 5277,
+      "action": "sanitized_or_documented",
+      "published_file": "positive-blocks/docs/completion-report.supplied.md",
+      "published_sha256": "242810a7a7e8fa318f36389f977f92fe6fffac1f105345f14e66054216594c80",
+      "published_bytes": 4952,
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "docs/study-independent-review.json",
+      "source_sha256": "979f438d66dd042e8790e1ee1d92ab80e0b381f134fad6522fb697bb58b50abf",
+      "source_bytes": 5425,
+      "action": "copied",
+      "published_file": "positive-blocks/docs/study-independent-review.json",
+      "published_sha256": "979f438d66dd042e8790e1ee1d92ab80e0b381f134fad6522fb697bb58b50abf",
+      "published_bytes": 5425
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "docs/study-independent-review.md",
+      "source_sha256": "84b4104c01bfb601b5b5a56c5f758cd1594a1e6eebfeea5595cf5851673ea2f7",
+      "source_bytes": 4051,
+      "action": "copied",
+      "published_file": "positive-blocks/docs/study-independent-review.md",
+      "published_sha256": "84b4104c01bfb601b5b5a56c5f758cd1594a1e6eebfeea5595cf5851673ea2f7",
+      "published_bytes": 4051
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "docs/study-parent-independent-review.md",
+      "source_sha256": "e6cd1d893a2e2ab1cd5d198505fd6a6963d9d7c5c7ed739fcd4252a36f10ee36",
+      "source_bytes": 8344,
+      "action": "sanitized_or_documented",
+      "published_file": "positive-blocks/docs/study-parent-independent-review.md",
+      "published_sha256": "08c3f84d0d0dd28b8279e632b87e4a2656d451a30aa5235e60f40c2080148353",
+      "published_bytes": 8337,
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "docs/study-provenance.json",
+      "source_sha256": "5cbad41417223c1b106556ef68a09ef3f3d314ed762377b2dc86355dd95f0f85",
+      "source_bytes": 1944,
+      "action": "sanitized_or_documented",
+      "published_file": "positive-blocks/docs/study-provenance.json",
+      "published_sha256": "109e48221bafd00df88f31f3d0a71c7784c290805df01967594d481fec07d33b",
+      "published_bytes": 1967,
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "docs/study-source-main.tex",
+      "source_sha256": "164f56cc3f5ecbfb65ddba0d0438cacf44f325919ef7dfb742d073c948fddabd",
+      "source_bytes": 35175,
+      "action": "copied",
+      "published_file": "positive-blocks/docs/study-source-main.tex",
+      "published_sha256": "164f56cc3f5ecbfb65ddba0d0438cacf44f325919ef7dfb742d073c948fddabd",
+      "published_bytes": 35175
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "docs/study-study.md",
+      "source_sha256": "fec0fdca335159320f13c572e34f77fa0dad3578ec76de4da6e4ae437a9c60af",
+      "source_bytes": 17071,
+      "action": "copied",
+      "published_file": "positive-blocks/docs/study-study.md",
+      "published_sha256": "fec0fdca335159320f13c572e34f77fa0dad3578ec76de4da6e4ae437a9c60af",
+      "published_bytes": 17071
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "docs/study-theorem-records.json",
+      "source_sha256": "8276d9642256c65907271f84d3b2082f970909fc3b624cb1639c860e2649c203",
+      "source_bytes": 16256,
+      "action": "copied",
+      "published_file": "positive-blocks/docs/study-theorem-records.json",
+      "published_sha256": "8276d9642256c65907271f84d3b2082f970909fc3b624cb1639c860e2649c203",
+      "published_bytes": 16256
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "examples/check_exact_examples.py",
+      "source_sha256": "056023a525bd5c855961ac8870afa9b6d868d7f9acada6a97efadb28caebbfde",
+      "source_bytes": 12515,
+      "action": "copied",
+      "published_file": "positive-blocks/examples/check_exact_examples.py",
+      "published_sha256": "056023a525bd5c855961ac8870afa9b6d868d7f9acada6a97efadb28caebbfde",
+      "published_bytes": 12515
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "examples/checks.json",
+      "source_sha256": "d7aedbac738fe5bfdc864dd5ce3b2b4662243dfc4e44b20d32614939723a7aa4",
+      "source_bytes": 1073,
+      "action": "copied",
+      "published_file": "positive-blocks/examples/checks.json",
+      "published_sha256": "d7aedbac738fe5bfdc864dd5ce3b2b4662243dfc4e44b20d32614939723a7aa4",
+      "published_bytes": 1073
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "examples/exact-examples.json",
+      "source_sha256": "5e7f79ee684eb8f8d55a3f641e63fdad9abc5c3a37142679db023a6c8031bc51",
+      "source_bytes": 527684,
+      "action": "copied",
+      "published_file": "positive-blocks/examples/exact-examples.json",
+      "published_sha256": "5e7f79ee684eb8f8d55a3f641e63fdad9abc5c3a37142679db023a6c8031bc51",
+      "published_bytes": 527684
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "examples/independent-check-examples.py",
+      "source_sha256": "14b49462b0a45d7e797b211e26f92641452d60ef50da2c476758eb10a6e3de1f",
+      "source_bytes": 5524,
+      "action": "copied",
+      "published_file": "positive-blocks/examples/independent-check-examples.py",
+      "published_sha256": "14b49462b0a45d7e797b211e26f92641452d60ef50da2c476758eb10a6e3de1f",
+      "published_bytes": 5524
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "lake-manifest.json",
+      "source_sha256": "fc51e6fc0babcb506fdf287f91de95466abfc7adbea060fcc1c91766cafc3cab",
+      "source_bytes": 3542,
+      "action": "copied",
+      "published_file": "positive-blocks/lake-manifest.json",
+      "published_sha256": "fc51e6fc0babcb506fdf287f91de95466abfc7adbea060fcc1c91766cafc3cab",
+      "published_bytes": 3542
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "lakefile.toml",
+      "source_sha256": "3846fc2d4153b1b0a83057353cc1ab6ef49a827fd39f44c7a5fbfe38a53a715c",
+      "source_bytes": 288,
+      "action": "copied",
+      "published_file": "positive-blocks/lakefile.toml",
+      "published_sha256": "3846fc2d4153b1b0a83057353cc1ab6ef49a827fd39f44c7a5fbfe38a53a715c",
+      "published_bytes": 288
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "lean-toolchain",
+      "source_sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+      "source_bytes": 25,
+      "action": "copied",
+      "published_file": "positive-blocks/lean-toolchain",
+      "published_sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+      "published_bytes": 25
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "logs/checkpoints.jsonl",
+      "source_sha256": "78214593bbe8751574b44b0afc41d7ab0505b22df3763cd554e2a0d3fd1b960c",
+      "source_bytes": 468,
+      "action": "excluded",
+      "reason": "Internal checkpoint locations and packaging coordination, not mathematical evidence."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "logs/fresh-build.json",
+      "source_sha256": "e80adfff842a7c288f8ae42c2b91b9d9a387bf58cbec8c6e573b05f2692ae107",
+      "source_bytes": 1504,
+      "action": "copied",
+      "published_file": "positive-blocks/logs/fresh-build.json",
+      "published_sha256": "e80adfff842a7c288f8ae42c2b91b9d9a387bf58cbec8c6e573b05f2692ae107",
+      "published_bytes": 1504
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "logs/fresh-build.log",
+      "source_sha256": "388c52c049f8787fcbd6baa3af584522c2f41586923d796dc9763ec00c261081",
+      "source_bytes": 560,
+      "action": "copied",
+      "published_file": "positive-blocks/logs/fresh-build.log",
+      "published_sha256": "388c52c049f8787fcbd6baa3af584522c2f41586923d796dc9763ec00c261081",
+      "published_bytes": 560
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "logs/gram-author-normal-form-axioms.log",
+      "source_sha256": "68336501f7239ebd63e6f930d67ffe6d2d6f43c57c3c6b799b7f6f885e6ceaae",
+      "source_bytes": 5421,
+      "action": "copied",
+      "published_file": "positive-blocks/logs/gram-author-normal-form-axioms.log",
+      "published_sha256": "68336501f7239ebd63e6f930d67ffe6d2d6f43c57c3c6b799b7f6f885e6ceaae",
+      "published_bytes": 5421
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "logs/gram-author-normal-form-compile.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_bytes": 0,
+      "action": "copied",
+      "published_file": "positive-blocks/logs/gram-author-normal-form-compile.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_bytes": 0
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "logs/gram-intrinsic-axioms.log",
+      "source_sha256": "975c5f39d83b06ab0d07e2fa6a93f08423172ea173b4c1c2ff378b8663b41895",
+      "source_bytes": 2476,
+      "action": "copied",
+      "published_file": "positive-blocks/logs/gram-intrinsic-axioms.log",
+      "published_sha256": "975c5f39d83b06ab0d07e2fa6a93f08423172ea173b4c1c2ff378b8663b41895",
+      "published_bytes": 2476
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "logs/independent-exact-example-results.json",
+      "source_sha256": "8683e373b12ef727d0494c0b7371e1bb4125b700d0c2495148868e33adc7cbd2",
+      "source_bytes": 732,
+      "action": "copied",
+      "published_file": "positive-blocks/logs/independent-exact-example-results.json",
+      "published_sha256": "8683e373b12ef727d0494c0b7371e1bb4125b700d0c2495148868e33adc7cbd2",
+      "published_bytes": 732
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "logs/input-verification.json",
+      "source_sha256": "bf7c0304645e3e327daaec892c5003be05f42888c544f79d52faa8f5501448ca",
+      "source_bytes": 655,
+      "action": "sanitized_or_documented",
+      "published_file": "positive-blocks/logs/input-verification.json",
+      "published_sha256": "71b8fa897dca583eee7ee3175ad733be7234de4b29d3df1d684ad33768b2f8e6",
+      "published_bytes": 590,
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "logs/normal-form-axioms.log",
+      "source_sha256": "3b518465fee00dcef7b8d2b471ea6568ca1e563140851fddd4b4204fdebe7079",
+      "source_bytes": 1688,
+      "action": "copied",
+      "published_file": "positive-blocks/logs/normal-form-axioms.log",
+      "published_sha256": "3b518465fee00dcef7b8d2b471ea6568ca1e563140851fddd4b4204fdebe7079",
+      "published_bytes": 1688
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "logs/recovery-status.json",
+      "source_sha256": "e8cd316b935f7e352d60640da0ae51e5702a7a1983e23370b71842912f922407",
+      "source_bytes": 1643,
+      "action": "excluded",
+      "reason": "Internal recovery bookkeeping; historical successful audit receipts remain separate from the new final written verdict."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "logs/tangent-before-sha256.json",
+      "source_sha256": "37fe62837d3cc5099e87c115c800dc5008e05eb0d60bb2e1849bc3c0b3516708",
+      "source_bytes": 7935,
+      "action": "excluded",
+      "reason": "Internal executor-path baseline; original tangent preservation is checked separately."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "logs/tangent-preservation.json",
+      "source_sha256": "75334db4975d968ba5910e25609b77c5762887beb2b207e552035adf7215c6d2",
+      "source_bytes": 220,
+      "action": "excluded",
+      "reason": "Internal source-preservation bookkeeping; publication checks original tangent bytes against the exact base."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "logs/toolchain-verification.json",
+      "source_sha256": "836344e6fafd4dee4729b60fa8a265ecfc9a75b516b985657b8aa1f53ed09c1a",
+      "source_bytes": 611,
+      "action": "copied",
+      "published_file": "positive-blocks/logs/toolchain-verification.json",
+      "published_sha256": "836344e6fafd4dee4729b60fa8a265ecfc9a75b516b985657b8aa1f53ed09c1a",
+      "published_bytes": 611
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/DeclarationAudit.lean",
+      "source_sha256": "dcb922f3a67189ef2bef36d22bedf9e4db64e38059bec52036f893eb94883b4a",
+      "source_bytes": 15149,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/DeclarationAudit.lean",
+      "published_sha256": "dcb922f3a67189ef2bef36d22bedf9e4db64e38059bec52036f893eb94883b4a",
+      "published_bytes": 15149
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/audit_frozen_source.py",
+      "source_sha256": "420259e797525d2db118560f2b004aa4825a750ad3092a77858c1027e69eb2b6",
+      "source_bytes": 6096,
+      "action": "sanitized_or_documented",
+      "published_file": "positive-blocks/reviews/audit_frozen_source.py",
+      "published_sha256": "3d00e4da4ac6412b998576b49a5aee030a8bf238d561263afdd7fae8399e334e",
+      "published_bytes": 6420,
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/basic-axioms.lean",
+      "source_sha256": "068f28055fc0748fffa5db88754dcf1e8f25cbe15cb0079b6991bea13ee3d18e",
+      "source_bytes": 500,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/basic-axioms.lean",
+      "published_sha256": "068f28055fc0748fffa5db88754dcf1e8f25cbe15cb0079b6991bea13ee3d18e",
+      "published_bytes": 500
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/block-axioms.lean",
+      "source_sha256": "1cd277598161b6652cb463743ce12709f26940ac6c362f82f48f6d7726334f6b",
+      "source_bytes": 2937,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/block-axioms.lean",
+      "published_sha256": "1cd277598161b6652cb463743ce12709f26940ac6c362f82f48f6d7726334f6b",
+      "published_bytes": 2937
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/classification-axioms.lean",
+      "source_sha256": "1221ee78198924e3a2e7029704fde7f9bdd2dca1b62b26ee382c522350fd2134",
+      "source_bytes": 562,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/classification-axioms.lean",
+      "published_sha256": "1221ee78198924e3a2e7029704fde7f9bdd2dca1b62b26ee382c522350fd2134",
+      "published_bytes": 562
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/compile-PositiveBlocks-Basic.lean.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_bytes": 0,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/compile-PositiveBlocks-Basic.lean.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_bytes": 0
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/compile-PositiveBlocks-Blocks.lean.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_bytes": 0,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/compile-PositiveBlocks-Blocks.lean.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_bytes": 0
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/compile-PositiveBlocks-Classification.lean.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_bytes": 0,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/compile-PositiveBlocks-Classification.lean.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_bytes": 0
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/compile-PositiveBlocks-Corollaries.lean.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_bytes": 0,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/compile-PositiveBlocks-Corollaries.lean.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_bytes": 0
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/compile-PositiveBlocks-Examples.lean.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_bytes": 0,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/compile-PositiveBlocks-Examples.lean.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_bytes": 0
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/compile-PositiveBlocks-Gram.lean.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_bytes": 0,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/compile-PositiveBlocks-Gram.lean.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_bytes": 0
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/compile-PositiveBlocks-Intrinsic.lean.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_bytes": 0,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/compile-PositiveBlocks-Intrinsic.lean.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_bytes": 0
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/compile-PositiveBlocks-NormalForm.lean.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_bytes": 0,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/compile-PositiveBlocks-NormalForm.lean.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_bytes": 0
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/compile-PositiveBlocks-Sharpness.lean.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_bytes": 0,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/compile-PositiveBlocks-Sharpness.lean.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_bytes": 0
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/compile-PositiveBlocks.lean.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_bytes": 0,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/compile-PositiveBlocks.lean.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_bytes": 0
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/core-independent-checks.lean",
+      "source_sha256": "1d1ce1bcccd34f014f18084c985f8a94826172eccd08cd1c2acd60fd1fa7a094",
+      "source_bytes": 5666,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/core-independent-checks.lean",
+      "published_sha256": "1d1ce1bcccd34f014f18084c985f8a94826172eccd08cd1c2acd60fd1fa7a094",
+      "published_bytes": 5666
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/core-independent-proof-review.md",
+      "source_sha256": "779f32e69f266ed85c80fa01b2678055676ca9658ed19419683c2d56d2a944a9",
+      "source_bytes": 7974,
+      "action": "sanitized_or_documented",
+      "published_file": "positive-blocks/reviews/core-independent-proof-review.md",
+      "published_sha256": "710db5829a4c37d092baa7187ac08a1e497d3c3acd5e65f6daca71b7ca958d2e",
+      "published_bytes": 7967,
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/declaration-audit-initial-printer-error.log",
+      "source_sha256": "8829ba28978a44ba7f9946f8c182a63f9d3a68b69739ee0099de41116af8fab0",
+      "source_bytes": 136145,
+      "action": "sanitized_or_documented",
+      "published_file": "positive-blocks/reviews/declaration-audit-initial-printer-error.log",
+      "published_sha256": "b6c4a06b66ee13285da0ca0296f91d2eaa6c56a8d323f7a6f6100b09d87bdbeb",
+      "published_bytes": 136118,
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/declaration-audit.log",
+      "source_sha256": "1f3bcb4ce1c32c299cdb83a04484a29c934593614098514eaca1c91614ca795b",
+      "source_bytes": 136050,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/declaration-audit.log",
+      "published_sha256": "1f3bcb4ce1c32c299cdb83a04484a29c934593614098514eaca1c91614ca795b",
+      "published_bytes": 136050
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/exact-example-review-rerun.json",
+      "source_sha256": "8683e373b12ef727d0494c0b7371e1bb4125b700d0c2495148868e33adc7cbd2",
+      "source_bytes": 732,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/exact-example-review-rerun.json",
+      "published_sha256": "8683e373b12ef727d0494c0b7371e1bb4125b700d0c2495148868e33adc7cbd2",
+      "published_bytes": 732
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/final-source-audit.json",
+      "source_sha256": "570f3dab0c6959678f326896c0925a565a624430d738556f44835e5e695e5a6d",
+      "source_bytes": 31212,
+      "action": "sanitized_or_documented",
+      "published_file": "positive-blocks/reviews/final-source-audit.json",
+      "published_sha256": "b2736b97a249383a29b0ed00e845c48f35a625555e849552d9fbfd9503cea911",
+      "published_bytes": 29925,
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/final-source-review.md",
+      "source_sha256": "989235ee45f10fa183ceb0a229c31e922246485a0fdfe5e23524f9ca4f5134af",
+      "source_bytes": 3975,
+      "action": "excluded",
+      "reason": "Unfinished draft review; the new completed independent report is published separately without upgrading this draft."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/gram-author-normal-form-review.md",
+      "source_sha256": "8d42ef8485a2343942756a9dbfb5374ed531ac0124a11993776ff0e142db1a29",
+      "source_bytes": 4151,
+      "action": "sanitized_or_documented",
+      "published_file": "positive-blocks/reviews/gram-author-normal-form-review.md",
+      "published_sha256": "27d6463d93cf56470c0beb98caf395b42f121b48ef8a3854964ad84de482b9c5",
+      "published_bytes": 4141,
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/gram-axioms.lean",
+      "source_sha256": "0bc5ad39ca44c24aca5ae41993dbb8c46fba3a826761594fb6dcd4d7ba8ccbbb",
+      "source_bytes": 1998,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/gram-axioms.lean",
+      "published_sha256": "0bc5ad39ca44c24aca5ae41993dbb8c46fba3a826761594fb6dcd4d7ba8ccbbb",
+      "published_bytes": 1998
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/independent-proof-review.md",
+      "source_sha256": "47a6dad9d2289089e17cd3047787fb375927b41eac2226b49fb1b4b7a62c4c8d",
+      "source_bytes": 15899,
+      "action": "sanitized_or_documented",
+      "published_file": "positive-blocks/reviews/independent-proof-review.md",
+      "published_sha256": "2d59225ffb36d81503a27b763198b9839363bb59eaf6205bdc7da17d8cf5f757",
+      "published_bytes": 15645,
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "reviews/normal-form-axioms.lean",
+      "source_sha256": "86ab13dbf6a966f5d82972787732301e275bce73cddec24fd5508c11d1a34592",
+      "source_bytes": 1006,
+      "action": "copied",
+      "published_file": "positive-blocks/reviews/normal-form-axioms.lean",
+      "published_sha256": "86ab13dbf6a966f5d82972787732301e275bce73cddec24fd5508c11d1a34592",
+      "published_bytes": 1006
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "scripts/checkpoint.py",
+      "source_sha256": "cb6ecac730b1cf4427f257cf6136fcc3f7c26d223c400ca191e14c82178903cd",
+      "source_bytes": 1808,
+      "action": "excluded",
+      "reason": "Internal checkpoint packaging helper, not mathematical reproduction."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "scripts/export_checkpoint.py",
+      "source_sha256": "2177c26d7e86c2fc30307ac627c1661f57d4533efc59cd1ef6e5a160ad781195",
+      "source_bytes": 1985,
+      "action": "excluded",
+      "reason": "Internal handoff packaging helper, not mathematical reproduction."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "scripts/package.py",
+      "source_sha256": "e281081efc296e340e2caef50d554a08f90dde888a7c80068e41b0f0e940d41d",
+      "source_bytes": 2492,
+      "action": "excluded",
+      "reason": "Internal packaging helper, not mathematical reproduction."
+    },
+    {
+      "bundle": "positive-blocks",
+      "source_file": "scripts/verify.py",
+      "source_sha256": "208707ad66f0e1f7637c930630f5770ada420bf6a5e370de5f6b85a736f2f0a0",
+      "source_bytes": 2684,
+      "action": "sanitized_or_documented",
+      "published_file": "positive-blocks/scripts/verify.py",
+      "published_sha256": "a6b36d871dfcfbda8e67c13025bf57d0a6b0161f4a780e408ce8a213d6bc7595",
+      "published_bytes": 2850,
+      "change_scope": "Public privacy/path/documentation or reproducibility routing edit; mathematical Lean source and exact dependency pins unchanged. Historical verdicts remain historical."
     }
   ]
 }
