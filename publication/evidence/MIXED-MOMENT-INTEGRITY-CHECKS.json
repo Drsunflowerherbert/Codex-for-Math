@@ -1,0 +1,50 @@
+{
+  "schema": "mixed-moment-publication-integrity-regressions-v1",
+  "status": "passed",
+  "checked_at_utc": "2026-10-11T06:45:22.658796+00:00",
+  "tests": [
+    {
+      "test": "complete_snapshot_without_git",
+      "returncode": 0,
+      "expected_acceptance": true,
+      "passed": true,
+      "stdout": "{\n  \"status\": \"passed\",\n  \"publication_files\": 910,\n  \"original_tangent_files_unchanged\": 68,\n  \"unchanged_formal_source_and_pin_files\": 139,\n  \"pinned_lean_projects\": [\n    \"convex-approximation\",\n    \"egyptian-exact\",\n    \"finite-field-product-mixing\",\n    \"mixed-moment\",\n    \"positive-blocks\",\n    \"radial-contact\",\n    \"tangent-limit\",\n    \"tangent-sharp\"\n  ],\n  \"ordinary_core_records\": 81,\n  \"scope\": \"Whole published repository integrity and explicit status/pin checks; no new mathematical proof certification.\"\n}",
+      "rejection": null
+    },
+    {
+      "test": "changed_mixed_moment_proof_even_with_regenerated_public_hashes",
+      "returncode": 1,
+      "expected_acceptance": false,
+      "passed": true,
+      "stdout": "",
+      "rejection": "AssertionError: ('formal-source drift', 'mixed-moment/MixedMoments/Applications.lean')"
+    },
+    {
+      "test": "missing_mixed_moment_proof",
+      "returncode": 1,
+      "expected_acceptance": false,
+      "passed": true,
+      "stdout": "",
+      "rejection": "AssertionError: {'missing': ['mixed-moment/MixedMoments/Applications.lean'], 'extra': []}"
+    },
+    {
+      "test": "restored_snapshot",
+      "returncode": 0,
+      "expected_acceptance": true,
+      "passed": true,
+      "stdout": "{\n  \"status\": \"passed\",\n  \"publication_files\": 910,\n  \"original_tangent_files_unchanged\": 68,\n  \"unchanged_formal_source_and_pin_files\": 139,\n  \"pinned_lean_projects\": [\n    \"convex-approximation\",\n    \"egyptian-exact\",\n    \"finite-field-product-mixing\",\n    \"mixed-moment\",\n    \"positive-blocks\",\n    \"radial-contact\",\n    \"tangent-limit\",\n    \"tangent-sharp\"\n  ],\n  \"ordinary_core_records\": 81,\n  \"scope\": \"Whole published repository integrity and explicit status/pin checks; no new mathematical proof certification.\"\n}",
+      "rejection": null
+    }
+  ],
+  "test_count": 4,
+  "original_tangent_file_count": 68,
+  "scope": "Disposable whole-publication byte/source-map integrity checks; no additional Lean or mathematical verification.",
+  "earlier_publication_export_failure": {
+    "status": "failed_and_corrected",
+    "initial_integrity_command_exit": 1,
+    "reason": "One derivative command-receipt JSON had a broken escaped closing quote after private-path substitution.",
+    "correction": "Normalize parsed string values recursively, then serialize as JSON; regenerate from unchanged raw receipts and rerun full integrity.",
+    "mathematical_sources_and_raw_successful_command_results_unchanged": true,
+    "failed_snapshot_retained_privately": true
+  }
+}

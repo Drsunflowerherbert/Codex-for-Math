@@ -1,0 +1,18 @@
+✔ [7352/7365] Built MixedMoments.Rational (11s)
+⚠ [7353/7365] Built MixedMoments.TailBounds (12s)
+warning: MixedMoments/TailBounds.lean:50:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [7354/7365] Built MixedMoments.RationalSeries (11s)
+✔ [7355/7365] Built MixedMoments.Cancellation (11s)
+✔ [7356/7365] Built MixedMoments.FormalContact (16s)
+✔ [7357/7365] Built MixedMoments.Decomposition (25s)
+✔ [7358/7365] Built MixedMoments.Integrals (30s)
+✔ [7359/7365] Built MixedMoments.FormalSquareRoot (15s)
+✔ [7360/7365] Built MixedMoments.TaylorContact (14s)
+✔ [7361/7365] Built MixedMoments.Zeta (49s)
+✔ [7362/7365] Built MixedMoments.Constants (8.4s)
+✔ [7363/7365] Built MixedMoments.BoundaryCatalan (9.9s)
+✔ [7364/7365] Built MixedMoments.BoundaryZeta (10s)
+✔ [7365/7365] Built MixedMoments.Applications (7.7s)
+Build completed successfully (7365 jobs).

@@ -19,14 +19,17 @@ exported source remain outside its formal scope. No headline Crouzeix theorem
 or novelty claim follows from this supporting library.
 
 The [finite-field project](../finite-field-product-mixing/README.md) retains
-the completed narrower scope recorded by the initial status addendum. Mixed
-moments was reported finalized and independently accepted in its own task, but
-its final source/evidence transfer failed and no accessible final artifact was
-received for this publication. Transfer and publication remain pending. The
-[reported-status record](../publication/PENDING-TRANSFER.json) preserves the
-reported archive fingerprint without claiming a byte/hash comparison or
-independent inspection by this publisher. The older checkpoint and ordinary
-study are not promoted into the final verified artifact.
+the completed narrower scope recorded by the initial status addendum. The
+earlier mixed-moment transfer attempt failed; that event remains historical
+in the [transfer record](../publication/PENDING-TRANSFER.json). A subsequent
+direct local intake verified the completed source/evidence archive, enabling
+the [mixed-moment proof core](../mixed-moment/README.md) to be included here.
+Its cancellation theorem concerns actual integrals of rational polynomials
+under one-sided or two-sided contact and `j<L`, with explicit rational witnesses.
+The 513 public declarations and 835 project-origin constants are distinct
+inventories. Broader clauses, including the exceptional tail endpoint, remain
+deferred. No irrationality or arithmetic independence claim is added; the
+ordinary study keeps its existing `not_performed` label.
 
 The [convex library](../convex-approximation/README.md) now has an accepted
 independent source review, fresh source build and declaration/axiom audits for

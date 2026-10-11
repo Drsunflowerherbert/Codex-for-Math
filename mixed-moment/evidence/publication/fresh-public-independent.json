@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "arithmetic": "Python stdlib fractions.Fraction only",
+  "source_implementation_imported_or_executed": false,
+  "methods": {
+    "moment": "finite polynomial integration after u=sqrt(1-t^2)",
+    "kernel": "solve (1-t^2)C^2=1 coefficientwise with C(0)=1",
+    "boundaries": "closed finite sums with product-defined H-star",
+    "M": "diagonal dynamic programming from boundary triples",
+    "Z": "finite interval sum after common harmonic terms cancel",
+    "contact": "truncated polynomial convolution t*P*C"
+  },
+  "bounds": {
+    "moments": [
+      0,
+      200
+    ],
+    "kernel": [
+      -100,
+      200
+    ],
+    "boundary_recurrences": [
+      2,
+      100
+    ],
+    "grid_i_j": [
+      0,
+      24
+    ],
+    "finite_telescope_lengths": [
+      1,
+      2,
+      5,
+      10
+    ],
+    "tail_block_length": 32,
+    "polynomial_coefficients": [
+      -1,
+      0,
+      1
+    ],
+    "polynomial_coefficient_count": 4,
+    "polynomial_contact_orders": [
+      1,
+      8
+    ],
+    "polynomial_entry_indices": [
+      0,
+      9
+    ],
+    "sharp_endpoint_family_L": [
+      1,
+      16
+    ]
+  },
+  "check_counts": {
+    "M_finite_telescope": 2500,
+    "M_signed_difference_coefficients": 625,
+    "Z_finite_telescope": 2500,
+    "Z_symmetry": 625,
+    "adjacent_diagonal": 100,
+    "adversarial_negative_difference": 2,
+    "bounded_contact_perturbation": 648,
+    "bounded_polynomial_defect": 6480,
+    "bounded_strict_contact": 2916,
+    "corrupted_certificate_rejected": 7,
+    "endpoint_contact_holds_below_L": 16,
+    "endpoint_j_equals_L_fails": 16,
+    "finite_tail_block_below_bound": 2500,
+    "formal_sqrt_vs_factorials": 201,
+    "invalid_domain_rejected": 6,
+    "minus_boundary_recurrence": 99,
+    "missing_contact_failure": 1,
+    "missing_initial_t_failure": 1,
+    "moment_nonnegative": 201,
+    "moment_recurrence": 200,
+    "nonzero_coordinate_not_nonmembership": 1,
+    "plus_boundary_recurrence": 99,
+    "saved_M_triple": 49,
+    "saved_Z_triple": 49,
+    "saved_boundary": 17,
+    "saved_boundary_count": 1,
+    "saved_contact_entry": 40,
+    "saved_contact_polynomial": 6,
+    "saved_contact_row_count": 6,
+    "saved_example_count": 1,
+    "saved_formal_failure": 3,
+    "saved_formal_failure_count": 1,
+    "saved_moment": 17,
+    "saved_moment_count": 1,
+    "saved_series_count": 1,
+    "saved_series_lower": 6,
+    "saved_series_partial": 6,
+    "saved_series_upper": 6,
+    "saved_table_shape": 16,
+    "saved_triple_order": 1,
+    "signed_negative_kernel": 100,
+    "wrong_multiplier_failure": 1
+  },
+  "total_checks": 20072,
+  "rational_examples": {
+    "M_0_1": [
+      "0",
+      "0",
+      "3/2"
+    ],
+    "M_1_0": [
+      "2",
+      "0",
+      "0"
+    ],
+    "M_2_0": [
+      "1",
+      "2",
+      "0"
+    ],
+    "Z_0_1": [
+      "1",
+      "0",
+      "0"
+    ],
+    "Z_2_2": [
+      "-5/4",
+      "0",
+      "1"
+    ],
+    "P_1_D_t_L_3_entries_j_0_through_3": [
+      [
+        "-3/2",
+        "4",
+        "0"
+      ],
+      [
+        "3/2",
+        "0",
+        "0"
+      ],
+      [
+        "5/4",
+        "0",
+        "0"
+      ],
+      [
+        "-1/8",
+        "0",
+        "3/4"
+      ]
+    ],
+    "rational_polynomial": [
+      "1",
+      "2/3",
+      "0",
+      "-5/7"
+    ],
+    "rational_contact_polynomial_L_9": [
+      "0",
+      "1",
+      "2/3",
+      "1/2",
+      "-8/21",
+      "3/8",
+      "-3/28",
+      "5/16",
+      "-5/84"
+    ],
+    "rational_entries_j_0_through_10": [
+      [
+        "-15138043/5644800",
+        "4",
+        "0"
+      ],
+      [
+        "-135143/308700",
+        "26/21",
+        "0"
+      ],
+      [
+        "56879/94080",
+        "0",
+        "0"
+      ],
+      [
+        "3582799/1128960",
+        "-20/7",
+        "0"
+      ],
+      [
+        "296423/564480",
+        "0",
+        "0"
+      ],
+      [
+        "4251337/8467200",
+        "0",
+        "0"
+      ],
+      [
+        "56911/117600",
+        "0",
+        "0"
+      ],
+      [
+        "7941277/16934400",
+        "0",
+        "0"
+      ],
+      [
+        "54073823/118540800",
+        "0",
+        "0"
+      ],
+      [
+        "-243079/1058400",
+        "0",
+        "105/256"
+      ],
+      [
+        "680881/1270080",
+        "0",
+        "-55/896"
+      ]
+    ]
+  },
+  "adversarial_examples": [
+    {
+      "name": "negative_difference_G",
+      "i": 0,
+      "j": 1,
+      "signed_difference": -1,
+      "correct_coordinate": "0",
+      "truncated_subtraction_coordinate": "4"
+    },
+    {
+      "name": "negative_difference_zeta(2)",
+      "i": 1,
+      "j": 0,
+      "signed_difference": -2,
+      "correct_coordinate": "0",
+      "truncated_subtraction_coordinate": "3/2"
+    },
+    {
+      "name": "strict_range",
+      "P": [
+        1
+      ],
+      "D": [],
+      "L": 1,
+      "valid_j_0": [
+        "0",
+        "4",
+        "0"
+      ],
+      "excluded_j_1": [
+        "0",
+        "0",
+        "3/2"
+      ]
+    },
+    {
+      "name": "missing_contact",
+      "formal_entry": [
+        "0",
+        "0",
+        "-3/2"
+      ]
+    },
+    {
+      "name": "missing_initial_t",
+      "formal_entry": [
+        "0",
+        "4",
+        "-3/2"
+      ]
+    },
+    {
+      "name": "wrong_multiplier",
+      "formal_entry": [
+        "1",
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "name": "formal_coordinate_is_not_nonmembership",
+      "nonzero_third_coordinate_vector": [
+        "0",
+        "0",
+        "-3/2"
+      ],
+      "same_class_vector_with_zero_third_coordinate": [
+        "0",
+        "-3/2",
+        "0"
+      ],
+      "quotient_map": "(a,b,c) -> (a,b+c)",
+      "scope": "Abstract quotient-space countermodel only; no relation among actual G and zeta(2) is asserted."
+    }
+  ],
+  "mutation_tests": [
+    {
+      "mutation": "negative_difference_G",
+      "rejected": true,
+      "reason": "saved_M_triple: 0,1: got ['0', '4', '3/2'], expected ['0', '0', '3/2']"
+    },
+    {
+      "mutation": "negative_difference_zeta2",
+      "rejected": true,
+      "reason": "saved_M_triple: 1,0: got ['2', '0', '3/2'], expected ['2', '0', '0']"
+    },
+    {
+      "mutation": "rational_sign",
+      "rejected": true,
+      "reason": "saved_Z_triple: 0,1: got ['-1', '0', '0'], expected ['1', '0', '0']"
+    },
+    {
+      "mutation": "excluded_endpoint",
+      "rejected": true,
+      "reason": "saved_contact_entry: example 0, j=1: got {'j': 1, 'entry_coefficients_1_G_zeta2': ['0', '0', '0'], 'Taylor_defect_coefficient': '1'}, expected {'j': 1, 'entry_coefficients_1_G_zeta2': ['0', '0', '3/2'], 'Taylor_defect_coefficient': '1'}"
+    },
+    {
+      "mutation": "wrong_tail_bound",
+      "rejected": true,
+      "reason": "saved_series_upper: : got '0', expected '134217728/300540195'"
+    },
+    {
+      "mutation": "changed_contact",
+      "rejected": true,
+      "reason": "saved_contact_polynomial: 0: got [Fraction(1, 1)], expected [Fraction(0, 1)]"
+    },
+    {
+      "mutation": "missing_table_row",
+      "rejected": true,
+      "reason": "saved_table_shape: M: got 6, expected 7"
+    }
+  ],
+  "limits": [
+    "Finite algebraic checks, not universal proofs.",
+    "Saved series bounds are recomputed and finite tail blocks checked; infinite-tail validity remains analytic.",
+    "No numerical substitutions for G or zeta(2).",
+    "No integral identities, irrationality, linear independence, nonmembership, or Lean verification are established here."
+  ]
+}

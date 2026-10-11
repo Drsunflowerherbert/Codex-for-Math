@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "scripts/independent_checks.py",
+    "--output",
+    "logs/fresh-public-independent.json"
+  ],
+  "cwd": "<verification-workspace-path>",
+  "started_utc": "2026-10-11T06:43:48.297142+00:00",
+  "finished_utc": "2026-10-11T06:43:49.996416+00:00",
+  "returncode": 0,
+  "stdout": "{\n  \"status\": \"passed\",\n  \"total_checks\": 20072,\n  \"output\": \"logs/fresh-public-independent.json\"\n}\n",
+  "stderr": "",
+  "log_sha256": "afdd8f3f96227de99b750ed0fd8c73696932a9c0fee405460e79bbcfa1b75e2d",
+  "publication_derivation": {
+    "raw_receipt_sha256": "856e80c967e050fcfa47c6b149383953418dc2a0a79bfa4f48d3a5cb3b01f3d7",
+    "normalization": "Private execution paths normalized; duplicate raw environment transcript omitted where applicable. Actual exits, mathematical statuses, source hashes, types and axiom inventories unchanged."
+  }
+}

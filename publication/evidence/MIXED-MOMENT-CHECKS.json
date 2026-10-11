@@ -1,0 +1,298 @@
+{
+  "schema": "mixed-moment-publication-checks-v1",
+  "status": "passed",
+  "checked_at_utc": "2026-10-11T06:45:11.790145+00:00",
+  "scope": "Fresh source build and bounded full declaration/type/axiom/exact checks for the existing final core; separate from whole-repository byte integrity.",
+  "commands_all_exit_zero": true,
+  "project_build_directory_initially_empty": true,
+  "modules": 17,
+  "compiled_rational_examples": 77,
+  "public_declarations": 513,
+  "public_theorems": 429,
+  "complete_project_origin_constants": 835,
+  "complete_kind_counts": {
+    "definition": 103,
+    "theorem": 729,
+    "inductive": 1,
+    "constructor": 1,
+    "recursor": 1
+  },
+  "axiom_coverage": {
+    "new_public_theorem_queries": 429,
+    "new_supplement_queries": 406,
+    "matched_public_results_reused": 429,
+    "complete_combined_constants": 835,
+    "allowlist": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "runtime_helpers": {
+    "compiler_generated_partial_count": 5,
+    "unsafe_count": 0,
+    "safe_source_parents_verified": true,
+    "other830_type_value_dependencies_exclude_helpers": true,
+    "inductive_constructor_recursor_metadata_query_exit": 0,
+    "metadata_records": 3,
+    "recursor_rule_rhs_dependencies_checked": true
+  },
+  "fresh_exact_checks": {
+    "supplied_rational": 17805,
+    "independent_rational": 20072,
+    "full_original_archive_provenance_and_rerun": 993,
+    "public_only_independent_rational": 20072,
+    "finite_arithmetic_is_not_analytic_proof": true,
+    "original_full_provenance_inputs_not_redistributed": true
+  },
+  "compiler": {
+    "version": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+    "version_exit": 0,
+    "binary_sha256": "8fadc3ed92cc9decb94c96ee9c0876e91e03a3a5e69138f32114f02789e2766c"
+  },
+  "packages": [
+    {
+      "name": "mathlib",
+      "expected_rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "actual_rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "head_exit": 0,
+      "status_exit": 0,
+      "clean": true,
+      "matches": true
+    },
+    {
+      "name": "plausible",
+      "expected_rev": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "actual_rev": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "head_exit": 0,
+      "status_exit": 0,
+      "clean": true,
+      "matches": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected_rev": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "actual_rev": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "head_exit": 0,
+      "status_exit": 0,
+      "clean": true,
+      "matches": true
+    },
+    {
+      "name": "importGraph",
+      "expected_rev": "d768126816be17600904726ca7976b185786e6b9",
+      "actual_rev": "d768126816be17600904726ca7976b185786e6b9",
+      "head_exit": 0,
+      "status_exit": 0,
+      "clean": true,
+      "matches": true
+    },
+    {
+      "name": "proofwidgets",
+      "expected_rev": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "actual_rev": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "head_exit": 0,
+      "status_exit": 0,
+      "clean": true,
+      "matches": true
+    },
+    {
+      "name": "aesop",
+      "expected_rev": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "actual_rev": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "head_exit": 0,
+      "status_exit": 0,
+      "clean": true,
+      "matches": true
+    },
+    {
+      "name": "Qq",
+      "expected_rev": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "actual_rev": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "head_exit": 0,
+      "status_exit": 0,
+      "clean": true,
+      "matches": true
+    },
+    {
+      "name": "batteries",
+      "expected_rev": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "actual_rev": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "head_exit": 0,
+      "status_exit": 0,
+      "clean": true,
+      "matches": true
+    },
+    {
+      "name": "Cli",
+      "expected_rev": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "actual_rev": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "head_exit": 0,
+      "status_exit": 0,
+      "clean": true,
+      "matches": true
+    }
+  ],
+  "input_sha256_before": {
+    "MixedMoments.lean": "b8784ec3490d4e9b41f17ffd77b577b5b0e9f98a5951256d700aeed86a7dcc3f",
+    "MixedMoments/Applications.lean": "6b2de7509ddb9c78b6ef5cbc5e147ebd031bef8521ff855b2c4451350bc550de",
+    "MixedMoments/BoundaryCatalan.lean": "c20ec5bf6cb3be1abfa5303d5a1d11d2efc4b9fa579be97742bd39280d7efab4",
+    "MixedMoments/BoundaryZeta.lean": "3886dc14e832d1b9e5525890a22c6e73b23e5bc53668a46051c85d54d5fd8269",
+    "MixedMoments/Cancellation.lean": "78f99204d8149b8ba742f9da291dfc6510180a241b6dcfbd8ef4bcd373b05777",
+    "MixedMoments/Certificates.lean": "64fdf1aa2b5e80b7e441a5434dd35c44e45aad3691b96dd1993f316a69333fcc",
+    "MixedMoments/Constants.lean": "4148960a6c64f1194a8452d207d706b8e33f8d53182af1a883a72db3d9b0d59e",
+    "MixedMoments/Decomposition.lean": "2c0909221f7f2b93e005d5a461245cc7e72842349a9f14d5988377d05a1fd082",
+    "MixedMoments/FormalContact.lean": "8db06758cf108ddacb414a20817c6d039b39614f28d40c6cb299c20474d8b816",
+    "MixedMoments/FormalSquareRoot.lean": "d88b754444791dbf63ad42863a40354325e22be4a78dddc74f3f65d1dcccf709",
+    "MixedMoments/Integrals.lean": "37106eb9ee99e488fffad5d209310ab21d38d84ae1f00476225d948807a047cd",
+    "MixedMoments/Rational.lean": "183388091a29d1425c389a62a5618b0aa959ff4134928373e58de4948dd7badc",
+    "MixedMoments/RationalSeries.lean": "d924772a53dde6408f0b2d0940812bb6cf0934bcdc492d5f535ec7c90b1c252c",
+    "MixedMoments/Series.lean": "2a58ace5f03b5ff72bb4fc3a2a27db6ce44d8cf914ecb83a85ec7e3c78a56c2a",
+    "MixedMoments/TailBounds.lean": "de8d5dc29f933d86705f679f89e3d2ed4f65086bb40470d44a7cf4737a2f0f16",
+    "MixedMoments/TaylorContact.lean": "5ac77117d6cfe85bac2350adef5e72150cb8955d26555a66d6331c3ecc83d629",
+    "MixedMoments/Zeta.lean": "31f67ad1418d8491f430b4adeb7cd1624c4d7a57cfdad9fc1263981dd17234bb",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lakefile.toml": "14a208232058e677a4fc2e792ec29c4ba74c5adf1315f0b76252fe1985b8cd68",
+    "lake-manifest.json": "0b80f29b3b69dff316b538e9575bf837ce279ae4ab480c9a03cfb9722ea9df03",
+    "scripts/with-lean.sh": "b58aceb981cd1debdb3ec6f6daca60e31268daa9aa88aadbb3d730316ca34d23",
+    "scripts/audit_lean.py": "c98d5daa3f7f55f4839d904349d81408ae7eb8d2cf21a93637771e975b30deab",
+    "scripts/audit_environment.py": "818d30875ab2381920a1d4a6075b830ca254b8853cd8c706b95b1fa982c65edc",
+    "scripts/full_environment_inventory.lean": "4a6ec90000411d752e4d709d6c3a1ef9d67727ea3e5e79a207ff850927d6d269",
+    "scripts/check_certificates.py": "5ace47dc7720dd72fc9a4fd1349d84f8627a0cf07d208dedd80e0fcbb6bbef7a",
+    "scripts/independent_checks.py": "e3a06b69f4c38f35317543faefce06dd18d700a386ae691fecbff2e43bf34ccd"
+  },
+  "input_sha256_after": {
+    "MixedMoments.lean": "b8784ec3490d4e9b41f17ffd77b577b5b0e9f98a5951256d700aeed86a7dcc3f",
+    "MixedMoments/Applications.lean": "6b2de7509ddb9c78b6ef5cbc5e147ebd031bef8521ff855b2c4451350bc550de",
+    "MixedMoments/BoundaryCatalan.lean": "c20ec5bf6cb3be1abfa5303d5a1d11d2efc4b9fa579be97742bd39280d7efab4",
+    "MixedMoments/BoundaryZeta.lean": "3886dc14e832d1b9e5525890a22c6e73b23e5bc53668a46051c85d54d5fd8269",
+    "MixedMoments/Cancellation.lean": "78f99204d8149b8ba742f9da291dfc6510180a241b6dcfbd8ef4bcd373b05777",
+    "MixedMoments/Certificates.lean": "64fdf1aa2b5e80b7e441a5434dd35c44e45aad3691b96dd1993f316a69333fcc",
+    "MixedMoments/Constants.lean": "4148960a6c64f1194a8452d207d706b8e33f8d53182af1a883a72db3d9b0d59e",
+    "MixedMoments/Decomposition.lean": "2c0909221f7f2b93e005d5a461245cc7e72842349a9f14d5988377d05a1fd082",
+    "MixedMoments/FormalContact.lean": "8db06758cf108ddacb414a20817c6d039b39614f28d40c6cb299c20474d8b816",
+    "MixedMoments/FormalSquareRoot.lean": "d88b754444791dbf63ad42863a40354325e22be4a78dddc74f3f65d1dcccf709",
+    "MixedMoments/Integrals.lean": "37106eb9ee99e488fffad5d209310ab21d38d84ae1f00476225d948807a047cd",
+    "MixedMoments/Rational.lean": "183388091a29d1425c389a62a5618b0aa959ff4134928373e58de4948dd7badc",
+    "MixedMoments/RationalSeries.lean": "d924772a53dde6408f0b2d0940812bb6cf0934bcdc492d5f535ec7c90b1c252c",
+    "MixedMoments/Series.lean": "2a58ace5f03b5ff72bb4fc3a2a27db6ce44d8cf914ecb83a85ec7e3c78a56c2a",
+    "MixedMoments/TailBounds.lean": "de8d5dc29f933d86705f679f89e3d2ed4f65086bb40470d44a7cf4737a2f0f16",
+    "MixedMoments/TaylorContact.lean": "5ac77117d6cfe85bac2350adef5e72150cb8955d26555a66d6331c3ecc83d629",
+    "MixedMoments/Zeta.lean": "31f67ad1418d8491f430b4adeb7cd1624c4d7a57cfdad9fc1263981dd17234bb",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lakefile.toml": "14a208232058e677a4fc2e792ec29c4ba74c5adf1315f0b76252fe1985b8cd68",
+    "lake-manifest.json": "0b80f29b3b69dff316b538e9575bf837ce279ae4ab480c9a03cfb9722ea9df03",
+    "scripts/with-lean.sh": "b58aceb981cd1debdb3ec6f6daca60e31268daa9aa88aadbb3d730316ca34d23",
+    "scripts/audit_lean.py": "c98d5daa3f7f55f4839d904349d81408ae7eb8d2cf21a93637771e975b30deab",
+    "scripts/audit_environment.py": "818d30875ab2381920a1d4a6075b830ca254b8853cd8c706b95b1fa982c65edc",
+    "scripts/full_environment_inventory.lean": "4a6ec90000411d752e4d709d6c3a1ef9d67727ea3e5e79a207ff850927d6d269",
+    "scripts/check_certificates.py": "5ace47dc7720dd72fc9a4fd1349d84f8627a0cf07d208dedd80e0fcbb6bbef7a",
+    "scripts/independent_checks.py": "e3a06b69f4c38f35317543faefce06dd18d700a386ae691fecbff2e43bf34ccd"
+  },
+  "inputs_unchanged": true,
+  "receipt_source_and_public_hashes": {
+    "fresh-project-build.json": {
+      "public_file": "mixed-moment/evidence/publication/fresh-project-build.json",
+      "raw_sha256": "208473868bdb6397f2c0230d11990a4f2fb447be8ea21509be46533694f875da",
+      "public_sha256": "ab12e42b2a6b0b193e3845d36f051178123ded54e90c4530294de2d0af4760c5",
+      "public_bytes": 1908
+    },
+    "fresh-project-build.log": {
+      "public_file": "mixed-moment/evidence/publication/fresh-project-build.log",
+      "raw_sha256": "9765f6b6c37df5feda7a76d0d1af688c1fb2a4423bf82d4bcfe08604b5676121",
+      "public_sha256": "9765f6b6c37df5feda7a76d0d1af688c1fb2a4423bf82d4bcfe08604b5676121",
+      "public_bytes": 1123
+    },
+    "fresh-public-audit.json": {
+      "public_file": "mixed-moment/evidence/publication/fresh-public-audit.json",
+      "raw_sha256": "1183b5d45c80c68519c469b452e072b5187d6e5eadfc79bda1b75610afcc19da",
+      "public_sha256": "b393ba375e48eb9f2ee0b9e0d6e5352804767249530461b5bf927135f42f2e92",
+      "public_bytes": 981
+    },
+    "fresh-public-audit.log": {
+      "public_file": "mixed-moment/evidence/publication/fresh-public-audit.log",
+      "raw_sha256": "52aa7876ada7ac0015f4a7078774b8676afe749d6c560a32c131a96752d6d0b6",
+      "public_sha256": "803ad30c7b42f90dd857f6b2cbae32634ff2d06dd6e51a83db292e2608751b7c",
+      "public_bytes": 249
+    },
+    "fresh-environment-audit.json": {
+      "public_file": "mixed-moment/evidence/publication/fresh-environment-audit.json",
+      "raw_sha256": "c64596ddab3e6a94d2c9aa9bd8bcd38f62ed7f46cf260ba93a00f0441a230d0c",
+      "public_sha256": "24dc1e01802d782309415668c80d7c557542e7dee466f7bfe81754583bcfb93c",
+      "public_bytes": 1203
+    },
+    "fresh-environment-audit.log": {
+      "public_file": "mixed-moment/evidence/publication/fresh-environment-audit.log",
+      "raw_sha256": "36c3085d59c7619e389fd619bfabea62371c063edaa849aef5653c7496bb9bab",
+      "public_sha256": "36c3085d59c7619e389fd619bfabea62371c063edaa849aef5653c7496bb9bab",
+      "public_bytes": 447
+    },
+    "fresh-exact-checks.json": {
+      "public_file": "mixed-moment/evidence/publication/fresh-exact-checks.json",
+      "raw_sha256": "1dab0af3ea2af509ef4492bae18507128106613ffafb66bde02b3bc28194c6df",
+      "public_sha256": "30da27f78065bea4730e14e914d6f82393bc68d1a65e0326a4a48c354e597d56",
+      "public_bytes": 1122
+    },
+    "fresh-exact-checks.log": {
+      "public_file": "mixed-moment/evidence/publication/fresh-exact-checks.log",
+      "raw_sha256": "57bff9c30b6d5b2105baaa827ed3a2e4f524d8662ae0369b33dfe6c31f80878a",
+      "public_sha256": "57bff9c30b6d5b2105baaa827ed3a2e4f524d8662ae0369b33dfe6c31f80878a",
+      "public_bytes": 216
+    },
+    "fresh-public-independent-checks.json": {
+      "public_file": "mixed-moment/evidence/publication/fresh-public-independent-checks.json",
+      "raw_sha256": "856e80c967e050fcfa47c6b149383953418dc2a0a79bfa4f48d3a5cb3b01f3d7",
+      "public_sha256": "5d9367fda4cfd16e58e64553e6b2dc1e51ab82b4d2a9d8c9c9ecfdb276512c4c",
+      "public_bytes": 883
+    },
+    "fresh-public-independent-checks.log": {
+      "public_file": "mixed-moment/evidence/publication/fresh-public-independent-checks.log",
+      "raw_sha256": "afdd8f3f96227de99b750ed0fd8c73696932a9c0fee405460e79bbcfa1b75e2d",
+      "public_sha256": "afdd8f3f96227de99b750ed0fd8c73696932a9c0fee405460e79bbcfa1b75e2d",
+      "public_bytes": 100
+    },
+    "certificates-lean-final-audit.json": {
+      "public_file": "mixed-moment/evidence/publication/certificates-lean-final-audit.json",
+      "raw_sha256": "fb82e1b3b7a2915613ef31e6d530c5e534f77f65a127f9d8c5da1aa241f5c1bd",
+      "public_sha256": "fb82e1b3b7a2915613ef31e6d530c5e534f77f65a127f9d8c5da1aa241f5c1bd",
+      "public_bytes": 381454
+    },
+    "full-environment-audit.json": {
+      "public_file": "mixed-moment/evidence/publication/full-environment-audit.json",
+      "raw_sha256": "8664e399d27ca16b30e3f7ccd5ae09522adfe57751edade9e5aed544df8c4feb",
+      "public_sha256": "bf7a160bab5857cf92b3a7dd97ee1dbdb3bdc430191dd1f8fdb8fd33f436e8a4",
+      "public_bytes": 7543518
+    },
+    "fresh-certificates-verification.json": {
+      "public_file": "mixed-moment/evidence/publication/fresh-certificates-verification.json",
+      "raw_sha256": "e1c7eb8aeca1d8ab19f1bcd3fa00d8293f04189f2881f94a26ba7d90d8946e41",
+      "public_sha256": "e1c7eb8aeca1d8ab19f1bcd3fa00d8293f04189f2881f94a26ba7d90d8946e41",
+      "public_bytes": 12709
+    },
+    "fresh-public-independent.json": {
+      "public_file": "mixed-moment/evidence/publication/fresh-public-independent.json",
+      "raw_sha256": "d2fd20b4054e605c7cbd4b8c063b896a2d550bd0322cac3008967faa0e7f4fe3",
+      "public_sha256": "d2fd20b4054e605c7cbd4b8c063b896a2d550bd0322cac3008967faa0e7f4fe3",
+      "public_bytes": 7399
+    },
+    "fresh-pins-and-inputs.json": {
+      "public_file": "mixed-moment/evidence/publication/fresh-pins-and-inputs.json",
+      "raw_sha256": "066300783fd00f40d5c430b29543f90510ca79c794d7a00b7a59f0a96fd0643b",
+      "public_sha256": "066300783fd00f40d5c430b29543f90510ca79c794d7a00b7a59f0a96fd0643b",
+      "public_bytes": 5516
+    },
+    "inductive-kernel-metadata.json": {
+      "public_file": "mixed-moment/evidence/publication/inductive-kernel-metadata.json",
+      "raw_sha256": "d47e48b09cedf71ed03f055f96e06a38dc7cdb5c56f426513023f2dfb7eaeee9",
+      "public_sha256": "f2ae078958e01aee6145470c57bf74e8bf6b1d0f9e6dc0da64e23a965710d063",
+      "public_bytes": 216504
+    }
+  },
+  "trust_limits": [
+    "Clean pinned dependency OLeans are reused; Lean and mathlib are not rebuilt from source.",
+    "Lean compilation verifies the stated types; independent source/assumption review is separate.",
+    "Historical failed/interrupted/subset checks retain their actual status and scope.",
+    "All21 source records are mapped, with broader deferred clauses explicitly retained.",
+    "No formal-coordinate nonzero inference establishes arithmetic nonmembership or Catalan irrationality."
+  ]
+}

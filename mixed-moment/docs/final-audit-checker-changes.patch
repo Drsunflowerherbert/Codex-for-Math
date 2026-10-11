@@ -1,0 +1,36 @@
+--- a/scripts/audit_lean.py
++++ b/scripts/audit_lean.py
+@@ -162,10 +162,10 @@
+     # @ exposes all implicit binders. Full names disambiguate rational moments,
+     # analytic moments, series, and distinct kernels in different namespaces.
+     type_query = "\n".join(imports+[
+-        "set_option pp.universes true", "set_option pp.fullNames true", "set_option pp.width 120",
++        "set_option pp.universes true", "set_option pp.fullNames true", "set_option format.width 120",
+     ]+[f"#check @{name}" for name in names])+"\n"
+     definition_query = "\n".join(imports+[
+-        "set_option pp.universes true", "set_option pp.fullNames true", "set_option pp.width 120",
++        "set_option pp.universes true", "set_option pp.fullNames true", "set_option format.width 120",
+     ]+[f"#print {name}" for name in definition_names])+"\n"
+     build = completed_command(["bash", "scripts/with-lean.sh", "lake", "build", *modules], project, timeout)
+     skipped = {"command": [], "returncode": 99, "stdout": "", "stderr": "Skipped because the build failed"}
+@@ -182,14 +182,12 @@
+             queries[label] = result
+ 
+     axiom_results = []
+-    for line in queries["axioms"]["stdout"].splitlines():
+-        match = re.fullmatch(r"'([^']+)' depends on axioms: \[(.*)\]", line)
+-        if match:
+-            axiom_results.append({"declaration": match.group(1),
+-                                  "axioms": match.group(2).split(", ") if match.group(2) else []})
+-        match = re.fullmatch(r"'([^']+)' does not depend on any axioms", line)
+-        if match:
+-            axiom_results.append({"declaration": match.group(1), "axioms": []})
++    axiom_output = queries["axioms"]["stdout"]
++    for match in re.finditer(r"(?m)^'([^']+)' depends on axioms:\s*\[([^\]]*)\]", axiom_output):
++        axiom_results.append({"declaration": match.group(1),
++                              "axioms": [item.strip() for item in match.group(2).split(",") if item.strip()]})
++    for match in re.finditer(r"(?m)^'([^']+)' does not depend on any axioms$", axiom_output):
++        axiom_results.append({"declaration": match.group(1), "axioms": []})
+     source_unchanged = {module: sha256(path) == inputs[module]["source_sha256"]
+                         for module, path in zip(modules, files)}
+     configuration_unchanged = {name: sha256(project/name) == before for name, before in configuration.items()}

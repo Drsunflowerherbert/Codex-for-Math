@@ -1,0 +1,245 @@
+{
+  "status": "passed_scoped_core",
+  "checked_at_utc": "2026-10-11T04:53:58.841494+00:00",
+  "principal_result": "Actual Lebesgue integral cancellation for rational P,D under one-sided or two-sided big-O contact, with explicit rational witnesses and natural j<L",
+  "record_coverage": "21/21 supplied records mapped with explicit deferred clauses; not all 21 full records claimed formalized",
+  "build": {
+    "default_build_exit": 0,
+    "applications_build_exit": 0,
+    "root_and_component_module_count": 17,
+    "rational_certificate_theorem_count": 77
+  },
+  "public_audit": {
+    "status": "passed",
+    "public_declaration_count": 513,
+    "public_theorem_count": 429,
+    "public_definition_count": 84,
+    "axiom_result_count": 429,
+    "exact_axiom_declaration_inventory_match": true,
+    "all_axioms_allowed": true,
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "forbidden_source_tokens": []
+  },
+  "full_environment_audit": {
+    "status": "passed",
+    "declaration_count": 835,
+    "kind_counts": {
+      "definition": 103,
+      "theorem": 729,
+      "inductive": 1,
+      "constructor": 1,
+      "recursor": 1
+    },
+    "proposition_valued_count": 731,
+    "print_axiom_result_count": 406,
+    "all_axioms_allowed": true,
+    "all_local_declarations_nonunsafe_nonaxiom": true,
+    "partial_declarations": [
+      "MixedMoments.central._unsafe_rec",
+      "MixedMoments.hStar._unsafe_rec",
+      "MixedMoments.kminus._unsafe_rec",
+      "MixedMoments.kplus._unsafe_rec",
+      "MixedMoments.moment._unsafe_rec"
+    ],
+    "recognized_compiler_runtime_helpers": [
+      "MixedMoments.central._unsafe_rec",
+      "MixedMoments.hStar._unsafe_rec",
+      "MixedMoments.kminus._unsafe_rec",
+      "MixedMoments.kplus._unsafe_rec",
+      "MixedMoments.moment._unsafe_rec"
+    ],
+    "compiler_runtime_helper_classification_valid": true,
+    "nonruntime_kernel_references_to_runtime_helpers": [],
+    "partial_source_tokens": [],
+    "module_inventory_matches_sources": true,
+    "missing_source_public_names": [],
+    "exact_combined_axiom_declaration_inventory_match": true,
+    "reused_public_axiom_result_count": 429,
+    "combined_axiom_result_count": 835
+  },
+  "exact_checks": {
+    "command_exit": 0,
+    "supplied": 17805,
+    "independent": 20072,
+    "provenance": 993,
+    "limits": "Finite rational/provenance checks, distinct from analytic integral proofs"
+  },
+  "all_frozen_inputs_unchanged": true,
+  "checker_before_after_match": true,
+  "dependencies_verified_after": [
+    {
+      "name": "mathlib",
+      "revision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "revision_exit": 0,
+      "status_exit": 0,
+      "working_tree_clean": true
+    },
+    {
+      "name": "plausible",
+      "revision": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "revision_exit": 0,
+      "status_exit": 0,
+      "working_tree_clean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "revision_exit": 0,
+      "status_exit": 0,
+      "working_tree_clean": true
+    },
+    {
+      "name": "importGraph",
+      "revision": "d768126816be17600904726ca7976b185786e6b9",
+      "revision_exit": 0,
+      "status_exit": 0,
+      "working_tree_clean": true
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "revision_exit": 0,
+      "status_exit": 0,
+      "working_tree_clean": true
+    },
+    {
+      "name": "aesop",
+      "revision": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "revision_exit": 0,
+      "status_exit": 0,
+      "working_tree_clean": true
+    },
+    {
+      "name": "Qq",
+      "revision": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "revision_exit": 0,
+      "status_exit": 0,
+      "working_tree_clean": true
+    },
+    {
+      "name": "batteries",
+      "revision": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "revision_exit": 0,
+      "status_exit": 0,
+      "working_tree_clean": true
+    },
+    {
+      "name": "Cli",
+      "revision": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "revision_exit": 0,
+      "status_exit": 0,
+      "working_tree_clean": true
+    }
+  ],
+  "compiler_verified_after": {
+    "command": [
+      "<verification-workspace-path>",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)\n",
+    "binary_sha256": "8fadc3ed92cc9decb94c96ee9c0876e91e03a3a5e69138f32114f02789e2766c"
+  },
+  "tangent_preservation": {
+    "git_status_exit": 0,
+    "git_status": "",
+    "all_tracked_bytes_unchanged": true
+  },
+  "verification_exit_receipts": {
+    "applications-build": {
+      "command": [
+        "bash",
+        "scripts/with-lean.sh",
+        "lake",
+        "build",
+        "MixedMoments.Applications"
+      ],
+      "returncode": 0,
+      "started_at_utc": "2026-10-11T04:25:46.228960+00:00",
+      "finished_at_utc": "2026-10-11T04:27:31.057719+00:00",
+      "elapsed_seconds": 104.82910663300004,
+      "output_file": "logs/applications-build.log"
+    },
+    "final-default-build": {
+      "command": [
+        "bash",
+        "scripts/with-lean.sh",
+        "lake",
+        "build"
+      ],
+      "returncode": 0,
+      "started_at_utc": "2026-10-11T04:27:49.043060+00:00",
+      "finished_at_utc": "2026-10-11T04:28:26.954661+00:00",
+      "elapsed_seconds": 37.91164037100003,
+      "output_file": "logs/final-default-build.log"
+    },
+    "final-public-audit": {
+      "command": [
+        "python3",
+        "-B",
+        "scripts/audit_lean.py"
+      ],
+      "returncode": 0,
+      "started_at_utc": "2026-10-11T04:37:32.930509+00:00",
+      "finished_at_utc": "2026-10-11T04:44:00.253254+00:00",
+      "elapsed_seconds": 387.32295811999995,
+      "output_file": "logs/final-public-audit.log"
+    },
+    "final-environment-audit": {
+      "command": [
+        "python3",
+        "-B",
+        "scripts/audit_environment.py",
+        "--timeout",
+        "1800"
+      ],
+      "returncode": 0,
+      "started_at_utc": "2026-10-11T04:49:29.460564+00:00",
+      "finished_at_utc": "2026-10-11T04:51:45.574442+00:00",
+      "elapsed_seconds": 136.11390114200003,
+      "output_file": "logs/final-environment-audit.log"
+    },
+    "final-certificates": {
+      "command": [
+        "python3",
+        "-B",
+        "scripts/check_certificates.py",
+        "--output",
+        "logs/final-certificates-verification.json"
+      ],
+      "returncode": 0,
+      "started_at_utc": "2026-10-11T04:25:20.252061+00:00",
+      "finished_at_utc": "2026-10-11T04:25:23.887526+00:00",
+      "elapsed_seconds": 3.6354726260000234,
+      "output_file": "logs/final-certificates.log"
+    }
+  },
+  "evidence_sha256": {
+    "logs/certificates-lean-final-audit.json": "39a71ca2a8744c975788c84f9337bc921a54b71a2be86727d06537a344fd6a4b",
+    "logs/full-environment-audit.json": "d07cb5df9da0fbcd0280988b5f000da942db7c73caeeba6c1d27fc3534190703",
+    "logs/final-certificates-verification.json": "41706c6f2f7be4153b36f34e86dbf96a0c4e381d55e872533e98737d50f64206",
+    "logs/final-frozen-inputs.json": "662cf4969a04068ad320383b0fd55e165a00ae3861b82264594c972dbc5f0fbb",
+    "docs/final-statement-review.md": "1da0154620950408778ec1f3d09e67a26ac68fc25ebc4e9e15ff6101a0b2ad80",
+    "docs/final-audit-review.md": "536c23884985e9c15af81203ca97fd61983ca563303b6293f508ccc606509fbb",
+    "docs/final-proof-scope.md": "63d4bab07fdab3a46946b3216b80b73e60ddde19c1370fb4e762d03c8447063b"
+  },
+  "deferred_scope": [
+    "real-polynomial and arbitrary-subfield APIs",
+    "global analytic inverse-square-root infinite generating-series equality",
+    "optional pi/Basel evaluation",
+    "contact criterion for arbitrary analytic functions",
+    "actual two-polynomial pairing cancellation bridge",
+    "truncation uniqueness and X^L divisibility classification",
+    "source tail endpoint i=0,N=1 and named actual-integral tail corollary"
+  ],
+  "nonclaims": [
+    "Catalan irrationality",
+    "arithmetic independence",
+    "arithmetic nonmembership from a nonzero formal zeta coefficient"
+  ],
+  "historical_audits": "111-theorem rational audit is a subset; interrupted smoke remains failed; current audits are separately passed"
+}

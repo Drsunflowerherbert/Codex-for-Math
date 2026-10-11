@@ -144,13 +144,36 @@ ordinary study and attributed source are linked. The failed first printer audit
 remains exit 1; the corrected historical audit remains exit 0. Fresh logs and
 reviews do not overwrite either supplied receipt. No overall license is invented.
 
+## Mixed-moment finalization
+
+The [17-module mixed-moment core](../mixed-moment/README.md) proves actual-integral
+cancellation for rational polynomials under the declared analytic contact
+condition, with explicit rational witnesses. The full statement/coverage review
+retains all broader deferred clauses. In particular, the tail range remains
+`2≤i+N`; no Catalan irrationality or arithmetic nonmembership is asserted.
+
+The final 2,562,814-byte archive was verified directly against its reported
+SHA-256, all 225 internal manifest hashes and all 226 unique safe entries.
+Every candidate has a disposition in `SOURCE-MAP.json`. All 17 Lean proof files,
+three pins and the preserved complete-environment Lean query are unchanged.
+Portable shell/Python routing and documentation edits are separately recorded.
+Private handoffs, transfer/account metadata, duplicate ordinary-study inputs,
+archives, binaries and dependencies are excluded. Existing attribution/license
+remains unchanged; no overall license is assigned.
+
+Fresh publication evidence is separate from the preserved supplied receipts;
+see [MIXED-MOMENT-CHECKS.json](evidence/MIXED-MOMENT-CHECKS.json) and the
+[publication review](../mixed-moment/docs/publication-review.md). Historical
+printer/supplement failures remain failed, the 111-theorem audit remains a
+subset, and the earlier interrupted full audit is not promoted to a pass.
+The complete inventory contains 835 constants and discloses five compiler
+runtime helpers; a separate query checks inductive and recursor metadata.
+
 ## Final round status
 
-All completed artifacts actually retrieved for this publication are included,
-with final source/privacy/status reviews and separate fresh reproduction records.
-The [mixed-moment finalization](PENDING-TRANSFER.json) was reported completed and
-independently accepted in its separate task, but final source/evidence transfer
-failed before an accessible artifact existed. Its reported fingerprint is not
-a publisher-verified archive hash. Final transfer and publication remain pending;
-no older checkpoint or ordinary study is promoted into the final proof project.
-This round closes with that limitation explicitly preserved.
+The completed artifacts are included with their exact proof scope, source
+dispositions and separate verification evidence. The mixed-moment source/evidence
+transfer failure remains an historical event in [PENDING-TRANSFER.json](PENDING-TRANSFER.json);
+the publisher subsequently received and verified the local final archive and
+prepared this GitHub publication directly. No Library access or older-checkpoint
+promotion was needed. Ordinary-study verification labels remain unchanged.

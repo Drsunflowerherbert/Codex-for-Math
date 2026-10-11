@@ -1,0 +1,50 @@
+{
+  "frozen_at_utc": "2026-10-11T04:49:11.715287+00:00",
+  "reason": "Avoid redundant transitive traversals: reuse the passed public theorem #print axioms outputs only after identical source/config/checker hash validation, freeze that report, and require every reused exact Name in the complete kernel inventory. Run ordinary #print axioms once for every remaining constant. Every declaration retains a fresh exact kernel type and explicit per-name axiom evidence source. Existing public checker and proof sources unchanged.",
+  "initial_helper_sha256": {
+    "scripts/audit_environment.py": "c1857382d7bcdf6dbd034aeb2a556f4b00f6c02501ea7285a97c399dc9dfe17e",
+    "scripts/full_environment_inventory.lean": "ac052afcf7771f435f59a9e49af8b87d1d0d4a05cc46633f86e9e741f27c3ede"
+  },
+  "supplemental_helper_sha256": {
+    "scripts/audit_environment.py": "f90117002546c74d7a287ec058e5e567ff440895aa45e1381571e5d8bfc1712a",
+    "scripts/full_environment_inventory.lean": "4a6ec90000411d752e4d709d6c3a1ef9d67727ea3e5e79a207ff850927d6d269"
+  },
+  "proof_sources_match_initial_frozen_inputs": {
+    "MixedMoments/Applications.lean": true,
+    "MixedMoments/BoundaryCatalan.lean": true,
+    "MixedMoments/BoundaryZeta.lean": true,
+    "MixedMoments/Cancellation.lean": true,
+    "MixedMoments/Certificates.lean": true,
+    "MixedMoments/Constants.lean": true,
+    "MixedMoments/Decomposition.lean": true,
+    "MixedMoments/FormalContact.lean": true,
+    "MixedMoments/FormalSquareRoot.lean": true,
+    "MixedMoments/Integrals.lean": true,
+    "MixedMoments/Rational.lean": true,
+    "MixedMoments/RationalSeries.lean": true,
+    "MixedMoments/Series.lean": true,
+    "MixedMoments/TailBounds.lean": true,
+    "MixedMoments/TaylorContact.lean": true,
+    "MixedMoments/Zeta.lean": true,
+    "MixedMoments.lean": true
+  },
+  "initial_optimized_helper_sha256": {
+    "scripts/audit_environment.py": "e7d7abe2ec50c477d9b98ecaa60299054a3c059d934cc66b447124ce374ffca0",
+    "scripts/full_environment_inventory.lean": "528d93d9a81395d6dede4a552fcb85d3df88640a0c6b61d17ff4cc8294b0fdc0"
+  },
+  "helper_sha256_before_format_repair": {
+    "scripts/audit_environment.py": "6c4ed94a6e30ecf1c077cb067c0f2699fb80ec9930534c2c3268f3b36edbacfa",
+    "scripts/full_environment_inventory.lean": "86173f6a67c90815d91f275fadcd86ba15d4684830343f1b56e6c6f28d50572f"
+  },
+  "format_repair_reason": "Lean 4.24.0 uses format.width; parse ordinary #print axioms lists across wrapped lines. The first public audit remains failed and is not reused. A fresh passed public report is required before supplemental execution.",
+  "helper_sha256_before_elaboration_repair": {
+    "scripts/audit_environment.py": "a109e87cf544121b26ab1d44045b34bec46ed0774d3828f63b36ecf19e421600",
+    "scripts/full_environment_inventory.lean": "ce984227658e6f0a95dd842e980a7034709cb5a4f2f88c9d9e3e516f85759c5c"
+  },
+  "elaboration_repair_reason": "First supplemental run failed before inventory: run_elab uses TermElabM; ordinary command elaboration requires run_cmd/CommandElabM. Use run_cmd, qualified Lean.ofExcept and explicit Json/Name types. Failed report/receipt/log preserved under first-failed names; fresh retry required.",
+  "helper_sha256_before_runtime_classification": {
+    "scripts/audit_environment.py": "a109e87cf544121b26ab1d44045b34bec46ed0774d3828f63b36ecf19e421600",
+    "scripts/full_environment_inventory.lean": "5650d67a5c0c508ca259e9756d20642cb5e04ee2f455ff5574000498e49548f1"
+  },
+  "runtime_classification_reason": "Second supplemental Lean command exited 0 with a complete 835-constant inventory and only standard axioms, but the Python report failed the blanket nonpartial guard. Lean generates exactly five partial _unsafe_rec runtime helpers for safe ordinary recursive rational definitions. Retain those five in the complete type/axiom inventory, disclose flags, record pinned compiler generation source, and require all other project declarations type/value/constructor constant references to exclude all five. Preserve the failed report/receipt/log and execute a fresh complete query; do not relabel the failed run."
+}

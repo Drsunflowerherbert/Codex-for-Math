@@ -1,0 +1,24 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "scripts/check_certificates.py",
+    "--archive",
+    "<verification-workspace-path>",
+    "--source",
+    "<verification-workspace-path>",
+    "--output",
+    "logs/fresh-certificates-verification.json"
+  ],
+  "cwd": "<verification-workspace-path>",
+  "started_utc": "2026-10-11T06:43:44.502283+00:00",
+  "finished_utc": "2026-10-11T06:43:48.296613+00:00",
+  "returncode": 0,
+  "stdout": "{\n  \"status\": \"passed\",\n  \"supplied_checks\": 17805,\n  \"independent_checks\": 20072,\n  \"provenance_and_rerun_checks\": 993,\n  \"original_source_unchanged\": true,\n  \"output\": \"logs/fresh-certificates-verification.json\"\n}\n",
+  "stderr": "",
+  "log_sha256": "57bff9c30b6d5b2105baaa827ed3a2e4f524d8662ae0369b33dfe6c31f80878a",
+  "publication_derivation": {
+    "raw_receipt_sha256": "1dab0af3ea2af509ef4492bae18507128106613ffafb66bde02b3bc28194c6df",
+    "normalization": "Private execution paths normalized; duplicate raw environment transcript omitted where applicable. Actual exits, mathematical statuses, source hashes, types and axiom inventories unchanged."
+  }
+}

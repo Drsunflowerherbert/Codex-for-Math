@@ -1,0 +1,78 @@
+--- a/MixedMoments/Applications.lean
++++ b/MixedMoments/Applications.lean
+@@ -2,11 +2,13 @@
+ import MixedMoments.BoundaryCatalan
+ import MixedMoments.BoundaryZeta
+ import MixedMoments.TailBounds
++import MixedMoments.TaylorContact
+ 
+ /-! Actual integral instantiations of the rational cancellation core. -/
+ 
+ noncomputable section
+ namespace MixedMoments
++open scoped Topology
+ 
+ /-- All recurrence hypotheses and both transcendental starts are proved for
+ these actual integrals; this construction assumes no decomposition identity. -/
+@@ -61,4 +63,31 @@
+   ⟨rationalWitness P D j, catalanWitness P j,
+     integral_cancellation_of_coefficientContact P D L j hcontact hj⟩
+ 
++/-- Positive-side big-O contact gives the explicit rational affine formula
++for the actual polynomial column integrals. -/
++theorem integral_cancellation_of_analyticContact (P D : Polynomial ℚ) (L j : ℕ)
++    (hcontact : analyticContactFunction P D =O[𝓝[>] 0] (fun x => x ^ L))
++    (hj : j < L) :
++    Analysis.polynomialColumn P j - (3 / 2 : ℝ) * Zeta.polynomialColumn D j =
++      (rationalWitness P D j : ℝ) + (catalanWitness P j : ℝ) * Constants.catalan :=
++  integral_cancellation_of_coefficientContact P D L j
++    (analyticContact_implies_coefficientContact P D L hcontact) hj
++
++/-- Two-sided big-O contact is sufficient for the same actual-integral formula. -/
++theorem integral_cancellation_of_analyticContact_nhds (P D : Polynomial ℚ) (L j : ℕ)
++    (hcontact : analyticContactFunction P D =O[𝓝 0] (fun x => x ^ L))
++    (hj : j < L) :
++    Analysis.polynomialColumn P j - (3 / 2 : ℝ) * Zeta.polynomialColumn D j =
++      (rationalWitness P D j : ℝ) + (catalanWitness P j : ℝ) * Constants.catalan :=
++  integral_cancellation_of_coefficientContact P D L j
++    (analyticContact_nhds_implies_coefficientContact P D L hcontact) hj
++
++theorem integral_analyticContact_witnesses (P D : Polynomial ℚ) (L j : ℕ)
++    (hcontact : analyticContactFunction P D =O[𝓝[>] 0] (fun x => x ^ L))
++    (hj : j < L) :
++    ∃ a b : ℚ, Analysis.polynomialColumn P j - (3 / 2 : ℝ) * Zeta.polynomialColumn D j =
++      (a : ℝ) + (b : ℝ) * Constants.catalan :=
++  ⟨rationalWitness P D j, catalanWitness P j,
++    integral_cancellation_of_analyticContact P D L j hcontact hj⟩
++
+ end MixedMoments
+--- a/MixedMoments/TailBounds.lean
++++ b/MixedMoments/TailBounds.lean
+@@ -47,7 +47,7 @@
+     convert hs using 1
+     ext u
+     rw [show k + (u + 2) = k + u + 2 by omega, ← moment_div_index a hrec (k + u)]
+-    congr 1 <;> (simp [add_comm, add_left_comm, add_assoc]; norm_num)
++    congr 1 <;> simp [add_comm, add_left_comm, add_assoc] <;> norm_num
+   have hz : Tendsto (fun u => a (k + u)) atTop (𝓝 0) := by
+     simpa only [Nat.add_comm] using hzero.comp (tendsto_add_atTop_nat k)
+   have htel := tsum_two_step_telescope (fun u => a (k + u)) hz hdiff
+--- a/MixedMoments.lean
++++ b/MixedMoments.lean
+@@ -0,0 +1,16 @@
++import MixedMoments.Rational
++import MixedMoments.Cancellation
++import MixedMoments.Series
++import MixedMoments.RationalSeries
++import MixedMoments.Decomposition
++import MixedMoments.FormalContact
++import MixedMoments.FormalSquareRoot
++import MixedMoments.TaylorContact
++import MixedMoments.Zeta
++import MixedMoments.Integrals
++import MixedMoments.Constants
++import MixedMoments.BoundaryZeta
++import MixedMoments.BoundaryCatalan
++import MixedMoments.Certificates
++import MixedMoments.TailBounds
++import MixedMoments.Applications

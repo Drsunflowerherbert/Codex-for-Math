@@ -1,0 +1,10 @@
+{
+  "status": "failed_or_changed_during_audit",
+  "module_count": 17,
+  "public_declaration_count": 513,
+  "public_theorem_count": 429,
+  "public_definition_count": 84,
+  "all_axioms_allowed": true,
+  "source_unchanged": true,
+  "output": "<verification-workspace-path>"
+}

@@ -1,0 +1,29 @@
+{
+  "frozen_at_utc": "2026-10-11T04:27:50.239920+00:00",
+  "sha256": {
+    "MixedMoments/Applications.lean": "6b2de7509ddb9c78b6ef5cbc5e147ebd031bef8521ff855b2c4451350bc550de",
+    "MixedMoments/BoundaryCatalan.lean": "c20ec5bf6cb3be1abfa5303d5a1d11d2efc4b9fa579be97742bd39280d7efab4",
+    "MixedMoments/BoundaryZeta.lean": "3886dc14e832d1b9e5525890a22c6e73b23e5bc53668a46051c85d54d5fd8269",
+    "MixedMoments/Cancellation.lean": "78f99204d8149b8ba742f9da291dfc6510180a241b6dcfbd8ef4bcd373b05777",
+    "MixedMoments/Certificates.lean": "64fdf1aa2b5e80b7e441a5434dd35c44e45aad3691b96dd1993f316a69333fcc",
+    "MixedMoments/Constants.lean": "4148960a6c64f1194a8452d207d706b8e33f8d53182af1a883a72db3d9b0d59e",
+    "MixedMoments/Decomposition.lean": "2c0909221f7f2b93e005d5a461245cc7e72842349a9f14d5988377d05a1fd082",
+    "MixedMoments/FormalContact.lean": "8db06758cf108ddacb414a20817c6d039b39614f28d40c6cb299c20474d8b816",
+    "MixedMoments/FormalSquareRoot.lean": "d88b754444791dbf63ad42863a40354325e22be4a78dddc74f3f65d1dcccf709",
+    "MixedMoments/Integrals.lean": "37106eb9ee99e488fffad5d209310ab21d38d84ae1f00476225d948807a047cd",
+    "MixedMoments/Rational.lean": "183388091a29d1425c389a62a5618b0aa959ff4134928373e58de4948dd7badc",
+    "MixedMoments/RationalSeries.lean": "d924772a53dde6408f0b2d0940812bb6cf0934bcdc492d5f535ec7c90b1c252c",
+    "MixedMoments/Series.lean": "2a58ace5f03b5ff72bb4fc3a2a27db6ce44d8cf914ecb83a85ec7e3c78a56c2a",
+    "MixedMoments/TailBounds.lean": "de8d5dc29f933d86705f679f89e3d2ed4f65086bb40470d44a7cf4737a2f0f16",
+    "MixedMoments/TaylorContact.lean": "5ac77117d6cfe85bac2350adef5e72150cb8955d26555a66d6331c3ecc83d629",
+    "MixedMoments/Zeta.lean": "31f67ad1418d8491f430b4adeb7cd1624c4d7a57cfdad9fc1263981dd17234bb",
+    "MixedMoments.lean": "b8784ec3490d4e9b41f17ffd77b577b5b0e9f98a5951256d700aeed86a7dcc3f",
+    "lake-manifest.json": "0b80f29b3b69dff316b538e9575bf837ce279ae4ab480c9a03cfb9722ea9df03",
+    "lakefile.toml": "14a208232058e677a4fc2e792ec29c4ba74c5adf1315f0b76252fe1985b8cd68",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "scripts/audit_environment.py": "c1857382d7bcdf6dbd034aeb2a556f4b00f6c02501ea7285a97c399dc9dfe17e",
+    "scripts/audit_lean.py": "bfd3013eb5d5c2b08ae9776d2de11a627239e26cbf3c5d69595a05adaf2a6a70",
+    "scripts/full_environment_inventory.lean": "ac052afcf7771f435f59a9e49af8b87d1d0d4a05cc46633f86e9e741f27c3ede",
+    "scripts/with-lean.sh": "56ca5c0df15a5561b9a001bf1712858f1ce15f6c4f536ffb3b1b8cfbf7e495b9"
+  }
+}

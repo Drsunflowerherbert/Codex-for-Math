@@ -50,7 +50,7 @@ def main():
         if not name:continue
         digest=hashlib.sha256(actual[name].read_bytes()).hexdigest()
         assert digest==row['published_sha256'],name
-        if row['bundle'] in {'radial','egyptian','sharp','positive-blocks','convex'} and (name.endswith('.lean') or Path(name).name in {'lake-manifest.json','lakefile.toml','lean-toolchain'}):
+        if row['bundle'] in {'radial','egyptian','sharp','positive-blocks','convex','mixed-moment'} and (name.endswith('.lean') or Path(name).name in {'lake-manifest.json','lakefile.toml','lean-toolchain'}):
             assert digest==row['source_sha256'],('formal-source drift',name)
             unchanged_formal+=1
     # This immutable earlier batch is historical; its protected proof/pin files

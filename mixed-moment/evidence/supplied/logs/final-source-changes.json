@@ -1,0 +1,20 @@
+{
+  "changed_or_added_lean_files": [
+    {
+      "path": "MixedMoments/Applications.lean",
+      "recovery_sha256": "d288a821a11db2078c9bc0dbcb67c7281e154f2165a8ae6ce5071574e37f8490",
+      "final_sha256": "6b2de7509ddb9c78b6ef5cbc5e147ebd031bef8521ff855b2c4451350bc550de"
+    },
+    {
+      "path": "MixedMoments/TailBounds.lean",
+      "recovery_sha256": "879d5d0a7975b1a6c17671d38eb3db5a31cbc2511df0a6e1e43b0a4ac8506a9e",
+      "final_sha256": "de8d5dc29f933d86705f679f89e3d2ed4f65086bb40470d44a7cf4737a2f0f16"
+    },
+    {
+      "path": "MixedMoments.lean",
+      "recovery_sha256": null,
+      "final_sha256": "b8784ec3490d4e9b41f17ffd77b577b5b0e9f98a5951256d700aeed86a7dcc3f"
+    }
+  ],
+  "all_other_recovered_lean_sources_unchanged": true
+}

@@ -1,21 +1,41 @@
 {
-  "schema": "reported-finalization-transfer-pending-v1",
-  "recorded_utc": "2026-10-11T04:59:55.956598+00:00",
-  "artifact": "mixed-moment final actual-integral cancellation core",
-  "finalization_status": "reported_completed_and_independently_accepted_in_finalization_task",
-  "publisher_received_final_source_and_evidence": false,
-  "publisher_independently_checked_final_source": false,
-  "publisher_verified_reported_archive_hash_against_bytes": false,
-  "reported_final_archive": {
-    "sha256": "34ac376f858d1849d7521881e50eb467a8b72358cec4392194ba88cf93ccfb5b",
-    "bytes": 2562814,
-    "entries": 226,
-    "fingerprint_authority": "reported_by_finalization_task_only_no_publisher_byte_comparison"
+  "schema": "mixed-moment-transfer-resolution-v2",
+  "historical_failed_transfer": {
+    "schema": "reported-finalization-transfer-pending-v1",
+    "recorded_utc": "2026-10-11T04:59:55.956598+00:00",
+    "artifact": "mixed-moment final actual-integral cancellation core",
+    "finalization_status": "reported_completed_and_independently_accepted_in_finalization_task",
+    "publisher_received_final_source_and_evidence": false,
+    "publisher_independently_checked_final_source": false,
+    "publisher_verified_reported_archive_hash_against_bytes": false,
+    "reported_final_archive": {
+      "sha256": "34ac376f858d1849d7521881e50eb467a8b72358cec4392194ba88cf93ccfb5b",
+      "bytes": 2562814,
+      "entries": 226,
+      "fingerprint_authority": "reported_by_finalization_task_only_no_publisher_byte_comparison"
+    },
+    "reported_scope": "Actual-integral cancellation for rational polynomials under stated analytic contact assumptions.",
+    "source_and_evidence_transfer": "pending; no accessible final artifact received",
+    "publication": "pending",
+    "older_checkpoint_promoted_to_final_artifact": false,
+    "ordinary_study_lean_status_upgraded": false,
+    "scope_notice": "This is a reported-status record, not final proof source, a Lean receipt, a fresh compiler run or a verified archive identity. The older ordinary study remains ordinary; no source equivalence or final-source hash match is asserted. No unfinished or unavailable artifact is published as the completed verified core."
   },
-  "reported_scope": "Actual-integral cancellation for rational polynomials under stated analytic contact assumptions.",
-  "source_and_evidence_transfer": "pending; no accessible final artifact received",
-  "publication": "pending",
-  "older_checkpoint_promoted_to_final_artifact": false,
-  "ordinary_study_lean_status_upgraded": false,
-  "scope_notice": "This is a reported-status record, not final proof source, a Lean receipt, a fresh compiler run or a verified archive identity. The older ordinary study remains ordinary; no source equivalence or final-source hash match is asserted. No unfinished or unavailable artifact is published as the completed verified core."
+  "current_resolution": {
+    "recorded_utc": "2026-10-11T06:34:58.770074+00:00",
+    "source": "direct publisher-local final archive intake",
+    "publisher_received_final_source_and_evidence": true,
+    "publisher_verified_archive_bytes_hash_and_manifest": true,
+    "verified_archive_sha256": "34ac376f858d1849d7521881e50eb467a8b72358cec4392194ba88cf93ccfb5b",
+    "verified_archive_bytes": 2562814,
+    "verified_archive_entries": 226,
+    "publication_target": "authorized GitHub research branch; this record accompanies the publication commit",
+    "library_connection_failure_remains_unresolved": true,
+    "library_retry_or_bypass_performed": false,
+    "older_checkpoint_promoted_to_final_artifact": false,
+    "ordinary_study_lean_status_upgraded": false,
+    "mathematical_and_publication_checks": "publication/evidence/MIXED-MOMENT-CHECKS.json",
+    "publisher_independently_checked_final_source": true,
+    "fresh_build_full_audits_exact_checks": "passed; actual process exits zero"
+  }
 }

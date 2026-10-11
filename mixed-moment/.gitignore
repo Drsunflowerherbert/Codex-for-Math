@@ -1,0 +1,6 @@
+.lake/
+.library-helper/
+source/
+scratch/
+__pycache__/
+*.pyc

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "declaration_count": 835,
+  "kind_counts": {
+    "definition": 103,
+    "theorem": 729,
+    "inductive": 1,
+    "constructor": 1,
+    "recursor": 1
+  },
+  "all_axioms_allowed": true,
+  "inputs_unchanged": true,
+  "module_inventory_matches_sources": true,
+  "exact_combined_axiom_declaration_inventory_match": true,
+  "public_final_audit_axioms_match": true,
+  "public_final_audit_source_and_checker_hashes_match": true
+}

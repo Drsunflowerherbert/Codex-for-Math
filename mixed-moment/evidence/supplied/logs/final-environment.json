@@ -1,0 +1,102 @@
+{
+  "checked_at_utc": "2026-10-11T04:25:15.595096+00:00",
+  "lean": {
+    "command": [
+      "<verification-workspace-path>",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)\n",
+    "binary_sha256": "8fadc3ed92cc9decb94c96ee9c0876e91e03a3a5e69138f32114f02789e2766c"
+  },
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "expected_rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "actual_rev": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "returncode": 0,
+      "git_status": ""
+    },
+    {
+      "name": "plausible",
+      "expected_rev": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "actual_rev": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "returncode": 0,
+      "git_status": ""
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected_rev": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "actual_rev": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "returncode": 0,
+      "git_status": ""
+    },
+    {
+      "name": "importGraph",
+      "expected_rev": "d768126816be17600904726ca7976b185786e6b9",
+      "actual_rev": "d768126816be17600904726ca7976b185786e6b9",
+      "returncode": 0,
+      "git_status": ""
+    },
+    {
+      "name": "proofwidgets",
+      "expected_rev": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "actual_rev": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "returncode": 0,
+      "git_status": ""
+    },
+    {
+      "name": "aesop",
+      "expected_rev": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "actual_rev": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "returncode": 0,
+      "git_status": ""
+    },
+    {
+      "name": "Qq",
+      "expected_rev": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "actual_rev": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "returncode": 0,
+      "git_status": ""
+    },
+    {
+      "name": "batteries",
+      "expected_rev": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "actual_rev": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "returncode": 0,
+      "git_status": ""
+    },
+    {
+      "name": "Cli",
+      "expected_rev": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "actual_rev": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "returncode": 0,
+      "git_status": ""
+    }
+  ],
+  "pin_file_sha256": {
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lake-manifest.json": "0b80f29b3b69dff316b538e9575bf837ce279ae4ab480c9a03cfb9722ea9df03",
+    "lakefile.toml": "14a208232058e677a4fc2e792ec29c4ba74c5adf1315f0b76252fe1985b8cd68"
+  },
+  "audit_checker_sha256_before": "bfd3013eb5d5c2b08ae9776d2de11a627239e26cbf3c5d69595a05adaf2a6a70",
+  "compiler_used_read_only": true,
+  "dependencies_copied_without_hardlinks": true,
+  "audit_checker_sha256_before_corrected_run": "c98d5daa3f7f55f4839d904349d81408ae7eb8d2cf21a93637771e975b30deab",
+  "audit_checker_repair": {
+    "original_sha256": "bfd3013eb5d5c2b08ae9776d2de11a627239e26cbf3c5d69595a05adaf2a6a70",
+    "corrected_sha256": "c98d5daa3f7f55f4839d904349d81408ae7eb8d2cf21a93637771e975b30deab",
+    "reason": [
+      "Lean 4.24.0 uses format.width, not pp.width",
+      "Accept multiline printed axiom lists without omitting wrapped names"
+    ],
+    "failed_first_audit": "logs/certificates-lean-full-audit-first-failed.json",
+    "proof_sources_unchanged": true,
+    "first_failed_axiom_command_exit": 0,
+    "first_failed_types_and_definitions_exits": [
+      1,
+      1
+    ],
+    "fresh_full_audit_required": true
+  }
+}

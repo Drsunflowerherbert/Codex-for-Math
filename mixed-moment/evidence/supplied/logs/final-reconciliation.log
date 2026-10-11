@@ -1,0 +1,68 @@
+{
+  "status": "passed_scoped_core",
+  "build": {
+    "default_build_exit": 0,
+    "applications_build_exit": 0,
+    "root_and_component_module_count": 17,
+    "rational_certificate_theorem_count": 77
+  },
+  "public_audit": {
+    "status": "passed",
+    "public_declaration_count": 513,
+    "public_theorem_count": 429,
+    "public_definition_count": 84,
+    "axiom_result_count": 429,
+    "exact_axiom_declaration_inventory_match": true,
+    "all_axioms_allowed": true,
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "forbidden_source_tokens": []
+  },
+  "full_environment_audit": {
+    "status": "passed",
+    "declaration_count": 835,
+    "kind_counts": {
+      "definition": 103,
+      "theorem": 729,
+      "inductive": 1,
+      "constructor": 1,
+      "recursor": 1
+    },
+    "proposition_valued_count": 731,
+    "print_axiom_result_count": 406,
+    "all_axioms_allowed": true,
+    "all_local_declarations_nonunsafe_nonaxiom": true,
+    "partial_declarations": [
+      "MixedMoments.central._unsafe_rec",
+      "MixedMoments.hStar._unsafe_rec",
+      "MixedMoments.kminus._unsafe_rec",
+      "MixedMoments.kplus._unsafe_rec",
+      "MixedMoments.moment._unsafe_rec"
+    ],
+    "recognized_compiler_runtime_helpers": [
+      "MixedMoments.central._unsafe_rec",
+      "MixedMoments.hStar._unsafe_rec",
+      "MixedMoments.kminus._unsafe_rec",
+      "MixedMoments.kplus._unsafe_rec",
+      "MixedMoments.moment._unsafe_rec"
+    ],
+    "compiler_runtime_helper_classification_valid": true,
+    "nonruntime_kernel_references_to_runtime_helpers": [],
+    "partial_source_tokens": [],
+    "module_inventory_matches_sources": true,
+    "missing_source_public_names": [],
+    "exact_combined_axiom_declaration_inventory_match": true,
+    "reused_public_axiom_result_count": 429,
+    "combined_axiom_result_count": 835
+  },
+  "exact_checks": {
+    "command_exit": 0,
+    "supplied": 17805,
+    "independent": 20072,
+    "provenance": 993,
+    "limits": "Finite rational/provenance checks, distinct from analytic integral proofs"
+  }
+}

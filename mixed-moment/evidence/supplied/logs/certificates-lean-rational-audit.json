@@ -1,0 +1,1049 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "checked_at_utc": "2026-10-11T03:36:52.926418+00:00",
+  "scope": "Independent full-source build, public theorem axiom inspection, and source-preservation checks; see docs/lean-independent-review.md for mathematical review",
+  "build_command": [
+    "bash",
+    "scripts/with-lean.sh",
+    "lake",
+    "build",
+    "MixedMoments.Rational",
+    "MixedMoments.Cancellation"
+  ],
+  "build_returncode": 0,
+  "build_stdout": "\u2714 [7352/7352] Built MixedMoments.Cancellation (18s)\nBuild completed successfully (7352 jobs).\n",
+  "build_stderr": "",
+  "audit_command": [
+    "bash",
+    "scripts/with-lean.sh",
+    "lake",
+    "env",
+    "lean",
+    "<scratch>/audit.lean"
+  ],
+  "query_source": "import MixedMoments.Rational\nimport MixedMoments.Cancellation\n#print axioms MixedMoments.central_zero\n#print axioms MixedMoments.central_succ_ratio\n#print axioms MixedMoments.central_pos\n#print axioms MixedMoments.central_ne_zero\n#print axioms MixedMoments.central_le_one\n#print axioms MixedMoments.central_succ_mul\n#print axioms MixedMoments.central_eq_centralBinom\n#print axioms MixedMoments.central_eq_choose\n#print axioms MixedMoments.kernel_of_neg\n#print axioms MixedMoments.kernel_of_odd\n#print axioms MixedMoments.kernel_zero\n#print axioms MixedMoments.kernel_even\n#print axioms MixedMoments.kernel_odd\n#print axioms MixedMoments.kernel_step\n#print axioms MixedMoments.kernel_shifted_step\n#print axioms MixedMoments.moment_zero\n#print axioms MixedMoments.moment_one\n#print axioms MixedMoments.moment_step\n#print axioms MixedMoments.moment_recurrence\n#print axioms MixedMoments.moment_odd\n#print axioms MixedMoments.moment_even\n#print axioms MixedMoments.moment_nonneg\n#print axioms MixedMoments.moment_eq_if\n#print axioms MixedMoments.momentExt_of_neg\n#print axioms MixedMoments.momentExt_natCast\n#print axioms MixedMoments.momentExt_neg_one\n#print axioms MixedMoments.moment_recurrence_positive\n#print axioms MixedMoments.moment_step_le\n#print axioms MixedMoments.moment_le_two\n#print axioms MixedMoments.moment_sq_le\n#print axioms MixedMoments.moment_telescope_step\n#print axioms MixedMoments.moment_telescope_positive\n#print axioms MixedMoments.moment_finite_telescope\n#print axioms MixedMoments.kminus_zero\n#print axioms MixedMoments.kminus_one\n#print axioms MixedMoments.kplus_zero\n#print axioms MixedMoments.kplus_one\n#print axioms MixedMoments.kminus_step\n#print axioms MixedMoments.kplus_step\n#print axioms MixedMoments.kminus_recurrence\n#print axioms MixedMoments.kplus_recurrence\n#print axioms MixedMoments.hStar_zero\n#print axioms MixedMoments.hStar_one\n#print axioms MixedMoments.hStar_step\n#print axioms MixedMoments.hStar_pos\n#print axioms MixedMoments.hStar_ne_zero\n#print axioms MixedMoments.hStar_even\n#print axioms MixedMoments.hStar_odd\n#print axioms MixedMoments.kminus_even_closed\n#print axioms MixedMoments.kminus_odd_closed\n#print axioms MixedMoments.kplus_odd_closed\n#print axioms MixedMoments.kplus_even_closed\n#print axioms MixedMoments.harmonic_zero\n#print axioms MixedMoments.harmonicTwo_zero\n#print axioms MixedMoments.harmonic_succ\n#print axioms MixedMoments.harmonicTwo_succ\n#print axioms MixedMoments.mRationalPart_right_zero\n#print axioms MixedMoments.mRationalPart_left_zero\n#print axioms MixedMoments.zRationalPart_diagonal\n#print axioms MixedMoments.mRationalPart_diagonal\n#print axioms MixedMoments.finite_diagonal_telescope\n#print axioms MixedMoments.mRationalPart_finite_diagonal\n#print axioms MixedMoments.mRationalPart_adjacent_diagonal\n#print axioms MixedMoments.zRationalPart_symm\n#print axioms MixedMoments.zRationalPart_diagonal_step\n#print axioms MixedMoments.zRationalPart_finite_diagonal\n#print axioms MixedMoments.Coordinates.rational_mk\n#print axioms MixedMoments.Coordinates.catalan_mk\n#print axioms MixedMoments.Coordinates.zetaTwo_mk\n#print axioms MixedMoments.Coordinates.eval_mk\n#print axioms MixedMoments.Coordinates.eval_add\n#print axioms MixedMoments.Coordinates.eval_sub\n#print axioms MixedMoments.Coordinates.eval_smul\n#print axioms MixedMoments.Coordinates.eval_zero\n#print axioms MixedMoments.Coordinates.eval_sum\n#print axioms MixedMoments.Coordinates.eval_of_zetaTwo_eq_zero\n#print axioms MixedMoments.polynomialM_zetaTwo\n#print axioms MixedMoments.polynomialZ_zetaTwo\n#print axioms MixedMoments.formal_entry_zeta_coordinate\n#print axioms MixedMoments.contact_cancels_zeta_coordinate\n#print axioms MixedMoments.coefficient_contact_cancellation\n#print axioms MixedMoments.contactTruncation_coeff\n#print axioms MixedMoments.contactTruncation_contact\n#print axioms MixedMoments.formalEntry_rational\n#print axioms MixedMoments.formalEntry_catalan\n#print axioms MixedMoments.exact_defect_identity\n#print axioms MixedMoments.coefficient_contact_cancellation_explicit\n#print axioms MixedMoments.realPolynomialContraction_eq_eval\n#print axioms MixedMoments.cancellation_of_decompositions\n#print axioms MixedMoments.paired_entry_zeta_coordinate\n#print axioms MixedMoments.paired_cancellation\n#print axioms MixedMoments.paired_cancellation_of_contact\n#print axioms MixedMoments.paired_cancellation_of_natDegree_lt\n#print axioms MixedMoments.formalM_diagonal\n#print axioms MixedMoments.support_one_eq\n#print axioms MixedMoments.polynomialM_one\n#print axioms MixedMoments.polynomialZ_X\n#print axioms MixedMoments.formalEntry_one_X\n#print axioms MixedMoments.formalM_zero_zero\n#print axioms MixedMoments.formalM_zero_one\n#print axioms MixedMoments.formalM_one_zero\n#print axioms MixedMoments.formalM_zero_two\n#print axioms MixedMoments.formalM_two_zero\n#print axioms MixedMoments.formalZ_zero_one\n#print axioms MixedMoments.formalZ_one_one\n#print axioms MixedMoments.one_X_contact_three\n#print axioms MixedMoments.one_X_entry_zero\n#print axioms MixedMoments.one_X_entry_one\n#print axioms MixedMoments.one_X_entry_two\n#print axioms MixedMoments.one_X_entry_three\n#print axioms MixedMoments.one_X_entry_three_zeta_nonzero\n",
+  "audit_returncode": 0,
+  "audit_stdout": "'MixedMoments.central_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.central_succ_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.central_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.central_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.central_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.central_succ_mul' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.central_eq_centralBinom' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.central_eq_choose' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kernel_of_neg' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kernel_of_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kernel_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kernel_even' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kernel_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kernel_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kernel_shifted_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.moment_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.moment_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.moment_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.moment_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.moment_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.moment_even' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.moment_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.moment_eq_if' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.momentExt_of_neg' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.momentExt_natCast' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.momentExt_neg_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.moment_recurrence_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.moment_step_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.moment_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.moment_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.moment_telescope_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.moment_telescope_positive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.moment_finite_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kminus_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kminus_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kplus_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kplus_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kminus_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kplus_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kminus_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kplus_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.hStar_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.hStar_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.hStar_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.hStar_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.hStar_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.hStar_even' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.hStar_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kminus_even_closed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kminus_odd_closed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kplus_odd_closed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.kplus_even_closed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.harmonic_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.harmonicTwo_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.harmonic_succ' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.harmonicTwo_succ' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.mRationalPart_right_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.mRationalPart_left_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.zRationalPart_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.mRationalPart_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.finite_diagonal_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.mRationalPart_finite_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.mRationalPart_adjacent_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.zRationalPart_symm' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.zRationalPart_diagonal_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.zRationalPart_finite_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.Coordinates.rational_mk' depends on axioms: [propext]\n'MixedMoments.Coordinates.catalan_mk' depends on axioms: [propext]\n'MixedMoments.Coordinates.zetaTwo_mk' depends on axioms: [propext]\n'MixedMoments.Coordinates.eval_mk' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.Coordinates.eval_add' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.Coordinates.eval_sub' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.Coordinates.eval_smul' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.Coordinates.eval_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.Coordinates.eval_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.Coordinates.eval_of_zetaTwo_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.polynomialM_zetaTwo' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.polynomialZ_zetaTwo' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.formal_entry_zeta_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.contact_cancels_zeta_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.coefficient_contact_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.contactTruncation_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.contactTruncation_contact' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.formalEntry_rational' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.formalEntry_catalan' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.exact_defect_identity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.coefficient_contact_cancellation_explicit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.realPolynomialContraction_eq_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.cancellation_of_decompositions' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.paired_entry_zeta_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.paired_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.paired_cancellation_of_contact' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.paired_cancellation_of_natDegree_lt' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.formalM_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.support_one_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.polynomialM_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.polynomialZ_X' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.formalEntry_one_X' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.formalM_zero_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.formalM_zero_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.formalM_one_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.formalM_zero_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.formalM_two_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.formalZ_zero_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.formalZ_one_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.one_X_contact_three' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.one_X_entry_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.one_X_entry_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.one_X_entry_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.one_X_entry_three' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MixedMoments.one_X_entry_three_zeta_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "audit_stderr": "",
+  "inputs": {
+    "MixedMoments.Rational": {
+      "source_sha256": "183388091a29d1425c389a62a5618b0aa959ff4134928373e58de4948dd7badc",
+      "declarations": [
+        "MixedMoments.central_zero",
+        "MixedMoments.central_succ_ratio",
+        "MixedMoments.central_pos",
+        "MixedMoments.central_ne_zero",
+        "MixedMoments.central_le_one",
+        "MixedMoments.central_succ_mul",
+        "MixedMoments.central_eq_centralBinom",
+        "MixedMoments.central_eq_choose",
+        "MixedMoments.kernel_of_neg",
+        "MixedMoments.kernel_of_odd",
+        "MixedMoments.kernel_zero",
+        "MixedMoments.kernel_even",
+        "MixedMoments.kernel_odd",
+        "MixedMoments.kernel_step",
+        "MixedMoments.kernel_shifted_step",
+        "MixedMoments.moment_zero",
+        "MixedMoments.moment_one",
+        "MixedMoments.moment_step",
+        "MixedMoments.moment_recurrence",
+        "MixedMoments.moment_odd",
+        "MixedMoments.moment_even",
+        "MixedMoments.moment_nonneg",
+        "MixedMoments.moment_eq_if",
+        "MixedMoments.momentExt_of_neg",
+        "MixedMoments.momentExt_natCast",
+        "MixedMoments.momentExt_neg_one",
+        "MixedMoments.moment_recurrence_positive",
+        "MixedMoments.moment_step_le",
+        "MixedMoments.moment_le_two",
+        "MixedMoments.moment_sq_le",
+        "MixedMoments.moment_telescope_step",
+        "MixedMoments.moment_telescope_positive",
+        "MixedMoments.moment_finite_telescope",
+        "MixedMoments.kminus_zero",
+        "MixedMoments.kminus_one",
+        "MixedMoments.kplus_zero",
+        "MixedMoments.kplus_one",
+        "MixedMoments.kminus_step",
+        "MixedMoments.kplus_step",
+        "MixedMoments.kminus_recurrence",
+        "MixedMoments.kplus_recurrence",
+        "MixedMoments.hStar_zero",
+        "MixedMoments.hStar_one",
+        "MixedMoments.hStar_step",
+        "MixedMoments.hStar_pos",
+        "MixedMoments.hStar_ne_zero",
+        "MixedMoments.hStar_even",
+        "MixedMoments.hStar_odd",
+        "MixedMoments.kminus_even_closed",
+        "MixedMoments.kminus_odd_closed",
+        "MixedMoments.kplus_odd_closed",
+        "MixedMoments.kplus_even_closed",
+        "MixedMoments.harmonic_zero",
+        "MixedMoments.harmonicTwo_zero",
+        "MixedMoments.harmonic_succ",
+        "MixedMoments.harmonicTwo_succ",
+        "MixedMoments.mRationalPart_right_zero",
+        "MixedMoments.mRationalPart_left_zero",
+        "MixedMoments.zRationalPart_diagonal",
+        "MixedMoments.mRationalPart_diagonal",
+        "MixedMoments.finite_diagonal_telescope",
+        "MixedMoments.mRationalPart_finite_diagonal",
+        "MixedMoments.mRationalPart_adjacent_diagonal",
+        "MixedMoments.zRationalPart_symm",
+        "MixedMoments.zRationalPart_diagonal_step",
+        "MixedMoments.zRationalPart_finite_diagonal"
+      ]
+    },
+    "MixedMoments.Cancellation": {
+      "source_sha256": "78f99204d8149b8ba742f9da291dfc6510180a241b6dcfbd8ef4bcd373b05777",
+      "declarations": [
+        "MixedMoments.Coordinates.rational_mk",
+        "MixedMoments.Coordinates.catalan_mk",
+        "MixedMoments.Coordinates.zetaTwo_mk",
+        "MixedMoments.Coordinates.eval_mk",
+        "MixedMoments.Coordinates.eval_add",
+        "MixedMoments.Coordinates.eval_sub",
+        "MixedMoments.Coordinates.eval_smul",
+        "MixedMoments.Coordinates.eval_zero",
+        "MixedMoments.Coordinates.eval_sum",
+        "MixedMoments.Coordinates.eval_of_zetaTwo_eq_zero",
+        "MixedMoments.polynomialM_zetaTwo",
+        "MixedMoments.polynomialZ_zetaTwo",
+        "MixedMoments.formal_entry_zeta_coordinate",
+        "MixedMoments.contact_cancels_zeta_coordinate",
+        "MixedMoments.coefficient_contact_cancellation",
+        "MixedMoments.contactTruncation_coeff",
+        "MixedMoments.contactTruncation_contact",
+        "MixedMoments.formalEntry_rational",
+        "MixedMoments.formalEntry_catalan",
+        "MixedMoments.exact_defect_identity",
+        "MixedMoments.coefficient_contact_cancellation_explicit",
+        "MixedMoments.realPolynomialContraction_eq_eval",
+        "MixedMoments.cancellation_of_decompositions",
+        "MixedMoments.paired_entry_zeta_coordinate",
+        "MixedMoments.paired_cancellation",
+        "MixedMoments.paired_cancellation_of_contact",
+        "MixedMoments.paired_cancellation_of_natDegree_lt",
+        "MixedMoments.formalM_diagonal",
+        "MixedMoments.support_one_eq",
+        "MixedMoments.polynomialM_one",
+        "MixedMoments.polynomialZ_X",
+        "MixedMoments.formalEntry_one_X",
+        "MixedMoments.formalM_zero_zero",
+        "MixedMoments.formalM_zero_one",
+        "MixedMoments.formalM_one_zero",
+        "MixedMoments.formalM_zero_two",
+        "MixedMoments.formalM_two_zero",
+        "MixedMoments.formalZ_zero_one",
+        "MixedMoments.formalZ_one_one",
+        "MixedMoments.one_X_contact_three",
+        "MixedMoments.one_X_entry_zero",
+        "MixedMoments.one_X_entry_one",
+        "MixedMoments.one_X_entry_two",
+        "MixedMoments.one_X_entry_three",
+        "MixedMoments.one_X_entry_three_zeta_nonzero"
+      ]
+    }
+  },
+  "declaration_count": 111,
+  "expected_declaration_count": 111,
+  "exact_declaration_inventory_match": true,
+  "source_unchanged_during_audit": {
+    "MixedMoments.Rational": true,
+    "MixedMoments.Cancellation": true
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "forbidden_source_tokens": [],
+  "results": [
+    {
+      "declaration": "MixedMoments.central_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.central_succ_ratio",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.central_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.central_ne_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.central_le_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.central_succ_mul",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.central_eq_centralBinom",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.central_eq_choose",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kernel_of_neg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kernel_of_odd",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kernel_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kernel_even",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kernel_odd",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kernel_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kernel_shifted_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.moment_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.moment_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.moment_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.moment_recurrence",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.moment_odd",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.moment_even",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.moment_nonneg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.moment_eq_if",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.momentExt_of_neg",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.momentExt_natCast",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.momentExt_neg_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.moment_recurrence_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.moment_step_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.moment_le_two",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.moment_sq_le",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.moment_telescope_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.moment_telescope_positive",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.moment_finite_telescope",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kminus_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kminus_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kplus_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kplus_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kminus_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kplus_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kminus_recurrence",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kplus_recurrence",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.hStar_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.hStar_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.hStar_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.hStar_pos",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.hStar_ne_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.hStar_even",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.hStar_odd",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kminus_even_closed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kminus_odd_closed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kplus_odd_closed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.kplus_even_closed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.harmonic_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.harmonicTwo_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.harmonic_succ",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.harmonicTwo_succ",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.mRationalPart_right_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.mRationalPart_left_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.zRationalPart_diagonal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.mRationalPart_diagonal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.finite_diagonal_telescope",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.mRationalPart_finite_diagonal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.mRationalPart_adjacent_diagonal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.zRationalPart_symm",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.zRationalPart_diagonal_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.zRationalPart_finite_diagonal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.Coordinates.rational_mk",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.Coordinates.catalan_mk",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.Coordinates.zetaTwo_mk",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.Coordinates.eval_mk",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.Coordinates.eval_add",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.Coordinates.eval_sub",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.Coordinates.eval_smul",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.Coordinates.eval_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.Coordinates.eval_sum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.Coordinates.eval_of_zetaTwo_eq_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.polynomialM_zetaTwo",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.polynomialZ_zetaTwo",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.formal_entry_zeta_coordinate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.contact_cancels_zeta_coordinate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.coefficient_contact_cancellation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.contactTruncation_coeff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.contactTruncation_contact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.formalEntry_rational",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.formalEntry_catalan",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.exact_defect_identity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.coefficient_contact_cancellation_explicit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.realPolynomialContraction_eq_eval",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.cancellation_of_decompositions",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.paired_entry_zeta_coordinate",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.paired_cancellation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.paired_cancellation_of_contact",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.paired_cancellation_of_natDegree_lt",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.formalM_diagonal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.support_one_eq",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.polynomialM_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.polynomialZ_X",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.formalEntry_one_X",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.formalM_zero_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.formalM_zero_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.formalM_one_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.formalM_zero_two",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.formalM_two_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.formalZ_zero_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.formalZ_one_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.one_X_contact_three",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.one_X_entry_zero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.one_X_entry_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.one_X_entry_two",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.one_X_entry_three",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "MixedMoments.one_X_entry_three_zeta_nonzero",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

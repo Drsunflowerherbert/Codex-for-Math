@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "supplied_checks": 17805,
+  "independent_checks": 20072,
+  "provenance_and_rerun_checks": 993,
+  "original_source_unchanged": true,
+  "output": "logs/final-certificates-verification.json"
+}

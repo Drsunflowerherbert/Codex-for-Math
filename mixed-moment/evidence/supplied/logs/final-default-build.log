@@ -1,0 +1,7 @@
+⚠ [7364/7368] Replayed MixedMoments.TailBounds
+warning: MixedMoments/TailBounds.lean:50:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [7366/7368] Built MixedMoments.Certificates (28s)
+✔ [7367/7368] Built MixedMoments (4.5s)
+Build completed successfully (7368 jobs).

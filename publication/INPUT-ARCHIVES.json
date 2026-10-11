@@ -70,6 +70,16 @@
       "sha256": "d997695b9ece44b2cbfa7d0468c16b9f7d443260da1374a3da93ebd78b9de294",
       "files": 132,
       "uncompressed": 5134896
+    },
+    {
+      "archive": "mixed-moments-final-source-evidence-2026-10-11.zip",
+      "size": 2562814,
+      "sha256": "34ac376f858d1849d7521881e50eb467a8b72358cec4392194ba88cf93ccfb5b",
+      "files": 226,
+      "supplied_manifest_file_hashes_verified": 225,
+      "crc_verified": true,
+      "safe_unique_regular_paths_verified": true,
+      "identity": "Publisher verified actual local bytes; not a reported-only fingerprint."
     }
   ]
 }

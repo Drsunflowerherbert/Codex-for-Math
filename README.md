@@ -12,13 +12,14 @@ bundles on 11 October 2026:
 | [Finite-field product mixing](finite-field-product-mixing/README.md) | 85 audited declarations, including the four-product covering criterion and local divisor lift; supplied completed build evidence, with publication-only receipt inspection. |
 | [Positive-block matrix inequalities](positive-blocks/README.md) | 142 public Lean declarations, full equality classification and common-support normal form; completed independent source review and fresh build/type/axiom checks. |
 | [Convex approximation](convex-approximation/README.md) | Nine-module smooth quantitative approximation core and actual certified nested sequence; 145 inventoried declarations plus the Plane abbreviation, with independent review and fresh audits. Analytic charts and sphere/Jordan parametrizations remain deferred. |
+| [Mixed-moment cancellation](mixed-moment/README.md) | Actual-integral cancellation for rational polynomials under explicit analytic contact; 17 modules, 513 public declarations and 835 project-origin constants. Broader analytic clauses and the exceptional tail endpoint remain deferred. |
 | [Math evidence toolkit](math-evidence/README.md) | Source/assumption/dependency records, safe byte intake and separate fixed live gate; 283 fresh suite checks and eight extracted consumer commands, with explicit trust limits. |
 | [Verified techniques guide](learning-guide/verified-techniques.md) | Nine reusable proof methods, examples and study plan; see the dated [initial addendum](learning-guide/STATUS-2026-10-11.md) and [finalization update](learning-guide/STATUS-FINALIZATION-2026-10-11.md). |
 
-Mixed-moment finalization was reported complete separately; its final source and
-evidence were unavailable for transfer and publication. The
-[pending-transfer record](publication/PENDING-TRANSFER.json) preserves this limit.
-The earlier ordinary study remains ordinary.
+The mixed-moment final source/evidence archive has now been received and its
+bytes verified directly. Its earlier transfer failure remains historical in
+the [transfer record](publication/PENDING-TRANSFER.json). The separately
+published ordinary study retains its original verification status.
 
 All Lean projects pin Lean/mathlib 4.24.0. Mathematical scope, current versus
 historical evidence, exclusions, privacy review and reproduction records are

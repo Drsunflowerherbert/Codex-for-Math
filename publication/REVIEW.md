@@ -117,3 +117,46 @@ identities and coordination prose were removed. Existing ordinary-study/source
 files are linked, their prior attribution remains intact, and new code receives
 no invented license. New review locators and current/original report hashes remain
 separate, with the mathematical verdict and scope preserved.
+
+## Mixed-moment final publication review
+
+Independent source/type/assumption review accepts the actual-integral rational
+polynomial cancellation core under its declared contact and `j<L` hypotheses.
+All 21 ordinary-study records are mapped, and broader analytic/subfield clauses,
+classification, two-polynomial pairing and the exceptional tail endpoint remain
+deferred. Formal rational coordinates do not establish arithmetic independence
+or nonmembership, and Catalan irrationality is not claimed.
+
+The publisher verified the actual final archive's 2,562,814 bytes, SHA-256,
+226 safe unique entries, CRC and 225 internal manifest hashes. All 226 candidates
+have source dispositions: 78 retained/modified and 148 excluded. All 17 proof
+modules, three pins and the preserved full-environment Lean query are unchanged.
+Independent selection/privacy review found no credentials or private paths in
+the retained public set. Existing upstream attribution/license remains; no new
+overall license is assigned. The immutable finite-field batch, original guide
+and initial addendum are unchanged, as are all 68 original tangent files.
+
+Fresh publication commands passed: empty-project build; full 513-declaration
+public audit including 429 theorems; complete 835-constant environment supplement
+with 406 new ordinary axiom queries and 429 matched fresh public results; and the
+separate inductive/constructor/recursor rule metadata query. Only `propext`,
+`Classical.choice` and `Quot.sound` occur. Five compiler-generated partial
+runtime helpers are disclosed and absent from the other 830 kernel type/value
+dependencies and the separate metadata/rule scan. The fresh public types and
+definition outputs are byte-identical to the original successful audit.
+
+Fresh finite checks passed 17,805 supplied rational checks, 20,072 independent checks
+and 993 original-archive provenance/rerun checks. A separate public-only
+independent run also passed 20,072 checks. The original full provenance input
+is not redistributed; these finite checks remain separate from analytic
+proof verification. Clean pinned dependency OLeans are reused, rather than
+rebuilding Lean or mathlib. Actual exits, source hashes, current/original
+receipt hashes and trust limits are in `evidence/MIXED-MOMENT-CHECKS.json`.
+
+Historical failed printer/supplemental and interrupted audits retain their
+actual status. The 111-theorem audit remains a subset. Privacy-safe derivative
+receipts do not retroactively acquire original hashes, and current integrity
+uses FILES.json. Independent final publication acceptance and exact statement
+coverage are in `mixed-moment/docs/publication-review.md` and its historical
+statement review. The separate integrity-regression receipt describes only
+whole-publication byte/source-map checks, not new mathematical evidence.

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "bash",
+    "scripts/with-lean.sh",
+    "lake",
+    "build"
+  ],
+  "cwd": "<verification-workspace-path>",
+  "started_utc": "2026-10-11T06:32:13.719142+00:00",
+  "finished_utc": "2026-10-11T06:34:30.054662+00:00",
+  "returncode": 0,
+  "stdout": "\u2714 [7351/7368] Built MixedMoments.Rational (10s)\n\u2714 [7352/7368] Built MixedMoments.Series (13s)\n\u2714 [7353/7368] Built MixedMoments.Cancellation (14s)\n\u2714 [7354/7368] Built MixedMoments.RationalSeries (9.3s)\n\u26a0 [7355/7368] Built MixedMoments.TailBounds (14s)\nwarning: MixedMoments/TailBounds.lean:50:58: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\n\u2714 [7356/7368] Built MixedMoments.FormalContact (13s)\n\u2714 [7357/7368] Built MixedMoments.Decomposition (29s)\n\u2714 [7358/7368] Built MixedMoments.FormalSquareRoot (40s)\n\u2714 [7359/7368] Built MixedMoments.Integrals (51s)\n\u2714 [7360/7368] Built MixedMoments.Certificates (61s)\n\u2714 [7361/7368] Built MixedMoments.TaylorContact (13s)\n\u2714 [7362/7368] Built MixedMoments.Zeta (69s)\n\u2714 [7363/7368] Built MixedMoments.Constants (10s)\n\u2714 [7364/7368] Built MixedMoments.BoundaryZeta (12s)\n\u2714 [7365/7368] Built MixedMoments.BoundaryCatalan (12s)\n\u2714 [7366/7368] Built MixedMoments.Applications (7.3s)\n\u2714 [7367/7368] Built MixedMoments (6.5s)\nBuild completed successfully (7368 jobs).\n",
+  "stderr": "",
+  "log_sha256": "9765f6b6c37df5feda7a76d0d1af688c1fb2a4423bf82d4bcfe08604b5676121",
+  "publication_derivation": {
+    "raw_receipt_sha256": "208473868bdb6397f2c0230d11990a4f2fb447be8ea21509be46533694f875da",
+    "normalization": "Private execution paths normalized; duplicate raw environment transcript omitted where applicable. Actual exits, mathematical statuses, source hashes, types and axiom inventories unchanged."
+  }
+}

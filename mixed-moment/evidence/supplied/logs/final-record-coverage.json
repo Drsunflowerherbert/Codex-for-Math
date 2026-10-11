@@ -1,0 +1,133 @@
+{
+  "record_count": 21,
+  "scope": "Derived without alteration from the independent final statement review table",
+  "review_sha256": "1da0154620950408778ec1f3d09e67a26ac68fc25ebc4e9e15ff6101a0b2ad80",
+  "records": [
+    {
+      "id": "MM001",
+      "record": "MM001 \u2014 absolute integrability of M",
+      "lean_statements": "`Analysis.integrable_productKernel`, `Analysis.integrable_absoluteKernel`, `Analysis.M_eq_productIntegral`, `Analysis.M_eq_swappedIntegral`, `Analysis.integrable_polynomialKernel`, `Analysis.polynomialIntegral_eq_iterated`",
+      "coverage_and_deferred_clauses": "Actual monomials and rational-polynomial kernels are covered. The record's arbitrary **real-polynomial** interface is not declared. Polynomial reverse-order equality follows from integrability and Fubini, but there is no separately named polynomial swapped-order corollary. Do not claim the record's full coefficient domain."
+    },
+    {
+      "id": "MM002",
+      "record": "MM002 \u2014 absolute integrability of Z",
+      "lean_statements": "`Zeta.integrable_kernel`, `Zeta.Z_eq_iterated`, `Zeta.Z_symm`, `Zeta.integrable_polynomialKernel`, `Zeta.polynomialIntegral_eq_sum`",
+      "coverage_and_deferred_clauses": "Actual monomials and rational-polynomial kernels are covered. Arbitrary real-polynomial APIs and a separately named two-polynomial iterated/swapped-order theorem are deferred."
+    },
+    {
+      "id": "MM003",
+      "record": "MM003 \u2014 central recurrence and generating series",
+      "lean_statements": "`central_zero`, `central_succ_ratio`, `central_eq_choose`, `kernel_even`; `inverseSqrtFormalSeries`, `inverseSqrtFormalSeries_square`, `inverseSqrtApproxReal_remainder`",
+      "coverage_and_deferred_clauses": "The exact rational recurrence, normalized binomial formula, formal series, and local finite approximations are covered. The analytic infinite-series equality `\u2211 c_r*t^(2r)=1/sqrt(1-t^2)` for every `abs(t)<1` is **not declared**. The formal square identity is not that analytic summation theorem."
+    },
+    {
+      "id": "MM004",
+      "record": "MM004 \u2014 rational one-variable moments",
+      "lean_statements": "`Analysis.moment_eq_rat`, `Analysis.moment_odd`, `moment_even`, `moment_eq_if`, `moment_recurrence_positive`, `momentExt_of_neg`, `Analysis.moment_tendsto_zero`",
+      "coverage_and_deferred_clauses": "The natural-index actual moments are identified with the rational parity formulas and tend to zero. The positive-index recurrence is expressed over the rational sequence with an explicit integer extension and transferred by `Analysis.moment_eq_rat`. The convention `m(-1)=0` is algebraic; negative-index integrals are not defined."
+    },
+    {
+      "id": "MM005",
+      "record": "MM005 \u2014 M moment series",
+      "lean_statements": "`Analysis.summable_integral_norm_monomial`, `Analysis.integrable_absoluteKernel`, `Analysis.M_eq_series`, `Analysis.M_eq_rationalMomentSeries`",
+      "coverage_and_deferred_clauses": "Matched for all natural `i,j`. The integrated absolute-value control handles the signed expansion on negative `t`; this is more than pointwise geometric convergence."
+    },
+    {
+      "id": "MM006",
+      "record": "MM006 \u2014 M diagonal recurrence/reduction",
+      "lean_statements": "`Analysis.M_diagonal`, `Analysis.M_finite_diagonal`, `mRationalPart`, `mRationalPart_finite_diagonal`, final application `M_eq_formalM`",
+      "coverage_and_deferred_clauses": "Actual diagonal recurrence and finite iteration are matched. The two study branches can be read through the definition of the rational part after actual decomposition; they are not separate named analytic boundary-reduction declarations. Empty finite sums are retained."
+    },
+    {
+      "id": "MM007",
+      "record": "MM007 \u2014 harmonic evaluation of Z",
+      "lean_statements": "`Zeta.Z_diagonal`, `Zeta.Z_offDiagonal`, `Zeta.harmonic_cast`, `Zeta.harmonicTwo_cast`, `Zeta.Z_eq_zRationalPart`, `Zeta.Z_zero_one`",
+      "coverage_and_deferred_clauses": "Matched for natural `i,j`, with `i \u2260 j` explicit off diagonal. The quotient uses real/rational subtraction, not truncated natural subtraction; `Z(0,1)=1` checks the orientation."
+    },
+    {
+      "id": "MM008",
+      "record": "MM008 \u2014 M boundary recurrences",
+      "lean_statements": "`Analysis.M_minus_boundary_recurrence`, `Analysis.M_plus_boundary_recurrence`, `Analysis.M_one_zero`, `Analysis.M_zero_two`",
+      "coverage_and_deferred_clauses": "Matched after writing the source index as `d+2`. This covers every source `d\u22652` with positive denominators. At index two the old plus-boundary multiplier is zero, so the Catalan start does not propagate to positive even plus indices."
+    },
+    {
+      "id": "MM009",
+      "record": "MM009 \u2014 Catalan start",
+      "lean_statements": "`Constants.catalan`, `Constants.integral_catalan_kernel_interval`, `Analysis.M_zero_zero_eq_catalan`",
+      "coverage_and_deferred_clauses": "Matched for the actual M integral and series-defined Catalan constant. No irrationality is asserted."
+    },
+    {
+      "id": "MM010",
+      "record": "MM010 \u2014 zeta start",
+      "lean_statements": "`Constants.integral_zetaLogKernel`, `Constants.odd_reciprocal_sq_eq`, `BoundaryZeta.M_zero_one`",
+      "coverage_and_deferred_clauses": "Matched for actual `M(0,1)=(3/2)*Zeta.zeta2`. The direct logarithmic-kernel representation and odd reciprocal-square evaluation justify the constant without a Basel-value assumption."
+    },
+    {
+      "id": "MM011",
+      "record": "MM011 \u2014 optional pi evaluation",
+      "lean_statements": "No project declaration proving `M(0,1)=pi^2/4` or `Zeta.zeta2=pi^2/6`",
+      "coverage_and_deferred_clauses": "Deferred. Neither the ordinary proof in the study nor a possible mathlib theorem is evidence that this record has been instantiated in the project."
+    },
+    {
+      "id": "MM012",
+      "record": "MM012 \u2014 rational boundary arrays/closed forms",
+      "lean_statements": "`kminus`, `kplus`, their start and recurrence theorems; `hStar`, `hStar_pos`, `hStar_step`, `hStar_even`, `hStar_odd`; four parity-specific `kminus_*_closed`, `kplus_*_closed` theorems; `two_step_recurrence_unique`",
+      "coverage_and_deferred_clauses": "The rational arrays, normalization, and finite closed sums are matched with all denominators and empty sums controlled. Generic real recurrence uniqueness is declared; there is no separately named rational uniqueness theorem for the pair of boundary arrays. The recursive definitions themselves fix the arrays uniquely."
+    },
+    {
+      "id": "MM013",
+      "record": "MM013 \u2014 universal M decomposition",
+      "lean_statements": "`formalM`, `realM_eq_eval_formalM`, final applications `actualMomentRecurrenceData`, `M_eq_formalM`",
+      "coverage_and_deferred_clauses": "The final actual-integral application matches the stated specified-coordinate identity for natural indices, with the integer kernel's negative/odd zero convention. Its absence of decomposition or boundary hypotheses is essential. The earlier generic recurrence theorem alone would leave this record conditional."
+    },
+    {
+      "id": "MM014",
+      "record": "MM014 \u2014 exact polynomial defect identity",
+      "lean_statements": "`rationalWitness`, `catalanWitness`, `polynomialDefect`, `exact_defect_identity`, `polynomialDefect_eq_formalContactSeries_coeff`, final `integral_exact_defect`",
+      "coverage_and_deferred_clauses": "Matched for rational polynomials and natural columns by the actual-integral application. The Catalan witness uses the equivalent finite support sum `4*\u2211 p_i*kernel(i-j)`; its nonzero indices are exactly `i=j+2r`. The defect is identified with formal-series coefficients and, for low orders, the finite approximation coefficients used by analytic contact. It is not a separate general derivative/Taylor-series theorem."
+    },
+    {
+      "id": "MM015",
+      "record": "MM015 \u2014 analytic contact/jet vanishing",
+      "lean_statements": "`polynomial_coeff_zero_of_isBigO_eval_pow`, `polynomial_eval_isBigO_pow_of_coeff_zero`, `analyticContact_nhds_iff_coefficientContact`, `analyticContact_right_iff_coefficientContact`",
+      "coverage_and_deferred_clauses": "Matched for real polynomials and, crucially, the specific rational-polynomial function `tP(t)/sqrt(1-t^2)-D(t)`. The record's universal theorem for every real analytic `F` is deferred. This specialization supplies all contact information needed by MM016."
+    },
+    {
+      "id": "MM016",
+      "record": "MM016 \u2014 rational-polynomial Taylor-contact cancellation",
+      "lean_statements": "`analyticContact_implies_coefficientContact`, `analyticContact_nhds_implies_coefficientContact`, `integral_cancellation_of_coefficientContact`, `integral_cancellation_of_analyticContact`, `integral_cancellation_of_analyticContact_nhds`, `integral_analyticContact_witnesses`",
+      "coverage_and_deferred_clauses": "The final big-O applications match the principal target with actual integrals and explicit witnesses. `P,D : Polynomial \u211a`, `L,j : \u2115`, the precise contact filter, and `j<L` remain visible. Lean permits `L=0`, which is harmless because there is then no admissible column. Thus the source's `L\u22651` cases are included. The named existential big-O witness theorem uses positive-side contact; the two-sided equality also supplies the same explicit rational witnesses."
+    },
+    {
+      "id": "MM017",
+      "record": "MM017 \u2014 polynomial-test-function cancellation",
+      "lean_statements": "`pairedEntry`, `pairedDefect`, `paired_entry_zeta_coordinate`, `paired_cancellation`, `paired_cancellation_of_contact`, `paired_cancellation_of_natDegree_lt`; both analytic `polynomialIntegral_eq_sum` declarations",
+      "coverage_and_deferred_clauses": "Formal-coordinate pairing and evaluated formal-pairing cancellation are covered. The actual two-polynomial integrals have finite expansions, but no final named equality between those integrals and the evaluated `pairedEntry` or corresponding actual-integral paired cancellation is declared. That bridge is deferred; do not silently substitute the formal pairing for the actual integral."
+    },
+    {
+      "id": "MM018",
+      "record": "MM018 \u2014 unique contact truncation",
+      "lean_statements": "`contactTruncation`, `contactTruncation_coeff`, `contactTruncation_contact`, `contactTruncation_analyticContact`",
+      "coverage_and_deferred_clauses": "Constructive rational contact and its exact coefficients are covered. The truncation coefficients vanish at every `j\u2265L`. No declared uniqueness theorem among degree-less-than-`L` polynomials, or classification of all solutions by divisibility of their difference by `X^L`, is present. Those additional clauses are deferred."
+    },
+    {
+      "id": "MM019",
+      "record": "MM019 \u2014 exact rational series tail bound",
+      "lean_statements": "`Series.momentSeries_tail`, `Series.momentSeries_upper_bound`, `Series.momentSeries_tail_bound`; actual series and moment identification theorems",
+      "coverage_and_deferred_clauses": "The exact tail and its nonnegative upper bound are supplied for nonnegative recurrent sequences with the explicitly required decay. The upper-bound theorem requires `2\u2264i+N`. For the source's `N\u22651` range this omits exactly `i=0,N=1`, which involves `m(-1)=0`. Actual-moment premises can be discharged by the analytic/rational-series declarations; any added named actual-integral corollary must retain the range. There is no general negative-index sequence hypothesis hidden in the natural-index theorem."
+    },
+    {
+      "id": "MM020",
+      "record": "MM020 \u2014 rational adjacent diagonal",
+      "lean_statements": "`mRationalPart_adjacent_diagonal`, `Series.momentSeries_adjacent`, `Series.momentSeries_one_zero`, `Analysis.M_eq_momentSeries`, `Analysis.M_one_zero`",
+      "coverage_and_deferred_clauses": "The series identity gives actual adjacent entries with source `i\u22652`; the source endpoint `i=1` is `M(1,0)=m(-1)+m(0)=2`. Together these cover the source statement. The rational-array theorem also includes its explicit `-1` convention. There is no single named actual-integral theorem packaging both cases."
+    },
+    {
+      "id": "MM021",
+      "record": "MM021 \u2014 coefficient-field extension",
+      "lean_statements": "No subfield-parametric polynomial or cancellation interface",
+      "coverage_and_deferred_clauses": "Deferred. The public main interface remains rational-polynomial cancellation. Arbitrary real coefficients cannot be inserted while retaining the conclusion `\u211a+\u211aG`."
+    }
+  ]
+}

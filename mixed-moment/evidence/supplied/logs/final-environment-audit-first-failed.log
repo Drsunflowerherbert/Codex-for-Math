@@ -1,0 +1,11 @@
+{
+  "status": "failed_or_incomplete",
+  "declaration_count": 0,
+  "kind_counts": {},
+  "all_axioms_allowed": true,
+  "inputs_unchanged": true,
+  "module_inventory_matches_sources": false,
+  "exact_combined_axiom_declaration_inventory_match": false,
+  "public_final_audit_axioms_match": true,
+  "public_final_audit_source_and_checker_hashes_match": true
+}

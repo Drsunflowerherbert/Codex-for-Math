@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "scripts/audit_environment.py"
+  ],
+  "cwd": "<verification-workspace-path>",
+  "started_utc": "2026-10-11T06:41:32.124256+00:00",
+  "finished_utc": "2026-10-11T06:43:44.501730+00:00",
+  "returncode": 0,
+  "stdout": "{\n  \"status\": \"passed\",\n  \"declaration_count\": 835,\n  \"kind_counts\": {\n    \"definition\": 103,\n    \"theorem\": 729,\n    \"inductive\": 1,\n    \"constructor\": 1,\n    \"recursor\": 1\n  },\n  \"all_axioms_allowed\": true,\n  \"inputs_unchanged\": true,\n  \"module_inventory_matches_sources\": true,\n  \"exact_combined_axiom_declaration_inventory_match\": true,\n  \"public_final_audit_axioms_match\": true,\n  \"public_final_audit_source_and_checker_hashes_match\": true\n}\n",
+  "stderr": "",
+  "log_sha256": "36c3085d59c7619e389fd619bfabea62371c063edaa849aef5653c7496bb9bab",
+  "publication_derivation": {
+    "raw_receipt_sha256": "c64596ddab3e6a94d2c9aa9bd8bcd38f62ed7f46cf260ba93a00f0441a230d0c",
+    "normalization": "Private execution paths normalized; duplicate raw environment transcript omitted where applicable. Actual exits, mathematical statuses, source hashes, types and axiom inventories unchanged."
+  }
+}

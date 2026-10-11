@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "scripts/audit_lean.py"
+  ],
+  "cwd": "<verification-workspace-path>",
+  "started_utc": "2026-10-11T06:34:30.054919+00:00",
+  "finished_utc": "2026-10-11T06:41:32.121774+00:00",
+  "returncode": 0,
+  "stdout": "{\n  \"status\": \"passed\",\n  \"module_count\": 17,\n  \"public_declaration_count\": 513,\n  \"public_theorem_count\": 429,\n  \"public_definition_count\": 84,\n  \"all_axioms_allowed\": true,\n  \"source_unchanged\": true,\n  \"output\": \"<verification-workspace-path>\"\n}\n",
+  "stderr": "",
+  "log_sha256": "52aa7876ada7ac0015f4a7078774b8676afe749d6c560a32c131a96752d6d0b6",
+  "publication_derivation": {
+    "raw_receipt_sha256": "1183b5d45c80c68519c469b452e072b5187d6e5eadfc79bda1b75610afcc19da",
+    "normalization": "Private execution paths normalized; duplicate raw environment transcript omitted where applicable. Actual exits, mathematical statuses, source hashes, types and axiom inventories unchanged."
+  }
+}
