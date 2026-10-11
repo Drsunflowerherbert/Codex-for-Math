@@ -1,0 +1,195 @@
+{
+  "status": "passed",
+  "arithmetic": "fractions.Fraction",
+  "enumeration_checks": [
+    {
+      "length": 1,
+      "value": "1/2",
+      "representations": 1,
+      "observed_max_cleanup_steps": 0
+    },
+    {
+      "length": 1,
+      "value": "2/3",
+      "representations": 0,
+      "observed_max_cleanup_steps": 0
+    },
+    {
+      "length": 1,
+      "value": "3/4",
+      "representations": 0,
+      "observed_max_cleanup_steps": 0
+    },
+    {
+      "length": 2,
+      "value": "1/2",
+      "representations": 2,
+      "observed_max_cleanup_steps": 1
+    },
+    {
+      "length": 2,
+      "value": "2/3",
+      "representations": 2,
+      "observed_max_cleanup_steps": 1
+    },
+    {
+      "length": 2,
+      "value": "3/4",
+      "representations": 1,
+      "observed_max_cleanup_steps": 0
+    },
+    {
+      "length": 3,
+      "value": "1/2",
+      "representations": 10,
+      "observed_max_cleanup_steps": 1
+    },
+    {
+      "length": 3,
+      "value": "2/3",
+      "representations": 8,
+      "observed_max_cleanup_steps": 2
+    },
+    {
+      "length": 3,
+      "value": "3/4",
+      "representations": 6,
+      "observed_max_cleanup_steps": 1
+    },
+    {
+      "length": 4,
+      "value": "1/2",
+      "representations": 108,
+      "observed_max_cleanup_steps": 4
+    },
+    {
+      "length": 4,
+      "value": "2/3",
+      "representations": 90,
+      "observed_max_cleanup_steps": 4
+    },
+    {
+      "length": 4,
+      "value": "3/4",
+      "representations": 50,
+      "observed_max_cleanup_steps": 4
+    }
+  ],
+  "padding_checks": 28,
+  "examples": [
+    {
+      "input": [
+        3,
+        3
+      ],
+      "value": "2/3",
+      "states": [
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "weights": [
+        6,
+        8
+      ]
+    },
+    {
+      "input": [
+        4,
+        4
+      ],
+      "value": "1/2",
+      "states": [
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "weights": [
+        8,
+        9
+      ]
+    },
+    {
+      "input": [
+        4,
+        4,
+        6
+      ],
+      "value": "2/3",
+      "states": [
+        [
+          4,
+          4,
+          6
+        ],
+        [
+          3,
+          6,
+          6
+        ],
+        [
+          3,
+          4,
+          12
+        ]
+      ],
+      "weights": [
+        14,
+        15,
+        19
+      ]
+    },
+    {
+      "input": [
+        10,
+        10,
+        6,
+        30
+      ],
+      "value": "2/5",
+      "states": [
+        [
+          6,
+          10,
+          10,
+          30
+        ],
+        [
+          6,
+          6,
+          30,
+          30
+        ],
+        [
+          4,
+          12,
+          30,
+          30
+        ],
+        [
+          4,
+          12,
+          16,
+          240
+        ]
+      ],
+      "weights": [
+        56,
+        72,
+        76,
+        272
+      ]
+    }
+  ],
+  "scope": "companion validation; not formal refinement or runtime bound"
+}

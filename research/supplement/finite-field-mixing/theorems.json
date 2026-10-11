@@ -1,0 +1,427 @@
+{
+  "schema_version": 1,
+  "schema_status": "Provisional portable study records, not native MRS objects",
+  "study": "Family025 finite-field Fourier and product-sum mixing",
+  "source": {
+    "family": "025",
+    "title": "Short Egyptian fractions",
+    "repository": "https://github.com/openai/math",
+    "revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "path": "preprints/Short-Egyptian-fractions-September-25-2026/build/prescribed.tex",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Short-Egyptian-fractions-September-25-2026/build/prescribed.tex",
+    "local_snapshot": "catalog/sources/preprints_Short-Egyptian-fractions-September-25-2026_build_prescribed.tex",
+    "sha256": "771d9da7e0181aad85eb620d4bacbb1726827db86249655850f0b63b20307432",
+    "matches_catalog_manifest": true,
+    "source_label": "lem:rational-divisor-supply",
+    "scoped_lines": [
+      [
+        326,
+        366
+      ]
+    ],
+    "classical_attribution": {
+      "authors": [
+        "A. A. Glibichuk",
+        "S. V. Konyagin"
+      ],
+      "title": "Additive properties of product sets in fields of prime order",
+      "statement": "Proposition 1.1",
+      "url": "https://arxiv.org/pdf/math/0702729",
+      "page": 2,
+      "primary_source_statement_checked": true
+    },
+    "no_novelty_claim": true
+  },
+  "conventions": {
+    "domain": "F_p for prime p >= 2",
+    "sampling": "Finite uniform Cartesian product unless otherwise stated",
+    "repetitions": "Allowed",
+    "zero_residues": "Allowed",
+    "Fourier_normalization": "E[e_p(rZ)] with inverse factor 1/p"
+  },
+  "theorems": [
+    {
+      "id": "FF001",
+      "title": "Additive character orthogonality",
+      "hypotheses": [
+        "p is prime and p >= 2",
+        "d is in F_p",
+        "e_p(x)=exp(2*pi*i*x/p)"
+      ],
+      "conclusion": "sum_(x in F_p) e_p(d*x) equals p if d=0 and 0 otherwise; 1_(z=t)=p^(-1)*sum_r e_p(r*(z-t)).",
+      "dependencies": [],
+      "proof": {
+        "file": "study.md",
+        "section": "2",
+        "status": "Self-contained ordinary mathematical proof; not kernel verified"
+      },
+      "source": {
+        "label": "lem:rational-divisor-supply",
+        "line_range": [
+          326,
+          366
+        ],
+        "relationship": "Classical foundational lemma, proved independently"
+      },
+      "verification": {
+        "exact_finite_checks": [
+          "Used algebraically in all bilinear sum-of-squares identities."
+        ],
+        "lean_compilation": false,
+        "native_MRS_import": false,
+        "independent_review": "See ../reviews/finite-field-mixing/ when finalized"
+      },
+      "kind": "Classical foundational lemma, proved independently"
+    },
+    {
+      "id": "FF002",
+      "title": "Rectangular bilinear character bound",
+      "hypotheses": [
+        "p is prime",
+        "A and B are nonempty subsets of F_p",
+        "r is a nonzero element of F_p",
+        "X and Y are independent, uniform on A and B"
+      ],
+      "conclusion": "|sum_(a in A,b in B) e_p(r*a*b)| <= sqrt(p*|A|*|B|), and |E[e_p(r*X*Y)]| <= sqrt(p/(|A||B|)); independently, |E[e_p(r*X*Y)]| <= 1.",
+      "dependencies": [
+        "FF001"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "3",
+        "status": "Self-contained ordinary mathematical proof; not kernel verified"
+      },
+      "source": {
+        "label": "lem:rational-divisor-supply",
+        "line_range": [
+          326,
+          366
+        ],
+        "relationship": "Classical estimate in source and Glibichuk-Konyagin Proposition 1.1"
+      },
+      "verification": {
+        "exact_finite_checks": [
+          "3,951 exact cyclotomic sum-of-squares identities, all nonempty A,B and all r != 0 for p=2,3,5."
+        ],
+        "lean_compilation": false,
+        "native_MRS_import": false,
+        "independent_review": "See ../reviews/finite-field-mixing/ when finalized"
+      },
+      "kind": "Classical estimate in source and Glibichuk-Konyagin Proposition 1.1",
+      "scope_note": "Zero may belong to either set; neither set is required to be a subgroup. Probability bound needs uniform independent factors."
+    },
+    {
+      "id": "FF003",
+      "title": "Finite Fourier inversion for probabilities",
+      "hypotheses": [
+        "p is prime",
+        "Z is F_p-valued on a finite probability space",
+        "t is in F_p"
+      ],
+      "conclusion": "Pr(Z=t)=p^(-1)*sum_(r in F_p) e_p(-r*t)*E[e_p(r*Z)].",
+      "dependencies": [
+        "FF001"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "4",
+        "status": "Self-contained ordinary mathematical proof; not kernel verified"
+      },
+      "source": {
+        "label": "lem:rational-divisor-supply",
+        "line_range": [
+          326,
+          366
+        ],
+        "relationship": "Classical inversion formula used in the source"
+      },
+      "verification": {
+        "exact_finite_checks": [
+          "Count identities tested by convolution and selected direct tuple enumeration."
+        ],
+        "lean_compilation": false,
+        "native_MRS_import": false,
+        "independent_review": "See ../reviews/finite-field-mixing/ when finalized"
+      },
+      "kind": "Classical inversion formula used in the source"
+    },
+    {
+      "id": "FF004",
+      "title": "Independent-sum Fourier mixing",
+      "hypotheses": [
+        "p is prime",
+        "k is a positive integer",
+        "U_1,...,U_k are independent F_p-valued variables",
+        "beta_i >= 0 and |E[e_p(r*U_i)]| <= beta_i for every r != 0"
+      ],
+      "conclusion": "For every t, |Pr(sum_i U_i=t)-1/p| <= ((p-1)/p)*product_i beta_i. If (p-1)*product_i beta_i < 1, every residue has positive probability.",
+      "dependencies": [
+        "FF003"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "4",
+        "status": "Self-contained ordinary mathematical proof; not kernel verified"
+      },
+      "source": {
+        "label": "lem:rational-divisor-supply",
+        "line_range": [
+          326,
+          366
+        ],
+        "relationship": "Routine generalization of the source five-copy calculation"
+      },
+      "verification": {
+        "exact_finite_checks": [
+          "Specialized exact product-sum count suites."
+        ],
+        "lean_compilation": false,
+        "native_MRS_import": false,
+        "independent_review": "See ../reviews/finite-field-mixing/ when finalized"
+      },
+      "kind": "Routine generalization of the source five-copy calculation",
+      "scope_note": "The exact p-1 frequency count is retained; no individual complex coefficient is ordered as a real number."
+    },
+    {
+      "id": "FF005",
+      "title": "Heterogeneous rectangular product sums",
+      "hypotheses": [
+        "p is prime",
+        "k >= 1",
+        "A_i and B_i are nonempty subsets of F_p",
+        "All coordinate samples X_i in A_i and Y_i in B_i are independent and uniform",
+        "c_i is nonzero in F_p for each i; d is in F_p",
+        "M=product_i(|A_i|*|B_i|)"
+      ],
+      "conclusion": "For Z=d+sum_i c_i*X_i*Y_i and every t, |Pr(Z=t)-1/p| <= ((p-1)/p)*sqrt(p^k/M). If M>(p-1)^2*p^k, every residue occurs.",
+      "dependencies": [
+        "FF002",
+        "FF004"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "4",
+        "status": "Self-contained ordinary mathematical proof; not kernel verified"
+      },
+      "source": {
+        "label": "lem:rational-divisor-supply",
+        "line_range": [
+          326,
+          366
+        ],
+        "relationship": "Routine rectangular, heterogeneous, weighted extension"
+      },
+      "verification": {
+        "exact_finite_checks": [
+          "120,050 exact sequences of two or three rectangular pairs over F_3.",
+          "All nonzero coefficient vectors and shifts for selected three-pair examples over F_2,F_3,F_5."
+        ],
+        "lean_compilation": false,
+        "native_MRS_import": false,
+        "independent_review": "See ../reviews/finite-field-mixing/ when finalized"
+      },
+      "kind": "Routine rectangular, heterogeneous, weighted extension",
+      "scope_note": "Zero coefficients must be removed before counting effective summands; no necessity or optimality claim."
+    },
+    {
+      "id": "FF006",
+      "title": "General k-product covering criterion",
+      "hypotheses": [
+        "p is prime",
+        "A and B are nonempty subsets of F_p",
+        "N=|A|*|B|",
+        "k >= 1",
+        "(p-1)*(sqrt(p/N))^k < 1, equivalently N^k>(p-1)^2*p^k"
+      ],
+      "conclusion": "Every t in F_p is sum_(i=1..k) a_i*b_i with a_i in A,b_i in B. For A=B=H, the criterion is (p-1)*(sqrt(p)/|H|)^k < 1.",
+      "dependencies": [
+        "FF005"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "5",
+        "status": "Self-contained ordinary mathematical proof; not kernel verified"
+      },
+      "source": {
+        "label": "lem:rational-divisor-supply",
+        "line_range": [
+          326,
+          366
+        ],
+        "relationship": "Requested general consequence of the source estimate"
+      },
+      "verification": {
+        "exact_finite_checks": [
+          "17,148 ordered rectangular set pairs and 141,477 diagonal sets, k=1,...,6."
+        ],
+        "lean_compilation": false,
+        "native_MRS_import": false,
+        "independent_review": "See ../reviews/finite-field-mixing/ when finalized"
+      },
+      "kind": "Requested general consequence of the source estimate",
+      "scope_note": "A sufficient condition only. Witnesses may repeat."
+    },
+    {
+      "id": "FF007",
+      "title": "Radical-free representation-count inequality",
+      "hypotheses": [
+        "All hypotheses of FF005 except its optional strict size condition",
+        "C_t is the number of tuples whose weighted sum plus shift equals t"
+      ],
+      "conclusion": "sum_t C_t=M and (p*C_t-M)^2 <= (p-1)^2*p^k*M. If M>(p-1)^2*p^k, then C_t>=1 for every t.",
+      "dependencies": [
+        "FF005"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "5",
+        "status": "Self-contained ordinary mathematical proof; not kernel verified"
+      },
+      "source": {
+        "label": "lem:rational-divisor-supply",
+        "line_range": [
+          326,
+          366
+        ],
+        "relationship": "Exact count reformulation"
+      },
+      "verification": {
+        "exact_finite_checks": [
+          "All diagonal, rectangular, heterogeneous, coefficient, and direct-enumeration suites."
+        ],
+        "lean_compilation": false,
+        "native_MRS_import": false,
+        "independent_review": "See ../reviews/finite-field-mixing/ when finalized"
+      },
+      "kind": "Exact count reformulation",
+      "scope_note": "Finite checks validate examples of the inequality, not its universal quantification."
+    },
+    {
+      "id": "FF008",
+      "title": "Four products cover at three-quarter density",
+      "hypotheses": [
+        "p is prime",
+        "A,B are nonempty subsets of F_p",
+        "N=|A|*|B|",
+        "Four factor pairs are independent and uniform",
+        "N^2>=p^3"
+      ],
+      "conclusion": "For every t, Pr(sum_(i=1..4) X_i*Y_i=t) >= [1-(p-1)*p^2/N^2]/p >= 1/p^2, and C_t>=N^4/p^2. In particular it holds for A=B=H with |H|>=p^(3/4).",
+      "dependencies": [
+        "FF006",
+        "FF007"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "6",
+        "status": "Self-contained ordinary mathematical proof; not kernel verified"
+      },
+      "source": {
+        "label": "lem:rational-divisor-supply",
+        "line_range": [
+          326,
+          366
+        ],
+        "relationship": "Direct local four-product specialization; no novelty or optimality claim"
+      },
+      "verification": {
+        "exact_finite_checks": [
+          "All dense diagonal and rectangular four-product cases in the exhaustive suites."
+        ],
+        "lean_compilation": false,
+        "native_MRS_import": false,
+        "independent_review": "See ../reviews/finite-field-mixing/ when finalized"
+      },
+      "kind": "Direct local four-product specialization; no novelty or optimality claim",
+      "scope_note": "For prime p, integer |H| cannot equal p^(3/4). The less restrictive sufficient four-product threshold is N^2>(p-1)*p^2."
+    },
+    {
+      "id": "FF009",
+      "title": "Lift a zero product-sum to positive rational divisors",
+      "hypotheses": [
+        "Q is a positive integer",
+        "D is a nonempty set of positive divisors of Q",
+        "p is prime",
+        "H is the image of D modulo p",
+        "k>=1",
+        "x_i,y_i in H and sum_i x_i*y_i=0 in F_p"
+      ],
+      "conclusion": "Choose positive representatives a_i,b_i in D and e_i=a_i*b_i. Then e_i divides Q^2, t=(sum_i e_i)/p is a positive integer, and p=sum_i e_i/t.",
+      "dependencies": [],
+      "proof": {
+        "file": "study.md",
+        "section": "7",
+        "status": "Self-contained ordinary mathematical proof; not kernel verified"
+      },
+      "source": {
+        "label": "lem:rational-divisor-supply",
+        "line_range": [
+          326,
+          366
+        ],
+        "relationship": "Source positive-divisor lifting interface, independently justified"
+      },
+      "verification": {
+        "exact_finite_checks": [
+          "Q=30,p=7, products 1,1,2,10, multiplier t=2."
+        ],
+        "lean_compilation": false,
+        "native_MRS_import": false,
+        "independent_review": "See ../reviews/finite-field-mixing/ when finalized"
+      },
+      "kind": "Source positive-divisor lifting interface, independently justified",
+      "scope_note": "Repetitions are allowed; no distinct-unit-fraction claim and no bound on t."
+    },
+    {
+      "id": "FF010",
+      "title": "Local four-summand prime lift",
+      "hypotheses": [
+        "Q,D,p,H satisfy FF009 setup",
+        "|H|^4>=p^3"
+      ],
+      "conclusion": "The prime p has a representation p=sum_(i=1..4) e_i/t with positive e_i dividing Q^2 and a common positive integer t.",
+      "dependencies": [
+        "FF008",
+        "FF009"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "7",
+        "status": "Self-contained ordinary mathematical proof; not kernel verified"
+      },
+      "source": {
+        "label": "lem:rational-divisor-supply",
+        "line_range": [
+          326,
+          366
+        ],
+        "relationship": "Direct local substitution into the motivating source"
+      },
+      "verification": {
+        "exact_finite_checks": [
+          "Exact Q=30,p=7 lift and four-product suites."
+        ],
+        "lean_compilation": false,
+        "native_MRS_import": false,
+        "independent_review": "See ../reviews/finite-field-mixing/ when finalized"
+      },
+      "kind": "Direct local substitution into the motivating source",
+      "scope_note": "Only the per-prime step is reduced from five rational summands to four. No global Egyptian-fraction constant or other manuscript theorem is audited."
+    }
+  ],
+  "review_limits": {
+    "universal_proofs": "Ordinary self-contained mathematical proofs",
+    "finite_tests": "Exact evidence only",
+    "no_novelty_claim": true,
+    "lean_compilation": false,
+    "global_short_Egyptian_fraction_constant_audited": false,
+    "excluded_global_hypotheses": [
+      "exceptional-prime sieve",
+      "quantitative three-prime theorem",
+      "uniform threshold management",
+      "numerator grouping",
+      "distinctness cleanup",
+      "prescribed-denominator padding"
+    ]
+  }
+}

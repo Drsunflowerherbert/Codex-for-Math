@@ -1,0 +1,38 @@
+{
+  "scope": "Independent ordinary proof review plus exact finite arithmetic/data audit; no Lean",
+  "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "original_hashes_match_author_manifest": true,
+  "rerun_script_byte_identical": true,
+  "rerun_output_byte_identical": true,
+  "cleanup_cases": 34,
+  "cleanup_steps_by_parity": {
+    "odd": 33,
+    "even": 47
+  },
+  "maximum_cleanup_steps": 5,
+  "independent_enumeration_counts": {
+    "3": 1,
+    "4": 6,
+    "5": 72,
+    "6": 2320
+  },
+  "independent_enumeration_sets_equal_certificate_inputs": true,
+  "padding_cases": 14307,
+  "each_input_marker_checked_exactly_once": true,
+  "ordinary_padding_branches": {
+    "split_unmarked_maximum": 11908,
+    "split_second_largest_without_collision": 2399
+  },
+  "separate_exceptional_branches": {
+    "composite_collision": 1
+  },
+  "all_checks_passed": true,
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "python_optimization_level": 0,
+  "source_sha256": {
+    "check_examples.py": "1b1b59dfddac89f120f070caf78709bbcd4f3ad71e285413a8ae186c02e13533",
+    "exact-examples.json": "2ac87af51b1fcebe6c8829f3b61ee1b3bf3aa7dc27de9477bb22e5ba908a0b13",
+    "study.md": "a1385026a8b775436e48e4ef97ff976434cdefc780a57cf4bf7463431c9c9289",
+    "theorem-records.json": "eeafd72072ee4ea4051c60d86aa1a38725bd704e1c94205cfae60a739e0ac717"
+  }
+}

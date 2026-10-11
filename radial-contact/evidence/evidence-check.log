@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "declarations": 47,
+  "axioms_found": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}

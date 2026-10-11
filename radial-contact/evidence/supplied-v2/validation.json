@@ -1,0 +1,366 @@
+{
+  "schema_version": 2,
+  "status": "passed",
+  "exit_code": 0,
+  "records": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-10-11T02:47:25.303819+00:00",
+      "finished_utc": "2026-10-11T02:47:25.834816+00:00",
+      "log": "evidence/regression-tests.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-10-11T02:47:25.835218+00:00",
+      "finished_utc": "2026-10-11T02:47:26.728481+00:00",
+      "log": "evidence/toolchain-current.log"
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-10-11T02:47:27.019779+00:00",
+      "finished_utc": "2026-10-11T02:47:38.149011+00:00",
+      "log": "evidence/final-build.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "evidence/AxiomAudit.lean"
+      ],
+      "exit_code": 0,
+      "started_utc": "2026-10-11T02:47:38.149474+00:00",
+      "finished_utc": "2026-10-11T02:47:50.639780+00:00",
+      "log": "evidence/theorems-and-axioms.log"
+    }
+  ],
+  "source_sha256": {
+    "ASSUMPTIONS.md": "fb40ec7c976801ebb2579521f4acb138c2440514a728b9a9f01dc5e58893eb33",
+    "README.md": "6d0427ffc3c287c28aa9c64cec022b52e1322fa6391326cb129cbb77921e83ac",
+    "RadialContact/Basic.lean": "0a25656d386d2d73735b771f193e51a946dd6d596d37502619c7d6a0fd2f20bf",
+    "RadialContact/Derived.lean": "2cb1d2f8c854b0ada4f32cb39776d22daef906c5e4a81a6e8011df5d80c80c2d",
+    "RadialContact/Inverse.lean": "f54a454b8fca904ad32fa48c49e8adea6ddc83e73e558e341592d1cdf43d7d6e",
+    "RadialContact/Lipschitz.lean": "5961ea07e60e28e31615e2bca4c394b7d64debabeae072674ec66aa301101b00",
+    "RadialContact.lean": "dd18970d68c53671d058224e310206f1aefdfe28fd6cee0426324bf25ff7248f",
+    "lake-manifest.json": "778bf0329c7769360e04e79f036a13df40a27ac9252f0c2c0624fb2c444b4731",
+    "lakefile.toml": "cb74c5a968becc4d1914af33550432561fa8a3877d02c5ace2d93783857e8332",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "scripts/check_evidence.py": "4847d6983ea4f2bc7d1dc87477c0939bcc623684351330cdcb1349a9b3f34e0b",
+    "scripts/verify.py": "cbae86087bc6c774ccd43a35a0e75e8ad36ba49fdbfa6bbc6fcafd6c85ffe460",
+    "tests/test_repro.py": "8b6efab2951f6c627d804b70ffec225891e1f7108ac48562aa2355e813438f5b"
+  },
+  "evidence_sha256": {
+    "evidence/AxiomAudit.lean": "4b99fc71c12939f8408fce80a713c48fe672d1aee32c339cba65fc8c2e281dc3",
+    "evidence/assumptions.json": "3c69bdb92120f1a77f65ff5ecfd56a44f3f8b94768a8c62f9a8707fe0c372944",
+    "evidence/final-build.log": "60150a051572866177c878a1c2f51f7f1b95833d8b7fa7b9e5c3d3f0d9e37c6a",
+    "evidence/regression-tests.log": "b58e7b835543af30c8f2830bfcc750417e8b3ed2d17095df229374448efe2baa",
+    "evidence/resolved-dependencies.json": "5b26779d33251ffc61ca5e4acceecc2598cf86733c99f40b6ca07f913d07f209",
+    "evidence/theorems-and-axioms.log": "12aa4c480a5dc842534a13e04b0866b599a2697f2bbcbc0b0dc8031b8dcab115",
+    "evidence/toolchain-current.log": "36c0bbaf090c97bc8217c6ff497ff9144fd83d9003f12cd505162b943aaaee77"
+  },
+  "declarations": [
+    "RadialContact.UnitSphere",
+    "RadialContact.InteriorCenter",
+    "RadialContact.parameter_comparison",
+    "RadialContact.parameter_abs_comparison",
+    "RadialContact.positive_contact_unique",
+    "RadialContact.positive_contact_bounds",
+    "RadialContact.exists_positive_contact",
+    "RadialContact.existsUnique_positive_contact",
+    "RadialContact.reciprocal_radius_dist_le",
+    "RadialContact.norm_smul_direction",
+    "RadialContact.direction_dist_le",
+    "RadialContact.directionConstant",
+    "RadialContact.direction_lipschitz",
+    "RadialContact.radius_zero_lipschitz",
+    "RadialContact.contact_zero_isometry",
+    "RadialContact.direction_zero_isometry",
+    "RadialContact.norm_sub_center_lower",
+    "RadialContact.norm_sub_center_pos",
+    "RadialContact.direction",
+    "RadialContact.direction_val",
+    "RadialContact.radius_direction",
+    "RadialContact.contact_direction",
+    "RadialContact.direction_contact",
+    "RadialContact.direction_continuous",
+    "RadialContact.sphereHomeomorph",
+    "RadialContact.unitSphere_isEmpty_of_subsingleton",
+    "RadialContact.zeroCenter",
+    "RadialContact.zeroCenter_val",
+    "RadialContact.radius_zero",
+    "RadialContact.contact_zero",
+    "RadialContact.direction_zero",
+    "RadialContact.radius",
+    "RadialContact.radius_pos",
+    "RadialContact.norm_contact",
+    "RadialContact.radius_bounds",
+    "RadialContact.radius_eq_of_contact",
+    "RadialContact.contact",
+    "RadialContact.contact_val",
+    "RadialContact.radius_mul_gap_le",
+    "RadialContact.radius_dist_le",
+    "RadialContact.contact_dist_le",
+    "RadialContact.radiusConstant",
+    "RadialContact.contactConstant",
+    "RadialContact.radius_lipschitz",
+    "RadialContact.contact_lipschitz",
+    "RadialContact.radius_continuous",
+    "RadialContact.contact_continuous"
+  ],
+  "axioms": {
+    "RadialContact.UnitSphere": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.InteriorCenter": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.parameter_comparison": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.parameter_abs_comparison": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.positive_contact_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.positive_contact_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.exists_positive_contact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.existsUnique_positive_contact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.reciprocal_radius_dist_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.norm_smul_direction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.direction_dist_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.directionConstant": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.direction_lipschitz": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.radius_zero_lipschitz": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.contact_zero_isometry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.direction_zero_isometry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.norm_sub_center_lower": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.norm_sub_center_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.direction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.direction_val": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.radius_direction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.contact_direction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.direction_contact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.direction_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.sphereHomeomorph": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.unitSphere_isEmpty_of_subsingleton": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.zeroCenter": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.zeroCenter_val": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.radius_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.contact_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.direction_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.radius": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.radius_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.norm_contact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.radius_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.radius_eq_of_contact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.contact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.contact_val": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.radius_mul_gap_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.radius_dist_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.contact_dist_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.radiusConstant": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.contactConstant": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.radius_lipschitz": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.contact_lipschitz": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.radius_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RadialContact.contact_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

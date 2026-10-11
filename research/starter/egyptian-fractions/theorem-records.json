@@ -1,0 +1,137 @@
+[
+  {
+    "schema": "portable-math-study-records-v1",
+    "native_mrs_imported": false,
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "proof_file": "study.md",
+    "ordinary_proof_status": "author_checked_pending_independent_review",
+    "lean_status": "not_run",
+    "novelty_claim": false,
+    "id": "EGY-001",
+    "title": "Finiteness of unit-fraction representations at fixed value and length",
+    "hypotheses": [
+      "x>0",
+      "k is a positive integer",
+      "positive integer denominators sorted nondecreasing"
+    ],
+    "conclusion": "The set of length-k lists with reciprocal sum x is finite.",
+    "dependencies": [],
+    "verification_evidence": [
+      "check_examples.py",
+      "exact-examples.json"
+    ]
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "native_mrs_imported": false,
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "proof_file": "study.md",
+    "ordinary_proof_status": "author_checked_pending_independent_review",
+    "lean_status": "not_run",
+    "novelty_claim": false,
+    "id": "EGY-002",
+    "title": "Length-preserving removal of repetitions",
+    "hypotheses": [
+      "0<x<1",
+      "given exactly k positive unit fractions with integer denominators"
+    ],
+    "conclusion": "There exists an exactly-k representation with pairwise distinct denominators at least two.",
+    "dependencies": [
+      "EGY-001"
+    ],
+    "verification_evidence": [
+      "check_examples.py",
+      "exact-examples.json"
+    ]
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "native_mrs_imported": false,
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "proof_file": "study.md",
+    "ordinary_proof_status": "author_checked_pending_independent_review",
+    "lean_status": "not_run",
+    "novelty_claim": false,
+    "id": "EGY-003",
+    "title": "Exact marker padding of a distinct expansion of one",
+    "hypotheses": [
+      "r>=3",
+      "sum 1/n_i=1",
+      "positive integer denominators strictly increasing",
+      "m is one of the input denominators"
+    ],
+    "conclusion": "There exists an exactly-(r+1) distinct representation of one containing the exact denominator m.",
+    "dependencies": [],
+    "verification_evidence": [
+      "check_examples.py",
+      "exact-examples.json"
+    ]
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "native_mrs_imported": false,
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "proof_file": "study.md",
+    "ordinary_proof_status": "author_checked_pending_independent_review",
+    "lean_status": "not_run",
+    "novelty_claim": false,
+    "id": "EGY-004",
+    "title": "Persistence of one marker at every larger length",
+    "hypotheses": [
+      "assumptions of EGY-003",
+      "R is an integer with R>=r"
+    ],
+    "conclusion": "There exists an exactly-R distinct representation of one containing m.",
+    "dependencies": [
+      "EGY-003"
+    ],
+    "verification_evidence": [
+      "check_examples.py",
+      "exact-examples.json"
+    ]
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "native_mrs_imported": false,
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "proof_file": "study.md",
+    "ordinary_proof_status": "author_checked_pending_independent_review",
+    "lean_status": "not_run",
+    "novelty_claim": false,
+    "id": "EGY-005",
+    "title": "Failure of cleanup at the closed endpoint",
+    "hypotheses": [
+      "x=1",
+      "k=2",
+      "input denominators [2,2]"
+    ],
+    "conclusion": "No distinct exactly-two-term positive integer unit-fraction representation of one exists.",
+    "dependencies": [],
+    "verification_evidence": [
+      "check_examples.py",
+      "exact-examples.json"
+    ]
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "native_mrs_imported": false,
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "proof_file": "study.md",
+    "ordinary_proof_status": "author_checked_pending_independent_review",
+    "lean_status": "not_run",
+    "novelty_claim": false,
+    "id": "EGY-006",
+    "title": "Failure of marker-preserving fixed-length cleanup",
+    "hypotheses": [
+      "x=2/3",
+      "k=2",
+      "required denominator m=3"
+    ],
+    "conclusion": "Every two-term representation containing denominator three repeats denominator three.",
+    "dependencies": [],
+    "verification_evidence": [
+      "check_examples.py",
+      "exact-examples.json"
+    ]
+  }
+]

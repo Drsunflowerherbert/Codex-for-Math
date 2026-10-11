@@ -1,0 +1,12 @@
+import TangentLimit.FinitePacking
+set_option pp.proofs false
+#print TangentLimit.ordered_separated_lower_bound
+#print TangentLimit.sum_reciprocal_le_harmonic_of_positive
+#print TangentLimit.sum_reciprocal_le_harmonic_of_positive_on
+#print TangentLimit.harmonic_sum_mono
+#print TangentLimit.sum_reciprocal_abs_le_harmonic
+#print axioms TangentLimit.ordered_separated_lower_bound
+#print axioms TangentLimit.sum_reciprocal_le_harmonic_of_positive
+#print axioms TangentLimit.sum_reciprocal_le_harmonic_of_positive_on
+#print axioms TangentLimit.harmonic_sum_mono
+#print axioms TangentLimit.sum_reciprocal_abs_le_harmonic

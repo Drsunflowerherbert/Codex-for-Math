@@ -1,0 +1,21 @@
+✖ [971/971] Building Egyptian.SafeSplit (3.1s)
+trace: .> LEAN_PATH=<project>/.lake/packages/Cli/.lake/build/lib/lean:<project>/.lake/packages/batteries/.lake/build/lib/lean:<project>/.lake/packages/Qq/.lake/build/lib/lean:<project>/.lake/packages/aesop/.lake/build/lib/lean:<project>/.lake/packages/proofwidgets/.lake/build/lib/lean:<project>/.lake/packages/importGraph/.lake/build/lib/lean:<project>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<project>/.lake/packages/plausible/.lake/build/lib/lean:<project>/.lake/packages/mathlib/.lake/build/lib/lean:<project>/.lake/build/lib/lean <project>/tooling/lean-4.24.0-linux/bin/lean <project>/Egyptian/SafeSplit.lean -o <project>/.lake/build/lib/lean/Egyptian/SafeSplit.olean -i <project>/.lake/build/lib/lean/Egyptian/SafeSplit.ilean -c <project>/.lake/build/ir/Egyptian/SafeSplit.c --setup <project>/.lake/build/ir/Egyptian/SafeSplit.setup.json --json
+error: Egyptian/SafeSplit.lean:41:2: linarith failed to find a contradiction
+l : List ℕ
+hp : ∀ d ∈ l, 0 < d
+hlen : 2 ≤ l.length
+d : ℕ
+hd : d ∈ l
+h : ¬2 ≤ d
+hd1 : d = 1
+hperm : l.Perm (d :: l.erase d)
+htpos : ∀ r ∈ l.erase d, 0 < r
+htne : l.erase d ≠ []
+ht : 0 < reciprocalSum (l.erase d)
+hv : reciprocalSum (l.erase 1) = 0
+⊢ False
+failed
+error: Lean exited with code 1
+Some required targets logged failures:
+- Egyptian.SafeSplit
+error: build failed

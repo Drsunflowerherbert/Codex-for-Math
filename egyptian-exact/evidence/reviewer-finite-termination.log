@@ -1,0 +1,9 @@
+@finite_increasing_weight_wellFounded : ∀ {α : Type u_1} {s : Set α},
+  s.Finite → ∀ (weight : α → ℕ), WellFounded fun next current => weight ↑current < weight ↑next
+@finite_increasing_weight_induction : ∀ {α : Type u_1} {s : Set α},
+  s.Finite →
+    ∀ (weight : α → ℕ) (P : ↑s → Prop),
+      (∀ (current : ↑s), (∀ (next : ↑s), weight ↑current < weight ↑next → P next) → P current) →
+        ∀ (current : ↑s), P current
+'Egyptian.Review.finite_increasing_weight_wellFounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.Review.finite_increasing_weight_induction' depends on axioms: [propext, Classical.choice, Quot.sound]

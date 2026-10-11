@@ -1,0 +1,19 @@
+TangentLimit.blockDelta (c α : ℝ) (N : ℕ) : ℝ
+TangentLimit.blockDelta_pos {c α : ℝ} {N : ℕ} (hc : 0 < c) (hN : 1 ≤ N) : 0 < TangentLimit.blockDelta c α N
+TangentLimit.blockDelta_le_half {c α : ℝ} {N : ℕ} (hc : 0 < c) (hc1 : c ≤ 1) (hα : 2 < α) (hN : 1 ≤ N) :
+  TangentLimit.blockDelta c α N ≤ 1 / 2
+TangentLimit.poleIndex_lt_of_lt_two_mul {N n : ℕ} (hn : n < 2 * N) : TangentLimit.poleIndex n < N
+TangentLimit.poleDenom_le_three_mul {N n : ℕ} (hn : n < 2 * N) : TangentLimit.poleDenom n ≤ 3 * N
+TangentLimit.blockDelta_le_abs_poleOffset {c α : ℝ} {N n : ℕ} (hc0 : 0 < c) (hα : 2 < α) (_hN : 1 ≤ N) (hn : n < 2 * N)
+  (hc : ∀ (q : ℕ), 0 < q → ∀ (p : ℤ), c * ↑q ^ (1 - α) ≤ |↑q * Real.pi - ↑p|) :
+  TangentLimit.blockDelta c α N ≤ |TangentLimit.poleOffset n|
+TangentLimit.blockDelta_le_abs_poleOffset_sub {c α : ℝ} {N n m : ℕ} (hc0 : 0 < c) (hc1 : c ≤ 1) (hα : 2 < α)
+  (hN : 1 ≤ N) (hn : n < 2 * N) (hm : m < 2 * N) (hnm : n ≠ m)
+  (hc : ∀ (q : ℕ), 0 < q → ∀ (p : ℤ), c * ↑q ^ (1 - α) ≤ |↑q * Real.pi - ↑p|) :
+  TangentLimit.blockDelta c α N ≤ |TangentLimit.poleOffset n - TangentLimit.poleOffset m|
+'TangentLimit.blockDelta_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.blockDelta_le_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.poleIndex_lt_of_lt_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.poleDenom_le_three_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.blockDelta_le_abs_poleOffset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.blockDelta_le_abs_poleOffset_sub' depends on axioms: [propext, Classical.choice, Quot.sound]

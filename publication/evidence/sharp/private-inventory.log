@@ -1,0 +1,11 @@
+TangentLimit.blockDelta_le_abs_poleOffset_sub_of_index_lt✝ {c α : ℝ} {N n m : ℕ} (hc0 : 0 < c) (hα : 2 < α) (hN : 1 ≤ N)
+  (hkn : TangentLimit.poleIndex n < N) (hkmn : TangentLimit.poleIndex m < TangentLimit.poleIndex n)
+  (hc : ∀ (q : ℕ), 0 < q → ∀ (p : ℤ), c * ↑q ^ (1 - α) ≤ |↑q * Real.pi - ↑p|) :
+  TangentLimit.blockDelta c α N ≤ |TangentLimit.poleOffset n - TangentLimit.poleOffset m|
+'_private.TangentLimit.PoleSpacing.0.TangentLimit.blockDelta_le_abs_poleOffset_sub_of_index_lt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+TangentLimit.one_le_abs_natCast_sub✝ {n m : ℕ} (hnm : n ≠ m) : 1 ≤ |↑n - ↑m|
+'_private.TangentLimit.PoleSpacing.0.TangentLimit.one_le_abs_natCast_sub' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

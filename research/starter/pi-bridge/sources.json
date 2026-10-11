@@ -1,0 +1,106 @@
+{
+  "inspection_date_utc": "2026-10-11",
+  "retrieval_method": "web tool source inspection",
+  "new_Lean_verification": false,
+  "sources": [
+    {
+      "id": "scope017",
+      "url": "https://github.com/openai/math/blob/main/lean/docs/017.md",
+      "role": "family scope",
+      "inspected": true,
+      "branch": "main",
+      "commit": null,
+      "blob_sha": "08ebac405fcc7fd8c8e7cda9bfe8e83d2bbfba0f",
+      "content_evidence": "Independent read-only connector source copy inspected. The stored bytes now match the supplied Git blob hash exactly; an extra terminal newline introduced by local serialization was removed before this check."
+    },
+    {
+      "id": "main_lean",
+      "url": "https://github.com/openai/math/blob/main/lean/OAI/NumberTheory/PiExponent/Main.lean",
+      "raw_url": "https://raw.githubusercontent.com/openai/math/main/lean/OAI/NumberTheory/PiExponent/Main.lean",
+      "role": "published solution entry point",
+      "inspected": true,
+      "branch": "main",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "source_line_numbers_1_based": {
+        "pi_integer_eventual_lower_bound": [
+          11,
+          12
+        ],
+        "main": [
+          17,
+          27
+        ],
+        "main_eventual_bound_conjunct": [
+          18,
+          20
+        ],
+        "flint_hills_summable": [
+          29,
+          32
+        ]
+      },
+      "blob_sha": "486ed39ba52e5a10de7893cf0f302edb873801f2",
+      "content_evidence": "Independent read-only connector source copy inspected. The stored bytes now match the supplied Git blob hash exactly; an extra terminal newline introduced by local serialization was removed before this check.",
+      "pinned_url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/NumberTheory/PiExponent/Main.lean",
+      "line_number_basis": "Exact repository file; web tool display suppresses some blank lines."
+    },
+    {
+      "id": "statement_lean",
+      "url": "https://github.com/openai/math/blob/main/lean/OAI/NumberTheory/PiExponent/Statement.lean",
+      "role": "definitions",
+      "inspected": true,
+      "branch": "main",
+      "commit": null,
+      "blob_sha": "f26a2c5d0bff73d1279b8c579ef68be04ee7794b",
+      "content_evidence": "Independent read-only connector source copy inspected. The stored bytes now match the supplied Git blob hash exactly; an extra terminal newline introduced by local serialization was removed before this check."
+    },
+    {
+      "id": "exponent_lean",
+      "url": "https://github.com/openai/math/blob/main/lean/OAI/NumberTheory/PiExponent/Approximation/Exponent.lean",
+      "role": "supporting definition-equivalence and exponent lemmas",
+      "inspected": true,
+      "branch": "main",
+      "commit": null
+    },
+    {
+      "id": "comparator_target",
+      "url": "https://github.com/openai/math/blob/main/lean/ComparatorChallenges/PiExponent.lean",
+      "role": "target statement with placeholder, not a supplied proof",
+      "inspected": true,
+      "branch": "main",
+      "commit": null,
+      "blob_sha": "bf78c83492e3f7aa3ab922b13d0b4151e7f601c3",
+      "content_evidence": "Independent read-only connector source copy inspected. The stored bytes now match the supplied Git blob hash exactly; an extra terminal newline introduced by local serialization was removed before this check."
+    },
+    {
+      "id": "comparator_config",
+      "url": "https://github.com/openai/math/blob/main/lean/ComparatorChallenges/PiExponent.json",
+      "role": "verification configuration, not evidence of a successful run",
+      "inspected": true,
+      "branch": "main",
+      "commit": null,
+      "selected_theorem": "OAI.PiExponent.main",
+      "solution_module": "OAI.NumberTheory.PiExponent.Main",
+      "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "enable_nanoda": false,
+      "blob_sha": "de39cf2b2955b45355ee07e63446f380f7d231f6",
+      "content_evidence": "Independent read-only connector source copy inspected. The stored bytes now match the supplied Git blob hash exactly; an extra terminal newline introduced by local serialization was removed before this check."
+    },
+    {
+      "id": "manuscript",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026/paper.pdf",
+      "role": "linked manuscript; full proof not reviewed",
+      "inspected": false,
+      "branch": "main",
+      "commit": null
+    }
+  ],
+  "commit_pinning": {
+    "main_lean": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "remaining_sources": "main URLs; five inspected source files additionally have Git blob hashes"
+  }
+}

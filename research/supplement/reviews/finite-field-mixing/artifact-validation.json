@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "study_manifest_entries_checked": [
+    "README.md",
+    "audit.md",
+    "certificates.json",
+    "counterexamples.md",
+    "exact-tests.md",
+    "study.md",
+    "theorems.json",
+    "verify.py"
+  ],
+  "theorem_ids": [
+    "FF001",
+    "FF002",
+    "FF003",
+    "FF004",
+    "FF005",
+    "FF006",
+    "FF007",
+    "FF008",
+    "FF009",
+    "FF010"
+  ],
+  "dependency_graph_acyclic": true,
+  "dependency_references_exist": true,
+  "proof_files_exist": true,
+  "formal_verification_claims_absent": true,
+  "control_characters_absent": true,
+  "FF002_ambiguity_corrected": true,
+  "excluded_global_theorem_improvement_claim_checked_manually": true
+}

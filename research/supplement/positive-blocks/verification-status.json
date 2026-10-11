@@ -1,0 +1,43 @@
+{
+  "schema": "portable-mathematics-current-verification-status-v1",
+  "study_id": "family325-positive-block-inequalities",
+  "completed_utc": "2026-10-11T02:06:00Z",
+  "ordinary_proof_review": "accepted_by_two_separate_ordinary_mathematical_audits",
+  "required_corrections": [],
+  "supersedes": "Initial pending-review status fields in the unchanged hash-bound original study and theorem records.",
+  "reviews": [
+    {
+      "report": "independent-review.md",
+      "record": "independent-review.json",
+      "record_sha256": "979f438d66dd042e8790e1ee1d92ab80e0b381f134fad6522fb697bb58b50abf"
+    },
+    {
+      "report": "../reviews/positive-blocks/parent-independent-review.md",
+      "record": "../reviews/positive-blocks/parent-independent-review.json",
+      "record_sha256": "8c6248a86e43245f8f2a18e9616c66989efedb8779b3a57c8d4f44ec087bcb4f"
+    }
+  ],
+  "accepted_artifact_sha256": {
+    "study.md": "fec0fdca335159320f13c572e34f77fa0dad3578ec76de4da6e4ae437a9c60af",
+    "theorem-records.json": "8276d9642256c65907271f84d3b2082f970909fc3b624cb1639c860e2649c203",
+    "provenance.json": "5cbad41417223c1b106556ef68a09ef3f3d314ed762377b2dc86355dd95f0f85",
+    "check_exact_examples.py": "056023a525bd5c855961ac8870afa9b6d868d7f9acada6a97efadb28caebbfde",
+    "exact-examples.json": "5e7f79ee684eb8f8d55a3f641e63fdad9abc5c3a37142679db023a6c8031bc51",
+    "checks.json": "d7aedbac738fe5bfdc864dd5ce3b2b4662243dfc4e44b20d32614939723a7aa4",
+    "record-validation.json": "1921f0b27a9432fc31329fbc2dfcc0eb14a9abbee5254259acb9dfd252400a0b"
+  },
+  "exact_arithmetic": {
+    "named_examples": 16,
+    "seeded_gram_fixtures": 180,
+    "author_checker_passed": true,
+    "separately_written_verifier_passed": true,
+    "isolated_author_rerun_byte_identical": true
+  },
+  "formal_kernel_checked": false,
+  "external_peer_review_established": false,
+  "complete_crouzeix_theorem_reviewed": false,
+  "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_provenance": "Local source SHA-256 matches supplied revision-pinned catalog; remote commit was not independently authenticated in this bounded study.",
+  "publication": false,
+  "native_mrs_import": false
+}

@@ -1,0 +1,10 @@
+TangentLimit.irrational_integer_distance (x : ℝ) (hx : Irrational x) : ∃ ε, 0 < ε ∧ ∀ (p : ℤ), ε ≤ |x - ↑p|
+TangentLimit.pi_integer_distance (q : ℕ) (hq : 0 < q) : ∃ ε, 0 < ε ∧ ∀ (p : ℤ), ε ≤ |↑q * Real.pi - ↑p|
+TangentLimit.pi_finite_denominator_bound (Q : ℕ) (α : ℝ) :
+  ∃ c, 0 < c ∧ c ≤ 1 ∧ ∀ q < Q, 0 < q → ∀ (p : ℤ), c * ↑q ^ (1 - α) ≤ |↑q * Real.pi - ↑p|
+TangentLimit.piDiophantine_uniform (h : TangentLimit.PiDiophantine) (α : ℝ) (hα : 2 < α) :
+  ∃ c, 0 < c ∧ c ≤ 1 ∧ ∀ (q : ℕ), 0 < q → ∀ (p : ℤ), c * ↑q ^ (1 - α) ≤ |↑q * Real.pi - ↑p|
+'TangentLimit.irrational_integer_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.pi_integer_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.pi_finite_denominator_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.piDiophantine_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]

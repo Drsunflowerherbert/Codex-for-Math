@@ -1,0 +1,39 @@
+{
+  "schema": "openai-math-study-checks",
+  "schema_version": "1.0.0",
+  "study_id": "family322-radial-contact",
+  "checked_date_utc": "2026-10-11",
+  "structural_checks": {
+    "json_files_parse": true,
+    "jsonl_records_parse": true,
+    "theorem_ids_unique": true,
+    "all_dependency_references_resolve": true,
+    "all_assumption_references_resolve": true,
+    "dependency_graph_acyclic": true,
+    "markdown_inline_math_pairs": 213,
+    "markdown_display_math_pairs": 43,
+    "markdown_math_delimiters_balanced": true,
+    "unexpected_control_characters": false
+  },
+  "counts": {
+    "theorems": 12,
+    "background_records": 8,
+    "dependency_edges": 42,
+    "worked_example_groups": 4,
+    "study_questions": 8
+  },
+  "content_verification": {
+    "independent_ordinary_proof_review": "An independent ordinary review was reported; reviews/radial-review.json records the reviewed study hash.",
+    "formal_kernel_check": false,
+    "numerical_experiments": false,
+    "headline_result_validation": false,
+    "novelty_check": false
+  },
+  "sha256": {
+    "study.md": "ff1ace66df5ff03b8e6ae2a1de7073339fd6338c670a96acce2c39228e7ebba5",
+    "theorems.json": "829aed8eafb5d90464a34bc51da8e3343772035a0e65815e18b02f756f848a06",
+    "examples.json": "d88ce84cd18ed315fb24040e3ed06ec3ed675454a7c21df479260d8b0335759c",
+    "provenance.json": "552379adb58f54f2d33f0e81472ec983e99c0e9f05875adee15b94ae5c9501ae",
+    "study-questions.jsonl": "65af44d4f96ace35ec5bbf78abf78e22138eac883de6a72b56e19e8115b556bc"
+  }
+}

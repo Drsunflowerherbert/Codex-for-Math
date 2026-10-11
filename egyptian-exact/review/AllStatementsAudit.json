@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "definition_count": 4,
+  "theorem_count": 42,
+  "named_declaration_count": 46,
+  "missing_type_checks": [],
+  "extra_type_checks": [],
+  "missing_axiom_checks": [],
+  "missing_axiom_output": [],
+  "unexpected_axiom_dependencies": [],
+  "custom_axiom_or_constant_declarations": [],
+  "admission_source_files": [],
+  "compiler_errors_warnings_or_sorryAx": false,
+  "source_sha256": {
+    "Egyptian.lean": "df79dfa23c5bc391fb86d7bfe87360385eef414f86ce2dffd5cd9f9404ae8dd5",
+    "Egyptian/Basic.lean": "823fc96dfa1d7dfc6b491ca7891fa5e16c81080cb41437c121f2a8e2760c5d90",
+    "Egyptian/Cleanup.lean": "9d13c692cd2cfdae5028ba6f2cffadb4d8cc166c169e9e644d9c1a842cd1a60b",
+    "Egyptian/Counterexample.lean": "90fc75f35d1c2326d2e5378dc4d30618687fc56be445cb5f242dcdc7134f4fff",
+    "Egyptian/Examples.lean": "82e0e016eec162f6f8c7e5cc2fd5180476d782d359a5e07b5e115745ce6ecea8",
+    "Egyptian/Finite.lean": "d380ad68791364d0d3cf39505e177b0db58778552e909339c1b332be248cca8b",
+    "Egyptian/Padding.lean": "ac907d1b76efd0eaafa3e715c9a56ef4b8cf16042213c363fef7a115ded8645b",
+    "Egyptian/PaddingArithmetic.lean": "dc4d0d4eb11ce9f2e838d9316feaf6734d06723e2f217be2faa23e47eafa8d4e",
+    "Egyptian/PaddingCollision.lean": "55a97746dac67e49aa8b5d9c0cd60b937e572c241c176eee3d84ad9ce25c6e73",
+    "Egyptian/PaddingSelection.lean": "12d4bee69b696a9dced69a0abef291854aa457f3e32f55f7dbeafd9d48ea6a13",
+    "Egyptian/SafeSplit.lean": "886929f98d933e4ee856b49c9b4e6405233b1c5b2421ee258d740ff63b9a805c",
+    "Egyptian/Termination.lean": "8c1ce3435e549e2a8f1c33185df1a6195f905c5be779b96af2da670067227731",
+    "Evidence.lean": "b6423af65ff3f820b88af21ff581d7d1170442c93e90b935936a4a356a990b23"
+  }
+}

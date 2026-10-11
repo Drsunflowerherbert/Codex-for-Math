@@ -1,0 +1,119 @@
+{
+  "review_date_utc": "2026-10-11",
+  "verdict": "pass_after_editorial_corrections",
+  "mathematical_corrections_required": [],
+  "applied_editorial_corrections": [
+    "Removed NUL and backspace characters from study.md",
+    "Repaired inline-math delimiters",
+    "Replaced ambiguous FF002 wording with an explicit expectation-modulus bound <= 1"
+  ],
+  "theorem_audit": [
+    {
+      "id": "FF001",
+      "status": "pass",
+      "verification": "independent ordinary mathematical proof audit"
+    },
+    {
+      "id": "FF002",
+      "status": "pass",
+      "verification": "independent ordinary mathematical proof audit"
+    },
+    {
+      "id": "FF003",
+      "status": "pass",
+      "verification": "independent ordinary mathematical proof audit"
+    },
+    {
+      "id": "FF004",
+      "status": "pass",
+      "verification": "independent ordinary mathematical proof audit"
+    },
+    {
+      "id": "FF005",
+      "status": "pass",
+      "verification": "independent ordinary mathematical proof audit"
+    },
+    {
+      "id": "FF006",
+      "status": "pass",
+      "verification": "independent ordinary mathematical proof audit"
+    },
+    {
+      "id": "FF007",
+      "status": "pass",
+      "verification": "independent ordinary mathematical proof audit"
+    },
+    {
+      "id": "FF008",
+      "status": "pass",
+      "verification": "independent ordinary mathematical proof audit"
+    },
+    {
+      "id": "FF009",
+      "status": "pass",
+      "verification": "independent ordinary mathematical proof audit"
+    },
+    {
+      "id": "FF010",
+      "status": "pass",
+      "verification": "independent ordinary mathematical proof audit"
+    }
+  ],
+  "core_result": {
+    "hypotheses": [
+      "p prime",
+      "H nonempty subset of F_p",
+      "h=|H| and h^4 >= p^3",
+      "X_i,Y_i mutually independent and uniform on H",
+      "k=4",
+      "repetitions allowed"
+    ],
+    "conclusion": "For every t in F_p, P(sum_i X_iY_i=t) >= 1/p^2 > 0"
+  },
+  "rectangular_character_bound": "sqrt(p/(|A||B|)) for nonzero frequency",
+  "exact_sufficient_criterion": "(|A||B|)^k > (p-1)^2 p^k",
+  "criterion_is_necessary_for_actual_covering": false,
+  "divisor_lift": "Positive lifts of a zero-sum residue witness give e_i|Q^2 and t=sum(e_i)/p in positive integers, so p=sum(e_i/t)",
+  "local_saving_only": "five to four rational summands per lifted prime",
+  "independent_checker": "independent_check.py",
+  "independent_results": "independent-results.json",
+  "report": "independent-review.md",
+  "scope": {
+    "novelty_claim": false,
+    "optimality_claim": false,
+    "global_Egyptian_fraction_theorem_improvement": false,
+    "lean_build_or_kernel_verification": false,
+    "external_publication": false,
+    "downloaded_code_execution": false,
+    "native_theorem_database_import": false
+  },
+  "final_snapshot_verified": true,
+  "final_artifact_validation": "artifact-validation.json",
+  "hash_manifest": "REVIEW_MANIFEST.json",
+  "independent_exact_cases": {
+    "diagonal_sets": 141477,
+    "diagonal_k_values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rectangular_pairs": 17148,
+    "rectangular_k_values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "heterogeneous_sequences_with_coefficients_and_shift": 120050,
+    "sum_of_squares_identities": 3951,
+    "coefficient_shift_examples": 346,
+    "directly_enumerated_tuples": 16161,
+    "example_counterexample_records": 8,
+    "threshold_rows": 13
+  }
+}

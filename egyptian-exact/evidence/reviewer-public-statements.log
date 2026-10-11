@@ -1,0 +1,65 @@
+def Egyptian.reciprocalSum : List ℕ → ℝ :=
+fun (l : List ℕ) => (List.map (fun (d : ℕ) => (↑d)⁻¹) l).sum
+def Egyptian.sortedRepresentations : ℕ → ℝ → Set (List ℕ) :=
+fun (n : ℕ) (x : ℝ) =>
+  {l : List ℕ |
+    l.length = n ∧ (∀ d ∈ l, 0 < d) ∧ List.Pairwise (fun (x1 x2 : ℕ) => x1 ≤ x2) l ∧ Egyptian.reciprocalSum l = x}
+Egyptian.odd_replacement_identity (k : ℕ) :
+  (↑(2 * k + 1))⁻¹ + (↑(2 * k + 1))⁻¹ = (↑(k + 1))⁻¹ + (↑((2 * k + 1) * (k + 1)))⁻¹
+'Egyptian.odd_replacement_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.even_replacement_identity (k : ℕ) (hk : 0 < k) :
+  (↑(2 * k))⁻¹ + (↑(2 * k))⁻¹ = (↑(k + 1))⁻¹ + (↑(k * (k + 1)))⁻¹
+'Egyptian.even_replacement_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.odd_replacement_growth (k : ℕ) (hk : 1 ≤ k) : 2 * (2 * k + 1) < k + 1 + (2 * k + 1) * (k + 1)
+'Egyptian.odd_replacement_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.even_replacement_growth (k : ℕ) (hk : 2 ≤ k) : 2 * (2 * k) < k + 1 + k * (k + 1)
+'Egyptian.even_replacement_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.finite_sortedRepresentations (n : ℕ) (x : ℝ) : (Egyptian.sortedRepresentations n x).Finite
+'Egyptian.finite_sortedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.duplicate_extraction {l : List ℕ} (h : ¬l.Nodup) : ∃ (a : ℕ) (t : List ℕ), l.Perm (a :: a :: t)
+'Egyptian.duplicate_extraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.duplicate_ge_three {a : ℕ} {t : List ℕ} (ha : 0 < a) (hx : Egyptian.reciprocalSum (a :: a :: t) < 1) : 3 ≤ a
+'Egyptian.duplicate_ge_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.replacement_exists (d : ℕ) (hd : 3 ≤ d) :
+  ∃ (a : ℕ) (b : ℕ), 0 < a ∧ 0 < b ∧ (↑a)⁻¹ + (↑b)⁻¹ = (↑d)⁻¹ + (↑d)⁻¹ ∧ d + d < a + b
+'Egyptian.replacement_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.duplicate_cleanup {l : List ℕ} (hp : ∀ d ∈ l, 0 < d) (hx : Egyptian.reciprocalSum l < 1) (hn : ¬l.Nodup) :
+  ∃ (out : List ℕ),
+    (∀ d ∈ out, 0 < d) ∧ out.length = l.length ∧ Egyptian.reciprocalSum out = Egyptian.reciprocalSum l ∧ l.sum < out.sum
+'Egyptian.duplicate_cleanup' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.canonical_perm (l : List ℕ) : (Egyptian.canonical l).Perm l
+'Egyptian.canonical_perm' depends on axioms: [propext, Quot.sound]
+Egyptian.canonical_mem {l : List ℕ} (hp : ∀ d ∈ l, 0 < d) :
+  Egyptian.canonical l ∈ Egyptian.sortedRepresentations l.length (Egyptian.reciprocalSum l)
+'Egyptian.canonical_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.sorted_duplicate_cleanup {n : ℕ} {x : ℝ} {current : List ℕ} (hc : current ∈ Egyptian.sortedRepresentations n x)
+  (hx : x < 1) (hn : ¬current.Nodup) : ∃ next ∈ Egyptian.sortedRepresentations n x, current.sum < next.sum
+'Egyptian.sorted_duplicate_cleanup' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.exact_length_distinct {input : List ℕ} (hp : ∀ d ∈ input, 0 < d) (hx0 : 0 < Egyptian.reciprocalSum input)
+  (hx1 : Egyptian.reciprocalSum input < 1) :
+  ∃ (out : List ℕ),
+    (∀ d ∈ out, 0 < d) ∧
+      out.Nodup ∧ out.length = input.length ∧ Egyptian.reciprocalSum out = Egyptian.reciprocalSum input
+'Egyptian.exact_length_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.bounded_increasing_weight_wellFounded.{u_1} {α : Type u_1} (weight : α → ℕ) (bound : ℕ)
+  (hbound : ∀ (a : α), weight a ≤ bound) : WellFounded fun (next current : α) => weight current < weight next
+'Egyptian.bounded_increasing_weight_wellFounded' depends on axioms: [propext, Quot.sound]
+Egyptian.finite_increasing_weight_wellFounded.{u_1} {α : Type u_1} (s : Set α) (hs : s.Finite) (weight : α → ℕ) :
+  WellFounded fun (next current : ↑s) => weight ↑current < weight ↑next
+'Egyptian.finite_increasing_weight_wellFounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.cleanup_wellFounded (n : ℕ) (x : ℝ) :
+  WellFounded fun (next current : ↑(Egyptian.sortedRepresentations n x)) => (↑current).sum < (↑next).sum
+'Egyptian.cleanup_wellFounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.two_positive_denominators_sum_one {a b : ℕ} (ha : 0 < a) (hb : 0 < b) (he : (↑a)⁻¹ + (↑b)⁻¹ = 1) :
+  a = 2 ∧ b = 2
+'Egyptian.two_positive_denominators_sum_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.no_distinct_two_term_one :
+  ¬∃ (l : List ℕ), (∀ d ∈ l, 0 < d) ∧ l.Nodup ∧ l.length = 2 ∧ Egyptian.reciprocalSum l = 1
+'Egyptian.no_distinct_two_term_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Egyptian.boundary_counterexample :
+  (∀ d ∈ [2, 2], 0 < d) ∧
+    Egyptian.reciprocalSum [2, 2] = 1 ∧
+      ¬∃ (out : List ℕ),
+          (∀ d ∈ out, 0 < d) ∧
+            out.Nodup ∧ out.length = [2, 2].length ∧ Egyptian.reciprocalSum out = Egyptian.reciprocalSum [2, 2]
+'Egyptian.boundary_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,31 @@
+{
+  "schema": "egyptian-corrected-supplement-manifest-v1",
+  "review_date_utc": "2026-10-11",
+  "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "hash_algorithm": "SHA-256",
+  "path_base": "reviews/egyptian/corrected",
+  "corrected_artifacts": {
+    "README.md": "afaf2c60c8399135c218952ac27151849a549b27b9433dfe6023fae9f10f405a",
+    "study.md": "7d072e265767abe8a791b2f277ebedc40bcbf4a30691b381e1f0bf2e31fe266d",
+    "theorem-records.json": "bd5c31d1c6f19f7b8efea8263fa242c6893685f6bf28c04b01af486d33ae132d",
+    "coarse-padding-bounds.md": "6b79168528a796f84c0a02532aff47fb788019248ba3af8445a83182acb0fb6f",
+    "coarse-padding-bound-records.json": "a84eceb57bdee210fbaa84e2f4720bd0aa3e668cbd50352736da8c4ba1aff93f",
+    "validation-results.json": "c10faa7ee5ba834b8a69b626c455d1238174c5bde510cf939bf82f6fa16e0459",
+    "validate_supplement.py": "70beeda9b32d565a3e86cc3636b01e2ab6c1c9900e63c108121883d893272eda"
+  },
+  "linked_review_evidence": {
+    "../review.md": "209ec1b542793c34f25b740e5ba240bf887991cf3bda2618a63e16537355ea55",
+    "../review-records.json": "e3f266c06bcf5cdf9108b85b7cbbb2b45ffb8ceb32d45b6b7c00d81ed2c2caed",
+    "../independent-audit-results.json": "091cb56c31d7f92fe48d49116b7607cf9dd5158f0896e87ae34f2c3ec537a21f",
+    "../independent_audit.py": "510605e7faa413eff3d6f92a75dce4724b2b1a076ab3d762e3e6f7de5c6b0e74",
+    "../proposed-revisions.md": "1098d524a41184055e94bfa9a0962864108afc72e1e8d34c78ef12be59a63203"
+  },
+  "preserved_original_files": {
+    "../../../egyptian-fractions/author-checks.json": "b2e69eb66fa6d62b6d06d2a597b54065d1dae7d02f7adc102cb3687444c8ccbd",
+    "../../../egyptian-fractions/check_examples.py": "1b1b59dfddac89f120f070caf78709bbcd4f3ad71e285413a8ae186c02e13533",
+    "../../../egyptian-fractions/exact-examples.json": "2ac87af51b1fcebe6c8829f3b61ee1b3bf3aa7dc27de9477bb22e5ba908a0b13",
+    "../../../egyptian-fractions/study.md": "a1385026a8b775436e48e4ef97ff976434cdefc780a57cf4bf7463431c9c9289",
+    "../../../egyptian-fractions/theorem-records.json": "eeafd72072ee4ea4051c60d86aa1a38725bd704e1c94205cfae60a739e0ac717"
+  },
+  "self_hash_note": "This manifest omits its own hash; the exact manifest hash is supplied with delivery."
+}

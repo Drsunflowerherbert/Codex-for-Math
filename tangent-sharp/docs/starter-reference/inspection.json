@@ -1,0 +1,27 @@
+{
+  "archive_sha256": "b87f7e32f3ccbef1bcbbb819b05dafdc1481260925f22689563474467d2555da",
+  "manifest_entries_checked": 38,
+  "all_manifest_hashes_match": true,
+  "assessment": "Relevant ordinarily reviewed conditional proofs and provenance. No precompiled Lean or reusable Lean source in archive. The cubic-series result uses our simpler pointwise comparison; sharper s>1 series threshold is outside the requested formalization.",
+  "publication_retained_files": [
+    "pi-bridge/study.md",
+    "reviews/pi-review.md",
+    "reviews/pi-review-validation.json"
+  ],
+  "publication_scope": "Only the bridge proof and its ordinary review are included. Other starter studies, task prompts, and archive files stay local.",
+  "original_local_reference_files": [
+    "README.txt",
+    "CODEX-PROMPT.txt",
+    "pi-bridge/study.md",
+    "pi-series/tangent-series-proof.md",
+    "pi-series/tangent-series-assumptions.json",
+    "reviews/pi-review.md",
+    "reviews/pi-review-validation.json"
+  ],
+  "retained_files": [
+    "pi-bridge/study.md",
+    "reviews/pi-review.md",
+    "reviews/pi-review-validation.json"
+  ],
+  "record_scope": "Historical cubic-project baseline; current sharp results are separate."
+}

@@ -1,0 +1,5 @@
+Passed 4 exact cases; wrote exact-cases.json
+a=2/5: W1=2/25, W2²=2/125, L2²=29/250, LP vertices=10
+a=1/4: W1=1/32, W2²=1/256, L2²=17/256, LP vertices=10
+a=1/10: W1=1/200, W2²=1/4000, L2²=101/4000, LP vertices=10
+a=1/100: W1=1/20000, W2²=1/4000000, L2²=10001/4000000, LP vertices=10

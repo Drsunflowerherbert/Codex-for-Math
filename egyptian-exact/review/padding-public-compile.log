@@ -1,0 +1,74 @@
+@commonNumerator_spec : ∀ {l : List ℕ}, (∀ d ∈ l, 0 < d) → ↑(commonNumerator l) = ↑l.prod * reciprocalSum l
+@commonNumerator_eq_prod : ∀ {l : List ℕ}, (∀ d ∈ l, 0 < d) → reciprocalSum l = 1 → commonNumerator l = l.prod
+unit_split_identity : ∀ (d : ℕ), 0 < d → (↑d)⁻¹ = (↑(d + 1))⁻¹ + (↑(d * (d + 1)))⁻¹
+factor_split_identity : ∀ (a b : ℕ), 0 < a → 0 < b → (↑(a * b))⁻¹ = (↑(a * (b + 1)))⁻¹ + (↑(a * b * (b + 1)))⁻¹
+@prime_collision_obstruction : ∀ {d M : ℕ} {t : List ℕ},
+  3 ≤ d →
+    (∀ r ∈ d :: M :: t, 0 < r) →
+      reciprocalSum (d :: M :: t) = 1 → (∀ r ∈ t, r < d) → M = d + 1 ∨ M = d * (d + 1) → ¬Nat.Prime d
+@safe_split : ∀ {d u v : ℕ} {t : List ℕ},
+  (∀ r ∈ d :: t, 0 < r) →
+    (d :: t).Nodup →
+      0 < u →
+        0 < v →
+          u ≠ v →
+            u ∉ t →
+              v ∉ t →
+                (↑d)⁻¹ = (↑u)⁻¹ + (↑v)⁻¹ →
+                  (∀ r ∈ u :: v :: t, 0 < r) ∧
+                    (u :: v :: t).Nodup ∧
+                      (u :: v :: t).length = (d :: t).length + 1 ∧ reciprocalSum (u :: v :: t) = reciprocalSum (d :: t)
+@denominator_ge_two_of_one : ∀ {l : List ℕ},
+  (∀ d ∈ l, 0 < d) → 2 ≤ l.length → reciprocalSum l = 1 → ∀ {d : ℕ}, d ∈ l → 2 ≤ d
+padding_pair : ∀ (d M : ℕ),
+  3 ≤ d →
+    d < M →
+      (M = d + 1 ∨ M = d * (d + 1) → ¬Nat.Prime d) →
+        ∃ u v, d < u ∧ u < v ∧ u ≠ M ∧ v ≠ M ∧ u ≤ M * (M + 1) ∧ v ≤ M * (M + 1) ∧ (↑d)⁻¹ = (↑u)⁻¹ + (↑v)⁻¹
+@expose_top_two : ∀ {input : List ℕ},
+  (∀ r ∈ input, 0 < r) →
+    input.Nodup →
+      3 ≤ input.length → reciprocalSum input = 1 → ∃ M d t, input.Perm (M :: d :: t) ∧ 3 ≤ d ∧ d < M ∧ ∀ r ∈ t, r < d
+@padding_from_top_two : ∀ {M d marker : ℕ} {t : List ℕ},
+  (∀ r ∈ M :: d :: t, 0 < r) →
+    (M :: d :: t).Nodup →
+      reciprocalSum (M :: d :: t) = 1 →
+        3 ≤ d →
+          d < M →
+            (∀ r ∈ t, r < d) →
+              marker ∈ M :: d :: t →
+                ∃ out,
+                  (∀ r ∈ out, 0 < r) ∧
+                    out.Nodup ∧
+                      out.length = (M :: d :: t).length + 1 ∧
+                        reciprocalSum out = 1 ∧ marker ∈ out ∧ ∀ r ∈ out, r ≤ M * (M + 1)
+@pad_one_preserving_denominator_bounded : ∀ {input : List ℕ} {marker B : ℕ},
+  (∀ d ∈ input, 0 < d) →
+    input.Nodup →
+      3 ≤ input.length →
+        reciprocalSum input = 1 →
+          marker ∈ input →
+            (∀ d ∈ input, d ≤ B) →
+              ∃ out,
+                (∀ d ∈ out, 0 < d) ∧
+                  out.Nodup ∧
+                    out.length = input.length + 1 ∧ reciprocalSum out = 1 ∧ marker ∈ out ∧ ∀ d ∈ out, d ≤ B * (B + 1)
+@pad_one_preserving_denominator : ∀ {input : List ℕ} {marker : ℕ},
+  (∀ d ∈ input, 0 < d) →
+    input.Nodup →
+      3 ≤ input.length →
+        reciprocalSum input = 1 →
+          marker ∈ input →
+            ∃ out, (∀ d ∈ out, 0 < d) ∧ out.Nodup ∧ out.length = input.length + 1 ∧ reciprocalSum out = 1 ∧ marker ∈ out
+'Egyptian.commonNumerator_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.commonNumerator_eq_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.unit_split_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.factor_split_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.prime_collision_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.safe_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.denominator_ge_two_of_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.padding_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.expose_top_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.padding_from_top_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.pad_one_preserving_denominator_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.pad_one_preserving_denominator' depends on axioms: [propext, Classical.choice, Quot.sound]

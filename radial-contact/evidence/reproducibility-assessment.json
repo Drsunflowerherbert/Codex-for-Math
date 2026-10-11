@@ -1,0 +1,89 @@
+{
+  "edition": "reproducibility-v2",
+  "original_proof_and_configuration_sha256": {
+    "RadialContact.lean": "dd18970d68c53671d058224e310206f1aefdfe28fd6cee0426324bf25ff7248f",
+    "RadialContact/Basic.lean": "0a25656d386d2d73735b771f193e51a946dd6d596d37502619c7d6a0fd2f20bf",
+    "RadialContact/Derived.lean": "2cb1d2f8c854b0ada4f32cb39776d22daef906c5e4a81a6e8011df5d80c80c2d",
+    "RadialContact/Inverse.lean": "f54a454b8fca904ad32fa48c49e8adea6ddc83e73e558e341592d1cdf43d7d6e",
+    "RadialContact/Lipschitz.lean": "5961ea07e60e28e31615e2bca4c394b7d64debabeae072674ec66aa301101b00",
+    "lakefile.toml": "cb74c5a968becc4d1914af33550432561fa8a3877d02c5ace2d93783857e8332",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lake-manifest.json": "778bf0329c7769360e04e79f036a13df40a27ac9252f0c2c0624fb2c444b4731"
+  },
+  "all_original_proof_and_configuration_hashes_match": true,
+  "original_archive_sha256_verified": "247ab6b815332a4798ae967236dceadde7f3d77e36e376218081cbffabe52db7",
+  "original_gaps": [
+    "No complete per-declaration audit-output coverage enforcement",
+    "No automatic read-only source/evidence drift checker",
+    "No regression tests for missing or stale evidence"
+  ],
+  "v2_results": {
+    "regression_tests": 27,
+    "fresh_commands": [
+      {
+        "command": [
+          "python3",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v"
+        ],
+        "exit_code": 0,
+        "started_utc": "2026-10-11T02:47:25.303819+00:00",
+        "finished_utc": "2026-10-11T02:47:25.834816+00:00",
+        "log": "evidence/regression-tests.log"
+      },
+      {
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "--version"
+        ],
+        "exit_code": 0,
+        "started_utc": "2026-10-11T02:47:25.835218+00:00",
+        "finished_utc": "2026-10-11T02:47:26.728481+00:00",
+        "log": "evidence/toolchain-current.log"
+      },
+      {
+        "command": [
+          "lake",
+          "build"
+        ],
+        "exit_code": 0,
+        "started_utc": "2026-10-11T02:47:27.019779+00:00",
+        "finished_utc": "2026-10-11T02:47:38.149011+00:00",
+        "log": "evidence/final-build.log"
+      },
+      {
+        "command": [
+          "lake",
+          "env",
+          "lean",
+          "evidence/AxiomAudit.lean"
+        ],
+        "exit_code": 0,
+        "started_utc": "2026-10-11T02:47:38.149474+00:00",
+        "finished_utc": "2026-10-11T02:47:50.639780+00:00",
+        "log": "evidence/theorems-and-axioms.log"
+      }
+    ],
+    "status": "passed",
+    "declarations": 47,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "infrastructure_scope": "This library only; no generic infrastructure toolkit or mathematical theorem additions.",
+  "original_archive_provenance": {
+    "file_name": "RadialContact-Lean4-4.24.0-2026-10-11.zip",
+    "size_bytes": 143424,
+    "sha256": "247ab6b815332a4798ae967236dceadde7f3d77e36e376218081cbffabe52db7",
+    "validation_exit_code": 0
+  },
+  "record_scope": "Supplied historical v2 assessment, sanitized; current execution evidence is separate."
+}

@@ -1,0 +1,150 @@
+NORMALIZED PERIODIC HITTING IMPLIES GLOBAL AFFINE AVOIDANCE
+Independent elementary proof and reusable records
+Family 084 supporting lemma, independently reviewed and corrected 2026-10-11 UTC
+
+RESULT AND SCOPE
+
+The periodic-to-global deduction in the pinned source is correct. Its measure calculation is exactly 7η/16. The deduction generalizes from a_n=q^n to any real sequence once the normalized hitting hypothesis is supplied. Convergence to zero is not used in this deduction.
+
+This is a conditional supporting result. It does not construct the normalized hitting sets, prove the general Erdős similarity conjecture, or validate the rest of the geometric-case manuscript. No Lean code was run or newly verified. The saved family 084 Lean scope document describes the dyadic manuscript, rather than claiming verification of the newer all-ratios manuscript. The present conditional proof has completed a separate ordinary mathematical review. One sentence about distinctness was corrected; the core theorem and its constants were accepted. This is not formal verification.
+
+The accompanying JSON is provisional portable interchange data. It has not been imported into or validated against a native MRS schema.
+
+1. SOURCE AND EXACT QUANTIFIERS
+
+Pinned public source:
+https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/02-periodic.tex
+
+Commit: fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb
+Downloaded source SHA-256: 495a0aad88677e2e61904cf5fe029b709033d0830f7c98d386661632abc8bdb8
+Local original: ../../affine-avoidance/02-periodic.tex
+
+Verified repository Lean-scope document:
+https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/084.md
+The catalog review read this pinned scope document: it names the September 25 dyadic manuscript, while the newer all-ratios manuscript is dated October 5.
+
+Lines 4–18 fix one q∈(0,1), define ρ(H)=m(H∩[0,1)), and state:
+For every p∈(0,1), there is an open 1-periodic H⊂ℝ with ρ(H)≤6p such that, for every x∈ℝ and every t∈[1,2], there is an integer n≥1 with x+tq^n∈H.
+
+Quantifier order matters: ∀p ∃H ∀x ∀t ∃n. H may depend on p and the fixed sequence (on q in the source); it may not depend on x or t. The hit index n may depend on all of them. A statement giving a separate H for each (x,t) is much weaker and does not imply this reduction.
+
+The source uses p∈(0,1), not every p>0. Only arbitrarily small positive p are needed. The closed interval [1,2] is more than required: [1,2) suffices. Lines 28–58 use p_k=η·4^{−|k|}/64 and establish the global measure bound. Lines 60–69 deal with positive and negative dilation. Lines 72–74 correctly explain that these dyadic scale factors do not reindex q^n or need any relation between 2 and q.
+
+2. GENERAL CONDITIONAL THEOREM
+
+Let (a_n)_{n≥1} be any sequence of real numbers. Assume there is a finite constant C>0 such that
+
+  for every p∈(0,1), there exists an open set H_p⊂ℝ satisfying
+  H_p+1=H_p,
+  m(H_p∩[0,1))≤Cp,
+  and ∀y∈ℝ ∀t∈[1,2) ∃n≥1: y+t a_n∈H_p.
+
+Then, for every η∈(0,1), there is a compact E⊂[0,1] such that
+
+  m(E)>1−η,
+  and ∀x∈ℝ ∀s∈ℝ\{0} ∃n≥1: x+s a_n∉E.
+
+Equivalently, no set {x+s a_n:n≥1}, with s≠0, is contained in E. The quantification includes copies extending outside [0,1]; the proof in fact constructs one open set meeting every such copy in ℝ.
+
+An explicit admissible choice is B=max(1,C), p_k=η·4^{−|k|}/(16B), H_k=H_{p_k}, and
+
+  U=⋃_{k∈ℤ}(2^k H_k ∪ (−2^k H_k)),
+  E=[0,1]\U.
+
+This choice yields m(U∩[0,1])≤7Cη/(24B)≤7η/24, and hence m(E)≥1−7η/24>1−η.
+
+3. PERIODIC RESTRICTION LEMMA
+
+Let H⊂ℝ be measurable and 1-periodic, let d=m(H∩[0,1)), let L>0, and let σ∈{−1,1}. Put A=σLH. Then A is L-periodic, and every half-open interval of length L contains measure Ld of A.
+
+Proof. For σ=1, change of variable on [0,L) gives Ld. For σ=−1, reflection gives the measure of H in (−1,0], which also equals d by periodicity and the irrelevance of singleton endpoints for Lebesgue measure. To see that the period’s starting point does not matter, first reduce it modulo L to r∈[0,L). Split [r,r+L) at L and translate its second part back by L. The two pieces then partition [0,L), up to endpoints.
+
+For an interval I of length R≥0, write R=mL+r with m a nonnegative integer and 0≤r<L. Partition I into m whole periods and one remainder. Therefore
+
+  m(A∩I)≤mLd+min(r,Ld)≤min(R, L⌈R/L⌉d),
+
+with the right side interpreted as 0 when R=0. The remainder has measure at most its length r and at most the measure Ld of the period containing it. In particular, for L=2^k and I=[0,1],
+
+  if k≤0, m(A∩[0,1])=d;
+  if k>0, m(A∩[0,1])≤min(1,2^k d).
+
+Thus in all cases m((σ2^kH)∩[0,1])≤max(1,2^k)d. Equality for k≤0 uses that 2^{−k} is an integer, not merely that the period is short.
+
+Why the scaling factor is necessary. Let 0<d<1/2 and H=⋃_{j∈ℤ}(j,j+d). Then ρ(H)=d but m(2H∩[0,1])=2d. Density alone does not bound the measure of a long-period dilation inside a single unit interval.
+
+Why periodicity matters to this estimate. The nonperiodic set H=(1,2) has m(H∩[0,1))=0 while m((H/2)∩[0,1])=1/2. Merely knowing the measure in one unit interval is insufficient.
+
+4. WEIGHTED DYADIC BUDGET LEMMA
+
+For r>2,
+
+  Σ_{k∈ℤ} r^{−|k|}max(1,2^k)
+   = Σ_{j≥1}r^{−j}+1+Σ_{k≥1}(2/r)^k
+   = 1/(r−1)+1+2/(r−2).
+
+At r=4 this is 1/3+1+1=7/3. Therefore, if each ρ(H_k)≤Cα4^{−|k|}, countable subadditivity and the periodic restriction lemma give
+
+  m((⋃_k (2^kH_k∪−2^kH_k))∩[0,1])
+   ≤2Cα·7/3=14Cα/3.
+
+The coefficient 2 accounts for the two signs; their intersections need not be disjoint. The source chooses C=6 and α=η/64, giving (14·6/3)(η/64)=7η/16. Our general theorem chooses α=η/(16B), giving 7Cη/(24B).
+
+The simple geometric budget r^{−|k|} needs r>2 for this bound to sum. At r=2, every positive-k term is 1, so the displayed upper-bound series diverges. This does not prove that the actual union has large measure; it shows that this particular majorization no longer establishes small measure.
+
+5. SIGNED NORMALIZATION LEMMA AND COMPLETION OF THE PROOF
+
+For every s≠0, there is a unique k∈ℤ with 2^k≤|s|<2^{k+1}. Set σ=sgn(s), t=|s|/2^k∈[1,2), and y=σ2^{−k}x. Apply normalized hitting for H_k to (y,t). There is an n≥1 with y+t a_n∈H_k. Multiplying this membership by σ2^k gives
+
+  x+s a_n = σ2^k(y+t a_n) ∈ σ2^kH_k ⊂ U.
+
+This handles both signs with the same formula and never changes the index n. Exact dyadic dilation magnitudes have t=1; no t=2 endpoint is required. It also shows why all k∈ℤ occur: positive scales may be arbitrarily large or arbitrarily close to zero.
+
+Each signed dilation of H_k is open, so U is open. Thus E=[0,1]\U is closed in the compact interval [0,1] and is compact. The budget estimate proves its measure bound. The displayed hit lies in U and hence outside E, completing the theorem.
+
+There is no claim that the hit lies inside [0,1]. If it lies outside [0,1], it already witnesses failure of containment in E. If it equals 0 or 1, the same pointwise membership in U removes that endpoint from E. Endpoint sets were discarded only when computing Lebesgue measures, never when asserting pointwise avoidance.
+
+6. FINITE-RANGE OBSTRUCTION AND TWO LIMITS OF THE CONCLUSION
+
+Finite-range lemma. Suppose a sequence takes values in a finite set A with N distinct elements, and a measurable 1-periodic H hits x+A for every real x. Then ρ(H)≥1/N.
+
+Proof. The hitting assertion says ℝ=⋃_{a∈A}(H−a). Every translate H−a has the same measure ρ(H) in a unit interval, by the period-starting-point argument above. Restriction to [0,1) and finite subadditivity give 1≤Nρ(H). More sharply, replace N by the number of distinct residues of A modulo 1.
+
+Consequently finite-range sequences cannot satisfy the theorem’s arbitrarily-small-density hypothesis. In particular, the null sequence a_n=0 for every n would require H=ℝ, since its hitting condition is x∈H for every x. Thus convergence to zero alone neither establishes nor even guarantees compatibility with the hitting hypothesis for an arbitrary sequence. The construction of H is the substantive missing input, not a consequence of the reduction.
+
+Why s=0 is excluded. At zero dilation every affine copy is the singleton {x}. A set avoiding all such copies must be empty and cannot have measure close to one. Nonzero dilation is an essential condition of the conclusion.
+
+Why “arbitrarily close to one” is not “equal to one.” If a compact E⊂[0,1] has m(E)=1, then E=[0,1]: a nonempty relative open complement would have positive measure. Every bounded nonempty sequence has an affine copy lying inside [0,1]; for example, if M=max(1,sup_n|a_n|), take x=1/2 and s=1/(4M). Hence for null sequences a full-measure compact E cannot have the asserted avoidance property.
+
+7. HYPOTHESES AUDIT AND SAFE EXTENSIONS
+
+• Nullness, strict monotonicity, positivity, pairwise distinctness, and geometric form are not used by the reduction. The fixed sequence can be arbitrary if the stated normalized hitting condition holds. The finite-range lemma forces infinitely many distinct values, not pairwise distinct terms: repeating every term preserves all hitting and avoidance assertions. More strongly, for each fixed t∈[1,2), the set {t a_n modulo 1:n≥1} must be infinite, since finitely many residues would force a positive density lower bound by the same finite-union argument.
+• The constant C must be finite and independent of p,x,t,n; it may depend on the fixed sequence. Any finite positive C is enough. The assumption can equivalently be phrased as normalized hitting sets of arbitrarily small density, with no preferred linear parametrization Cp.
+• Uniform coverage in y and t is used. Coverage of almost every pair (y,t), or one separately chosen H for each pair, does not supply the pointwise conclusion for all affine copies.
+• Periodicity is used for the quantitative measure estimate. Exact period 1 is a normalization; another fixed positive period can be accommodated by rescaling.
+• Openness gives compactness of the complement immediately, but is not logically essential for the existence of a compact avoiding set. If the H_p are merely Lebesgue measurable, the same construction gives a measurable avoiding set F with m(F)≥1−7η/24. By inner regularity, choose compact E⊂F with m(E)>m(F)−η/2. Then m(E)>1−19η/24>1−η, and avoidance passes to subsets. This version uses inner regularity in addition to the elementary algebra and measure estimates.
+• Centers y∈[0,1) suffice when H is 1-periodic: subtract the integer part of any real center. Thus requiring every real center is equivalent to requiring all centers in a full fundamental interval. Endpoint representatives should be chosen consistently.
+• The conclusion is for each fixed sequence, with E depending on it. For the source, ∀q∀η∃E_{q,η} must not be read as ∀η∃E∀q. A simultaneous assertion over many q needs its own argument.
+• A countable family of sequences, each individually satisfying the hypothesis, can be combined by a further summable measure allocation. No such argument automatically covers an uncountable family. This safe countable extension is noted as a direction; it is not used in the present proof.
+
+8. VERIFICATION AND REUSE
+
+Proof verification performed: exact source statement read; all source constants recalculated; signed normalization and endpoint cases expanded; hypotheses separated from conclusion; finite-range counterexample proved. A locally written arithmetic checker verifies the geometric-series constants and sample rational signed normalizations. These computations do not replace the proofs and are not formal verification.
+
+Independent reviewer status: completed ordinary mathematical review, core proof accepted, distinctness wording corrected. See independent-review.txt. No theorem prover was run.
+Lean verification: not performed.
+Normalized hitting construction: assumed, not established here.
+All-ratios geometric manuscript: not globally audited here.
+Native MRS import: not performed; JSON is provisional interchange.
+
+Suggested reusable order: periodic restriction lemma → weighted dyadic budget and signed normalization → normalized-to-global theorem. The finite-range obstruction is a hypothesis-audit record, not a dependency of the main proof.
+
+
+9. INDEPENDENT REVIEW CLARIFICATIONS
+
+This reviewed copy is accompanied by independent-review.txt and independent-verification.json. The originals remain unchanged. The source statement and all five reusable proofs were accepted as ordinary mathematics, conditional on the normalized hitting hypothesis. The record limitation about failed geometric budgets now explicitly applies to positive bases 0<r≤2; the lemma itself still assumes r>2.
+
+The source bound 7η/16 bounds removed measure; it does not claim equality of that measure. The exact coefficient in the generalized construction is 7C/(24 max(1,C)); 7/24 is the uniform upper coefficient after using C/max(1,C)≤1. All uses of the normalized hypothesis have 0<p_k<1 for the stated 0<η<1 range. The saved source section references a main theorem whose statement is not included in that section; no broader parameter domain is inferred from that reference.
+
+Concrete check on omitted assumptions. Let (b_n) enumerate the rationals in (0,1), and define a_(2n−1)=a_(2n)=b_n. For p∈(0,1), the open 1-periodic set H_p=⋃_{j∈ℤ}(j,j+p) has density p. For y∈ℝ and t≥1, the interval (y,y+t) meets H_p in a nonempty open set, and {y+t b_n:n≥1} is dense in that interval. Hence H_p hits the normalized copy. This bounded sequence has repetitions and does not tend to zero, yet satisfies the hypothesis with C=1. The example does not construct hitting sets for an arbitrary null sequence or for the geometric sequence in the source.
+
+The catalog copy of 02-periodic.tex has one extra trailing blank line compared with the exact source reviewed here. No mathematical content differs. The recorded commit was not freshly authenticated over the network during this local review.

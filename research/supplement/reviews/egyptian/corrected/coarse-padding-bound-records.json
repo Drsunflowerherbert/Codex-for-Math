@@ -1,0 +1,49 @@
+[
+  {
+    "schema": "portable-math-study-corollary-record-v1",
+    "id": "EGY-COR-001",
+    "title": "Coarse maximum denominator bound for one marked padding step",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "proof_file": "coarse-padding-bounds.md",
+    "hypotheses": [
+      "r is an integer with r>=3",
+      "n_1<...<n_r are positive integers with sum 1/n_i=1",
+      "m is one of n_1,...,n_r",
+      "M=n_r"
+    ],
+    "conclusion": "There exists a distinct exactly-(r+1) positive integer unit-fraction representation of one containing the exact marker m, with maximum denominator M'<=M(M+1).",
+    "dependencies": ["EGY-003"],
+    "dependency_records_file": "theorem-records.json",
+    "ordinary_proof_status": "proved_in_review_supplement",
+    "independent_review_status": "not_separately_reviewed",
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false,
+    "quantifier_scope": "Existence of an output of the reviewed padding construction; no optimality or universal bound over arbitrary outputs is asserted.",
+    "direct_computational_coverage": "One-step maximum bound checked on all 14307 enumerated marker cases and the separately recorded composite-collision case.",
+    "verification_evidence": ["coarse-padding-bounds.md", "validation-results.json", "../../../egyptian-fractions/exact-examples.json"]
+  },
+  {
+    "schema": "portable-math-study-corollary-record-v1",
+    "id": "EGY-COR-002",
+    "title": "Coarse maximum denominator bound after repeated marked padding",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "proof_file": "coarse-padding-bounds.md",
+    "hypotheses": [
+      "assumptions of EGY-COR-001",
+      "t is a nonnegative integer",
+      "M_0=M"
+    ],
+    "conclusion": "There exists a distinct exactly-(r+t) positive integer unit-fraction representation of one containing the exact marker m, with maximum denominator M_t<=(M_0+1)^(2^t)-1.",
+    "dependencies": ["EGY-COR-001"],
+    "dependency_records_file": "coarse-padding-bound-records.json",
+    "ordinary_proof_status": "proved_in_review_supplement",
+    "independent_review_status": "not_separately_reviewed",
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false,
+    "quantifier_scope": "Existence at each integer target length r+t, including t=0; a sequence of outputs is selected using the reviewed construction.",
+    "direct_computational_coverage": "No arbitrary-iteration computation claimed; universal conclusion is proved by induction from the one-step bound.",
+    "verification_evidence": ["coarse-padding-bounds.md"]
+  }
+]

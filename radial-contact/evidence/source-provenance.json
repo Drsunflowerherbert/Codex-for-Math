@@ -1,0 +1,11 @@
+{
+  "record_scope": "Historical formalization-time provenance, sanitized for publication.",
+  "source_filename": "OpenAI-math-research-starter-2026-10-11.zip",
+  "source_version": 0,
+  "expected_archive_sha256": "b87f7e32f3ccbef1bcbbb819b05dafdc1481260925f22689563474467d2555da",
+  "historical_attempts": 2,
+  "historical_result": "input transfer failed; bytes were unavailable to formalizers",
+  "historical_archive_hash_verified": false,
+  "implementation_basis": "Independently implemented supplied mathematical specification and ordinary proof review.",
+  "publication_session": "Starter archive now retrieved and its supplied hash verified; this does not retroactively change formalization-time source access or certify equivalence to those original records."
+}

@@ -1,0 +1,112 @@
+{
+  "arithmetic": "Python fractions.Fraction, exact rational arithmetic",
+  "examples": [
+    {
+      "case": "marker below maximum",
+      "source": [
+        2,
+        3,
+        6
+      ],
+      "marker": 2,
+      "removed": 6,
+      "added": [
+        7,
+        42
+      ],
+      "result": [
+        2,
+        3,
+        7,
+        42
+      ],
+      "source_sum": "1",
+      "result_sum": "1",
+      "checks": {
+        "source_positive": true,
+        "source_distinct": true,
+        "source_sum_one": true,
+        "result_positive": true,
+        "result_distinct": true,
+        "result_sum_one": true,
+        "length_increases_by_one": true,
+        "marker_preserved": true,
+        "coarse_max_bound": true
+      }
+    },
+    {
+      "case": "marker maximum, no collision",
+      "source": [
+        2,
+        3,
+        6
+      ],
+      "marker": 6,
+      "removed": 3,
+      "added": [
+        4,
+        12
+      ],
+      "result": [
+        2,
+        4,
+        6,
+        12
+      ],
+      "source_sum": "1",
+      "result_sum": "1",
+      "checks": {
+        "source_positive": true,
+        "source_distinct": true,
+        "source_sum_one": true,
+        "result_positive": true,
+        "result_distinct": true,
+        "result_sum_one": true,
+        "length_increases_by_one": true,
+        "marker_preserved": true,
+        "coarse_max_bound": true
+      }
+    },
+    {
+      "case": "marker maximum, product collision",
+      "source": [
+        2,
+        6,
+        7,
+        14,
+        15,
+        20,
+        420
+      ],
+      "marker": 420,
+      "removed": 20,
+      "added": [
+        22,
+        220
+      ],
+      "result": [
+        2,
+        6,
+        7,
+        14,
+        15,
+        22,
+        220,
+        420
+      ],
+      "source_sum": "1",
+      "result_sum": "1",
+      "checks": {
+        "source_positive": true,
+        "source_distinct": true,
+        "source_sum_one": true,
+        "result_positive": true,
+        "result_distinct": true,
+        "result_sum_one": true,
+        "length_increases_by_one": true,
+        "marker_preserved": true,
+        "coarse_max_bound": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "note": "initial_ prefixed files use initial adc7f1241b42e322a6451854ab7e4b4c146bf78a. Public text only; no source code executed.",
+  "files": [
+    {
+      "file": "CONTENTS.md",
+      "bytes": 638728,
+      "sha256": "af9cb8e0198e302fe4cdc109e0694da66f3f83cdab9c48a4a52b2f9df9e31a42"
+    },
+    {
+      "file": "README.md",
+      "bytes": 4191,
+      "sha256": "ee59ae9643b4314f8f92709814a5cd7a98a2242dfd134cd39ead853aa84a98a9"
+    },
+    {
+      "file": "history.md",
+      "bytes": 2282,
+      "sha256": "ea19da82a387c476bed00deda40463fe5a6c0745c6608d4d9166bca974cd173b"
+    },
+    {
+      "file": "initial_CONTENTS.md",
+      "bytes": 640372,
+      "sha256": "b50788220a4ad521ca00bd1d00a89b360931d4b6c7971aad86dfcef120a32cd8"
+    },
+    {
+      "file": "initial_README.md",
+      "bytes": 4132,
+      "sha256": "ccc000307d778c57fbaa80845f0c2bc16b53b38d0c3f840194b5ff1861d87737"
+    },
+    {
+      "file": "lean_ComparatorChallenges_README.md",
+      "bytes": 1061,
+      "sha256": "c3cdac5a9d5da85c2fb566c58c735af3d20aa19406f8c83b0958a4aa4e26341c"
+    },
+    {
+      "file": "lean_README.md",
+      "bytes": 651,
+      "sha256": "1f5ec703c89f78623a49d562399f2f46f0ca682ad04c30498cfb24a684baf0ef"
+    },
+    {
+      "file": "lean_docs_005.md",
+      "bytes": 601,
+      "sha256": "cdc73396583deaa58e1aa0403147f1b43778d665d65263fe38ab59541fe7c610"
+    },
+    {
+      "file": "lean_docs_025.md",
+      "bytes": 1444,
+      "sha256": "57b93b2a7fdd09bea9fabbf53cc3ae32f27f1e26de7f6481de2c9ef89f8f470f"
+    },
+    {
+      "file": "lean_docs_084.md",
+      "bytes": 912,
+      "sha256": "ffc7364a46a777d95d1965b82565ac0712978fe42489561c7657f766f7e7c554"
+    },
+    {
+      "file": "lean_docs_322.md",
+      "bytes": 934,
+      "sha256": "0a48b3e74f5b17f61240bbf6bc21f0376557ec1a3551030eba226cbce4e128e8"
+    },
+    {
+      "file": "lean_docs_325.md",
+      "bytes": 2509,
+      "sha256": "be257f1d59b9b70e745575493f14e5d3c88f464175ac872576aff274607ff36f"
+    },
+    {
+      "file": "lean_docs_374.md",
+      "bytes": 1139,
+      "sha256": "d922901bf68ce6c53788754c5e16b05429ac6936351a181752a1b880652e9077"
+    },
+    {
+      "file": "lean_formalization.yaml",
+      "bytes": 79483,
+      "sha256": "6d4c4315b8201f0c2b4144d06ec77d67445b5144169da500c2e95af2729aed01"
+    },
+    {
+      "file": "overview.tex",
+      "bytes": 321929,
+      "sha256": "a2623d9ee39547638ff79bc5f71f1dc4fad36053601c01a02fc46f34032d5a37"
+    },
+    {
+      "file": "preprints_A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026_build_main.tex",
+      "bytes": 35175,
+      "sha256": "164f56cc3f5ecbfb65ddba0d0438cacf44f325919ef7dfb742d073c948fddabd"
+    },
+    {
+      "file": "preprints_A-pointwise-2-converse-for-elliptic-curves-with-rational-two-torsion-October-7-2026_README.md",
+      "bytes": 913,
+      "sha256": "b942d76ae9aa0ad17f77c06a8fa1970a194eef7d653ecf6ae89461c1e81f522a"
+    },
+    {
+      "file": "preprints_A-positive-solution-to-Tingleys-problem-September-23-2026_build_main.tex",
+      "bytes": 35254,
+      "sha256": "659a1be8f9c48ca9eb045a990504c539d6a8df33204c3a895aad116440c3019b"
+    },
+    {
+      "file": "preprints_Abelian-covers-Gale-correspondences-and-the-Hodge-conjecture-for-powers-October-6-2026_README.md",
+      "bytes": 931,
+      "sha256": "9359a694483c10d0f5ad073b51916a1cc4ebbc81a27b3a1fdcec720e1f253034"
+    },
+    {
+      "file": "preprints_Algebraicity-of-Kuga-Satake-Correspondences-for-K3-Surfaces-October-3-2026_README.md",
+      "bytes": 984,
+      "sha256": "dcc2f8c830d76f189091912228db15b59267a74e21b434e1d6e1befa30575eb4"
+    },
+    {
+      "file": "preprints_Algebraicity-of-Weil-classes-on-split-abelian-eightfolds-September-18-2026_README.md",
+      "bytes": 1367,
+      "sha256": "0318eaf7d3ab6a580108178bed4329826631f92979052a3ec5812c53ee76fe5a"
+    },
+    {
+      "file": "preprints_Catalans-constant-is-irrational-September-24-2026_build_sections_foundations.tex",
+      "bytes": 17036,
+      "sha256": "3929650dfb36859d8f88281795d348043f903c41a70b0bf3598c21586a633852"
+    },
+    {
+      "file": "preprints_Conditional-good-minimal-models-for-compact-Kahler-fourfolds-October-6-2026_README.md",
+      "bytes": 931,
+      "sha256": "69e3e75f2575917142eaa5f8f92be3b05a3226ea3157e5d2e21061463c634716"
+    },
+    {
+      "file": "preprints_Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026_README.md",
+      "bytes": 998,
+      "sha256": "5f28325d567ffa9cf16e500fe7ac46ac15a16de768b6b0fd01ddccff8fdefc97"
+    },
+    {
+      "file": "preprints_Exact-Birch-Swinnerton-Dyer-Formula-from-Low-Selmer-Corank-October-7-2026_README.md",
+      "bytes": 959,
+      "sha256": "7ff0280762d6ef125e34473a89353baf187652682c7761d209c8b599ef0714c8"
+    },
+    {
+      "file": "preprints_Finite-ordinary-minimal-model-programs-on-compact-Kahler-fourfolds-October-6-2026_README.md",
+      "bytes": 967,
+      "sha256": "58c5c128160d77dd8001532cca0ced034fa06c44cb97401e457656b00d504e90"
+    },
+    {
+      "file": "preprints_Fontaine-Mazur-modularity-at-the-prime-2-October-6-2026_README.md",
+      "bytes": 744,
+      "sha256": "573a2864a1288cee2e6d7975833be742211aded1562f896b833d4f3343d18658"
+    },
+    {
+      "file": "preprints_Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026_README.md",
+      "bytes": 906,
+      "sha256": "17058f14997f2794ab0b4582dbeccbf1261417427d6585d6132b9bda9e035113"
+    },
+    {
+      "file": "preprints_Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026_README.md",
+      "bytes": 961,
+      "sha256": "be5664ac99e289029d9d572770d360a760436bd52657869f8f992729cc909e6d"
+    },
+    {
+      "file": "preprints_Hilberts-tenth-problem-over-the-rational-numbers-October-6-2026_README.md",
+      "bytes": 788,
+      "sha256": "35ac6b0d972b4320b411593878864fad2c8dcd1ec2013c8f988692b25a61b2a2"
+    },
+    {
+      "file": "preprints_Incompressible-Box-Transport-and-Finite-Computation-October-6-2026_README.md",
+      "bytes": 883,
+      "sha256": "02b2b92b19eeb3dca5547adfcdce050779b0507eb36c1e1d1dad95855864035e"
+    },
+    {
+      "file": "preprints_Log-abundance-for-compact-Kahler-spaces-under-logarithmic-Iitaka-subadditivity-October-6-2026_README.md",
+      "bytes": 1046,
+      "sha256": "670dc576eddd13d013450688c5c167f3cc5706eb3ccd76ab291b5689bb0420c7"
+    },
+    {
+      "file": "preprints_Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026_README.md",
+      "bytes": 811,
+      "sha256": "7ea3d940502bf256ff04e3c4c5fc6ba3f788bb91725817b546a91eeacb5969d4"
+    },
+    {
+      "file": "preprints_Numerical-semiampleness-of-nef-adjoint-classes-on-compact-Kahler-manifolds-October-6-2026_README.md",
+      "bytes": 1071,
+      "sha256": "c5c8c2b8e84a12f55f9632a79bb653dc81eb1d20ac454aa814d5056f8566bd58"
+    },
+    {
+      "file": "preprints_Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026_build_source_sections_moments.tex",
+      "bytes": 9618,
+      "sha256": "fce0a1894b917e66f9ec56f10c4ca11ee5cfc7b9c4932ecf488b9849957a7c20"
+    },
+    {
+      "file": "preprints_Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026_build_source_sections_sharpness.tex",
+      "bytes": 7663,
+      "sha256": "f8732d68d0de8505d20f6c42aefce95d60b3e8363569681fa30632c997999590"
+    },
+    {
+      "file": "preprints_Short-Egyptian-fractions-September-25-2026_build_elementary.tex",
+      "bytes": 6597,
+      "sha256": "cccd9edb40de4030b13368a088d6db2e8ddbcd57ecee9734f661a13eb7d073eb"
+    },
+    {
+      "file": "preprints_Short-Egyptian-fractions-September-25-2026_build_prescribed.tex",
+      "bytes": 22783,
+      "sha256": "771d9da7e0181aad85eb620d4bacbb1726827db86249655850f0b63b20307432"
+    },
+    {
+      "file": "preprints_Taming-implies-compatibility-on-four-manifolds-October-6-2026_README.md",
+      "bytes": 881,
+      "sha256": "a85badbf9fdffc47c4b1f3c67592823d3b3c4f35b5aad48448c940f45cb32d69"
+    },
+    {
+      "file": "preprints_Termination-of-generalized-canonical-flips-on-compact-Kahler-fourfolds-October-6-2026_README.md",
+      "bytes": 1181,
+      "sha256": "d93ffeacc1fdb54f9baa46e0ef3973c58dfce49b60af5357e67051b1c692b3c5"
+    },
+    {
+      "file": "preprints_Termination-of-generalized-log-canonical-flips-on-compact-Kahler-fourfolds-October-7-2026_README.md",
+      "bytes": 1141,
+      "sha256": "6c4e2bac7e366b5ac182500008730f95e40d396bfb88ceaed7e06534a0bdf366"
+    },
+    {
+      "file": "preprints_The-Gaussian-free-field-limit-of-integer-Lipschitz-heights-with-two-arc-boundary-data-October-6-2026_README.md",
+      "bytes": 1059,
+      "sha256": "8de3be521d135df7f4cc2d79d057eff1c7044c1f299fa37e7a9ab0f9b3dbfe8f"
+    },
+    {
+      "file": "preprints_The-Selmer-converse-for-elliptic-curves-at-every-prime-October-7-2026_README.md",
+      "bytes": 824,
+      "sha256": "01f0f47dde046f08f6eb1ff76633b3c52af63c1d04d0e9e4feaa58a8a547ac46"
+    },
+    {
+      "file": "preprints_The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026_build_sections_02-periodic.tex",
+      "bytes": 2568,
+      "sha256": "5a8af7b315d107cf8fab996755424bec27306511f78607deb978cf974f3b4e3d"
+    },
+    {
+      "file": "preprints_The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026_build_sections_05-scales.tex",
+      "bytes": 7593,
+      "sha256": "4faf236584be034569cfde20959b125bfd1752273937edf3615c5e54ab2c9468"
+    },
+    {
+      "file": "preprints_The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026_README.md",
+      "bytes": 967,
+      "sha256": "3c3c8b5d57e3db1f7b6cf222710e8cc838081e842fdc8c4f80ff2e42be53c84f"
+    },
+    {
+      "file": "preprints_The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-October-6-2026_README.md",
+      "bytes": 867,
+      "sha256": "9618dd670297262e2ee3c6ab70fa21f098670809f4f20fbdfe72104fbce063e7"
+    },
+    {
+      "file": "preprints_The-p-adic-section-conjecture-October-6-2026_README.md",
+      "bytes": 672,
+      "sha256": "ba183980309311d7c11c3fdf0435b6a2e59adb8b9265afc260db95561051d2aa"
+    },
+    {
+      "file": "preprints_The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026_README.md",
+      "bytes": 825,
+      "sha256": "d6b3f37a2dd0bc701b0c02358d982c6fe0aaf65d5186cdaf2957b99d571d0a1c"
+    },
+    {
+      "file": "preprints_The-rational-Hodge-conjecture-for-products-of-K3-surfaces-October-4-2026_README.md",
+      "bytes": 1057,
+      "sha256": "558b7876e73cb150bf4c0955f66feedbf11b37d2a3f65ca337899961f0f56880"
+    },
+    {
+      "file": "preprints_The-two-primary-Birch-Swinnerton-Dyer-formula-in-Selmer-corank-at-most-one-October-6-2026_README.md",
+      "bytes": 948,
+      "sha256": "114d061407e39b9ca98b65a861316b5dd55e3f9831bd9683ffbb07ed55949475"
+    },
+    {
+      "file": "preprints_Uniform-real-Lipschitz-surfaces-on-the-triangular-lattice-October-6-2026_README.md",
+      "bytes": 1020,
+      "sha256": "bf8cafa25b55a31a3598a0af6ebf22417189bb4a181e56c657279711b2f008bd"
+    },
+    {
+      "file": "preprints_Unrestricted-pro-modularity-at-the-prime-two-October-6-2026_README.md",
+      "bytes": 813,
+      "sha256": "8aa0d7cfe350550c332e06d892cbde18d7ba6166d6c0d4f42b0c51819fd1e140"
+    },
+    {
+      "file": "preprints_Weil-classes-and-Hodge-classes-on-abelian-powers-October-6-2026_README.md",
+      "bytes": 789,
+      "sha256": "781245b38c74305e57a2459dea5acecbf03dbdd598ecd20ab4d33c1e76db1f89"
+    }
+  ]
+}

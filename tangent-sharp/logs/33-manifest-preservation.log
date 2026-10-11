@@ -1,0 +1,3 @@
+Before: 8f871ddcf1917c176ac801f24bc66c975e4562d4d7aab8193c45ef7f31d5ad03
+After:  8f871ddcf1917c176ac801f24bc66c975e4562d4d7aab8193c45ef7f31d5ad03
+PASS: setup preserved the exact dependency manifest.

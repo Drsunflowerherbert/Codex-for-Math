@@ -1,5 +1,22 @@
 # Codex for Math
 
+Completed research and standalone Lean projects published from verified source
+bundles on 11 October 2026:
+
+| Deliverable | Scope and evidence |
+| --- | --- |
+| [Research data](research/README.md) | Revision-pinned corpus inventory, initial studies, seven reviewed ordinary studies and 81 core records; finite computations and numerical illustrations are distinct from Lean verification. |
+| [Radial contact](radial-contact/README.md) | 47 audited Lean declarations in arbitrary real normed spaces; explicit assumptions, independent review, reproducibility checks and 27 regression tests. |
+| [Exact-length Egyptian fractions](egyptian-exact/README.md) | 42 Lean theorems for exact-length cleanup, finite-state termination and marker-preserving padding, with reviews and exact checks. |
+| [Sharp tangent series](tangent-sharp/README.md) | Conditional absolute summability iff real s > 1, and unconditional nonsummability for s ≤ 1; 78 declaration audits. PiDiophantine remains assumed. |
+
+All Lean projects pin Lean/mathlib 4.24.0. Mathematical scope, current versus
+historical evidence, exclusions, privacy review and reproduction records are
+documented in [publication/](publication/README.md). Retained upstream text is
+covered by [third-party attribution](THIRD-PARTY.md); no overall license or
+novelty claim is introduced. The original `tangent-limit/` project below is
+unchanged.
+
 The standalone project in [tangent-limit/](tangent-limit/README.md) proves that
 `tan(n)/n³ → 0` over positive integers and that `Σ |tan(n)|/n³` converges,
 conditional on an explicit π-approximation hypothesis. It does not prove or

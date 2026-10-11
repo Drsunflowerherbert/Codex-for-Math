@@ -1,0 +1,13 @@
+✔ [966/978] Built Egyptian.Basic (3.3s)
+✔ [967/978] Built Egyptian.Finite (3.4s)
+✔ [968/978] Built Egyptian.Cleanup (2.9s)
+✔ [969/978] Built Egyptian.Termination (1.7s)
+✔ [970/978] Built Egyptian.Counterexample (4.0s)
+✔ [971/978] Built Egyptian.Examples (3.4s)
+✔ [972/978] Built Egyptian.PaddingArithmetic (3.5s)
+✔ [973/978] Built Egyptian.PaddingCollision (2.4s)
+✔ [974/978] Built Egyptian.SafeSplit (3.8s)
+✔ [975/978] Built Egyptian.PaddingSelection (2.4s)
+✔ [976/978] Built Egyptian.Padding (1.8s)
+✔ [977/978] Built Egyptian (2.9s)
+Build completed successfully (978 jobs).

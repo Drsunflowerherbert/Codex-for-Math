@@ -1,0 +1,20 @@
+2026-10-11 03:22:00 UTC
+Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)
+f897ebcf72cd16f89ab4577d0c826cd14afaafc7
+✔ [2537/2555] Built TangentLimit.Hypothesis (5.9s)
+✔ [2538/2555] Built TangentLimit.NonPole (4.6s)
+✔ [2545/2571] Built TangentLimit.LimitComparison (5.8s)
+✔ [3124/3138] Built TangentLimit.Trigonometry (7.9s)
+✔ [3126/3138] Built TangentLimit.NearestPole (10s)
+✔ [3127/3138] Built TangentLimit.FinitePacking (3.7s)
+✔ [3128/3138] Built TangentLimit.UniformDiophantine (7.7s)
+✔ [3129/3138] Built TangentLimit.Divergence (6.6s)
+✔ [3130/3138] Built TangentLimit.Diophantine (5.1s)
+✔ [3131/3138] Built TangentLimit.BlockEstimates (5.6s)
+✔ [3132/3138] Built TangentLimit.DyadicSummability (9.4s)
+✔ [3133/3138] Built TangentLimit.Limit (5.1s)
+✔ [3134/3138] Built TangentLimit.PoleSpacing (10s)
+✔ [3135/3138] Built TangentLimit.SharpSummability (20s)
+✔ [3136/3138] Built TangentLimit.Summability (37s)
+✔ [3137/3138] Built TangentLimit (4.7s)
+Build completed successfully (3138 jobs).

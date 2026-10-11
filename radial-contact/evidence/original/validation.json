@@ -1,0 +1,94 @@
+{
+  "exit_code": 0,
+  "records": [
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "started_utc": "2026-10-11T02:35:23.526329+00:00",
+      "finished_utc": "2026-10-11T02:35:24.551882+00:00",
+      "exit_code": 0,
+      "log": "evidence/final-build.log"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "evidence/AxiomAudit.lean"
+      ],
+      "started_utc": "2026-10-11T02:35:24.552902+00:00",
+      "finished_utc": "2026-10-11T02:35:37.117585+00:00",
+      "exit_code": 0,
+      "log": "evidence/theorems-and-axioms.log"
+    },
+    {
+      "declarations_audited": [
+        "UnitSphere",
+        "InteriorCenter",
+        "parameter_comparison",
+        "parameter_abs_comparison",
+        "positive_contact_unique",
+        "positive_contact_bounds",
+        "exists_positive_contact",
+        "existsUnique_positive_contact",
+        "reciprocal_radius_dist_le",
+        "norm_smul_direction",
+        "direction_dist_le",
+        "directionConstant",
+        "direction_lipschitz",
+        "radius_zero_lipschitz",
+        "contact_zero_isometry",
+        "direction_zero_isometry",
+        "norm_sub_center_lower",
+        "norm_sub_center_pos",
+        "direction",
+        "direction_val",
+        "radius_direction",
+        "contact_direction",
+        "direction_contact",
+        "direction_continuous",
+        "sphereHomeomorph",
+        "unitSphere_isEmpty_of_subsingleton",
+        "zeroCenter",
+        "zeroCenter_val",
+        "radius_zero",
+        "contact_zero",
+        "direction_zero",
+        "radius",
+        "radius_pos",
+        "norm_contact",
+        "radius_bounds",
+        "radius_eq_of_contact",
+        "contact",
+        "contact_val",
+        "radius_mul_gap_le",
+        "radius_dist_le",
+        "contact_dist_le",
+        "radiusConstant",
+        "contactConstant",
+        "radius_lipschitz",
+        "contact_lipschitz",
+        "radius_continuous",
+        "contact_continuous"
+      ],
+      "axioms_found": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "unexpected_axioms": []
+    }
+  ],
+  "source_sha256": {
+    "RadialContact.lean": "dd18970d68c53671d058224e310206f1aefdfe28fd6cee0426324bf25ff7248f",
+    "RadialContact/Basic.lean": "0a25656d386d2d73735b771f193e51a946dd6d596d37502619c7d6a0fd2f20bf",
+    "RadialContact/Derived.lean": "2cb1d2f8c854b0ada4f32cb39776d22daef906c5e4a81a6e8011df5d80c80c2d",
+    "RadialContact/Inverse.lean": "f54a454b8fca904ad32fa48c49e8adea6ddc83e73e558e341592d1cdf43d7d6e",
+    "RadialContact/Lipschitz.lean": "5961ea07e60e28e31615e2bca4c394b7d64debabeae072674ec66aa301101b00",
+    "lakefile.toml": "cb74c5a968becc4d1914af33550432561fa8a3877d02c5ace2d93783857e8332",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "lake-manifest.json": "778bf0329c7769360e04e79f036a13df40a27ac9252f0c2c0624fb2c444b4731"
+  }
+}

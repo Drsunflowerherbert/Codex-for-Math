@@ -1,0 +1,665 @@
+[
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-001",
+    "title": "Finite nets supply a positive directional cover",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "d >= 1",
+      "D is a finite Euclidean delta-net of S^(d-1)",
+      "0 < delta < sqrt(2)"
+    ],
+    "conclusion": "For every unit v some u in D has <u,v> >= c = 1-delta^2/2 > 0; D spans R^d and |D| >= 2. Such finite nets exist for every delta > 0; one may arrange |D| <= (1+2/delta)^d.",
+    "dependencies": [],
+    "standard_dependencies": [
+      "STD-COMPACTNESS",
+      "STD-INNER-PRODUCT",
+      "STD-VOLUME-PACKING"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "1"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-002",
+    "title": "Exponential barrier encloses an explicit inner tube",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "d is an integer with d >= 1; ambient space is Euclidean R^d",
+      "K is nonempty, compact, and convex; L = diam(K)",
+      "D is a finite subset of the unit sphere and a Euclidean delta-net, with 0 < delta < sqrt(2); N = |D|",
+      "epsilon > 0 and t > log(N)/epsilon",
+      "Phi(x) = sum_{u in D} exp(t*(<u,x> - h_K(u) - epsilon)); Omega = {Phi < 1}; C = {Phi <= 1}"
+    ],
+    "conclusion": "eta = epsilon-log(N)/t > 0 and K + B_open(0,eta) is contained in Omega; dist(K, complement Omega) >= eta.",
+    "dependencies": [
+      "ACOA-001"
+    ],
+    "standard_dependencies": [
+      "STD-EXTREMA",
+      "STD-EXP"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "2"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-003",
+    "title": "Positive direction cover yields full coercivity",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "d is an integer with d >= 1; ambient space is Euclidean R^d",
+      "K is nonempty, compact, and convex; L = diam(K)",
+      "D is a finite subset of the unit sphere and a Euclidean delta-net, with 0 < delta < sqrt(2); N = |D|",
+      "epsilon > 0 and t > log(N)/epsilon",
+      "Phi(x) = sum_{u in D} exp(t*(<u,x> - h_K(u) - epsilon)); Omega = {Phi < 1}; C = {Phi <= 1}"
+    ],
+    "conclusion": "For p in K and R_p=max_{k in K}||k-p||, Phi(x) >= exp(t*(c||x-p||-R_p-epsilon)); Phi is coercive and C is compact, contained in closed B(p,(R_p+epsilon)/c).",
+    "dependencies": [
+      "ACOA-001"
+    ],
+    "standard_dependencies": [
+      "STD-EXTREMA",
+      "STD-EXP",
+      "STD-COMPACTNESS"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "2"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-004",
+    "title": "Positive Hessian and strict convexity",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "d is an integer with d >= 1; ambient space is Euclidean R^d",
+      "K is nonempty, compact, and convex; L = diam(K)",
+      "D is a finite subset of the unit sphere and a Euclidean delta-net, with 0 < delta < sqrt(2); N = |D|",
+      "epsilon > 0 and t > log(N)/epsilon",
+      "Phi(x) = sum_{u in D} exp(t*(<u,x> - h_K(u) - epsilon)); Omega = {Phi < 1}; C = {Phi <= 1}"
+    ],
+    "conclusion": "Phi is real analytic with Hessian t^2 sum_{u in D} exp(t*(<u,x>-h_K(u)-epsilon)) uu^T positive definite at every x. Open chords between distinct points of C lie in Omega.",
+    "dependencies": [
+      "ACOA-001"
+    ],
+    "standard_dependencies": [
+      "STD-DIFFERENTIATION",
+      "STD-STRICT-CONVEXITY"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "3"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-005",
+    "title": "Closed sublevel and boundary identification",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "d is an integer with d >= 1; ambient space is Euclidean R^d",
+      "K is nonempty, compact, and convex; L = diam(K)",
+      "D is a finite subset of the unit sphere and a Euclidean delta-net, with 0 < delta < sqrt(2); N = |D|",
+      "epsilon > 0 and t > log(N)/epsilon",
+      "Phi(x) = sum_{u in D} exp(t*(<u,x> - h_K(u) - epsilon)); Omega = {Phi < 1}; C = {Phi <= 1}"
+    ],
+    "conclusion": "Omega is a bounded nonempty convex open domain, closure(Omega)=C, and boundary(Omega)={Phi=1}.",
+    "dependencies": [
+      "ACOA-002",
+      "ACOA-003",
+      "ACOA-004"
+    ],
+    "standard_dependencies": [
+      "STD-CONVEXITY",
+      "STD-CONTINUITY"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "3"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-006",
+    "title": "Analytic radial sphere parametrization",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "d is an integer with d >= 1; ambient space is Euclidean R^d",
+      "K is nonempty, compact, and convex; L = diam(K)",
+      "D is a finite subset of the unit sphere and a Euclidean delta-net, with 0 < delta < sqrt(2); N = |D|",
+      "epsilon > 0 and t > log(N)/epsilon",
+      "Phi(x) = sum_{u in D} exp(t*(<u,x> - h_K(u) - epsilon)); Omega = {Phi < 1}; C = {Phi <= 1}"
+    ],
+    "conclusion": "For p in Omega and each unit theta there is a unique rho(theta)>0 with Phi(p+rho(theta)theta)=1; rho is real analytic. theta -> p+rho(theta)theta is an analytic diffeomorphism from S^(d-1) to boundary(Omega). For d=2 this is a regular real-analytic Jordan boundary; for d=1 the boundary is two points. For d>=2 the outward-positive second fundamental form is positive definite.",
+    "dependencies": [
+      "ACOA-003",
+      "ACOA-004",
+      "ACOA-005"
+    ],
+    "standard_dependencies": [
+      "STD-GRADIENT-SUPPORT",
+      "STD-IVT",
+      "STD-ANALYTIC-IFT",
+      "STD-SPHERE-MANIFOLD"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "4"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-007",
+    "title": "Unit-vector identity improves the Hausdorff denominator",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "d is an integer with d >= 1; ambient space is Euclidean R^d",
+      "K is nonempty, compact, and convex; L = diam(K)",
+      "D is a finite subset of the unit sphere and a Euclidean delta-net, with 0 < delta < sqrt(2); N = |D|",
+      "epsilon > 0 and t > log(N)/epsilon",
+      "Phi(x) = sum_{u in D} exp(t*(<u,x> - h_K(u) - epsilon)); Omega = {Phi < 1}; C = {Phi <= 1}"
+    ],
+    "conclusion": "d_H(C,K) = sup_{x in C} dist(x,K) <= (epsilon + delta*diam(K))/(1-delta^2/2).",
+    "dependencies": [
+      "ACOA-001",
+      "ACOA-002",
+      "ACOA-003",
+      "ACOA-005"
+    ],
+    "standard_dependencies": [
+      "STD-EXTREMA",
+      "STD-PROJECTION-NORMAL",
+      "STD-INNER-PRODUCT"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "5"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-008",
+    "title": "Tangential decomposition improves the numerator",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "d is an integer with d >= 1; ambient space is Euclidean R^d",
+      "K is nonempty, compact, and convex; L = diam(K)",
+      "D is a finite subset of the unit sphere and a Euclidean delta-net, with 0 < delta < sqrt(2); N = |D|",
+      "epsilon > 0 and t > log(N)/epsilon",
+      "Phi(x) = sum_{u in D} exp(t*(<u,x> - h_K(u) - epsilon)); Omega = {Phi < 1}; C = {Phi <= 1}"
+    ],
+    "conclusion": "Writing c=1-delta^2/2 and s=delta*sqrt(1-delta^2/4), d_H(C,K) <= (epsilon+s*diam(K))/c.",
+    "dependencies": [
+      "ACOA-007"
+    ],
+    "standard_dependencies": [
+      "STD-INNER-PRODUCT",
+      "STD-PROJECTION-NORMAL"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "5"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-009",
+    "title": "Source planar analytic convex outer approximation",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "source_reconstruction",
+    "hypotheses": [
+      "K is nonempty, compact, and convex in C identified with R^2"
+    ],
+    "conclusion": "There are bounded strictly convex open domains Omega_j containing K, with regular real-analytic Jordan boundaries, and sup_{z in closure Omega_j} dist(z,K) -> 0. The source construction at epsilon=delta and 0<delta<1 has error <= delta*(1+diam K)/(1-delta), and also the sharper bounds in ACOA-007 and ACOA-008.",
+    "dependencies": [
+      "ACOA-001",
+      "ACOA-005",
+      "ACOA-006",
+      "ACOA-007",
+      "ACOA-008"
+    ],
+    "standard_dependencies": [],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "6"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-010",
+    "title": "Compactly nested neighborhoods with prescribed accuracy",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "d >= 1",
+      "K is nonempty compact convex in R^d",
+      "a_j > 0 and a_j -> 0"
+    ],
+    "conclusion": "There are bounded strictly convex analytic open neighborhoods Omega_j with d_H(closure Omega_j,K)<a_j, closure Omega_(j+1) contained in Omega_j, and both intersections equal K. At each step use m_j=dist(K,complement Omega_j)>0 and choose next error < min(a_(j+1),m_j/2).",
+    "dependencies": [
+      "ACOA-002",
+      "ACOA-006",
+      "ACOA-008"
+    ],
+    "standard_dependencies": [
+      "STD-COMPACT-SEPARATION",
+      "STD-CHOICE",
+      "STD-DISTANCE"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "7"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-011",
+    "title": "Explicit source-style compact nesting schedule",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "d >= 1",
+      "K is nonempty compact convex; L=diam K",
+      "delta_1=1/2; delta_(j+1)=delta_j/[8(1+L)]",
+      "D_j is any finite delta_j-net; epsilon_j=delta_j; t_j=2 log |D_j|/delta_j"
+    ],
+    "conclusion": "The resulting barriers satisfy closure Omega_(j+1) contained in Omega_j and dist(closure Omega_(j+1),complement Omega_j) >= delta_j/4. Their closures converge to K in Hausdorff distance.",
+    "dependencies": [
+      "ACOA-002",
+      "ACOA-007",
+      "ACOA-010"
+    ],
+    "standard_dependencies": [],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "7"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-012",
+    "title": "Exact interval barrier including singletons",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "K=[a,b] in R with a<=b",
+      "D={-1,1}",
+      "epsilon>0; t>log(2)/epsilon",
+      "m=(a+b)/2; L=b-a"
+    ],
+    "conclusion": "Omega=(m-rho,m+rho), where rho=acosh(exp(t*(L/2+epsilon))/2)/t; exact error rho-L/2 is strictly between 0 and epsilon.",
+    "dependencies": [],
+    "standard_dependencies": [
+      "STD-EXP",
+      "STD-COSH"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "8"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-013",
+    "title": "Exact singleton radius for coordinate directions",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "K={p} in R^d; d>=1",
+      "D={+-e_i:1<=i<=d}",
+      "epsilon>0; t>log(2d)/epsilon"
+    ],
+    "conclusion": "The exact Hausdorff distance from closure Omega to {p} is sqrt(d)/t * acosh(exp(t*epsilon)/(2d)). It is achieved on equal-absolute-coordinate diagonals.",
+    "dependencies": [
+      "ACOA-002",
+      "ACOA-003",
+      "ACOA-005"
+    ],
+    "standard_dependencies": [
+      "STD-COSH",
+      "STD-JENSEN"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "8"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-014",
+    "title": "Quadratic angular error for balls",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "d is an integer with d >= 1; ambient space is Euclidean R^d",
+      "K is nonempty, compact, and convex; L = diam(K)",
+      "D is a finite subset of the unit sphere and a Euclidean delta-net, with 0 < delta < sqrt(2); N = |D|",
+      "epsilon > 0 and t > log(N)/epsilon",
+      "Phi(x) = sum_{u in D} exp(t*(<u,x> - h_K(u) - epsilon)); Omega = {Phi < 1}; C = {Phi <= 1}",
+      "K is the closed ball centered at p of radius R>=0"
+    ],
+    "conclusion": "d_H(C,K) <= (epsilon+R*delta^2/2)/(1-delta^2/2).",
+    "dependencies": [
+      "ACOA-001",
+      "ACOA-005"
+    ],
+    "standard_dependencies": [
+      "STD-INNER-PRODUCT"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "8"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-015",
+    "title": "Flat sets force linear angular error for finite directions",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "K=[-a,a] x {0}; a>0",
+      "n>=4 is divisible by four",
+      "D has directions with angles (2k+1)pi/n, 0<=k<n",
+      "epsilon>0; t>log(n)/epsilon"
+    ],
+    "conclusion": "The finite-support polytope P_0 is contained in Omega, and (0,a tan(pi/n)) belongs to P_0. Hence d_H(C,K)>=a tan(pi/n), whereas delta_n=2 sin(pi/(2n)). A uniform quadratic angular error bound fails for arbitrary compact convex sets.",
+    "dependencies": [
+      "ACOA-002",
+      "ACOA-005"
+    ],
+    "standard_dependencies": [
+      "STD-TRIGONOMETRY"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "8"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-016",
+    "title": "Convergence of maxima from outer Hausdorff convergence",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "K and C_j are nonempty compact sets with K contained in C_j",
+      "E_j=d_H(C_j,K) -> 0",
+      "All C_j lie in a common compact set Q",
+      "f is continuous on Q with modulus of continuity omega_f"
+    ],
+    "conclusion": "0 <= max_{C_j} f - max_K f <= omega_f(E_j) -> 0. For M-Lipschitz f the error is <= M E_j.",
+    "dependencies": [],
+    "standard_dependencies": [
+      "STD-EXTREMA",
+      "STD-UNIFORM-CONTINUITY"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "9"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-017",
+    "title": "Separate exact criteria for coercivity and Hessian positivity",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "d>=1",
+      "D is a nonempty finite set of real Euclidean directions",
+      "t>0 and every exponential coefficient is positive",
+      "c_D=min_{||v||=1} max_{u in D}<u,v>"
+    ],
+    "conclusion": "The finite weighted exponential sum with slopes t*u is coercive iff c_D>0. If c_D<=0 then every nonempty strict sublevel is unbounded. Its Hessian is positive definite everywhere iff D spans R^d.",
+    "dependencies": [],
+    "standard_dependencies": [
+      "STD-COMPACTNESS",
+      "STD-DIFFERENTIATION",
+      "STD-INNER-PRODUCT"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "9"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-018",
+    "title": "Singleton denominator is asymptotically attained",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "d>=1; K={p}",
+      "D is a finite set of unit directions with c_D>0",
+      "epsilon>0 fixed; t>log|D|/epsilon varies"
+    ],
+    "conclusion": "(epsilon-log|D|/t)/c_D <= d_H(closure Omega_t,{p}) <= epsilon/c_D, so the distance tends to epsilon/c_D as t->infinity. If delta is the exact chordal covering radius, c_D=1-delta^2/2.",
+    "dependencies": [
+      "ACOA-017"
+    ],
+    "standard_dependencies": [
+      "STD-IVT",
+      "STD-CONVEXITY",
+      "STD-INNER-PRODUCT"
+    ],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "9"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  },
+  {
+    "schema": "portable-math-study-records-v1",
+    "id": "ACOA-019",
+    "title": "Finite-dimensional analytic strictly convex approximation",
+    "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_scope": "family325 lemma lem:approx lines457-511",
+    "derivation_kind": "derived_extension",
+    "hypotheses": [
+      "d is an integer with d>=1",
+      "K is a nonempty compact convex subset of R^d"
+    ],
+    "conclusion": "There exist bounded strictly convex open neighborhoods of K with regular real-analytic boundary diffeomorphic to S^(d-1), converging to K in Hausdorff distance. These can be chosen compactly nested. No full-dimensionality of K is required.",
+    "dependencies": [
+      "ACOA-001",
+      "ACOA-005",
+      "ACOA-006",
+      "ACOA-008",
+      "ACOA-010"
+    ],
+    "standard_dependencies": [],
+    "proof_file": "study.md",
+    "proof_sections": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "ordinary_proof_status": "independently_reviewed_ordinary_proof",
+    "verification_evidence": [
+      "audit.md",
+      "verification.json"
+    ],
+    "lean_status": "not_run",
+    "native_mrs_imported": false,
+    "novelty_claim": false
+  }
+]

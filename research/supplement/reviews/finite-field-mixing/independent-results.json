@@ -1,0 +1,270 @@
+{
+  "status": "passed",
+  "independent_method": "carry-free integer encoding of ordinary polynomial products, folded modulo z^p-1",
+  "imports_study_verifier": false,
+  "downloaded_code_executed": false,
+  "diagonal": [
+    {
+      "p": 2,
+      "sets": 3,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "all_aggregate_fields_match": true,
+      "dense_sets": 1,
+      "dense_minimum_probability": "15/32"
+    },
+    {
+      "p": 3,
+      "sets": 7,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "all_aggregate_fields_match": true,
+      "dense_sets": 1,
+      "dense_minimum_probability": "80/243"
+    },
+    {
+      "p": 5,
+      "sets": 31,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "all_aggregate_fields_match": true,
+      "dense_sets": 6,
+      "dense_minimum_probability": "12849/65536"
+    },
+    {
+      "p": 7,
+      "sets": 127,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "all_aggregate_fields_match": true,
+      "dense_sets": 29,
+      "dense_minimum_probability": "53952/390625"
+    },
+    {
+      "p": 11,
+      "sets": 2047,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "all_aggregate_fields_match": true,
+      "dense_sets": 562,
+      "dense_minimum_probability": "511960/5764801"
+    },
+    {
+      "p": 13,
+      "sets": 8191,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "all_aggregate_fields_match": true,
+      "dense_sets": 4096,
+      "dense_minimum_probability": "410184/5764801"
+    },
+    {
+      "p": 17,
+      "sets": 131071,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "all_aggregate_fields_match": true,
+      "dense_sets": 65536,
+      "dense_minimum_probability": "2418176/43046721"
+    }
+  ],
+  "rectangular": [
+    {
+      "p": 2,
+      "ordered_pairs": 9,
+      "all_aggregate_fields_match": true
+    },
+    {
+      "p": 3,
+      "ordered_pairs": 49,
+      "all_aggregate_fields_match": true
+    },
+    {
+      "p": 5,
+      "ordered_pairs": 961,
+      "all_aggregate_fields_match": true
+    },
+    {
+      "p": 7,
+      "ordered_pairs": 16129,
+      "all_aggregate_fields_match": true
+    }
+  ],
+  "heterogeneous": [
+    {
+      "p": 3,
+      "k": 2,
+      "ordered_sequences": 2401,
+      "nonzero_shift": 1,
+      "coefficients": [
+        1,
+        2
+      ],
+      "checks_passed": true
+    },
+    {
+      "p": 3,
+      "k": 3,
+      "ordered_sequences": 117649,
+      "nonzero_shift": 1,
+      "coefficients": [
+        1,
+        2,
+        1
+      ],
+      "checks_passed": true
+    }
+  ],
+  "direct_examples": [
+    {
+      "p": 2,
+      "k": 4,
+      "counts": [
+        136,
+        120
+      ],
+      "directly_enumerated_tuples": 256
+    },
+    {
+      "p": 3,
+      "k": 3,
+      "counts": [
+        22,
+        21,
+        21
+      ],
+      "directly_enumerated_tuples": 64
+    },
+    {
+      "p": 5,
+      "k": 3,
+      "counts": [
+        38,
+        43,
+        45,
+        47,
+        43
+      ],
+      "directly_enumerated_tuples": 216
+    },
+    {
+      "p": 7,
+      "k": 3,
+      "counts": [
+        2172,
+        2236,
+        2284,
+        2236,
+        2224,
+        2236,
+        2237
+      ],
+      "directly_enumerated_tuples": 15625
+    }
+  ],
+  "examples": {
+    "all_eight_recorded_examples_pass": true,
+    "nonuniform_character_value": "79/80",
+    "positive_divisor_lift": {
+      "p": 7,
+      "Q": 30,
+      "numerators": [
+        1,
+        1,
+        2,
+        10
+      ],
+      "denominator": 2
+    }
+  },
+  "thresholds": {
+    "all_rows_match": true,
+    "rows": 13
+  },
+  "cyclotomic_identities": [
+    {
+      "p": 2,
+      "identities_checked": 9,
+      "all_identities_pass": true
+    },
+    {
+      "p": 3,
+      "identities_checked": 98,
+      "all_identities_pass": true
+    },
+    {
+      "p": 5,
+      "identities_checked": 3844,
+      "all_identities_pass": true
+    }
+  ],
+  "coefficient_shift_examples": [
+    {
+      "p": 2,
+      "cases": 2,
+      "all_checks_pass": true
+    },
+    {
+      "p": 3,
+      "cases": 24,
+      "all_checks_pass": true
+    },
+    {
+      "p": 5,
+      "cases": 320,
+      "all_checks_pass": true
+    }
+  ],
+  "source_sha256": "771d9da7e0181aad85eb620d4bacbb1726827db86249655850f0b63b20307432",
+  "study_program_hash_matches_certificate": true,
+  "review_program_sha256": "1c86b8b55603e9791bb68a2f3c996ace6a8cc8058ed6a344d093dc513d198803",
+  "reviewed_certificate_sha256": "9afa32fd4b24b5d6b758570d8b2c246d819c677c49af8056e6cdee7b9192cde3",
+  "elapsed_seconds": 17.303,
+  "scope": {
+    "universal_result": "ordinary proof audit, not established by enumeration",
+    "lean_compilation": false,
+    "global_Egyptian_fraction_constant_audited": false
+  }
+}

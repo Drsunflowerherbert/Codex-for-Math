@@ -1,0 +1,16 @@
+import TangentLimit.PoleSpacing
+
+#check TangentLimit.blockDelta
+#check TangentLimit.blockDelta_pos
+#check TangentLimit.blockDelta_le_half
+#check TangentLimit.poleIndex_lt_of_lt_two_mul
+#check TangentLimit.poleDenom_le_three_mul
+#check TangentLimit.blockDelta_le_abs_poleOffset
+#check TangentLimit.blockDelta_le_abs_poleOffset_sub
+
+#print axioms TangentLimit.blockDelta_pos
+#print axioms TangentLimit.blockDelta_le_half
+#print axioms TangentLimit.poleIndex_lt_of_lt_two_mul
+#print axioms TangentLimit.poleDenom_le_three_mul
+#print axioms TangentLimit.blockDelta_le_abs_poleOffset
+#print axioms TangentLimit.blockDelta_le_abs_poleOffset_sub

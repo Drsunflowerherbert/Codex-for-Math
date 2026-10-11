@@ -1,0 +1,87 @@
+{
+  "review_date_utc": "2026-10-11",
+  "ordinary_proof_review_status": "passed_with_notes_correction_and_domain_clarification",
+  "computation_status": "passed_exact_arithmetic_and_structural_checks",
+  "formal_verification": false,
+  "lean_executed": false,
+  "native_mrs_schema_validated": false,
+  "native_mrs_imported": false,
+  "normalized_hitting_construction_verified": false,
+  "whole_geometric_manuscript_audited": false,
+  "external_code_executed": false,
+  "software_installed": false,
+  "originals_preserved": true,
+  "input_sha256": {
+    "02-periodic.tex": "495a0aad88677e2e61904cf5fe029b709033d0830f7c98d386661632abc8bdb8",
+    "research-notes.txt": "2120829c854d12889b1c95b349e3b0d3fe91d7e10ec74529b35c7d4036d2c76a",
+    "mrs-provisional-records.json": "d538c7f06f885b9b9d4559d18ebea4122bc01a5b9f3b63d154623a7df64a23eb",
+    "verification.json": "0fb3db92107b00e62aae7db194966272fc50d9963c821b268a8c728eecc4d175"
+  },
+  "reviewed_source_bytes": 2567,
+  "catalog_source_difference": "One extra trailing newline only; exact byte relation verified.",
+  "source_network_authentication_performed": false,
+  "saved_lean_scope_sha256": "ffc7364a46a777d95d1965b82565ac0712978fe42489561c7657f766f7e7c554",
+  "corrections": [
+    {
+      "location": "research-notes.txt section 7 first bullet",
+      "before": "Distinctness becomes necessary indirectly for compatibility with arbitrarily small density.",
+      "after": "Infinitely many distinct values are necessary; pairwise distinct terms are not.",
+      "effect": "Notes correction; the five original record theorem statements remain valid."
+    },
+    {
+      "location": "dyadic_budget record limitation",
+      "before": "At r≤2 the positive-scale majorant diverges.",
+      "after": "For positive bases 0<r≤2 the positive-scale majorant diverges.",
+      "effect": "Domain clarification for a limitation; the lemma already assumes r>2."
+    },
+    {
+      "location": "verification.json general_coefficient",
+      "before": "7/24",
+      "after": "Exact coefficient is (7/24) C/max(1,C); 7/24 is the uniform upper coefficient.",
+      "effect": "Metadata clarification; the original research proof already states the correct dependence."
+    }
+  ],
+  "constants": {
+    "dyadic_sum": "7/3",
+    "source_removed_measure_coefficient": "7/16",
+    "general_exact_removed_measure_coefficient": "7*C/(24*max(1,C))",
+    "general_uniform_removed_measure_coefficient": "7/24",
+    "measurable_extension_uniform_loss_coefficient": "19/24"
+  },
+  "original_normalization_samples_rechecked": 21,
+  "normalization_sample_method": "Exact rational coefficients of the affine identity, with dyadic range checks.",
+  "general_parameter_checks": [
+    {
+      "C": "1/10",
+      "B": "1",
+      "exact_removed_measure_coefficient": "7/240"
+    },
+    {
+      "C": "1",
+      "B": "1",
+      "exact_removed_measure_coefficient": "7/24"
+    },
+    {
+      "C": "6",
+      "B": "6",
+      "exact_removed_measure_coefficient": "7/24"
+    },
+    {
+      "C": "100",
+      "B": "100",
+      "exact_removed_measure_coefficient": "7/24"
+    }
+  ],
+  "record_count": 5,
+  "all_dependencies_resolve": true,
+  "all_record_ids_unique": true,
+  "report": "independent-review.txt",
+  "reviewed_notes": "research-notes.reviewed.txt",
+  "reviewed_records": "mrs-provisional-records.reviewed.json",
+  "output_sha256": {
+    "independent-review.txt": "806cbde227f411a864d00e3c325deefe79d7a64ef18b164f33e3ab00bbcdfbb7",
+    "research-notes.reviewed.txt": "b34ce726296afafb253f3661aeb7870cfa38c36eaf28bb696a37c147aba47a4e",
+    "mrs-provisional-records.reviewed.json": "65b87048bc7783f22552554f88b884d3ddf9d72f18b14e75661aa702c90bd222",
+    "audit_records.py": "ce22eb29b20d9786924ed09d05e9e2badfcfe83ec6564039255f9953b5f37602"
+  }
+}

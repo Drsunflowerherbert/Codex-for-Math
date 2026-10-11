@@ -1,0 +1,8 @@
+⚠ [1521/1521] Built RadialContact.Derived (1.9s)
+warning: RadialContact/Derived.lean:27:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: RadialContact/Derived.lean:27:8: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (1521 jobs).

@@ -1,0 +1,21 @@
+TangentLimit.eventual_abs_tan_div_cube_le_rpow (h : TangentLimit.PiDiophantine) :
+  ∀ᶠ (n : ℕ) in Filter.atTop, |Real.tan ↑n| / ↑n ^ 3 ≤ Real.pi * 2 ^ (3 / 2) * ↑n ^ (-(3 / 2))
+TangentLimit.summable_abs_tan_div_cube (h : TangentLimit.PiDiophantine) : Summable fun n => |Real.tan ↑n| / ↑n ^ 3
+TangentLimit.summable_abs_tan_div_cube_positive (h : TangentLimit.PiDiophantine) :
+  Summable fun n => |Real.tan ↑(n + 1)| / ↑(n + 1) ^ 3
+TangentLimit.abs_tan_div_cube_eq (n : ℕ) : |Real.tan ↑n / ↑n ^ 3| = |Real.tan ↑n| / ↑n ^ 3
+TangentLimit.summable_abs_tan_div_cube_quotient (h : TangentLimit.PiDiophantine) :
+  Summable fun n => |Real.tan ↑n / ↑n ^ 3|
+TangentLimit.summable_tan_div_cube (h : TangentLimit.PiDiophantine) : Summable fun n => Real.tan ↑n / ↑n ^ 3
+TangentLimit.summable_abs_tan_div_cube_quotient_positive (h : TangentLimit.PiDiophantine) :
+  Summable fun n => |Real.tan ↑(n + 1) / ↑(n + 1) ^ 3|
+TangentLimit.summable_tan_div_cube_positive (h : TangentLimit.PiDiophantine) :
+  Summable fun n => Real.tan ↑(n + 1) / ↑(n + 1) ^ 3
+'TangentLimit.eventual_abs_tan_div_cube_le_rpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_abs_tan_div_cube' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_abs_tan_div_cube_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.abs_tan_div_cube_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_abs_tan_div_cube_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_tan_div_cube' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_abs_tan_div_cube_quotient_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_tan_div_cube_positive' depends on axioms: [propext, Classical.choice, Quot.sound]

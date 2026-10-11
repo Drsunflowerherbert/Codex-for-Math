@@ -1,0 +1,286 @@
+{
+  "scope": "Finite exact checks and numerical illustrations; not theorem proofs.",
+  "exact_rational_checks": {
+    "arithmetic": "fractions.Fraction exact rational arithmetic",
+    "unit_vector_identity_pairs": 64,
+    "rational_normals": [
+      [
+        "-3/5",
+        "-4/5"
+      ],
+      [
+        "-3/5",
+        "4/5"
+      ],
+      [
+        "3/5",
+        "-4/5"
+      ],
+      [
+        "3/5",
+        "4/5"
+      ],
+      [
+        "-4/5",
+        "-3/5"
+      ],
+      [
+        "-4/5",
+        "3/5"
+      ],
+      [
+        "4/5",
+        "-3/5"
+      ],
+      [
+        "4/5",
+        "3/5"
+      ]
+    ],
+    "segment": "[-1,1] x {0}",
+    "point_in_finite_support_polytope": [
+      "0",
+      "3/4"
+    ],
+    "support_slacks": [
+      "6/5",
+      "0",
+      "6/5",
+      "0",
+      "5/4",
+      "7/20",
+      "5/4",
+      "7/20"
+    ],
+    "distance_of_point_to_segment": "3/4",
+    "covering_constant_c": "4/5",
+    "covering_radius_squared": "2/5",
+    "tangential_constant_s": "3/5",
+    "covering_constant_proof": "study.md section 8; not inferred from samples",
+    "passed": true
+  },
+  "planar_boundary_checks": [
+    {
+      "shape": "singleton",
+      "normal_count": 8,
+      "sampled_boundary_directions": 96,
+      "delta": 0.3901806440322565,
+      "epsilon": 0.05,
+      "t": 83.17766166719342,
+      "sampled_maximum_distance": 0.04324548884928414,
+      "proved_general_bound": 0.0541196100146197,
+      "largest_log_level_residual": 9.992007221626409e-16
+    },
+    {
+      "shape": "segment",
+      "normal_count": 8,
+      "sampled_boundary_directions": 96,
+      "delta": 0.3901806440322565,
+      "epsilon": 0.05,
+      "t": 83.17766166719342,
+      "sampled_maximum_distance": 0.6664200185718265,
+      "proved_general_bound": 1.296760297133905,
+      "largest_log_level_residual": 1.7845073056391682e-14,
+      "proved_finite_direction_obstruction": 0.6213203435596426
+    },
+    {
+      "shape": "disk",
+      "normal_count": 8,
+      "sampled_boundary_directions": 96,
+      "delta": 0.3901806440322565,
+      "epsilon": 0.05,
+      "t": 83.17766166719342,
+      "sampled_maximum_distance": 0.2098840755969711,
+      "proved_general_bound": 1.7109738595069999,
+      "largest_log_level_residual": 6.80034235303259e-14,
+      "proved_ball_bound": 0.21890401059940762
+    },
+    {
+      "shape": "rectangle",
+      "normal_count": 8,
+      "sampled_boundary_directions": 96,
+      "delta": 0.3901806440322565,
+      "epsilon": 0.05,
+      "t": 83.17766166719342,
+      "sampled_maximum_distance": 0.4593132373852786,
+      "proved_general_bound": 0.9803292926832093,
+      "largest_log_level_residual": 3.4487676907496727e-14
+    },
+    {
+      "shape": "singleton",
+      "normal_count": 16,
+      "sampled_boundary_directions": 96,
+      "delta": 0.1960342806591212,
+      "epsilon": 0.05,
+      "t": 110.90354888959124,
+      "sampled_maximum_distance": 0.03966741238667667,
+      "proved_general_bound": 0.05097955791041592,
+      "largest_log_level_residual": 8.881784197001252e-16
+    },
+    {
+      "shape": "segment",
+      "normal_count": 16,
+      "sampled_boundary_directions": 96,
+      "delta": 0.1960342806591212,
+      "epsilon": 0.05,
+      "t": 110.90354888959124,
+      "sampled_maximum_distance": 0.34297566424110126,
+      "proved_general_bound": 0.64771666004939,
+      "largest_log_level_residual": 1.509903313490213e-14,
+      "proved_finite_direction_obstruction": 0.298368551069487
+    },
+    {
+      "shape": "disk",
+      "normal_count": 16,
+      "sampled_boundary_directions": 96,
+      "delta": 0.1960342806591212,
+      "epsilon": 0.05,
+      "t": 110.90354888959124,
+      "sampled_maximum_distance": 0.08378942958825064,
+      "proved_general_bound": 0.846629027429048,
+      "largest_log_level_residual": 5.984102102729594e-14,
+      "proved_ball_bound": 0.0901618743270526
+    },
+    {
+      "shape": "rectangle",
+      "normal_count": 16,
+      "sampled_boundary_directions": 96,
+      "delta": 0.1960342806591212,
+      "epsilon": 0.05,
+      "t": 110.90354888959124,
+      "sampled_maximum_distance": 0.24351948055127215,
+      "proved_general_bound": 0.49576113293674295,
+      "largest_log_level_residual": 4.5928538749961945e-14
+    },
+    {
+      "shape": "singleton",
+      "normal_count": 32,
+      "sampled_boundary_directions": 96,
+      "delta": 0.09813534865483603,
+      "epsilon": 0.05,
+      "t": 138.62943611198907,
+      "sampled_maximum_distance": 0.03736483082769119,
+      "proved_general_bound": 0.05024192861881557,
+      "largest_log_level_residual": 1.1102230246251565e-15
+    },
+    {
+      "shape": "segment",
+      "normal_count": 32,
+      "sampled_boundary_directions": 96,
+      "delta": 0.09813534865483603,
+      "epsilon": 0.05,
+      "t": 138.62943611198907,
+      "sampled_maximum_distance": 0.19295484079268055,
+      "proved_general_bound": 0.3457161386903083,
+      "largest_log_level_residual": 2.5979218776228663e-14,
+      "proved_finite_direction_obstruction": 0.14773710503574639
+    },
+    {
+      "shape": "disk",
+      "normal_count": 32,
+      "sampled_boundary_directions": 96,
+      "delta": 0.09813534865483603,
+      "epsilon": 0.05,
+      "t": 138.62943611198907,
+      "sampled_maximum_distance": 0.05489474599916733,
+      "proved_general_bound": 0.44420754204747254,
+      "largest_log_level_residual": 8.267692086505463e-14,
+      "proved_ball_bound": 0.05991907337143839
+    },
+    {
+      "shape": "rectangle",
+      "normal_count": 32,
+      "sampled_boundary_directions": 96,
+      "delta": 0.09813534865483603,
+      "epsilon": 0.05,
+      "t": 138.62943611198907,
+      "sampled_maximum_distance": 0.14370913911408945,
+      "proved_general_bound": 0.27047540172478585,
+      "largest_log_level_residual": 3.064215547965432e-14
+    }
+  ],
+  "closed_formula_checks": [
+    {
+      "example": "axes_singleton",
+      "dimension": 1,
+      "epsilon": 0.2,
+      "t": 6.931471805599452,
+      "formula_outer_radius": 0.18999686269529917,
+      "bisection_diagonal_radius": 0.1899968626952992,
+      "absolute_difference": 2.7755575615628914e-17
+    },
+    {
+      "example": "axes_singleton",
+      "dimension": 2,
+      "epsilon": 0.2,
+      "t": 13.862943611198904,
+      "formula_outer_radius": 0.21049935495504188,
+      "bisection_diagonal_radius": 0.21049935495504185,
+      "absolute_difference": 2.7755575615628914e-17
+    },
+    {
+      "example": "axes_singleton",
+      "dimension": 3,
+      "epsilon": 0.2,
+      "t": 17.91759469228055,
+      "formula_outer_radius": 0.23953154706703045,
+      "bisection_diagonal_radius": 0.2395315470670304,
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "example": "axes_singleton",
+      "dimension": 5,
+      "epsilon": 0.2,
+      "t": 23.025850929940457,
+      "formula_outer_radius": 0.29067545760235186,
+      "bisection_diagonal_radius": 0.2906754576023519,
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "example": "interval",
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "formula_radius": 0.18999686269529917,
+      "bisection_radius": 0.1899968626952992,
+      "exact_formula_evaluated_error": 0.18999686269529917,
+      "epsilon": 0.2
+    },
+    {
+      "example": "interval",
+      "interval": [
+        -1.0,
+        1.0
+      ],
+      "formula_radius": 1.1999999914008668,
+      "bisection_radius": 1.1999999914008668,
+      "exact_formula_evaluated_error": 0.19999999140086677,
+      "epsilon": 0.2
+    },
+    {
+      "example": "interval",
+      "interval": [
+        2.0,
+        2.5
+      ],
+      "formula_radius": 0.44971739450665665,
+      "bisection_radius": 0.4497173945066566,
+      "exact_formula_evaluated_error": 0.19971739450665665,
+      "epsilon": 0.2
+    }
+  ],
+  "nested_neighborhood_check": {
+    "shape": "[-1,1] x {0}",
+    "delta_1": 0.5,
+    "delta_2": 0.020833333333333332,
+    "normal_counts": [
+      7,
+      151
+    ],
+    "proved_interlevel_distance_lower_bound": 0.125,
+    "sampled_new_boundary_directions": 48,
+    "largest_old_log_barrier_on_sampled_new_boundary": -2.4423219866149046,
+    "note": "Samples supplement the full-set proof in study.md section 7."
+  }
+}

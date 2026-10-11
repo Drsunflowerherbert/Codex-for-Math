@@ -1,0 +1,10 @@
+{
+  "status": "all_exact_arithmetic_assertions_passed",
+  "universal_proof": "ordinary proof only, independent review pending",
+  "files_sha256": {
+    "check_examples.py": "1b1b59dfddac89f120f070caf78709bbcd4f3ad71e285413a8ae186c02e13533",
+    "exact-examples.json": "2ac87af51b1fcebe6c8829f3b61ee1b3bf3aa7dc27de9477bb22e5ba908a0b13",
+    "study.md": "a1385026a8b775436e48e4ef97ff976434cdefc780a57cf4bf7463431c9c9289",
+    "theorem-records.json": "eeafd72072ee4ea4051c60d86aa1a38725bd704e1c94205cfae60a739e0ac717"
+  }
+}

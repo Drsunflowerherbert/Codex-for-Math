@@ -1,0 +1,32 @@
+test_added_source_file_is_stale (test_repro.ReproducibilityTests.test_added_source_file_is_stale) ... ok
+test_changed_proof_source_is_stale (test_repro.ReproducibilityTests.test_changed_proof_source_is_stale) ... ok
+test_cli_failure_returns_nonzero_and_machine_readable_reason (test_repro.ReproducibilityTests.test_cli_failure_returns_nonzero_and_machine_readable_reason) ... ok
+test_comments_and_strings_do_not_invent_declarations (test_repro.ReproducibilityTests.test_comments_and_strings_do_not_invent_declarations) ... ok
+test_duplicate_record_fails (test_repro.ReproducibilityTests.test_duplicate_record_fails) ... ok
+test_empty_audit_fails_even_if_hash_is_updated (test_repro.ReproducibilityTests.test_empty_audit_fails_even_if_hash_is_updated) ... ok
+test_failed_new_execution_replaces_prior_success (test_repro.ReproducibilityTests.test_failed_new_execution_replaces_prior_success) ... ok
+test_failed_verification_is_not_a_success (test_repro.ReproducibilityTests.test_failed_verification_is_not_a_success) ... ok
+test_malformed_validation_fails (test_repro.ReproducibilityTests.test_malformed_validation_fails) ... ok
+test_missing_command_record_fails (test_repro.ReproducibilityTests.test_missing_command_record_fails) ... ok
+test_missing_complete_declaration_record_fails (test_repro.ReproducibilityTests.test_missing_complete_declaration_record_fails) ... ok
+test_missing_required_evidence_fails (test_repro.ReproducibilityTests.test_missing_required_evidence_fails) ... ok
+test_missing_source_is_not_silently_skipped (test_repro.ReproducibilityTests.test_missing_source_is_not_silently_skipped) ... ok
+test_missing_validation_fails (test_repro.ReproducibilityTests.test_missing_validation_fails) ... ok
+test_modified_build_log_is_stale (test_repro.ReproducibilityTests.test_modified_build_log_is_stale) ... ok
+test_nonobject_validation_has_clear_failure (test_repro.ReproducibilityTests.test_nonobject_validation_has_clear_failure) ... ok
+test_nonzero_command_outcome_fails (test_repro.ReproducibilityTests.test_nonzero_command_outcome_fails) ... ok
+test_omitting_evidence_hash_entry_fails (test_repro.ReproducibilityTests.test_omitting_evidence_hash_entry_fails) ... ok
+test_one_missing_axiom_record_fails_even_if_hash_is_updated (test_repro.ReproducibilityTests.test_one_missing_axiom_record_fails_even_if_hash_is_updated) ... ok
+test_original_compiled_audit_and_complete_fixture_pass (test_repro.ReproducibilityTests.test_original_compiled_audit_and_complete_fixture_pass) ... ok
+test_stale_assumptions_fail_even_if_hash_is_updated (test_repro.ReproducibilityTests.test_stale_assumptions_fail_even_if_hash_is_updated) ... ok
+test_unexpected_axiom_fails (test_repro.ReproducibilityTests.test_unexpected_axiom_fails) ... ok
+test_unpinned_dependency_fails (test_repro.ReproducibilityTests.test_unpinned_dependency_fails) ... ok
+test_unrun_regression_suite_fails (test_repro.ReproducibilityTests.test_unrun_regression_suite_fails) ... ok
+test_unsupported_declaration_syntax_fails_closed (test_repro.ReproducibilityTests.test_unsupported_declaration_syntax_fails_closed) ... ok
+test_verifier_policy_drift_is_stale (test_repro.ReproducibilityTests.test_verifier_policy_drift_is_stale) ... ok
+test_wrong_lake_requirement_cannot_hide_commit_in_comment (test_repro.ReproducibilityTests.test_wrong_lake_requirement_cannot_hide_commit_in_comment) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.504s
+
+OK

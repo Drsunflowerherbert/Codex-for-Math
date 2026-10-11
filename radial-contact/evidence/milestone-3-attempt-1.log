@@ -1,0 +1,20 @@
+⚠ [1520/1520] Built RadialContact.Inverse (1.7s)
+warning: RadialContact/Inverse.lean:11:0: automatically included section variable(s) unused in theorem `RadialContact.norm_sub_center_lower`:
+  [NormedSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RadialContact/Inverse.lean:72:0: automatically included section variable(s) unused in theorem `RadialContact.unitSphere_isEmpty_of_subsingleton`:
+  [NormedSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RadialContact/Inverse.lean:82:8: automatically included section variable(s) unused in theorem `RadialContact.zeroCenter_val`:
+  [NormedSpace ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedSpace ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (1520 jobs).

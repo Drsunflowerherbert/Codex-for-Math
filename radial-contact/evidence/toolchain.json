@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-10-11T02:30:33.042292+00:00",
+  "lean_version": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "lake_version": "Lake version 5.0.0-src+797c613 (Lean version 4.24.0)",
+  "mathlib_commit": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "lean_toolchain": "leanprover/lean4:v4.24.0",
+  "official_lean_archive": "https://github.com/leanprover/lean4/releases/download/v4.24.0/lean-4.24.0-linux.tar.zst",
+  "official_mathlib_repository": "https://github.com/leanprover-community/mathlib4.git",
+  "lean_archive_sha256_record": "b14f5e5159219dd1a1956c3b806813319f5e94ccd5bdfd56f54520609a5bb5ec  lean-4.24.0-linux.tar.zst",
+  "lake_manifest_sha256": "778bf0329c7769360e04e79f036a13df40a27ac9252f0c2c0624fb2c444b4731"
+}

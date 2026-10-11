@@ -1,0 +1,30 @@
+{
+  "validated_utc_date": "2026-10-11",
+  "record_count": 13,
+  "source_count": 7,
+  "checks": {
+    "valid_json": true,
+    "source_ledgers_agree": true,
+    "unique_record_ids": true,
+    "dependency_references_resolve": true,
+    "dependency_graph_acyclic": true,
+    "source_references_resolve": true,
+    "required_statement_and_proof_fields_present": true,
+    "all_new_lean_verification_flags_false": true,
+    "no_disallowed_control_characters": true,
+    "markdown_math_delimiters_balanced": true,
+    "five_source_blob_hashes_verified": true
+  },
+  "mathematical_status": "Complete ordinary proofs; source-specialized results conditional on the published premise. Independent ordinary mathematical review is recorded separately.",
+  "not_claimed": [
+    "Lean verification",
+    "Comparator execution",
+    "Complete repository dependency audit",
+    "Sharpness of the pointwise series threshold"
+  ],
+  "sha256": {
+    "study.md": "8d24f900a83f41b8ec55e582531b814ccf755c7a7e90175cf1f81f0a160ec1d8",
+    "theorem_records.json": "33920382a79939a307012972c0bd2981f63798f3d7721138c0fe8ed6b9cbcb7b",
+    "sources.json": "6282c78bdb576ed3ebbf442b5fd0418877e76c34b7f4910dc5dc261d13629e9b"
+  }
+}

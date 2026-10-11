@@ -1,0 +1,216 @@
+def TangentLimit.PiDiophantine : Prop :=
+∀ (ν : ℝ), 2 < ν → ∃ Q, ∀ (q : ℕ), Q ≤ q → 0 < q → ∀ (p : ℤ), ↑q ^ (-ν) ≤ |Real.pi - ↑p / ↑q|
+TangentLimit.pole_distance_identity (x q : ℝ) (hq : 0 < q) : |x - q * Real.pi / 2| = q / 2 * |Real.pi - 2 * x / q|
+TangentLimit.pole_distance_lower_bound (x q ν : ℝ) (hq : 0 < q) (happrox : q ^ (-ν) ≤ |Real.pi - 2 * x / q|) :
+  1 / 2 * q ^ (1 - ν) ≤ |x - q * Real.pi / 2|
+TangentLimit.reciprocal_pole_power (q ν : ℝ) (hq : 0 < q) : 1 / (q ^ (1 - ν) / Real.pi) = Real.pi * q ^ (ν - 1)
+TangentLimit.pole_distance_lower_bound_of_piDiophantine (h : TangentLimit.PiDiophantine) (ν : ℝ) (hν : 2 < ν) :
+  ∃ Q, ∀ (n q : ℕ), Q ≤ q → 0 < q → 1 / 2 * ↑q ^ (1 - ν) ≤ |↑n - ↑q * Real.pi / 2|
+TangentLimit.tan_le_pole_power (x ν : ℝ) (k : ℕ) (hb : |x - ↑(2 * k + 1) * Real.pi / 2| ≤ Real.pi / 2)
+  (happrox : ↑(2 * k + 1) ^ (-ν) ≤ |Real.pi - 2 * x / ↑(2 * k + 1)|) : |Real.tan x| ≤ Real.pi * ↑(2 * k + 1) ^ (ν - 1)
+TangentLimit.eventually_tan_le_pole_rpow (h : TangentLimit.PiDiophantine) (ν : ℝ) (hν : 2 < ν) :
+  ∀ᶠ (n : ℕ) in Filter.atTop, |Real.tan ↑n| ≤ Real.pi * ↑(TangentLimit.poleDenom n) ^ (ν - 1)
+TangentLimit.PiDiophantine : Prop
+TangentLimit.eventually_abs_tan_le_quadratic (h : TangentLimit.PiDiophantine) :
+  ∀ᶠ (n : ℕ) in Filter.atTop, |Real.tan ↑n| ≤ 4 * Real.pi * ↑n ^ 2
+TangentLimit.tan_div_cube_tendsto_zero (h : TangentLimit.PiDiophantine) :
+  Filter.Tendsto (fun n => Real.tan ↑n / ↑n ^ 3) Filter.atTop (nhds 0)
+TangentLimit.tan_div_cube_positive_tendsto_zero (h : TangentLimit.PiDiophantine) :
+  Filter.Tendsto (fun n => Real.tan ↑(n + 1) / ↑(n + 1) ^ 3) Filter.atTop (nhds 0)
+TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq {f : ℕ → ℝ} {C : ℝ}
+  (h : ∀ᶠ (n : ℕ) in Filter.atTop, |f n| ≤ C * ↑n ^ 2) : Filter.Tendsto (fun n => f n / ↑n ^ 3) Filter.atTop (nhds 0)
+TangentLimit.tendsto_div_cube_positive_of_eventually_abs_le_sq {f : ℕ → ℝ} {C : ℝ}
+  (h : ∀ᶠ (n : ℕ) in Filter.atTop, |f (n + 1)| ≤ C * ↑(n + 1) ^ 2) :
+  Filter.Tendsto (fun n => f (n + 1) / ↑(n + 1) ^ 3) Filter.atTop (nhds 0)
+TangentLimit.poleIndex (n : ℕ) : ℕ
+TangentLimit.poleDenom (n : ℕ) : ℕ
+TangentLimit.poleOffset (n : ℕ) : ℝ
+TangentLimit.poleDenom_pos (n : ℕ) : 0 < TangentLimit.poleDenom n
+TangentLimit.poleDenom_odd (n : ℕ) : Odd (TangentLimit.poleDenom n)
+TangentLimit.poleIndex_mul_pi_le (n : ℕ) : ↑(TangentLimit.poleIndex n) * Real.pi ≤ ↑n
+TangentLimit.lt_poleIndex_add_one_mul_pi (n : ℕ) : ↑n < (↑(TangentLimit.poleIndex n) + 1) * Real.pi
+TangentLimit.abs_poleOffset_le (n : ℕ) : |TangentLimit.poleOffset n| ≤ Real.pi / 2
+TangentLimit.poleDenom_le_two_mul (n : ℕ) (hn : 1 ≤ n) : ↑(TangentLimit.poleDenom n) ≤ 2 * ↑n
+TangentLimit.eventually_poleDenom_ge (Q : ℕ) : ∀ᶠ (n : ℕ) in Filter.atTop, Q ≤ TangentLimit.poleDenom n
+TangentLimit.poleOffset_nearest (n : ℕ) (r : ℤ) (hr : Odd r) : |TangentLimit.poleOffset n| ≤ |↑n - ↑r * Real.pi / 2|
+TangentLimit.cos_intCast_ne_zero (n : ℤ) : Real.cos ↑n ≠ 0
+TangentLimit.cos_natCast_ne_zero (n : ℕ) : Real.cos ↑n ≠ 0
+TangentLimit.eventual_abs_tan_div_cube_le_rpow (h : TangentLimit.PiDiophantine) :
+  ∀ᶠ (n : ℕ) in Filter.atTop, |Real.tan ↑n| / ↑n ^ 3 ≤ Real.pi * 2 ^ (3 / 2) * ↑n ^ (-(3 / 2))
+TangentLimit.summable_abs_tan_div_cube (h : TangentLimit.PiDiophantine) : Summable fun n => |Real.tan ↑n| / ↑n ^ 3
+TangentLimit.summable_abs_tan_div_cube_positive (h : TangentLimit.PiDiophantine) :
+  Summable fun n => |Real.tan ↑(n + 1)| / ↑(n + 1) ^ 3
+TangentLimit.abs_tan_div_cube_eq (n : ℕ) : |Real.tan ↑n / ↑n ^ 3| = |Real.tan ↑n| / ↑n ^ 3
+TangentLimit.summable_abs_tan_div_cube_quotient (h : TangentLimit.PiDiophantine) :
+  Summable fun n => |Real.tan ↑n / ↑n ^ 3|
+TangentLimit.summable_tan_div_cube (h : TangentLimit.PiDiophantine) : Summable fun n => Real.tan ↑n / ↑n ^ 3
+TangentLimit.summable_abs_tan_div_cube_quotient_positive (h : TangentLimit.PiDiophantine) :
+  Summable fun n => |Real.tan ↑(n + 1) / ↑(n + 1) ^ 3|
+TangentLimit.summable_tan_div_cube_positive (h : TangentLimit.PiDiophantine) :
+  Summable fun n => Real.tan ↑(n + 1) / ↑(n + 1) ^ 3
+TangentLimit.abs_cos_eq_abs_sin_offset (x : ℝ) (k : ℕ) : |Real.cos x| = |Real.sin (x - ↑(2 * k + 1) * Real.pi / 2)|
+TangentLimit.chord_cos_bound (x : ℝ) (k : ℕ) (hb : |x - ↑(2 * k + 1) * Real.pi / 2| ≤ Real.pi / 2) :
+  2 / Real.pi * |x - ↑(2 * k + 1) * Real.pi / 2| ≤ |Real.cos x|
+TangentLimit.tan_le_of_cos_lower_bound {x B : ℝ} (hB : 0 < B) (hcos : B ≤ |Real.cos x|) : |Real.tan x| ≤ 1 / B
+TangentLimit.tan_le_of_pole_distance {x : ℝ} {k : ℕ} (hb : |x - ↑(2 * k + 1) * Real.pi / 2| ≤ Real.pi / 2)
+  (hd : 0 < |x - ↑(2 * k + 1) * Real.pi / 2|) : |Real.tan x| ≤ Real.pi / (2 * |x - ↑(2 * k + 1) * Real.pi / 2|)
+'TangentLimit.pole_distance_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.pole_distance_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.reciprocal_pole_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.pole_distance_lower_bound_of_piDiophantine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.tan_le_pole_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.eventually_tan_le_pole_rpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.PiDiophantine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.eventually_abs_tan_le_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.tan_div_cube_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.tan_div_cube_positive_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.tendsto_div_cube_positive_of_eventually_abs_le_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'TangentLimit.poleIndex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.poleDenom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.poleOffset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.poleDenom_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.poleDenom_odd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.poleIndex_mul_pi_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.lt_poleIndex_add_one_mul_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.abs_poleOffset_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.poleDenom_le_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.eventually_poleDenom_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.poleOffset_nearest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.cos_intCast_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.cos_natCast_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.eventual_abs_tan_div_cube_le_rpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_abs_tan_div_cube' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_abs_tan_div_cube_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.abs_tan_div_cube_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_abs_tan_div_cube_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_tan_div_cube' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_abs_tan_div_cube_quotient_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_tan_div_cube_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.abs_cos_eq_abs_sin_offset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.chord_cos_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.tan_le_of_cos_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.tan_le_of_pole_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+TangentLimit.sum_abs_tan_div_rpow_le_reciprocal (S : Finset ℕ) (N : ℕ) (hN : 0 < N) (s : ℝ) (hs : 0 ≤ s)
+  (hindex : ∀ n ∈ S, N ≤ n) (hdist : ∀ n ∈ S, 0 < |TangentLimit.poleOffset n|) :
+  ∑ n ∈ S, |Real.tan ↑n| / ↑n ^ s ≤ Real.pi / (2 * ↑N ^ s) * ∑ n ∈ S, 1 / |TangentLimit.poleOffset n|
+TangentLimit.weighted_block_coefficient (c α s N H : ℝ) (hc : 0 < c) (hN : 0 < N) :
+  Real.pi / (2 * N ^ s) * (2 / (c / 2 * (3 * N) ^ (1 - α)) * H) = 2 * Real.pi / c * 3 ^ (α - 1) * N ^ (α - 1 - s) * H
+TangentLimit.irrational_integer_distance (x : ℝ) (hx : Irrational x) : ∃ ε, 0 < ε ∧ ∀ (p : ℤ), ε ≤ |x - ↑p|
+TangentLimit.pi_integer_distance (q : ℕ) (hq : 0 < q) : ∃ ε, 0 < ε ∧ ∀ (p : ℤ), ε ≤ |↑q * Real.pi - ↑p|
+TangentLimit.pi_finite_denominator_bound (Q : ℕ) (α : ℝ) :
+  ∃ c, 0 < c ∧ c ≤ 1 ∧ ∀ q < Q, 0 < q → ∀ (p : ℤ), c * ↑q ^ (1 - α) ≤ |↑q * Real.pi - ↑p|
+TangentLimit.piDiophantine_uniform (h : TangentLimit.PiDiophantine) (α : ℝ) (hα : 2 < α) :
+  ∃ c, 0 < c ∧ c ≤ 1 ∧ ∀ (q : ℕ), 0 < q → ∀ (p : ℤ), c * ↑q ^ (1 - α) ≤ |↑q * Real.pi - ↑p|
+TangentLimit.blockDelta (c α : ℝ) (N : ℕ) : ℝ
+TangentLimit.blockDelta_pos {c α : ℝ} {N : ℕ} (hc : 0 < c) (hN : 1 ≤ N) : 0 < TangentLimit.blockDelta c α N
+TangentLimit.blockDelta_le_half {c α : ℝ} {N : ℕ} (hc : 0 < c) (hc1 : c ≤ 1) (hα : 2 < α) (hN : 1 ≤ N) :
+  TangentLimit.blockDelta c α N ≤ 1 / 2
+TangentLimit.poleIndex_lt_of_lt_two_mul {N n : ℕ} (hn : n < 2 * N) : TangentLimit.poleIndex n < N
+TangentLimit.poleDenom_le_three_mul {N n : ℕ} (hn : n < 2 * N) : TangentLimit.poleDenom n ≤ 3 * N
+TangentLimit.blockDelta_le_abs_poleOffset {c α : ℝ} {N n : ℕ} (hc0 : 0 < c) (hα : 2 < α) (_hN : 1 ≤ N) (hn : n < 2 * N)
+  (hc : ∀ (q : ℕ), 0 < q → ∀ (p : ℤ), c * ↑q ^ (1 - α) ≤ |↑q * Real.pi - ↑p|) :
+  TangentLimit.blockDelta c α N ≤ |TangentLimit.poleOffset n|
+TangentLimit.blockDelta_le_abs_poleOffset_sub {c α : ℝ} {N n m : ℕ} (hc0 : 0 < c) (hc1 : c ≤ 1) (hα : 2 < α)
+  (hN : 1 ≤ N) (hn : n < 2 * N) (hm : m < 2 * N) (hnm : n ≠ m)
+  (hc : ∀ (q : ℕ), 0 < q → ∀ (p : ℤ), c * ↑q ^ (1 - α) ≤ |↑q * Real.pi - ↑p|) :
+  TangentLimit.blockDelta c α N ≤ |TangentLimit.poleOffset n - TangentLimit.poleOffset m|
+TangentLimit.ordered_separated_lower_bound (S : Finset ℝ) (δ : ℝ) (haway : ∀ x ∈ S, δ ≤ x)
+  (hsep : ∀ x ∈ S, ∀ y ∈ S, x ≠ y → δ ≤ |x - y|) (k : Fin S.card) : ↑(↑k + 1) * δ ≤ (S.orderEmbOfFin ⋯) k
+TangentLimit.sum_reciprocal_le_harmonic_of_positive (S : Finset ℝ) (δ : ℝ) (hδ : 0 < δ) (haway : ∀ x ∈ S, δ ≤ x)
+  (hsep : ∀ x ∈ S, ∀ y ∈ S, x ≠ y → δ ≤ |x - y|) : ∑ x ∈ S, 1 / x ≤ 1 / δ * ∑ k ∈ Finset.range S.card, 1 / ↑(k + 1)
+TangentLimit.sum_reciprocal_le_harmonic_of_positive_on.{u_1} {ι : Type u_1} [DecidableEq ι] (S : Finset ι) (f : ι → ℝ)
+  (δ : ℝ) (hδ : 0 < δ) (haway : ∀ i ∈ S, δ ≤ f i) (hsep : ∀ i ∈ S, ∀ j ∈ S, i ≠ j → δ ≤ |f i - f j|) :
+  ∑ i ∈ S, 1 / f i ≤ 1 / δ * ∑ k ∈ Finset.range S.card, 1 / ↑(k + 1)
+TangentLimit.harmonic_sum_mono {m n : ℕ} (hmn : m ≤ n) :
+  ∑ k ∈ Finset.range m, 1 / ↑(k + 1) ≤ ∑ k ∈ Finset.range n, 1 / ↑(k + 1)
+TangentLimit.sum_reciprocal_abs_le_harmonic.{u_1} {ι : Type u_1} [DecidableEq ι] (S : Finset ι) (f : ι → ℝ) (δ : ℝ)
+  (hδ : 0 < δ) (haway : ∀ i ∈ S, δ ≤ |f i|) (hsep : ∀ i ∈ S, ∀ j ∈ S, i ≠ j → δ ≤ |f i - f j|) :
+  ∑ i ∈ S, 1 / |f i| ≤ 2 / δ * ∑ k ∈ Finset.range S.card, 1 / ↑(k + 1)
+TangentLimit.sum_range_two_pow_eq (f : ℕ → ℝ) (j : ℕ) :
+  ∑ n ∈ Finset.range (2 ^ j), f n = f 0 + ∑ k ∈ Finset.range j, ∑ n ∈ Finset.Ico (2 ^ k) (2 ^ (k + 1)), f n
+TangentLimit.nat_le_two_pow (n : ℕ) : n ≤ 2 ^ n
+TangentLimit.summable_of_dyadic_block_bound {f g : ℕ → ℝ} (hf : ∀ (n : ℕ), 0 ≤ f n) (hg0 : ∀ (j : ℕ), 0 ≤ g j)
+  (hg : Summable g) (hblock : ∀ (j : ℕ), ∑ n ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)), f n ≤ g j) : Summable f
+TangentLimit.summable_nat_add_one_mul_geometric {ρ : ℝ} (hρ0 : 0 ≤ ρ) (hρ1 : ρ < 1) : Summable fun j => (↑j + 1) * ρ ^ j
+TangentLimit.summable_of_dyadic_geometric_bound {f : ℕ → ℝ} {C ρ : ℝ} (hf : ∀ (n : ℕ), 0 ≤ f n) (hC : 0 ≤ C)
+  (hρ0 : 0 ≤ ρ) (hρ1 : ρ < 1) (hblock : ∀ (j : ℕ), ∑ n ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)), f n ≤ C * (↑j + 1) * ρ ^ j) :
+  Summable f
+TangentLimit.sum_reciprocal_doubling_block_le_one {N : ℕ} (hN : 0 < N) : ∑ k ∈ Finset.range N, 1 / ↑(N + k + 1) ≤ 1
+TangentLimit.harmonic_sum_two_pow_le (j : ℕ) : ∑ k ∈ Finset.range (2 ^ j), 1 / ↑(k + 1) ≤ ↑j + 1
+TangentLimit.summable_of_dyadic_block_bound_pos {f g : ℕ → ℝ} (hf : ∀ (n : ℕ), 0 < n → 0 ≤ f n)
+  (hg0 : ∀ (j : ℕ), 0 ≤ g j) (hg : Summable g) (hblock : ∀ (j : ℕ), ∑ n ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)), f n ≤ g j) :
+  Summable f
+TangentLimit.dyadic_rpow_eq_geometric (β : ℝ) (j : ℕ) : ↑(2 ^ j) ^ β = (2 ^ β) ^ j
+TangentLimit.summable_of_dyadic_rpow_bound {f : ℕ → ℝ} {C β : ℝ} (hf : ∀ (n : ℕ), 0 ≤ f n) (hC : 0 ≤ C) (hβ : β < 0)
+  (hblock : ∀ (j : ℕ), ∑ n ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)), f n ≤ C * ↑(2 ^ j) ^ β * (↑j + 1)) : Summable f
+TangentLimit.summable_of_dyadic_rpow_harmonic_bound {f : ℕ → ℝ} {C β : ℝ} (hf : ∀ (n : ℕ), 0 ≤ f n) (hC : 0 ≤ C)
+  (hβ : β < 0)
+  (hblock :
+    ∀ (j : ℕ),
+      ∑ n ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)), f n ≤ C * ↑(2 ^ j) ^ β * ∑ k ∈ Finset.range (2 ^ j), 1 / ↑(k + 1)) :
+  Summable f
+TangentLimit.abs_sin_le_abs_tan {x : ℝ} (hx : Real.cos x ≠ 0) : |Real.sin x| ≤ |Real.tan x|
+TangentLimit.sin_one_pos : 0 < Real.sin 1
+TangentLimit.sin_one_le_abs_tan_add {x : ℝ} (hx : Real.cos x ≠ 0) (hx1 : Real.cos (x + 1) ≠ 0) :
+  Real.sin 1 ≤ |Real.tan x| + |Real.tan (x + 1)|
+TangentLimit.sin_one_le_abs_tan_nat_add (n : ℕ) : Real.sin 1 ≤ |Real.tan ↑n| + |Real.tan ↑(n + 1)|
+TangentLimit.not_summable_abs_tan_div_positive : ¬Summable fun n => |Real.tan ↑(n + 1)| / ↑(n + 1)
+TangentLimit.not_summable_abs_tan_div_rpow_positive (s : ℝ) (hs : s ≤ 1) :
+  ¬Summable fun n => |Real.tan ↑(n + 1)| / ↑(n + 1) ^ s
+TangentLimit.abs_tan_rpow_block_bound (h : TangentLimit.PiDiophantine) (α : ℝ) (hα : 2 < α) :
+  ∃ C,
+    0 < C ∧
+      ∀ (s : ℝ),
+        0 ≤ s →
+          ∀ (N : ℕ),
+            1 ≤ N →
+              ∑ n ∈ Finset.Ico N (2 * N), |Real.tan ↑n| / ↑n ^ s ≤
+                C * ↑N ^ (α - 1 - s) * ∑ k ∈ Finset.range N, 1 / ↑(k + 1)
+TangentLimit.summable_abs_tan_div_rpow (h : TangentLimit.PiDiophantine) (s : ℝ) (hs : 1 < s) :
+  Summable fun n => |Real.tan ↑n| / ↑n ^ s
+TangentLimit.summable_abs_tan_div_rpow_positive (h : TangentLimit.PiDiophantine) (s : ℝ) (hs : 1 < s) :
+  Summable fun n => |Real.tan ↑(n + 1)| / ↑(n + 1) ^ s
+TangentLimit.summable_abs_tan_div_rpow_positive_iff (h : TangentLimit.PiDiophantine) (s : ℝ) :
+  (Summable fun n => |Real.tan ↑(n + 1)| / ↑(n + 1) ^ s) ↔ 1 < s
+'TangentLimit.sum_abs_tan_div_rpow_le_reciprocal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.weighted_block_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.irrational_integer_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.pi_integer_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.pi_finite_denominator_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.piDiophantine_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.blockDelta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.blockDelta_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.blockDelta_le_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.poleIndex_lt_of_lt_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.poleDenom_le_three_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.blockDelta_le_abs_poleOffset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.blockDelta_le_abs_poleOffset_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.ordered_separated_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.sum_reciprocal_le_harmonic_of_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.sum_reciprocal_le_harmonic_of_positive_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.harmonic_sum_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.sum_reciprocal_abs_le_harmonic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.sum_range_two_pow_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.nat_le_two_pow' depends on axioms: [propext, Quot.sound]
+'TangentLimit.summable_of_dyadic_block_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_nat_add_one_mul_geometric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_of_dyadic_geometric_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.sum_reciprocal_doubling_block_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.harmonic_sum_two_pow_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_of_dyadic_block_bound_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.dyadic_rpow_eq_geometric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_of_dyadic_rpow_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_of_dyadic_rpow_harmonic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.abs_sin_le_abs_tan' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.sin_one_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.sin_one_le_abs_tan_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.sin_one_le_abs_tan_nat_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.not_summable_abs_tan_div_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.not_summable_abs_tan_div_rpow_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.abs_tan_rpow_block_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_abs_tan_div_rpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_abs_tan_div_rpow_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_abs_tan_div_rpow_positive_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,596 @@
+{
+  "schema": "portable-math-dependency-graph-v1",
+  "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "native_mrs_imported": false,
+  "lean_status": "not_run",
+  "nodes": [
+    {
+      "id": "ACOA-001",
+      "title": "Finite nets supply a positive directional cover",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-002",
+      "title": "Exponential barrier encloses an explicit inner tube",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-003",
+      "title": "Positive direction cover yields full coercivity",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-004",
+      "title": "Positive Hessian and strict convexity",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-005",
+      "title": "Closed sublevel and boundary identification",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-006",
+      "title": "Analytic radial sphere parametrization",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-007",
+      "title": "Unit-vector identity improves the Hausdorff denominator",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-008",
+      "title": "Tangential decomposition improves the numerator",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-009",
+      "title": "Source planar analytic convex outer approximation",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-010",
+      "title": "Compactly nested neighborhoods with prescribed accuracy",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-011",
+      "title": "Explicit source-style compact nesting schedule",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-012",
+      "title": "Exact interval barrier including singletons",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-013",
+      "title": "Exact singleton radius for coordinate directions",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-014",
+      "title": "Quadratic angular error for balls",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-015",
+      "title": "Flat sets force linear angular error for finite directions",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-016",
+      "title": "Convergence of maxima from outer Hausdorff convergence",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-017",
+      "title": "Separate exact criteria for coercivity and Hessian positivity",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-018",
+      "title": "Singleton denominator is asymptotically attained",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "ACOA-019",
+      "title": "Finite-dimensional analytic strictly convex approximation",
+      "kind": "ordinary_proof_result"
+    },
+    {
+      "id": "STD-COMPACTNESS",
+      "title": "Finite-dimensional compactness, compact unit sphere, finite subcovers, and closed bounded compactness",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-INNER-PRODUCT",
+      "title": "Euclidean inner-product identities, Cauchy-Schwarz, and orthogonal decomposition",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-VOLUME-PACKING",
+      "title": "Finite disjoint-ball volume comparison; optional for the cardinality estimate",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-EXTREMA",
+      "title": "Continuous functions attain maxima/minima on nonempty compact sets",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-EXP",
+      "title": "Elementary exponential/logarithm identities, continuity, order, and finite sums",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-DIFFERENTIATION",
+      "title": "Differentiation of finite exponential sums and affine compositions",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-STRICT-CONVEXITY",
+      "title": "Positive second derivative on every nonconstant line implies strict convexity",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-CONVEXITY",
+      "title": "Convex function and convex set inequalities",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-CONTINUITY",
+      "title": "Closure and frontier properties of continuous sublevel sets",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-GRADIENT-SUPPORT",
+      "title": "Supporting-gradient inequality for differentiable convex functions",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-IVT",
+      "title": "Intermediate value theorem on an interval",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-ANALYTIC-IFT",
+      "title": "Real-analytic implicit function theorem with nonzero derivative in solved variable",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-SPHERE-MANIFOLD",
+      "title": "Standard analytic sphere structure and radial projection; S^0 handled separately",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-PROJECTION-NORMAL",
+      "title": "Nearest-point normal inequality, proved from squared-distance expansion in study.md",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-COMPACT-SEPARATION",
+      "title": "Positive distance between a compact subset and a closed disjoint complement",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-CHOICE",
+      "title": "Countable recursive choices of finite nets and parameters",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-DISTANCE",
+      "title": "Distance functions, triangle inequality, and Hausdorff-distance interpretation",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-COSH",
+      "title": "Elementary hyperbolic cosine and inverse hyperbolic cosine identities",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-JENSEN",
+      "title": "Jensen inequality for a convex real function",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-TRIGONOMETRY",
+      "title": "Unit-circle parametrization, chord length, and tangent identities",
+      "kind": "standard_mathematical_prerequisite"
+    },
+    {
+      "id": "STD-UNIFORM-CONTINUITY",
+      "title": "Continuous functions on compact metric sets are uniformly continuous",
+      "kind": "standard_mathematical_prerequisite"
+    }
+  ],
+  "edges": [
+    {
+      "from": "STD-COMPACTNESS",
+      "to": "ACOA-001",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-INNER-PRODUCT",
+      "to": "ACOA-001",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-VOLUME-PACKING",
+      "to": "ACOA-001",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-001",
+      "to": "ACOA-002",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-EXTREMA",
+      "to": "ACOA-002",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-EXP",
+      "to": "ACOA-002",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-001",
+      "to": "ACOA-003",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-EXTREMA",
+      "to": "ACOA-003",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-EXP",
+      "to": "ACOA-003",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-COMPACTNESS",
+      "to": "ACOA-003",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-001",
+      "to": "ACOA-004",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-DIFFERENTIATION",
+      "to": "ACOA-004",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-STRICT-CONVEXITY",
+      "to": "ACOA-004",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-002",
+      "to": "ACOA-005",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-003",
+      "to": "ACOA-005",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-004",
+      "to": "ACOA-005",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-CONVEXITY",
+      "to": "ACOA-005",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-CONTINUITY",
+      "to": "ACOA-005",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-003",
+      "to": "ACOA-006",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-004",
+      "to": "ACOA-006",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-005",
+      "to": "ACOA-006",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-GRADIENT-SUPPORT",
+      "to": "ACOA-006",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-IVT",
+      "to": "ACOA-006",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-ANALYTIC-IFT",
+      "to": "ACOA-006",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-SPHERE-MANIFOLD",
+      "to": "ACOA-006",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-001",
+      "to": "ACOA-007",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-002",
+      "to": "ACOA-007",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-003",
+      "to": "ACOA-007",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-005",
+      "to": "ACOA-007",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-EXTREMA",
+      "to": "ACOA-007",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-PROJECTION-NORMAL",
+      "to": "ACOA-007",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-INNER-PRODUCT",
+      "to": "ACOA-007",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-007",
+      "to": "ACOA-008",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-INNER-PRODUCT",
+      "to": "ACOA-008",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-PROJECTION-NORMAL",
+      "to": "ACOA-008",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-001",
+      "to": "ACOA-009",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-005",
+      "to": "ACOA-009",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-006",
+      "to": "ACOA-009",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-007",
+      "to": "ACOA-009",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-008",
+      "to": "ACOA-009",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-002",
+      "to": "ACOA-010",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-006",
+      "to": "ACOA-010",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-008",
+      "to": "ACOA-010",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-COMPACT-SEPARATION",
+      "to": "ACOA-010",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-CHOICE",
+      "to": "ACOA-010",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-DISTANCE",
+      "to": "ACOA-010",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-002",
+      "to": "ACOA-011",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-007",
+      "to": "ACOA-011",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-010",
+      "to": "ACOA-011",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-EXP",
+      "to": "ACOA-012",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-COSH",
+      "to": "ACOA-012",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-002",
+      "to": "ACOA-013",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-003",
+      "to": "ACOA-013",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-005",
+      "to": "ACOA-013",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-COSH",
+      "to": "ACOA-013",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-JENSEN",
+      "to": "ACOA-013",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-001",
+      "to": "ACOA-014",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-005",
+      "to": "ACOA-014",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-INNER-PRODUCT",
+      "to": "ACOA-014",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-002",
+      "to": "ACOA-015",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-005",
+      "to": "ACOA-015",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-TRIGONOMETRY",
+      "to": "ACOA-015",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-EXTREMA",
+      "to": "ACOA-016",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-UNIFORM-CONTINUITY",
+      "to": "ACOA-016",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-COMPACTNESS",
+      "to": "ACOA-017",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-DIFFERENTIATION",
+      "to": "ACOA-017",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-INNER-PRODUCT",
+      "to": "ACOA-017",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-017",
+      "to": "ACOA-018",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-IVT",
+      "to": "ACOA-018",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-CONVEXITY",
+      "to": "ACOA-018",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "STD-INNER-PRODUCT",
+      "to": "ACOA-018",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-001",
+      "to": "ACOA-019",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-005",
+      "to": "ACOA-019",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-006",
+      "to": "ACOA-019",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-008",
+      "to": "ACOA-019",
+      "meaning": "mathematical_dependency"
+    },
+    {
+      "from": "ACOA-010",
+      "to": "ACOA-019",
+      "meaning": "mathematical_dependency"
+    }
+  ],
+  "excluded_dependencies": [
+    "No headline theorem of the source paper",
+    "No executed Lean declaration",
+    "No external conjectural statement"
+  ],
+  "acyclic_checked": true
+}

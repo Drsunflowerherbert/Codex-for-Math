@@ -1,0 +1,5 @@
+⚠ [960/960] Built Egyptian.Cleanup (1.8s)
+warning: Egyptian/Cleanup.lean:97:5: unused variable `hx0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (960 jobs).

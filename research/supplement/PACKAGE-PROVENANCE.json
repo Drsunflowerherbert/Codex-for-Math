@@ -1,0 +1,627 @@
+{
+  "schema": "reviewed-research-supplement-provenance-v1",
+  "prepared_utc_date": "2026-10-11",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "scope": "Seven local mathematical studies and their final review evidence; separate supplement, not a replacement of an earlier starter bundle.",
+  "original_studies_modified": false,
+  "lean_verification_performed": false,
+  "native_mrs_import_performed": false,
+  "finite_field_review_manifest_sha256": "ba21816100a93941c55a525939e73c8db24ddf0faf22e8bf9f9a2eb019239b72",
+  "original_artifacts_copied": [
+    {
+      "file": "mixed-moments/README.md",
+      "bytes": 3591,
+      "sha256": "853ad2b8a96dc6eff4386d18939a0e04f1d7fda19e0b255c0b21b5a53acd7da6",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "mixed-moments/audit.md",
+      "bytes": 7245,
+      "sha256": "7ee9db0ee08e134324ae8915e1a2bff93c10a7a20ce5fa0030f3e70e3353cf1c",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "mixed-moments/build_theorem_index.py",
+      "bytes": 10702,
+      "sha256": "ccdb3fb13d278a31d41e53c6d45bf4b5ebb863fff2b56f3ec4b3ff61125856a4",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "mixed-moments/certificates.json",
+      "bytes": 20905,
+      "sha256": "3ad750bc00cff156fe773e467db4521d8e46dce00bbd9faa432fca493e1c8621",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "mixed-moments/certificates.py",
+      "bytes": 9931,
+      "sha256": "22d6d65aede13c1f348089d0faafc8e7a4d7de80a10d0f4a7a64f27bd2d0f4d8",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "mixed-moments/counterexamples.md",
+      "bytes": 7469,
+      "sha256": "d9f362ff9f0a17f6850f22d617b959a364475e7312f70896da5119a5e91d0e3a",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "mixed-moments/lean-roadmap.md",
+      "bytes": 10650,
+      "sha256": "eba120af8fb71f51e6e028686f315f7f164ed547ab65afa163b01f1bbd300a43",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "mixed-moments/study.md",
+      "bytes": 24947,
+      "sha256": "e8778fe759b0b50930c3a6fb4c58259aafe8d9276c0ceb00e95b3408d4603a00",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "mixed-moments/theorems.json",
+      "bytes": 18237,
+      "sha256": "cec34a1946f671e62d4cc9258032f19ab693e9204acb63dd9fc83872d49a70a0",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "mixed-moments/verification.json",
+      "bytes": 2244,
+      "sha256": "5e61ef1a1cc13a4250364224c00d4098034b36dd9773011456b563e5c5156660",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "convex-approximation/README.md",
+      "bytes": 2144,
+      "sha256": "2f17271716656104a97a5b9439d8f6be66547b84529db1275a094c29c57c814e",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "convex-approximation/artifact-manifest.json",
+      "bytes": 1581,
+      "sha256": "bbd5c74ff255141f9831683a602707189867d337715017aff2b1cb4bc681e8f3",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "convex-approximation/audit.md",
+      "bytes": 18276,
+      "sha256": "98dd144f16b48e9e63351541c16c6d135c1b1448401155d799311e853894bc67",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "convex-approximation/check_examples.py",
+      "bytes": 10454,
+      "sha256": "2187655a9c0eb84fc774d87b322f8cd41f3be3896465fd78dd947ea9a58e4580",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "convex-approximation/dependency-graph.json",
+      "bytes": 15249,
+      "sha256": "0f0999e2d371ccda7e56120648eb07d7c1aa2a8787c2fe669937403459534412",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "convex-approximation/examples.json",
+      "bytes": 8164,
+      "sha256": "63ea2e001906c43e7fe10f18be1a1c514e296972360ae93a3be758bbf36811e2",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "convex-approximation/lean-roadmap.md",
+      "bytes": 8875,
+      "sha256": "de40dc14cbb9bbc42e5646ba196b1ed434d1495b7e47d51e3bbd6154b482b24e",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "convex-approximation/source-provenance.json",
+      "bytes": 1343,
+      "sha256": "97ca2aeaa6a54fc7580a80377debf7441b8be29a06c78d6f0742739afe62d82a",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "convex-approximation/study.md",
+      "bytes": 25215,
+      "sha256": "ba841acc62437708c36a28a5f8bad1cbf8d5104d0cc9af76c7fb1d27e6aa11e9",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "convex-approximation/theorem-records.json",
+      "bytes": 23594,
+      "sha256": "20d3d932d9179379ed6b689c330c2477c03177536f7d3cc3a588bd0971fb1cd5",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "convex-approximation/verification.json",
+      "bytes": 1743,
+      "sha256": "03bd563d098e0122ca1fbf362e5e4218b5843ed004b797864f8f38ddefee0db1",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "positive-blocks/MANIFEST-SHA256.json",
+      "bytes": 1446,
+      "sha256": "c468e85e245c640ebefb9bc439d41328d1b897d5a8a8aed86de38034be06f1a8",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "positive-blocks/README.txt",
+      "bytes": 1800,
+      "sha256": "6f5e85e558038ad136b97f18b005fadcee8368bbc0eb6b64101b5e07785ef81a",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "positive-blocks/check_exact_examples.py",
+      "bytes": 12515,
+      "sha256": "056023a525bd5c855961ac8870afa9b6d868d7f9acada6a97efadb28caebbfde",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "positive-blocks/checks.json",
+      "bytes": 1073,
+      "sha256": "d7aedbac738fe5bfdc864dd5ce3b2b4662243dfc4e44b20d32614939723a7aa4",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "positive-blocks/exact-examples.json",
+      "bytes": 527684,
+      "sha256": "5e7f79ee684eb8f8d55a3f641e63fdad9abc5c3a37142679db023a6c8031bc51",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "positive-blocks/independent-review.json",
+      "bytes": 5425,
+      "sha256": "979f438d66dd042e8790e1ee1d92ab80e0b381f134fad6522fb697bb58b50abf",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "positive-blocks/independent-review.md",
+      "bytes": 4051,
+      "sha256": "84b4104c01bfb601b5b5a56c5f758cd1594a1e6eebfeea5595cf5851673ea2f7",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "positive-blocks/provenance.json",
+      "bytes": 1944,
+      "sha256": "5cbad41417223c1b106556ef68a09ef3f3d314ed762377b2dc86355dd95f0f85",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "positive-blocks/record-validation.json",
+      "bytes": 290,
+      "sha256": "1921f0b27a9432fc31329fbc2dfcc0eb14a9abbee5254259acb9dfd252400a0b",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "positive-blocks/study.md",
+      "bytes": 17071,
+      "sha256": "fec0fdca335159320f13c572e34f77fa0dad3578ec76de4da6e4ae437a9c60af",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "positive-blocks/theorem-records.json",
+      "bytes": 16256,
+      "sha256": "8276d9642256c65907271f84d3b2082f970909fc3b624cb1639c860e2649c203",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "positive-blocks/verification-status.json",
+      "bytes": 2176,
+      "sha256": "504a791bc92c66a0d6a2b34f2f6fd9fefc765b85bf3e54eebcbfa649b5ea80cd",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "finite-field-mixing/MANIFEST-SHA256.json",
+      "bytes": 1337,
+      "sha256": "5b75182edc09740237d37b675ea8520c9ee8c39e77f72485d8092b1845e0d767",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "finite-field-mixing/README.md",
+      "bytes": 2679,
+      "sha256": "ee469f5226ea1702dfb5f6924f8ab8d5b8a02aaf819871d6132dc1b8ca823233",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "finite-field-mixing/audit.md",
+      "bytes": 5320,
+      "sha256": "22f3fb52d37377a9175c6e2a441285c768d1068cdc530d25aacad472b287f7f0",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "finite-field-mixing/certificates.json",
+      "bytes": 29969,
+      "sha256": "9afa32fd4b24b5d6b758570d8b2c246d819c677c49af8056e6cdee7b9192cde3",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "finite-field-mixing/counterexamples.md",
+      "bytes": 4296,
+      "sha256": "357071da480651efde511568ec373f3c8d6d62a393ad885349d06c1e3cfe8732",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "finite-field-mixing/exact-tests.md",
+      "bytes": 2944,
+      "sha256": "5fb10cc3b69a86551092865b1f49a6b69005b7b152cbae062377da916179a11a",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "finite-field-mixing/study.md",
+      "bytes": 21375,
+      "sha256": "1f68dadd17833ce93ac8a436531714b16e2146783e249948f7f23b60deab6c38",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "finite-field-mixing/theorems.json",
+      "bytes": 15617,
+      "sha256": "ded12728ba80562779f97879712bcfcc7353bb97948dbf12b20b31cf52e60b97",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "finite-field-mixing/verify.py",
+      "bytes": 16379,
+      "sha256": "3ec2b937128f4dfca13b65cbffd331036222278cb52c26fcd4a3f8582c1693b3",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "transport-stability/check_exact_cases.py",
+      "bytes": 7201,
+      "sha256": "0732cd6622461fa5dede09e87407ebe60a14290bd512854d4d41c366f2b4b3f5",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "transport-stability/exact-cases.json",
+      "bytes": 5318,
+      "sha256": "988ad6e11f50bf92a518750a75233bdbb9df3e6ee08da01896d94a66d4592008",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "transport-stability/proof.md",
+      "bytes": 19773,
+      "sha256": "7d8445fc42103de171a2366da8f15a4cce3ddec37f5ea99d3b19738efea212cd",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "transport-stability/theorems.json",
+      "bytes": 14855,
+      "sha256": "6c530bb64c4b0ab92c024425b4b38f198fcb5f2082c331d0e761465724691f70",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/affine/audit_records.py",
+      "bytes": 15217,
+      "sha256": "ce22eb29b20d9786924ed09d05e9e2badfcfe83ec6564039255f9953b5f37602",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/affine/independent-review.txt",
+      "bytes": 13741,
+      "sha256": "806cbde227f411a864d00e3c325deefe79d7a64ef18b164f33e3ab00bbcdfbb7",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/affine/independent-verification.json",
+      "bytes": 3769,
+      "sha256": "0882b41ba0e48e2c9f94be7f700595ab552027ed40f5b39788ebf74fda0d2532",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/affine/mrs-provisional-records.reviewed.json",
+      "bytes": 17495,
+      "sha256": "65b87048bc7783f22552554f88b884d3ddf9d72f18b14e75661aa702c90bd222",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/affine/research-notes.reviewed.txt",
+      "bytes": 14383,
+      "sha256": "b34ce726296afafb253f3661aeb7870cfa38c36eaf28bb696a37c147aba47a4e",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/egyptian/corrected/README.md",
+      "bytes": 2128,
+      "sha256": "afaf2c60c8399135c218952ac27151849a549b27b9433dfe6023fae9f10f405a",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/egyptian/corrected/coarse-padding-bound-records.json",
+      "bytes": 2656,
+      "sha256": "a84eceb57bdee210fbaa84e2f4720bd0aa3e668cbd50352736da8c4ba1aff93f",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/egyptian/corrected/coarse-padding-bounds.md",
+      "bytes": 4002,
+      "sha256": "6b79168528a796f84c0a02532aff47fb788019248ba3af8445a83182acb0fb6f",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/egyptian/corrected/study.md",
+      "bytes": 10457,
+      "sha256": "7d072e265767abe8a791b2f277ebedc40bcbf4a30691b381e1f0bf2e31fe266d",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/egyptian/corrected/supplement-manifest.json",
+      "bytes": 2212,
+      "sha256": "8127f86d8258aad0ecd0cfd87019723d0933b753e467923ceaaf5bcbc6b932be",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/egyptian/corrected/theorem-records.json",
+      "bytes": 10054,
+      "sha256": "bd5c31d1c6f19f7b8efea8263fa242c6893685f6bf28c04b01af486d33ae132d",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/egyptian/corrected/validate_supplement.py",
+      "bytes": 7763,
+      "sha256": "70beeda9b32d565a3e86cc3636b01e2ab6c1c9900e63c108121883d893272eda",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/egyptian/corrected/validation-results.json",
+      "bytes": 858,
+      "sha256": "c10faa7ee5ba834b8a69b626c455d1238174c5bde510cf939bf82f6fa16e0459",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/finite-field-mixing/REVIEW_MANIFEST.json",
+      "bytes": 2759,
+      "sha256": "ba21816100a93941c55a525939e73c8db24ddf0faf22e8bf9f9a2eb019239b72",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/finite-field-mixing/artifact-validation.json",
+      "bytes": 673,
+      "sha256": "797b62b6cf44155e725807ce95286c1b072bd051258d8176be4eb469422330aa",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/finite-field-mixing/independent-results.json",
+      "bytes": 4966,
+      "sha256": "114983b1df250aaae25a43516c63593fbc9fb2d32ce910b5a8eaed2a4daa6979",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/finite-field-mixing/independent-review.md",
+      "bytes": 11633,
+      "sha256": "c378481bf12ca47d59309c4ec64f751bc3094f20313ee9f1e02026d3e5cf6239",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/finite-field-mixing/independent_check.py",
+      "bytes": 13028,
+      "sha256": "1c86b8b55603e9791bb68a2f3c996ace6a8cc8058ed6a344d093dc513d198803",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/finite-field-mixing/review-record.json",
+      "bytes": 3463,
+      "sha256": "ab6b8f6361b17155ebccbca28d808aa27b5915bc026c6d08f7f987c926edd232",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "affine-avoidance/02-periodic.tex",
+      "bytes": 2567,
+      "sha256": "495a0aad88677e2e61904cf5fe029b709033d0830f7c98d386661632abc8bdb8",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "affine-avoidance/research-notes.txt",
+      "bytes": 12068,
+      "sha256": "2120829c854d12889b1c95b349e3b0d3fe91d7e10ec74529b35c7d4036d2c76a",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "affine-avoidance/mrs-provisional-records.json",
+      "bytes": 14958,
+      "sha256": "d538c7f06f885b9b9d4559d18ebea4122bc01a5b9f3b63d154623a7df64a23eb",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "affine-avoidance/verification.json",
+      "bytes": 2279,
+      "sha256": "0fb3db92107b00e62aae7db194966272fc50d9963c821b268a8c728eecc4d175",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "egyptian-fractions/author-checks.json",
+      "bytes": 521,
+      "sha256": "b2e69eb66fa6d62b6d06d2a597b54065d1dae7d02f7adc102cb3687444c8ccbd",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "egyptian-fractions/check_examples.py",
+      "bytes": 3297,
+      "sha256": "1b1b59dfddac89f120f070caf78709bbcd4f3ad71e285413a8ae186c02e13533",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "egyptian-fractions/exact-examples.json",
+      "bytes": 5289353,
+      "sha256": "2ac87af51b1fcebe6c8829f3b61ee1b3bf3aa7dc27de9477bb22e5ba908a0b13",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "egyptian-fractions/study.md",
+      "bytes": 8127,
+      "sha256": "a1385026a8b775436e48e4ef97ff976434cdefc780a57cf4bf7463431c9c9289",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "egyptian-fractions/theorem-records.json",
+      "bytes": 4486,
+      "sha256": "eeafd72072ee4ea4051c60d86aa1a38725bd704e1c94205cfae60a739e0ac717",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/egyptian/review.md",
+      "bytes": 13325,
+      "sha256": "209ec1b542793c34f25b740e5ba240bf887991cf3bda2618a63e16537355ea55",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/egyptian/review-records.json",
+      "bytes": 5749,
+      "sha256": "e3f266c06bcf5cdf9108b85b7cbbb2b45ffb8ceb32d45b6b7c00d81ed2c2caed",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/egyptian/independent_audit.py",
+      "bytes": 9579,
+      "sha256": "510605e7faa413eff3d6f92a75dce4724b2b1a076ab3d762e3e6f7de5c6b0e74",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/egyptian/independent-audit-results.json",
+      "bytes": 1376,
+      "sha256": "091cb56c31d7f92fe48d49116b7607cf9dd5158f0896e87ae34f2c3ec537a21f",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/egyptian/proposed-revisions.md",
+      "bytes": 3217,
+      "sha256": "1098d524a41184055e94bfa9a0962864108afc72e1e8d34c78ef12be59a63203",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/egyptian/original-sha256-before.txt",
+      "bytes": 707,
+      "sha256": "7884cedab3802a7808b3612a90c36ecd2ada24080129c80e2308ee6872ef6563",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/egyptian/original-sha256-after.txt",
+      "bytes": 707,
+      "sha256": "7884cedab3802a7808b3612a90c36ecd2ada24080129c80e2308ee6872ef6563",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/transport/audit-report.md",
+      "bytes": 14801,
+      "sha256": "ba51f131b4e71959bf20916bb1b29ad28811a830100006c10a8d8cf6e522fdd5",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/transport/optional-refinements.md",
+      "bytes": 5797,
+      "sha256": "bc17006479c848ab9f3017dd72195dd488c4d0c253cb84c19815e69b28d895b7",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/transport/review-record.json",
+      "bytes": 9578,
+      "sha256": "62d67f2476fbd79ac6cf25e40de763b5fa6537c46ba4694220d049bacabee21c",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/transport/REVIEW_MANIFEST.sha256",
+      "bytes": 522,
+      "sha256": "70af592bc995a3a7b2902ab935330d0468123e1e9b6f115c0ba4c723989cf55a",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/transport/rerun/check_exact_cases.py",
+      "bytes": 7201,
+      "sha256": "0732cd6622461fa5dede09e87407ebe60a14290bd512854d4d41c366f2b4b3f5",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/transport/rerun/exact-cases.json",
+      "bytes": 5318,
+      "sha256": "988ad6e11f50bf92a518750a75233bdbb9df3e6ee08da01896d94a66d4592008",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/transport/rerun/stdout.txt",
+      "bytes": 290,
+      "sha256": "6de20c58dcde90e24d4ab861376b01a84c30cd3824e6d54b597ea67a5ec43b94",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/positive-blocks/parent-independent-review.md",
+      "bytes": 8344,
+      "sha256": "e6cd1d893a2e2ab1cd5d198505fd6a6963d9d7c5c7ed739fcd4252a36f10ee36",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/positive-blocks/parent-independent-review.json",
+      "bytes": 2705,
+      "sha256": "8c6248a86e43245f8f2a18e9616c66989efedb8779b3a57c8d4f44ec087bcb4f",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/positive-blocks/parent-check-examples.py",
+      "bytes": 5524,
+      "sha256": "14b49462b0a45d7e797b211e26f92641452d60ef50da2c476758eb10a6e3de1f",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "reviews/positive-blocks/parent-final-example-checks.json",
+      "bytes": 732,
+      "sha256": "8683e373b12ef727d0494c0b7371e1bb4125b700d0c2495148868e33adc7cbd2",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "catalog/sources/preprints_Catalans-constant-is-irrational-September-24-2026_build_sections_foundations.tex",
+      "bytes": 17036,
+      "sha256": "3929650dfb36859d8f88281795d348043f903c41a70b0bf3598c21586a633852",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "catalog/sources/preprints_A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026_build_main.tex",
+      "bytes": 35175,
+      "sha256": "164f56cc3f5ecbfb65ddba0d0438cacf44f325919ef7dfb742d073c948fddabd",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "catalog/sources/preprints_Short-Egyptian-fractions-September-25-2026_build_elementary.tex",
+      "bytes": 6597,
+      "sha256": "cccd9edb40de4030b13368a088d6db2e8ddbcd57ecee9734f661a13eb7d073eb",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "catalog/sources/preprints_Short-Egyptian-fractions-September-25-2026_build_prescribed.tex",
+      "bytes": 22783,
+      "sha256": "771d9da7e0181aad85eb620d4bacbb1726827db86249655850f0b63b20307432",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "catalog/sources/preprints_Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026_build_source_sections_sharpness.tex",
+      "bytes": 7663,
+      "sha256": "f8732d68d0de8505d20f6c42aefce95d60b3e8363569681fa30632c997999590",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "catalog/sources/preprints_The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026_build_sections_02-periodic.tex",
+      "bytes": 2568,
+      "sha256": "5a8af7b315d107cf8fab996755424bec27306511f78607deb978cf974f3b4e3d",
+      "copied_byte_identically": true
+    },
+    {
+      "file": "catalog/sources/lean_docs_084.md",
+      "bytes": 912,
+      "sha256": "ffc7364a46a777d95d1965b82565ac0712978fe42489561c7657f766f7e7c554",
+      "copied_byte_identically": true
+    }
+  ],
+  "generated_packaging_files": [
+    "README.md",
+    "PACKAGE-PROVENANCE.json",
+    "STUDY-INDEX.json",
+    "reproduce_checks.py",
+    "verify_package.py",
+    "PACKAGING-VALIDATION.json",
+    "MANIFEST-SHA256.json"
+  ],
+  "excluded_categories": [
+    "session coordination",
+    "launch prompts",
+    "private notes and screenshots",
+    "caches",
+    "initial and duplicate review snapshots",
+    "duplicate 5.3 MB Egyptian rerun certificate",
+    "unrelated studies and broad raw-source collection"
+  ],
+  "historical_inputs_note": "Original affine and Egyptian inputs are preserved solely to reproduce correction and review checks. Use the corrected review copies for mathematical reuse.",
+  "source_subset_note": "Seven small source/scope snapshots retain recorded provenance and support the checking programs. They are not executable repository programs.",
+  "record_scope": "Supplied historical snapshot receipt; publication sanitation is separately mapped in publication/SOURCE-MAP.json."
+}

@@ -1,0 +1,1600 @@
+{
+  "status": "All exact arithmetic assertions passed; finite evidence, not a formal proof.",
+  "original_code": true,
+  "arithmetic": "integers and fractions.Fraction only",
+  "run_mode": "full",
+  "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_sha256": "771d9da7e0181aad85eb620d4bacbb1726827db86249655850f0b63b20307432",
+  "source_matches_catalog_manifest": true,
+  "program_sha256": "3ec2b937128f4dfca13b65cbffd331036222278cb52c26fcd4a3f8582c1693b3",
+  "diagonal_exhaustive": [
+    {
+      "p": 2,
+      "nonempty_H_checked": 3,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "guaranteed_sets_by_k": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "covering_sets_failing_sufficient_criterion_by_k": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimum_h_with_h4_ge_p3": 2,
+      "dense_four_sets_checked": 1,
+      "dense_four_minimum_probability": "15/32",
+      "four_product_minima_by_size": {
+        "1": {
+          "minimum_count": 0,
+          "witness_H": [
+            0
+          ],
+          "first_minimum_residue": 1
+        },
+        "2": {
+          "minimum_count": 120,
+          "witness_H": [
+            0,
+            1
+          ],
+          "first_minimum_residue": 1
+        }
+      }
+    },
+    {
+      "p": 3,
+      "nonempty_H_checked": 7,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "guaranteed_sets_by_k": [
+        0,
+        1,
+        1,
+        1,
+        4,
+        4
+      ],
+      "covering_sets_failing_sufficient_criterion_by_k": [
+        1,
+        3,
+        3,
+        3,
+        0,
+        0
+      ],
+      "minimum_h_with_h4_ge_p3": 3,
+      "dense_four_sets_checked": 1,
+      "dense_four_minimum_probability": "80/243",
+      "four_product_minima_by_size": {
+        "1": {
+          "minimum_count": 0,
+          "witness_H": [
+            0
+          ],
+          "first_minimum_residue": 1
+        },
+        "2": {
+          "minimum_count": 54,
+          "witness_H": [
+            0,
+            1
+          ],
+          "first_minimum_residue": 2
+        },
+        "3": {
+          "minimum_count": 2160,
+          "witness_H": [
+            0,
+            1,
+            2
+          ],
+          "first_minimum_residue": 1
+        }
+      }
+    },
+    {
+      "p": 5,
+      "nonempty_H_checked": 31,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "guaranteed_sets_by_k": [
+        0,
+        1,
+        6,
+        6,
+        16,
+        16
+      ],
+      "covering_sets_failing_sufficient_criterion_by_k": [
+        5,
+        19,
+        14,
+        20,
+        10,
+        10
+      ],
+      "minimum_h_with_h4_ge_p3": 4,
+      "dense_four_sets_checked": 6,
+      "dense_four_minimum_probability": "12849/65536",
+      "four_product_minima_by_size": {
+        "1": {
+          "minimum_count": 0,
+          "witness_H": [
+            0
+          ],
+          "first_minimum_residue": 1
+        },
+        "2": {
+          "minimum_count": 1,
+          "witness_H": [
+            0,
+            1
+          ],
+          "first_minimum_residue": 4
+        },
+        "3": {
+          "minimum_count": 824,
+          "witness_H": [
+            0,
+            2,
+            3
+          ],
+          "first_minimum_residue": 2
+        },
+        "4": {
+          "minimum_count": 12849,
+          "witness_H": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "first_minimum_residue": 4
+        },
+        "5": {
+          "minimum_count": 78000,
+          "witness_H": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "first_minimum_residue": 1
+        }
+      }
+    },
+    {
+      "p": 7,
+      "nonempty_H_checked": 127,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "guaranteed_sets_by_k": [
+        0,
+        1,
+        29,
+        29,
+        64,
+        64
+      ],
+      "covering_sets_failing_sufficient_criterion_by_k": [
+        22,
+        93,
+        82,
+        82,
+        47,
+        56
+      ],
+      "minimum_h_with_h4_ge_p3": 5,
+      "dense_four_sets_checked": 29,
+      "dense_four_minimum_probability": "53952/390625",
+      "four_product_minima_by_size": {
+        "1": {
+          "minimum_count": 0,
+          "witness_H": [
+            0
+          ],
+          "first_minimum_residue": 1
+        },
+        "2": {
+          "minimum_count": 0,
+          "witness_H": [
+            0,
+            1
+          ],
+          "first_minimum_residue": 5
+        },
+        "3": {
+          "minimum_count": 176,
+          "witness_H": [
+            0,
+            3,
+            4
+          ],
+          "first_minimum_residue": 1
+        },
+        "4": {
+          "minimum_count": 7909,
+          "witness_H": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "first_minimum_residue": 0
+        },
+        "5": {
+          "minimum_count": 53952,
+          "witness_H": [
+            0,
+            2,
+            3,
+            4,
+            5
+          ],
+          "first_minimum_residue": 3
+        },
+        "6": {
+          "minimum_count": 239360,
+          "witness_H": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "first_minimum_residue": 5
+        },
+        "7": {
+          "minimum_count": 823200,
+          "witness_H": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "first_minimum_residue": 1
+        }
+      }
+    },
+    {
+      "p": 11,
+      "nonempty_H_checked": 2047,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "guaranteed_sets_by_k": [
+        0,
+        1,
+        232,
+        1024,
+        1024,
+        1486
+      ],
+      "covering_sets_failing_sufficient_criterion_by_k": [
+        486,
+        1853,
+        1744,
+        982,
+        997,
+        535
+      ],
+      "minimum_h_with_h4_ge_p3": 7,
+      "dense_four_sets_checked": 562,
+      "dense_four_minimum_probability": "511960/5764801",
+      "four_product_minima_by_size": {
+        "1": {
+          "minimum_count": 0,
+          "witness_H": [
+            0
+          ],
+          "first_minimum_residue": 1
+        },
+        "2": {
+          "minimum_count": 0,
+          "witness_H": [
+            0,
+            1
+          ],
+          "first_minimum_residue": 5
+        },
+        "3": {
+          "minimum_count": 0,
+          "witness_H": [
+            0,
+            5,
+            6
+          ],
+          "first_minimum_residue": 4
+        },
+        "4": {
+          "minimum_count": 3112,
+          "witness_H": [
+            0,
+            1,
+            5,
+            6
+          ],
+          "first_minimum_residue": 7
+        },
+        "5": {
+          "minimum_count": 28520,
+          "witness_H": [
+            0,
+            4,
+            5,
+            6,
+            7
+          ],
+          "first_minimum_residue": 1
+        },
+        "6": {
+          "minimum_count": 134641,
+          "witness_H": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            9
+          ],
+          "first_minimum_residue": 0
+        },
+        "7": {
+          "minimum_count": 511960,
+          "witness_H": [
+            0,
+            2,
+            4,
+            5,
+            6,
+            7,
+            9
+          ],
+          "first_minimum_residue": 4
+        },
+        "8": {
+          "minimum_count": 1516296,
+          "witness_H": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "first_minimum_residue": 6
+        },
+        "9": {
+          "minimum_count": 3908736,
+          "witness_H": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "first_minimum_residue": 5
+        },
+        "10": {
+          "minimum_count": 9089024,
+          "witness_H": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "first_minimum_residue": 5
+        },
+        "11": {
+          "minimum_count": 19485840,
+          "witness_H": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "first_minimum_residue": 1
+        }
+      }
+    },
+    {
+      "p": 13,
+      "nonempty_H_checked": 8191,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "guaranteed_sets_by_k": [
+        0,
+        1,
+        1093,
+        4096,
+        5812,
+        5812
+      ],
+      "covering_sets_failing_sufficient_criterion_by_k": [
+        2174,
+        7890,
+        6958,
+        3994,
+        2330,
+        2348
+      ],
+      "minimum_h_with_h4_ge_p3": 7,
+      "dense_four_sets_checked": 4096,
+      "dense_four_minimum_probability": "410184/5764801",
+      "four_product_minima_by_size": {
+        "1": {
+          "minimum_count": 0,
+          "witness_H": [
+            0
+          ],
+          "first_minimum_residue": 1
+        },
+        "2": {
+          "minimum_count": 0,
+          "witness_H": [
+            0,
+            1
+          ],
+          "first_minimum_residue": 5
+        },
+        "3": {
+          "minimum_count": 0,
+          "witness_H": [
+            2,
+            5,
+            6
+          ],
+          "first_minimum_residue": 0
+        },
+        "4": {
+          "minimum_count": 1400,
+          "witness_H": [
+            0,
+            1,
+            6,
+            7
+          ],
+          "first_minimum_residue": 5
+        },
+        "5": {
+          "minimum_count": 20808,
+          "witness_H": [
+            0,
+            4,
+            5,
+            8,
+            9
+          ],
+          "first_minimum_residue": 2
+        },
+        "6": {
+          "minimum_count": 112336,
+          "witness_H": [
+            0,
+            2,
+            4,
+            6,
+            7,
+            9
+          ],
+          "first_minimum_residue": 9
+        },
+        "7": {
+          "minimum_count": 410184,
+          "witness_H": [
+            0,
+            2,
+            5,
+            6,
+            7,
+            8,
+            11
+          ],
+          "first_minimum_residue": 2
+        },
+        "8": {
+          "minimum_count": 1264368,
+          "witness_H": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "first_minimum_residue": 12
+        },
+        "9": {
+          "minimum_count": 3288632,
+          "witness_H": [
+            0,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "first_minimum_residue": 5
+        },
+        "10": {
+          "minimum_count": 7676600,
+          "witness_H": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "first_minimum_residue": 7
+        },
+        "11": {
+          "minimum_count": 16482720,
+          "witness_H": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "first_minimum_residue": 5
+        },
+        "12": {
+          "minimum_count": 33072560,
+          "witness_H": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "first_minimum_residue": 5
+        },
+        "13": {
+          "minimum_count": 62746320,
+          "witness_H": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "first_minimum_residue": 1
+        }
+      }
+    },
+    {
+      "p": 17,
+      "nonempty_H_checked": 131071,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "guaranteed_sets_by_k": [
+        0,
+        1,
+        21778,
+        65536,
+        89846,
+        109294
+      ],
+      "covering_sets_failing_sufficient_criterion_by_k": [
+        41549,
+        129685,
+        108968,
+        65358,
+        41064,
+        21712
+      ],
+      "minimum_h_with_h4_ge_p3": 9,
+      "dense_four_sets_checked": 65536,
+      "dense_four_minimum_probability": "2418176/43046721",
+      "four_product_minima_by_size": {
+        "1": {
+          "minimum_count": 0,
+          "witness_H": [
+            0
+          ],
+          "first_minimum_residue": 1
+        },
+        "2": {
+          "minimum_count": 0,
+          "witness_H": [
+            0,
+            1
+          ],
+          "first_minimum_residue": 5
+        },
+        "3": {
+          "minimum_count": 0,
+          "witness_H": [
+            0,
+            1,
+            2
+          ],
+          "first_minimum_residue": 15
+        },
+        "4": {
+          "minimum_count": 296,
+          "witness_H": [
+            0,
+            1,
+            8,
+            9
+          ],
+          "first_minimum_residue": 11
+        },
+        "5": {
+          "minimum_count": 8512,
+          "witness_H": [
+            0,
+            5,
+            7,
+            10,
+            12
+          ],
+          "first_minimum_residue": 5
+        },
+        "6": {
+          "minimum_count": 71896,
+          "witness_H": [
+            0,
+            1,
+            6,
+            7,
+            10,
+            11
+          ],
+          "first_minimum_residue": 14
+        },
+        "7": {
+          "minimum_count": 289728,
+          "witness_H": [
+            0,
+            4,
+            6,
+            7,
+            10,
+            11,
+            13
+          ],
+          "first_minimum_residue": 5
+        },
+        "8": {
+          "minimum_count": 922528,
+          "witness_H": [
+            0,
+            1,
+            5,
+            6,
+            8,
+            9,
+            11,
+            12
+          ],
+          "first_minimum_residue": 16
+        },
+        "9": {
+          "minimum_count": 2418176,
+          "witness_H": [
+            0,
+            3,
+            5,
+            6,
+            7,
+            10,
+            11,
+            12,
+            14
+          ],
+          "first_minimum_residue": 3
+        },
+        "10": {
+          "minimum_count": 5793648,
+          "witness_H": [
+            0,
+            3,
+            4,
+            5,
+            6,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "first_minimum_residue": 8
+        },
+        "11": {
+          "minimum_count": 12520176,
+          "witness_H": [
+            0,
+            2,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            15
+          ],
+          "first_minimum_residue": 6
+        },
+        "12": {
+          "minimum_count": 25221640,
+          "witness_H": [
+            0,
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            15
+          ],
+          "first_minimum_residue": 7
+        },
+        "13": {
+          "minimum_count": 47928288,
+          "witness_H": [
+            0,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "first_minimum_residue": 7
+        },
+        "14": {
+          "minimum_count": 86784776,
+          "witness_H": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ],
+          "first_minimum_residue": 10
+        },
+        "15": {
+          "minimum_count": 150745616,
+          "witness_H": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "first_minimum_residue": 1
+        },
+        "16": {
+          "minimum_count": 252638960,
+          "witness_H": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "first_minimum_residue": 5
+        },
+        "17": {
+          "minimum_count": 410333760,
+          "witness_H": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "first_minimum_residue": 1
+        }
+      }
+    }
+  ],
+  "rectangular_exhaustive": [
+    {
+      "p": 2,
+      "ordered_nonempty_set_pairs_checked": 9,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "guaranteed_pairs_by_k": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "p": 3,
+      "ordered_nonempty_set_pairs_checked": 49,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "guaranteed_pairs_by_k": [
+        0,
+        1,
+        7,
+        7,
+        16,
+        16
+      ]
+    },
+    {
+      "p": 5,
+      "ordered_nonempty_set_pairs_checked": 961,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "guaranteed_pairs_by_k": [
+        0,
+        1,
+        56,
+        156,
+        276,
+        376
+      ]
+    },
+    {
+      "p": 7,
+      "ordered_nonempty_set_pairs_checked": 16129,
+      "k_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "guaranteed_pairs_by_k": [
+        0,
+        1,
+        1401,
+        3431,
+        6126,
+        6168
+      ]
+    }
+  ],
+  "bilinear_sum_of_squares": [
+    {
+      "p": 2,
+      "identities_checked": 9,
+      "ring": "Z[z]/(1+z+...+z^(p-1))"
+    },
+    {
+      "p": 3,
+      "identities_checked": 98,
+      "ring": "Z[z]/(1+z+...+z^(p-1))"
+    },
+    {
+      "p": 5,
+      "identities_checked": 3844,
+      "ring": "Z[z]/(1+z+...+z^(p-1))"
+    }
+  ],
+  "heterogeneous_exhaustive": [
+    {
+      "p": 3,
+      "number_of_pairs": 2,
+      "sequences_checked": 2401,
+      "guaranteed_sequences": 13
+    },
+    {
+      "p": 3,
+      "number_of_pairs": 3,
+      "sequences_checked": 117649,
+      "guaranteed_sequences": 2197
+    }
+  ],
+  "nonzero_coefficients_and_shifts": [
+    {
+      "p": 2,
+      "pairs": [
+        [
+          [
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "k": 3,
+      "all_nonzero_coefficient_vectors_and_shifts_checked": 2,
+      "total_tuples_per_case": 8
+    },
+    {
+      "p": 3,
+      "pairs": [
+        [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ]
+      ],
+      "k": 3,
+      "all_nonzero_coefficient_vectors_and_shifts_checked": 24,
+      "total_tuples_per_case": 216
+    },
+    {
+      "p": 5,
+      "pairs": [
+        [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            2,
+            3,
+            4
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            3,
+            4
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ]
+      ],
+      "k": 3,
+      "all_nonzero_coefficient_vectors_and_shifts_checked": 320,
+      "total_tuples_per_case": 8000
+    }
+  ],
+  "independent_direct_enumeration": [
+    {
+      "p": 2,
+      "A": [
+        0,
+        1
+      ],
+      "B": [
+        0,
+        1
+      ],
+      "k": 4,
+      "counts": [
+        136,
+        120
+      ],
+      "tuples": 256
+    },
+    {
+      "p": 3,
+      "A": [
+        0,
+        1
+      ],
+      "B": [
+        1,
+        2
+      ],
+      "k": 3,
+      "counts": [
+        22,
+        21,
+        21
+      ],
+      "tuples": 64
+    },
+    {
+      "p": 5,
+      "A": [
+        0,
+        1,
+        2
+      ],
+      "B": [
+        1,
+        3
+      ],
+      "k": 3,
+      "counts": [
+        38,
+        43,
+        45,
+        47,
+        43
+      ],
+      "tuples": 216
+    },
+    {
+      "p": 7,
+      "A": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "B": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "k": 3,
+      "counts": [
+        2172,
+        2236,
+        2284,
+        2236,
+        2224,
+        2236,
+        2237
+      ],
+      "tuples": 15625
+    }
+  ],
+  "examples_and_counterexamples": {
+    "composite_modulus": {
+      "modulus": 16,
+      "H": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "k": 4,
+      "counts": [
+        4489216,
+        0,
+        0,
+        0,
+        3932160,
+        0,
+        0,
+        0,
+        4423680,
+        0,
+        0,
+        0,
+        3932160,
+        0,
+        0,
+        0
+      ],
+      "nonzero_frequency_with_character_identically_one": 4
+    },
+    "dependent_within_pairs": {
+      "p": 5,
+      "pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "k": 4,
+      "support_of_sum": [
+        4
+      ]
+    },
+    "dependent_between_pairs": {
+      "p": 2,
+      "construction": "U_i=AB for all four i",
+      "support_of_sum": [
+        0
+      ]
+    },
+    "strict_boundary_failure": {
+      "p": 2,
+      "A": [
+        0
+      ],
+      "B": [
+        0,
+        1
+      ],
+      "k": 4,
+      "counts": [
+        16,
+        0
+      ]
+    },
+    "criterion_not_necessary": {
+      "p": 5,
+      "H": [
+        0,
+        1
+      ],
+      "k": 4,
+      "counts": [
+        81,
+        108,
+        54,
+        12,
+        1
+      ]
+    },
+    "small_set_can_fail": {
+      "p": 7,
+      "H": [
+        0,
+        1
+      ],
+      "k": 4,
+      "counts": [
+        81,
+        108,
+        54,
+        12,
+        1,
+        0,
+        0
+      ]
+    },
+    "nonuniform_full_support": {
+      "p": 5,
+      "marginal_weights": [
+        "9/10",
+        "1/40",
+        "1/40",
+        "1/40",
+        "1/40"
+      ],
+      "product_weights": [
+        "99/100",
+        "1/400",
+        "1/400",
+        "1/400",
+        "1/400"
+      ],
+      "nontrivial_character_expectation": "79/80"
+    },
+    "positive_divisor_lift": {
+      "P": 30,
+      "p": 7,
+      "positive_divisors": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        10,
+        15,
+        30
+      ],
+      "H": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "factor_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "numerators": [
+        1,
+        1,
+        2,
+        10
+      ],
+      "multiplier": 2,
+      "sum_of_rational_summands": "7"
+    }
+  },
+  "exact_threshold_table": [
+    {
+      "p": 2,
+      "minimum_h_at_density_three_quarters": 2,
+      "minimum_h_for_1_product_criterion": 2,
+      "minimum_h_for_2_product_criterion": 2,
+      "minimum_h_for_3_product_criterion": 2,
+      "minimum_h_for_4_product_criterion": 2,
+      "minimum_h_for_5_product_criterion": 2,
+      "minimum_h_for_6_product_criterion": 2
+    },
+    {
+      "p": 3,
+      "minimum_h_at_density_three_quarters": 3,
+      "minimum_h_for_1_product_criterion": null,
+      "minimum_h_for_2_product_criterion": 3,
+      "minimum_h_for_3_product_criterion": 3,
+      "minimum_h_for_4_product_criterion": 3,
+      "minimum_h_for_5_product_criterion": 2,
+      "minimum_h_for_6_product_criterion": 2
+    },
+    {
+      "p": 5,
+      "minimum_h_at_density_three_quarters": 4,
+      "minimum_h_for_1_product_criterion": null,
+      "minimum_h_for_2_product_criterion": 5,
+      "minimum_h_for_3_product_criterion": 4,
+      "minimum_h_for_4_product_criterion": 4,
+      "minimum_h_for_5_product_criterion": 3,
+      "minimum_h_for_6_product_criterion": 3
+    },
+    {
+      "p": 7,
+      "minimum_h_at_density_three_quarters": 5,
+      "minimum_h_for_1_product_criterion": null,
+      "minimum_h_for_2_product_criterion": 7,
+      "minimum_h_for_3_product_criterion": 5,
+      "minimum_h_for_4_product_criterion": 5,
+      "minimum_h_for_5_product_criterion": 4,
+      "minimum_h_for_6_product_criterion": 4
+    },
+    {
+      "p": 11,
+      "minimum_h_at_density_three_quarters": 7,
+      "minimum_h_for_1_product_criterion": null,
+      "minimum_h_for_2_product_criterion": 11,
+      "minimum_h_for_3_product_criterion": 8,
+      "minimum_h_for_4_product_criterion": 6,
+      "minimum_h_for_5_product_criterion": 6,
+      "minimum_h_for_6_product_criterion": 5
+    },
+    {
+      "p": 13,
+      "minimum_h_at_density_three_quarters": 7,
+      "minimum_h_for_1_product_criterion": null,
+      "minimum_h_for_2_product_criterion": 13,
+      "minimum_h_for_3_product_criterion": 9,
+      "minimum_h_for_4_product_criterion": 7,
+      "minimum_h_for_5_product_criterion": 6,
+      "minimum_h_for_6_product_criterion": 6
+    },
+    {
+      "p": 17,
+      "minimum_h_at_density_three_quarters": 9,
+      "minimum_h_for_1_product_criterion": null,
+      "minimum_h_for_2_product_criterion": 17,
+      "minimum_h_for_3_product_criterion": 11,
+      "minimum_h_for_4_product_criterion": 9,
+      "minimum_h_for_5_product_criterion": 8,
+      "minimum_h_for_6_product_criterion": 7
+    },
+    {
+      "p": 19,
+      "minimum_h_at_density_three_quarters": 10,
+      "minimum_h_for_1_product_criterion": null,
+      "minimum_h_for_2_product_criterion": 19,
+      "minimum_h_for_3_product_criterion": 12,
+      "minimum_h_for_4_product_criterion": 9,
+      "minimum_h_for_5_product_criterion": 8,
+      "minimum_h_for_6_product_criterion": 8
+    },
+    {
+      "p": 23,
+      "minimum_h_at_density_three_quarters": 11,
+      "minimum_h_for_1_product_criterion": null,
+      "minimum_h_for_2_product_criterion": 23,
+      "minimum_h_for_3_product_criterion": 14,
+      "minimum_h_for_4_product_criterion": 11,
+      "minimum_h_for_5_product_criterion": 9,
+      "minimum_h_for_6_product_criterion": 9
+    },
+    {
+      "p": 29,
+      "minimum_h_at_density_three_quarters": 13,
+      "minimum_h_for_1_product_criterion": null,
+      "minimum_h_for_2_product_criterion": 29,
+      "minimum_h_for_3_product_criterion": 17,
+      "minimum_h_for_4_product_criterion": 13,
+      "minimum_h_for_5_product_criterion": 11,
+      "minimum_h_for_6_product_criterion": 10
+    },
+    {
+      "p": 31,
+      "minimum_h_at_density_three_quarters": 14,
+      "minimum_h_for_1_product_criterion": null,
+      "minimum_h_for_2_product_criterion": 31,
+      "minimum_h_for_3_product_criterion": 18,
+      "minimum_h_for_4_product_criterion": 14,
+      "minimum_h_for_5_product_criterion": 11,
+      "minimum_h_for_6_product_criterion": 10
+    },
+    {
+      "p": 101,
+      "minimum_h_at_density_three_quarters": 32,
+      "minimum_h_for_1_product_criterion": null,
+      "minimum_h_for_2_product_criterion": 101,
+      "minimum_h_for_3_product_criterion": 47,
+      "minimum_h_for_4_product_criterion": 32,
+      "minimum_h_for_5_product_criterion": 26,
+      "minimum_h_for_6_product_criterion": 22
+    },
+    {
+      "p": 1009,
+      "minimum_h_at_density_three_quarters": 180,
+      "minimum_h_for_1_product_criterion": null,
+      "minimum_h_for_2_product_criterion": 1009,
+      "minimum_h_for_3_product_criterion": 319,
+      "minimum_h_for_4_product_criterion": 179,
+      "minimum_h_for_5_product_criterion": 127,
+      "minimum_h_for_6_product_criterion": 101
+    }
+  ],
+  "scope": {
+    "ordinary_proof": "study.md",
+    "lean_compilation": false,
+    "native_MRS_import": false,
+    "global_Egyptian_fraction_constant_audited": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "json_parsed": true,
+  "background_nodes": 5,
+  "theorem_nodes": 10,
+  "counterexamples": 4,
+  "dependency_ids_unique": true,
+  "dependency_references_resolve": true,
+  "dependency_graph_acyclic": true,
+  "source_snapshot_sha256_matches_catalog": true,
+  "formal_verification": false
+}

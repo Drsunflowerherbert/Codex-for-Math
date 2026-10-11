@@ -1,0 +1,11 @@
+import TangentLimit.UniformDiophantine
+
+#check TangentLimit.irrational_integer_distance
+#check TangentLimit.pi_integer_distance
+#check TangentLimit.pi_finite_denominator_bound
+#check TangentLimit.piDiophantine_uniform
+
+#print axioms TangentLimit.irrational_integer_distance
+#print axioms TangentLimit.pi_integer_distance
+#print axioms TangentLimit.pi_finite_denominator_bound
+#print axioms TangentLimit.piDiophantine_uniform

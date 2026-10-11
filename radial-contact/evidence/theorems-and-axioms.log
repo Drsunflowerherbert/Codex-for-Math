@@ -1,0 +1,250 @@
+RadialContact.UnitSphere.{u_1} : (E : Type u_1) → [NormedAddCommGroup.{u_1} E] → Type u_1
+'RadialContact.UnitSphere' depends on axioms: [propext, Classical.choice, Quot.sound]
+RadialContact.InteriorCenter.{u_1} : (E : Type u_1) → [NormedAddCommGroup.{u_1} E] → Type u_1
+'RadialContact.InteriorCenter' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.parameter_comparison.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] {c v w : E} {r s : Real},
+  LE.le.{0} 0 r →
+    LE.le.{0} r s →
+      Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} r v))) 1 →
+        Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} s w))) 1 →
+          LE.le.{0} (HMul.hMul.{0, 0, 0} (HSub.hSub.{0, 0, 0} s r) (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} c)))
+            (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} r s) (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} v w)))
+'RadialContact.parameter_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.parameter_abs_comparison.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] {c v w : E} {r s : Real},
+  LE.le.{0} 0 r →
+    LE.le.{0} 0 s →
+      Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} r v))) 1 →
+        Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} s w))) 1 →
+          LE.le.{0} (HMul.hMul.{0, 0, 0} (abs.{0} (HSub.hSub.{0, 0, 0} r s)) (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} c)))
+            (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} r s) (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} v w)))
+'RadialContact.parameter_abs_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.positive_contact_unique.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] {c v : E},
+  LT.lt.{0} (norm.{u_1} c) 1 →
+    ∀ {r s : Real},
+      LT.lt.{0} 0 r →
+        LT.lt.{0} 0 s →
+          Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} r v))) 1 →
+            Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} s v))) 1 → Eq.{1} r s
+'RadialContact.positive_contact_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.positive_contact_bounds.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] {c v : E},
+  Eq.{1} (norm.{u_1} v) 1 →
+    ∀ {r : Real},
+      LE.le.{0} 0 r →
+        Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} r v))) 1 →
+          And (LE.le.{0} (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} c)) r) (LE.le.{0} r (HAdd.hAdd.{0, 0, 0} 1 (norm.{u_1} c)))
+'RadialContact.positive_contact_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.exists_positive_contact.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] {c v : E},
+  LT.lt.{0} (norm.{u_1} c) 1 →
+    Eq.{1} (norm.{u_1} v) 1 →
+      ∃ r, And (LT.lt.{0} 0 r) (Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} r v))) 1)
+'RadialContact.exists_positive_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.existsUnique_positive_contact.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] {c v : E},
+  LT.lt.{0} (norm.{u_1} c) 1 →
+    Eq.{1} (norm.{u_1} v) 1 →
+      ExistsUnique.{1} fun r =>
+        And (LT.lt.{0} 0 r) (Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} r v))) 1)
+'RadialContact.existsUnique_positive_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.reciprocal_radius_dist_le.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)
+  (v w : RadialContact.UnitSphere.{u_1} E),
+  LE.le.{0}
+    (abs.{0}
+      (HSub.hSub.{0, 0, 0} (Inv.inv.{0} (RadialContact.radius.{u_1} c v))
+        (Inv.inv.{0} (RadialContact.radius.{u_1} c w))))
+    (HDiv.hDiv.{0, 0, 0} (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑v ↑w)) (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} ↑c)))
+'RadialContact.reciprocal_radius_dist_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.norm_smul_direction.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)
+  (x : RadialContact.UnitSphere.{u_1} E),
+  Eq.{u_1 + 1}
+    (HSMul.hSMul.{0, u_1, u_1} (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑x ↑c)) ↑(RadialContact.direction.{u_1} c x))
+    (HSub.hSub.{u_1, u_1, u_1} ↑x ↑c)
+'RadialContact.norm_smul_direction' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.direction_dist_le.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)
+  (x y : RadialContact.UnitSphere.{u_1} E),
+  LE.le.{0}
+    (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑(RadialContact.direction.{u_1} c x) ↑(RadialContact.direction.{u_1} c y)))
+    (HMul.hMul.{0, 0, 0} (HDiv.hDiv.{0, 0, 0} 2 (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} ↑c)))
+      (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑x ↑y)))
+'RadialContact.direction_dist_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.directionConstant.{u_1} : {E : Type u_1} →
+  [inst : NormedAddCommGroup.{u_1} E] → RadialContact.InteriorCenter.{u_1} E → NNReal
+'RadialContact.directionConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.direction_lipschitz.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E),
+  LipschitzWith.{u_1, u_1} (RadialContact.directionConstant.{u_1} c) (RadialContact.direction.{u_1} c)
+'RadialContact.direction_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.radius_zero_lipschitz.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E],
+  LipschitzWith.{u_1, 0} 0 (RadialContact.radius.{u_1} RadialContact.zeroCenter.{u_1})
+'RadialContact.radius_zero_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.contact_zero_isometry.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E],
+  Isometry.{u_1, u_1} (RadialContact.contact.{u_1} RadialContact.zeroCenter.{u_1})
+'RadialContact.contact_zero_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.direction_zero_isometry.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E],
+  Isometry.{u_1, u_1} (RadialContact.direction.{u_1} RadialContact.zeroCenter.{u_1})
+'RadialContact.direction_zero_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.norm_sub_center_lower.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  (c : RadialContact.InteriorCenter.{u_1} E) (x : RadialContact.UnitSphere.{u_1} E),
+  LE.le.{0} (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} ↑c)) (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑x ↑c))
+'RadialContact.norm_sub_center_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.norm_sub_center_pos.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  (c : RadialContact.InteriorCenter.{u_1} E) (x : RadialContact.UnitSphere.{u_1} E),
+  LT.lt.{0} 0 (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑x ↑c))
+'RadialContact.norm_sub_center_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.direction.{u_1} : {E : Type u_1} →
+  [inst : NormedAddCommGroup.{u_1} E] →
+    [NormedSpace.{0, u_1} Real E] →
+      RadialContact.InteriorCenter.{u_1} E → RadialContact.UnitSphere.{u_1} E → RadialContact.UnitSphere.{u_1} E
+'RadialContact.direction' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.direction_val.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)
+  (x : RadialContact.UnitSphere.{u_1} E),
+  Eq.{u_1 + 1} (↑(RadialContact.direction.{u_1} c x))
+    (HSMul.hSMul.{0, u_1, u_1} (Inv.inv.{0} (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑x ↑c)))
+      (HSub.hSub.{u_1, u_1, u_1} ↑x ↑c))
+'RadialContact.direction_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.radius_direction.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)
+  (x : RadialContact.UnitSphere.{u_1} E),
+  Eq.{1} (RadialContact.radius.{u_1} c (RadialContact.direction.{u_1} c x))
+    (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑x ↑c))
+'RadialContact.radius_direction' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.contact_direction.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)
+  (x : RadialContact.UnitSphere.{u_1} E),
+  Eq.{u_1 + 1} (RadialContact.contact.{u_1} c (RadialContact.direction.{u_1} c x)) x
+'RadialContact.contact_direction' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.direction_contact.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)
+  (v : RadialContact.UnitSphere.{u_1} E),
+  Eq.{u_1 + 1} (RadialContact.direction.{u_1} c (RadialContact.contact.{u_1} c v)) v
+'RadialContact.direction_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.direction_continuous.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E),
+  Continuous.{u_1, u_1} (RadialContact.direction.{u_1} c)
+'RadialContact.direction_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.sphereHomeomorph.{u_1} : {E : Type u_1} →
+  [inst : NormedAddCommGroup.{u_1} E] →
+    [NormedSpace.{0, u_1} Real E] →
+      RadialContact.InteriorCenter.{u_1} E →
+        Homeomorph.{u_1, u_1} (RadialContact.UnitSphere.{u_1} E) (RadialContact.UnitSphere.{u_1} E)
+'RadialContact.sphereHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.unitSphere_isEmpty_of_subsingleton.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [Subsingleton.{u_1 + 1} E], IsEmpty.{u_1 + 1} (RadialContact.UnitSphere.{u_1} E)
+'RadialContact.unitSphere_isEmpty_of_subsingleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.zeroCenter.{u_1} : {E : Type u_1} →
+  [inst : NormedAddCommGroup.{u_1} E] → RadialContact.InteriorCenter.{u_1} E
+'RadialContact.zeroCenter' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.zeroCenter_val.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E],
+  Eq.{u_1 + 1} (↑RadialContact.zeroCenter.{u_1}) 0
+'RadialContact.zeroCenter_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.radius_zero.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (v : RadialContact.UnitSphere.{u_1} E),
+  Eq.{1} (RadialContact.radius.{u_1} RadialContact.zeroCenter.{u_1} v) 1
+'RadialContact.radius_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.contact_zero.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (v : RadialContact.UnitSphere.{u_1} E),
+  Eq.{u_1 + 1} (RadialContact.contact.{u_1} RadialContact.zeroCenter.{u_1} v) v
+'RadialContact.contact_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.direction_zero.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (x : RadialContact.UnitSphere.{u_1} E),
+  Eq.{u_1 + 1} (RadialContact.direction.{u_1} RadialContact.zeroCenter.{u_1} x) x
+'RadialContact.direction_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.radius.{u_1} : {E : Type u_1} →
+  [inst : NormedAddCommGroup.{u_1} E] →
+    [NormedSpace.{0, u_1} Real E] → RadialContact.InteriorCenter.{u_1} E → RadialContact.UnitSphere.{u_1} E → Real
+'RadialContact.radius' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.radius_pos.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)
+  (v : RadialContact.UnitSphere.{u_1} E), LT.lt.{0} 0 (RadialContact.radius.{u_1} c v)
+'RadialContact.radius_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.norm_contact.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)
+  (v : RadialContact.UnitSphere.{u_1} E),
+  Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} (↑c) (HSMul.hSMul.{0, u_1, u_1} (RadialContact.radius.{u_1} c v) ↑v))) 1
+'RadialContact.norm_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.radius_bounds.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)
+  (v : RadialContact.UnitSphere.{u_1} E),
+  And (LE.le.{0} (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} ↑c)) (RadialContact.radius.{u_1} c v))
+    (LE.le.{0} (RadialContact.radius.{u_1} c v) (HAdd.hAdd.{0, 0, 0} 1 (norm.{u_1} ↑c)))
+'RadialContact.radius_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.radius_eq_of_contact.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)
+  (v : RadialContact.UnitSphere.{u_1} E) {r : Real},
+  LT.lt.{0} 0 r →
+    Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} (↑c) (HSMul.hSMul.{0, u_1, u_1} r ↑v))) 1 →
+      Eq.{1} (RadialContact.radius.{u_1} c v) r
+'RadialContact.radius_eq_of_contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.contact.{u_1} : {E : Type u_1} →
+  [inst : NormedAddCommGroup.{u_1} E] →
+    [NormedSpace.{0, u_1} Real E] →
+      RadialContact.InteriorCenter.{u_1} E → RadialContact.UnitSphere.{u_1} E → RadialContact.UnitSphere.{u_1} E
+'RadialContact.contact' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.contact_val.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)
+  (v : RadialContact.UnitSphere.{u_1} E),
+  Eq.{u_1 + 1} (↑(RadialContact.contact.{u_1} c v))
+    (HAdd.hAdd.{u_1, u_1, u_1} (↑c) (HSMul.hSMul.{0, u_1, u_1} (RadialContact.radius.{u_1} c v) ↑v))
+'RadialContact.contact_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.radius_mul_gap_le.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)
+  (v w : RadialContact.UnitSphere.{u_1} E),
+  LE.le.{0}
+    (HMul.hMul.{0, 0, 0}
+      (abs.{0} (HSub.hSub.{0, 0, 0} (RadialContact.radius.{u_1} c v) (RadialContact.radius.{u_1} c w)))
+      (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} ↑c)))
+    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (RadialContact.radius.{u_1} c v) (RadialContact.radius.{u_1} c w))
+      (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑v ↑w)))
+'RadialContact.radius_mul_gap_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.radius_dist_le.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)
+  (v w : RadialContact.UnitSphere.{u_1} E),
+  LE.le.{0} (abs.{0} (HSub.hSub.{0, 0, 0} (RadialContact.radius.{u_1} c v) (RadialContact.radius.{u_1} c w)))
+    (HMul.hMul.{0, 0, 0}
+      (HDiv.hDiv.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 (norm.{u_1} ↑c)) 2)
+        (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} ↑c)))
+      (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑v ↑w)))
+'RadialContact.radius_dist_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.contact_dist_le.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)
+  (v w : RadialContact.UnitSphere.{u_1} E),
+  LE.le.{0}
+    (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑(RadialContact.contact.{u_1} c v) ↑(RadialContact.contact.{u_1} c w)))
+    (HMul.hMul.{0, 0, 0}
+      (HDiv.hDiv.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HAdd.hAdd.{0, 0, 0} 1 (norm.{u_1} ↑c)))
+        (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} ↑c)))
+      (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑v ↑w)))
+'RadialContact.contact_dist_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.radiusConstant.{u_1} : {E : Type u_1} →
+  [inst : NormedAddCommGroup.{u_1} E] → RadialContact.InteriorCenter.{u_1} E → NNReal
+'RadialContact.radiusConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.contactConstant.{u_1} : {E : Type u_1} →
+  [inst : NormedAddCommGroup.{u_1} E] → RadialContact.InteriorCenter.{u_1} E → NNReal
+'RadialContact.contactConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.radius_lipschitz.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E),
+  LipschitzWith.{u_1, 0} (RadialContact.radiusConstant.{u_1} c) (RadialContact.radius.{u_1} c)
+'RadialContact.radius_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.contact_lipschitz.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E),
+  LipschitzWith.{u_1, u_1} (RadialContact.contactConstant.{u_1} c) (RadialContact.contact.{u_1} c)
+'RadialContact.contact_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.radius_continuous.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E),
+  Continuous.{u_1, 0} (RadialContact.radius.{u_1} c)
+'RadialContact.radius_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RadialContact.contact_continuous.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]
+  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E),
+  Continuous.{u_1, u_1} (RadialContact.contact.{u_1} c)
+'RadialContact.contact_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]

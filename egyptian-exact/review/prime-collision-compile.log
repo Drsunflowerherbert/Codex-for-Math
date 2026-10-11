@@ -1,0 +1,3 @@
+Egyptian.Review.prime_collision_obstruction {d M : ℕ} {t : List ℕ} (hd : 3 ≤ d) (hp : ∀ r ∈ d :: M :: t, 0 < r)
+  (hv : reciprocalSum (d :: M :: t) = 1) (ht : ∀ r ∈ t, r < d) (hM : M = d + 1 ∨ M = d * (d + 1)) : ¬Nat.Prime d
+'Egyptian.Review.prime_collision_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]

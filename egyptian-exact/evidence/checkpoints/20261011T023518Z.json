@@ -1,0 +1,42 @@
+{
+  "checkpoint_utc": "20261011T023518Z",
+  "milestone": "core-complete",
+  "build_status": "passed",
+  "source_hashes": {
+    "Egyptian.lean": "71e5adcff3887f15ac81d21a0750e7352ea622c7f81c1ed7a1f4d29c96dcb03e",
+    "Evidence.lean": "a63c6b8a590d201e39bfc12e7ac5b2928d923ce2446d69e7e30d7333d08d3a71",
+    "lakefile.toml": "434ed58e5c3f38c0f9fc8fc8abb5049ffb0650c069e3a6583e0a9da282613878",
+    "lake-manifest.json": "0128358838a6adbd6c31b7022eddbf0918cb99498a625c7fa13f1c0f0186a6fd",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "README.md": "b9129c72b7507adfef4fe594f37ce15c15bfed913926ea260e04f44fd7e105f9",
+    "Egyptian/Counterexample.lean": "90fc75f35d1c2326d2e5378dc4d30618687fc56be445cb5f242dcdc7134f4fff",
+    "Egyptian/Cleanup.lean": "9d13c692cd2cfdae5028ba6f2cffadb4d8cc166c169e9e644d9c1a842cd1a60b",
+    "Egyptian/Examples.lean": "79ba41f27a1b454b676a5d45b76da31a662e539cbef2c1a35830be0c00fc3152",
+    "Egyptian/Basic.lean": "823fc96dfa1d7dfc6b491ca7891fa5e16c81080cb41437c121f2a8e2760c5d90",
+    "Egyptian/Finite.lean": "d380ad68791364d0d3cf39505e177b0db58778552e909339c1b332be248cca8b",
+    "Egyptian/Termination.lean": "8c1ce3435e549e2a8f1c33185df1a6195f905c5be779b96af2da670067227731",
+    "scripts/check_exact.py": "171bf8e5e71936a3839669b5b03802f35bc6e3278f60208d37049ba2ce237d1e",
+    "scripts/exact.py": "4fda33969c1ea756425793ffe6d7b1f7ccac1a406f2abdafc6f78979c5b6fe7b",
+    "docs/mathematics.md": "451573227b12ec4a07e2c6d41a91925a481b6418710059486fa9c0ac6f434ee1"
+  },
+  "compiled": [
+    "Basic",
+    "Finite",
+    "Cleanup",
+    "Counterexample",
+    "Termination",
+    "Examples",
+    "Egyptian"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "record_scope": "Historical intermediate checkpoint, not current completion status; nested archive omitted.",
+  "remaining_at_checkpoint": [
+    "optional marker-preserving padding and bound",
+    "final reviewer audit"
+  ],
+  "historical_source_limit": "Starter archive unavailable at original implementation time."
+}

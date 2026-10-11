@@ -1,0 +1,611 @@
+{
+  "domains": {
+    "InteriorCenter": "norm(c) < 1",
+    "UnitSphere": "norm(v) = 1"
+  },
+  "interpretation": "The complete compiled type is authoritative; class names are a searchable summary.",
+  "declarations": {
+    "RadialContact.UnitSphere": {
+      "source": "RadialContact/Basic.lean",
+      "statement": "RadialContact.UnitSphere.{u_1} : (E : Type u_1) → [NormedAddCommGroup.{u_1} E] → Type u_1",
+      "explicit_class_names": [
+        "NormedAddCommGroup"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.InteriorCenter": {
+      "source": "RadialContact/Basic.lean",
+      "statement": "RadialContact.InteriorCenter.{u_1} : (E : Type u_1) → [NormedAddCommGroup.{u_1} E] → Type u_1",
+      "explicit_class_names": [
+        "NormedAddCommGroup"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.parameter_comparison": {
+      "source": "RadialContact/Basic.lean",
+      "statement": "@RadialContact.parameter_comparison.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] {c v w : E} {r s : Real},\n  LE.le.{0} 0 r →\n    LE.le.{0} r s →\n      Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} r v))) 1 →\n        Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} s w))) 1 →\n          LE.le.{0} (HMul.hMul.{0, 0, 0} (HSub.hSub.{0, 0, 0} s r) (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} c)))\n            (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} r s) (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} v w)))",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.parameter_abs_comparison": {
+      "source": "RadialContact/Basic.lean",
+      "statement": "@RadialContact.parameter_abs_comparison.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] {c v w : E} {r s : Real},\n  LE.le.{0} 0 r →\n    LE.le.{0} 0 s →\n      Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} r v))) 1 →\n        Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} s w))) 1 →\n          LE.le.{0} (HMul.hMul.{0, 0, 0} (abs.{0} (HSub.hSub.{0, 0, 0} r s)) (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} c)))\n            (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} r s) (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} v w)))",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.positive_contact_unique": {
+      "source": "RadialContact/Basic.lean",
+      "statement": "@RadialContact.positive_contact_unique.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] {c v : E},\n  LT.lt.{0} (norm.{u_1} c) 1 →\n    ∀ {r s : Real},\n      LT.lt.{0} 0 r →\n        LT.lt.{0} 0 s →\n          Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} r v))) 1 →\n            Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} s v))) 1 → Eq.{1} r s",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.positive_contact_bounds": {
+      "source": "RadialContact/Basic.lean",
+      "statement": "@RadialContact.positive_contact_bounds.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] {c v : E},\n  Eq.{1} (norm.{u_1} v) 1 →\n    ∀ {r : Real},\n      LE.le.{0} 0 r →\n        Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} r v))) 1 →\n          And (LE.le.{0} (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} c)) r) (LE.le.{0} r (HAdd.hAdd.{0, 0, 0} 1 (norm.{u_1} c)))",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.exists_positive_contact": {
+      "source": "RadialContact/Basic.lean",
+      "statement": "@RadialContact.exists_positive_contact.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] {c v : E},\n  LT.lt.{0} (norm.{u_1} c) 1 →\n    Eq.{1} (norm.{u_1} v) 1 →\n      ∃ r, And (LT.lt.{0} 0 r) (Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} r v))) 1)",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.existsUnique_positive_contact": {
+      "source": "RadialContact/Basic.lean",
+      "statement": "@RadialContact.existsUnique_positive_contact.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] {c v : E},\n  LT.lt.{0} (norm.{u_1} c) 1 →\n    Eq.{1} (norm.{u_1} v) 1 →\n      ExistsUnique.{1} fun r =>\n        And (LT.lt.{0} 0 r) (Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} c (HSMul.hSMul.{0, u_1, u_1} r v))) 1)",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.reciprocal_radius_dist_le": {
+      "source": "RadialContact/Derived.lean",
+      "statement": "@RadialContact.reciprocal_radius_dist_le.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)\n  (v w : RadialContact.UnitSphere.{u_1} E),\n  LE.le.{0}\n    (abs.{0}\n      (HSub.hSub.{0, 0, 0} (Inv.inv.{0} (RadialContact.radius.{u_1} c v))\n        (Inv.inv.{0} (RadialContact.radius.{u_1} c w))))\n    (HDiv.hDiv.{0, 0, 0} (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑v ↑w)) (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} ↑c)))",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.norm_smul_direction": {
+      "source": "RadialContact/Derived.lean",
+      "statement": "@RadialContact.norm_smul_direction.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)\n  (x : RadialContact.UnitSphere.{u_1} E),\n  Eq.{u_1 + 1}\n    (HSMul.hSMul.{0, u_1, u_1} (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑x ↑c)) ↑(RadialContact.direction.{u_1} c x))\n    (HSub.hSub.{u_1, u_1, u_1} ↑x ↑c)",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.direction_dist_le": {
+      "source": "RadialContact/Derived.lean",
+      "statement": "@RadialContact.direction_dist_le.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)\n  (x y : RadialContact.UnitSphere.{u_1} E),\n  LE.le.{0}\n    (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑(RadialContact.direction.{u_1} c x) ↑(RadialContact.direction.{u_1} c y)))\n    (HMul.hMul.{0, 0, 0} (HDiv.hDiv.{0, 0, 0} 2 (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} ↑c)))\n      (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑x ↑y)))",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.directionConstant": {
+      "source": "RadialContact/Derived.lean",
+      "statement": "@RadialContact.directionConstant.{u_1} : {E : Type u_1} →\n  [inst : NormedAddCommGroup.{u_1} E] → RadialContact.InteriorCenter.{u_1} E → NNReal",
+      "explicit_class_names": [
+        "NormedAddCommGroup"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.direction_lipschitz": {
+      "source": "RadialContact/Derived.lean",
+      "statement": "@RadialContact.direction_lipschitz.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E),\n  LipschitzWith.{u_1, u_1} (RadialContact.directionConstant.{u_1} c) (RadialContact.direction.{u_1} c)",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.radius_zero_lipschitz": {
+      "source": "RadialContact/Derived.lean",
+      "statement": "@RadialContact.radius_zero_lipschitz.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E],\n  LipschitzWith.{u_1, 0} 0 (RadialContact.radius.{u_1} RadialContact.zeroCenter.{u_1})",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.contact_zero_isometry": {
+      "source": "RadialContact/Derived.lean",
+      "statement": "@RadialContact.contact_zero_isometry.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E],\n  Isometry.{u_1, u_1} (RadialContact.contact.{u_1} RadialContact.zeroCenter.{u_1})",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.direction_zero_isometry": {
+      "source": "RadialContact/Derived.lean",
+      "statement": "@RadialContact.direction_zero_isometry.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E],\n  Isometry.{u_1, u_1} (RadialContact.direction.{u_1} RadialContact.zeroCenter.{u_1})",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.norm_sub_center_lower": {
+      "source": "RadialContact/Inverse.lean",
+      "statement": "@RadialContact.norm_sub_center_lower.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  (c : RadialContact.InteriorCenter.{u_1} E) (x : RadialContact.UnitSphere.{u_1} E),\n  LE.le.{0} (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} ↑c)) (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑x ↑c))",
+      "explicit_class_names": [
+        "NormedAddCommGroup"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.norm_sub_center_pos": {
+      "source": "RadialContact/Inverse.lean",
+      "statement": "@RadialContact.norm_sub_center_pos.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  (c : RadialContact.InteriorCenter.{u_1} E) (x : RadialContact.UnitSphere.{u_1} E),\n  LT.lt.{0} 0 (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑x ↑c))",
+      "explicit_class_names": [
+        "NormedAddCommGroup"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.direction": {
+      "source": "RadialContact/Inverse.lean",
+      "statement": "@RadialContact.direction.{u_1} : {E : Type u_1} →\n  [inst : NormedAddCommGroup.{u_1} E] →\n    [NormedSpace.{0, u_1} Real E] →\n      RadialContact.InteriorCenter.{u_1} E → RadialContact.UnitSphere.{u_1} E → RadialContact.UnitSphere.{u_1} E",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.direction_val": {
+      "source": "RadialContact/Inverse.lean",
+      "statement": "@RadialContact.direction_val.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)\n  (x : RadialContact.UnitSphere.{u_1} E),\n  Eq.{u_1 + 1} (↑(RadialContact.direction.{u_1} c x))\n    (HSMul.hSMul.{0, u_1, u_1} (Inv.inv.{0} (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑x ↑c)))\n      (HSub.hSub.{u_1, u_1, u_1} ↑x ↑c))",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.radius_direction": {
+      "source": "RadialContact/Inverse.lean",
+      "statement": "@RadialContact.radius_direction.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)\n  (x : RadialContact.UnitSphere.{u_1} E),\n  Eq.{1} (RadialContact.radius.{u_1} c (RadialContact.direction.{u_1} c x))\n    (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑x ↑c))",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.contact_direction": {
+      "source": "RadialContact/Inverse.lean",
+      "statement": "@RadialContact.contact_direction.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)\n  (x : RadialContact.UnitSphere.{u_1} E),\n  Eq.{u_1 + 1} (RadialContact.contact.{u_1} c (RadialContact.direction.{u_1} c x)) x",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.direction_contact": {
+      "source": "RadialContact/Inverse.lean",
+      "statement": "@RadialContact.direction_contact.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)\n  (v : RadialContact.UnitSphere.{u_1} E),\n  Eq.{u_1 + 1} (RadialContact.direction.{u_1} c (RadialContact.contact.{u_1} c v)) v",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.direction_continuous": {
+      "source": "RadialContact/Inverse.lean",
+      "statement": "@RadialContact.direction_continuous.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E),\n  Continuous.{u_1, u_1} (RadialContact.direction.{u_1} c)",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.sphereHomeomorph": {
+      "source": "RadialContact/Inverse.lean",
+      "statement": "@RadialContact.sphereHomeomorph.{u_1} : {E : Type u_1} →\n  [inst : NormedAddCommGroup.{u_1} E] →\n    [NormedSpace.{0, u_1} Real E] →\n      RadialContact.InteriorCenter.{u_1} E →\n        Homeomorph.{u_1, u_1} (RadialContact.UnitSphere.{u_1} E) (RadialContact.UnitSphere.{u_1} E)",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.unitSphere_isEmpty_of_subsingleton": {
+      "source": "RadialContact/Inverse.lean",
+      "statement": "@RadialContact.unitSphere_isEmpty_of_subsingleton.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [Subsingleton.{u_1 + 1} E], IsEmpty.{u_1 + 1} (RadialContact.UnitSphere.{u_1} E)",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "Subsingleton"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.zeroCenter": {
+      "source": "RadialContact/Inverse.lean",
+      "statement": "@RadialContact.zeroCenter.{u_1} : {E : Type u_1} →\n  [inst : NormedAddCommGroup.{u_1} E] → RadialContact.InteriorCenter.{u_1} E",
+      "explicit_class_names": [
+        "NormedAddCommGroup"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.zeroCenter_val": {
+      "source": "RadialContact/Inverse.lean",
+      "statement": "@RadialContact.zeroCenter_val.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E],\n  Eq.{u_1 + 1} (↑RadialContact.zeroCenter.{u_1}) 0",
+      "explicit_class_names": [
+        "NormedAddCommGroup"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.radius_zero": {
+      "source": "RadialContact/Inverse.lean",
+      "statement": "@RadialContact.radius_zero.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (v : RadialContact.UnitSphere.{u_1} E),\n  Eq.{1} (RadialContact.radius.{u_1} RadialContact.zeroCenter.{u_1} v) 1",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.contact_zero": {
+      "source": "RadialContact/Inverse.lean",
+      "statement": "@RadialContact.contact_zero.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (v : RadialContact.UnitSphere.{u_1} E),\n  Eq.{u_1 + 1} (RadialContact.contact.{u_1} RadialContact.zeroCenter.{u_1} v) v",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.direction_zero": {
+      "source": "RadialContact/Inverse.lean",
+      "statement": "@RadialContact.direction_zero.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (x : RadialContact.UnitSphere.{u_1} E),\n  Eq.{u_1 + 1} (RadialContact.direction.{u_1} RadialContact.zeroCenter.{u_1} x) x",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.radius": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.radius.{u_1} : {E : Type u_1} →\n  [inst : NormedAddCommGroup.{u_1} E] →\n    [NormedSpace.{0, u_1} Real E] → RadialContact.InteriorCenter.{u_1} E → RadialContact.UnitSphere.{u_1} E → Real",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.radius_pos": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.radius_pos.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)\n  (v : RadialContact.UnitSphere.{u_1} E), LT.lt.{0} 0 (RadialContact.radius.{u_1} c v)",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.norm_contact": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.norm_contact.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)\n  (v : RadialContact.UnitSphere.{u_1} E),\n  Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} (↑c) (HSMul.hSMul.{0, u_1, u_1} (RadialContact.radius.{u_1} c v) ↑v))) 1",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.radius_bounds": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.radius_bounds.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)\n  (v : RadialContact.UnitSphere.{u_1} E),\n  And (LE.le.{0} (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} ↑c)) (RadialContact.radius.{u_1} c v))\n    (LE.le.{0} (RadialContact.radius.{u_1} c v) (HAdd.hAdd.{0, 0, 0} 1 (norm.{u_1} ↑c)))",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.radius_eq_of_contact": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.radius_eq_of_contact.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)\n  (v : RadialContact.UnitSphere.{u_1} E) {r : Real},\n  LT.lt.{0} 0 r →\n    Eq.{1} (norm.{u_1} (HAdd.hAdd.{u_1, u_1, u_1} (↑c) (HSMul.hSMul.{0, u_1, u_1} r ↑v))) 1 →\n      Eq.{1} (RadialContact.radius.{u_1} c v) r",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.contact": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.contact.{u_1} : {E : Type u_1} →\n  [inst : NormedAddCommGroup.{u_1} E] →\n    [NormedSpace.{0, u_1} Real E] →\n      RadialContact.InteriorCenter.{u_1} E → RadialContact.UnitSphere.{u_1} E → RadialContact.UnitSphere.{u_1} E",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.contact_val": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.contact_val.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)\n  (v : RadialContact.UnitSphere.{u_1} E),\n  Eq.{u_1 + 1} (↑(RadialContact.contact.{u_1} c v))\n    (HAdd.hAdd.{u_1, u_1, u_1} (↑c) (HSMul.hSMul.{0, u_1, u_1} (RadialContact.radius.{u_1} c v) ↑v))",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.radius_mul_gap_le": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.radius_mul_gap_le.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)\n  (v w : RadialContact.UnitSphere.{u_1} E),\n  LE.le.{0}\n    (HMul.hMul.{0, 0, 0}\n      (abs.{0} (HSub.hSub.{0, 0, 0} (RadialContact.radius.{u_1} c v) (RadialContact.radius.{u_1} c w)))\n      (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} ↑c)))\n    (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} (RadialContact.radius.{u_1} c v) (RadialContact.radius.{u_1} c w))\n      (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑v ↑w)))",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.radius_dist_le": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.radius_dist_le.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)\n  (v w : RadialContact.UnitSphere.{u_1} E),\n  LE.le.{0} (abs.{0} (HSub.hSub.{0, 0, 0} (RadialContact.radius.{u_1} c v) (RadialContact.radius.{u_1} c w)))\n    (HMul.hMul.{0, 0, 0}\n      (HDiv.hDiv.{0, 0, 0} (HPow.hPow.{0, 0, 0} (HAdd.hAdd.{0, 0, 0} 1 (norm.{u_1} ↑c)) 2)\n        (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} ↑c)))\n      (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑v ↑w)))",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.contact_dist_le": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.contact_dist_le.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E)\n  (v w : RadialContact.UnitSphere.{u_1} E),\n  LE.le.{0}\n    (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑(RadialContact.contact.{u_1} c v) ↑(RadialContact.contact.{u_1} c w)))\n    (HMul.hMul.{0, 0, 0}\n      (HDiv.hDiv.{0, 0, 0} (HMul.hMul.{0, 0, 0} 2 (HAdd.hAdd.{0, 0, 0} 1 (norm.{u_1} ↑c)))\n        (HSub.hSub.{0, 0, 0} 1 (norm.{u_1} ↑c)))\n      (norm.{u_1} (HSub.hSub.{u_1, u_1, u_1} ↑v ↑w)))",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.radiusConstant": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.radiusConstant.{u_1} : {E : Type u_1} →\n  [inst : NormedAddCommGroup.{u_1} E] → RadialContact.InteriorCenter.{u_1} E → NNReal",
+      "explicit_class_names": [
+        "NormedAddCommGroup"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.contactConstant": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.contactConstant.{u_1} : {E : Type u_1} →\n  [inst : NormedAddCommGroup.{u_1} E] → RadialContact.InteriorCenter.{u_1} E → NNReal",
+      "explicit_class_names": [
+        "NormedAddCommGroup"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.radius_lipschitz": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.radius_lipschitz.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E),\n  LipschitzWith.{u_1, 0} (RadialContact.radiusConstant.{u_1} c) (RadialContact.radius.{u_1} c)",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.contact_lipschitz": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.contact_lipschitz.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E),\n  LipschitzWith.{u_1, u_1} (RadialContact.contactConstant.{u_1} c) (RadialContact.contact.{u_1} c)",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.radius_continuous": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.radius_continuous.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E),\n  Continuous.{u_1, 0} (RadialContact.radius.{u_1} c)",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "RadialContact.contact_continuous": {
+      "source": "RadialContact/Lipschitz.lean",
+      "statement": "@RadialContact.contact_continuous.{u_1} : ∀ {E : Type u_1} [inst : NormedAddCommGroup.{u_1} E]\n  [inst_1 : NormedSpace.{0, u_1} Real E] (c : RadialContact.InteriorCenter.{u_1} E),\n  Continuous.{u_1, u_1} (RadialContact.contact.{u_1} c)",
+      "explicit_class_names": [
+        "NormedAddCommGroup",
+        "NormedSpace"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  }
+}

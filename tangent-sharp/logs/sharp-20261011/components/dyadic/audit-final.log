@@ -1,0 +1,34 @@
+TangentLimit.sum_range_two_pow_eq (f : ℕ → ℝ) (j : ℕ) :
+  ∑ n ∈ Finset.range (2 ^ j), f n = f 0 + ∑ k ∈ Finset.range j, ∑ n ∈ Finset.Ico (2 ^ k) (2 ^ (k + 1)), f n
+TangentLimit.nat_le_two_pow (n : ℕ) : n ≤ 2 ^ n
+TangentLimit.summable_of_dyadic_block_bound {f g : ℕ → ℝ} (hf : ∀ (n : ℕ), 0 ≤ f n) (hg0 : ∀ (j : ℕ), 0 ≤ g j)
+  (hg : Summable g) (hblock : ∀ (j : ℕ), ∑ n ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)), f n ≤ g j) : Summable f
+TangentLimit.summable_nat_add_one_mul_geometric {ρ : ℝ} (hρ0 : 0 ≤ ρ) (hρ1 : ρ < 1) : Summable fun j => (↑j + 1) * ρ ^ j
+TangentLimit.summable_of_dyadic_geometric_bound {f : ℕ → ℝ} {C ρ : ℝ} (hf : ∀ (n : ℕ), 0 ≤ f n) (hC : 0 ≤ C)
+  (hρ0 : 0 ≤ ρ) (hρ1 : ρ < 1) (hblock : ∀ (j : ℕ), ∑ n ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)), f n ≤ C * (↑j + 1) * ρ ^ j) :
+  Summable f
+TangentLimit.sum_reciprocal_doubling_block_le_one {N : ℕ} (hN : 0 < N) : ∑ k ∈ Finset.range N, 1 / ↑(N + k + 1) ≤ 1
+TangentLimit.harmonic_sum_two_pow_le (j : ℕ) : ∑ k ∈ Finset.range (2 ^ j), 1 / ↑(k + 1) ≤ ↑j + 1
+'TangentLimit.sum_range_two_pow_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.nat_le_two_pow' depends on axioms: [propext, Quot.sound]
+'TangentLimit.summable_of_dyadic_block_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_nat_add_one_mul_geometric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_of_dyadic_geometric_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.sum_reciprocal_doubling_block_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.harmonic_sum_two_pow_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+TangentLimit.summable_of_dyadic_block_bound_pos {f g : ℕ → ℝ} (hf : ∀ (n : ℕ), 0 < n → 0 ≤ f n)
+  (hg0 : ∀ (j : ℕ), 0 ≤ g j) (hg : Summable g) (hblock : ∀ (j : ℕ), ∑ n ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)), f n ≤ g j) :
+  Summable f
+TangentLimit.dyadic_rpow_eq_geometric (β : ℝ) (j : ℕ) : ↑(2 ^ j) ^ β = (2 ^ β) ^ j
+TangentLimit.summable_of_dyadic_rpow_bound {f : ℕ → ℝ} {C β : ℝ} (hf : ∀ (n : ℕ), 0 ≤ f n) (hC : 0 ≤ C) (hβ : β < 0)
+  (hblock : ∀ (j : ℕ), ∑ n ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)), f n ≤ C * ↑(2 ^ j) ^ β * (↑j + 1)) : Summable f
+TangentLimit.summable_of_dyadic_rpow_harmonic_bound {f : ℕ → ℝ} {C β : ℝ} (hf : ∀ (n : ℕ), 0 ≤ f n) (hC : 0 ≤ C)
+  (hβ : β < 0)
+  (hblock :
+    ∀ (j : ℕ),
+      ∑ n ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)), f n ≤ C * ↑(2 ^ j) ^ β * ∑ k ∈ Finset.range (2 ^ j), 1 / ↑(k + 1)) :
+  Summable f
+'TangentLimit.summable_of_dyadic_block_bound_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.dyadic_rpow_eq_geometric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_of_dyadic_rpow_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_of_dyadic_rpow_harmonic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

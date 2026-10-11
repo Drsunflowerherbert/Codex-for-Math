@@ -1,0 +1,23 @@
+{
+  "review_scope": "Complete mathematical text radial-maps/study.md",
+  "status": "accepted_ordinary_proof_review",
+  "reviewer": "independent automated ordinary-proof reviewer",
+  "study_sha256": "ff1ace66df5ff03b8e6ae2a1de7073339fd6338c670a96acce2c39228e7ebba5",
+  "checked": [
+    "existence and uniqueness without strict convexity",
+    "scalar compactness versus ambient compactness",
+    "crossing inequality and product bound",
+    "radius, reciprocal radius, contact and inverse Lipschitz constants",
+    "joint center perturbation and nonunit direction bounds",
+    "sharp square norm example for r>0",
+    "Hilbert formula and estimates",
+    "boundary and exterior counterexamples",
+    "bisection and residual certificates"
+  ],
+  "limitations": [
+    "JSON content was not separately reviewed theorem by theorem",
+    "No Lean or other formal proof execution",
+    "No validation of headline Tingley theorem",
+    "No novelty assessment"
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "schema": "portable-mathematics-theorem-study-v1",
+  "schema_note": "Study-specific JSON for later translation; not a native MRS schema and not yet imported.",
+  "family_id": "374",
+  "title": "Three-atom obstruction to stability of quadratic optimal transport maps",
+  "created_utc": "2026-10-11T01:13:00Z",
+  "verification": {
+    "ordinary_proof": "independently rederived and written",
+    "independent_review": "pending",
+    "exact_computation": "4 cases passed, exact rational geometry and exhaustive transport-polytope vertex enumeration",
+    "lean_executed": false,
+    "lean_formalization_claimed": false,
+    "global_upper_stability_bound_proved": false
+  },
+  "provenance": {
+    "repository": "https://github.com/openai/math",
+    "revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex",
+    "source_local_relative": "../catalog/sources/preprints_Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026_build_source_sections_sharpness.tex",
+    "source_sha256": "f8732d68d0de8505d20f6c42aefce95d60b3e8363569681fa30632c997999590",
+    "source_labels": [
+      "cells:optimality",
+      "sharpness:exponent"
+    ],
+    "scope_description_url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/374.md",
+    "source_inspection": "Supplied local TeX section read in full; source provenance supplied by the recorded inventory. No repository implementation was executed."
+  },
+  "notation": {
+    "T_mu": "unique quadratic optimal map from fixed rho to target mu, up to rho-null changes",
+    "Wp": "(infimum coupling cost integral |y-z|^p)^(1/p)",
+    "Lq": "same-source map distance (integral |T-S|^q d rho)^(1/q)",
+    "Winfinity": "infimum over couplings of essential supremum transport distance",
+    "a_e": "almost everywhere"
+  },
+  "theorems": [
+    {
+      "id": "374.finite_affine_maximum_optimality",
+      "title": "Finite affine maximum gives the unique quadratic optimal plan",
+      "kind": "lemma",
+      "assumptions": [
+        "d is a positive integer",
+        "rho is a Borel probability on R^d, absolutely continuous with respect to Lebesgue measure",
+        "Integral |x|^2 d rho is finite",
+        "N is a positive finite integer; y_i are vectors in R^d; c_i are finite real numbers",
+        "u(x)=max_i(x dot y_i+c_i); T selects the slope of the smallest maximizing index; lambda=T_pushforward(rho)"
+      ],
+      "conclusion": "T is Borel; T=gradient(u) rho-almost everywhere; (id,T)_pushforward(rho) is the unique minimizer of integral |x-y|^2 over all couplings of rho and lambda. Thus every optimal map equals T rho-almost everywhere.",
+      "proof_method": [
+        "Merge repeated slopes retaining the largest intercept.",
+        "Distinct-slope ties lie in finitely many null affine hyperplanes.",
+        "The first-index regions are finite intersections of strict and nonstrict affine inequalities.",
+        "Use nonnegative slack u(x)-x dot y-c(y); the graph plan attains zero slack.",
+        "Quadratic costs differ only through the scalar-product integral when marginals are fixed.",
+        "Every optimizer has zero slack and is concentrated on the unique-slope graph."
+      ],
+      "dual_certificate": {
+        "phi": "|x|^2-2u(x)",
+        "psi": "|y|^2+2c(y), defined on the finite target support",
+        "inequality": "phi(x)+psi(y) <= |x-y|^2",
+        "gap": "2[u(x)-x dot y-c(y)]"
+      },
+      "relaxations": [
+        "Absolute continuity may be replaced by nullness of the distinct-slope tie hyperplanes.",
+        "Repeated slopes are allowed.",
+        "Convex or bounded source support and quantitative density bounds are unnecessary for this lemma."
+      ],
+      "dependencies": [
+        "finite affine hyperplanes are Lebesgue-null",
+        "nonnegative integrable function with zero integral vanishes almost everywhere",
+        "Cauchy-Schwarz inequality",
+        "quadratic norm expansion"
+      ]
+    },
+    {
+      "id": "374.three_atom_targets",
+      "title": "Tilted central cells have exactly equal target masses",
+      "kind": "construction",
+      "assumptions": [
+        "fixed integer d >= 2",
+        "K=Y=[-1,1]^d",
+        "rho=2^(-d) 1_K dx",
+        "0 < b < a and a+b < 1",
+        "u=max(-x1,x1,a); v=max(-x1,x1,a+b*x2)",
+        "T and S are first-maximizer gradients; mu=T_pushforward(rho); nu=S_pushforward(rho)"
+      ],
+      "conclusion": {
+        "mu": "((1-a)/2) delta_(-e1) + a delta_0 + ((1-a)/2) delta_(e1)",
+        "nu": "((1-a)/2) delta_(-e1) + a delta_(b e2) + ((1-a)/2) delta_(e1)",
+        "maps": "T and S are the unique quadratic optimal maps from rho to mu and nu respectively.",
+        "atom_count_each": 3,
+        "central_cells": "A={|x1|<a}; B={|x1|<a+b*x2}, up to rho-null boundaries"
+      },
+      "slice_integrals": {
+        "central": "(1/2) integral[-1,1] (a+b*t) dt = a",
+        "each_outer": "(1/2) integral[-1,1] (1-a-b*t)/2 dt = (1-a)/2"
+      },
+      "dependencies": [
+        "374.finite_affine_maximum_optimality",
+        "Fubini-Tonelli theorem for product probability"
+      ]
+    },
+    {
+      "id": "374.exact_target_Wp",
+      "title": "Exact Wasserstein distances and unique matching target coupling",
+      "kind": "theorem",
+      "assumptions": [
+        "374.three_atom_targets construction",
+        "real p with 1 <= p < infinity"
+      ],
+      "conclusion": {
+        "Wp_power_p": "a*b^p",
+        "Wp": "a^(1/p)*b",
+        "W1": "a*b",
+        "W2_squared": "a*b^2",
+        "unique_optimal_target_coupling": "Fix -e1 and e1 and send 0 to b e2.",
+        "Winfinity": "b"
+      },
+      "proof_method": "The matching coupling attains a*b^p. Every coupling has cost at least the integral of |y2-z2|^p, equal to a*b^p because every source-target atom y has y2=0. Equality requires identical first coordinates, forcing the matching coupling.",
+      "dependencies": [
+        "374.three_atom_targets",
+        "Euclidean distance dominates each coordinate difference"
+      ]
+    },
+    {
+      "id": "374.exact_map_L2",
+      "title": "Exact L2 difference of the quadratic optimal maps",
+      "kind": "theorem",
+      "assumptions": [
+        "374.three_atom_targets construction"
+      ],
+      "conclusion": {
+        "L2_squared": "b/2+a*b^2",
+        "symmetric_difference_mass": "b/2",
+        "A_minus_B_mass": "b/4",
+        "B_minus_A_mass": "b/4",
+        "intersection_mass": "a-b/4",
+        "pointwise_squared_difference": "1_(A symmetric_difference B) + b^2*1_B, rho-almost everywhere",
+        "same_source_cost_divided_by_W2_squared": "1+1/(2*a*b)"
+      },
+      "explicit_integrals": [
+        "(1/2) integral[-1,1] b*|t| dt = b/2",
+        "(1/2) integral[0,1] b*t dt = b/4",
+        "(1/2) integral[-1,0] -b*t dt = b/4"
+      ],
+      "same_source_joint_mass_matrix": [
+        [
+          "(1-a)/2-b/8",
+          "b/8",
+          "0"
+        ],
+        [
+          "b/8",
+          "a-b/4",
+          "b/8"
+        ],
+        [
+          "0",
+          "b/8",
+          "(1-a)/2-b/8"
+        ]
+      ],
+      "matrix_row_values": [
+        "-e1",
+        "0",
+        "e1"
+      ],
+      "matrix_column_values": [
+        "-e1",
+        "b e2",
+        "e1"
+      ],
+      "dependencies": [
+        "374.three_atom_targets",
+        "orthogonality of coordinate axes",
+        "Fubini-Tonelli theorem"
+      ]
+    },
+    {
+      "id": "374.W2_exponent_obstruction",
+      "title": "No uniform W2 exponent above one third",
+      "kind": "corollary",
+      "assumptions": [
+        "fixed integer d >= 2",
+        "rho=2^(-d) 1_([-1,1]^d) dx",
+        "target container Y=[-1,1]^d",
+        "real alpha > 1/3"
+      ],
+      "conclusion": "The supremum of ||T_mu-T_nu||_(L2(rho))/W2(mu,nu)^alpha over distinct three-atom probability measures mu,nu in Y is infinity.",
+      "witness": {
+        "parameters": "0<a<1/2, b=a/2",
+        "sequence": "a_n=1/n for integers n>=3",
+        "W2": "a^(3/2)/2",
+        "L2": "sqrt(a)*sqrt(1+a^2)/2",
+        "ratio": "2^(alpha-1)*sqrt(1+a^2)*a^((1-3*alpha)/2)",
+        "endpoint_ratio_limit_alpha_one_third": "2^(-2/3)"
+      },
+      "uniformity": "d, rho, K, Y, and the exact number of atoms stay fixed; the central atom mass tends to zero.",
+      "dependencies": [
+        "374.exact_target_Wp",
+        "374.exact_map_L2"
+      ]
+    },
+    {
+      "id": "374.W1_exponent_obstruction",
+      "title": "No uniform W1 exponent above one quarter",
+      "kind": "corollary",
+      "assumptions": [
+        "fixed integer d >= 2",
+        "rho=2^(-d) 1_([-1,1]^d) dx",
+        "target container Y=[-1,1]^d",
+        "real alpha > 1/4"
+      ],
+      "conclusion": "The supremum of ||T_mu-T_nu||_(L2(rho))/W1(mu,nu)^alpha over distinct three-atom probability measures mu,nu in Y is infinity.",
+      "witness": {
+        "parameters": "0<a<1/2, b=a/2",
+        "W1": "a^2/2",
+        "ratio": "2^(alpha-1)*sqrt(1+a^2)*a^(1/2-2*alpha)",
+        "endpoint_ratio_limit_alpha_one_quarter": "2^(-3/4)"
+      },
+      "dependencies": [
+        "374.exact_target_Wp",
+        "374.exact_map_L2"
+      ]
+    },
+    {
+      "id": "374.Wp_to_L2_exponent_obstruction",
+      "title": "Necessary exponent ceiling for Wp to L2 stability",
+      "kind": "extension_corollary",
+      "assumptions": [
+        "same fixed cube and uniform source as 374.W2_exponent_obstruction",
+        "1 <= p < infinity",
+        "alpha > p/(2*(p+1))"
+      ],
+      "conclusion": "No target-uniform bound ||T_mu-T_nu||_L2 <= C*Wp(mu,nu)^alpha holds, even with exactly three atoms.",
+      "witness_ratio": "2^(alpha-1)*sqrt(1+a^2)*a^(1/2-alpha*(1+1/p)), for b=a/2 and a down to 0",
+      "dependencies": [
+        "374.exact_target_Wp",
+        "374.exact_map_L2"
+      ],
+      "caution": "This does not establish a sharp global upper bound for general p."
+    },
+    {
+      "id": "374.exact_map_Lq",
+      "title": "Exact finite Lq distance and further necessary exponent ceilings",
+      "kind": "extension_corollary",
+      "assumptions": [
+        "374.three_atom_targets construction",
+        "1 <= q < infinity"
+      ],
+      "conclusion": {
+        "Lq_power_q": "(a-b/4)*b^q+(b/4)*(1+(1+b^2)^(q/2))",
+        "Lq_asymptotic_when_b_equals_a_over_two": "(a/4)^(1/q)",
+        "obstruction": "For 1<=p<infinity, no uniform Lq-map estimate in Wp^alpha can hold when alpha>p/(q*(p+1))."
+      },
+      "dependencies": [
+        "374.exact_map_L2 cell masses",
+        "374.exact_target_Wp"
+      ],
+      "caution": "No positive global upper estimate for general p,q is proved."
+    },
+    {
+      "id": "374.Linfinity_discontinuity",
+      "title": "Failure of uniform map continuity in essential supremum norm",
+      "kind": "extension_corollary",
+      "assumptions": [
+        "374.three_atom_targets construction",
+        "b=a/2 and a tends down to zero"
+      ],
+      "conclusion": {
+        "Linfinity_map_difference": "sqrt(1+b^2), tending to 1",
+        "target_distances": "Wp tends to zero for every 1<=p<=infinity"
+      },
+      "dependencies": [
+        "374.exact_map_L2 cell masses",
+        "374.exact_target_Wp"
+      ]
+    },
+    {
+      "id": "374.dimension_one_contrast",
+      "title": "Exact W2 identity for finite atomic targets on the line",
+      "kind": "contrast_lemma",
+      "assumptions": [
+        "rho is uniform probability on [-1,1] in R",
+        "mu and nu are finite atomic probability measures on R",
+        "T_mu and T_nu denote the unique quadratic optimal maps from rho"
+      ],
+      "conclusion": "||T_mu-T_nu||_(L2(rho)) = W2(mu,nu).",
+      "proof_method": [
+        "Construct increasing quantile step maps using consecutive source intervals of the atom masses.",
+        "Their integrated potentials are finite convex piecewise-affine maxima, so the finite-affine lemma proves map optimality and uniqueness.",
+        "Use the nonnegative layer-cake identity after shifting both bounded target variables by a common M.",
+        "For any coupling, P(U>s,V>t)<=min(P(U>s),P(V>t)); pairing two quantiles of one uniform variable attains equality at every threshold.",
+        "This pairing maximizes the scalar product and minimizes quadratic cost."
+      ],
+      "dependencies": [
+        "374.finite_affine_maximum_optimality",
+        "Tonelli theorem",
+        "quadratic norm expansion"
+      ]
+    }
+  ],
+  "assumptions_audit": {
+    "source_absolute_continuity": "Used for null affine tie sets and hence uniqueness in the finite-affine lemma.",
+    "finite_second_moments": "Source assumption plus bounded finite target support make all quadratic costs finite.",
+    "distinct_slopes": "Distinct in the explicit family; the general lemma merges repeats.",
+    "parameter_geometry": "0<b<a and a+b<1 prevents sign changes and clipping of central widths.",
+    "dimension": "Transverse coordinate requires d>=2; dimension-one finite atomic targets instead satisfy an exact Lipschitz identity.",
+    "atom_masses": "Exactly three positive atoms for each a, but no uniform positive lower bound on the central mass a.",
+    "atom_separation": "Distinct atoms within each target remain at least distance 1 apart.",
+    "source_fixed": "K=Y=[-1,1]^d and rho uniform are unchanged with a.",
+    "map_vs_target_coupling": "Unique source-to-target optimality does not make the common-source target-to-target coupling optimal."
+  },
+  "nonclaims": [
+    "No global W2^(1/3) upper stability bound is proved.",
+    "No global W1^(1/4) upper stability bound is proved.",
+    "No sharp positive upper stability theorem for general p,q is proved.",
+    "No obstruction is inferred for a restricted target class with uniformly positive atom masses or uniformly regular densities.",
+    "No fresh Lean build, kernel-checked theorem, native MRS import, or publication is claimed."
+  ],
+  "artifacts": {
+    "readable_proof": "proof.md",
+    "exact_fixtures": "exact-cases.json",
+    "reproduce_fixtures": "python check_exact_cases.py",
+    "computation_script": "check_exact_cases.py"
+  },
+  "computation_audit": {
+    "runtime": "Python 3.12.14",
+    "packages": "standard library only",
+    "floating_point_used": false,
+    "cases": [
+      "2/5",
+      "1/4",
+      "1/10",
+      "1/100"
+    ],
+    "independent_geometry": "All 9 source joint-cell masses computed by half-plane clipping and shoelace area.",
+    "target_optimization": "All invertible 5-column bases of the 3x3 transport-polytope equations enumerated; 10 distinct vertices per case, unique matching minimizer.",
+    "W1": "Matching upper bound plus exact coordinate lower-bound certificate.",
+    "limits": "Finite arithmetic fixtures do not themselves prove the parameter-uniform theorem."
+  }
+}

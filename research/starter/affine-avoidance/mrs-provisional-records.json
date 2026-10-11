@@ -1,0 +1,307 @@
+{
+  "schema": "provisional_math_research_interchange",
+  "schema_version": "1.0",
+  "native_mrs_compatible": null,
+  "native_mrs_imported": false,
+  "created_utc": "2026-10-11",
+  "topic": "Family 084 supporting normalized-hitting-to-global-avoidance reduction",
+  "records": [
+    {
+      "family_id": "family084",
+      "record_version": 1,
+      "language": "en",
+      "source_pin": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "source_links": [
+        "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/02-periodic.tex"
+      ],
+      "artifact": "research-notes.txt",
+      "native_mrs_import_status": "not_imported",
+      "verification": {
+        "proof_status": "elementary_proof_self_checked",
+        "independent_review_status": "pending",
+        "formal_verification_status": "not_performed",
+        "lean_claim": "No new Lean verification; family084 badge covers dyadic manuscript only, not the newer arbitrary-ratio manuscript.",
+        "lean_scope_url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/084.md"
+      },
+      "record_id": "family084.affine_avoidance.periodic_restriction.v1",
+      "kind": "lemma",
+      "title": "Measure of restricted signed periodic dilations",
+      "statement": "For measurable 1-periodic H of density d, A=σLH has period L and measure Ld on every period. If R=mL+r, 0≤r<L, then m(A∩I)≤mLd+min(r,Ld) for every interval I of length R. In particular m((σ2^kH)∩[0,1])≤max(1,2^k)d, with equality d when k≤0.",
+      "hypotheses": [
+        "H⊂ℝ is Lebesgue measurable and H+1=H.",
+        "d=m(H∩[0,1)).",
+        "L>0 and σ∈{−1,1}.",
+        "I is an interval of finite length R≥0."
+      ],
+      "conclusion": [
+        "Signed scaling preserves density and rescales the period.",
+        "The dyadic restriction bound controls expanding and contracting scales."
+      ],
+      "proof": [
+        "Change variables for positive scaling; reflect and use periodicity for negative scaling to obtain measure Ld on [0,L).",
+        "Every length-L interval has the same measure: reduce its start modulo L, split at L, and translate the second piece by −L.",
+        "Decompose I into m whole periods plus a remainder of length r, whose measure is at most both r and Ld.",
+        "If L=2^k≤1, the unit interval contains exactly 2^(−k) periods. If L>1, it is contained in one period."
+      ],
+      "dependencies": [],
+      "artifact_section": 3,
+      "limitations": [
+        "Without periodicity, unit-interval measure does not control scaled restrictions.",
+        "For k>0 the factor 2^k cannot generally be omitted."
+      ],
+      "examples": [
+        {
+          "type": "sharpness_example",
+          "data": "H=⋃_{j∈ℤ}(j,j+d), 0<d<1/2",
+          "conclusion": "ρ(H)=d and m(2H∩[0,1])=2d."
+        },
+        {
+          "type": "counterexample_without_periodicity",
+          "data": "H=(1,2)",
+          "conclusion": "m(H∩[0,1))=0 but m((H/2)∩[0,1])=1/2."
+        }
+      ]
+    },
+    {
+      "family_id": "family084",
+      "record_version": 1,
+      "language": "en",
+      "source_pin": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "source_links": [
+        "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/02-periodic.tex"
+      ],
+      "artifact": "research-notes.txt",
+      "native_mrs_import_status": "not_imported",
+      "verification": {
+        "proof_status": "elementary_proof_self_checked",
+        "independent_review_status": "pending",
+        "formal_verification_status": "not_performed",
+        "lean_claim": "No new Lean verification; family084 badge covers dyadic manuscript only, not the newer arbitrary-ratio manuscript.",
+        "lean_scope_url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/084.md"
+      },
+      "record_id": "family084.affine_avoidance.dyadic_budget.v1",
+      "kind": "lemma",
+      "title": "Summable budgets for signed dyadic scales",
+      "statement": "For r>2, Σ_{k∈ℤ}r^(−|k|)max(1,2^k)=1+1/(r−1)+2/(r−2). At r=4 this is 7/3. If ρ(H_k)≤Cα4^(−|k|), then the union of both signed dyadic dilations has unit-interval measure at most 14Cα/3.",
+      "hypotheses": [
+        "r>2 for the geometric sum.",
+        "C≥0 and α≥0.",
+        "Every H_k is measurable and 1-periodic with density ≤Cα4^(−|k|)."
+      ],
+      "conclusion": [
+        "m((⋃_{k∈ℤ}(2^kH_k∪−2^kH_k))∩[0,1])≤14Cα/3.",
+        "For C=6 and α=η/64 this is 7η/16."
+      ],
+      "proof": [
+        "Split into negative, zero, and positive k.",
+        "Sum Σ_{j≥1}r^(−j)=1/(r−1) and Σ_{k≥1}(2/r)^k=2/(r−2).",
+        "Apply countable subadditivity and the restriction lemma to both signs."
+      ],
+      "dependencies": [
+        "family084.affine_avoidance.periodic_restriction.v1"
+      ],
+      "artifact_section": 4,
+      "limitations": [
+        "At r≤2 the positive-scale majorant diverges; this does not prove that the actual union has large measure.",
+        "The signed sets need not be disjoint."
+      ]
+    },
+    {
+      "family_id": "family084",
+      "record_version": 1,
+      "language": "en",
+      "source_pin": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "source_links": [
+        "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/02-periodic.tex"
+      ],
+      "artifact": "research-notes.txt",
+      "native_mrs_import_status": "not_imported",
+      "verification": {
+        "proof_status": "elementary_proof_self_checked",
+        "independent_review_status": "pending",
+        "formal_verification_status": "not_performed",
+        "lean_claim": "No new Lean verification; family084 badge covers dyadic manuscript only, not the newer arbitrary-ratio manuscript.",
+        "lean_scope_url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/084.md"
+      },
+      "record_id": "family084.affine_avoidance.signed_normalization.v1",
+      "kind": "lemma",
+      "title": "Pointwise normalization of all signed nonzero dilations",
+      "statement": "If every H_k hits every y+t a_n with y∈ℝ and t∈[1,2), then U=⋃_{k∈ℤ}(2^kH_k∪−2^kH_k) hits every x+s a_n with x∈ℝ and s≠0.",
+      "hypotheses": [
+        "(a_n)_{n≥1} is a fixed real sequence.",
+        "For every k∈ℤ, every y∈ℝ, and every t∈[1,2), some n≥1 satisfies y+t a_n∈H_k."
+      ],
+      "conclusion": [
+        "∀x∈ℝ ∀s∈ℝ∖{0} ∃n≥1: x+s a_n∈U."
+      ],
+      "proof": [
+        "Choose the unique k with 2^k≤|s|<2^(k+1).",
+        "Set σ=sgn(s), t=|s|/2^k and y=σ2^(−k)x.",
+        "Take n with y+t a_n∈H_k. Multiplication by σ2^k gives x+s a_n∈σ2^kH_k⊂U."
+      ],
+      "dependencies": [],
+      "artifact_section": 5,
+      "limitations": [
+        "Zero dilation is excluded.",
+        "The same index n is used, with no reindexing or relation to the ratio of any geometric sequence.",
+        "Pointwise uniform hitting is required for this argument."
+      ]
+    },
+    {
+      "family_id": "family084",
+      "record_version": 1,
+      "language": "en",
+      "source_pin": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "source_links": [
+        "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/02-periodic.tex"
+      ],
+      "artifact": "research-notes.txt",
+      "native_mrs_import_status": "not_imported",
+      "verification": {
+        "proof_status": "elementary_proof_self_checked",
+        "independent_review_status": "pending",
+        "formal_verification_status": "not_performed",
+        "lean_claim": "No new Lean verification; family084 badge covers dyadic manuscript only, not the newer arbitrary-ratio manuscript.",
+        "lean_scope_url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/084.md"
+      },
+      "record_id": "family084.affine_avoidance.finite_range_obstruction.v1",
+      "kind": "lemma_and_counterexample",
+      "title": "Finite-range obstruction to arbitrarily sparse periodic hitting",
+      "statement": "If finite A⊂ℝ has N distinct elements and measurable 1-periodic H hits x+A for every x∈ℝ, then ρ(H)≥1/N. The identically zero null sequence therefore cannot satisfy arbitrarily-small-density normalized hitting.",
+      "hypotheses": [
+        "A is finite and nonempty with N distinct elements.",
+        "H is measurable and 1-periodic.",
+        "∀x∈ℝ ∃a∈A: x+a∈H."
+      ],
+      "conclusion": [
+        "1≤Nρ(H).",
+        "N can be replaced by the number of distinct residues of A modulo 1.",
+        "Convergence a_n→0 alone does not supply normalized hitting sets."
+      ],
+      "proof": [
+        "Hitting means ℝ=⋃_{a∈A}(H−a).",
+        "Each H−a has unit-interval measure ρ(H).",
+        "Finite subadditivity yields 1≤Nρ(H). Equal residues give identical translated sets.",
+        "For A={0}, the condition forces H=ℝ, of density 1."
+      ],
+      "dependencies": [
+        "family084.affine_avoidance.periodic_restriction.v1"
+      ],
+      "artifact_section": 6,
+      "limitations": [
+        "This is an obstruction to the hitting hypothesis, not a disproof of a similarity conjecture for infinite sets."
+      ],
+      "examples": [
+        {
+          "type": "counterexample",
+          "data": "a_n=0 for every n",
+          "conclusion": "Hitting all centers forces H=ℝ, so density ≤Cp fails for p<1/C."
+        }
+      ]
+    },
+    {
+      "family_id": "family084",
+      "record_version": 1,
+      "language": "en",
+      "source_pin": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "source_links": [
+        "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/02-periodic.tex"
+      ],
+      "artifact": "research-notes.txt",
+      "native_mrs_import_status": "not_imported",
+      "verification": {
+        "proof_status": "elementary_proof_self_checked",
+        "independent_review_status": "pending",
+        "formal_verification_status": "not_performed",
+        "lean_claim": "No new Lean verification; family084 badge covers dyadic manuscript only, not the newer arbitrary-ratio manuscript.",
+        "lean_scope_url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/084.md"
+      },
+      "record_id": "family084.affine_avoidance.normalized_to_global.v1",
+      "kind": "conditional_theorem",
+      "title": "Normalized periodic hitting implies large compact affine avoidance",
+      "statement": "For any fixed real sequence (a_n), if ∃C∈(0,∞) ∀p∈(0,1) ∃open 1-periodic H_p with ρ(H_p)≤Cp and ∀y∈ℝ ∀t∈[1,2) ∃n≥1:y+t a_n∈H_p, then ∀η∈(0,1) ∃compact E⊂[0,1] with m(E)>1−η and ∀x∈ℝ ∀s≠0 ∃n≥1:x+s a_n∉E.",
+      "hypotheses": [
+        "The real sequence is fixed; nullness is unnecessary.",
+        "The finite positive C is independent of p,y,t,n.",
+        "H_p may depend on p and the sequence, but is uniform in y,t.",
+        "H_p is open and 1-periodic.",
+        "The normalized hitting condition holds pointwise with order ∀y∀t∃n."
+      ],
+      "conclusion": [
+        "For each η∈(0,1), a compact E avoids all translates and signed nonzero dilates.",
+        "For B=max(1,C), p_k=η4^(−|k|)/(16B), the explicit construction gives m(E)≥1−7Cη/(24B)≥1−7η/24>1−η."
+      ],
+      "proof": [
+        "Choose B=max(1,C), p_k=η4^(−|k|)/(16B), and corresponding H_k. All p_k belong to (0,1).",
+        "Set U=⋃_{k∈ℤ}(2^kH_k∪−2^kH_k) and E=[0,1]∖U.",
+        "U is open, hence E is compact.",
+        "Restriction and budget lemmas give m(U∩[0,1])≤2C·η/(16B)·7/3=7Cη/(24B)≤7η/24.",
+        "Signed normalization gives a point of every affine copy in U, hence outside E."
+      ],
+      "dependencies": [
+        "family084.affine_avoidance.periodic_restriction.v1",
+        "family084.affine_avoidance.dyadic_budget.v1",
+        "family084.affine_avoidance.signed_normalization.v1"
+      ],
+      "artifact_section": 2,
+      "limitations": [
+        "Conditional on existence of sparse normalized hitting sets; no such sets are constructed here.",
+        "Does not prove the general Erdős similarity conjecture or validate the hard hitting construction of the source manuscript.",
+        "No simultaneous uncountable-family statement.",
+        "No new Lean verification or native MRS import."
+      ],
+      "source_specialization": {
+        "sequence": "a_n=q^n for fixed q∈(0,1)",
+        "density_constant": 6,
+        "parameter_range": "p∈(0,1)",
+        "normalized_dilation_range": "[1,2]",
+        "source_budget": "p_k=η4^(−|k|)/64",
+        "source_removed_measure_bound": "7η/16",
+        "source_lines": {
+          "hypothesis": [
+            12,
+            18
+          ],
+          "measure": [
+            28,
+            58
+          ],
+          "signed_avoidance": [
+            60,
+            69
+          ]
+        }
+      },
+      "safe_extensions": [
+        {
+          "name": "measurable_hitting_sets",
+          "statement": "For measurable H_p, the same construction gives measurable avoiding F with m(F)≥1−7η/24. Inner regularity gives compact E⊂F with loss <η/2 and m(E)>1−19η/24>1−η.",
+          "extra_dependency": "Inner regularity of Lebesgue measure."
+        },
+        {
+          "name": "centers_modulo_one",
+          "statement": "Checking y∈[0,1) suffices, by 1-periodicity."
+        }
+      ]
+    }
+  ],
+  "source_metadata": {
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/02-periodic.tex",
+    "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "local_file": "02-periodic.tex",
+    "sha256": "495a0aad88677e2e61904cf5fe029b709033d0830f7c98d386661632abc8bdb8",
+    "lean_scope_url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/084.md"
+  },
+  "review_log": [
+    {
+      "reviewer": "automated_author",
+      "scope": "Statements, proofs, quantifiers, signed dilations, source constants, examples.",
+      "status": "passed_self_check"
+    },
+    {
+      "reviewer": "independent_automated_reviewer",
+      "scope": "Mathematical correctness",
+      "status": "pending"
+    }
+  ]
+}

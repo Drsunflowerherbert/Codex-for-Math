@@ -1,0 +1,31 @@
+theorem TangentLimit.ordered_separated_lower_bound : ∀ (S : Finset ℝ) (δ : ℝ),
+  (∀ x ∈ S, δ ≤ x) →
+    (∀ x ∈ S, ∀ y ∈ S, x ≠ y → δ ≤ |x - y|) → ∀ (k : Fin S.card), ↑(↑k + 1) * δ ≤ (S.orderEmbOfFin ⋯) k :=
+⋯
+theorem TangentLimit.sum_reciprocal_le_harmonic_of_positive : ∀ (S : Finset ℝ) (δ : ℝ),
+  0 < δ →
+    (∀ x ∈ S, δ ≤ x) →
+      (∀ x ∈ S, ∀ y ∈ S, x ≠ y → δ ≤ |x - y|) → ∑ x ∈ S, 1 / x ≤ 1 / δ * ∑ k ∈ Finset.range S.card, 1 / ↑(k + 1) :=
+⋯
+theorem TangentLimit.sum_reciprocal_le_harmonic_of_positive_on.{u_1} : ∀ {ι : Type u_1} [DecidableEq ι] (S : Finset ι)
+  (f : ι → ℝ) (δ : ℝ),
+  0 < δ →
+    (∀ i ∈ S, δ ≤ f i) →
+      (∀ i ∈ S, ∀ j ∈ S, i ≠ j → δ ≤ |f i - f j|) →
+        ∑ i ∈ S, 1 / f i ≤ 1 / δ * ∑ k ∈ Finset.range S.card, 1 / ↑(k + 1) :=
+⋯
+theorem TangentLimit.harmonic_sum_mono : ∀ {m n : ℕ},
+  m ≤ n → ∑ k ∈ Finset.range m, 1 / ↑(k + 1) ≤ ∑ k ∈ Finset.range n, 1 / ↑(k + 1) :=
+⋯
+theorem TangentLimit.sum_reciprocal_abs_le_harmonic.{u_1} : ∀ {ι : Type u_1} [DecidableEq ι] (S : Finset ι) (f : ι → ℝ)
+  (δ : ℝ),
+  0 < δ →
+    (∀ i ∈ S, δ ≤ |f i|) →
+      (∀ i ∈ S, ∀ j ∈ S, i ≠ j → δ ≤ |f i - f j|) →
+        ∑ i ∈ S, 1 / |f i| ≤ 2 / δ * ∑ k ∈ Finset.range S.card, 1 / ↑(k + 1) :=
+⋯
+'TangentLimit.ordered_separated_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.sum_reciprocal_le_harmonic_of_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.sum_reciprocal_le_harmonic_of_positive_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.harmonic_sum_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.sum_reciprocal_abs_le_harmonic' depends on axioms: [propext, Classical.choice, Quot.sound]

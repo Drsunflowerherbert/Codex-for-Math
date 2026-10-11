@@ -1,0 +1,20 @@
+theorem Egyptian.Review.bounded_increasing_weight_wellFounded.{u} : ∀ {α : Type u} (weight : α → Nat) (bound : Nat),
+  (∀ (a : α), weight a ≤ bound) → WellFounded fun next current => weight current < weight next :=
+fun {α} weight bound hbound =>
+  (fun h₁ => Subrelation.wf h₁ WellFoundedRelation.wf) fun {next current} hstep =>
+    id
+      (have hn := hbound next;
+      have hc := hbound current;
+      Decidable.byContradiction fun a => bounded_increasing_weight_wellFounded._proof_1_1 weight bound hstep hn hc a)
+'Egyptian.Review.bounded_increasing_weight_wellFounded' depends on axioms: [propext, Quot.sound]
+theorem Egyptian.Review.terminal_exists_of_bounded_progress.{u} : ∀ {α : Type u} (weight : α → Nat) (bound : Nat),
+  (∀ (a : α), weight a ≤ bound) →
+    ∀ (good : α → Prop),
+      (∀ (current : α), ¬good current → ∃ next, weight current < weight next) →
+        ∀ (initial : α), ∃ terminal, good terminal :=
+fun {α} weight bound hbound good progress initial =>
+  have hwf := bounded_increasing_weight_wellFounded weight bound hbound;
+  WellFounded.induction hwf initial fun current ih =>
+    if hg : good current then Exists.intro current hg
+    else Exists.casesOn (progress current hg) fun next hn => ih next hn
+'Egyptian.Review.terminal_exists_of_bounded_progress' depends on axioms: [propext, Classical.choice, Quot.sound]

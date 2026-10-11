@@ -1,0 +1,8 @@
+✖ [1520/1521] Building RadialContact.Inverse (1.5s)
+trace: .> LEAN_PATH=<project>/.lake/packages/Cli/.lake/build/lib/lean:<project>/.lake/packages/batteries/.lake/build/lib/lean:<project>/.lake/packages/Qq/.lake/build/lib/lean:<project>/.lake/packages/aesop/.lake/build/lib/lean:<project>/.lake/packages/proofwidgets/.lake/build/lib/lean:<project>/.lake/packages/importGraph/.lake/build/lib/lean:<project>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<project>/.lake/packages/plausible/.lake/build/lib/lean:<project>/.lake/packages/mathlib/.lake/build/lib/lean:<project>/.lake/build/lib/lean <project>/lean-4.24.0-linux/bin/lean <project>/RadialContact/Inverse.lean -o <project>/.lake/build/lib/lean/RadialContact/Inverse.olean -i <project>/.lake/build/lib/lean/RadialContact/Inverse.ilean -c <project>/.lake/build/ir/RadialContact/Inverse.c --setup <project>/.lake/build/ir/RadialContact/Inverse.setup.json --json
+error: RadialContact/Inverse.lean:10:70: unexpected token 'omit'; expected 'lemma'
+error: RadialContact/Inverse.lean:73:73: unexpected token 'omit'; expected 'lemma'
+error: Lean exited with code 1
+Some required targets logged failures:
+- RadialContact.Inverse
+error: build failed

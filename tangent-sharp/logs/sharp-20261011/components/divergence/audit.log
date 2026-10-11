@@ -1,0 +1,14 @@
+@TangentLimit.abs_sin_le_abs_tan : ∀ {x : ℝ}, Real.cos x ≠ 0 → |Real.sin x| ≤ |Real.tan x|
+'TangentLimit.abs_sin_le_abs_tan' depends on axioms: [propext, Classical.choice, Quot.sound]
+TangentLimit.sin_one_pos : 0 < Real.sin 1
+'TangentLimit.sin_one_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+@TangentLimit.sin_one_le_abs_tan_add : ∀ {x : ℝ},
+  Real.cos x ≠ 0 → Real.cos (x + 1) ≠ 0 → Real.sin 1 ≤ |Real.tan x| + |Real.tan (x + 1)|
+'TangentLimit.sin_one_le_abs_tan_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+TangentLimit.sin_one_le_abs_tan_nat_add (n : ℕ) : Real.sin 1 ≤ |Real.tan ↑n| + |Real.tan ↑(n + 1)|
+'TangentLimit.sin_one_le_abs_tan_nat_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+TangentLimit.not_summable_abs_tan_div_positive : ¬Summable fun n => |Real.tan ↑(n + 1)| / ↑(n + 1)
+'TangentLimit.not_summable_abs_tan_div_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+TangentLimit.not_summable_abs_tan_div_rpow_positive (s : ℝ) (hs : s ≤ 1) :
+  ¬Summable fun n => |Real.tan ↑(n + 1)| / ↑(n + 1) ^ s
+'TangentLimit.not_summable_abs_tan_div_rpow_positive' depends on axioms: [propext, Classical.choice, Quot.sound]

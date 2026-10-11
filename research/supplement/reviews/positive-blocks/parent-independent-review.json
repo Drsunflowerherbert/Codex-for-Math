@@ -1,0 +1,56 @@
+{
+  "schema": "ordinary-mathematical-review-v1",
+  "reviewer_role": "independent automated proof auditor",
+  "study_id": "family325-positive-block-inequalities",
+  "reviewed_utc": "2026-10-11T02:05:53.061517+00:00",
+  "decision": "accepted_with_no_required_corrections",
+  "scope": "Finite complex PSD block Hilbert-Schmidt sum/product inequalities, exact gaps, complete equality, scaling, ranks, sharpness, compression, and example arithmetic.",
+  "accepted_artifact_sha256": {
+    "study.md": "fec0fdca335159320f13c572e34f77fa0dad3578ec76de4da6e4ae437a9c60af",
+    "theorem-records.json": "8276d9642256c65907271f84d3b2082f970909fc3b624cb1639c860e2649c203",
+    "provenance.json": "5cbad41417223c1b106556ef68a09ef3f3d314ed762377b2dc86355dd95f0f85",
+    "check_exact_examples.py": "056023a525bd5c855961ac8870afa9b6d868d7f9acada6a97efadb28caebbfde",
+    "exact-examples.json": "5e7f79ee684eb8f8d55a3f641e63fdad9abc5c3a37142679db023a6c8031bc51",
+    "checks.json": "d7aedbac738fe5bfdc864dd5ce3b2b4662243dfc4e44b20d32614939723a7aa4",
+    "record-validation.json": "1921f0b27a9432fc31329fbc2dfcc0eb14a9abbee5254259acb9dfd252400a0b"
+  },
+  "source_snapshot_sha256": "164f56cc3f5ecbfb65ddba0d0438cacf44f325919ef7dfb742d073c948fddabd",
+  "source_snapshot_bytes": 35175,
+  "source_matches_local_pinned_catalog": true,
+  "source_remote_commit_independently_authenticated": false,
+  "ordinary_proofs_accepted": true,
+  "required_corrections": [],
+  "independent_exact_verifier": {
+    "path": "parent-check-examples.py",
+    "sha256": "14b49462b0a45d7e797b211e26f92641452d60ef50da2c476758eb10a6e3de1f",
+    "result_file": "parent-final-example-checks.json",
+    "named_examples_passed": 16,
+    "seeded_gram_fixtures_passed": 180,
+    "stdlib_only": true,
+    "imports_author_or_repository_code": false
+  },
+  "author_checker_rerun": {
+    "directory": "parent-author-rerun",
+    "script_sha256_matches": true,
+    "example_json_byte_match": true,
+    "check_summary_byte_match": true,
+    "originals_preserved": true
+  },
+  "record_validation": {
+    "theorem_nodes": 10,
+    "background_nodes": 5,
+    "ids_unique": true,
+    "references_resolve": true,
+    "acyclic": true
+  },
+  "report": "parent-independent-review.md",
+  "report_sha256": "e6cd1d893a2e2ab1cd5d198505fd6a6963d9d7c5c7ed739fcd4252a36f10ee36",
+  "caveats": [
+    "Acceptance applies only to the exact artifact hashes.",
+    "Original author review-status fields remain pending; use this separate hash-bound completed review.",
+    "No Lean or formal kernel verification.",
+    "No complete Crouzeix headline validation.",
+    "No native MRS compatibility/import or novelty claim.",
+    "Finite tests are not universal theorem proofs."
+  ]
+}

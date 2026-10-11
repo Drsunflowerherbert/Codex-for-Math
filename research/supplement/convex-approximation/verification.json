@@ -1,0 +1,54 @@
+{
+  "scope": "Only the local approximation lemma and derived results.",
+  "ordinary_proof": {
+    "status": "independently_reviewed_ordinary_proof",
+    "files": [
+      "study.md",
+      "audit.md"
+    ],
+    "reviewed_items": [
+      "source planar construction",
+      "quantitative finite-dimensional extension",
+      "coercivity and Hessian positivity",
+      "boundary identification",
+      "analytic radial parametrization",
+      "compact nesting",
+      "dimension one and lower-dimensional cases",
+      "exact examples and angular-order obstruction"
+    ]
+  },
+  "computation": {
+    "script": "check_examples.py",
+    "script_sha256": "2187655a9c0eb84fc774d87b322f8cd41f3be3896465fd78dd947ea9a58e4580",
+    "dependencies": "Python standard library only",
+    "downloaded_code_executed": false,
+    "software_installed": false,
+    "exact_rational_checks_passed": true,
+    "numerical_cases": 12,
+    "boundary_samples_per_case": 96,
+    "closed_formula_cases": 7,
+    "nesting_boundary_samples": 48,
+    "all_assertions_passed": true,
+    "interpretation": "Finite consistency checks; do not establish global analytic claims."
+  },
+  "lean": {
+    "status": "not_run",
+    "files_created": [],
+    "kernel_verified": false
+  },
+  "whole_paper_validated": false,
+  "headline_theorem_validated": false,
+  "novelty_claim": false,
+  "native_mrs_imported": false,
+  "artifact_checks": {
+    "json_parses": true,
+    "theorem_record_count": 19,
+    "dependency_node_count": 40,
+    "dependency_edge_count": 76,
+    "dependency_graph_acyclic": true,
+    "proof_and_evidence_paths_exist": true,
+    "markdown_math_delimiters_balanced": true,
+    "cached_source_manifest_hash_matches": true
+  },
+  "checked_utc": "2026-10-11T02:12:00Z"
+}

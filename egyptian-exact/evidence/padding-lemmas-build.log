@@ -1,0 +1,5 @@
+ℹ [971/972] Built Egyptian.PaddingCollision (1.7s)
+info: Egyptian/PaddingCollision.lean:54:0: Egyptian.prime_collision_obstruction {d M : ℕ} {t : List ℕ} (hd : 3 ≤ d) (hp : ∀ r ∈ d :: M :: t, 0 < r)
+  (hv : reciprocalSum (d :: M :: t) = 1) (ht : ∀ r ∈ t, r < d) (hM : M = d + 1 ∨ M = d * (d + 1)) : ¬Nat.Prime d
+✔ [972/972] Built Egyptian.SafeSplit (3.4s)
+Build completed successfully (972 jobs).

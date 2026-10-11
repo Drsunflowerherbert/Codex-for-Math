@@ -1,0 +1,180 @@
+{
+  "shell_environment": {
+    "cwd": "<project>",
+    "PATH_prefix": "<project>/lean-4.24.0-linux/bin",
+    "XDG_CACHE_HOME": "<project>/.cache"
+  },
+  "setup": {
+    "command": [
+      "lake",
+      "update"
+    ],
+    "exit_code": 1,
+    "log": "evidence/setup.log",
+    "reason": "All official Azure cache downloads returned CONNECT tunnel failed, response 403; the exact official sources and dependencies were checked out successfully."
+  },
+  "milestones": [
+    {
+      "milestone": 1,
+      "attempt": 1,
+      "command": [
+        "lake",
+        "build",
+        "RadialContact.Basic"
+      ],
+      "log": "evidence/milestone-1-attempt-1.log",
+      "exit_code": 1,
+      "errors": [
+        "error: RadialContact/Basic.lean:39:31: unsolved goals",
+        "error: RadialContact/Basic.lean:45:51: unsolved goals",
+        "error: Lean exited with code 1",
+        "error: build failed"
+      ],
+      "warnings": [
+        "warning: RadialContact/Basic.lean:40:14: This simp argument is unused:",
+        "warning: RadialContact/Basic.lean:40:25: This simp argument is unused:",
+        "warning: RadialContact/Basic.lean:40:43: This simp argument is unused:",
+        "warning: RadialContact/Basic.lean:40:61: This simp argument is unused:",
+        "warning: RadialContact/Basic.lean:47:29: This simp argument is unused:",
+        "warning: RadialContact/Basic.lean:47:49: This simp argument is unused:",
+        "warning: RadialContact/Basic.lean:69:29: `mul_le_mul_right` has been deprecated: Use `mul_le_mul_iff_left\u2080` instead"
+      ]
+    },
+    {
+      "milestone": 1,
+      "attempt": 2,
+      "command": [
+        "lake",
+        "build",
+        "RadialContact.Basic"
+      ],
+      "log": "evidence/milestone-1-attempt-2.log",
+      "exit_code": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "milestone": 2,
+      "attempt": 1,
+      "command": [
+        "lake",
+        "build",
+        "RadialContact.Lipschitz"
+      ],
+      "log": "evidence/milestone-2-attempt-1.log",
+      "exit_code": 1,
+      "errors": [
+        "error: RadialContact/Lipschitz.lean:88:58: failed to synthesize",
+        "error: RadialContact/Lipschitz.lean:88:60: failed to synthesize",
+        "error: RadialContact/Lipschitz.lean:93:59: failed to synthesize",
+        "error: RadialContact/Lipschitz.lean:93:61: failed to synthesize",
+        "error: Lean exited with code 1",
+        "error: build failed"
+      ],
+      "warnings": [
+        "warning: RadialContact/Lipschitz.lean:85:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice",
+        "warning: RadialContact/Lipschitz.lean:101:41: declaration uses 'sorry'",
+        "warning: RadialContact/Lipschitz.lean:97:8: declaration uses 'sorry'",
+        "warning: RadialContact/Lipschitz.lean:107:23: declaration uses 'sorry'",
+        "warning: RadialContact/Lipschitz.lean:103:8: declaration uses 'sorry'",
+        "warning: RadialContact/Lipschitz.lean:109:8: declaration uses 'sorry'",
+        "warning: RadialContact/Lipschitz.lean:112:8: declaration uses 'sorry'"
+      ]
+    },
+    {
+      "milestone": 2,
+      "attempt": 2,
+      "command": [
+        "lake",
+        "build",
+        "RadialContact.Lipschitz"
+      ],
+      "log": "evidence/milestone-2-attempt-2.log",
+      "exit_code": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "milestone": 3,
+      "attempt": 1,
+      "command": [
+        "lake",
+        "build",
+        "RadialContact.Inverse"
+      ],
+      "log": "evidence/milestone-3-attempt-1.log",
+      "exit_code": 0,
+      "errors": [],
+      "warnings": [
+        "warning: RadialContact/Inverse.lean:11:0: automatically included section variable(s) unused in theorem `RadialContact.norm_sub_center_lower`:",
+        "warning: RadialContact/Inverse.lean:72:0: automatically included section variable(s) unused in theorem `RadialContact.unitSphere_isEmpty_of_subsingleton`:",
+        "warning: RadialContact/Inverse.lean:82:8: automatically included section variable(s) unused in theorem `RadialContact.zeroCenter_val`:"
+      ]
+    },
+    {
+      "milestone": 3,
+      "attempt": 2,
+      "command": [
+        "lake",
+        "build",
+        "RadialContact.Inverse"
+      ],
+      "log": "evidence/milestone-3-attempt-2.log",
+      "exit_code": 1,
+      "errors": [
+        "error: RadialContact/Inverse.lean:10:70: unexpected token 'omit'; expected 'lemma'",
+        "error: RadialContact/Inverse.lean:73:73: unexpected token 'omit'; expected 'lemma'",
+        "error: Lean exited with code 1",
+        "error: build failed"
+      ],
+      "warnings": []
+    },
+    {
+      "milestone": 3,
+      "attempt": 3,
+      "command": [
+        "lake",
+        "build",
+        "RadialContact.Inverse"
+      ],
+      "log": "evidence/milestone-3-attempt-3.log",
+      "exit_code": 0,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "milestone": 4,
+      "attempt": 1,
+      "command": [
+        "lake",
+        "build",
+        "RadialContact.Derived"
+      ],
+      "log": "evidence/milestone-4-attempt-1.log",
+      "exit_code": 1,
+      "errors": [
+        "error: RadialContact/Inverse.lean:10:70: unexpected token 'omit'; expected 'lemma'",
+        "error: RadialContact/Inverse.lean:73:73: unexpected token 'omit'; expected 'lemma'",
+        "error: Lean exited with code 1",
+        "error: build failed"
+      ],
+      "warnings": []
+    },
+    {
+      "milestone": 4,
+      "attempt": 2,
+      "command": [
+        "lake",
+        "build",
+        "RadialContact.Derived"
+      ],
+      "log": "evidence/milestone-4-attempt-2.log",
+      "exit_code": 0,
+      "errors": [],
+      "warnings": [
+        "warning: RadialContact/Derived.lean:27:8: this tactic is never executed",
+        "warning: RadialContact/Derived.lean:27:8: 'ring' tactic does nothing"
+      ]
+    }
+  ]
+}

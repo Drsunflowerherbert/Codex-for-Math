@@ -1,0 +1,643 @@
+{
+  "schema_version": 1,
+  "study": "Family005 mixed moments and Taylor-contact cancellation",
+  "source": {
+    "repository": "https://github.com/openai/math",
+    "revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "path": "preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/foundations.tex",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Catalans-constant-is-irrational-September-24-2026/build/sections/foundations.tex",
+    "local_snapshot": "catalog/sources/preprints_Catalans-constant-is-irrational-September-24-2026_build_sections_foundations.tex",
+    "sha256": "3929650dfb36859d8f88281795d348043f903c41a70b0bf3598c21586a633852",
+    "matches_catalog_manifest": true,
+    "scoped_lines": [
+      [
+        54,
+        71
+      ],
+      [
+        93,
+        262
+      ]
+    ],
+    "exclusions": [
+      "two-adic valuation subsection",
+      "determinant nonvanishing",
+      "Catalan irrationality"
+    ]
+  },
+  "conventions": {
+    "domains": "i,j are nonnegative integers unless an extension is stated explicitly",
+    "square_root": "positive on (-1,1)",
+    "central_kernel": "c_(a/2)=0 for negative or odd integer a",
+    "negative_moment": "m_(-1)=0 only as an explicit convention in recurrences",
+    "formal_coordinates": [
+      "1",
+      "G",
+      "zeta(2)"
+    ],
+    "no_independence_assumption": true,
+    "polynomial_coefficients": "rational in the main theorem"
+  },
+  "theorems": [
+    {
+      "id": "MM001",
+      "title": "Absolute integrability of M",
+      "hypotheses": [
+        "P and Q are real polynomials",
+        "f(t) is the positive square root of 1-t^2 for -1<t<1"
+      ],
+      "conclusion": "The absolute integral of |t| P(t) Q(s) / (f(t)(1-ts)) over (-1,1) x (0,1) is finite; both integration orders agree.",
+      "dependencies": [],
+      "proof": {
+        "file": "study.md",
+        "section": "2",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [
+          "eq:mixed-moments"
+        ],
+        "line_range": [
+          54,
+          71
+        ]
+      },
+      "kind": "source-supported theorem with independent proof"
+    },
+    {
+      "id": "MM002",
+      "title": "Absolute integrability of Z",
+      "hypotheses": [
+        "D and Q are real polynomials"
+      ],
+      "conclusion": "The absolute integral of D(t) Q(s)/(1-ts) over (0,1)^2 is finite; both integration orders agree.",
+      "dependencies": [],
+      "proof": {
+        "file": "study.md",
+        "section": "2",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [
+          "eq:mixed-moments"
+        ],
+        "line_range": [
+          54,
+          71
+        ]
+      },
+      "kind": "source-supported theorem with independent proof"
+    },
+    {
+      "id": "MM003",
+      "title": "Central binomial recurrence and generating series",
+      "hypotheses": [
+        "c_r = binomial(2r,r)/4^r for natural r"
+      ],
+      "conclusion": "c_0=1; c_(r+1)=((2r+1)/(2r+2))*c_r; sum_(r>=0) c_r*t^(2r)=1/sqrt(1-t^2) for |t|<1.",
+      "dependencies": [],
+      "proof": {
+        "file": "study.md",
+        "section": "3",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [
+          "eq:moment-values"
+        ],
+        "line_range": [
+          95,
+          105
+        ]
+      },
+      "kind": "source-supported theorem with independent proof"
+    },
+    {
+      "id": "MM004",
+      "title": "Rational one variable moments",
+      "hypotheses": [
+        "i is a nonnegative integer",
+        "m_i is the integral of |t|t^i/f(t)",
+        "m_(-1) is defined as 0"
+      ],
+      "conclusion": "m_i=0 for odd i and 2/((i+1)c_(i/2)) for even i; (i+1)m_i=i*m_(i-2) for i>=1; m_i tends to 0.",
+      "dependencies": [
+        "MM001",
+        "MM003"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "4",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [
+          "eq:moment-values"
+        ],
+        "line_range": [
+          95,
+          105
+        ]
+      },
+      "kind": "source-supported theorem with independent proof"
+    },
+    {
+      "id": "MM005",
+      "title": "M moment series",
+      "hypotheses": [
+        "i,j are nonnegative integers"
+      ],
+      "conclusion": "M(i,j)=sum_(u>=0) m_(i+u)/(j+u+1), with absolute justification of the signed geometric expansion.",
+      "dependencies": [
+        "MM001",
+        "MM004"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "6",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [
+          "eq:moment-series"
+        ],
+        "line_range": [
+          106,
+          110
+        ]
+      },
+      "kind": "source-supported theorem with independent proof"
+    },
+    {
+      "id": "MM006",
+      "title": "M diagonal recurrence and reduction",
+      "hypotheses": [
+        "i,j are nonnegative integers"
+      ],
+      "conclusion": "M(i,j)-M(i+1,j+1)=m_i/(j+1); finite iteration gives the two diagonal-reduction formulas in study.md section 6.",
+      "dependencies": [
+        "MM005"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "6",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [
+          "eq:moment-series",
+          "eq:diagonal-reduction"
+        ],
+        "line_range": [
+          107,
+          183
+        ]
+      },
+      "kind": "source-supported theorem with independent proof"
+    },
+    {
+      "id": "MM007",
+      "title": "Harmonic evaluation of Z",
+      "hypotheses": [
+        "i,j are nonnegative integers",
+        "H_n=sum_(k=1..n)1/k",
+        "H_n^(2)=sum_(k=1..n)1/k^2"
+      ],
+      "conclusion": "Z(i,i)=zeta(2)-H_i^(2); for i!=j, Z(i,j)=(H_i-H_j)/(i-j).",
+      "dependencies": [
+        "MM002"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "5",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [
+          "eq:rational-z",
+          "eq:rational-decomposition"
+        ],
+        "line_range": [
+          190,
+          211
+        ]
+      },
+      "kind": "source-supported theorem with independent proof"
+    },
+    {
+      "id": "MM008",
+      "title": "M boundary recurrences",
+      "hypotheses": [
+        "Kminus_d=M(d,0)",
+        "Kplus_d=M(0,d)",
+        "d>=2 is an integer"
+      ],
+      "conclusion": "d*Kminus_d=(d-1)*Kminus_(d-2)+m_(d-2)+m_(d-1); Kminus_1=2; (d-1)*Kplus_d=(d-2)*Kplus_(d-2)+2/(d-1).",
+      "dependencies": [
+        "MM004",
+        "MM005"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "7",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [
+          "eq:boundary-recurrences"
+        ],
+        "line_range": [
+          112,
+          133
+        ]
+      },
+      "kind": "source-supported theorem with independent proof"
+    },
+    {
+      "id": "MM009",
+      "title": "Catalan boundary start",
+      "hypotheses": [
+        "G=sum_(r>=0)(-1)^r/(2r+1)^2"
+      ],
+      "conclusion": "M(0,0)=4G.",
+      "dependencies": [
+        "MM001"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "8 Catalan start",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [
+          "eq:boundary-starts"
+        ],
+        "line_range": [
+          135,
+          146
+        ]
+      },
+      "kind": "source-supported theorem with independent proof"
+    },
+    {
+      "id": "MM010",
+      "title": "Zeta boundary start",
+      "hypotheses": [
+        "zeta(2)=sum_(n>=1)1/n^2"
+      ],
+      "conclusion": "M(0,1)=(3/2)*zeta(2), by the nonnegative integral -2*integral_0^1 log(x)/(1-x^2) dx.",
+      "dependencies": [
+        "MM001"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "8 zeta start",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [
+          "eq:boundary-starts"
+        ],
+        "line_range": [
+          135,
+          166
+        ]
+      },
+      "kind": "source result; shorter independent direct-integral proof"
+    },
+    {
+      "id": "MM011",
+      "title": "Optional pi evaluation",
+      "hypotheses": [
+        "pi and arcsin have their usual real analytic meanings"
+      ],
+      "conclusion": "M(0,1)=pi^2/4 and hence zeta(2)=pi^2/6.",
+      "dependencies": [
+        "MM003",
+        "MM004",
+        "MM005",
+        "MM010"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "8 pi notation",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [
+          "eq:boundary-starts"
+        ],
+        "line_range": [
+          147,
+          166
+        ]
+      },
+      "kind": "source-supported theorem with independent proof"
+    },
+    {
+      "id": "MM012",
+      "title": "Rational boundary arrays and closed forms",
+      "hypotheses": [
+        "kminus_0=kplus_0=kplus_1=0",
+        "kminus_1=2",
+        "the arrays satisfy the source boundary recurrences",
+        "Hstar_z=c_(z/2) for even z and 1/(z*c_((z-1)/2)) for odd z"
+      ],
+      "conclusion": "The arrays are uniquely rational; Hstar_(z+2)/Hstar_z=(z+1)/(z+2); the three finite closed-form sums in study.md section 9 hold, including empty sums.",
+      "dependencies": [
+        "MM003",
+        "MM004"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "9",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [
+          "eq:rational-starts",
+          "eq:h-star",
+          "eq:explicit-boundary-arrays"
+        ],
+        "line_range": [
+          168,
+          241
+        ]
+      },
+      "kind": "source-supported theorem with independent proof"
+    },
+    {
+      "id": "MM013",
+      "title": "Universal M decomposition",
+      "hypotheses": [
+        "i,j are nonnegative integers",
+        "M0 is the rational diagonal-reduction array",
+        "c_(a/2)=0 if the integer a is negative or odd"
+      ],
+      "conclusion": "M(i,j)=M0(i,j)+4G*c_((i-j)/2)+(3/2)*zeta(2)*c_((j-i-1)/2). No uniqueness or independence of real constants is asserted.",
+      "dependencies": [
+        "MM003",
+        "MM006",
+        "MM008",
+        "MM009",
+        "MM010",
+        "MM012"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "10",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [
+          "eq:rational-decomposition"
+        ],
+        "line_range": [
+          168,
+          207
+        ]
+      },
+      "kind": "source-supported theorem with independent proof"
+    },
+    {
+      "id": "MM014",
+      "title": "Exact polynomial defect identity",
+      "hypotheses": [
+        "P,D are rational polynomials",
+        "j is a nonnegative integer",
+        "p_i,d_i are their coefficients"
+      ],
+      "conclusion": "M(P,j)-(3/2)Z(D,j)=A_j+B_j*G+(3/2)*E_j*zeta(2), with A_j=sum_i p_i*M0(i,j)-(3/2)*sum_i d_i*Z0(i,j), B_j=4*sum_(r>=0)p_(j+2r)c_r, E_j=[t^j](tP/sqrt(1-t^2)-D).",
+      "dependencies": [
+        "MM003",
+        "MM007",
+        "MM013"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "11",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [
+          "eq:rational-decomposition",
+          "eq:rational-raw-entry"
+        ],
+        "line_range": [
+          197,
+          261
+        ]
+      },
+      "kind": "generalized reusable extraction with independent proof"
+    },
+    {
+      "id": "MM015",
+      "title": "Analytic contact and finite jet vanishing",
+      "hypotheses": [
+        "F is analytic in a real neighborhood of zero",
+        "L is a nonnegative integer"
+      ],
+      "conclusion": "F(t)=O(t^L) as t tends to zero iff its Taylor coefficients in degrees less than L vanish; one-sided contact suffices as well.",
+      "dependencies": [],
+      "proof": {
+        "file": "study.md",
+        "section": "11",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [],
+        "line_range": null
+      },
+      "kind": "elementary auxiliary theorem"
+    },
+    {
+      "id": "MM016",
+      "title": "Rational polynomial Taylor contact cancellation",
+      "hypotheses": [
+        "P,D are rational polynomials",
+        "L>=1 is an integer",
+        "tP(t)/sqrt(1-t^2)-D(t)=O(t^L) as t tends to zero",
+        "j is an integer with 0<=j<L"
+      ],
+      "conclusion": "There are explicitly specified rational A_j,B_j such that M(P,j)-(3/2)Z(D,j)=A_j+B_j*G.",
+      "dependencies": [
+        "MM014",
+        "MM015"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "11",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [
+          "eq:contact",
+          "prop:rationality"
+        ],
+        "line_range": [
+          243,
+          262
+        ]
+      },
+      "kind": "main generalized extraction; ordinary proof completed"
+    },
+    {
+      "id": "MM017",
+      "title": "Polynomial test function cancellation",
+      "hypotheses": [
+        "P,D,Q are rational polynomials",
+        "the finite pairing sum_j coefficient(Q,j)*E_j equals zero"
+      ],
+      "conclusion": "M(P,Q)-(3/2)Z(D,Q) belongs to Q+QG. In particular contact of order L and degree(Q)<L imply this conclusion.",
+      "dependencies": [
+        "MM014",
+        "MM015"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "12 Polynomial test functions",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [],
+        "line_range": null
+      },
+      "kind": "bilinear reusable corollary"
+    },
+    {
+      "id": "MM018",
+      "title": "Unique contact truncation",
+      "hypotheses": [
+        "P is a rational polynomial",
+        "L>=1 is an integer"
+      ],
+      "conclusion": "The unique degree-less-than-L D with contact order at least L is the degree-less-than-L truncation of tP/sqrt(1-t^2). All polynomial solutions differ from it by a multiple of t^L.",
+      "dependencies": [
+        "MM003",
+        "MM015"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "12 Computing a matching polynomial",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [],
+        "line_range": null
+      },
+      "kind": "constructive reusable corollary"
+    },
+    {
+      "id": "MM019",
+      "title": "Exact rational series tail bound",
+      "hypotheses": [
+        "i,j are nonnegative integers",
+        "N>=1 is an integer"
+      ],
+      "conclusion": "The tail after N terms of the M series lies between zero and max(1,(i+N)/(j+N+1))*(m_(i+N-2)+m_(i+N-1)).",
+      "dependencies": [
+        "MM004",
+        "MM005"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "6 Exact rational tail bound",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [],
+        "line_range": null
+      },
+      "kind": "additional reusable estimate"
+    },
+    {
+      "id": "MM020",
+      "title": "Rational adjacent diagonal",
+      "hypotheses": [
+        "i>=1 is an integer"
+      ],
+      "conclusion": "M(i,i-1)=m_(i-2)+m_(i-1).",
+      "dependencies": [
+        "MM004",
+        "MM005"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "6 Exact rational tail bound",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [],
+        "line_range": null
+      },
+      "kind": "additional telescoping identity"
+    },
+    {
+      "id": "MM021",
+      "title": "Coefficient field extension",
+      "hypotheses": [
+        "K is a subfield of R",
+        "P,D have coefficients in K",
+        "the same integer-index and Taylor-contact hypotheses as MM016 hold"
+      ],
+      "conclusion": "M(P,j)-(3/2)Z(D,j) belongs to K+K*G.",
+      "dependencies": [
+        "MM003",
+        "MM007",
+        "MM013",
+        "MM015"
+      ],
+      "proof": {
+        "file": "study.md",
+        "section": "12 Other coefficient fields",
+        "status": "ordinary mathematical proof provided; not Lean verified"
+      },
+      "source": {
+        "labels": [],
+        "line_range": null
+      },
+      "kind": "same proof with coefficient field generalized"
+    }
+  ],
+  "topological_order": [
+    "MM001",
+    "MM002",
+    "MM003",
+    "MM004",
+    "MM005",
+    "MM006",
+    "MM007",
+    "MM008",
+    "MM009",
+    "MM010",
+    "MM011",
+    "MM012",
+    "MM013",
+    "MM014",
+    "MM015",
+    "MM016",
+    "MM017",
+    "MM018",
+    "MM019",
+    "MM020",
+    "MM021"
+  ],
+  "verification": {
+    "ordinary_mathematical_proofs": "study.md",
+    "independent_audit": "audit.md",
+    "exact_arithmetic_program": "certificates.py",
+    "exact_arithmetic_output": "certificates.json",
+    "test_scope": "Finite exact identities only; no substitution for G or zeta(2)",
+    "lean_compiled": false,
+    "lean_declarations_matched": false,
+    "external_code_executed": false,
+    "original_standard_library_code_executed": true
+  },
+  "nonclaims": [
+    "No proof of Catalan irrationality",
+    "No claim of independence of 1, G, zeta(2)",
+    "No unconditional nonmembership conclusion from a nonzero formal zeta(2) coordinate",
+    "No Lean verification or compilation claim",
+    "No validation of later manuscript sections"
+  ]
+}

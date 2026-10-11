@@ -1,0 +1,20 @@
+import TangentLimit.Limit
+import TangentLimit.NonPole
+
+#print TangentLimit.PiDiophantine
+#check TangentLimit.poleDenom_pos
+#check TangentLimit.poleDenom_odd
+#check TangentLimit.abs_poleOffset_le
+#check TangentLimit.poleDenom_le_two_mul
+#check TangentLimit.eventually_poleDenom_ge
+#check TangentLimit.poleOffset_nearest
+#check TangentLimit.chord_cos_bound
+#check TangentLimit.pole_distance_lower_bound
+#check TangentLimit.eventually_tan_le_pole_rpow
+#check TangentLimit.tan_div_cube_tendsto_zero
+#check TangentLimit.tan_div_cube_positive_tendsto_zero
+#check TangentLimit.cos_natCast_ne_zero
+#print axioms TangentLimit.poleOffset_nearest
+#print axioms TangentLimit.eventually_tan_le_pole_rpow
+#print axioms TangentLimit.tan_div_cube_tendsto_zero
+#print axioms TangentLimit.tan_div_cube_positive_tendsto_zero

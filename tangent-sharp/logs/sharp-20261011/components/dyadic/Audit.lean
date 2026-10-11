@@ -1,0 +1,23 @@
+import TangentLimit.DyadicSummability
+#check TangentLimit.sum_range_two_pow_eq
+#check TangentLimit.nat_le_two_pow
+#check TangentLimit.summable_of_dyadic_block_bound
+#check TangentLimit.summable_nat_add_one_mul_geometric
+#check TangentLimit.summable_of_dyadic_geometric_bound
+#check TangentLimit.sum_reciprocal_doubling_block_le_one
+#check TangentLimit.harmonic_sum_two_pow_le
+#print axioms TangentLimit.sum_range_two_pow_eq
+#print axioms TangentLimit.nat_le_two_pow
+#print axioms TangentLimit.summable_of_dyadic_block_bound
+#print axioms TangentLimit.summable_nat_add_one_mul_geometric
+#print axioms TangentLimit.summable_of_dyadic_geometric_bound
+#print axioms TangentLimit.sum_reciprocal_doubling_block_le_one
+#print axioms TangentLimit.harmonic_sum_two_pow_le
+#check TangentLimit.summable_of_dyadic_block_bound_pos
+#check TangentLimit.dyadic_rpow_eq_geometric
+#check TangentLimit.summable_of_dyadic_rpow_bound
+#check TangentLimit.summable_of_dyadic_rpow_harmonic_bound
+#print axioms TangentLimit.summable_of_dyadic_block_bound_pos
+#print axioms TangentLimit.dyadic_rpow_eq_geometric
+#print axioms TangentLimit.summable_of_dyadic_rpow_bound
+#print axioms TangentLimit.summable_of_dyadic_rpow_harmonic_bound

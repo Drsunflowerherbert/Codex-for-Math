@@ -1,0 +1,245 @@
+{
+  "schema": "portable-exact-arithmetic-cases-v1",
+  "family_id": "374",
+  "arithmetic": "fractions.Fraction; no floating point",
+  "methods": [
+    "rational half-plane polygon clipping and shoelace areas",
+    "enumeration of all invertible 5-column bases of the 3x3 transport polytope",
+    "coordinate-projection lower bound for W1"
+  ],
+  "limitations": "Finite fixtures and arithmetic certificates; not Lean or a substitute for the parameter-uniform written proof.",
+  "cases": [
+    {
+      "a": "2/5",
+      "b": "1/5",
+      "central_width_range": [
+        "1/5",
+        "3/5"
+      ],
+      "target_masses_order_minus_central_plus": [
+        "3/10",
+        "2/5",
+        "3/10"
+      ],
+      "common_source_joint_mass_matrix": [
+        [
+          "11/40",
+          "1/40",
+          "0"
+        ],
+        [
+          "1/40",
+          "7/20",
+          "1/40"
+        ],
+        [
+          "0",
+          "1/40",
+          "11/40"
+        ]
+      ],
+      "quadratic_target_cost_matrix": [
+        [
+          "0",
+          "26/25",
+          "4"
+        ],
+        [
+          "1",
+          "1/25",
+          "1"
+        ],
+        [
+          "4",
+          "26/25",
+          "0"
+        ]
+      ],
+      "central_intersection_mass": "7/20",
+      "A_minus_B_mass": "1/20",
+      "B_minus_A_mass": "1/20",
+      "symmetric_difference_mass": "1/10",
+      "W1": "2/25",
+      "W2_squared": "2/125",
+      "L2_map_difference_squared": "29/250",
+      "common_source_cost_divided_by_optimal_target_cost": "29/4",
+      "transport_polytope_distinct_vertices_enumerated": 10,
+      "quadratic_minimizer_vertices": 1,
+      "checks_passed": true
+    },
+    {
+      "a": "1/4",
+      "b": "1/8",
+      "central_width_range": [
+        "1/8",
+        "3/8"
+      ],
+      "target_masses_order_minus_central_plus": [
+        "3/8",
+        "1/4",
+        "3/8"
+      ],
+      "common_source_joint_mass_matrix": [
+        [
+          "23/64",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "7/32",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "23/64"
+        ]
+      ],
+      "quadratic_target_cost_matrix": [
+        [
+          "0",
+          "65/64",
+          "4"
+        ],
+        [
+          "1",
+          "1/64",
+          "1"
+        ],
+        [
+          "4",
+          "65/64",
+          "0"
+        ]
+      ],
+      "central_intersection_mass": "7/32",
+      "A_minus_B_mass": "1/32",
+      "B_minus_A_mass": "1/32",
+      "symmetric_difference_mass": "1/16",
+      "W1": "1/32",
+      "W2_squared": "1/256",
+      "L2_map_difference_squared": "17/256",
+      "common_source_cost_divided_by_optimal_target_cost": "17",
+      "transport_polytope_distinct_vertices_enumerated": 10,
+      "quadratic_minimizer_vertices": 1,
+      "checks_passed": true
+    },
+    {
+      "a": "1/10",
+      "b": "1/20",
+      "central_width_range": [
+        "1/20",
+        "3/20"
+      ],
+      "target_masses_order_minus_central_plus": [
+        "9/20",
+        "1/10",
+        "9/20"
+      ],
+      "common_source_joint_mass_matrix": [
+        [
+          "71/160",
+          "1/160",
+          "0"
+        ],
+        [
+          "1/160",
+          "7/80",
+          "1/160"
+        ],
+        [
+          "0",
+          "1/160",
+          "71/160"
+        ]
+      ],
+      "quadratic_target_cost_matrix": [
+        [
+          "0",
+          "401/400",
+          "4"
+        ],
+        [
+          "1",
+          "1/400",
+          "1"
+        ],
+        [
+          "4",
+          "401/400",
+          "0"
+        ]
+      ],
+      "central_intersection_mass": "7/80",
+      "A_minus_B_mass": "1/80",
+      "B_minus_A_mass": "1/80",
+      "symmetric_difference_mass": "1/40",
+      "W1": "1/200",
+      "W2_squared": "1/4000",
+      "L2_map_difference_squared": "101/4000",
+      "common_source_cost_divided_by_optimal_target_cost": "101",
+      "transport_polytope_distinct_vertices_enumerated": 10,
+      "quadratic_minimizer_vertices": 1,
+      "checks_passed": true
+    },
+    {
+      "a": "1/100",
+      "b": "1/200",
+      "central_width_range": [
+        "1/200",
+        "3/200"
+      ],
+      "target_masses_order_minus_central_plus": [
+        "99/200",
+        "1/100",
+        "99/200"
+      ],
+      "common_source_joint_mass_matrix": [
+        [
+          "791/1600",
+          "1/1600",
+          "0"
+        ],
+        [
+          "1/1600",
+          "7/800",
+          "1/1600"
+        ],
+        [
+          "0",
+          "1/1600",
+          "791/1600"
+        ]
+      ],
+      "quadratic_target_cost_matrix": [
+        [
+          "0",
+          "40001/40000",
+          "4"
+        ],
+        [
+          "1",
+          "1/40000",
+          "1"
+        ],
+        [
+          "4",
+          "40001/40000",
+          "0"
+        ]
+      ],
+      "central_intersection_mass": "7/800",
+      "A_minus_B_mass": "1/800",
+      "B_minus_A_mass": "1/800",
+      "symmetric_difference_mass": "1/400",
+      "W1": "1/20000",
+      "W2_squared": "1/4000000",
+      "L2_map_difference_squared": "10001/4000000",
+      "common_source_cost_divided_by_optimal_target_cost": "10001",
+      "transport_polytope_distinct_vertices_enumerated": 10,
+      "quadratic_minimizer_vertices": 1,
+      "checks_passed": true
+    }
+  ]
+}

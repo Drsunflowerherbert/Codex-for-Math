@@ -1,0 +1,20 @@
+@Egyptian.canonical_mem : ∀ {l : List ℕ},
+  (∀ d ∈ l, 0 < d) → Egyptian.canonical l ∈ Egyptian.sortedRepresentations l.length (Egyptian.reciprocalSum l)
+@Egyptian.sorted_duplicate_cleanup : ∀ {n : ℕ} {x : ℝ} {current : List ℕ},
+  current ∈ Egyptian.sortedRepresentations n x →
+    x < 1 → ¬current.Nodup → ∃ next ∈ Egyptian.sortedRepresentations n x, current.sum < next.sum
+@Egyptian.exact_length_distinct : ∀ {input : List ℕ},
+  (∀ d ∈ input, 0 < d) →
+    0 < Egyptian.reciprocalSum input →
+      Egyptian.reciprocalSum input < 1 →
+        ∃ out,
+          (∀ d ∈ out, 0 < d) ∧
+            out.Nodup ∧ out.length = input.length ∧ Egyptian.reciprocalSum out = Egyptian.reciprocalSum input
+@Egyptian.finite_increasing_weight_wellFounded : ∀ {α : Type u_1} (s : Set α),
+  s.Finite → ∀ (weight : α → ℕ), WellFounded fun next current => weight ↑current < weight ↑next
+Egyptian.cleanup_wellFounded : ∀ (n : ℕ) (x : ℝ), WellFounded fun next current => (↑current).sum < (↑next).sum
+'Egyptian.canonical_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.sorted_duplicate_cleanup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.exact_length_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.finite_increasing_weight_wellFounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Egyptian.cleanup_wellFounded' depends on axioms: [propext, Classical.choice, Quot.sound]

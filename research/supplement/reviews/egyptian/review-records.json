@@ -1,0 +1,93 @@
+{
+  "schema": "portable-math-study-independent-review-v1",
+  "review_date_utc": "2026-10-11",
+  "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "review_kind": "independent AI-assisted ordinary mathematical proof review and exact arithmetic audit",
+  "proof_file": "review.md",
+  "computation_file": "independent-audit-results.json",
+  "proposed_revisions_file": "proposed-revisions.md",
+  "native_mrs_imported": false,
+  "lean_status": "not_run",
+  "novelty_claim": false,
+  "originals_modified": false,
+  "records": [
+    {
+      "id": "EGY-001",
+      "ordinary_proof_review_status": "independently_reviewed_pass",
+      "conclusion_scope": "All real x>0 and positive integer k; sorted positive integer denominators.",
+      "proof_checks": ["first-denominator upper bound", "positive remaining-sum induction", "finite union", "enumeration soundness, completeness, uniqueness and termination"],
+      "direct_computational_coverage": "Strict expansions of one at lengths 3 through 6; independent factor-pair enumeration matches all certificate input sets.",
+      "notes": "Executable exact enumeration is for rational x; the finite-set theorem is more general."
+    },
+    {
+      "id": "EGY-002",
+      "ordinary_proof_review_status": "independently_reviewed_pass",
+      "conclusion_scope": "Exactly-k distinct positive integer unit-fraction representations for represented 0<x<1.",
+      "proof_checks": ["exclusion of denominator one and repeated two", "both replacement identities", "strict statistic increases", "finite-state termination", "terminal-state distinctness"],
+      "direct_computational_coverage": "34 inputs, 80 reconstructed steps, 47 even and 33 odd, maximum trace length 5.",
+      "notes": "The example script's 10000-step guard is an operational limit, not a theorem bound."
+    },
+    {
+      "id": "EGY-003",
+      "ordinary_proof_review_status": "independently_reviewed_pass",
+      "conclusion_scope": "One-step exact marker padding for distinct expansions of one of length at least three.",
+      "proof_checks": ["unmarked maximum split", "exhaustion of collisions at marked maximum", "composite alternative split and strict inequalities", "both prime exclusions modulo p", "marker and length preservation"],
+      "direct_computational_coverage": "14307 marked cases from every strict expansion of one at lengths 3 through 6; one separately constructed eight-term composite exception.",
+      "notes": "The prose denial of any denominator-size bound should be corrected: the construction gives M'<=M(M+1)."
+    },
+    {
+      "id": "EGY-004",
+      "ordinary_proof_review_status": "independently_reviewed_pass",
+      "conclusion_scope": "Preservation of the exact marker at every integer target length R>=r.",
+      "proof_checks": ["zero-step base case", "induction on R-r", "preservation of every EGY-003 precondition"],
+      "direct_computational_coverage": "Original certificates cover individual one-step transformations, not arbitrary target lengths.",
+      "notes": "Universal conclusion rests on ordinary induction."
+    },
+    {
+      "id": "EGY-005",
+      "ordinary_proof_review_status": "independently_reviewed_pass",
+      "conclusion_scope": "There is no two-term distinct positive integer unit-fraction representation of one.",
+      "proof_checks": ["denominator-one exclusion", "maximum distinct two-term sum 1/2+1/3<1"],
+      "direct_computational_coverage": "Original script does not directly test the impossibility result; independent audit checks its finite rational arithmetic.",
+      "notes": "Shows that cleanup cannot be extended simply from x<1 to x<=1."
+    },
+    {
+      "id": "EGY-006",
+      "ordinary_proof_review_status": "independently_reviewed_pass",
+      "conclusion_scope": "A two-term representation of 2/3 containing denominator three repeats denominator three.",
+      "proof_checks": ["subtraction leaves exactly 1/3", "uniqueness of a positive integer reciprocal's denominator"],
+      "direct_computational_coverage": "Original script does not directly encode the impossibility argument; independent audit checks 2/3-1/3=1/3.",
+      "notes": "Shows that arbitrary marker preservation cannot be added to fixed-length cleanup."
+    }
+  ],
+  "findings": [
+    {
+      "id": "EGY-REVIEW-01",
+      "severity": "minor_prose_correction",
+      "location": "study.md:74",
+      "finding": "The phrase denying any denominator-size bound is too strong.",
+      "repair": "State the coarse one-step bound M'<=M(M+1) and iterated bound M_t<=(M_0+1)^(2^t)-1; disclaim sharpness or economy rather than all bounds."
+    },
+    {
+      "id": "EGY-REVIEW-02",
+      "severity": "scope_clarification",
+      "location": "study.md:18 and check_examples.py:23-32",
+      "finding": "The real-valued finiteness theorem is broader than the rational executable enumeration.",
+      "repair": "State positive rational input explicitly for the executable algorithm."
+    },
+    {
+      "id": "EGY-REVIEW-03",
+      "severity": "reuse_hardening",
+      "location": "check_examples.py:10-43",
+      "finding": "Known-good input domains are not fully validated; assertions can be disabled; cleanup has an operational step guard.",
+      "repair": "Document the contract and non-universal guard. For reusable library code, use explicit domain checks and a main guard."
+    },
+    {
+      "id": "EGY-REVIEW-04",
+      "severity": "evidence_clarification",
+      "location": "theorem-records.json verification_evidence",
+      "finding": "The same example files are listed for every theorem despite differing direct coverage.",
+      "repair": "Distinguish ordinary-proof review from direct finite computational coverage, particularly for EGY-004 through EGY-006."
+    }
+  ]
+}

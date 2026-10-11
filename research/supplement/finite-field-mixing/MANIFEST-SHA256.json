@@ -1,0 +1,46 @@
+{
+  "description": "Study artifact hashes; manifest itself is excluded.",
+  "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 2679,
+      "sha256": "ee469f5226ea1702dfb5f6924f8ab8d5b8a02aaf819871d6132dc1b8ca823233"
+    },
+    {
+      "file": "audit.md",
+      "bytes": 5320,
+      "sha256": "22f3fb52d37377a9175c6e2a441285c768d1068cdc530d25aacad472b287f7f0"
+    },
+    {
+      "file": "certificates.json",
+      "bytes": 29969,
+      "sha256": "9afa32fd4b24b5d6b758570d8b2c246d819c677c49af8056e6cdee7b9192cde3"
+    },
+    {
+      "file": "counterexamples.md",
+      "bytes": 4296,
+      "sha256": "357071da480651efde511568ec373f3c8d6d62a393ad885349d06c1e3cfe8732"
+    },
+    {
+      "file": "exact-tests.md",
+      "bytes": 2944,
+      "sha256": "5fb10cc3b69a86551092865b1f49a6b69005b7b152cbae062377da916179a11a"
+    },
+    {
+      "file": "study.md",
+      "bytes": 21375,
+      "sha256": "1f68dadd17833ce93ac8a436531714b16e2146783e249948f7f23b60deab6c38"
+    },
+    {
+      "file": "theorems.json",
+      "bytes": 15617,
+      "sha256": "ded12728ba80562779f97879712bcfcc7353bb97948dbf12b20b31cf52e60b97"
+    },
+    {
+      "file": "verify.py",
+      "bytes": 16379,
+      "sha256": "3ec2b937128f4dfca13b65cbffd331036222278cb52c26fcd4a3f8582c1693b3"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "schema": "portable-mathematics-independent-review-v1",
+  "study_id": "family325-positive-block-inequalities",
+  "reviewed_utc": "2026-10-11T02:04:09.880451+00:00",
+  "verdict": "passed_no_mathematical_corrections_required",
+  "review_kind": "Independent ordinary mathematical review and exact regression rerun; not formal kernel verification",
+  "reviewed_artifact_sha256": {
+    "study.md": "fec0fdca335159320f13c572e34f77fa0dad3578ec76de4da6e4ae437a9c60af",
+    "theorem-records.json": "8276d9642256c65907271f84d3b2082f970909fc3b624cb1639c860e2649c203",
+    "check_exact_examples.py": "056023a525bd5c855961ac8870afa9b6d868d7f9acada6a97efadb28caebbfde",
+    "exact-examples.json": "5e7f79ee684eb8f8d55a3f641e63fdad9abc5c3a37142679db023a6c8031bc51"
+  },
+  "scope": "Finite-dimensional positive-block inequalities, equality conditions, sharpness, compression, examples, and local provenance consistency only",
+  "proof_checks": [
+    {
+      "theorem": "PB0",
+      "status": "passed",
+      "finding": "Rectangular trace cycling gives the exact squared norms and beta=tr(PQ); no commutativity is used."
+    },
+    {
+      "theorem": "PB1",
+      "status": "passed",
+      "finding": "The expanded Hermitian Gram square gives both sum and weighted deficits. The independent SJS trace-square identity is correct."
+    },
+    {
+      "theorem": "PB2",
+      "status": "passed",
+      "finding": "Zero diagonal norms force the corresponding Gram factor and B to vanish. Reciprocal congruence and s=sqrt(c/a) prove the product bound without diagonal-block inverses."
+    },
+    {
+      "theorem": "PB3_PRODUCT",
+      "status": "passed",
+      "finding": "All five nonzero equality conditions are equivalent. The top-left intrinsic identity alone gives beta=t a^2=ac. Minimal-Gram full row rank makes P positive definite, and the stated U,V,H construction yields isometries and all three blocks."
+    },
+    {
+      "theorem": "PB3_SUM",
+      "status": "passed",
+      "finding": "P=Q, Delta J Delta=0, the intrinsic block equations, and product equality with a=c are equivalent. Zero-diagonal cases yield sum equality only for the all-zero block matrix."
+    },
+    {
+      "theorem": "PB3_DEFICIT",
+      "status": "passed",
+      "finding": "The normalized Gram square expands exactly to 2-2 beta/(ac), and a,c>0 is explicitly required."
+    },
+    {
+      "theorem": "PB3_RANK",
+      "status": "passed",
+      "finding": "The normal form gives all four equal ranks and r<=min(p,q); strictness for positive-definite Delta and unequal-size positive-definite diagonal blocks follows. The equal-size unitary formulation uses W=UV*."
+    },
+    {
+      "theorem": "PB3_KERNEL",
+      "status": "passed",
+      "finding": "The Gram factors establish both kernel inclusions and the rank bound by rank-nullity."
+    },
+    {
+      "theorem": "PB4_SHARPNESS",
+      "status": "passed",
+      "finding": "Scalar equality gives coefficients 2, 1/2, and 1; zero padding covers every fixed PSD dimension. The added epsilon construction is positive definite for every fixed p,q and tends to the same sharp ratios."
+    },
+    {
+      "theorem": "PB5_COMPRESSION",
+      "status": "passed",
+      "finding": "The displayed compression is a PSD congruence with precisely the stated Gram factors, so both inequalities and equality conditions specialize correctly."
+    }
+  ],
+  "edge_cases_reviewed": [
+    "A=0 with C nonzero",
+    "C=0 with A nonzero",
+    "all-zero Delta",
+    "rectangular B",
+    "rank-deficient A or C",
+    "redundant Gram rows",
+    "complex phases",
+    "rank-two equality",
+    "positive-definite strictness and limiting sharpness"
+  ],
+  "computation": {
+    "status": "passed",
+    "named_examples": 16,
+    "psd_named_examples": 12,
+    "non_psd_named_examples": 4,
+    "seeded_gram_fixtures": 180,
+    "rerun_in_isolated_temporary_directory": true,
+    "examples_byte_identical": true,
+    "summary_identical": true,
+    "python_version": "3.12.14",
+    "arithmetic": "Gaussian-rational Fraction pairs; standard library only",
+    "finite_checks_are_not_universal_proofs": true
+  },
+  "E16_check": "W W*=I_2 and Y=2XW give Q=4P. The recorded a^2=39, c^2=624, beta=156, sum gap 351, t=4, and four ranks equal to 2 are correct.",
+  "provenance": {
+    "source_revision_as_recorded": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "local_source_sha256_verified": "164f56cc3f5ecbfb65ddba0d0438cacf44f325919ef7dfb742d073c948fddabd",
+    "local_source_bytes_verified": 35175,
+    "cited_lines_434_to_445_match_claimed_sum_comparison": true,
+    "remote_commit_identity_independently_verified": false
+  },
+  "metadata_checks": {
+    "dependency_ids_unique": true,
+    "dependency_references_resolve": true,
+    "dependency_graph_acyclic": true,
+    "background_nodes": 5,
+    "theorem_nodes": 10,
+    "study_and_record_statements_consistent": true
+  },
+  "required_corrections": [],
+  "editorial_improvement_already_incorporated": "The explicit fixed-dimensional positive-definite epsilon sharpness family was added during review and verified.",
+  "review_status_note": "The reviewed originals retain their initial pending-review fields; this separate review records completion for the exact hashes above.",
+  "formal_kernel_checked": false,
+  "external_source_programs_executed": false,
+  "packages_installed": false,
+  "publication_or_import_performed": false,
+  "complete_crouzeix_theorem_reviewed": false
+}

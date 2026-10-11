@@ -1,0 +1,14 @@
+import TangentLimit.Divergence
+set_option pp.fullNames true
+#check @TangentLimit.abs_sin_le_abs_tan
+#print axioms TangentLimit.abs_sin_le_abs_tan
+#check TangentLimit.sin_one_pos
+#print axioms TangentLimit.sin_one_pos
+#check @TangentLimit.sin_one_le_abs_tan_add
+#print axioms TangentLimit.sin_one_le_abs_tan_add
+#check TangentLimit.sin_one_le_abs_tan_nat_add
+#print axioms TangentLimit.sin_one_le_abs_tan_nat_add
+#check TangentLimit.not_summable_abs_tan_div_positive
+#print axioms TangentLimit.not_summable_abs_tan_div_positive
+#check TangentLimit.not_summable_abs_tan_div_rpow_positive
+#print axioms TangentLimit.not_summable_abs_tan_div_rpow_positive

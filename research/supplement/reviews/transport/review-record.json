@@ -1,0 +1,171 @@
+{
+  "schema": "independent-mathematics-review-v1",
+  "family_id": "374",
+  "title": "Independent review of the three atom transport obstruction",
+  "reviewed_utc": "2026-10-11T01:57:02Z",
+  "verdict": "The ten stated mathematical records are supported under their explicit assumptions; no required mathematical correction identified.",
+  "review_type": "Independent ordinary mathematical reasoning, code inspection, and rerun of original exact arithmetic",
+  "review_artifact": "audit-report.md",
+  "optional_refinements_artifact": "optional-refinements.md",
+  "originals_preserved": true,
+  "source_files": [
+    {
+      "path": "../../transport-stability/proof.md",
+      "sha256": "7d8445fc42103de171a2366da8f15a4cce3ddec37f5ea99d3b19738efea212cd"
+    },
+    {
+      "path": "../../transport-stability/theorems.json",
+      "sha256": "6c530bb64c4b0ab92c024425b4b38f198fcb5f2082c331d0e761465724691f70"
+    },
+    {
+      "path": "../../transport-stability/check_exact_cases.py",
+      "sha256": "0732cd6622461fa5dede09e87407ebe60a14290bd512854d4d41c366f2b4b3f5"
+    },
+    {
+      "path": "../../transport-stability/exact-cases.json",
+      "sha256": "988ad6e11f50bf92a518750a75233bdbb9df3e6ee08da01896d94a66d4592008"
+    },
+    {
+      "path": "../../catalog/sources/preprints_Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026_build_source_sections_sharpness.tex",
+      "sha256": "f8732d68d0de8505d20f6c42aefce95d60b3e8363569681fa30632c997999590"
+    }
+  ],
+  "provenance": {
+    "supplied_source_read_in_full": true,
+    "local_source_hash_matches_original_record": true,
+    "stated_upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "upstream_revision_independently_refetched": false,
+    "whole_paper_reviewed": false
+  },
+  "record_reviews": [
+    {
+      "id": "374.finite_affine_maximum_optimality",
+      "status": "supported_as_stated",
+      "findings": "Borel first-index cells, repeated-slope merging, null distinct-slope tie hyperplanes, integrability, dual signs, zero-slack optimality and uniqueness all check.",
+      "qualification": "The regularity hypotheses are sufficient. The fixed-priority refinement is recorded separately and does not extend the gradient claim to arbitrary singular sources."
+    },
+    {
+      "id": "374.three_atom_targets",
+      "status": "supported_as_stated",
+      "findings": "Positive unclipped half-width a+b*t; central mass a and outer masses (1-a)/2; exactly three positive distinct atoms; unused dimensions integrate to one."
+    },
+    {
+      "id": "374.exact_target_Wp",
+      "status": "supported_as_stated",
+      "findings": "The coordinate lower bound and matching upper bound give Wp^p=a*b^p. Equality forces the unique matching coupling for finite p>=1, including p=1. W-infinity=b."
+    },
+    {
+      "id": "374.exact_map_L2",
+      "status": "supported_as_stated",
+      "findings": "Both difference-region masses equal b/4; intersection mass a-b/4; joint matrix and pointwise orthogonal-coordinate identity give L2_squared=b/2+a*b^2."
+    },
+    {
+      "id": "374.W2_exponent_obstruction",
+      "status": "supported_as_stated",
+      "findings": "The ratio diverges exactly when alpha>1/3 for the chosen family; endpoint limit 2^(-2/3) is correct.",
+      "qualification": "An exponent obstruction does not prove a global upper bound at the endpoint."
+    },
+    {
+      "id": "374.W1_exponent_obstruction",
+      "status": "supported_as_stated",
+      "findings": "The ratio diverges exactly when alpha>1/4 for the chosen family; endpoint limit 2^(-3/4) is correct.",
+      "qualification": "The conclusion is a necessary exponent ceiling only."
+    },
+    {
+      "id": "374.Wp_to_L2_exponent_obstruction",
+      "status": "supported_as_stated",
+      "findings": "Ratio exponent 1/2-alpha*(1+1/p) yields ceiling p/(2*(p+1)) for every fixed finite p>=1."
+    },
+    {
+      "id": "374.exact_map_Lq",
+      "status": "supported_as_stated",
+      "findings": "Three region contributions give the stated exact identity, asymptotic (a/4)^(1/q), and necessary ceiling p/(q*(p+1)) for fixed finite p,q>=1."
+    },
+    {
+      "id": "374.Linfinity_discontinuity",
+      "status": "supported_as_stated",
+      "findings": "The positive-mass B-minus-A region attains sqrt(1+b^2), whereas target distances tend to zero.",
+      "qualification": "The separate fixed-mass refinement also proves discontinuity at a fixed three-atom target."
+    },
+    {
+      "id": "374.dimension_one_contrast",
+      "status": "supported_as_stated",
+      "findings": "Finite quantile step maps are convex-potential gradients; the common-quantile layer-cake coupling maximizes the scalar product and proves L2=W2.",
+      "optional_clarification": "Extend the outer quantile steps constantly off the source interval before integrating to obtain a globally defined finite affine maximum."
+    }
+  ],
+  "computation_review": {
+    "original_script_executed_from_byte_identical_copy": true,
+    "script_copy": "rerun/check_exact_cases.py",
+    "command": "python reviews/transport/rerun/check_exact_cases.py",
+    "python_version": "3.12.14",
+    "arithmetic": "fractions.Fraction, standard library only",
+    "downloaded_code_executed": false,
+    "packages_installed": false,
+    "cases_passed": 4,
+    "case_parameters_a": ["2/5", "1/4", "1/10", "1/100"],
+    "parameter_relation": "b=a/2 in every executable fixture",
+    "distinct_vertices_each_case": 10,
+    "minimizing_vertices_each_case": 1,
+    "all_minimizers_are_matching": true,
+    "regenerated_fixtures_byte_identical": true,
+    "output": "rerun/exact-cases.json",
+    "stdout": "rerun/stdout.txt",
+    "exhaustiveness_justification": "The equality matrix has rank five. Every vertex has independent positive-support columns extendable to a five-column basis. Enumerating all 126 five-column subsets, retaining exact feasible solutions including zeros and deduplicating, therefore covers every vertex. A unique minimizing vertex is the unique LP minimizer by compact-polytope convexity.",
+    "W1_method": "Coordinate-projection lower-bound certificate plus explicit matching upper bound; not W1 LP enumeration.",
+    "limitations": [
+      "Only four rational parameter pairs are executed.",
+      "The handwritten cell inequalities are independently checked against the potentials but not mechanically derived from them.",
+      "The code computes in two source coordinates; the higher-dimensional extension is a written product-measure argument.",
+      "The script does not establish parameter-uniform real formulas or general p,q claims.",
+      "The count of ten vertices applies to these cases only, not all parameters.",
+      "The LP completeness justification is ordinary mathematics, not a proof-kernel certificate."
+    ]
+  },
+  "required_mathematical_corrections": [],
+  "optional_maintenance": [
+    "A future authorized metadata edit may replace the original pending independent-review status with a reference to this review. Originals have not been edited.",
+    "The dimension-one proof may explicitly state the constant extension of its outer quantile steps."
+  ],
+  "separate_optional_results": [
+    {
+      "id": "374.review.fixed_priority_induced_plan_uniqueness",
+      "assumptions": [
+        "rho is a Borel probability on R^d with finite second moment; no absolute continuity is assumed",
+        "u is a nonempty finite affine maximum with finite intercepts",
+        "merge repeated slopes retaining their largest intercept",
+        "fix one source-independent total order on the remaining distinct slopes",
+        "T selects the earliest maximizing slope; lambda=T_pushforward(rho)"
+      ],
+      "conclusion": "T is Borel and its graph is the unique quadratic-cost optimal plan from rho to the induced target lambda.",
+      "proof": "The original dual slack proves optimality. For any optimizer, zero slack gives rank(y)>=rank(T(x)); equal target marginals force the bounded nonnegative rank difference to have expectation zero. Equal ranks force equal slopes.",
+      "unused_slopes": "Retain them in the order if desired; they have zero lambda-mass and zero second-marginal mass in all couplings.",
+      "nonclaim": "No gradient-a.e. identity without a separate null-active-tie assumption, and no uniqueness for arbitrary tie selections."
+    },
+    {
+      "id": "374.review.fixed_mass_one_half_ceiling",
+      "assumptions": [
+        "d>=2, rho uniform on [-1,1]^d",
+        "use the reviewed two-parameter construction with a=1/4 and 0<b<1/4"
+      ],
+      "conclusions": {
+        "atom_masses_each_target": ["3/8", "1/4", "3/8"],
+        "within_target_atom_separation_at_least": "1",
+        "finite_p_Wp": "4^(-1/p)*b",
+        "Winfinity": "b",
+        "L2_squared": "b/2+b^2/4",
+        "Linfinity": "sqrt(1+b^2)",
+        "necessary_L2_exponent_ceiling": "1/2 for every 1<=p<=infinity",
+        "continuity_failure": "The target-to-map assignment is not continuous at fixed mu in essential-supremum map norm, for any Wp target metric, including W-infinity."
+      },
+      "nonclaim": "Does not extend the 1/3 or 1/4 ceilings to fixed positive masses and does not prove a matching positive upper estimate."
+    }
+  ],
+  "nonclaims": [
+    "No global upper stability theorem is validated.",
+    "No mathematical novelty is claimed.",
+    "No Lean build, kernel check, repository implementation, or MRS import was run or certified.",
+    "No repository-wide or paper-wide validation is claimed.",
+    "No original research artifact was modified."
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schema": "portable-study-index-v1",
+  "core_record_total": 81,
+  "studies": [
+    {
+      "id": "affine-avoidance",
+      "core_record_count": 5,
+      "final_notes": "reviews/affine/research-notes.reviewed.txt",
+      "portable_records": "reviews/affine/mrs-provisional-records.reviewed.json",
+      "review_evidence": [
+        "reviews/affine/independent-review.txt",
+        "reviews/affine/independent-verification.json"
+      ],
+      "ordinary_review": "completed for scoped core results",
+      "lean_verification": "not_performed",
+      "native_mrs_import": false,
+      "limitation": "Conditional on normalized periodic hitting sets; no construction of those sets."
+    },
+    {
+      "id": "egyptian-fractions",
+      "core_record_count": 6,
+      "final_notes": "reviews/egyptian/corrected/study.md",
+      "portable_records": "reviews/egyptian/corrected/theorem-records.json",
+      "review_evidence": [
+        "reviews/egyptian/review.md",
+        "reviews/egyptian/review-records.json"
+      ],
+      "ordinary_review": "completed for scoped core results",
+      "lean_verification": "not_performed",
+      "native_mrs_import": false,
+      "limitation": "Two additional coarse-bound corollaries are proved separately but not independently reviewed."
+    },
+    {
+      "id": "transport-stability",
+      "core_record_count": 10,
+      "final_notes": "transport-stability/proof.md",
+      "portable_records": "transport-stability/theorems.json",
+      "review_evidence": [
+        "reviews/transport/audit-report.md",
+        "reviews/transport/review-record.json"
+      ],
+      "ordinary_review": "completed for scoped core results",
+      "lean_verification": "not_performed",
+      "native_mrs_import": false,
+      "limitation": "Two optional refinements are separate deductions checked in this review; no global upper theorem."
+    },
+    {
+      "id": "positive-blocks",
+      "core_record_count": 10,
+      "final_notes": "positive-blocks/study.md",
+      "portable_records": "positive-blocks/theorem-records.json",
+      "review_evidence": [
+        "positive-blocks/independent-review.md",
+        "positive-blocks/independent-review.json",
+        "reviews/positive-blocks/parent-independent-review.md",
+        "reviews/positive-blocks/parent-independent-review.json"
+      ],
+      "ordinary_review": "completed for scoped core results",
+      "lean_verification": "not_performed",
+      "native_mrs_import": false,
+      "limitation": "Five background nodes additional to the ten theorem/identity records; no complete Crouzeix validation."
+    },
+    {
+      "id": "mixed-moments",
+      "core_record_count": 21,
+      "final_notes": "mixed-moments/study.md",
+      "portable_records": "mixed-moments/theorems.json",
+      "review_evidence": [
+        "mixed-moments/audit.md",
+        "mixed-moments/verification.json"
+      ],
+      "ordinary_review": "completed for scoped core results",
+      "lean_verification": "not_performed",
+      "native_mrs_import": false,
+      "limitation": "No irrationality or linear-independence conclusion."
+    },
+    {
+      "id": "convex-approximation",
+      "core_record_count": 19,
+      "final_notes": "convex-approximation/study.md",
+      "portable_records": "convex-approximation/theorem-records.json",
+      "review_evidence": [
+        "convex-approximation/audit.md",
+        "convex-approximation/verification.json"
+      ],
+      "ordinary_review": "completed for scoped core results",
+      "lean_verification": "not_performed",
+      "native_mrs_import": false,
+      "limitation": "Rational checks and floating-point illustrations distinguished; no headline theorem claim."
+    },
+    {
+      "id": "finite-field-mixing",
+      "core_record_count": 10,
+      "final_notes": "finite-field-mixing/study.md",
+      "portable_records": "finite-field-mixing/theorems.json",
+      "review_evidence": [
+        "reviews/finite-field-mixing/independent-review.md",
+        "reviews/finite-field-mixing/review-record.json",
+        "reviews/finite-field-mixing/REVIEW_MANIFEST.json"
+      ],
+      "ordinary_review": "completed for scoped core results",
+      "lean_verification": "not_performed",
+      "native_mrs_import": false,
+      "limitation": "Four-product sufficient coverage and local lifting only; no global asymptotic constant or optimality claim."
+    }
+  ]
+}

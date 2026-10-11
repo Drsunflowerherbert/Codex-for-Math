@@ -1,0 +1,23 @@
+{
+  "repository": "https://github.com/openai/math",
+  "revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "family_id": "325",
+  "source_path": "preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/build/main.tex",
+  "source_url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/build/main.tex#L457-L511",
+  "local_source": "catalog/sources/preprints_A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026_build_main.tex",
+  "file_sha256": "164f56cc3f5ecbfb65ddba0d0438cacf44f325919ef7dfb742d073c948fddabd",
+  "file_bytes": 35175,
+  "matches_cached_manifest": true,
+  "revision_evidence": "Supplied pinned revision and cached catalog manifest; no fresh remote checkout was performed for this study.",
+  "scope": {
+    "label": "lem:approx",
+    "title": "Analytic convex outer approximation",
+    "first_line": 457,
+    "last_line": 511,
+    "excerpt_sha256": "31232bef524d5f31c340314e491b995da7d9813bca6fb1978b8573054cf41ea1"
+  },
+  "review_scope": "Only this source lemma and explicitly labeled local extensions. No headline or whole-paper validation.",
+  "lean_status": "not_run",
+  "novelty_claim": false,
+  "native_mrs_imported": false
+}

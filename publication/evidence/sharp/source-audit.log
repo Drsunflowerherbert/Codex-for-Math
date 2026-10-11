@@ -1,0 +1,19 @@
+PASS: TangentLimit.lean SHA256=adfc96738b249377095a6be42eb0d739183e1d849a97a5a2f20d870fa3029de9
+PASS: TangentLimit/BlockEstimates.lean SHA256=2eb3fc83f5f9d530875b840a5fc5424fb7cf18892721ed1d28500de256f6c303
+PASS: TangentLimit/Diophantine.lean SHA256=74116a224783c4d91265c73f276eab0e280f5d047c3cb32260ee10a6204807bf
+PASS: TangentLimit/Divergence.lean SHA256=6c3c2ca8bf67d07e29c1dbf4d845b214fac1cd905b81c00468065c32905e7158
+PASS: TangentLimit/DyadicSummability.lean SHA256=8407909d22436551d60b8e71e7e88e790c53019c8b1ae647962a9dc755a8132c
+PASS: TangentLimit/FinitePacking.lean SHA256=f878ddd581eba232c227dc77973d02f3c898c6888419d032479b0576914c76c6
+PASS: TangentLimit/Hypothesis.lean SHA256=6f9fb3e7a25e2ba27fba29faf93e88add77a8c0aa3a8de59be72ae7b9ea2562a
+PASS: TangentLimit/Limit.lean SHA256=05ea71aef2541bdc9137c8dd110c3d11d8e2ffc5b851e931aeeef027fdfb0336
+PASS: TangentLimit/LimitComparison.lean SHA256=9250070b23a25f76ad620c8fee0b353ffc5b04b5823177e4bf6b92a28473813c
+PASS: TangentLimit/NearestPole.lean SHA256=b6321c174149a6e7f264d1d31b4813954dfba14900b9ab15c21c4701a3dc4cec
+PASS: TangentLimit/NonPole.lean SHA256=3ca47fd29a14a8e1299782ed729f96252a6768a84c67742bc075fb1273496710
+PASS: TangentLimit/PoleSpacing.lean SHA256=9faf23dbd9c48d93538e86746e13bfc20fe511aaa440bf8c01ca7f58acf35f48
+PASS: TangentLimit/SharpSummability.lean SHA256=70600b3724d7bc17b55a0fbe5ee5c51b762db7528d4579fd5c0db2e74456e1b0
+PASS: TangentLimit/Summability.lean SHA256=b6308da63a70ae2e7d45719afc2a5af71935061f8c9ec383740010a3613bf273
+PASS: TangentLimit/Trigonometry.lean SHA256=169ede182499acaf928a19eacb4605c32c0f71a52e17ae7edc0e26912eb40039
+PASS: TangentLimit/UniformDiophantine.lean SHA256=610813720b74dff4f03dea571bba7fd89d8915784be1092d88ce64c8a8ec18c2
+PASS: public-inventory.log: 76 declarations; axioms=['Classical.choice', 'Quot.sound', 'propext']
+PASS: private-inventory.log: 2 declarations; axioms=['Classical.choice', 'Quot.sound', 'propext']
+PASS: 78 source declarations audited (76 public, 2 private); no placeholders or added axioms

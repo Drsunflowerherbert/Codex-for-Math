@@ -1,0 +1,37 @@
+✖ [1519/1519] Building RadialContact.Lipschitz (1.9s)
+trace: .> LEAN_PATH=<project>/.lake/packages/Cli/.lake/build/lib/lean:<project>/.lake/packages/batteries/.lake/build/lib/lean:<project>/.lake/packages/Qq/.lake/build/lib/lean:<project>/.lake/packages/aesop/.lake/build/lib/lean:<project>/.lake/packages/proofwidgets/.lake/build/lib/lean:<project>/.lake/packages/importGraph/.lake/build/lib/lean:<project>/.lake/packages/LeanSearchClient/.lake/build/lib/lean:<project>/.lake/packages/plausible/.lake/build/lib/lean:<project>/.lake/packages/mathlib/.lake/build/lib/lean:<project>/.lake/build/lib/lean <project>/lean-4.24.0-linux/bin/lean <project>/RadialContact/Lipschitz.lean -o <project>/.lake/build/lib/lean/RadialContact/Lipschitz.olean -i <project>/.lake/build/lib/lean/RadialContact/Lipschitz.ilean -c <project>/.lake/build/ir/RadialContact/Lipschitz.c --setup <project>/.lake/build/ir/RadialContact/Lipschitz.setup.json --json
+warning: RadialContact/Lipschitz.lean:85:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+error: RadialContact/Lipschitz.lean:88:58: failed to synthesize
+  LE Type
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: RadialContact/Lipschitz.lean:88:60: failed to synthesize
+  OfNat Type 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  Type
+due to the absence of the instance above
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: RadialContact/Lipschitz.lean:93:59: failed to synthesize
+  LE Type
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: RadialContact/Lipschitz.lean:93:61: failed to synthesize
+  OfNat Type 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  Type
+due to the absence of the instance above
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+warning: RadialContact/Lipschitz.lean:101:41: declaration uses 'sorry'
+warning: RadialContact/Lipschitz.lean:97:8: declaration uses 'sorry'
+warning: RadialContact/Lipschitz.lean:107:23: declaration uses 'sorry'
+warning: RadialContact/Lipschitz.lean:103:8: declaration uses 'sorry'
+warning: RadialContact/Lipschitz.lean:109:8: declaration uses 'sorry'
+warning: RadialContact/Lipschitz.lean:112:8: declaration uses 'sorry'
+error: Lean exited with code 1
+Some required targets logged failures:
+- RadialContact.Lipschitz
+error: build failed

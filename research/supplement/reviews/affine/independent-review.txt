@@ -1,0 +1,116 @@
+Independent review of the periodic affine avoidance reduction
+Reviewed 2026-10-11 UTC
+
+Verdict
+
+The conditional periodic-to-global deduction is correct. The five reusable mathematical records are accepted after one domain clarification in a limitation. All source constants, signed dilation formulas, endpoint arguments, and compactness claims check out. Nullness is genuinely unnecessary for this deduction.
+
+One sentence in the accompanying notes needs a mathematical correction: the finite-range obstruction forces infinitely many distinct values; it does not force pairwise distinct terms. Repetition of terms does not change any hitting or avoidance assertion. The reviewed notes correct that sentence. The reviewed JSON also restricts a divergence statement to positive budget bases, records this ordinary-proof review, and keeps formal verification and native MRS validation explicitly unperformed.
+
+This review assumes the normalized hitting proposition. It does not prove that proposition for geometric sequences, audit later sections of the manuscript, or establish the full Erdős similarity conjecture. No Lean build, theorem-prover verification, native MRS import, execution of code from the source repository, or software installation was performed. Locally authored standard-library exact-arithmetic checks supplement the ordinary proof; they do not certify it.
+
+Sources and provenance
+
+The exact reviewed source is ../../affine-avoidance/02-periodic.tex, 2,567 bytes, SHA-256 495a0aad88677e2e61904cf5fe029b709033d0830f7c98d386661632abc8bdb8. Its recorded public pin is:
+https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/build/sections/02-periodic.tex
+
+This is an audit of the saved bytes, not a fresh network authentication of the recorded commit. The catalog copy has one extra trailing blank line and no mathematical difference. The saved lean_docs_084.md was also read: its scope paragraph and linked paper describe the dyadic case. Reading that scope statement is not execution or verification of the Lean files.
+
+The original research-notes.txt, mrs-provisional-records.json, verification.json, and source file remain unchanged. Their hashes, the reviewed outputs, and the precise changes are recorded in independent-verification.json. The original arithmetic report is preserved as historical evidence, rather than upgraded into a proof-verification claim.
+
+Quantifiers and parameter ranges
+
+The exact source fixes q in (0,1). Lines 12–18 state, in order:
+
+  For every p in (0,1), there is one open 1-periodic H,
+  with rho(H) <= 6p, such that for every x in R and t in [1,2],
+  some integer n >= 1 satisfies x + t q^n in H.
+
+H may depend on p and the fixed q. It must work simultaneously for all centers and normalized dilations. The witness n can depend on p, q, x, and t. The conclusion requires neither one uniform index nor a bound on that index. The source proposition is stated, not proved, in the saved section. Its existence claim remains an assumption of the deduction under review.
+
+For the general sequence theorem, C must be one fixed finite positive number independent of p, center, dilation, and witness index. The notes correctly allow C to depend on the fixed sequence. The order is: fix the sequence; assume such a C and such sets for all p; then for each eta choose E. Nothing here supplies one E for every sequence or every q at once.
+
+The reviewed theorem takes eta in (0,1). With B=max(1,C), its chosen parameters satisfy 0 < p_k <= eta/(16B) < 1, so every use of the hypothesis is licensed. For the source specialization, 0 < eta < 1 similarly gives 0 < p_k <= eta/64 < 1. The saved source section references Theorem main without including its statement, so this review does not infer a larger eta domain from that reference. As a standalone formula the source selection is licensed for 0 < eta < 64. Larger tolerance values can be handled by first using a smaller positive tolerance; no such extension is needed here.
+
+Only t in [1,2) is used: exact dyadic magnitudes normalize to t=1. The source's extra endpoint t=2 is harmless. Replacing all-center hitting by almost-everywhere hitting, or permitting a different H for every center and dilation, would not justify the pointwise conclusion.
+
+Independent proof of the periodic restriction bound
+
+Let H be measurable with H+1=H and d=m(H intersect [0,1)). Then 0 <= d <= 1. For any real u, reduce u modulo 1 and split [u,u+1) at an integer. Translation by an integer identifies the two resulting pieces with a partition of [0,1). Hence every interval of length 1 contains measure d of H; choices of open or closed endpoints do not affect this measure.
+
+Let L>0 and sigma in {-1,1}; put A=sigma L H. Scaling and, for sigma=-1, reflection show that every length-L interval contains measure Ld of A. The set A has period L. In particular, negative scaling has the same density as positive scaling; it does not require H itself to be symmetric.
+
+For an interval I of length R >= 0, write R=M L+r with integer M>=0 and 0<=r<L. Partition I into M intervals of length L and a remainder J of length r. Embed J in any interval of length L starting at its left endpoint. The whole-period pieces contribute M Ld, while m(A intersect J) <= min(r,Ld). Therefore
+
+  m(A intersect I) <= M Ld + min(r,Ld).
+
+The right side is at most R because d<=1, and at most L ceil(R/L)d because the remainder vanishes when r=0 and otherwise contributes at most one further Ld. For R=0 every relevant measure is zero. This proves the stronger restriction lemma in the notes.
+
+For L=2^k and I=[0,1], if k<=0 the interval consists, up to endpoints, of exactly 2^(-k) periods. Its measure is exactly d. If k>0, it fits inside [0,L], so its measure is at most min(1,Ld). Thus
+
+  m((sigma 2^k H) intersect [0,1]) <= max(1,2^k)d.
+
+The factor for expanding scales is necessary: H=union over integers j of (j,j+d), with 0<d<1/2, has density d but m(2H intersect [0,1])=2d. The nonperiodic counterexample H=(1,2), for which the unscaled unit-interval measure is zero and the half-scaled measure is 1/2, is also correct.
+
+Independent budget calculation
+
+For r>2 the nonnegative series splits into negative, zero, and positive indices:
+
+  sum over k in Z of r^(-|k|) max(1,2^k)
+    = sum over j>=1 of r^(-j) + 1 + sum over k>=1 of (2/r)^k
+    = 1/(r-1) + 1 + 2/(r-2).
+
+At r=4 this is 1/3+1+1=7/3. If rho(H_k)<=C alpha 4^(-|k|), subadditivity over k and the two signs gives
+
+  m(U intersect [0,1]) <= 2 C alpha (7/3) = 14 C alpha/3,
+  U=union over k in Z of (2^k H_k union -2^k H_k).
+
+No disjointness assumption is made. For C=6 and alpha=eta/64 the bound is 7eta/16. This is a bound on the removed measure, not a claim that the removed measure equals 7eta/16. For alpha=eta/(16B), B=max(1,C), the exact coefficient is 7C/(24B), bounded above by 7/24. The original verification.json's general_coefficient value 7/24 is the coefficient after applying C/B<=1, not always the exact C-dependent coefficient.
+
+For positive bases 0<r<=2, the positive-index majorant has terms (2/r)^k which do not tend to zero; it diverges. The original JSON said simply r<=2, which accidentally includes negative bases and zero. The reviewed limitation explicitly says 0<r<=2. This clarification does not change the r>2 lemma. Divergence of a chosen upper-bound series never proves that the actual union is large.
+
+Independent signed normalization and compactness proof
+
+For x in R and s!=0, choose the unique integer k with 2^k<=|s|<2^(k+1). Let sigma=sgn(s), t=|s|/2^k, and y=sigma 2^(-k)x. Then t is in [1,2). Apply the normalized hypothesis for H_k to find n with y+t a_n in H_k. Exact algebra gives
+
+  sigma 2^k(y+t a_n) = x+s a_n.
+
+Consequently this point belongs to sigma 2^k H_k, hence to U. The identity handles either sign without symmetry of any H_k, does not reindex the sequence, and uses no relation between the dyadic scale 2 and q. The union U itself is symmetric, which also validates the source's alternative negative-sign argument by reflection.
+
+Every signed dilation of an open H_k is open, and a countable union of open sets is open. Therefore E=[0,1] minus U is closed in the compact interval [0,1], hence compact. Symmetry is useful for the source's reflection argument but is not needed for compactness. Since m(E)=1-m(U intersect [0,1]), the source and generalized measure estimates give the claimed strict inequality m(E)>1-eta.
+
+No hit is required to lie in [0,1]. A hit outside this interval already lies outside E. If the hit is an endpoint, exact membership in U removes that endpoint from E. Endpoint sets are ignored only in measure identities; there is no almost-everywhere substitution in the avoidance argument.
+
+Finite range and the correction concerning distinctness
+
+Let A be nonempty finite with N distinct elements. If H hits every x+A, then R is the union of H-a over a in A. Each translate H-a has unit-interval measure rho(H) by the period-shift argument. Subadditivity on [0,1) gives 1<=N rho(H). Equal residues of a modulo 1 give identical translates, so N can be replaced by the number of distinct residues. This proves the stated obstruction. Taking p<min(1,1/(NC)) contradicts a density bound rho(H)<=Cp, so a finite-range sequence cannot satisfy the arbitrarily-small-density hypothesis.
+
+The notes' sentence “Distinctness becomes necessary indirectly for compatibility with arbitrarily small density” is too strong if distinctness means pairwise distinct terms, its ordinary sequence meaning. Only infinitely many distinct values are forced. For any sequence b_n, define a_(2n-1)=a_(2n)=b_n. Both sequences have exactly the same range, so every normalized hitting and every affine containment assertion is identical. Repetitions cannot invalidate the hypothesis.
+
+A slightly stronger necessary condition is useful: for every fixed t in [1,2), the set of residues {t a_n modulo 1:n>=1} must be infinite. If it had only M elements, the same finite-union argument would force rho(H)>=1/M. This observation does not assert sufficiency.
+
+Nullness and a concrete compatibility check
+
+No part of the restriction, budget, normalization, or compactness argument refers to a limit of a_n. The generalized conditional theorem therefore correctly omits nullness, monotonicity, positivity, geometric form, and pairwise distinctness. The constant sequence zero correctly shows that nullness alone cannot produce the hypothesis: its all-center hitting condition forces H=R.
+
+There are also bounded, non-null sequences with repetitions that do satisfy the normalized hypothesis. Enumerate the rationals in (0,1) as b_n and repeat each term twice to obtain a_n. For p in (0,1), set H_p=union over j in Z of (j,j+p), which is open, 1-periodic, and has density p. For y in R and t>=1, the interval (y,y+t) has a nonempty open intersection with H_p. The set {y+t b_n:n>=1} is dense in (y,y+t), so some term lies in H_p. Thus C=1 works on [1,2). Infinitely many terms exceed 1/2, so this sequence does not tend to zero, and it has repeated terms. This elementary example confirms that the omitted assumptions are genuinely dispensable, rather than merely unused notation.
+
+Other limits and extensions
+
+Excluding s=0 is essential: otherwise singleton copies {x} for every x would force E empty. The compact full-measure observation is correct for bounded nonempty sequences. If compact E subset [0,1] has measure 1, its relatively open complement must be empty; any nonempty such complement contains a positive-length subinterval. Hence E=[0,1]. With M=max(1,sup|a_n|), x=1/2 and s=1/(4M) place every term in [1/4,3/4], contradicting avoidance. No analogous claim for unbounded sequences is made or needed.
+
+The measurable-set extension is valid. The same U yields measurable F=[0,1] minus U with m(F)>=1-7eta/24. Inner regularity supplies a compact E subset F losing less than eta/2, so m(E)>1-19eta/24>1-eta. Avoidance passes to subsets. This extension has an additional measure-regularity dependency and does not require pointwise modification of H.
+
+Centers in [0,1) suffice because subtracting the integer part of a center preserves membership in a 1-periodic H. An arbitrary fixed positive period can be accommodated by rescaling or by the corresponding period-length measure bound. Arbitrarily small density is equivalent to the linear parametrization Cp: given arbitrarily sparse admissible H, choose one with density less than Cp for each p; conversely the Cp hypothesis supplies arbitrarily small bounds.
+
+The countable-family extension is valid with summable loss allocations, for example eta_j=eta/2^(j+1) for j>=1 and intersection of the resulting compact avoiding sets. The complement of that intersection has measure at most sum eta_j=eta/2. This argument supplies no uncountable-family conclusion. None of these safe extensions establishes the missing geometric hitting construction.
+
+Record dispositions
+
+periodic_restriction: accepted as an ordinary mathematical proof.
+dyadic_budget: accepted; clarify the failed-budget limitation to 0<r<=2.
+signed_normalization: accepted as an ordinary mathematical proof.
+finite_range_obstruction: accepted; notes corrected to distinguish infinite range from pairwise distinctness.
+normalized_to_global: accepted as a conditional ordinary mathematical theorem.
+
+The reviewed record set retains five records, updates their versioned identifiers consistently to v2, and names each v1 predecessor. Dependency identifiers resolve inside the v2 set. Schema compatibility remains unknown and native import remains unperformed. The reviewed notes and records are replacement copies, not edits to the archived originals.

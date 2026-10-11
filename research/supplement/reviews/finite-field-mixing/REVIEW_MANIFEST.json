@@ -1,0 +1,79 @@
+{
+  "description": "Independently reviewed final finite-field-mixing study and review artifacts; this manifest excludes itself.",
+  "review_date_utc": "2026-10-11",
+  "study_final_freeze_confirmed": true,
+  "status": "all_checks_passed",
+  "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "files": [
+    {
+      "file": "finite-field-mixing/MANIFEST-SHA256.json",
+      "bytes": 1337,
+      "sha256": "5b75182edc09740237d37b675ea8520c9ee8c39e77f72485d8092b1845e0d767"
+    },
+    {
+      "file": "finite-field-mixing/README.md",
+      "bytes": 2679,
+      "sha256": "ee469f5226ea1702dfb5f6924f8ab8d5b8a02aaf819871d6132dc1b8ca823233"
+    },
+    {
+      "file": "finite-field-mixing/audit.md",
+      "bytes": 5320,
+      "sha256": "22f3fb52d37377a9175c6e2a441285c768d1068cdc530d25aacad472b287f7f0"
+    },
+    {
+      "file": "finite-field-mixing/certificates.json",
+      "bytes": 29969,
+      "sha256": "9afa32fd4b24b5d6b758570d8b2c246d819c677c49af8056e6cdee7b9192cde3"
+    },
+    {
+      "file": "finite-field-mixing/counterexamples.md",
+      "bytes": 4296,
+      "sha256": "357071da480651efde511568ec373f3c8d6d62a393ad885349d06c1e3cfe8732"
+    },
+    {
+      "file": "finite-field-mixing/exact-tests.md",
+      "bytes": 2944,
+      "sha256": "5fb10cc3b69a86551092865b1f49a6b69005b7b152cbae062377da916179a11a"
+    },
+    {
+      "file": "finite-field-mixing/study.md",
+      "bytes": 21375,
+      "sha256": "1f68dadd17833ce93ac8a436531714b16e2146783e249948f7f23b60deab6c38"
+    },
+    {
+      "file": "finite-field-mixing/theorems.json",
+      "bytes": 15617,
+      "sha256": "ded12728ba80562779f97879712bcfcc7353bb97948dbf12b20b31cf52e60b97"
+    },
+    {
+      "file": "finite-field-mixing/verify.py",
+      "bytes": 16379,
+      "sha256": "3ec2b937128f4dfca13b65cbffd331036222278cb52c26fcd4a3f8582c1693b3"
+    },
+    {
+      "file": "reviews/finite-field-mixing/artifact-validation.json",
+      "bytes": 673,
+      "sha256": "797b62b6cf44155e725807ce95286c1b072bd051258d8176be4eb469422330aa"
+    },
+    {
+      "file": "reviews/finite-field-mixing/independent-results.json",
+      "bytes": 4966,
+      "sha256": "114983b1df250aaae25a43516c63593fbc9fb2d32ce910b5a8eaed2a4daa6979"
+    },
+    {
+      "file": "reviews/finite-field-mixing/independent-review.md",
+      "bytes": 11633,
+      "sha256": "c378481bf12ca47d59309c4ec64f751bc3094f20313ee9f1e02026d3e5cf6239"
+    },
+    {
+      "file": "reviews/finite-field-mixing/independent_check.py",
+      "bytes": 13028,
+      "sha256": "1c86b8b55603e9791bb68a2f3c996ace6a8cc8058ed6a344d093dc513d198803"
+    },
+    {
+      "file": "reviews/finite-field-mixing/review-record.json",
+      "bytes": 3463,
+      "sha256": "ab6b8f6361b17155ebccbca28d808aa27b5915bc026c6d08f7f987c926edd232"
+    }
+  ]
+}

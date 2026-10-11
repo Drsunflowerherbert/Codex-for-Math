@@ -1,0 +1,29 @@
+{
+  "packaged_utc": "2026-10-11T02:48:40.534520+00:00",
+  "status": "complete",
+  "lean": "4.24.0",
+  "mathlib_commit": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "named_declarations": 46,
+  "theorems": 42,
+  "reviewed_source_hashes_match": true,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "cleanup_cases": 278,
+  "padding_cases": 28,
+  "remaining_mathematical_goals": [],
+  "source_provenance_blocker": "Original Library ZIP transfer failed on both allowed attempts; no bytes or archive hash verified.",
+  "evidence_sha256": {
+    "evidence/final-build.log": "662cbe483779005c49474f1023d80cfb1147cb4dc1bee5dfe6ebbdf8ad396bfa",
+    "evidence/public-statements.log": "237ab250c2009c1da989029d64799160b8f70deb600efe74e8a1126b59a0093b",
+    "evidence/exact-check.log": "3aa6ed8d4f1c819dec372e86b45f853e933a54aa59b1d93fb22bc22c70ac435d",
+    "evidence/reviewer-all-statements.log": "3ca263bf370b6e2e25b4b07b33fba196515f4726074227a71cef9360115940e5",
+    "review/AllStatementsAudit.json": "c8fe5827b82c08c3e6aa7927d415bd89dc1c462215fa33d75ad3d52c6b3cc404",
+    "review/MarkerPaddingAudit.md": "89f8ac79523e9bc6a3b09dc335232e17d555cf183b7173d460476a9dfb587f98",
+    "review/FiniteStateAudit.md": "6403674aeed8f5d9779f620b12d5e239876ceea43d475332cf2660be244c9263",
+    "evidence/source-transfer.json": "0c55cc5bcdf61e6b54496fe45ed43714775d6396a12735c638e8d76ca987fcec"
+  },
+  "record_scope": "Supplied historical snapshot receipt; publication sanitation is separately mapped in publication/SOURCE-MAP.json."
+}

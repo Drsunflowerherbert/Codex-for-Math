@@ -1,0 +1,128 @@
+{
+  "snapshot_utc": "2026-10-11T02:43:09.712895+00:00",
+  "compiler": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "command": "tooling/lean-4.24.0-linux/bin/lake env lean review/PaddingPublicHarness.lean",
+  "exit_code": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audit_result": "accepted",
+  "files": [
+    {
+      "path": "Egyptian/PaddingArithmetic.lean",
+      "size_bytes": 1662,
+      "sha256": "dc4d0d4eb11ce9f2e838d9316feaf6734d06723e2f217be2faa23e47eafa8d4e",
+      "modified_utc": "2026-10-11T02:36:46.531088+00:00"
+    },
+    {
+      "path": "Egyptian/PaddingCollision.lean",
+      "size_bytes": 2223,
+      "sha256": "55a97746dac67e49aa8b5d9c0cd60b937e572c241c176eee3d84ad9ce25c6e73",
+      "modified_utc": "2026-10-11T02:39:54.617025+00:00"
+    },
+    {
+      "path": "Egyptian/SafeSplit.lean",
+      "size_bytes": 3653,
+      "sha256": "886929f98d933e4ee856b49c9b4e6405233b1c5b2421ee258d740ff63b9a805c",
+      "modified_utc": "2026-10-11T02:38:02.046262+00:00"
+    },
+    {
+      "path": "Egyptian/PaddingSelection.lean",
+      "size_bytes": 4654,
+      "sha256": "12d4bee69b696a9dced69a0abef291854aa457f3e32f55f7dbeafd9d48ea6a13",
+      "modified_utc": "2026-10-11T02:40:22.644716+00:00"
+    },
+    {
+      "path": "Egyptian/Padding.lean",
+      "size_bytes": 2253,
+      "sha256": "ac907d1b76efd0eaafa3e715c9a56ef4b8cf16042213c363fef7a115ded8645b",
+      "modified_utc": "2026-10-11T02:41:12.540169+00:00"
+    },
+    {
+      "path": ".lake/build/lib/lean/Egyptian/PaddingArithmetic.olean",
+      "size_bytes": 196688,
+      "sha256": "076706efdcf597ec6c64c4f4ebe1d524c8a1ed8e491cf5dc8452347eb0943596",
+      "modified_utc": "2026-10-11T02:36:49.603055+00:00"
+    },
+    {
+      "path": ".lake/build/lib/lean/Egyptian/PaddingCollision.olean",
+      "size_bytes": 145480,
+      "sha256": "5837cb9dca0a8b7bc6005ed92dc393174841a769e979f686333350fd5d79b6d6",
+      "modified_utc": "2026-10-11T02:39:57.828989+00:00"
+    },
+    {
+      "path": ".lake/build/lib/lean/Egyptian/SafeSplit.olean",
+      "size_bytes": 416888,
+      "sha256": "a391a1feb146b9766ecba19e736e298c5b3088fdaec527ac16919c00e24edb11",
+      "modified_utc": "2026-10-11T02:38:06.842209+00:00"
+    },
+    {
+      "path": ".lake/build/lib/lean/Egyptian/PaddingSelection.olean",
+      "size_bytes": 374112,
+      "sha256": "36a119ea730dd7f72227f3737de6b9ef47fe14f3b0a293ad409dbf01bff1b8db",
+      "modified_utc": "2026-10-11T02:40:26.188678+00:00"
+    },
+    {
+      "path": ".lake/build/lib/lean/Egyptian/Padding.olean",
+      "size_bytes": 99792,
+      "sha256": "0cd1cd7b47738c310d7140b1e11271dbec17709c91d90d5639f3cdb387bb5d6b",
+      "modified_utc": "2026-10-11T02:41:15.729430+00:00"
+    },
+    {
+      "path": "lean-toolchain",
+      "size_bytes": 25,
+      "sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+      "modified_utc": "2026-10-11T02:13:53.830905+00:00"
+    },
+    {
+      "path": "lake-manifest.json",
+      "size_bytes": 3125,
+      "sha256": "0128358838a6adbd6c31b7022eddbf0918cb99498a625c7fa13f1c0f0186a6fd",
+      "modified_utc": "2026-10-11T02:16:42.474820+00:00"
+    },
+    {
+      "path": "lakefile.toml",
+      "size_bytes": 241,
+      "sha256": "434ed58e5c3f38c0f9fc8fc8abb5049ffb0650c069e3a6583e0a9da282613878",
+      "modified_utc": "2026-10-11T02:13:54.882893+00:00"
+    },
+    {
+      "path": "review/PaddingPublicHarness.lean",
+      "size_bytes": 2061,
+      "sha256": "2344fc3df1e0ebe16ca6072052e7bacee89303f726dbf5209ecb941b200f7db8",
+      "modified_utc": "2026-10-11T02:41:55.315698+00:00"
+    },
+    {
+      "path": "review/padding-public-compile.log",
+      "size_bytes": 4383,
+      "sha256": "2c09666f6375759c680fd6f7f53ad610c380fbe6273eb4ae029ffe03e7d9015f",
+      "modified_utc": "2026-10-11T02:41:59.871648+00:00"
+    },
+    {
+      "path": "review/PrimeCollisionPrototype.lean",
+      "size_bytes": 2314,
+      "sha256": "5f4c8dbf6c8d208003dffdecf655048183c7398a900b44403976d9bb8a91f99f",
+      "modified_utc": "2026-10-11T02:37:46.674430+00:00"
+    },
+    {
+      "path": "review/prime-collision-compile.log",
+      "size_bytes": 347,
+      "sha256": "3d2258b387aba1185d07c4638319545def4e5192a84d278ed67680e5baaa6245",
+      "modified_utc": "2026-10-11T02:37:49.578398+00:00"
+    },
+    {
+      "path": "review/MarkerPaddingAudit.md",
+      "size_bytes": 10108,
+      "sha256": "89f8ac79523e9bc6a3b09dc335232e17d555cf183b7173d460476a9dfb587f98",
+      "modified_utc": "2026-10-11T02:43:09.282885+00:00"
+    },
+    {
+      "path": "review/padding-exact-examples.json",
+      "size_bytes": 2164,
+      "sha256": "516f94f8341755ca997ae481dfe50d8ba0f129081f06d0cbfedacb2fc7e9968b",
+      "modified_utc": "2026-10-11T02:24:22.072439+00:00"
+    }
+  ]
+}

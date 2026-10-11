@@ -1,0 +1,399 @@
+{
+  "schema": "portable-mathematics-theorem-study-v1",
+  "schema_note": "Provisional portable study JSON with explicit dependencies; not native MRS data.",
+  "study_id": "family325-positive-block-inequalities",
+  "family_id": "325",
+  "title": "Hilbert Schmidt inequalities for positive block matrices",
+  "created_utc": "2026-10-11T02:00:00Z",
+  "provenance_file": "provenance.json",
+  "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "notation": {
+    "star": "conjugate transpose",
+    "HS": "unnormalized Hilbert-Schmidt norm",
+    "a": "||A||HS",
+    "c": "||C||HS",
+    "beta": "||B||HS^2",
+    "P": "XX* in a Gram factorization Delta=[X Y]*[X Y]",
+    "Q": "YY* in the same factorization"
+  },
+  "background": [
+    {
+      "id": "D_FINITE_GRAM",
+      "statement": "A finite Hermitian positive semidefinite matrix has a positive square root and a Gram factorization Delta=Z*Z. A nonzero Delta has a factorization with exactly rank(Delta) rows and full row rank.",
+      "dependency_kind": "finite_spectral_theorem"
+    },
+    {
+      "id": "D_TRACE",
+      "statement": "For U of size m by n and V of size n by m, tr_m(UV)=tr_n(VU); trace is linear and tr(T*T)=sum_ij |T_ij|^2.",
+      "dependency_kind": "elementary_matrix_arithmetic"
+    },
+    {
+      "id": "D_ZERO",
+      "statement": "A finite sum of nonnegative real numbers is zero exactly when every summand is zero. Thus ||T||HS=0 iff T=0.",
+      "dependency_kind": "elementary_order_and_norm"
+    },
+    {
+      "id": "D_CONGRUENCE",
+      "statement": "If Delta is positive semidefinite and D is compatible, then D*Delta D is positive semidefinite, by testing quadratic forms.",
+      "dependency_kind": "elementary_matrix_arithmetic"
+    },
+    {
+      "id": "D_RANK",
+      "statement": "A Gram matrix Z*Z has the same kernel and rank as Z; full row rank of Z implies ZZ* positive definite. Multiplication by isometries preserves the rank and nonzero singular data of the inner factor.",
+      "dependency_kind": "finite_linear_algebra"
+    }
+  ],
+  "theorems": [
+    {
+      "id": "PB0",
+      "title": "Gram trace identities",
+      "kind": "lemma",
+      "assumptions": [
+        "p and q are positive integers",
+        "A is p by p, B is p by q, C is q by q over C",
+        "Delta=[[A,B],[B*,C]] is positive semidefinite",
+        "Hilbert-Schmidt norms are unnormalized"
+      ],
+      "statement": {
+        "setup": "Delta=[X Y]*[X Y], with X d by p and Y d by q; P=XX*, Q=YY* are d by d. Let a=||A||HS, c=||C||HS, beta=||B||HS^2.",
+        "identities": [
+          "a^2=tr(P^2)=||P||HS^2",
+          "c^2=tr(Q^2)=||Q||HS^2",
+          "beta=tr(PQ)"
+        ]
+      },
+      "dependencies": [
+        "D_FINITE_GRAM",
+        "D_TRACE"
+      ],
+      "proof_location": "study.md#pb1-the-exact-gram-identity",
+      "verification": {
+        "complete_ordinary_proof_provided": true,
+        "independent_review": "pending",
+        "formal_kernel_checked": false
+      },
+      "proof_outline": "Expand A=X*X, B=X*Y, C=Y*Y and cycle rectangular traces."
+    },
+    {
+      "id": "PB1",
+      "title": "Sum bound and exact Gram gap",
+      "kind": "theorem",
+      "assumptions": [
+        "p and q are positive integers",
+        "A is p by p, B is p by q, C is q by q over C",
+        "Delta=[[A,B],[B*,C]] is positive semidefinite",
+        "Hilbert-Schmidt norms are unnormalized"
+      ],
+      "statement": {
+        "inequality": "2||B||HS^2 <= ||A||HS^2+||C||HS^2",
+        "exact_gap": "a^2+c^2-2 beta=||P-Q||HS^2",
+        "weighted_gap": "s^2 a^2+s^(-2)c^2-2 beta=||sP-s^(-1)Q||HS^2 for every real s>0"
+      },
+      "dependencies": [
+        "PB0",
+        "D_ZERO"
+      ],
+      "proof_location": "study.md#pb1-the-exact-gram-identity",
+      "verification": {
+        "complete_ordinary_proof_provided": true,
+        "independent_review": "pending",
+        "formal_kernel_checked": false
+      },
+      "source_relation": "Source supporting comparison independently proved with rectangular B.",
+      "proof_outline": "Expand the Hilbert-Schmidt square. Alternative: J=diag(I_p,-I_q), S=Delta^(1/2); the gap equals tr(Delta J Delta J)=||SJS||HS^2."
+    },
+    {
+      "id": "PB2",
+      "title": "Sharp product bound by reciprocal scaling",
+      "kind": "theorem",
+      "assumptions": [
+        "p and q are positive integers",
+        "A is p by p, B is p by q, C is q by q over C",
+        "Delta=[[A,B],[B*,C]] is positive semidefinite",
+        "Hilbert-Schmidt norms are unnormalized"
+      ],
+      "statement": "||B||HS^2 <= ||A||HS ||C||HS",
+      "dependencies": [
+        "PB1",
+        "D_CONGRUENCE",
+        "D_ZERO"
+      ],
+      "proof_location": "study.md#pb2-the-product-bound-obtained-by-scaling",
+      "verification": {
+        "complete_ordinary_proof_provided": true,
+        "independent_review": "pending",
+        "formal_kernel_checked": false
+      },
+      "proof_outline": "If a=0 or c=0, Gram factors give B=0. Otherwise congruence by diag(s^(1/2)I_p,s^(-1/2)I_q) leaves B unchanged and replaces A,C by sA,s^(-1)C. Choose s=sqrt(c/a).",
+      "requires_invertible_diagonal_blocks": false
+    },
+    {
+      "id": "PB3_PRODUCT",
+      "title": "Complete product equality classification",
+      "kind": "theorem",
+      "assumptions": [
+        "p and q are positive integers",
+        "A is p by p, B is p by q, C is q by q over C",
+        "Delta=[[A,B],[B*,C]] is positive semidefinite",
+        "Hilbert-Schmidt norms are unnormalized"
+      ],
+      "statement": {
+        "zero_case": "If a=0 or c=0, then B=0 and product equality always holds.",
+        "nonzero_case": "If a,c>0, set t=c/a. The following five conditions are equivalent.",
+        "equivalent_conditions": [
+          "beta=ac",
+          "Q=tP in any Gram factorization, equivalently P/a=Q/c",
+          "Delta diag(tI_p,-I_q) Delta=0",
+          "BB*=t A^2, B*B=t^(-1)C^2, BC=t AB",
+          "There exist 1<=r<=min(p,q), U in C^(p by r), V in C^(q by r), U*U=V*V=I_r, and H=H*>0 in C^(r by r), such that A=UHU*, B=sqrt(t)UHV*, C=tVHV*."
+        ]
+      },
+      "dependencies": [
+        "PB0",
+        "PB1",
+        "PB2",
+        "D_RANK"
+      ],
+      "proof_location": "study.md#pb3-complete-equality-conditions-and-exact-deficit",
+      "verification": {
+        "complete_ordinary_proof_provided": true,
+        "independent_review": "pending",
+        "formal_kernel_checked": false
+      },
+      "proof_outline": "The optimized Gram gap is zero iff Q=tP. Multiplying out Delta diag(tI,-I) Delta gives the intrinsic identities, whose first trace already yields beta=ac. In a minimal Gram realization, P+Q=(1+t)P>0; take H=P, U=X*P^(-1/2), V=t^(-1/2)Y*P^(-1/2). Conversely the displayed normal form is a PSD factorization and gives equality.",
+      "note": "No equality classification from inverse A or inverse C is used; zero cases are separate."
+    },
+    {
+      "id": "PB3_SUM",
+      "title": "Complete sum equality classification",
+      "kind": "theorem",
+      "assumptions": [
+        "p and q are positive integers",
+        "A is p by p, B is p by q, C is q by q over C",
+        "Delta=[[A,B],[B*,C]] is positive semidefinite",
+        "Hilbert-Schmidt norms are unnormalized"
+      ],
+      "statement": {
+        "equivalent_conditions": [
+          "2 beta=a^2+c^2",
+          "P=Q in any Gram factorization",
+          "Delta J Delta=0, J=diag(I_p,-I_q)",
+          "A^2=BB*, C^2=B*B, AB=BC"
+        ],
+        "zero_case": "If a=0 or c=0, sum equality holds exactly when all three blocks vanish.",
+        "nonzero_case": "Product equality and a=c; equivalently the normal form in PB3_PRODUCT has t=1."
+      },
+      "dependencies": [
+        "PB1",
+        "PB2",
+        "PB3_PRODUCT",
+        "D_ZERO"
+      ],
+      "proof_location": "study.md#sum-equality",
+      "verification": {
+        "complete_ordinary_proof_provided": true,
+        "independent_review": "pending",
+        "formal_kernel_checked": false
+      },
+      "proof_outline": "Use the Gram square gap and the identity a^2+c^2-2 beta=(a-c)^2+2(ac-beta); the congruence criterion follows from SJS=0 iff the gap is zero and Delta J Delta=S(SJS)S."
+    },
+    {
+      "id": "PB3_DEFICIT",
+      "title": "Exact normalized Gram deficit",
+      "kind": "identity",
+      "assumptions": [
+        "p and q are positive integers",
+        "A is p by p, B is p by q, C is q by q over C",
+        "Delta=[[A,B],[B*,C]] is positive semidefinite",
+        "Hilbert-Schmidt norms are unnormalized"
+      ],
+      "statement": {
+        "additional_assumption": "a>0 and c>0",
+        "identity": "ac-beta=(ac/2)||P/a-Q/c||HS^2",
+        "interpretation": "Near product equality is exactly a small normalized Gram discrepancy; no unproved stability estimate in the original blocks is asserted."
+      },
+      "dependencies": [
+        "PB0",
+        "D_TRACE"
+      ],
+      "proof_location": "study.md#product-equality",
+      "verification": {
+        "complete_ordinary_proof_provided": true,
+        "independent_review": "pending",
+        "formal_kernel_checked": false
+      },
+      "proof_outline": "Expand the squared norm, using ||P/a||HS=||Q/c||HS=1 and tr(PQ)=beta."
+    },
+    {
+      "id": "PB3_RANK",
+      "title": "Equality rank restrictions and strictness",
+      "kind": "corollary",
+      "assumptions": [
+        "p and q are positive integers",
+        "A is p by p, B is p by q, C is q by q over C",
+        "Delta=[[A,B],[B*,C]] is positive semidefinite",
+        "Hilbert-Schmidt norms are unnormalized"
+      ],
+      "statement": {
+        "nonzero_equality": "If a,c>0 and beta=ac, rank(Delta)=rank(A)=rank(B)=rank(C)=r<=min(p,q).",
+        "strictness": [
+          "If Delta is positive definite, both inequalities are strict.",
+          "If A and C are positive definite and p!=q, product inequality is strict."
+        ],
+        "warning": "Equal ranks alone, equal diagonal norms alone, or singularity alone do not force equality."
+      },
+      "dependencies": [
+        "PB3_PRODUCT",
+        "D_RANK"
+      ],
+      "proof_location": "study.md#rank-consequences-and-strictness",
+      "verification": {
+        "complete_ordinary_proof_provided": true,
+        "independent_review": "pending",
+        "formal_kernel_checked": false
+      },
+      "proof_outline": "Read ranks from the normal form. A positive definite (p+q)-square Delta cannot have rank at most min(p,q)."
+    },
+    {
+      "id": "PB3_KERNEL",
+      "title": "Kernel support and rank bounds",
+      "kind": "lemma",
+      "assumptions": [
+        "p and q are positive integers",
+        "A is p by p, B is p by q, C is q by q over C",
+        "Delta=[[A,B],[B*,C]] is positive semidefinite",
+        "Hilbert-Schmidt norms are unnormalized"
+      ],
+      "statement": {
+        "kernels": [
+          "ker(A) subset ker(B*)",
+          "ker(C) subset ker(B)"
+        ],
+        "rank": "rank(B)<=min(rank(A),rank(C))",
+        "zero_blocks": "A=0 or C=0 implies B=0."
+      },
+      "dependencies": [
+        "D_FINITE_GRAM",
+        "D_ZERO",
+        "D_RANK"
+      ],
+      "proof_location": "study.md#rank-consequences-and-strictness",
+      "verification": {
+        "complete_ordinary_proof_provided": true,
+        "independent_review": "pending",
+        "formal_kernel_checked": false
+      },
+      "proof_outline": "Au=0 implies ||Xu||^2=u*Au=0, hence B*u=Y*Xu=0; apply the same argument to C and use rank-nullity."
+    },
+    {
+      "id": "PB4_SHARPNESS",
+      "title": "Dimension independent optimal constants",
+      "kind": "sharpness",
+      "assumptions": [
+        "p and q are positive integers",
+        "A is p by p, B is p by q, C is q by q over C",
+        "Delta=[[A,B],[B*,C]] is positive semidefinite",
+        "Hilbert-Schmidt norms are unnormalized"
+      ],
+      "statement": {
+        "sum_largest_left_coefficient": "The largest universal K in K||B||HS^2<=||A||HS^2+||C||HS^2 is 2.",
+        "sum_smallest_right_coefficient": "The smallest universal K in ||B||HS^2<=K(||A||HS^2+||C||HS^2) is 1/2.",
+        "product_smallest_right_coefficient": "The smallest universal K in ||B||HS^2<=K||A||HS||C||HS is 1.",
+        "witness": "A=C=B=[1]; zero padding gives sharpness for every fixed p,q>=1.",
+        "positive_definite_restriction": "Constants remain optimal over positive definite block matrices, though equality is impossible; use A=C=[1], B=[1-epsilon], epsilon down to 0.",
+        "positive_definite_fixed_dimensions": "For each fixed p,q, A=diag(1,epsilon,...), C=diag(1,epsilon,...), B=(1-epsilon)e1 f1* gives eigenvalues 2-epsilon and epsilon repeated p+q-1 times; ratios tend to the sharp constants."
+      },
+      "dependencies": [
+        "PB1",
+        "PB2"
+      ],
+      "proof_location": "study.md#pb4-sharp-constants-and-loss-of-positivity",
+      "verification": {
+        "complete_ordinary_proof_provided": true,
+        "independent_review": "pending",
+        "formal_kernel_checked": false
+      },
+      "proof_outline": "Evaluate both ratios on the scalar rank-one Gram matrix. For positive definiteness, the scalar perturbed block has eigenvalues epsilon and 2-epsilon."
+    },
+    {
+      "id": "PB5_COMPRESSION",
+      "title": "Positive compression comparison",
+      "kind": "corollary",
+      "assumptions": [
+        "K is positive semidefinite n by n over C",
+        "E is n by p and F is n by q",
+        "n,p,q positive integers"
+      ],
+      "statement": {
+        "product": "||E*KF||HS^2 <= ||E*KE||HS ||F*KF||HS",
+        "sum": "2||E*KF||HS^2 <= ||E*KE||HS^2+||F*KF||HS^2",
+        "equality": "Use PB3_PRODUCT and PB3_SUM with X=K^(1/2)E, Y=K^(1/2)F."
+      },
+      "dependencies": [
+        "PB1",
+        "PB2",
+        "PB3_PRODUCT",
+        "PB3_SUM",
+        "D_CONGRUENCE"
+      ],
+      "proof_location": "study.md#pb5-a-reusable-compression-corollary",
+      "verification": {
+        "complete_ordinary_proof_provided": true,
+        "independent_review": "pending",
+        "formal_kernel_checked": false
+      },
+      "proof_outline": "Apply the positive-block theorem to [E F]*K[E F]."
+    }
+  ],
+  "counterexamples": [
+    {
+      "id": "CE1",
+      "example": "E12",
+      "claim_refuted": "Positive definite A,C alone imply either block inequality.",
+      "witness": "A=C=[1],B=[2]",
+      "certificate": "v=(1,-1), v*Delta v=-2"
+    },
+    {
+      "id": "CE2",
+      "example": "E13",
+      "claim_refuted": "Some finite universal constant gives either homogeneous upper bound for arbitrary Hermitian blocks.",
+      "witness": "A=C=[0],B=[1]",
+      "certificate": "Both right sides vanish and ||B||HS^2=1; v=(1,-1), v*Delta v=-2"
+    },
+    {
+      "id": "CE3",
+      "example": "E14",
+      "claim_refuted": "Scalar entrywise two-by-two principal PSD tests suffice.",
+      "witness": "A=C=I_2,B=all-ones 2 by 2",
+      "certificate": "All |B_ij|^2=A_ii C_jj=1, but ||B||HS^2=4>2=||A||HS||C||HS; v=(1,1,-1,-1), v*Delta v=-4"
+    },
+    {
+      "id": "CE4",
+      "example": "E08",
+      "claim_refuted": "For PSD Delta with ||A||HS=||C||HS, BB*<=A^2 in Loewner order.",
+      "witness": "A=diag(4,1),C=diag(1,4),B=diag(2,2)",
+      "certificate": "A^2-BB*=diag(12,-3) is indefinite; Delta has the Gram factorization in E08."
+    }
+  ],
+  "verification": {
+    "ordinary_proof": "complete proof supplied and self-checked",
+    "independent_review": "pending",
+    "exact_computation": "16 named examples and 180 seeded Gaussian-rational Gram fixtures passed",
+    "arithmetic": "Python standard library Fraction pairs; no floating point",
+    "formal_kernel_checked": false,
+    "repository_programs_executed": false
+  },
+  "artifacts": {
+    "proof": "study.md",
+    "examples": "exact-examples.json",
+    "computation_script": "check_exact_examples.py",
+    "computation_summary": "checks.json",
+    "provenance": "provenance.json"
+  },
+  "nonclaims": [
+    "No theorem concerning polynomial functional calculus or the complete Crouzeix headline is established.",
+    "No fresh Lean compilation or formal kernel verification has been performed.",
+    "No native MRS schema compatibility, import, publication, or mathematical novelty is claimed.",
+    "Finite computational examples do not prove the universal statements."
+  ]
+}

@@ -1,0 +1,592 @@
+{
+  "schema_version": "pi-bridge-records-1.0",
+  "schema_note": "Local portable research-record schema. Suitable for an MRS adapter; no external MRS schema or ingestion endpoint has been validated.",
+  "study_id": "family017_pi_bridge_pointwise",
+  "study_date_utc": "2026-10-11",
+  "title": "Rational approximation bounds and tangent at integer arguments",
+  "study_file": "study.md",
+  "source_provenance_file": "sources.json",
+  "conventions": {
+    "angles": "radians",
+    "n": "positive integer",
+    "limits": "n tends to infinity through positive integers",
+    "denominators": "positive integers",
+    "real_powers": "positive base, usual real exponent",
+    "A": "1+2/pi"
+  },
+  "named_hypotheses": {
+    "D": "D(c,alpha,Q): c>0, real alpha>=2, integer Q>=1, and for all integer p,q with q>=Q, |pi-p/q|>=c*q^(-alpha). No reducedness condition.",
+    "P": "For every real alpha>2 there exists integer Q_alpha>=2 such that D(1,alpha,Q_alpha) holds."
+  },
+  "global_verification": {
+    "proof_kind": "ordinary_mathematical_proof",
+    "lean_verified_in_this_study": false,
+    "comparator_run_in_this_study": false,
+    "code_execution_from_downloaded_sources": false,
+    "software_installed": false,
+    "formalization_status": "not_formalized_by_this_study",
+    "ordinary_proofs": "All newly proved records have complete ordinary proofs in study.md.",
+    "published_premise": "Source inspected; proof dependency closure not checked here.",
+    "prior_run_claim": "A previously reported local run was not independently repeated and is not counted as this study's verification."
+  },
+  "scope_limits": [
+    "Pointwise comparison only; no aggregate series improvement is attempted.",
+    "The s>alpha convergence threshold is sufficient, not asserted sharp.",
+    "No converse from tangent growth to all rational approximation bounds.",
+    "No fixed positive c/q^2 estimate inferred from the alpha>2 statement.",
+    "No new Lean code or verification artifact is delivered."
+  ],
+  "sources": [
+    {
+      "id": "scope017",
+      "url": "https://github.com/openai/math/blob/main/lean/docs/017.md",
+      "role": "family scope",
+      "inspected": true,
+      "branch": "main",
+      "commit": null,
+      "blob_sha": "08ebac405fcc7fd8c8e7cda9bfe8e83d2bbfba0f",
+      "content_evidence": "Independent read-only connector source copy inspected. The stored bytes now match the supplied Git blob hash exactly; an extra terminal newline introduced by local serialization was removed before this check."
+    },
+    {
+      "id": "main_lean",
+      "url": "https://github.com/openai/math/blob/main/lean/OAI/NumberTheory/PiExponent/Main.lean",
+      "raw_url": "https://raw.githubusercontent.com/openai/math/main/lean/OAI/NumberTheory/PiExponent/Main.lean",
+      "role": "published solution entry point",
+      "inspected": true,
+      "branch": "main",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "source_line_numbers_1_based": {
+        "pi_integer_eventual_lower_bound": [
+          11,
+          12
+        ],
+        "main": [
+          17,
+          27
+        ],
+        "main_eventual_bound_conjunct": [
+          18,
+          20
+        ],
+        "flint_hills_summable": [
+          29,
+          32
+        ]
+      },
+      "blob_sha": "486ed39ba52e5a10de7893cf0f302edb873801f2",
+      "content_evidence": "Independent read-only connector source copy inspected. The stored bytes now match the supplied Git blob hash exactly; an extra terminal newline introduced by local serialization was removed before this check.",
+      "pinned_url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/NumberTheory/PiExponent/Main.lean",
+      "line_number_basis": "Exact repository file; web tool display suppresses some blank lines."
+    },
+    {
+      "id": "statement_lean",
+      "url": "https://github.com/openai/math/blob/main/lean/OAI/NumberTheory/PiExponent/Statement.lean",
+      "role": "definitions",
+      "inspected": true,
+      "branch": "main",
+      "commit": null,
+      "blob_sha": "f26a2c5d0bff73d1279b8c579ef68be04ee7794b",
+      "content_evidence": "Independent read-only connector source copy inspected. The stored bytes now match the supplied Git blob hash exactly; an extra terminal newline introduced by local serialization was removed before this check."
+    },
+    {
+      "id": "exponent_lean",
+      "url": "https://github.com/openai/math/blob/main/lean/OAI/NumberTheory/PiExponent/Approximation/Exponent.lean",
+      "role": "supporting definition-equivalence and exponent lemmas",
+      "inspected": true,
+      "branch": "main",
+      "commit": null
+    },
+    {
+      "id": "comparator_target",
+      "url": "https://github.com/openai/math/blob/main/lean/ComparatorChallenges/PiExponent.lean",
+      "role": "target statement with placeholder, not a supplied proof",
+      "inspected": true,
+      "branch": "main",
+      "commit": null,
+      "blob_sha": "bf78c83492e3f7aa3ab922b13d0b4151e7f601c3",
+      "content_evidence": "Independent read-only connector source copy inspected. The stored bytes now match the supplied Git blob hash exactly; an extra terminal newline introduced by local serialization was removed before this check."
+    },
+    {
+      "id": "comparator_config",
+      "url": "https://github.com/openai/math/blob/main/lean/ComparatorChallenges/PiExponent.json",
+      "role": "verification configuration, not evidence of a successful run",
+      "inspected": true,
+      "branch": "main",
+      "commit": null,
+      "selected_theorem": "OAI.PiExponent.main",
+      "solution_module": "OAI.NumberTheory.PiExponent.Main",
+      "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "enable_nanoda": false,
+      "blob_sha": "de39cf2b2955b45355ee07e63446f380f7d231f6",
+      "content_evidence": "Independent read-only connector source copy inspected. The stored bytes now match the supplied Git blob hash exactly; an extra terminal newline introduced by local serialization was removed before this check."
+    },
+    {
+      "id": "manuscript",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026/paper.pdf",
+      "role": "linked manuscript; full proof not reviewed",
+      "inspected": false,
+      "branch": "main",
+      "commit": null
+    }
+  ],
+  "records": [
+    {
+      "id": "pi_source_eventual",
+      "title": "Published all-integer eventual lower bound",
+      "family": "017",
+      "result_type": "source_premise",
+      "assumptions": [
+        "Use the current published OAI.PiExponent.main as an imported source premise; it has not been reverified here."
+      ],
+      "conclusion": "For every real alpha>2, there is an integer Q>=2 such that |pi-p/q| >= q^(-alpha) for every pair of integers p,q with q>=Q.",
+      "proof_steps": [
+        "Source inspection: this is the first conjunct of OAI.PiExponent.main and the type of pi_integer_eventual_lower_bound after expanding IntegerEventualLowerBound."
+      ],
+      "dependencies": [],
+      "verification": {
+        "proof_kind": "published_statement_inspection",
+        "lean_verified_in_this_study": false,
+        "comparator_run_in_this_study": false,
+        "code_execution_from_downloaded_sources": false,
+        "software_installed": false,
+        "formalization_status": "published_Lean_declaration_present_not_reverified",
+        "ordinary_proof_status": "not_reproved"
+      },
+      "source_ids": [
+        "main_lean",
+        "statement_lean",
+        "scope017"
+      ],
+      "caveats": [
+        "Each alpha has its own threshold.",
+        "No alpha=2 estimate is asserted.",
+        "Configured permitted axioms do not show that a comparator run succeeded."
+      ]
+    },
+    {
+      "id": "nearest_odd_denominator",
+      "title": "Nearest odd denominator and tangent pole distance",
+      "family": "017",
+      "result_type": "lemma",
+      "assumptions": [
+        "n is an integer with n>=1.",
+        "pi is irrational."
+      ],
+      "conclusion": "For k=floor(n/pi), q=2k+1 and delta=|n-pi*q/2|, q is the positive nearest odd integer to 2n/pi; |q-2n/pi|<1; 0<delta<pi/2; q<=A*n with A=1+2/pi; delta=(q/2)|pi-2n/q|. If Q>=1 is an integer and n>=ceil(pi*(Q+1)/2), then q>=Q.",
+      "proof_steps": [
+        "Because n/pi is positive and not integral, k>=0 and 2k<2n/pi<2k+2.",
+        "Its odd midpoint q is uniquely nearest and within distance less than one.",
+        "Multiplying the distance by pi/2 proves delta<pi/2; delta=0 would make pi rational.",
+        "The inequality q>=2n/pi-1 gives the threshold implication; q<=2n/pi+1<=A*n uses n>=1.",
+        "Factor q/2>0 to obtain the exact approximation identity."
+      ],
+      "dependencies": [],
+      "verification": {
+        "proof_kind": "ordinary_mathematical_proof",
+        "lean_verified_in_this_study": false,
+        "comparator_run_in_this_study": false,
+        "code_execution_from_downloaded_sources": false,
+        "software_installed": false,
+        "formalization_status": "not_formalized_by_this_study",
+        "ordinary_proof_status": "complete"
+      },
+      "constants": {
+        "A": "1+2/pi",
+        "q": "2*floor(n/pi)+1",
+        "delta": "abs(n-pi*q/2)",
+        "N_Q": "ceil(pi*(Q+1)/2)"
+      },
+      "mathematical_dependencies": [
+        "irrationality of pi",
+        "floor inequalities"
+      ]
+    },
+    {
+      "id": "cotangent_distance_bound",
+      "title": "Reciprocal bound for cotangent of pole distance",
+      "family": "017",
+      "result_type": "lemma",
+      "assumptions": [
+        "0<t<=pi/2.",
+        "For the integer specialization, q and delta are as in nearest_odd_denominator."
+      ],
+      "conclusion": "0<=cot(t)<=1/t. For n>=1, |tan(n)|=cot(delta)<=1/delta.",
+      "proof_steps": [
+        "Set f(t)=sin(t)-t*cos(t). Then f(0)=0 and f'(t)=t*sin(t)>=0.",
+        "Divide t*cos(t)<=sin(t) by t*sin(t)>0.",
+        "The odd-pole angle addition formulas give |sin(n)|=cos(delta) and |cos(n)|=sin(delta)>0."
+      ],
+      "dependencies": [
+        "nearest_odd_denominator"
+      ],
+      "verification": {
+        "proof_kind": "ordinary_mathematical_proof",
+        "lean_verified_in_this_study": false,
+        "comparator_run_in_this_study": false,
+        "code_execution_from_downloaded_sources": false,
+        "software_installed": false,
+        "formalization_status": "not_formalized_by_this_study",
+        "ordinary_proof_status": "complete"
+      },
+      "mathematical_dependencies": [
+        "derivative monotonicity",
+        "trigonometric angle addition"
+      ],
+      "parity_restriction": "The denominator q must be odd to describe a tangent pole."
+    },
+    {
+      "id": "diophantine_tangent_growth",
+      "title": "Explicit growth from a fixed Diophantine exponent",
+      "family": "017",
+      "result_type": "theorem",
+      "assumptions": [
+        "D(c,alpha,Q): c>0, alpha>=2, integer Q>=1, and |pi-p/q|>=c*q^(-alpha) for all integers p,q with q>=Q.",
+        "n is an integer and n>=N=ceil(pi*(Q+1)/2)."
+      ],
+      "conclusion": "|tan(n)| <= C*n^(alpha-1), where C=(2/c)*(1+2/pi)^(alpha-1). In particular, |tan(n)|=O(n^(alpha-1)).",
+      "proof_steps": [
+        "The selected q is odd, positive, at least Q and at most A*n.",
+        "Apply D to p=2n and this q without reducing the fraction.",
+        "The exact distance formula gives delta>=(c/2)*q^(1-alpha)>0.",
+        "Taking reciprocals gives |tan(n)|<=2*q^(alpha-1)/c.",
+        "Use alpha-1>=0 and q<=A*n."
+      ],
+      "dependencies": [
+        "nearest_odd_denominator",
+        "cotangent_distance_bound"
+      ],
+      "verification": {
+        "proof_kind": "ordinary_mathematical_proof",
+        "lean_verified_in_this_study": false,
+        "comparator_run_in_this_study": false,
+        "code_execution_from_downloaded_sources": false,
+        "software_installed": false,
+        "formalization_status": "not_formalized_by_this_study",
+        "ordinary_proof_status": "complete"
+      },
+      "constants": {
+        "A": "1+2/pi",
+        "C": "(2/c)*A^(alpha-1)",
+        "N": "ceil(pi*(Q+1)/2)"
+      },
+      "parity_restriction": "Only even numerators and positive odd denominators are used.",
+      "caveats": [
+        "No converse for all rational numerators and denominators is asserted.",
+        "The same proof works for alpha>=1, but records retain the requested alpha>=2 range."
+      ]
+    },
+    {
+      "id": "finite_denominator_globalization",
+      "title": "Globalize an eventual approximation bound",
+      "family": "017",
+      "result_type": "lemma",
+      "assumptions": [
+        "D(c,alpha,Q).",
+        "pi is irrational (also follows from D by using multiples of a hypothetical rational representation)."
+      ],
+      "conclusion": "Define c_star=min({c} union {q^(alpha-1)*dist(q*pi,Z): integers 1<=q<Q}). Then c_star>0 and |pi-p/q|>=c_star*q^(-alpha) for every integer p and integer q>=1. Therefore |tan(n)|<=(2/c_star)*A^(alpha-1)*n^(alpha-1) for all integers n>=1.",
+      "proof_steps": [
+        "Each q*pi is nonintegral, so its distance to Z is positive.",
+        "The set in the minimum is finite and nonempty because it includes c.",
+        "For 1<=q<Q, use |pi-p/q|=|q*pi-p|/q>=dist(q*pi,Z)/q.",
+        "For q>=Q, use the original bound and c_star<=c.",
+        "Reuse the direct growth proof; every selected denominator is now covered."
+      ],
+      "dependencies": [
+        "nearest_odd_denominator",
+        "cotangent_distance_bound",
+        "diophantine_tangent_growth"
+      ],
+      "verification": {
+        "proof_kind": "ordinary_mathematical_proof",
+        "lean_verified_in_this_study": false,
+        "comparator_run_in_this_study": false,
+        "code_execution_from_downloaded_sources": false,
+        "software_installed": false,
+        "formalization_status": "not_formalized_by_this_study",
+        "ordinary_proof_status": "complete"
+      },
+      "constants": {
+        "c_star": "min({c} union {q^(alpha-1)*dist(q*pi,Z): 1<=q<Q})",
+        "global_C": "(2/c_star)*(1+2/pi)^(alpha-1)"
+      },
+      "caveats": [
+        "The numerator set is infinite, but dist(q*pi,Z) supplies its minimum at each fixed denominator.",
+        "If Q=1, the added finite set is empty and c_star=c."
+      ]
+    },
+    {
+      "id": "scaled_tangent_limit",
+      "title": "Scaled limits from fixed-exponent growth",
+      "family": "017",
+      "result_type": "corollary",
+      "assumptions": [
+        "D(c,alpha,Q).",
+        "s is real and s>alpha-1."
+      ],
+      "conclusion": "|tan(n)|/n^s -> 0 and tan(n)/n^s -> 0 along n>=1. For n>=N, |tan(n)|/n^s <= C*n^(-beta), beta=s-alpha+1>0.",
+      "proof_steps": [
+        "Divide the fixed-exponent growth bound by positive n^s.",
+        "The exponent beta is strictly positive, so n^(-beta) tends to zero.",
+        "Apply the squeeze theorem to the absolute and signed sequences."
+      ],
+      "dependencies": [
+        "diophantine_tangent_growth"
+      ],
+      "verification": {
+        "proof_kind": "ordinary_mathematical_proof",
+        "lean_verified_in_this_study": false,
+        "comparator_run_in_this_study": false,
+        "code_execution_from_downloaded_sources": false,
+        "software_installed": false,
+        "formalization_status": "not_formalized_by_this_study",
+        "ordinary_proof_status": "complete"
+      },
+      "constants": {
+        "beta": "s-alpha+1",
+        "tolerance_threshold": "max(N,floor((C/eta)^(1/beta))+1) for eta>0"
+      },
+      "endpoint_status": "At s=alpha-1 this comparison only proves boundedness; no limit conclusion is made."
+    },
+    {
+      "id": "tangent_absolute_series_sufficient",
+      "title": "Absolute convergence by fixed-exponent pointwise comparison",
+      "family": "017",
+      "result_type": "corollary",
+      "assumptions": [
+        "D(c,alpha,Q).",
+        "s is real and s>alpha."
+      ],
+      "conclusion": "The series sum_{n>=1}|tan(n)|/n^s converges. For every integer M>=N, sum_{n>M}|tan(n)|/n^s <= C/(s-alpha)*M^(-(s-alpha)). Thus sum tan(n)/n^s converges absolutely.",
+      "proof_steps": [
+        "Set r=s-alpha+1>1. The terms are at most C*n^(-r) for n>=N.",
+        "Since x^(-r) decreases, sum_{n>M}n^(-r)<=integral_M^infinity x^(-r)dx=M^(1-r)/(r-1).",
+        "All initial terms are finite because integer arguments are not tangent poles."
+      ],
+      "dependencies": [
+        "diophantine_tangent_growth"
+      ],
+      "verification": {
+        "proof_kind": "ordinary_mathematical_proof",
+        "lean_verified_in_this_study": false,
+        "comparator_run_in_this_study": false,
+        "code_execution_from_downloaded_sources": false,
+        "software_installed": false,
+        "formalization_status": "not_formalized_by_this_study",
+        "ordinary_proof_status": "complete"
+      },
+      "series_threshold_kind": "sufficient_only_not_sharp",
+      "endpoint_status": "At s=alpha, the harmonic majorant is inconclusive; no divergence claim follows."
+    },
+    {
+      "id": "pi_epsilon_growth",
+      "title": "PiExponent gives epsilon-loss tangent growth",
+      "family": "017",
+      "result_type": "conditional_corollary",
+      "assumptions": [
+        "Imported premise pi_source_eventual.",
+        "epsilon is real and epsilon>0."
+      ],
+      "conclusion": "For all sufficiently large integers n, |tan(n)|<=2*(1+2/pi)^(1+epsilon)*n^(1+epsilon). Thus |tan(n)|=O_epsilon(n^(1+epsilon)).",
+      "proof_steps": [
+        "Choose alpha=2+epsilon and c=1 in the source premise.",
+        "Apply diophantine_tangent_growth with its corresponding Q_alpha."
+      ],
+      "dependencies": [
+        "pi_source_eventual",
+        "diophantine_tangent_growth"
+      ],
+      "verification": {
+        "proof_kind": "ordinary_mathematical_proof",
+        "lean_verified_in_this_study": false,
+        "comparator_run_in_this_study": false,
+        "code_execution_from_downloaded_sources": false,
+        "software_installed": false,
+        "formalization_status": "not_formalized_by_this_study",
+        "ordinary_proof_status": "complete"
+      },
+      "source_ids": [
+        "main_lean"
+      ],
+      "conditional_on_published_premise": true,
+      "caveats": [
+        "The onset depends on epsilon.",
+        "This does not provide a fixed positive c/q^2 approximation estimate or an O(n) tangent bound."
+      ]
+    },
+    {
+      "id": "pi_scaled_limits",
+      "title": "PiExponent gives every scaled limit above exponent one",
+      "family": "017",
+      "result_type": "conditional_corollary",
+      "assumptions": [
+        "Imported premise pi_source_eventual.",
+        "s is real and s>1."
+      ],
+      "conclusion": "|tan(n)|/n^s -> 0 and tan(n)/n^s -> 0. Eventually the absolute ratio is at most 2*A^((s+1)/2)*n^(-(s-1)/2).",
+      "proof_steps": [
+        "Choose alpha=(s+3)/2, so 2<alpha<s+1.",
+        "Use c=1 and the source threshold.",
+        "Apply scaled_tangent_limit and simplify alpha-1=(s+1)/2 and s-alpha+1=(s-1)/2."
+      ],
+      "dependencies": [
+        "pi_source_eventual",
+        "scaled_tangent_limit"
+      ],
+      "verification": {
+        "proof_kind": "ordinary_mathematical_proof",
+        "lean_verified_in_this_study": false,
+        "comparator_run_in_this_study": false,
+        "code_execution_from_downloaded_sources": false,
+        "software_installed": false,
+        "formalization_status": "not_formalized_by_this_study",
+        "ordinary_proof_status": "complete"
+      },
+      "conditional_on_published_premise": true,
+      "endpoint_status": "No conclusion at s=1 is proved."
+    },
+    {
+      "id": "pi_absolute_series_sufficient",
+      "title": "PiExponent gives a sufficient series range above two",
+      "family": "017",
+      "result_type": "conditional_corollary",
+      "assumptions": [
+        "Imported premise pi_source_eventual.",
+        "s is real and s>2."
+      ],
+      "conclusion": "sum_{n>=1}|tan(n)|/n^s converges. For sufficiently large integer M its tail is at most [2*A^(s/2)/(s/2-1)]*M^(-(s/2-1)).",
+      "proof_steps": [
+        "Choose alpha=(s+2)/2, so 2<alpha<s.",
+        "Apply tangent_absolute_series_sufficient with c=1.",
+        "Simplify alpha-1=s/2 and s-alpha=s/2-1."
+      ],
+      "dependencies": [
+        "pi_source_eventual",
+        "tangent_absolute_series_sufficient"
+      ],
+      "verification": {
+        "proof_kind": "ordinary_mathematical_proof",
+        "lean_verified_in_this_study": false,
+        "comparator_run_in_this_study": false,
+        "code_execution_from_downloaded_sources": false,
+        "software_installed": false,
+        "formalization_status": "not_formalized_by_this_study",
+        "ordinary_proof_status": "complete"
+      },
+      "conditional_on_published_premise": true,
+      "series_threshold_kind": "sufficient_only_not_sharp",
+      "endpoint_status": "No claim about s=2 or the full convergence range."
+    },
+    {
+      "id": "pi_cubic_limit",
+      "title": "Cubic tangent limit",
+      "family": "017",
+      "result_type": "conditional_corollary",
+      "assumptions": [
+        "Imported premise pi_source_eventual."
+      ],
+      "conclusion": "lim_{n->infinity} tan(n)/n^3 = 0; also lim |tan(n)|/n^3=0. Eventually |tan(n)|/n^3 <= 2*A^(3/2)*n^(-3/2).",
+      "proof_steps": [
+        "Choose alpha=5/2 and c=1 in the source premise.",
+        "Apply the growth theorem and divide by n^3.",
+        "The resulting n^(-3/2) bound tends to zero."
+      ],
+      "dependencies": [
+        "pi_source_eventual",
+        "diophantine_tangent_growth",
+        "scaled_tangent_limit"
+      ],
+      "verification": {
+        "proof_kind": "ordinary_mathematical_proof",
+        "lean_verified_in_this_study": false,
+        "comparator_run_in_this_study": false,
+        "code_execution_from_downloaded_sources": false,
+        "software_installed": false,
+        "formalization_status": "not_formalized_by_this_study",
+        "ordinary_proof_status": "complete"
+      },
+      "conditional_on_published_premise": true,
+      "constants": {
+        "A": "1+2/pi",
+        "C": "2*A^(3/2)",
+        "N": "ceil(pi*(Q_(5/2)+1)/2)"
+      }
+    },
+    {
+      "id": "pi_cubic_absolute_series",
+      "title": "Cubic tangent series converges absolutely",
+      "family": "017",
+      "result_type": "conditional_corollary",
+      "assumptions": [
+        "Imported premise pi_source_eventual."
+      ],
+      "conclusion": "sum_{n>=1}|tan(n)|/n^3 < infinity. For all integer M>=ceil(pi*(Q_(5/2)+1)/2), the tail sum_{n>M}|tan(n)|/n^3 <= 4*A^(3/2)*M^(-1/2).",
+      "proof_steps": [
+        "Choose alpha=5/2 and c=1 in the source premise.",
+        "Use |tan(n)|/n^3<=2*A^(3/2)*n^(-3/2) after the source-dependent onset.",
+        "Apply integral comparison, integral_M^infinity x^(-3/2)dx=2*M^(-1/2).",
+        "Add finitely many finite initial terms."
+      ],
+      "dependencies": [
+        "pi_source_eventual",
+        "tangent_absolute_series_sufficient"
+      ],
+      "verification": {
+        "proof_kind": "ordinary_mathematical_proof",
+        "lean_verified_in_this_study": false,
+        "comparator_run_in_this_study": false,
+        "code_execution_from_downloaded_sources": false,
+        "software_installed": false,
+        "formalization_status": "not_formalized_by_this_study",
+        "ordinary_proof_status": "complete"
+      },
+      "conditional_on_published_premise": true,
+      "caveats": [
+        "No numerical threshold Q_(5/2) was extracted.",
+        "No numerical value of the series was computed."
+      ]
+    },
+    {
+      "id": "reduced_to_integer_eventual",
+      "title": "Repair the reduced-denominator quantifier",
+      "family": "017",
+      "result_type": "lemma",
+      "assumptions": [
+        "alpha>0.",
+        "All but finitely many reduced rationals a/d with d>=2 satisfy |pi-a/d|>=d^(-alpha).",
+        "pi is irrational."
+      ],
+      "conclusion": "There is an integer Q>=1 such that |pi-p/q|>=q^(-alpha) for all integers p,q with q>=Q, including unreduced fractions.",
+      "proof_steps": [
+        "Let E contain all exceptional reduced rationals of denominator at least two plus the integers with |pi-r|<1; this set is finite.",
+        "Set eta=min({1} union {|pi-r|: r in E})>0 and choose a positive integer Q>=eta^(-1/alpha).",
+        "Reduce p/q to a/d with 1<=d<=q.",
+        "If a/d is in E, the error is at least eta>=q^(-alpha).",
+        "If d>=2 and a/d is not exceptional, use d^(-alpha)>=q^(-alpha).",
+        "If d=1 and a/d is not in E, its error is at least 1>=q^(-alpha)."
+      ],
+      "dependencies": [],
+      "verification": {
+        "proof_kind": "ordinary_mathematical_proof",
+        "lean_verified_in_this_study": false,
+        "comparator_run_in_this_study": false,
+        "code_execution_from_downloaded_sources": false,
+        "software_installed": false,
+        "formalization_status": "not_formalized_by_this_study",
+        "ordinary_proof_status": "complete"
+      },
+      "constants": {
+        "eta": "min({1} union {|pi-r|: r in E})",
+        "Q": "max(1,ceil(eta^(-1/alpha)))"
+      },
+      "caveats": [
+        "Do not assume large unreduced denominators imply large reduced denominators.",
+        "Apply separately to each alpha>2 when starting from the usual mu(pi)=2 characterization; no endpoint alpha=2 estimate is obtained."
+      ]
+    }
+  ]
+}

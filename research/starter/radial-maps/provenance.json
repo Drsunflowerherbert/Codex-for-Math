@@ -1,0 +1,65 @@
+{
+  "schema": "openai-math-study-provenance",
+  "schema_version": "1.0.0",
+  "study_id": "family322-radial-contact",
+  "family_id": "322",
+  "source": {
+    "title": "A positive solution to Tingley's problem",
+    "author_as_listed": "OpenAI",
+    "date_as_listed": "September 23, 2026",
+    "repository": "https://github.com/openai/math",
+    "revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "source_file": "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex",
+    "source_url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex",
+    "blob_sha": "ab9bd82b388ec4e55a333d05c61c853b7941798b",
+    "lemma_number": "2.2",
+    "latex_label": "lem:radial",
+    "lines": {
+      "start": 135,
+      "end": 143
+    },
+    "retrieved_date_utc": "2026-10-11",
+    "retrieval_method": "GitHub fetch_file connector at explicit commit",
+    "retrieval_status": "success",
+    "web_fetch_status": "GitHub and raw URLs returned cache-miss failures before successful connector read."
+  },
+  "source_assertions": [
+    "Every ray from a strict interior center in a unit direction meets the sphere exactly once.",
+    "The positive contact parameter is continuous in the direction.",
+    "The parameter lies between 1-norm(c) and 1+norm(c)."
+  ],
+  "independently_derived": [
+    "Detailed elementary proofs and scalar-compactness audit",
+    "radial crossing inequality",
+    "pointwise product bound",
+    "global radius and reciprocal-radius Lipschitz bounds",
+    "sharpness of scalar bounds for positive center norm",
+    "contact-map upper bound",
+    "inverse and bi-Lipschitz bounds",
+    "joint center and direction estimates",
+    "unnormalized-direction estimates",
+    "Hilbert-space specialization",
+    "four worked example groups",
+    "bisection specification and residual certificate"
+  ],
+  "scope_exclusions": [
+    "No validation of the headline Tingley theorem.",
+    "No audit of the later alignment, attainment or fixed-point arguments.",
+    "No claim that derived facts are new to the mathematical literature.",
+    "No execution or installation of repository code.",
+    "No Lean kernel check or formal certification."
+  ],
+  "artifacts": {
+    "study": "study.md",
+    "theorems": "theorems.json",
+    "examples": "examples.json",
+    "study_questions": "study-questions.jsonl"
+  },
+  "verification": {
+    "source_read": true,
+    "independent_informal_proofs": true,
+    "independent_argument_review_reported": true,
+    "final_hash_review_record": "See reviews/radial-review.json for the exact reviewed study hash.",
+    "formal_verification": false
+  }
+}

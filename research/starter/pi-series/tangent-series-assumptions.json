@@ -1,0 +1,69 @@
+{
+  "study": "Conditional absolute convergence threshold for the tangent series",
+  "date_utc": "2026-10-11",
+  "status": "complete mathematical proof; source statement verification only; not Lean formalized",
+  "series": "sum over positive integers n of abs(tan(n)) / n^s, with angles in radians and s real",
+  "convergence_hypothesis": {
+    "id": "H",
+    "statement": "For every real alpha > 2, there exists an integer Q >= 2 such that for every integer p and every integer q >= Q, abs(pi - p/q) >= q^(-alpha).",
+    "uniformity": "Q may depend on alpha, but not on p or q; no coprimality restriction is imposed.",
+    "scope": "all integer numerators and all sufficiently large positive integer denominators",
+    "equivalent_input_for_this_proof": "For each alpha > 2 there exists c_alpha > 0 with abs(pi - p/q) >= c_alpha q^(-alpha) for all p in Z and q >= 1.",
+    "small_denominator_justification": "H implies pi irrational. Given Q from H, set c = min(1, min over 1 <= q < Q of q^(alpha-1) dist(q*pi, Z)); then c > 0 and the global bound holds.",
+    "supremum_characterization_used": false,
+    "hypothesis_proved_in_this_study": false
+  },
+  "convergence_result": {
+    "statement": "Under H the absolute series converges for every real s > 1.",
+    "fixed_exponent_form": "For a single alpha > 2 satisfying the eventual lower bound, convergence follows whenever s > alpha - 1.",
+    "dyadic_estimate": "sum_{N <= n < 2N} abs(tan(n)) <= (4 * 3^(alpha-1) / c) * N^(alpha-1) * (1 + log N), for integer N >= 1.",
+    "choice_for_s": "Choose alpha with 2 < alpha < s + 1.",
+    "auxiliary_scale": "delta_N = (c/2) * (3N)^(1-alpha).",
+    "pole_distance": "For 1 <= n <= 2N the nearest tangent pole has positive odd denominator q <= 3N and even numerator p = 2n; distance is >= delta_N.",
+    "mutual_spacing": "For distinct n,m in [1,2N], the circular gap modulo pi is >= delta_N, by approximating pi with h/r where h = abs(n-m), r is a nearest nonnegative integer to h/pi, and r = 0 is handled separately.",
+    "parity_warning": "Pole distance uses even numerators and odd denominators. Mutual spacing uses unrestricted numerators and denominators. A bound restricted to the pole parity class alone is not enough for the stated spacing argument.",
+    "packing": "Split signed distances to the pole into the two half-circles. On each side the jth distance is >= j*delta_N; the reciprocal sum is bounded by a harmonic sum.",
+    "equidistribution_used": false,
+    "continued_fraction_theorems_used": false
+  },
+  "divergence_result": {
+    "statement": "The absolute series diverges to positive infinity for every real s <= 1, independently of H.",
+    "inputs": [
+      "The usual real trigonometric addition formulas and abs(sin x) <= abs(tan x) whenever cos x is nonzero.",
+      "sin(1) > 0 in radians.",
+      "cos(n) is nonzero for all positive integers n, as follows from the standard irrationality of pi.",
+      "Divergence of the harmonic series."
+    ],
+    "key_bound": "abs(tan(n)) + abs(tan(n+1)) >= sin(1).",
+    "pair_bound_at_s_1": "abs(tan(2m-1))/(2m-1) + abs(tan(2m))/(2m) >= sin(1)/(2m).",
+    "extension_below_1": "n^(-s) >= n^(-1) for n >= 1 and s <= 1.",
+    "equidistribution_used": false
+  },
+  "nonclaims": [
+    "No proof of the irrationality exponent statement H is provided.",
+    "No Lean formalization or executed Lean verification of this tangent-series result is claimed.",
+    "No assertion about conditional convergence of the signed tangent series for s <= 1 is made.",
+    "No uniform O(N log N) block bound is claimed from H alone.",
+    "No sharp pointwise growth exponent or parity-restricted irrationality exponent is claimed."
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/openai/math/blob/main/lean/docs/017.md",
+      "role": "Published scope statement of H",
+      "inspection": "public web read on 2026-10-11"
+    },
+    {
+      "url": "https://github.com/openai/math/blob/main/lean/ComparatorChallenges/PiExponent.lean",
+      "role": "Exact quantifier structure in the first conjunct of OAI.PiExponent.main",
+      "inspection": "public web read on 2026-10-11; comparator has a placeholder proof"
+    },
+    {
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/NumberTheory/PiExponent/Main.lean",
+      "read_url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/NumberTheory/PiExponent/Main.lean",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "role": "Main implementation: lines 18-20 state H as the first conjunct of OAI.PiExponent.main; lines 8-12 name the eventual lower bounds.",
+      "inspection": "public raw-source web read on 2026-10-11; statement-level inspection, no imported-dependency audit or executed Lean verification"
+    }
+  ],
+  "proof_file": "tangent-series-proof.md"
+}

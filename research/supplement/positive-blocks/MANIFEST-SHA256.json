@@ -1,0 +1,46 @@
+{
+  "README.txt": {
+    "bytes": 1800,
+    "sha256": "6f5e85e558038ad136b97f18b005fadcee8368bbc0eb6b64101b5e07785ef81a"
+  },
+  "check_exact_examples.py": {
+    "bytes": 12515,
+    "sha256": "056023a525bd5c855961ac8870afa9b6d868d7f9acada6a97efadb28caebbfde"
+  },
+  "checks.json": {
+    "bytes": 1073,
+    "sha256": "d7aedbac738fe5bfdc864dd5ce3b2b4662243dfc4e44b20d32614939723a7aa4"
+  },
+  "exact-examples.json": {
+    "bytes": 527684,
+    "sha256": "5e7f79ee684eb8f8d55a3f641e63fdad9abc5c3a37142679db023a6c8031bc51"
+  },
+  "independent-review.json": {
+    "bytes": 5425,
+    "sha256": "979f438d66dd042e8790e1ee1d92ab80e0b381f134fad6522fb697bb58b50abf"
+  },
+  "independent-review.md": {
+    "bytes": 4051,
+    "sha256": "84b4104c01bfb601b5b5a56c5f758cd1594a1e6eebfeea5595cf5851673ea2f7"
+  },
+  "provenance.json": {
+    "bytes": 1944,
+    "sha256": "5cbad41417223c1b106556ef68a09ef3f3d314ed762377b2dc86355dd95f0f85"
+  },
+  "record-validation.json": {
+    "bytes": 290,
+    "sha256": "1921f0b27a9432fc31329fbc2dfcc0eb14a9abbee5254259acb9dfd252400a0b"
+  },
+  "study.md": {
+    "bytes": 17071,
+    "sha256": "fec0fdca335159320f13c572e34f77fa0dad3578ec76de4da6e4ae437a9c60af"
+  },
+  "theorem-records.json": {
+    "bytes": 16256,
+    "sha256": "8276d9642256c65907271f84d3b2082f970909fc3b624cb1639c860e2649c203"
+  },
+  "verification-status.json": {
+    "bytes": 2176,
+    "sha256": "504a791bc92c66a0d6a2b34f2f6fd9fefc765b85bf3e54eebcbfa649b5ea80cd"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "scope": "Convex approximation study delivery files",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 2144,
+      "sha256": "2f17271716656104a97a5b9439d8f6be66547b84529db1275a094c29c57c814e"
+    },
+    {
+      "file": "audit.md",
+      "bytes": 18276,
+      "sha256": "98dd144f16b48e9e63351541c16c6d135c1b1448401155d799311e853894bc67"
+    },
+    {
+      "file": "check_examples.py",
+      "bytes": 10454,
+      "sha256": "2187655a9c0eb84fc774d87b322f8cd41f3be3896465fd78dd947ea9a58e4580"
+    },
+    {
+      "file": "dependency-graph.json",
+      "bytes": 15249,
+      "sha256": "0f0999e2d371ccda7e56120648eb07d7c1aa2a8787c2fe669937403459534412"
+    },
+    {
+      "file": "examples.json",
+      "bytes": 8164,
+      "sha256": "63ea2e001906c43e7fe10f18be1a1c514e296972360ae93a3be758bbf36811e2"
+    },
+    {
+      "file": "lean-roadmap.md",
+      "bytes": 8875,
+      "sha256": "de40dc14cbb9bbc42e5646ba196b1ed434d1495b7e47d51e3bbd6154b482b24e"
+    },
+    {
+      "file": "source-provenance.json",
+      "bytes": 1343,
+      "sha256": "97ca2aeaa6a54fc7580a80377debf7441b8be29a06c78d6f0742739afe62d82a"
+    },
+    {
+      "file": "study.md",
+      "bytes": 25215,
+      "sha256": "ba841acc62437708c36a28a5f8bad1cbf8d5104d0cc9af76c7fb1d27e6aa11e9"
+    },
+    {
+      "file": "theorem-records.json",
+      "bytes": 23594,
+      "sha256": "20d3d932d9179379ed6b689c330c2477c03177536f7d3cc3a588bd0971fb1cd5"
+    },
+    {
+      "file": "verification.json",
+      "bytes": 1743,
+      "sha256": "03bd563d098e0122ca1fbf362e5e4218b5843ed004b797864f8f38ddefee0db1"
+    }
+  ]
+}

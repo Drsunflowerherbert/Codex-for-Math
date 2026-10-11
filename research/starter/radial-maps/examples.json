@@ -1,0 +1,126 @@
+{
+  "schema": "openai-math-study-example-records",
+  "schema_version": "1.0.0",
+  "study_id": "family322-radial-contact",
+  "source_relation": "All example calculations independently derived here; no novelty claim.",
+  "examples": [
+    {
+      "id": "E1",
+      "title": "Exact bounds and normalization",
+      "space": "R with absolute-value norm",
+      "parameters": "c=r, 0<=r<1",
+      "calculations": [
+        "rho_c(1)=1-r",
+        "rho_c(-1)=1+r",
+        "best scalar Lipschitz constant on S_R is r",
+        "For c=1/2,u=2, tau_c(u)=1/4, while a=1/2; use a/abs(u), not a.",
+        "u=0 yields no contact."
+      ],
+      "supports": [
+        "R3",
+        "D6"
+      ],
+      "proof_location": "study.md#example-1-exact-radius-bounds-and-the-normalization-trap"
+    },
+    {
+      "id": "E2",
+      "title": "Hilbert formula and noncompact sphere",
+      "space": "Real Hilbert spaces, including l2(N)",
+      "parameters": "c=re_1, 0<=r<1; unit v",
+      "calculations": [
+        "rho_c(v)=-inner(c,v)+sqrt(inner(c,v)^2+1-r^2)",
+        "For r=1/2 and v=e_2, rho=sqrt(3)/2.",
+        "For n>=2, P_c(e_n)=r*e_1+sqrt(1-r^2)*e_n.",
+        "Distinct e_n have distance sqrt(2); distinct contact points have distance sqrt(2*(1-r^2))."
+      ],
+      "supports": [
+        "R1",
+        "R4",
+        "D8"
+      ],
+      "lesson": "No compactness of the ambient unit sphere is needed.",
+      "proof_location": "study.md#example-2-hilbert-formula-and-an-infinite-dimensional-test"
+    },
+    {
+      "id": "E3",
+      "title": "Sharp square-norm constants and flat faces",
+      "space": "R^2 with l_infinity norm; also embeds in l_infinity(N)",
+      "parameters": "0<r<1; c=(r,-r); a=1-r; U=1+r; v=(a/U,1); w_h=(a/U+h,1); 0<h<2r/U",
+      "calculations": [
+        "norm(v)=norm(w_h)=1",
+        "norm(v-w_h)=h",
+        "rho_c(v)=U",
+        "rho_c(w_h)=a*U/(a+U*h)",
+        "abs(rho_c(v)-rho_c(w_h))/h=U^2/(a+U*h), tending to U^2/a",
+        "abs(1/rho_c(v)-1/rho_c(w_h))/h=1/a",
+        "Contact-map distance has the same ratio as radius distance in this example."
+      ],
+      "supports": [
+        "D2",
+        "D3"
+      ],
+      "sharpness_scope": "Uniform over normed spaces and centers of prescribed norm r, for each 0<r<1. Not applicable at r=0.",
+      "additional_checks": [
+        "c=(1/2,0),v=(0,1): norm(c+t*v)=max(1/2,t), constant before t=1/2 but unique contact at t=1.",
+        "c=(-1/2,0),v=(1,0): norm(c+t*v)=abs(t-1/2), initially decreasing but unique contact at t=3/2."
+      ],
+      "proof_location": "study.md#example-3-a-square-norm-and-sharp-scalar-constants"
+    },
+    {
+      "id": "E4",
+      "title": "Boundary and exterior failures",
+      "cases": [
+        {
+          "space": "l_infinity^2",
+          "c": "(1,0)",
+          "v": "(0,1)",
+          "contacts": "Every t in [0,1]; positive times also nonunique."
+        },
+        {
+          "space": "l_infinity^2",
+          "c": "(1,0)",
+          "v": "(1,0)",
+          "contacts": "Only t=0; no positive-time contact."
+        },
+        {
+          "space": "l_infinity^2",
+          "c": "(1,0)",
+          "v": "v_epsilon=(epsilon,1), epsilon>0, tending to v_0=(0,1)",
+          "contacts": "Outermost closed-ray parameter is 0 for epsilon>0 and 1 at epsilon=0, hence discontinuous."
+        },
+        {
+          "space": "Euclidean R^2",
+          "c": "(1,0)",
+          "v": "(-1,0)",
+          "contacts": "t=0 and t=2."
+        },
+        {
+          "space": "Euclidean R^2",
+          "c": "(1,0)",
+          "v": "(0,1)",
+          "contacts": "Only t=0; no positive-time contact."
+        },
+        {
+          "space": "Euclidean R^2",
+          "c": "(2,0)",
+          "v": "(-1,0)",
+          "contacts": "t=1 and t=3."
+        },
+        {
+          "space": "Euclidean R^2",
+          "c": "(2,0)",
+          "v": "(1,0)",
+          "contacts": "None."
+        },
+        {
+          "space": "Euclidean R^2",
+          "c": "(2,0)",
+          "v": "(-sqrt(3)/2,1/2)",
+          "contacts": "Exactly t=sqrt(3), because squared norm minus 1 equals (t-sqrt(3))^2."
+        }
+      ],
+      "lesson": "The condition norm(c)<1 is essential for a universal all-directions existence and uniqueness theorem.",
+      "proof_location": "study.md#example-4-boundary-and-exterior-centers"
+    }
+  ]
+}

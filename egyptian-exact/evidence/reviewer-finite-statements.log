@@ -1,0 +1,5 @@
+Egyptian.sortedRepresentations (n : ℕ) (x : ℝ) : Set (List ℕ)
+def Egyptian.sortedRepresentations : ℕ → ℝ → Set (List ℕ) :=
+fun n x => {l | l.length = n ∧ (∀ d ∈ l, 0 < d) ∧ List.Pairwise (fun x1 x2 => x1 ≤ x2) l ∧ Egyptian.reciprocalSum l = x}
+Egyptian.finite_sortedRepresentations : ∀ (n : ℕ) (x : ℝ), (Egyptian.sortedRepresentations n x).Finite
+'Egyptian.finite_sortedRepresentations' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,40 @@
+{
+  "schema": "publication-input-archives-v1",
+  "source_hashes_verified_in_this_environment": true,
+  "archives": [
+    {
+      "archive": "EgyptianExact-Lean4-4.24.0-2026-10-11.zip",
+      "size": 297536,
+      "sha256": "22ebb1bbd0abdae7c8badfbf916c49aa39ad89f9d5f28b1dfa0e2e4530f33122",
+      "files": 76,
+      "uncompressed": 1453175
+    },
+    {
+      "archive": "OpenAI-math-research-starter-2026-10-11.zip",
+      "size": 547870,
+      "sha256": "b87f7e32f3ccbef1bcbbb819b05dafdc1481260925f22689563474467d2555da",
+      "files": 39,
+      "uncompressed": 7743890
+    },
+    {
+      "archive": "RadialContact-Reproducibility-v2-Lean4-4.24.0-2026-10-11.zip",
+      "size": 167523,
+      "sha256": "bdda223667986bb8e192c7e3f037ecfa430f2c37743441f240469dcc1de9b9d4",
+      "files": 54,
+      "uncompressed": 1347247
+    },
+    {
+      "archive": "openai-math-reviewed-supplement-2026-10-11.zip",
+      "size": 523782,
+      "sha256": "9e03b1ce33dc5d5fa62ab9478b06998bcb0eb32635fc11bccac065223e892a74",
+      "files": 107,
+      "uncompressed": 6706829
+    },
+    {
+      "archive": "tangent-sharp-verified-20261011.zip",
+      "size": 172267,
+      "sha256": "d9e0d17e7f4067651cdff3953812b54b77ec18e6ed8e15ec9b43f8898535bbd2",
+      "supplied_manifest_file_hashes_verified": 127
+    }
+  ]
+}

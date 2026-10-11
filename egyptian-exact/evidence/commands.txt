@@ -1,0 +1,37 @@
+Official vendor setup:
+Lean v4.24.0 official release https://github.com/leanprover/lean4/releases/download/v4.24.0/lean-4.24.0-linux.tar.zst
+Elan v4.2.4 official release https://github.com/leanprover/elan/releases/download/v4.2.4/elan-x86_64-unknown-linux-gnu.tar.gz
+ELAN_HOME=<project>/tooling/elan PATH=<project>/tooling/elan/bin:$PATH lake update
+ELAN_HOME=<project>/tooling/elan MATHLIB_CACHE_DIR=<project>/tooling/mathlib-cache PATH=<project>/tooling/elan/bin:$PATH lake exe cache get
+
+Build commands, run in <project> with workspace-local ELAN_HOME and PATH:
+lake build Egyptian.Basic
+lake build Egyptian.Finite
+lake build Egyptian.Cleanup
+lake build Egyptian
+lake env lean Evidence.lean
+lake build Egyptian.PaddingArithmetic
+lake build Egyptian.SafeSplit Egyptian.PaddingCollision
+lake build Egyptian.PaddingSelection
+lake build Egyptian.Padding
+bash scripts/check.sh
+
+Independent reviewer compilation:
+lake env lean -o review/PublicStatements.olean review/PublicStatements.lean
+lake env lean review/FiniteTermination.lean
+lake env lean review/FiniteStatements.lean
+lake env lean review/FinitePublicStatements.lean
+lake env lean review/PrimeCollisionPrototype.lean
+lake env lean review/PaddingPublicHarness.lean
+
+Executable exact checks:
+python3 scripts/check_exact.py
+python3 scripts/exact.py cleanup 4 4 6
+python3 scripts/exact.py cleanup 10 10 6 30
+python3 scripts/exact.py enumerate 2 1
+
+Final independent aggregate audit:
+lake env lean -Dpp.funBinderTypes=true Evidence.lean > evidence/reviewer-all-statements.log 2>&1
+
+Archive preparation and byte verification:
+python3 scripts/package.py

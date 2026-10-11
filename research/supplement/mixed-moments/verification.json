@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-11T02:08:18.925868+00:00",
+  "source_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_sha256": "3929650dfb36859d8f88281795d348043f903c41a70b0bf3598c21586a633852",
+  "source_matches_catalog_manifest": true,
+  "exact_arithmetic_checks_passed": 17805,
+  "theorem_records": 21,
+  "dependency_edges": 39,
+  "dag_validated": true,
+  "rational_table_syntax_validated": true,
+  "polynomial_example_coordinates_validated": true,
+  "independent_final_review": "No substantive mathematical errors found; coefficient-field wording clarified to retain index or degree restrictions.",
+  "proof_status": "Complete ordinary mathematical proofs; no proof assistant execution",
+  "execution_scope": "Original standard-library Python only; no repository code execution, installs, network execution, publication, or Lean claims",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 3591,
+      "sha256": "853ad2b8a96dc6eff4386d18939a0e04f1d7fda19e0b255c0b21b5a53acd7da6"
+    },
+    {
+      "file": "audit.md",
+      "bytes": 7245,
+      "sha256": "7ee9db0ee08e134324ae8915e1a2bff93c10a7a20ce5fa0030f3e70e3353cf1c"
+    },
+    {
+      "file": "build_theorem_index.py",
+      "bytes": 10702,
+      "sha256": "ccdb3fb13d278a31d41e53c6d45bf4b5ebb863fff2b56f3ec4b3ff61125856a4"
+    },
+    {
+      "file": "certificates.json",
+      "bytes": 20905,
+      "sha256": "3ad750bc00cff156fe773e467db4521d8e46dce00bbd9faa432fca493e1c8621"
+    },
+    {
+      "file": "certificates.py",
+      "bytes": 9931,
+      "sha256": "22d6d65aede13c1f348089d0faafc8e7a4d7de80a10d0f4a7a64f27bd2d0f4d8"
+    },
+    {
+      "file": "counterexamples.md",
+      "bytes": 7469,
+      "sha256": "d9f362ff9f0a17f6850f22d617b959a364475e7312f70896da5119a5e91d0e3a"
+    },
+    {
+      "file": "lean-roadmap.md",
+      "bytes": 10650,
+      "sha256": "eba120af8fb71f51e6e028686f315f7f164ed547ab65afa163b01f1bbd300a43"
+    },
+    {
+      "file": "study.md",
+      "bytes": 24947,
+      "sha256": "e8778fe759b0b50930c3a6fb4c58259aafe8d9276c0ceb00e95b3408d4603a00"
+    },
+    {
+      "file": "theorems.json",
+      "bytes": 18237,
+      "sha256": "cec34a1946f671e62d4cc9258032f19ab693e9204acb63dd9fc83872d49a70a0"
+    }
+  ]
+}

@@ -1,0 +1,603 @@
+{
+  "schema": "openai-math-study-theorem-records",
+  "schema_version": "1.0.0",
+  "schema_note": "Standalone JSON study schema; no claim of compatibility with an unspecified external MRS schema.",
+  "study_id": "family322-radial-contact",
+  "family_id": "322",
+  "scope": "Lemma 2.2 and explicitly derived radial-contact consequences only.",
+  "source": {
+    "repository": "openai/math",
+    "revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "path": "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex",
+    "blob_sha": "ab9bd82b388ec4e55a333d05c61c853b7941798b",
+    "locator": "Lemma 2.2; LaTeX label lem:radial; lines 135-143",
+    "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/build/main.tex#L135-L143"
+  },
+  "definitions": {
+    "r": "norm(c)",
+    "a": "1-r > 0",
+    "U": "1+r",
+    "S_X": "{v in X: norm(v)=1}",
+    "rho_c": "The unique positive scalar rho with norm(c+rho*v)=1 for unit v.",
+    "P_c": "P_c(v)=c+rho_c(v)*v",
+    "ray_convention": "t>=0; t>0 is equivalent under norm(c)<1"
+  },
+  "assumptions": [
+    {
+      "id": "A_REAL_NORMED",
+      "text": "X is a real normed space. Assume X nonzero when a nonempty sphere is required.",
+      "not_required": [
+        "completeness",
+        "finite dimension",
+        "strict convexity",
+        "smoothness",
+        "separability"
+      ]
+    },
+    {
+      "id": "A_REAL_HILBERT",
+      "text": "X is a real Hilbert space; needed only for D8 and Example 2's formula."
+    },
+    {
+      "id": "A_INTERIOR_CENTER",
+      "text": "c in X and norm(c)<1."
+    },
+    {
+      "id": "A_UNIT_DIRECTIONS",
+      "text": "All directions v,w mentioned are in S_X and all ray parameters are real."
+    },
+    {
+      "id": "A_UNIFORM_INTERIOR_CENTERS",
+      "text": "c,d in X with norm(c),norm(d)<=q<1 for one common q."
+    },
+    {
+      "id": "A_NONZERO_DIRECTIONS",
+      "text": "Directions u,z are nonzero; normalization is not assumed."
+    }
+  ],
+  "background": [
+    {
+      "id": "B_NORM",
+      "kind": "background",
+      "name": "Norm axioms",
+      "statement": "Positive definiteness, absolute homogeneity, triangle inequality.",
+      "dependencies": []
+    },
+    {
+      "id": "B_REVERSE",
+      "kind": "background",
+      "name": "Reverse triangle inequality",
+      "statement": "abs(norm(x)-norm(y)) <= norm(x-y).",
+      "dependencies": [
+        "B_NORM"
+      ],
+      "proof": "Apply norm(x)<=norm(x-y)+norm(y), then interchange x,y."
+    },
+    {
+      "id": "B_CONVEX",
+      "kind": "background",
+      "name": "Norm convexity",
+      "statement": "norm((1-s)x+s y) <= (1-s)norm(x)+s norm(y) for 0<=s<=1.",
+      "dependencies": [
+        "B_NORM"
+      ],
+      "proof": "Apply the triangle inequality and nonnegative homogeneity."
+    },
+    {
+      "id": "B_IVT",
+      "kind": "background",
+      "name": "Real intermediate value theorem",
+      "statement": "A continuous real function with values on opposite sides of a level attains that level on the interval.",
+      "dependencies": []
+    },
+    {
+      "id": "B_REAL_COMPACT",
+      "kind": "background",
+      "name": "Compactness of a bounded closed real interval",
+      "statement": "Every sequence in a closed bounded real interval has a convergent subsequence in the interval.",
+      "dependencies": []
+    },
+    {
+      "id": "B_METRIC_CONT",
+      "kind": "background",
+      "name": "Sequential criterion for metric continuity",
+      "statement": "For maps between metric spaces, sequential continuity at every point is equivalent to continuity.",
+      "dependencies": []
+    },
+    {
+      "id": "B_MVT",
+      "kind": "background",
+      "name": "Real mean value theorem",
+      "statement": "A derivative bounded in absolute value by L implies L-Lipschitz continuity on an interval.",
+      "dependencies": []
+    },
+    {
+      "id": "B_CS",
+      "kind": "background",
+      "name": "Cauchy Schwarz inequality",
+      "statement": "In a real Hilbert space, abs(inner(x,y)) <= norm(x)*norm(y).",
+      "dependencies": []
+    }
+  ],
+  "theorems": [
+    {
+      "id": "R1",
+      "kind": "theorem",
+      "title": "Existence of radial contact",
+      "source_relation": "source_statement_independently_proved",
+      "assumptions": [
+        "A_REAL_NORMED",
+        "A_INTERIOR_CENTER",
+        "A_UNIT_DIRECTIONS"
+      ],
+      "statement": "For every unit v there exists R>0 with norm(c+R*v)=1.",
+      "dependencies": [
+        "B_REVERSE",
+        "B_IVT"
+      ],
+      "proof": "h(t)=norm(c+t*v) is 1-Lipschitz. h(0)=r<1 and h(U)>=U-r=1. Apply the real intermediate value theorem on [0,U]; the root is positive.",
+      "proof_location": "study.md#r1-existence",
+      "verification": {
+        "informal_proof_provided": true,
+        "formal_kernel_checked": false
+      }
+    },
+    {
+      "id": "R2",
+      "kind": "theorem",
+      "title": "Uniqueness of radial contact",
+      "source_relation": "source_statement_independently_proved",
+      "assumptions": [
+        "A_REAL_NORMED",
+        "A_INTERIOR_CENTER",
+        "A_UNIT_DIRECTIONS"
+      ],
+      "statement": "There is exactly one R>0 with norm(c+R*v)=1.",
+      "dependencies": [
+        "R1",
+        "B_CONVEX"
+      ],
+      "proof": "If 0<s<t are contacts, c+s*v=(1-s/t)c+(s/t)(c+t*v), hence 1<=r+(s/t)(1-r)<1, a contradiction.",
+      "proof_location": "study.md#r2-uniqueness",
+      "verification": {
+        "informal_proof_provided": true,
+        "formal_kernel_checked": false
+      }
+    },
+    {
+      "id": "R3",
+      "kind": "theorem",
+      "title": "Uniform radius bounds",
+      "source_relation": "source_statement_independently_proved",
+      "assumptions": [
+        "A_REAL_NORMED",
+        "A_INTERIOR_CENTER",
+        "A_UNIT_DIRECTIONS"
+      ],
+      "statement": "a <= rho_c(v) <= U, where r=norm(c)<1, a=1-r, U=1+r.",
+      "dependencies": [
+        "R2",
+        "B_NORM",
+        "B_REVERSE"
+      ],
+      "proof": "At a contact R, 1<=r+R gives R>=a, and 1>=R-r gives R<=U.",
+      "proof_location": "study.md#r3-radius-bounds",
+      "verification": {
+        "informal_proof_provided": true,
+        "formal_kernel_checked": false
+      }
+    },
+    {
+      "id": "R4",
+      "kind": "theorem",
+      "title": "Continuous dependence on the direction",
+      "source_relation": "source_statement_independently_proved",
+      "assumptions": [
+        "A_REAL_NORMED",
+        "A_INTERIOR_CENTER",
+        "A_UNIT_DIRECTIONS"
+      ],
+      "statement": "rho_c:S_X->(0,infinity) is continuous in the norm topology.",
+      "dependencies": [
+        "R2",
+        "R3",
+        "B_REVERSE",
+        "B_REAL_COMPACT",
+        "B_METRIC_CONT"
+      ],
+      "proof": "For v_n->v, radii lie in [a,U]. Any convergent subsequence of radii has limit L and norm(c+L*v)=1, hence L=rho_c(v). A sequence failing convergence has a subsequence staying away from rho_c(v), whose convergent further subsequence contradicts that conclusion.",
+      "proof_location": "study.md#r4-continuity-and-the-scalar-compactness-point",
+      "verification": {
+        "informal_proof_provided": true,
+        "formal_kernel_checked": false
+      }
+    },
+    {
+      "id": "D1",
+      "kind": "theorem",
+      "title": "Radial crossing estimate",
+      "source_relation": "derived_here_no_novelty_claim",
+      "assumptions": [
+        "A_REAL_NORMED",
+        "A_INTERIOR_CENTER",
+        "A_UNIT_DIRECTIONS"
+      ],
+      "statement": "For R=rho_c(v) and all t>=0, abs(norm(c+t*v)-1)>=(a/R)*abs(t-R). Norm is strictly below 1 for t<R and strictly above 1 for t>R.",
+      "dependencies": [
+        "R2",
+        "B_CONVEX"
+      ],
+      "proof": "For t<=R, convexity gives h(t)<=r+a*t/R. For t>=R, apply convexity at c+R*v=(1-R/t)c+(R/t)(c+t*v), then rearrange to h(t)>=r+a*t/R.",
+      "proof_location": "study.md#d1-a-lower-bound-on-the-rate-of-crossing",
+      "verification": {
+        "informal_proof_provided": true,
+        "formal_kernel_checked": false
+      }
+    },
+    {
+      "id": "D2",
+      "kind": "theorem",
+      "title": "Lipschitz radius and reciprocal radius",
+      "source_relation": "derived_here_no_novelty_claim",
+      "assumptions": [
+        "A_REAL_NORMED",
+        "A_INTERIOR_CENTER",
+        "A_UNIT_DIRECTIONS"
+      ],
+      "statement": "For R=rho_c(v), S=rho_c(w): abs(R-S)<=R*S/a*norm(v-w); abs(1/R-1/S)<=norm(v-w)/a; abs(R-S)<=U^2/a*norm(v-w).",
+      "dependencies": [
+        "D1",
+        "R3",
+        "B_REVERSE"
+      ],
+      "proof": "The norm residual at c+S*v is at most S*norm(v-w). D1 bounds the same residual below by (a/R)*abs(S-R). Divide and use R,S<=U.",
+      "proof_location": "study.md#d2-lipschitz-radius-and-reciprocal-radius",
+      "verification": {
+        "informal_proof_provided": true,
+        "formal_kernel_checked": false
+      },
+      "sharpness": {
+        "radius": "Optimal uniform constant U^2/a over normed spaces and centers of prescribed norm r, for each 0<r<1.",
+        "reciprocal": "Optimal uniform constant 1/a in the same class, for each 0<r<1.",
+        "witness": "E3",
+        "zero_center": "rho_0 is constant; the optimal radius and reciprocal-radius constants are 0."
+      }
+    },
+    {
+      "id": "D3",
+      "kind": "theorem",
+      "title": "Lipschitz contact map",
+      "source_relation": "derived_here_no_novelty_claim",
+      "assumptions": [
+        "A_REAL_NORMED",
+        "A_INTERIOR_CENTER",
+        "A_UNIT_DIRECTIONS"
+      ],
+      "statement": "norm(P_c(v)-P_c(w))<=(min(R,S)+R*S/a)*norm(v-w)<=2*U/a*norm(v-w).",
+      "dependencies": [
+        "D2",
+        "R3",
+        "B_NORM"
+      ],
+      "proof": "For R>=S, R*v-S*w=S*(v-w)+(R-S)*v. Bound by S*norm(v-w)+abs(R-S); swap roles otherwise, use D2 and U+U^2/a=2U/a.",
+      "proof_location": "study.md#d3-lipschitz-radial-contact",
+      "verification": {
+        "informal_proof_provided": true,
+        "formal_kernel_checked": false
+      },
+      "optimality": "Not claimed optimal. E3 gives a universal lower bound U^2/a for r>0; the proved upper bound is 2U/a."
+    },
+    {
+      "id": "D4",
+      "kind": "theorem",
+      "title": "Bi Lipschitz sphere parametrization",
+      "source_relation": "derived_here_no_novelty_claim",
+      "assumptions": [
+        "A_REAL_NORMED",
+        "A_INTERIOR_CENTER",
+        "A_UNIT_DIRECTIONS"
+      ],
+      "statement": "P_c:S_X->S_X is bijective with inverse Q_c(x)=(x-c)/norm(x-c). Q_c is 2/a-Lipschitz; (a/2)*norm(v-w)<=norm(P_c(v)-P_c(w)).",
+      "dependencies": [
+        "R2",
+        "R3",
+        "D3",
+        "B_REVERSE",
+        "B_NORM"
+      ],
+      "proof": "norm(x-c)>=a. Uniqueness gives P_c(Q_c(x))=x, and Q_c(P_c(v))=v directly. For nonzero b,d, normalization has distance <=2*norm(b-d)/max(norm(b),norm(d)) by adding and subtracting d/norm(b) when norm(b)>=norm(d). Apply to x-c,y-c.",
+      "proof_location": "study.md#d4-a-bi-lipschitz-parametrization-of-the-sphere",
+      "verification": {
+        "informal_proof_provided": true,
+        "formal_kernel_checked": false
+      }
+    },
+    {
+      "id": "D5",
+      "kind": "theorem",
+      "title": "Uniform center and direction perturbation estimates",
+      "source_relation": "derived_here_no_novelty_claim",
+      "assumptions": [
+        "A_REAL_NORMED",
+        "A_UNIFORM_INTERIOR_CENTERS",
+        "A_UNIT_DIRECTIONS"
+      ],
+      "statement": "For norm(c),norm(d)<=q<1, a_q=1-q, U_q=1+q, eta=norm(c-d), delta=norm(v-w): abs(rho_c(v)-rho_d(w))<=U_q/a_q*eta+U_q^2/a_q*delta; norm(P_c(v)-P_d(w))<=2/a_q*eta+2*U_q/a_q*delta.",
+      "dependencies": [
+        "D1",
+        "R3",
+        "B_REVERSE",
+        "B_NORM"
+      ],
+      "proof": "At S=rho_d(w), abs(norm(c+S*v)-1)<=eta+S*delta. Apply D1 at center c, then R,S<=U_q and 1-norm(c)>=a_q. Contact difference is at most eta+U_q*delta+abs(R-S).",
+      "proof_location": "study.md#d5-joint-estimates-away-from-the-boundary",
+      "verification": {
+        "informal_proof_provided": true,
+        "formal_kernel_checked": false
+      }
+    },
+    {
+      "id": "D6",
+      "kind": "theorem",
+      "title": "Nonzero unnormalized directions",
+      "source_relation": "derived_here_no_novelty_claim",
+      "assumptions": [
+        "A_REAL_NORMED",
+        "A_INTERIOR_CENTER",
+        "A_NONZERO_DIRECTIONS"
+      ],
+      "statement": "For u!=0, tau_c(u)=rho_c(u/norm(u))/norm(u) and a/norm(u)<=tau_c(u)<=U/norm(u). For u,z!=0, abs(tau_c(u)-tau_c(z))<=U^2/(a*norm(u)*norm(z))*norm(u-z). The contact distance is <=2U/(a*max(norm(u),norm(z)))*norm(u-z).",
+      "dependencies": [
+        "R2",
+        "R3",
+        "D1",
+        "B_REVERSE",
+        "B_NORM"
+      ],
+      "proof": "Normalize the ray for existence, uniqueness and bounds. D1's convexity proof works with arbitrary nonzero u. Comparing the residual at tau_c(z) yields abs(tau_c(u)-tau_c(z))<=tau_c(u)*tau_c(z)/a*norm(u-z). If norm(u)>=norm(z), decompose contact difference as tau_c(u)*(u-z)+(tau_c(u)-tau_c(z))*z and substitute the bounds.",
+      "proof_location": "study.md#d6-correct-formulation-for-nonzero-directions",
+      "verification": {
+        "informal_proof_provided": true,
+        "formal_kernel_checked": false
+      },
+      "scaling": "For lambda>0, tau_c(lambda*u)=tau_c(u)/lambda and the contact point is unchanged. Negative lambda reverses the ray. u=0 has no contact.",
+      "annulus_constants": "On norm(u)>=m>0, tau_c is U^2/(a*m^2)-Lipschitz and the contact map is 2U/(a*m)-Lipschitz."
+    },
+    {
+      "id": "D7",
+      "kind": "theorem",
+      "title": "Bisection and residual certification",
+      "source_relation": "derived_here_no_novelty_claim",
+      "assumptions": [
+        "A_REAL_NORMED",
+        "A_INTERIOR_CENTER",
+        "A_UNIT_DIRECTIONS"
+      ],
+      "statement": "For unit v, [a,U] brackets rho_c(v). After n exact bracket halvings, midpoint error <=r/2^n. For any t>=0, abs(t-rho_c(v))<=U/a*abs(norm(c+t*v)-1).",
+      "dependencies": [
+        "R3",
+        "D1",
+        "B_NORM"
+      ],
+      "proof": "At a the norm is <=r+a=1; at U it is >=U-r=1. D1 determines the side of the unique root by the sign. Each valid bisection halves width from initial 2r. Rearrange D1 and use R<=U for the residual bound.",
+      "proof_location": "study.md#5-residual-certificates-and-a-reusable-numerical-specification",
+      "verification": {
+        "informal_proof_provided": true,
+        "formal_kernel_checked": false
+      },
+      "approximate_norm_caution": "If hhat has certified absolute error eps, the root error is <=U/a*(abs(hhat-1)+eps). An error interval containing 1 does not justify choosing a bisection side.",
+      "execution": "Specification only; no numerical experiment or proof checker was run."
+    },
+    {
+      "id": "D8",
+      "kind": "theorem",
+      "title": "Hilbert specialization",
+      "source_relation": "derived_here_no_novelty_claim",
+      "assumptions": [
+        "A_REAL_HILBERT",
+        "A_INTERIOR_CENTER",
+        "A_UNIT_DIRECTIONS"
+      ],
+      "statement": "In a real Hilbert space, rho_c(v)=-b+sqrt(b^2+1-r^2), b=inner(c,v). It is r*(1+r)-Lipschitz on the unit sphere.",
+      "dependencies": [
+        "R2",
+        "B_MVT",
+        "B_CS"
+      ],
+      "proof": "Solve t^2+2*b*t+r^2-1=0; r<1 makes exactly one root positive. For |b|<=r, F'(b)=-1+b/sqrt(b^2+1-r^2) has absolute value <=1+r. Combine the real mean value theorem with abs(inner(c,v-w))<=r*norm(v-w).",
+      "proof_location": "study.md#example-2-hilbert-formula-and-an-infinite-dimensional-test",
+      "verification": {
+        "informal_proof_provided": true,
+        "formal_kernel_checked": false
+      },
+      "optimality": "The Hilbert-specific constant is valid; optimality is not claimed."
+    }
+  ],
+  "dependency_edges": [
+    {
+      "from": "B_NORM",
+      "to": "B_REVERSE"
+    },
+    {
+      "from": "B_NORM",
+      "to": "B_CONVEX"
+    },
+    {
+      "from": "B_REVERSE",
+      "to": "R1"
+    },
+    {
+      "from": "B_IVT",
+      "to": "R1"
+    },
+    {
+      "from": "R1",
+      "to": "R2"
+    },
+    {
+      "from": "B_CONVEX",
+      "to": "R2"
+    },
+    {
+      "from": "R2",
+      "to": "R3"
+    },
+    {
+      "from": "B_NORM",
+      "to": "R3"
+    },
+    {
+      "from": "B_REVERSE",
+      "to": "R3"
+    },
+    {
+      "from": "R2",
+      "to": "R4"
+    },
+    {
+      "from": "R3",
+      "to": "R4"
+    },
+    {
+      "from": "B_REVERSE",
+      "to": "R4"
+    },
+    {
+      "from": "B_REAL_COMPACT",
+      "to": "R4"
+    },
+    {
+      "from": "B_METRIC_CONT",
+      "to": "R4"
+    },
+    {
+      "from": "R2",
+      "to": "D1"
+    },
+    {
+      "from": "B_CONVEX",
+      "to": "D1"
+    },
+    {
+      "from": "D1",
+      "to": "D2"
+    },
+    {
+      "from": "R3",
+      "to": "D2"
+    },
+    {
+      "from": "B_REVERSE",
+      "to": "D2"
+    },
+    {
+      "from": "D2",
+      "to": "D3"
+    },
+    {
+      "from": "R3",
+      "to": "D3"
+    },
+    {
+      "from": "B_NORM",
+      "to": "D3"
+    },
+    {
+      "from": "R2",
+      "to": "D4"
+    },
+    {
+      "from": "R3",
+      "to": "D4"
+    },
+    {
+      "from": "D3",
+      "to": "D4"
+    },
+    {
+      "from": "B_REVERSE",
+      "to": "D4"
+    },
+    {
+      "from": "B_NORM",
+      "to": "D4"
+    },
+    {
+      "from": "D1",
+      "to": "D5"
+    },
+    {
+      "from": "R3",
+      "to": "D5"
+    },
+    {
+      "from": "B_REVERSE",
+      "to": "D5"
+    },
+    {
+      "from": "B_NORM",
+      "to": "D5"
+    },
+    {
+      "from": "R2",
+      "to": "D6"
+    },
+    {
+      "from": "R3",
+      "to": "D6"
+    },
+    {
+      "from": "D1",
+      "to": "D6"
+    },
+    {
+      "from": "B_REVERSE",
+      "to": "D6"
+    },
+    {
+      "from": "B_NORM",
+      "to": "D6"
+    },
+    {
+      "from": "R3",
+      "to": "D7"
+    },
+    {
+      "from": "D1",
+      "to": "D7"
+    },
+    {
+      "from": "B_NORM",
+      "to": "D7"
+    },
+    {
+      "from": "R2",
+      "to": "D8"
+    },
+    {
+      "from": "B_MVT",
+      "to": "D8"
+    },
+    {
+      "from": "B_CS",
+      "to": "D8"
+    }
+  ],
+  "non_dependencies": [
+    "Source Lemma 2.1 supporting functionals",
+    "Hahn-Banach theorem",
+    "Tingley main theorem",
+    "attainment by ultrapowers",
+    "Darbo fixed point theorem",
+    "chord alignment"
+  ],
+  "verification": {
+    "source_fetched": true,
+    "full_independent_informal_proofs": true,
+    "review_status": "An independent ordinary mathematical argument review was reported of study.md on 2026-10-11; exact final-file hash review record is maintained separately.",
+    "lean_kernel_checked": false,
+    "external_programs_executed": false,
+    "novelty_assessed": false,
+    "headline_tingley_result_assessed": false
+  }
+}

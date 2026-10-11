@@ -1,0 +1,235 @@
+{
+  "attribution": "Independent formalization; not the unavailable original theorem-records.json",
+  "declarations": [
+    {
+      "kind": "def",
+      "name": "Egyptian.reciprocalSum",
+      "source": "Egyptian/Basic.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.reciprocalSum_nil",
+      "source": "Egyptian/Basic.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.reciprocalSum_cons",
+      "source": "Egyptian/Basic.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.reciprocalSum_append",
+      "source": "Egyptian/Basic.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.reciprocalSum_perm",
+      "source": "Egyptian/Basic.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.reciprocalSum_nonneg",
+      "source": "Egyptian/Basic.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.reciprocalSum_pos",
+      "source": "Egyptian/Basic.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.odd_replacement_identity",
+      "source": "Egyptian/Basic.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.even_replacement_identity",
+      "source": "Egyptian/Basic.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.odd_replacement_growth",
+      "source": "Egyptian/Basic.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.even_replacement_growth",
+      "source": "Egyptian/Basic.lean"
+    },
+    {
+      "kind": "def",
+      "name": "Egyptian.sortedRepresentations",
+      "source": "Egyptian/Finite.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.reciprocalSum_le_length_mul_inv",
+      "source": "Egyptian/Finite.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.finite_sortedRepresentations",
+      "source": "Egyptian/Finite.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.duplicate_extraction",
+      "source": "Egyptian/Cleanup.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.duplicate_ge_three",
+      "source": "Egyptian/Cleanup.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.replacement_exists",
+      "source": "Egyptian/Cleanup.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.duplicate_cleanup",
+      "source": "Egyptian/Cleanup.lean"
+    },
+    {
+      "kind": "def",
+      "name": "Egyptian.canonical",
+      "source": "Egyptian/Cleanup.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.canonical_perm",
+      "source": "Egyptian/Cleanup.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.canonical_mem",
+      "source": "Egyptian/Cleanup.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.sorted_duplicate_cleanup",
+      "source": "Egyptian/Cleanup.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.exact_length_distinct",
+      "source": "Egyptian/Cleanup.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.bounded_increasing_weight_wellFounded",
+      "source": "Egyptian/Termination.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.finite_increasing_weight_wellFounded",
+      "source": "Egyptian/Termination.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.cleanup_wellFounded",
+      "source": "Egyptian/Termination.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.two_positive_denominators_sum_one",
+      "source": "Egyptian/Counterexample.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.no_distinct_two_term_one",
+      "source": "Egyptian/Counterexample.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.boundary_counterexample",
+      "source": "Egyptian/Counterexample.lean"
+    },
+    {
+      "kind": "def",
+      "name": "Egyptian.commonNumerator",
+      "source": "Egyptian/PaddingArithmetic.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.commonNumerator_spec",
+      "source": "Egyptian/PaddingArithmetic.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.commonNumerator_eq_prod",
+      "source": "Egyptian/PaddingArithmetic.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.unit_split_identity",
+      "source": "Egyptian/PaddingArithmetic.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.factor_split_identity",
+      "source": "Egyptian/PaddingArithmetic.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.prime_collision_obstruction",
+      "source": "Egyptian/PaddingCollision.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.safe_split",
+      "source": "Egyptian/SafeSplit.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.denominator_ge_two_of_one",
+      "source": "Egyptian/SafeSplit.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.padding_pair",
+      "source": "Egyptian/SafeSplit.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.expose_top_two",
+      "source": "Egyptian/PaddingSelection.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.padding_from_top_two",
+      "source": "Egyptian/PaddingSelection.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.pad_one_preserving_denominator_bounded",
+      "source": "Egyptian/Padding.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.pad_one_preserving_denominator",
+      "source": "Egyptian/Padding.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.example_two_thirds",
+      "source": "Egyptian/Examples.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.example_marker_loss",
+      "source": "Egyptian/Examples.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.example_new_collisions",
+      "source": "Egyptian/Examples.lean"
+    },
+    {
+      "kind": "theorem",
+      "name": "Egyptian.example_padding_product_collision",
+      "source": "Egyptian/Examples.lean"
+    }
+  ]
+}

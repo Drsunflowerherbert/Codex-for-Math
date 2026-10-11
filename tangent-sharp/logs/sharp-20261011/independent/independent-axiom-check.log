@@ -1,0 +1,17 @@
+def TangentLimit.PiDiophantine : Prop :=
+∀ (ν : ℝ), 2 < ν → ∃ Q, ∀ (q : ℕ), Q ≤ q → 0 < q → ∀ (p : ℤ), ↑q ^ (-ν) ≤ |Real.pi - ↑p / ↑q|
+TangentLimit.summable_abs_tan_div_rpow (h : TangentLimit.PiDiophantine) (s : ℝ) (hs : 1 < s) :
+  Summable fun n => |Real.tan ↑n| / ↑n ^ s
+TangentLimit.summable_abs_tan_div_rpow_positive (h : TangentLimit.PiDiophantine) (s : ℝ) (hs : 1 < s) :
+  Summable fun n => |Real.tan ↑(n + 1)| / ↑(n + 1) ^ s
+TangentLimit.summable_abs_tan_div_rpow_positive_iff (h : TangentLimit.PiDiophantine) (s : ℝ) :
+  (Summable fun n => |Real.tan ↑(n + 1)| / ↑(n + 1) ^ s) ↔ 1 < s
+TangentLimit.not_summable_abs_tan_div_positive : ¬Summable fun n => |Real.tan ↑(n + 1)| / ↑(n + 1)
+TangentLimit.not_summable_abs_tan_div_rpow_positive (s : ℝ) (hs : s ≤ 1) :
+  ¬Summable fun n => |Real.tan ↑(n + 1)| / ↑(n + 1) ^ s
+'TangentLimit.PiDiophantine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_abs_tan_div_rpow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_abs_tan_div_rpow_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.summable_abs_tan_div_rpow_positive_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.not_summable_abs_tan_div_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TangentLimit.not_summable_abs_tan_div_rpow_positive' depends on axioms: [propext, Classical.choice, Quot.sound]

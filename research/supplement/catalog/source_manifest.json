@@ -1,0 +1,42 @@
+{
+  "revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "note": "Selected supporting source snapshots only. Entries copied from the original catalog manifest. This packaging operation does not freshly authenticate the remote revision.",
+  "original_manifest_sha256": "ef6c2c07218acb71ab78c79d37f779800ffb583589e6f24ce7664dc96d992e68",
+  "files": [
+    {
+      "file": "lean_docs_084.md",
+      "bytes": 912,
+      "sha256": "ffc7364a46a777d95d1965b82565ac0712978fe42489561c7657f766f7e7c554"
+    },
+    {
+      "file": "preprints_A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026_build_main.tex",
+      "bytes": 35175,
+      "sha256": "164f56cc3f5ecbfb65ddba0d0438cacf44f325919ef7dfb742d073c948fddabd"
+    },
+    {
+      "file": "preprints_Catalans-constant-is-irrational-September-24-2026_build_sections_foundations.tex",
+      "bytes": 17036,
+      "sha256": "3929650dfb36859d8f88281795d348043f903c41a70b0bf3598c21586a633852"
+    },
+    {
+      "file": "preprints_Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026_build_source_sections_sharpness.tex",
+      "bytes": 7663,
+      "sha256": "f8732d68d0de8505d20f6c42aefce95d60b3e8363569681fa30632c997999590"
+    },
+    {
+      "file": "preprints_Short-Egyptian-fractions-September-25-2026_build_elementary.tex",
+      "bytes": 6597,
+      "sha256": "cccd9edb40de4030b13368a088d6db2e8ddbcd57ecee9734f661a13eb7d073eb"
+    },
+    {
+      "file": "preprints_Short-Egyptian-fractions-September-25-2026_build_prescribed.tex",
+      "bytes": 22783,
+      "sha256": "771d9da7e0181aad85eb620d4bacbb1726827db86249655850f0b63b20307432"
+    },
+    {
+      "file": "preprints_The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026_build_sections_02-periodic.tex",
+      "bytes": 2568,
+      "sha256": "5a8af7b315d107cf8fab996755424bec27306511f78607deb978cf974f3b4e3d"
+    }
+  ]
+}
