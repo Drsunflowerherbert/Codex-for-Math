@@ -1,0 +1,3041 @@
+{
+  "schema_version": "1.0",
+  "competition": "International Mathematics Competition for University Students",
+  "contest_key": "imc",
+  "edition_date": "2026-10-13",
+  "scope_note": "Bounded first edition: all 32 past year archive landing pages 1994–2025 inventoried; all 89 linked PDFs receive HTTP HEAD checks; only 2023–2025 questions and official solutions are downloaded and inspected. 2026 omitted.",
+  "discovered_archive_years": [
+    1994,
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "problem_level_years": [
+    2023,
+    2024,
+    2025
+  ],
+  "problem_level_count": 30,
+  "downloaded_original_pdf_count": 12,
+  "official_solution_registry": "imc-official-solutions.md",
+  "source_provenance_policy": "Downloaded official HTML/PDF bytes carry SHA-256 and retrieval time. HEAD checks are not body retrievals and have no document hash. Private research copies stay outside the repository.",
+  "rights": {
+    "observed_notice": "Official site footer: © IMC",
+    "explicit_redistribution_license_located": false,
+    "publication_policy": "Links and original editorial metadata only; no third-party PDFs, problem statements, solution text, or compilations mirrored."
+  },
+  "missing_coverage": [
+    "1994–2022 individual problem statements, subjects, prerequisites and difficulty not inspected or cataloged.",
+    "Individual counts for 1994–2014 not established here.",
+    "Paper languages before 2023 not verified.",
+    "The mathematics in official solutions has not been independently proof-reviewed."
+  ],
+  "archives": [
+    {
+      "year": 1994,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=1994",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "708e8bab20008567d1914fc2270e2e7e9cd2feed39860ef64c9b87174e91e56f",
+      "retrieved_at": "2026-10-13T04:38:54.782087+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/1994-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc1994/prob_sol.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc1994/prob_sol.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "105726",
+            "retrieved_at": "2026-10-13T04:40:33.831952+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 1995,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=1995",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "da9aa51bd5c2452b7b26c7643e5f910bbb300b9aeeea9b7bb2e54a36fa5d9fdd",
+      "retrieved_at": "2026-10-13T04:38:56.084085+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/1995-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc1995/prob_sol.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc1995/prob_sol.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "109936",
+            "retrieved_at": "2026-10-13T04:40:33.749185+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 1996,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=1996",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "80564e5dc3ccc2134311e4132b44a5fc664f3afabf4c7803ffde7aabcab22024",
+      "retrieved_at": "2026-10-13T04:38:54.879119+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/1996-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc1996/prob_sol.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc1996/prob_sol.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "136497",
+            "retrieved_at": "2026-10-13T04:40:33.826789+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 1997,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=1997",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "995371b9b0def3cdd3e78bc98539c972e9ac5cf32cf14acf4f43d619f089c55d",
+      "retrieved_at": "2026-10-13T04:38:55.784472+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/1997-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc1997/prob_sol1.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc1997/prob_sol1.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "111116",
+            "retrieved_at": "2026-10-13T04:40:33.830757+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc1997/prob_sol2.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc1997/prob_sol2.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "92215",
+            "retrieved_at": "2026-10-13T04:40:33.748599+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 1998,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=1998",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "62d113ee72a276ef18edcc23281f5c08b316cd35ac788f35593f9a3e37f16fe1",
+      "retrieved_at": "2026-10-13T04:38:55.204481+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/1998-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc1998/prob_sol1.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc1998/prob_sol1.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "84399",
+            "retrieved_at": "2026-10-13T04:40:33.830922+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc1998/prob_sol2.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc1998/prob_sol2.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "90192",
+            "retrieved_at": "2026-10-13T04:40:33.749492+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 1999,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=1999",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "c0b35bb4c8769a114c8aeeafab8c05153067ea9cc1184985ff644772a0c7f399",
+      "retrieved_at": "2026-10-13T04:38:54.692786+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/1999-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc1999/prob_sol1.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc1999/prob_sol1.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "74786",
+            "retrieved_at": "2026-10-13T04:40:33.828005+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc1999/prob_sol2.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc1999/prob_sol2.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "75838",
+            "retrieved_at": "2026-10-13T04:40:33.917152+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2000,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2000",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "3f3507d9b168e56b4a6bf7ef7cc3a0f4f6c503409265420426986efbb7b9fc31",
+      "retrieved_at": "2026-10-13T04:38:56.084964+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2000-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2000/prob_sol1.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2000/prob_sol1.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "80270",
+            "retrieved_at": "2026-10-13T04:40:33.973269+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2000/prob_sol2.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2000/prob_sol2.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "82504",
+            "retrieved_at": "2026-10-13T04:40:33.964273+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2001,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2001",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "8539a4741a9a1e308795381ac8aa3d5057d9c55c6b9b2df7d807fc3ef8c6a4e2",
+      "retrieved_at": "2026-10-13T04:38:55.057145+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2001-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2001/prob_sol1.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2001/prob_sol1.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "73027",
+            "retrieved_at": "2026-10-13T04:40:34.093988+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2001/prob_sol2.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2001/prob_sol2.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "86288",
+            "retrieved_at": "2026-10-13T04:40:34.014031+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2002,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2002",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "a6dd06f483ce97353766aae867d6bd6698dc2ef2dd7cfc82107e00a48697a8b6",
+      "retrieved_at": "2026-10-13T04:38:55.197417+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2002-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2002/prob_sol1.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2002/prob_sol1.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "104494",
+            "retrieved_at": "2026-10-13T04:40:34.101368+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2002/prob_sol2.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2002/prob_sol2.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "87919",
+            "retrieved_at": "2026-10-13T04:40:33.963707+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2003,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2003",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "6627b463e6e00011f175a52f4d5ad91d8fbeec47e7c6c824a5dd517ccda5ad3b",
+      "retrieved_at": "2026-10-13T04:38:56.084813+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2003-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2003/day1_solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2003/day1_solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "89660",
+            "retrieved_at": "2026-10-13T04:40:34.008592+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2003/day2_solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2003/day2_solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "82723",
+            "retrieved_at": "2026-10-13T04:40:34.101597+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2004,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2004",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "9546fb99fcdc94e2e025de836f8dd69c0b1a2afc5cf94d07867605daaf261e35",
+      "retrieved_at": "2026-10-13T04:38:55.113987+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2004-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2004/day1_solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2004/day1_solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "100743",
+            "retrieved_at": "2026-10-13T04:40:34.101753+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2004/day2_solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2004/day2_solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "80463",
+            "retrieved_at": "2026-10-13T04:40:34.277089+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2005,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2005",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "b84455dc02f31b9d56f0d00d7afc985843c01c162067dd731293710c8ed682ee",
+      "retrieved_at": "2026-10-13T04:38:55.240984+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2005-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2005/day1_solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2005/day1_solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "96262",
+            "retrieved_at": "2026-10-13T04:40:34.196081+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2005/day2_solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2005/day2_solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "90823",
+            "retrieved_at": "2026-10-13T04:40:34.185096+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2006,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2006",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "4c66ba2e7ffb1e3c78363b38b980bdbdc9d71e7ab9c67cb991861e1a85e231e9",
+      "retrieved_at": "2026-10-13T04:38:55.430104+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2006-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2006/day1_solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2006/day1_solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "62655",
+            "retrieved_at": "2026-10-13T04:40:34.186444+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2006/day2_solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2006/day2_solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "61765",
+            "retrieved_at": "2026-10-13T04:40:34.285678+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2007,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2007",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "feac1930761960c743a427d2e3e242054d368830b0d2a3e295f98de927709cc5",
+      "retrieved_at": "2026-10-13T04:38:55.320727+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2007-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2007/day1_solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2007/day1_solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "60592",
+            "retrieved_at": "2026-10-13T04:40:34.286315+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2007/day2_solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2007/day2_solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "77087",
+            "retrieved_at": "2026-10-13T04:40:34.277333+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2008,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2008",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "c69503080e445567fb4e787685b80dc7e4e831f9ae2fa782e9685d2bb83dcccd",
+      "retrieved_at": "2026-10-13T04:38:55.335468+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2008-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2008/day1_solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2008/day1_solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "64340",
+            "retrieved_at": "2026-10-13T04:40:34.277882+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2008/day2_solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2008/day2_solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "66151",
+            "retrieved_at": "2026-10-13T04:40:34.377665+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2009,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2009",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "22963927591ed981ca6d4566bcf9f12843500cb93b25e36ecbe58fdda63abe4d",
+      "retrieved_at": "2026-10-13T04:38:55.416064+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2009-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2009/imc2009-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2009/imc2009-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "84533",
+            "retrieved_at": "2026-10-13T04:40:34.368013+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2009/imc2009-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2009/imc2009-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "97813",
+            "retrieved_at": "2026-10-13T04:40:34.368828+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2010,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2010",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "bc99a667b63b82bc24d34c8a5152c6b359583064d49b9ce661c37721fee05f2c",
+      "retrieved_at": "2026-10-13T04:38:55.524162+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2010-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2010/imc2010-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2010/imc2010-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "55546",
+            "retrieved_at": "2026-10-13T04:40:34.424143+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2010/imc2010-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2010/imc2010-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "65033",
+            "retrieved_at": "2026-10-13T04:40:34.423541+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2011,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2011",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "b9c99503c8c52f3adb952ab31ef1a5e452940e917337d1fb2bbe4bea60532c6a",
+      "retrieved_at": "2026-10-13T04:38:55.532830+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2011-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2011/imc2011-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2011/imc2011-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "60334",
+            "retrieved_at": "2026-10-13T04:40:34.470630+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2011/imc2011-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2011/imc2011-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "69415",
+            "retrieved_at": "2026-10-13T04:40:34.461104+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2012,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2012",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "e3e482f0c9112b5f8e87311f2558fce24489893899f313e86b232ab0a9b2ec7d",
+      "retrieved_at": "2026-10-13T04:38:55.617568+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2012-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2012/IMC2012-day1-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2012/IMC2012-day1-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "31627",
+            "retrieved_at": "2026-10-13T04:40:34.424557+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2012/IMC2012-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2012/IMC2012-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "102214",
+            "retrieved_at": "2026-10-13T04:40:34.562379+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2012/IMC2012-day2-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2012/IMC2012-day2-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "34601",
+            "retrieved_at": "2026-10-13T04:40:34.552077+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2012/IMC2012-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2012/IMC2012-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "102265",
+            "retrieved_at": "2026-10-13T04:40:34.563963+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2013,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2013",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "bdf7e96efd43005a61ec7d6d3ff79bf54c8fbc5e8e876397fb3a04ccdaea1371",
+      "retrieved_at": "2026-10-13T04:38:55.601994+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2013-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2013/IMC2013-day1-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2013/IMC2013-day1-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "122146",
+            "retrieved_at": "2026-10-13T04:40:34.562887+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2013/IMC2013-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2013/IMC2013-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "193657",
+            "retrieved_at": "2026-10-13T04:40:34.563703+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2013/IMC2013-day2-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2013/IMC2013-day2-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "131568",
+            "retrieved_at": "2026-10-13T04:40:34.564171+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2013/IMC2013-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2013/IMC2013-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "83337",
+            "retrieved_at": "2026-10-13T04:40:34.642133+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2014,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2014",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "f1dd93ab26c696010715d816de6d25d5d9bd507addfd897926bacdb741207672",
+      "retrieved_at": "2026-10-13T04:38:55.712803+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2014-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [],
+      "numbering_status": "not extracted from this year index",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2014/IMC2014-day1-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2014/IMC2014-day1-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "53457",
+            "retrieved_at": "2026-10-13T04:40:34.653855+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2014/IMC2014-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2014/IMC2014-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "99361",
+            "retrieved_at": "2026-10-13T04:40:34.704892+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2014/IMC2014-day2-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2014/IMC2014-day2-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "55344",
+            "retrieved_at": "2026-10-13T04:40:34.703398+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2014/IMC2014-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2014/IMC2014-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "116831",
+            "retrieved_at": "2026-10-13T04:40:34.749998+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2015,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2015",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "181ab8da49405bbce56f91760b5a8fa850eb2e9730570ca541472cf8bc56f2eb",
+      "retrieved_at": "2026-10-13T04:38:55.697757+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2015-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "numbering_status": "index labels only; papers not inspected for numbering",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2015/imc2015-day1-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2015/imc2015-day1-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "95786",
+            "retrieved_at": "2026-10-13T04:40:34.703013+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2015/imc2015-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2015/imc2015-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "200559",
+            "retrieved_at": "2026-10-13T04:40:34.739738+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2015/imc2015-day2-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2015/imc2015-day2-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "105514",
+            "retrieved_at": "2026-10-13T04:40:34.739933+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2015/imc2015-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2015/imc2015-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "188631",
+            "retrieved_at": "2026-10-13T04:40:34.842079+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2016,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2016",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "184d7075531e8fcde6756062c499cf54c2f2fc39f3bf6701f562667eb105753d",
+      "retrieved_at": "2026-10-13T04:38:55.806870+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2016-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "numbering_status": "index labels only; papers not inspected for numbering",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2016/imc2016-day1-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2016/imc2016-day1-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "95794",
+            "retrieved_at": "2026-10-13T04:40:34.831610+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2016/imc2016-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2016/imc2016-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "244600",
+            "retrieved_at": "2026-10-13T04:40:34.832209+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2016/imc2016-day2-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2016/imc2016-day2-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "99625",
+            "retrieved_at": "2026-10-13T04:40:34.831405+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2016/imc2016-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2016/imc2016-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "196457",
+            "retrieved_at": "2026-10-13T04:40:34.841881+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2017,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2017",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "a64ac0d90ca9733916a1c72ab069e040d35ad62b9ee3477144092dac7c6b2fe4",
+      "retrieved_at": "2026-10-13T04:38:55.792398+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2017-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "numbering_status": "index labels only; papers not inspected for numbering",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2017/imc2017-day1-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2017/imc2017-day1-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "99723",
+            "retrieved_at": "2026-10-13T04:40:34.923774+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2017/imc2017-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2017/imc2017-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "177498",
+            "retrieved_at": "2026-10-13T04:40:34.923183+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2017/imc2017-day2-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2017/imc2017-day2-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "100826",
+            "retrieved_at": "2026-10-13T04:40:34.924125+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2017/imc2017-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2017/imc2017-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "176489",
+            "retrieved_at": "2026-10-13T04:40:34.967365+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2018,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2018",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "ebe43113c27f8c32189b50a721ad79abc4364c59d78a445f37acc65547f8714e",
+      "retrieved_at": "2026-10-13T04:38:55.888300+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2018-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "numbering_status": "index labels only; papers not inspected for numbering",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2018/imc2018-day1-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2018/imc2018-day1-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "90123",
+            "retrieved_at": "2026-10-13T04:40:35.059413+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2018/imc2018-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2018/imc2018-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "139534",
+            "retrieved_at": "2026-10-13T04:40:34.979907+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2018/imc2018-day2-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2018/imc2018-day2-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "101319",
+            "retrieved_at": "2026-10-13T04:40:34.981060+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2018/imc2018-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2018/imc2018-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "151898",
+            "retrieved_at": "2026-10-13T04:40:34.973541+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2019,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2019",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "e7944cf6db346d0f41074baa448b25def69a722fb1a99d88cf649079f1c07c16",
+      "retrieved_at": "2026-10-13T04:38:56.887334+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2019-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "numbering_status": "index labels only; papers not inspected for numbering",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2019/imc2019-day1-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2019/imc2019-day1-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "95082",
+            "retrieved_at": "2026-10-13T04:40:35.052212+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2019/imc2019-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2019/imc2019-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "134257",
+            "retrieved_at": "2026-10-13T04:40:35.052781+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2019/imc2019-day2-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2019/imc2019-day2-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "92185",
+            "retrieved_at": "2026-10-13T04:40:35.051985+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2019/imc2019-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2019/imc2019-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "145016",
+            "retrieved_at": "2026-10-13T04:40:35.145527+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2020,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2020",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "a441a7d5812a06025053787bf07243574ead6ceeb173bbea108b28f94ddf2a41",
+      "retrieved_at": "2026-10-13T04:38:56.023158+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2020-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "numbering_status": "index labels only; papers not inspected for numbering",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2020/imc2020-day1-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2020/imc2020-day1-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "108852",
+            "retrieved_at": "2026-10-13T04:40:35.152935+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2020/imc2020-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2020/imc2020-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "151120",
+            "retrieved_at": "2026-10-13T04:40:35.152750+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2020/imc2020-day2-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2020/imc2020-day2-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "95185",
+            "retrieved_at": "2026-10-13T04:40:35.153115+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2020/imc2020-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2020/imc2020-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "179935",
+            "retrieved_at": "2026-10-13T04:40:35.217144+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2021,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2021",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "44bd2ddf8c07b317e8fe8d00d57de062ce7beeca9c33845ea6831027c6bdc7c6",
+      "retrieved_at": "2026-10-13T04:38:55.941492+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2021-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "numbering_status": "index labels only; papers not inspected for numbering",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2021/imc2021-day1-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2021/imc2021-day1-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "141896",
+            "retrieved_at": "2026-10-13T04:40:35.217386+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2021/imc2021-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2021/imc2021-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "270839",
+            "retrieved_at": "2026-10-13T04:40:35.217938+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2021/imc2021-day2-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2021/imc2021-day2-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "127798",
+            "retrieved_at": "2026-10-13T04:40:35.236291+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2021/imc2021-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2021/imc2021-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "151305",
+            "retrieved_at": "2026-10-13T04:40:35.263211+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2022,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2022",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "6c7f12977b98aef2b043dcfcd73ed9da5cf61b50f0bc33acc7646a2d57f2755e",
+      "retrieved_at": "2026-10-13T04:38:57.010728+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2022-index.html",
+      "index_language": "English",
+      "paper_language": "not verified in this bounded edition",
+      "problem_numbers_observed_on_index": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "numbering_status": "index labels only; papers not inspected for numbering",
+      "problem_level_cataloged": false,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2022/imc2022day1questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "87867",
+            "retrieved_at": "2026-10-13T04:40:35.343800+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2022/imc2022day1solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2022/imc2022day1solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "172783",
+            "retrieved_at": "2026-10-13T04:40:35.342844+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2022/imc2022day2questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "80349",
+            "retrieved_at": "2026-10-13T04:40:35.343018+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2022/imc2022day2solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2022/imc2022day2solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "177341",
+            "retrieved_at": "2026-10-13T04:40:35.341220+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": null
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located; HTTP 200 HEAD check; body not downloaded"
+    },
+    {
+      "year": 2023,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2023",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "c0e0942d7133d06fb2a271ce73f815083d87331386ec3311f58db183f7037bda",
+      "retrieved_at": "2026-10-13T04:38:56.142598+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2023-index.html",
+      "index_language": "English",
+      "paper_language": "English",
+      "problem_numbers_observed_on_index": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "numbering_status": "confirmed from both original question papers",
+      "problem_level_cataloged": true,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2023/imc2023-day1-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2023/imc2023-day1-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "103591",
+            "retrieved_at": "2026-10-13T04:40:35.356295+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": {
+            "url": "https://www.imc-math.org.uk/imc2023/imc2023-day1-questions.pdf",
+            "status": 200,
+            "bytes": 103591,
+            "sha256": "59fa2876e41d5856f87ff24454f2a59e95b86cdf704d482d065a0fdc41672f96",
+            "retrieved_at": "2026-10-13T04:39:11.764570+00:00",
+            "local_path": "/tmp/contest-library-research/imc/imc2023-day1-questions.pdf"
+          }
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2023/imc2023-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2023/imc2023-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "161392",
+            "retrieved_at": "2026-10-13T04:40:35.355613+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": {
+            "url": "https://www.imc-math.org.uk/imc2023/imc2023-day1-solutions.pdf",
+            "status": 200,
+            "bytes": 161392,
+            "sha256": "3f88787cd6ef6646c5c2922cff884d0804a6cecd06c3c2728962470554f4c8fe",
+            "retrieved_at": "2026-10-13T04:39:11.845575+00:00",
+            "local_path": "/tmp/contest-library-research/imc/imc2023-day1-solutions.pdf"
+          }
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2023/imc2023-day2-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2023/imc2023-day2-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "112149",
+            "retrieved_at": "2026-10-13T04:40:35.432827+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": {
+            "url": "https://www.imc-math.org.uk/imc2023/imc2023-day2-questions.pdf",
+            "status": 200,
+            "bytes": 112149,
+            "sha256": "a373fa1e336154be68ddb97561fe1e0d4f6e06d4c31721269ae2ceffe3a904fb",
+            "retrieved_at": "2026-10-13T04:39:11.754733+00:00",
+            "local_path": "/tmp/contest-library-research/imc/imc2023-day2-questions.pdf"
+          }
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2023/imc2023-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2023/imc2023-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "206987",
+            "retrieved_at": "2026-10-13T04:40:35.432624+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": {
+            "url": "https://www.imc-math.org.uk/imc2023/imc2023-day2-solutions.pdf",
+            "status": 200,
+            "bytes": 206987,
+            "sha256": "383d5c62aa4d7182102505c9830b7d4b1a9eaa5e13250aa8a2fcdd58b21a8493",
+            "retrieved_at": "2026-10-13T04:39:11.867337+00:00",
+            "local_path": "/tmp/contest-library-research/imc/imc2023-day2-solutions.pdf"
+          }
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located and retrieved"
+    },
+    {
+      "year": 2024,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2024",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "04dd2d65a21d946f0546662014eae4e422afcbb6e5759f644f733ddb021538b7",
+      "retrieved_at": "2026-10-13T04:38:56.141812+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2024-index.html",
+      "index_language": "English",
+      "paper_language": "English",
+      "problem_numbers_observed_on_index": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "numbering_status": "confirmed from both original question papers",
+      "problem_level_cataloged": true,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2024/imc2024-day1-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2024/imc2024-day1-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "116457",
+            "retrieved_at": "2026-10-13T04:40:35.472312+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": {
+            "url": "https://www.imc-math.org.uk/imc2024/imc2024-day1-questions.pdf",
+            "status": 200,
+            "bytes": 116457,
+            "sha256": "3e0f3a9771cce26fea946e167ae9cd7d462d55b24322bf1fdfe0078243cd8260",
+            "retrieved_at": "2026-10-13T04:39:11.874600+00:00",
+            "local_path": "/tmp/contest-library-research/imc/imc2024-day1-questions.pdf"
+          }
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2024/imc2024-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2024/imc2024-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "162246",
+            "retrieved_at": "2026-10-13T04:40:35.491465+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": {
+            "url": "https://www.imc-math.org.uk/imc2024/imc2024-day1-solutions.pdf",
+            "status": 200,
+            "bytes": 162246,
+            "sha256": "16a39c96ce881457a937acbc2dfb5c111fd7ba62d1ba0688353ed46bf352b4ec",
+            "retrieved_at": "2026-10-13T04:39:11.967329+00:00",
+            "local_path": "/tmp/contest-library-research/imc/imc2024-day1-solutions.pdf"
+          }
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2024/imc2024-day2-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2024/imc2024-day2-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "133222",
+            "retrieved_at": "2026-10-13T04:40:35.491751+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": {
+            "url": "https://www.imc-math.org.uk/imc2024/imc2024-day2-questions.pdf",
+            "status": 200,
+            "bytes": 133222,
+            "sha256": "7c3086d809e2f59087aabedbfbd9a865287d8b45faf66e98b35babbbc5691faa",
+            "retrieved_at": "2026-10-13T04:39:11.963322+00:00",
+            "local_path": "/tmp/contest-library-research/imc/imc2024-day2-questions.pdf"
+          }
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2024/imc2024-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2024/imc2024-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "178302",
+            "retrieved_at": "2026-10-13T04:40:35.524001+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": {
+            "url": "https://www.imc-math.org.uk/imc2024/imc2024-day2-solutions.pdf",
+            "status": 200,
+            "bytes": 178302,
+            "sha256": "3c46962138a129926dc46f7ede4d5acef7483444b534b6893e514e868f54fc07",
+            "retrieved_at": "2026-10-13T04:39:12.061377+00:00",
+            "local_path": "/tmp/contest-library-research/imc/imc2024-day2-solutions.pdf"
+          }
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located and retrieved"
+    },
+    {
+      "year": 2025,
+      "source_index_url": "https://www.imc-math.org.uk/?item=problems&year=2025",
+      "source_index_access": "retrieved",
+      "source_index_sha256": "92dbb16fd5b4c707c5e4e6fe352d0e60e4790e9517384793e4ae5181df25ad1f",
+      "retrieved_at": "2026-10-13T04:38:56.232501+00:00",
+      "source_index_local_path": "/tmp/contest-library-research/imc/2025-index.html",
+      "index_language": "English",
+      "paper_language": "English",
+      "problem_numbers_observed_on_index": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "numbering_status": "confirmed from both original question papers",
+      "problem_level_cataloged": true,
+      "papers": [
+        {
+          "url": "https://www.imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "111839",
+            "retrieved_at": "2026-10-13T04:40:35.491979+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": {
+            "url": "https://www.imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+            "status": 200,
+            "bytes": 111839,
+            "sha256": "af547b34a9c0b9db98d25df1611114fc3a3a2ea81be96e4cd7aa111f066b2549",
+            "retrieved_at": "2026-10-13T04:39:12.061447+00:00",
+            "local_path": "/tmp/contest-library-research/imc/imc2025-day1-questions.pdf"
+          }
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2025/imc2025-day1-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2025/imc2025-day1-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "171794",
+            "retrieved_at": "2026-10-13T04:40:35.565062+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": {
+            "url": "https://www.imc-math.org.uk/imc2025/imc2025-day1-solutions.pdf",
+            "status": 200,
+            "bytes": 171794,
+            "sha256": "41e0c9e29689372eeaacf55fbe4c6c3dd0ad70eb17d4cbf021185ecab322b37d",
+            "retrieved_at": "2026-10-13T04:39:12.060109+00:00",
+            "local_path": "/tmp/contest-library-research/imc/imc2025-day1-solutions.pdf"
+          }
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+          "kind": "questions_only",
+          "contains_spoilers": false,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "105505",
+            "retrieved_at": "2026-10-13T04:40:35.564763+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": {
+            "url": "https://www.imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+            "status": 200,
+            "bytes": 105505,
+            "sha256": "0b1f1410fa92fbd09614c419d7ec89519410d23984e828b9148470941fb7728c",
+            "retrieved_at": "2026-10-13T04:39:12.059790+00:00",
+            "local_path": "/tmp/contest-library-research/imc/imc2025-day2-questions.pdf"
+          }
+        },
+        {
+          "url": "https://www.imc-math.org.uk/imc2025/imc2025-day2-solutions.pdf",
+          "kind": "official_solutions_with_problem_statements",
+          "contains_spoilers": true,
+          "access": {
+            "url": "https://www.imc-math.org.uk/imc2025/imc2025-day2-solutions.pdf",
+            "status": 200,
+            "content_type": "application/pdf",
+            "content_length": "224627",
+            "retrieved_at": "2026-10-13T04:40:35.616190+00:00",
+            "method": "HEAD",
+            "body_downloaded": false
+          },
+          "download": {
+            "url": "https://www.imc-math.org.uk/imc2025/imc2025-day2-solutions.pdf",
+            "status": 200,
+            "bytes": 224627,
+            "sha256": "adb3008c81fcf9560f5f185a831bfb6e27714aa6898bca4471b1aa28337253ff",
+            "retrieved_at": "2026-10-13T04:39:12.152895+00:00",
+            "local_path": "/tmp/contest-library-research/imc/imc2025-day2-solutions.pdf"
+          }
+        }
+      ],
+      "official_solution_availability": "linked by official archive",
+      "official_solution_accessstatus": "located and retrieved"
+    }
+  ],
+  "problems": [
+    {
+      "id": "imc-2023-p01",
+      "competition": "IMC",
+      "year": 2023,
+      "day": 1,
+      "original_number": "1",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2023/imc2023-day1-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "59fa2876e41d5856f87ff24454f2a59e95b86cdf704d482d065a0fdc41672f96",
+      "source_retrieved_at": "2026-10-13T04:39:11.764570+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Smooth affine functional equation",
+      "subjects": [
+        "analysis"
+      ],
+      "prerequisites": [
+        "second derivatives",
+        "functional equations"
+      ],
+      "difficulty": "entry advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2023-p02",
+      "competition": "IMC",
+      "year": 2023,
+      "day": 1,
+      "original_number": "2",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2023/imc2023-day1-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "59fa2876e41d5856f87ff24454f2a59e95b86cdf704d482d065a0fdc41672f96",
+      "source_retrieved_at": "2026-10-13T04:39:11.764570+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Identities for three complex matrices",
+      "subjects": [
+        "algebra"
+      ],
+      "prerequisites": [
+        "matrix multiplication",
+        "invertibility"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2023-p03",
+      "competition": "IMC",
+      "year": 2023,
+      "day": 1,
+      "original_number": "3",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2023/imc2023-day1-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "59fa2876e41d5856f87ff24454f2a59e95b86cdf704d482d065a0fdc41672f96",
+      "source_retrieved_at": "2026-10-13T04:39:11.764570+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Multiplicative bivariate polynomial identity",
+      "subjects": [
+        "algebra"
+      ],
+      "prerequisites": [
+        "real polynomials",
+        "complex multiplication"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2023-p04",
+      "competition": "IMC",
+      "year": 2023,
+      "day": 1,
+      "original_number": "4",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2023/imc2023-day1-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "59fa2876e41d5856f87ff24454f2a59e95b86cdf704d482d065a0fdc41672f96",
+      "source_retrieved_at": "2026-10-13T04:39:11.764570+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Power residues over a prime field",
+      "subjects": [
+        "algebra"
+      ],
+      "prerequisites": [
+        "modular arithmetic",
+        "finite fields"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2023-p05",
+      "competition": "IMC",
+      "year": 2023,
+      "day": 1,
+      "original_number": "5",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2023/imc2023-day1-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "59fa2876e41d5856f87ff24454f2a59e95b86cdf704d482d065a0fdc41672f96",
+      "source_retrieved_at": "2026-10-13T04:39:11.764570+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Permutation family with swap closure",
+      "subjects": [
+        "combinatorics"
+      ],
+      "prerequisites": [
+        "permutations",
+        "extremal counting"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2023-p06",
+      "competition": "IMC",
+      "year": 2023,
+      "day": 2,
+      "original_number": "6",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2023/imc2023-day2-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "a373fa1e336154be68ddb97561fe1e0d4f6e06d4c31721269ae2ceffe3a904fb",
+      "source_retrieved_at": "2026-10-13T04:39:11.754733+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Entrywise row and column operations",
+      "subjects": [
+        "algebra"
+      ],
+      "prerequisites": [
+        "matrices",
+        "rational arithmetic"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2023-p07",
+      "competition": "IMC",
+      "year": 2023,
+      "day": 2,
+      "original_number": "7",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2023/imc2023-day2-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "a373fa1e336154be68ddb97561fe1e0d4f6e06d4c31721269ae2ceffe3a904fb",
+      "source_retrieved_at": "2026-10-13T04:39:11.754733+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Universal derivative crossing parameter",
+      "subjects": [
+        "analysis"
+      ],
+      "prerequisites": [
+        "mean value theorem",
+        "first order differential equations"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2023-p08",
+      "competition": "IMC",
+      "year": 2023,
+      "day": 2,
+      "original_number": "8",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2023/imc2023-day2-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "a373fa1e336154be68ddb97561fe1e0d4f6e06d4c31721269ae2ceffe3a904fb",
+      "source_retrieved_at": "2026-10-13T04:39:11.754733+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Tree distance sum inequality",
+      "subjects": [
+        "combinatorics"
+      ],
+      "prerequisites": [
+        "trees",
+        "graph distance",
+        "inequalities"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2023-p09",
+      "competition": "IMC",
+      "year": 2023,
+      "day": 2,
+      "original_number": "9",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2023/imc2023-day2-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "a373fa1e336154be68ddb97561fe1e0d4f6e06d4c31721269ae2ceffe3a904fb",
+      "source_retrieved_at": "2026-10-13T04:39:11.754733+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Convex bodies with disjoint projections",
+      "subjects": [
+        "geometry"
+      ],
+      "prerequisites": [
+        "convex sets",
+        "three dimensional volume",
+        "projections"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2023-p10",
+      "competition": "IMC",
+      "year": 2023,
+      "day": 2,
+      "original_number": "10",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2023/imc2023-day2-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "a373fa1e336154be68ddb97561fe1e0d4f6e06d4c31721269ae2ceffe3a904fb",
+      "source_retrieved_at": "2026-10-13T04:39:11.754733+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Reduced denominators of factorial sums",
+      "subjects": [
+        "algebra",
+        "analysis"
+      ],
+      "prerequisites": [
+        "divisibility",
+        "factorials",
+        "asymptotic estimates"
+      ],
+      "difficulty": "very advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2024-p01",
+      "competition": "IMC",
+      "year": 2024,
+      "day": 1,
+      "original_number": "1",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2024/imc2024-day1-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "3e0f3a9771cce26fea946e167ae9cd7d462d55b24322bf1fdfe0078243cd8260",
+      "source_retrieved_at": "2026-10-13T04:39:11.874600+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Unit complex number constraint",
+      "subjects": [
+        "algebra",
+        "geometry"
+      ],
+      "prerequisites": [
+        "complex numbers",
+        "unit circle"
+      ],
+      "difficulty": "entry advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2024-p02",
+      "competition": "IMC",
+      "year": 2024,
+      "day": 1,
+      "original_number": "2",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2024/imc2024-day1-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "3e0f3a9771cce26fea946e167ae9cd7d462d55b24322bf1fdfe0078243cd8260",
+      "source_retrieved_at": "2026-10-13T04:39:11.874600+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Limit involving a weighted product",
+      "subjects": [
+        "analysis"
+      ],
+      "prerequisites": [
+        "logarithms",
+        "sequences",
+        "limits"
+      ],
+      "difficulty": "entry advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2024-p03",
+      "competition": "IMC",
+      "year": 2024,
+      "day": 1,
+      "original_number": "3",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2024/imc2024-day1-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "3e0f3a9771cce26fea946e167ae9cd7d462d55b24322bf1fdfe0078243cd8260",
+      "source_retrieved_at": "2026-10-13T04:39:11.874600+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Binary matrix square constraint",
+      "subjects": [
+        "algebra",
+        "combinatorics"
+      ],
+      "prerequisites": [
+        "matrix multiplication",
+        "finite combinatorial constructions"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2024-p04",
+      "competition": "IMC",
+      "year": 2024,
+      "day": 1,
+      "original_number": "4",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2024/imc2024-day1-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "3e0f3a9771cce26fea946e167ae9cd7d462d55b24322bf1fdfe0078243cd8260",
+      "source_retrieved_at": "2026-10-13T04:39:11.874600+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Subgroup generated by sliding words",
+      "subjects": [
+        "algebra"
+      ],
+      "prerequisites": [
+        "groups",
+        "subgroups",
+        "nonperiodic sequences"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2024-p05",
+      "competition": "IMC",
+      "year": 2024,
+      "day": 1,
+      "original_number": "5",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2024/imc2024-day1-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "3e0f3a9771cce26fea946e167ae9cd7d462d55b24322bf1fdfe0078243cd8260",
+      "source_retrieved_at": "2026-10-13T04:39:11.874600+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Random convex hull containment",
+      "subjects": [
+        "probability",
+        "geometry"
+      ],
+      "prerequisites": [
+        "continuous probability",
+        "convex hulls",
+        "Euclidean geometry"
+      ],
+      "difficulty": "very advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2024-p06",
+      "competition": "IMC",
+      "year": 2024,
+      "day": 2,
+      "original_number": "6",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2024/imc2024-day2-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "7c3086d809e2f59087aabedbfbd9a865287d8b45faf66e98b35babbbc5691faa",
+      "source_retrieved_at": "2026-10-13T04:39:11.963322+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Order constraints on rational functions",
+      "subjects": [
+        "combinatorics"
+      ],
+      "prerequisites": [
+        "ordered rationals",
+        "integer valued maps"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2024-p07",
+      "competition": "IMC",
+      "year": 2024,
+      "day": 2,
+      "original_number": "7",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2024/imc2024-day2-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "7c3086d809e2f59087aabedbfbd9a865287d8b45faf66e98b35babbbc5691faa",
+      "source_retrieved_at": "2026-10-13T04:39:11.963322+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Determinants under matrix polynomial constraints",
+      "subjects": [
+        "algebra"
+      ],
+      "prerequisites": [
+        "complex matrices",
+        "eigenvalues",
+        "determinants"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2024-p08",
+      "competition": "IMC",
+      "year": 2024,
+      "day": 2,
+      "original_number": "8",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2024/imc2024-day2-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "7c3086d809e2f59087aabedbfbd9a865287d8b45faf66e98b35babbbc5691faa",
+      "source_retrieved_at": "2026-10-13T04:39:11.963322+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Nonlinear recurrence and normalized limit",
+      "subjects": [
+        "analysis"
+      ],
+      "prerequisites": [
+        "recurrences",
+        "monotone convergence",
+        "inequalities"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2024-p09",
+      "competition": "IMC",
+      "year": 2024,
+      "day": 2,
+      "original_number": "9",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2024/imc2024-day2-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "7c3086d809e2f59087aabedbfbd9a865287d8b45faf66e98b35babbbc5691faa",
+      "source_retrieved_at": "2026-10-13T04:39:11.963322+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Parity of constrained monotone matrices",
+      "subjects": [
+        "combinatorics"
+      ],
+      "prerequisites": [
+        "finite counting",
+        "matrix index notation"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2024-p10",
+      "competition": "IMC",
+      "year": 2024,
+      "day": 2,
+      "original_number": "10",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2024/imc2024-day2-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "7c3086d809e2f59087aabedbfbd9a865287d8b45faf66e98b35babbbc5691faa",
+      "source_retrieved_at": "2026-10-13T04:39:11.963322+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Divisor congruences for almost primes",
+      "subjects": [
+        "algebra"
+      ],
+      "prerequisites": [
+        "modular arithmetic",
+        "square free integers",
+        "Fermat primes"
+      ],
+      "difficulty": "very advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2025-p01",
+      "competition": "IMC",
+      "year": 2025,
+      "day": 1,
+      "original_number": "1",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "af547b34a9c0b9db98d25df1611114fc3a3a2ea81be96e4cd7aa111f066b2549",
+      "source_retrieved_at": "2026-10-13T04:39:12.061447+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Coverage by polynomial tangent lines",
+      "subjects": [
+        "analysis",
+        "geometry"
+      ],
+      "prerequisites": [
+        "polynomials",
+        "derivatives",
+        "plane lines"
+      ],
+      "difficulty": "entry advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2025-p02",
+      "competition": "IMC",
+      "year": 2025,
+      "day": 1,
+      "original_number": "2",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "af547b34a9c0b9db98d25df1611114fc3a3a2ea81be96e4cd7aa111f066b2549",
+      "source_retrieved_at": "2026-10-13T04:39:12.061447+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Second derivative integral inequality",
+      "subjects": [
+        "analysis"
+      ],
+      "prerequisites": [
+        "integration by parts",
+        "integral inequalities",
+        "twice continuous differentiability"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2025-p03",
+      "competition": "IMC",
+      "year": 2025,
+      "day": 1,
+      "original_number": "3",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "af547b34a9c0b9db98d25df1611114fc3a3a2ea81be96e4cd7aa111f066b2549",
+      "source_retrieved_at": "2026-10-13T04:39:12.061447+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Commutation probability for rank one matrices",
+      "subjects": [
+        "probability",
+        "algebra"
+      ],
+      "prerequisites": [
+        "rank one matrices",
+        "symmetric matrices",
+        "finite probability"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2025-p04",
+      "competition": "IMC",
+      "year": 2025,
+      "day": 1,
+      "original_number": "4",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "af547b34a9c0b9db98d25df1611114fc3a3a2ea81be96e4cd7aa111f066b2549",
+      "source_retrieved_at": "2026-10-13T04:39:12.061447+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Floor identities and root asymptotics",
+      "subjects": [
+        "analysis",
+        "algebra"
+      ],
+      "prerequisites": [
+        "floor function",
+        "real powers",
+        "asymptotic estimates"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2025-p05",
+      "competition": "IMC",
+      "year": 2025,
+      "day": 1,
+      "original_number": "5",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2025/imc2025-day1-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "af547b34a9c0b9db98d25df1611114fc3a3a2ea81be96e4cd7aa111f066b2549",
+      "source_retrieved_at": "2026-10-13T04:39:12.061447+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Orders of maps and permutations",
+      "subjects": [
+        "combinatorics",
+        "algebra"
+      ],
+      "prerequisites": [
+        "finite maps",
+        "permutation order",
+        "asymptotic growth"
+      ],
+      "difficulty": "very advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2025-p06",
+      "competition": "IMC",
+      "year": 2025,
+      "day": 2,
+      "original_number": "6",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "0b1f1410fa92fbd09614c419d7ec89519410d23984e828b9148470941fb7728c",
+      "source_retrieved_at": "2026-10-13T04:39:12.059790+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "A derivative identity between equal values",
+      "subjects": [
+        "analysis"
+      ],
+      "prerequisites": [
+        "Rolle theorem",
+        "continuous differentiability"
+      ],
+      "difficulty": "entry advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2025-p07",
+      "competition": "IMC",
+      "year": 2025,
+      "day": 2,
+      "original_number": "7",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "0b1f1410fa92fbd09614c419d7ec89519410d23984e828b9148470941fb7728c",
+      "source_retrieved_at": "2026-10-13T04:39:12.059790+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Closure conditions for positive integer subsets",
+      "subjects": [
+        "algebra",
+        "combinatorics"
+      ],
+      "prerequisites": [
+        "integer divisibility",
+        "sets",
+        "closure conditions"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2025-p08",
+      "competition": "IMC",
+      "year": 2025,
+      "day": 2,
+      "original_number": "8",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "0b1f1410fa92fbd09614c419d7ec89519410d23984e828b9148470941fb7728c",
+      "source_retrieved_at": "2026-10-13T04:39:12.059790+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Spectrum of a rotation invariant matrix",
+      "subjects": [
+        "algebra"
+      ],
+      "prerequisites": [
+        "real matrices",
+        "complex eigenvalues",
+        "matrix symmetries"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2025-p09",
+      "competition": "IMC",
+      "year": 2025,
+      "day": 2,
+      "original_number": "9",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "0b1f1410fa92fbd09614c419d7ec89519410d23984e828b9148470941fb7728c",
+      "source_retrieved_at": "2026-10-13T04:39:12.059790+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Expected maximum under ranked sampling",
+      "subjects": [
+        "probability"
+      ],
+      "prerequisites": [
+        "discrete probability",
+        "expectation",
+        "infinite support laws"
+      ],
+      "difficulty": "advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    },
+    {
+      "id": "imc-2025-p10",
+      "competition": "IMC",
+      "year": 2025,
+      "day": 2,
+      "original_number": "10",
+      "official_points": 10,
+      "language": "English",
+      "source_url": "https://www.imc-math.org.uk/imc2025/imc2025-day2-questions.pdf",
+      "source_page": 1,
+      "source_sha256": "0b1f1410fa92fbd09614c419d7ec89519410d23984e828b9148470941fb7728c",
+      "source_retrieved_at": "2026-10-13T04:39:12.059790+00:00",
+      "statement_fidelity": "Original question PDF inspected; exact original conditions remain in that linked PDF and are not restated in this catalog.",
+      "topic": "Asymptotic counting of square products",
+      "subjects": [
+        "algebra",
+        "analysis"
+      ],
+      "prerequisites": [
+        "Diophantine equations",
+        "perfect squares",
+        "asymptotic counting"
+      ],
+      "difficulty": "very advanced",
+      "classification_basis": "editorial judgment from the original problem statement",
+      "official_solution_availability": "located",
+      "official_solution_accessstatus": "located and retrieved; original solutions PDF inspected for corresponding problem",
+      "official_solution_registry": "imc-official-solutions.md",
+      "authored_solution_status": "not attempted in this edition",
+      "errata_status": "No separate erratum located in the inspected year index; no assertion that none exists."
+    }
+  ]
+}

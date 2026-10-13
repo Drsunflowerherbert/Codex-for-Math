@@ -1,0 +1,63 @@
+{
+  "edition_date": "2026-10-13",
+  "scope": "Exactly three original archived Analysis attempts; final versions independently reviewed",
+  "solutions": [
+    {
+      "problem_id": "yau-2014-written-individual-p1",
+      "status": "reviewed ordinary proof; accepted",
+      "author_agent": "proof_2014",
+      "reviewer_agent": "proof_2019",
+      "unresolved_steps_identified": [],
+      "formal_verification": false,
+      "official_solution_search_status": "not located in bounded official archive/domain inspection; not evidence of nonexistence",
+      "solution_path": "solutions/yau-2014-analysis-individual-p1.md",
+      "solution_sha256": "670bc7e34e2cdb4447ae83060a1d5e1e489bc6f78af5081e9a5bd751285cd77e",
+      "hints_path": "hints/yau-2014-analysis-individual-p1.md",
+      "hints_sha256": "d8771ffee6e17679919689a828fac1b029d6f1f4f20a1f8bb6b5ca8085e97d3a",
+      "review_path": "reviews/yau-2014-analysis-individual-p1.md",
+      "review_sha256": "be7ec50f5a164010096b8640946f5298f1c3916c73bd14f33e3051c8e1164880",
+      "official_source_url": "https://yau-contest.com/index/reldown?en=1&id=9",
+      "archive_member": "2010-2026历年笔试真题/2014/analysis2014(individual).pdf",
+      "source_pdf_sha256": "28a65742bc442aa93ec795f8df37c339dd11ab041554d187891359f4cbca17c1",
+      "source_page": 1
+    },
+    {
+      "problem_id": "yau-2019-written-individual-p1",
+      "status": "reviewed ordinary proof; accepted",
+      "author_agent": "proof_2019",
+      "reviewer_agent": "proof_2023",
+      "unresolved_steps_identified": [],
+      "formal_verification": false,
+      "official_solution_search_status": "not located in bounded official archive/domain inspection; not evidence of nonexistence",
+      "solution_path": "solutions/yau-2019-analysis-individual-p1.md",
+      "solution_sha256": "27e2793e357f212da35bf79a7c2df03e0833ca16785e93e8d3e98142ea8656fc",
+      "hints_path": "hints/yau-2019-analysis-individual-p1.md",
+      "hints_sha256": "e92938b1dbbf533b2a3db7a3416aa78db63dd929f090887e95c65e8752832fe9",
+      "review_path": "reviews/yau-2019-analysis-individual-p1.md",
+      "review_sha256": "1004bb5e073e54d54599ee21297bea90d7a69aa3546891d4f9331d36d6bbb4ca",
+      "official_source_url": "https://yau-contest.com/index/reldown?en=1&id=9",
+      "archive_member": "2010-2026历年笔试真题/2019/Analysis2019-individual.pdf",
+      "source_pdf_sha256": "48d82c28582e38e948f9d15ed0921314a9acec8417e3ec166734399fe35db047",
+      "source_page": 1
+    },
+    {
+      "problem_id": "yau-2023-written-main-p4",
+      "status": "reviewed ordinary proof; accepted",
+      "author_agent": "proof_2023",
+      "reviewer_agent": "proof_2014",
+      "unresolved_steps_identified": [],
+      "formal_verification": false,
+      "official_solution_search_status": "not located in bounded official archive/domain inspection; not evidence of nonexistence",
+      "solution_path": "solutions/yau-2023-analysis-p4.md",
+      "solution_sha256": "ea481b99d0e9bf556890ef5358603df52c4ef5e6c4d96047f5b3ab6b7e12bafd",
+      "hints_path": "hints/yau-2023-analysis-p4.md",
+      "hints_sha256": "3325b5c90c3f8bb245faf457ca5d5f5aae9ead20d7f47f4c450a4acb576e2f31",
+      "review_path": "reviews/yau-2023-analysis-p4.md",
+      "review_sha256": "b7c8fbd63d44dc9170db499fcbea642ec03614fe6c4d5992576ed640f33ccab5",
+      "official_source_url": "https://yau-contest.com/index/reldown?en=1&id=9",
+      "archive_member": "2010-2026历年笔试真题/2023/Analysis and differential equation.pdf",
+      "source_pdf_sha256": "7c776d196d1ef100056e6ca70b1d56c390470faecf78a1158489d587410b44fb",
+      "source_page": 2
+    }
+  ]
+}

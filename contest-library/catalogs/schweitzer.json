@@ -1,0 +1,2964 @@
+{
+  "schema_version": 1,
+  "contest": "Miklós Schweitzer Memorial Competition",
+  "archive_url": "https://www.bolyai.hu/versenyek-schweitzer-miklos-emlekverseny/",
+  "retrieval_date_utc": "2026-10-13",
+  "scope": {
+    "year_level_years": [
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "problem_number_coverage_years": [
+      2009,
+      2010,
+      2011,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "detailed_problem_years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "detailed_problem_count": 42,
+    "observed_numbered_problem_count": 171,
+    "reported_but_unobserved_problem_count": 11,
+    "claimed_problem_count_total": 182,
+    "official_solution_problem_count_observed": 160,
+    "organizer_hosted_unofficial_solution_problem_count_observed": 11,
+    "not_covered": "Years before 2009; 2012 actual problem statements/solutions; detailed classification before 2022; official 2023 solution version; any 2026 program problems or submissions."
+  },
+  "active_round_exclusion": {
+    "year": 2026,
+    "status": "excluded",
+    "reason": "The 2026 feedback program requests no AI assistance. Current program problems, hints, solutions, and submissions are excluded.",
+    "evidence_url": "https://www.bolyai.hu/versenyek-schweitzer-miklos-emlekverseny/"
+  },
+  "rights_review": {
+    "sources_inspected": "Current hub and all 23 downloaded archived PDFs.",
+    "explicit_redistribution_license_located": false,
+    "publication_policy": "Publish only source-linked metadata and original editorial labels; no third-party PDFs or full statement/solution compilations.",
+    "archive_competition_restrictions": "The archived 2022–2025 rules prohibit collaboration/forum assistance during each competition window, which has ended. Their absence of a current competition restriction is not treated as a public redistribution license."
+  },
+  "archive_snapshot": {
+    "url": "https://www.bolyai.hu/versenyek-schweitzer-miklos-emlekverseny/",
+    "retrieved_at_utc": "2026-10-13T04:38:29.126044+00:00",
+    "sha256": "e6c8077dc2c31bb068bef40b810a462b2af3a3508ec8b47d462935edcbe24401",
+    "published_in_repository": false
+  },
+  "papers": [
+    {
+      "paper_id": "schweitzer-2009",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2009,
+      "subjects": [],
+      "subject_classification_status": "not_classified_in_this_edition",
+      "problem_count_claimed": 12,
+      "problem_count_observed": 12,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "problem_numbers_detailed": [],
+      "problem_languages": [
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_2009_jelentes.pdf",
+      "problem_source_contains_solutions": true,
+      "spoiler_free_standalone_source_status": "not_located_in_inspected_hub",
+      "solution_availability": {
+        "official": "located",
+        "access_status": "organizer_official_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/Schweitzer_2009_jelentes.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2009-Schweitzer_2009_jelentes.pdf"
+      ],
+      "provenance_notes": [
+        "Organizer-hosted committee/report solutions; all numbered problems have corresponding solution sections."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2010",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2010,
+      "subjects": [],
+      "subject_classification_status": "not_classified_in_this_edition",
+      "problem_count_claimed": 11,
+      "problem_count_observed": 11,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "problem_numbers_detailed": [],
+      "problem_languages": [
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_2010_jelentes.pdf",
+      "problem_source_contains_solutions": true,
+      "spoiler_free_standalone_source_status": "not_located_in_inspected_hub",
+      "solution_availability": {
+        "official": "located",
+        "access_status": "organizer_official_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/Schweitzer_2010_jelentes.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2010-Schweitzer_2010_jelentes.pdf"
+      ],
+      "provenance_notes": [
+        "Organizer-hosted committee/report solutions; all numbered problems have corresponding solution sections."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2011",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2011,
+      "subjects": [],
+      "subject_classification_status": "not_classified_in_this_edition",
+      "problem_count_claimed": 10,
+      "problem_count_observed": 10,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "problem_numbers_detailed": [],
+      "problem_languages": [
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_2011_jelentes.pdf",
+      "problem_source_contains_solutions": true,
+      "spoiler_free_standalone_source_status": "not_located_in_inspected_hub",
+      "solution_availability": {
+        "official": "located",
+        "access_status": "organizer_official_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/Schweitzer_2011_jelentes.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2011-Schweitzer_2011_jelentes.pdf"
+      ],
+      "provenance_notes": [
+        "Organizer-hosted committee/report solutions; all numbered problems have corresponding solution sections."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2012",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2012,
+      "subjects": [],
+      "subject_classification_status": "not_classified_in_this_edition",
+      "problem_count_claimed": 11,
+      "problem_count_observed": 0,
+      "problem_count_evidence": "report states 11 selected; no statements present",
+      "problem_numbers_observed": [],
+      "problem_numbers_detailed": [],
+      "problem_languages": [],
+      "primary_problem_url": null,
+      "problem_source_contains_solutions": false,
+      "spoiler_free_standalone_source_status": "not_located_in_inspected_hub",
+      "solution_availability": {
+        "official": "not_located",
+        "access_status": "not_located_in_inspected_archive",
+        "solution_urls": [],
+        "solution_language": null,
+        "solution_numbers_observed": [],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2012-Schweitzer_2012_jelentes.pdf"
+      ],
+      "provenance_notes": [
+        "The linked two-page report states that 11 problems were selected but contains no problem statements or solutions.",
+        "No standalone 2012 problem or solution link was located in the current hub; this does not establish that none exists elsewhere."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2013",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2013,
+      "subjects": [],
+      "subject_classification_status": "not_classified_in_this_edition",
+      "problem_count_claimed": 12,
+      "problem_count_observed": 12,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "problem_numbers_detailed": [],
+      "problem_languages": [
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_2013_jelentes.pdf",
+      "problem_source_contains_solutions": true,
+      "spoiler_free_standalone_source_status": "not_located_in_inspected_hub",
+      "solution_availability": {
+        "official": "located",
+        "access_status": "organizer_official_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/Schweitzer_2013_jelentes.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2013-Schweitzer_2013_jelentes.pdf"
+      ],
+      "provenance_notes": [
+        "Organizer-hosted committee/report solutions; all numbered problems have corresponding solution sections."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2014",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2014,
+      "subjects": [],
+      "subject_classification_status": "not_classified_in_this_edition",
+      "problem_count_claimed": 11,
+      "problem_count_observed": 11,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "problem_numbers_detailed": [],
+      "problem_languages": [
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_2014_beszamolo.pdf",
+      "problem_source_contains_solutions": true,
+      "spoiler_free_standalone_source_status": "not_located_in_inspected_hub",
+      "solution_availability": {
+        "official": "located",
+        "access_status": "organizer_official_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/Schweitzer_2014_beszamolo.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2014-Schweitzer_2014_beszamolo.pdf"
+      ],
+      "provenance_notes": [
+        "Organizer-hosted committee/report solutions; all numbered problems have corresponding solution sections."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2015",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2015,
+      "subjects": [],
+      "subject_classification_status": "not_classified_in_this_edition",
+      "problem_count_claimed": 11,
+      "problem_count_observed": 11,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "problem_numbers_detailed": [],
+      "problem_languages": [
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_2015_beszamolo.pdf",
+      "problem_source_contains_solutions": true,
+      "spoiler_free_standalone_source_status": "not_located_in_inspected_hub",
+      "solution_availability": {
+        "official": "located",
+        "access_status": "organizer_official_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/Schweitzer_2015_beszamolo.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2015-Schweitzer_2015_beszamolo.pdf"
+      ],
+      "provenance_notes": [
+        "Organizer-hosted committee/report solutions; all numbered problems have corresponding solution sections."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2016",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2016,
+      "subjects": [],
+      "subject_classification_status": "not_classified_in_this_edition",
+      "problem_count_claimed": 10,
+      "problem_count_observed": 10,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "problem_numbers_detailed": [],
+      "problem_languages": [
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_2016_dijazottak_megoldasok.pdf",
+      "problem_source_contains_solutions": true,
+      "spoiler_free_standalone_source_status": "not_located_in_inspected_hub",
+      "solution_availability": {
+        "official": "located",
+        "access_status": "organizer_official_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/Schweitzer_2016_dijazottak_megoldasok.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2016-Schweitzer_2016_dijazottak_megoldasok.pdf"
+      ],
+      "provenance_notes": [
+        "Organizer-hosted committee/report solutions; all numbered problems have corresponding solution sections."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2017",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2017,
+      "subjects": [],
+      "subject_classification_status": "not_classified_in_this_edition",
+      "problem_count_claimed": 10,
+      "problem_count_observed": 10,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "problem_numbers_detailed": [],
+      "problem_languages": [
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_2017_dijazottak_megoldasok.pdf",
+      "problem_source_contains_solutions": true,
+      "spoiler_free_standalone_source_status": "not_located_in_inspected_hub",
+      "solution_availability": {
+        "official": "located",
+        "access_status": "organizer_official_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/Schweitzer_2017_dijazottak_megoldasok.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2017-Schweitzer_2017_dijazottak_megoldasok.pdf"
+      ],
+      "provenance_notes": [
+        "Organizer-hosted committee/report solutions; all numbered problems have corresponding solution sections."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2018",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2018,
+      "subjects": [],
+      "subject_classification_status": "not_classified_in_this_edition",
+      "problem_count_claimed": 11,
+      "problem_count_observed": 11,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "problem_numbers_detailed": [],
+      "problem_languages": [
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_2018_megoldasok_es_eredmenyek.pdf",
+      "problem_source_contains_solutions": true,
+      "spoiler_free_standalone_source_status": "not_located_in_inspected_hub",
+      "solution_availability": {
+        "official": "located",
+        "access_status": "organizer_official_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/Schweitzer_2018_megoldasok_es_eredmenyek.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2018-Schweitzer_2018_megoldasok_es_eredmenyek.pdf"
+      ],
+      "provenance_notes": [
+        "Organizer-hosted committee/report solutions; all numbered problems have corresponding solution sections."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2019",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2019,
+      "subjects": [],
+      "subject_classification_status": "not_classified_in_this_edition",
+      "problem_count_claimed": 10,
+      "problem_count_observed": 10,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "problem_numbers_detailed": [],
+      "problem_languages": [
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_2019-jelentes_javitott.pdf",
+      "problem_source_contains_solutions": true,
+      "spoiler_free_standalone_source_status": "not_located_in_inspected_hub",
+      "solution_availability": {
+        "official": "located",
+        "access_status": "organizer_official_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/Schweitzer_2019-jelentes_javitott.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2019-Schweitzer_2019-jelentes_javitott.pdf"
+      ],
+      "provenance_notes": [
+        "Organizer-hosted committee/report solutions; all numbered problems have corresponding solution sections.",
+        "The linked filename says javitott (corrected); changes from an earlier version were not independently identified."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2020",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2020,
+      "subjects": [],
+      "subject_classification_status": "not_classified_in_this_edition",
+      "problem_count_claimed": 11,
+      "problem_count_observed": 11,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "problem_numbers_detailed": [],
+      "problem_languages": [
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_2020_megoldasok_es_eredmenyek.pdf",
+      "problem_source_contains_solutions": true,
+      "spoiler_free_standalone_source_status": "not_located_in_inspected_hub",
+      "solution_availability": {
+        "official": "located",
+        "access_status": "organizer_official_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/Schweitzer_2020_megoldasok_es_eredmenyek.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2020-Schweitzer_2020_megoldasok_es_eredmenyek.pdf"
+      ],
+      "provenance_notes": [
+        "Organizer-hosted committee/report solutions; all numbered problems have corresponding solution sections."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2021",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2021,
+      "subjects": [],
+      "subject_classification_status": "not_classified_in_this_edition",
+      "problem_count_claimed": 10,
+      "problem_count_observed": 10,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "problem_numbers_detailed": [],
+      "problem_languages": [
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_2021_feladatok_megoldasok.pdf",
+      "problem_source_contains_solutions": true,
+      "spoiler_free_standalone_source_status": "not_located_in_inspected_hub",
+      "solution_availability": {
+        "official": "located",
+        "access_status": "organizer_official_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/Schweitzer_2021_feladatok_megoldasok.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2021-Schweitzer_2021_feladatok_megoldasok.pdf"
+      ],
+      "provenance_notes": [
+        "Organizer-hosted committee/report solutions; all numbered problems have corresponding solution sections."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2022",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2022,
+      "subjects": [
+        "algebra",
+        "analysis",
+        "combinatorics",
+        "geometry",
+        "probability",
+        "topology"
+      ],
+      "subject_classification_status": "editorial_problem_level_index",
+      "problem_count_claimed": 10,
+      "problem_count_observed": 10,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "problem_numbers_detailed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "problem_languages": [
+        "en",
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_2022_English.pdf",
+      "problem_source_contains_solutions": false,
+      "spoiler_free_standalone_source_status": "located",
+      "solution_availability": {
+        "official": "located",
+        "access_status": "official_preliminary_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/Schweitzer_2022_modositott_elozetes_megoldasok.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2022-Schweitzer_2022_modositott_elozetes_megoldasok.pdf",
+        "schweitzer-2022-Schweitzer_2022_English.pdf",
+        "schweitzer-2022-Schweitzer 2022_feladatsor.pdf"
+      ],
+      "provenance_notes": [
+        "The hub labels these preliminary solutions; the archived English problem paper states that preliminary official Hungarian solutions are made available here.",
+        "The linked solution filename says modositott (modified); the earlier version was not compared."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2023",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2023,
+      "subjects": [
+        "algebra",
+        "analysis",
+        "combinatorics",
+        "geometry",
+        "probability",
+        "topology"
+      ],
+      "subject_classification_status": "editorial_problem_level_index",
+      "problem_count_claimed": 11,
+      "problem_count_observed": 11,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "problem_numbers_detailed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "problem_languages": [
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2023.pdf",
+      "problem_source_contains_solutions": false,
+      "spoiler_free_standalone_source_status": "located",
+      "solution_availability": {
+        "official": "not_located",
+        "access_status": "organizer_hosted_unofficial_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/Schweitzer_2023_elozetes_megoldasok.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2023-Schweitzer_2023_elozetes_megoldasok.pdf",
+        "schweitzer-2023-Schweitzer_feladatok_2023.pdf"
+      ],
+      "provenance_notes": [
+        "The organizer-hosted solution PDF explicitly labels its solutions unofficial (nem hivatalos).",
+        "All 11 numbered solutions are present; an official version was not located in the inspected hub.",
+        "The organizer-hosted unofficial solution document, printed page 13, reports imprecise original wording in Problem 8; see the separate errata record."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2024",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2024,
+      "subjects": [
+        "algebra",
+        "analysis",
+        "combinatorics",
+        "geometry",
+        "probability",
+        "topology"
+      ],
+      "subject_classification_status": "editorial_problem_level_index",
+      "problem_count_claimed": 11,
+      "problem_count_observed": 11,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "problem_numbers_detailed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "problem_languages": [
+        "en",
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_2024_Feladatsor_angol.pdf",
+      "problem_source_contains_solutions": false,
+      "spoiler_free_standalone_source_status": "located",
+      "solution_availability": {
+        "official": "located",
+        "access_status": "official_preliminary_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/Schweitzer_2024_elozetes_megoldasok.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2024-Schweitzer_2024_elozetes_megoldasok.pdf",
+        "schweitzer-2024-Schweitzer_2024_Feladatsor_angol.pdf",
+        "schweitzer-2024-SchweitzerMME_Feladatsor_magyar_2024.pdf"
+      ],
+      "provenance_notes": [
+        "The hub labels these preliminary solutions; the archived English problem paper states that preliminary official Hungarian solutions are made available here."
+      ]
+    },
+    {
+      "paper_id": "schweitzer-2025",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2025,
+      "subjects": [
+        "algebra",
+        "analysis",
+        "combinatorics",
+        "probability"
+      ],
+      "subject_classification_status": "editorial_problem_level_index",
+      "problem_count_claimed": 10,
+      "problem_count_observed": 10,
+      "problem_count_evidence": "distinct numbered statement headings inspected",
+      "problem_numbers_observed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "problem_numbers_detailed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "problem_languages": [
+        "hu"
+      ],
+      "primary_problem_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2025.pdf",
+      "problem_source_contains_solutions": false,
+      "spoiler_free_standalone_source_status": "located",
+      "solution_availability": {
+        "official": "located",
+        "access_status": "organizer_official_downloaded",
+        "solution_urls": [
+          "https://www.bolyai.hu/files/SCHWEITZER_2025_MEGOLDAS.pdf"
+        ],
+        "solution_language": "hu",
+        "solution_numbers_observed": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "proof_correctness_reviewed_by_us": false
+      },
+      "source_document_ids": [
+        "schweitzer-2025-SCHWEITZER_2025_MEGOLDAS.pdf",
+        "schweitzer-2025-Schweitzer_feladatok_2025.pdf"
+      ],
+      "provenance_notes": [
+        "Organizer-hosted committee/report solutions; all numbered problems have corresponding solution sections.",
+        "The solution document identifies a wording defect in Problem 3; see the separate errata record."
+      ]
+    }
+  ],
+  "problems": [
+    {
+      "problem_id": "schweitzer-2022-p01",
+      "paper_id": "schweitzer-2022",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2022,
+      "number": 1,
+      "editorial_topic": "Irregular sets of integers",
+      "subjects": [
+        "algebra",
+        "combinatorics"
+      ],
+      "prerequisites": [
+        "integer arithmetic",
+        "arithmetic progressions"
+      ],
+      "difficulty_estimate": "advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2022_English.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2022_modositott_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "advanced undergraduate"
+    },
+    {
+      "problem_id": "schweitzer-2022-p02",
+      "paper_id": "schweitzer-2022",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2022,
+      "number": 2,
+      "editorial_topic": "Singularity of matrix pencils",
+      "subjects": [
+        "algebra"
+      ],
+      "prerequisites": [
+        "determinants",
+        "matrix rank",
+        "symmetric matrices"
+      ],
+      "difficulty_estimate": "advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2022_English.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2022_modositott_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "advanced undergraduate"
+    },
+    {
+      "problem_id": "schweitzer-2022-p03",
+      "paper_id": "schweitzer-2022",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2022,
+      "number": 3,
+      "editorial_topic": "Almost-everywhere behavior of iterated piecewise-linear maps",
+      "subjects": [
+        "analysis",
+        "probability"
+      ],
+      "prerequisites": [
+        "Lebesgue measure",
+        "function iteration",
+        "almost-everywhere convergence"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2022_English.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2022_modositott_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "early graduate"
+    },
+    {
+      "problem_id": "schweitzer-2022-p04",
+      "paper_id": "schweitzer-2022",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2022,
+      "number": 4,
+      "editorial_topic": "Arithmetic of polynomial integrals",
+      "subjects": [
+        "analysis",
+        "algebra"
+      ],
+      "prerequisites": [
+        "polynomial integration",
+        "integer coefficients",
+        "asymptotic estimates"
+      ],
+      "difficulty_estimate": "advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2022_English.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2022_modositott_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "advanced undergraduate"
+    },
+    {
+      "problem_id": "schweitzer-2022-p05",
+      "paper_id": "schweitzer-2022",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2022,
+      "number": 5,
+      "editorial_topic": "Disjoint selections of segments on planar lines",
+      "subjects": [
+        "geometry",
+        "analysis"
+      ],
+      "prerequisites": [
+        "plane geometry",
+        "measure or descriptive set methods"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2022_English.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2022_modositott_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "early graduate"
+    },
+    {
+      "problem_id": "schweitzer-2022-p06",
+      "paper_id": "schweitzer-2022",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2022,
+      "number": 6,
+      "editorial_topic": "Norm values in a cyclotomic field",
+      "subjects": [
+        "algebra"
+      ],
+      "prerequisites": [
+        "cyclotomic fields",
+        "algebraic number theory"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2022_English.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2022_modositott_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "graduate"
+    },
+    {
+      "problem_id": "schweitzer-2022-p07",
+      "paper_id": "schweitzer-2022",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2022,
+      "number": 7,
+      "editorial_topic": "Reflections of regular polygon configurations",
+      "subjects": [
+        "geometry",
+        "algebra"
+      ],
+      "prerequisites": [
+        "plane transformations",
+        "roots of unity"
+      ],
+      "difficulty_estimate": "advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2022_English.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2022_modositott_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "advanced undergraduate"
+    },
+    {
+      "problem_id": "schweitzer-2022-p08",
+      "paper_id": "schweitzer-2022",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2022,
+      "number": 8,
+      "editorial_topic": "Boundary cluster behavior of a signed Dirichlet series",
+      "subjects": [
+        "analysis"
+      ],
+      "prerequisites": [
+        "complex analysis",
+        "Dirichlet series",
+        "boundary limits"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2022_English.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2022_modositott_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "graduate"
+    },
+    {
+      "problem_id": "schweitzer-2022-p09",
+      "paper_id": "schweitzer-2022",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2022,
+      "number": 9,
+      "editorial_topic": "Generating the additive plane from an arc subset",
+      "subjects": [
+        "analysis",
+        "algebra",
+        "geometry"
+      ],
+      "prerequisites": [
+        "Borel sets",
+        "Lebesgue measure",
+        "additive groups"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2022_English.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2022_modositott_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "early graduate"
+    },
+    {
+      "problem_id": "schweitzer-2022-p10",
+      "paper_id": "schweitzer-2022",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2022,
+      "number": 10,
+      "editorial_topic": "Continuous maps on irrational numbers and fiber dimension",
+      "subjects": [
+        "analysis",
+        "topology"
+      ],
+      "prerequisites": [
+        "subspace topology",
+        "Hausdorff dimension"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2022_English.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2022_modositott_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "graduate"
+    },
+    {
+      "problem_id": "schweitzer-2023-p01",
+      "paper_id": "schweitzer-2023",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2023,
+      "number": 1,
+      "editorial_topic": "Cardinal-size set systems",
+      "subjects": [
+        "combinatorics",
+        "topology"
+      ],
+      "prerequisites": [
+        "cardinal arithmetic",
+        "infinite set systems"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2023.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "not_located",
+      "solution_access_status": "organizer_hosted_unofficial_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2023_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "graduate"
+    },
+    {
+      "problem_id": "schweitzer-2023-p02",
+      "paper_id": "schweitzer-2023",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2023,
+      "number": 2,
+      "editorial_topic": "Disjoint open refinements in a Hausdorff space",
+      "subjects": [
+        "topology"
+      ],
+      "prerequisites": [
+        "Hausdorff spaces",
+        "open sets",
+        "countable subsequences"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2023.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "not_located",
+      "solution_access_status": "organizer_hosted_unofficial_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2023_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "early graduate"
+    },
+    {
+      "problem_id": "schweitzer-2023-p03",
+      "paper_id": "schweitzer-2023",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2023,
+      "number": 3,
+      "editorial_topic": "Distance-product ordering in finite metric spaces",
+      "subjects": [
+        "geometry",
+        "analysis"
+      ],
+      "prerequisites": [
+        "metric spaces",
+        "finite products",
+        "inequalities"
+      ],
+      "difficulty_estimate": "advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2023.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "not_located",
+      "solution_access_status": "organizer_hosted_unofficial_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2023_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "advanced undergraduate"
+    },
+    {
+      "problem_id": "schweitzer-2023-p04",
+      "paper_id": "schweitzer-2023",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2023,
+      "number": 4,
+      "editorial_topic": "Separately polynomial functions on product sets",
+      "subjects": [
+        "algebra",
+        "analysis"
+      ],
+      "prerequisites": [
+        "polynomials",
+        "interpolation",
+        "functions of two variables"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2023.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "not_located",
+      "solution_access_status": "organizer_hosted_unofficial_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2023_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "early graduate"
+    },
+    {
+      "problem_id": "schweitzer-2023-p05",
+      "paper_id": "schweitzer-2023",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2023,
+      "number": 5,
+      "editorial_topic": "Counting group word maps asymptotically",
+      "subjects": [
+        "algebra",
+        "combinatorics"
+      ],
+      "prerequisites": [
+        "finite groups",
+        "word maps",
+        "asymptotic growth"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2023.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "not_located",
+      "solution_access_status": "organizer_hosted_unofficial_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2023_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "graduate"
+    },
+    {
+      "problem_id": "schweitzer-2023-p06",
+      "paper_id": "schweitzer-2023",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2023,
+      "number": 6,
+      "editorial_topic": "Divisors in a prescribed finite interval",
+      "subjects": [
+        "algebra",
+        "combinatorics"
+      ],
+      "prerequisites": [
+        "divisibility",
+        "prime numbers",
+        "elementary number theory"
+      ],
+      "difficulty_estimate": "advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2023.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "not_located",
+      "solution_access_status": "organizer_hosted_unofficial_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2023_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "advanced undergraduate"
+    },
+    {
+      "problem_id": "schweitzer-2023-p07",
+      "paper_id": "schweitzer-2023",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2023,
+      "number": 7,
+      "editorial_topic": "Encoding intersections of four-element sets",
+      "subjects": [
+        "combinatorics"
+      ],
+      "prerequisites": [
+        "finite set systems",
+        "intersection constraints"
+      ],
+      "difficulty_estimate": "advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2023.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "not_located",
+      "solution_access_status": "organizer_hosted_unofficial_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2023_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "advanced undergraduate"
+    },
+    {
+      "problem_id": "schweitzer-2023-p08",
+      "paper_id": "schweitzer-2023",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2023,
+      "number": 8,
+      "editorial_topic": "Polynomial peak behavior on lemniscates",
+      "subjects": [
+        "analysis",
+        "geometry"
+      ],
+      "prerequisites": [
+        "complex polynomials",
+        "level sets",
+        "maximum modulus methods"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2023.pdf",
+      "statement_page": 2,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "not_located",
+      "solution_access_status": "organizer_hosted_unofficial_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2023_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "organizer_hosted_unofficial_wording_issue_flagged_separately",
+      "preparation_estimate": "early graduate"
+    },
+    {
+      "problem_id": "schweitzer-2023-p09",
+      "paper_id": "schweitzer-2023",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2023,
+      "number": 9,
+      "editorial_topic": "Polynomial derivatives in finite-codimensional function spaces",
+      "subjects": [
+        "analysis"
+      ],
+      "prerequisites": [
+        "normed spaces",
+        "closed subspaces",
+        "polynomial approximation"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2023.pdf",
+      "statement_page": 2,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "not_located",
+      "solution_access_status": "organizer_hosted_unofficial_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2023_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "graduate"
+    },
+    {
+      "problem_id": "schweitzer-2023-p10",
+      "paper_id": "schweitzer-2023",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2023,
+      "number": 10,
+      "editorial_topic": "Matrix exponentials and order inequalities",
+      "subjects": [
+        "analysis",
+        "algebra"
+      ],
+      "prerequisites": [
+        "self-adjoint matrices",
+        "positive semidefinite order",
+        "matrix exponential"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2023.pdf",
+      "statement_page": 2,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "not_located",
+      "solution_access_status": "organizer_hosted_unofficial_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2023_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "early graduate"
+    },
+    {
+      "problem_id": "schweitzer-2023-p11",
+      "paper_id": "schweitzer-2023",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2023,
+      "number": 11,
+      "editorial_topic": "Expected area of an intersection of translated triangles",
+      "subjects": [
+        "probability",
+        "geometry"
+      ],
+      "prerequisites": [
+        "uniform sampling",
+        "expected values",
+        "convex geometry"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2023.pdf",
+      "statement_page": 2,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "not_located",
+      "solution_access_status": "organizer_hosted_unofficial_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2023_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "early graduate"
+    },
+    {
+      "problem_id": "schweitzer-2024-p01",
+      "paper_id": "schweitzer-2024",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2024,
+      "number": 1,
+      "editorial_topic": "Extremal edge weights and perfect matchings",
+      "subjects": [
+        "combinatorics"
+      ],
+      "prerequisites": [
+        "bipartite graphs",
+        "perfect matchings",
+        "edge orderings"
+      ],
+      "difficulty_estimate": "advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2024_Feladatsor_angol.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2024_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "advanced undergraduate"
+    },
+    {
+      "problem_id": "schweitzer-2024-p02",
+      "paper_id": "schweitzer-2024",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2024,
+      "number": 2,
+      "editorial_topic": "One-sided lower density on nowhere-dense compact sets",
+      "subjects": [
+        "analysis",
+        "topology"
+      ],
+      "prerequisites": [
+        "Lebesgue measure",
+        "compact sets",
+        "nowhere-dense sets",
+        "lower limits"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2024_Feladatsor_angol.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2024_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "early graduate"
+    },
+    {
+      "problem_id": "schweitzer-2024-p03",
+      "paper_id": "schweitzer-2024",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2024,
+      "number": 3,
+      "editorial_topic": "Differentiability of compositions of nowhere-differentiable functions",
+      "subjects": [
+        "analysis"
+      ],
+      "prerequisites": [
+        "continuity",
+        "differentiability",
+        "composition",
+        "nowhere-differentiable functions"
+      ],
+      "difficulty_estimate": "advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2024_Feladatsor_angol.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2024_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "advanced undergraduate"
+    },
+    {
+      "problem_id": "schweitzer-2024-p04",
+      "paper_id": "schweitzer-2024",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2024,
+      "number": 4,
+      "editorial_topic": "Permutation distance under a cycle constraint",
+      "subjects": [
+        "algebra",
+        "combinatorics"
+      ],
+      "prerequisites": [
+        "cycle decompositions",
+        "permutations",
+        "finite optimization"
+      ],
+      "difficulty_estimate": "advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2024_Feladatsor_angol.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2024_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "advanced undergraduate"
+    },
+    {
+      "problem_id": "schweitzer-2024-p05",
+      "paper_id": "schweitzer-2024",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2024,
+      "number": 5,
+      "editorial_topic": "Countable compactness and G-delta density",
+      "subjects": [
+        "topology"
+      ],
+      "prerequisites": [
+        "regular spaces",
+        "countable compactness",
+        "G-delta sets"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2024_Feladatsor_angol.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2024_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "early graduate"
+    },
+    {
+      "problem_id": "schweitzer-2024-p06",
+      "paper_id": "schweitzer-2024",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2024,
+      "number": 6,
+      "editorial_topic": "Repeated temporal oscillation for heat-equation solutions",
+      "subjects": [
+        "analysis"
+      ],
+      "prerequisites": [
+        "partial differential equations",
+        "heat equation",
+        "classical solutions"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2024_Feladatsor_angol.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2024_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "graduate"
+    },
+    {
+      "problem_id": "schweitzer-2024-p07",
+      "paper_id": "schweitzer-2024",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2024,
+      "number": 7,
+      "editorial_topic": "Automorphisms of highly transitive permutation groups",
+      "subjects": [
+        "algebra"
+      ],
+      "prerequisites": [
+        "group automorphisms",
+        "permutation groups",
+        "n-transitivity"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2024_Feladatsor_angol.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2024_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "graduate"
+    },
+    {
+      "problem_id": "schweitzer-2024-p08",
+      "paper_id": "schweitzer-2024",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2024,
+      "number": 8,
+      "editorial_topic": "Circle representations of bipartite planar graphs",
+      "subjects": [
+        "geometry",
+        "combinatorics"
+      ],
+      "prerequisites": [
+        "planar graphs",
+        "circle tangency",
+        "intersection geometry"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2024_Feladatsor_angol.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2024_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "early graduate"
+    },
+    {
+      "problem_id": "schweitzer-2024-p09",
+      "paper_id": "schweitzer-2024",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2024,
+      "number": 9,
+      "editorial_topic": "Affine maps and power equations over finite fields",
+      "subjects": [
+        "algebra"
+      ],
+      "prerequisites": [
+        "finite fields",
+        "affine maps over F2",
+        "polynomial equations"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2024_Feladatsor_angol.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2024_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "early graduate"
+    },
+    {
+      "problem_id": "schweitzer-2024-p10",
+      "paper_id": "schweitzer-2024",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2024,
+      "number": 10,
+      "editorial_topic": "Parity discrepancy in a floor sequence",
+      "subjects": [
+        "combinatorics",
+        "algebra",
+        "analysis"
+      ],
+      "prerequisites": [
+        "floor function",
+        "irrational rotations",
+        "counting parity"
+      ],
+      "difficulty_estimate": "advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2024_Feladatsor_angol.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2024_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "advanced undergraduate"
+    },
+    {
+      "problem_id": "schweitzer-2024-p11",
+      "paper_id": "schweitzer-2024",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2024,
+      "number": 11,
+      "editorial_topic": "Almost-sure asymptotics of a reinforced urn",
+      "subjects": [
+        "probability"
+      ],
+      "prerequisites": [
+        "conditional probability",
+        "urn processes",
+        "almost-sure convergence"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_2024_Feladatsor_angol.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "en",
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "official_preliminary_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/Schweitzer_2024_elozetes_megoldasok.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "graduate"
+    },
+    {
+      "problem_id": "schweitzer-2025-p01",
+      "paper_id": "schweitzer-2025",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2025,
+      "number": 1,
+      "editorial_topic": "Chains of equivalence relations",
+      "subjects": [
+        "combinatorics"
+      ],
+      "prerequisites": [
+        "set partitions",
+        "equivalence relations",
+        "asymptotic estimates"
+      ],
+      "difficulty_estimate": "advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2025.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "organizer_official_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/SCHWEITZER_2025_MEGOLDAS.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "advanced undergraduate"
+    },
+    {
+      "problem_id": "schweitzer-2025-p02",
+      "paper_id": "schweitzer-2025",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2025,
+      "number": 2,
+      "editorial_topic": "Direct products of tight directed graphs",
+      "subjects": [
+        "combinatorics",
+        "algebra"
+      ],
+      "prerequisites": [
+        "directed graphs",
+        "graph products",
+        "cyclic colorings"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2025.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "organizer_official_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/SCHWEITZER_2025_MEGOLDAS.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "early graduate"
+    },
+    {
+      "problem_id": "schweitzer-2025-p03",
+      "paper_id": "schweitzer-2025",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2025,
+      "number": 3,
+      "editorial_topic": "Totient equations with four exponential bases",
+      "subjects": [
+        "algebra"
+      ],
+      "prerequisites": [
+        "Euler totient",
+        "exponential Diophantine equations"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2025.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "organizer_official_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/SCHWEITZER_2025_MEGOLDAS.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "official_wording_issue_flagged_separately",
+      "preparation_estimate": "graduate"
+    },
+    {
+      "problem_id": "schweitzer-2025-p04",
+      "paper_id": "schweitzer-2025",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2025,
+      "number": 4,
+      "editorial_topic": "Smooth values in generalized Fibonacci sequences",
+      "subjects": [
+        "algebra"
+      ],
+      "prerequisites": [
+        "linear recurrence sequences",
+        "Diophantine equations"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2025.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "organizer_official_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/SCHWEITZER_2025_MEGOLDAS.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "graduate"
+    },
+    {
+      "problem_id": "schweitzer-2025-p05",
+      "paper_id": "schweitzer-2025",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2025,
+      "number": 5,
+      "editorial_topic": "Equal blocks of arithmetic-progression sums",
+      "subjects": [
+        "algebra",
+        "combinatorics"
+      ],
+      "prerequisites": [
+        "arithmetic progressions",
+        "finite sums",
+        "integer optimization"
+      ],
+      "difficulty_estimate": "advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2025.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "organizer_official_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/SCHWEITZER_2025_MEGOLDAS.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "advanced undergraduate"
+    },
+    {
+      "problem_id": "schweitzer-2025-p06",
+      "paper_id": "schweitzer-2025",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2025,
+      "number": 6,
+      "editorial_topic": "Extremal distance to the nearest polynomial zero",
+      "subjects": [
+        "analysis",
+        "algebra"
+      ],
+      "prerequisites": [
+        "complex polynomials",
+        "roots",
+        "suprema"
+      ],
+      "difficulty_estimate": "advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2025.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "organizer_official_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/SCHWEITZER_2025_MEGOLDAS.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "advanced undergraduate"
+    },
+    {
+      "problem_id": "schweitzer-2025-p07",
+      "paper_id": "schweitzer-2025",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2025,
+      "number": 7,
+      "editorial_topic": "Weighted convolution estimates and polynomial zeros",
+      "subjects": [
+        "analysis",
+        "algebra"
+      ],
+      "prerequisites": [
+        "finite convolutions",
+        "weighted sequence norms",
+        "unit-circle zeros"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2025.pdf",
+      "statement_page": 1,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "organizer_official_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/SCHWEITZER_2025_MEGOLDAS.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "early graduate"
+    },
+    {
+      "problem_id": "schweitzer-2025-p08",
+      "paper_id": "schweitzer-2025",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2025,
+      "number": 8,
+      "editorial_topic": "Periodic Lipschitz building blocks in multiscale series",
+      "subjects": [
+        "analysis"
+      ],
+      "prerequisites": [
+        "Lipschitz functions",
+        "uniformly convergent series",
+        "scaling"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2025.pdf",
+      "statement_page": 2,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "organizer_official_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/SCHWEITZER_2025_MEGOLDAS.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "graduate"
+    },
+    {
+      "problem_id": "schweitzer-2025-p09",
+      "paper_id": "schweitzer-2025",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2025,
+      "number": 9,
+      "editorial_topic": "Weighted Jensen inequalities under lower semicontinuity",
+      "subjects": [
+        "analysis"
+      ],
+      "prerequisites": [
+        "convex functions",
+        "lower semicontinuity",
+        "functional inequalities"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2025.pdf",
+      "statement_page": 2,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "organizer_official_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/SCHWEITZER_2025_MEGOLDAS.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "early graduate"
+    },
+    {
+      "problem_id": "schweitzer-2025-p10",
+      "paper_id": "schweitzer-2025",
+      "contest": "Miklós Schweitzer Memorial Competition",
+      "year": 2025,
+      "number": 10,
+      "editorial_topic": "Weak approximation of planar probability laws",
+      "subjects": [
+        "probability",
+        "analysis"
+      ],
+      "prerequisites": [
+        "distribution functions",
+        "marginal laws",
+        "weak convergence"
+      ],
+      "difficulty_estimate": "very advanced",
+      "classification_authority": "editorial judgment; not contest grading",
+      "statement_url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2025.pdf",
+      "statement_page": 2,
+      "statement_languages": [
+        "hu"
+      ],
+      "exact_statement_status": "Read original numbered statement at linked official paper; no rewritten statement or added assumptions.",
+      "source_contains_solutions": false,
+      "official_solution_availability": "located",
+      "solution_access_status": "organizer_official_downloaded",
+      "solution_urls": [
+        "https://www.bolyai.hu/files/SCHWEITZER_2025_MEGOLDAS.pdf"
+      ],
+      "authored_solution_status": "not_attempted_in_this_edition",
+      "errata_status": "no_separate_erratum_located_in_inspected_sources",
+      "preparation_estimate": "graduate"
+    }
+  ],
+  "source_documents": [
+    {
+      "document_id": "schweitzer-2009-Schweitzer_2009_jelentes.pdf",
+      "year": 2009,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2009_jelentes.pdf",
+      "archive_link_label": "2009",
+      "retrieved_at_utc": "2026-10-13T04:38:40.949092+00:00",
+      "access_status": "downloaded",
+      "sha256": "30d2eaf11cd9f3911f1e40f1383773c4072496f9fe47e8c8d4948865dbd15e93",
+      "bytes": 260423,
+      "pdf_pages": 21,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2009_jelentes.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_solutions_with_problem_statements",
+      "contains_solutions": true
+    },
+    {
+      "document_id": "schweitzer-2010-Schweitzer_2010_jelentes.pdf",
+      "year": 2010,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2010_jelentes.pdf",
+      "archive_link_label": "2010",
+      "retrieved_at_utc": "2026-10-13T04:38:40.949650+00:00",
+      "access_status": "downloaded",
+      "sha256": "f47b0f9779fe0a4f87b93e02feec325122d867541885e2214c50027b08553434",
+      "bytes": 227377,
+      "pdf_pages": 13,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2010_jelentes.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_solutions_with_problem_statements",
+      "contains_solutions": true
+    },
+    {
+      "document_id": "schweitzer-2011-Schweitzer_2011_jelentes.pdf",
+      "year": 2011,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2011_jelentes.pdf",
+      "archive_link_label": "2011",
+      "retrieved_at_utc": "2026-10-13T04:38:40.950053+00:00",
+      "access_status": "downloaded",
+      "sha256": "26ab3f37271e2b777ab45d9aa6b5b87d11c7116e060d8f1b69012c92db495e54",
+      "bytes": 226909,
+      "pdf_pages": 23,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2011_jelentes.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_solutions_with_problem_statements",
+      "contains_solutions": true
+    },
+    {
+      "document_id": "schweitzer-2012-Schweitzer_2012_jelentes.pdf",
+      "year": 2012,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2012_jelentes.pdf",
+      "archive_link_label": "2012",
+      "retrieved_at_utc": "2026-10-13T04:38:40.950491+00:00",
+      "access_status": "downloaded",
+      "sha256": "de45431b560f7b70847f36ab77daab1417da7573e4a5f12b22cf36b22eeceb86",
+      "bytes": 43628,
+      "pdf_pages": 2,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2012_jelentes.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "results_report_only",
+      "contains_solutions": false
+    },
+    {
+      "document_id": "schweitzer-2013-Schweitzer_2013_jelentes.pdf",
+      "year": 2013,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2013_jelentes.pdf",
+      "archive_link_label": "2013",
+      "retrieved_at_utc": "2026-10-13T04:38:40.950825+00:00",
+      "access_status": "downloaded",
+      "sha256": "134321d1710aa01a5bb2778a5af3d7dc62c3aadcdb4f77fa87647b0f968b4d30",
+      "bytes": 166185,
+      "pdf_pages": 18,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2013_jelentes.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_solutions_with_problem_statements",
+      "contains_solutions": true
+    },
+    {
+      "document_id": "schweitzer-2014-Schweitzer_2014_beszamolo.pdf",
+      "year": 2014,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2014_beszamolo.pdf",
+      "archive_link_label": "2014",
+      "retrieved_at_utc": "2026-10-13T04:38:40.951227+00:00",
+      "access_status": "downloaded",
+      "sha256": "854e0f21afa4356bba03d690a4bdc1b753173deb95d23ba38d48323e037aa94d",
+      "bytes": 298899,
+      "pdf_pages": 24,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2014_beszamolo.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_solutions_with_problem_statements",
+      "contains_solutions": true
+    },
+    {
+      "document_id": "schweitzer-2015-Schweitzer_2015_beszamolo.pdf",
+      "year": 2015,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2015_beszamolo.pdf",
+      "archive_link_label": "2015",
+      "retrieved_at_utc": "2026-10-13T04:38:42.239026+00:00",
+      "access_status": "downloaded",
+      "sha256": "05088e85762174871a5727ac2270a51bc2175f343cc3774911a12ae7db6c0d3c",
+      "bytes": 299507,
+      "pdf_pages": 15,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2015_beszamolo.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_solutions_with_problem_statements",
+      "contains_solutions": true
+    },
+    {
+      "document_id": "schweitzer-2016-Schweitzer_2016_dijazottak_megoldasok.pdf",
+      "year": 2016,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2016_dijazottak_megoldasok.pdf",
+      "archive_link_label": "2016",
+      "retrieved_at_utc": "2026-10-13T04:38:42.377018+00:00",
+      "access_status": "downloaded",
+      "sha256": "c71be53b427ec5865417900103b328e8735fb37663743c899328008ff5d57a37",
+      "bytes": 344363,
+      "pdf_pages": 16,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2016_dijazottak_megoldasok.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_solutions_with_problem_statements",
+      "contains_solutions": true
+    },
+    {
+      "document_id": "schweitzer-2017-Schweitzer_2017_dijazottak_megoldasok.pdf",
+      "year": 2017,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2017_dijazottak_megoldasok.pdf",
+      "archive_link_label": "2017",
+      "retrieved_at_utc": "2026-10-13T04:38:42.385325+00:00",
+      "access_status": "downloaded",
+      "sha256": "d1afd0ccef6f329e9c63a9a7b55f38b3cd39ecb6c247ec71fd19a8eca869395f",
+      "bytes": 253475,
+      "pdf_pages": 12,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2017_dijazottak_megoldasok.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_solutions_with_problem_statements",
+      "contains_solutions": true
+    },
+    {
+      "document_id": "schweitzer-2018-Schweitzer_2018_megoldasok_es_eredmenyek.pdf",
+      "year": 2018,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2018_megoldasok_es_eredmenyek.pdf",
+      "archive_link_label": "2018",
+      "retrieved_at_utc": "2026-10-13T04:38:42.408803+00:00",
+      "access_status": "downloaded",
+      "sha256": "3c7be51de684ce55a6c5441dd3d7538343df248e05a3f3a3eb0f5c8ff0407bcf",
+      "bytes": 572425,
+      "pdf_pages": 15,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2018_megoldasok_es_eredmenyek.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_solutions_with_problem_statements",
+      "contains_solutions": true
+    },
+    {
+      "document_id": "schweitzer-2019-Schweitzer_2019-jelentes_javitott.pdf",
+      "year": 2019,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2019-jelentes_javitott.pdf",
+      "archive_link_label": "2019",
+      "retrieved_at_utc": "2026-10-13T04:38:42.447554+00:00",
+      "access_status": "downloaded",
+      "sha256": "172a8f3d8b748e4b23784ddd2ced506d6b3e91384dc6cf324c0e9819277c3a2d",
+      "bytes": 372206,
+      "pdf_pages": 20,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2019-jelentes_javitott.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_solutions_with_problem_statements",
+      "contains_solutions": true
+    },
+    {
+      "document_id": "schweitzer-2020-Schweitzer_2020_megoldasok_es_eredmenyek.pdf",
+      "year": 2020,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2020_megoldasok_es_eredmenyek.pdf",
+      "archive_link_label": "2020",
+      "retrieved_at_utc": "2026-10-13T04:38:42.930760+00:00",
+      "access_status": "downloaded",
+      "sha256": "9028676afd5938f30e6de21750f22bf227e931aec034c9dcbb12bbb83c4cffa9",
+      "bytes": 514023,
+      "pdf_pages": 20,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2020_megoldasok_es_eredmenyek.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_solutions_with_problem_statements",
+      "contains_solutions": true
+    },
+    {
+      "document_id": "schweitzer-2025-SCHWEITZER_2025_MEGOLDAS.pdf",
+      "year": 2025,
+      "url": "https://www.bolyai.hu/files/SCHWEITZER_2025_MEGOLDAS.pdf",
+      "archive_link_label": "Feladatsor és megoldások 2025",
+      "retrieved_at_utc": "2026-10-13T04:38:43.012696+00:00",
+      "access_status": "downloaded",
+      "sha256": "82db69dff09f5c28a05f475a2172bdd10ecf0202c0da005dc23f403e3f722ba1",
+      "bytes": 298202,
+      "pdf_pages": 13,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/SCHWEITZER_2025_MEGOLDAS.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_solutions_with_problem_statements",
+      "contains_solutions": true
+    },
+    {
+      "document_id": "schweitzer-2025-Schweitzer_feladatok_2025.pdf",
+      "year": 2025,
+      "url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2025.pdf",
+      "archive_link_label": "Feladatsor 2025",
+      "retrieved_at_utc": "2026-10-13T04:38:43.097744+00:00",
+      "access_status": "downloaded",
+      "sha256": "b3106463d0276a335b71f8e6f359d8fb6530e6e73d05e256cdbba269e7a61fc9",
+      "bytes": 151592,
+      "pdf_pages": 2,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_feladatok_2025.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "standalone_problem_paper",
+      "contains_solutions": false
+    },
+    {
+      "document_id": "schweitzer-2024-Schweitzer_2024_elozetes_megoldasok.pdf",
+      "year": 2024,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2024_elozetes_megoldasok.pdf",
+      "archive_link_label": "Előzetes megoldások",
+      "retrieved_at_utc": "2026-10-13T04:38:43.130115+00:00",
+      "access_status": "downloaded",
+      "sha256": "be265808119e511cc185fc125c89d3c64dafe3f1aecb0bf8ad5f1554dd94585d",
+      "bytes": 361972,
+      "pdf_pages": 12,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2024_elozetes_megoldasok.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_solutions_with_problem_statements",
+      "contains_solutions": true
+    },
+    {
+      "document_id": "schweitzer-2024-SchweitzerMME_Feladatsor_magyar_2024.pdf",
+      "year": 2024,
+      "url": "https://www.bolyai.hu/files/SchweitzerMME_Feladatsor_magyar_2024.pdf",
+      "archive_link_label": "Feladatok 2024",
+      "retrieved_at_utc": "2026-10-13T04:38:43.209496+00:00",
+      "access_status": "downloaded",
+      "sha256": "77bd5dbf4854dbcd3b4552dbf4da4c5ade5729f70aa48e699d2d20fe55d25317",
+      "bytes": 245511,
+      "pdf_pages": 2,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/SchweitzerMME_Feladatsor_magyar_2024.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "standalone_problem_paper",
+      "contains_solutions": false
+    },
+    {
+      "document_id": "schweitzer-2024-Schweitzer_2024_Feladatsor_angol.pdf",
+      "year": 2024,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2024_Feladatsor_angol.pdf",
+      "archive_link_label": "Feladatok angol nyelven",
+      "retrieved_at_utc": "2026-10-13T04:38:43.367952+00:00",
+      "access_status": "downloaded",
+      "sha256": "354ecf770da5e9065228d857156b2a0b330554ca581f307c5e25d3d406244bc4",
+      "bytes": 240763,
+      "pdf_pages": 2,
+      "language": "en",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2024_Feladatsor_angol.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "standalone_problem_paper",
+      "contains_solutions": false
+    },
+    {
+      "document_id": "schweitzer-2023-Schweitzer_2023_elozetes_megoldasok.pdf",
+      "year": 2023,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2023_elozetes_megoldasok.pdf",
+      "archive_link_label": "Előzetes beszámoló",
+      "retrieved_at_utc": "2026-10-13T04:38:43.393663+00:00",
+      "access_status": "downloaded",
+      "sha256": "6f842778856354626ec1b8d56f6e4cdd8c48141c239ca3ed94ce208fe71f7905",
+      "bytes": 367732,
+      "pdf_pages": 18,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2023_elozetes_megoldasok.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_hosted_unofficial_solutions",
+      "contains_solutions": true
+    },
+    {
+      "document_id": "schweitzer-2023-Schweitzer_feladatok_2023.pdf",
+      "year": 2023,
+      "url": "https://www.bolyai.hu/files/Schweitzer_feladatok_2023.pdf",
+      "archive_link_label": "Feladatok 2023",
+      "retrieved_at_utc": "2026-10-13T04:38:43.470922+00:00",
+      "access_status": "downloaded",
+      "sha256": "82bbcdc93b1e4cc4a6103f1d54c526bf9165a842f6621f95f5c53725ea0a212b",
+      "bytes": 215710,
+      "pdf_pages": 2,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_feladatok_2023.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "standalone_problem_paper",
+      "contains_solutions": false
+    },
+    {
+      "document_id": "schweitzer-2022-Schweitzer_2022_modositott_elozetes_megoldasok.pdf",
+      "year": 2022,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2022_modositott_elozetes_megoldasok.pdf",
+      "archive_link_label": "Előzetes megoldások 2022",
+      "retrieved_at_utc": "2026-10-13T04:38:43.516002+00:00",
+      "access_status": "downloaded",
+      "sha256": "eb6613c4d6577671d02230a2de23819dfcdcadd57948b24b36b0c0ed2e33f70e",
+      "bytes": 392356,
+      "pdf_pages": 16,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2022_modositott_elozetes_megoldasok.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_solutions_with_problem_statements",
+      "contains_solutions": true
+    },
+    {
+      "document_id": "schweitzer-2022-Schweitzer_2022_English.pdf",
+      "year": 2022,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2022_English.pdf",
+      "archive_link_label": "Feladatok angol nyelven 2022",
+      "retrieved_at_utc": "2026-10-13T04:38:43.556937+00:00",
+      "access_status": "downloaded",
+      "sha256": "455af73506705c93a8c7c76ab058b166094887ca89bf8ba3e36090d0e99b681d",
+      "bytes": 220453,
+      "pdf_pages": 2,
+      "language": "en",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2022_English.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "standalone_problem_paper",
+      "contains_solutions": false
+    },
+    {
+      "document_id": "schweitzer-2022-Schweitzer 2022_feladatsor.pdf",
+      "year": 2022,
+      "url": "https://www.bolyai.hu/files/Schweitzer%202022_feladatsor.pdf",
+      "archive_link_label": "Feladatok 2022",
+      "retrieved_at_utc": "2026-10-13T04:38:43.643332+00:00",
+      "access_status": "downloaded",
+      "sha256": "bb301a7e4fc7096f8ee8a8eb2ec354ee12b77d7c9094b720a831dbdb3c558ba7",
+      "bytes": 230567,
+      "pdf_pages": 2,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer 2022_feladatsor.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "standalone_problem_paper",
+      "contains_solutions": false
+    },
+    {
+      "document_id": "schweitzer-2021-Schweitzer_2021_feladatok_megoldasok.pdf",
+      "year": 2021,
+      "url": "https://www.bolyai.hu/files/Schweitzer_2021_feladatok_megoldasok.pdf",
+      "archive_link_label": "Megoldások 2021",
+      "retrieved_at_utc": "2026-10-13T04:38:43.645624+00:00",
+      "access_status": "downloaded",
+      "sha256": "a3b07e431653c7c5485c57bcb38b0017c051f9f26b24c053666834fa736a1c10",
+      "bytes": 173939,
+      "pdf_pages": 15,
+      "language": "hu",
+      "local_personal_research_copy": "/tmp/contest-library-research/schweitzer/Schweitzer_2021_feladatok_megoldasok.pdf",
+      "published_in_repository": false,
+      "license_status": "No explicit public redistribution license located in inspected hub or document; link only.",
+      "role": "organizer_solutions_with_problem_statements",
+      "contains_solutions": true
+    }
+  ],
+  "errata": [
+    {
+      "problem_id": "schweitzer-2023-p08",
+      "status": "organizer_hosted_unofficial_document_reports_wording_defect",
+      "source_url": "https://www.bolyai.hu/files/Schweitzer_2023_elozetes_megoldasok.pdf",
+      "source_page": 13,
+      "source_officiality": "Explicitly labeled unofficial in document title.",
+      "summary": "The organizer-hosted document reports that the original problem was imprecisely posed and notes how the committee assessed submissions. The specific defect and any repaired formulation are not reproduced here.",
+      "policy": "Keep the original source conditions intact; flag the warning separately and do not silently repair the statement.",
+      "includes_solution_detail": false
+    },
+    {
+      "problem_id": "schweitzer-2025-p03",
+      "status": "organizer_document_reports_wording_defect",
+      "source_url": "https://www.bolyai.hu/files/SCHWEITZER_2025_MEGOLDAS.pdf",
+      "source_page": 4,
+      "summary": "The organizer solution document notes that allowing a base ai=1 creates degenerate cases omitted by the original wording. It discusses these cases separately and mentions an exponent convention as an alternative repair.",
+      "policy": "Keep the original positive-integer conditions intact; do not silently replace them by ai>1.",
+      "includes_solution_detail": false
+    },
+    {
+      "paper_id": "schweitzer-2019",
+      "status": "corrected_filename_only",
+      "summary": "The organizer link uses a filename marked corrected. No specific statement change was identified in this edition."
+    },
+    {
+      "paper_id": "schweitzer-2022",
+      "status": "modified_filename_only",
+      "summary": "The organizer link uses a solution filename marked modified. No comparison against a previous version was made."
+    }
+  ]
+}
