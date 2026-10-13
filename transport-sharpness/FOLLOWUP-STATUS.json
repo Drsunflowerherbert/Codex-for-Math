@@ -1,6 +1,16 @@
 {
   "assigned_branch": "codex/transport-sharpness-2026-10-13",
   "development_cutoff_utc": "2026-10-13T04:05:00Z",
+  "environment_access_check": {
+    "active_lean_lake_processes_at_023532UTC": "none",
+    "completed_review_runs": "both passed; finished02:26:14 and02:29:17UTC",
+    "duplicate_builds_or_configuration_changes_for_recovery": false,
+    "fresh_read_command_utc": "2026-10-13T02:35:01Z",
+    "persistent_blocker": false,
+    "saved_frozen_source_hash": "matches",
+    "user_reported_disconnect_utc": "2026-10-13T02:33:00Z",
+    "workspace_access": "successful"
+  },
   "formal_coverage": {
     "actual_dimension": 2,
     "actual_probability_domain": "0<=a<=1,b>=0,p>=1",
@@ -49,8 +59,12 @@
   "provenance": "FOLLOWUP-PROVENANCE.json",
   "publication": {
     "authorized": true,
-    "receipt": "recorded after content push in evidence/FOLLOWUP-PUBLICATION.json; final receipt commit verified separately in final response",
-    "scope": "only assigned branch and transport-sharpness/"
+    "content_commit": "af2906711a05e678b682fdc98fa1ea563a2b0763",
+    "content_tree": "1f420f57d5cbfb55f4a6c55995435287f6b5f901",
+    "final_receipt_commit": "verified separately in final response",
+    "receipt": "evidence/FOLLOWUP-PUBLICATION.json",
+    "scope": "only assigned branch and transport-sharpness/",
+    "state": "reviewed_content_published_and_remote_verified"
   },
   "publication_cutoff_utc": "2026-10-13T04:20:00Z",
   "remaining_formal_obligations": [
