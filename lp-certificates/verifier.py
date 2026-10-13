@@ -21,6 +21,15 @@ from typing import Any, Mapping, Sequence
 
 RATIONAL_PATTERN = re.compile(r"[+-]?[0-9]+(?:/[1-9][0-9]*)?\Z")
 
+# Hand-sized exact verification budgets. Crossing a budget is invalid/unsupported,
+# never a claim about the LP. In particular, bounded formatting must fail closed.
+MAX_INPUT_BYTES = 1024 * 1024
+MAX_VARIABLES = 32
+MAX_CONSTRAINTS = 128
+MAX_RATIONAL_BITS = 1024
+MAX_RESULT_BITS = 8192
+MAX_TOTAL_RATIONAL_BITS = 131072
+
 
 class SchemaError(ValueError):
     """An input that cannot be interpreted as a v1 certificate document."""
@@ -65,19 +74,24 @@ class Certificate:
 def rational(value: Any, path: str) -> Fraction:
     """Accept only JSON integers or signed integer / positive denominator strings."""
     if type(value) is int:
-        return Fraction(value)
-    if type(value) is str and RATIONAL_PATTERN.fullmatch(value):
+        result = Fraction(value)
+    elif type(value) is str and RATIONAL_PATTERN.fullmatch(value):
         try:
             if "/" in value:
                 numerator, denominator = value.split("/")
-                return Fraction(int(numerator), int(denominator))
-            return Fraction(int(value))
+                result = Fraction(int(numerator), int(denominator))
+            else:
+                result = Fraction(int(value))
         except ValueError as exc:
             raise SchemaError("rational", path, "Rational integer is too large to parse.") from exc
-    raise SchemaError(
-        "rational", path,
-        "Expected an integer or exact string n/d with positive denominator; floats and booleans are forbidden.",
-    )
+    else:
+        raise SchemaError(
+            "rational", path,
+            "Expected an integer or exact string n/d with positive denominator; floats and booleans are forbidden.",
+        )
+    if max(abs(result.numerator).bit_length(), result.denominator.bit_length()) > MAX_RATIONAL_BITS:
+        raise SchemaError("resource_limit", path, "Rational numerator or denominator exceeds 1024 bits.")
+    return result
 
 
 def object_fields(value: Any, fields: set[str], path: str) -> Mapping[str, Any]:
@@ -114,10 +128,14 @@ def parse_document(document: Any) -> tuple[Problem, Certificate]:
     if type(sense) is not str or sense not in ("max", "min"):
         raise SchemaError("sense", "$.problem.objective.sense", "Expected max or min.")
     original_objective = vector(raw_objective["coefficients"], "$.problem.objective.coefficients")
+    if len(original_objective) > MAX_VARIABLES:
+        raise SchemaError("resource_limit", "$.problem.objective.coefficients", "At most 32 variables are supported.")
     objective = original_objective if sense == "max" else tuple(-v for v in original_objective)
     raw_rows = raw_problem["constraints"]
     if not isinstance(raw_rows, list):
         raise SchemaError("array", "$.problem.constraints", "Expected an array.")
+    if len(raw_rows) > MAX_CONSTRAINTS:
+        raise SchemaError("resource_limit", "$.problem.constraints", "At most 128 rows are supported.")
     inequalities, equalities = [], []
     for index, raw_row in enumerate(raw_rows):
         path = f"$.problem.constraints[{index}]"
@@ -162,6 +180,13 @@ def parse_document(document: Any) -> tuple[Problem, Certificate]:
             raw_certificate["equality_multipliers"], "$.certificate.equality_multipliers",
             len(problem.equalities),
         )
+    values = [*objective, *point, *direction, *inequality_multipliers, *equality_multipliers]
+    for row in [*inequalities, *equalities]:
+        values.extend(row.coefficients)
+        values.append(row.rhs)
+    total_bits = sum(abs(v.numerator).bit_length() + v.denominator.bit_length() for v in values)
+    if total_bits > MAX_TOTAL_RATIONAL_BITS:
+        raise SchemaError("resource_limit", "$", "Total rational bit budget exceeds 131072 bits.")
     return problem, Certificate(kind, point, direction, inequality_multipliers, equality_multipliers)
 
 
@@ -173,10 +198,15 @@ def dot(left: Sequence[Fraction], right: Sequence[Fraction]) -> Fraction:
 
 
 def fraction_string(value: Fraction) -> str:
-    return str(value.numerator) if value.denominator == 1 else f"{value.numerator}/{value.denominator}"
+    if max(abs(value.numerator).bit_length(), value.denominator.bit_length()) > MAX_RESULT_BITS:
+        raise SchemaError("resource_limit", "$", "Exact output numerator or denominator exceeds 8192 bits.")
+    try:
+        return str(value.numerator) if value.denominator == 1 else f"{value.numerator}/{value.denominator}"
+    except ValueError as exc:
+        raise SchemaError("resource_limit", "$", "Exact output exceeds the runtime integer-formatting limit.") from exc
 
 
-def verify(document: Any) -> dict[str, Any]:
+def _verify(document: Any) -> dict[str, Any]:
     """Return accepted / rejected / invalid, with exact, deterministic check evidence."""
     try:
         problem, certificate = parse_document(document)
@@ -241,6 +271,14 @@ def verify(document: Any) -> dict[str, Any]:
     return result
 
 
+def verify(document: Any) -> dict[str, Any]:
+    """Verify within documented budgets; output-format failures never accept."""
+    try:
+        return _verify(document)
+    except SchemaError as exc:
+        return {"status": "invalid", "accepted": False, "diagnostics": [exc.diagnostic()]}
+
+
 def _unique_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
     value: dict[str, Any] = {}
     for key, entry in pairs:
@@ -256,11 +294,17 @@ def _forbid_constant(value: str) -> None:
 
 def verify_json(text: str) -> dict[str, Any]:
     """Parse strict JSON, preserving integers and rejecting duplicate object keys."""
+    if type(text) is not str:
+        return {"status": "invalid", "accepted": False,
+                "diagnostics": [{"code": "json", "path": "$", "message": "Expected JSON text."}]}
     try:
+        if len(text.encode("utf-8")) > MAX_INPUT_BYTES:
+            return {"status": "invalid", "accepted": False,
+                    "diagnostics": [{"code": "resource_limit", "path": "$", "message": "JSON input exceeds 1 MiB."}]}
         document = json.loads(text, object_pairs_hook=_unique_object, parse_constant=_forbid_constant)
     except SchemaError as exc:
         return {"status": "invalid", "accepted": False, "diagnostics": [exc.diagnostic()]}
-    except (json.JSONDecodeError, ValueError, RecursionError) as exc:
+    except (json.JSONDecodeError, ValueError, RecursionError, UnicodeError) as exc:
         return {"status": "invalid", "accepted": False,
                 "diagnostics": [{"code": "json", "path": "$", "message": str(exc)}]}
     return verify(document)

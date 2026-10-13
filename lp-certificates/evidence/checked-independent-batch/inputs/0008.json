@@ -1,0 +1,49 @@
+{
+  "certificate": {
+    "base_point": [
+      1,
+      0
+    ],
+    "direction": [
+      1,
+      1
+    ],
+    "kind": "unbounded"
+  },
+  "problem": {
+    "constraints": [
+      {
+        "coefficients": [
+          0,
+          1
+        ],
+        "rhs": 0,
+        "sense": ">="
+      },
+      {
+        "coefficients": [
+          0,
+          2
+        ],
+        "rhs": 0,
+        "sense": ">="
+      },
+      {
+        "coefficients": [
+          1,
+          -1
+        ],
+        "rhs": 1,
+        "sense": "="
+      }
+    ],
+    "objective": {
+      "coefficients": [
+        -2,
+        1
+      ],
+      "sense": "min"
+    }
+  },
+  "version": 1
+}

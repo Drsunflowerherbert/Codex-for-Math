@@ -1,0 +1,39 @@
+{
+  "dimension": 2,
+  "direction": [
+    "-1",
+    "0"
+  ],
+  "kind": "unbounded",
+  "objective": [
+    "-3",
+    "2"
+  ],
+  "objective_sense": "max",
+  "point": [
+    "-2",
+    "1"
+  ],
+  "row_count": 2,
+  "row_multipliers": [],
+  "rows": [
+    {
+      "coefficients": [
+        "0",
+        "1"
+      ],
+      "index": 0,
+      "rhs": "1",
+      "sense": "="
+    },
+    {
+      "coefficients": [
+        "1",
+        "0"
+      ],
+      "index": 1,
+      "rhs": "0",
+      "sense": "<="
+    }
+  ]
+}

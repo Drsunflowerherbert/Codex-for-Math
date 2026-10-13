@@ -1,0 +1,33 @@
+{
+  "schema": "lp-certificates-followup-packages/v1",
+  "packages": [
+    {
+      "path": "evidence/checked-author-batch",
+      "inputs": 10,
+      "commands": 72,
+      "receipt_sha256": "877d9f1d3fd1e694df1e36cdc2337649a9bc39d535c412623c743521a87f388f",
+      "package_manifest_sha256": "14ab5b288299e90dac3978335884cdaa5587c438087937d9b61b80921e7d564c",
+      "copied_bytes_unchanged": true,
+      "inspection": "integrity/consistency only; original fresh-run report retained"
+    },
+    {
+      "path": "evidence/checked-independent-batch",
+      "inputs": 13,
+      "commands": 75,
+      "receipt_sha256": "ac9eb90fbc89dd03e22b2f2ff6b3b8df8a478058c4c2afc708c79c9e5b915c88",
+      "package_manifest_sha256": "a7b50d6303cc43a425f987f254e92e69f7db5e157cb4a68470507277f731c6a9",
+      "copied_bytes_unchanged": true,
+      "inspection": "integrity/consistency only; original fresh-run report retained"
+    },
+    {
+      "path": "evidence/checked-relocated-recheck",
+      "inputs": 1,
+      "commands": 63,
+      "receipt_sha256": "740610899a0d5ee2c42c64e2412cac7c8d9cfb2185323c206fe148a8449b7e0f",
+      "package_manifest_sha256": "ddec7875ae8b6226b382f8ca25141765e663974407686e6be3edeb4ec5f0d11d",
+      "copied_bytes_unchanged": true,
+      "inspection": "integrity/consistency only; original fresh-run report retained"
+    }
+  ],
+  "interpretation": "Byte-preserving relocation of complete observed packages. Inspection is not a fresh Lean execution."
+}

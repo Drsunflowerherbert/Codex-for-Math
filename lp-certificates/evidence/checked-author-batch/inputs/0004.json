@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "problem": {
+    "objective": {"sense": "min", "coefficients": [3, -4]},
+    "constraints": [
+      {"coefficients": [1, 1], "sense": "=", "rhs": 0},
+      {"coefficients": [2, 2], "sense": "=", "rhs": 1}
+    ]
+  },
+  "certificate": {
+    "kind": "infeasible", "inequality_multipliers": [], "equality_multipliers": [2, -1]
+  }
+}

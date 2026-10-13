@@ -1,0 +1,20 @@
+{
+  "dimension": 0,
+  "direction": [],
+  "kind": "infeasible",
+  "objective": [],
+  "objective_sense": "max",
+  "point": [],
+  "row_count": 1,
+  "row_multipliers": [
+    "1"
+  ],
+  "rows": [
+    {
+      "coefficients": [],
+      "index": 0,
+      "rhs": "1",
+      "sense": ">="
+    }
+  ]
+}

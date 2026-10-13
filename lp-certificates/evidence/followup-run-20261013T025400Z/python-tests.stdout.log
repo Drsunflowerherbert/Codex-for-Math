@@ -1,0 +1,2 @@
+Independent finder counts: {'found': 4374, 'unknown': 0, 'invalid': 0} found kinds: {'optimal': 2114, 'infeasible': 1776, 'unbounded': 484}
+Independent exhaustive counts: {'optimal': 52488, 'infeasible': 2916, 'unbounded': 17496} accepted: {'optimal': 1752, 'infeasible': 96, 'unbounded': 224}

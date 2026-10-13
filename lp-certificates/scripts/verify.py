@@ -33,6 +33,7 @@ def digest(path):
 def inputs():
     paths = [ROOT / "lean-toolchain", ROOT / "lakefile.toml", ROOT / "lake-manifest.json",
              ROOT / "verifier.py", ROOT / "LPCertificates.lean"]
+    paths.extend(ROOT.glob("*.py"))
     for folder, suffix in (("LPCertificates", ".lean"), ("scripts", ".py"),
                            ("scripts", ".lean"), ("tests", ".py"), ("examples", ".json")):
         paths.extend(sorted((ROOT / folder).glob("*" + suffix)))
@@ -181,11 +182,19 @@ def main():
             expected.count("MATH_EVIDENCE_DEFINITION ") != 5 or
             expected.count("MATH_EVIDENCE_REPLAY ") != 1):
             raise ValueError("Incomplete expected-type/body/replay gate")
+        input_expected = run("independent-input-expected-and-replay",
+                             [lake, "env", "lean", "scripts/ExpectedInput.lean"])
+        if (re.search(r"(?mi)\b(?:error|warning):", input_expected) or
+            input_expected.count("MATH_EVIDENCE_TARGET ") != 3 or
+            input_expected.count("MATH_EVIDENCE_DEFINITION ") != 9 or
+            input_expected.count("MATH_EVIDENCE_REPLAY ") != 1):
+            raise ValueError("Incomplete original-input expected-type/body/replay gate")
         if inputs() != record["source_sha256"]:
             raise ValueError("Sources changed during verification")
         record["status"] = "passed"
         record["results"] = {"fresh_project_compilation": "passed", "named_axiom_audit": "passed",
                              "independent_expected_type_and_body_gate": "passed",
+                             "independent_original_input_type_and_body_gate": "passed",
                              "same_kernel_local_replay": "passed", "python_tests": "passed"}
     except Exception as error:
         record.update({"status": "failed", "failure": str(error)})

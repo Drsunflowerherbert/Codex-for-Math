@@ -1,0 +1,4050 @@
+{
+  "bridge_sha256": "c0fe2cbfc7511309f91524e86ed8e5342f0d891c090a343a0a1ee06736774dd2",
+  "commands": [
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:06.901845+00:00",
+      "exit_code": 0,
+      "label": "compiler-version",
+      "pid": 7760,
+      "started_utc": "2026-10-13T02:43:06.848726+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/compiler-version.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 106,
+        "observed_bytes": 106,
+        "path": "logs/compiler-version.stdout.log",
+        "sha256": "36c0bbaf090c97bc8217c6ff497ff9144fd83d9003f12cd505162b943aaaee77",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/mathlib",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:06.955702+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-00",
+      "pid": 7762,
+      "started_utc": "2026-10-13T02:43:06.903205+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-00.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.008985+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-00",
+      "pid": 7778,
+      "started_utc": "2026-10-13T02:43:06.956634+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-00.stdout.log",
+        "sha256": "cc49bfc965afbc1ef5877d1d1b12648323cb6d44f015d37593c63c2cd1d731c0",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/mathlib",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.062219+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-00",
+      "pid": 7779,
+      "started_utc": "2026-10-13T02:43:07.009970+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 53,
+        "observed_bytes": 53,
+        "path": "logs/pre-origin-00.stdout.log",
+        "sha256": "03e534cb626b55a5210b43c74776926d0ef07ac36b774832c9934433ee3c9d4c",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/plausible",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.115618+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-01",
+      "pid": 7780,
+      "started_utc": "2026-10-13T02:43:07.063255+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-01.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/plausible",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.168825+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-01",
+      "pid": 7781,
+      "started_utc": "2026-10-13T02:43:07.116588+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-01.stdout.log",
+        "sha256": "5f4ae658966fdc18933fe008f0fa3170b7c00c9cbdb3dc61ae991accf4bab97f",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/plausible",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.222285+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-01",
+      "pid": 7782,
+      "started_utc": "2026-10-13T02:43:07.169901+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 50,
+        "observed_bytes": 50,
+        "path": "logs/pre-origin-01.stdout.log",
+        "sha256": "f9e157058f246ccb009bd17773f68233dd8dade976dbb829338d6c201cf8599f",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/LeanSearchClient",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.276085+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-02",
+      "pid": 7783,
+      "started_utc": "2026-10-13T02:43:07.223375+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-02.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/LeanSearchClient",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.329958+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-02",
+      "pid": 7784,
+      "started_utc": "2026-10-13T02:43:07.277299+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-02.stdout.log",
+        "sha256": "ee39bdbdf92107dc88a4ecc2220d30f32902373c6f0739c8492be44a294847a4",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/LeanSearchClient",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.383567+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-02",
+      "pid": 7785,
+      "started_utc": "2026-10-13T02:43:07.330959+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 57,
+        "observed_bytes": 57,
+        "path": "logs/pre-origin-02.stdout.log",
+        "sha256": "619333dd697b0876afa6e558ee619ba42cc147c8ac9eb415d66d06cb3d13e196",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/importGraph",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.437321+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-03",
+      "pid": 7786,
+      "started_utc": "2026-10-13T02:43:07.384664+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-03.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/importGraph",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.490902+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-03",
+      "pid": 7787,
+      "started_utc": "2026-10-13T02:43:07.438378+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-03.stdout.log",
+        "sha256": "7f1b3a7459b33f77fb08847cc0be80357aa6fcfb8e846a3ffbdbb656fd08218b",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/importGraph",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.544780+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-03",
+      "pid": 7788,
+      "started_utc": "2026-10-13T02:43:07.492032+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 53,
+        "observed_bytes": 53,
+        "path": "logs/pre-origin-03.stdout.log",
+        "sha256": "e1308c66f365e49e7b8c10bd874950ac425bcc14aefe9881baf03c4f65f25cf1",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/proofwidgets",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.598746+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-04",
+      "pid": 7789,
+      "started_utc": "2026-10-13T02:43:07.546030+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-04.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/proofwidgets",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.652327+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-04",
+      "pid": 7790,
+      "started_utc": "2026-10-13T02:43:07.599826+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-04.stdout.log",
+        "sha256": "a26e42b6270d4e50e6866efb9277ecf9d573be7d8f53baaac54b61c0a9e4c9b1",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/proofwidgets",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.706297+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-04",
+      "pid": 7791,
+      "started_utc": "2026-10-13T02:43:07.653490+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 54,
+        "observed_bytes": 54,
+        "path": "logs/pre-origin-04.stdout.log",
+        "sha256": "d85a5cc11983798fb902072b68e0a279bae40189de64fe4ccaa3f969f8e7414c",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/aesop",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.760363+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-05",
+      "pid": 7792,
+      "started_utc": "2026-10-13T02:43:07.707542+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-05.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/aesop",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.814149+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-05",
+      "pid": 7793,
+      "started_utc": "2026-10-13T02:43:07.761619+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-05.stdout.log",
+        "sha256": "2ca5dc9099966d8b4d75f068570c8382e9b1743eb524d29dfd9c31f1b0357e68",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/aesop",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.867943+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-05",
+      "pid": 7794,
+      "started_utc": "2026-10-13T02:43:07.815437+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 46,
+        "observed_bytes": 46,
+        "path": "logs/pre-origin-05.stdout.log",
+        "sha256": "007ad2ffb6cd1115e54eb06162448481b6e57a2b38a5721fe9306aa73f377411",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/Qq",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.921967+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-06",
+      "pid": 7795,
+      "started_utc": "2026-10-13T02:43:07.869258+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-06.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/Qq",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:07.975796+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-06",
+      "pid": 7796,
+      "started_utc": "2026-10-13T02:43:07.923178+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-06.stdout.log",
+        "sha256": "b5c55d876bdd5b8f9c8f5c80247fd9a311a44e6be1ca930dff8fdac32763b3ef",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/Qq",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:08.029853+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-06",
+      "pid": 7797,
+      "started_utc": "2026-10-13T02:43:07.976996+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 47,
+        "observed_bytes": 47,
+        "path": "logs/pre-origin-06.stdout.log",
+        "sha256": "0edd7e60b5329aa479be59427897c3d131a4bed960e8a4faf0aaa6f3c176fe66",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/batteries",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:08.083739+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-07",
+      "pid": 7798,
+      "started_utc": "2026-10-13T02:43:08.031150+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-07.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/batteries",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:08.138174+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-07",
+      "pid": 7799,
+      "started_utc": "2026-10-13T02:43:08.085527+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-07.stdout.log",
+        "sha256": "7a7d1966b230b609b900348919460f414800232a58d0caa685a23bf7a41c2e73",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/batteries",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:08.192220+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-07",
+      "pid": 7800,
+      "started_utc": "2026-10-13T02:43:08.139423+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 50,
+        "observed_bytes": 50,
+        "path": "logs/pre-origin-07.stdout.log",
+        "sha256": "163e9977daaaf557a111a95edb87a473e4dabdef0c7ae0451d8d76ba9a6f1232",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/Cli",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:08.246496+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-08",
+      "pid": 7801,
+      "started_utc": "2026-10-13T02:43:08.193688+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-08.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/Cli",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:08.300522+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-08",
+      "pid": 7802,
+      "started_utc": "2026-10-13T02:43:08.247734+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-08.stdout.log",
+        "sha256": "8c4dfa759e1faa2e44986cb2e0a7df5843e2e4ed9587cc8c6db5730c7a517f02",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/Cli",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:43:08.354558+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-08",
+      "pid": 7803,
+      "started_utc": "2026-10-13T02:43:08.301844+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 40,
+        "observed_bytes": 40,
+        "path": "logs/pre-origin-08.stdout.log",
+        "sha256": "c0c02deff1a1a3fba1f471202c853e7ca2bda0764a0f6b3e95d0bf5e90c4ca79",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "LPCertificates/Core.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/LPCertificates/Core.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:43:15.244057+00:00",
+      "exit_code": 0,
+      "label": "library-00",
+      "pid": 7804,
+      "started_utc": "2026-10-13T02:43:08.360082+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-00.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "LPCertificates/Rational.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/LPCertificates/Rational.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:43:21.732375+00:00",
+      "exit_code": 0,
+      "label": "library-01",
+      "pid": 7808,
+      "started_utc": "2026-10-13T02:43:15.249253+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-01.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "LPCertificates/Input.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/LPCertificates/Input.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:43:30.489544+00:00",
+      "exit_code": 0,
+      "label": "library-02",
+      "pid": 7811,
+      "started_utc": "2026-10-13T02:43:21.734744+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-02.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "LPCertificates/Examples.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/LPCertificates/Examples.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:43:35.926621+00:00",
+      "exit_code": 0,
+      "label": "library-03",
+      "pid": 7817,
+      "started_utc": "2026-10-13T02:43:30.492301+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-03.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "LPCertificates.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/LPCertificates.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:43:40.873014+00:00",
+      "exit_code": 0,
+      "label": "library-04",
+      "pid": 7836,
+      "started_utc": "2026-10-13T02:43:35.928711+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-04.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "EvidenceHarness.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/EvidenceHarness.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:43:42.132404+00:00",
+      "exit_code": 0,
+      "label": "library-05",
+      "pid": 7839,
+      "started_utc": "2026-10-13T02:43:40.875121+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-05.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "scripts/ExpectedInput.lean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:44:01.689841+00:00",
+      "exit_code": 0,
+      "label": "input-expected",
+      "pid": 7843,
+      "started_utc": "2026-10-13T02:43:42.135534+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/input-expected.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 4718,
+        "observed_bytes": 4718,
+        "path": "logs/input-expected.stdout.log",
+        "sha256": "d0855a2881fb46d487f03c56b735cc101aa848e16b9be042df98d1904095b80d",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "Checked0000.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/Checked0000.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:44:16.655577+00:00",
+      "exit_code": 0,
+      "label": "instance-0000",
+      "pid": 7847,
+      "started_utc": "2026-10-13T02:44:01.694344+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0000.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1075,
+        "observed_bytes": 1075,
+        "path": "logs/instance-0000.stdout.log",
+        "sha256": "1697c6fd86b5901a89b3f27bedfb411ffc219356b7d00ff16253413d5fb0b20a",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "Checked0001.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/Checked0001.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:44:33.814255+00:00",
+      "exit_code": 0,
+      "label": "instance-0001",
+      "pid": 7852,
+      "started_utc": "2026-10-13T02:44:16.659449+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0001.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1075,
+        "observed_bytes": 1075,
+        "path": "logs/instance-0001.stdout.log",
+        "sha256": "1697c6fd86b5901a89b3f27bedfb411ffc219356b7d00ff16253413d5fb0b20a",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "Checked0002.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/Checked0002.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:44:52.533206+00:00",
+      "exit_code": 0,
+      "label": "instance-0002",
+      "pid": 7866,
+      "started_utc": "2026-10-13T02:44:33.818195+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0002.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1075,
+        "observed_bytes": 1075,
+        "path": "logs/instance-0002.stdout.log",
+        "sha256": "1697c6fd86b5901a89b3f27bedfb411ffc219356b7d00ff16253413d5fb0b20a",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "Checked0003.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/Checked0003.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:45:13.739402+00:00",
+      "exit_code": 0,
+      "label": "instance-0003",
+      "pid": 7894,
+      "started_utc": "2026-10-13T02:44:52.538642+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0003.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1190,
+        "observed_bytes": 1190,
+        "path": "logs/instance-0003.stdout.log",
+        "sha256": "e080553700b13237bc390e103b88d1bbd3d8b9baa3be999ee63c624f1fc10ce9",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "Checked0004.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/Checked0004.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:45:30.291770+00:00",
+      "exit_code": 0,
+      "label": "instance-0004",
+      "pid": 7907,
+      "started_utc": "2026-10-13T02:45:13.743089+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0004.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1222,
+        "observed_bytes": 1222,
+        "path": "logs/instance-0004.stdout.log",
+        "sha256": "51cfe498b73b1425a3c29dea8a4ea8aaad5fce482b5815fa6b79facb51856b52",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "Checked0005.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/Checked0005.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:45:51.178026+00:00",
+      "exit_code": 0,
+      "label": "instance-0005",
+      "pid": 7912,
+      "started_utc": "2026-10-13T02:45:30.300165+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0005.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1190,
+        "observed_bytes": 1190,
+        "path": "logs/instance-0005.stdout.log",
+        "sha256": "e080553700b13237bc390e103b88d1bbd3d8b9baa3be999ee63c624f1fc10ce9",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "Checked0006.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/Checked0006.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:46:16.957161+00:00",
+      "exit_code": 0,
+      "label": "instance-0006",
+      "pid": 7924,
+      "started_utc": "2026-10-13T02:45:51.181964+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0006.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1190,
+        "observed_bytes": 1190,
+        "path": "logs/instance-0006.stdout.log",
+        "sha256": "c152cdbae7fd66f3857bbece5d761f660fade90e76e86cc6fa9f92807e0b23ae",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "Checked0007.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/Checked0007.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:46:43.389167+00:00",
+      "exit_code": 0,
+      "label": "instance-0007",
+      "pid": 7956,
+      "started_utc": "2026-10-13T02:46:16.963979+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0007.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1159,
+        "observed_bytes": 1159,
+        "path": "logs/instance-0007.stdout.log",
+        "sha256": "ea0b4bb1ecb8cfc7a66f54c0baaea612cb3d3b5ac830a1b9f077a73912350317",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "Checked0008.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/Checked0008.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:47:02.521828+00:00",
+      "exit_code": 0,
+      "label": "instance-0008",
+      "pid": 8005,
+      "started_utc": "2026-10-13T02:46:43.410011+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0008.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1127,
+        "observed_bytes": 1127,
+        "path": "logs/instance-0008.stdout.log",
+        "sha256": "3181777189f010993d8da321ef6463dc3589f183ad90ddab2dcd27d74cad8257",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "Checked0009.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/Checked0009.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:47:22.842041+00:00",
+      "exit_code": 0,
+      "label": "instance-0009",
+      "pid": 8020,
+      "started_utc": "2026-10-13T02:47:02.533443+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0009.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1190,
+        "observed_bytes": 1190,
+        "path": "logs/instance-0009.stdout.log",
+        "sha256": "e080553700b13237bc390e103b88d1bbd3d8b9baa3be999ee63c624f1fc10ce9",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "Checked0010.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/Checked0010.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:47:42.785707+00:00",
+      "exit_code": 0,
+      "label": "instance-0010",
+      "pid": 8032,
+      "started_utc": "2026-10-13T02:47:22.847569+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0010.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1127,
+        "observed_bytes": 1127,
+        "path": "logs/instance-0010.stdout.log",
+        "sha256": "3181777189f010993d8da321ef6463dc3589f183ad90ddab2dcd27d74cad8257",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "Checked0011.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/Checked0011.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:48:03.148012+00:00",
+      "exit_code": 0,
+      "label": "instance-0011",
+      "pid": 8045,
+      "started_utc": "2026-10-13T02:47:42.797319+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0011.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1222,
+        "observed_bytes": 1222,
+        "path": "logs/instance-0011.stdout.log",
+        "sha256": "51cfe498b73b1425a3c29dea8a4ea8aaad5fce482b5815fa6b79facb51856b52",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+        "Checked0012.lean",
+        "-o",
+        "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean/Checked0012.olean"
+      ],
+      "cwd": "/tmp/lp-bridge-independent-live-20261013T024300Z/project",
+      "ended_utc": "2026-10-13T02:48:19.870226+00:00",
+      "exit_code": 0,
+      "label": "instance-0012",
+      "pid": 8059,
+      "started_utc": "2026-10-13T02:48:03.153261+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0012.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1190,
+        "observed_bytes": 1190,
+        "path": "logs/instance-0012.stdout.log",
+        "sha256": "c152cdbae7fd66f3857bbece5d761f660fade90e76e86cc6fa9f92807e0b23ae",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/mathlib",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:20.536965+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-00",
+      "pid": 8079,
+      "started_utc": "2026-10-13T02:48:20.475165+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-00.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:20.601917+00:00",
+      "exit_code": 0,
+      "label": "post-revision-00",
+      "pid": 8095,
+      "started_utc": "2026-10-13T02:48:20.542439+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-00.stdout.log",
+        "sha256": "cc49bfc965afbc1ef5877d1d1b12648323cb6d44f015d37593c63c2cd1d731c0",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/mathlib",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:20.663461+00:00",
+      "exit_code": 0,
+      "label": "post-origin-00",
+      "pid": 8096,
+      "started_utc": "2026-10-13T02:48:20.604123+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 53,
+        "observed_bytes": 53,
+        "path": "logs/post-origin-00.stdout.log",
+        "sha256": "03e534cb626b55a5210b43c74776926d0ef07ac36b774832c9934433ee3c9d4c",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/plausible",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:20.719783+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-01",
+      "pid": 8097,
+      "started_utc": "2026-10-13T02:48:20.665817+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-01.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/plausible",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:20.784860+00:00",
+      "exit_code": 0,
+      "label": "post-revision-01",
+      "pid": 8098,
+      "started_utc": "2026-10-13T02:48:20.722127+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-01.stdout.log",
+        "sha256": "5f4ae658966fdc18933fe008f0fa3170b7c00c9cbdb3dc61ae991accf4bab97f",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/plausible",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:20.848874+00:00",
+      "exit_code": 0,
+      "label": "post-origin-01",
+      "pid": 8099,
+      "started_utc": "2026-10-13T02:48:20.790419+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 50,
+        "observed_bytes": 50,
+        "path": "logs/post-origin-01.stdout.log",
+        "sha256": "f9e157058f246ccb009bd17773f68233dd8dade976dbb829338d6c201cf8599f",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/LeanSearchClient",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:20.910494+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-02",
+      "pid": 8100,
+      "started_utc": "2026-10-13T02:48:20.853296+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-02.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/LeanSearchClient",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:20.966568+00:00",
+      "exit_code": 0,
+      "label": "post-revision-02",
+      "pid": 8101,
+      "started_utc": "2026-10-13T02:48:20.912738+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-02.stdout.log",
+        "sha256": "ee39bdbdf92107dc88a4ecc2220d30f32902373c6f0739c8492be44a294847a4",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/LeanSearchClient",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.024959+00:00",
+      "exit_code": 0,
+      "label": "post-origin-02",
+      "pid": 8102,
+      "started_utc": "2026-10-13T02:48:20.968839+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 57,
+        "observed_bytes": 57,
+        "path": "logs/post-origin-02.stdout.log",
+        "sha256": "619333dd697b0876afa6e558ee619ba42cc147c8ac9eb415d66d06cb3d13e196",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/importGraph",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.081855+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-03",
+      "pid": 8103,
+      "started_utc": "2026-10-13T02:48:21.027488+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-03.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/importGraph",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.138078+00:00",
+      "exit_code": 0,
+      "label": "post-revision-03",
+      "pid": 8104,
+      "started_utc": "2026-10-13T02:48:21.084190+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-03.stdout.log",
+        "sha256": "7f1b3a7459b33f77fb08847cc0be80357aa6fcfb8e846a3ffbdbb656fd08218b",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/importGraph",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.194344+00:00",
+      "exit_code": 0,
+      "label": "post-origin-03",
+      "pid": 8105,
+      "started_utc": "2026-10-13T02:48:21.140386+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 53,
+        "observed_bytes": 53,
+        "path": "logs/post-origin-03.stdout.log",
+        "sha256": "e1308c66f365e49e7b8c10bd874950ac425bcc14aefe9881baf03c4f65f25cf1",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/proofwidgets",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.250700+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-04",
+      "pid": 8106,
+      "started_utc": "2026-10-13T02:48:21.196768+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-04.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/proofwidgets",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.307922+00:00",
+      "exit_code": 0,
+      "label": "post-revision-04",
+      "pid": 8107,
+      "started_utc": "2026-10-13T02:48:21.253014+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-04.stdout.log",
+        "sha256": "a26e42b6270d4e50e6866efb9277ecf9d573be7d8f53baaac54b61c0a9e4c9b1",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/proofwidgets",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.373171+00:00",
+      "exit_code": 0,
+      "label": "post-origin-04",
+      "pid": 8108,
+      "started_utc": "2026-10-13T02:48:21.316099+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 54,
+        "observed_bytes": 54,
+        "path": "logs/post-origin-04.stdout.log",
+        "sha256": "d85a5cc11983798fb902072b68e0a279bae40189de64fe4ccaa3f969f8e7414c",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/aesop",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.435113+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-05",
+      "pid": 8109,
+      "started_utc": "2026-10-13T02:48:21.375935+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-05.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/aesop",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.505554+00:00",
+      "exit_code": 0,
+      "label": "post-revision-05",
+      "pid": 8110,
+      "started_utc": "2026-10-13T02:48:21.444582+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-05.stdout.log",
+        "sha256": "2ca5dc9099966d8b4d75f068570c8382e9b1743eb524d29dfd9c31f1b0357e68",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/aesop",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.563968+00:00",
+      "exit_code": 0,
+      "label": "post-origin-05",
+      "pid": 8111,
+      "started_utc": "2026-10-13T02:48:21.509244+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 46,
+        "observed_bytes": 46,
+        "path": "logs/post-origin-05.stdout.log",
+        "sha256": "007ad2ffb6cd1115e54eb06162448481b6e57a2b38a5721fe9306aa73f377411",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/Qq",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.623421+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-06",
+      "pid": 8112,
+      "started_utc": "2026-10-13T02:48:21.567195+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-06.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/Qq",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.679869+00:00",
+      "exit_code": 0,
+      "label": "post-revision-06",
+      "pid": 8113,
+      "started_utc": "2026-10-13T02:48:21.625998+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-06.stdout.log",
+        "sha256": "b5c55d876bdd5b8f9c8f5c80247fd9a311a44e6be1ca930dff8fdac32763b3ef",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/Qq",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.736446+00:00",
+      "exit_code": 0,
+      "label": "post-origin-06",
+      "pid": 8114,
+      "started_utc": "2026-10-13T02:48:21.682416+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 47,
+        "observed_bytes": 47,
+        "path": "logs/post-origin-06.stdout.log",
+        "sha256": "0edd7e60b5329aa479be59427897c3d131a4bed960e8a4faf0aaa6f3c176fe66",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/batteries",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.793168+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-07",
+      "pid": 8115,
+      "started_utc": "2026-10-13T02:48:21.739288+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-07.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/batteries",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.849890+00:00",
+      "exit_code": 0,
+      "label": "post-revision-07",
+      "pid": 8116,
+      "started_utc": "2026-10-13T02:48:21.795856+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-07.stdout.log",
+        "sha256": "7a7d1966b230b609b900348919460f414800232a58d0caa685a23bf7a41c2e73",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/batteries",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.906304+00:00",
+      "exit_code": 0,
+      "label": "post-origin-07",
+      "pid": 8117,
+      "started_utc": "2026-10-13T02:48:21.852407+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 50,
+        "observed_bytes": 50,
+        "path": "logs/post-origin-07.stdout.log",
+        "sha256": "163e9977daaaf557a111a95edb87a473e4dabdef0c7ae0451d8d76ba9a6f1232",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/Cli",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:21.962875+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-08",
+      "pid": 8118,
+      "started_utc": "2026-10-13T02:48:21.908890+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-08.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/Cli",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:22.019540+00:00",
+      "exit_code": 0,
+      "label": "post-revision-08",
+      "pid": 8119,
+      "started_utc": "2026-10-13T02:48:21.965647+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-08.stdout.log",
+        "sha256": "8c4dfa759e1faa2e44986cb2e0a7df5843e2e4ed9587cc8c6db5730c7a517f02",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "/workspace/Codex-for-Math/tangent-limit/.lake/packages/Cli",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "/workspace/lp-research/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:22.076197+00:00",
+      "exit_code": 0,
+      "label": "post-origin-08",
+      "pid": 8120,
+      "started_utc": "2026-10-13T02:48:22.022302+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 40,
+        "observed_bytes": 40,
+        "path": "logs/post-origin-08.stdout.log",
+        "sha256": "c0c02deff1a1a3fba1f471202c853e7ca2bda0764a0f6b3e95d0bf5e90c4ca79",
+        "truncated": false
+      },
+      "termination": "exit"
+    }
+  ],
+  "dependencies": [
+    {
+      "cache": "/workspace/Codex-for-Math/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "mathlib",
+      "origin": "https://github.com/leanprover-community/mathlib4.git",
+      "revision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "tracked_status": ""
+    },
+    {
+      "cache": "/workspace/Codex-for-Math/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "plausible",
+      "origin": "https://github.com/leanprover-community/plausible",
+      "revision": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "tracked_status": ""
+    },
+    {
+      "cache": "/workspace/Codex-for-Math/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "LeanSearchClient",
+      "origin": "https://github.com/leanprover-community/LeanSearchClient",
+      "revision": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "tracked_status": ""
+    },
+    {
+      "cache": "/workspace/Codex-for-Math/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "importGraph",
+      "origin": "https://github.com/leanprover-community/import-graph",
+      "revision": "d768126816be17600904726ca7976b185786e6b9",
+      "tracked_status": ""
+    },
+    {
+      "cache": "/workspace/Codex-for-Math/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "proofwidgets",
+      "origin": "https://github.com/leanprover-community/ProofWidgets4",
+      "revision": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "tracked_status": ""
+    },
+    {
+      "cache": "/workspace/Codex-for-Math/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "aesop",
+      "origin": "https://github.com/leanprover-community/aesop",
+      "revision": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "tracked_status": ""
+    },
+    {
+      "cache": "/workspace/Codex-for-Math/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "Qq",
+      "origin": "https://github.com/leanprover-community/quote4",
+      "revision": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "tracked_status": ""
+    },
+    {
+      "cache": "/workspace/Codex-for-Math/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "batteries",
+      "origin": "https://github.com/leanprover-community/batteries",
+      "revision": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "tracked_status": ""
+    },
+    {
+      "cache": null,
+      "cache_status": "absent_not_imported",
+      "name": "Cli",
+      "origin": "https://github.com/leanprover/lean4-cli",
+      "revision": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "tracked_status": ""
+    }
+  ],
+  "ended_utc": "2026-10-13T02:48:22.092347+00:00",
+  "inputs": [
+    {
+      "id": "0000",
+      "input_bytes": 541,
+      "input_sha256": "794b487665af27e5a7066deb6ec1b0c4b0ecc46d48e2035f17cefc6090fa550b",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 177,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputInfeasible problem weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "\u00ac\u2203 y, InputFeasible problem y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "checks": [
+          {
+            "code": "coefficient_identity",
+            "lhs": "0",
+            "passed": true,
+            "path": "combination.coefficients[0]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "0",
+            "passed": true,
+            "path": "combination.coefficients[1]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "contradiction",
+            "lhs": "-1",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "<",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 2,
+        "equality_rows": 2,
+        "inequality_rows": 0,
+        "kind": "infeasible",
+        "objective_sense": "min",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0001",
+      "input_bytes": 504,
+      "input_sha256": "9181439e9e032cbda9d9ff8a094b4b344023fc1efe9b157be8a317ffe9c412b9",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 177,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputInfeasible problem weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "\u00ac\u2203 y, InputFeasible problem y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "checks": [
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[0]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[1]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "0",
+            "passed": true,
+            "path": "combination.coefficients[0]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "contradiction",
+            "lhs": "-1",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "<",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 1,
+        "equality_rows": 0,
+        "inequality_rows": 2,
+        "kind": "infeasible",
+        "objective_sense": "max",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0002",
+      "input_bytes": 351,
+      "input_sha256": "85eb6e546404004a1d49b8045f9ffa018c8de0b9e0615b2b43b4012626d5611d",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 177,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputInfeasible problem weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "\u00ac\u2203 y, InputFeasible problem y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "checks": [
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[0]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "contradiction",
+            "lhs": "-1",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "<",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 0,
+        "equality_rows": 0,
+        "inequality_rows": 1,
+        "kind": "infeasible",
+        "objective_sense": "max",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0003",
+      "input_bytes": 318,
+      "input_sha256": "dee3ad8a4583a62382aaac010e5a5eec141b80b28a55bf3b1a6a3b2460566bea",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputOptimal problem point weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "InputFeasible problem (realVector point) \u2227\n  \u2200 (y : Fin 2 \u2192 \u211d), InputFeasible problem y \u2192 ObjectiveBound problem (realVector point) y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "certified_objective_value": "0",
+        "checks": [
+          {
+            "code": "coefficient_identity",
+            "lhs": "0",
+            "passed": true,
+            "path": "combination.coefficients[0]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "0",
+            "passed": true,
+            "path": "combination.coefficients[1]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "bound_attained",
+            "lhs": "0",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "=",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 2,
+        "equality_rows": 0,
+        "inequality_rows": 0,
+        "kind": "optimal",
+        "objective_sense": "min",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0004",
+      "input_bytes": 547,
+      "input_sha256": "cb55a77035eeaaf89afcbe345111f5dbd612cd82393b37359c2cf9cecc882b85",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputOptimal problem point weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "InputFeasible problem (realVector point) \u2227\n  \u2200 (y : Fin 1 \u2192 \u211d), InputFeasible problem y \u2192 ObjectiveBound problem (realVector point) y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "certified_objective_value": "1/2",
+        "checks": [
+          {
+            "code": "point_feasibility",
+            "lhs": "-1/3",
+            "passed": true,
+            "path": "$.certificate.point/row[0]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.point/row[1]",
+            "relation": "=",
+            "rhs": "1"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[0]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "-3/2",
+            "passed": true,
+            "path": "combination.coefficients[0]",
+            "relation": "=",
+            "rhs": "-3/2"
+          },
+          {
+            "code": "bound_attained",
+            "lhs": "-1/2",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "=",
+            "rhs": "-1/2"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 1,
+        "equality_rows": 1,
+        "inequality_rows": 1,
+        "kind": "optimal",
+        "objective_sense": "min",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0005",
+      "input_bytes": 973,
+      "input_sha256": "732b0c0505f89afbfe24ae0949f834e2c2322cc2043ba17281041449f91cc5b0",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputOptimal problem point weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "InputFeasible problem (realVector point) \u2227\n  \u2200 (y : Fin 2 \u2192 \u211d), InputFeasible problem y \u2192 ObjectiveBound problem (realVector point) y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "certified_objective_value": "10",
+        "checks": [
+          {
+            "code": "point_feasibility",
+            "lhs": "4",
+            "passed": true,
+            "path": "$.certificate.point/row[0]",
+            "relation": "<=",
+            "rhs": "4"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "8",
+            "passed": true,
+            "path": "$.certificate.point/row[1]",
+            "relation": "<=",
+            "rhs": "8"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "-2",
+            "passed": true,
+            "path": "$.certificate.point/row[2]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "-2",
+            "passed": true,
+            "path": "$.certificate.point/row[3]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.point/row[4]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[0]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "3/4",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[1]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[2]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[3]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "3",
+            "passed": true,
+            "path": "combination.coefficients[0]",
+            "relation": "=",
+            "rhs": "3"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "2",
+            "passed": true,
+            "path": "combination.coefficients[1]",
+            "relation": "=",
+            "rhs": "2"
+          },
+          {
+            "code": "bound_attained",
+            "lhs": "10",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "=",
+            "rhs": "10"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 2,
+        "equality_rows": 1,
+        "inequality_rows": 4,
+        "kind": "optimal",
+        "objective_sense": "max",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0006",
+      "input_bytes": 463,
+      "input_sha256": "88cd1b3c18d3989c872248fc379e2759e9cd5f6b747682de9ff884b67f24a306",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputOptimal problem point weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "InputFeasible problem (realVector point) \u2227\n  \u2200 (y : Fin 0 \u2192 \u211d), InputFeasible problem y \u2192 ObjectiveBound problem (realVector point) y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "certified_objective_value": "0",
+        "checks": [
+          {
+            "code": "point_feasibility",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.point/row[0]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.point/row[1]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[0]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "bound_attained",
+            "lhs": "0",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "=",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 0,
+        "equality_rows": 1,
+        "inequality_rows": 1,
+        "kind": "optimal",
+        "objective_sense": "max",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0007",
+      "input_bytes": 272,
+      "input_sha256": "a23164053f2c7cb1388791d01432fe1b59ea63df65f84caf8a38e61762ebcd81",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputUnbounded problem point direction = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "\u2200 (B : \u211d), \u2203 y, InputFeasible problem y \u2227 ObjectiveBeyond problem B y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "checks": [
+          {
+            "code": "strict_improvement",
+            "lhs": "1",
+            "passed": true,
+            "path": "normalized_objective.direction",
+            "relation": ">",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 1,
+        "equality_rows": 0,
+        "inequality_rows": 0,
+        "kind": "unbounded",
+        "objective_sense": "max",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0008",
+      "input_bytes": 659,
+      "input_sha256": "d0316520a879726ad1533106b932a18289aaa444088677405c705a0e20132031",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputUnbounded problem point direction = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "\u2200 (B : \u211d), \u2203 y, InputFeasible problem y \u2227 ObjectiveBeyond problem B y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "checks": [
+          {
+            "code": "point_feasibility",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.base_point/row[0]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.base_point/row[1]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.base_point/row[2]",
+            "relation": "=",
+            "rhs": "1"
+          },
+          {
+            "code": "recession_direction",
+            "lhs": "-1",
+            "passed": true,
+            "path": "$.certificate.direction/row[0]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "recession_direction",
+            "lhs": "-2",
+            "passed": true,
+            "path": "$.certificate.direction/row[1]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "recession_direction",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.direction/row[2]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "strict_improvement",
+            "lhs": "1",
+            "passed": true,
+            "path": "normalized_objective.direction",
+            "relation": ">",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 2,
+        "equality_rows": 1,
+        "inequality_rows": 2,
+        "kind": "unbounded",
+        "objective_sense": "min",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0009",
+      "input_bytes": 965,
+      "input_sha256": "0330573e32bcb7650dd4fecc98f9e3da1150a2fa2f2d5eeac8b9fcdbbe57405f",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputOptimal problem point weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "InputFeasible problem (realVector point) \u2227\n  \u2200 (y : Fin 2 \u2192 \u211d), InputFeasible problem y \u2192 ObjectiveBound problem (realVector point) y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "certified_objective_value": "3",
+        "checks": [
+          {
+            "code": "point_feasibility",
+            "lhs": "-1",
+            "passed": true,
+            "path": "$.certificate.point/row[1]",
+            "relation": "<=",
+            "rhs": "-1"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "-6",
+            "passed": true,
+            "path": "$.certificate.point/row[3]",
+            "relation": "<=",
+            "rhs": "-6"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.point/row[4]",
+            "relation": "<=",
+            "rhs": "4"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.point/row[0]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.point/row[2]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "3",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[0]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[1]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[2]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "-1",
+            "passed": true,
+            "path": "combination.coefficients[0]",
+            "relation": "=",
+            "rhs": "-1"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "-2",
+            "passed": true,
+            "path": "combination.coefficients[1]",
+            "relation": "=",
+            "rhs": "-2"
+          },
+          {
+            "code": "bound_attained",
+            "lhs": "-3",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "=",
+            "rhs": "-3"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 2,
+        "equality_rows": 2,
+        "inequality_rows": 3,
+        "kind": "optimal",
+        "objective_sense": "min",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0010",
+      "input_bytes": 541,
+      "input_sha256": "e48cddadb9bad0928f44c28a91da3b1d47a5319fc977ffd10b72dc5b99df6b6e",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputUnbounded problem point direction = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "\u2200 (B : \u211d), \u2203 y, InputFeasible problem y \u2227 ObjectiveBeyond problem B y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "checks": [
+          {
+            "code": "point_feasibility",
+            "lhs": "-2",
+            "passed": true,
+            "path": "$.certificate.base_point/row[1]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.base_point/row[0]",
+            "relation": "=",
+            "rhs": "1"
+          },
+          {
+            "code": "recession_direction",
+            "lhs": "-1",
+            "passed": true,
+            "path": "$.certificate.direction/row[1]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "recession_direction",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.direction/row[0]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "strict_improvement",
+            "lhs": "3",
+            "passed": true,
+            "path": "normalized_objective.direction",
+            "relation": ">",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 2,
+        "equality_rows": 1,
+        "inequality_rows": 1,
+        "kind": "unbounded",
+        "objective_sense": "max",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0011",
+      "input_bytes": 585,
+      "input_sha256": "246859d11f881d33ae04c4ea764d12f262b6a5fe2bd2446e2cee23abdf939faf",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputOptimal problem point weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "InputFeasible problem (realVector point) \u2227\n  \u2200 (y : Fin 1 \u2192 \u211d), InputFeasible problem y \u2192 ObjectiveBound problem (realVector point) y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "certified_objective_value": "1/2",
+        "checks": [
+          {
+            "code": "point_feasibility",
+            "lhs": "-1/3",
+            "passed": true,
+            "path": "$.certificate.point/row[0]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.point/row[1]",
+            "relation": "=",
+            "rhs": "1"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[0]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "-3/2",
+            "passed": true,
+            "path": "combination.coefficients[0]",
+            "relation": "=",
+            "rhs": "-3/2"
+          },
+          {
+            "code": "bound_attained",
+            "lhs": "-1/2",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "=",
+            "rhs": "-1/2"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 1,
+        "equality_rows": 1,
+        "inequality_rows": 1,
+        "kind": "optimal",
+        "objective_sense": "min",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0012",
+      "input_bytes": 263,
+      "input_sha256": "7b936aa9d61590c2cd49ff916f5455ac1d8d66b79d79d8e51b1772c8af585ed9",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputOptimal problem point weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "InputFeasible problem (realVector point) \u2227\n  \u2200 (y : Fin 0 \u2192 \u211d), InputFeasible problem y \u2192 ObjectiveBound problem (realVector point) y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "certified_objective_value": "0",
+        "checks": [
+          {
+            "code": "bound_attained",
+            "lhs": "0",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "=",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 0,
+        "equality_rows": 0,
+        "inequality_rows": 0,
+        "kind": "optimal",
+        "objective_sense": "min",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    }
+  ],
+  "lean_path": "/tmp/lp-bridge-independent-live-20261013T024300Z/.work/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean",
+  "library_expected_gate": "passed",
+  "library_sources": {
+    "EvidenceHarness.lean": {
+      "bytes": 6371,
+      "sha256": "bb71282fcb088498a9c40b0460694f1663e8f3a145fc15469050b8ade2f390dc"
+    },
+    "LPCertificates.lean": {
+      "bytes": 117,
+      "sha256": "2f413af4039969062d39053edb85b06b03ee9c8a7776c5ef0b9c4d2276e4cf78"
+    },
+    "LPCertificates/Core.lean": {
+      "bytes": 6684,
+      "sha256": "5c9755bfdc0b11dcd680a2bfd42da61c5a73f2107cb8bb564be83821af2fb59a"
+    },
+    "LPCertificates/Examples.lean": {
+      "bytes": 4044,
+      "sha256": "159433f1444e5fcf641028091bb926cb3282b0bc275cca09069ea5231f499f94"
+    },
+    "LPCertificates/Input.lean": {
+      "bytes": 5660,
+      "sha256": "4bfbbd5058b142ad21657462963ccf80a6bdd1dbdfc9fa36ae78253ee605eae7"
+    },
+    "LPCertificates/Rational.lean": {
+      "bytes": 5847,
+      "sha256": "be5b7bf5c286303fef192404ddb6d2e07f8c3c7a5b794548740382b0722f5f94"
+    },
+    "lake-manifest.json": {
+      "bytes": 3542,
+      "sha256": "fa235a31755c091135e667ffb4085455396f4b8ef6077f6e53c3556ce05a65d7"
+    },
+    "lakefile.toml": {
+      "bytes": 288,
+      "sha256": "4b65bceca43c56f756725d981755a40d4078867952dce5c6338af189e9c59788"
+    },
+    "lean-toolchain": {
+      "bytes": 25,
+      "sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434"
+    },
+    "scripts/ExpectedInput.lean": {
+      "bytes": 5824,
+      "sha256": "51592c9b71c70f87eff6f8f541c189a75370a06e6a617bb2c43ea479a1527ad7"
+    }
+  },
+  "postflight": "all input/source/compiler/dependency/output/product identities unchanged",
+  "products": [
+    {
+      "bytes": 467152,
+      "module": "LPCertificates/Core",
+      "retained": false,
+      "sha256": "624c7442243055906e1efca5f106a2c183b5f9d0f5c28f2b6a38bc6b4a573d54"
+    },
+    {
+      "bytes": 241696,
+      "module": "LPCertificates/Rational",
+      "retained": false,
+      "sha256": "9f8bf719935716f3dc4b75a0744c25921c1feb21c94c6ed1d75bc0450a1ea334"
+    },
+    {
+      "bytes": 448880,
+      "module": "LPCertificates/Input",
+      "retained": false,
+      "sha256": "2533dae4cbe7ede25639dd0f37d972f745b759b1234df52dedb69a6dba0f1e76"
+    },
+    {
+      "bytes": 194688,
+      "module": "LPCertificates/Examples",
+      "retained": false,
+      "sha256": "e21518ffc0ca80d536598a760c72c0faefde1aa6a0361bfdc5b5d3c2e4f3a6b5"
+    },
+    {
+      "bytes": 38816,
+      "module": "LPCertificates",
+      "retained": false,
+      "sha256": "4a614c026b9452ceeac28811dc476650656a435dda2d202535ed22597e73d838"
+    },
+    {
+      "bytes": 721080,
+      "module": "EvidenceHarness",
+      "retained": false,
+      "sha256": "fda685d1a89f4054f857619837226a3c8e33dc236ed369409f847d32f0a23456"
+    },
+    {
+      "bytes": 85424,
+      "module": "Checked0000",
+      "retained": false,
+      "sha256": "eaea0691f60fcd919f7a9b79699747d432aacf6c02fd1ce8c9447b54ca6ac0ae"
+    },
+    {
+      "bytes": 74720,
+      "module": "Checked0001",
+      "retained": false,
+      "sha256": "9b8994e84e2203d770a6ed4089e834a75d53afd27d09ed46723abe776358150c"
+    },
+    {
+      "bytes": 66664,
+      "module": "Checked0002",
+      "retained": false,
+      "sha256": "fe8ada95aae076f912be953dd83934c8df2e1fe251077da6b828e4c260564f0d"
+    },
+    {
+      "bytes": 72448,
+      "module": "Checked0003",
+      "retained": false,
+      "sha256": "a9a00ac48895363324bf8865ccf5fb777fa484bb9be569aff4449571ba828573"
+    },
+    {
+      "bytes": 87664,
+      "module": "Checked0004",
+      "retained": false,
+      "sha256": "ab61631035b529d770b90a1b08d5cf75ca00ba158c4dfbf86de3936a62d9cd98"
+    },
+    {
+      "bytes": 114232,
+      "module": "Checked0005",
+      "retained": false,
+      "sha256": "967ab9923f1d758469d2a57c2e964d32b12fe2f79ed6b8418507876fa117477f"
+    },
+    {
+      "bytes": 76456,
+      "module": "Checked0006",
+      "retained": false,
+      "sha256": "461bb8888583579e4c94dfb08678be12822cf5b5cd23cc73d0392c4c807db9c9"
+    },
+    {
+      "bytes": 67616,
+      "module": "Checked0007",
+      "retained": false,
+      "sha256": "9af3b7c5140d4738a9e40205609cb9aea634afe031ae7dedca3c6dced85ad670"
+    },
+    {
+      "bytes": 90472,
+      "module": "Checked0008",
+      "retained": false,
+      "sha256": "3fb09e0b4933576aeaabff9de8f5f355fa4f702026e59919e27ef47c99f9bd1b"
+    },
+    {
+      "bytes": 111936,
+      "module": "Checked0009",
+      "retained": false,
+      "sha256": "2df722199c9631d1abb742948f67527c5703b0c77f03a75309e5496f66284306"
+    },
+    {
+      "bytes": 87880,
+      "module": "Checked0010",
+      "retained": false,
+      "sha256": "9788c9c2999bcf27ed53f00edd60b4092e35b87f7a99170c322540401fa0361d"
+    },
+    {
+      "bytes": 87664,
+      "module": "Checked0011",
+      "retained": false,
+      "sha256": "e670d80a0f02a3153f2572623fa9201bac0041d6e16f3d8ee7c3e5a4a2886f47"
+    },
+    {
+      "bytes": 54888,
+      "module": "Checked0012",
+      "retained": false,
+      "sha256": "3302e440532192699db8db27cd6767289225504e84c9b0901376decb9eb973d9"
+    }
+  ],
+  "resource_bounds": {
+    "address_space_bytes": 17179869184,
+    "lean_heap_megabytes": 4096,
+    "lean_threads": 1,
+    "log_bytes_per_stream": 2097152,
+    "timeout_seconds": 240
+  },
+  "schema": "lp-certificates-checked-bridge/v1",
+  "started_utc": "2026-10-13T02:43:06.698603+00:00",
+  "status": "lean_checked",
+  "toolchain": {
+    "commit": "797c613eb9b6d4ec95db23e3e00af9ac6657f24b",
+    "lean": "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+    "members": {
+      "bin/lean": {
+        "bytes": 9024,
+        "sha256": "8fadc3ed92cc9decb94c96ee9c0876e91e03a3a5e69138f32114f02789e2766c"
+      },
+      "lib/lean/libInit_shared.so": {
+        "bytes": 6232,
+        "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+      },
+      "lib/lean/libleanshared.so": {
+        "bytes": 193479936,
+        "sha256": "8cc9858cc57c52015ba6dd948bdbf7f05926b9b5fcead69a964f0ad61ddd79dd"
+      },
+      "lib/lean/libleanshared_1.so": {
+        "bytes": 6232,
+        "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+      },
+      "lib/lean/libleanshared_2.so": {
+        "bytes": 6232,
+        "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+      }
+    },
+    "prefix": "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux",
+    "release": "4.24.0"
+  },
+  "trust_limits": [
+    "JSON-to-Lean transcription is trusted, not a proved parser refinement",
+    "host runtime and clean pinned dependency caches are trusted",
+    "same Lean kernel replay, not an independent kernel implementation",
+    "package hashes attest consistency, not historical execution authenticity",
+    "no finding/completeness, native Mac, or installed MRS claim"
+  ],
+  "verifier_sha256": "bb55c5f57a91d9c8c225ab3dc219a718a383e13249314fff29b5a1ad33e290fb"
+}

@@ -1,0 +1,385 @@
+@LPCertificates.dot.{u_1} : {α : Type u_1} → [Field.{u_1} α] → {n : Nat} → (Fin n → α) → (Fin n → α) → α
+'LPCertificates.dot' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.Feasible.{u_1} : {α : Type u_1} →
+  [Field.{u_1} α] → [LinearOrder.{u_1} α] → {n m k : Nat} → LPCertificates.Problem.{u_1} α n m k → (Fin n → α) → Prop
+'LPCertificates.Feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.Nonnegative.{u_1} : {α : Type u_1} →
+  [Field.{u_1} α] → [LinearOrder.{u_1} α] → {m : Nat} → (Fin m → α) → Prop
+'LPCertificates.Nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.combination.{u_1} : {α : Type u_1} →
+  [Field.{u_1} α] → {n m k : Nat} → LPCertificates.Problem.{u_1} α n m k → (Fin m → α) → (Fin k → α) → Fin n → α
+'LPCertificates.combination' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.bound.{u_1} : {α : Type u_1} →
+  [Field.{u_1} α] → {n m k : Nat} → LPCertificates.Problem.{u_1} α n m k → (Fin m → α) → (Fin k → α) → α
+'LPCertificates.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.DualCertificate.{u_1} : {α : Type u_1} →
+  [Field.{u_1} α] →
+    [LinearOrder.{u_1} α] → {n m k : Nat} → LPCertificates.Problem.{u_1} α n m k → (Fin m → α) → (Fin k → α) → Prop
+'LPCertificates.DualCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.OptimalCertificate.{u_1} : {α : Type u_1} →
+  [Field.{u_1} α] →
+    [LinearOrder.{u_1} α] →
+      {n m k : Nat} → LPCertificates.Problem.{u_1} α n m k → (Fin n → α) → (Fin m → α) → (Fin k → α) → Prop
+'LPCertificates.OptimalCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.InfeasibleCertificate.{u_1} : {α : Type u_1} →
+  [Field.{u_1} α] →
+    [LinearOrder.{u_1} α] → {n m k : Nat} → LPCertificates.Problem.{u_1} α n m k → (Fin m → α) → (Fin k → α) → Prop
+'LPCertificates.InfeasibleCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.RayCertificate.{u_1} : {α : Type u_1} →
+  [Field.{u_1} α] →
+    [LinearOrder.{u_1} α] → {n m k : Nat} → LPCertificates.Problem.{u_1} α n m k → (Fin n → α) → (Fin n → α) → Prop
+'LPCertificates.RayCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.dot_add.{u_1} : ∀ {α : Type u_1} [inst : Field.{u_1} α] {n : Nat} (u v x : Fin n → α),
+  Eq.{u_1 + 1} (LPCertificates.dot.{u_1} (fun j => HAdd.hAdd.{u_1, u_1, u_1} (u j) (v j)) x)
+    (HAdd.hAdd.{u_1, u_1, u_1} (LPCertificates.dot.{u_1} u x) (LPCertificates.dot.{u_1} v x))
+'LPCertificates.dot_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.dot_add_right.{u_1} : ∀ {α : Type u_1} [inst : Field.{u_1} α] {n : Nat} (a x d : Fin n → α),
+  Eq.{u_1 + 1} (LPCertificates.dot.{u_1} a fun j => HAdd.hAdd.{u_1, u_1, u_1} (x j) (d j))
+    (HAdd.hAdd.{u_1, u_1, u_1} (LPCertificates.dot.{u_1} a x) (LPCertificates.dot.{u_1} a d))
+'LPCertificates.dot_add_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.dot_smul_right.{u_1} : ∀ {α : Type u_1} [inst : Field.{u_1} α] {n : Nat} (a d : Fin n → α) (t : α),
+  Eq.{u_1 + 1} (LPCertificates.dot.{u_1} a fun j => HMul.hMul.{u_1, u_1, u_1} t (d j))
+    (HMul.hMul.{u_1, u_1, u_1} t (LPCertificates.dot.{u_1} a d))
+'LPCertificates.dot_smul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.weighted_dot.{u_1} : ∀ {α : Type u_1} [inst : Field.{u_1} α] {n m : Nat} (A : Fin m → Fin n → α)
+  (w : Fin m → α) (x : Fin n → α),
+  Eq.{u_1 + 1} (∑ i, HMul.hMul.{u_1, u_1, u_1} (w i) (LPCertificates.dot.{u_1} (A i) x))
+    (LPCertificates.dot.{u_1} (fun j => ∑ i, HMul.hMul.{u_1, u_1, u_1} (w i) (A i j)) x)
+'LPCertificates.weighted_dot' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.combination_dot.{u_1} : ∀ {α : Type u_1} [inst : Field.{u_1} α] {n m k : Nat}
+  (P : LPCertificates.Problem.{u_1} α n m k) (w : Fin m → α) (v : Fin k → α) (x : Fin n → α),
+  Eq.{u_1 + 1} (LPCertificates.dot.{u_1} (LPCertificates.combination.{u_1} P w v) x)
+    (HAdd.hAdd.{u_1, u_1, u_1}
+      (∑ i, HMul.hMul.{u_1, u_1, u_1} (w i) (LPCertificates.dot.{u_1} (LPCertificates.Problem.A.{u_1} P i) x))
+      (∑ i, HMul.hMul.{u_1, u_1, u_1} (v i) (LPCertificates.dot.{u_1} (LPCertificates.Problem.E.{u_1} P i) x)))
+'LPCertificates.combination_dot' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.combination_bound.{u_1} : ∀ {α : Type u_1} [inst : Field.{u_1} α] [inst_1 : LinearOrder.{u_1} α]
+  [IsStrictOrderedRing.{u_1} α] {n m k : Nat} (P : LPCertificates.Problem.{u_1} α n m k) (w : Fin m → α)
+  (v : Fin k → α),
+  LPCertificates.Nonnegative.{u_1} w →
+    ∀ (x : Fin n → α),
+      LPCertificates.Feasible.{u_1} P x →
+        LE.le.{u_1} (LPCertificates.dot.{u_1} (LPCertificates.combination.{u_1} P w v) x)
+          (LPCertificates.bound.{u_1} P w v)
+'LPCertificates.combination_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.weak_duality.{u_1} : ∀ {α : Type u_1} [inst : Field.{u_1} α] [inst_1 : LinearOrder.{u_1} α]
+  [IsStrictOrderedRing.{u_1} α] {n m k : Nat} (P : LPCertificates.Problem.{u_1} α n m k) (w : Fin m → α)
+  (v : Fin k → α),
+  LPCertificates.DualCertificate.{u_1} P w v →
+    ∀ (x : Fin n → α),
+      LPCertificates.Feasible.{u_1} P x →
+        LE.le.{u_1} (LPCertificates.dot.{u_1} (LPCertificates.Problem.c.{u_1} P) x) (LPCertificates.bound.{u_1} P w v)
+'LPCertificates.weak_duality' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.optimal_sound.{u_1} : ∀ {α : Type u_1} [inst : Field.{u_1} α] [inst_1 : LinearOrder.{u_1} α]
+  [IsStrictOrderedRing.{u_1} α] {n m k : Nat} (P : LPCertificates.Problem.{u_1} α n m k) (x : Fin n → α) (w : Fin m → α)
+  (v : Fin k → α),
+  LPCertificates.OptimalCertificate.{u_1} P x w v →
+    And (LPCertificates.Feasible.{u_1} P x)
+      (∀ (y : Fin n → α),
+        LPCertificates.Feasible.{u_1} P y →
+          LE.le.{u_1} (LPCertificates.dot.{u_1} (LPCertificates.Problem.c.{u_1} P) y)
+            (LPCertificates.dot.{u_1} (LPCertificates.Problem.c.{u_1} P) x))
+'LPCertificates.optimal_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.infeasible_sound.{u_1} : ∀ {α : Type u_1} [inst : Field.{u_1} α] [inst_1 : LinearOrder.{u_1} α]
+  [IsStrictOrderedRing.{u_1} α] {n m k : Nat} (P : LPCertificates.Problem.{u_1} α n m k) (w : Fin m → α)
+  (v : Fin k → α), LPCertificates.InfeasibleCertificate.{u_1} P w v → Not (∃ x, LPCertificates.Feasible.{u_1} P x)
+'LPCertificates.infeasible_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.ray_feasible.{u_1} : ∀ {α : Type u_1} [inst : Field.{u_1} α] [inst_1 : LinearOrder.{u_1} α]
+  [IsStrictOrderedRing.{u_1} α] {n m k : Nat} (P : LPCertificates.Problem.{u_1} α n m k) (x d : Fin n → α),
+  LPCertificates.RayCertificate.{u_1} P x d →
+    ∀ (t : α),
+      LE.le.{u_1} 0 t →
+        LPCertificates.Feasible.{u_1} P fun j => HAdd.hAdd.{u_1, u_1, u_1} (x j) (HMul.hMul.{u_1, u_1, u_1} t (d j))
+'LPCertificates.ray_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.ray_objective.{u_1} : ∀ {α : Type u_1} [inst : Field.{u_1} α] {n m k : Nat}
+  (P : LPCertificates.Problem.{u_1} α n m k) (x d : Fin n → α) (t : α),
+  Eq.{u_1 + 1}
+    (LPCertificates.dot.{u_1} (LPCertificates.Problem.c.{u_1} P) fun j =>
+      HAdd.hAdd.{u_1, u_1, u_1} (x j) (HMul.hMul.{u_1, u_1, u_1} t (d j)))
+    (HAdd.hAdd.{u_1, u_1, u_1} (LPCertificates.dot.{u_1} (LPCertificates.Problem.c.{u_1} P) x)
+      (HMul.hMul.{u_1, u_1, u_1} t (LPCertificates.dot.{u_1} (LPCertificates.Problem.c.{u_1} P) d)))
+'LPCertificates.ray_objective' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.unbounded_sound.{u_1} : ∀ {α : Type u_1} [inst : Field.{u_1} α] [inst_1 : LinearOrder.{u_1} α]
+  [IsStrictOrderedRing.{u_1} α] {n m k : Nat} (P : LPCertificates.Problem.{u_1} α n m k) (x d : Fin n → α),
+  LPCertificates.RayCertificate.{u_1} P x d →
+    ∀ (B : α),
+      ∃ y,
+        And (LPCertificates.Feasible.{u_1} P y)
+          (LT.lt.{u_1} B (LPCertificates.dot.{u_1} (LPCertificates.Problem.c.{u_1} P) y))
+'LPCertificates.unbounded_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.duality_gap.{u_1} : ∀ {α : Type u_1} [inst : Field.{u_1} α] [inst_1 : LinearOrder.{u_1} α] {n m k : Nat}
+  (P : LPCertificates.Problem.{u_1} α n m k) (w : Fin m → α) (v : Fin k → α),
+  LPCertificates.DualCertificate.{u_1} P w v →
+    ∀ (x : Fin n → α),
+      LPCertificates.Feasible.{u_1} P x →
+        Eq.{u_1 + 1}
+          (HSub.hSub.{u_1, u_1, u_1} (LPCertificates.bound.{u_1} P w v)
+            (LPCertificates.dot.{u_1} (LPCertificates.Problem.c.{u_1} P) x))
+          (∑ i,
+            HMul.hMul.{u_1, u_1, u_1} (w i)
+              (HSub.hSub.{u_1, u_1, u_1} (LPCertificates.Problem.b.{u_1} P i)
+                (LPCertificates.dot.{u_1} (LPCertificates.Problem.A.{u_1} P i) x)))
+'LPCertificates.duality_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.complementary_slackness.{u_1} : ∀ {α : Type u_1} [inst : Field.{u_1} α] [inst_1 : LinearOrder.{u_1} α]
+  [IsStrictOrderedRing.{u_1} α] {n m k : Nat} (P : LPCertificates.Problem.{u_1} α n m k) (w : Fin m → α)
+  (v : Fin k → α),
+  LPCertificates.DualCertificate.{u_1} P w v →
+    ∀ (x : Fin n → α),
+      LPCertificates.Feasible.{u_1} P x →
+        Iff
+          (Eq.{u_1 + 1} (LPCertificates.bound.{u_1} P w v)
+            (LPCertificates.dot.{u_1} (LPCertificates.Problem.c.{u_1} P) x))
+          (∀ (i : Fin m),
+            Eq.{u_1 + 1}
+              (HMul.hMul.{u_1, u_1, u_1} (w i)
+                (HSub.hSub.{u_1, u_1, u_1} (LPCertificates.Problem.b.{u_1} P i)
+                  (LPCertificates.dot.{u_1} (LPCertificates.Problem.A.{u_1} P i) x)))
+              0)
+'LPCertificates.complementary_slackness' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.mixedRedundant : LPCertificates.Problem.{0} Rat 2 4 1
+'LPCertificates.mixedRedundant' depends on axioms: [propext]
+LPCertificates.mixedRedundant_accepts : Eq.{1}
+  (LPCertificates.checkOptimal LPCertificates.mixedRedundant
+    (Matrix.vecCons.{0} 2 (Matrix.vecCons.{0} 2 Matrix.vecEmpty.{0}))
+    (Matrix.vecCons.{0} 1
+      (Matrix.vecCons.{0} (3 / 4) (Matrix.vecCons.{0} 0 (Matrix.vecCons.{0} 0 Matrix.vecEmpty.{0}))))
+    (Matrix.vecCons.{0} (1 / 2) Matrix.vecEmpty.{0}))
+  true
+'LPCertificates.mixedRedundant_accepts' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.mixedRedundant_alternative_accepts : Eq.{1}
+  (LPCertificates.checkOptimal LPCertificates.mixedRedundant
+    (Matrix.vecCons.{0} 2 (Matrix.vecCons.{0} 2 Matrix.vecEmpty.{0}))
+    (Matrix.vecCons.{0} (5 / 2)
+      (Matrix.vecCons.{0} 0 (Matrix.vecCons.{0} 0 (Matrix.vecCons.{0} 0 Matrix.vecEmpty.{0}))))
+    (Matrix.vecCons.{0} (1 / 2) Matrix.vecEmpty.{0}))
+  true
+'LPCertificates.mixedRedundant_alternative_accepts' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.mixedRedundant_real_optimal : And
+  (LPCertificates.Feasible.{0} (LPCertificates.realProblem LPCertificates.mixedRedundant)
+    (LPCertificates.realVector (Matrix.vecCons.{0} 2 (Matrix.vecCons.{0} 2 Matrix.vecEmpty.{0}))))
+  (∀ (y : Fin 2 → Real),
+    LPCertificates.Feasible.{0} (LPCertificates.realProblem LPCertificates.mixedRedundant) y →
+      LE.le.{0}
+        (LPCertificates.dot.{0}
+          (LPCertificates.Problem.c.{0} (LPCertificates.realProblem LPCertificates.mixedRedundant)) y)
+        (LPCertificates.dot.{0}
+          (LPCertificates.Problem.c.{0} (LPCertificates.realProblem LPCertificates.mixedRedundant))
+          (LPCertificates.realVector (Matrix.vecCons.{0} 2 (Matrix.vecCons.{0} 2 Matrix.vecEmpty.{0})))))
+'LPCertificates.mixedRedundant_real_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.negative_multiplier_rejected : Eq.{1}
+  (LPCertificates.checkOptimal LPCertificates.mixedRedundant
+    (Matrix.vecCons.{0} 2 (Matrix.vecCons.{0} 2 Matrix.vecEmpty.{0}))
+    (Matrix.vecCons.{0} (-1)
+      (Matrix.vecCons.{0} (7 / 4) (Matrix.vecCons.{0} 0 (Matrix.vecCons.{0} 0 Matrix.vecEmpty.{0}))))
+    (Matrix.vecCons.{0} (1 / 2) Matrix.vecEmpty.{0}))
+  false
+'LPCertificates.negative_multiplier_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.infeasible_point_rejected : Eq.{1}
+  (LPCertificates.checkOptimal LPCertificates.mixedRedundant
+    (Matrix.vecCons.{0} 3 (Matrix.vecCons.{0} 3 Matrix.vecEmpty.{0}))
+    (Matrix.vecCons.{0} 1
+      (Matrix.vecCons.{0} (3 / 4) (Matrix.vecCons.{0} 0 (Matrix.vecCons.{0} 0 Matrix.vecEmpty.{0}))))
+    (Matrix.vecCons.{0} (1 / 2) Matrix.vecEmpty.{0}))
+  false
+'LPCertificates.infeasible_point_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.singletonMin : LPCertificates.Problem.{0} Rat 1 1 1
+'LPCertificates.singletonMin' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.singletonMin_accepts : Eq.{1}
+  (LPCertificates.checkOptimal LPCertificates.singletonMin (Matrix.vecCons.{0} (1 / 3) Matrix.vecEmpty.{0})
+    (Matrix.vecCons.{0} 0 Matrix.vecEmpty.{0}) (Matrix.vecCons.{0} (-1 / 2) Matrix.vecEmpty.{0}))
+  true
+'LPCertificates.singletonMin_accepts' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.contradiction : LPCertificates.Problem.{0} Rat 1 2 0
+'LPCertificates.contradiction' depends on axioms: [propext]
+LPCertificates.contradiction_accepts : Eq.{1}
+  (LPCertificates.checkInfeasible LPCertificates.contradiction
+    (Matrix.vecCons.{0} 1 (Matrix.vecCons.{0} 1 Matrix.vecEmpty.{0})) Matrix.vecEmpty.{0})
+  true
+'LPCertificates.contradiction_accepts' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.contradiction_real_infeasible : Not
+  (∃ x, LPCertificates.Feasible.{0} (LPCertificates.realProblem LPCertificates.contradiction) x)
+'LPCertificates.contradiction_real_infeasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.nonstrict_contradiction_rejected : Eq.{1}
+  (LPCertificates.checkInfeasible LPCertificates.contradiction
+    (Matrix.vecCons.{0} 0 (Matrix.vecCons.{0} 0 Matrix.vecEmpty.{0})) Matrix.vecEmpty.{0})
+  false
+'LPCertificates.nonstrict_contradiction_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.equalityContradiction : LPCertificates.Problem.{0} Rat 2 0 2
+'LPCertificates.equalityContradiction' depends on axioms: [propext]
+LPCertificates.equalityContradiction_accepts : Eq.{1}
+  (LPCertificates.checkInfeasible LPCertificates.equalityContradiction Matrix.vecEmpty.{0}
+    (Matrix.vecCons.{0} 2 (Matrix.vecCons.{0} (-1) Matrix.vecEmpty.{0})))
+  true
+'LPCertificates.equalityContradiction_accepts' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.lineRayMin : LPCertificates.Problem.{0} Rat 2 2 1
+'LPCertificates.lineRayMin' depends on axioms: [propext]
+LPCertificates.lineRayMin_accepts : Eq.{1}
+  (LPCertificates.checkUnbounded LPCertificates.lineRayMin
+    (Matrix.vecCons.{0} 1 (Matrix.vecCons.{0} 0 Matrix.vecEmpty.{0}))
+    (Matrix.vecCons.{0} 1 (Matrix.vecCons.{0} 1 Matrix.vecEmpty.{0})))
+  true
+'LPCertificates.lineRayMin_accepts' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.lineRayMin_real_unbounded : ∀ (B : Real),
+  ∃ y,
+    And (LPCertificates.Feasible.{0} (LPCertificates.realProblem LPCertificates.lineRayMin) y)
+      (LT.lt.{0} B
+        (LPCertificates.dot.{0} (LPCertificates.Problem.c.{0} (LPCertificates.realProblem LPCertificates.lineRayMin))
+          y))
+'LPCertificates.lineRayMin_real_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.zero_gain_rejected : Eq.{1}
+  (LPCertificates.checkUnbounded LPCertificates.lineRayMin
+    (Matrix.vecCons.{0} 1 (Matrix.vecCons.{0} 0 Matrix.vecEmpty.{0}))
+    (Matrix.vecCons.{0} 0 (Matrix.vecCons.{0} 0 Matrix.vecEmpty.{0})))
+  false
+'LPCertificates.zero_gain_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.bad_base_rejected : Eq.{1}
+  (LPCertificates.checkUnbounded LPCertificates.lineRayMin
+    (Matrix.vecCons.{0} 0 (Matrix.vecCons.{0} 0 Matrix.vecEmpty.{0}))
+    (Matrix.vecCons.{0} 1 (Matrix.vecCons.{0} 1 Matrix.vecEmpty.{0})))
+  false
+'LPCertificates.bad_base_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.bad_direction_rejected : Eq.{1}
+  (LPCertificates.checkUnbounded LPCertificates.lineRayMin
+    (Matrix.vecCons.{0} 1 (Matrix.vecCons.{0} 0 Matrix.vecEmpty.{0}))
+    (Matrix.vecCons.{0} 1 (Matrix.vecCons.{0} 0 Matrix.vecEmpty.{0})))
+  false
+'LPCertificates.bad_direction_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.zeroVariableFeasible : LPCertificates.Problem.{0} Rat 0 1 1
+'LPCertificates.zeroVariableFeasible' depends on axioms: [propext]
+LPCertificates.zeroVariableFeasible_accepts : Eq.{1}
+  (LPCertificates.checkOptimal LPCertificates.zeroVariableFeasible Matrix.vecEmpty.{0}
+    (Matrix.vecCons.{0} 0 Matrix.vecEmpty.{0}) (Matrix.vecCons.{0} (-7) Matrix.vecEmpty.{0}))
+  true
+'LPCertificates.zeroVariableFeasible_accepts' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.zeroVariableInfeasible : LPCertificates.Problem.{0} Rat 0 1 0
+'LPCertificates.zeroVariableInfeasible' depends on axioms: [propext]
+LPCertificates.zeroVariableInfeasible_accepts : Eq.{1}
+  (LPCertificates.checkInfeasible LPCertificates.zeroVariableInfeasible (Matrix.vecCons.{0} 1 Matrix.vecEmpty.{0})
+    Matrix.vecEmpty.{0})
+  true
+'LPCertificates.zeroVariableInfeasible_accepts' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.freeRay : LPCertificates.Problem.{0} Rat 1 0 0
+'LPCertificates.freeRay' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.freeRay_accepts : Eq.{1}
+  (LPCertificates.checkUnbounded LPCertificates.freeRay (Matrix.vecCons.{0} 0 Matrix.vecEmpty.{0})
+    (Matrix.vecCons.{0} 2 Matrix.vecEmpty.{0}))
+  true
+'LPCertificates.freeRay_accepts' depends on axioms: [propext, Classical.choice, Quot.sound]
+LPCertificates.constantNoRows : LPCertificates.Problem.{0} Rat 2 0 0
+'LPCertificates.constantNoRows' depends on axioms: [propext]
+LPCertificates.constantNoRows_accepts : Eq.{1}
+  (LPCertificates.checkOptimal LPCertificates.constantNoRows
+    (Matrix.vecCons.{0} 7 (Matrix.vecCons.{0} (-2 / 3) Matrix.vecEmpty.{0})) Matrix.vecEmpty.{0} Matrix.vecEmpty.{0})
+  true
+'LPCertificates.constantNoRows_accepts' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.normalizeInput : {n r : Nat} → LPCertificates.InputProblem n r → LPCertificates.Problem.{0} Rat n r r
+'LPCertificates.normalizeInput' depends on axioms: [propext]
+@LPCertificates.inputInequalityWeights : {n r : Nat} → LPCertificates.InputProblem n r → (Fin r → Rat) → Fin r → Rat
+'LPCertificates.inputInequalityWeights' depends on axioms: [propext]
+@LPCertificates.inputEqualityWeights : {n r : Nat} → LPCertificates.InputProblem n r → (Fin r → Rat) → Fin r → Rat
+'LPCertificates.inputEqualityWeights' depends on axioms: [propext]
+@LPCertificates.InputFeasible : {n r : Nat} → LPCertificates.InputProblem n r → (Fin n → Real) → Prop
+'LPCertificates.InputFeasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.ObjectiveBound : {n r : Nat} → LPCertificates.InputProblem n r → (Fin n → Real) → (Fin n → Real) → Prop
+'LPCertificates.ObjectiveBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.ObjectiveBeyond : {n r : Nat} → LPCertificates.InputProblem n r → Real → (Fin n → Real) → Prop
+'LPCertificates.ObjectiveBeyond' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.checkInputOptimal : {n r : Nat} → LPCertificates.InputProblem n r → (Fin n → Rat) → (Fin r → Rat) → Bool
+'LPCertificates.checkInputOptimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.checkInputInfeasible : {n r : Nat} → LPCertificates.InputProblem n r → (Fin r → Rat) → Bool
+'LPCertificates.checkInputInfeasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.checkInputUnbounded : {n r : Nat} →
+  LPCertificates.InputProblem n r → (Fin n → Rat) → (Fin n → Rat) → Bool
+'LPCertificates.checkInputUnbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.input_feasible_iff : ∀ {n r : Nat} (P : LPCertificates.InputProblem n r) (x : Fin n → Real),
+  Iff (LPCertificates.InputFeasible P x)
+    (LPCertificates.Feasible.{0} (LPCertificates.realProblem (LPCertificates.normalizeInput P)) x)
+'LPCertificates.input_feasible_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.input_objective_bound_iff : ∀ {n r : Nat} (P : LPCertificates.InputProblem n r) (x y : Fin n → Real),
+  Iff
+    (LE.le.{0}
+      (LPCertificates.dot.{0}
+        (LPCertificates.Problem.c.{0} (LPCertificates.realProblem (LPCertificates.normalizeInput P))) y)
+      (LPCertificates.dot.{0}
+        (LPCertificates.Problem.c.{0} (LPCertificates.realProblem (LPCertificates.normalizeInput P))) x))
+    (LPCertificates.ObjectiveBound P x y)
+'LPCertificates.input_objective_bound_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.inputOptimal_sound_real : ∀ {n r : Nat} (P : LPCertificates.InputProblem n r) (x : Fin n → Rat)
+  (u : Fin r → Rat),
+  Eq.{1} (LPCertificates.checkInputOptimal P x u) true →
+    And (LPCertificates.InputFeasible P (LPCertificates.realVector x))
+      (∀ (y : Fin n → Real),
+        LPCertificates.InputFeasible P y → LPCertificates.ObjectiveBound P (LPCertificates.realVector x) y)
+'LPCertificates.inputOptimal_sound_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.inputInfeasible_sound_real : ∀ {n r : Nat} (P : LPCertificates.InputProblem n r) (u : Fin r → Rat),
+  Eq.{1} (LPCertificates.checkInputInfeasible P u) true → Not (∃ x, LPCertificates.InputFeasible P x)
+'LPCertificates.inputInfeasible_sound_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.inputUnbounded_sound_real : ∀ {n r : Nat} (P : LPCertificates.InputProblem n r) (x d : Fin n → Rat),
+  Eq.{1} (LPCertificates.checkInputUnbounded P x d) true →
+    ∀ (B : Real), ∃ y, And (LPCertificates.InputFeasible P y) (LPCertificates.ObjectiveBeyond P B y)
+'LPCertificates.inputUnbounded_sound_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.checkOptimal : {n m k : Nat} →
+  LPCertificates.Problem.{0} Rat n m k → (Fin n → Rat) → (Fin m → Rat) → (Fin k → Rat) → Bool
+'LPCertificates.checkOptimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.checkInfeasible : {n m k : Nat} →
+  LPCertificates.Problem.{0} Rat n m k → (Fin m → Rat) → (Fin k → Rat) → Bool
+'LPCertificates.checkInfeasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.checkUnbounded : {n m k : Nat} →
+  LPCertificates.Problem.{0} Rat n m k → (Fin n → Rat) → (Fin n → Rat) → Bool
+'LPCertificates.checkUnbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.realVector : {n : Nat} → (Fin n → Rat) → Fin n → Real
+'LPCertificates.realVector' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.realProblem : {n m k : Nat} →
+  LPCertificates.Problem.{0} Rat n m k → LPCertificates.Problem.{0} Real n m k
+'LPCertificates.realProblem' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.dot_cast : ∀ {n : Nat} (u v : Fin n → Rat),
+  Eq.{1} (LPCertificates.dot.{0} (LPCertificates.realVector u) (LPCertificates.realVector v))
+    ↑(LPCertificates.dot.{0} u v)
+'LPCertificates.dot_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.combination_cast : ∀ {n m k : Nat} (P : LPCertificates.Problem.{0} Rat n m k) (w : Fin m → Rat)
+  (v : Fin k → Rat) (j : Fin n),
+  Eq.{1}
+    (LPCertificates.combination.{0} (LPCertificates.realProblem P) (LPCertificates.realVector w)
+      (LPCertificates.realVector v) j)
+    ↑(LPCertificates.combination.{0} P w v j)
+'LPCertificates.combination_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.bound_cast : ∀ {n m k : Nat} (P : LPCertificates.Problem.{0} Rat n m k) (w : Fin m → Rat)
+  (v : Fin k → Rat),
+  Eq.{1}
+    (LPCertificates.bound.{0} (LPCertificates.realProblem P) (LPCertificates.realVector w)
+      (LPCertificates.realVector v))
+    ↑(LPCertificates.bound.{0} P w v)
+'LPCertificates.bound_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.feasible_cast : ∀ {n m k : Nat} (P : LPCertificates.Problem.{0} Rat n m k) (x : Fin n → Rat),
+  LPCertificates.Feasible.{0} P x →
+    LPCertificates.Feasible.{0} (LPCertificates.realProblem P) (LPCertificates.realVector x)
+'LPCertificates.feasible_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.dual_cast : ∀ {n m k : Nat} (P : LPCertificates.Problem.{0} Rat n m k) (w : Fin m → Rat)
+  (v : Fin k → Rat),
+  LPCertificates.DualCertificate.{0} P w v →
+    LPCertificates.DualCertificate.{0} (LPCertificates.realProblem P) (LPCertificates.realVector w)
+      (LPCertificates.realVector v)
+'LPCertificates.dual_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.checkOptimal_sound_real : ∀ {n m k : Nat} (P : LPCertificates.Problem.{0} Rat n m k) (x : Fin n → Rat)
+  (w : Fin m → Rat) (v : Fin k → Rat),
+  Eq.{1} (LPCertificates.checkOptimal P x w v) true →
+    And (LPCertificates.Feasible.{0} (LPCertificates.realProblem P) (LPCertificates.realVector x))
+      (∀ (y : Fin n → Real),
+        LPCertificates.Feasible.{0} (LPCertificates.realProblem P) y →
+          LE.le.{0} (LPCertificates.dot.{0} (LPCertificates.Problem.c.{0} (LPCertificates.realProblem P)) y)
+            (LPCertificates.dot.{0} (LPCertificates.Problem.c.{0} (LPCertificates.realProblem P))
+              (LPCertificates.realVector x)))
+'LPCertificates.checkOptimal_sound_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.checkInfeasible_sound_real : ∀ {n m k : Nat} (P : LPCertificates.Problem.{0} Rat n m k)
+  (w : Fin m → Rat) (v : Fin k → Rat),
+  Eq.{1} (LPCertificates.checkInfeasible P w v) true →
+    Not (∃ x, LPCertificates.Feasible.{0} (LPCertificates.realProblem P) x)
+'LPCertificates.checkInfeasible_sound_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+@LPCertificates.checkUnbounded_sound_real : ∀ {n m k : Nat} (P : LPCertificates.Problem.{0} Rat n m k)
+  (x d : Fin n → Rat),
+  Eq.{1} (LPCertificates.checkUnbounded P x d) true →
+    ∀ (B : Real),
+      ∃ y,
+        And (LPCertificates.Feasible.{0} (LPCertificates.realProblem P) y)
+          (LT.lt.{0} B (LPCertificates.dot.{0} (LPCertificates.Problem.c.{0} (LPCertificates.realProblem P)) y))
+'LPCertificates.checkUnbounded_sound_real' depends on axioms: [propext, Classical.choice, Quot.sound]

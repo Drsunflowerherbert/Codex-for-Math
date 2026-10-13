@@ -1,0 +1,11 @@
+{
+  "dimension": 0,
+  "direction": [],
+  "kind": "optimal",
+  "objective": [],
+  "objective_sense": "min",
+  "point": [],
+  "row_count": 0,
+  "row_multipliers": [],
+  "rows": []
+}

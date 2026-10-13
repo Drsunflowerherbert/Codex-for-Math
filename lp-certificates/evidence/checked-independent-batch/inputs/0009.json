@@ -1,0 +1,70 @@
+{
+  "certificate": {
+    "equality_multipliers": [
+      2,
+      0
+    ],
+    "inequality_multipliers": [
+      3,
+      0,
+      0
+    ],
+    "kind": "optimal",
+    "point": [
+      1,
+      1
+    ]
+  },
+  "problem": {
+    "constraints": [
+      {
+        "coefficients": [
+          1,
+          -1
+        ],
+        "rhs": 0,
+        "sense": "="
+      },
+      {
+        "coefficients": [
+          1,
+          0
+        ],
+        "rhs": 1,
+        "sense": ">="
+      },
+      {
+        "coefficients": [
+          2,
+          -2
+        ],
+        "rhs": 0,
+        "sense": "="
+      },
+      {
+        "coefficients": [
+          3,
+          3
+        ],
+        "rhs": 6,
+        "sense": ">="
+      },
+      {
+        "coefficients": [
+          1,
+          0
+        ],
+        "rhs": 4,
+        "sense": "<="
+      }
+    ],
+    "objective": {
+      "coefficients": [
+        1,
+        2
+      ],
+      "sense": "min"
+    }
+  },
+  "version": 1
+}

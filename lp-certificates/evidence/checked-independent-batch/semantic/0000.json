@@ -1,0 +1,36 @@
+{
+  "dimension": 2,
+  "direction": [],
+  "kind": "infeasible",
+  "objective": [
+    "3",
+    "-4"
+  ],
+  "objective_sense": "min",
+  "point": [],
+  "row_count": 2,
+  "row_multipliers": [
+    "2",
+    "-1"
+  ],
+  "rows": [
+    {
+      "coefficients": [
+        "1",
+        "1"
+      ],
+      "index": 0,
+      "rhs": "0",
+      "sense": "="
+    },
+    {
+      "coefficients": [
+        "2",
+        "2"
+      ],
+      "index": 1,
+      "rhs": "1",
+      "sense": "="
+    }
+  ]
+}

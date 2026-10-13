@@ -1,0 +1,27 @@
+{
+  "dimension": 0,
+  "direction": [],
+  "kind": "optimal",
+  "objective": [],
+  "objective_sense": "max",
+  "point": [],
+  "row_count": 2,
+  "row_multipliers": [
+    "0",
+    "-7"
+  ],
+  "rows": [
+    {
+      "coefficients": [],
+      "index": 0,
+      "rhs": "0",
+      "sense": "<="
+    },
+    {
+      "coefficients": [],
+      "index": 1,
+      "rhs": "0",
+      "sense": "="
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+MATH_EVIDENCE_DEFINITION {"axioms":["propext","Classical.choice","Quot.sound"],"definitionBodyMatching":"kernel_definitional_equality","status":"definition_value_matched_not_a_proof_of_the_predicate","target":"LPCertificates.checkOptimal"}
+MATH_EVIDENCE_DEFINITION {"axioms":["propext","Classical.choice","Quot.sound"],"definitionBodyMatching":"kernel_definitional_equality","status":"definition_value_matched_not_a_proof_of_the_predicate","target":"LPCertificates.checkInfeasible"}
+MATH_EVIDENCE_DEFINITION {"axioms":["propext","Classical.choice","Quot.sound"],"definitionBodyMatching":"kernel_definitional_equality","status":"definition_value_matched_not_a_proof_of_the_predicate","target":"LPCertificates.checkUnbounded"}
+MATH_EVIDENCE_DEFINITION {"axioms":["propext","Classical.choice","Quot.sound"],"definitionBodyMatching":"kernel_definitional_equality","status":"definition_value_matched_not_a_proof_of_the_predicate","target":"LPCertificates.realVector"}
+MATH_EVIDENCE_DEFINITION {"axioms":["propext","Classical.choice","Quot.sound"],"definitionBodyMatching":"kernel_definitional_equality","status":"definition_value_matched_not_a_proof_of_the_predicate","target":"LPCertificates.realProblem"}
+MATH_EVIDENCE_TARGET {"axioms":["propext","Classical.choice","Quot.sound"],"declarationKind":"theorem","observedType":"∀ {n m k : ℕ} (P : Problem ℚ n m k) (x : Fin n → ℚ) (w : Fin m → ℚ) (v : Fin k → ℚ),\n  checkOptimal P x w v = true →\n    Feasible (realProblem P) (realVector x) ∧\n      ∀ (y : Fin n → ℝ), Feasible (realProblem P) y → dot (realProblem P).c y ≤ dot (realProblem P).c (realVector x)","target":"LPCertificates.checkOptimal_sound_real","targetKernelReplay":"separate_phase_required","typeMatching":"closed_whole_type_kernel_definitional_equality"}
+MATH_EVIDENCE_TARGET {"axioms":["propext","Classical.choice","Quot.sound"],"declarationKind":"theorem","observedType":"∀ {n m k : ℕ} (P : Problem ℚ n m k) (w : Fin m → ℚ) (v : Fin k → ℚ),\n  checkInfeasible P w v = true → ¬∃ x, Feasible (realProblem P) x","target":"LPCertificates.checkInfeasible_sound_real","targetKernelReplay":"separate_phase_required","typeMatching":"closed_whole_type_kernel_definitional_equality"}
+MATH_EVIDENCE_TARGET {"axioms":["propext","Classical.choice","Quot.sound"],"declarationKind":"theorem","observedType":"∀ {n m k : ℕ} (P : Problem ℚ n m k) (x d : Fin n → ℚ),\n  checkUnbounded P x d = true → ∀ (B : ℝ), ∃ y, Feasible (realProblem P) y ∧ B < dot (realProblem P).c y","target":"LPCertificates.checkUnbounded_sound_real","targetKernelReplay":"separate_phase_required","typeMatching":"closed_whole_type_kernel_definitional_equality"}
+LPCertificates.combination_bound.{u_1} {α : Type u_1} [Field α] [LinearOrder α] [IsStrictOrderedRing α] {n m k : ℕ}
+  (P : Problem α n m k) (w : Fin m → α) (v : Fin k → α) (hw : Nonnegative w) (x : Fin n → α) (hx : Feasible P x) :
+  dot (combination P w v) x ≤ bound P w v
+LPCertificates.weak_duality.{u_1} {α : Type u_1} [Field α] [LinearOrder α] [IsStrictOrderedRing α] {n m k : ℕ}
+  (P : Problem α n m k) (w : Fin m → α) (v : Fin k → α) (hc : DualCertificate P w v) (x : Fin n → α)
+  (hx : Feasible P x) : dot P.c x ≤ bound P w v
+LPCertificates.optimal_sound.{u_1} {α : Type u_1} [Field α] [LinearOrder α] [IsStrictOrderedRing α] {n m k : ℕ}
+  (P : Problem α n m k) (x : Fin n → α) (w : Fin m → α) (v : Fin k → α) (hc : OptimalCertificate P x w v) :
+  Feasible P x ∧ ∀ (y : Fin n → α), Feasible P y → dot P.c y ≤ dot P.c x
+LPCertificates.infeasible_sound.{u_1} {α : Type u_1} [Field α] [LinearOrder α] [IsStrictOrderedRing α] {n m k : ℕ}
+  (P : Problem α n m k) (w : Fin m → α) (v : Fin k → α) (hc : InfeasibleCertificate P w v) : ¬∃ x, Feasible P x
+LPCertificates.ray_feasible.{u_1} {α : Type u_1} [Field α] [LinearOrder α] [IsStrictOrderedRing α] {n m k : ℕ}
+  (P : Problem α n m k) (x d : Fin n → α) (hc : RayCertificate P x d) (t : α) (ht : 0 ≤ t) :
+  Feasible P fun j => x j + t * d j
+LPCertificates.ray_objective.{u_1} {α : Type u_1} [Field α] {n m k : ℕ} (P : Problem α n m k) (x d : Fin n → α)
+  (t : α) : (dot P.c fun j => x j + t * d j) = dot P.c x + t * dot P.c d
+LPCertificates.unbounded_sound.{u_1} {α : Type u_1} [Field α] [LinearOrder α] [IsStrictOrderedRing α] {n m k : ℕ}
+  (P : Problem α n m k) (x d : Fin n → α) (hc : RayCertificate P x d) (B : α) : ∃ y, Feasible P y ∧ B < dot P.c y
+LPCertificates.duality_gap.{u_1} {α : Type u_1} [Field α] [LinearOrder α] {n m k : ℕ} (P : Problem α n m k)
+  (w : Fin m → α) (v : Fin k → α) (hc : DualCertificate P w v) (x : Fin n → α) (hx : Feasible P x) :
+  bound P w v - dot P.c x = ∑ i, w i * (P.b i - dot (P.A i) x)
+LPCertificates.complementary_slackness.{u_1} {α : Type u_1} [Field α] [LinearOrder α] [IsStrictOrderedRing α]
+  {n m k : ℕ} (P : Problem α n m k) (w : Fin m → α) (v : Fin k → α) (hc : DualCertificate P w v) (x : Fin n → α)
+  (hx : Feasible P x) : bound P w v = dot P.c x ↔ ∀ (i : Fin m), w i * (P.b i - dot (P.A i) x) = 0
+'LPCertificates.checkOptimal_sound_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LPCertificates.checkInfeasible_sound_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LPCertificates.checkUnbounded_sound_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LPCertificates.complementary_slackness' depends on axioms: [propext, Classical.choice, Quot.sound]
+MATH_EVIDENCE_REPLAY {"baseModules":["Mathlib","EvidenceHarness"],"independentKernelReplay":"not_performed","replayedDeclarations":216,"scope":"local_declaration_closure_same_kernel_imported_dependency_baseline","targets":["LPCertificates.checkOptimal_sound_real","LPCertificates.checkInfeasible_sound_real","LPCertificates.checkUnbounded_sound_real"]}

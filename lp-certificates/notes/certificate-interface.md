@@ -13,6 +13,15 @@ valid; `0.5`, `"0.5"`, `"1/0"`, and `true` are invalid. Denominators must be
 positive; the standard-library `Fraction` type reduces values exactly.
 There is no tolerance, implicit rounding, or approximate acceptance.
 
+The Python verifier has explicit resource budgets: JSON text at most 1 MiB,
+at most 32 variables and 128 rows, each reduced input numerator/denominator at
+most 1024 bits, and total reduced input rational bit length at most 131072. Exact output
+numerators/denominators are capped at 8192 bits; the runtime's integer-formatting
+limit can impose a lower cap. An exceeded budget or formatting limit yields
+`status: "invalid"`, `accepted: false`, and a `resource_limit` diagnostic.
+It never implies an LP classification. Exactness applies to supported inputs;
+large mathematically valid witnesses may require another verification setup.
+
 ```json
 {
   "version": 1,
@@ -50,7 +59,9 @@ An `optimal` certificate contains exactly `kind`, `point`,
 `inequality_multipliers`, and `equality_multipliers`. It checks feasibility,
 nonnegative inequality weights, a complete coordinatewise identity with the
 normalized objective, and equality of the combined bound and candidate value.
-It also reports exact weighted slack products for inspection.
+Its `checks` report the exact feasibility, multiplier-sign, coefficient-identity,
+and attained-bound comparisons. Weighted slack products are explained in the
+mathematical notes; they are not emitted as separate output fields.
 
 An `infeasible` certificate contains exactly `kind`, `inequality_multipliers`,
 and `equality_multipliers`. The same combination must have coefficient vector
@@ -93,3 +104,11 @@ All nine accepted JSON fixtures have matching normalized Lean examples:
 `lineRayMin`, `zeroVariableFeasible`, `zeroVariableInfeasible`, `freeRay`, and
 `constantNoRows`. Additional Lean rejection and alternate-weight examples are
 independently stated and do not purport to mirror every rejection JSON fixture.
+
+The follow-up `InputProblem` interface in `LPCertificates/Input.lean` preserves
+the original rational rows, their source order and senses, and the original
+objective sense. Its normalization and original-real soundness implications are
+proved inside Lean. The checked export path generates literal instances of this
+raw model and requires fresh kernel checking of each supplied witness; see
+[checked bridge](checked-bridge.md). Parsing/literal-generation fidelity remains
+an independently tested external boundary, not a proved parser refinement.

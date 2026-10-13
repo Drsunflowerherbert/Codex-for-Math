@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "problem": {
+    "objective": {
+      "sense": "max",
+      "coefficients": [
+        3,
+        2
+      ]
+    },
+    "constraints": [
+      {
+        "coefficients": [
+          1,
+          1
+        ],
+        "sense": "<=",
+        "rhs": 4
+      },
+      {
+        "coefficients": [
+          2,
+          2
+        ],
+        "sense": "<=",
+        "rhs": 8
+      },
+      {
+        "coefficients": [
+          1,
+          0
+        ],
+        "sense": ">=",
+        "rhs": 0
+      },
+      {
+        "coefficients": [
+          0,
+          1
+        ],
+        "sense": ">=",
+        "rhs": 0
+      },
+      {
+        "coefficients": [
+          1,
+          -1
+        ],
+        "sense": "=",
+        "rhs": 0
+      }
+    ]
+  }
+}
