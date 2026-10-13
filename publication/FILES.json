@@ -4707,8 +4707,8 @@
       "sha256": "bab9255e53992b809436f2f079c899fce071ef6cce1cacfc331b3718da35ebe5"
     },
     "publication/OCTOBER-13-SOURCE-MAP.json": {
-      "bytes": 1156533,
-      "sha256": "8b4c31e4ad9adc0cb873ce7c620b6d03a76dbc2b34df2247dc67ef5aec39bb01"
+      "bytes": 1156617,
+      "sha256": "ee0605dcc3e1be6ea1b071e21a47223632a43552f5105293fdf663bd192c1328"
     },
     "publication/PENDING-TRANSFER.json": {
       "bytes": 2968,
@@ -4749,6 +4749,10 @@
     "publication/evidence/CURRENT-CHECKS.json": {
       "bytes": 4837,
       "sha256": "d94ea0fd5c5c07a6b59d4c5222d6cb093e213ef6e92f508e0e1c680336c7a1db"
+    },
+    "publication/evidence/EXECUTABLE-BINDING-CONFIRMATION-2026-10-13.json": {
+      "bytes": 1341,
+      "sha256": "e128210e04738390b747db88f6e329376c18c6d15aec7cf45a88ffd068befced"
     },
     "publication/evidence/FINAL-INTEGRITY-CHECKS.json": {
       "bytes": 1880,

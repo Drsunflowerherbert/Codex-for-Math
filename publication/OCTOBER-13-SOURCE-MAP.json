@@ -1,7 +1,7 @@
 {
   "schema": "october-13-publication-source-map/v1",
   "baseline_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
-  "round_status": "corrective_executable_binding_candidate_awaiting_reviewer_confirmation",
+  "round_status": "independently_confirmed_executable_binding_correction",
   "frozen_components": {
     "evidence-hardening": "c2fe44833ceb577595028549cecdda87986f303e",
     "transport-sharpness": "fa5cd40c36daa5373c0234bda0b9d09a49595ce6",
@@ -21085,5 +21085,6 @@
   "additional_lp_source_review": "publication/evidence/LP-BRIDGE-SCOPE-REVIEW-2026-10-13.json",
   "publication_code_fixes": [
     "lp-certificates/bridge.py"
-  ]
+  ],
+  "corrective_confirmation": "publication/evidence/EXECUTABLE-BINDING-CONFIRMATION-2026-10-13.json"
 }

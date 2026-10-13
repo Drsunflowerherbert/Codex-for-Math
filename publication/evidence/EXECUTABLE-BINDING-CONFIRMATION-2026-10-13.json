@@ -1,0 +1,27 @@
+{
+  "schema": "independent-scoped-correction-confirmation/v1",
+  "recorded_utc": "2026-10-13T04:06:52.595061+00:00",
+  "reviewed_candidate_commit": "0ceedad56015b69d5793d4ca469a9965931680c9",
+  "verdict": "scoped_acceptance_no_consequential_findings",
+  "reviewer": "Fresh independent automated read-only reviewer in the integration workspace",
+  "bridge_sha256": "dc857d8bc048cb5d39bce542d97db8e3f4aa8ffd569b57f5dc6f6833d8f5cb20",
+  "regression_source_sha256": "1a44b3b94e21077ad3dee192d9744f9936a3c7106106696bbebdb1712ab6d34e",
+  "reviewer_observed_checks": {
+    "binding_regressions_passed": 7,
+    "bridge_tests_passed": 33,
+    "independent_tests_passed": 11,
+    "independent_tests_skipped": 2,
+    "historical_saved_package_input_counts": [
+      10,
+      13,
+      1
+    ],
+    "publication_integrity": "passed",
+    "actual_release_member_byte_pins": "independently_rechecked",
+    "smoke_receipt_original_and_public_derivative": "matched",
+    "smoke_compile_rerun_by_reviewer": false
+  },
+  "review_scope": "Exact selected/audited/executed/postchecked executable binding, explicit historical renderer compatibility, two documentation fixes, disclosed dependency/saved-process limits, source/manifest bindings and prior proof/pin preservation.",
+  "new_full_Lean_batch_audit": false,
+  "proof_sources_and_gates_changed": false
+}
