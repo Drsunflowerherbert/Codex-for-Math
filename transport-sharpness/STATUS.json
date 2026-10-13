@@ -23,10 +23,14 @@
   "publication": {
     "PR_merge_force_push": false,
     "authorized": true,
+    "content_commit": "80491351e8454c7f38901c02db72cd1018181338",
+    "content_tree": "c8a67bf4545808f6ed0290de0452ff831774cfbd",
     "main_research_branch_edited": false,
-    "remote_commit_receipt": "recorded after content push in evidence/PUBLICATION.json; final receipt commit verified separately in final response",
+    "receipt": "evidence/PUBLICATION.json",
+    "remote_commit_receipt": "preceding content commit verified in receipt; receipt commit verified separately in final response",
     "scope": "add only transport-sharpness/ on assigned new branch",
-    "shared_manifests_edited": false
+    "shared_manifests_edited": false,
+    "state": "content_published_and_remote_verified"
   },
   "remaining_blockers": [],
   "repository": "Drsunflowerherbert/Codex-for-Math",
