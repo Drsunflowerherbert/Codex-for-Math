@@ -1,5 +1,14 @@
 # Codex for Math
 
+Reviewed additions from 13 October 2026 are summarized in the
+[round report](publication/ROUND-2026-10-13.md):
+
+| Deliverable | Scope and evidence |
+| --- | --- |
+| [LP certificates](lp-certificates/README.md) | Exact rational certificates, original-real Lean soundness, bounded numeric export and fresh per-input rechecking; incomplete exact finder. Parser/cache trust and saved-process intake limits are explicit. |
+| [Transport continuation](transport-sharpness/README.md) | Finite/scalar exponent obstructions and actual two-dimensional Borel target-coupling cost. Cube-source maps and actual L2 map-norm identification remain deferred. |
+| [Evidence hardening](evidence-hardening/README.md) | Stricter saved-receipt integrity and unreplaced Git-tree byte checks, plus one accepted and nine rejected fixed Lean fixtures. Saved inspection grants no fresh Lean pass. |
+
 Completed research and standalone Lean projects published from verified source
 bundles on 11 October 2026:
 

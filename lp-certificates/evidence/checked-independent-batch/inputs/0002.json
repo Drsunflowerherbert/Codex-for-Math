@@ -1,0 +1,23 @@
+{
+  "certificate": {
+    "equality_multipliers": [],
+    "inequality_multipliers": [
+      1
+    ],
+    "kind": "infeasible"
+  },
+  "problem": {
+    "constraints": [
+      {
+        "coefficients": [],
+        "rhs": 1,
+        "sense": ">="
+      }
+    ],
+    "objective": {
+      "coefficients": [],
+      "sense": "max"
+    }
+  },
+  "version": 1
+}

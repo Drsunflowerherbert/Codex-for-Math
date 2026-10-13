@@ -1,0 +1,885 @@
+{
+  "schema": "publication-metadata-derivative/v1",
+  "testedUTC": "2026-10-13T02:03:43.542Z",
+  "runtime": "v24.19.0",
+  "binary": "${VERIFICATION_ENV}/tangent-limit/.elan/toolchains/v4.24.0/bin/lean",
+  "root": "${VERIFICATION_WORK}/final-04/lean-corpus-1F4Yjr",
+  "sourceDigestBefore": "738cae9009e2dc05dab9ff2081372326e87402bd4ea24e3845acf115d68b0500",
+  "sourceDigestAfter": "738cae9009e2dc05dab9ff2081372326e87402bd4ea24e3845acf115d68b0500",
+  "sourceUnchanged": true,
+  "results": [
+    {
+      "label": "valid",
+      "pass": true,
+      "expectedPhase": null,
+      "observedPhase": null,
+      "observedLiveFixturePass": true,
+      "failure": null,
+      "imported": {
+        "ok": true,
+        "kind": "fixed_fixture_reported_integrity_only",
+        "leanPass": false,
+        "locallyObservedLeanPass": false,
+        "freshness": "not_established",
+        "receiptAuthenticity": "not_established",
+        "independentKernelReplay": "not_performed",
+        "dependencyTrust": "core_olean_cache_not_rebuilt"
+      },
+      "receiptSHA256": "2a6f3271a0d69d3bbe0e6a66259257cde4ccae38f476a23522b16602ff069353",
+      "phases": [
+        {
+          "name": "compiler-version",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 8831,
+            "processGroup": 8831
+          },
+          "success": true
+        },
+        {
+          "name": "compiler-commit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 8833,
+            "processGroup": 8833
+          },
+          "success": true
+        },
+        {
+          "name": "compile-helper",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 8838,
+            "processGroup": 8838
+          },
+          "success": true
+        },
+        {
+          "name": "compile-dependency",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 8894,
+            "processGroup": 8894
+          },
+          "success": true
+        },
+        {
+          "name": "compile-fixture",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 8901,
+            "processGroup": 8901
+          },
+          "success": true
+        },
+        {
+          "name": "whole-type-and-axiom-audit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 8908,
+            "processGroup": 8908
+          },
+          "success": true
+        },
+        {
+          "name": "definition-body-audit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 8914,
+            "processGroup": 8914
+          },
+          "success": true
+        },
+        {
+          "name": "same-kernel-replay",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 8921,
+            "processGroup": 8921
+          },
+          "success": true
+        }
+      ],
+      "directory": "${VERIFICATION_WORK}/final-04/lean-corpus-1F4Yjr/valid"
+    },
+    {
+      "label": "hidden-assumption",
+      "pass": true,
+      "expectedPhase": "whole-type-and-axiom-audit",
+      "observedPhase": "whole-type-and-axiom-audit",
+      "observedLiveFixturePass": false,
+      "failure": "phase whole-type-and-axiom-audit failed: exited",
+      "imported": null,
+      "receiptSHA256": "12be0e9248ce72003931cca88dacf55b86a2377896b860b904e027a51c446dd5",
+      "phases": [
+        {
+          "name": "compiler-version",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9032,
+            "processGroup": 9032
+          },
+          "success": true
+        },
+        {
+          "name": "compiler-commit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9034,
+            "processGroup": 9034
+          },
+          "success": true
+        },
+        {
+          "name": "compile-helper",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9036,
+            "processGroup": 9036
+          },
+          "success": true
+        },
+        {
+          "name": "compile-dependency",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9043,
+            "processGroup": 9043
+          },
+          "success": true
+        },
+        {
+          "name": "compile-fixture",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9050,
+            "processGroup": 9050
+          },
+          "success": true
+        },
+        {
+          "name": "whole-type-and-axiom-audit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 1,
+            "signal": null,
+            "pid": 9057,
+            "processGroup": 9057
+          },
+          "success": false
+        }
+      ],
+      "directory": "${VERIFICATION_WORK}/final-04/lean-corpus-1F4Yjr/hidden-assumption"
+    },
+    {
+      "label": "statement-drift",
+      "pass": true,
+      "expectedPhase": "whole-type-and-axiom-audit",
+      "observedPhase": "whole-type-and-axiom-audit",
+      "observedLiveFixturePass": false,
+      "failure": "phase whole-type-and-axiom-audit failed: exited",
+      "imported": null,
+      "receiptSHA256": "fd58f6f116b73b9132a318dd7796ff93a0a392b818b526e8dc064f5c4d4779e3",
+      "phases": [
+        {
+          "name": "compiler-version",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9063,
+            "processGroup": 9063
+          },
+          "success": true
+        },
+        {
+          "name": "compiler-commit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9065,
+            "processGroup": 9065
+          },
+          "success": true
+        },
+        {
+          "name": "compile-helper",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9067,
+            "processGroup": 9067
+          },
+          "success": true
+        },
+        {
+          "name": "compile-dependency",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9074,
+            "processGroup": 9074
+          },
+          "success": true
+        },
+        {
+          "name": "compile-fixture",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9081,
+            "processGroup": 9081
+          },
+          "success": true
+        },
+        {
+          "name": "whole-type-and-axiom-audit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 1,
+            "signal": null,
+            "pid": 9088,
+            "processGroup": 9088
+          },
+          "success": false
+        }
+      ],
+      "directory": "${VERIFICATION_WORK}/final-04/lean-corpus-1F4Yjr/statement-drift"
+    },
+    {
+      "label": "specialization",
+      "pass": true,
+      "expectedPhase": "whole-type-and-axiom-audit",
+      "observedPhase": "whole-type-and-axiom-audit",
+      "observedLiveFixturePass": false,
+      "failure": "phase whole-type-and-axiom-audit failed: exited",
+      "imported": null,
+      "receiptSHA256": "f99b6631e68d8badb3653be3d617d55c2424f6b662e6ad13b8f5d74a76a2058f",
+      "phases": [
+        {
+          "name": "compiler-version",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9095,
+            "processGroup": 9095
+          },
+          "success": true
+        },
+        {
+          "name": "compiler-commit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9097,
+            "processGroup": 9097
+          },
+          "success": true
+        },
+        {
+          "name": "compile-helper",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9099,
+            "processGroup": 9099
+          },
+          "success": true
+        },
+        {
+          "name": "compile-dependency",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9106,
+            "processGroup": 9106
+          },
+          "success": true
+        },
+        {
+          "name": "compile-fixture",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9113,
+            "processGroup": 9113
+          },
+          "success": true
+        },
+        {
+          "name": "whole-type-and-axiom-audit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 1,
+            "signal": null,
+            "pid": 9120,
+            "processGroup": 9120
+          },
+          "success": false
+        }
+      ],
+      "directory": "${VERIFICATION_WORK}/final-04/lean-corpus-1F4Yjr/specialization"
+    },
+    {
+      "label": "wrong-name",
+      "pass": true,
+      "expectedPhase": "whole-type-and-axiom-audit",
+      "observedPhase": "whole-type-and-axiom-audit",
+      "observedLiveFixturePass": false,
+      "failure": "phase whole-type-and-axiom-audit failed: exited",
+      "imported": null,
+      "receiptSHA256": "3e45945275311b4113efb3eeb58b44484a93ead3179e397199ced402881225e2",
+      "phases": [
+        {
+          "name": "compiler-version",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9125,
+            "processGroup": 9125
+          },
+          "success": true
+        },
+        {
+          "name": "compiler-commit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9127,
+            "processGroup": 9127
+          },
+          "success": true
+        },
+        {
+          "name": "compile-helper",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9129,
+            "processGroup": 9129
+          },
+          "success": true
+        },
+        {
+          "name": "compile-dependency",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9136,
+            "processGroup": 9136
+          },
+          "success": true
+        },
+        {
+          "name": "compile-fixture",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9143,
+            "processGroup": 9143
+          },
+          "success": true
+        },
+        {
+          "name": "whole-type-and-axiom-audit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 1,
+            "signal": null,
+            "pid": 9150,
+            "processGroup": 9150
+          },
+          "success": false
+        }
+      ],
+      "directory": "${VERIFICATION_WORK}/final-04/lean-corpus-1F4Yjr/wrong-name"
+    },
+    {
+      "label": "definition-substitution",
+      "pass": true,
+      "expectedPhase": "definition-body-audit",
+      "observedPhase": "definition-body-audit",
+      "observedLiveFixturePass": false,
+      "failure": "phase definition-body-audit failed: exited",
+      "imported": null,
+      "receiptSHA256": "25993d0b42a3f299df0678ff69bef17a632b89c231869a4f91f5672b35d2b790",
+      "phases": [
+        {
+          "name": "compiler-version",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9157,
+            "processGroup": 9157
+          },
+          "success": true
+        },
+        {
+          "name": "compiler-commit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9159,
+            "processGroup": 9159
+          },
+          "success": true
+        },
+        {
+          "name": "compile-helper",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9161,
+            "processGroup": 9161
+          },
+          "success": true
+        },
+        {
+          "name": "compile-dependency",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9168,
+            "processGroup": 9168
+          },
+          "success": true
+        },
+        {
+          "name": "compile-fixture",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9175,
+            "processGroup": 9175
+          },
+          "success": true
+        },
+        {
+          "name": "whole-type-and-axiom-audit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9182,
+            "processGroup": 9182
+          },
+          "success": true
+        },
+        {
+          "name": "definition-body-audit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 1,
+            "signal": null,
+            "pid": 9188,
+            "processGroup": 9188
+          },
+          "success": false
+        }
+      ],
+      "directory": "${VERIFICATION_WORK}/final-04/lean-corpus-1F4Yjr/definition-substitution"
+    },
+    {
+      "label": "transitive-drift",
+      "pass": true,
+      "expectedPhase": "definition-body-audit",
+      "observedPhase": "definition-body-audit",
+      "observedLiveFixturePass": false,
+      "failure": "phase definition-body-audit failed: exited",
+      "imported": null,
+      "receiptSHA256": "ee1fe55767255da0c32e9f1a12170465f3780f145a17b21c7b7f1102e2c85203",
+      "phases": [
+        {
+          "name": "compiler-version",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9194,
+            "processGroup": 9194
+          },
+          "success": true
+        },
+        {
+          "name": "compiler-commit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9196,
+            "processGroup": 9196
+          },
+          "success": true
+        },
+        {
+          "name": "compile-helper",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9198,
+            "processGroup": 9198
+          },
+          "success": true
+        },
+        {
+          "name": "compile-dependency",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9205,
+            "processGroup": 9205
+          },
+          "success": true
+        },
+        {
+          "name": "compile-fixture",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9212,
+            "processGroup": 9212
+          },
+          "success": true
+        },
+        {
+          "name": "whole-type-and-axiom-audit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9219,
+            "processGroup": 9219
+          },
+          "success": true
+        },
+        {
+          "name": "definition-body-audit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 1,
+            "signal": null,
+            "pid": 9225,
+            "processGroup": 9225
+          },
+          "success": false
+        }
+      ],
+      "directory": "${VERIFICATION_WORK}/final-04/lean-corpus-1F4Yjr/transitive-drift"
+    },
+    {
+      "label": "sorry",
+      "pass": true,
+      "expectedPhase": "whole-type-and-axiom-audit",
+      "observedPhase": "whole-type-and-axiom-audit",
+      "observedLiveFixturePass": false,
+      "failure": "phase whole-type-and-axiom-audit failed: exited",
+      "imported": null,
+      "receiptSHA256": "05cc427d5ed58ae9be369dbc0dc73efda18d92aeab8983e24e0cf77572ce5b76",
+      "phases": [
+        {
+          "name": "compiler-version",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9232,
+            "processGroup": 9232
+          },
+          "success": true
+        },
+        {
+          "name": "compiler-commit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9234,
+            "processGroup": 9234
+          },
+          "success": true
+        },
+        {
+          "name": "compile-helper",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9236,
+            "processGroup": 9236
+          },
+          "success": true
+        },
+        {
+          "name": "compile-dependency",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9243,
+            "processGroup": 9243
+          },
+          "success": true
+        },
+        {
+          "name": "compile-fixture",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9250,
+            "processGroup": 9250
+          },
+          "success": true
+        },
+        {
+          "name": "whole-type-and-axiom-audit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 1,
+            "signal": null,
+            "pid": 9257,
+            "processGroup": 9257
+          },
+          "success": false
+        }
+      ],
+      "directory": "${VERIFICATION_WORK}/final-04/lean-corpus-1F4Yjr/sorry"
+    },
+    {
+      "label": "custom-axiom",
+      "pass": true,
+      "expectedPhase": "whole-type-and-axiom-audit",
+      "observedPhase": "whole-type-and-axiom-audit",
+      "observedLiveFixturePass": false,
+      "failure": "phase whole-type-and-axiom-audit failed: exited",
+      "imported": null,
+      "receiptSHA256": "f149cf9765f8fbae830ce6b190b7577ce9dfffdccbf3a16ef0681370c0fbccda",
+      "phases": [
+        {
+          "name": "compiler-version",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9264,
+            "processGroup": 9264
+          },
+          "success": true
+        },
+        {
+          "name": "compiler-commit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9266,
+            "processGroup": 9266
+          },
+          "success": true
+        },
+        {
+          "name": "compile-helper",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9268,
+            "processGroup": 9268
+          },
+          "success": true
+        },
+        {
+          "name": "compile-dependency",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9275,
+            "processGroup": 9275
+          },
+          "success": true
+        },
+        {
+          "name": "compile-fixture",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9282,
+            "processGroup": 9282
+          },
+          "success": true
+        },
+        {
+          "name": "whole-type-and-axiom-audit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 1,
+            "signal": null,
+            "pid": 9289,
+            "processGroup": 9289
+          },
+          "success": false
+        }
+      ],
+      "directory": "${VERIFICATION_WORK}/final-04/lean-corpus-1F4Yjr/custom-axiom"
+    },
+    {
+      "label": "skip-kernel",
+      "pass": true,
+      "expectedPhase": "same-kernel-replay",
+      "observedPhase": "same-kernel-replay",
+      "observedLiveFixturePass": false,
+      "failure": "phase same-kernel-replay failed: exited",
+      "imported": null,
+      "receiptSHA256": "0e58b40b1ca627bdc233d6ee5a5926e548082403e3cf373838e7cfdb5b616575",
+      "phases": [
+        {
+          "name": "compiler-version",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9296,
+            "processGroup": 9296
+          },
+          "success": true
+        },
+        {
+          "name": "compiler-commit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9298,
+            "processGroup": 9298
+          },
+          "success": true
+        },
+        {
+          "name": "compile-helper",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9300,
+            "processGroup": 9300
+          },
+          "success": true
+        },
+        {
+          "name": "compile-dependency",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9307,
+            "processGroup": 9307
+          },
+          "success": true
+        },
+        {
+          "name": "compile-fixture",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9314,
+            "processGroup": 9314
+          },
+          "success": true
+        },
+        {
+          "name": "whole-type-and-axiom-audit",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 0,
+            "signal": null,
+            "pid": 9321,
+            "processGroup": 9321
+          },
+          "success": true
+        },
+        {
+          "name": "same-kernel-replay",
+          "termination": {
+            "kind": "exited",
+            "exitCode": 1,
+            "signal": null,
+            "pid": 9327,
+            "processGroup": 9327
+          },
+          "success": false
+        }
+      ],
+      "directory": "${VERIFICATION_WORK}/final-04/lean-corpus-1F4Yjr/skip-kernel"
+    }
+  ],
+  "total": 10,
+  "passed": 10,
+  "failed": [],
+  "trust": {
+    "coreOLeans": "trusted_existing_cache",
+    "mathlib": "not_used",
+    "independentKernel": "not_performed",
+    "nativeMRS": "unavailable_unvalidated"
+  },
+  "publication_derivative": {
+    "original_schema": "actual-pinned-Lean-fixture-corpus/v1",
+    "original_commit": "c2fe44833ceb577595028549cecdda87986f303e",
+    "original_sha256": "eaf09efb85e723ef818d79a3c514f0878d0a20aca0853e8b86c226d43fe1b8fa",
+    "original_bytes": 23667,
+    "scope": "Public metadata derivative; recorded environment paths and coordination details normalized. Original outcomes, exits, dates, mathematical source/pin hashes and trust limits retain their original scope.",
+    "captured_byte_descriptors": "Original receipt/output descriptors remain historical original-byte bindings; current public-copy bytes use publication/OCTOBER-13-SOURCE-MAP.json and publication/FILES.json.",
+    "removed_nonmathematical_fields": [],
+    "new_mathematical_verification": false
+  }
+}

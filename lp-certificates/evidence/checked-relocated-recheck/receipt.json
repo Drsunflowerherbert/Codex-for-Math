@@ -1,0 +1,2333 @@
+{
+  "bridge_sha256": "c0fe2cbfc7511309f91524e86ed8e5342f0d891c090a343a0a1ee06736774dd2",
+  "commands": [
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:58.864309+00:00",
+      "exit_code": 0,
+      "label": "compiler-version",
+      "pid": 8153,
+      "started_utc": "2026-10-13T02:48:58.812211+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/compiler-version.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 106,
+        "observed_bytes": 106,
+        "path": "logs/compiler-version.stdout.log",
+        "sha256": "36c0bbaf090c97bc8217c6ff497ff9144fd83d9003f12cd505162b943aaaee77",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:58.917292+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-00",
+      "pid": 8155,
+      "started_utc": "2026-10-13T02:48:58.865478+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-00.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:58.969565+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-00",
+      "pid": 8171,
+      "started_utc": "2026-10-13T02:48:58.917838+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-00.stdout.log",
+        "sha256": "cc49bfc965afbc1ef5877d1d1b12648323cb6d44f015d37593c63c2cd1d731c0",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.021861+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-00",
+      "pid": 8172,
+      "started_utc": "2026-10-13T02:48:58.970066+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 53,
+        "observed_bytes": 53,
+        "path": "logs/pre-origin-00.stdout.log",
+        "sha256": "03e534cb626b55a5210b43c74776926d0ef07ac36b774832c9934433ee3c9d4c",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.074287+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-01",
+      "pid": 8173,
+      "started_utc": "2026-10-13T02:48:59.022543+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-01.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.128152+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-01",
+      "pid": 8174,
+      "started_utc": "2026-10-13T02:48:59.074872+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-01.stdout.log",
+        "sha256": "5f4ae658966fdc18933fe008f0fa3170b7c00c9cbdb3dc61ae991accf4bab97f",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.180602+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-01",
+      "pid": 8175,
+      "started_utc": "2026-10-13T02:48:59.128758+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 50,
+        "observed_bytes": 50,
+        "path": "logs/pre-origin-01.stdout.log",
+        "sha256": "f9e157058f246ccb009bd17773f68233dd8dade976dbb829338d6c201cf8599f",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.233064+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-02",
+      "pid": 8176,
+      "started_utc": "2026-10-13T02:48:59.181387+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-02.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.285570+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-02",
+      "pid": 8177,
+      "started_utc": "2026-10-13T02:48:59.233766+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-02.stdout.log",
+        "sha256": "ee39bdbdf92107dc88a4ecc2220d30f32902373c6f0739c8492be44a294847a4",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.338172+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-02",
+      "pid": 8178,
+      "started_utc": "2026-10-13T02:48:59.286405+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 57,
+        "observed_bytes": 57,
+        "path": "logs/pre-origin-02.stdout.log",
+        "sha256": "619333dd697b0876afa6e558ee619ba42cc147c8ac9eb415d66d06cb3d13e196",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.390693+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-03",
+      "pid": 8179,
+      "started_utc": "2026-10-13T02:48:59.338933+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-03.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.445347+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-03",
+      "pid": 8180,
+      "started_utc": "2026-10-13T02:48:59.391330+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-03.stdout.log",
+        "sha256": "7f1b3a7459b33f77fb08847cc0be80357aa6fcfb8e846a3ffbdbb656fd08218b",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.497864+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-03",
+      "pid": 8181,
+      "started_utc": "2026-10-13T02:48:59.446022+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 53,
+        "observed_bytes": 53,
+        "path": "logs/pre-origin-03.stdout.log",
+        "sha256": "e1308c66f365e49e7b8c10bd874950ac425bcc14aefe9881baf03c4f65f25cf1",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.550531+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-04",
+      "pid": 8182,
+      "started_utc": "2026-10-13T02:48:59.498666+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-04.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.603077+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-04",
+      "pid": 8183,
+      "started_utc": "2026-10-13T02:48:59.551222+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-04.stdout.log",
+        "sha256": "a26e42b6270d4e50e6866efb9277ecf9d573be7d8f53baaac54b61c0a9e4c9b1",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.658315+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-04",
+      "pid": 8184,
+      "started_utc": "2026-10-13T02:48:59.603822+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 54,
+        "observed_bytes": 54,
+        "path": "logs/pre-origin-04.stdout.log",
+        "sha256": "d85a5cc11983798fb902072b68e0a279bae40189de64fe4ccaa3f969f8e7414c",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.711129+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-05",
+      "pid": 8185,
+      "started_utc": "2026-10-13T02:48:59.659214+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-05.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.764977+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-05",
+      "pid": 8186,
+      "started_utc": "2026-10-13T02:48:59.711902+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-05.stdout.log",
+        "sha256": "2ca5dc9099966d8b4d75f068570c8382e9b1743eb524d29dfd9c31f1b0357e68",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.817789+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-05",
+      "pid": 8187,
+      "started_utc": "2026-10-13T02:48:59.765854+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 46,
+        "observed_bytes": 46,
+        "path": "logs/pre-origin-05.stdout.log",
+        "sha256": "007ad2ffb6cd1115e54eb06162448481b6e57a2b38a5721fe9306aa73f377411",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.870688+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-06",
+      "pid": 8188,
+      "started_utc": "2026-10-13T02:48:59.818699+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-06.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.923441+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-06",
+      "pid": 8189,
+      "started_utc": "2026-10-13T02:48:59.871494+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-06.stdout.log",
+        "sha256": "b5c55d876bdd5b8f9c8f5c80247fd9a311a44e6be1ca930dff8fdac32763b3ef",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:48:59.976315+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-06",
+      "pid": 8190,
+      "started_utc": "2026-10-13T02:48:59.924237+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 47,
+        "observed_bytes": 47,
+        "path": "logs/pre-origin-06.stdout.log",
+        "sha256": "0edd7e60b5329aa479be59427897c3d131a4bed960e8a4faf0aaa6f3c176fe66",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:49:00.029580+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-07",
+      "pid": 8191,
+      "started_utc": "2026-10-13T02:48:59.977642+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-07.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:49:00.082385+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-07",
+      "pid": 8192,
+      "started_utc": "2026-10-13T02:49:00.030439+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-07.stdout.log",
+        "sha256": "7a7d1966b230b609b900348919460f414800232a58d0caa685a23bf7a41c2e73",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:49:00.137174+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-07",
+      "pid": 8193,
+      "started_utc": "2026-10-13T02:49:00.083219+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 50,
+        "observed_bytes": 50,
+        "path": "logs/pre-origin-07.stdout.log",
+        "sha256": "163e9977daaaf557a111a95edb87a473e4dabdef0c7ae0451d8d76ba9a6f1232",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:49:00.190298+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-08",
+      "pid": 8194,
+      "started_utc": "2026-10-13T02:49:00.138177+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-08.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:49:00.243308+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-08",
+      "pid": 8195,
+      "started_utc": "2026-10-13T02:49:00.191225+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-08.stdout.log",
+        "sha256": "8c4dfa759e1faa2e44986cb2e0a7df5843e2e4ed9587cc8c6db5730c7a517f02",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:49:00.296281+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-08",
+      "pid": 8196,
+      "started_utc": "2026-10-13T02:49:00.244288+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 40,
+        "observed_bytes": 40,
+        "path": "logs/pre-origin-08.stdout.log",
+        "sha256": "c0c02deff1a1a3fba1f471202c853e7ca2bda0764a0f6b3e95d0bf5e90c4ca79",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "LPCertificates/Core.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/LPCertificates/Core.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:49:07.325121+00:00",
+      "exit_code": 0,
+      "label": "library-00",
+      "pid": 8197,
+      "started_utc": "2026-10-13T02:49:00.299224+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-00.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "LPCertificates/Rational.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/LPCertificates/Rational.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:49:13.254089+00:00",
+      "exit_code": 0,
+      "label": "library-01",
+      "pid": 8202,
+      "started_utc": "2026-10-13T02:49:07.326970+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-01.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "LPCertificates/Input.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/LPCertificates/Input.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:49:22.094873+00:00",
+      "exit_code": 0,
+      "label": "library-02",
+      "pid": 8205,
+      "started_utc": "2026-10-13T02:49:13.255648+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-02.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "LPCertificates/Examples.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/LPCertificates/Examples.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:49:27.419827+00:00",
+      "exit_code": 0,
+      "label": "library-03",
+      "pid": 8211,
+      "started_utc": "2026-10-13T02:49:22.096750+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-03.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "LPCertificates.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/LPCertificates.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:49:33.607722+00:00",
+      "exit_code": 0,
+      "label": "library-04",
+      "pid": 8230,
+      "started_utc": "2026-10-13T02:49:27.421505+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-04.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "EvidenceHarness.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/EvidenceHarness.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:49:35.671490+00:00",
+      "exit_code": 0,
+      "label": "library-05",
+      "pid": 8233,
+      "started_utc": "2026-10-13T02:49:33.611289+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-05.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "scripts/ExpectedInput.lean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:49:55.338339+00:00",
+      "exit_code": 0,
+      "label": "input-expected",
+      "pid": 8237,
+      "started_utc": "2026-10-13T02:49:35.673749+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/input-expected.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 4718,
+        "observed_bytes": 4718,
+        "path": "logs/input-expected.stdout.log",
+        "sha256": "d0855a2881fb46d487f03c56b735cc101aa848e16b9be042df98d1904095b80d",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "Checked0000.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/Checked0000.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:50:11.025761+00:00",
+      "exit_code": 0,
+      "label": "instance-0000",
+      "pid": 8249,
+      "started_utc": "2026-10-13T02:49:55.340035+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0000.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1190,
+        "observed_bytes": 1190,
+        "path": "logs/instance-0000.stdout.log",
+        "sha256": "e080553700b13237bc390e103b88d1bbd3d8b9baa3be999ee63c624f1fc10ce9",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:11.227230+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-00",
+      "pid": 8254,
+      "started_utc": "2026-10-13T02:50:11.173760+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-00.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:11.283079+00:00",
+      "exit_code": 0,
+      "label": "post-revision-00",
+      "pid": 8270,
+      "started_utc": "2026-10-13T02:50:11.228507+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-00.stdout.log",
+        "sha256": "cc49bfc965afbc1ef5877d1d1b12648323cb6d44f015d37593c63c2cd1d731c0",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:11.338891+00:00",
+      "exit_code": 0,
+      "label": "post-origin-00",
+      "pid": 8271,
+      "started_utc": "2026-10-13T02:50:11.286415+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 53,
+        "observed_bytes": 53,
+        "path": "logs/post-origin-00.stdout.log",
+        "sha256": "03e534cb626b55a5210b43c74776926d0ef07ac36b774832c9934433ee3c9d4c",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:11.394061+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-01",
+      "pid": 8272,
+      "started_utc": "2026-10-13T02:50:11.340259+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-01.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:11.450635+00:00",
+      "exit_code": 0,
+      "label": "post-revision-01",
+      "pid": 8273,
+      "started_utc": "2026-10-13T02:50:11.395333+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-01.stdout.log",
+        "sha256": "5f4ae658966fdc18933fe008f0fa3170b7c00c9cbdb3dc61ae991accf4bab97f",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:11.504377+00:00",
+      "exit_code": 0,
+      "label": "post-origin-01",
+      "pid": 8274,
+      "started_utc": "2026-10-13T02:50:11.451959+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 50,
+        "observed_bytes": 50,
+        "path": "logs/post-origin-01.stdout.log",
+        "sha256": "f9e157058f246ccb009bd17773f68233dd8dade976dbb829338d6c201cf8599f",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:11.558399+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-02",
+      "pid": 8275,
+      "started_utc": "2026-10-13T02:50:11.505883+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-02.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:11.612799+00:00",
+      "exit_code": 0,
+      "label": "post-revision-02",
+      "pid": 8276,
+      "started_utc": "2026-10-13T02:50:11.559713+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-02.stdout.log",
+        "sha256": "ee39bdbdf92107dc88a4ecc2220d30f32902373c6f0739c8492be44a294847a4",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:11.666677+00:00",
+      "exit_code": 0,
+      "label": "post-origin-02",
+      "pid": 8277,
+      "started_utc": "2026-10-13T02:50:11.614144+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 57,
+        "observed_bytes": 57,
+        "path": "logs/post-origin-02.stdout.log",
+        "sha256": "619333dd697b0876afa6e558ee619ba42cc147c8ac9eb415d66d06cb3d13e196",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:11.721043+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-03",
+      "pid": 8278,
+      "started_utc": "2026-10-13T02:50:11.668087+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-03.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:11.774833+00:00",
+      "exit_code": 0,
+      "label": "post-revision-03",
+      "pid": 8279,
+      "started_utc": "2026-10-13T02:50:11.722475+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-03.stdout.log",
+        "sha256": "7f1b3a7459b33f77fb08847cc0be80357aa6fcfb8e846a3ffbdbb656fd08218b",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:11.828610+00:00",
+      "exit_code": 0,
+      "label": "post-origin-03",
+      "pid": 8280,
+      "started_utc": "2026-10-13T02:50:11.776199+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 53,
+        "observed_bytes": 53,
+        "path": "logs/post-origin-03.stdout.log",
+        "sha256": "e1308c66f365e49e7b8c10bd874950ac425bcc14aefe9881baf03c4f65f25cf1",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:11.882673+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-04",
+      "pid": 8281,
+      "started_utc": "2026-10-13T02:50:11.830252+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-04.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:11.936592+00:00",
+      "exit_code": 0,
+      "label": "post-revision-04",
+      "pid": 8282,
+      "started_utc": "2026-10-13T02:50:11.884045+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-04.stdout.log",
+        "sha256": "a26e42b6270d4e50e6866efb9277ecf9d573be7d8f53baaac54b61c0a9e4c9b1",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:11.991560+00:00",
+      "exit_code": 0,
+      "label": "post-origin-04",
+      "pid": 8283,
+      "started_utc": "2026-10-13T02:50:11.938617+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 54,
+        "observed_bytes": 54,
+        "path": "logs/post-origin-04.stdout.log",
+        "sha256": "d85a5cc11983798fb902072b68e0a279bae40189de64fe4ccaa3f969f8e7414c",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:12.046234+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-05",
+      "pid": 8284,
+      "started_utc": "2026-10-13T02:50:11.993183+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-05.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:12.101004+00:00",
+      "exit_code": 0,
+      "label": "post-revision-05",
+      "pid": 8285,
+      "started_utc": "2026-10-13T02:50:12.047665+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-05.stdout.log",
+        "sha256": "2ca5dc9099966d8b4d75f068570c8382e9b1743eb524d29dfd9c31f1b0357e68",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:12.107698+00:00",
+      "exit_code": 0,
+      "label": "post-origin-05",
+      "pid": 8286,
+      "started_utc": "2026-10-13T02:50:12.102507+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 46,
+        "observed_bytes": 46,
+        "path": "logs/post-origin-05.stdout.log",
+        "sha256": "007ad2ffb6cd1115e54eb06162448481b6e57a2b38a5721fe9306aa73f377411",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:12.161996+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-06",
+      "pid": 8287,
+      "started_utc": "2026-10-13T02:50:12.109527+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-06.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:12.216059+00:00",
+      "exit_code": 0,
+      "label": "post-revision-06",
+      "pid": 8288,
+      "started_utc": "2026-10-13T02:50:12.163493+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-06.stdout.log",
+        "sha256": "b5c55d876bdd5b8f9c8f5c80247fd9a311a44e6be1ca930dff8fdac32763b3ef",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:12.270165+00:00",
+      "exit_code": 0,
+      "label": "post-origin-06",
+      "pid": 8289,
+      "started_utc": "2026-10-13T02:50:12.217672+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 47,
+        "observed_bytes": 47,
+        "path": "logs/post-origin-06.stdout.log",
+        "sha256": "0edd7e60b5329aa479be59427897c3d131a4bed960e8a4faf0aaa6f3c176fe66",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:12.324324+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-07",
+      "pid": 8290,
+      "started_utc": "2026-10-13T02:50:12.271772+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-07.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:12.378506+00:00",
+      "exit_code": 0,
+      "label": "post-revision-07",
+      "pid": 8291,
+      "started_utc": "2026-10-13T02:50:12.326014+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-07.stdout.log",
+        "sha256": "7a7d1966b230b609b900348919460f414800232a58d0caa685a23bf7a41c2e73",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:12.433060+00:00",
+      "exit_code": 0,
+      "label": "post-origin-07",
+      "pid": 8292,
+      "started_utc": "2026-10-13T02:50:12.380182+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 50,
+        "observed_bytes": 50,
+        "path": "logs/post-origin-07.stdout.log",
+        "sha256": "163e9977daaaf557a111a95edb87a473e4dabdef0c7ae0451d8d76ba9a6f1232",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:12.487637+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-08",
+      "pid": 8293,
+      "started_utc": "2026-10-13T02:50:12.434830+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-08.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:12.542686+00:00",
+      "exit_code": 0,
+      "label": "post-revision-08",
+      "pid": 8294,
+      "started_utc": "2026-10-13T02:50:12.489313+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-08.stdout.log",
+        "sha256": "8c4dfa759e1faa2e44986cb2e0a7df5843e2e4ed9587cc8c6db5730c7a517f02",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:50:12.597198+00:00",
+      "exit_code": 0,
+      "label": "post-origin-08",
+      "pid": 8295,
+      "started_utc": "2026-10-13T02:50:12.544317+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 40,
+        "observed_bytes": 40,
+        "path": "logs/post-origin-08.stdout.log",
+        "sha256": "c0c02deff1a1a3fba1f471202c853e7ca2bda0764a0f6b3e95d0bf5e90c4ca79",
+        "truncated": false
+      },
+      "termination": "exit"
+    }
+  ],
+  "dependencies": [
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "mathlib",
+      "origin": "https://github.com/leanprover-community/mathlib4.git",
+      "revision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "tracked_status": ""
+    },
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "plausible",
+      "origin": "https://github.com/leanprover-community/plausible",
+      "revision": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "tracked_status": ""
+    },
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "LeanSearchClient",
+      "origin": "https://github.com/leanprover-community/LeanSearchClient",
+      "revision": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "tracked_status": ""
+    },
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "importGraph",
+      "origin": "https://github.com/leanprover-community/import-graph",
+      "revision": "d768126816be17600904726ca7976b185786e6b9",
+      "tracked_status": ""
+    },
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "proofwidgets",
+      "origin": "https://github.com/leanprover-community/ProofWidgets4",
+      "revision": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "tracked_status": ""
+    },
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "aesop",
+      "origin": "https://github.com/leanprover-community/aesop",
+      "revision": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "tracked_status": ""
+    },
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "Qq",
+      "origin": "https://github.com/leanprover-community/quote4",
+      "revision": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "tracked_status": ""
+    },
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "batteries",
+      "origin": "https://github.com/leanprover-community/batteries",
+      "revision": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "tracked_status": ""
+    },
+    {
+      "cache": null,
+      "cache_status": "absent_not_imported",
+      "name": "Cli",
+      "origin": "https://github.com/leanprover/lean4-cli",
+      "revision": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "tracked_status": ""
+    }
+  ],
+  "ended_utc": "2026-10-13T02:50:12.603803+00:00",
+  "inputs": [
+    {
+      "id": "0000",
+      "input_bytes": 561,
+      "input_sha256": "2532a969c92545e2e89a770c966f93e219f3cd29746c13a8dddeffac8f818281",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputOptimal problem point weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "InputFeasible problem (realVector point) ∧\n  ∀ (y : Fin 2 → ℝ), InputFeasible problem y → ObjectiveBound problem (realVector point) y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "certified_objective_value": "10",
+        "checks": [
+          {
+            "code": "point_feasibility",
+            "lhs": "4",
+            "passed": true,
+            "path": "$.certificate.point/row[0]",
+            "relation": "<=",
+            "rhs": "4"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "8",
+            "passed": true,
+            "path": "$.certificate.point/row[1]",
+            "relation": "<=",
+            "rhs": "8"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "-2",
+            "passed": true,
+            "path": "$.certificate.point/row[2]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "-2",
+            "passed": true,
+            "path": "$.certificate.point/row[3]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.point/row[4]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[0]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "3/4",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[1]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[2]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[3]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "3",
+            "passed": true,
+            "path": "combination.coefficients[0]",
+            "relation": "=",
+            "rhs": "3"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "2",
+            "passed": true,
+            "path": "combination.coefficients[1]",
+            "relation": "=",
+            "rhs": "2"
+          },
+          {
+            "code": "bound_attained",
+            "lhs": "10",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "=",
+            "rhs": "10"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 2,
+        "equality_rows": 1,
+        "inequality_rows": 4,
+        "kind": "optimal",
+        "objective_sense": "max",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    }
+  ],
+  "lean_path": "${TEMP_ARTIFACT}/.work/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean",
+  "library_expected_gate": "passed",
+  "library_sources": {
+    "EvidenceHarness.lean": {
+      "bytes": 6371,
+      "sha256": "bb71282fcb088498a9c40b0460694f1663e8f3a145fc15469050b8ade2f390dc"
+    },
+    "LPCertificates.lean": {
+      "bytes": 117,
+      "sha256": "2f413af4039969062d39053edb85b06b03ee9c8a7776c5ef0b9c4d2276e4cf78"
+    },
+    "LPCertificates/Core.lean": {
+      "bytes": 6684,
+      "sha256": "5c9755bfdc0b11dcd680a2bfd42da61c5a73f2107cb8bb564be83821af2fb59a"
+    },
+    "LPCertificates/Examples.lean": {
+      "bytes": 4044,
+      "sha256": "159433f1444e5fcf641028091bb926cb3282b0bc275cca09069ea5231f499f94"
+    },
+    "LPCertificates/Input.lean": {
+      "bytes": 5660,
+      "sha256": "4bfbbd5058b142ad21657462963ccf80a6bdd1dbdfc9fa36ae78253ee605eae7"
+    },
+    "LPCertificates/Rational.lean": {
+      "bytes": 5847,
+      "sha256": "be5b7bf5c286303fef192404ddb6d2e07f8c3c7a5b794548740382b0722f5f94"
+    },
+    "lake-manifest.json": {
+      "bytes": 3542,
+      "sha256": "fa235a31755c091135e667ffb4085455396f4b8ef6077f6e53c3556ce05a65d7"
+    },
+    "lakefile.toml": {
+      "bytes": 288,
+      "sha256": "4b65bceca43c56f756725d981755a40d4078867952dce5c6338af189e9c59788"
+    },
+    "lean-toolchain": {
+      "bytes": 25,
+      "sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434"
+    },
+    "scripts/ExpectedInput.lean": {
+      "bytes": 5824,
+      "sha256": "51592c9b71c70f87eff6f8f541c189a75370a06e6a617bb2c43ea479a1527ad7"
+    }
+  },
+  "postflight": "all input/source/compiler/dependency/output/product identities unchanged",
+  "products": [
+    {
+      "bytes": 467152,
+      "module": "LPCertificates/Core",
+      "retained": false,
+      "sha256": "624c7442243055906e1efca5f106a2c183b5f9d0f5c28f2b6a38bc6b4a573d54"
+    },
+    {
+      "bytes": 241696,
+      "module": "LPCertificates/Rational",
+      "retained": false,
+      "sha256": "9f8bf719935716f3dc4b75a0744c25921c1feb21c94c6ed1d75bc0450a1ea334"
+    },
+    {
+      "bytes": 448880,
+      "module": "LPCertificates/Input",
+      "retained": false,
+      "sha256": "2533dae4cbe7ede25639dd0f37d972f745b759b1234df52dedb69a6dba0f1e76"
+    },
+    {
+      "bytes": 194688,
+      "module": "LPCertificates/Examples",
+      "retained": false,
+      "sha256": "e21518ffc0ca80d536598a760c72c0faefde1aa6a0361bfdc5b5d3c2e4f3a6b5"
+    },
+    {
+      "bytes": 38816,
+      "module": "LPCertificates",
+      "retained": false,
+      "sha256": "4a614c026b9452ceeac28811dc476650656a435dda2d202535ed22597e73d838"
+    },
+    {
+      "bytes": 721080,
+      "module": "EvidenceHarness",
+      "retained": false,
+      "sha256": "fda685d1a89f4054f857619837226a3c8e33dc236ed369409f847d32f0a23456"
+    },
+    {
+      "bytes": 114232,
+      "module": "Checked0000",
+      "retained": false,
+      "sha256": "27d9af1c0ac0a07d003d0a6127f372e32ee8e8af8944af13ff15c8b99a8e49e9"
+    }
+  ],
+  "resource_bounds": {
+    "address_space_bytes": 17179869184,
+    "lean_heap_megabytes": 4096,
+    "lean_threads": 1,
+    "log_bytes_per_stream": 2097152,
+    "timeout_seconds": 240
+  },
+  "schema": "lp-certificates-checked-bridge/v1",
+  "started_utc": "2026-10-13T02:48:58.615939+00:00",
+  "status": "lean_checked",
+  "toolchain": {
+    "commit": "797c613eb9b6d4ec95db23e3e00af9ac6657f24b",
+    "lean": "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+    "members": {
+      "bin/lean": {
+        "bytes": 9024,
+        "sha256": "8fadc3ed92cc9decb94c96ee9c0876e91e03a3a5e69138f32114f02789e2766c"
+      },
+      "lib/lean/libInit_shared.so": {
+        "bytes": 6232,
+        "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+      },
+      "lib/lean/libleanshared.so": {
+        "bytes": 193479936,
+        "sha256": "8cc9858cc57c52015ba6dd948bdbf7f05926b9b5fcead69a964f0ad61ddd79dd"
+      },
+      "lib/lean/libleanshared_1.so": {
+        "bytes": 6232,
+        "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+      },
+      "lib/lean/libleanshared_2.so": {
+        "bytes": 6232,
+        "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+      }
+    },
+    "prefix": "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux",
+    "release": "4.24.0"
+  },
+  "trust_limits": [
+    "JSON-to-Lean transcription is trusted, not a proved parser refinement",
+    "host runtime and clean pinned dependency caches are trusted",
+    "same Lean kernel replay, not an independent kernel implementation",
+    "package hashes attest consistency, not historical execution authenticity",
+    "no finding/completeness, native Mac, or installed MRS claim"
+  ],
+  "verifier_sha256": "bb55c5f57a91d9c8c225ab3dc219a718a383e13249314fff29b5a1ad33e290fb",
+  "publication_derivative": {
+    "original_schema": "lp-certificates-checked-bridge/v1",
+    "original_commit": "032db09354d41b58c2e9211ed7e69024a3e74010",
+    "original_sha256": "740610899a0d5ee2c42c64e2412cac7c8d9cfb2185323c206fe148a8449b7e0f",
+    "original_bytes": 75701,
+    "scope": "Public metadata derivative; recorded environment paths and coordination details normalized. Original outcomes, exits, dates, mathematical source/pin hashes and trust limits retain their original scope.",
+    "captured_byte_descriptors": "Original receipt/output descriptors remain historical original-byte bindings; current public-copy bytes use publication/OCTOBER-13-SOURCE-MAP.json and publication/FILES.json.",
+    "removed_nonmathematical_fields": [],
+    "new_mathematical_verification": false,
+    "publication_profile": "recheckable_lp_package_metadata"
+  }
+}

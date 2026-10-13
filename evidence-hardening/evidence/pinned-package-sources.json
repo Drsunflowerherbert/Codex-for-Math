@@ -1,0 +1,172 @@
+{
+  "schema": "publication-metadata-derivative/v1",
+  "sourceHashesBefore": {
+    "git-source.cjs": "4e952dd308f44ab204996a588a6c7b3da742bcfb679b2843deb9f4876ea9300c",
+    "io.cjs": "15ecc07d3ca619dc4d2e7504c07a39358aabd31abb4e31dcaa9c94e898d94390",
+    "vendor/strict-json.cjs": "375a555e00eb401c16235a5a84c57995b73db418f4ef02709b272c7a95469e0b"
+  },
+  "sourceHashesAfter": {
+    "git-source.cjs": "4e952dd308f44ab204996a588a6c7b3da742bcfb679b2843deb9f4876ea9300c",
+    "io.cjs": "15ecc07d3ca619dc4d2e7504c07a39358aabd31abb4e31dcaa9c94e898d94390",
+    "vendor/strict-json.cjs": "375a555e00eb401c16235a5a84c57995b73db418f4ef02709b272c7a95469e0b"
+  },
+  "sourceUnchanged": true,
+  "total": 9,
+  "passed": 9,
+  "results": [
+    {
+      "name": "mathlib",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/git-source.cjs",
+        "${VERIFICATION_ENV}/tangent-limit/.lake/packages/mathlib",
+        "f897ebcf72cd16f89ab4577d0c826cd14afaafc7"
+      ],
+      "started": "2026-10-13T02:03:13.745425+00:00",
+      "finished": "2026-10-13T02:03:17.978895+00:00",
+      "exit": 0,
+      "files": 7575,
+      "sourceClosureSHA256": "969916d1cb06b480fedafb16ecc93536ae40582b73b992da56bc9b0e29259de2",
+      "error": null,
+      "leanPass": false
+    },
+    {
+      "name": "plausible",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/git-source.cjs",
+        "${VERIFICATION_ENV}/tangent-limit/.lake/packages/plausible",
+        "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805"
+      ],
+      "started": "2026-10-13T02:03:17.979021+00:00",
+      "finished": "2026-10-13T02:03:18.048638+00:00",
+      "exit": 0,
+      "files": 19,
+      "sourceClosureSHA256": "1dc2cde84d2e383747f7ff2a4d7ffe92ba879e54cca0436c982f5f9aa5a1e412",
+      "error": null,
+      "leanPass": false
+    },
+    {
+      "name": "LeanSearchClient",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/git-source.cjs",
+        "${VERIFICATION_ENV}/tangent-limit/.lake/packages/LeanSearchClient",
+        "99657ad92e23804e279f77ea6dbdeebaa1317b98"
+      ],
+      "started": "2026-10-13T02:03:18.048769+00:00",
+      "finished": "2026-10-13T02:03:18.113816+00:00",
+      "exit": 0,
+      "files": 16,
+      "sourceClosureSHA256": "627d98839ad04c0c6c5b9bf2db2c26d9d8f555ae17ed6c5e7cbad3b6931f11eb",
+      "error": null,
+      "leanPass": false
+    },
+    {
+      "name": "importGraph",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/git-source.cjs",
+        "${VERIFICATION_ENV}/tangent-limit/.lake/packages/importGraph",
+        "d768126816be17600904726ca7976b185786e6b9"
+      ],
+      "started": "2026-10-13T02:03:18.113881+00:00",
+      "finished": "2026-10-13T02:03:18.213201+00:00",
+      "exit": 0,
+      "files": 35,
+      "sourceClosureSHA256": "1f374db3f8819dfa2015656e98de222ca0d48bed980ff2dfb55cc1897c3e9820",
+      "error": null,
+      "leanPass": false
+    },
+    {
+      "name": "proofwidgets",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/git-source.cjs",
+        "${VERIFICATION_ENV}/tangent-limit/.lake/packages/proofwidgets",
+        "556caed0eadb7901e068131d1be208dd907d07a2"
+      ],
+      "started": "2026-10-13T02:03:18.213269+00:00",
+      "finished": "2026-10-13T02:03:18.307252+00:00",
+      "exit": 0,
+      "files": 74,
+      "sourceClosureSHA256": "fe581cbedba555717f8da9871dbde2f436db4ba770c387fbad64d2f4353d8ae2",
+      "error": null,
+      "leanPass": false
+    },
+    {
+      "name": "aesop",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/git-source.cjs",
+        "${VERIFICATION_ENV}/tangent-limit/.lake/packages/aesop",
+        "725ac8cd67acd70a7beaf47c3725e23484c1ef50"
+      ],
+      "started": "2026-10-13T02:03:18.307318+00:00",
+      "finished": "2026-10-13T02:03:18.519482+00:00",
+      "exit": 0,
+      "files": 251,
+      "sourceClosureSHA256": "47c0a7142f4b7c7b995f1ad084b6a5d98c6fc9bff12b8ecf4f9c661506dc8a36",
+      "error": null,
+      "leanPass": false
+    },
+    {
+      "name": "Qq",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/git-source.cjs",
+        "${VERIFICATION_ENV}/tangent-limit/.lake/packages/Qq",
+        "dea6a3361fa36d5a13f87333dc506ada582e025c"
+      ],
+      "started": "2026-10-13T02:03:18.519551+00:00",
+      "finished": "2026-10-13T02:03:18.593445+00:00",
+      "exit": 0,
+      "files": 36,
+      "sourceClosureSHA256": "782be39fc96602d96e381320fdb7d85f698ad83e20d6d0429d794fa735eef567",
+      "error": null,
+      "leanPass": false
+    },
+    {
+      "name": "batteries",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/git-source.cjs",
+        "${VERIFICATION_ENV}/tangent-limit/.lake/packages/batteries",
+        "8da40b72fece29b7d3fe3d768bac4c8910ce9bee"
+      ],
+      "started": "2026-10-13T02:03:18.593509+00:00",
+      "finished": "2026-10-13T02:03:18.776380+00:00",
+      "exit": 0,
+      "files": 258,
+      "sourceClosureSHA256": "e3d9ddee6de5ea67ebe86d05fed1ce74d5250b0d2096a8da57a1672cee9ddcc4",
+      "error": null,
+      "leanPass": false
+    },
+    {
+      "name": "Cli",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/git-source.cjs",
+        "${VERIFICATION_ENV}/tangent-limit/.lake/packages/Cli",
+        "91c18fa62838ad0ab7384c03c9684d99d306e1da"
+      ],
+      "started": "2026-10-13T02:03:18.776443+00:00",
+      "finished": "2026-10-13T02:03:18.860972+00:00",
+      "exit": 0,
+      "files": 12,
+      "sourceClosureSHA256": "68ea4985d3ab8168976bd956301d64aa54596f5a2fc6f3dd459d6e47134920dd",
+      "error": null,
+      "leanPass": false
+    }
+  ],
+  "publication_derivative": {
+    "original_schema": "independent-pinned-package-source-checks/v1",
+    "original_commit": "c2fe44833ceb577595028549cecdda87986f303e",
+    "original_sha256": "bd5763e0920fd72defbd4850b4fcb16126828d3cd724e34b915cc6b59073a46f",
+    "original_bytes": 6000,
+    "scope": "Public metadata derivative; recorded environment paths and coordination details normalized. Original outcomes, exits, dates, mathematical source/pin hashes and trust limits retain their original scope.",
+    "captured_byte_descriptors": "Original receipt/output descriptors remain historical original-byte bindings; current public-copy bytes use publication/OCTOBER-13-SOURCE-MAP.json and publication/FILES.json.",
+    "removed_nonmathematical_fields": [],
+    "new_mathematical_verification": false
+  }
+}

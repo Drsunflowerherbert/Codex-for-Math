@@ -1,0 +1,39 @@
+{
+  "certificate": {
+    "equality_multipliers": [
+      "-0002/4"
+    ],
+    "inequality_multipliers": [
+      "-0"
+    ],
+    "kind": "optimal",
+    "point": [
+      "+0002/6"
+    ]
+  },
+  "problem": {
+    "constraints": [
+      {
+        "coefficients": [
+          "+02/2"
+        ],
+        "rhs": "-0000",
+        "sense": ">="
+      },
+      {
+        "coefficients": [
+          "+06/2"
+        ],
+        "rhs": "+0001",
+        "sense": "="
+      }
+    ],
+    "objective": {
+      "coefficients": [
+        "+0006/4"
+      ],
+      "sense": "min"
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "certificate": {
+    "equality_multipliers": [
+      -7
+    ],
+    "inequality_multipliers": [
+      0
+    ],
+    "kind": "optimal",
+    "point": []
+  },
+  "problem": {
+    "constraints": [
+      {
+        "coefficients": [],
+        "rhs": 0,
+        "sense": "<="
+      },
+      {
+        "coefficients": [],
+        "rhs": 0,
+        "sense": "="
+      }
+    ],
+    "objective": {
+      "coefficients": [],
+      "sense": "max"
+    }
+  },
+  "version": 1
+}

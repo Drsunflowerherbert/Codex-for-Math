@@ -1,0 +1,59 @@
+{
+  "dimension": 2,
+  "direction": [],
+  "kind": "optimal",
+  "objective": [
+    "3",
+    "2"
+  ],
+  "objective_sense": "max",
+  "point": [
+    "2",
+    "2"
+  ],
+  "row_count": 4,
+  "row_multipliers": [
+    "5/2",
+    "0",
+    "0",
+    "1/2"
+  ],
+  "rows": [
+    {
+      "coefficients": [
+        "1",
+        "1"
+      ],
+      "index": 0,
+      "rhs": "4",
+      "sense": "<="
+    },
+    {
+      "coefficients": [
+        "1",
+        "0"
+      ],
+      "index": 1,
+      "rhs": "0",
+      "sense": ">="
+    },
+    {
+      "coefficients": [
+        "0",
+        "1"
+      ],
+      "index": 2,
+      "rhs": "0",
+      "sense": ">="
+    },
+    {
+      "coefficients": [
+        "1",
+        "-1"
+      ],
+      "index": 3,
+      "rhs": "0",
+      "sense": "="
+    }
+  ]
+}

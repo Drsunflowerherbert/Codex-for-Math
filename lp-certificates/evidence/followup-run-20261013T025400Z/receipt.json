@@ -1,0 +1,815 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:53:54.922288+00:00",
+      "exit_code": 0,
+      "label": "compiler-version",
+      "started_utc": "2026-10-13T02:53:54.215298+00:00",
+      "stderr": {
+        "bytes": 0,
+        "file": "compiler-version.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 106,
+        "file": "compiler-version.stdout.log",
+        "sha256": "36c0bbaf090c97bc8217c6ff497ff9144fd83d9003f12cd505162b943aaaee77"
+      }
+    },
+    {
+      "argv": [
+        "node",
+        "${PROJECT_REPOSITORY}/math-evidence/verify-public-sources.cjs"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/math-evidence",
+      "ended_utc": "2026-10-13T02:53:55.085585+00:00",
+      "exit_code": 0,
+      "label": "toolkit-source-pins",
+      "started_utc": "2026-10-13T02:53:54.922653+00:00",
+      "stderr": {
+        "bytes": 0,
+        "file": "toolkit-source-pins.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 47,
+        "file": "toolkit-source-pins.stdout.log",
+        "sha256": "0340f14a08f36d4aede456283a388a88c4f138981ab002bddc7b1273c3700987"
+      }
+    },
+    {
+      "argv": [
+        "${PYTHON}",
+        "${PROJECT_REPOSITORY}/math-evidence/toolchain-audit.py",
+        "${PINNED_REPOSITORY}"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:54:01.293140+00:00",
+      "exit_code": 0,
+      "label": "compiler-byte-audit",
+      "started_utc": "2026-10-13T02:53:55.085907+00:00",
+      "stderr": {
+        "bytes": 0,
+        "file": "compiler-byte-audit.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 2225,
+        "file": "compiler-byte-audit.stdout.log",
+        "sha256": "bb45e177a59c22835a24d942c26250a2bb7d46844347527b296dff95fc37c7ec"
+      }
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--print-prefix"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:54:01.824240+00:00",
+      "exit_code": 0,
+      "label": "compiler-location",
+      "started_utc": "2026-10-13T02:54:01.293548+00:00",
+      "stderr": {
+        "bytes": 0,
+        "file": "compiler-location.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 86,
+        "file": "compiler-location.stdout.log",
+        "sha256": "e359955807ba66e4f188483c4731603c959b766ee6a9465eca1dec3bb6dd70a8"
+      }
+    },
+    {
+      "argv": [
+        "${PYTHON}",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:54:10.046545+00:00",
+      "exit_code": 0,
+      "label": "python-tests",
+      "started_utc": "2026-10-13T02:54:01.824749+00:00",
+      "stderr": {
+        "bytes": 19204,
+        "file": "python-tests.stderr.log",
+        "sha256": "1f05ffccb218405186f2c37db60d70da4a22d259db6091ba386d01687b21599d"
+      },
+      "stdout": {
+        "bytes": 294,
+        "file": "python-tests.stdout.log",
+        "sha256": "a46633feab9da7773f25683308b1d687c3d3a90939f71118cdd2631515ba7cf8"
+      }
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lake",
+        "build"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:54:50.597904+00:00",
+      "exit_code": 0,
+      "label": "lean-build",
+      "started_utc": "2026-10-13T02:54:10.048769+00:00",
+      "stderr": {
+        "bytes": 0,
+        "file": "lean-build.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 290,
+        "file": "lean-build.stdout.log",
+        "sha256": "5248dd5b05f5b523352d55aeb4cf0def7642ad12f0c3244092cd71ca693c4d6c"
+      }
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--root=${PROJECT_REPOSITORY}/lp-certificates/evidence/followup-run-20261013T025400Z",
+        "${PROJECT_REPOSITORY}/lp-certificates/evidence/followup-run-20261013T025400Z/AxiomAudit.lean"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:55:03.388786+00:00",
+      "exit_code": 0,
+      "label": "declaration-audit",
+      "started_utc": "2026-10-13T02:54:50.602653+00:00",
+      "stderr": {
+        "bytes": 0,
+        "file": "declaration-audit.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 27734,
+        "file": "declaration-audit.stdout.log",
+        "sha256": "66371a882a29da9b33cb7e798942b45723335514de4bfd636dd2bb376565df01"
+      }
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--root=${PROJECT_REPOSITORY}/math-evidence/lean",
+        "${PROJECT_REPOSITORY}/math-evidence/lean/EvidenceHarness.lean",
+        "-o",
+        "${PROJECT_REPOSITORY}/lp-certificates/.lake/build/lib/lean/EvidenceHarness.olean"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:55:05.269478+00:00",
+      "exit_code": 0,
+      "label": "evidence-helper-build",
+      "started_utc": "2026-10-13T02:55:03.392629+00:00",
+      "stderr": {
+        "bytes": 0,
+        "file": "evidence-helper-build.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 0,
+        "file": "evidence-helper-build.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lake",
+        "env",
+        "lean",
+        "scripts/Expected.lean"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:55:31.715515+00:00",
+      "exit_code": 0,
+      "label": "independent-expected-and-replay",
+      "started_utc": "2026-10-13T02:55:05.270117+00:00",
+      "stderr": {
+        "bytes": 0,
+        "file": "independent-expected-and-replay.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 5915,
+        "file": "independent-expected-and-replay.stdout.log",
+        "sha256": "21f285b3cc6059841cebb2510c744887fd682c61932f87a8f2c0773bec45c8d6"
+      }
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lake",
+        "env",
+        "lean",
+        "scripts/ExpectedInput.lean"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:55:48.111779+00:00",
+      "exit_code": 0,
+      "label": "independent-input-expected-and-replay",
+      "started_utc": "2026-10-13T02:55:31.716977+00:00",
+      "stderr": {
+        "bytes": 0,
+        "file": "independent-input-expected-and-replay.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 4718,
+        "file": "independent-input-expected-and-replay.stdout.log",
+        "sha256": "d0855a2881fb46d487f03c56b735cc101aa848e16b9be042df98d1904095b80d"
+      }
+    }
+  ],
+  "compiler_byte_audit": "actual_selected_compiler_matches_pinned_release_members",
+  "ended_utc": "2026-10-13T02:55:48.120668+00:00",
+  "evidence_helper_sha256": "bb71282fcb088498a9c40b0460694f1663e8f3a145fc15469050b8ade2f390dc",
+  "lake_binary": "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lake",
+  "named_declarations": [
+    "LPCertificates.dot",
+    "LPCertificates.Feasible",
+    "LPCertificates.Nonnegative",
+    "LPCertificates.combination",
+    "LPCertificates.bound",
+    "LPCertificates.DualCertificate",
+    "LPCertificates.OptimalCertificate",
+    "LPCertificates.InfeasibleCertificate",
+    "LPCertificates.RayCertificate",
+    "LPCertificates.dot_add",
+    "LPCertificates.dot_add_right",
+    "LPCertificates.dot_smul_right",
+    "LPCertificates.weighted_dot",
+    "LPCertificates.combination_dot",
+    "LPCertificates.combination_bound",
+    "LPCertificates.weak_duality",
+    "LPCertificates.optimal_sound",
+    "LPCertificates.infeasible_sound",
+    "LPCertificates.ray_feasible",
+    "LPCertificates.ray_objective",
+    "LPCertificates.unbounded_sound",
+    "LPCertificates.duality_gap",
+    "LPCertificates.complementary_slackness",
+    "LPCertificates.mixedRedundant",
+    "LPCertificates.mixedRedundant_accepts",
+    "LPCertificates.mixedRedundant_alternative_accepts",
+    "LPCertificates.mixedRedundant_real_optimal",
+    "LPCertificates.negative_multiplier_rejected",
+    "LPCertificates.infeasible_point_rejected",
+    "LPCertificates.singletonMin",
+    "LPCertificates.singletonMin_accepts",
+    "LPCertificates.contradiction",
+    "LPCertificates.contradiction_accepts",
+    "LPCertificates.contradiction_real_infeasible",
+    "LPCertificates.nonstrict_contradiction_rejected",
+    "LPCertificates.equalityContradiction",
+    "LPCertificates.equalityContradiction_accepts",
+    "LPCertificates.lineRayMin",
+    "LPCertificates.lineRayMin_accepts",
+    "LPCertificates.lineRayMin_real_unbounded",
+    "LPCertificates.zero_gain_rejected",
+    "LPCertificates.bad_base_rejected",
+    "LPCertificates.bad_direction_rejected",
+    "LPCertificates.zeroVariableFeasible",
+    "LPCertificates.zeroVariableFeasible_accepts",
+    "LPCertificates.zeroVariableInfeasible",
+    "LPCertificates.zeroVariableInfeasible_accepts",
+    "LPCertificates.freeRay",
+    "LPCertificates.freeRay_accepts",
+    "LPCertificates.constantNoRows",
+    "LPCertificates.constantNoRows_accepts",
+    "LPCertificates.normalizeInput",
+    "LPCertificates.inputInequalityWeights",
+    "LPCertificates.inputEqualityWeights",
+    "LPCertificates.InputFeasible",
+    "LPCertificates.ObjectiveBound",
+    "LPCertificates.ObjectiveBeyond",
+    "LPCertificates.checkInputOptimal",
+    "LPCertificates.checkInputInfeasible",
+    "LPCertificates.checkInputUnbounded",
+    "LPCertificates.input_feasible_iff",
+    "LPCertificates.input_objective_bound_iff",
+    "LPCertificates.inputOptimal_sound_real",
+    "LPCertificates.inputInfeasible_sound_real",
+    "LPCertificates.inputUnbounded_sound_real",
+    "LPCertificates.checkOptimal",
+    "LPCertificates.checkInfeasible",
+    "LPCertificates.checkUnbounded",
+    "LPCertificates.realVector",
+    "LPCertificates.realProblem",
+    "LPCertificates.dot_cast",
+    "LPCertificates.combination_cast",
+    "LPCertificates.bound_cast",
+    "LPCertificates.feasible_cast",
+    "LPCertificates.dual_cast",
+    "LPCertificates.checkOptimal_sound_real",
+    "LPCertificates.checkInfeasible_sound_real",
+    "LPCertificates.checkUnbounded_sound_real"
+  ],
+  "resolved_dependencies": [
+    {
+      "name": "mathlib",
+      "origin": "https://github.com/leanprover-community/mathlib4.git",
+      "revision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "tracked_status": ""
+    },
+    {
+      "name": "plausible",
+      "origin": "https://github.com/leanprover-community/plausible",
+      "revision": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "tracked_status": ""
+    },
+    {
+      "name": "LeanSearchClient",
+      "origin": "https://github.com/leanprover-community/LeanSearchClient",
+      "revision": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "tracked_status": ""
+    },
+    {
+      "name": "importGraph",
+      "origin": "https://github.com/leanprover-community/import-graph",
+      "revision": "d768126816be17600904726ca7976b185786e6b9",
+      "tracked_status": ""
+    },
+    {
+      "name": "proofwidgets",
+      "origin": "https://github.com/leanprover-community/ProofWidgets4",
+      "revision": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "tracked_status": ""
+    },
+    {
+      "name": "aesop",
+      "origin": "https://github.com/leanprover-community/aesop",
+      "revision": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "tracked_status": ""
+    },
+    {
+      "name": "Qq",
+      "origin": "https://github.com/leanprover-community/quote4",
+      "revision": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "tracked_status": ""
+    },
+    {
+      "name": "batteries",
+      "origin": "https://github.com/leanprover-community/batteries",
+      "revision": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "tracked_status": ""
+    },
+    {
+      "name": "Cli",
+      "origin": "https://github.com/leanprover/lean4-cli",
+      "revision": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "tracked_status": ""
+    }
+  ],
+  "results": {
+    "fresh_project_compilation": "passed",
+    "independent_expected_type_and_body_gate": "passed",
+    "independent_original_input_type_and_body_gate": "passed",
+    "named_axiom_audit": "passed",
+    "python_tests": "passed",
+    "same_kernel_local_replay": "passed"
+  },
+  "schema": "publication-metadata-derivative/v1",
+  "source_sha256": {
+    "LPCertificates.lean": "2f413af4039969062d39053edb85b06b03ee9c8a7776c5ef0b9c4d2276e4cf78",
+    "LPCertificates/Core.lean": "5c9755bfdc0b11dcd680a2bfd42da61c5a73f2107cb8bb564be83821af2fb59a",
+    "LPCertificates/Examples.lean": "159433f1444e5fcf641028091bb926cb3282b0bc275cca09069ea5231f499f94",
+    "LPCertificates/Input.lean": "4bfbbd5058b142ad21657462963ccf80a6bdd1dbdfc9fa36ae78253ee605eae7",
+    "LPCertificates/Rational.lean": "be5b7bf5c286303fef192404ddb6d2e07f8c3c7a5b794548740382b0722f5f94",
+    "bridge.py": "c0fe2cbfc7511309f91524e86ed8e5342f0d891c090a343a0a1ee06736774dd2",
+    "examples/infeasible_equalities.json": "f8e2e5333b81d3cc1dd5ca805112134828b09ce080f486a2a8f992973a173b2e",
+    "examples/infeasible_mixed.json": "7b33b4b2aac54b3e9e2b2cfa4520e41ec392ececf993a7107db7451869fc2aa1",
+    "examples/infeasible_zero_variables.json": "9b9d97fb32e1e3ca358a836936e09d894c2564db4f810d843d9b7f5752450879",
+    "examples/invalid_duplicate_key.json": "1f96f67b8ae53dd2f21853877dfed9a6bdba95f18de5312806aeb32a26baae0f",
+    "examples/invalid_float.json": "d99cb74ba403a03177819d37c57ae71c7df8e8441161ef0a28ea3f60c374ea77",
+    "examples/optimal_constant_no_rows.json": "de17f39dc860659d49d045cb621b7e44202f9d2230725f78320c6a1a5fdaee9e",
+    "examples/optimal_min_fraction_equality.json": "a1bcd604bc5a2942b12c28ff137bd4855f48848de8e8b5d2079d8f73c4d4bc96",
+    "examples/optimal_mixed_redundant.json": "2532a969c92545e2e89a770c966f93e219f3cd29746c13a8dddeffac8f818281",
+    "examples/optimal_zero_variables.json": "072b73cb1b1be6f1916c32e33f26436bed587bc6ff1c814c0764cf240d577cc6",
+    "examples/rejected_bad_combination.json": "16264bd10b26d1fd26e97aa65668cfc69ed6a4447c20ef26e0b749187a3b5bad",
+    "examples/rejected_infeasible_nonstrict.json": "74b901a1d7f4b83e371917fc812082220c2fe8019808b547a942d646de1c3c4d",
+    "examples/rejected_negative_multiplier.json": "bee772c72a5e9313090568831f74dda170e8047b306230b92bafa41902e2230e",
+    "examples/rejected_unbounded_bad_base.json": "92a3c9b5a52aeb2121cb89670eedae52d54603b25375c4a80fabe751cde5833f",
+    "examples/rejected_unbounded_bad_direction.json": "1eb90079772a6786d05a3ea02c5dc2ed712ab43b02630d4727e92eb82e47edc5",
+    "examples/rejected_unbounded_zero_gain.json": "f84bee46a1eeb03fa19e56107cb0291eb9ef87855b8bc807768f4bbd8e91c7d3",
+    "examples/unbounded_max_no_rows.json": "b6f1bc06a1025f56facbb00ecffd6fb1f89863ef4bb23391dd297f3e3d9d538e",
+    "examples/unbounded_min_lower_dimensional.json": "1806012c42af7eecaaa201a1ec2d02aab8e6c675802932597578dcc165c3a195",
+    "finder.py": "bc91178bb5dd8b779ca6f565fa5cbea38c4feb2f0bbee7b9e07a795c43758876",
+    "lake-manifest.json": "fa235a31755c091135e667ffb4085455396f4b8ef6077f6e53c3556ce05a65d7",
+    "lakefile.toml": "4b65bceca43c56f756725d981755a40d4078867952dce5c6338af189e9c59788",
+    "lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "scripts/Expected.lean": "f1c56809c8836b57546e5b958467aa75fb02c93cb4a2a6c3c26b67118fe913db",
+    "scripts/ExpectedInput.lean": "51592c9b71c70f87eff6f8f541c189a75370a06e6a617bb2c43ea479a1527ad7",
+    "scripts/verify.py": "d8f5fef6c31484159bf6c5350e2617a4603120e3da894b9dfdb4f7cc2c5f5169",
+    "tests/test_bridge.py": "dd6f471b7ae751db0f1411132ebac75d55b8ca489ac6799995dd126056015dfa",
+    "tests/test_bridge_independent.py": "a4ce8d4544270acede387454157dc39af4046990ffef65cdb4e162d60625ea84",
+    "tests/test_finder.py": "dc8358f57cb767839da120bb41f2f65c409e4729d6e56d605b325bb60280df1a",
+    "tests/test_finder_independent.py": "a701c339a869b91995286b55180a3e28a16fb54e3b834ee9a73d57895ba909f5",
+    "tests/test_independent.py": "10eeef4b62462e5de2061569e1be9a2468fa5ada93056bb9bd63e3fe63874d40",
+    "tests/test_resource_limits.py": "adc76e30538059ad06b4e0642cdac60a984beb648be8a4fe1abc2e6e46e6a99a",
+    "tests/test_verifier.py": "a2298c6aa68dd61bca9a15947026dcd0911d513735d24c0870ae2a746d54f0c2",
+    "verifier.py": "bb55c5f57a91d9c8c225ab3dc219a718a383e13249314fff29b5a1ad33e290fb"
+  },
+  "started_utc": "2026-10-13T02:53:54.143998+00:00",
+  "status": "passed",
+  "transitive_axioms": {
+    "LPCertificates.DualCertificate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.Feasible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.InfeasibleCertificate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.InputFeasible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.Nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.ObjectiveBeyond": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.ObjectiveBound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.OptimalCertificate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.RayCertificate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.bad_base_rejected": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.bad_direction_rejected": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.bound_cast": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.checkInfeasible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.checkInfeasible_sound_real": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.checkInputInfeasible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.checkInputOptimal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.checkInputUnbounded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.checkOptimal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.checkOptimal_sound_real": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.checkUnbounded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.checkUnbounded_sound_real": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.combination": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.combination_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.combination_cast": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.combination_dot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.complementary_slackness": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.constantNoRows": [
+      "propext"
+    ],
+    "LPCertificates.constantNoRows_accepts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.contradiction": [
+      "propext"
+    ],
+    "LPCertificates.contradiction_accepts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.contradiction_real_infeasible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.dot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.dot_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.dot_add_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.dot_cast": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.dot_smul_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.dual_cast": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.duality_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.equalityContradiction": [
+      "propext"
+    ],
+    "LPCertificates.equalityContradiction_accepts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.feasible_cast": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.freeRay": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.freeRay_accepts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.infeasible_point_rejected": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.infeasible_sound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.inputEqualityWeights": [
+      "propext"
+    ],
+    "LPCertificates.inputInequalityWeights": [
+      "propext"
+    ],
+    "LPCertificates.inputInfeasible_sound_real": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.inputOptimal_sound_real": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.inputUnbounded_sound_real": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.input_feasible_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.input_objective_bound_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.lineRayMin": [
+      "propext"
+    ],
+    "LPCertificates.lineRayMin_accepts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.lineRayMin_real_unbounded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.mixedRedundant": [
+      "propext"
+    ],
+    "LPCertificates.mixedRedundant_accepts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.mixedRedundant_alternative_accepts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.mixedRedundant_real_optimal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.negative_multiplier_rejected": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.nonstrict_contradiction_rejected": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.normalizeInput": [
+      "propext"
+    ],
+    "LPCertificates.optimal_sound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.ray_feasible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.ray_objective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.realProblem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.realVector": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.singletonMin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.singletonMin_accepts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.unbounded_sound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.weak_duality": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.weighted_dot": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.zeroVariableFeasible": [
+      "propext"
+    ],
+    "LPCertificates.zeroVariableFeasible_accepts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.zeroVariableInfeasible": [
+      "propext"
+    ],
+    "LPCertificates.zeroVariableInfeasible_accepts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "LPCertificates.zero_gain_rejected": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "trust_limits": [
+    "cached dependency oleans and host runtime trusted",
+    "same Lean kernel replay, not an independent kernel implementation",
+    "JSON/Python refinement to Lean not proved",
+    "no native Mac/MRS integration"
+  ],
+  "publication_derivative": {
+    "original_schema": "lp-certificates-local-verification/v1",
+    "original_commit": "032db09354d41b58c2e9211ed7e69024a3e74010",
+    "original_sha256": "301dfe11ba44d83e50e3edc47f371430b6ad9a50d71bd4ca5c20cce0dfdfe107",
+    "original_bytes": 26568,
+    "scope": "Public metadata derivative; recorded environment paths and coordination details normalized. Original outcomes, exits, dates, mathematical source/pin hashes and trust limits retain their original scope.",
+    "captured_byte_descriptors": "Original receipt/output descriptors remain historical original-byte bindings; current public-copy bytes use publication/OCTOBER-13-SOURCE-MAP.json and publication/FILES.json.",
+    "removed_nonmathematical_fields": [],
+    "new_mathematical_verification": false
+  }
+}

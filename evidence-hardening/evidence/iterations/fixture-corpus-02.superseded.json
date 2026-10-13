@@ -1,0 +1,380 @@
+{
+  "schema": "publication-metadata-derivative/v1",
+  "status": "superseded_not_final_acceptance",
+  "reason": "fixture construction and conservative path support corrected; see final reports",
+  "originalReport": {
+    "schema": "independent-fixed-fixture-corpus-tests/v1",
+    "source": "${VERIFICATION_WORK}/companion-review-02",
+    "total": 10,
+    "passed": 9,
+    "results": [
+      {
+        "label": "valid",
+        "passed": true,
+        "expectedExit": 0,
+        "expectedFailedPhase": null,
+        "result": {
+          "ok": true,
+          "locallyObservedLeanPass": true,
+          "verifiedBuild": true,
+          "formalProofScope": "fixed_fixture_targets_with_exact_harnesses",
+          "conditionalTheorems": [
+            "EvidenceFixture.identity requires h : n = 2",
+            "EvidenceFixture.conditional requires h : predicate; predicate is False; no proof of False is asserted"
+          ],
+          "independentKernelReplay": "not_performed",
+          "dependencyTrust": "core_olean_cache_not_rebuilt",
+          "mathlib": "not_used",
+          "directory": "${VERIFICATION_WORK}/fixture-corpus-02/valid",
+          "failure": null,
+          "failedPhase": null
+        }
+      },
+      {
+        "label": "hidden-assumption",
+        "passed": false,
+        "expectedExit": 2,
+        "expectedFailedPhase": "whole-type-and-axiom-audit",
+        "result": {
+          "ok": false,
+          "locallyObservedLeanPass": false,
+          "verifiedBuild": false,
+          "formalProofScope": "not_accepted",
+          "conditionalTheorems": [],
+          "independentKernelReplay": "not_performed",
+          "dependencyTrust": "core_olean_cache_not_rebuilt",
+          "mathlib": "not_used",
+          "directory": "${VERIFICATION_WORK}/fixture-corpus-02/hidden-assumption",
+          "failure": "phase compile-fixture failed: exited",
+          "failedPhase": "compile-fixture"
+        }
+      },
+      {
+        "label": "statement-drift",
+        "passed": true,
+        "expectedExit": 2,
+        "expectedFailedPhase": "whole-type-and-axiom-audit",
+        "result": {
+          "ok": false,
+          "locallyObservedLeanPass": false,
+          "verifiedBuild": false,
+          "formalProofScope": "not_accepted",
+          "conditionalTheorems": [],
+          "independentKernelReplay": "not_performed",
+          "dependencyTrust": "core_olean_cache_not_rebuilt",
+          "mathlib": "not_used",
+          "directory": "${VERIFICATION_WORK}/fixture-corpus-02/statement-drift",
+          "failure": "phase whole-type-and-axiom-audit failed: exited",
+          "failedPhase": "whole-type-and-axiom-audit"
+        }
+      },
+      {
+        "label": "specialization",
+        "passed": true,
+        "expectedExit": 2,
+        "expectedFailedPhase": "whole-type-and-axiom-audit",
+        "result": {
+          "ok": false,
+          "locallyObservedLeanPass": false,
+          "verifiedBuild": false,
+          "formalProofScope": "not_accepted",
+          "conditionalTheorems": [],
+          "independentKernelReplay": "not_performed",
+          "dependencyTrust": "core_olean_cache_not_rebuilt",
+          "mathlib": "not_used",
+          "directory": "${VERIFICATION_WORK}/fixture-corpus-02/specialization",
+          "failure": "phase whole-type-and-axiom-audit failed: exited",
+          "failedPhase": "whole-type-and-axiom-audit"
+        }
+      },
+      {
+        "label": "definition-substitution",
+        "passed": true,
+        "expectedExit": 2,
+        "expectedFailedPhase": "definition-body-audit",
+        "result": {
+          "ok": false,
+          "locallyObservedLeanPass": false,
+          "verifiedBuild": false,
+          "formalProofScope": "not_accepted",
+          "conditionalTheorems": [],
+          "independentKernelReplay": "not_performed",
+          "dependencyTrust": "core_olean_cache_not_rebuilt",
+          "mathlib": "not_used",
+          "directory": "${VERIFICATION_WORK}/fixture-corpus-02/definition-substitution",
+          "failure": "phase definition-body-audit failed: exited",
+          "failedPhase": "definition-body-audit"
+        }
+      },
+      {
+        "label": "transitive-drift",
+        "passed": true,
+        "expectedExit": 2,
+        "expectedFailedPhase": "definition-body-audit",
+        "result": {
+          "ok": false,
+          "locallyObservedLeanPass": false,
+          "verifiedBuild": false,
+          "formalProofScope": "not_accepted",
+          "conditionalTheorems": [],
+          "independentKernelReplay": "not_performed",
+          "dependencyTrust": "core_olean_cache_not_rebuilt",
+          "mathlib": "not_used",
+          "directory": "${VERIFICATION_WORK}/fixture-corpus-02/transitive-drift",
+          "failure": "phase definition-body-audit failed: exited",
+          "failedPhase": "definition-body-audit"
+        }
+      },
+      {
+        "label": "wrong-name",
+        "passed": true,
+        "expectedExit": 2,
+        "expectedFailedPhase": "whole-type-and-axiom-audit",
+        "result": {
+          "ok": false,
+          "locallyObservedLeanPass": false,
+          "verifiedBuild": false,
+          "formalProofScope": "not_accepted",
+          "conditionalTheorems": [],
+          "independentKernelReplay": "not_performed",
+          "dependencyTrust": "core_olean_cache_not_rebuilt",
+          "mathlib": "not_used",
+          "directory": "${VERIFICATION_WORK}/fixture-corpus-02/wrong-name",
+          "failure": "phase whole-type-and-axiom-audit failed: exited",
+          "failedPhase": "whole-type-and-axiom-audit"
+        }
+      },
+      {
+        "label": "sorry",
+        "passed": true,
+        "expectedExit": 2,
+        "expectedFailedPhase": "whole-type-and-axiom-audit",
+        "result": {
+          "ok": false,
+          "locallyObservedLeanPass": false,
+          "verifiedBuild": false,
+          "formalProofScope": "not_accepted",
+          "conditionalTheorems": [],
+          "independentKernelReplay": "not_performed",
+          "dependencyTrust": "core_olean_cache_not_rebuilt",
+          "mathlib": "not_used",
+          "directory": "${VERIFICATION_WORK}/fixture-corpus-02/sorry",
+          "failure": "phase whole-type-and-axiom-audit failed: exited",
+          "failedPhase": "whole-type-and-axiom-audit"
+        }
+      },
+      {
+        "label": "custom-axiom",
+        "passed": true,
+        "expectedExit": 2,
+        "expectedFailedPhase": "whole-type-and-axiom-audit",
+        "result": {
+          "ok": false,
+          "locallyObservedLeanPass": false,
+          "verifiedBuild": false,
+          "formalProofScope": "not_accepted",
+          "conditionalTheorems": [],
+          "independentKernelReplay": "not_performed",
+          "dependencyTrust": "core_olean_cache_not_rebuilt",
+          "mathlib": "not_used",
+          "directory": "${VERIFICATION_WORK}/fixture-corpus-02/custom-axiom",
+          "failure": "phase whole-type-and-axiom-audit failed: exited",
+          "failedPhase": "whole-type-and-axiom-audit"
+        }
+      },
+      {
+        "label": "skip-kernel",
+        "passed": true,
+        "expectedExit": 2,
+        "expectedFailedPhase": "same-kernel-replay",
+        "result": {
+          "ok": false,
+          "locallyObservedLeanPass": false,
+          "verifiedBuild": false,
+          "formalProofScope": "not_accepted",
+          "conditionalTheorems": [],
+          "independentKernelReplay": "not_performed",
+          "dependencyTrust": "core_olean_cache_not_rebuilt",
+          "mathlib": "not_used",
+          "directory": "${VERIFICATION_WORK}/fixture-corpus-02/skip-kernel",
+          "failure": "phase same-kernel-replay failed: exited",
+          "failedPhase": "same-kernel-replay"
+        }
+      }
+    ],
+    "commands": [
+      {
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/fixture-gate.cjs",
+          "run",
+          "valid",
+          "${VERIFICATION_ENV}/tangent-limit/.elan/toolchains/v4.24.0/bin/lean",
+          "${VERIFICATION_WORK}/fixture-corpus-02/valid"
+        ],
+        "cwd": "${WORKSPACE}",
+        "started": "2026-10-13T01:56:33.494686+00:00",
+        "finished": "2026-10-13T01:56:38.982477+00:00",
+        "exit": 0,
+        "stdout": "valid.stdout",
+        "stderr": "valid.stderr"
+      },
+      {
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/fixture-gate.cjs",
+          "run",
+          "hidden-assumption",
+          "${VERIFICATION_ENV}/tangent-limit/.elan/toolchains/v4.24.0/bin/lean",
+          "${VERIFICATION_WORK}/fixture-corpus-02/hidden-assumption"
+        ],
+        "cwd": "${WORKSPACE}",
+        "started": "2026-10-13T01:56:38.982604+00:00",
+        "finished": "2026-10-13T01:56:40.700631+00:00",
+        "exit": 2,
+        "stdout": "hidden-assumption.stdout",
+        "stderr": "hidden-assumption.stderr"
+      },
+      {
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/fixture-gate.cjs",
+          "run",
+          "statement-drift",
+          "${VERIFICATION_ENV}/tangent-limit/.elan/toolchains/v4.24.0/bin/lean",
+          "${VERIFICATION_WORK}/fixture-corpus-02/statement-drift"
+        ],
+        "cwd": "${WORKSPACE}",
+        "started": "2026-10-13T01:56:40.700789+00:00",
+        "finished": "2026-10-13T01:56:42.858444+00:00",
+        "exit": 2,
+        "stdout": "statement-drift.stdout",
+        "stderr": "statement-drift.stderr"
+      },
+      {
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/fixture-gate.cjs",
+          "run",
+          "specialization",
+          "${VERIFICATION_ENV}/tangent-limit/.elan/toolchains/v4.24.0/bin/lean",
+          "${VERIFICATION_WORK}/fixture-corpus-02/specialization"
+        ],
+        "cwd": "${WORKSPACE}",
+        "started": "2026-10-13T01:56:42.858541+00:00",
+        "finished": "2026-10-13T01:56:45.061598+00:00",
+        "exit": 2,
+        "stdout": "specialization.stdout",
+        "stderr": "specialization.stderr"
+      },
+      {
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/fixture-gate.cjs",
+          "run",
+          "definition-substitution",
+          "${VERIFICATION_ENV}/tangent-limit/.elan/toolchains/v4.24.0/bin/lean",
+          "${VERIFICATION_WORK}/fixture-corpus-02/definition-substitution"
+        ],
+        "cwd": "${WORKSPACE}",
+        "started": "2026-10-13T01:56:45.062237+00:00",
+        "finished": "2026-10-13T01:56:47.815275+00:00",
+        "exit": 2,
+        "stdout": "definition-substitution.stdout",
+        "stderr": "definition-substitution.stderr"
+      },
+      {
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/fixture-gate.cjs",
+          "run",
+          "transitive-drift",
+          "${VERIFICATION_ENV}/tangent-limit/.elan/toolchains/v4.24.0/bin/lean",
+          "${VERIFICATION_WORK}/fixture-corpus-02/transitive-drift"
+        ],
+        "cwd": "${WORKSPACE}",
+        "started": "2026-10-13T01:56:47.815399+00:00",
+        "finished": "2026-10-13T01:56:50.559870+00:00",
+        "exit": 2,
+        "stdout": "transitive-drift.stdout",
+        "stderr": "transitive-drift.stderr"
+      },
+      {
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/fixture-gate.cjs",
+          "run",
+          "wrong-name",
+          "${VERIFICATION_ENV}/tangent-limit/.elan/toolchains/v4.24.0/bin/lean",
+          "${VERIFICATION_WORK}/fixture-corpus-02/wrong-name"
+        ],
+        "cwd": "${WORKSPACE}",
+        "started": "2026-10-13T01:56:50.560104+00:00",
+        "finished": "2026-10-13T01:56:52.781405+00:00",
+        "exit": 2,
+        "stdout": "wrong-name.stdout",
+        "stderr": "wrong-name.stderr"
+      },
+      {
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/fixture-gate.cjs",
+          "run",
+          "sorry",
+          "${VERIFICATION_ENV}/tangent-limit/.elan/toolchains/v4.24.0/bin/lean",
+          "${VERIFICATION_WORK}/fixture-corpus-02/sorry"
+        ],
+        "cwd": "${WORKSPACE}",
+        "started": "2026-10-13T01:56:52.781546+00:00",
+        "finished": "2026-10-13T01:56:55.003915+00:00",
+        "exit": 2,
+        "stdout": "sorry.stdout",
+        "stderr": "sorry.stderr"
+      },
+      {
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/fixture-gate.cjs",
+          "run",
+          "custom-axiom",
+          "${VERIFICATION_ENV}/tangent-limit/.elan/toolchains/v4.24.0/bin/lean",
+          "${VERIFICATION_WORK}/fixture-corpus-02/custom-axiom"
+        ],
+        "cwd": "${WORKSPACE}",
+        "started": "2026-10-13T01:56:55.004010+00:00",
+        "finished": "2026-10-13T01:56:57.270342+00:00",
+        "exit": 2,
+        "stdout": "custom-axiom.stdout",
+        "stderr": "custom-axiom.stderr"
+      },
+      {
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/fixture-gate.cjs",
+          "run",
+          "skip-kernel",
+          "${VERIFICATION_ENV}/tangent-limit/.elan/toolchains/v4.24.0/bin/lean",
+          "${VERIFICATION_WORK}/fixture-corpus-02/skip-kernel"
+        ],
+        "cwd": "${WORKSPACE}",
+        "started": "2026-10-13T01:56:57.270451+00:00",
+        "finished": "2026-10-13T01:57:02.245592+00:00",
+        "exit": 2,
+        "stdout": "skip-kernel.stdout",
+        "stderr": "skip-kernel.stderr"
+      }
+    ],
+    "mathlib": "not_used",
+    "kernel": "same_official_Lean_kernel_not_independent"
+  },
+  "publication_derivative": {
+    "original_schema": "superseded-hardening-test-observation/v1",
+    "original_commit": "c2fe44833ceb577595028549cecdda87986f303e",
+    "original_sha256": "d6d65cfd445c425af4c6a9e73a5f3bc2fbdbbe1e9b2eb8abda5e11f4e0c17cb5",
+    "original_bytes": 14149,
+    "scope": "Public metadata derivative; recorded environment paths and coordination details normalized. Original outcomes, exits, dates, mathematical source/pin hashes and trust limits retain their original scope.",
+    "captured_byte_descriptors": "Original receipt/output descriptors remain historical original-byte bindings; current public-copy bytes use publication/OCTOBER-13-SOURCE-MAP.json and publication/FILES.json.",
+    "removed_nonmathematical_fields": [],
+    "new_mathematical_verification": false
+  }
+}

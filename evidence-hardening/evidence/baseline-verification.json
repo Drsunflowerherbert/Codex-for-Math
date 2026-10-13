@@ -1,0 +1,285 @@
+{
+  "schema": "publication-metadata-derivative/v1",
+  "baselineCommit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+  "baselinePackage": "math-evidence",
+  "copyPath": "${VERIFICATION_WORK}/baseline",
+  "runtimes": {
+    "node": "v24.19.0",
+    "python": "Python 3.12.14"
+  },
+  "commands": [
+    {
+      "argv": [
+        "node",
+        "verify-public-sources.cjs"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:21.256520+00:00",
+      "finished": "2026-10-13T01:44:21.402575+00:00",
+      "exit": 0,
+      "stdout": "01-verify-public-sources.stdout",
+      "stderr": "01-verify-public-sources.stderr",
+      "stdoutBytes": 47,
+      "stdoutSha256": "0340f14a08f36d4aede456283a388a88c4f138981ab002bddc7b1273c3700987",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "node",
+        "run-tests.cjs"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:21.402688+00:00",
+      "finished": "2026-10-13T01:44:22.113946+00:00",
+      "exit": 0,
+      "stdout": "02-run-tests.stdout",
+      "stderr": "02-run-tests.stderr",
+      "stdoutBytes": 317,
+      "stdoutSha256": "724e8ddb11d5af9c7f312b857b787bfc2fce91081311e5ff42357977bbc069bc",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "node",
+        "cli.cjs",
+        "validate",
+        "samples/catalog.json",
+        "samples/source-tree"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:22.114020+00:00",
+      "finished": "2026-10-13T01:44:22.202271+00:00",
+      "exit": 0,
+      "stdout": "03-cli.stdout",
+      "stderr": "03-cli.stderr",
+      "stdoutBytes": 2499,
+      "stdoutSha256": "237682c1f96c7a0033a2e142b1bea22453a407069c816b389a098928fa597cce",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "node",
+        "cli.cjs",
+        "accept-tangent",
+        "samples/tangent.bundle.json"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:22.202334+00:00",
+      "finished": "2026-10-13T01:44:22.291234+00:00",
+      "exit": 0,
+      "stdout": "04-cli.stdout",
+      "stderr": "04-cli.stderr",
+      "stdoutBytes": 2989,
+      "stdoutSha256": "fb8075ee695e4e5fb5a4359ba8e187e157f601ca5c1ddad01f4b6074f5a76fca",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "node",
+        "cli.cjs",
+        "inventory",
+        "samples/catalog.json",
+        "samples/source-tree"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:22.291297+00:00",
+      "finished": "2026-10-13T01:44:22.375047+00:00",
+      "exit": 0,
+      "stdout": "05-cli.stdout",
+      "stderr": "05-cli.stderr",
+      "stdoutBytes": 16041,
+      "stdoutSha256": "8b58e43869c98be2bfe7a67ba7e1b560ba4da763372e0dd1bc8378fd23568288",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "node",
+        "process-tests.cjs"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:22.375103+00:00",
+      "finished": "2026-10-13T01:44:24.130216+00:00",
+      "exit": 0,
+      "stdout": "06-process-tests.stdout",
+      "stderr": "06-process-tests.stderr",
+      "stdoutBytes": 81,
+      "stdoutSha256": "c6980c4aad412f4e35d31a777cb2cb774ba41fe34c1de3fc4760ef7036323184",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "node",
+        "verification/adversarial-review/real-adversarial.cjs"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:24.130289+00:00",
+      "finished": "2026-10-13T01:44:27.319450+00:00",
+      "exit": 0,
+      "stdout": "07-real-adversarial.stdout",
+      "stderr": "07-real-adversarial.stderr",
+      "stdoutBytes": 91,
+      "stdoutSha256": "bd2132a263dc5ec2328d76122d8c7803b93c9986cfea5c2d070c52748840db26",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "node",
+        "verification/adversarial-review/interruption.cjs"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:27.319521+00:00",
+      "finished": "2026-10-13T01:44:33.173698+00:00",
+      "exit": 0,
+      "stdout": "08-interruption.stdout",
+      "stderr": "08-interruption.stderr",
+      "stdoutBytes": 3488,
+      "stdoutSha256": "a6204ab2619d5d68a8bda343641d0633b5b6df5c6ba049062705c7df9f5a3c1c",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "python3",
+        "verification/adversarial-review/archive-adversarial.py"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:33.173881+00:00",
+      "finished": "2026-10-13T01:44:33.228470+00:00",
+      "exit": 0,
+      "stdout": "09-archive-adversarial.stdout",
+      "stderr": "09-archive-adversarial.stderr",
+      "stdoutBytes": 116,
+      "stdoutSha256": "d8b30f09831d76fdf34af2396c8231fec5661790ea0aeb4480b9538ff2286b69",
+      "stderrBytes": 197,
+      "stderrSha256": "4d3963bc9d03e7e0cf89b100e915d828a1b02c08e82ccec3f1d0c097897770a0"
+    },
+    {
+      "argv": [
+        "python3",
+        "package-tests.py"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:33.228668+00:00",
+      "finished": "2026-10-13T01:44:33.277940+00:00",
+      "exit": 0,
+      "stdout": "10-package-tests.stdout",
+      "stderr": "10-package-tests.stderr",
+      "stdoutBytes": 1922,
+      "stdoutSha256": "037f3154d589c8898a1ad9bc93ab3427c3662c497978c7e7a02bcbe507cf82e6",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "counts": {
+    "publicSourceFiles": 89,
+    "inheritedSynthetic": 78,
+    "acceptance": 60,
+    "mockCLI": 11,
+    "mockMaterializer": 8,
+    "actualProcess": 8,
+    "actualFilesystemAdversarial": 69,
+    "actualInterruption": 4,
+    "actualZIPAdversarial": 29,
+    "actualPackaging": 16,
+    "leanPasses": 0,
+    "baselineLiveAdversarial": 31,
+    "actualLeanOSInterruptions": 3,
+    "tangentTargets": 37,
+    "tangentDefinitionBodies": 4,
+    "tangentSameKernelReplayDeclarations": 59,
+    "tangentPhases": 70,
+    "leanPassesClarification": "zero default-suite/imported-receipt passes; fresh baseline valid/general/tangent separately succeeded"
+  },
+  "limitations": [
+    "default source/hash/schema/mock/OS suites are not Lean acceptance",
+    "same-kernel local replay is not independent kernel verification",
+    "dependency OLeans externally cached; dependency source rebuild not performed",
+    "PiDiophantine remains an explicit unproved premise",
+    "monomorphic full type/body contract only",
+    "native Mac/installed MRS integration unvalidated",
+    "hashes provide byte consistency, not historical event authenticity",
+    "no overall license assigned to baseline toolkit code"
+  ],
+  "preservation": "only disposable copy mutated; baseline tracked math-evidence files unchanged",
+  "liveCommands": [
+    {
+      "argv": [
+        "node",
+        "live.cjs",
+        "run",
+        "tangent",
+        "${VERIFICATION_ENV}",
+        "${VERIFICATION_ENV}/live-tests/tangent"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:48:43.224729+00:00",
+      "finished": "2026-10-13T01:49:59.181719+00:00",
+      "exit": 0,
+      "stdout": "live-01-live.stdout",
+      "stderr": "live-01-live.stderr",
+      "stdoutBytes": 555,
+      "stdoutSha256": "2bfa061797442caaa547501232f34caef828d1d16665950a3eba6d06615d4835",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "node",
+        "verification/adversarial-review/live-adversarial.cjs",
+        "${VERIFICATION_ENV}"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:48:43.225246+00:00",
+      "finished": "2026-10-13T01:52:48.049967+00:00",
+      "exit": 0,
+      "stdout": "live-02-live-adversarial.stdout",
+      "stderr": "live-02-live-adversarial.stderr",
+      "stdoutBytes": 1194,
+      "stdoutSha256": "eb160f14c392401956c4bf6ca1c9194e142bf54f176863f83e2f64964a3a1b60",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "node",
+        "live-os-tests.cjs",
+        "${VERIFICATION_ENV}"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:48:43.225737+00:00",
+      "finished": "2026-10-13T01:48:49.362522+00:00",
+      "exit": 0,
+      "stdout": "live-03-live-os-tests.stdout",
+      "stderr": "live-03-live-os-tests.stderr",
+      "stdoutBytes": 2559,
+      "stdoutSha256": "e10a5ac6f6c94ce148c0f12ae5acde6228a070cbb0740ae11ab2b3ba52eedd62",
+      "stderrBytes": 0,
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "freshLiveOutcome": "baseline_valid_general_and_tangent_all_required_phases_succeeded",
+  "savedReceiptOutcome": "reported_integrity_only_no_freshness_or_new_Lean_pass",
+  "tangentReceipt": {
+    "path": "${VERIFICATION_ENV}/live-tests/tangent/receipt.json",
+    "bytes": 117587,
+    "sha256": "94dcbc1a66af5415c7978b3ba93501a7d813e921296c52b541a1b3eeb77966dc",
+    "scope": "conditional_explicit_PiDiophantine_unproved_same_kernel_external_cached_dependencies"
+  },
+  "publication_derivative": {
+    "original_schema": "independent-evidence-hardening-baseline-verification/v1",
+    "original_commit": "c2fe44833ceb577595028549cecdda87986f303e",
+    "original_sha256": "3c4882f2e518c4141e657802272a215914d5788194e66706c37c397dc46c0885",
+    "original_bytes": 10285,
+    "scope": "Public metadata derivative; recorded environment paths and coordination details normalized. Original outcomes, exits, dates, mathematical source/pin hashes and trust limits retain their original scope.",
+    "captured_byte_descriptors": "Original receipt/output descriptors remain historical original-byte bindings; current public-copy bytes use publication/OCTOBER-13-SOURCE-MAP.json and publication/FILES.json.",
+    "removed_nonmathematical_fields": [],
+    "new_mathematical_verification": false
+  }
+}

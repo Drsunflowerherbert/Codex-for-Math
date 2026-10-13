@@ -1,0 +1,21 @@
+{
+  "certificate": {
+    "base_point": [
+      0
+    ],
+    "direction": [
+      2
+    ],
+    "kind": "unbounded"
+  },
+  "problem": {
+    "constraints": [],
+    "objective": {
+      "coefficients": [
+        "1/2"
+      ],
+      "sense": "max"
+    }
+  },
+  "version": 1
+}

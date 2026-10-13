@@ -1,5 +1,26 @@
 # Publication review
 
+## 13 October continuation
+
+The [round report](ROUND-2026-10-13.md) records the final frozen LP, transport
+and evidence-hardening scope. The publisher inspected source/attribution,
+original input inventories and source-bound verification receipts, and validated
+the three current public LP packages as saved consistency only. Earlier
+independent worker reviews remain scoped historical records. An additional
+[bridge-specialist summary](evidence/LP-BRIDGE-SCOPE-REVIEW-2026-10-13.json)
+accepts the final LP bridge under parser/cache trust and identifies two
+nonblocking limitations. Current documentation narrows the Git-status cleanliness
+and saved-process-intake claims; no frozen source or proof gate was changed.
+
+All 1,404 input candidates have original/current dispositions, and all 132
+protected sources/pins remain byte-identical. Current metadata derivatives
+normalize machine/routing details with original hashes preserved. The portable
+LP package manifests bind current public metadata while their original hashes
+remain recorded. Prior provenance rows, attribution, guide/status files,
+historical batch maps and original tangent files are preserved. Integrity
+regressions establish byte/provenance consistency and do not confer a new
+mathematical verification or independent-kernel claim.
+
 Two independent automated reviewers inspected the four initial archives and
 the later sharp tangent extension. The initial privacy review covered all
 276 candidates; the sharp review covered all 128 archive entries, including

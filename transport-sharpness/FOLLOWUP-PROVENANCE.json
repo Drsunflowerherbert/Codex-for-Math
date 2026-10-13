@@ -1,0 +1,80 @@
+{
+  "assigned_branch": "codex/transport-sharpness-2026-10-13",
+  "development_cutoff_utc": "2026-10-13T04:05:00Z",
+  "mathematical_source_frozen_utc": "2026-10-13T02:26:01Z",
+  "new_mathematical_source": {
+    "bytes": 9064,
+    "path": "TransportSharpness/Measures.lean",
+    "sha256": "808199ba3c1db1829950488399a63037f4497fd6203cddb334ced85060d5529d"
+  },
+  "official_tooling": "same verified Lean4.24.0/mathlib f897ebcf72cd16f89ab4577d0c826cd14afaafc7 and nine-package manifest as checkpoint",
+  "preserved_checkpoint_inputs": [
+    {
+      "bytes": 6786,
+      "checkpoint_bytes_retained": true,
+      "path": "TransportSharpness/Finite.lean",
+      "sha256": "2ca131e39877bb4ec3d0803de4b9bdfa21d7d2e2935f9777db0408aa3cadf18a"
+    },
+    {
+      "bytes": 6665,
+      "checkpoint_bytes_retained": true,
+      "path": "TransportSharpness/Obstruction.lean",
+      "sha256": "ebb8d5361a6dce5ebc7e436d59750a58581030ca1d351e420f9280dcf83df0e1"
+    },
+    {
+      "bytes": 71,
+      "checkpoint_bytes_retained": true,
+      "path": "TransportSharpness.lean",
+      "sha256": "f59964ae611a8e54f0d226c01bfbe5688ff4410de7c42cdc6da77e109f23d811"
+    },
+    {
+      "bytes": 8603,
+      "checkpoint_bytes_retained": true,
+      "path": "scripts/ReviewHarness.lean",
+      "sha256": "6ebc84014b1cd2b08dfc1817e996efe769adddd5a824343252a4b313c1bc52ad"
+    },
+    {
+      "bytes": 2153,
+      "checkpoint_bytes_retained": true,
+      "path": "scripts/Replay.lean",
+      "sha256": "9971da32d70cf9b9ae6efaa19ca216d9b96d1253039d91315fbe603946d3c93f"
+    },
+    {
+      "bytes": 15352,
+      "checkpoint_bytes_retained": true,
+      "path": "evidence/lean-review/verify.py",
+      "sha256": "cd90ddc83f0b78b8ded197166f2b699200d713def91d7366d5d10c1795f0603a"
+    },
+    {
+      "bytes": 25,
+      "checkpoint_bytes_retained": true,
+      "path": "lean-toolchain",
+      "sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434"
+    },
+    {
+      "bytes": 300,
+      "checkpoint_bytes_retained": true,
+      "path": "lakefile.toml",
+      "sha256": "90d34e0a63cc3a5c1112c054e8a063a2653807d47726991169682cf648bcf0b5"
+    },
+    {
+      "bytes": 3546,
+      "checkpoint_bytes_retained": true,
+      "path": "lake-manifest.json",
+      "sha256": "5a9eddddf5194e64f6bcd0d8575a43948d13f110c2b2ada903efa22b1d7b47ad"
+    }
+  ],
+  "publication_cutoff_utc": "2026-10-13T04:20:00Z",
+  "published_license_scope": "no additional third-party source snapshot or dependency binary; existing attribution retained; no new overall license assigned",
+  "schema": "transport-sharpness-followup-provenance/v1",
+  "scope_restrictions": [
+    "only assigned branch and transport-sharpness directory advanced",
+    "no shared manifest edits",
+    "no PR merge or force push",
+    "no Library intermediate",
+    "no purchases or account/credential/security changes"
+  ],
+  "selected_scope": "actual two-dimensional Borel atomic probability marginals and all-coupling Euclidean target p-cost; no uniform-source map construction",
+  "starting_published_checkpoint": "40589436a45ddfd2cc8df8897e86b3185b83a107",
+  "toolkit": "unchanged EvidenceHarness helper plus same compiler/runtime byte pins; separate handwritten follow-up full-type/body/replay plan"
+}

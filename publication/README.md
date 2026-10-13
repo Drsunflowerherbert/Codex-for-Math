@@ -1,5 +1,12 @@
 # Publication record
 
+The [13 October round](ROUND-2026-10-13.md) integrates three frozen, reviewed
+components onto verified research baseline `b1d6c20`. Its complete input
+dispositions are in [OCTOBER-13-SOURCE-MAP.json](OCTOBER-13-SOURCE-MAP.json).
+Current whole-repository bytes use `FILES.json`; earlier manifests, proof files,
+attribution and provenance rows retain their original scope. Metadata derivatives
+carry original/current bindings and confer no new mathematical verification.
+
 This publication is based on exact commit
 `d00a89dd9ce6c8ef782234d28c93e69cb712c947`, on branch
 `codex/research-2026-10-11`. The original tangent files are unchanged.

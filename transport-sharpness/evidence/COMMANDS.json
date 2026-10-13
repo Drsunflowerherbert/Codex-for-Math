@@ -1,0 +1,102 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "fetch",
+        "origin",
+        "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+      ],
+      "cwd": "${PINNED_REPOSITORY}",
+      "exit_code": 0,
+      "result": "obtained and verified requested existing research baseline"
+    },
+    {
+      "argv": [
+        "git",
+        "worktree",
+        "add",
+        "-b",
+        "codex/transport-sharpness-2026-10-13",
+        "${PROJECT_REPOSITORY}",
+        "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+      ],
+      "cwd": "${PINNED_REPOSITORY}",
+      "exit_code": 0,
+      "result": "isolated new branch; original work checkout and tangent branch preserved"
+    },
+    {
+      "cwd": "transport-sharpness",
+      "evidence": "evidence/development-build.log",
+      "exit_code": 0,
+      "result": "all final modules built without warnings",
+      "shell_command": "source ${PINNED_REPOSITORY}/tangent-limit/scripts/environment.sh\nlake build > evidence/development-build.log 2>&1"
+    },
+    {
+      "argv": [
+        "python3",
+        "../math-evidence/toolchain-audit.py",
+        "${PINNED_REPOSITORY}"
+      ],
+      "cwd": "transport-sharpness",
+      "evidence": "evidence/compiler-audit.json",
+      "exit_code": 0,
+      "result": "five installed compiler/runtime members exactly match verified official archive"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/check_exact.py",
+        "--verify"
+      ],
+      "cwd": "transport-sharpness",
+      "evidence": "evidence/parent-exact-verification.log",
+      "exit_code": 0,
+      "result": "13 fixtures,100 grid pairs,7 rejections,48 exact constant violations; all three reports byte-identical"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "transport-sharpness",
+      "evidence": "evidence/parent-exact-tests.log",
+      "exit_code": 0,
+      "result": "16 tests passed with Python optimization"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "reviews/independent_slice_check.py"
+      ],
+      "cwd": "transport-sharpness",
+      "evidence": "evidence/parent-independent-slices.log",
+      "exit_code": 0,
+      "result": "all nine joint masses agree for131 distinct rational pairs"
+    }
+  ],
+  "development_notes": "Transient development build errors were corrected before the frozen source snapshot: wrong initial root build cwd, redundant sum rewrite, ring normalization, explicit square nonnegativity, and a numerical ceiling rewrite. The final source and each complete fresh verification are checked independently.",
+  "fresh_lean_commands": "complete exact invocations and all subprocess argv/cwd/environment/results are in the final hardened formal reports identified in STATUS.json",
+  "publication_commands": "preflight and exact non-force push plus remote verification are recorded separately in the content publication receipt",
+  "schema": "publication-metadata-derivative/v1",
+  "working_tree": "${PROJECT_REPOSITORY}",
+  "publication_derivative": {
+    "original_schema": "transport-sharpness-command-results/v1",
+    "original_commit": "fa5cd40c36daa5373c0234bda0b9d09a49595ce6",
+    "original_sha256": "05008f221a1f52010fe2ecc7468e1b219e3e9309f7e0a1be6b39852ca82db213",
+    "original_bytes": 3153,
+    "scope": "Public metadata derivative; recorded environment paths and coordination details normalized. Original outcomes, exits, dates, mathematical source/pin hashes and trust limits retain their original scope.",
+    "captured_byte_descriptors": "Original receipt/output descriptors remain historical original-byte bindings; current public-copy bytes use publication/OCTOBER-13-SOURCE-MAP.json and publication/FILES.json.",
+    "removed_nonmathematical_fields": [],
+    "new_mathematical_verification": false
+  }
+}

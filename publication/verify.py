@@ -63,6 +63,49 @@ def main():
             if name.endswith('.lean') or Path(name).name in {'lake-manifest.json','lakefile.toml','lean-toolchain'}:
                 assert hashlib.sha256(actual[name].read_bytes()).hexdigest()==row['source_sha256'],('historical formal-source drift',name)
                 unchanged_formal+=1
+    round_sources=round_protected=0
+    for current_map in mapping.get('current_source_maps',[]):
+        batch=json.loads((ROOT/current_map).read_text())
+        assert batch['schema']=='october-13-publication-source-map/v1'
+        components=batch['frozen_components']
+        assert set(components)<={'lp-certificates','transport-sharpness','evidence-hardening'}
+        assert set(components)=={name.split('/')[0] for name in actual if name.split('/')[0] in {'lp-certificates','transport-sharpness','evidence-hardening'}},'Published round component missing from source map.'
+        assert all(re.fullmatch('[0-9a-f]{40}',commit) for commit in components.values())
+        seen=set()
+        protected_pins={'lean-toolchain','lakefile.toml','lake-manifest.json','fixture-policy.json','baseline.json'}
+        for row in batch['files']:
+            source=row['source_file'];name=row['published_file']
+            component=source.split('/')[0]
+            assert component in components and row['source_commit']==components[component]
+            assert name.startswith(component+'/') and name not in seen,name
+            assert all(part not in {'.','..',''} for part in Path(source).parts+Path(name).parts),name
+            seen.add(name)
+            data=actual[name].read_bytes();digest=hashlib.sha256(data).hexdigest()
+            assert digest==row['published_sha256'] and len(data)==row['published_bytes'],name
+            assert row['source_mode'] in {'100644','100755'}
+            assert re.fullmatch('[0-9a-f]{40}',row['source_blob'])
+            assert re.fullmatch('[0-9a-f]{64}',row['source_sha256'])
+            protected=Path(source).suffix in {'.lean','.py','.cjs'} or Path(source).name in protected_pins
+            assert row['protected_source']==protected,name
+            if protected or row['action'] in {'retained_unchanged','copied_and_renamed'}:
+                assert digest==row['source_sha256'] and len(data)==row['source_bytes'],('round source drift',name)
+                assert hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()==row['source_blob'],name
+            if protected:round_protected+=1
+            if row['action']=='sanitized_metadata' and Path(name).suffix=='.json':
+                derivative=json.loads(data)
+                info=derivative['publication_derivative']
+                if info.get('publication_profile')=='recheckable_lp_package_metadata':
+                    assert re.fullmatch(r'lp-certificates/evidence/checked-(author-batch|independent-batch|relocated-recheck)/receipt.json',name),name
+                    assert derivative['schema']==info['original_schema']=='lp-certificates-checked-bridge/v1',name
+                else:
+                    assert derivative['schema']=='publication-metadata-derivative/v1',name
+                assert info['original_commit']==row['source_commit'] and info['original_sha256']==row['source_sha256'] and info['original_bytes']==row['source_bytes'],name
+                assert info['new_mathematical_verification'] is False,name
+            round_sources+=1
+        generated=set(batch['generated_publication_files'])
+        assert not seen&generated
+        assert all(name.startswith(tuple(component+'/' for component in components)) for name in generated)
+        assert seen|generated=={name for name in actual if name.split('/')[0] in components},'Incomplete current component source map.'
     original=manifest['unchanged_original_tangent_files']
     assert set(original)=={name for name in actual if name.startswith('tangent-limit/')}
     for name,digest in original.items():
@@ -77,6 +120,6 @@ def main():
     index=json.loads((ROOT/'research/supplement/STUDY-INDEX.json').read_text())
     assert sum(s['core_record_count'] for s in index['studies'])==index['core_record_total']==81
     assert all(s['lean_verification']=='not_performed' for s in index['studies'])
-    print(json.dumps({'status':'passed','publication_files':len(actual),'original_tangent_files_unchanged':len(original),'unchanged_formal_source_and_pin_files':unchanged_formal,'pinned_lean_projects':[p.name for p in projects],'ordinary_core_records':81,'scope':'Whole published repository integrity and explicit status/pin checks; no new mathematical proof certification.'},indent=2))
+    print(json.dumps({'status':'passed','publication_files':len(actual),'original_tangent_files_unchanged':len(original),'unchanged_formal_source_and_pin_files':unchanged_formal,'october_13_source_dispositions':round_sources,'october_13_protected_sources':round_protected,'pinned_lean_projects':[p.name for p in projects],'ordinary_core_records':81,'scope':'Whole published repository integrity and explicit status/pin checks; no new mathematical proof certification.'},indent=2))
 
 if __name__=='__main__':main()

@@ -1,0 +1,21 @@
+test_bad_dual_rejected (test_exact.CertificateTests.test_bad_dual_rejected) ... ok
+test_bad_marginal_and_negative_mass_rejected (test_exact.CertificateTests.test_bad_marginal_and_negative_mass_rejected) ... ok
+test_even_p_certificates_and_unsupported_odd_p (test_exact.CertificateTests.test_even_p_certificates_and_unsupported_odd_p) ... ok
+test_matching_primal_dual_certificate (test_exact.CertificateTests.test_matching_primal_dual_certificate) ... ok
+test_W2_endpoint_power (test_exact.ExponentTests.test_W2_endpoint_power) ... ok
+test_actual_candidate_constant_violations (test_exact.ExponentTests.test_actual_candidate_constant_violations) ... ok
+test_endpoint_and_subcritical_claims_rejected (test_exact.ExponentTests.test_endpoint_and_subcritical_claims_rejected) ... ok
+test_fixed_mass_endpoint_power (test_exact.ExponentTests.test_fixed_mass_endpoint_power) ... ok
+test_rational_p_clears_denominators (test_exact.ExponentTests.test_rational_p_clears_denominators) ... ok
+test_all_affine_comparisons_are_derived (test_exact.GeometryTests.test_all_affine_comparisons_are_derived) ... ok
+test_clipping_empty_boundary_and_quadrant (test_exact.GeometryTests.test_clipping_empty_boundary_and_quadrant) ... ok
+test_equal_masses_have_six_vertices (test_exact.GeometryTests.test_equal_masses_have_six_vertices) ... ok
+test_independent_clipped_slice_integrals (test_exact.GeometryTests.test_independent_clipped_slice_integrals) ... ok
+test_original_case_values (test_exact.GeometryTests.test_original_case_values) ... ok
+test_scope_and_float_guards (test_exact.GeometryTests.test_scope_and_float_guards) ... ok
+test_slice_integral_all_small_rationals (test_exact.GeometryTests.test_slice_integral_all_small_rationals) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.103s
+
+OK

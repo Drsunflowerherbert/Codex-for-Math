@@ -1,0 +1,582 @@
+{
+  "schema": "publication-metadata-derivative/v1",
+  "historyAuthenticity": "not_authenticated",
+  "leanPassGrantedByImport": false,
+  "commands": [
+    {
+      "argv": [
+        "node",
+        "verify-public-sources.cjs"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:21.256520+00:00",
+      "finished": "2026-10-13T01:44:21.402575+00:00",
+      "exit": 0,
+      "stdout": "01-verify-public-sources.stdout",
+      "stderr": "01-verify-public-sources.stderr",
+      "group": "baseline-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 47,
+          "sha256": "0340f14a08f36d4aede456283a388a88c4f138981ab002bddc7b1273c3700987",
+          "utf8": "{\"ok\":true,\"checkedFiles\":89,\"leanPass\":false}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "argv": [
+        "node",
+        "run-tests.cjs"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:21.402688+00:00",
+      "finished": "2026-10-13T01:44:22.113946+00:00",
+      "exit": 0,
+      "stdout": "02-run-tests.stdout",
+      "stderr": "02-run-tests.stderr",
+      "group": "baseline-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 317,
+          "sha256": "724e8ddb11d5af9c7f312b857b787bfc2fce91081311e5ff42357977bbc069bc",
+          "utf8": "{\n  \"runtime\": \"Node.js\",\n  \"synthetic\": {\n    \"passed\": 78,\n    \"total\": 78\n  },\n  \"acceptance\": {\n    \"passed\": 60\n  },\n  \"mockCLI\": {\n    \"passed\": 11\n  },\n  \"materializerMock\": {\n    \"passed\": 8\n  },\n  \"nativeHashParity\": true,\n  \"leanExecution\": \"not_performed\",\n  \"realFilesystemSafetyTests\": \"not_performed\"\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "argv": [
+        "node",
+        "cli.cjs",
+        "validate",
+        "samples/catalog.json",
+        "samples/source-tree"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:22.114020+00:00",
+      "finished": "2026-10-13T01:44:22.202271+00:00",
+      "exit": 0,
+      "stdout": "03-cli.stdout",
+      "stderr": "03-cli.stderr",
+      "group": "baseline-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 2499,
+          "sha256": "237682c1f96c7a0033a2e142b1bea22453a407069c816b389a098928fa597cce",
+          "utf8": "{\n  \"ok\": true,\n  \"summary\": {\n    \"records\": 37,\n    \"files\": 26,\n    \"hashCheckedBytes\": 71987,\n    \"counts\": {\n      \"definitions\": 3,\n      \"theorems\": 33,\n      \"assumptions\": 1,\n      \"reviewReported\": 37,\n      \"experimentReports\": 0,\n      \"historicalLeanReports\": 37,\n      \"leanPasses\": 0\n    },\n    \"topologicalOrder\": [\n      \"TangentLimit.PiDiophantine\",\n      \"TangentLimit.abs_cos_eq_abs_sin_offset\",\n      \"TangentLimit.abs_tan_div_cube_eq\",\n      \"TangentLimit.cos_intCast_ne_zero\",\n      \"TangentLimit.poleIndex\",\n      \"TangentLimit.pole_distance_identity\",\n      \"TangentLimit.reciprocal_pole_power\",\n      \"TangentLimit.tan_le_of_cos_lower_bound\",\n      \"TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq\",\n      \"TangentLimit.chord_cos_bound\",\n      \"TangentLimit.cos_natCast_ne_zero\",\n      \"TangentLimit.lt_poleIndex_add_one_mul_pi\",\n      \"TangentLimit.poleDenom\",\n      \"TangentLimit.poleIndex_mul_pi_le\",\n      \"TangentLimit.pole_distance_lower_bound\",\n      \"TangentLimit.tendsto_div_cube_positive_of_eventually_abs_le_sq\",\n      \"TangentLimit.tan_le_of_pole_distance\",\n      \"TangentLimit.eventually_poleDenom_ge\",\n      \"TangentLimit.poleDenom_odd\",\n      \"TangentLimit.poleDenom_pos\",\n      \"TangentLimit.poleOffset\",\n      \"TangentLimit.poleDenom_le_two_mul\",\n      \"TangentLimit.pole_distance_lower_bound_of_piDiophantine\",\n      \"TangentLimit.tan_le_pole_power\",\n      \"TangentLimit.abs_poleOffset_le\",\n      \"TangentLimit.eventually_tan_le_pole_rpow\",\n      \"TangentLimit.poleOffset_nearest\",\n      \"TangentLimit.eventual_abs_tan_div_cube_le_rpow\",\n      \"TangentLimit.eventually_abs_tan_le_quadratic\",\n      \"TangentLimit.summable_abs_tan_div_cube\",\n      \"TangentLimit.tan_div_cube_tendsto_zero\",\n      \"TangentLimit.summable_abs_tan_div_cube_positive\",\n      \"TangentLimit.summable_abs_tan_div_cube_quotient\",\n      \"TangentLimit.tan_div_cube_positive_tendsto_zero\",\n      \"TangentLimit.summable_abs_tan_div_cube_quotient_positive\",\n      \"TangentLimit.summable_tan_div_cube\",\n      \"TangentLimit.summable_tan_div_cube_positive\"\n    ],\n    \"statementBinding\": \"textual_excerpt_only\",\n    \"leanTypeMatching\": \"not_performed\",\n    \"leanCompilation\": \"not_performed\",\n    \"leanAxiomAudit\": \"not_performed\",\n    \"independentKernelReplay\": \"not_performed\",\n    \"assumptionCompleteness\": \"not_established\",\n    \"dependencyCompleteness\": \"not_established\",\n    \"experimentScopeValidation\": \"not_established\",\n    \"sourceRevisionAttestation\": \"not_performed\"\n  }\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "argv": [
+        "node",
+        "cli.cjs",
+        "accept-tangent",
+        "samples/tangent.bundle.json"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:22.202334+00:00",
+      "finished": "2026-10-13T01:44:22.291234+00:00",
+      "exit": 0,
+      "stdout": "04-cli.stdout",
+      "stderr": "04-cli.stderr",
+      "group": "baseline-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 2989,
+          "sha256": "fb8075ee695e4e5fb5a4359ba8e187e157f601ca5c1ddad01f4b6074f5a76fca",
+          "utf8": "{\n  \"ok\": true,\n  \"summary\": {\n    \"records\": 37,\n    \"files\": 26,\n    \"hashCheckedBytes\": 71987,\n    \"counts\": {\n      \"definitions\": 3,\n      \"theorems\": 33,\n      \"assumptions\": 1,\n      \"reviewReported\": 37,\n      \"experimentReports\": 0,\n      \"historicalLeanReports\": 37,\n      \"leanPasses\": 0\n    },\n    \"topologicalOrder\": [\n      \"TangentLimit.PiDiophantine\",\n      \"TangentLimit.abs_cos_eq_abs_sin_offset\",\n      \"TangentLimit.abs_tan_div_cube_eq\",\n      \"TangentLimit.cos_intCast_ne_zero\",\n      \"TangentLimit.poleIndex\",\n      \"TangentLimit.pole_distance_identity\",\n      \"TangentLimit.reciprocal_pole_power\",\n      \"TangentLimit.tan_le_of_cos_lower_bound\",\n      \"TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq\",\n      \"TangentLimit.chord_cos_bound\",\n      \"TangentLimit.cos_natCast_ne_zero\",\n      \"TangentLimit.lt_poleIndex_add_one_mul_pi\",\n      \"TangentLimit.poleDenom\",\n      \"TangentLimit.poleIndex_mul_pi_le\",\n      \"TangentLimit.pole_distance_lower_bound\",\n      \"TangentLimit.tendsto_div_cube_positive_of_eventually_abs_le_sq\",\n      \"TangentLimit.tan_le_of_pole_distance\",\n      \"TangentLimit.eventually_poleDenom_ge\",\n      \"TangentLimit.poleDenom_odd\",\n      \"TangentLimit.poleDenom_pos\",\n      \"TangentLimit.poleOffset\",\n      \"TangentLimit.poleDenom_le_two_mul\",\n      \"TangentLimit.pole_distance_lower_bound_of_piDiophantine\",\n      \"TangentLimit.tan_le_pole_power\",\n      \"TangentLimit.abs_poleOffset_le\",\n      \"TangentLimit.eventually_tan_le_pole_rpow\",\n      \"TangentLimit.poleOffset_nearest\",\n      \"TangentLimit.eventual_abs_tan_div_cube_le_rpow\",\n      \"TangentLimit.eventually_abs_tan_le_quadratic\",\n      \"TangentLimit.summable_abs_tan_div_cube\",\n      \"TangentLimit.tan_div_cube_tendsto_zero\",\n      \"TangentLimit.summable_abs_tan_div_cube_positive\",\n      \"TangentLimit.summable_abs_tan_div_cube_quotient\",\n      \"TangentLimit.tan_div_cube_positive_tendsto_zero\",\n      \"TangentLimit.summable_abs_tan_div_cube_quotient_positive\",\n      \"TangentLimit.summable_tan_div_cube\",\n      \"TangentLimit.summable_tan_div_cube_positive\"\n    ],\n    \"statementBinding\": \"textual_excerpt_only\",\n    \"leanTypeMatching\": \"not_performed\",\n    \"leanCompilation\": \"not_performed\",\n    \"leanAxiomAudit\": \"not_performed\",\n    \"independentKernelReplay\": \"not_performed\",\n    \"assumptionCompleteness\": \"not_established\",\n    \"dependencyCompleteness\": \"not_established\",\n    \"experimentScopeValidation\": \"not_established\",\n    \"sourceRevisionAttestation\": \"not_performed\"\n  },\n  \"acceptance\": {\n    \"accepted\": true,\n    \"revision\": \"d00a89dd9ce6c8ef782234d28c93e69cb712c947\",\n    \"records\": 37,\n    \"sourceBinding\": \"exact_published_declaration_text\",\n    \"historicalInventory\": {\n      \"scope\": \"published_log_content_only\",\n      \"statementNames\": 37,\n      \"axiomReports\": 37,\n      \"observedAxiomNames\": [\n        \"Classical.choice\",\n        \"Quot.sound\",\n        \"propext\"\n      ],\n      \"liveAxiomInspection\": \"not_performed\"\n    },\n    \"leanPass\": false\n  }\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "argv": [
+        "node",
+        "cli.cjs",
+        "inventory",
+        "samples/catalog.json",
+        "samples/source-tree"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:22.291297+00:00",
+      "finished": "2026-10-13T01:44:22.375047+00:00",
+      "exit": 0,
+      "stdout": "05-cli.stdout",
+      "stderr": "05-cli.stderr",
+      "group": "baseline-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 16041,
+          "sha256": "8b58e43869c98be2bfe7a67ba7e1b560ba4da763372e0dd1bc8378fd23568288",
+          "utf8": "Math exchange inventory\nRepository: https://github.com/Drsunflowerherbert/Codex-for-Math\nRevision: d00a89dd9ce6c8ef782234d28c93e69cb712c947\nBranch label: codex/tangent-limit\nLean toolchain: leanprover/lean4:v4.24.0\nMathlib revision: f897ebcf72cd16f89ab4577d0c826cd14afaafc7\nManifest files: 26\nLean passes: 0 (this format accepts no pass status)\nStatement binding: verbatim excerpt and declaration-name heuristic only; no Lean type matching\n\nTangentLimit.PiDiophantine | assumption | TangentLimit.PiDiophantine | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: (none declared)\n  Source: tangent-limit/TangentLimit/Hypothesis.lean | statement sha256=019661f0b94d661a9f84a9a54b3e270bfed25c0bedb41b043a84c6ff8a7d2ea2\nTangentLimit.abs_cos_eq_abs_sin_offset | theorem | TangentLimit.abs_cos_eq_abs_sin_offset | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: (none declared)\n  Source: tangent-limit/TangentLimit/Trigonometry.lean | statement sha256=f098aec24abb330cf83fc1b1887c4bf375a158d74c4437dadc91525942946ac8\nTangentLimit.abs_poleOffset_le | theorem | TangentLimit.abs_poleOffset_le | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.lt_poleIndex_add_one_mul_pi, TangentLimit.poleDenom, TangentLimit.poleIndex_mul_pi_le, TangentLimit.poleOffset\n  Source: tangent-limit/TangentLimit/NearestPole.lean | statement sha256=632a88abef2072a271698a526f66c4d693c32fca2fae051679c7eb3ac1071fcb\nTangentLimit.abs_tan_div_cube_eq | theorem | TangentLimit.abs_tan_div_cube_eq | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: (none declared)\n  Source: tangent-limit/TangentLimit/Summability.lean | statement sha256=0e25f2c580016fc65aa57f36b87e218a00b14eb41e6a652f59faf5af09c716d9\nTangentLimit.chord_cos_bound | theorem | TangentLimit.chord_cos_bound | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.abs_cos_eq_abs_sin_offset\n  Source: tangent-limit/TangentLimit/Trigonometry.lean | statement sha256=a3778c8dfd411dda04f8e478d69f2dced4e98c1285c3f8dd4179796009476fac\nTangentLimit.cos_intCast_ne_zero | theorem | TangentLimit.cos_intCast_ne_zero | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: (none declared)\n  Source: tangent-limit/TangentLimit/NonPole.lean | statement sha256=f42ee038a1190f3c4f2e9ce5c2aa338282fe708f4e0a5472158f773f795b6b09\nTangentLimit.cos_natCast_ne_zero | theorem | TangentLimit.cos_natCast_ne_zero | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.cos_intCast_ne_zero\n  Source: tangent-limit/TangentLimit/NonPole.lean | statement sha256=8222929c2475bd8d98b5821034940153a0c8bfd30b2292258d85470690ba8403\nTangentLimit.eventual_abs_tan_div_cube_le_rpow | theorem | TangentLimit.eventual_abs_tan_div_cube_le_rpow | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: TangentLimit.PiDiophantine\n  Declared dependencies: TangentLimit.eventually_tan_le_pole_rpow, TangentLimit.poleDenom, TangentLimit.poleDenom_le_two_mul\n  Source: tangent-limit/TangentLimit/Summability.lean | statement sha256=497bb56607d0d035109a70b4b7fa3b68ae4b39aa83aef15c4b34f52c7d437190\nTangentLimit.eventually_abs_tan_le_quadratic | theorem | TangentLimit.eventually_abs_tan_le_quadratic | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: TangentLimit.PiDiophantine\n  Declared dependencies: TangentLimit.eventually_tan_le_pole_rpow, TangentLimit.poleDenom, TangentLimit.poleDenom_le_two_mul\n  Source: tangent-limit/TangentLimit/Limit.lean | statement sha256=7371495f2d56903080c102becc7529215090a00c1cddc1001f90670d74271995\nTangentLimit.eventually_poleDenom_ge | theorem | TangentLimit.eventually_poleDenom_ge | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.lt_poleIndex_add_one_mul_pi, TangentLimit.poleDenom, TangentLimit.poleIndex\n  Source: tangent-limit/TangentLimit/NearestPole.lean | statement sha256=dbc9c7d401a21ce12a31108c7d74149dd5febf9ed952c283cf3aa05ba0bf8ce9\nTangentLimit.eventually_tan_le_pole_rpow | theorem | TangentLimit.eventually_tan_le_pole_rpow | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: TangentLimit.PiDiophantine\n  Declared dependencies: TangentLimit.abs_poleOffset_le, TangentLimit.eventually_poleDenom_ge, TangentLimit.poleDenom, TangentLimit.poleDenom_pos, TangentLimit.poleIndex, TangentLimit.tan_le_pole_power\n  Source: tangent-limit/TangentLimit/Diophantine.lean | statement sha256=bb4d7e8c0151307e51dbd95440d70d29c1b6ef4971f7d963f478758a257e8c47\nTangentLimit.lt_poleIndex_add_one_mul_pi | theorem | TangentLimit.lt_poleIndex_add_one_mul_pi | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.poleIndex\n  Source: tangent-limit/TangentLimit/NearestPole.lean | statement sha256=4fe3e5e713fd05bdd61822acdfb8b4a16900eb858e182bf43f53c497db836263\nTangentLimit.poleDenom | definition | TangentLimit.poleDenom | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.poleIndex\n  Source: tangent-limit/TangentLimit/NearestPole.lean | statement sha256=a3201328bf4ff01096660d7780b61a8ea94edf96547273056e357ffd0ee4991e\nTangentLimit.poleDenom_le_two_mul | theorem | TangentLimit.poleDenom_le_two_mul | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.poleDenom, TangentLimit.poleIndex, TangentLimit.poleIndex_mul_pi_le\n  Source: tangent-limit/TangentLimit/NearestPole.lean | statement sha256=2e9b831e7fdc4e28bf94fdcc1ae87978efb7a4b62001d8e10e38c6091c9eeb6c\nTangentLimit.poleDenom_odd | theorem | TangentLimit.poleDenom_odd | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.poleDenom, TangentLimit.poleIndex\n  Source: tangent-limit/TangentLimit/NearestPole.lean | statement sha256=b20fda5ce9308d92abff7759bf0ae439456ed72175c9b24336c9efe998d3dd01\nTangentLimit.poleDenom_pos | theorem | TangentLimit.poleDenom_pos | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.poleDenom\n  Source: tangent-limit/TangentLimit/NearestPole.lean | statement sha256=cc1aee38919c45a6f4513bfc7dd417a1c5a26ff36d6995772ead3ee8a40e2f1c\nTangentLimit.poleIndex | definition | TangentLimit.poleIndex | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: (none declared)\n  Source: tangent-limit/TangentLimit/NearestPole.lean | statement sha256=86cc26b70845e34620c3bbb6be399368ca85332738973da9bd7ccb31c5be598b\nTangentLimit.poleIndex_mul_pi_le | theorem | TangentLimit.poleIndex_mul_pi_le | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.poleIndex\n  Source: tangent-limit/TangentLimit/NearestPole.lean | statement sha256=9e111ccc64c6e9d8f3c7797f8336e48a3e3343f8db0502349436a8bd177b32ff\nTangentLimit.poleOffset | definition | TangentLimit.poleOffset | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.poleDenom\n  Source: tangent-limit/TangentLimit/NearestPole.lean | statement sha256=d04f005fb901e73f3c12940aae3d50e4014f97b8081e2d58d0f645ee300b70a5\nTangentLimit.poleOffset_nearest | theorem | TangentLimit.poleOffset_nearest | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.abs_poleOffset_le, TangentLimit.lt_poleIndex_add_one_mul_pi, TangentLimit.poleDenom, TangentLimit.poleIndex, TangentLimit.poleIndex_mul_pi_le, TangentLimit.poleOffset\n  Source: tangent-limit/TangentLimit/NearestPole.lean | statement sha256=40f70e35a6f0a47da26bf3fcc5774f738a143f19165da6798d4fb8d20ce46d0b\nTangentLimit.pole_distance_identity | theorem | TangentLimit.pole_distance_identity | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: (none declared)\n  Source: tangent-limit/TangentLimit/Diophantine.lean | statement sha256=da46e9602ac0b76d37b6ccd2c573e0516d4edb182c94b704e78b6079c93e40e2\nTangentLimit.pole_distance_lower_bound | theorem | TangentLimit.pole_distance_lower_bound | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.pole_distance_identity\n  Source: tangent-limit/TangentLimit/Diophantine.lean | statement sha256=1d344319f4a2639cf7f200a7da20653512ff5c53e6cae61c26364d399c3a102e\nTangentLimit.pole_distance_lower_bound_of_piDiophantine | theorem | TangentLimit.pole_distance_lower_bound_of_piDiophantine | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: TangentLimit.PiDiophantine\n  Declared dependencies: TangentLimit.pole_distance_lower_bound\n  Source: tangent-limit/TangentLimit/Diophantine.lean | statement sha256=cdfba30746e6f63e48641b6ff43e306e0d46606175062b76236957c995b5131f\nTangentLimit.reciprocal_pole_power | theorem | TangentLimit.reciprocal_pole_power | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: (none declared)\n  Source: tangent-limit/TangentLimit/Diophantine.lean | statement sha256=1fc3a7506c70105da8de4c990e860a1f976264bd49c650088f2858d31afa7596\nTangentLimit.summable_abs_tan_div_cube | theorem | TangentLimit.summable_abs_tan_div_cube | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: TangentLimit.PiDiophantine\n  Declared dependencies: TangentLimit.eventual_abs_tan_div_cube_le_rpow\n  Source: tangent-limit/TangentLimit/Summability.lean | statement sha256=0a560016f7f44789f255288ef6d087c18a0f3459d402ce7fc56ebb38036471a9\nTangentLimit.summable_abs_tan_div_cube_positive | theorem | TangentLimit.summable_abs_tan_div_cube_positive | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: TangentLimit.PiDiophantine\n  Declared dependencies: TangentLimit.summable_abs_tan_div_cube\n  Source: tangent-limit/TangentLimit/Summability.lean | statement sha256=ab903c454836df1ecc5d4959a927c91b34359a8393b4d5a571ee8c5a7635be46\nTangentLimit.summable_abs_tan_div_cube_quotient | theorem | TangentLimit.summable_abs_tan_div_cube_quotient | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: TangentLimit.PiDiophantine\n  Declared dependencies: TangentLimit.abs_tan_div_cube_eq, TangentLimit.summable_abs_tan_div_cube\n  Source: tangent-limit/TangentLimit/Summability.lean | statement sha256=34c431aa6f0e4baad83a0172b130a7fb20121cc0fc00b7210e9472d428b088b3\nTangentLimit.summable_abs_tan_div_cube_quotient_positive | theorem | TangentLimit.summable_abs_tan_div_cube_quotient_positive | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: TangentLimit.PiDiophantine\n  Declared dependencies: TangentLimit.summable_abs_tan_div_cube_quotient\n  Source: tangent-limit/TangentLimit/Summability.lean | statement sha256=c8411a43ea8a80bb9469f318467fa54ae799e1058d526cb716e38fd78939eebf\nTangentLimit.summable_tan_div_cube | theorem | TangentLimit.summable_tan_div_cube | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: TangentLimit.PiDiophantine\n  Declared dependencies: TangentLimit.summable_abs_tan_div_cube_quotient\n  Source: tangent-limit/TangentLimit/Summability.lean | statement sha256=349dff7bf1fb9220653a38f161ae074ee795c9e19f430569eb3d605742c3bc6d\nTangentLimit.summable_tan_div_cube_positive | theorem | TangentLimit.summable_tan_div_cube_positive | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: TangentLimit.PiDiophantine\n  Declared dependencies: TangentLimit.summable_tan_div_cube\n  Source: tangent-limit/TangentLimit/Summability.lean | statement sha256=1f3c63bd780ce6194b05d52395ad42c072ea17148887ffc37978946159381e98\nTangentLimit.tan_div_cube_positive_tendsto_zero | theorem | TangentLimit.tan_div_cube_positive_tendsto_zero | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: TangentLimit.PiDiophantine\n  Declared dependencies: TangentLimit.tan_div_cube_tendsto_zero\n  Source: tangent-limit/TangentLimit/Limit.lean | statement sha256=1f963aa6cd786f6ffd5603103562cea3d8aae619521b99ff157b13d0a561dab4\nTangentLimit.tan_div_cube_tendsto_zero | theorem | TangentLimit.tan_div_cube_tendsto_zero | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: TangentLimit.PiDiophantine\n  Declared dependencies: TangentLimit.eventually_abs_tan_le_quadratic, TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq\n  Source: tangent-limit/TangentLimit/Limit.lean | statement sha256=ff3ce48922be9a018dba3feb1909c1bd75bf1db9e28b60c9dfd9f9271ec5c6e6\nTangentLimit.tan_le_of_cos_lower_bound | theorem | TangentLimit.tan_le_of_cos_lower_bound | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: (none declared)\n  Source: tangent-limit/TangentLimit/Trigonometry.lean | statement sha256=7a96ebea58dd917089b760e36b94bc7ebdbee1baafd754dd5bca868273f03cb9\nTangentLimit.tan_le_of_pole_distance | theorem | TangentLimit.tan_le_of_pole_distance | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.chord_cos_bound, TangentLimit.tan_le_of_cos_lower_bound\n  Source: tangent-limit/TangentLimit/Trigonometry.lean | statement sha256=f0354c2e53693e29aa0675a50c20d1bfcdfe51f55da0baf3389975f95ed6ee6c\nTangentLimit.tan_le_pole_power | theorem | TangentLimit.tan_le_pole_power | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.chord_cos_bound, TangentLimit.pole_distance_lower_bound, TangentLimit.reciprocal_pole_power, TangentLimit.tan_le_of_cos_lower_bound\n  Source: tangent-limit/TangentLimit/Diophantine.lean | statement sha256=c44a1041793fe04fc113d6ce11b55c95c60e16c28a76fa3d6723a59d9c6d9318\nTangentLimit.tendsto_div_cube_of_eventually_abs_le_sq | theorem | TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: (none declared)\n  Source: tangent-limit/TangentLimit/LimitComparison.lean | statement sha256=422d70c3b10878c0d91be043641a85a80fa3a5388c7a346de797c3a40c6d8280\nTangentLimit.tendsto_div_cube_positive_of_eventually_abs_le_sq | theorem | TangentLimit.tendsto_div_cube_positive_of_eventually_abs_le_sq | review=review_reported | experiment reports=0 | lean=historical_report\n  Explicit assumptions: (none declared)\n  Declared dependencies: TangentLimit.tendsto_div_cube_of_eventually_abs_le_sq\n  Source: tangent-limit/TangentLimit/LimitComparison.lean | statement sha256=b10dcf8d0a699a8a02c8afefcc82a05ad2279fe4322cbd8ea589bbc224bd4cea\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "argv": [
+        "node",
+        "process-tests.cjs"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:22.375103+00:00",
+      "finished": "2026-10-13T01:44:24.130216+00:00",
+      "exit": 0,
+      "stdout": "06-process-tests.stdout",
+      "stderr": "06-process-tests.stderr",
+      "group": "baseline-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 81,
+          "sha256": "c6980c4aad412f4e35d31a777cb2cb774ba41fe34c1de3fc4760ef7036323184",
+          "utf8": "{\n  \"total\": 8,\n  \"passed\": 8,\n  \"directory\": \"${TEMP_ARTIFACT}\"\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "argv": [
+        "node",
+        "verification/adversarial-review/real-adversarial.cjs"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:24.130289+00:00",
+      "finished": "2026-10-13T01:44:27.319450+00:00",
+      "exit": 0,
+      "stdout": "07-real-adversarial.stdout",
+      "stderr": "07-real-adversarial.stderr",
+      "group": "baseline-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 91,
+          "sha256": "bd2132a263dc5ec2328d76122d8c7803b93c9986cfea5c2d070c52748840db26",
+          "utf8": "{\n  \"timeUTC\": \"2026-10-13T01:44:27.315Z\",\n  \"total\": 69,\n  \"passed\": 69,\n  \"failed\": []\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "argv": [
+        "node",
+        "verification/adversarial-review/interruption.cjs"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:27.319521+00:00",
+      "finished": "2026-10-13T01:44:33.173698+00:00",
+      "exit": 0,
+      "stdout": "08-interruption.stdout",
+      "stderr": "08-interruption.stderr",
+      "group": "baseline-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 3488,
+          "sha256": "a6204ab2619d5d68a8bda343641d0633b5b6df5c6ba049062705c7df9f5a3c1c",
+          "utf8": "{\n  \"schema\": \"real-os-interruption-review/v1\",\n  \"timeUTC\": \"2026-10-13T01:44:33.160Z\",\n  \"runtime\": \"v24.19.0\",\n  \"work\": \"${TEMP_ARTIFACT}\",\n  \"mode\": \"actual_Node_OS_signals_filesystem_watch_no_mock_adapters\",\n  \"command\": \"node verification/adversarial-review/interruption.cjs\",\n  \"total\": 4,\n  \"passed\": 4,\n  \"results\": [\n    {\n      \"name\": \"extraction-SIGTERM\",\n      \"pass\": true,\n      \"termination\": {\n        \"code\": null,\n        \"signal\": \"SIGTERM\",\n        \"requested\": true,\n        \"trigger\": {\n          \"event\": \"rename\",\n          \"filename\": \"SIGTERM-extracted/f0000.txt\",\n          \"timeUTC\": \"2026-10-13T01:44:28.076Z\"\n        },\n        \"stdout\": \"\",\n        \"stderr\": \"\"\n      },\n      \"expectedFiles\": 800,\n      \"partialFiles\": 3,\n      \"partial\": [\n        {\n          \"path\": \"f0000.txt\",\n          \"size\": 8000\n        },\n        {\n          \"path\": \"f0001.txt\",\n          \"size\": 8000\n        },\n        {\n          \"path\": \"f0002.txt\",\n          \"size\": 0\n        }\n      ],\n      \"retry\": {\n        \"exit\": 2,\n        \"stderr\": \"EEXIST: file already exists, mkdir '/proc/self/fd/19/SIGTERM-extracted'\"\n      },\n      \"successReceiptAbsent\": true,\n      \"leanExecution\": \"not_performed\"\n    },\n    {\n      \"name\": \"extraction-SIGINT\",\n      \"pass\": true,\n      \"termination\": {\n        \"code\": null,\n        \"signal\": \"SIGINT\",\n        \"requested\": true,\n        \"trigger\": {\n          \"event\": \"rename\",\n          \"filename\": \"SIGINT-extracted/f0000.txt\",\n          \"timeUTC\": \"2026-10-13T01:44:29.440Z\"\n        },\n        \"stdout\": \"\",\n        \"stderr\": \"\"\n      },\n      \"expectedFiles\": 800,\n      \"partialFiles\": 1,\n      \"partial\": [\n        {\n          \"path\": \"f0000.txt\",\n          \"size\": 0\n        }\n      ],\n      \"retry\": {\n        \"exit\": 2,\n        \"stderr\": \"EEXIST: file already exists, mkdir '/proc/self/fd/19/SIGINT-extracted'\"\n      },\n      \"successReceiptAbsent\": true,\n      \"leanExecution\": \"not_performed\"\n    },\n    {\n      \"name\": \"bundle-SIGTERM\",\n      \"pass\": true,\n      \"termination\": {\n        \"code\": null,\n        \"signal\": \"SIGTERM\",\n        \"requested\": true,\n        \"trigger\": {\n          \"event\": \"rename\",\n          \"filename\": \"SIGTERM-bundle.json\",\n          \"timeUTC\": \"2026-10-13T01:44:31.588Z\"\n        },\n        \"stdout\": \"\",\n        \"stderr\": \"\"\n      },\n      \"partialBytes\": 0,\n      \"partialSHA256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"inspection\": {\n        \"exit\": 2,\n        \"stdout\": \"\",\n        \"stderr\": \"{\\n  \\\"ok\\\": false,\\n  \\\"message\\\": \\\"expected JSON value at character 0\\\",\\n  \\\"errors\\\": []\\n}\\n\"\n      },\n      \"successReceiptAbsent\": true,\n      \"leanExecution\": \"not_performed\"\n    },\n    {\n      \"name\": \"bundle-SIGINT\",\n      \"pass\": true,\n      \"termination\": {\n        \"code\": null,\n        \"signal\": \"SIGINT\",\n        \"requested\": true,\n        \"trigger\": {\n          \"event\": \"rename\",\n          \"filename\": \"SIGINT-bundle.json\",\n          \"timeUTC\": \"2026-10-13T01:44:33.101Z\"\n        },\n        \"stdout\": \"\",\n        \"stderr\": \"\"\n      },\n      \"partialBytes\": 0,\n      \"partialSHA256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n      \"inspection\": {\n        \"exit\": 2,\n        \"stdout\": \"\",\n        \"stderr\": \"{\\n  \\\"ok\\\": false,\\n  \\\"message\\\": \\\"expected JSON value at character 0\\\",\\n  \\\"errors\\\": []\\n}\\n\"\n      },\n      \"successReceiptAbsent\": true,\n      \"leanExecution\": \"not_performed\"\n    }\n  ]\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "argv": [
+        "python3",
+        "verification/adversarial-review/archive-adversarial.py"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:33.173881+00:00",
+      "finished": "2026-10-13T01:44:33.228470+00:00",
+      "exit": 0,
+      "stdout": "09-archive-adversarial.stdout",
+      "stderr": "09-archive-adversarial.stderr",
+      "group": "baseline-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 116,
+          "sha256": "d8b30f09831d76fdf34af2396c8231fec5661790ea0aeb4480b9538ff2286b69",
+          "utf8": "{\n  \"total\": 29,\n  \"passed\": 29,\n  \"failed\": [],\n  \"sourceUnchangedDuringRun\": true,\n  \"originalsUnchanged\": true\n}\n"
+        },
+        "stderr": {
+          "bytes": 197,
+          "sha256": "4d3963bc9d03e7e0cf89b100e915d828a1b02c08e82ccec3f1d0c097897770a0",
+          "utf8": "${RUNTIME}/dependencies/python/lib/python3.12/zipfile/__init__.py:1625: UserWarning: Duplicate name: 'x'\n  return self._open_to_write(zinfo, force_zip64=force_zip64)\n"
+        }
+      }
+    },
+    {
+      "argv": [
+        "python3",
+        "package-tests.py"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:44:33.228668+00:00",
+      "finished": "2026-10-13T01:44:33.277940+00:00",
+      "exit": 0,
+      "stdout": "10-package-tests.stdout",
+      "stderr": "10-package-tests.stderr",
+      "group": "baseline-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 1922,
+          "sha256": "037f3154d589c8898a1ad9bc93ab3427c3662c497978c7e7a02bcbe507cf82e6",
+          "utf8": "{\n  \"schema\": \"actual-checkpoint-packaging-tests/v1\",\n  \"mode\": \"actual_Python_stdlib_filesystem_ZIP\",\n  \"temporary\": \"${TEMP_ARTIFACT}\",\n  \"passed\": 16,\n  \"total\": 16,\n  \"fixtureArchive\": {\n    \"schema\": \"deterministic-checkpoint-result/v1\",\n    \"file\": \"${TEMP_ARTIFACT}/a.zip\",\n    \"bytes\": 1279,\n    \"sha256\": \"6750cbeb4e6ac583369ebe7988a4c6abf369bc6644d7a9ae067429216d26298a\",\n    \"files\": 4,\n    \"expandedBytes\": 954,\n    \"importedLeanPasses\": 0\n  },\n  \"results\": [\n    {\n      \"name\": \"actual deterministic ZIP bytes\",\n      \"status\": \"passed\"\n    },\n    {\n      \"name\": \"actual regular byte closure accepts integrity only\",\n      \"status\": \"passed\"\n    },\n    {\n      \"name\": \"whole archive identity drift rejects\",\n      \"status\": \"passed\"\n    },\n    {\n      \"name\": \"existing output cannot be overwritten\",\n      \"status\": \"passed\"\n    },\n    {\n      \"name\": \"output within source tree rejects\",\n      \"status\": \"passed\"\n    },\n    {\n      \"name\": \"generated cache omitted\",\n      \"status\": \"passed\"\n    },\n    {\n      \"name\": \"source symlinks reject\",\n      \"status\": \"passed\"\n    },\n    {\n      \"name\": \"archive symlinks reject\",\n      \"status\": \"passed\"\n    },\n    {\n      \"name\": \"coherent unsupported pass authority rejects\",\n      \"status\": \"passed\"\n    },\n    {\n      \"name\": \"missing attachment rejects\",\n      \"status\": \"passed\"\n    },\n    {\n      \"name\": \"tampered attachment rejects\",\n      \"status\": \"passed\"\n    },\n    {\n      \"name\": \"unexpected attachment rejects\",\n      \"status\": \"passed\"\n    },\n    {\n      \"name\": \"traversal filename rejects\",\n      \"status\": \"passed\"\n    },\n    {\n      \"name\": \"prefix collision rejects\",\n      \"status\": \"passed\"\n    },\n    {\n      \"name\": \"wrong archive root rejects\",\n      \"status\": \"passed\"\n    },\n    {\n      \"name\": \"duplicate manifest JSON key rejects\",\n      \"status\": \"passed\"\n    }\n  ],\n  \"importedLeanPasses\": 0\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "argv": [
+        "node",
+        "live.cjs",
+        "run",
+        "tangent",
+        "${VERIFICATION_ENV}",
+        "${VERIFICATION_ENV}/live-tests/tangent"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:48:43.224729+00:00",
+      "finished": "2026-10-13T01:49:59.181719+00:00",
+      "exit": 0,
+      "stdout": "live-01-live.stdout",
+      "stderr": "live-01-live.stderr",
+      "group": "baseline-live-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 555,
+          "sha256": "2bfa061797442caaa547501232f34caef828d1d16665950a3eba6d06615d4835",
+          "utf8": "{\n  \"ok\": true,\n  \"locallyObservedLeanPass\": true,\n  \"attempt\": \"afb8a883-63f9-4190-bf36-93cf77d32da9\",\n  \"plan\": \"tangent\",\n  \"directory\": \"${VERIFICATION_ENV}/live-tests/tangent\",\n  \"checks\": {\n    \"sourceIdentity\": \"passed\",\n    \"compilerIdentity\": \"passed\",\n    \"packageIdentity\": \"passed\",\n    \"compilation\": \"passed\",\n    \"expectedTypeMatching\": \"passed\",\n    \"axiomAudit\": \"passed\",\n    \"definitionBodyMatching\": \"passed\",\n    \"targetKernelReplay\": \"passed\",\n    \"independentKernelReplay\": \"not_performed\"\n  },\n  \"failure\": null\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "argv": [
+        "node",
+        "verification/adversarial-review/live-adversarial.cjs",
+        "${VERIFICATION_ENV}"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:48:43.225246+00:00",
+      "finished": "2026-10-13T01:52:48.049967+00:00",
+      "exit": 0,
+      "stdout": "live-02-live-adversarial.stdout",
+      "stderr": "live-02-live-adversarial.stderr",
+      "group": "baseline-live-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 1194,
+          "sha256": "eb160f14c392401956c4bf6ca1c9194e142bf54f176863f83e2f64964a3a1b60",
+          "utf8": "unsupported-plan-not-a-plan: passed\nunsupported-plan-__proto__: passed\nunsupported-plan-constructor: passed\nunsupported-plan-pass: passed\nunsupported-option: passed\nchanged-fixed-fixture-before-run: passed\nchanged-fixed-expected-type-before-run: passed\nchanged-project-before-run: passed\ncoordinated-project-catalog-repin: passed\nactual-valid-proof: passed\nactual-negative-sorry: passed\nactual-negative-custom-axiom: passed\nactual-negative-wrong: passed\nactual-negative-wrong-compilation: passed\nactual-negative-specialized: passed\nactual-negative-skip-kernel: passed\nactual-general-whole-forall: passed\nactual-Lean-interruption: passed\nactual-Lean-timeout: passed\nchanged-build-copy-during-run: passed\nchanged-archive-copy-during-run: passed\nchanged-expected-original-during-run: passed\nchanged-project-original-during-run: passed\nchanged-expected-build-copy-during-run: passed\ntampered-phase-log-during-run: passed\nimported-receipt-missing: passed\nimported-receipt-tampered: passed\nimported-receipt-forged-status: passed\nimported-receipt-forged-boundary: passed\nimported-receipt-added-pass-field: passed\nempty-claimed-success-receipt: passed\n{\n  \"total\": 31,\n  \"passed\": 31,\n  \"failed\": []\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "argv": [
+        "node",
+        "live-os-tests.cjs",
+        "${VERIFICATION_ENV}"
+      ],
+      "cwd": "${VERIFICATION_WORK}/baseline",
+      "started": "2026-10-13T01:48:43.225737+00:00",
+      "finished": "2026-10-13T01:48:49.362522+00:00",
+      "exit": 0,
+      "stdout": "live-03-live-os-tests.stdout",
+      "stderr": "live-03-live-os-tests.stderr",
+      "group": "baseline-live-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 2559,
+          "sha256": "e10a5ac6f6c94ce148c0f12ae5acde6228a070cbb0740ae11ab2b3ba52eedd62",
+          "utf8": "{\n  \"schema\": \"actual-live-cli-os-interruptions/v1\",\n  \"runtime\": \"v24.19.0\",\n  \"platform\": \"linux\",\n  \"base\": \"${TEMP_ARTIFACT}\",\n  \"total\": 3,\n  \"passed\": 3,\n  \"results\": [\n    {\n      \"signal\": \"SIGTERM\",\n      \"sentAt\": \"2026-10-13T01:48:44.844Z\",\n      \"actualLeanPID\": 3127,\n      \"termination\": {\n        \"exitCode\": 2,\n        \"signal\": null\n      },\n      \"leanTermination\": {\n        \"exitCode\": null,\n        \"kind\": \"interrupted\",\n        \"pid\": 3127,\n        \"processGroup\": 3127,\n        \"signal\": \"SIGTERM\"\n      },\n      \"receipt\": \"failed_or_incomplete\",\n      \"inspection\": {\n        \"ok\": true,\n        \"kind\": \"receipt_integrity_only\",\n        \"integrityStatus\": \"failed_or_incomplete_attempt\",\n        \"reportedOutcome\": \"failed_or_incomplete\",\n        \"evidenceFiles\": 108,\n        \"locallyObservedLeanPass\": false,\n        \"leanPass\": false,\n        \"receiptAuthenticity\": \"not_established\",\n        \"independentKernelReplay\": \"not_performed\"\n      },\n      \"locallyObservedLeanPass\": false\n    },\n    {\n      \"signal\": \"SIGINT\",\n      \"sentAt\": \"2026-10-13T01:48:47.159Z\",\n      \"actualLeanPID\": 3273,\n      \"termination\": {\n        \"exitCode\": 2,\n        \"signal\": null\n      },\n      \"leanTermination\": {\n        \"exitCode\": null,\n        \"kind\": \"interrupted\",\n        \"pid\": 3273,\n        \"processGroup\": 3273,\n        \"signal\": \"SIGTERM\"\n      },\n      \"receipt\": \"failed_or_incomplete\",\n      \"inspection\": {\n        \"ok\": true,\n        \"kind\": \"receipt_integrity_only\",\n        \"integrityStatus\": \"failed_or_incomplete_attempt\",\n        \"reportedOutcome\": \"failed_or_incomplete\",\n        \"evidenceFiles\": 108,\n        \"locallyObservedLeanPass\": false,\n        \"leanPass\": false,\n        \"receiptAuthenticity\": \"not_established\",\n        \"independentKernelReplay\": \"not_performed\"\n      },\n      \"locallyObservedLeanPass\": false\n    },\n    {\n      \"signal\": \"SIGKILL\",\n      \"sentAt\": \"2026-10-13T01:48:49.278Z\",\n      \"actualLeanPID\": 3388,\n      \"termination\": {\n        \"exitCode\": null,\n        \"signal\": \"SIGKILL\"\n      },\n      \"attempt\": {\n        \"schema\": \"math-live-attempt/v1\",\n        \"attempt\": \"60e7b5f5-c298-411c-9f85-557bd15e2bff\",\n        \"label\": \"valid\",\n        \"started\": \"2026-10-13T01:48:47.986Z\",\n        \"state\": \"in_progress\",\n        \"locallyObservedLeanPass\": false\n      },\n      \"receipt\": \"absent_and_rejected\",\n      \"locallyObservedLeanPass\": false,\n      \"cleanup\": \"test_harness_killed_remaining_observed_process_group\"\n    }\n  ],\n  \"independentKernelReplay\": \"not_performed\"\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "name": "public-regression",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/tests/regression.cjs",
+        "${VERIFICATION_WORK}/final-04/public-regression-report.json"
+      ],
+      "cwd": "${WORKSPACE}",
+      "started": "2026-10-13T02:03:12.514146+00:00",
+      "finished": "2026-10-13T02:03:13.183908+00:00",
+      "exit": 0,
+      "stdout": "public-regression.stdout",
+      "stderr": "public-regression.stderr",
+      "group": "first-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 5863,
+          "sha256": "5b0e33f01deee6d5cd113a1341672f3a37b90fd7ebe11ea85e1e5273a9ef63a7",
+          "utf8": "{\n  \"schema\": \"evidence-hardening-regression/v1\",\n  \"mode\": \"actual_Node_filesystem_Git_no_Lean\",\n  \"started\": \"2026-10-13T02:03:12.566Z\",\n  \"runtime\": \"v24.19.0\",\n  \"results\": [\n    {\n      \"name\": \"well_formed_process\",\n      \"pass\": true,\n      \"observed\": {\n        \"start\": 1791853200000,\n        \"end\": 1791853200001,\n        \"success\": true\n      }\n    },\n    {\n      \"name\": \"reject_exit_code_string\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_exit_code_negative\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_signal_and_exit\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_pid_negative\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_process_group_mismatch\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_error_on_success\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_duration_negative\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_clock_reversed\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_invalid_timestamp\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_noncanonical_timestamp\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_duration_contradiction\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_output_cap_negative\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_bytes_exceed_cap\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_environment_shape\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_environment_extra\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_environment_value\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_reused_channel\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_extra_descriptor\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_wrong_success\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_unknown_termination\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_missing_exit\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"strict_json_duplicate_key\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"strict_json_decoded_duplicate\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"strict_json_nonfinite\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"strict_json_unpaired_surrogate\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"strict_json_prototype_key\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"strict_json_trailing\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"lean_marker_parse\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_lean_log_error\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_lean_log_truncated\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_lean_log_text\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_lean_log_duplicate\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_lean_log_utf8\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"regular_read\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_path_escape\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_size\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_symlink\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_hardlink\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"reject_FIFO_without_blocking\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"actual_capture_success\",\n      \"pass\": true,\n      \"observed\": {\n        \"kind\": \"exited\",\n        \"exitCode\": 0,\n        \"signal\": null,\n        \"pid\": 8809,\n        \"processGroup\": 8809\n      }\n    },\n    {\n      \"name\": \"actual_capture_nonzero\",\n      \"pass\": true,\n      \"observed\": {\n        \"kind\": \"exited\",\n        \"exitCode\": 7,\n        \"signal\": null,\n        \"pid\": 8816,\n        \"processGroup\": 8816\n      }\n    },\n    {\n      \"name\": \"actual_capture_launch_failure\",\n      \"pass\": true,\n      \"observed\": {\n        \"kind\": \"launch_failed\",\n        \"exitCode\": null,\n        \"signal\": null,\n        \"pid\": null,\n        \"processGroup\": null\n      }\n    },\n    {\n      \"name\": \"actual_capture_timeout\",\n      \"pass\": true,\n      \"observed\": {\n        \"kind\": \"timeout\",\n        \"exitCode\": null,\n        \"signal\": \"SIGTERM\",\n        \"pid\": 8824,\n        \"processGroup\": 8824\n      }\n    },\n    {\n      \"name\": \"git_clean_byte_identity\",\n      \"pass\": true,\n      \"observed\": {\n        \"files\": 2,\n        \"sourceClosureSHA256\": \"d692562b72a22ff560a177bdccd5eac8111be01ac9b724758c85c4195a8f5ee0\"\n      }\n    },\n    {\n      \"name\": \"git_hidden_modification_assume-unchanged\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"git_hidden_modification_skip-worktree\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"git_replacement_ref_rejected\",\n      \"pass\": true,\n      \"observed\": null\n    },\n    {\n      \"name\": \"git_untracked_import_rejected\",\n      \"pass\": true,\n      \"observed\": null\n    }\n  ],\n  \"finished\": \"2026-10-13T02:03:13.165Z\",\n  \"total\": 49,\n  \"passed\": 49,\n  \"failed\": [],\n  \"leanPasses\": 0,\n  \"root\": \"${TEMP_ARTIFACT}\"\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "name": "public-lean-corpus",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/tests/lean-corpus.cjs",
+        "${VERIFICATION_ENV}/tangent-limit/.elan/toolchains/v4.24.0/bin/lean",
+        "${VERIFICATION_WORK}/final-04",
+        "${VERIFICATION_WORK}/final-04/public-lean-corpus-report.json"
+      ],
+      "cwd": "${WORKSPACE}",
+      "started": "2026-10-13T02:03:12.514628+00:00",
+      "finished": "2026-10-13T02:03:43.560669+00:00",
+      "exit": 0,
+      "stdout": "public-lean-corpus.stdout",
+      "stderr": "public-lean-corpus.stderr",
+      "group": "first-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 346,
+          "sha256": "fb37c3bf61f9da9fe3c72467f897bd60aa4334d8c438a970a0d1d427c350b01d",
+          "utf8": "valid: passed\nhidden-assumption: passed\nstatement-drift: passed\nspecialization: passed\nwrong-name: passed\ndefinition-substitution: passed\ntransitive-drift: passed\nsorry: passed\ncustom-axiom: passed\nskip-kernel: passed\n{\"total\":10,\"passed\":10,\"failed\":[],\"reportPath\":\"${VERIFICATION_WORK}/final-04/public-lean-corpus-report.json\"}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "name": "independent-v1",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/tests/independent-v1.cjs",
+        "${VERIFICATION_WORK}/companion-review-04",
+        "${VERIFICATION_ENV}/live-tests/live-review-Eg9deU/15-valid",
+        "${VERIFICATION_WORK}/final-04/independent-v1-mutations"
+      ],
+      "cwd": "${WORKSPACE}",
+      "started": "2026-10-13T02:03:12.515234+00:00",
+      "finished": "2026-10-13T02:03:17.698011+00:00",
+      "exit": 0,
+      "stdout": "independent-v1.stdout",
+      "stderr": "independent-v1.stderr",
+      "group": "first-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 1860,
+          "sha256": "5e8d7d469562374203f1d82cd1ceab50fa5e84d8507aca6ee152472f2a7a1388",
+          "utf8": "actual-fresh-success-import: passed\nuuid-not-v4: passed\nuuid-mismatch-attempt: passed\nattempt-pass-request: passed\nattempt-time-mismatch: passed\nreceipt-reversed-times: passed\nreceipt-noncanonical-time: passed\nunsupported-source-revision: passed\nunsupported-proof-pass-field: passed\nunsupported-independent-kernel: passed\nunsupported-cache-rebuild: passed\nunsupported-native-mrs: passed\nincomplete-phase: passed\nduplicate-phase: passed\nreordered-phases: passed\npid-null: passed\npid-string: passed\npid-negative: passed\nprocess-group-mismatch: passed\nexit-code-plus-signal: passed\ninvalid-signal: passed\nexit-code-string: passed\nexit-code-out-of-range: passed\nsuccess-false: passed\ntimeout-success: passed\nlaunch-failed-success: passed\nsuccess-error: passed\nphase-duration-string: passed\nphase-duration-disagrees: passed\nphase-outside-attempt-time: passed\nphase-argv-substitution: passed\ncompile-argv-substitution: passed\nphase-cwd-substitution: passed\nphase-executable-substitution: passed\nphase-unknown-environment: passed\nphase-elan-environment-substitution: passed\ncompile-leanpath-substitution: passed\nphase-output-cap-substitution: passed\nphase-log-reuse: passed\nphase-log-missing: passed\ncoherent-compiler-log-tamper: passed\ncoherent-stderr-tamper: passed\ncoherent-error-json-tamper: passed\ncoherent-malformed-json-tamper: passed\ncoherent-missing-target-marker: passed\ncoherent-missing-replay-marker: passed\ncoherent-revision-log-tamper: passed\ncoherent-origin-log-tamper: passed\ncoherent-diff-log-tamper: passed\nsource-closure-omission: passed\nsource-closure-coordinated-repin: passed\ntarget-axiom-substitution: passed\nsame-kernel-claim-upgrade: passed\nruntime-member-coordinated-repin: passed\npackage-revision-coordinated-repin: passed\nfailed-receipt-as-complete: passed\ncoherently-aged-receipt: passed\n{\n  \"total\": 57,\n  \"passed\": 57,\n  \"failed\": []\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "name": "inspect-general",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/inspect-v1.cjs",
+        "${VERIFICATION_ENV}/live-tests/live-review-Eg9deU/22-general"
+      ],
+      "cwd": "${WORKSPACE}",
+      "started": "2026-10-13T02:03:12.515571+00:00",
+      "finished": "2026-10-13T02:03:12.786705+00:00",
+      "exit": 0,
+      "stdout": "inspect-general.stdout",
+      "stderr": "inspect-general.stderr",
+      "group": "first-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 487,
+          "sha256": "1bca94cab4a249c0a0c4e24f55b82dfba4d26d8591560a7be7f6b24686b60d9d",
+          "utf8": "{\n  \"ok\": true,\n  \"kind\": \"strict_v1_reported_integrity_only\",\n  \"evidenceFiles\": 172,\n  \"reportedOutcome\": \"all_required_live_phases_succeeded\",\n  \"leanPass\": false,\n  \"locallyObservedLeanPass\": false,\n  \"freshness\": \"not_established\",\n  \"receiptAuthenticity\": \"not_established\",\n  \"formalProofAcceptance\": \"not_granted_by_import\",\n  \"dependencyCompilation\": \"trusted_external_cache_not_rebuilt\",\n  \"independentKernelReplay\": \"not_performed\",\n  \"nativeMRS\": \"unavailable_unvalidated\"\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "name": "inspect-tangent",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/inspect-v1.cjs",
+        "${VERIFICATION_ENV}/live-tests/tangent"
+      ],
+      "cwd": "${WORKSPACE}",
+      "started": "2026-10-13T02:03:12.515814+00:00",
+      "finished": "2026-10-13T02:03:12.836867+00:00",
+      "exit": 0,
+      "stdout": "inspect-tangent.stdout",
+      "stderr": "inspect-tangent.stderr",
+      "group": "first-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 487,
+          "sha256": "23eddef24ab971ad5ea7a091d3b97fc4c82c22677d73c6120c65f5b363438623",
+          "utf8": "{\n  \"ok\": true,\n  \"kind\": \"strict_v1_reported_integrity_only\",\n  \"evidenceFiles\": 208,\n  \"reportedOutcome\": \"all_required_live_phases_succeeded\",\n  \"leanPass\": false,\n  \"locallyObservedLeanPass\": false,\n  \"freshness\": \"not_established\",\n  \"receiptAuthenticity\": \"not_established\",\n  \"formalProofAcceptance\": \"not_granted_by_import\",\n  \"dependencyCompilation\": \"trusted_external_cache_not_rebuilt\",\n  \"independentKernelReplay\": \"not_performed\",\n  \"nativeMRS\": \"unavailable_unvalidated\"\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "name": "independent-fixture-import",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/tests/independent-fixture-import.cjs",
+        "${VERIFICATION_WORK}/companion-review-04",
+        "${VERIFICATION_WORK}/final-04/lean-corpus-1F4Yjr/valid",
+        "${VERIFICATION_WORK}/final-04/independent-fixture-mutations"
+      ],
+      "cwd": "${WORKSPACE}",
+      "started": "2026-10-13T02:05:21.489577+00:00",
+      "finished": "2026-10-13T02:05:23.560367+00:00",
+      "exit": 0,
+      "stdout": "independent-fixture-import.stdout",
+      "stderr": "independent-fixture-import.stderr",
+      "group": "second-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 1382,
+          "sha256": "93291978e9a39028e899d49e87c9bbede8a791167f908e33e2be7ec90aca1e7b",
+          "utf8": "fresh-valid-receipt-import: passed\nuuid-mismatch: passed\nreceipt-missing-phase: passed\nreceipt-reordered-phase: passed\nreceipt-unknown-pass-field: passed\nreceipt-upgraded-boundary: passed\nreceipt-stale-source-digest: passed\nsource-closure-omission: passed\nsource-closure-repin: passed\nproduct-coverage-omission: passed\nwork-source-repin: passed\nruntime-member-repin: passed\ncore-cache-upgrade: passed\npid-null: passed\npid-string: passed\npid-process-group-mismatch: passed\nexit-code-string: passed\nexit-code-out-of-range: passed\nexit-and-signal: passed\ntimeout-success: passed\nlaunch-failure-success: passed\nsuccess-error: passed\nbad-duration: passed\nbad-output-limit: passed\nbad-phase-time: passed\nargv-substitution: passed\nargv-compile-source-substitution: passed\ncwd-substitution: passed\nexecutable-substitution: passed\nenvironment-substitution: passed\nenvironment-extra: passed\nlog-reuse: passed\nlog-missing: passed\ncoherent-compiler-log-substitution: passed\ncoherent-stderr-substitution: passed\ncoherent-malformed-json: passed\ncoherent-error-json: passed\ncoherent-missing-type-marker: passed\ncoherent-missing-body-marker: passed\ncoherent-missing-replay-marker: passed\nrecord-axiom-upgrade: passed\nrecord-independent-kernel-upgrade: passed\nrecord-body-upgrade: passed\nattempt-pass-upgrade: passed\ncoherently-aged-receipt: passed\n{\n  \"total\": 45,\n  \"passed\": 45,\n  \"failed\": []\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "name": "independent-runtime",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/tests/independent-runtime.cjs",
+        "${VERIFICATION_WORK}/companion-review-04",
+        "${VERIFICATION_ENV}/tangent-limit/.elan/toolchains/v4.24.0/bin/lean",
+        "${VERIFICATION_WORK}/final-04/lean-corpus-1F4Yjr/valid",
+        "${VERIFICATION_WORK}/final-04/independent-runtime-tests"
+      ],
+      "cwd": "${WORKSPACE}",
+      "started": "2026-10-13T02:05:21.490146+00:00",
+      "finished": "2026-10-13T02:05:24.814615+00:00",
+      "exit": 0,
+      "stdout": "independent-runtime.stdout",
+      "stderr": "independent-runtime.stderr",
+      "group": "second-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 273,
+          "sha256": "ff26044fc90bcf49cc4bafad8dc9df72d7d597e4c320a4d6c840858cb7224b69",
+          "utf8": "actual-pinned-Lean-timeout: passed\nactual-observed-Lean-AbortSignal: passed\npreaborted-attempt-no-process: passed\nunpinned-local-source-rejected-before-attempt: passed\nstale-receipt-under-new-reviewed-policy-rejected: passed\n{\n  \"total\": 5,\n  \"passed\": 5,\n  \"failed\": []\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    },
+    {
+      "name": "fixture-import-cli",
+      "argv": [
+        "node",
+        "${VERIFICATION_WORK}/companion-review-04/fixture-gate.cjs",
+        "inspect",
+        "${VERIFICATION_WORK}/final-04/lean-corpus-1F4Yjr/valid"
+      ],
+      "cwd": "${WORKSPACE}",
+      "started": "2026-10-13T02:05:21.490716+00:00",
+      "finished": "2026-10-13T02:05:21.705194+00:00",
+      "exit": 0,
+      "stdout": "fixture-import-cli.stdout",
+      "stderr": "fixture-import-cli.stderr",
+      "group": "second-commands.json",
+      "captured_logs": {
+        "stdout": {
+          "bytes": 302,
+          "sha256": "5e07c3fa7512840f264d8be8355e2fc05c58581f4cfa8355116815624945ce06",
+          "utf8": "{\n  \"ok\": true,\n  \"kind\": \"fixed_fixture_reported_integrity_only\",\n  \"leanPass\": false,\n  \"locallyObservedLeanPass\": false,\n  \"freshness\": \"not_established\",\n  \"receiptAuthenticity\": \"not_established\",\n  \"independentKernelReplay\": \"not_performed\",\n  \"dependencyTrust\": \"core_olean_cache_not_rebuilt\"\n}\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    }
+  ],
+  "publication_derivative": {
+    "original_schema": "published-command-observations/v1",
+    "original_commit": "c2fe44833ceb577595028549cecdda87986f303e",
+    "original_sha256": "e2653071d6a2598143f8abf21f99281632156fbe60e40349ac86f96729359f32",
+    "original_bytes": 64465,
+    "scope": "Public metadata derivative; recorded environment paths and coordination details normalized. Original outcomes, exits, dates, mathematical source/pin hashes and trust limits retain their original scope.",
+    "captured_byte_descriptors": "Original receipt/output descriptors remain historical original-byte bindings; current public-copy bytes use publication/OCTOBER-13-SOURCE-MAP.json and publication/FILES.json.",
+    "removed_nonmathematical_fields": [],
+    "new_mathematical_verification": false
+  }
+}

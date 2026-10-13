@@ -1,0 +1,2565 @@
+{
+  "attempt": "20261013T015438415836Z",
+  "boundaries": {
+    "dependencyOleans": "trusted_pinned_cache",
+    "dependencySourceRebuild": "not_performed",
+    "hostRuntime": "trusted",
+    "independentKernel": "not_performed",
+    "measureTheoryBridge": "not_formalized",
+    "nativeMacMRS": "not_performed"
+  },
+  "compilerCommit": "797c613eb9b6d4ec95db23e3e00af9ac6657f24b",
+  "compilerMembers": {
+    "bin/lean": {
+      "bytes": 9024,
+      "sha256": "8fadc3ed92cc9decb94c96ee9c0876e91e03a3a5e69138f32114f02789e2766c"
+    },
+    "lib/lean/libInit_shared.so": {
+      "bytes": 6232,
+      "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+    },
+    "lib/lean/libleanshared.so": {
+      "bytes": 193479936,
+      "sha256": "8cc9858cc57c52015ba6dd948bdbf7f05926b9b5fcead69a964f0ad61ddd79dd"
+    },
+    "lib/lean/libleanshared_1.so": {
+      "bytes": 6232,
+      "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+    },
+    "lib/lean/libleanshared_2.so": {
+      "bytes": 6232,
+      "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+    }
+  },
+  "compilerVersion": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "definitions": [
+    {
+      "axioms": [],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.Atom"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.Plan"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.mass"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.IsCoupling"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.cost"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.matching"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.sourcePoint"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.targetPoint"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.sqCost"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.projectedCost"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.commonSource"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.Admissible"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.mapSquared"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.pCost"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.projectedPCost"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.mapSize"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.targetDistance"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.ceiling"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.exponent"
+    }
+  ],
+  "finished": "2026-10-13T01:56:33.419854+00:00",
+  "packages": [
+    {
+      "head": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "name": "mathlib",
+      "origin": "https://github.com/leanprover-community/mathlib4.git",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "name": "plausible",
+      "origin": "https://github.com/leanprover-community/plausible",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "name": "LeanSearchClient",
+      "origin": "https://github.com/leanprover-community/LeanSearchClient",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "d768126816be17600904726ca7976b185786e6b9",
+      "name": "importGraph",
+      "origin": "https://github.com/leanprover-community/import-graph",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "name": "proofwidgets",
+      "origin": "https://github.com/leanprover-community/ProofWidgets4",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "name": "aesop",
+      "origin": "https://github.com/leanprover-community/aesop",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "name": "Qq",
+      "origin": "https://github.com/leanprover-community/quote4",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "name": "batteries",
+      "origin": "https://github.com/leanprover-community/batteries",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "name": "Cli",
+      "origin": "https://github.com/leanprover/lean4-cli",
+      "trackedSourceClean": true
+    }
+  ],
+  "phases": [
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.397855+00:00",
+      "name": "compiler-version",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/compiler-version.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 106,
+          "path": "evidence/lean-review/20261013T015438415836Z/compiler-version.stdout",
+          "sha256": "36c0bbaf090c97bc8217c6ff497ff9144fd83d9003f12cd505162b943aaaee77"
+        }
+      },
+      "started": "2026-10-13T01:54:39.297194+00:00"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--githash"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.549338+00:00",
+      "name": "compiler-commit",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/compiler-commit.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/compiler-commit.stdout",
+          "sha256": "67613f654eb78799d781efd2bd443e249842f1d20e08c153672e7822ae6850fa"
+        }
+      },
+      "started": "2026-10-13T01:54:39.398267+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/mathlib",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.554324+00:00",
+      "name": "package-mathlib-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-mathlib-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-mathlib-head.stdout",
+          "sha256": "cc49bfc965afbc1ef5877d1d1b12648323cb6d44f015d37593c63c2cd1d731c0"
+        }
+      },
+      "started": "2026-10-13T01:54:39.549844+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/mathlib",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.558152+00:00",
+      "name": "package-mathlib-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-mathlib-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 53,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-mathlib-origin.stdout",
+          "sha256": "03e534cb626b55a5210b43c74776926d0ef07ac36b774832c9934433ee3c9d4c"
+        }
+      },
+      "started": "2026-10-13T01:54:39.554811+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/mathlib",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.588033+00:00",
+      "name": "package-mathlib-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-mathlib-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-mathlib-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:54:39.558549+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/plausible",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.596343+00:00",
+      "name": "package-plausible-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-plausible-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-plausible-head.stdout",
+          "sha256": "5f4ae658966fdc18933fe008f0fa3170b7c00c9cbdb3dc61ae991accf4bab97f"
+        }
+      },
+      "started": "2026-10-13T01:54:39.588599+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/plausible",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.600669+00:00",
+      "name": "package-plausible-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-plausible-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 50,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-plausible-origin.stdout",
+          "sha256": "f9e157058f246ccb009bd17773f68233dd8dade976dbb829338d6c201cf8599f"
+        }
+      },
+      "started": "2026-10-13T01:54:39.596784+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/plausible",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.605448+00:00",
+      "name": "package-plausible-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-plausible-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-plausible-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:54:39.601768+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/LeanSearchClient",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.612197+00:00",
+      "name": "package-LeanSearchClient-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-LeanSearchClient-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-LeanSearchClient-head.stdout",
+          "sha256": "ee39bdbdf92107dc88a4ecc2220d30f32902373c6f0739c8492be44a294847a4"
+        }
+      },
+      "started": "2026-10-13T01:54:39.606010+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/LeanSearchClient",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.616059+00:00",
+      "name": "package-LeanSearchClient-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-LeanSearchClient-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 57,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-LeanSearchClient-origin.stdout",
+          "sha256": "619333dd697b0876afa6e558ee619ba42cc147c8ac9eb415d66d06cb3d13e196"
+        }
+      },
+      "started": "2026-10-13T01:54:39.612976+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/LeanSearchClient",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.620925+00:00",
+      "name": "package-LeanSearchClient-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-LeanSearchClient-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-LeanSearchClient-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:54:39.616666+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/importGraph",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.624665+00:00",
+      "name": "package-importGraph-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-importGraph-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-importGraph-head.stdout",
+          "sha256": "7f1b3a7459b33f77fb08847cc0be80357aa6fcfb8e846a3ffbdbb656fd08218b"
+        }
+      },
+      "started": "2026-10-13T01:54:39.621759+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/importGraph",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.628091+00:00",
+      "name": "package-importGraph-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-importGraph-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 53,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-importGraph-origin.stdout",
+          "sha256": "e1308c66f365e49e7b8c10bd874950ac425bcc14aefe9881baf03c4f65f25cf1"
+        }
+      },
+      "started": "2026-10-13T01:54:39.625146+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/importGraph",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.635227+00:00",
+      "name": "package-importGraph-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-importGraph-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-importGraph-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:54:39.629028+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/proofwidgets",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.640169+00:00",
+      "name": "package-proofwidgets-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-proofwidgets-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-proofwidgets-head.stdout",
+          "sha256": "a26e42b6270d4e50e6866efb9277ecf9d573be7d8f53baaac54b61c0a9e4c9b1"
+        }
+      },
+      "started": "2026-10-13T01:54:39.635694+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/proofwidgets",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.644549+00:00",
+      "name": "package-proofwidgets-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-proofwidgets-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 54,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-proofwidgets-origin.stdout",
+          "sha256": "d85a5cc11983798fb902072b68e0a279bae40189de64fe4ccaa3f969f8e7414c"
+        }
+      },
+      "started": "2026-10-13T01:54:39.640941+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/proofwidgets",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.650930+00:00",
+      "name": "package-proofwidgets-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-proofwidgets-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-proofwidgets-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:54:39.645049+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/aesop",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.654987+00:00",
+      "name": "package-aesop-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-aesop-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-aesop-head.stdout",
+          "sha256": "2ca5dc9099966d8b4d75f068570c8382e9b1743eb524d29dfd9c31f1b0357e68"
+        }
+      },
+      "started": "2026-10-13T01:54:39.651919+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/aesop",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.658094+00:00",
+      "name": "package-aesop-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-aesop-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 46,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-aesop-origin.stdout",
+          "sha256": "007ad2ffb6cd1115e54eb06162448481b6e57a2b38a5721fe9306aa73f377411"
+        }
+      },
+      "started": "2026-10-13T01:54:39.655488+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/aesop",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.663481+00:00",
+      "name": "package-aesop-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-aesop-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-aesop-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:54:39.658622+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/Qq",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.667146+00:00",
+      "name": "package-Qq-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-Qq-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-Qq-head.stdout",
+          "sha256": "b5c55d876bdd5b8f9c8f5c80247fd9a311a44e6be1ca930dff8fdac32763b3ef"
+        }
+      },
+      "started": "2026-10-13T01:54:39.664107+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/Qq",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.671022+00:00",
+      "name": "package-Qq-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-Qq-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 47,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-Qq-origin.stdout",
+          "sha256": "0edd7e60b5329aa479be59427897c3d131a4bed960e8a4faf0aaa6f3c176fe66"
+        }
+      },
+      "started": "2026-10-13T01:54:39.667717+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/Qq",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.675641+00:00",
+      "name": "package-Qq-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-Qq-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-Qq-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:54:39.671764+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/batteries",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.679144+00:00",
+      "name": "package-batteries-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-batteries-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-batteries-head.stdout",
+          "sha256": "7a7d1966b230b609b900348919460f414800232a58d0caa685a23bf7a41c2e73"
+        }
+      },
+      "started": "2026-10-13T01:54:39.676353+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/batteries",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.682499+00:00",
+      "name": "package-batteries-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-batteries-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 50,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-batteries-origin.stdout",
+          "sha256": "163e9977daaaf557a111a95edb87a473e4dabdef0c7ae0451d8d76ba9a6f1232"
+        }
+      },
+      "started": "2026-10-13T01:54:39.679749+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/batteries",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.688250+00:00",
+      "name": "package-batteries-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-batteries-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-batteries-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:54:39.683676+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/Cli",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.693338+00:00",
+      "name": "package-Cli-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-Cli-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-Cli-head.stdout",
+          "sha256": "8c4dfa759e1faa2e44986cb2e0a7df5843e2e4ed9587cc8c6db5730c7a517f02"
+        }
+      },
+      "started": "2026-10-13T01:54:39.689602+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/Cli",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.697610+00:00",
+      "name": "package-Cli-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-Cli-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 40,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-Cli-origin.stdout",
+          "sha256": "c0c02deff1a1a3fba1f471202c853e7ca2bda0764a0f6b3e95d0bf5e90c4ca79"
+        }
+      },
+      "started": "2026-10-13T01:54:39.694192+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/Cli",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:39.702937+00:00",
+      "name": "package-Cli-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-Cli-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/package-Cli-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:54:39.698518+00:00"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.elan/bin/lake",
+        "env",
+        "/usr/bin/printenv",
+        "LEAN_PATH"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:40.428621+00:00",
+      "name": "dependency-search-path",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/dependency-search-path.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 933,
+          "path": "evidence/lean-review/20261013T015438415836Z/dependency-search-path.stdout",
+          "sha256": "8603bd3f02608eca9c8f0ec991859ce1a9824374af63ff024eb2f6c186441c05"
+        }
+      },
+      "started": "2026-10-13T01:54:39.703865+00:00"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--json",
+        "--root=${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs",
+        "-o",
+        "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/cache/EvidenceHarness.olean",
+        "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs/EvidenceHarness.lean"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/cache:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean"
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:42.412291+00:00",
+      "name": "compile-EvidenceHarness",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/compile-EvidenceHarness.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/compile-EvidenceHarness.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:54:40.432316+00:00"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--json",
+        "--root=${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs",
+        "-o",
+        "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/cache/TransportSharpness/Finite.olean",
+        "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs/TransportSharpness/Finite.lean"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/cache:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean"
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:54:56.752527+00:00",
+      "name": "compile-TransportSharpness.Finite",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/compile-TransportSharpness.Finite.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/compile-TransportSharpness.Finite.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:54:42.415645+00:00"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--json",
+        "--root=${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs",
+        "-o",
+        "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/cache/TransportSharpness/Obstruction.olean",
+        "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs/TransportSharpness/Obstruction.lean"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/cache:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean"
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:55:06.728140+00:00",
+      "name": "compile-TransportSharpness.Obstruction",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/compile-TransportSharpness.Obstruction.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/compile-TransportSharpness.Obstruction.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:54:56.756139+00:00"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--json",
+        "--root=${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs",
+        "-o",
+        "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/cache/TransportSharpness.olean",
+        "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs/TransportSharpness.lean"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/cache:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean"
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:55:13.520567+00:00",
+      "name": "compile-TransportSharpness",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/compile-TransportSharpness.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/compile-TransportSharpness.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:55:06.730041+00:00"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--json",
+        "--root=${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs",
+        "-o",
+        "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/cache/ReviewHarness.olean",
+        "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs/ReviewHarness.lean"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/cache:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean"
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:55:56.643281+00:00",
+      "name": "compile-ReviewHarness",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/compile-ReviewHarness.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 43079,
+          "path": "evidence/lean-review/20261013T015438415836Z/compile-ReviewHarness.stdout",
+          "sha256": "1b0c4f3710eef18de169626b9792e75c2392a1b7cd2a7b765cc0dd3af70fdf19"
+        }
+      },
+      "started": "2026-10-13T01:55:13.522031+00:00"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--json",
+        "--root=${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs",
+        "-o",
+        "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/cache/Replay.olean",
+        "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs/Replay.lean"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/inputs",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": "${PROJECT_REPOSITORY}/transport-sharpness/.cache/lean-review/20261013T015438415836Z/cache:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean"
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.010397+00:00",
+      "name": "compile-Replay",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/compile-Replay.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 2405,
+          "path": "evidence/lean-review/20261013T015438415836Z/compile-Replay.stdout",
+          "sha256": "c534aad31beb6f4e195f271b804f66ec0ca6e855cc334d833e7ed3a1acc5850a"
+        }
+      },
+      "started": "2026-10-13T01:55:56.644939+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/mathlib",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.318143+00:00",
+      "name": "post-package-mathlib-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-mathlib-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-mathlib-head.stdout",
+          "sha256": "cc49bfc965afbc1ef5877d1d1b12648323cb6d44f015d37593c63c2cd1d731c0"
+        }
+      },
+      "started": "2026-10-13T01:56:33.314521+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/mathlib",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.330117+00:00",
+      "name": "post-package-mathlib-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-mathlib-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-mathlib-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:56:33.319427+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/plausible",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.334772+00:00",
+      "name": "post-package-plausible-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-plausible-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-plausible-head.stdout",
+          "sha256": "5f4ae658966fdc18933fe008f0fa3170b7c00c9cbdb3dc61ae991accf4bab97f"
+        }
+      },
+      "started": "2026-10-13T01:56:33.331808+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/plausible",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.340027+00:00",
+      "name": "post-package-plausible-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-plausible-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-plausible-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:56:33.336418+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/LeanSearchClient",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.345584+00:00",
+      "name": "post-package-LeanSearchClient-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-LeanSearchClient-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-LeanSearchClient-head.stdout",
+          "sha256": "ee39bdbdf92107dc88a4ecc2220d30f32902373c6f0739c8492be44a294847a4"
+        }
+      },
+      "started": "2026-10-13T01:56:33.341412+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/LeanSearchClient",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.354510+00:00",
+      "name": "post-package-LeanSearchClient-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-LeanSearchClient-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-LeanSearchClient-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:56:33.346972+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/importGraph",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.359914+00:00",
+      "name": "post-package-importGraph-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-importGraph-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-importGraph-head.stdout",
+          "sha256": "7f1b3a7459b33f77fb08847cc0be80357aa6fcfb8e846a3ffbdbb656fd08218b"
+        }
+      },
+      "started": "2026-10-13T01:56:33.356429+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/importGraph",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.364817+00:00",
+      "name": "post-package-importGraph-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-importGraph-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-importGraph-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:56:33.361580+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/proofwidgets",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.369690+00:00",
+      "name": "post-package-proofwidgets-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-proofwidgets-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-proofwidgets-head.stdout",
+          "sha256": "a26e42b6270d4e50e6866efb9277ecf9d573be7d8f53baaac54b61c0a9e4c9b1"
+        }
+      },
+      "started": "2026-10-13T01:56:33.365921+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/proofwidgets",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.376058+00:00",
+      "name": "post-package-proofwidgets-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-proofwidgets-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-proofwidgets-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:56:33.371302+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/aesop",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.380089+00:00",
+      "name": "post-package-aesop-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-aesop-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-aesop-head.stdout",
+          "sha256": "2ca5dc9099966d8b4d75f068570c8382e9b1743eb524d29dfd9c31f1b0357e68"
+        }
+      },
+      "started": "2026-10-13T01:56:33.377244+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/aesop",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.385123+00:00",
+      "name": "post-package-aesop-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-aesop-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-aesop-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:56:33.381579+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/Qq",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.389431+00:00",
+      "name": "post-package-Qq-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-Qq-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-Qq-head.stdout",
+          "sha256": "b5c55d876bdd5b8f9c8f5c80247fd9a311a44e6be1ca930dff8fdac32763b3ef"
+        }
+      },
+      "started": "2026-10-13T01:56:33.386324+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/Qq",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.395299+00:00",
+      "name": "post-package-Qq-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-Qq-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-Qq-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:56:33.390547+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/batteries",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.400153+00:00",
+      "name": "post-package-batteries-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-batteries-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-batteries-head.stdout",
+          "sha256": "7a7d1966b230b609b900348919460f414800232a58d0caa685a23bf7a41c2e73"
+        }
+      },
+      "started": "2026-10-13T01:56:33.397415+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/batteries",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.408740+00:00",
+      "name": "post-package-batteries-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-batteries-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-batteries-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:56:33.402382+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/Cli",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.413292+00:00",
+      "name": "post-package-Cli-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-Cli-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-Cli-head.stdout",
+          "sha256": "8c4dfa759e1faa2e44986cb2e0a7df5843e2e4ed9587cc8c6db5730c7a517f02"
+        }
+      },
+      "started": "2026-10-13T01:56:33.410360+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/transport-sharpness/.lake/packages/Cli",
+      "environment": {
+        "ELAN_HOME": "${PINNED_REPOSITORY}/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T01:56:33.418145+00:00",
+      "name": "post-package-Cli-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-Cli-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T015438415836Z/post-package-Cli-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T01:56:33.414671+00:00"
+    }
+  ],
+  "products": [
+    {
+      "archived": false,
+      "bytes": 721080,
+      "module": "EvidenceHarness",
+      "sha256": "fda685d1a89f4054f857619837226a3c8e33dc236ed369409f847d32f0a23456"
+    },
+    {
+      "archived": false,
+      "bytes": 950456,
+      "module": "TransportSharpness.Finite",
+      "sha256": "ace92c0199e921d6e8af657f6da456eb8bdece823fa0ee195b74253c148c1a13"
+    },
+    {
+      "archived": false,
+      "bytes": 436840,
+      "module": "TransportSharpness.Obstruction",
+      "sha256": "334de50d9e6d394fb32822ffc9b8579a0dca55f279817c759d2dbf2b8ba089f4"
+    },
+    {
+      "archived": false,
+      "bytes": 38608,
+      "module": "TransportSharpness",
+      "sha256": "df157bb72119599a17929a81f0cea711ceed4d475e79502bcbce92ef56673695"
+    },
+    {
+      "archived": false,
+      "bytes": 39016,
+      "module": "ReviewHarness",
+      "sha256": "93053cb3bb08c2b40941476151fc280e1b1f1bdd5c50cdcbf903918de72e4fef"
+    },
+    {
+      "archived": false,
+      "bytes": 38936,
+      "module": "Replay",
+      "sha256": "588da720d5b2ef90d06382821042bc668141eccad46022c8464625038f2a41ab"
+    }
+  ],
+  "replay": {
+    "baseModules": [
+      "Mathlib",
+      "EvidenceHarness"
+    ],
+    "independentKernelReplay": "not_performed",
+    "replayedDeclarations": 75,
+    "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+    "targets": [
+      "TransportSharpness.Atom",
+      "TransportSharpness.Plan",
+      "TransportSharpness.mass",
+      "TransportSharpness.IsCoupling",
+      "TransportSharpness.cost",
+      "TransportSharpness.matching",
+      "TransportSharpness.sourcePoint",
+      "TransportSharpness.targetPoint",
+      "TransportSharpness.sqCost",
+      "TransportSharpness.projectedCost",
+      "TransportSharpness.commonSource",
+      "TransportSharpness.Admissible",
+      "TransportSharpness.mapSquared",
+      "TransportSharpness.pCost",
+      "TransportSharpness.projectedPCost",
+      "TransportSharpness.mapSize",
+      "TransportSharpness.targetDistance",
+      "TransportSharpness.ceiling",
+      "TransportSharpness.exponent",
+      "TransportSharpness.finite_dual_lower_bound",
+      "TransportSharpness.mass_positive",
+      "TransportSharpness.mass_sum",
+      "TransportSharpness.matching_coupling",
+      "TransportSharpness.sqCost_ge_projected",
+      "TransportSharpness.quadratic_lower_bound",
+      "TransportSharpness.matching_quadratic_cost",
+      "TransportSharpness.quadratic_minimum",
+      "TransportSharpness.commonSource_coupling",
+      "TransportSharpness.commonSource_cost",
+      "TransportSharpness.commonSource_strictly_costlier",
+      "TransportSharpness.shrinking_admissible",
+      "TransportSharpness.shrinking_costs",
+      "TransportSharpness.square_rpow_half",
+      "TransportSharpness.pCost_ge_projected",
+      "TransportSharpness.pCost_matching",
+      "TransportSharpness.pCost_minimum",
+      "TransportSharpness.exponent_negative",
+      "TransportSharpness.targetDistance_positive",
+      "TransportSharpness.targetDistance_power",
+      "TransportSharpness.targetDistance_shrinking",
+      "TransportSharpness.mapSize_shrinking_lower",
+      "TransportSharpness.shrinking_ratio_lower",
+      "TransportSharpness.ceiling_values",
+      "TransportSharpness.shrinking_exceeds_constant",
+      "TransportSharpness.W2_exceeds_constant",
+      "TransportSharpness.mapSize_fixed_lower",
+      "TransportSharpness.fixed_ratio_lower",
+      "TransportSharpness.fixed_mass_exceeds_constant"
+    ]
+  },
+  "runner": {
+    "bytes": 10647,
+    "sha256": "abcd4b417ee6183244b327dda21ac8c8572c7c462bfb04628440f8aa8ecb81ef"
+  },
+  "schema": "publication-metadata-derivative/v1",
+  "sourcePostflight": "original_and_copies_unchanged",
+  "sources": [
+    {
+      "bytes": 6371,
+      "module": "EvidenceHarness",
+      "original": "${PROJECT_REPOSITORY}/math-evidence/lean/EvidenceHarness.lean",
+      "sha256": "bb71282fcb088498a9c40b0460694f1663e8f3a145fc15469050b8ade2f390dc"
+    },
+    {
+      "bytes": 6786,
+      "module": "TransportSharpness.Finite",
+      "original": "${PROJECT_REPOSITORY}/transport-sharpness/TransportSharpness/Finite.lean",
+      "sha256": "2ca131e39877bb4ec3d0803de4b9bdfa21d7d2e2935f9777db0408aa3cadf18a"
+    },
+    {
+      "bytes": 6665,
+      "module": "TransportSharpness.Obstruction",
+      "original": "${PROJECT_REPOSITORY}/transport-sharpness/TransportSharpness/Obstruction.lean",
+      "sha256": "ebb8d5361a6dce5ebc7e436d59750a58581030ca1d351e420f9280dcf83df0e1"
+    },
+    {
+      "bytes": 71,
+      "module": "TransportSharpness",
+      "original": "${PROJECT_REPOSITORY}/transport-sharpness/TransportSharpness.lean",
+      "sha256": "f59964ae611a8e54f0d226c01bfbe5688ff4410de7c42cdc6da77e109f23d811"
+    },
+    {
+      "bytes": 8603,
+      "module": "ReviewHarness",
+      "original": "${PROJECT_REPOSITORY}/transport-sharpness/scripts/ReviewHarness.lean",
+      "sha256": "6ebc84014b1cd2b08dfc1817e996efe769adddd5a824343252a4b313c1bc52ad"
+    },
+    {
+      "bytes": 2153,
+      "module": "Replay",
+      "original": "${PROJECT_REPOSITORY}/transport-sharpness/scripts/Replay.lean",
+      "sha256": "9971da32d70cf9b9ae6efaa19ca216d9b96d1253039d91315fbe603946d3c93f"
+    }
+  ],
+  "started": "2026-10-13T01:54:38.416314+00:00",
+  "status": "passed",
+  "targets": [
+    {
+      "axioms": [],
+      "declarationKind": "definition",
+      "observedType": "Type",
+      "target": "TransportSharpness.Atom",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "Type",
+      "target": "TransportSharpness.Plan",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "ℝ → Atom → ℝ",
+      "target": "TransportSharpness.mass",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "ℝ → Plan → Prop",
+      "target": "TransportSharpness.IsCoupling",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "Plan → Plan → ℝ",
+      "target": "TransportSharpness.cost",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "ℝ → Plan",
+      "target": "TransportSharpness.matching",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "Atom → ℝ × ℝ",
+      "target": "TransportSharpness.sourcePoint",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "ℝ → Atom → ℝ × ℝ",
+      "target": "TransportSharpness.targetPoint",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "ℝ → Atom → Atom → ℝ",
+      "target": "TransportSharpness.sqCost",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "ℝ → Atom → ℝ",
+      "target": "TransportSharpness.projectedCost",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "ℝ → ℝ → Plan",
+      "target": "TransportSharpness.commonSource",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "ℝ → ℝ → Prop",
+      "target": "TransportSharpness.Admissible",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "ℝ → ℝ → ℝ",
+      "target": "TransportSharpness.mapSquared",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "ℝ → ℝ → Atom → Atom → ℝ",
+      "target": "TransportSharpness.pCost",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "ℝ → ℝ → Atom → ℝ",
+      "target": "TransportSharpness.projectedPCost",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "ℝ → ℝ → ℝ",
+      "target": "TransportSharpness.mapSize",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "ℝ → ℝ → ℝ → ℝ",
+      "target": "TransportSharpness.targetDistance",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "ℝ → ℝ",
+      "target": "TransportSharpness.ceiling",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "ℝ → ℝ → ℝ",
+      "target": "TransportSharpness.exponent",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a : ℝ) (π c : Plan) (u v : Atom → ℝ),\n  IsCoupling a π → (∀ (i j : Atom), u i + v j ≤ c i j) → ∑ i, mass a i * u i + ∑ j, mass a j * v j ≤ cost c π",
+      "target": "TransportSharpness.finite_dual_lower_bound",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a : ℝ), 0 < a → a < 1 → ∀ (i : Atom), 0 < mass a i",
+      "target": "TransportSharpness.mass_positive",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a : ℝ), ∑ i, mass a i = 1",
+      "target": "TransportSharpness.mass_sum",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a : ℝ), 0 ≤ a → a ≤ 1 → IsCoupling a (matching a)",
+      "target": "TransportSharpness.matching_coupling",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (b : ℝ) (i j : Atom), projectedCost b j ≤ sqCost b i j",
+      "target": "TransportSharpness.sqCost_ge_projected",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a b : ℝ) (π : Plan), IsCoupling a π → a * b ^ 2 ≤ cost (sqCost b) π",
+      "target": "TransportSharpness.quadratic_lower_bound",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a b : ℝ), cost (sqCost b) (matching a) = a * b ^ 2",
+      "target": "TransportSharpness.matching_quadratic_cost",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a b : ℝ),\n  0 ≤ a →\n    a ≤ 1 →\n      IsCoupling a (matching a) ∧\n        cost (sqCost b) (matching a) = a * b ^ 2 ∧ ∀ (π : Plan), IsCoupling a π → a * b ^ 2 ≤ cost (sqCost b) π",
+      "target": "TransportSharpness.quadratic_minimum",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a b : ℝ), Admissible a b → IsCoupling a (commonSource a b)",
+      "target": "TransportSharpness.commonSource_coupling",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a b : ℝ), cost (sqCost b) (commonSource a b) = mapSquared a b",
+      "target": "TransportSharpness.commonSource_cost",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a b : ℝ), 0 < b → cost (sqCost b) (matching a) < cost (sqCost b) (commonSource a b)",
+      "target": "TransportSharpness.commonSource_strictly_costlier",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a : ℝ), 0 < a → a < 1 / 2 → Admissible a (a / 2)",
+      "target": "TransportSharpness.shrinking_admissible",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a : ℝ), cost (sqCost (a / 2)) (matching a) = a ^ 3 / 4 ∧ mapSquared a (a / 2) = (a + a ^ 3) / 4",
+      "target": "TransportSharpness.shrinking_costs",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (b p : ℝ), 0 ≤ b → (b ^ 2) ^ (p / 2) = b ^ p",
+      "target": "TransportSharpness.square_rpow_half",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (b p : ℝ), 0 ≤ b → 0 < p → ∀ (i j : Atom), projectedPCost b p j ≤ pCost b p i j",
+      "target": "TransportSharpness.pCost_ge_projected",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a b p : ℝ), 0 ≤ b → 0 < p → cost (pCost b p) (matching a) = a * b ^ p",
+      "target": "TransportSharpness.pCost_matching",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a b p : ℝ),\n  0 ≤ a →\n    a ≤ 1 →\n      0 ≤ b →\n        0 < p →\n          IsCoupling a (matching a) ∧\n            cost (pCost b p) (matching a) = a * b ^ p ∧ ∀ (π : Plan), IsCoupling a π → a * b ^ p ≤ cost (pCost b p) π",
+      "target": "TransportSharpness.pCost_minimum",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (p α : ℝ), 0 < p → ceiling p < α → exponent p α < 0",
+      "target": "TransportSharpness.exponent_negative",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a b p : ℝ), 0 < a → 0 < b → 0 < targetDistance a b p",
+      "target": "TransportSharpness.targetDistance_positive",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a b p : ℝ), 0 < a → 0 ≤ b → p ≠ 0 → targetDistance a b p ^ p = a * b ^ p",
+      "target": "TransportSharpness.targetDistance_power",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a p : ℝ), 0 < a → targetDistance a (a / 2) p = a ^ (1 + 1 / p) / 2",
+      "target": "TransportSharpness.targetDistance_shrinking",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a : ℝ), 0 < a → √a / 2 ≤ mapSize a (a / 2)",
+      "target": "TransportSharpness.mapSize_shrinking_lower",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a p α : ℝ), 0 < a → 2 ^ α / 2 * a ^ exponent p α ≤ mapSize a (a / 2) / targetDistance a (a / 2) p ^ α",
+      "target": "TransportSharpness.shrinking_ratio_lower",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "ceiling 2 = 1 / 3 ∧ ceiling 1 = 1 / 4",
+      "target": "TransportSharpness.ceiling_values",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (p α C : ℝ),\n  1 ≤ p →\n    ceiling p < α →\n      ∃ a, 0 < a ∧ a < 1 / 2 ∧ Admissible a (a / 2) ∧ C * targetDistance a (a / 2) p ^ α < mapSize a (a / 2)",
+      "target": "TransportSharpness.shrinking_exceeds_constant",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (α C : ℝ),\n  1 / 3 < α → ∃ a, 0 < a ∧ a < 1 / 2 ∧ Admissible a (a / 2) ∧ C * targetDistance a (a / 2) 2 ^ α < mapSize a (a / 2)",
+      "target": "TransportSharpness.W2_exceeds_constant",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a b : ℝ), 0 ≤ a → 0 < b → √b / √2 ≤ mapSize a b",
+      "target": "TransportSharpness.mapSize_fixed_lower",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a b p α : ℝ), 0 < a → 0 < b → (a ^ (1 / p)) ^ (-α) / √2 * b ^ (1 / 2 - α) ≤ mapSize a b / targetDistance a b p ^ α",
+      "target": "TransportSharpness.fixed_ratio_lower",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "∀ (a p α C : ℝ), 0 < a → a < 1 → 1 / 2 < α → ∃ b, Admissible a b ∧ C * targetDistance a b p ^ α < mapSize a b",
+      "target": "TransportSharpness.fixed_mass_exceeds_constant",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    }
+  ],
+  "publication_derivative": {
+    "original_schema": "scoped-independent-lean-review/v1",
+    "original_commit": "fa5cd40c36daa5373c0234bda0b9d09a49595ce6",
+    "original_sha256": "bddf9dfa5b8b45646290fdda51136dd8cf920554e75d8b84f7c1145a227d251a",
+    "original_bytes": 97268,
+    "scope": "Public metadata derivative; recorded environment paths and coordination details normalized. Original outcomes, exits, dates, mathematical source/pin hashes and trust limits retain their original scope.",
+    "captured_byte_descriptors": "Original receipt/output descriptors remain historical original-byte bindings; current public-copy bytes use publication/OCTOBER-13-SOURCE-MAP.json and publication/FILES.json.",
+    "removed_nonmathematical_fields": [],
+    "new_mathematical_verification": false
+  }
+}

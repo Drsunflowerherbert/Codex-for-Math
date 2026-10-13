@@ -1,0 +1,17 @@
+{
+  "dimension": 1,
+  "direction": [
+    "2"
+  ],
+  "kind": "unbounded",
+  "objective": [
+    "1/2"
+  ],
+  "objective_sense": "max",
+  "point": [
+    "0"
+  ],
+  "row_count": 0,
+  "row_multipliers": [],
+  "rows": []
+}

@@ -1,0 +1,166 @@
+{
+  "schema": "publication-metadata-derivative/v1",
+  "status": "superseded_not_final_acceptance",
+  "reason": "fixture construction and conservative path support corrected; see final reports",
+  "originalReport": {
+    "schema": "independent-pinned-package-source-checks/v1",
+    "total": 9,
+    "passed": 7,
+    "results": [
+      {
+        "name": "mathlib",
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/git-source.cjs",
+          "${VERIFICATION_ENV}/tangent-limit/.lake/packages/mathlib",
+          "f897ebcf72cd16f89ab4577d0c826cd14afaafc7"
+        ],
+        "started": "2026-10-13T01:56:34.719415+00:00",
+        "finished": "2026-10-13T01:56:36.895004+00:00",
+        "exit": 2,
+        "files": 0,
+        "sourceClosureSHA256": null,
+        "error": "unsupported tree entry (symlink/submodule/path)",
+        "leanPass": false
+      },
+      {
+        "name": "plausible",
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/git-source.cjs",
+          "${VERIFICATION_ENV}/tangent-limit/.lake/packages/plausible",
+          "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805"
+        ],
+        "started": "2026-10-13T01:56:36.895100+00:00",
+        "finished": "2026-10-13T01:56:36.961623+00:00",
+        "exit": 0,
+        "files": 19,
+        "sourceClosureSHA256": "954a50142f7a5ec160049b27187df240cab201e441332428a19e9eef0bd8c3b0",
+        "error": null,
+        "leanPass": false
+      },
+      {
+        "name": "LeanSearchClient",
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/git-source.cjs",
+          "${VERIFICATION_ENV}/tangent-limit/.lake/packages/LeanSearchClient",
+          "99657ad92e23804e279f77ea6dbdeebaa1317b98"
+        ],
+        "started": "2026-10-13T01:56:36.961703+00:00",
+        "finished": "2026-10-13T01:56:37.024961+00:00",
+        "exit": 0,
+        "files": 16,
+        "sourceClosureSHA256": "ee05722d38aed0684ff0b357311089121bdad2c7725f5b903a1ff7b9ce251914",
+        "error": null,
+        "leanPass": false
+      },
+      {
+        "name": "importGraph",
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/git-source.cjs",
+          "${VERIFICATION_ENV}/tangent-limit/.lake/packages/importGraph",
+          "d768126816be17600904726ca7976b185786e6b9"
+        ],
+        "started": "2026-10-13T01:56:37.025032+00:00",
+        "finished": "2026-10-13T01:56:37.099608+00:00",
+        "exit": 0,
+        "files": 35,
+        "sourceClosureSHA256": "6566f0720aef4e46c798119eb9bfa0f71a7f2ee822e2ec567e5f69577790d6b7",
+        "error": null,
+        "leanPass": false
+      },
+      {
+        "name": "proofwidgets",
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/git-source.cjs",
+          "${VERIFICATION_ENV}/tangent-limit/.lake/packages/proofwidgets",
+          "556caed0eadb7901e068131d1be208dd907d07a2"
+        ],
+        "started": "2026-10-13T01:56:37.099674+00:00",
+        "finished": "2026-10-13T01:56:37.197169+00:00",
+        "exit": 0,
+        "files": 74,
+        "sourceClosureSHA256": "be815791e1c792c9f86c9aa24158f27e10af74be062e30e1870eeddb2c4e5e66",
+        "error": null,
+        "leanPass": false
+      },
+      {
+        "name": "aesop",
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/git-source.cjs",
+          "${VERIFICATION_ENV}/tangent-limit/.lake/packages/aesop",
+          "725ac8cd67acd70a7beaf47c3725e23484c1ef50"
+        ],
+        "started": "2026-10-13T01:56:37.197237+00:00",
+        "finished": "2026-10-13T01:56:37.350932+00:00",
+        "exit": 0,
+        "files": 251,
+        "sourceClosureSHA256": "5da65fad36b50e29fec80496cc33e83356b69f6f32a6eca2b5f3e1bfa920d2e0",
+        "error": null,
+        "leanPass": false
+      },
+      {
+        "name": "Qq",
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/git-source.cjs",
+          "${VERIFICATION_ENV}/tangent-limit/.lake/packages/Qq",
+          "dea6a3361fa36d5a13f87333dc506ada582e025c"
+        ],
+        "started": "2026-10-13T01:56:37.351001+00:00",
+        "finished": "2026-10-13T01:56:37.425140+00:00",
+        "exit": 0,
+        "files": 36,
+        "sourceClosureSHA256": "e28552a848b985167d14a0b771090304968f0976b62f49fdd66a927778f2572d",
+        "error": null,
+        "leanPass": false
+      },
+      {
+        "name": "batteries",
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/git-source.cjs",
+          "${VERIFICATION_ENV}/tangent-limit/.lake/packages/batteries",
+          "8da40b72fece29b7d3fe3d768bac4c8910ce9bee"
+        ],
+        "started": "2026-10-13T01:56:37.425352+00:00",
+        "finished": "2026-10-13T01:56:37.583321+00:00",
+        "exit": 2,
+        "files": 0,
+        "sourceClosureSHA256": null,
+        "error": "unsupported tree entry (symlink/submodule/path)",
+        "leanPass": false
+      },
+      {
+        "name": "Cli",
+        "argv": [
+          "node",
+          "${VERIFICATION_WORK}/companion-review-02/git-source.cjs",
+          "${VERIFICATION_ENV}/tangent-limit/.lake/packages/Cli",
+          "91c18fa62838ad0ab7384c03c9684d99d306e1da"
+        ],
+        "started": "2026-10-13T01:56:37.583390+00:00",
+        "finished": "2026-10-13T01:56:37.646539+00:00",
+        "exit": 0,
+        "files": 12,
+        "sourceClosureSHA256": "0613915906aff08ba69eb7cdd2e5d30e86fce117e5d9f24a5c9396f146ddc571",
+        "error": null,
+        "leanPass": false
+      }
+    ]
+  },
+  "publication_derivative": {
+    "original_schema": "superseded-hardening-test-observation/v1",
+    "original_commit": "c2fe44833ceb577595028549cecdda87986f303e",
+    "original_sha256": "4628a5859168592c10b76bd9978cbab02af6f350f5d917b98e33197ad1ccd96d",
+    "original_bytes": 5857,
+    "scope": "Public metadata derivative; recorded environment paths and coordination details normalized. Original outcomes, exits, dates, mathematical source/pin hashes and trust limits retain their original scope.",
+    "captured_byte_descriptors": "Original receipt/output descriptors remain historical original-byte bindings; current public-copy bytes use publication/OCTOBER-13-SOURCE-MAP.json and publication/FILES.json.",
+    "removed_nonmathematical_fields": [],
+    "new_mathematical_verification": false
+  }
+}

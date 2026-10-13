@@ -1,0 +1,48 @@
+{
+  "dimension": 2,
+  "direction": [
+    "1",
+    "1"
+  ],
+  "kind": "unbounded",
+  "objective": [
+    "-2",
+    "1"
+  ],
+  "objective_sense": "min",
+  "point": [
+    "1",
+    "0"
+  ],
+  "row_count": 3,
+  "row_multipliers": [],
+  "rows": [
+    {
+      "coefficients": [
+        "0",
+        "1"
+      ],
+      "index": 0,
+      "rhs": "0",
+      "sense": ">="
+    },
+    {
+      "coefficients": [
+        "0",
+        "2"
+      ],
+      "index": 1,
+      "rhs": "0",
+      "sense": ">="
+    },
+    {
+      "coefficients": [
+        "1",
+        "-1"
+      ],
+      "index": 2,
+      "rhs": "1",
+      "sense": "="
+    }
+  ]
+}

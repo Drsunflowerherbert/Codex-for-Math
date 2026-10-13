@@ -1,0 +1,414 @@
+{
+  "schema": "publication-metadata-derivative/v1",
+  "source": "${VERIFICATION_WORK}/companion-review-04",
+  "receiptSource": "${VERIFICATION_ENV}/live-tests/live-review-Eg9deU/15-valid",
+  "argv": [
+    "${RUNTIME}/dependencies/node/bin/node",
+    "${VERIFICATION_WORK}/companion-review-04/tests/independent-v1.cjs",
+    "${VERIFICATION_WORK}/companion-review-04",
+    "${VERIFICATION_ENV}/live-tests/live-review-Eg9deU/15-valid",
+    "${VERIFICATION_WORK}/final-04/independent-v1-mutations"
+  ],
+  "startedKernelTrust": "official_Lean_4.24.0_same_kernel_baseline_receipt",
+  "sourceHashesBefore": {
+    "inspect-v1.cjs": "a797a42b48a2b7dbf88d4e4d2617395c3d46dc4cb3b5fcd0b78fb3ddcec22877",
+    "io.cjs": "15ecc07d3ca619dc4d2e7504c07a39358aabd31abb4e31dcaa9c94e898d94390",
+    "process-contract.cjs": "75b1a08340cacd5dd7a445cf832507bf79d731d28570bfcb1ef3b16806dfed5a",
+    "baseline.json": "a56da69f5106fd0543b32bf7e08c0b338ed08c2bb280d0d39a9bab4fd4ccef19",
+    "vendor/live-plans.cjs": "9596338e326943b7cc539c34670b0efaba8f7e9d7f7ebe3f1f959817ebba76c3",
+    "vendor/strict-json.cjs": "375a555e00eb401c16235a5a84c57995b73db418f4ef02709b272c7a95469e0b"
+  },
+  "sourceHashesAfter": {
+    "inspect-v1.cjs": "a797a42b48a2b7dbf88d4e4d2617395c3d46dc4cb3b5fcd0b78fb3ddcec22877",
+    "io.cjs": "15ecc07d3ca619dc4d2e7504c07a39358aabd31abb4e31dcaa9c94e898d94390",
+    "process-contract.cjs": "75b1a08340cacd5dd7a445cf832507bf79d731d28570bfcb1ef3b16806dfed5a",
+    "baseline.json": "a56da69f5106fd0543b32bf7e08c0b338ed08c2bb280d0d39a9bab4fd4ccef19",
+    "vendor/live-plans.cjs": "9596338e326943b7cc539c34670b0efaba8f7e9d7f7ebe3f1f959817ebba76c3",
+    "vendor/strict-json.cjs": "375a555e00eb401c16235a5a84c57995b73db418f4ef02709b272c7a95469e0b"
+  },
+  "sourceUnchanged": true,
+  "total": 57,
+  "passed": 57,
+  "failed": [],
+  "results": [
+    {
+      "name": "actual-fresh-success-import",
+      "expected": "reported_integrity_only_no_fresh_pass",
+      "passed": true,
+      "result": {
+        "ok": true,
+        "kind": "strict_v1_reported_integrity_only",
+        "evidenceFiles": 172,
+        "reportedOutcome": "all_required_live_phases_succeeded",
+        "leanPass": false,
+        "locallyObservedLeanPass": false,
+        "freshness": "not_established",
+        "receiptAuthenticity": "not_established",
+        "formalProofAcceptance": "not_granted_by_import",
+        "dependencyCompilation": "trusted_external_cache_not_rebuilt",
+        "independentKernelReplay": "not_performed",
+        "nativeMRS": "unavailable_unvalidated"
+      }
+    },
+    {
+      "name": "uuid-not-v4",
+      "expected": "reject",
+      "passed": true,
+      "error": "invalid attempt UUID"
+    },
+    {
+      "name": "uuid-mismatch-attempt",
+      "expected": "reject",
+      "passed": true,
+      "error": "attempt marker mismatch"
+    },
+    {
+      "name": "attempt-pass-request",
+      "expected": "reject",
+      "passed": true,
+      "error": "attempt marker mismatch"
+    },
+    {
+      "name": "attempt-time-mismatch",
+      "expected": "reject",
+      "passed": true,
+      "error": "attempt marker mismatch"
+    },
+    {
+      "name": "receipt-reversed-times",
+      "expected": "reject",
+      "passed": true,
+      "error": "receipt identity/times"
+    },
+    {
+      "name": "receipt-noncanonical-time",
+      "expected": "reject",
+      "passed": true,
+      "error": "invalid canonical timestamp"
+    },
+    {
+      "name": "unsupported-source-revision",
+      "expected": "reject",
+      "passed": true,
+      "error": "unsupported project revision"
+    },
+    {
+      "name": "unsupported-proof-pass-field",
+      "expected": "reject",
+      "passed": true,
+      "error": "invalid fields: receipt"
+    },
+    {
+      "name": "unsupported-independent-kernel",
+      "expected": "reject",
+      "passed": true,
+      "error": "incomplete checks"
+    },
+    {
+      "name": "unsupported-cache-rebuild",
+      "expected": "reject",
+      "passed": true,
+      "error": "unsupported trust boundary"
+    },
+    {
+      "name": "unsupported-native-mrs",
+      "expected": "reject",
+      "passed": true,
+      "error": "unsupported trust boundary"
+    },
+    {
+      "name": "incomplete-phase",
+      "expected": "reject",
+      "passed": true,
+      "error": "phase coverage/order"
+    },
+    {
+      "name": "duplicate-phase",
+      "expected": "reject",
+      "passed": true,
+      "error": "duplicate artifact"
+    },
+    {
+      "name": "reordered-phases",
+      "expected": "reject",
+      "passed": true,
+      "error": "phase coverage/order"
+    },
+    {
+      "name": "pid-null",
+      "expected": "reject",
+      "passed": true,
+      "error": "exited process missing exit evidence"
+    },
+    {
+      "name": "pid-string",
+      "expected": "reject",
+      "passed": true,
+      "error": "invalid PID"
+    },
+    {
+      "name": "pid-negative",
+      "expected": "reject",
+      "passed": true,
+      "error": "invalid PID"
+    },
+    {
+      "name": "process-group-mismatch",
+      "expected": "reject",
+      "passed": true,
+      "error": "contradictory process group"
+    },
+    {
+      "name": "exit-code-plus-signal",
+      "expected": "reject",
+      "passed": true,
+      "error": "exit code and signal cannot both be set"
+    },
+    {
+      "name": "invalid-signal",
+      "expected": "reject",
+      "passed": true,
+      "error": "invalid signal"
+    },
+    {
+      "name": "exit-code-string",
+      "expected": "reject",
+      "passed": true,
+      "error": "invalid exit code"
+    },
+    {
+      "name": "exit-code-out-of-range",
+      "expected": "reject",
+      "passed": true,
+      "error": "invalid exit code"
+    },
+    {
+      "name": "success-false",
+      "expected": "reject",
+      "passed": true,
+      "error": "contradictory process success"
+    },
+    {
+      "name": "timeout-success",
+      "expected": "reject",
+      "passed": true,
+      "error": "contradictory process success"
+    },
+    {
+      "name": "launch-failed-success",
+      "expected": "reject",
+      "passed": true,
+      "error": "launch failure has exit evidence"
+    },
+    {
+      "name": "success-error",
+      "expected": "reject",
+      "passed": true,
+      "error": "contradictory process error"
+    },
+    {
+      "name": "phase-duration-string",
+      "expected": "reject",
+      "passed": true,
+      "error": "contradictory process times"
+    },
+    {
+      "name": "phase-duration-disagrees",
+      "expected": "reject",
+      "passed": true,
+      "error": "contradictory process times"
+    },
+    {
+      "name": "phase-outside-attempt-time",
+      "expected": "reject",
+      "passed": true,
+      "error": "contradictory process times"
+    },
+    {
+      "name": "phase-argv-substitution",
+      "expected": "reject",
+      "passed": true,
+      "error": "phase compiler-version argv differs from fixed command"
+    },
+    {
+      "name": "compile-argv-substitution",
+      "expected": "reject",
+      "passed": true,
+      "error": "phase compile-evidence-helper argv differs from fixed command"
+    },
+    {
+      "name": "phase-cwd-substitution",
+      "expected": "reject",
+      "passed": true,
+      "error": "phase compiler-version cwd differs from fixed command"
+    },
+    {
+      "name": "phase-executable-substitution",
+      "expected": "reject",
+      "passed": true,
+      "error": "phase compiler-version executable differs from fixed command"
+    },
+    {
+      "name": "phase-unknown-environment",
+      "expected": "reject",
+      "passed": true,
+      "error": "invalid fields: environment"
+    },
+    {
+      "name": "phase-elan-environment-substitution",
+      "expected": "reject",
+      "passed": true,
+      "error": "phase compiler-version environment differs from fixed command"
+    },
+    {
+      "name": "compile-leanpath-substitution",
+      "expected": "reject",
+      "passed": true,
+      "error": "phase compile-evidence-helper environment differs from fixed command"
+    },
+    {
+      "name": "phase-output-cap-substitution",
+      "expected": "reject",
+      "passed": true,
+      "error": "unsupported baseline capture cap"
+    },
+    {
+      "name": "phase-log-reuse",
+      "expected": "reject",
+      "passed": true,
+      "error": "reused or misnamed process log"
+    },
+    {
+      "name": "phase-log-missing",
+      "expected": "reject",
+      "passed": true,
+      "error": "ENOENT: no such file or directory, lstat '${VERIFICATION_WORK}/final-04/independent-v1-mutations/40-phase-log-missing/logs/compiler-version.stdout'"
+    },
+    {
+      "name": "coherent-compiler-log-tamper",
+      "expected": "reject",
+      "passed": true,
+      "error": "compiler commit stdout mismatch"
+    },
+    {
+      "name": "coherent-stderr-tamper",
+      "expected": "reject",
+      "passed": true,
+      "error": "unexpected stderr in complete receipt: compiler-version"
+    },
+    {
+      "name": "coherent-error-json-tamper",
+      "expected": "reject",
+      "passed": true,
+      "error": "Lean error in successful process log"
+    },
+    {
+      "name": "coherent-malformed-json-tamper",
+      "expected": "reject",
+      "passed": true,
+      "error": "expected JSON value at character 0"
+    },
+    {
+      "name": "coherent-missing-target-marker",
+      "expected": "reject",
+      "passed": true,
+      "error": "target coverage"
+    },
+    {
+      "name": "coherent-missing-replay-marker",
+      "expected": "reject",
+      "passed": true,
+      "error": "replay coverage"
+    },
+    {
+      "name": "coherent-revision-log-tamper",
+      "expected": "reject",
+      "passed": true,
+      "error": "package stdout mismatch"
+    },
+    {
+      "name": "coherent-origin-log-tamper",
+      "expected": "reject",
+      "passed": true,
+      "error": "package stdout mismatch"
+    },
+    {
+      "name": "coherent-diff-log-tamper",
+      "expected": "reject",
+      "passed": true,
+      "error": "package stdout mismatch"
+    },
+    {
+      "name": "source-closure-omission",
+      "expected": "reject",
+      "passed": true,
+      "error": "source closure differs from reviewed baseline"
+    },
+    {
+      "name": "source-closure-coordinated-repin",
+      "expected": "reject",
+      "passed": true,
+      "error": "source closure differs from reviewed baseline"
+    },
+    {
+      "name": "target-axiom-substitution",
+      "expected": "reject",
+      "passed": true,
+      "error": "target log binding"
+    },
+    {
+      "name": "same-kernel-claim-upgrade",
+      "expected": "reject",
+      "passed": true,
+      "error": "replay log binding"
+    },
+    {
+      "name": "runtime-member-coordinated-repin",
+      "expected": "reject",
+      "passed": true,
+      "error": "release member mismatch: libleanshared.so"
+    },
+    {
+      "name": "package-revision-coordinated-repin",
+      "expected": "reject",
+      "passed": true,
+      "error": "package metadata differs from lock"
+    },
+    {
+      "name": "failed-receipt-as-complete",
+      "expected": "reject",
+      "passed": true,
+      "error": "incomplete/failed receipts cannot be accepted as complete"
+    },
+    {
+      "name": "coherently-aged-receipt",
+      "expected": "reported_integrity_only_no_fresh_pass",
+      "passed": true,
+      "result": {
+        "ok": true,
+        "kind": "strict_v1_reported_integrity_only",
+        "evidenceFiles": 172,
+        "reportedOutcome": "all_required_live_phases_succeeded",
+        "leanPass": false,
+        "locallyObservedLeanPass": false,
+        "freshness": "not_established",
+        "receiptAuthenticity": "not_established",
+        "formalProofAcceptance": "not_granted_by_import",
+        "dependencyCompilation": "trusted_external_cache_not_rebuilt",
+        "independentKernelReplay": "not_performed",
+        "nativeMRS": "unavailable_unvalidated"
+      }
+    }
+  ],
+  "leanPassesGrantedByInspection": 0,
+  "publication_derivative": {
+    "original_schema": "independent-hardening-inspector-tests/v1",
+    "original_commit": "c2fe44833ceb577595028549cecdda87986f303e",
+    "original_sha256": "8613218a34500d97603701b05bdbda730d366bb6c32dea529cff084769b9f836",
+    "original_bytes": 11937,
+    "scope": "Public metadata derivative; recorded environment paths and coordination details normalized. Original outcomes, exits, dates, mathematical source/pin hashes and trust limits retain their original scope.",
+    "captured_byte_descriptors": "Original receipt/output descriptors remain historical original-byte bindings; current public-copy bytes use publication/OCTOBER-13-SOURCE-MAP.json and publication/FILES.json.",
+    "removed_nonmathematical_fields": [],
+    "new_mathematical_verification": false
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "lp-certificates-followup-provenance/v1",
+  "repository": "https://github.com/Drsunflowerherbert/Codex-for-Math",
+  "assigned_branch": "codex/lp-certificates-2026-10-13",
+  "preserved_first_checkpoint": "44329696c0a8a7fd3405d1b7b7261a14bf7ebbbd",
+  "original_research_baseline": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+  "scope": "lp-certificates/",
+  "development_completed_before_utc": "2026-10-13T02:54:00Z",
+  "math_development_cutoff_utc": "2026-10-13T04:05:00Z",
+  "requested_publication_deadline_utc": "2026-10-13T04:20:00Z",
+  "changes": [
+    "Typed original mixed-row/objective model and proved normalization/original-real soundness.",
+    "Numeric-only bounded JSON export with fresh per-instance Lean acceptance, full types, axiom checks and same-kernel replay.",
+    "Portable saved-input recheck that regenerates trusted source and ignores supplied commands/source.",
+    "Incomplete deterministic exact finder for at most three variables and eight rows.",
+    "Bounded input/output arithmetic and fail-closed formatting for the reported large-integer crash.",
+    "Correction of the weighted-slack-output documentation claim."
+  ],
+  "reviewed_code_sha256": {
+    "bridge.py": "c0fe2cbfc7511309f91524e86ed8e5342f0d891c090a343a0a1ee06736774dd2",
+    "verifier.py": "bb55c5f57a91d9c8c225ab3dc219a718a383e13249314fff29b5a1ad33e290fb",
+    "finder.py": "bc91178bb5dd8b779ca6f565fa5cbea38c4feb2f0bbee7b9e07a795c43758876",
+    "LPCertificates/Input.lean": "4bfbbd5058b142ad21657462963ccf80a6bdd1dbdfc9fa36ae78253ee605eae7",
+    "scripts/ExpectedInput.lean": "51592c9b71c70f87eff6f8f541c189a75370a06e6a617bb2c43ea479a1527ad7"
+  },
+  "fresh_aggregate_receipt": "evidence/followup-run-20261013T025400Z/receipt.json",
+  "complete_checked_packages": [
+    "evidence/checked-author-batch",
+    "evidence/checked-independent-batch",
+    "evidence/checked-relocated-recheck"
+  ],
+  "independent_reviews": [
+    "evidence/followup-formal-review.md",
+    "evidence/followup-computational-review.md"
+  ],
+  "reported_results": {
+    "ordinary_python_suite": "143 tests, 141 executed successfully and two explicit optional skips; actual live and observed-package tests separately executed.",
+    "aggregate_commands": "10 commands, all exit zero; 78 named declarations audited; 14 body and six complete type gates; local same-kernel replay counts 216 and 176.",
+    "author_package": "10 supplied certificates, 72 fresh commands, all gates passed; includes finder-produced optimality witness.",
+    "independent_package": "13 supplied certificates, 75 fresh commands, all gates passed.",
+    "relocated_cli_recheck": "One supplied certificate, 63 fresh commands, all gates passed; altered saved touch command ignored.",
+    "finder_experiment": "4374 outputs independently verified; incompleteness counterexample retained."
+  },
+  "trust_and_deferred_obligations": [
+    "JSON parsing and literal transcription fidelity are trusted and tested, not a proved refinement theorem.",
+    "Clean pinned dependency caches and host runtime trusted; no full dependency-source rebuild.",
+    "Replay uses the same Lean kernel, not an independent kernel implementation.",
+    "Finder and verifier resource bounds do not classify unsupported or unknown LPs.",
+    "No certificate-finding completeness, strong duality, or converse theorem is claimed.",
+    "No native Mac or installed MRS integration is claimed.",
+    "Stored receipts establish recorded consistency, not a newly observed pass or historical authenticity."
+  ],
+  "historical_evidence": "The first checkpoint's metadata, receipts and file manifest remain unchanged and belong to that commit. New manifests bind the follow-up. Exact raw command paths are preserved in evidence; relocating copies does not rewrite original hash bindings.",
+  "publication": "Only the assigned directory and branch; no shared manifests, other branches, PR, merge, force push, account/credential changes or purchases. Remote delivery SHA is reported after push in the final response."
+}

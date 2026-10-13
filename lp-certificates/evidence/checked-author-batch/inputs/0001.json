@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "problem": {
+    "objective": {"sense": "min", "coefficients": ["3/2"]},
+    "constraints": [
+      {"coefficients": [1], "sense": ">=", "rhs": 0},
+      {"coefficients": [3], "sense": "=", "rhs": 1}
+    ]
+  },
+  "certificate": {
+    "kind": "optimal",
+    "point": ["1/3"],
+    "inequality_multipliers": [0],
+    "equality_multipliers": ["-1/2"]
+  }
+}

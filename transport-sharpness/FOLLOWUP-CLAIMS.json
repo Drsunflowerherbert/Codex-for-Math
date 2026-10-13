@@ -1,0 +1,71 @@
+{
+  "claims": [
+    {
+      "formal_anchors": [
+        "atomicMeasure_probability",
+        "atomicMeasure_explicit",
+        "matchingMeasure_coupling",
+        "actual_coupling_probability"
+      ],
+      "id": "TRP-M-001",
+      "statement": "Actual Borel atomic marginals are probability for0<=a<=1, and actual matchingMeasure has both map marginals. Every actual coupling is itself probability in that range."
+    },
+    {
+      "coupling_domain": "all Measure(PointPair) with map fst/snd equalities; no finite atomic plan premise",
+      "formal_anchors": [
+        "actual_coupling_lower_bound",
+        "matchingMeasure_cost"
+      ],
+      "id": "TRP-M-002",
+      "statement": "For a>=0,b>=0,p>0 every Borel measure gamma with the prescribed marginals has nonnegative integral p-cost >=ofReal(a*b^p); matchingMeasure attains equality."
+    },
+    {
+      "combined_probability_theorem": "actual_probability_transport",
+      "cost_domain": "a>=0,b>=0,p>0",
+      "formal_anchors": [
+        "actual_transportPowerInf",
+        "actual_transportPowerInf_finite",
+        "actual_transportDistance_eq"
+      ],
+      "id": "TRP-M-003",
+      "probability_Wp_interpretation": "0<=a<=1,b>=0,p>=1; literal Euclidean coordinate cost on standard Borel R^2",
+      "statement": "The actual all-coupling infimal p-cost is exactly ofReal(a*b^p), finite, and its real p-th root equals retained targetDistance(a,b,p)=a^(1/p)*b."
+    }
+  ],
+  "combined_definition_body_count": 30,
+  "combined_full_type_count": 78,
+  "combined_local_replay_count": 113,
+  "dimension_formalized": 2,
+  "formal_namespace": "TransportSharpness",
+  "ground_cost": "literal Euclidean coordinate square sum^(p/2), proved equal to sqrt(square sum)^p; standard product max norm not used",
+  "new_declaration_count": 30,
+  "new_definition_count": 11,
+  "new_source": "TransportSharpness/Measures.lean",
+  "new_theorem_count": 19,
+  "nonclaims": [
+    "no formal uniform-source optimal-map construction or L2 map-norm identity",
+    "no higher-dimensional formal target-cost proof",
+    "no global upper stability bound or endpoint optimality",
+    "no novelty or native Mac MRS integration",
+    "no independent kernel implementation or rebuilt dependency proof cache"
+  ],
+  "ordinary_interpretation": "usual Euclidean R^2 Borel sets and Wp definition; no built-in mathlib Wasserstein API or general metric library asserted",
+  "remaining_formal_obligations": [
+    "actual uniform cube source and its density normalization/bounds",
+    "Borel affine maximizer selections and null tie sets",
+    "uniform-source affine cell integrals and target pushforwards",
+    "quadratic source-to-target map optimality and uniqueness",
+    "same-source joint mass matrix identification and actual L2 map norm",
+    "higher-dimensional actual-measure extension",
+    "generic finite-array representation of arbitrary finitely supported couplings (not needed for new direct target cost proof)",
+    "actual target optimizer uniqueness theorem"
+  ],
+  "review": "independent full-type/body/axiom/replay fresh runs; source inspection and ordinary review alone are not acceptance",
+  "schema": "transport-sharpness-followup-claims/v1",
+  "starting_checkpoint": "40589436a45ddfd2cc8df8897e86b3185b83a107",
+  "unchanged_earlier_claims": [
+    "shrinking mass finite-p ceiling p/[2(p+1)] and W2 1/3",
+    "separate fixed-positive-mass ceiling1/2",
+    "source density bounds exactly2^-d on cube; atomic targets have no Lebesgue densities"
+  ]
+}

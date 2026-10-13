@@ -4,6 +4,9 @@
   "historical_source_maps": [
     "publication/FINITE-FIELD-GUIDE-SOURCE-MAP.json"
   ],
+  "current_source_maps": [
+    "publication/OCTOBER-13-SOURCE-MAP.json"
+  ],
   "files": [
     {
       "bundle": "starter",

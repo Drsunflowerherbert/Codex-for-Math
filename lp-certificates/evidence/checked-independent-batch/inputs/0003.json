@@ -1,0 +1,22 @@
+{
+  "certificate": {
+    "equality_multipliers": [],
+    "inequality_multipliers": [],
+    "kind": "optimal",
+    "point": [
+      7,
+      "-2/3"
+    ]
+  },
+  "problem": {
+    "constraints": [],
+    "objective": {
+      "coefficients": [
+        0,
+        0
+      ],
+      "sense": "min"
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,3634 @@
+{
+  "bridge_sha256": "c0fe2cbfc7511309f91524e86ed8e5342f0d891c090a343a0a1ee06736774dd2",
+  "commands": [
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:43.776675+00:00",
+      "exit_code": 0,
+      "label": "compiler-version",
+      "pid": 7112,
+      "started_utc": "2026-10-13T02:38:43.674079+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/compiler-version.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 106,
+        "observed_bytes": 106,
+        "path": "logs/compiler-version.stdout.log",
+        "sha256": "36c0bbaf090c97bc8217c6ff497ff9144fd83d9003f12cd505162b943aaaee77",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:43.830057+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-00",
+      "pid": 7114,
+      "started_utc": "2026-10-13T02:38:43.777943+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-00.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:43.882806+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-00",
+      "pid": 7130,
+      "started_utc": "2026-10-13T02:38:43.830862+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-00.stdout.log",
+        "sha256": "cc49bfc965afbc1ef5877d1d1b12648323cb6d44f015d37593c63c2cd1d731c0",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:43.935586+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-00",
+      "pid": 7131,
+      "started_utc": "2026-10-13T02:38:43.883630+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 53,
+        "observed_bytes": 53,
+        "path": "logs/pre-origin-00.stdout.log",
+        "sha256": "03e534cb626b55a5210b43c74776926d0ef07ac36b774832c9934433ee3c9d4c",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:43.988554+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-01",
+      "pid": 7132,
+      "started_utc": "2026-10-13T02:38:43.936510+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-01.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.041528+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-01",
+      "pid": 7133,
+      "started_utc": "2026-10-13T02:38:43.989726+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-01.stdout.log",
+        "sha256": "5f4ae658966fdc18933fe008f0fa3170b7c00c9cbdb3dc61ae991accf4bab97f",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.094334+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-01",
+      "pid": 7134,
+      "started_utc": "2026-10-13T02:38:44.042394+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 50,
+        "observed_bytes": 50,
+        "path": "logs/pre-origin-01.stdout.log",
+        "sha256": "f9e157058f246ccb009bd17773f68233dd8dade976dbb829338d6c201cf8599f",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.147188+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-02",
+      "pid": 7135,
+      "started_utc": "2026-10-13T02:38:44.095260+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-02.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.200174+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-02",
+      "pid": 7136,
+      "started_utc": "2026-10-13T02:38:44.148146+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-02.stdout.log",
+        "sha256": "ee39bdbdf92107dc88a4ecc2220d30f32902373c6f0739c8492be44a294847a4",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.253128+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-02",
+      "pid": 7137,
+      "started_utc": "2026-10-13T02:38:44.201146+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 57,
+        "observed_bytes": 57,
+        "path": "logs/pre-origin-02.stdout.log",
+        "sha256": "619333dd697b0876afa6e558ee619ba42cc147c8ac9eb415d66d06cb3d13e196",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.306178+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-03",
+      "pid": 7138,
+      "started_utc": "2026-10-13T02:38:44.254137+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-03.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.359299+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-03",
+      "pid": 7139,
+      "started_utc": "2026-10-13T02:38:44.307135+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-03.stdout.log",
+        "sha256": "7f1b3a7459b33f77fb08847cc0be80357aa6fcfb8e846a3ffbdbb656fd08218b",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.412400+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-03",
+      "pid": 7140,
+      "started_utc": "2026-10-13T02:38:44.360221+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 53,
+        "observed_bytes": 53,
+        "path": "logs/pre-origin-03.stdout.log",
+        "sha256": "e1308c66f365e49e7b8c10bd874950ac425bcc14aefe9881baf03c4f65f25cf1",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.467712+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-04",
+      "pid": 7141,
+      "started_utc": "2026-10-13T02:38:44.413460+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-04.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.525525+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-04",
+      "pid": 7142,
+      "started_utc": "2026-10-13T02:38:44.468664+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-04.stdout.log",
+        "sha256": "a26e42b6270d4e50e6866efb9277ecf9d573be7d8f53baaac54b61c0a9e4c9b1",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.578739+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-04",
+      "pid": 7143,
+      "started_utc": "2026-10-13T02:38:44.526492+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 54,
+        "observed_bytes": 54,
+        "path": "logs/pre-origin-04.stdout.log",
+        "sha256": "d85a5cc11983798fb902072b68e0a279bae40189de64fe4ccaa3f969f8e7414c",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.634309+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-05",
+      "pid": 7144,
+      "started_utc": "2026-10-13T02:38:44.582079+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-05.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.640546+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-05",
+      "pid": 7145,
+      "started_utc": "2026-10-13T02:38:44.635294+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-05.stdout.log",
+        "sha256": "2ca5dc9099966d8b4d75f068570c8382e9b1743eb524d29dfd9c31f1b0357e68",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.697836+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-05",
+      "pid": 7146,
+      "started_utc": "2026-10-13T02:38:44.645624+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 46,
+        "observed_bytes": 46,
+        "path": "logs/pre-origin-05.stdout.log",
+        "sha256": "007ad2ffb6cd1115e54eb06162448481b6e57a2b38a5721fe9306aa73f377411",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.753551+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-06",
+      "pid": 7147,
+      "started_utc": "2026-10-13T02:38:44.698969+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-06.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.810792+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-06",
+      "pid": 7148,
+      "started_utc": "2026-10-13T02:38:44.754583+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-06.stdout.log",
+        "sha256": "b5c55d876bdd5b8f9c8f5c80247fd9a311a44e6be1ca930dff8fdac32763b3ef",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.868150+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-06",
+      "pid": 7149,
+      "started_utc": "2026-10-13T02:38:44.811855+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 47,
+        "observed_bytes": 47,
+        "path": "logs/pre-origin-06.stdout.log",
+        "sha256": "0edd7e60b5329aa479be59427897c3d131a4bed960e8a4faf0aaa6f3c176fe66",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.924625+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-07",
+      "pid": 7150,
+      "started_utc": "2026-10-13T02:38:44.869346+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-07.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:44.981802+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-07",
+      "pid": 7151,
+      "started_utc": "2026-10-13T02:38:44.925760+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-07.stdout.log",
+        "sha256": "7a7d1966b230b609b900348919460f414800232a58d0caa685a23bf7a41c2e73",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:45.039114+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-07",
+      "pid": 7152,
+      "started_utc": "2026-10-13T02:38:44.982879+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 50,
+        "observed_bytes": 50,
+        "path": "logs/pre-origin-07.stdout.log",
+        "sha256": "163e9977daaaf557a111a95edb87a473e4dabdef0c7ae0451d8d76ba9a6f1232",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:45.092778+00:00",
+      "exit_code": 0,
+      "label": "pre-dependency-08",
+      "pid": 7154,
+      "started_utc": "2026-10-13T02:38:45.040292+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-dependency-08.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:45.146604+00:00",
+      "exit_code": 0,
+      "label": "pre-revision-08",
+      "pid": 7162,
+      "started_utc": "2026-10-13T02:38:45.094063+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-revision-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/pre-revision-08.stdout.log",
+        "sha256": "8c4dfa759e1faa2e44986cb2e0a7df5843e2e4ed9587cc8c6db5730c7a517f02",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:38:45.200131+00:00",
+      "exit_code": 0,
+      "label": "pre-origin-08",
+      "pid": 7164,
+      "started_utc": "2026-10-13T02:38:45.147795+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/pre-origin-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 40,
+        "observed_bytes": 40,
+        "path": "logs/pre-origin-08.stdout.log",
+        "sha256": "c0c02deff1a1a3fba1f471202c853e7ca2bda0764a0f6b3e95d0bf5e90c4ca79",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "LPCertificates/Core.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/LPCertificates/Core.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:38:52.248646+00:00",
+      "exit_code": 0,
+      "label": "library-00",
+      "pid": 7166,
+      "started_utc": "2026-10-13T02:38:45.206019+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-00.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "LPCertificates/Rational.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/LPCertificates/Rational.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:38:58.568121+00:00",
+      "exit_code": 0,
+      "label": "library-01",
+      "pid": 7187,
+      "started_utc": "2026-10-13T02:38:52.250991+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-01.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "LPCertificates/Input.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/LPCertificates/Input.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:39:07.097897+00:00",
+      "exit_code": 0,
+      "label": "library-02",
+      "pid": 7190,
+      "started_utc": "2026-10-13T02:38:58.570309+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-02.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "LPCertificates/Examples.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/LPCertificates/Examples.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:39:13.484464+00:00",
+      "exit_code": 0,
+      "label": "library-03",
+      "pid": 7199,
+      "started_utc": "2026-10-13T02:39:07.101346+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-03.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "LPCertificates.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/LPCertificates.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:39:20.472816+00:00",
+      "exit_code": 0,
+      "label": "library-04",
+      "pid": 7340,
+      "started_utc": "2026-10-13T02:39:13.486525+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-04.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "EvidenceHarness.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/EvidenceHarness.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:39:23.256729+00:00",
+      "exit_code": 0,
+      "label": "library-05",
+      "pid": 7352,
+      "started_utc": "2026-10-13T02:39:20.475153+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/library-05.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "scripts/ExpectedInput.lean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:39:43.615527+00:00",
+      "exit_code": 0,
+      "label": "input-expected",
+      "pid": 7356,
+      "started_utc": "2026-10-13T02:39:23.264064+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/input-expected.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 4718,
+        "observed_bytes": 4718,
+        "path": "logs/input-expected.stdout.log",
+        "sha256": "d0855a2881fb46d487f03c56b735cc101aa848e16b9be042df98d1904095b80d",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "Checked0000.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/Checked0000.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:39:57.257932+00:00",
+      "exit_code": 0,
+      "label": "instance-0000",
+      "pid": 7516,
+      "started_utc": "2026-10-13T02:39:43.618892+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0000.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1190,
+        "observed_bytes": 1190,
+        "path": "logs/instance-0000.stdout.log",
+        "sha256": "e080553700b13237bc390e103b88d1bbd3d8b9baa3be999ee63c624f1fc10ce9",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "Checked0001.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/Checked0001.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:40:10.464036+00:00",
+      "exit_code": 0,
+      "label": "instance-0001",
+      "pid": 7521,
+      "started_utc": "2026-10-13T02:39:57.260819+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0001.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1222,
+        "observed_bytes": 1222,
+        "path": "logs/instance-0001.stdout.log",
+        "sha256": "51cfe498b73b1425a3c29dea8a4ea8aaad5fce482b5815fa6b79facb51856b52",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "Checked0002.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/Checked0002.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:40:22.407310+00:00",
+      "exit_code": 0,
+      "label": "instance-0002",
+      "pid": 7542,
+      "started_utc": "2026-10-13T02:40:10.467314+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0002.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1190,
+        "observed_bytes": 1190,
+        "path": "logs/instance-0002.stdout.log",
+        "sha256": "e080553700b13237bc390e103b88d1bbd3d8b9baa3be999ee63c624f1fc10ce9",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "Checked0003.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/Checked0003.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:40:34.135592+00:00",
+      "exit_code": 0,
+      "label": "instance-0003",
+      "pid": 7563,
+      "started_utc": "2026-10-13T02:40:22.410560+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0003.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1190,
+        "observed_bytes": 1190,
+        "path": "logs/instance-0003.stdout.log",
+        "sha256": "c152cdbae7fd66f3857bbece5d761f660fade90e76e86cc6fa9f92807e0b23ae",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "Checked0004.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/Checked0004.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:40:46.281397+00:00",
+      "exit_code": 0,
+      "label": "instance-0004",
+      "pid": 7592,
+      "started_utc": "2026-10-13T02:40:34.138758+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0004.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1075,
+        "observed_bytes": 1075,
+        "path": "logs/instance-0004.stdout.log",
+        "sha256": "1697c6fd86b5901a89b3f27bedfb411ffc219356b7d00ff16253413d5fb0b20a",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "Checked0005.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/Checked0005.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:40:58.067892+00:00",
+      "exit_code": 0,
+      "label": "instance-0005",
+      "pid": 7597,
+      "started_utc": "2026-10-13T02:40:46.284813+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0005.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1075,
+        "observed_bytes": 1075,
+        "path": "logs/instance-0005.stdout.log",
+        "sha256": "1697c6fd86b5901a89b3f27bedfb411ffc219356b7d00ff16253413d5fb0b20a",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "Checked0006.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/Checked0006.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:41:09.961622+00:00",
+      "exit_code": 0,
+      "label": "instance-0006",
+      "pid": 7606,
+      "started_utc": "2026-10-13T02:40:58.071436+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0006.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1075,
+        "observed_bytes": 1075,
+        "path": "logs/instance-0006.stdout.log",
+        "sha256": "1697c6fd86b5901a89b3f27bedfb411ffc219356b7d00ff16253413d5fb0b20a",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "Checked0007.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/Checked0007.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:41:25.564999+00:00",
+      "exit_code": 0,
+      "label": "instance-0007",
+      "pid": 7670,
+      "started_utc": "2026-10-13T02:41:09.970266+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0007.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1159,
+        "observed_bytes": 1159,
+        "path": "logs/instance-0007.stdout.log",
+        "sha256": "ea0b4bb1ecb8cfc7a66f54c0baaea612cb3d3b5ac830a1b9f077a73912350317",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "Checked0008.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/Checked0008.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:41:44.576508+00:00",
+      "exit_code": 0,
+      "label": "instance-0008",
+      "pid": 7675,
+      "started_utc": "2026-10-13T02:41:25.570973+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0008.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1127,
+        "observed_bytes": 1127,
+        "path": "logs/instance-0008.stdout.log",
+        "sha256": "3181777189f010993d8da321ef6463dc3589f183ad90ddab2dcd27d74cad8257",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "-j1",
+        "-M4096",
+        "--root=${TEMP_ARTIFACT}/project",
+        "Checked0009.lean",
+        "-o",
+        "${TEMP_ARTIFACT}/.work/lib/lean/Checked0009.olean"
+      ],
+      "cwd": "${TEMP_ARTIFACT}/project",
+      "ended_utc": "2026-10-13T02:42:03.160522+00:00",
+      "exit_code": 0,
+      "label": "instance-0009",
+      "pid": 7688,
+      "started_utc": "2026-10-13T02:41:44.580132+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/instance-0009.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 1190,
+        "observed_bytes": 1190,
+        "path": "logs/instance-0009.stdout.log",
+        "sha256": "e080553700b13237bc390e103b88d1bbd3d8b9baa3be999ee63c624f1fc10ce9",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:03.684933+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-00",
+      "pid": 7693,
+      "started_utc": "2026-10-13T02:42:03.627275+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-00.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:03.740829+00:00",
+      "exit_code": 0,
+      "label": "post-revision-00",
+      "pid": 7709,
+      "started_utc": "2026-10-13T02:42:03.686988+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-00.stdout.log",
+        "sha256": "cc49bfc965afbc1ef5877d1d1b12648323cb6d44f015d37593c63c2cd1d731c0",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:03.796181+00:00",
+      "exit_code": 0,
+      "label": "post-origin-00",
+      "pid": 7710,
+      "started_utc": "2026-10-13T02:42:03.742795+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-00.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 53,
+        "observed_bytes": 53,
+        "path": "logs/post-origin-00.stdout.log",
+        "sha256": "03e534cb626b55a5210b43c74776926d0ef07ac36b774832c9934433ee3c9d4c",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:03.851385+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-01",
+      "pid": 7711,
+      "started_utc": "2026-10-13T02:42:03.798383+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-01.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:03.908266+00:00",
+      "exit_code": 0,
+      "label": "post-revision-01",
+      "pid": 7712,
+      "started_utc": "2026-10-13T02:42:03.853331+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-01.stdout.log",
+        "sha256": "5f4ae658966fdc18933fe008f0fa3170b7c00c9cbdb3dc61ae991accf4bab97f",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:03.963215+00:00",
+      "exit_code": 0,
+      "label": "post-origin-01",
+      "pid": 7713,
+      "started_utc": "2026-10-13T02:42:03.910299+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-01.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 50,
+        "observed_bytes": 50,
+        "path": "logs/post-origin-01.stdout.log",
+        "sha256": "f9e157058f246ccb009bd17773f68233dd8dade976dbb829338d6c201cf8599f",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.018264+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-02",
+      "pid": 7714,
+      "started_utc": "2026-10-13T02:42:03.965306+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-02.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.073186+00:00",
+      "exit_code": 0,
+      "label": "post-revision-02",
+      "pid": 7715,
+      "started_utc": "2026-10-13T02:42:04.020130+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-02.stdout.log",
+        "sha256": "ee39bdbdf92107dc88a4ecc2220d30f32902373c6f0739c8492be44a294847a4",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.127964+00:00",
+      "exit_code": 0,
+      "label": "post-origin-02",
+      "pid": 7716,
+      "started_utc": "2026-10-13T02:42:04.075127+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-02.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 57,
+        "observed_bytes": 57,
+        "path": "logs/post-origin-02.stdout.log",
+        "sha256": "619333dd697b0876afa6e558ee619ba42cc147c8ac9eb415d66d06cb3d13e196",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.183065+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-03",
+      "pid": 7717,
+      "started_utc": "2026-10-13T02:42:04.130201+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-03.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.238058+00:00",
+      "exit_code": 0,
+      "label": "post-revision-03",
+      "pid": 7718,
+      "started_utc": "2026-10-13T02:42:04.185012+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-03.stdout.log",
+        "sha256": "7f1b3a7459b33f77fb08847cc0be80357aa6fcfb8e846a3ffbdbb656fd08218b",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.293046+00:00",
+      "exit_code": 0,
+      "label": "post-origin-03",
+      "pid": 7719,
+      "started_utc": "2026-10-13T02:42:04.240044+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-03.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 53,
+        "observed_bytes": 53,
+        "path": "logs/post-origin-03.stdout.log",
+        "sha256": "e1308c66f365e49e7b8c10bd874950ac425bcc14aefe9881baf03c4f65f25cf1",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.348427+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-04",
+      "pid": 7720,
+      "started_utc": "2026-10-13T02:42:04.295194+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-04.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.403569+00:00",
+      "exit_code": 0,
+      "label": "post-revision-04",
+      "pid": 7721,
+      "started_utc": "2026-10-13T02:42:04.350537+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-04.stdout.log",
+        "sha256": "a26e42b6270d4e50e6866efb9277ecf9d573be7d8f53baaac54b61c0a9e4c9b1",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.458635+00:00",
+      "exit_code": 0,
+      "label": "post-origin-04",
+      "pid": 7722,
+      "started_utc": "2026-10-13T02:42:04.405724+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-04.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 54,
+        "observed_bytes": 54,
+        "path": "logs/post-origin-04.stdout.log",
+        "sha256": "d85a5cc11983798fb902072b68e0a279bae40189de64fe4ccaa3f969f8e7414c",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.513992+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-05",
+      "pid": 7723,
+      "started_utc": "2026-10-13T02:42:04.460770+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-05.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.569308+00:00",
+      "exit_code": 0,
+      "label": "post-revision-05",
+      "pid": 7724,
+      "started_utc": "2026-10-13T02:42:04.516150+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-05.stdout.log",
+        "sha256": "2ca5dc9099966d8b4d75f068570c8382e9b1743eb524d29dfd9c31f1b0357e68",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.624593+00:00",
+      "exit_code": 0,
+      "label": "post-origin-05",
+      "pid": 7725,
+      "started_utc": "2026-10-13T02:42:04.571417+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-05.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 46,
+        "observed_bytes": 46,
+        "path": "logs/post-origin-05.stdout.log",
+        "sha256": "007ad2ffb6cd1115e54eb06162448481b6e57a2b38a5721fe9306aa73f377411",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.680056+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-06",
+      "pid": 7726,
+      "started_utc": "2026-10-13T02:42:04.626912+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-06.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.735700+00:00",
+      "exit_code": 0,
+      "label": "post-revision-06",
+      "pid": 7727,
+      "started_utc": "2026-10-13T02:42:04.682291+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-06.stdout.log",
+        "sha256": "b5c55d876bdd5b8f9c8f5c80247fd9a311a44e6be1ca930dff8fdac32763b3ef",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.791224+00:00",
+      "exit_code": 0,
+      "label": "post-origin-06",
+      "pid": 7728,
+      "started_utc": "2026-10-13T02:42:04.738032+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-06.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 47,
+        "observed_bytes": 47,
+        "path": "logs/post-origin-06.stdout.log",
+        "sha256": "0edd7e60b5329aa479be59427897c3d131a4bed960e8a4faf0aaa6f3c176fe66",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.846814+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-07",
+      "pid": 7729,
+      "started_utc": "2026-10-13T02:42:04.793604+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-07.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.902189+00:00",
+      "exit_code": 0,
+      "label": "post-revision-07",
+      "pid": 7730,
+      "started_utc": "2026-10-13T02:42:04.848967+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-07.stdout.log",
+        "sha256": "7a7d1966b230b609b900348919460f414800232a58d0caa685a23bf7a41c2e73",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:04.957564+00:00",
+      "exit_code": 0,
+      "label": "post-origin-07",
+      "pid": 7731,
+      "started_utc": "2026-10-13T02:42:04.904387+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-07.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 50,
+        "observed_bytes": 50,
+        "path": "logs/post-origin-07.stdout.log",
+        "sha256": "163e9977daaaf557a111a95edb87a473e4dabdef0c7ae0451d8d76ba9a6f1232",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:05.013447+00:00",
+      "exit_code": 0,
+      "label": "post-dependency-08",
+      "pid": 7732,
+      "started_utc": "2026-10-13T02:42:04.959907+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-dependency-08.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:05.069040+00:00",
+      "exit_code": 0,
+      "label": "post-revision-08",
+      "pid": 7733,
+      "started_utc": "2026-10-13T02:42:05.015712+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-revision-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 41,
+        "observed_bytes": 41,
+        "path": "logs/post-revision-08.stdout.log",
+        "sha256": "8c4dfa759e1faa2e44986cb2e0a7df5843e2e4ed9587cc8c6db5730c7a517f02",
+        "truncated": false
+      },
+      "termination": "exit"
+    },
+    {
+      "argv": [
+        "/usr/bin/git",
+        "-C",
+        "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Cli",
+        "remote",
+        "get-url",
+        "origin"
+      ],
+      "cwd": "${PROJECT_REPOSITORY}/lp-certificates",
+      "ended_utc": "2026-10-13T02:42:05.124542+00:00",
+      "exit_code": 0,
+      "label": "post-origin-08",
+      "pid": 7734,
+      "started_utc": "2026-10-13T02:42:05.071340+00:00",
+      "stderr": {
+        "bytes": 0,
+        "observed_bytes": 0,
+        "path": "logs/post-origin-08.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "truncated": false
+      },
+      "stdout": {
+        "bytes": 40,
+        "observed_bytes": 40,
+        "path": "logs/post-origin-08.stdout.log",
+        "sha256": "c0c02deff1a1a3fba1f471202c853e7ca2bda0764a0f6b3e95d0bf5e90c4ca79",
+        "truncated": false
+      },
+      "termination": "exit"
+    }
+  ],
+  "dependencies": [
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "mathlib",
+      "origin": "https://github.com/leanprover-community/mathlib4.git",
+      "revision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "tracked_status": ""
+    },
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "plausible",
+      "origin": "https://github.com/leanprover-community/plausible",
+      "revision": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "tracked_status": ""
+    },
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "LeanSearchClient",
+      "origin": "https://github.com/leanprover-community/LeanSearchClient",
+      "revision": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "tracked_status": ""
+    },
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "importGraph",
+      "origin": "https://github.com/leanprover-community/import-graph",
+      "revision": "d768126816be17600904726ca7976b185786e6b9",
+      "tracked_status": ""
+    },
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "proofwidgets",
+      "origin": "https://github.com/leanprover-community/ProofWidgets4",
+      "revision": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "tracked_status": ""
+    },
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "aesop",
+      "origin": "https://github.com/leanprover-community/aesop",
+      "revision": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "tracked_status": ""
+    },
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "Qq",
+      "origin": "https://github.com/leanprover-community/quote4",
+      "revision": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "tracked_status": ""
+    },
+    {
+      "cache": "${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean",
+      "cache_status": "trusted_present",
+      "name": "batteries",
+      "origin": "https://github.com/leanprover-community/batteries",
+      "revision": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "tracked_status": ""
+    },
+    {
+      "cache": null,
+      "cache_status": "absent_not_imported",
+      "name": "Cli",
+      "origin": "https://github.com/leanprover/lean4-cli",
+      "revision": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "tracked_status": ""
+    }
+  ],
+  "ended_utc": "2026-10-13T02:42:05.136908+00:00",
+  "inputs": [
+    {
+      "id": "0000",
+      "input_bytes": 250,
+      "input_sha256": "de17f39dc860659d49d045cb621b7e44202f9d2230725f78320c6a1a5fdaee9e",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputOptimal problem point weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "InputFeasible problem (realVector point) ∧\n  ∀ (y : Fin 2 → ℝ), InputFeasible problem y → ObjectiveBound problem (realVector point) y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "certified_objective_value": "0",
+        "checks": [
+          {
+            "code": "coefficient_identity",
+            "lhs": "0",
+            "passed": true,
+            "path": "combination.coefficients[0]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "0",
+            "passed": true,
+            "path": "combination.coefficients[1]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "bound_attained",
+            "lhs": "0",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "=",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 2,
+        "equality_rows": 0,
+        "inequality_rows": 0,
+        "kind": "optimal",
+        "objective_sense": "min",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0001",
+      "input_bytes": 373,
+      "input_sha256": "a1bcd604bc5a2942b12c28ff137bd4855f48848de8e8b5d2079d8f73c4d4bc96",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputOptimal problem point weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "InputFeasible problem (realVector point) ∧\n  ∀ (y : Fin 1 → ℝ), InputFeasible problem y → ObjectiveBound problem (realVector point) y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "certified_objective_value": "1/2",
+        "checks": [
+          {
+            "code": "point_feasibility",
+            "lhs": "-1/3",
+            "passed": true,
+            "path": "$.certificate.point/row[0]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.point/row[1]",
+            "relation": "=",
+            "rhs": "1"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[0]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "-3/2",
+            "passed": true,
+            "path": "combination.coefficients[0]",
+            "relation": "=",
+            "rhs": "-3/2"
+          },
+          {
+            "code": "bound_attained",
+            "lhs": "-1/2",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "=",
+            "rhs": "-1/2"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 1,
+        "equality_rows": 1,
+        "inequality_rows": 1,
+        "kind": "optimal",
+        "objective_sense": "min",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0002",
+      "input_bytes": 561,
+      "input_sha256": "2532a969c92545e2e89a770c966f93e219f3cd29746c13a8dddeffac8f818281",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputOptimal problem point weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "InputFeasible problem (realVector point) ∧\n  ∀ (y : Fin 2 → ℝ), InputFeasible problem y → ObjectiveBound problem (realVector point) y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "certified_objective_value": "10",
+        "checks": [
+          {
+            "code": "point_feasibility",
+            "lhs": "4",
+            "passed": true,
+            "path": "$.certificate.point/row[0]",
+            "relation": "<=",
+            "rhs": "4"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "8",
+            "passed": true,
+            "path": "$.certificate.point/row[1]",
+            "relation": "<=",
+            "rhs": "8"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "-2",
+            "passed": true,
+            "path": "$.certificate.point/row[2]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "-2",
+            "passed": true,
+            "path": "$.certificate.point/row[3]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.point/row[4]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[0]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "3/4",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[1]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[2]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[3]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "3",
+            "passed": true,
+            "path": "combination.coefficients[0]",
+            "relation": "=",
+            "rhs": "3"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "2",
+            "passed": true,
+            "path": "combination.coefficients[1]",
+            "relation": "=",
+            "rhs": "2"
+          },
+          {
+            "code": "bound_attained",
+            "lhs": "10",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "=",
+            "rhs": "10"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 2,
+        "equality_rows": 1,
+        "inequality_rows": 4,
+        "kind": "optimal",
+        "objective_sense": "max",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0003",
+      "input_bytes": 349,
+      "input_sha256": "072b73cb1b1be6f1916c32e33f26436bed587bc6ff1c814c0764cf240d577cc6",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputOptimal problem point weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "InputFeasible problem (realVector point) ∧\n  ∀ (y : Fin 0 → ℝ), InputFeasible problem y → ObjectiveBound problem (realVector point) y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "certified_objective_value": "0",
+        "checks": [
+          {
+            "code": "point_feasibility",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.point/row[0]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.point/row[1]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[0]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "bound_attained",
+            "lhs": "0",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "=",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 0,
+        "equality_rows": 1,
+        "inequality_rows": 1,
+        "kind": "optimal",
+        "objective_sense": "max",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0004",
+      "input_bytes": 349,
+      "input_sha256": "f8e2e5333b81d3cc1dd5ca805112134828b09ce080f486a2a8f992973a173b2e",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 177,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputInfeasible problem weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "¬∃ y, InputFeasible problem y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "checks": [
+          {
+            "code": "coefficient_identity",
+            "lhs": "0",
+            "passed": true,
+            "path": "combination.coefficients[0]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "0",
+            "passed": true,
+            "path": "combination.coefficients[1]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "contradiction",
+            "lhs": "-1",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "<",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 2,
+        "equality_rows": 2,
+        "inequality_rows": 0,
+        "kind": "infeasible",
+        "objective_sense": "min",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0005",
+      "input_bytes": 340,
+      "input_sha256": "7b33b4b2aac54b3e9e2b2cfa4520e41ec392ececf993a7107db7451869fc2aa1",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 177,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputInfeasible problem weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "¬∃ y, InputFeasible problem y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "checks": [
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[0]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[1]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "0",
+            "passed": true,
+            "path": "combination.coefficients[0]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "contradiction",
+            "lhs": "-1",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "<",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 1,
+        "equality_rows": 0,
+        "inequality_rows": 2,
+        "kind": "infeasible",
+        "objective_sense": "max",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0006",
+      "input_bytes": 269,
+      "input_sha256": "9b9d97fb32e1e3ca358a836936e09d894c2564db4f810d843d9b7f5752450879",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 177,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputInfeasible problem weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "¬∃ y, InputFeasible problem y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "checks": [
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[0]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "contradiction",
+            "lhs": "-1",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "<",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 0,
+        "equality_rows": 0,
+        "inequality_rows": 1,
+        "kind": "infeasible",
+        "objective_sense": "max",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0007",
+      "input_bytes": 194,
+      "input_sha256": "b6f1bc06a1025f56facbb00ecffd6fb1f89863ef4bb23391dd297f3e3d9d538e",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputUnbounded problem point direction = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "∀ (B : ℝ), ∃ y, InputFeasible problem y ∧ ObjectiveBeyond problem B y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "checks": [
+          {
+            "code": "strict_improvement",
+            "lhs": "1",
+            "passed": true,
+            "path": "normalized_objective.direction",
+            "relation": ">",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 1,
+        "equality_rows": 0,
+        "inequality_rows": 0,
+        "kind": "unbounded",
+        "objective_sense": "max",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0008",
+      "input_bytes": 379,
+      "input_sha256": "1806012c42af7eecaaa201a1ec2d02aab8e6c675802932597578dcc165c3a195",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputUnbounded problem point direction = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "∀ (B : ℝ), ∃ y, InputFeasible problem y ∧ ObjectiveBeyond problem B y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "checks": [
+          {
+            "code": "point_feasibility",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.base_point/row[0]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.base_point/row[1]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "1",
+            "passed": true,
+            "path": "$.certificate.base_point/row[2]",
+            "relation": "=",
+            "rhs": "1"
+          },
+          {
+            "code": "recession_direction",
+            "lhs": "-1",
+            "passed": true,
+            "path": "$.certificate.direction/row[0]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "recession_direction",
+            "lhs": "-2",
+            "passed": true,
+            "path": "$.certificate.direction/row[1]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "recession_direction",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.direction/row[2]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "strict_improvement",
+            "lhs": "1",
+            "passed": true,
+            "path": "normalized_objective.direction",
+            "relation": ">",
+            "rhs": "0"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 2,
+        "equality_rows": 1,
+        "inequality_rows": 2,
+        "kind": "unbounded",
+        "objective_sense": "min",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    },
+    {
+      "id": "0009",
+      "input_bytes": 853,
+      "input_sha256": "5a5de45c186cae9a39039218046ce832493fec15f444e91a5be82069a8b7f75d",
+      "lean_evidence": {
+        "definitions": [
+          {
+            "axioms": [
+              "propext"
+            ],
+            "definitionBodyMatching": "kernel_definitional_equality",
+            "status": "definition_value_matched_not_a_proof_of_the_predicate",
+            "target": "CheckedInput.problem"
+          }
+        ],
+        "replay": [
+          {
+            "baseModules": [
+              "Mathlib",
+              "EvidenceHarness"
+            ],
+            "independentKernelReplay": "not_performed",
+            "replayedDeclarations": 178,
+            "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+            "targets": [
+              "CheckedInput.accepted",
+              "CheckedInput.sound"
+            ]
+          }
+        ],
+        "targets": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "checkInputOptimal problem point weights = true",
+            "target": "CheckedInput.accepted",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          },
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "declarationKind": "theorem",
+            "observedType": "InputFeasible problem (realVector point) ∧\n  ∀ (y : Fin 2 → ℝ), InputFeasible problem y → ObjectiveBound problem (realVector point) y",
+            "target": "CheckedInput.sound",
+            "targetKernelReplay": "separate_phase_required",
+            "typeMatching": "closed_whole_type_kernel_definitional_equality"
+          }
+        ]
+      },
+      "python_result": {
+        "accepted": true,
+        "certified_objective_value": "10",
+        "checks": [
+          {
+            "code": "point_feasibility",
+            "lhs": "4",
+            "passed": true,
+            "path": "$.certificate.point/row[0]",
+            "relation": "<=",
+            "rhs": "4"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "-2",
+            "passed": true,
+            "path": "$.certificate.point/row[1]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "-2",
+            "passed": true,
+            "path": "$.certificate.point/row[2]",
+            "relation": "<=",
+            "rhs": "0"
+          },
+          {
+            "code": "point_feasibility",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.point/row[3]",
+            "relation": "=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "5/2",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[0]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[1]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "multiplier_nonnegative",
+            "lhs": "0",
+            "passed": true,
+            "path": "$.certificate.inequality_multipliers[2]",
+            "relation": ">=",
+            "rhs": "0"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "3",
+            "passed": true,
+            "path": "combination.coefficients[0]",
+            "relation": "=",
+            "rhs": "3"
+          },
+          {
+            "code": "coefficient_identity",
+            "lhs": "2",
+            "passed": true,
+            "path": "combination.coefficients[1]",
+            "relation": "=",
+            "rhs": "2"
+          },
+          {
+            "code": "bound_attained",
+            "lhs": "10",
+            "passed": true,
+            "path": "combination.rhs",
+            "relation": "=",
+            "rhs": "10"
+          }
+        ],
+        "diagnostics": [],
+        "dimension": 2,
+        "equality_rows": 1,
+        "inequality_rows": 3,
+        "kind": "optimal",
+        "objective_sense": "max",
+        "status": "accepted"
+      },
+      "status": "lean_checked"
+    }
+  ],
+  "lean_path": "${TEMP_ARTIFACT}/.work/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean:${PINNED_REPOSITORY}/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean",
+  "library_expected_gate": "passed",
+  "library_sources": {
+    "EvidenceHarness.lean": {
+      "bytes": 6371,
+      "sha256": "bb71282fcb088498a9c40b0460694f1663e8f3a145fc15469050b8ade2f390dc"
+    },
+    "LPCertificates.lean": {
+      "bytes": 117,
+      "sha256": "2f413af4039969062d39053edb85b06b03ee9c8a7776c5ef0b9c4d2276e4cf78"
+    },
+    "LPCertificates/Core.lean": {
+      "bytes": 6684,
+      "sha256": "5c9755bfdc0b11dcd680a2bfd42da61c5a73f2107cb8bb564be83821af2fb59a"
+    },
+    "LPCertificates/Examples.lean": {
+      "bytes": 4044,
+      "sha256": "159433f1444e5fcf641028091bb926cb3282b0bc275cca09069ea5231f499f94"
+    },
+    "LPCertificates/Input.lean": {
+      "bytes": 5660,
+      "sha256": "4bfbbd5058b142ad21657462963ccf80a6bdd1dbdfc9fa36ae78253ee605eae7"
+    },
+    "LPCertificates/Rational.lean": {
+      "bytes": 5847,
+      "sha256": "be5b7bf5c286303fef192404ddb6d2e07f8c3c7a5b794548740382b0722f5f94"
+    },
+    "lake-manifest.json": {
+      "bytes": 3542,
+      "sha256": "fa235a31755c091135e667ffb4085455396f4b8ef6077f6e53c3556ce05a65d7"
+    },
+    "lakefile.toml": {
+      "bytes": 288,
+      "sha256": "4b65bceca43c56f756725d981755a40d4078867952dce5c6338af189e9c59788"
+    },
+    "lean-toolchain": {
+      "bytes": 25,
+      "sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434"
+    },
+    "scripts/ExpectedInput.lean": {
+      "bytes": 5824,
+      "sha256": "51592c9b71c70f87eff6f8f541c189a75370a06e6a617bb2c43ea479a1527ad7"
+    }
+  },
+  "postflight": "all input/source/compiler/dependency/output/product identities unchanged",
+  "products": [
+    {
+      "bytes": 467152,
+      "module": "LPCertificates/Core",
+      "retained": false,
+      "sha256": "624c7442243055906e1efca5f106a2c183b5f9d0f5c28f2b6a38bc6b4a573d54"
+    },
+    {
+      "bytes": 241696,
+      "module": "LPCertificates/Rational",
+      "retained": false,
+      "sha256": "9f8bf719935716f3dc4b75a0744c25921c1feb21c94c6ed1d75bc0450a1ea334"
+    },
+    {
+      "bytes": 448880,
+      "module": "LPCertificates/Input",
+      "retained": false,
+      "sha256": "2533dae4cbe7ede25639dd0f37d972f745b759b1234df52dedb69a6dba0f1e76"
+    },
+    {
+      "bytes": 194688,
+      "module": "LPCertificates/Examples",
+      "retained": false,
+      "sha256": "e21518ffc0ca80d536598a760c72c0faefde1aa6a0361bfdc5b5d3c2e4f3a6b5"
+    },
+    {
+      "bytes": 38816,
+      "module": "LPCertificates",
+      "retained": false,
+      "sha256": "4a614c026b9452ceeac28811dc476650656a435dda2d202535ed22597e73d838"
+    },
+    {
+      "bytes": 721080,
+      "module": "EvidenceHarness",
+      "retained": false,
+      "sha256": "fda685d1a89f4054f857619837226a3c8e33dc236ed369409f847d32f0a23456"
+    },
+    {
+      "bytes": 72448,
+      "module": "Checked0000",
+      "retained": false,
+      "sha256": "4fabaf21ce538b8ed94a0b9342cf1050b68a06ca789d3df75b30a1ed972652e1"
+    },
+    {
+      "bytes": 87664,
+      "module": "Checked0001",
+      "retained": false,
+      "sha256": "0100e52df4dd77bd56d1e6c3040250165afe03966d577f2948cf296da33fa0a2"
+    },
+    {
+      "bytes": 114232,
+      "module": "Checked0002",
+      "retained": false,
+      "sha256": "a084c3928ea034be7442c0f623c12b5a86fc6b0c716e2100d33679c8d00d3f2b"
+    },
+    {
+      "bytes": 76456,
+      "module": "Checked0003",
+      "retained": false,
+      "sha256": "731b81d88f71ccb3392225f80f72ec81d2a87476f96fedc4b683982eb96d1423"
+    },
+    {
+      "bytes": 85424,
+      "module": "Checked0004",
+      "retained": false,
+      "sha256": "0e8eec1e6ee885a917d1ef571ae6e41d5ce5c0b92909c6aecd77bd4ef979f1bc"
+    },
+    {
+      "bytes": 74720,
+      "module": "Checked0005",
+      "retained": false,
+      "sha256": "34d507afc6525ac5dcd32205b8b90df3bde1477943e294c486222471c8552bb0"
+    },
+    {
+      "bytes": 66664,
+      "module": "Checked0006",
+      "retained": false,
+      "sha256": "301b80421909651856c39c1c04961c387b5c6831543bb704ee6e3a6176fddef6"
+    },
+    {
+      "bytes": 67616,
+      "module": "Checked0007",
+      "retained": false,
+      "sha256": "9af3b7c5140d4738a9e40205609cb9aea634afe031ae7dedca3c6dced85ad670"
+    },
+    {
+      "bytes": 90472,
+      "module": "Checked0008",
+      "retained": false,
+      "sha256": "3fb09e0b4933576aeaabff9de8f5f355fa4f702026e59919e27ef47c99f9bd1b"
+    },
+    {
+      "bytes": 106680,
+      "module": "Checked0009",
+      "retained": false,
+      "sha256": "03063bfb4ed8aaee8ae0864aa64dfe2495e69238235bcd529a896bad4b10e17d"
+    }
+  ],
+  "resource_bounds": {
+    "address_space_bytes": 17179869184,
+    "lean_heap_megabytes": 4096,
+    "lean_threads": 1,
+    "log_bytes_per_stream": 2097152,
+    "timeout_seconds": 240
+  },
+  "schema": "lp-certificates-checked-bridge/v1",
+  "started_utc": "2026-10-13T02:38:43.210009+00:00",
+  "status": "lean_checked",
+  "toolchain": {
+    "commit": "797c613eb9b6d4ec95db23e3e00af9ac6657f24b",
+    "lean": "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+    "members": {
+      "bin/lean": {
+        "bytes": 9024,
+        "sha256": "8fadc3ed92cc9decb94c96ee9c0876e91e03a3a5e69138f32114f02789e2766c"
+      },
+      "lib/lean/libInit_shared.so": {
+        "bytes": 6232,
+        "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+      },
+      "lib/lean/libleanshared.so": {
+        "bytes": 193479936,
+        "sha256": "8cc9858cc57c52015ba6dd948bdbf7f05926b9b5fcead69a964f0ad61ddd79dd"
+      },
+      "lib/lean/libleanshared_1.so": {
+        "bytes": 6232,
+        "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+      },
+      "lib/lean/libleanshared_2.so": {
+        "bytes": 6232,
+        "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+      }
+    },
+    "prefix": "${PINNED_REPOSITORY}/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux",
+    "release": "4.24.0"
+  },
+  "trust_limits": [
+    "JSON-to-Lean transcription is trusted, not a proved parser refinement",
+    "host runtime and clean pinned dependency caches are trusted",
+    "same Lean kernel replay, not an independent kernel implementation",
+    "package hashes attest consistency, not historical execution authenticity",
+    "no finding/completeness, native Mac, or installed MRS claim"
+  ],
+  "verifier_sha256": "bb55c5f57a91d9c8c225ab3dc219a718a383e13249314fff29b5a1ad33e290fb",
+  "publication_derivative": {
+    "original_schema": "lp-certificates-checked-bridge/v1",
+    "original_commit": "032db09354d41b58c2e9211ed7e69024a3e74010",
+    "original_sha256": "877d9f1d3fd1e694df1e36cdc2337649a9bc39d535c412623c743521a87f388f",
+    "original_bytes": 116563,
+    "scope": "Public metadata derivative; recorded environment paths and coordination details normalized. Original outcomes, exits, dates, mathematical source/pin hashes and trust limits retain their original scope.",
+    "captured_byte_descriptors": "Original receipt/output descriptors remain historical original-byte bindings; current public-copy bytes use publication/OCTOBER-13-SOURCE-MAP.json and publication/FILES.json.",
+    "removed_nonmathematical_fields": [],
+    "new_mathematical_verification": false,
+    "publication_profile": "recheckable_lp_package_metadata"
+  }
+}

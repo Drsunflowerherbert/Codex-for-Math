@@ -1,0 +1,41 @@
+{
+  "schema": "publisher-recorded-scoped-review/v1",
+  "reviewed_commit": "032db09354d41b58c2e9211ed7e69024a3e74010",
+  "source": "Separate independent automated read-only bridge specialist; scoped verdict and findings supplied to the integrator on 2026-10-13 UTC.",
+  "verdict": "accepted_under_documented_parser_and_cache_trust",
+  "reported_consistency_checks": {
+    "manifest_entries": 634,
+    "aggregate_source_hashes": 38,
+    "aggregate_output_logs": 20,
+    "checked_packages": 3
+  },
+  "reported_test_results": {
+    "targeted_tests_passed": 53,
+    "live_test_skipped": 1,
+    "large_integer_tests_passed": 8,
+    "interpretation": "Specialist-reported counts retained separately; the publisher does not combine them with worker suite counts or claim to have observed the specialist's executions."
+  },
+  "findings": [
+    {
+      "area": "dependency_source_cleanliness",
+      "finding": "Git status can hide changed tracked bytes under assume-unchanged or skip-worktree.",
+      "resolution": "Current README, bridge contract, publication notice and round report explicitly state the index-dependent Git-status boundary; strict dependency byte-cleanliness is not claimed.",
+      "code_changed": false
+    },
+    {
+      "area": "saved_process_metadata_intake",
+      "finding": "Coherently rehashed saved packages can retain boolean exit codes, noncanonical timestamps, negative PIDs or malformed recorded working directories.",
+      "resolution": "Current documentation explicitly states the incomplete strict process-field gate. Saved intake grants no fresh pass; recheck still regenerates source from original JSON and executes fresh trusted Lean gates.",
+      "code_changed": false
+    }
+  ],
+  "scoped_acceptance": "No normalization, injection or stale-output path yielding false fresh Lean acceptance was found within the documented parser/cache trust.",
+  "remaining_obligations": [
+    "Strict dependency tracked-byte checking in the LP bridge",
+    "Strict type/consistency validation of all LP saved-process fields",
+    "Formal parser/literal refinement, finder completeness and strong duality",
+    "Full dependency-cache rebuild or independent kernel"
+  ],
+  "new_mathematical_verification_by_publisher": false,
+  "historical_authenticity_by_hashes": "not_established"
+}
