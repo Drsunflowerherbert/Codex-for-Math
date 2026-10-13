@@ -1,0 +1,70 @@
+{
+  "assigned_branch": "codex/transport-sharpness-2026-10-13",
+  "development_cutoff_utc": "2026-10-13T04:05:00Z",
+  "formal_coverage": {
+    "actual_dimension": 2,
+    "actual_probability_domain": "0<=a<=1,b>=0,p>=1",
+    "all_coupling_domain": "all Borel measures satisfying both map marginals",
+    "combined_bodies": 30,
+    "combined_full_types": 78,
+    "combined_local_replayed_declarations": 113,
+    "new_definitions": 11,
+    "new_theorems": 19
+  },
+  "fresh_verification_reports": [
+    {
+      "definition_bodies": 30,
+      "driver_sha256": "bf71ddb57c07e056c5a175dcb4c4a9605f31318483d539c91f53e5eb37ec102e",
+      "finished_utc": "2026-10-13T02:26:14.890472+00:00",
+      "full_types": 78,
+      "local_replayed_declarations": 113,
+      "optimization_level": 0,
+      "path": "evidence/followup-lean-review/20261013T022349298872Z/report.json",
+      "phase_count": 72,
+      "started_utc": "2026-10-13T02:23:49.299365+00:00",
+      "status": "passed"
+    },
+    {
+      "definition_bodies": 30,
+      "driver_sha256": "bf71ddb57c07e056c5a175dcb4c4a9605f31318483d539c91f53e5eb37ec102e",
+      "finished_utc": "2026-10-13T02:29:17.101822+00:00",
+      "full_types": 78,
+      "local_replayed_declarations": 113,
+      "optimization_level": 1,
+      "path": "evidence/followup-lean-review/20261013T022709145274Z/report.json",
+      "phase_count": 72,
+      "started_utc": "2026-10-13T02:27:09.145718+00:00",
+      "status": "passed"
+    }
+  ],
+  "independent_reviews": [
+    "reviews/followup-proof-review.md",
+    "reviews/followup-lean-review.md"
+  ],
+  "mathematical_source_frozen_utc": "2026-10-13T02:26:01Z",
+  "mathematical_source_sha256": "808199ba3c1db1829950488399a63037f4497fd6203cddb334ced85060d5529d",
+  "new_claims": "FOLLOWUP-CLAIMS.json",
+  "old_core_and_harness_files": "byte-identical to published checkpoint",
+  "outcome": "reviewed_actual_atomic_measure_all_coupling_target_cost_bridge_finished",
+  "provenance": "FOLLOWUP-PROVENANCE.json",
+  "publication": {
+    "authorized": true,
+    "receipt": "recorded after content push in evidence/FOLLOWUP-PUBLICATION.json; final receipt commit verified separately in final response",
+    "scope": "only assigned branch and transport-sharpness/"
+  },
+  "publication_cutoff_utc": "2026-10-13T04:20:00Z",
+  "remaining_formal_obligations": [
+    "actual uniform cube source and its density normalization/bounds",
+    "Borel affine maximizer selections and null tie sets",
+    "uniform-source affine cell integrals and target pushforwards",
+    "quadratic source-to-target map optimality and uniqueness",
+    "same-source joint mass matrix identification and actual L2 map norm",
+    "higher-dimensional actual-measure extension",
+    "generic finite-array representation of arbitrary finitely supported couplings (not needed for new direct target cost proof)",
+    "actual target optimizer uniqueness theorem"
+  ],
+  "remaining_publication_blockers": [],
+  "schema": "transport-sharpness-followup-status/v1",
+  "starting_checkpoint": "40589436a45ddfd2cc8df8897e86b3185b83a107",
+  "trust_limits": "unchanged official compiler/kernel member pins; nine clean pinned package sources; trusted cached dependency OLeans and host runtime; same-kernel local replay; no native MRS integration"
+}

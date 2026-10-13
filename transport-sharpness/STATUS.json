@@ -10,6 +10,15 @@
     "finite target optimizer uniqueness theorem"
   ],
   "development_cutoff_utc": "2026-10-13T04:05:00Z",
+  "followup": {
+    "claims": "FOLLOWUP-CLAIMS.json",
+    "cube_source_map_bridge": "still_deferred",
+    "old_core_unchanged": true,
+    "outcome": "actual_two_dimensional_target_measure_transport_cost_formalized",
+    "source": "TransportSharpness/Measures.lean",
+    "starting_checkpoint": "40589436a45ddfd2cc8df8897e86b3185b83a107",
+    "status": "FOLLOWUP-STATUS.json"
+  },
   "mathematical_development_frozen_utc": "2026-10-13T02:00:09Z",
   "nonclaims": [
     "no global positive upper stability estimate or endpoint optimality theorem",

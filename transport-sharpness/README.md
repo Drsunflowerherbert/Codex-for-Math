@@ -1,5 +1,12 @@
 # Transport exponent obstruction: exact finite core
 
+The [focused follow-up](docs/followup-measure-bridge.md) adds an actual-measure
+target-cost bridge in dimension two: all Borel couplings satisfy the lower
+bound, the matching probability coupling attains it, and the actual infimal
+cost root equals the retained scalar target distance. The uniform-source
+optimal-map bridge remains deferred. See [FOLLOWUP-STATUS.json](FOLLOWUP-STATUS.json)
+for the independent fresh verification and final coverage.
+
 This scoped continuation audits the prior three-atom example and supplies
 pinned Lean proofs and exact rational regression data. The original
 Euclidean definitions support the necessary finite-p exponent ceiling
@@ -44,7 +51,7 @@ and scalar formulas. Their interpretation as actual Brenier-map quantities
 uses the separately reviewed ordinary Euclidean measure proof.
 
 The measure-theoretic map construction, pushforward identification,
-Lebesgue integration, null ties, and higher-dimensional product extension
+cube-source Lebesgue integration, null ties, and higher-dimensional product extension
 are deferred Lean obligations. They are not disguised as assumptions proving
 an entire transport theorem. The sources contain no proof placeholders,
 added axioms or unsafe proof shortcuts. A separate review checks complete
