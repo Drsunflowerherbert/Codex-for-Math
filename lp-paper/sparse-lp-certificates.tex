@@ -1,0 +1,1065 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=0.91in,headheight=14pt]{geometry}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue!45!black,
+pdftitle={Linear Programming by Sparse Certificates},
+pdfsubject={A hand calculation approach to exact linear programming certificates},
+pdfauthor={Expository companion to Codex for Math}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\T}{\mathsf T}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\cone}{cone}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\spanop}{span}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{equation}{section}
+\setlist{itemsep=3pt,topsep=6pt}
+\setlength{\parskip}{3pt}
+\setlength{\parindent}{1.2em}
+\setlength{\emergencystretch}{1.5em}
+\allowdisplaybreaks[2]
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Linear programming by sparse certificates}
+\fancyhead[R]{\small A hand calculation approach}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\title{\vspace{-1.0cm}\textbf{Linear Programming by Sparse Certificates}\\[5pt]
+\large A Hand Calculation Approach}
+\author{An expository companion to the Codex for Math LP studies}
+\date{13 October 2026}
+
+\begin{document}
+\maketitle
+\thispagestyle{plain}
+\begin{abstract}
+A short nonnegative combination of constraints can prove a linear-programming
+bound without introducing slack or artificial decision variables. The main
+question is how to find such a combination systematically. We first eliminate
+consistent equalities and then work with the projected inequality normals.
+If their rank is \(k\), every valid upper bound on a nonempty feasible set has
+a certificate using at most \(k\) inequalities. Infeasibility has a different
+geometry: a contradiction may require \(k+1\) inequalities. We prove both
+statements, explain the necessary hypotheses, and obtain a finite exact
+support-enumeration procedure for rational data. Worked calculations show how
+to discover the multipliers, recover the original equalities, and distinguish
+a bound from a proved optimum. Degeneracy, normalization, nonuniqueness, and
+implementation limits receive explicit treatment. The foundations are
+classical; the purpose is a transparent method for hand-sized problems,
+rather than a new duality theorem or a claim of general solver superiority.
+\end{abstract}
+
+\noindent\textbf{Reading guide.}
+Sections~\ref{sec:certificates}--\ref{sec:elimination} establish the certificate
+language and work a three-variable example. Sections~\ref{sec:existence} and
+\ref{sec:sparsity} give the proofs behind sparse discovery.
+Sections~\ref{sec:search}--\ref{sec:examples} turn those proofs into a practical
+procedure. Section~\ref{sec:evidence} separates mathematical results from the
+published computational and formal evidence.
+
+\section{The problem and the meaning of a certificate}
+\label{sec:certificates}
+
+Let \(A\in\R^{m\times n}\), \(b\in\R^m\),
+\(E\in\R^{p\times n}\), \(f\in\R^p\), and \(c\in\R^n\). We consider
+\begin{equation}\label{eq:model}
+ P=\{x\in\R^n:Ax\le b,\ Ex=f\},
+ \qquad \text{maximize }\ell_c(x)=c^\T x .
+\end{equation}
+The inequality \(Ax\le b\) is coordinatewise. All variables are free real
+variables; a sign restriction such as \(x_j\ge0\) is an explicit row
+\(-x_j\le0\). We use only finitely many nonstrict constraints.
+Strict inequalities and integer restrictions are outside this model.
+
+The symbol \(\ell_c\) denotes the linear \emph{map}
+\(x\mapsto c^\T x\); \(\ell_c(x)\) is a real number.
+An optimizer \(x^\star\) is a feasible vector, whereas its objective value
+\(v^\star=\ell_c(x^\star)\) is a scalar. A proposed upper bound \(\delta\)
+need not be the optimum. Matrix products have their ordinary meanings and
+every indexed sum is written explicitly; there is no implicit summation
+convention.
+
+A row \(a^\T x\ge b_0\) is normalized by negating \emph{both} sides.
+Minimizing \(c^\T x\) is equivalent to maximizing \((-c)^\T x\),
+with the final objective value negated. An equality retains an unrestricted
+signed multiplier. There is no need to replace it with a pair of inequalities.
+
+\subsection{Weighted addition and weak duality}
+
+\begin{definition}\label{def:bound}
+A certificate for the bound \(c^\T x\le\delta\) consists of
+\(\lambda\in\R^m\) and \(\mu\in\R^p\) satisfying
+\begin{equation}\label{eq:certificate}
+ \lambda\ge0,\qquad A^\T\lambda+E^\T\mu=c,\qquad
+ b^\T\lambda+f^\T\mu\le\delta.
+\end{equation}
+The \emph{positive inequality support} is
+\(\supp_+(\lambda)=\{i:\lambda_i>0\}\). Its size counts original inequality
+rows with nonzero weight, not equality rows, active constraints, or digits.
+\end{definition}
+
+\begin{proposition}[Certificate soundness]\label{prop:sound}
+If \eqref{eq:certificate} holds, then \(c^\T x\le\delta\) for every
+\(x\in P\). If, in addition, \(x^\star\in P\) and
+\(c^\T x^\star=\delta\), then \(x^\star\) is an optimizer with value \(\delta\).
+\end{proposition}
+\begin{proof}
+For each feasible \(x\), the coefficient identity gives
+\[
+ c^\T x=\lambda^\T Ax+\mu^\T Ex
+ \le\lambda^\T b+\mu^\T f\le\delta.
+\]
+The inequality follows from the nonnegativity of each \(\lambda_i\);
+the equality terms need no sign restriction because \(Ex=f\).
+An attaining feasible point then matches an upper bound valid for all
+feasible points.
+\end{proof}
+
+This is weak duality in its most direct form. The multiplier pair is feasible
+for the dual constraint \(A^\T\lambda+E^\T\mu=c\), \(\lambda\ge0\), and its
+dual objective is \(b^\T\lambda+f^\T\mu\). For hand calculation, it is often
+more useful to regard these equations as a request: combine a few constraint
+left sides to produce the objective \emph{as an identity in all coordinates}.
+
+Matching only the numerical value at one candidate is insufficient. For
+example, the constraint \(x\le1\) and objective \(x+y\) agree at \((1,0)\),
+but their coefficient vectors differ, and \(y\) may increase without limit.
+Likewise, a point attaining a certified bound must still satisfy every row.
+Under \(x\le0\) and \(y\ge1\), the point \((0,0)\) attains the bound \(x\le0\)
+but is not feasible.
+
+\subsection{The gap and the other two elementary certificates}
+
+For nonnegative inequality multipliers satisfying the coefficient identity,
+every \(x\in P\) satisfies
+\begin{equation}\label{eq:gap}
+ b^\T\lambda+f^\T\mu-c^\T x
+   =\sum_{i=1}^m\lambda_i\bigl(b_i-(Ax)_i\bigr).
+\end{equation}
+All terms on the right are nonnegative. Equality of primal and certificate
+values therefore implies
+\[
+ \lambda_i\bigl(b_i-(Ax)_i\bigr)=0\qquad(1\le i\le m).
+\]
+This is complementary slackness. A positive weight forces its row to be
+active, meaning that its inequality is an equality at that point.
+An active row need not have a positive weight.
+
+A \emph{contradiction certificate} satisfies
+\begin{equation}\label{eq:contradiction}
+ \lambda\ge0,\qquad A^\T\lambda+E^\T\mu=0,\qquad
+ b^\T\lambda+f^\T\mu<0.
+\end{equation}
+Weighted addition would give
+\(0\le b^\T\lambda+f^\T\mu<0\), so \(P\) is empty.
+
+For comparison, an \emph{improving-ray certificate} consists of a feasible
+base \(x_0\in P\) and a direction \(v\) such that
+\begin{equation}\label{eq:ray}
+ Av\le0,\qquad Ev=0,\qquad c^\T v>0.
+\end{equation}
+Then \(x_0+t v\in P\) for every \(t\ge0\), and
+\(c^\T(x_0+t v)=c^\T x_0+t\,c^\T v\) tends to \(+\infty\).
+The feasible base is essential: homogeneous direction equations alone do not
+establish that any feasible point exists. The search developed below concerns
+bounds and contradictions, not general discovery of feasible points or rays.
+
+\section{Eliminating equalities before searching}
+\label{sec:elimination}
+
+Equalities carry useful information about which directions are actually free.
+Using them first can make a three- or ten-variable calculation effectively
+one-dimensional. Gaussian elimination is enough; an orthonormal basis is
+unnecessary and may be inconvenient for rational arithmetic.
+
+\subsection{Inconsistent equalities must be handled first}
+
+Row reduction of the augmented matrix \([\,E\ f\,]\) decides whether
+\(Ex=f\) is consistent. If it is not, the row operations produce a vector
+\(h\in\R^p\) with \(E^\T h=0\) and \(f^\T h\ne0\).
+Setting
+\begin{equation}\label{eq:equality-contradiction}
+ \mu=-\frac{h}{f^\T h}
+\end{equation}
+gives \(E^\T\mu=0\), \(f^\T\mu=-1\): a contradiction using zero
+inequalities. For rational data the row operations and \(\mu\) are rational.
+This is the finite-dimensional Fredholm alternative; see
+Border~\cite[Theorems 3--5, p.~3]{border}.
+
+Do not form an affine parametrization of an inconsistent system. For example,
+\(x=0\), \(2x=1\) already yield \(0=-1\) by taking weights \(2,-1\).
+
+\subsection{The reduced model and exact recovery}
+
+Assume henceforth that \(Ex=f\) is consistent. Put \(r=\rank(E)\) and
+\(d=n-r\). Choose a particular solution \(x_0\) and a matrix
+\(N\in\R^{n\times d}\) whose columns are a basis of \(\ker E\). The affine map
+\begin{equation}\label{eq:param}
+ \Phi:\R^d\longrightarrow\{x:Ex=f\},\qquad
+ \Phi(z)=x_0+Nz
+\end{equation}
+is bijective. It is a map; \(x_0+Nz\) is its value at \(z\).
+Substitution gives
+\begin{equation}\label{eq:reduction}
+ B=AN,\quad \beta=b-Ax_0,\quad q=N^\T c,\quad
+ \eta=\delta-c^\T x_0 .
+\end{equation}
+Thus \(x=\Phi(z)\) is feasible exactly when \(Bz\le\beta\), and the proposed
+bound becomes \(q^\T z\le\eta\). This is the usual equality-elimination
+construction~\cite[slide 4.35, PDF p.~122]{boyd}. The dimension here is
+\(n-\rank(E)\), allowing dependent equality rows.
+
+Write \(a_i\in\R^d\) for the transpose of row \(i\) of \(B\), and put
+\[
+ M=B^\T=[\,a_1\ \cdots\ a_m\,],\qquad k=\rank(B).
+\]
+A reduced bound certificate is simply
+\begin{equation}\label{eq:reduced-certificate}
+ \lambda\ge0,\qquad M\lambda=q,\qquad \beta^\T\lambda\le\eta.
+\end{equation}
+
+\begin{proposition}[Elimination preserves certificates]\label{prop:recovery}
+The original bound certificate equations \eqref{eq:certificate} are solvable
+with a given \(\lambda\ge0\) if and only if
+\eqref{eq:reduced-certificate} holds. Equality multipliers can be recovered
+by solving
+\begin{equation}\label{eq:recover}
+ E^\T\mu=c-A^\T\lambda .
+\end{equation}
+For every solution of this equation,
+\begin{equation}\label{eq:recover-cost}
+ b^\T\lambda+f^\T\mu=c^\T x_0+\beta^\T\lambda .
+\end{equation}
+The analogous statement for contradictions uses the zero objective and a
+strictly negative reduced cost.
+\end{proposition}
+\begin{proof}
+Multiplying the original coefficient equation by \(N^\T\) gives
+\(M\lambda=q\). Conversely, that equation says
+\(N^\T(c-A^\T\lambda)=0\). Since \(\im N=\ker E\), the residual is
+orthogonal to \(\ker E\), hence belongs to \(\im E^\T\).
+This proves the solvability of \eqref{eq:recover}. Since \(Ex_0=f\),
+\[
+ f^\T\mu=x_0^\T E^\T\mu
+     =c^\T x_0-\lambda^\T Ax_0.
+\]
+Adding \(b^\T\lambda\) proves \eqref{eq:recover-cost}, and subtracting
+\(c^\T x_0\) proves equivalence of the cost tests. For a contradiction the
+same calculation uses the zero objective.
+\end{proof}
+
+Different recovered vectors \(\mu\) give the same combined constant.
+One may solve using a basis of the original equality rows and set the
+remaining equality weights to zero. In this consistent-equality recovery,
+this uses at most \(r\) equality rows.
+Our support bounds count inequalities only.
+
+The relevant rank has a coordinate-free expression:
+\begin{equation}\label{eq:intrinsic-rank}
+ k=\rank(AN)=\rank\begin{pmatrix}A\\E\end{pmatrix}-\rank(E)\le d.
+\end{equation}
+Indeed, restrict the covectors in the row space of \(\begin{pmatrix}A\\E\end{pmatrix}\)
+to \(\ker E\). The kernel of this restriction is exactly the row space of
+\(E\), and its image is the span of the restricted inequality covectors.
+Rank-nullity gives \eqref{eq:intrinsic-rank}. Changing the basis \(N\) changes
+coordinates and possibly arithmetic size, but not \(k\).
+
+\subsection{A complete hand calculation in three variables}
+
+Maximize \(2x-y+3z\) subject to
+\begin{align*}
+ x+2y+z&\le10,& -z&\le0,&2x+4y+2z&\le20,\\
+ x-y&=1,&y-z&=1,&x-z&=2.
+\end{align*}
+The last equality is the sum of the first two; the equality rank is \(2\).
+Set \(z=t\). Then
+\[
+ (x,y,z)=(2+t,1+t,t),\qquad
+ 4t\le6,\quad -t\le0,\quad8t\le12,
+\]
+and the objective becomes \(3+4t\). The reduced feasible interval is
+\(0\le t\le3/2\). Its objective increases with \(t\), so the candidate is
+\[
+ t^\star=\frac32,\qquad
+ (x^\star,y^\star,z^\star)=\left(\frac72,\frac52,\frac32\right),
+ \qquad v^\star=9.
+\]
+
+Here is how to \emph{discover} the certificate. The projected objective
+coefficient is \(4\). The first row has coefficient \(4\), so its multiplier
+must be \(1\). Its budget \(6\) gives the reduced bound \(4t\le6\).
+No other inequality is needed. Subtract its original normal from the
+objective normal:
+\[
+ (2,-1,3)-(1,2,1)=(1,-3,2)
+       =1(1,-1,0)-2(0,1,-1).
+\]
+This recovers equality weights \((1,-2,0)\). The full identity is
+\begin{equation}\label{eq:three-example}
+ (x+2y+z)+(x-y)-2(y-z)=2x-y+3z\le10+1-2=9.
+\end{equation}
+The displayed candidate satisfies all rows and attains \(9\), so the bound is
+optimal. The first inequality could instead be replaced by half of the third:
+a sparse certificate need not be unique. The reduction explains why the
+calculation is short: \(n=3\), but \(d=k=1\).
+
+\section{Why the required certificates exist}
+\label{sec:existence}
+
+Weighted addition proves that a certificate is sound. It does not prove that
+a certificate exists whenever a bound is valid. To establish that converse,
+we use finite conic geometry. The next elementary lemmas also identify the
+source of sparsity.
+
+\begin{lemma}[Eliminating conic dependence]\label{lem:conic}
+Let \(v_1,\ldots,v_m\) be vectors in a finite-dimensional real vector space.
+Every vector \(w=\sum_{i=1}^m\lambda_i v_i\), with \(\lambda_i\ge0\), has
+such a representation whose positive-support vectors are linearly independent.
+Its support has at most \(\dim\spanop\{v_1,\ldots,v_m\}\) members.
+For \(w=0\), the empty representation is permitted.
+\end{lemma}
+\begin{proof}
+If the positive support \(S\) is dependent, choose a nonzero vector \(h\)
+supported on \(S\) such that \(\sum_{i\in S}h_i v_i=0\). Reverse its sign
+if necessary so that at least one \(h_i\) is positive. Set
+\begin{equation}\label{eq:conic-step}
+ t=\min_{\substack{i\in S\\h_i>0}}\frac{\lambda_i}{h_i},
+ \qquad \lambda'_i=\lambda_i-t h_i.
+\end{equation}
+For \(h_i>0\), the definition of \(t\) makes \(\lambda'_i\ge0\);
+for \(h_i\le0\), it makes \(\lambda'_i\ge\lambda_i\ge0\).
+At least one positive entry becomes zero. No new support is introduced
+because \(h\) vanishes outside \(S\), and the represented vector is unchanged.
+After finitely many steps the support is independent.
+\end{proof}
+
+This is the conic form of Carath\'eodory's theorem
+\cite[pp.~8--9]{bertsekas3}. Its bound is the dimension of the span,
+without the extra one that occurs for convex combinations.
+
+\begin{lemma}[Closedness and separation of a finite cone]\label{lem:separate}
+A cone \(C\) generated by finitely many vectors in \(\R^s\) is closed.
+If \(y\notin C\), there is \(h\in\R^s\) such that
+\[
+ h^\T v\ge0\quad(v\in C),\qquad h^\T y<0.
+\]
+\end{lemma}
+\begin{proof}
+Let \(y_j\in C\) converge to \(y\). By Lemma~\ref{lem:conic}, each \(y_j\)
+has an independent-support representation. There are only finitely many
+supports, so a subsequence has one fixed support. If that support is empty,
+the subsequence is zero and \(y=0\in C\). Otherwise, the column map on this
+support is injective. Its image is a finite-dimensional subspace and thus
+closed, and its inverse on that image is continuous. Therefore the
+nonnegative coefficient vectors of the subsequence converge to a
+nonnegative coefficient vector representing \(y\). This proves closedness.
+
+Choose \(p\in C\) minimizing the Euclidean distance to \(y\). Such a point
+exists: a minimizing sequence can be restricted to a bounded closed ball,
+and then compactness and closedness supply a limit in \(C\).
+For \(v\in C\), the segment from \(p\) to \(v\) lies in \(C\).
+Differentiating the squared distance at the segment parameter \(0\) gives
+\[
+ (y-p)^\T(v-p)\le0 .
+\]
+Using \(v=0\) and \(v=2p\) gives \((y-p)^\T p=0\).
+With \(h=p-y\), it follows that \(h^\T v\ge0\) for all \(v\in C\), while
+\[
+ h^\T y=-\|y-p\|^2<0.
+\]
+\end{proof}
+
+\begin{theorem}[The contradiction alternative]\label{thm:farkas}
+Exactly one of the following holds:
+\begin{enumerate}[label=(\roman*)]
+\item there is \(z\in\R^d\) with \(Bz\le\beta\);
+\item there is \(\lambda\ge0\) with \(M\lambda=0\) and
+      \(\beta^\T\lambda=-1\).
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+Both cannot hold, because they would imply
+\(0=\lambda^\T Bz\le\lambda^\T\beta=-1\).
+Suppose (ii) fails. Then \((0,-1)\) is outside
+\(D=\cone\{(a_i,\beta_i):1\le i\le m\}\).
+By Lemma~\ref{lem:separate}, there is \((u,t)\in\R^d\times\R\) with
+\[
+ a_i^\T u+\beta_i t\ge0\quad(1\le i\le m),\qquad -t<0.
+\]
+Thus \(t>0\), and \(z=-u/t\) satisfies every inequality
+\(a_i^\T z\le\beta_i\). This proves (i).
+\end{proof}
+
+This is Farkas' alternative for unrestricted variables, in the normalized
+form given by Border~\cite[Proposition 35, p.~17]{border}.
+A strictly negative certificate can always be rescaled by a positive factor
+to make its right side \(-1\).
+
+\begin{theorem}[Existence of bound certificates]\label{thm:existence}
+Assume \(Q=\{z:Bz\le\beta\}\ne\varnothing\).
+Then \(q^\T z\le\eta\) for every \(z\in Q\) if and only if
+\eqref{eq:reduced-certificate} has a solution.
+\end{theorem}
+\begin{proof}
+The reverse implication is weighted addition. For the forward implication,
+consider the closed finite cone
+\[
+ C=\cone\{(a_i,\beta_i):1\le i\le m\}+\cone\{(0,1)\}.
+\]
+If \((q,\eta)\notin C\), separation gives \((u,t)\) satisfying
+\[
+ a_i^\T u+\beta_i t\ge0\quad(1\le i\le m),\quad t\ge0,\quad
+ q^\T u+\eta t<0.
+\]
+If \(t>0\), the point \(z=-u/t\) is feasible and \(q^\T z>\eta\).
+If \(t=0\), the direction \(v=-u\) satisfies \(Bv\le0\), \(q^\T v>0\).
+Choose a feasible base \(z_0\in Q\). Then \(z_0+s v\in Q\) for every
+\(s\ge0\), and for large \(s\) its objective exceeds \(\eta\).
+Both cases contradict validity. Hence
+\[
+ (q,\eta)=\sum_{i=1}^m\lambda_i(a_i,\beta_i)+r_0(0,1),
+ \qquad \lambda\ge0,\quad r_0\ge0.
+\]
+The first coordinates give \(M\lambda=q\); the last coordinate gives
+\(\beta^\T\lambda=\eta-r_0\le\eta\).
+\end{proof}
+
+The scalar \(r_0\) is an unused bound budget. It is helpful in this proof;
+we need not introduce it as a variable in the eventual search.
+
+Nonemptiness is indispensable. In variables \((x,y)\), the system
+\(x\le0\), \(-x\le-1\) is empty and therefore implies \(y\le0\) vacuously.
+Yet no combination of its normals can produce \((0,1)\).
+There is a contradiction certificate, with weights \((1,1)\), but no bound
+certificate with the requested objective normal. The correct first question
+is which alternative holds, not whether a vacuous implication can be given
+an arbitrary normal.
+
+\section{Why a bound needs \texorpdfstring{\(k\)}{k} rows and a contradiction may need \texorpdfstring{\(k+1\)}{k+1}}
+\label{sec:sparsity}
+
+An immediate application of conic reduction in the lifted space would give
+a \(k+1\)-generator bound, counting the vertical residual. Feasibility lets
+us do better for bounds by reducing only the normal support while allowing
+the combined right side to improve.
+
+\begin{theorem}[Sparse bound certificates]\label{thm:sparse-bound}
+Assume \(Q\ne\varnothing\) and \eqref{eq:reduced-certificate} has a solution.
+There is a solution whose positive-support normal columns \(a_i\) are
+linearly independent. In particular, at most \(k=\rank(B)\) inequalities
+are needed.
+\end{theorem}
+\begin{proof}
+Start with a certificate \(\lambda\). If its positive-support normals are
+dependent, take a nonzero \(h\) on that support with \(Mh=0\).
+We claim that its sign can be chosen so that
+\begin{equation}\label{eq:orient}
+ \beta^\T h\ge0\quad\text{and}\quad h_i>0
+ \text{ for at least one }i.
+\end{equation}
+If \(\beta^\T h=0\), either sign with a positive entry works.
+Otherwise choose its sign so that \(\beta^\T h>0\).
+If all entries were then nonpositive, \(w=-h\ge0\) would satisfy
+\(Mw=0\), \(\beta^\T w<0\). A feasible \(z_0\) would give
+\(0=w^\T Bz_0\le w^\T\beta<0\), a contradiction.
+Thus \eqref{eq:orient} holds.
+
+Use the same minimum-ratio step \eqref{eq:conic-step}. It preserves
+nonnegativity and normal matching, reduces support, and satisfies
+\[
+ \beta^\T(\lambda-t h)=\beta^\T\lambda-t\,\beta^\T h
+       \le\beta^\T\lambda\le\eta.
+\]
+Iteration ends on independent normal columns, of which there are at most \(k\).
+\end{proof}
+
+Together with Theorem~\ref{thm:existence}, this proves the advertised bound
+for every valid upper bound on a nonempty feasible set. The proof neither
+assumes a vertex nor counts active rows. If \(q=0\), nonemptiness implies
+\(\eta\ge0\) for validity, and \(\lambda=0\) suffices.
+
+\begin{corollary}[Active rows certify a feasible optimizer]\label{cor:active}
+Let \(z^\star\in Q\). It is an optimizer of \(q^\T z\) over \(Q\) if and
+only if there is a nonnegative certificate supported on rows active at
+\(z^\star\), with \(M\lambda=q\).
+Such a certificate may be chosen with at most the rank of the active
+normal columns.
+\end{corollary}
+\begin{proof}
+If \(z^\star\) is optimal, Theorem~\ref{thm:existence} supplies a certificate
+for \(\eta=q^\T z^\star\). Weak duality gives
+\(\beta^\T\lambda\ge q^\T z^\star\), so equality holds.
+The reduced gap identity
+\[
+ 0=\sum_{i=1}^m\lambda_i(\beta_i-a_i^\T z^\star)
+\]
+forces every positively weighted row to be active.
+On active rows, a dependence \(Mh=0\) also has
+\(\beta^\T h=(z^\star)^\T Mh=0\), so conic reduction preserves the cost
+exactly and achieves the active-rank bound.
+Conversely, weights supported on active rows have
+\(\beta^\T\lambda=\sum_{i=1}^m\lambda_i a_i^\T z^\star=q^\T z^\star\);
+they certify a bound attained by the feasible point.
+\end{proof}
+
+This is the active-normal picture behind classical LP optimality
+\cite[pp.~8--9]{bertsekas10}. It is not circular to search active rows at
+a proposed point: first check feasibility, then ask whether the point has
+a certificate at \emph{its own} objective value. Success proves optimality.
+The point must not be called an optimizer before that proof is supplied.
+
+\begin{theorem}[Sparse contradictions]\label{thm:sparse-contradiction}
+If \(Q\) is empty, there is \(\lambda\ge0\) with
+\[
+ M\lambda=0,\qquad \beta^\T\lambda=-1,\qquad
+ |\supp_+(\lambda)|\le \rho,
+ \quad \rho=\rank[\,B\ \beta\,]\le k+1.
+\]
+The positive-support \emph{lifted} columns \((a_i,\beta_i)\) may be chosen
+independent. In the infeasible case, \(\rho=k+1\).
+\end{theorem}
+\begin{proof}
+Theorem~\ref{thm:farkas} supplies the representation
+\((0,-1)=\sum_{i=1}^m\lambda_i(a_i,\beta_i)\).
+Apply Lemma~\ref{lem:conic} to these lifted columns. Their span has dimension
+\(\rho\le k+1\). Projection of that span onto its first \(d\) coordinates
+has image of dimension \(k\). Its kernel lies on the one-dimensional vertical
+axis and contains \((0,-1)\), so its kernel has dimension exactly one.
+Rank-nullity gives \(\rho=k+1\).
+\end{proof}
+
+A nonzero contradiction necessarily has \emph{dependent} normal columns,
+since their nonnegative combination is zero. Requiring normal independence
+in contradiction search would rule out every nonzero certificate.
+Independence belongs in the lifted space for this task.
+
+\subsection{Sharpness and what the rank does not measure}
+
+For the \(k\) constraints \(z_j\le1\), \(1\le j\le k\), certifying
+\(\sum_{j=1}^k z_j\le k\) forces each multiplier to be \(1\).
+Thus \(k\) rows really may be needed for a bound.
+
+For infeasibility, take
+\[
+ z_j\le0\quad(1\le j\le k),\qquad
+ -\sum_{j=1}^k z_j\le-1.
+\]
+Unit weights give \(0\le-1\). Omitting the last row permits \(z=0\);
+omitting row \(j\) permits \(z_j=1\) with all other coordinates zero.
+Every proper subsystem is feasible, so all \(k+1\) rows are necessary.
+When \(k=0\), the final constraint is simply \(0\le-1\).
+
+The rank \(k\) is not automatically the affine dimension of \(Q\).
+With no explicit equalities, \(x\le0\), \(-x\le0\) define a singleton of
+affine dimension zero, yet certifying \(x\le0\) needs one inequality.
+Here \(k=1\). Turning a pair of inequalities into an implied equality with a
+freely signed multiplier changes the accounting: the derivation from
+original inequalities must still be retained.
+
+\section{Finite exact discovery over the rationals}
+\label{sec:search}
+
+Suppose all original data, including the target bound, are rational.
+Gaussian elimination produces rational \(x_0,N,B,\beta,q,\eta\).
+The existence proofs above use real geometry, but their sparse certificates
+can be found by rational linear algebra.
+
+\begin{proposition}[Rational sparse witnesses]\label{prop:rational}
+Whenever the hypotheses of the sparse-bound or sparse-contradiction theorem
+hold for rational data, the asserted certificate can be chosen rational.
+The recovered equality multipliers can also be chosen rational.
+\end{proposition}
+\begin{proof}
+A sparse bound certificate on independent normal columns is the unique
+solution of \(M_S\lambda_S=q\). Choose an invertible square row minor of
+\(M_S\); its inverse, and hence this unique solution, are rational.
+The remaining rows impose consistency conditions already satisfied by
+the real solution. Apply the same argument to independent lifted columns
+and target \((0,-1)\) for a contradiction. Finally,
+\eqref{eq:recover} is a consistent rational linear system and has a rational
+solution by Gaussian elimination. Empty supports use the empty rational
+vector and require no minor.
+\end{proof}
+
+No approximation or search over a denominator grid is needed. The uniqueness
+here is conditional on an independent support; it is not uniqueness among all
+certificates.
+
+\subsection{A deterministic procedure}
+
+Keep each projected row's original index. The following procedure is a
+mathematical algorithm using ideal exact rational arithmetic.
+
+\begin{enumerate}[label=\textbf{\arabic*.},leftmargin=*]
+\item \textbf{Normalize and eliminate.}
+Convert all inequality directions and the objective sense.
+Test \(Ex=f\). If inconsistent, return the equality-only contradiction.
+Otherwise compute \(x_0,N,B,\beta,q,\eta\).
+
+\item \textbf{Inspect constant rows.}
+If \(a_i=0\) and \(\beta_i<0\), that row alone is a contradiction; normalize
+its weight to \(-1/\beta_i\) and recover equality weights.
+If \(a_i=0\) and \(\beta_i\ge0\), it can be omitted from discovery.
+
+\item \textbf{For a specified bound, search normal supports.}
+Assuming nonemptiness, enumerate subsets \(S\) in increasing cardinality,
+then lexicographic original-row order, including \(S=\varnothing\), up to
+size \(k\). Skip dependent columns. Solve \(M_S\lambda_S=q\) exactly and
+accept precisely when a solution exists, \(\lambda_S\ge0\), and
+\(\beta_S^\T\lambda_S\le\eta\).
+For an exactly checked rational feasible candidate \(z^\star\), one may instead search only
+its active rows with target \(q^\T z^\star\) and use their rank.
+
+\item \textbf{For a contradiction, search lifted supports.}
+Enumerate subsets up to size \(\rho=\rank[\,B\ \beta\,]\), in increasing
+cardinality and then lexicographic original-row order, including the empty subset.
+Skip dependent lifted columns, solve
+\[
+ \sum_{i\in S}\lambda_i(a_i,\beta_i)=(0,-1),
+\]
+and accept precisely when the unique solution exists and is nonnegative.
+There is no extra vertical residual column in this contradiction search.
+
+\item \textbf{Recover and verify.}
+Pad unused inequality weights with zero, solve for \(\mu\), and check the
+original coefficient identity, original right side, and all required signs.
+For an optimum, separately check the candidate in every original row and
+check that its objective equals the certified bound.
+\end{enumerate}
+
+If nonemptiness is not known, the contradiction search can be performed first.
+Exhaustive failure of that search proves feasibility by
+Theorem~\ref{thm:farkas}, although it need not produce a feasible point.
+A practical calculation often has a feasible point available immediately.
+
+\begin{theorem}[Completeness of the ideal finite search]\label{thm:complete}
+For rational data, the exhaustive contradiction search finds a certificate
+if and only if the system is infeasible. On a nonempty feasible set, the
+exhaustive bound search finds a certificate if and only if the specified bound
+is valid. At an exactly checked rational feasible candidate,
+exhaustive active-row search finds a certificate if and only if the candidate
+is optimal. All three searches terminate in ideal exact arithmetic.
+\end{theorem}
+\begin{proof}
+Soundness follows from weighted addition and original-coordinate recovery.
+Theorems~\ref{thm:existence}, \ref{thm:sparse-bound},
+\ref{thm:sparse-contradiction}, Corollary~\ref{cor:active}, and
+Proposition~\ref{prop:rational} supply a rational witness on one of the
+enumerated independent supports whenever the corresponding property holds.
+That support's unique exact solve will recover the witness.
+There are finitely many subsets, and each finite rational elimination and
+comparison terminates.
+\end{proof}
+
+Cardinality-first direct search, stopped at its first success, minimizes the
+number of positive inequality weights among eligible certificates.
+Indeed, a smaller certificate could be reduced to independent normal support
+without increasing its size, and would have been tested earlier.
+A zero coefficient in the first accepted support would likewise give a
+smaller accepted subset. This statement does not minimize the attained
+upper bound, the size of coefficients, or a multiplier norm.
+
+\subsection{Complexity and safe shortcuts}
+
+Before rank pruning, the bound search has at most
+\begin{equation}\label{eq:count}
+ \sum_{j=0}^{\min(k,m)}\binom mj
+\end{equation}
+supports; contradiction search has at most
+\(\sum_{j=0}^{\min(k+1,m)}\binom mj\).
+For fixed \(k\), these are polynomial in \(m\), of degrees at most \(k\)
+and \(k+1\), respectively. When rank grows with input size, the subset
+family can be exponential. Each independent support requires a rational
+rank/consistency solve and sign and cost checks. These subset counts are
+not bit-complexity bounds or runtime predictions: coefficient lengths and
+the arithmetic used for elimination matter too.
+
+For hand work, start with zero and singleton supports. Use active rows when
+the candidate and purpose justify that restriction. Positive proportional
+dominance is another safe reduction: if
+\[
+ a_i=t a_j,\quad t>0,\qquad \beta_i\ge t\beta_j,
+\]
+then row \(j\) implies row \(i\). In a weighted combination, replace weight
+\(\lambda_i\) by adding \(t\lambda_i\) to row \(j\), and delete row \(i\)'s
+weight. The normal is unchanged and the cost does not increase.
+For a contradiction it remains negative and can be renormalized afterward.
+Retain the original index of the row kept.
+
+Arbitrary normal dependence does not justify deletion. The two rows
+\(x\le10\) and \(2x\le2\) point in the same direction, but retaining the
+first and discarding the second loses the useful bound \(x\le1\).
+A heuristic may reorder supports; a claim of completeness still needs a
+full fallback over the appropriate family.
+
+\section{Normalization is a choice of representation}
+\label{sec:normalization}
+
+A certificate has several different notions of size. Its number of
+nonzero inequality weights is one. The magnitudes of its multipliers,
+their denominators, and the tightness of its bound are others. Normalization
+can change some of these without changing the underlying halfspaces.
+
+\subsection{Row scaling and nonuniqueness}
+
+Replacing an inequality \((a_i,\beta_i)\) by
+\((\kappa a_i,\kappa\beta_i)\), \(\kappa>0\), preserves its halfspace.
+Dividing its multiplier by \(\kappa\) preserves its contribution to a
+certificate and preserves positive support. An equality may be scaled by
+any nonzero scalar with the reciprocal change in its multiplier.
+Negative inequality scaling must reverse the inequality direction; zero
+scaling can destroy information.
+
+For objective \(x\) and rows \(x\le1,\ 2x\le2\), every
+\[
+ \lambda=(1-2t,t),\qquad 0\le t\le\tfrac12,
+\]
+certifies the optimum \(1\). Both endpoints have minimum support one.
+Moreover, \(\|\lambda\|_1=1-t\), so minimizing that norm favors the
+second, scaled row. Dividing the second row by \(2\) makes the rows identical,
+and now every nonnegative pair summing to one has the same norm.
+A norm-based preference therefore depends on units.
+
+Even the standard contradiction normalization does not select unique weights.
+For \(x\le0,\ x\le0,\ -x\le-1\), the family
+\[
+ \lambda=(t,1-t,1),\qquad 0\le t\le1,
+\]
+has zero normal and right side \(-1\). Its norm is always \(2\); the two
+endpoints both have minimum support two.
+A preferred row order or a coefficient-size objective can select a
+representative, but soundness itself supplies no unique optimal
+normalization.
+
+A fixed nonzero objective prevents arbitrary rescaling of all bound
+multipliers: multiplying them by \(\alpha\) changes their normal from
+\(c\) to \(\alpha c\). Clearing denominators in a written identity is valid
+only if its objective side is scaled as well. Contradictions have zero
+normal, so they admit arbitrary positive rescaling before fixing right
+side \(-1\).
+
+\subsection{An exact right side can demand an unnecessary row}
+
+For \(x\le0,\ -x\le1\), the target \(x\le1\) is valid.
+If we insist that the weighted right side equal \(1\), rather than merely
+be at most \(1\), we must solve
+\[
+ \lambda_1-\lambda_2=1,\qquad \lambda_2=1.
+\]
+The result is \((2,1)\), requiring two rows although \(k=1\).
+The direct search instead accepts \((1,0)\): it proves the stronger bound
+\(x\le0\), which certainly proves \(x\le1\).
+
+One can impose exact equality in a lifted search by adding the residual
+column \(e=(0,1)\). This is mathematically sound, but the resulting support
+objective counts the residual as another generator.
+It is not the same as minimizing original inequality support.
+
+To see the difference even at \emph{first success}, take rows
+\(x\le3,\ x\le1\), and target \(x\le2\).
+The augmented columns, in order, are
+\[
+ v_1=(1,3),\qquad v_2=(1,1),\qquad e=(0,1).
+\]
+No singleton represents \((1,2)\). Lexicographic pair search first tries
+\(\{1,2\}\), which succeeds with
+\[
+ \tfrac12v_1+\tfrac12v_2=(1,2).
+\]
+It has two positive inequality weights. The later pair \(\{2,e\}\) gives
+\(v_2+e=(1,2)\), with only one positive inequality weight.
+Direct normal search tests singleton row \(1\), rejects its cost \(3>2\),
+and accepts singleton row \(2\), whose cost is \(1\).
+Thus minimum lifted-generator support and minimum original-row support
+can differ. No claim of universally fewer operations follows from this
+example.
+
+\section{Further calculations and diagnostic examples}
+\label{sec:examples}
+
+\subsection{Fractions arise naturally}
+
+Maximize \(x\) under
+\[
+ 2x+y\le\tfrac73,\qquad x-y=\tfrac12.
+\]
+Set \(y=t\), so \(x=\tfrac12+t\). The inequality becomes
+\(3t\le\tfrac43\), and the objective is \(\tfrac12+t\).
+Matching the projected objective coefficient \(1\) against the row
+coefficient \(3\) gives multiplier \(1/3\).
+The remaining original normal is
+\[
+ (1,0)-\tfrac13(2,1)=\tfrac13(1,-1),
+\]
+so the equality multiplier is also \(1/3\). Therefore
+\begin{equation}\label{eq:fraction-example}
+ \tfrac13(2x+y)+\tfrac13(x-y)=x
+ \le\tfrac79+\tfrac16=\tfrac{17}{18}.
+\end{equation}
+The reduced endpoint \(t=4/9\) gives
+\((x,y)=(17/18,4/9)\), which satisfies both rows and attains the bound.
+This calculation discovers the weights by a one-column solve, not a guess
+from a list of small integers.
+
+\subsection{A zero normal can contain the whole contradiction}
+
+Consider
+\[
+ x-y=\tfrac12,\qquad 2x-2y\le\tfrac34.
+\]
+Using \(x=\tfrac12+t,\ y=t\), the inequality becomes
+\(0t\le-\tfrac14\). Thus \(k=0\), but a contradiction uses one inequality.
+A weight of \(4\) makes the reduced right side \(-1\). The original
+inequality normal then becomes \((8,-8)\), canceled by equality weight
+\(-8\):
+\[
+ 4(2x-2y)-8(x-y)=0,\qquad
+ 4\cdot\tfrac34-8\cdot\tfrac12=-1.
+\]
+This is the \(k+1\) phenomenon in its smallest dimension.
+Deleting every zero projected row, or dividing every row by the norm of its
+projected normal, would destroy this example.
+
+\subsection{An optimum without any vertex}
+
+Maximize \(x\) in variables \((x,y)\), subject only to \(x=1\).
+Every \((1,y)\) is feasible and optimal. There is no extreme point, because
+\[
+ (1,y)=\tfrac12(1,y-1)+\tfrac12(1,y+1).
+\]
+The equality weight \(1\) and candidate \((1,0)\) certify value \(1\)
+with zero inequality weights. In the reduced coordinates the objective
+normal is \(q=0\). The feasible set is unbounded, but the objective is
+constant. Neither boundedness of the feasible set nor a primal vertex is
+needed for certificate soundness or the sparse-support conclusions.
+
+More generally, on a nonempty feasible set the zero objective has value
+zero at every feasible point. Zero multipliers prove every bound
+\(0\le\delta\) with \(\delta\ge0\). A negative target cannot be valid there.
+
+\subsection{Why an arbitrary solution of a dependent system is not enough}
+
+Suppose the normal columns are \(-1,1\), and the target is \(1\).
+Then normal matching requires
+\[
+ -\lambda_1+\lambda_2=1.
+\]
+If a row-reduction routine sets the free coordinate \(\lambda_2=0\),
+it returns \((-1,0)\), which is inadmissible. But \((0,1)\) is nonnegative,
+and so is \((t,t+1)\) for every \(t\ge0\).
+One particular inadmissible solution is not a proof that all solutions are
+inadmissible. Independent-support enumeration avoids this ambiguity:
+the second singleton has the unique positive solution \(1\).
+
+Sparsity does not bound denominator size. For a positive integer \(D\), the
+single constraint \(Dx\le1\) and objective \(x\) force the certificate
+weight \(1/D\). No fixed finite denominator grid works for all inputs.
+Likewise, under
+\[
+ x+\tfrac1{1000}y\le1,\qquad -x\le0,
+\]
+the objective \(y\) has weights \((1000,1000)\), giving bound \(1000\),
+attained at \((0,1000)\).
+The determinant of the normal matrix is \(1/1000\), not zero.
+Two rows can be enough while exact arithmetic is large or numerical
+rank determination is delicate.
+
+\section{What the published experiments and Lean results establish}
+\label{sec:evidence}
+
+This paper is an ordinary mathematical exposition based on the published
+repository snapshot
+\[
+ \texttt{e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f}.
+\]
+The source study, worked examples, and evidence records are cited in
+\cite{study,toolkit,round}. The snapshot integrates several components;
+the discussion here concerns the LP certificate and sparse-discovery work.
+
+\subsection{The finite experiment}
+
+The sparse-discovery benchmark compares direct normal search with augmented
+target search on thirteen built-in rational fixtures. Both use increasing
+support size followed by input-index order. The recorded report contains
+\(44\) runs in total. Selected attempted-subset counts are:
+\begin{center}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Bound fixture & Direct first / full & Augmented first / full\\
+\midrule
+Sharp support, \(k=3\) & \(8/8\) & \(12/16\)\\
+Duplicate and dependent normals & \(5/16\) & \(5/42\)\\
+Rational equality reduction & \(4/5\) & \(4/16\)\\
+Useful singleton last & \(8/64\) & \(8/163\)\\
+Useful singleton first & \(2/64\) & \(2/163\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+The first count stops at the first accepted representation; the full count
+exhausts the specified family. Attempted subsets include the empty set and
+dependent supports that are subsequently skipped. Counts of accepted
+representations can include zero coefficients and repeats of the same
+mathematical certificate. None of these is a count of distinct proofs
+or a timing result.
+
+The source-bound independent audit records \(5{,}040\) one-dimensional toy
+inputs, each checked by two exhaustive strategies, for \(10{,}080\)
+toy searches. It also records \(13\) zero-dimensional searches, two
+first-success counterexample searches, six original-coordinate identities,
+and two affine parametrizations. The audit used a determinant-minor and
+Cramer-rule oracle, separate from the benchmark's elimination routines.
+Fourteen ordinary regression tests and byte-identical reproduction of the
+stored benchmark report are recorded. These numbers describe different
+finite checks and should not be added into a single proof count.
+
+The toy inputs have two or three rows in one dimension, normals in
+\(\{-1,0,1\}\), budgets in \(\{0,1\}\), target coefficients in
+\(\{-2,-1,0,1,2\}\), and target budgets in \(\{-1,0,1,2\}\).
+Zero is feasible for every input. The Python checks use assertions and require
+ordinary execution without the \texttt{-O} flag.
+The toy family is deliberately bounded, and the fixture program supplies
+its affine parametrizations. It is not an arbitrary-input equality
+elimination pipeline, general LP status classifier, or exported proof bridge.
+The table and audit counts above are \emph{reported results from the cited
+snapshot}. This exposition extends neither the tested family nor the formal
+Lean scope. No runtime comparison with simplex was performed.
+They illustrate representation and ordering effects, not general performance
+superiority.
+
+\subsection{Soundness, discovery, and interface trust}
+
+The separate \texttt{lp-certificates} component contains Lean soundness
+theorems for typed certificate checks: an accepted certificate establishes
+the stated result over all real feasible points. Its typed input layer also
+proves normalization of original mixed row directions and objective sense.
+That is a substantial but specific statement about checked witnesses.
+
+The sparse-support theorems and ideal-search completeness proof in this
+paper are ordinary proofs; they have not thereby become Lean theorems.
+The existing executable finder remains deliberately incomplete.
+A returned, exactly checked witness is useful; a bounded search returning
+\emph{unknown} says no more than that it found no witness within its limits.
+
+The external JSON parser and literal transcription into typed input remain
+a trust boundary without an end-to-end refinement theorem.
+Dependency caches, the compiler/kernel, and host execution retain their
+documented trust roles. Recorded local replay uses the same Lean kernel;
+it provides no validation by an independent kernel.
+Reading saved receipts or inspecting their hashes
+does not run the Lean kernel again. The publication also records limits of
+dependency-cleanliness checks and saved-process metadata validation.
+The detailed report is the appropriate place for those implementation
+conditions~\cite{round,toolkit}.
+
+In particular, the formal package does not claim a general completeness or
+termination theorem for its finder, general strong duality, or formal
+converse/existence results. Our ordinary proof of a finite exhaustive
+procedure does not silently discharge those formal obligations.
+Numerical approximations must still be reconstructed and checked exactly;
+a small residual is not an identity.
+
+\section{A practical conclusion}
+
+For a hand-sized rational problem, the most effective first question is
+often: \emph{which few constraints could add up to the objective?}
+The answer becomes clearer after the equality directions have been removed.
+A useful working order is:
+\begin{enumerate}[label=\arabic*.,leftmargin=*]
+\item Write all signs and bounds explicitly, then solve the equalities.
+\item Look for an immediate constant-row contradiction.
+\item Find or check a feasible candidate when possible; reduce the objective
+      and identify its active rows.
+\item Match the projected objective with one row, then two, and so on.
+      Keep the right-side test as an inequality.
+\item Recover signed equality weights and write the final identity using the
+      original rows.
+\item Check feasibility and attainment separately before declaring an optimum.
+\end{enumerate}
+
+The structural reason this can be economical is now precise:
+a nonempty feasible set permits cost-aware reduction to \(k\) independent
+projected normals, while a contradiction lives in a lifted space and may
+need \(k+1\) rows. Neither argument requires artificial variables, splitting
+free variables into positive parts, or adding one slack variable per row.
+This is a principled way to seek short proofs. It does not remove the
+combinatorial cost of discovery or replace general LP algorithms on large
+instances.
+
+\begin{thebibliography}{9}
+\small
+
+\bibitem{border}
+KC Border.
+\emph{Alternative Linear Inequalities}.
+September 2013, revised 15 October 2020.
+Author-hosted notes, California Institute of Technology.
+Theorems 3--5, p.~3; Proposition 35, p.~17.
+\href{https://kcborder.caltech.edu/Notes/Alternative.pdf}
+{Author PDF}.
+
+\bibitem{bertsekas3}
+Dimitri P. Bertsekas.
+\emph{Convex Analysis and Optimization}, MIT 6.253, Spring 2012,
+Lecture 3. Conic Carath\'eodory theorem and proof, PDF pp.~8--9.
+\href{https://ocw.mit.edu/courses/6-253-convex-analysis-and-optimization-spring-2012/3e2a100d7fa327637ed8e31771a22c18_MIT6_253S12_lec03.pdf}
+{MIT OpenCourseWare PDF}.
+
+\bibitem{bertsekas10}
+Dimitri P. Bertsekas.
+\emph{Convex Analysis and Optimization}, MIT 6.253, Spring 2012,
+Lecture 10. Linear Farkas lemma, LP duality, and active normals,
+PDF pp.~7--9.
+\href{https://ocw.mit.edu/courses/6-253-convex-analysis-and-optimization-spring-2012/9f80ea2051c10cc0f8cf3839983c381a_MIT6_253S12_lec10.pdf}
+{MIT OpenCourseWare PDF}.
+
+\bibitem{boyd}
+Stephen Boyd and Lieven Vandenberghe.
+\emph{Convex Optimization}, lecture slides, revised with Parth Nobel.
+Equality elimination, slide 4.35, PDF p.~122; also PDF p.~331.
+\href{https://web.stanford.edu/~boyd/cvxbook/bv_cvxslides.pdf}
+{Author-hosted slides}.
+See also their \emph{Convex Optimization}, Cambridge University Press, 2004,
+and the \href{https://web.stanford.edu/~boyd/cvxbook/}{book website}.
+
+\bibitem{study}
+\emph{Sparse discovery of linear-programming certificates}.
+Codex for Math repository, \texttt{lp-sparse-discovery}, 13 October 2026.
+Study, examples, source notes, benchmark, and independent reviews.
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/lp-sparse-discovery}
+{Exact source snapshot}.
+
+\bibitem{toolkit}
+\emph{Rational LP certificate toolkit}.
+Codex for Math repository, \texttt{lp-certificates}.
+Mathematical notes, soundness scope, and publication trust limits.
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/lp-certificates}
+{Exact source snapshot}.
+
+\bibitem{round}
+\emph{Mathematics research round 13 October 2026}.
+Codex for Math repository, publication report.
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/publication/ROUND-2026-10-13.md}
+{Source-bound publication report}.
+
+\end{thebibliography}
+\end{document}
+
+
