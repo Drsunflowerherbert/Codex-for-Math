@@ -112,6 +112,9 @@ def main():
     with (ROOT / 'problems.csv').open(newline='') as f:
         csv_rows = list(csv.DictReader(f))
     require([p['id'] for p in csv_rows] == [p['id'] for p in rows], 'Stale CSV view')
+    for csv_row, record in zip(csv_rows, rows):
+        expected = {k: '; '.join(v) if isinstance(v, list) else ('' if v is None else str(v)) for k, v in record.items()}
+        require(csv_row == expected, 'CSV values differ from source metadata: '+record['id'])
     registry = json.loads((ROOT / 'authored-solutions.json').read_text())
     require(len(registry['solutions']) == 3, 'Original attempt batch exceeds bounded scope')
     for p in registry['solutions']:

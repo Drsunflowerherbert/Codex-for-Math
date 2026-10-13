@@ -67,9 +67,11 @@ The three authored full solutions in this edition are separate from these observ
 | File | SHA-256 |
 | --- | --- |
 | `catalogs/yau-analysis.json` | `893c89e42071fd2211fa3da6f9da6ff570512dae38e1ad910ae72e8e5f901479` |
-| `catalogs/yau-analysis.md` | `5d7de35eac374678a8c899dfe195b3ca5ea7df9b8c8edac46fac0187f5f13173` |
+| `catalogs/yau-analysis.md` | `a2333731746e7195e012271eea623a450f259c220aea4518bbe2bc3625587c92` |
 | `catalogs/yau-source-manifest.json` | `32f6fad07477946f960b3050ad9f70f11294a28cd33138c0b0b67d8bab20dd3f` |
 | `catalogs/yau-official-solutions.md` | `d29d0fb6206bb161ca044a1c7ede144c1bb18f399789f77c804d575cb16c0a70` |
 | `catalogs/yau-source-issues.md` | `a7b15522958915339e9d6b38776f0fa5e56ca3c39178f2349f4ab2e622efe9ae` |
+
+A final cosmetic update removed exactly one trailing blank line from `catalogs/yau-analysis.md`. Reconstructing the prior bytes by appending one newline reproduced its prior audited hash. The table above records the refreshed hash; the other four artifact hashes remained unchanged.
 
 No substantive catalog file was edited by this reviewer. The initial collector draft, the independent findings, and the final corrections were handled separately. Material changes to coverage, source mappings, or mathematical observations require renewed review.

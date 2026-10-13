@@ -77,7 +77,7 @@ def main():
     rows = records()
     columns = list(rows[0])
     with (ROOT / 'problems.csv').open('w', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=columns)
+        writer = csv.DictWriter(f, fieldnames=columns, lineterminator='\n')
         writer.writeheader()
         for p in rows:
             writer.writerow({k: '; '.join(v) if isinstance(v, list) else v for k, v in p.items()})

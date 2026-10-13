@@ -343,4 +343,3 @@ Official archive member: `2010-2026历年笔试真题/2025/analysis.pdf`. Covere
 | 4 | Closed curves, degree, and regular homotopy | complex and harmonic analysis | very advanced | Yes; details separate |
 | 5 | Separation of closed sets by a continuous function | real analysis | entry advanced |  |
 | 6 | Mean oscillation and the BMO seminorm | real analysis | very advanced |  |
-
