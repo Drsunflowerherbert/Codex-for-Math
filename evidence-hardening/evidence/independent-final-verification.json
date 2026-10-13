@@ -1,0 +1,443 @@
+{
+  "schema": "independent-evidence-hardening-final-verification/v1",
+  "testedUTC": "2026-10-13T02:07:22.086622+00:00",
+  "reviewer": "independent verification subagent, production files unchanged by reviewer",
+  "baselineCommit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+  "baselineReport": "/tmp/evidence-verification-20261013/baseline-verification.json",
+  "sourceSnapshot": "/tmp/evidence-verification-20261013/companion-review-04",
+  "testedSourceSHA256": {
+    "baseline.json": "a56da69f5106fd0543b32bf7e08c0b338ed08c2bb280d0d39a9bab4fd4ccef19",
+    "capture.cjs": "d007d9473458cb31d242ebb86f3fdf93bcdae40ddc67683e8fca668160b4415a",
+    "fixture-gate.cjs": "46b8ec14ef8bfa1b24fcbaf7d0c1ab24a84795f42e6d41d176033db7618555f5",
+    "fixture-policy.json": "6efd993160d0ad600a3b58b3c84d62d18a803996204f13d52073da3c2b9c0a04",
+    "git-source.cjs": "4e952dd308f44ab204996a588a6c7b3da742bcfb679b2843deb9f4876ea9300c",
+    "inspect-v1.cjs": "a797a42b48a2b7dbf88d4e4d2617395c3d46dc4cb3b5fcd0b78fb3ddcec22877",
+    "io.cjs": "15ecc07d3ca619dc4d2e7504c07a39358aabd31abb4e31dcaa9c94e898d94390",
+    "lean/BadReplay.lean": "c7b1867c1474f4b79febdb5815419650ef2fe8f467d8a6d25f87ba214bf1ae09",
+    "lean/BadTypes.lean": "f0264e7f819ba34e10851599c15fd61e2503f180e9ddb7942448a60257afb5a0",
+    "lean/Dependency.lean": "6fb8250a46978f0377eff6f8023e31314dff73c31d46e1bab258d189cc00edb0",
+    "lean/EvidenceHarness.lean": "bb71282fcb088498a9c40b0460694f1663e8f3a145fc15469050b8ade2f390dc",
+    "lean/ExpectedDefinitions.lean": "1c63746c6aac4ffada39755f897d2c1ba56bc725717be8bfb6062a6935693b5b",
+    "lean/ExpectedTypes.lean": "b7f79788729dd52f8bfda08f7ec823be74b3f3b7bdc3fb4d6836f0d6ab70104c",
+    "lean/Replay.lean": "89f50cf72bdcadc32e66a41f2640e774076b87e054d424760fc758b3cc1ac2b6",
+    "lean/SpecializedTypes.lean": "e30b70ac46c15eea15dd5c891329790592cfb86968dd0004c80711e1fa243c4d",
+    "lean/cases/custom-axiom.lean": "26d4fafd1fea889bbf67c7b6a9ccb0449bd0a1b96d685cc55ff0767ee2a4b284",
+    "lean/cases/definition-substitution.lean": "45b8f527cf05753e4919e0b89baa30303ed9d5d79c49624b5b9e222dd1fa7f90",
+    "lean/cases/hidden-assumption.lean": "8eadb4b73468bf7224942ce9360f21444782e907150cb6d72da51abc91e832b4",
+    "lean/cases/skip-kernel.lean": "e2b924120b682f7c2c9be4c398b5d1a5c8c23464e2b392fdb26954667690f4ab",
+    "lean/cases/sorry.lean": "7575806b1798a43fc31bbb28de18c8910f9a6d3c1aec4d1afeb29506a3d9ed36",
+    "lean/cases/statement-drift.lean": "4a94c988ee4088c030a4eb8e3a56157084c532c1fc14ba7775a037b38db13df5",
+    "lean/cases/transitive-drift.lean": "d9b14d6f6951798cae3f022cb4f022f57066774c24eae5c8ef3e78bf1e53e529",
+    "lean/cases/valid.lean": "30690691f4d6ecfd68ffe7e6c9ce5128260324a53db3ae9771c4f23a37cf8223",
+    "lean/cases/wrong-name.lean": "6d519746491afd4146ee077f1a4f4a74331911dbac63ad2f05388d82b158c15d",
+    "lean/lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "process-contract.cjs": "75b1a08340cacd5dd7a445cf832507bf79d731d28570bfcb1ef3b16806dfed5a",
+    "tests/independent-fixture-import.cjs": "f0ad5dd7e5488250e23c1c6abd1a5aa78fcf08bf44d9088c368f0d763051bec8",
+    "tests/independent-runtime.cjs": "3b07891050d1116499f626f32a6f20cb704616dcaf9713d1cebfdbdc918065e3",
+    "tests/independent-v1.cjs": "e6d440c66731c57238bfca8c212a32d5b275c354744d551104e9f44c6fd634c8",
+    "tests/lean-corpus.cjs": "367bfdd8598cc75f4c8c3507d5ba90eac0c88df519d96c621b49b76e43e26e51",
+    "tests/regression.cjs": "50419ba35fa75ae380157b435ae91fb9b21fc8e6bde7db9c3f4b004f87ee3d03",
+    "vendor/live-plans.cjs": "9596338e326943b7cc539c34670b0efaba8f7e9d7f7ebe3f1f959817ebba76c3",
+    "vendor/strict-json.cjs": "375a555e00eb401c16235a5a84c57995b73db418f4ef02709b272c7a95469e0b"
+  },
+  "snapshotMatchesCurrentForAllTestedFiles": true,
+  "mismatches": [],
+  "commands": [
+    {
+      "name": "public-regression",
+      "argv": [
+        "node",
+        "/tmp/evidence-verification-20261013/companion-review-04/tests/regression.cjs",
+        "/tmp/evidence-verification-20261013/final-04/public-regression-report.json"
+      ],
+      "cwd": "/workspace",
+      "started": "2026-10-13T02:03:12.514146+00:00",
+      "finished": "2026-10-13T02:03:13.183908+00:00",
+      "exit": 0,
+      "stdout": "public-regression.stdout",
+      "stderr": "public-regression.stderr",
+      "stdoutBytes": 5863,
+      "stdoutSHA256": "5b0e33f01deee6d5cd113a1341672f3a37b90fd7ebe11ea85e1e5273a9ef63a7",
+      "stderrBytes": 0,
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "public-lean-corpus",
+      "argv": [
+        "node",
+        "/tmp/evidence-verification-20261013/companion-review-04/tests/lean-corpus.cjs",
+        "/workspace/evidence-verification-env/tangent-limit/.elan/toolchains/v4.24.0/bin/lean",
+        "/tmp/evidence-verification-20261013/final-04",
+        "/tmp/evidence-verification-20261013/final-04/public-lean-corpus-report.json"
+      ],
+      "cwd": "/workspace",
+      "started": "2026-10-13T02:03:12.514628+00:00",
+      "finished": "2026-10-13T02:03:43.560669+00:00",
+      "exit": 0,
+      "stdout": "public-lean-corpus.stdout",
+      "stderr": "public-lean-corpus.stderr",
+      "stdoutBytes": 346,
+      "stdoutSHA256": "fb37c3bf61f9da9fe3c72467f897bd60aa4334d8c438a970a0d1d427c350b01d",
+      "stderrBytes": 0,
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "independent-v1",
+      "argv": [
+        "node",
+        "/tmp/evidence-verification-20261013/companion-review-04/tests/independent-v1.cjs",
+        "/tmp/evidence-verification-20261013/companion-review-04",
+        "/workspace/evidence-verification-env/live-tests/live-review-Eg9deU/15-valid",
+        "/tmp/evidence-verification-20261013/final-04/independent-v1-mutations"
+      ],
+      "cwd": "/workspace",
+      "started": "2026-10-13T02:03:12.515234+00:00",
+      "finished": "2026-10-13T02:03:17.698011+00:00",
+      "exit": 0,
+      "stdout": "independent-v1.stdout",
+      "stderr": "independent-v1.stderr",
+      "stdoutBytes": 1860,
+      "stdoutSHA256": "5e8d7d469562374203f1d82cd1ceab50fa5e84d8507aca6ee152472f2a7a1388",
+      "stderrBytes": 0,
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "inspect-general",
+      "argv": [
+        "node",
+        "/tmp/evidence-verification-20261013/companion-review-04/inspect-v1.cjs",
+        "/workspace/evidence-verification-env/live-tests/live-review-Eg9deU/22-general"
+      ],
+      "cwd": "/workspace",
+      "started": "2026-10-13T02:03:12.515571+00:00",
+      "finished": "2026-10-13T02:03:12.786705+00:00",
+      "exit": 0,
+      "stdout": "inspect-general.stdout",
+      "stderr": "inspect-general.stderr",
+      "stdoutBytes": 487,
+      "stdoutSHA256": "1bca94cab4a249c0a0c4e24f55b82dfba4d26d8591560a7be7f6b24686b60d9d",
+      "stderrBytes": 0,
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "inspect-tangent",
+      "argv": [
+        "node",
+        "/tmp/evidence-verification-20261013/companion-review-04/inspect-v1.cjs",
+        "/workspace/evidence-verification-env/live-tests/tangent"
+      ],
+      "cwd": "/workspace",
+      "started": "2026-10-13T02:03:12.515814+00:00",
+      "finished": "2026-10-13T02:03:12.836867+00:00",
+      "exit": 0,
+      "stdout": "inspect-tangent.stdout",
+      "stderr": "inspect-tangent.stderr",
+      "stdoutBytes": 487,
+      "stdoutSHA256": "23eddef24ab971ad5ea7a091d3b97fc4c82c22677d73c6120c65f5b363438623",
+      "stderrBytes": 0,
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "independent-fixture-import",
+      "argv": [
+        "node",
+        "/tmp/evidence-verification-20261013/companion-review-04/tests/independent-fixture-import.cjs",
+        "/tmp/evidence-verification-20261013/companion-review-04",
+        "/tmp/evidence-verification-20261013/final-04/lean-corpus-1F4Yjr/valid",
+        "/tmp/evidence-verification-20261013/final-04/independent-fixture-mutations"
+      ],
+      "cwd": "/workspace",
+      "started": "2026-10-13T02:05:21.489577+00:00",
+      "finished": "2026-10-13T02:05:23.560367+00:00",
+      "exit": 0,
+      "stdout": "independent-fixture-import.stdout",
+      "stderr": "independent-fixture-import.stderr",
+      "stdoutBytes": 1382,
+      "stdoutSHA256": "93291978e9a39028e899d49e87c9bbede8a791167f908e33e2be7ec90aca1e7b",
+      "stderrBytes": 0,
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "independent-runtime",
+      "argv": [
+        "node",
+        "/tmp/evidence-verification-20261013/companion-review-04/tests/independent-runtime.cjs",
+        "/tmp/evidence-verification-20261013/companion-review-04",
+        "/workspace/evidence-verification-env/tangent-limit/.elan/toolchains/v4.24.0/bin/lean",
+        "/tmp/evidence-verification-20261013/final-04/lean-corpus-1F4Yjr/valid",
+        "/tmp/evidence-verification-20261013/final-04/independent-runtime-tests"
+      ],
+      "cwd": "/workspace",
+      "started": "2026-10-13T02:05:21.490146+00:00",
+      "finished": "2026-10-13T02:05:24.814615+00:00",
+      "exit": 0,
+      "stdout": "independent-runtime.stdout",
+      "stderr": "independent-runtime.stderr",
+      "stdoutBytes": 273,
+      "stdoutSHA256": "ff26044fc90bcf49cc4bafad8dc9df72d7d597e4c320a4d6c840858cb7224b69",
+      "stderrBytes": 0,
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "fixture-import-cli",
+      "argv": [
+        "node",
+        "/tmp/evidence-verification-20261013/companion-review-04/fixture-gate.cjs",
+        "inspect",
+        "/tmp/evidence-verification-20261013/final-04/lean-corpus-1F4Yjr/valid"
+      ],
+      "cwd": "/workspace",
+      "started": "2026-10-13T02:05:21.490716+00:00",
+      "finished": "2026-10-13T02:05:21.705194+00:00",
+      "exit": 0,
+      "stdout": "fixture-import-cli.stdout",
+      "stderr": "fixture-import-cli.stderr",
+      "stdoutBytes": 302,
+      "stdoutSHA256": "5e07c3fa7512840f264d8be8355e2fc05c58581f4cfa8355116815624945ce06",
+      "stderrBytes": 0,
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "reports": {
+    "publicRegression": {
+      "path": "/tmp/evidence-verification-20261013/final-04/public-regression-report.json",
+      "bytes": 5863,
+      "sha256": "5b0e33f01deee6d5cd113a1341672f3a37b90fd7ebe11ea85e1e5273a9ef63a7",
+      "total": 49,
+      "passed": 49,
+      "sourceUnchanged": null
+    },
+    "publicLeanCorpus": {
+      "path": "/tmp/evidence-verification-20261013/final-04/public-lean-corpus-report.json",
+      "bytes": 23667,
+      "sha256": "eaf09efb85e723ef818d79a3c514f0878d0a20aca0853e8b86c226d43fe1b8fa",
+      "total": 10,
+      "passed": 10,
+      "sourceUnchanged": true
+    },
+    "independentV1Mutations": {
+      "path": "/tmp/evidence-verification-20261013/final-04/independent-v1-mutations/report.json",
+      "bytes": 11937,
+      "sha256": "8613218a34500d97603701b05bdbda730d366bb6c32dea529cff084769b9f836",
+      "total": 57,
+      "passed": 57,
+      "sourceUnchanged": true
+    },
+    "independentFixtureMutations": {
+      "path": "/tmp/evidence-verification-20261013/final-04/independent-fixture-mutations/report.json",
+      "bytes": 13511,
+      "sha256": "62657d66c3905eb3191621f37e9aac85e17db8edf0e7d5def7a82de878a407b3",
+      "total": 45,
+      "passed": 45,
+      "sourceUnchanged": true
+    },
+    "independentRuntime": {
+      "path": "/tmp/evidence-verification-20261013/final-04/independent-runtime-tests/report.json",
+      "bytes": 7739,
+      "sha256": "4d13ea8de8d28c577085d2e214e6db2e414bfff682824bf2eb0d4022eb97fe65",
+      "total": 5,
+      "passed": 5,
+      "sourceUnchanged": true
+    }
+  },
+  "packageSourceChecks": {
+    "schema": "independent-pinned-package-source-checks/v1",
+    "sourceHashesBefore": {
+      "git-source.cjs": "4e952dd308f44ab204996a588a6c7b3da742bcfb679b2843deb9f4876ea9300c",
+      "io.cjs": "15ecc07d3ca619dc4d2e7504c07a39358aabd31abb4e31dcaa9c94e898d94390",
+      "vendor/strict-json.cjs": "375a555e00eb401c16235a5a84c57995b73db418f4ef02709b272c7a95469e0b"
+    },
+    "sourceHashesAfter": {
+      "git-source.cjs": "4e952dd308f44ab204996a588a6c7b3da742bcfb679b2843deb9f4876ea9300c",
+      "io.cjs": "15ecc07d3ca619dc4d2e7504c07a39358aabd31abb4e31dcaa9c94e898d94390",
+      "vendor/strict-json.cjs": "375a555e00eb401c16235a5a84c57995b73db418f4ef02709b272c7a95469e0b"
+    },
+    "sourceUnchanged": true,
+    "total": 9,
+    "passed": 9,
+    "results": [
+      {
+        "name": "mathlib",
+        "argv": [
+          "node",
+          "/tmp/evidence-verification-20261013/companion-review-04/git-source.cjs",
+          "/workspace/evidence-verification-env/tangent-limit/.lake/packages/mathlib",
+          "f897ebcf72cd16f89ab4577d0c826cd14afaafc7"
+        ],
+        "started": "2026-10-13T02:03:13.745425+00:00",
+        "finished": "2026-10-13T02:03:17.978895+00:00",
+        "exit": 0,
+        "files": 7575,
+        "sourceClosureSHA256": "969916d1cb06b480fedafb16ecc93536ae40582b73b992da56bc9b0e29259de2",
+        "error": null,
+        "leanPass": false
+      },
+      {
+        "name": "plausible",
+        "argv": [
+          "node",
+          "/tmp/evidence-verification-20261013/companion-review-04/git-source.cjs",
+          "/workspace/evidence-verification-env/tangent-limit/.lake/packages/plausible",
+          "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805"
+        ],
+        "started": "2026-10-13T02:03:17.979021+00:00",
+        "finished": "2026-10-13T02:03:18.048638+00:00",
+        "exit": 0,
+        "files": 19,
+        "sourceClosureSHA256": "1dc2cde84d2e383747f7ff2a4d7ffe92ba879e54cca0436c982f5f9aa5a1e412",
+        "error": null,
+        "leanPass": false
+      },
+      {
+        "name": "LeanSearchClient",
+        "argv": [
+          "node",
+          "/tmp/evidence-verification-20261013/companion-review-04/git-source.cjs",
+          "/workspace/evidence-verification-env/tangent-limit/.lake/packages/LeanSearchClient",
+          "99657ad92e23804e279f77ea6dbdeebaa1317b98"
+        ],
+        "started": "2026-10-13T02:03:18.048769+00:00",
+        "finished": "2026-10-13T02:03:18.113816+00:00",
+        "exit": 0,
+        "files": 16,
+        "sourceClosureSHA256": "627d98839ad04c0c6c5b9bf2db2c26d9d8f555ae17ed6c5e7cbad3b6931f11eb",
+        "error": null,
+        "leanPass": false
+      },
+      {
+        "name": "importGraph",
+        "argv": [
+          "node",
+          "/tmp/evidence-verification-20261013/companion-review-04/git-source.cjs",
+          "/workspace/evidence-verification-env/tangent-limit/.lake/packages/importGraph",
+          "d768126816be17600904726ca7976b185786e6b9"
+        ],
+        "started": "2026-10-13T02:03:18.113881+00:00",
+        "finished": "2026-10-13T02:03:18.213201+00:00",
+        "exit": 0,
+        "files": 35,
+        "sourceClosureSHA256": "1f374db3f8819dfa2015656e98de222ca0d48bed980ff2dfb55cc1897c3e9820",
+        "error": null,
+        "leanPass": false
+      },
+      {
+        "name": "proofwidgets",
+        "argv": [
+          "node",
+          "/tmp/evidence-verification-20261013/companion-review-04/git-source.cjs",
+          "/workspace/evidence-verification-env/tangent-limit/.lake/packages/proofwidgets",
+          "556caed0eadb7901e068131d1be208dd907d07a2"
+        ],
+        "started": "2026-10-13T02:03:18.213269+00:00",
+        "finished": "2026-10-13T02:03:18.307252+00:00",
+        "exit": 0,
+        "files": 74,
+        "sourceClosureSHA256": "fe581cbedba555717f8da9871dbde2f436db4ba770c387fbad64d2f4353d8ae2",
+        "error": null,
+        "leanPass": false
+      },
+      {
+        "name": "aesop",
+        "argv": [
+          "node",
+          "/tmp/evidence-verification-20261013/companion-review-04/git-source.cjs",
+          "/workspace/evidence-verification-env/tangent-limit/.lake/packages/aesop",
+          "725ac8cd67acd70a7beaf47c3725e23484c1ef50"
+        ],
+        "started": "2026-10-13T02:03:18.307318+00:00",
+        "finished": "2026-10-13T02:03:18.519482+00:00",
+        "exit": 0,
+        "files": 251,
+        "sourceClosureSHA256": "47c0a7142f4b7c7b995f1ad084b6a5d98c6fc9bff12b8ecf4f9c661506dc8a36",
+        "error": null,
+        "leanPass": false
+      },
+      {
+        "name": "Qq",
+        "argv": [
+          "node",
+          "/tmp/evidence-verification-20261013/companion-review-04/git-source.cjs",
+          "/workspace/evidence-verification-env/tangent-limit/.lake/packages/Qq",
+          "dea6a3361fa36d5a13f87333dc506ada582e025c"
+        ],
+        "started": "2026-10-13T02:03:18.519551+00:00",
+        "finished": "2026-10-13T02:03:18.593445+00:00",
+        "exit": 0,
+        "files": 36,
+        "sourceClosureSHA256": "782be39fc96602d96e381320fdb7d85f698ad83e20d6d0429d794fa735eef567",
+        "error": null,
+        "leanPass": false
+      },
+      {
+        "name": "batteries",
+        "argv": [
+          "node",
+          "/tmp/evidence-verification-20261013/companion-review-04/git-source.cjs",
+          "/workspace/evidence-verification-env/tangent-limit/.lake/packages/batteries",
+          "8da40b72fece29b7d3fe3d768bac4c8910ce9bee"
+        ],
+        "started": "2026-10-13T02:03:18.593509+00:00",
+        "finished": "2026-10-13T02:03:18.776380+00:00",
+        "exit": 0,
+        "files": 258,
+        "sourceClosureSHA256": "e3d9ddee6de5ea67ebe86d05fed1ce74d5250b0d2096a8da57a1672cee9ddcc4",
+        "error": null,
+        "leanPass": false
+      },
+      {
+        "name": "Cli",
+        "argv": [
+          "node",
+          "/tmp/evidence-verification-20261013/companion-review-04/git-source.cjs",
+          "/workspace/evidence-verification-env/tangent-limit/.lake/packages/Cli",
+          "91c18fa62838ad0ab7384c03c9684d99d306e1da"
+        ],
+        "started": "2026-10-13T02:03:18.776443+00:00",
+        "finished": "2026-10-13T02:03:18.860972+00:00",
+        "exit": 0,
+        "files": 12,
+        "sourceClosureSHA256": "68ea4985d3ab8168976bd956301d64aa54596f5a2fc6f3dd459d6e47134920dd",
+        "error": null,
+        "leanPass": false
+      }
+    ]
+  },
+  "packageTrackedEntries": 8276,
+  "freshValidReceipt": {
+    "path": "/tmp/evidence-verification-20261013/final-04/lean-corpus-1F4Yjr/valid",
+    "bytes": 18650,
+    "sha256": "2a6f3271a0d69d3bbe0e6a66259257cde4ccae38f476a23522b16602ff069353",
+    "sourceDigest": "738cae9009e2dc05dab9ff2081372326e87402bd4ea24e3845acf115d68b0500"
+  },
+  "interpretation": {
+    "publicRegression": "49 actual Node/filesystem/Git checks; no Lean acceptance",
+    "actualCoreFixtureCorpus": "10 actual pinned Lean fixtures; all intended gates reached; all10 target builds verified, only valid formal fixture accepted",
+    "baselineReceiptImport": "57 cases; reported integrity only, no fresh Lean pass; general and conditional tangent receipts also accepted only as reported integrity",
+    "fixtureReceiptImport": "45 cases; reported integrity only; coherently aged receipt grants no freshness",
+    "runtime": "5 cases; actual observed Lean abort and timeout reject; preabort no process; unpinned source rejected before attempt; old receipt rejected under changed reviewed source policy",
+    "packageSource": "9 pinned package source closures checked bytewise; documentation symlink target bytes only, never followed; external caches excluded and trusted"
+  },
+  "trustLimits": [
+    "same official Lean kernel; independent kernel not performed",
+    "fixed core fixtures use trusted imported core OLeans and do not use mathlib",
+    "baseline tangent uses external pinned mathlib OLean cache; dependency source rebuild not performed",
+    "predicate False\u2192False conditional fixture does not prove False",
+    "baseline PiDiophantine remains an explicit unproved premise",
+    "stored receipt hashes do not authenticate historical process events or freshness",
+    "arbitrary Lean import closure completeness not established",
+    "native Mac and installed MRS integration unvalidated",
+    "source/package hashes are provenance, not novelty or licenses"
+  ],
+  "durableIndependentTests": [
+    "tests/independent-v1.cjs",
+    "tests/independent-fixture-import.cjs",
+    "tests/independent-runtime.cjs"
+  ],
+  "supersededFailedChecksPreserved": [
+    "initial shallow ProofWidgets cache attempt lacked release tag; exact tag fetched at same pinned commit",
+    "initial inspector expected relative compile source argv; fixed to actual absolute argv",
+    "snapshot02 hidden-assumption failed at compilation; fixed include hidden and retested intended type gate",
+    "snapshot02 mathlib apostrophe paths and batteries doc symlink unsupported; bounded compatibility fixes retested all9"
+  ],
+  "remainingBlockers": []
+}

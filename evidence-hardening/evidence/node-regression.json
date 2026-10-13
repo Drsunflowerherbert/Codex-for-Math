@@ -1,0 +1,290 @@
+{
+  "schema": "evidence-hardening-regression/v1",
+  "mode": "actual_Node_filesystem_Git_no_Lean",
+  "started": "2026-10-13T02:03:12.566Z",
+  "runtime": "v24.19.0",
+  "results": [
+    {
+      "name": "well_formed_process",
+      "pass": true,
+      "observed": {
+        "start": 1791853200000,
+        "end": 1791853200001,
+        "success": true
+      }
+    },
+    {
+      "name": "reject_exit_code_string",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_exit_code_negative",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_signal_and_exit",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_pid_negative",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_process_group_mismatch",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_error_on_success",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_duration_negative",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_clock_reversed",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_invalid_timestamp",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_noncanonical_timestamp",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_duration_contradiction",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_output_cap_negative",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_bytes_exceed_cap",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_environment_shape",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_environment_extra",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_environment_value",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_reused_channel",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_extra_descriptor",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_wrong_success",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_unknown_termination",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_missing_exit",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "strict_json_duplicate_key",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "strict_json_decoded_duplicate",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "strict_json_nonfinite",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "strict_json_unpaired_surrogate",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "strict_json_prototype_key",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "strict_json_trailing",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "lean_marker_parse",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_lean_log_error",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_lean_log_truncated",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_lean_log_text",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_lean_log_duplicate",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_lean_log_utf8",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "regular_read",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_path_escape",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_size",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_symlink",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_hardlink",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "reject_FIFO_without_blocking",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "actual_capture_success",
+      "pass": true,
+      "observed": {
+        "kind": "exited",
+        "exitCode": 0,
+        "signal": null,
+        "pid": 8809,
+        "processGroup": 8809
+      }
+    },
+    {
+      "name": "actual_capture_nonzero",
+      "pass": true,
+      "observed": {
+        "kind": "exited",
+        "exitCode": 7,
+        "signal": null,
+        "pid": 8816,
+        "processGroup": 8816
+      }
+    },
+    {
+      "name": "actual_capture_launch_failure",
+      "pass": true,
+      "observed": {
+        "kind": "launch_failed",
+        "exitCode": null,
+        "signal": null,
+        "pid": null,
+        "processGroup": null
+      }
+    },
+    {
+      "name": "actual_capture_timeout",
+      "pass": true,
+      "observed": {
+        "kind": "timeout",
+        "exitCode": null,
+        "signal": "SIGTERM",
+        "pid": 8824,
+        "processGroup": 8824
+      }
+    },
+    {
+      "name": "git_clean_byte_identity",
+      "pass": true,
+      "observed": {
+        "files": 2,
+        "sourceClosureSHA256": "d692562b72a22ff560a177bdccd5eac8111be01ac9b724758c85c4195a8f5ee0"
+      }
+    },
+    {
+      "name": "git_hidden_modification_assume-unchanged",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "git_hidden_modification_skip-worktree",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "git_replacement_ref_rejected",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "name": "git_untracked_import_rejected",
+      "pass": true,
+      "observed": null
+    }
+  ],
+  "finished": "2026-10-13T02:03:13.165Z",
+  "total": 49,
+  "passed": 49,
+  "failed": [],
+  "leanPasses": 0,
+  "root": "/tmp/evidence-hardening-regression-CkCUxX"
+}

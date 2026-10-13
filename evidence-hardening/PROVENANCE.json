@@ -1,0 +1,97 @@
+{
+  "assigned_branch": "codex/evidence-hardening-2026-10-13",
+  "baseline_acquisition_commands": [
+    "git ls-remote --heads origin",
+    "git fetch --no-tags origin b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+    "git worktree add -b codex/evidence-hardening-2026-10-13 /workspace/evidence-hardening-work b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+    "git fetch --no-tags origin codex/research-2026-10-11",
+    "git rev-parse FETCH_HEAD"
+  ],
+  "baseline_acquisition_result": "all successful; fetched named branch resolved to verified starting commit",
+  "baseline_metadata": "baseline.json is a derived exact hash/size map of 92 toolkit files plus the unchanged public catalog and Lake lock; no private archive contents",
+  "bounded_round": {
+    "completion_policy": "publish reviewed bounded tooling results; no invented mathematical completion",
+    "deadline": "2026-10-13T04:40:00Z",
+    "development_stopped_before": "2026-10-13T04:05:00Z",
+    "production_frozen_by": "2026-10-13T02:03:00Z"
+  },
+  "environment_incident": "One exec-server transport closure; fresh harmless shell command succeeded and file/branch hashes confirmed preservation; no restart/configuration/security change",
+  "excluded_actions": [
+    "purchases",
+    "credential/account/security changes",
+    "Library intermediates",
+    "native MRS skill edits",
+    "PR",
+    "merge",
+    "force push",
+    "shared manifest edits",
+    "research/tangent branch edits"
+  ],
+  "independent_work": {
+    "adversarial_review": "separate subagent; no production code contributions; source/process/statement scope and regression challenge",
+    "verification": "separate subagent; no production edits; authored disclosed independent test harnesses and ran official pinned toolchain tests"
+  },
+  "license_review": "Existing THIRD-PARTY.md read; new code has no assigned license; preserved baseline attribution; no dependency source/binary redistribution",
+  "limits": [
+    "unsigned hashes do not authenticate events",
+    "selected release member checks do not rebuild core dependencies",
+    "same Lean kernel only",
+    "core OLean cache trust for fixtures",
+    "mathlib and other external OLean cache trust for baseline tangent",
+    "fixed monomorphic reviewed targets only",
+    "arbitrary Lean import closure and hostile concurrent filesystem are unsupported",
+    "no native Mac/MRS integration"
+  ],
+  "original_checkout_preserved": {
+    "branch": "work",
+    "commit": "d00a89dd9ce6c8ef782234d28c93e69cb712c947"
+  },
+  "repository": "https://github.com/Drsunflowerherbert/Codex-for-Math",
+  "repository_visibility_observed": "public",
+  "reused_sources": [
+    {
+      "destination": "vendor/strict-json.cjs",
+      "destination_sha256": "375a555e00eb401c16235a5a84c57995b73db418f4ef02709b272c7a95469e0b",
+      "modifications": [],
+      "source": "math-evidence/strict-json.cjs",
+      "source_revision": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+      "source_sha256": "375a555e00eb401c16235a5a84c57995b73db418f4ef02709b272c7a95469e0b",
+      "unchanged": true
+    },
+    {
+      "destination": "vendor/live-plans.cjs",
+      "destination_sha256": "9596338e326943b7cc539c34670b0efaba8f7e9d7f7ebe3f1f959817ebba76c3",
+      "modifications": [],
+      "source": "math-evidence/live-plans.cjs",
+      "source_revision": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+      "source_sha256": "9596338e326943b7cc539c34670b0efaba8f7e9d7f7ebe3f1f959817ebba76c3",
+      "unchanged": true
+    },
+    {
+      "destination": "lean/EvidenceHarness.lean",
+      "destination_sha256": "bb71282fcb088498a9c40b0460694f1663e8f3a145fc15469050b8ade2f390dc",
+      "modifications": [],
+      "source": "math-evidence/lean/EvidenceHarness.lean",
+      "source_revision": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+      "source_sha256": "bb71282fcb088498a9c40b0460694f1663e8f3a145fc15469050b8ade2f390dc",
+      "unchanged": true
+    },
+    {
+      "destination": "capture.cjs",
+      "destination_sha256": "d007d9473458cb31d242ebb86f3fdf93bcdae40ddc67683e8fca668160b4415a",
+      "modifications": [
+        "replace baseline CLI reader with standalone bounded regular-file reader",
+        "normalize launch failure pseudo exit status to null"
+      ],
+      "source": "math-evidence/process.cjs",
+      "source_revision": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+      "source_sha256": "86bad6a76b6313d15ebe245ef82046ca766ad957e142e5a27c91cb2ba07fcdf9",
+      "unchanged": false
+    }
+  ],
+  "schema": "evidence-hardening-provenance/v1",
+  "scope": "evidence-hardening/ only",
+  "starting_research_branch": "codex/research-2026-10-11",
+  "verified_starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+  "workspace_guidance": "No AGENTS.md or .agents/skills paths present at baseline or workspace roots; checked before implementation"
+}

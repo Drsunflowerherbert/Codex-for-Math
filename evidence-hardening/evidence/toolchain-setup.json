@@ -1,0 +1,1158 @@
+{
+  "schema": "independent-toolchain-setup-provenance/v1",
+  "baselineCommit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+  "root": "/workspace/evidence-verification-env",
+  "officialReleaseURL": "https://github.com/leanprover/lean4/releases/download/v4.24.0/lean-4.24.0-linux.tar.zst",
+  "releaseArchiveSHA256": "b14f5e5159219dd1a1956c3b806813319f5e94ccd5bdfd56f54520609a5bb5ec",
+  "releaseArchiveBytes": 459625674,
+  "pinSource": "/workspace/tangent-limit-environment/install.sh and baseline math-evidence/toolchain-audit.py",
+  "compilerCommit": "797c613eb9b6d4ec95db23e3e00af9ac6657f24b",
+  "observedCommands": [
+    {
+      "cwd": "/workspace/evidence-hardening-work",
+      "command": "mkdir -p /workspace/evidence-verification-env/tangent-limit /workspace/evidence-verification-env/downloads && cp -a math-evidence/samples/source-tree/tangent-limit/. /workspace/evidence-verification-env/tangent-limit/ && curl --fail --silent --show-error --location --retry 3 https://github.com/leanprover/lean4/releases/download/v4.24.0/lean-4.24.0-linux.tar.zst -o /workspace/evidence-verification-env/downloads/lean-4.24.0-linux.tar.zst",
+      "observedExit": 0,
+      "output": "no stdout/stderr emitted"
+    },
+    {
+      "cwd": "/workspace",
+      "command": "printf 'b14f5e5159219dd1a1956c3b806813319f5e94ccd5bdfd56f54520609a5bb5ec  /workspace/evidence-verification-env/downloads/lean-4.24.0-linux.tar.zst\\n' | sha256sum --check && mkdir -p /workspace/evidence-verification-env/tangent-limit/.elan/toolchains /workspace/evidence-verification-env/tangent-limit/.elan/bin && tar --zstd -xf /workspace/evidence-verification-env/downloads/lean-4.24.0-linux.tar.zst -C /workspace/evidence-verification-env/downloads && ln -s /workspace/evidence-verification-env/downloads/lean-4.24.0-linux /workspace/evidence-verification-env/tangent-limit/.elan/toolchains/v4.24.0 && ln -s ../toolchains/v4.24.0/bin/lean /workspace/evidence-verification-env/tangent-limit/.elan/bin/lean && ln -s ../toolchains/v4.24.0/bin/lake /workspace/evidence-verification-env/tangent-limit/.elan/bin/lake && /workspace/evidence-verification-env/tangent-limit/.elan/bin/lean --version && /workspace/evidence-verification-env/tangent-limit/.elan/bin/lean --githash",
+      "observedExit": 0,
+      "observedStdout": [
+        "/workspace/evidence-verification-env/downloads/lean-4.24.0-linux.tar.zst: OK",
+        "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+        "797c613eb9b6d4ec95db23e3e00af9ac6657f24b"
+      ]
+    },
+    {
+      "cwd": "/workspace/evidence-hardening-work",
+      "command": "mkdir -p /workspace/evidence-verification-env/tangent-limit/.cache/onboarding && ln -s /workspace/evidence-verification-env/downloads /workspace/evidence-verification-env/tangent-limit/.cache/onboarding/lean-dist && python3 math-evidence/toolchain-audit.py /workspace/evidence-verification-env > /tmp/evidence-verification-20261013/setup/toolchain-audit.stdout 2> /tmp/evidence-verification-20261013/setup/toolchain-audit.stderr",
+      "observedExit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/toolchain-audit.stdout",
+        "bytes": 2131,
+        "sha256": "3c011f315c1a77466be51e5e06ffcd16a2866cbce1a474f796a1ec99a9f9da56"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/toolchain-audit.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "cwd": "/workspace/evidence-verification-env/tangent-limit",
+      "argv": [
+        "/workspace/evidence-verification-env/tangent-limit/.elan/bin/lake",
+        "-v",
+        "build",
+        "proofwidgets:release"
+      ],
+      "observedExit": 1,
+      "observedFailure": "no release tag found for revision '556caed0eadb7901e068131d1be208dd907d07a2'",
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/proofwidgets.stdout",
+        "bytes": 351,
+        "sha256": "58053c1fb5c1b116f4aff4ed2d3db4c976c2e6b45efe933cfcec41c11a000fef"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/proofwidgets.stderr",
+        "bytes": 20,
+        "sha256": "c4a27db198c4d8632369ee6102944ef46e83c20d685f7c17a6aaff9cfcfc710f"
+      }
+    },
+    {
+      "cwd": "/workspace",
+      "command": "git -C /workspace/evidence-verification-env/tangent-limit/.lake/packages/proofwidgets fetch --depth=1 origin tag v0.0.74 && git -C /workspace/evidence-verification-env/tangent-limit/.lake/packages/proofwidgets rev-list -n 1 v0.0.74",
+      "observedExit": 0,
+      "observedCommit": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "observedStdout": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "reason": "adds release tag metadata at the unchanged pinned commit"
+    }
+  ],
+  "packageCloneCommands": [
+    {
+      "argv": [
+        "git",
+        "init",
+        "-q",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/mathlib"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/mathlib-0.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/mathlib-0.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/mathlib",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/mathlib4.git"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/mathlib-1.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/mathlib-1.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/mathlib",
+        "-c",
+        "core.fsmonitor=false",
+        "fetch",
+        "--depth=1",
+        "origin",
+        "f897ebcf72cd16f89ab4577d0c826cd14afaafc7"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/mathlib-2.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/mathlib-2.stderr",
+        "bytes": 130,
+        "sha256": "f13c389b6ae1b9eabf7f2c2e3afc337799720a075725c3850f6bab98511cf944"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/mathlib",
+        "checkout",
+        "--detach",
+        "-q",
+        "FETCH_HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/mathlib-3.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/mathlib-3.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/mathlib-4.stdout",
+        "bytes": 41,
+        "sha256": "cc49bfc965afbc1ef5877d1d1b12648323cb6d44f015d37593c63c2cd1d731c0"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/mathlib-4.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "init",
+        "-q",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/plausible"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/plausible-0.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/plausible-0.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/plausible",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/plausible"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/plausible-1.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/plausible-1.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/plausible",
+        "-c",
+        "core.fsmonitor=false",
+        "fetch",
+        "--depth=1",
+        "origin",
+        "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/plausible-2.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/plausible-2.stderr",
+        "bytes": 131,
+        "sha256": "5fc24e46e02e4376220a7a850c5f427bed85ddf5c2d7b0d32ad9f7052f9780ca"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/plausible",
+        "checkout",
+        "--detach",
+        "-q",
+        "FETCH_HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/plausible-3.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/plausible-3.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/plausible",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/plausible-4.stdout",
+        "bytes": 41,
+        "sha256": "5f4ae658966fdc18933fe008f0fa3170b7c00c9cbdb3dc61ae991accf4bab97f"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/plausible-4.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "init",
+        "-q",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/LeanSearchClient"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/LeanSearchClient-0.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/LeanSearchClient-0.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/LeanSearchClient",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/LeanSearchClient"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/LeanSearchClient-1.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/LeanSearchClient-1.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/LeanSearchClient",
+        "-c",
+        "core.fsmonitor=false",
+        "fetch",
+        "--depth=1",
+        "origin",
+        "99657ad92e23804e279f77ea6dbdeebaa1317b98"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/LeanSearchClient-2.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/LeanSearchClient-2.stderr",
+        "bytes": 138,
+        "sha256": "07b82e718e1b6ce601f392b767aef4f7061a72a7e72cd2f77a653302f96f9eb0"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/LeanSearchClient",
+        "checkout",
+        "--detach",
+        "-q",
+        "FETCH_HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/LeanSearchClient-3.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/LeanSearchClient-3.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/LeanSearchClient",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/LeanSearchClient-4.stdout",
+        "bytes": 41,
+        "sha256": "ee39bdbdf92107dc88a4ecc2220d30f32902373c6f0739c8492be44a294847a4"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/LeanSearchClient-4.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "init",
+        "-q",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/importGraph"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/importGraph-0.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/importGraph-0.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/importGraph",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/import-graph"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/importGraph-1.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/importGraph-1.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/importGraph",
+        "-c",
+        "core.fsmonitor=false",
+        "fetch",
+        "--depth=1",
+        "origin",
+        "d768126816be17600904726ca7976b185786e6b9"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/importGraph-2.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/importGraph-2.stderr",
+        "bytes": 134,
+        "sha256": "91ed6d5e31f8e34fed256ebc9b71238baeb8657ad762a1defaaca77b8fed754b"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/importGraph",
+        "checkout",
+        "--detach",
+        "-q",
+        "FETCH_HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/importGraph-3.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/importGraph-3.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/importGraph",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/importGraph-4.stdout",
+        "bytes": 41,
+        "sha256": "7f1b3a7459b33f77fb08847cc0be80357aa6fcfb8e846a3ffbdbb656fd08218b"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/importGraph-4.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "init",
+        "-q",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/proofwidgets"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/proofwidgets-0.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/proofwidgets-0.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/proofwidgets",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/ProofWidgets4"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/proofwidgets-1.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/proofwidgets-1.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/proofwidgets",
+        "-c",
+        "core.fsmonitor=false",
+        "fetch",
+        "--depth=1",
+        "origin",
+        "556caed0eadb7901e068131d1be208dd907d07a2"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/proofwidgets-2.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/proofwidgets-2.stderr",
+        "bytes": 135,
+        "sha256": "5e287d2a57b6fc66f9191033ae14d21f4652d5ef076e9f34dd1e6328ca3d52dd"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/proofwidgets",
+        "checkout",
+        "--detach",
+        "-q",
+        "FETCH_HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/proofwidgets-3.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/proofwidgets-3.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/proofwidgets",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/proofwidgets-4.stdout",
+        "bytes": 41,
+        "sha256": "a26e42b6270d4e50e6866efb9277ecf9d573be7d8f53baaac54b61c0a9e4c9b1"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/proofwidgets-4.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "init",
+        "-q",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/aesop"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/aesop-0.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/aesop-0.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/aesop",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/aesop"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/aesop-1.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/aesop-1.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/aesop",
+        "-c",
+        "core.fsmonitor=false",
+        "fetch",
+        "--depth=1",
+        "origin",
+        "725ac8cd67acd70a7beaf47c3725e23484c1ef50"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/aesop-2.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/aesop-2.stderr",
+        "bytes": 127,
+        "sha256": "d28deb52b2e613d929de81d73a78fd185c1f340f231e55b3e13b6001a71a6c71"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/aesop",
+        "checkout",
+        "--detach",
+        "-q",
+        "FETCH_HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/aesop-3.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/aesop-3.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/aesop",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/aesop-4.stdout",
+        "bytes": 41,
+        "sha256": "2ca5dc9099966d8b4d75f068570c8382e9b1743eb524d29dfd9c31f1b0357e68"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/aesop-4.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "init",
+        "-q",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/Qq"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Qq-0.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Qq-0.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/Qq",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/quote4"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Qq-1.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Qq-1.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/Qq",
+        "-c",
+        "core.fsmonitor=false",
+        "fetch",
+        "--depth=1",
+        "origin",
+        "dea6a3361fa36d5a13f87333dc506ada582e025c"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Qq-2.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Qq-2.stderr",
+        "bytes": 128,
+        "sha256": "c9844f3deabc2947963a5d288f7e752b67b5f64034d8cacdff9d44b243ac1a2c"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/Qq",
+        "checkout",
+        "--detach",
+        "-q",
+        "FETCH_HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Qq-3.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Qq-3.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/Qq",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Qq-4.stdout",
+        "bytes": 41,
+        "sha256": "b5c55d876bdd5b8f9c8f5c80247fd9a311a44e6be1ca930dff8fdac32763b3ef"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Qq-4.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "init",
+        "-q",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/batteries"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/batteries-0.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/batteries-0.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/batteries",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover-community/batteries"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/batteries-1.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/batteries-1.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/batteries",
+        "-c",
+        "core.fsmonitor=false",
+        "fetch",
+        "--depth=1",
+        "origin",
+        "8da40b72fece29b7d3fe3d768bac4c8910ce9bee"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/batteries-2.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/batteries-2.stderr",
+        "bytes": 131,
+        "sha256": "ff1849b4fb204a9537e74c3a74d48446ee0ef03ecfa625c8a989226087c38722"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/batteries",
+        "checkout",
+        "--detach",
+        "-q",
+        "FETCH_HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/batteries-3.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/batteries-3.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/batteries",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/batteries-4.stdout",
+        "bytes": 41,
+        "sha256": "7a7d1966b230b609b900348919460f414800232a58d0caa685a23bf7a41c2e73"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/batteries-4.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "init",
+        "-q",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/Cli"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Cli-0.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Cli-0.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/Cli",
+        "remote",
+        "add",
+        "origin",
+        "https://github.com/leanprover/lean4-cli"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Cli-1.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Cli-1.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/Cli",
+        "-c",
+        "core.fsmonitor=false",
+        "fetch",
+        "--depth=1",
+        "origin",
+        "91c18fa62838ad0ab7384c03c9684d99d306e1da"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Cli-2.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Cli-2.stderr",
+        "bytes": 121,
+        "sha256": "062bcd0b6bdb939bcd58789ab2896d50c1bf7664cb84dcc0231e008a54a9add7"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/Cli",
+        "checkout",
+        "--detach",
+        "-q",
+        "FETCH_HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Cli-3.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Cli-3.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/workspace/evidence-verification-env/tangent-limit/.lake/packages/Cli",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "stdout": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Cli-4.stdout",
+        "bytes": 41,
+        "sha256": "8c4dfa759e1faa2e44986cb2e0a7df5843e2e4ed9587cc8c6db5730c7a517f02"
+      },
+      "stderr": {
+        "localPath": "/tmp/evidence-verification-20261013/setup/Cli-4.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "cacheInitialAttempt": {
+    "argv": [
+      "/workspace/evidence-verification-env/tangent-limit/.elan/bin/lake",
+      "exe",
+      "cache",
+      "get"
+    ],
+    "cwd": "/workspace/evidence-verification-env/tangent-limit",
+    "environment": {
+      "ELAN_HOME": "/workspace/evidence-verification-env/tangent-limit/.elan",
+      "MATHLIB_CACHE_DIR": "/workspace/evidence-verification-env/tangent-limit/.cache/mathlib",
+      "USE_FRO_CACHE": "1"
+    },
+    "started": "2026-10-13T01:46:11.216712+00:00",
+    "finished": "2026-10-13T01:46:31.399077+00:00",
+    "exit": 1,
+    "manifestBefore": "8f871ddcf1917c176ac801f24bc66c975e4562d4d7aab8193c45ef7f31d5ad03",
+    "manifestAfter": "8f871ddcf1917c176ac801f24bc66c975e4562d4d7aab8193c45ef7f31d5ad03",
+    "cacheTrust": "external_precompiled_cache_not_source_rebuilt",
+    "stdout": {
+      "localPath": "/tmp/evidence-verification-20261013/setup/mathlib-cache.stdout",
+      "bytes": 65,
+      "sha256": "e245d8ac97a9f7f45e2d6b3a1dfdbbbb166603d2c61497446ec71e255d5d69eb"
+    },
+    "stderr": {
+      "localPath": "/tmp/evidence-verification-20261013/setup/mathlib-cache.stderr",
+      "bytes": 1159,
+      "sha256": "17d925fe713e1896df3d1bbaf5d909b15c249176d934c912272b5546c241b8ac"
+    }
+  },
+  "cacheRetry": {
+    "argv": [
+      "/workspace/evidence-verification-env/tangent-limit/.elan/bin/lake",
+      "exe",
+      "cache",
+      "get"
+    ],
+    "cwd": "/workspace/evidence-verification-env/tangent-limit",
+    "environment": {
+      "ELAN_HOME": "/workspace/evidence-verification-env/tangent-limit/.elan",
+      "MATHLIB_CACHE_DIR": "/workspace/evidence-verification-env/tangent-limit/.cache/mathlib",
+      "USE_FRO_CACHE": "1"
+    },
+    "started": "2026-10-13T01:47:01.667407+00:00",
+    "finished": "2026-10-13T01:48:16.732812+00:00",
+    "exit": 0,
+    "manifestBefore": "8f871ddcf1917c176ac801f24bc66c975e4562d4d7aab8193c45ef7f31d5ad03",
+    "manifestAfter": "8f871ddcf1917c176ac801f24bc66c975e4562d4d7aab8193c45ef7f31d5ad03",
+    "cacheTrust": "external_precompiled_cache_not_source_rebuilt",
+    "retryReason": "shallow checkout initially lacked published v0.0.74 tag for same pinned proofwidgets commit; fetched exact tag",
+    "stdout": {
+      "localPath": "/tmp/evidence-verification-20261013/setup/mathlib-cache-retry.stdout",
+      "bytes": 283,
+      "sha256": "1db42c49b2e6bc1952e5f3975d518bdaba4a2a89a1b00d7441c0e879d71d4ecc"
+    },
+    "stderr": {
+      "localPath": "/tmp/evidence-verification-20261013/setup/mathlib-cache-retry.stderr",
+      "bytes": 29869,
+      "sha256": "6be88dd7f312033788d4f6836efc84f298cb50423c1c9c3a5839f3f213143fe1"
+    }
+  },
+  "cacheRetrySummary": "7335/7335 requested artifacts downloaded and decompressed; cache get completed successfully",
+  "selectedReleaseMemberAudit": {
+    "archive": "/workspace/evidence-verification-env/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux.tar.zst",
+    "archiveBytes": 459625674,
+    "archiveSha256": "b14f5e5159219dd1a1956c3b806813319f5e94ccd5bdfd56f54520609a5bb5ec",
+    "compilerAndRuntime": {
+      "bin/lean": {
+        "bytes": 9024,
+        "comparison": "exact_bytes_match",
+        "installed": "/workspace/evidence-verification-env/downloads/lean-4.24.0-linux/bin/lean",
+        "sha256": "8fadc3ed92cc9decb94c96ee9c0876e91e03a3a5e69138f32114f02789e2766c"
+      },
+      "lib/lean/libInit_shared.so": {
+        "bytes": 6232,
+        "comparison": "exact_bytes_match",
+        "installed": "/workspace/evidence-verification-env/downloads/lean-4.24.0-linux/lib/lean/libInit_shared.so",
+        "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+      },
+      "lib/lean/libleanshared.so": {
+        "bytes": 193479936,
+        "comparison": "exact_bytes_match",
+        "installed": "/workspace/evidence-verification-env/downloads/lean-4.24.0-linux/lib/lean/libleanshared.so",
+        "sha256": "8cc9858cc57c52015ba6dd948bdbf7f05926b9b5fcead69a964f0ad61ddd79dd"
+      },
+      "lib/lean/libleanshared_1.so": {
+        "bytes": 6232,
+        "comparison": "exact_bytes_match",
+        "installed": "/workspace/evidence-verification-env/downloads/lean-4.24.0-linux/lib/lean/libleanshared_1.so",
+        "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+      },
+      "lib/lean/libleanshared_2.so": {
+        "bytes": 6232,
+        "comparison": "exact_bytes_match",
+        "installed": "/workspace/evidence-verification-env/downloads/lean-4.24.0-linux/lib/lean/libleanshared_2.so",
+        "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+      }
+    },
+    "hostRuntimeLibraries": "trusted_host_not_authenticated_by_this_audit",
+    "networkAuthentication": "not_performed",
+    "pinSource": "published tangent installer at d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+    "releaseSignatureAuthentication": "not_performed",
+    "schema": "local-pinned-toolchain-byte-audit/v1",
+    "status": "all_selected_installed_members_match_pinned_archive"
+  },
+  "preservation": {
+    "originalCheckout": "/workspace/Codex-for-Math not modified",
+    "researchBaseline": "math-evidence tracked files not modified",
+    "projectPins": "lake-manifest SHA identical before and after cache attempts",
+    "globalInstallerOrProfileChanges": "not_performed",
+    "elanBootstrap": "not_performed; direct official binaries linked only in isolated local .elan-compatible layout"
+  },
+  "boundaries": {
+    "externalCaches": "trusted precompiled mathlib/dependency OLeans; no dependency source rebuild",
+    "fixtureMathlibUse": "not_used; fixed standalone fixtures import trusted core OLeans",
+    "independentKernelReplay": "not_performed; same official Lean kernel",
+    "nativeMRS": "unavailable_unvalidated",
+    "releaseSignatureAuthentication": "not_performed",
+    "historicalEventAuthentication": "not_established_by_hashes"
+  },
+  "redistribution": "structured commands/statuses/log hashes only; no binaries, caches, dependency source archives, secrets or credential environment values"
+}

@@ -1,0 +1,365 @@
+{
+  "schema": "independent-fixed-fixture-import-tests/v1",
+  "source": "/tmp/evidence-verification-20261013/companion-review-04",
+  "receiptSource": "/tmp/evidence-verification-20261013/final-04/lean-corpus-1F4Yjr/valid",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "/tmp/evidence-verification-20261013/companion-review-04/tests/independent-fixture-import.cjs",
+    "/tmp/evidence-verification-20261013/companion-review-04",
+    "/tmp/evidence-verification-20261013/final-04/lean-corpus-1F4Yjr/valid",
+    "/tmp/evidence-verification-20261013/final-04/independent-fixture-mutations"
+  ],
+  "sourceHashesBefore": {
+    "baseline.json": "a56da69f5106fd0543b32bf7e08c0b338ed08c2bb280d0d39a9bab4fd4ccef19",
+    "capture.cjs": "d007d9473458cb31d242ebb86f3fdf93bcdae40ddc67683e8fca668160b4415a",
+    "fixture-gate.cjs": "46b8ec14ef8bfa1b24fcbaf7d0c1ab24a84795f42e6d41d176033db7618555f5",
+    "inspect-v1.cjs": "a797a42b48a2b7dbf88d4e4d2617395c3d46dc4cb3b5fcd0b78fb3ddcec22877",
+    "io.cjs": "15ecc07d3ca619dc4d2e7504c07a39358aabd31abb4e31dcaa9c94e898d94390",
+    "lean/BadReplay.lean": "c7b1867c1474f4b79febdb5815419650ef2fe8f467d8a6d25f87ba214bf1ae09",
+    "lean/BadTypes.lean": "f0264e7f819ba34e10851599c15fd61e2503f180e9ddb7942448a60257afb5a0",
+    "lean/Dependency.lean": "6fb8250a46978f0377eff6f8023e31314dff73c31d46e1bab258d189cc00edb0",
+    "lean/EvidenceHarness.lean": "bb71282fcb088498a9c40b0460694f1663e8f3a145fc15469050b8ade2f390dc",
+    "lean/ExpectedDefinitions.lean": "1c63746c6aac4ffada39755f897d2c1ba56bc725717be8bfb6062a6935693b5b",
+    "lean/ExpectedTypes.lean": "b7f79788729dd52f8bfda08f7ec823be74b3f3b7bdc3fb4d6836f0d6ab70104c",
+    "lean/Replay.lean": "89f50cf72bdcadc32e66a41f2640e774076b87e054d424760fc758b3cc1ac2b6",
+    "lean/SpecializedTypes.lean": "e30b70ac46c15eea15dd5c891329790592cfb86968dd0004c80711e1fa243c4d",
+    "lean/cases/custom-axiom.lean": "26d4fafd1fea889bbf67c7b6a9ccb0449bd0a1b96d685cc55ff0767ee2a4b284",
+    "lean/cases/definition-substitution.lean": "45b8f527cf05753e4919e0b89baa30303ed9d5d79c49624b5b9e222dd1fa7f90",
+    "lean/cases/hidden-assumption.lean": "8eadb4b73468bf7224942ce9360f21444782e907150cb6d72da51abc91e832b4",
+    "lean/cases/skip-kernel.lean": "e2b924120b682f7c2c9be4c398b5d1a5c8c23464e2b392fdb26954667690f4ab",
+    "lean/cases/sorry.lean": "7575806b1798a43fc31bbb28de18c8910f9a6d3c1aec4d1afeb29506a3d9ed36",
+    "lean/cases/statement-drift.lean": "4a94c988ee4088c030a4eb8e3a56157084c532c1fc14ba7775a037b38db13df5",
+    "lean/cases/transitive-drift.lean": "d9b14d6f6951798cae3f022cb4f022f57066774c24eae5c8ef3e78bf1e53e529",
+    "lean/cases/valid.lean": "30690691f4d6ecfd68ffe7e6c9ce5128260324a53db3ae9771c4f23a37cf8223",
+    "lean/cases/wrong-name.lean": "6d519746491afd4146ee077f1a4f4a74331911dbac63ad2f05388d82b158c15d",
+    "lean/lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "process-contract.cjs": "75b1a08340cacd5dd7a445cf832507bf79d731d28570bfcb1ef3b16806dfed5a",
+    "vendor/live-plans.cjs": "9596338e326943b7cc539c34670b0efaba8f7e9d7f7ebe3f1f959817ebba76c3",
+    "vendor/strict-json.cjs": "375a555e00eb401c16235a5a84c57995b73db418f4ef02709b272c7a95469e0b",
+    "fixture-policy.json": "6efd993160d0ad600a3b58b3c84d62d18a803996204f13d52073da3c2b9c0a04"
+  },
+  "sourceHashesAfter": {
+    "baseline.json": "a56da69f5106fd0543b32bf7e08c0b338ed08c2bb280d0d39a9bab4fd4ccef19",
+    "capture.cjs": "d007d9473458cb31d242ebb86f3fdf93bcdae40ddc67683e8fca668160b4415a",
+    "fixture-gate.cjs": "46b8ec14ef8bfa1b24fcbaf7d0c1ab24a84795f42e6d41d176033db7618555f5",
+    "inspect-v1.cjs": "a797a42b48a2b7dbf88d4e4d2617395c3d46dc4cb3b5fcd0b78fb3ddcec22877",
+    "io.cjs": "15ecc07d3ca619dc4d2e7504c07a39358aabd31abb4e31dcaa9c94e898d94390",
+    "lean/BadReplay.lean": "c7b1867c1474f4b79febdb5815419650ef2fe8f467d8a6d25f87ba214bf1ae09",
+    "lean/BadTypes.lean": "f0264e7f819ba34e10851599c15fd61e2503f180e9ddb7942448a60257afb5a0",
+    "lean/Dependency.lean": "6fb8250a46978f0377eff6f8023e31314dff73c31d46e1bab258d189cc00edb0",
+    "lean/EvidenceHarness.lean": "bb71282fcb088498a9c40b0460694f1663e8f3a145fc15469050b8ade2f390dc",
+    "lean/ExpectedDefinitions.lean": "1c63746c6aac4ffada39755f897d2c1ba56bc725717be8bfb6062a6935693b5b",
+    "lean/ExpectedTypes.lean": "b7f79788729dd52f8bfda08f7ec823be74b3f3b7bdc3fb4d6836f0d6ab70104c",
+    "lean/Replay.lean": "89f50cf72bdcadc32e66a41f2640e774076b87e054d424760fc758b3cc1ac2b6",
+    "lean/SpecializedTypes.lean": "e30b70ac46c15eea15dd5c891329790592cfb86968dd0004c80711e1fa243c4d",
+    "lean/cases/custom-axiom.lean": "26d4fafd1fea889bbf67c7b6a9ccb0449bd0a1b96d685cc55ff0767ee2a4b284",
+    "lean/cases/definition-substitution.lean": "45b8f527cf05753e4919e0b89baa30303ed9d5d79c49624b5b9e222dd1fa7f90",
+    "lean/cases/hidden-assumption.lean": "8eadb4b73468bf7224942ce9360f21444782e907150cb6d72da51abc91e832b4",
+    "lean/cases/skip-kernel.lean": "e2b924120b682f7c2c9be4c398b5d1a5c8c23464e2b392fdb26954667690f4ab",
+    "lean/cases/sorry.lean": "7575806b1798a43fc31bbb28de18c8910f9a6d3c1aec4d1afeb29506a3d9ed36",
+    "lean/cases/statement-drift.lean": "4a94c988ee4088c030a4eb8e3a56157084c532c1fc14ba7775a037b38db13df5",
+    "lean/cases/transitive-drift.lean": "d9b14d6f6951798cae3f022cb4f022f57066774c24eae5c8ef3e78bf1e53e529",
+    "lean/cases/valid.lean": "30690691f4d6ecfd68ffe7e6c9ce5128260324a53db3ae9771c4f23a37cf8223",
+    "lean/cases/wrong-name.lean": "6d519746491afd4146ee077f1a4f4a74331911dbac63ad2f05388d82b158c15d",
+    "lean/lean-toolchain": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434",
+    "process-contract.cjs": "75b1a08340cacd5dd7a445cf832507bf79d731d28570bfcb1ef3b16806dfed5a",
+    "vendor/live-plans.cjs": "9596338e326943b7cc539c34670b0efaba8f7e9d7f7ebe3f1f959817ebba76c3",
+    "vendor/strict-json.cjs": "375a555e00eb401c16235a5a84c57995b73db418f4ef02709b272c7a95469e0b",
+    "fixture-policy.json": "6efd993160d0ad600a3b58b3c84d62d18a803996204f13d52073da3c2b9c0a04"
+  },
+  "sourceUnchanged": true,
+  "total": 45,
+  "passed": 45,
+  "failed": [],
+  "results": [
+    {
+      "name": "fresh-valid-receipt-import",
+      "expected": "reported_integrity_only_no_freshness_or_Lean_pass",
+      "passed": true,
+      "result": {
+        "ok": true,
+        "kind": "fixed_fixture_reported_integrity_only",
+        "leanPass": false,
+        "locallyObservedLeanPass": false,
+        "freshness": "not_established",
+        "receiptAuthenticity": "not_established",
+        "independentKernelReplay": "not_performed",
+        "dependencyTrust": "core_olean_cache_not_rebuilt"
+      }
+    },
+    {
+      "name": "uuid-mismatch",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture attempt binding"
+    },
+    {
+      "name": "receipt-missing-phase",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture artifact/phase count"
+    },
+    {
+      "name": "receipt-reordered-phase",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture phase coverage"
+    },
+    {
+      "name": "receipt-unknown-pass-field",
+      "expected": "reject",
+      "passed": true,
+      "error": "invalid fields: fixture receipt"
+    },
+    {
+      "name": "receipt-upgraded-boundary",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture boundaries"
+    },
+    {
+      "name": "receipt-stale-source-digest",
+      "expected": "reject",
+      "passed": true,
+      "error": "stale fixture source commitment"
+    },
+    {
+      "name": "source-closure-omission",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture source closure"
+    },
+    {
+      "name": "source-closure-repin",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture source closure"
+    },
+    {
+      "name": "product-coverage-omission",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture artifact/phase count"
+    },
+    {
+      "name": "work-source-repin",
+      "expected": "reject",
+      "passed": true,
+      "error": "artifact changed: inputs/build/EvidenceHarness.lean"
+    },
+    {
+      "name": "runtime-member-repin",
+      "expected": "reject",
+      "passed": true,
+      "error": "release member differs from pin"
+    },
+    {
+      "name": "core-cache-upgrade",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture compiler identity"
+    },
+    {
+      "name": "pid-null",
+      "expected": "reject",
+      "passed": true,
+      "error": "exited process missing exit evidence"
+    },
+    {
+      "name": "pid-string",
+      "expected": "reject",
+      "passed": true,
+      "error": "invalid PID"
+    },
+    {
+      "name": "pid-process-group-mismatch",
+      "expected": "reject",
+      "passed": true,
+      "error": "contradictory process group"
+    },
+    {
+      "name": "exit-code-string",
+      "expected": "reject",
+      "passed": true,
+      "error": "invalid exit code"
+    },
+    {
+      "name": "exit-code-out-of-range",
+      "expected": "reject",
+      "passed": true,
+      "error": "invalid exit code"
+    },
+    {
+      "name": "exit-and-signal",
+      "expected": "reject",
+      "passed": true,
+      "error": "exit code and signal cannot both be set"
+    },
+    {
+      "name": "timeout-success",
+      "expected": "reject",
+      "passed": true,
+      "error": "contradictory process success"
+    },
+    {
+      "name": "launch-failure-success",
+      "expected": "reject",
+      "passed": true,
+      "error": "launch failure has exit evidence"
+    },
+    {
+      "name": "success-error",
+      "expected": "reject",
+      "passed": true,
+      "error": "contradictory process error"
+    },
+    {
+      "name": "bad-duration",
+      "expected": "reject",
+      "passed": true,
+      "error": "contradictory process times"
+    },
+    {
+      "name": "bad-output-limit",
+      "expected": "reject",
+      "passed": true,
+      "error": "captured bytes exceed process cap"
+    },
+    {
+      "name": "bad-phase-time",
+      "expected": "reject",
+      "passed": true,
+      "error": "contradictory process times"
+    },
+    {
+      "name": "argv-substitution",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture argv"
+    },
+    {
+      "name": "argv-compile-source-substitution",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture argv"
+    },
+    {
+      "name": "cwd-substitution",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture command identity"
+    },
+    {
+      "name": "executable-substitution",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture command identity"
+    },
+    {
+      "name": "environment-substitution",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture environment"
+    },
+    {
+      "name": "environment-extra",
+      "expected": "reject",
+      "passed": true,
+      "error": "invalid fields: environment"
+    },
+    {
+      "name": "log-reuse",
+      "expected": "reject",
+      "passed": true,
+      "error": "reused or misnamed process log"
+    },
+    {
+      "name": "log-missing",
+      "expected": "reject",
+      "passed": true,
+      "error": "ENOENT: no such file or directory, lstat '/tmp/evidence-verification-20261013/final-04/independent-fixture-mutations/33-log-missing/logs/compiler-version.stdout'"
+    },
+    {
+      "name": "coherent-compiler-log-substitution",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture commit log"
+    },
+    {
+      "name": "coherent-stderr-substitution",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture stderr"
+    },
+    {
+      "name": "coherent-malformed-json",
+      "expected": "reject",
+      "passed": true,
+      "error": "expected JSON value at character 0"
+    },
+    {
+      "name": "coherent-error-json",
+      "expected": "reject",
+      "passed": true,
+      "error": "Lean error in successful process log"
+    },
+    {
+      "name": "coherent-missing-type-marker",
+      "expected": "reject",
+      "passed": true,
+      "error": "target coverage"
+    },
+    {
+      "name": "coherent-missing-body-marker",
+      "expected": "reject",
+      "passed": true,
+      "error": "definition coverage"
+    },
+    {
+      "name": "coherent-missing-replay-marker",
+      "expected": "reject",
+      "passed": true,
+      "error": "replay marker coverage"
+    },
+    {
+      "name": "record-axiom-upgrade",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture target records"
+    },
+    {
+      "name": "record-independent-kernel-upgrade",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture replay records"
+    },
+    {
+      "name": "record-body-upgrade",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture definition records"
+    },
+    {
+      "name": "attempt-pass-upgrade",
+      "expected": "reject",
+      "passed": true,
+      "error": "fixture attempt binding"
+    },
+    {
+      "name": "coherently-aged-receipt",
+      "expected": "reported_integrity_only_no_freshness_or_Lean_pass",
+      "passed": true,
+      "result": {
+        "ok": true,
+        "kind": "fixed_fixture_reported_integrity_only",
+        "leanPass": false,
+        "locallyObservedLeanPass": false,
+        "freshness": "not_established",
+        "receiptAuthenticity": "not_established",
+        "independentKernelReplay": "not_performed",
+        "dependencyTrust": "core_olean_cache_not_rebuilt"
+      }
+    }
+  ],
+  "leanPassesGrantedByInspection": 0
+}
