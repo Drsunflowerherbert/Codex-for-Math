@@ -1,0 +1,2249 @@
+{
+  "arithmetic": "Python standard-library fractions.Fraction; no floating point",
+  "counts_definition": {
+    "certificates_checked": "accepted independent-support candidates, including duplicate representations",
+    "independent_solves": "support-search unique-solution RREF calls after full-column-rank check; excludes original equality reconstruction",
+    "rank_tests": "one exact rank test per attempted support",
+    "subsets_attempted": "includes empty and dependent supports"
+  },
+  "enumeration_order": "increasing support size, then lexicographic input indices",
+  "fixtures": [
+    {
+      "fixture": {
+        "bound": "3",
+        "budgets": [
+          "1",
+          "1",
+          "1"
+        ],
+        "dimension": 3,
+        "expected_minimum_inequality_support": 3,
+        "feasible_witness": [
+          "0",
+          "0",
+          "0"
+        ],
+        "feasible_witness_checked": true,
+        "kind": "bound",
+        "name": "sharp-normal-support-k",
+        "normals": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "note": "All three normal coordinates require a positive weight.",
+        "objective": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      "runs": [
+        {
+          "candidate_found": true,
+          "column_count": 3,
+          "column_rank": 3,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 7,
+            "independent_solves": 8,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 8,
+            "subsets_attempted": 8
+          },
+          "first_certificate": {
+            "combination_rhs": "3",
+            "enumerated_indices": [
+              0,
+              1,
+              2
+            ],
+            "first_success_independent_solves": 8,
+            "first_success_subsets_attempted": 8,
+            "inequality_weights": [
+              "1",
+              "1",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 3,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 3,
+          "minimum_positive_inequality_support_observed": 3,
+          "mode": "first_success",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 3,
+          "column_rank": 3,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 7,
+            "independent_solves": 8,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 8,
+            "subsets_attempted": 8
+          },
+          "first_certificate": {
+            "combination_rhs": "3",
+            "enumerated_indices": [
+              0,
+              1,
+              2
+            ],
+            "first_success_independent_solves": 8,
+            "first_success_subsets_attempted": 8,
+            "inequality_weights": [
+              "1",
+              "1",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 3,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 3,
+          "minimum_positive_inequality_support_observed": 3,
+          "mode": "exhaustive",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 4,
+          "column_rank": 4,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 11,
+            "independent_solves": 12,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 12,
+            "subsets_attempted": 12
+          },
+          "first_certificate": {
+            "combination_rhs": "3",
+            "enumerated_indices": [
+              0,
+              1,
+              2
+            ],
+            "first_success_independent_solves": 12,
+            "first_success_subsets_attempted": 12,
+            "inequality_weights": [
+              "1",
+              "1",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 3,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 4,
+          "minimum_positive_inequality_support_observed": 3,
+          "mode": "first_success",
+          "strategy": "augmented"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 4,
+          "column_rank": 4,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 2,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 14,
+            "independent_solves": 16,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 16,
+            "subsets_attempted": 16
+          },
+          "first_certificate": {
+            "combination_rhs": "3",
+            "enumerated_indices": [
+              0,
+              1,
+              2
+            ],
+            "first_success_independent_solves": 12,
+            "first_success_subsets_attempted": 12,
+            "inequality_weights": [
+              "1",
+              "1",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 3,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 4,
+          "minimum_positive_inequality_support_observed": 3,
+          "mode": "exhaustive",
+          "strategy": "augmented"
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "bound": "3",
+        "budgets": [
+          "1",
+          "1"
+        ],
+        "dimension": 2,
+        "expected_minimum_inequality_support": 2,
+        "feasible_witness": [
+          "0",
+          "0"
+        ],
+        "feasible_witness_checked": true,
+        "kind": "bound",
+        "name": "loose-budget-vertical",
+        "normals": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        "note": "Augmented equality needs the vertical residual of 1.",
+        "objective": [
+          "1",
+          "1"
+        ]
+      },
+      "runs": [
+        {
+          "candidate_found": true,
+          "column_count": 2,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 3,
+            "independent_solves": 4,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 4,
+            "subsets_attempted": 4
+          },
+          "first_certificate": {
+            "combination_rhs": "2",
+            "enumerated_indices": [
+              0,
+              1
+            ],
+            "first_success_independent_solves": 4,
+            "first_success_subsets_attempted": 4,
+            "inequality_weights": [
+              "1",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 2,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 2,
+          "mode": "first_success",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 2,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 3,
+            "independent_solves": 4,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 4,
+            "subsets_attempted": 4
+          },
+          "first_certificate": {
+            "combination_rhs": "2",
+            "enumerated_indices": [
+              0,
+              1
+            ],
+            "first_success_independent_solves": 4,
+            "first_success_subsets_attempted": 4,
+            "inequality_weights": [
+              "1",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 2,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 2,
+          "mode": "exhaustive",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 3,
+          "column_rank": 3,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 7,
+            "independent_solves": 8,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 8,
+            "subsets_attempted": 8
+          },
+          "first_certificate": {
+            "combination_rhs": "2",
+            "enumerated_indices": [
+              0,
+              1,
+              2
+            ],
+            "first_success_independent_solves": 8,
+            "first_success_subsets_attempted": 8,
+            "inequality_weights": [
+              "1",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 2,
+            "vertical_residual_weight": "1"
+          },
+          "maximum_enumerated_support": 3,
+          "minimum_positive_inequality_support_observed": 2,
+          "mode": "first_success",
+          "strategy": "augmented"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 3,
+          "column_rank": 3,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 7,
+            "independent_solves": 8,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 8,
+            "subsets_attempted": 8
+          },
+          "first_certificate": {
+            "combination_rhs": "2",
+            "enumerated_indices": [
+              0,
+              1,
+              2
+            ],
+            "first_success_independent_solves": 8,
+            "first_success_subsets_attempted": 8,
+            "inequality_weights": [
+              "1",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 2,
+            "vertical_residual_weight": "1"
+          },
+          "maximum_enumerated_support": 3,
+          "minimum_positive_inequality_support_observed": 2,
+          "mode": "exhaustive",
+          "strategy": "augmented"
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "bound": "5",
+        "budgets": [
+          "2",
+          "4",
+          "3",
+          "5",
+          "2"
+        ],
+        "dimension": 2,
+        "expected_minimum_inequality_support": 1,
+        "feasible_witness": [
+          "0",
+          "0"
+        ],
+        "feasible_witness_checked": true,
+        "kind": "bound",
+        "name": "duplicates-dependent-normals",
+        "normals": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "2",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "1"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        "note": "Duplicates and a dependent combined row remain in the input.",
+        "objective": [
+          "1",
+          "1"
+        ]
+      },
+      "runs": [
+        {
+          "candidate_found": true,
+          "column_count": 5,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 4,
+            "independent_solves": 5,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 5,
+            "subsets_attempted": 5
+          },
+          "first_certificate": {
+            "combination_rhs": "5",
+            "enumerated_indices": [
+              3
+            ],
+            "first_success_independent_solves": 5,
+            "first_success_subsets_attempted": 5,
+            "inequality_weights": [
+              "0",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "first_success",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 5,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 8,
+            "dependent_subsets_rejected": 3,
+            "inconsistent_independent_systems": 5,
+            "independent_solves": 13,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 16,
+            "subsets_attempted": 16
+          },
+          "first_certificate": {
+            "combination_rhs": "5",
+            "enumerated_indices": [
+              3
+            ],
+            "first_success_independent_solves": 5,
+            "first_success_subsets_attempted": 5,
+            "inequality_weights": [
+              "0",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "exhaustive",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 6,
+          "column_rank": 3,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 4,
+            "independent_solves": 5,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 5,
+            "subsets_attempted": 5
+          },
+          "first_certificate": {
+            "combination_rhs": "5",
+            "enumerated_indices": [
+              3
+            ],
+            "first_success_independent_solves": 5,
+            "first_success_subsets_attempted": 5,
+            "inequality_weights": [
+              "0",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 3,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "first_success",
+          "strategy": "augmented"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 6,
+          "column_rank": 3,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 16,
+            "dependent_subsets_rejected": 16,
+            "inconsistent_independent_systems": 10,
+            "independent_solves": 26,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 42,
+            "subsets_attempted": 42
+          },
+          "first_certificate": {
+            "combination_rhs": "5",
+            "enumerated_indices": [
+              3
+            ],
+            "first_success_independent_solves": 5,
+            "first_success_subsets_attempted": 5,
+            "inequality_weights": [
+              "0",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 3,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "exhaustive",
+          "strategy": "augmented"
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "bound": "1",
+        "budgets": [
+          "10",
+          "2",
+          "3"
+        ],
+        "dimension": 2,
+        "expected_minimum_inequality_support": 1,
+        "feasible_witness": [
+          "0",
+          "0"
+        ],
+        "feasible_witness_checked": true,
+        "kind": "bound",
+        "name": "cheaper-redundant-row",
+        "normals": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "2",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        "note": "The first normal is sufficient for representation but too costly.",
+        "objective": [
+          "1",
+          "0"
+        ]
+      },
+      "runs": [
+        {
+          "candidate_found": true,
+          "column_count": 3,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 1,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 1,
+            "independent_solves": 3,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 3,
+            "subsets_attempted": 3
+          },
+          "first_certificate": {
+            "combination_rhs": "1",
+            "enumerated_indices": [
+              1
+            ],
+            "first_success_independent_solves": 3,
+            "first_success_subsets_attempted": 3,
+            "inequality_weights": [
+              "0",
+              "1/2",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "first_success",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 3,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 2,
+            "certificates_checked": 2,
+            "dependent_subsets_rejected": 1,
+            "inconsistent_independent_systems": 2,
+            "independent_solves": 6,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 7,
+            "subsets_attempted": 7
+          },
+          "first_certificate": {
+            "combination_rhs": "1",
+            "enumerated_indices": [
+              1
+            ],
+            "first_success_independent_solves": 3,
+            "first_success_subsets_attempted": 3,
+            "inequality_weights": [
+              "0",
+              "1/2",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "exhaustive",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 4,
+          "column_rank": 3,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 2,
+            "independent_solves": 3,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 3,
+            "subsets_attempted": 3
+          },
+          "first_certificate": {
+            "combination_rhs": "1",
+            "enumerated_indices": [
+              1
+            ],
+            "first_success_independent_solves": 3,
+            "first_success_subsets_attempted": 3,
+            "inequality_weights": [
+              "0",
+              "1/2",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 3,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "first_success",
+          "strategy": "augmented"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 4,
+          "column_rank": 3,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 6,
+            "dependent_subsets_rejected": 1,
+            "inconsistent_independent_systems": 6,
+            "independent_solves": 14,
+            "negative_solutions_rejected": 2,
+            "rank_tests": 15,
+            "subsets_attempted": 15
+          },
+          "first_certificate": {
+            "combination_rhs": "1",
+            "enumerated_indices": [
+              1
+            ],
+            "first_success_independent_solves": 3,
+            "first_success_subsets_attempted": 3,
+            "inequality_weights": [
+              "0",
+              "1/2",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 3,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "exhaustive",
+          "strategy": "augmented"
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "bound": "2/3",
+        "budgets": [
+          "1/3",
+          "1/2",
+          "2/3",
+          "1"
+        ],
+        "dimension": 1,
+        "expected_minimum_inequality_support": 1,
+        "feasible_witness": [
+          "0"
+        ],
+        "feasible_witness_checked": true,
+        "kind": "bound",
+        "name": "rational-equality-reduction",
+        "normals": [
+          [
+            "-1"
+          ],
+          [
+            "-1"
+          ],
+          [
+            "1"
+          ],
+          [
+            "-3"
+          ]
+        ],
+        "note": "Ambient dimension 3 reduces to affine dimension 1.",
+        "objective": [
+          "1"
+        ],
+        "original_space": {
+          "affine_parametrization_checked": true,
+          "bound": "11/3",
+          "equality_rhs": [
+            "1",
+            "2"
+          ],
+          "equality_rows": [
+            [
+              "1",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "inequality_rhs": [
+            "4/3",
+            "1/2",
+            "2/3",
+            "3"
+          ],
+          "inequality_rows": [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "-1",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "2",
+              "-1",
+              "0"
+            ]
+          ],
+          "null_columns": [
+            [
+              "-1",
+              "1",
+              "0"
+            ]
+          ],
+          "objective": [
+            "1",
+            "2",
+            "1"
+          ],
+          "x0": [
+            "1",
+            "0",
+            "2"
+          ]
+        }
+      },
+      "runs": [
+        {
+          "candidate_found": true,
+          "column_count": 4,
+          "column_rank": 1,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 1,
+            "independent_solves": 4,
+            "negative_solutions_rejected": 2,
+            "rank_tests": 4,
+            "subsets_attempted": 4
+          },
+          "first_certificate": {
+            "combination_rhs": "2/3",
+            "enumerated_indices": [
+              2
+            ],
+            "first_success_independent_solves": 4,
+            "first_success_subsets_attempted": 4,
+            "inequality_weights": [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "original_identity": {
+              "equality_weights": [
+                "1",
+                "1"
+              ],
+              "identity_checked": true,
+              "original_combination_rhs": "11/3"
+            },
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 1,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "first_success",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 4,
+          "column_rank": 1,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 1,
+            "independent_solves": 5,
+            "negative_solutions_rejected": 3,
+            "rank_tests": 5,
+            "subsets_attempted": 5
+          },
+          "first_certificate": {
+            "combination_rhs": "2/3",
+            "enumerated_indices": [
+              2
+            ],
+            "first_success_independent_solves": 4,
+            "first_success_subsets_attempted": 4,
+            "inequality_weights": [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "original_identity": {
+              "equality_weights": [
+                "1",
+                "1"
+              ],
+              "identity_checked": true,
+              "original_combination_rhs": "11/3"
+            },
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 1,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "exhaustive",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 5,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 3,
+            "independent_solves": 4,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 4,
+            "subsets_attempted": 4
+          },
+          "first_certificate": {
+            "combination_rhs": "2/3",
+            "enumerated_indices": [
+              2
+            ],
+            "first_success_independent_solves": 4,
+            "first_success_subsets_attempted": 4,
+            "inequality_weights": [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "original_identity": {
+              "equality_weights": [
+                "1",
+                "1"
+              ],
+              "identity_checked": true,
+              "original_combination_rhs": "11/3"
+            },
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "first_success",
+          "strategy": "augmented"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 5,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 5,
+            "dependent_subsets_rejected": 1,
+            "inconsistent_independent_systems": 5,
+            "independent_solves": 15,
+            "negative_solutions_rejected": 5,
+            "rank_tests": 16,
+            "subsets_attempted": 16
+          },
+          "first_certificate": {
+            "combination_rhs": "2/3",
+            "enumerated_indices": [
+              2
+            ],
+            "first_success_independent_solves": 4,
+            "first_success_subsets_attempted": 4,
+            "inequality_weights": [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "original_identity": {
+              "equality_weights": [
+                "1",
+                "1"
+              ],
+              "identity_checked": true,
+              "original_combination_rhs": "11/3"
+            },
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "exhaustive",
+          "strategy": "augmented"
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "bound": "1",
+        "budgets": [
+          "2",
+          "2"
+        ],
+        "dimension": 1,
+        "expected_minimum_inequality_support": 0,
+        "feasible_witness": [
+          "0"
+        ],
+        "feasible_witness_checked": true,
+        "kind": "bound",
+        "name": "zero-objective-positive-budget",
+        "normals": [
+          [
+            "1"
+          ],
+          [
+            "-1"
+          ]
+        ],
+        "note": "The empty direct support certifies 0 <= 1.",
+        "objective": [
+          "0"
+        ]
+      },
+      "runs": [
+        {
+          "candidate_found": true,
+          "column_count": 2,
+          "column_rank": 1,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 0,
+            "independent_solves": 1,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 1,
+            "subsets_attempted": 1
+          },
+          "first_certificate": {
+            "combination_rhs": "0",
+            "enumerated_indices": [],
+            "first_success_independent_solves": 1,
+            "first_success_subsets_attempted": 1,
+            "inequality_weights": [
+              "0",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 0,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 1,
+          "minimum_positive_inequality_support_observed": 0,
+          "mode": "first_success",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 2,
+          "column_rank": 1,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 3,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 0,
+            "independent_solves": 3,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 3,
+            "subsets_attempted": 3
+          },
+          "first_certificate": {
+            "combination_rhs": "0",
+            "enumerated_indices": [],
+            "first_success_independent_solves": 1,
+            "first_success_subsets_attempted": 1,
+            "inequality_weights": [
+              "0",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 0,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 1,
+          "minimum_positive_inequality_support_observed": 0,
+          "mode": "exhaustive",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 3,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 3,
+            "independent_solves": 4,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 4,
+            "subsets_attempted": 4
+          },
+          "first_certificate": {
+            "combination_rhs": "0",
+            "enumerated_indices": [
+              2
+            ],
+            "first_success_independent_solves": 4,
+            "first_success_subsets_attempted": 4,
+            "inequality_weights": [
+              "0",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 0,
+            "vertical_residual_weight": "1"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 0,
+          "mode": "first_success",
+          "strategy": "augmented"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 3,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 4,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 3,
+            "independent_solves": 7,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 7,
+            "subsets_attempted": 7
+          },
+          "first_certificate": {
+            "combination_rhs": "0",
+            "enumerated_indices": [
+              2
+            ],
+            "first_success_independent_solves": 4,
+            "first_success_subsets_attempted": 4,
+            "inequality_weights": [
+              "0",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 0,
+            "vertical_residual_weight": "1"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 0,
+          "mode": "exhaustive",
+          "strategy": "augmented"
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "bound": "0",
+        "budgets": [
+          "2",
+          "2"
+        ],
+        "dimension": 1,
+        "expected_minimum_inequality_support": 0,
+        "feasible_witness": [
+          "0"
+        ],
+        "feasible_witness_checked": true,
+        "kind": "bound",
+        "name": "zero-objective-zero-budget",
+        "normals": [
+          [
+            "1"
+          ],
+          [
+            "-1"
+          ]
+        ],
+        "note": "The empty support solves both target formulations.",
+        "objective": [
+          "0"
+        ]
+      },
+      "runs": [
+        {
+          "candidate_found": true,
+          "column_count": 2,
+          "column_rank": 1,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 0,
+            "independent_solves": 1,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 1,
+            "subsets_attempted": 1
+          },
+          "first_certificate": {
+            "combination_rhs": "0",
+            "enumerated_indices": [],
+            "first_success_independent_solves": 1,
+            "first_success_subsets_attempted": 1,
+            "inequality_weights": [
+              "0",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 0,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 1,
+          "minimum_positive_inequality_support_observed": 0,
+          "mode": "first_success",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 2,
+          "column_rank": 1,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 3,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 0,
+            "independent_solves": 3,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 3,
+            "subsets_attempted": 3
+          },
+          "first_certificate": {
+            "combination_rhs": "0",
+            "enumerated_indices": [],
+            "first_success_independent_solves": 1,
+            "first_success_subsets_attempted": 1,
+            "inequality_weights": [
+              "0",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 0,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 1,
+          "minimum_positive_inequality_support_observed": 0,
+          "mode": "exhaustive",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 3,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 0,
+            "independent_solves": 1,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 1,
+            "subsets_attempted": 1
+          },
+          "first_certificate": {
+            "combination_rhs": "0",
+            "enumerated_indices": [],
+            "first_success_independent_solves": 1,
+            "first_success_subsets_attempted": 1,
+            "inequality_weights": [
+              "0",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 0,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 0,
+          "mode": "first_success",
+          "strategy": "augmented"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 3,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 7,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 0,
+            "independent_solves": 7,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 7,
+            "subsets_attempted": 7
+          },
+          "first_certificate": {
+            "combination_rhs": "0",
+            "enumerated_indices": [],
+            "first_success_independent_solves": 1,
+            "first_success_subsets_attempted": 1,
+            "inequality_weights": [
+              "0",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 0,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 0,
+          "mode": "exhaustive",
+          "strategy": "augmented"
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "bound": "3",
+        "budgets": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "3"
+        ],
+        "dimension": 3,
+        "expected_minimum_inequality_support": 1,
+        "feasible_witness": [
+          "0",
+          "0",
+          "0"
+        ],
+        "feasible_witness_checked": true,
+        "kind": "bound",
+        "name": "late-singleton-row-order",
+        "normals": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "-1"
+          ],
+          [
+            "1",
+            "1",
+            "1"
+          ]
+        ],
+        "note": "The useful singleton appears last.",
+        "objective": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      "runs": [
+        {
+          "candidate_found": true,
+          "column_count": 7,
+          "column_rank": 3,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 7,
+            "independent_solves": 8,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 8,
+            "subsets_attempted": 8
+          },
+          "first_certificate": {
+            "combination_rhs": "3",
+            "enumerated_indices": [
+              6
+            ],
+            "first_success_independent_solves": 8,
+            "first_success_subsets_attempted": 8,
+            "inequality_weights": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 3,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "first_success",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 7,
+          "column_rank": 3,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 20,
+            "dependent_subsets_rejected": 18,
+            "inconsistent_independent_systems": 19,
+            "independent_solves": 46,
+            "negative_solutions_rejected": 7,
+            "rank_tests": 64,
+            "subsets_attempted": 64
+          },
+          "first_certificate": {
+            "combination_rhs": "3",
+            "enumerated_indices": [
+              6
+            ],
+            "first_success_independent_solves": 8,
+            "first_success_subsets_attempted": 8,
+            "inequality_weights": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 3,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "exhaustive",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 8,
+          "column_rank": 4,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 7,
+            "independent_solves": 8,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 8,
+            "subsets_attempted": 8
+          },
+          "first_certificate": {
+            "combination_rhs": "3",
+            "enumerated_indices": [
+              6
+            ],
+            "first_success_independent_solves": 8,
+            "first_success_subsets_attempted": 8,
+            "inequality_weights": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 4,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "first_success",
+          "strategy": "augmented"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 8,
+          "column_rank": 4,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 65,
+            "dependent_subsets_rejected": 22,
+            "inconsistent_independent_systems": 60,
+            "independent_solves": 141,
+            "negative_solutions_rejected": 16,
+            "rank_tests": 163,
+            "subsets_attempted": 163
+          },
+          "first_certificate": {
+            "combination_rhs": "3",
+            "enumerated_indices": [
+              6
+            ],
+            "first_success_independent_solves": 8,
+            "first_success_subsets_attempted": 8,
+            "inequality_weights": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 4,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "exhaustive",
+          "strategy": "augmented"
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "bound": "3",
+        "budgets": [
+          "3",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ],
+        "dimension": 3,
+        "expected_minimum_inequality_support": 1,
+        "feasible_witness": [
+          "0",
+          "0",
+          "0"
+        ],
+        "feasible_witness_checked": true,
+        "kind": "bound",
+        "name": "early-singleton-row-order",
+        "normals": [
+          [
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "-1"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "-1",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        "note": "The same rows reordered put the useful singleton first.",
+        "objective": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      "runs": [
+        {
+          "candidate_found": true,
+          "column_count": 7,
+          "column_rank": 3,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 1,
+            "independent_solves": 2,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 2,
+            "subsets_attempted": 2
+          },
+          "first_certificate": {
+            "combination_rhs": "3",
+            "enumerated_indices": [
+              0
+            ],
+            "first_success_independent_solves": 2,
+            "first_success_subsets_attempted": 2,
+            "inequality_weights": [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 3,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "first_success",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 7,
+          "column_rank": 3,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 20,
+            "dependent_subsets_rejected": 18,
+            "inconsistent_independent_systems": 19,
+            "independent_solves": 46,
+            "negative_solutions_rejected": 7,
+            "rank_tests": 64,
+            "subsets_attempted": 64
+          },
+          "first_certificate": {
+            "combination_rhs": "3",
+            "enumerated_indices": [
+              0
+            ],
+            "first_success_independent_solves": 2,
+            "first_success_subsets_attempted": 2,
+            "inequality_weights": [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 3,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "exhaustive",
+          "strategy": "direct"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 8,
+          "column_rank": 4,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 1,
+            "independent_solves": 2,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 2,
+            "subsets_attempted": 2
+          },
+          "first_certificate": {
+            "combination_rhs": "3",
+            "enumerated_indices": [
+              0
+            ],
+            "first_success_independent_solves": 2,
+            "first_success_subsets_attempted": 2,
+            "inequality_weights": [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 4,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "first_success",
+          "strategy": "augmented"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 8,
+          "column_rank": 4,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 65,
+            "dependent_subsets_rejected": 22,
+            "inconsistent_independent_systems": 60,
+            "independent_solves": 141,
+            "negative_solutions_rejected": 16,
+            "rank_tests": 163,
+            "subsets_attempted": 163
+          },
+          "first_certificate": {
+            "combination_rhs": "3",
+            "enumerated_indices": [
+              0
+            ],
+            "first_success_independent_solves": 2,
+            "first_success_subsets_attempted": 2,
+            "inequality_weights": [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 4,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "exhaustive",
+          "strategy": "augmented"
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "budgets": [
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        "dimension": 3,
+        "expected_minimum_inequality_support": 4,
+        "kind": "contradiction",
+        "name": "sharp-contradiction-support-k-plus-one",
+        "normals": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ],
+          [
+            "-1",
+            "-1",
+            "-1"
+          ]
+        ],
+        "note": "The four-row positive circuit cannot omit any row."
+      },
+      "runs": [
+        {
+          "candidate_found": true,
+          "column_count": 4,
+          "column_rank": 4,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 15,
+            "independent_solves": 16,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 16,
+            "subsets_attempted": 16
+          },
+          "first_certificate": {
+            "combination_rhs": "-1",
+            "enumerated_indices": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "first_success_independent_solves": 16,
+            "first_success_subsets_attempted": 16,
+            "inequality_weights": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 4,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 4,
+          "minimum_positive_inequality_support_observed": 4,
+          "mode": "first_success",
+          "strategy": "augmented"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 4,
+          "column_rank": 4,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 15,
+            "independent_solves": 16,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 16,
+            "subsets_attempted": 16
+          },
+          "first_certificate": {
+            "combination_rhs": "-1",
+            "enumerated_indices": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "first_success_independent_solves": 16,
+            "first_success_subsets_attempted": 16,
+            "inequality_weights": [
+              "1",
+              "1",
+              "1",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 4,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 4,
+          "minimum_positive_inequality_support_observed": 4,
+          "mode": "exhaustive",
+          "strategy": "augmented"
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "budgets": [
+          "-1"
+        ],
+        "dimension": 1,
+        "expected_minimum_inequality_support": 1,
+        "kind": "contradiction",
+        "name": "zero-projected-row-contradiction",
+        "normals": [
+          [
+            "0"
+          ]
+        ],
+        "note": "The equality makes x1 <= 0 project to 0 <= -1.",
+        "original_space": {
+          "affine_parametrization_checked": true,
+          "bound": null,
+          "equality_rhs": [
+            "1"
+          ],
+          "equality_rows": [
+            [
+              "1",
+              "0"
+            ]
+          ],
+          "inequality_rhs": [
+            "0"
+          ],
+          "inequality_rows": [
+            [
+              "1",
+              "0"
+            ]
+          ],
+          "null_columns": [
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "objective": null,
+          "x0": [
+            "1",
+            "0"
+          ]
+        }
+      },
+      "runs": [
+        {
+          "candidate_found": true,
+          "column_count": 1,
+          "column_rank": 1,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 1,
+            "independent_solves": 2,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 2,
+            "subsets_attempted": 2
+          },
+          "first_certificate": {
+            "combination_rhs": "-1",
+            "enumerated_indices": [
+              0
+            ],
+            "first_success_independent_solves": 2,
+            "first_success_subsets_attempted": 2,
+            "inequality_weights": [
+              "1"
+            ],
+            "original_identity": {
+              "equality_weights": [
+                "-1"
+              ],
+              "identity_checked": true,
+              "original_combination_rhs": "-1"
+            },
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 1,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "first_success",
+          "strategy": "augmented"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 1,
+          "column_rank": 1,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 1,
+            "independent_solves": 2,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 2,
+            "subsets_attempted": 2
+          },
+          "first_certificate": {
+            "combination_rhs": "-1",
+            "enumerated_indices": [
+              0
+            ],
+            "first_success_independent_solves": 2,
+            "first_success_subsets_attempted": 2,
+            "inequality_weights": [
+              "1"
+            ],
+            "original_identity": {
+              "equality_weights": [
+                "-1"
+              ],
+              "identity_checked": true,
+              "original_combination_rhs": "-1"
+            },
+            "positive_inequality_support": 1,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 1,
+          "minimum_positive_inequality_support_observed": 1,
+          "mode": "exhaustive",
+          "strategy": "augmented"
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "budgets": [
+          "1/2",
+          "-1"
+        ],
+        "dimension": 1,
+        "expected_minimum_inequality_support": 2,
+        "kind": "contradiction",
+        "name": "rational-contradiction",
+        "normals": [
+          [
+            "2/3"
+          ],
+          [
+            "-3/5"
+          ]
+        ],
+        "note": "Unique normalized weights are 18/11 and 20/11."
+      },
+      "runs": [
+        {
+          "candidate_found": true,
+          "column_count": 2,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 3,
+            "independent_solves": 4,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 4,
+            "subsets_attempted": 4
+          },
+          "first_certificate": {
+            "combination_rhs": "-1",
+            "enumerated_indices": [
+              0,
+              1
+            ],
+            "first_success_independent_solves": 4,
+            "first_success_subsets_attempted": 4,
+            "inequality_weights": [
+              "18/11",
+              "20/11"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 2,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 2,
+          "mode": "first_success",
+          "strategy": "augmented"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 2,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 0,
+            "inconsistent_independent_systems": 3,
+            "independent_solves": 4,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 4,
+            "subsets_attempted": 4
+          },
+          "first_certificate": {
+            "combination_rhs": "-1",
+            "enumerated_indices": [
+              0,
+              1
+            ],
+            "first_success_independent_solves": 4,
+            "first_success_subsets_attempted": 4,
+            "inequality_weights": [
+              "18/11",
+              "20/11"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 2,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 2,
+          "mode": "exhaustive",
+          "strategy": "augmented"
+        }
+      ]
+    },
+    {
+      "fixture": {
+        "budgets": [
+          "1",
+          "2",
+          "-2"
+        ],
+        "dimension": 1,
+        "expected_minimum_inequality_support": 2,
+        "kind": "contradiction",
+        "name": "duplicate-contradiction",
+        "normals": [
+          [
+            "1"
+          ],
+          [
+            "2"
+          ],
+          [
+            "-1"
+          ]
+        ],
+        "note": "The scaled duplicate creates a rank rejection."
+      },
+      "runs": [
+        {
+          "candidate_found": true,
+          "column_count": 3,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 1,
+            "dependent_subsets_rejected": 1,
+            "inconsistent_independent_systems": 4,
+            "independent_solves": 5,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 6,
+            "subsets_attempted": 6
+          },
+          "first_certificate": {
+            "combination_rhs": "-1",
+            "enumerated_indices": [
+              0,
+              2
+            ],
+            "first_success_independent_solves": 5,
+            "first_success_subsets_attempted": 6,
+            "inequality_weights": [
+              "1",
+              "0",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 2,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 2,
+          "mode": "first_success",
+          "strategy": "augmented"
+        },
+        {
+          "candidate_found": true,
+          "column_count": 3,
+          "column_rank": 2,
+          "counts": {
+            "budget_rejections": 0,
+            "certificates_checked": 2,
+            "dependent_subsets_rejected": 1,
+            "inconsistent_independent_systems": 4,
+            "independent_solves": 6,
+            "negative_solutions_rejected": 0,
+            "rank_tests": 7,
+            "subsets_attempted": 7
+          },
+          "first_certificate": {
+            "combination_rhs": "-1",
+            "enumerated_indices": [
+              0,
+              2
+            ],
+            "first_success_independent_solves": 5,
+            "first_success_subsets_attempted": 6,
+            "inequality_weights": [
+              "1",
+              "0",
+              "1"
+            ],
+            "original_identity": null,
+            "positive_inequality_support": 2,
+            "vertical_residual_weight": "0"
+          },
+          "maximum_enumerated_support": 2,
+          "minimum_positive_inequality_support_observed": 2,
+          "mode": "exhaustive",
+          "strategy": "augmented"
+        }
+      ]
+    }
+  ],
+  "schema": "lp-sparse-discovery-fixture-benchmark-v1",
+  "scope": "Built-in fixtures only; no general LP status classification or formal verification"
+}

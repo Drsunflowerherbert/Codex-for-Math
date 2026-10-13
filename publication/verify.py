@@ -8,6 +8,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 IGNORED={'.git','.lake','.elan','.cache','tooling','__pycache__','dist','lean-cache'}
+ROUND_ROOTS={'lp-certificates','transport-sharpness','evidence-hardening','lp-sparse-discovery'}
 
 def paths():
     for base,dirs,files in os.walk(ROOT,followlinks=False):
@@ -68,8 +69,8 @@ def main():
         batch=json.loads((ROOT/current_map).read_text())
         assert batch['schema']=='october-13-publication-source-map/v1'
         components=batch['frozen_components']
-        assert set(components)<={'lp-certificates','transport-sharpness','evidence-hardening'}
-        assert set(components)=={name.split('/')[0] for name in actual if name.split('/')[0] in {'lp-certificates','transport-sharpness','evidence-hardening'}},'Published round component missing from source map.'
+        assert set(components)<=ROUND_ROOTS
+        assert set(components)=={name.split('/')[0] for name in actual if name.split('/')[0] in ROUND_ROOTS},'Published round component missing from source map.'
         assert all(re.fullmatch('[0-9a-f]{40}',commit) for commit in components.values())
         seen=set()
         protected_pins={'lean-toolchain','lakefile.toml','lake-manifest.json','fixture-policy.json','baseline.json'}

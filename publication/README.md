@@ -1,7 +1,8 @@
 # Publication record
 
 The [13 October round](ROUND-2026-10-13.md) integrates three frozen, reviewed
-components onto verified research baseline `b1d6c20`. Its complete input
+components and a reviewed ordinary sparse-discovery addendum onto verified
+research baseline `b1d6c20`. Its complete input
 dispositions are in [OCTOBER-13-SOURCE-MAP.json](OCTOBER-13-SOURCE-MAP.json).
 Current whole-repository bytes use `FILES.json`; earlier manifests, proof files,
 attribution and provenance rows retain their original scope. Metadata derivatives

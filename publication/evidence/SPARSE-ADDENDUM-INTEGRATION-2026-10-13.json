@@ -1,0 +1,137 @@
+{
+  "schema": "october-13-ordinary-addendum-integration/v1",
+  "checked_utc": "2026-10-13T04:12:30.290790+00:00",
+  "worker_commit": "5f723174d9ac2703000f685c8cb5814b9713b466",
+  "source_files": 15,
+  "original_files_byte_identical": 15,
+  "self_excluding_original_provenance_hashes_verified": 14,
+  "regular_file_mode": "100644",
+  "privacy_attribution_scope": "All fifteen source files inspected; no actual secret, personal email, private machine path or transport metadata found. Source PDFs, dependency code and binaries are absent. Existing attribution preserved.",
+  "reused_source_bound_reviews": [
+    "lp-sparse-discovery/reviews/mathematical-review.md",
+    "lp-sparse-discovery/reviews/computational-review.md",
+    "lp-sparse-discovery/benchmark/REVIEW.md"
+  ],
+  "historical_observed_counts": {
+    "regression_tests": 14,
+    "fixtures": 13,
+    "fixture_runs": 44,
+    "toy_inputs": 5040,
+    "toy_searches": 10080,
+    "zero_dimensional_searches": 13,
+    "first_success_counterexample_searches": 2,
+    "original_coordinate_identities": 6,
+    "affine_parametrizations": 2
+  },
+  "publisher_repeated_finite_audit": false,
+  "new_mathematical_verification": false,
+  "scope": "Ordinary reviewed support/search arguments and exact rational fixture evidence. No Lean verification, general solver implementation, performance claim, novelty claim or formal completeness upgrade.",
+  "publication_notice": "lp-sparse-discovery/PUBLICATION-NOTICE.md",
+  "input_bindings": [
+    {
+      "name": "lp-sparse-discovery/PROVENANCE.json",
+      "mode": "100644",
+      "blob": "d03a3e3c8f44aaaa1dad286c8b6f523351600d97",
+      "sha256": "6803457892ab0413b9194ae3aa9e5225cfc52c4201706cdac8eb4290e79fe4f2",
+      "bytes": 2865
+    },
+    {
+      "name": "lp-sparse-discovery/README.md",
+      "mode": "100644",
+      "blob": "2b7915ff995da30e8a40cb69c341fac6510d62b4",
+      "sha256": "b40a2f9ea16b8143f7a7ca8e8a517c79cfee40310dfcead6a56ef6c600cc5c03",
+      "bytes": 3620
+    },
+    {
+      "name": "lp-sparse-discovery/SOURCES.md",
+      "mode": "100644",
+      "blob": "1f5c1dea5e19954cab4386f71af50ce5694158a8",
+      "sha256": "11a7fb9bacf609dddc2c16fea747ac480e5b3ab81096d78e3922fc07ba42bca3",
+      "bytes": 5524
+    },
+    {
+      "name": "lp-sparse-discovery/benchmark/.gitignore",
+      "mode": "100644",
+      "blob": "7a60b85e148f80966a550e5ab6a762a907c69ca6",
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+      "bytes": 19
+    },
+    {
+      "name": "lp-sparse-discovery/benchmark/README.md",
+      "mode": "100644",
+      "blob": "ec48fbd2c574cda2ff3b8ba61fd3a1e97696469e",
+      "sha256": "c01d706219d5979f77a8b9858525d38e39574584cde2002fe677d641238f8711",
+      "bytes": 6484
+    },
+    {
+      "name": "lp-sparse-discovery/benchmark/REVIEW.md",
+      "mode": "100644",
+      "blob": "ced7586eea0fdce54f33f07996b7907db00a3681",
+      "sha256": "d8163e642d05d5425d276941b67679597408f75f477dbada1893e2bb95325d37",
+      "bytes": 4170
+    },
+    {
+      "name": "lp-sparse-discovery/benchmark/benchmark.py",
+      "mode": "100644",
+      "blob": "8a532959a7b94e92a885322ac36b062cbab43c28",
+      "sha256": "375a36269dd53cd3b7350000c7de14bf95f29228aedef8f3fa8b2e6379b7b918",
+      "bytes": 19710
+    },
+    {
+      "name": "lp-sparse-discovery/benchmark/results.json",
+      "mode": "100644",
+      "blob": "254594e2142149c617acee9a48ae951723e17b3b",
+      "sha256": "c314baf34cb68412b97727e0dbfa75806cc9de3f2b71ba6bce7cc345c619b107",
+      "bytes": 63633
+    },
+    {
+      "name": "lp-sparse-discovery/benchmark/test_benchmark.py",
+      "mode": "100644",
+      "blob": "bb033952e22558012ae7bc1c477766850c5a46f7",
+      "sha256": "38b89c5449deb21096e3ec462bd554282e1cf45ffcd0caf20074ee47a58e01c5",
+      "bytes": 6859
+    },
+    {
+      "name": "lp-sparse-discovery/evidence/publication-review.md",
+      "mode": "100644",
+      "blob": "0eaef3a08dae6108166985f2e48cf0622caf936c",
+      "sha256": "cf6ab45017e686b1e5a6dca7c80b9d548ef652c97af595c3e69d7c85bbc12288",
+      "bytes": 3965
+    },
+    {
+      "name": "lp-sparse-discovery/examples.md",
+      "mode": "100644",
+      "blob": "7c131f8e1f4b70ebee46f2a7a63b19d08b169b76",
+      "sha256": "a973c0122942d975886a9d5aac3a017d7fb8296a14fc12515ce258832f6dbbd1",
+      "bytes": 7666
+    },
+    {
+      "name": "lp-sparse-discovery/reviews/computational-review.md",
+      "mode": "100644",
+      "blob": "4c693b4759f47e8cf5fa1ca5eb91257f00536976",
+      "sha256": "1f680ba4cae64987f0d6eec21867d0fa0cbb84de6a8b13fbd9b7a9feb44d560c",
+      "bytes": 8045
+    },
+    {
+      "name": "lp-sparse-discovery/reviews/independent_check.py",
+      "mode": "100644",
+      "blob": "9136c5576c09a384b29b1604385107ee6f278f2f",
+      "sha256": "3203514fdb12d1c6a8414e605650a77a0600b20f66630c8865dfb1c4f9d64937",
+      "bytes": 11291
+    },
+    {
+      "name": "lp-sparse-discovery/reviews/mathematical-review.md",
+      "mode": "100644",
+      "blob": "e7f8c68e37ddcb2483bce763d07e41e42a11540c",
+      "sha256": "f98bd75f84884f1c4903a5072ebf4907a1cb1c9f96a28997bc74747c9b563e4c",
+      "bytes": 9447
+    },
+    {
+      "name": "lp-sparse-discovery/study.md",
+      "mode": "100644",
+      "blob": "642fa40fb6d394a369e1db782edf741968454f3e",
+      "sha256": "0a21eddb24f9325f8f2767d69cdcafde363774ef18b6f8b804b85c1aa2300f84",
+      "bytes": 19279
+    }
+  ]
+}

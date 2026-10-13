@@ -2,8 +2,8 @@
 
 ## 13 October continuation
 
-The [round report](ROUND-2026-10-13.md) records the final frozen LP, transport
-and evidence-hardening scope. The publisher inspected source/attribution,
+The [round report](ROUND-2026-10-13.md) records the final frozen LP, transport,
+evidence-hardening and ordinary sparse-discovery scope. The publisher inspected source/attribution,
 original input inventories and source-bound verification receipts, and validated
 the three current public LP packages as saved consistency only. Earlier
 independent worker reviews remain scoped historical records. An additional
@@ -14,8 +14,8 @@ and saved-process-intake claims. A later executable-binding finding is corrected
 in the Python runner with seven focused regressions and a real same-executable
 smoke; Lean proof sources and proof gates are unchanged.
 
-All 1,404 input candidates have original/current dispositions, and all 132
-protected inputs are explicitly bound: 131 remain byte-identical and `bridge.py`
+All 1,419 input candidates have original/current dispositions, and all 135
+protected inputs are explicitly bound: 134 remain byte-identical and `bridge.py`
 has one recorded publication correction. All proof sources/pins remain unchanged.
 Current metadata derivatives
 normalize machine/routing details with original hashes preserved. The portable
@@ -24,6 +24,12 @@ remain recorded. Prior provenance rows, attribution, guide/status files,
 historical batch maps and original tangent files are preserved. Integrity
 regressions establish byte/provenance consistency and do not confer a new
 mathematical verification or independent-kernel claim.
+
+The sparse addendum's fifteen files are byte-identical to its reviewed worker
+commit; all fourteen self-excluding provenance hashes passed. Its independent
+mathematical, computational and benchmark reviews retain ordinary mathematics
+and exact fixture scope. No Lean pass or general solver claim is added. Its
+branch-only historical wording is explained by a separate publication notice.
 
 Two independent automated reviewers inspected the four initial archives and
 the later sharp tangent extension. The initial privacy review covered all

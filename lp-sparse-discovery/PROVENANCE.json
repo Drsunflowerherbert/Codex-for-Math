@@ -1,0 +1,56 @@
+{
+  "base_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+  "branch": "codex/lp-sparse-discovery-2026-10-13",
+  "claims": "Ordinary reviewed proofs; exact rational fixture experiment; no novelty claim",
+  "file_hashes_exclude_manifest_itself": true,
+  "files": {
+    "README.md": "b40a2f9ea16b8143f7a7ca8e8a517c79cfee40310dfcead6a56ef6c600cc5c03",
+    "SOURCES.md": "11a7fb9bacf609dddc2c16fea747ac480e5b3ab81096d78e3922fc07ba42bca3",
+    "benchmark/.gitignore": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+    "benchmark/README.md": "c01d706219d5979f77a8b9858525d38e39574584cde2002fe677d641238f8711",
+    "benchmark/REVIEW.md": "d8163e642d05d5425d276941b67679597408f75f477dbada1893e2bb95325d37",
+    "benchmark/benchmark.py": "375a36269dd53cd3b7350000c7de14bf95f29228aedef8f3fa8b2e6379b7b918",
+    "benchmark/results.json": "c314baf34cb68412b97727e0dbfa75806cc9de3f2b71ba6bce7cc345c619b107",
+    "benchmark/test_benchmark.py": "38b89c5449deb21096e3ec462bd554282e1cf45ffcd0caf20074ee47a58e01c5",
+    "evidence/publication-review.md": "cf6ab45017e686b1e5a6dca7c80b9d548ef652c97af595c3e69d7c85bbc12288",
+    "examples.md": "a973c0122942d975886a9d5aac3a017d7fb8296a14fc12515ce258832f6dbbd1",
+    "reviews/computational-review.md": "1f680ba4cae64987f0d6eec21867d0fa0cbb84de6a8b13fbd9b7a9feb44d560c",
+    "reviews/independent_check.py": "3203514fdb12d1c6a8414e605650a77a0600b20f66630c8865dfb1c4f9d64937",
+    "reviews/mathematical-review.md": "f98bd75f84884f1c4903a5072ebf4907a1cb1c9f96a28997bc74747c9b563e4c",
+    "study.md": "0a21eddb24f9325f8f2767d69cdcafde363774ef18b6f8b804b85c1aa2300f84"
+  },
+  "formal_verification_performed": false,
+  "frozen_at_utc": "2026-10-13T03:50:32Z",
+  "hash_algorithm": "sha256",
+  "inspected_certificate_commit": "032db09354d41b58c2e9211ed7e69024a3e74010",
+  "inspected_finder_blob": "aa51c335f878f3e61cfc5b29fd0ffa2d42d02403",
+  "observed_checks": {
+    "additional_zero_dimensional_runs": 13,
+    "affine_parametrizations": 2,
+    "benchmark_fixtures": 13,
+    "benchmark_runs": 44,
+    "byte_identical_report": true,
+    "finite_toy_inputs": 5040,
+    "first_success_counterexample_runs": 2,
+    "independent_fixture_runs": 44,
+    "original_identities": 6,
+    "regression_tests_passed": 14,
+    "toy_search_runs": 10080
+  },
+  "publication_constraints": {
+    "new_branch_only": true,
+    "no_force_push": true,
+    "no_library_dependency": true,
+    "no_pr_or_merge": true,
+    "no_saved_account_or_credential_changes": true
+  },
+  "published_scope": "lp-sparse-discovery/ only; no sibling component integration",
+  "repository": "Drsunflowerherbert/Codex-for-Math",
+  "reviews": [
+    "reviews/mathematical-review.md",
+    "reviews/computational-review.md",
+    "benchmark/REVIEW.md"
+  ],
+  "runtime": "Python 3.12.14, standard library only",
+  "schema": "lp-sparse-discovery-scoped-provenance-v1"
+}
