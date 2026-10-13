@@ -1,7 +1,7 @@
 {
   "schema": "october-13-publication-source-map/v1",
   "baseline_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
-  "round_status": "reviewed_scope_findings_resolved_by_explicit_documentation",
+  "round_status": "corrective_executable_binding_candidate_awaiting_reviewer_confirmation",
   "frozen_components": {
     "evidence-hardening": "c2fe44833ceb577595028549cecdda87986f303e",
     "transport-sharpness": "fa5cd40c36daa5373c0234bda0b9d09a49595ce6",
@@ -11,7 +11,8 @@
   "generated_publication_files": [
     "evidence-hardening/PUBLICATION-NOTICE.md",
     "transport-sharpness/PUBLICATION-NOTICE.md",
-    "lp-certificates/PUBLICATION-NOTICE.md"
+    "lp-certificates/PUBLICATION-NOTICE.md",
+    "lp-certificates/tests/test_toolchain_binding.py"
   ],
   "files": [
     {
@@ -82,11 +83,11 @@
       "source_blob": "3008a5e0fc82a56f2bfd702eb6f529c3eeefb5bb",
       "source_sha256": "59545d0b77cc3094f8cd2a77a42c414e18ace632355f60b7579979b2a2308eaa",
       "source_bytes": 5764,
-      "action": "retained_unchanged",
-      "reason": "Frozen source/evidence bytes preserved.",
+      "action": "sanitized_metadata",
+      "reason": "Frozen source/evidence bytes preserved. Final scoped review: repair current executable-binding documentation, a=0 domain wording or mixed-suite count attribution; mathematical proof bytes and original verdicts preserved.",
       "published_file": "evidence-hardening/VERIFICATION.md",
-      "published_sha256": "59545d0b77cc3094f8cd2a77a42c414e18ace632355f60b7579979b2a2308eaa",
-      "published_bytes": 5764,
+      "published_sha256": "7715128971261e4778abb58b13bb5a74aaffd6fb2c413f1ff3cb9f6cf99ccd1a",
+      "published_bytes": 5842,
       "protected_source": false
     },
     {
@@ -1163,10 +1164,10 @@
       "source_sha256": "7c7202d469172c20f8d33acd8c3138b80a3e8ff919cc49853741bfa39df63df2",
       "source_bytes": 8483,
       "action": "sanitized_metadata",
-      "reason": "Normalize recorded machine paths and coordination metadata; preserve mathematical claims, original evidence scope and source hash bindings. Public copy grants no new proof pass.",
+      "reason": "Normalize recorded machine paths and coordination metadata; preserve mathematical claims, original evidence scope and source hash bindings. Public copy grants no new proof pass. Final scoped review: repair current executable-binding documentation, a=0 domain wording or mixed-suite count attribution; mathematical proof bytes and original verdicts preserved.",
       "published_file": "transport-sharpness/docs/followup-measure-bridge.md",
-      "published_sha256": "818db1ee00403f6fd2aed2d989af5f6f8e491d84a16d1238b270426bd40045a5",
-      "published_bytes": 8776,
+      "published_sha256": "609496c45dfea3fad8ba0ace17356b389be53c9dc80be047c66582101e987b09",
+      "published_bytes": 8819,
       "protected_source": false
     },
     {
@@ -11692,12 +11693,18 @@
       "source_blob": "e6c085f474ab91feb9b3f232f0be9a2a43fcf185",
       "source_sha256": "c0fe2cbfc7511309f91524e86ed8e5342f0d891c090a343a0a1ee06736774dd2",
       "source_bytes": 44239,
-      "action": "retained_unchanged",
-      "reason": "Frozen source/evidence bytes preserved.",
+      "action": "publication_code_fix",
+      "reason": "Correct selected/audited/executed/postchecked executable binding. Renderer and Lean proof gates unchanged. Explicitly support the exact reviewed historical generator hash for original saved-package inspection; fresh recheck uses corrected code.",
       "published_file": "lp-certificates/bridge.py",
-      "published_sha256": "c0fe2cbfc7511309f91524e86ed8e5342f0d891c090a343a0a1ee06736774dd2",
-      "published_bytes": 44239,
-      "protected_source": true
+      "published_sha256": "dc857d8bc048cb5d39bce542d97db8e3f4aa8ffd569b57f5dc6f6833d8f5cb20",
+      "published_bytes": 45112,
+      "protected_source": true,
+      "publication_fix": {
+        "original_sha256": "c0fe2cbfc7511309f91524e86ed8e5342f0d891c090a343a0a1ee06736774dd2",
+        "current_sha256": "dc857d8bc048cb5d39bce542d97db8e3f4aa8ffd569b57f5dc6f6833d8f5cb20",
+        "proof_sources_and_gates_changed": false,
+        "evidence": "publication/evidence/LP-EXECUTABLE-BINDING-REPAIR-2026-10-13.json"
+      }
     },
     {
       "bundle": "lp-certificates-2026-10-13",
@@ -20843,10 +20850,10 @@
       "source_sha256": "a89a3f1666f2a5430bbf36cd121dcee96fee15322e2f708a1f7f58e1879b4615",
       "source_bytes": 12962,
       "action": "sanitized_metadata",
-      "reason": "Normalize recorded machine paths and coordination metadata; preserve mathematical claims, original evidence scope and source hash bindings. Public copy grants no new proof pass. Additional scoped source review: explicitly narrow dependency-cleanliness and saved-process-intake claims; frozen code and proof gates unchanged.",
+      "reason": "Normalize recorded machine paths and coordination metadata; preserve mathematical claims, original evidence scope and source hash bindings. Public copy grants no new proof pass. Additional scoped source review: explicitly narrow dependency-cleanliness and saved-process-intake claims; frozen code and proof gates unchanged. Final scoped review: repair current executable-binding documentation, a=0 domain wording or mixed-suite count attribution; mathematical proof bytes and original verdicts preserved.",
       "published_file": "lp-certificates/notes/checked-bridge.md",
-      "published_sha256": "f3c9c8e70208ad95553c5d4acc325d410b08663f3a271bb275d789ee78eef4dc",
-      "published_bytes": 13481,
+      "published_sha256": "ddb121d03fad4ce38b331cacbdc40b0323771348596483fede30ddc5c039e4f2",
+      "published_bytes": 13881,
       "protected_source": false
     },
     {
@@ -21075,5 +21082,8 @@
       "protected_source": true
     }
   ],
-  "additional_lp_source_review": "publication/evidence/LP-BRIDGE-SCOPE-REVIEW-2026-10-13.json"
+  "additional_lp_source_review": "publication/evidence/LP-BRIDGE-SCOPE-REVIEW-2026-10-13.json",
+  "publication_code_fixes": [
+    "lp-certificates/bridge.py"
+  ]
 }

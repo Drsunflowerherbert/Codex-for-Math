@@ -1,0 +1,108 @@
+{
+  "schema": "publication-scoped-executable-binding-repair/v1",
+  "tested_utc": "2026-10-13T03:54:56.570960+00:00",
+  "original_worker_commit": "032db09354d41b58c2e9211ed7e69024a3e74010",
+  "original_bridge_sha256": "c0fe2cbfc7511309f91524e86ed8e5342f0d891c090a343a0a1ee06736774dd2",
+  "corrected_bridge_sha256": "dc857d8bc048cb5d39bce542d97db8e3f4aa8ffd569b57f5dc6f6833d8f5cb20",
+  "new_regression_source_sha256": "1a44b3b94e21077ad3dee192d9744f9936a3c7106106696bbebdb1712ab6d34e",
+  "regression_suite": {
+    "command": "python3 -m unittest discover -s tests -p test_toolchain_binding.py -v",
+    "total": 7,
+    "passed": 7,
+    "failed": 0,
+    "mode": "Synthetic release-member byte fixtures and actual filesystem paths; sibling substitution never reaches launch."
+  },
+  "affected_bridge_suite": {
+    "total": 33,
+    "passed": 33,
+    "skipped": 0
+  },
+  "affected_independent_suite": {
+    "total": 13,
+    "passed": 11,
+    "skipped": 2
+  },
+  "original_smoke_receipt_sha256": "85d52e80e73e2f329d4ebf4af1479d512d7b55fbe3768826d8c02bf959ef73c1",
+  "public_smoke_metadata": {
+    "schema": "lp-executable-binding-repair-smoke/v1",
+    "tested_utc": "2026-10-13T03:48:30.419882+00:00",
+    "bridge_sha256": "dc857d8bc048cb5d39bce542d97db8e3f4aa8ffd569b57f5dc6f6833d8f5cb20",
+    "selected_executable": "${PINNED_LEAN}/bin/lean",
+    "verified_before_and_after": {
+      "lean": "${PINNED_LEAN}/bin/lean",
+      "prefix": "${PINNED_LEAN}",
+      "release": "4.24.0",
+      "commit": "797c613eb9b6d4ec95db23e3e00af9ac6657f24b",
+      "members": {
+        "bin/lean": {
+          "bytes": 9024,
+          "sha256": "8fadc3ed92cc9decb94c96ee9c0876e91e03a3a5e69138f32114f02789e2766c"
+        },
+        "lib/lean/libleanshared.so": {
+          "bytes": 193479936,
+          "sha256": "8cc9858cc57c52015ba6dd948bdbf7f05926b9b5fcead69a964f0ad61ddd79dd"
+        },
+        "lib/lean/libleanshared_1.so": {
+          "bytes": 6232,
+          "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+        },
+        "lib/lean/libleanshared_2.so": {
+          "bytes": 6232,
+          "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+        },
+        "lib/lean/libInit_shared.so": {
+          "bytes": 6232,
+          "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+        }
+      }
+    },
+    "commands": [
+      {
+        "label": "actual-version",
+        "executed_path": "${PINNED_LEAN}/bin/lean",
+        "argv": [
+          "--version"
+        ],
+        "exit": 0,
+        "stdout": {
+          "bytes": 106,
+          "sha256": "36c0bbaf090c97bc8217c6ff497ff9144fd83d9003f12cd505162b943aaaee77",
+          "utf8": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)\n"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      },
+      {
+        "label": "core-kernel-smoke",
+        "executed_path": "${PINNED_LEAN}/bin/lean",
+        "argv": [
+          "--json",
+          "--root=${SMOKE_WORK}",
+          "${SMOKE_WORK}/BindingSmoke.lean"
+        ],
+        "exit": 0,
+        "stdout": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "utf8": ""
+        }
+      }
+    ],
+    "test_source": "import Init\nexample : (2 : Nat) + 2 = 4 := rfl\n",
+    "scope": "Actual pinned executable identity and elementary core-kernel smoke; no new full LP batch audit.",
+    "result": "passed",
+    "same_exact_regular_nonsymlink_executable": true
+  },
+  "public_copy_scope": "Recorded paths replaced by labels; output bytes and hashes unchanged. This is one pinned core smoke, not a repeated full LP batch audit.",
+  "historical_packages": "All three actual frozen packages used the expected official bin/lean. Old source/hash evidence is preserved; the reader explicitly accepts that reviewed generator hash for saved consistency and always fresh-rechecks through corrected code.",
+  "proof_sources_and_gates_changed": false,
+  "reviewer_confirmation": "Corrected source candidate supplied for confirmation before follow-up push."
+}

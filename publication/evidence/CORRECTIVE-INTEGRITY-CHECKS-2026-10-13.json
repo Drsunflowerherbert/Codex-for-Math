@@ -1,0 +1,112 @@
+{
+  "schema": "october-13-publication-integrity-regressions/v1",
+  "tested_utc": "2026-10-13T03:57:48.152852+00:00",
+  "results": [
+    {
+      "case": "complete extracted snapshot without Git",
+      "expected_acceptance": true,
+      "exit": 0,
+      "passed": true
+    },
+    {
+      "case": "corrected executable source remains bound to tested repair hash",
+      "expected_acceptance": false,
+      "exit": 1,
+      "passed": true
+    },
+    {
+      "case": "transport proof drift despite rebound current hashes",
+      "expected_acceptance": false,
+      "exit": 1,
+      "passed": true
+    },
+    {
+      "case": "evidence fixture drift despite rebound current hashes",
+      "expected_acceptance": false,
+      "exit": 1,
+      "passed": true
+    },
+    {
+      "case": "fixture policy drift despite rebound current hashes",
+      "expected_acceptance": false,
+      "exit": 1,
+      "passed": true
+    },
+    {
+      "case": "immutable supplied manifest drift despite rebound current hashes",
+      "expected_acceptance": false,
+      "exit": 1,
+      "passed": true
+    },
+    {
+      "case": "unmapped component file despite rebound manifest",
+      "expected_acceptance": false,
+      "exit": 1,
+      "passed": true
+    },
+    {
+      "case": "missing source-map input despite rebound manifest",
+      "expected_acceptance": false,
+      "exit": 1,
+      "passed": true
+    },
+    {
+      "case": "symlink directory rejected",
+      "expected_acceptance": false,
+      "exit": 1,
+      "passed": true
+    },
+    {
+      "case": "metadata derivative cannot claim new mathematical verification",
+      "expected_acceptance": false,
+      "exit": 1,
+      "passed": true
+    },
+    {
+      "case": "compatible LP receipt requires explicit derivative profile",
+      "expected_acceptance": false,
+      "exit": 1,
+      "passed": true
+    },
+    {
+      "case": "compatible LP receipt cannot claim fresh mathematical verification",
+      "expected_acceptance": false,
+      "exit": 1,
+      "passed": true
+    },
+    {
+      "case": "duplicate source-map destination rejected",
+      "expected_acceptance": false,
+      "exit": 1,
+      "passed": true
+    },
+    {
+      "case": "entire published component cannot be dropped from source map",
+      "expected_acceptance": false,
+      "exit": 1,
+      "passed": true
+    },
+    {
+      "case": "original tangent drift despite rebound manifest",
+      "expected_acceptance": false,
+      "exit": 1,
+      "passed": true
+    },
+    {
+      "case": "executable repair exception cannot rewrite a Lean proof",
+      "expected_acceptance": false,
+      "exit": 1,
+      "passed": true
+    },
+    {
+      "case": "fully restored snapshot",
+      "expected_acceptance": true,
+      "exit": 0,
+      "passed": true
+    }
+  ],
+  "total": 17,
+  "passed": 17,
+  "scope": "Disposable extracted snapshot; integrity and provenance guard tests only. No new mathematical proof verification.",
+  "verifier_sha256": "2d94a27c296451f724ca848b8a71a69a90cd0176b01dd52ec16e6559d40bc7f4"
+}

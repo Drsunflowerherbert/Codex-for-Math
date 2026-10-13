@@ -1,8 +1,9 @@
 # Current publication copy
 
 This directory is integrated from frozen source commit `032db09354d41b58c2e9211ed7e69024a3e74010`.
-All Lean sources, executable source and test files, dependency pins and fixed
-fixture policy bytes remain unchanged. Recorded machine paths and coordination
+All Lean proof sources, dependency pins and fixed fixture policy bytes remain
+unchanged. The publication's exact-executable correction to `bridge.py` and
+its added regression tests are recorded below. Recorded machine paths and coordination
 metadata in public documentation and evidence copies have been normalized.
 
 JSON metadata derivatives use `publication-metadata-derivative/v1` and retain the
@@ -38,7 +39,8 @@ A separate automated source review of frozen commit `032db093` accepts the
 normalization, controlled numeric generation and fresh regeneration/check within
 the stated parser/cache trust. It found two nonblocking limitations after the
 worker freeze. The publication resolves these by narrowing the current claims;
-the frozen bridge code and proof gates are unchanged.
+those two findings remain explicit limits. A later exact-executable repair changes
+the Python runner; Lean proof sources and proof gates remain unchanged.
 
 Dependency cleanliness in `bridge.py` is an empty Git-status observation.
 `assume-unchanged` and `skip-worktree` can hide changed tracked source bytes.
@@ -57,3 +59,23 @@ The source review found no normalization/injection error or stale-output path
 that creates false fresh Lean acceptance within that scoped trust. Its report
 does not certify dependency caches or establish parser refinement, strong
 duality, finder completeness or an independent kernel.
+
+## Exact-executable publication correction
+
+A later review found that selecting a sibling directory could hash the official
+`bin/lean` while invoking a different executable. The corrected runner requires
+the physical regular `bin` directory and a regular nonsymlink `bin/lean`, hashes
+that exact selected member, executes its exact path, and repeats the same path
+binding and member checks after execution. Seven focused regressions cover the
+sibling substitution, prevention of launch, symlinks, FIFO input and changed
+postflight bytes. A real pinned-executable version call and elementary core-kernel
+compile passed with identical preflight/postflight bindings. Those smoke checks
+do not replace a full LP batch audit.
+
+The three historical checked packages used the expected official executable.
+Their input, generated source and proof-log evidence remains valid in its original
+scope. The corrected reader supports their exact reviewed historical generator
+SHA-256 as well as its current source hash; generated sources and trusted library
+bytes still have to match, and fresh recheck always executes the corrected runner.
+No historical package is relabeled as a run of the corrected code. The current
+source fix has original/current hashes in the round map and separate test evidence.

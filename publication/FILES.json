@@ -815,8 +815,8 @@
       "sha256": "d027914cdcce5b2602f6d05c4d497f5d3eac42e8347fdf37d0f440e994653514"
     },
     "evidence-hardening/VERIFICATION.md": {
-      "bytes": 5764,
-      "sha256": "59545d0b77cc3094f8cd2a77a42c414e18ace632355f60b7579979b2a2308eaa"
+      "bytes": 5842,
+      "sha256": "7715128971261e4778abb58b13bb5a74aaffd6fb2c413f1ff3cb9f6cf99ccd1a"
     },
     "evidence-hardening/baseline.json": {
       "bytes": 90830,
@@ -1159,16 +1159,16 @@
       "sha256": "095797e6e87d654dc0174b07b103713977278965b7e1a538435644db5e0d57d5"
     },
     "lp-certificates/PUBLICATION-NOTICE.md": {
-      "bytes": 3693,
-      "sha256": "63266d1015bfc544f2355fa9a24303ff60f8d1773843d728e4510b631d575163"
+      "bytes": 5168,
+      "sha256": "f86d610244a6091b56491b80271e1373e700f9b0f6fa4165731b3ce820e8747f"
     },
     "lp-certificates/README.md": {
       "bytes": 10751,
       "sha256": "de13409c23f93cd66e0b555dbe7e8a25fbe4c27ce5ba8f37eb13d4f4f6da0ebf"
     },
     "lp-certificates/bridge.py": {
-      "bytes": 44239,
-      "sha256": "c0fe2cbfc7511309f91524e86ed8e5342f0d891c090a343a0a1ee06736774dd2"
+      "bytes": 45112,
+      "sha256": "dc857d8bc048cb5d39bce542d97db8e3f4aa8ffd569b57f5dc6f6833d8f5cb20"
     },
     "lp-certificates/evidence/README.md": {
       "bytes": 4098,
@@ -3607,8 +3607,8 @@
       "sha256": "d4f8e802e6660231b5a34ffae58b3f9b74ae2622042a396fa43ac476e3550b34"
     },
     "lp-certificates/notes/checked-bridge.md": {
-      "bytes": 13481,
-      "sha256": "f3c9c8e70208ad95553c5d4acc325d410b08663f3a271bb275d789ee78eef4dc"
+      "bytes": 13881,
+      "sha256": "ddb121d03fad4ce38b331cacbdc40b0323771348596483fede30ddc5c039e4f2"
     },
     "lp-certificates/notes/finder-example.json": {
       "bytes": 761,
@@ -3661,6 +3661,10 @@
     "lp-certificates/tests/test_resource_limits.py": {
       "bytes": 3840,
       "sha256": "adc76e30538059ad06b4e0642cdac60a984beb648be8a4fe1abc2e6e46e6a99a"
+    },
+    "lp-certificates/tests/test_toolchain_binding.py": {
+      "bytes": 3171,
+      "sha256": "1a44b3b94e21077ad3dee192d9744f9936a3c7106106696bbebdb1712ab6d34e"
     },
     "lp-certificates/tests/test_verifier.py": {
       "bytes": 18073,
@@ -4703,8 +4707,8 @@
       "sha256": "bab9255e53992b809436f2f079c899fce071ef6cce1cacfc331b3718da35ebe5"
     },
     "publication/OCTOBER-13-SOURCE-MAP.json": {
-      "bytes": 1155286,
-      "sha256": "3cc209506d8db879ca0b2e651c03fac69b0dceeaa349e0ca887d0f7c125de47f"
+      "bytes": 1156533,
+      "sha256": "8b4c31e4ad9adc0cb873ce7c620b6d03a76dbc2b34df2247dc67ef5aec39bb01"
     },
     "publication/PENDING-TRANSFER.json": {
       "bytes": 2968,
@@ -4715,12 +4719,12 @@
       "sha256": "73a90d9bedb4eb52cbb3f52309c0721a7fc1f05990368bf7afcf082f3f853622"
     },
     "publication/REVIEW.md": {
-      "bytes": 11568,
-      "sha256": "102d48f635725477e490469aac638e9289e6a7553b2b7a8ffabf7a0554b5cf2d"
+      "bytes": 11825,
+      "sha256": "182b3bd87fb5ff250c104d0b865e07b444197db257ede4021bbfae46b2f98389"
     },
     "publication/ROUND-2026-10-13.md": {
-      "bytes": 7971,
-      "sha256": "dedf0afede10aefbb34f5f37f7d441e4d4755afb752662721c67b393c8195c3e"
+      "bytes": 8628,
+      "sha256": "7872086158b813eb11d3279f9a1067f417375818979b9c8197108a98062f61fd"
     },
     "publication/SOURCE-MAP.json": {
       "bytes": 522176,
@@ -4738,6 +4742,10 @@
       "bytes": 2404,
       "sha256": "d68196d8a68d7f68b88a7a62c0ee104a16eaa28a0f6888da2be524941df1a88b"
     },
+    "publication/evidence/CORRECTIVE-INTEGRITY-CHECKS-2026-10-13.json": {
+      "bytes": 3025,
+      "sha256": "93ea615868224eff48183e93a4da8aa72949f31c1e61a73fdc4ce0542d9b600a"
+    },
     "publication/evidence/CURRENT-CHECKS.json": {
       "bytes": 4837,
       "sha256": "d94ea0fd5c5c07a6b59d4c5222d6cb093e213ef6e92f508e0e1c680336c7a1db"
@@ -4753,6 +4761,10 @@
     "publication/evidence/LP-BRIDGE-SCOPE-REVIEW-2026-10-13.json": {
       "bytes": 2301,
       "sha256": "c37734c37d68a3791d3a677bcadd9875bbf365ded15db456e6806bd4fc90ca7d"
+    },
+    "publication/evidence/LP-EXECUTABLE-BINDING-REPAIR-2026-10-13.json": {
+      "bytes": 4424,
+      "sha256": "3d675105b44ee96743cadc9732c807434e75ff704eb8fce87c71fe1b0223e219"
     },
     "publication/evidence/MIXED-MOMENT-CHECKS.json": {
       "bytes": 15576,
@@ -4907,8 +4919,8 @@
       "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
     },
     "publication/verify.py": {
-      "bytes": 8857,
-      "sha256": "190d847c246a0a25a26930c19640a1ca7709586b9478faa4c56162c171b98d6a"
+      "bytes": 9360,
+      "sha256": "2d94a27c296451f724ca848b8a71a69a90cd0176b01dd52ec16e6559d40bc7f4"
     },
     "radial-contact/ASSUMPTIONS.md": {
       "bytes": 2392,
@@ -6603,8 +6615,8 @@
       "sha256": "9112545adcc68fc31ce386c4a0982c071ea534f1bc99acce45dde8cb55c5c6ae"
     },
     "transport-sharpness/docs/followup-measure-bridge.md": {
-      "bytes": 8776,
-      "sha256": "818db1ee00403f6fd2aed2d989af5f6f8e491d84a16d1238b270426bd40045a5"
+      "bytes": 8819,
+      "sha256": "609496c45dfea3fad8ba0ace17356b389be53c9dc80be047c66582101e987b09"
     },
     "transport-sharpness/docs/verification.md": {
       "bytes": 6614,

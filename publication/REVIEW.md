@@ -10,10 +10,14 @@ independent worker reviews remain scoped historical records. An additional
 [bridge-specialist summary](evidence/LP-BRIDGE-SCOPE-REVIEW-2026-10-13.json)
 accepts the final LP bridge under parser/cache trust and identifies two
 nonblocking limitations. Current documentation narrows the Git-status cleanliness
-and saved-process-intake claims; no frozen source or proof gate was changed.
+and saved-process-intake claims. A later executable-binding finding is corrected
+in the Python runner with seven focused regressions and a real same-executable
+smoke; Lean proof sources and proof gates are unchanged.
 
 All 1,404 input candidates have original/current dispositions, and all 132
-protected sources/pins remain byte-identical. Current metadata derivatives
+protected inputs are explicitly bound: 131 remain byte-identical and `bridge.py`
+has one recorded publication correction. All proof sources/pins remain unchanged.
+Current metadata derivatives
 normalize machine/routing details with original hashes preserved. The portable
 LP package manifests bind current public metadata while their original hashes
 remain recorded. Prior provenance rows, attribution, guide/status files,

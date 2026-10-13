@@ -60,7 +60,8 @@ Default counts are 157 inherited checks (including labeled mocks), 8 process,
 manifest validation checked 89 public files. Generic source/schema acceptance
 still reports zero Lean passes.
 
-Actual pinned baseline Lean testing separately passed 31 live adversarial cases,
+Actual pinned baseline testing separately passed a 31-case mixed
+live/preflight/receipt adversarial suite: sixteen live, nine preflight and six receipt cases,
 three actual Lean OS interruptions, and the full tangent plan: 70 phases,
 37 targets, four definition bodies and 59 local replay declarations. The
 `PiDiophantine` hypothesis remains unproved. Clean dependency sources and the

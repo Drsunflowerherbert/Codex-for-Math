@@ -146,8 +146,9 @@ so those are equal-mass finite-measure statements. For example, when `a>1`
 the actual measures have total mass `a`. They must not be described as
 probability Wasserstein statements. The promoted probability theorem requires
 `0<=a<=1` and `p>=1` explicitly. At `a=0` or `a=1` fewer positive atoms remain;
-exactly three positive atoms requires `0<a<1`. Positive `b` makes the two
-laws distinct and their distance positive. The exponent-zero convention is
+exactly three positive atoms requires `0<a<1`. For `a>0`, positive `b` makes the two
+laws distinct and their distance positive; at `a=0` the two laws coincide.
+The exponent-zero convention is
 not silently included: `p>0` is essential for the vanishing outer costs.
 
 Formalized coverage is **dimension two**. The earlier ordinary product

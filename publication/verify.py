@@ -63,7 +63,7 @@ def main():
             if name.endswith('.lean') or Path(name).name in {'lake-manifest.json','lakefile.toml','lean-toolchain'}:
                 assert hashlib.sha256(actual[name].read_bytes()).hexdigest()==row['source_sha256'],('historical formal-source drift',name)
                 unchanged_formal+=1
-    round_sources=round_protected=0
+    round_sources=round_protected=round_corrected=0
     for current_map in mapping.get('current_source_maps',[]):
         batch=json.loads((ROOT/current_map).read_text())
         assert batch['schema']=='october-13-publication-source-map/v1'
@@ -87,7 +87,14 @@ def main():
             assert re.fullmatch('[0-9a-f]{64}',row['source_sha256'])
             protected=Path(source).suffix in {'.lean','.py','.cjs'} or Path(source).name in protected_pins
             assert row['protected_source']==protected,name
-            if protected or row['action'] in {'retained_unchanged','copied_and_renamed'}:
+            corrected=protected and row['action']=='publication_code_fix'
+            if corrected:
+                assert source==name=='lp-certificates/bridge.py',name
+                fix=row['publication_fix']
+                assert fix['current_sha256']==digest and fix['original_sha256']==row['source_sha256'],name
+                assert fix['proof_sources_and_gates_changed'] is False,name
+                round_corrected+=1
+            elif protected or row['action'] in {'retained_unchanged','copied_and_renamed'}:
                 assert digest==row['source_sha256'] and len(data)==row['source_bytes'],('round source drift',name)
                 assert hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()==row['source_blob'],name
             if protected:round_protected+=1
@@ -120,6 +127,6 @@ def main():
     index=json.loads((ROOT/'research/supplement/STUDY-INDEX.json').read_text())
     assert sum(s['core_record_count'] for s in index['studies'])==index['core_record_total']==81
     assert all(s['lean_verification']=='not_performed' for s in index['studies'])
-    print(json.dumps({'status':'passed','publication_files':len(actual),'original_tangent_files_unchanged':len(original),'unchanged_formal_source_and_pin_files':unchanged_formal,'october_13_source_dispositions':round_sources,'october_13_protected_sources':round_protected,'pinned_lean_projects':[p.name for p in projects],'ordinary_core_records':81,'scope':'Whole published repository integrity and explicit status/pin checks; no new mathematical proof certification.'},indent=2))
+    print(json.dumps({'status':'passed','publication_files':len(actual),'original_tangent_files_unchanged':len(original),'unchanged_formal_source_and_pin_files':unchanged_formal,'october_13_source_dispositions':round_sources,'october_13_protected_sources':round_protected,'october_13_publication_source_fixes':round_corrected,'pinned_lean_projects':[p.name for p in projects],'ordinary_core_records':81,'scope':'Whole published repository integrity and explicit status/pin checks; no new mathematical proof certification.'},indent=2))
 
 if __name__=='__main__':main()

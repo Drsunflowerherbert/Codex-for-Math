@@ -136,6 +136,12 @@ saved metadata. It rejects unexpected members or runtime caches.
 It then reads the saved **original** strict JSON and calls the fresh `check`
 pipeline using current trusted code and a new output directory.
 
+The exact-executable publication repair keeps the renderer and proof gates
+unchanged. The reader accepts the explicitly pinned reviewed historical generator
+hash for the three original packages, alongside its current source hash. Fresh
+recheck always uses the corrected runner. `--lean-bin` now requires the physical
+regular distribution `bin` directory; symlink paths and sibling directories fail.
+
 Supplied Lean files, saved argv, receipts, statuses, and binary products are
 never executed or treated as fresh proof evidence. A stored report, even one
 that is internally consistent, establishes no historical execution authenticity.

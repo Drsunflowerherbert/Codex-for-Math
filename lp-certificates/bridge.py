@@ -50,6 +50,7 @@ RELEASE_MEMBERS = {
     "lib/lean/libInit_shared.so": (6232, "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"),
 }
 SCHEMA = "lp-certificates-checked-bridge/v1"
+HISTORICAL_BRIDGE_SHA256 = "c0fe2cbfc7511309f91524e86ed8e5342f0d891c090a343a0a1ee06736774dd2"
 TRUST_LIMITS = [
     "JSON-to-Lean transcription is trusted, not a proved parser refinement",
     "host runtime and clean pinned dependency caches are trusted",
@@ -400,15 +401,22 @@ def _toolchain(lean_bin: Path) -> dict[str, Any]:
     # Explicit Linux-only support. Never fall through to an installer/shim.
     if sys.platform != "linux":
         raise BridgeError("unsupported", "This checked runner supports Linux only")
-    binary_dir = lean_bin.resolve(strict=True)
+    binary_dir = no_symlink_path(lean_bin)
+    if binary_dir.name != "bin" or not binary_dir.is_dir():
+        raise BridgeError("failed", "Select the official distribution's regular bin directory")
     root = binary_dir.parent
+    executable = no_symlink_path(binary_dir / "lean")
+    if not stat.S_ISREG(executable.lstat().st_mode):
+        raise BridgeError("failed", "The selected Lean executable must be a regular nonsymlink file")
     observed = {}
     for relative, (size, expected) in RELEASE_MEMBERS.items():
-        path = root / relative
-        if not path.is_file() or path.is_symlink() or path.stat().st_size != size or file_hash(path) != expected:
+        path = no_symlink_path(root / relative)
+        if not stat.S_ISREG(path.lstat().st_mode) or path.stat().st_size != size or file_hash(path) != expected:
             raise BridgeError("failed", "Compiler/runtime byte pin mismatch: " + relative)
         observed[relative] = {"bytes": size, "sha256": expected}
-    return {"lean": str(binary_dir / "lean"), "prefix": str(root),
+    if executable != root / "bin/lean":
+        raise BridgeError("failed", "Selected executable differs from the byte-audited executable")
+    return {"lean": str(executable), "prefix": str(root),
             "release": "4.24.0", "commit": LEAN_COMMIT, "members": observed}
 
 
@@ -570,7 +578,7 @@ def check_raw(raw_inputs: list[bytes], output_path: Path, lean_bin: Path) -> dic
         for dependency in dependencies:
             if dependency["cache"] is not None:
                 (work / "packages" / dependency["name"]).symlink_to(dependency["cache"], target_is_directory=True)
-        runner.env.update({"PATH": str(lean_bin.resolve()) + ":/usr/bin:/bin", "TMPDIR": str(work),
+        runner.env.update({"PATH": str(Path(lean).parent) + ":/usr/bin:/bin", "TMPDIR": str(work),
                            "LEAN_PATH": os.pathsep.join([str(lib), *map(str, caches)])})
         record["lean_path"] = runner.env["LEAN_PATH"]
         # All task library OLeans are rebuilt into this attempt's empty directory.
@@ -595,7 +603,7 @@ def check_raw(raw_inputs: list[bytes], output_path: Path, lean_bin: Path) -> dic
             record["products"].append({"module": "Checked" + label, "bytes": target.stat().st_size,
                                         "sha256": file_hash(target), "retained": False})
             runner.save()
-        if _trusted_sources() != sources or _toolchain(lean_bin) != toolchain:
+        if _trusted_sources() != sources or _toolchain(Path(lean).parent) != toolchain:
             raise BridgeError("failed", "Trusted source or compiler/runtime changed during attempt")
         if file_hash(Path(__file__)) != record["bridge_sha256"] or file_hash(ROOT / "verifier.py") != record["verifier_sha256"]:
             raise BridgeError("failed", "Generator or Python verifier changed during attempt")
@@ -740,7 +748,10 @@ def validate_package(path: Path) -> list[bytes]:
                                   + read_regular(package / entry["stderr"]["path"], MAX_LOG_BYTES).decode())
             if records[index].get("lean_evidence") != gate:
                 raise BridgeError("invalid", "Instance gate report differs from its recorded logs")
-    if receipt.get("bridge_sha256") != file_hash(Path(__file__)) or receipt.get("verifier_sha256") != file_hash(ROOT / "verifier.py"):
+    # The reviewed historical renderer/source gates are unchanged by the binding
+    # repair. Its saved packages remain inspectable; fresh recheck always runs
+    # this current code and its exact-executable preflight/postflight.
+    if receipt.get("bridge_sha256") not in {file_hash(Path(__file__)), HISTORICAL_BRIDGE_SHA256} or receipt.get("verifier_sha256") != file_hash(ROOT / "verifier.py"):
         raise BridgeError("invalid", "Package generator/verifier version differs from current trusted code")
     expected_files = {"receipt.json", "source-manifest.json", "package-manifest.json"} | log_names
     expected_files |= {"project/" + name for name in sources}
