@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "problem": {
+    "objective": {"sense": "min", "coefficients": [-2, 1]},
+    "constraints": [
+      {"coefficients": [0, 1], "sense": ">=", "rhs": 0},
+      {"coefficients": [0, 2], "sense": ">=", "rhs": 0},
+      {"coefficients": [1, -1], "sense": "=", "rhs": 1}
+    ]
+  },
+  "certificate": {"kind": "unbounded", "base_point": [1, 0], "direction": [1, 1]}
+}

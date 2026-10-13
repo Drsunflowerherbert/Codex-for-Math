@@ -1,0 +1,43 @@
+{
+  "archive": "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux.tar.zst",
+  "archiveBytes": 459625674,
+  "archiveSha256": "b14f5e5159219dd1a1956c3b806813319f5e94ccd5bdfd56f54520609a5bb5ec",
+  "compilerAndRuntime": {
+    "bin/lean": {
+      "bytes": 9024,
+      "comparison": "exact_bytes_match",
+      "installed": "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+      "sha256": "8fadc3ed92cc9decb94c96ee9c0876e91e03a3a5e69138f32114f02789e2766c"
+    },
+    "lib/lean/libInit_shared.so": {
+      "bytes": 6232,
+      "comparison": "exact_bytes_match",
+      "installed": "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean/libInit_shared.so",
+      "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+    },
+    "lib/lean/libleanshared.so": {
+      "bytes": 193479936,
+      "comparison": "exact_bytes_match",
+      "installed": "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean/libleanshared.so",
+      "sha256": "8cc9858cc57c52015ba6dd948bdbf7f05926b9b5fcead69a964f0ad61ddd79dd"
+    },
+    "lib/lean/libleanshared_1.so": {
+      "bytes": 6232,
+      "comparison": "exact_bytes_match",
+      "installed": "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean/libleanshared_1.so",
+      "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+    },
+    "lib/lean/libleanshared_2.so": {
+      "bytes": 6232,
+      "comparison": "exact_bytes_match",
+      "installed": "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean/libleanshared_2.so",
+      "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+    }
+  },
+  "hostRuntimeLibraries": "trusted_host_not_authenticated_by_this_audit",
+  "networkAuthentication": "not_performed",
+  "pinSource": "published tangent installer at d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+  "releaseSignatureAuthentication": "not_performed",
+  "schema": "local-pinned-toolchain-byte-audit/v1",
+  "status": "all_selected_installed_members_match_pinned_archive"
+}

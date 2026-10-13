@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "problem": {
+    "objective": {"sense": "max", "coefficients": [1]},
+    "constraints": [{"coefficients": [1], "sense": "=", "rhs": 0}]
+  },
+  "certificate": {"kind": "unbounded", "base_point": [0], "direction": [1]}
+}

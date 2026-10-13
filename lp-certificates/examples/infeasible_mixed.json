@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "problem": {
+    "objective": {"sense": "max", "coefficients": [0]},
+    "constraints": [
+      {"coefficients": [1], "sense": "<=", "rhs": 0},
+      {"coefficients": [1], "sense": ">=", "rhs": 1}
+    ]
+  },
+  "certificate": {
+    "kind": "infeasible", "inequality_multipliers": [1, 1], "equality_multipliers": []
+  }
+}

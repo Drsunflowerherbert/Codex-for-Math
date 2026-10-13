@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "problem": {
+    "objective": {"sense": "max", "coefficients": [1]},
+    "constraints": [{"coefficients": [1], "sense": ">=", "rhs": 0}]
+  },
+  "certificate": {
+    "kind": "optimal", "point": [0],
+    "inequality_multipliers": [-1], "equality_multipliers": []
+  }
+}

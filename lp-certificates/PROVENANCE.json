@@ -1,0 +1,51 @@
+{
+  "schema": "lp-certificates-provenance/v1",
+  "repository": "https://github.com/Drsunflowerherbert/Codex-for-Math",
+  "verified_research_baseline": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+  "baseline_branch": "codex/research-2026-10-11",
+  "assigned_branch": "codex/lp-certificates-2026-10-13",
+  "publication_scope": "lp-certificates/",
+  "original_tangent_commit_preserved": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+  "original_tangent_checkout_branch_preserved": "work",
+  "workspace_instructions": "No AGENTS.md or local .agents/skills files found in independent searches of the workspace and both checkouts.",
+  "development_completed_before_utc": "2026-10-13T01:57:00Z",
+  "user_math_development_cutoff_utc": "2026-10-13T04:05:00Z",
+  "user_round_deadline_utc": "2026-10-13T04:40:00Z",
+  "lean_toolchain": "leanprover/lean4:v4.24.0",
+  "lean_compiler_commit": "797c613eb9b6d4ec95db23e3e00af9ac6657f24b",
+  "mathlib_revision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "published_evidence_toolkit": {
+    "baseline": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+    "used_unchanged": [
+      "math-evidence/verify-public-sources.cjs",
+      "math-evidence/toolchain-audit.py",
+      "math-evidence/lean/EvidenceHarness.lean"
+    ],
+    "integration_scope": "Pinned source/compiler audit and explicit expected-type/body gates plus same-kernel local replay; no fixed tangent plan represented as LP acceptance."
+  },
+  "fresh_verification_receipt": "evidence/run-20261013T015800Z/receipt.json",
+  "independent_reviews": [
+    "evidence/math-review.md",
+    "evidence/computational-review.md",
+    "evidence/formal-review.md"
+  ],
+  "hypotheses": [
+    "Free real variables; all bounds supplied as explicit rows.",
+    "Rational input coefficients and certificate witnesses; nonstrict inequalities and equalities.",
+    "Inequalities normalized to <= and objective normalized to maximization.",
+    "Nonnegative inequality multipliers and unrestricted equality multipliers.",
+    "Optimality requires feasibility and exact coefficient/attained-bound identities.",
+    "Infeasibility requires zero coefficients and strictly negative combined RHS.",
+    "Unboundedness requires a feasible base, homogeneous constraint direction, and strict objective gain."
+  ],
+  "deferred_obligations": [
+    "Certificate-finding algorithm, termination and completeness.",
+    "Strong duality, theorem-of-alternatives converses, rational-witness existence.",
+    "Formal JSON/Python parser-normalization refinement or verified extraction.",
+    "Full dependency source rebuild or independent kernel implementation.",
+    "Integer, strict-inequality, nonlinear and tolerance-based certificates.",
+    "Native Mac or installed MRS integration."
+  ],
+  "license": "No overall repository license reported; no new license assigned; existing notices unchanged.",
+  "remote_delivery_evidence": "The final task response reports the pushed commit and observed git ls-remote match; self-referential commit hashes are not placed in committed metadata."
+}
