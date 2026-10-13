@@ -1,0 +1,26 @@
+{
+  "fields": 17,
+  "families": 372,
+  "active_manuscripts": 719,
+  "withdrawn_manuscripts": 3,
+  "catalog_records": 722,
+  "active_manuscripts_metadata_only": 719,
+  "withdrawal_notices_reviewed": 3,
+  "targeted_major_claim_entries": 29,
+  "major_claim_entries_statement_or_scope_reviewed": 25,
+  "major_claim_entries_catalog_only": 4,
+  "major_claim_distinct_families": 16,
+  "local_scoped_result_entries": 21,
+  "local_scoped_groups_independent_spot_reviewed": 8,
+  "local_scoped_groups_without_new_independent_spot_review": 13,
+  "upstream_manuscripts_independently_mathematically_validated_this_round": 0,
+  "upstream_formal_checks_this_round": 0,
+  "famous_problem_solved_labels_awarded": 0,
+  "version_directory_changes_recorded": 27,
+  "version_changes_by_kind": {
+    "citation-only": 13,
+    "proof_statement_hypothesis_or_citation_correction": 14
+  },
+  "subfield_assignments": 372,
+  "count_units_note": "Claim entries, scoped results, manuscripts, families and Lean declarations are distinct units; no deduplicated count of solved mathematical problems is available."
+}

@@ -1,0 +1,41 @@
+{
+  "purpose": "actual Chromium rendering and catalog interaction, not mathematical verification",
+  "browser": "Playwright Chromium headless shell1234",
+  "observations": [
+    {
+      "scenario": "initial catalog",
+      "expected_matches": 722,
+      "displayed": "722 matching manuscripts \u00b7 page 1 of 15"
+    },
+    {
+      "scenario": "exact family032 search including withdrawals",
+      "expected_matches": 8,
+      "displayed": "8 matching manuscripts \u00b7 page 1 of 1"
+    },
+    {
+      "scenario": "family032 withdrawn only",
+      "expected_matches": 3,
+      "displayed": "3 matching manuscripts \u00b7 page 1 of 1"
+    },
+    {
+      "scenario": "official Number theory field",
+      "expected_matches": 58,
+      "displayed": "58 matching manuscripts \u00b7 page 1 of 2"
+    },
+    {
+      "scenario": "exact family017 search",
+      "expected_matches": 1,
+      "displayed": "1 matching manuscripts \u00b7 page 1 of 1"
+    },
+    {
+      "scenario": "empty result",
+      "expected_matches": 0,
+      "displayed": "0 matching manuscripts \u00b7 page 1 of 1"
+    }
+  ],
+  "mobile_horizontal_overflow": false,
+  "javascript_errors": [],
+  "pagination_checked": true,
+  "external_requests": [],
+  "html_sha256": "d8870aebe83a4dbe4a7e6a3da5018c8c854ea94b2de962f7fd339e83682d2d59"
+}

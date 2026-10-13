@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0.0",
+  "reviewed_at_utc": "2026-10-13T04:35:53.791841Z",
+  "verdict": "ready_within_reviewed_catalog_scope",
+  "blocking_findings": [],
+  "scope": "Independent catalog/source/calibration/publication-scope review; no new mathematical proof validation or Lean execution.",
+  "research_baseline_commit": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+  "publication_branch": "codex/research-map-2026-10-13",
+  "upstream_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "independent_remote_observations": {
+    "official_HEAD_and_main": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "research_branch": "codex/research-2026-10-11",
+    "research_branch_commit": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+    "publication_branch_existed_at_remote_review": false
+  },
+  "coverage": {
+    "fields": 17,
+    "families": 372,
+    "active_manuscripts": 719,
+    "withdrawn_manuscripts": 3,
+    "catalog_records": 722,
+    "active_manuscripts_metadata_only": 719,
+    "withdrawal_notices_reviewed": 3,
+    "targeted_major_claim_entries": 29,
+    "major_claim_entries_statement_or_scope_reviewed": 25,
+    "major_claim_entries_catalog_only": 4,
+    "major_claim_distinct_families": 16,
+    "local_scoped_result_entries": 21,
+    "local_scoped_groups_independent_spot_reviewed": 8,
+    "local_scoped_groups_without_new_independent_spot_review": 13,
+    "upstream_manuscripts_independently_mathematically_validated_this_round": 0,
+    "upstream_formal_checks_this_round": 0,
+    "famous_problem_solved_labels_awarded": 0,
+    "version_directory_changes_recorded": 27,
+    "version_changes_by_kind": {
+      "citation-only": 13,
+      "proof_statement_hypothesis_or_citation_correction": 14
+    },
+    "subfield_assignments": 372,
+    "count_units_note": "Claim entries, scoped results, manuscripts, families and Lean declarations are distinct units; no deduplicated count of solved mathematical problems is available."
+  },
+  "major_claim_review_units": {
+    "entries": 29,
+    "distinct_families": 16,
+    "withdrawn_entries": 3,
+    "claim_statement_or_scope_inspected_entries": 25,
+    "catalog_only_entries": 4,
+    "independently_mathematically_validated_major_claims": 0,
+    "upstream_kernel_checks_run": 0,
+    "established_acceptance_classifications": 0,
+    "reliability_tier_counts": {
+      "C1": 25,
+      "C0": 4
+    }
+  },
+  "scoped_result_review_units": {
+    "scoped_result_groups": 21,
+    "library_groups_with_saved_formal_evidence": 11,
+    "ordinary_study_groups": 10,
+    "reviewed_supplement_core_records": 81,
+    "source_and_scope_catalog_review_groups": 21,
+    "independent_catalog_spot_review_groups": 8,
+    "groups_without_new_independent_spot_review": 13,
+    "fresh_Lean_checks": 0,
+    "newly_proved_universal_results": 0,
+    "corpus_headline_solutions_certified": 0
+  },
+  "independent_checks": [
+    "Recomputed 372 families, 719 active manuscripts, 3 family032 withdrawals and preserved 17 source fields; all 372 taxonomy IDs are unique and source disciplines unchanged.",
+    "Recomputed four fetched corpus-file hashes and their current/historical byte equality; independently checked official remote HEAD/main and the stored official commit tree.",
+    "Inspected complete two-commit comparison receipt: only .github/workflows/lock-prs.yml changed.",
+    "Recomputed all 27 revision-README hashes and all 3 withdrawal-notice hashes; verified 13 citation-only plus 14 other correction/version records.",
+    "Recomputed all 26 major-claim source digest receipts; crosschecked 29 unique claim IDs across 16 families, 25 C1 and 4 C0 entries, manuscript family membership and pinned links.",
+    "Spotchecked primary-theorem excerpts from ten downloaded manuscripts, relevant author scope notes and the exact Pi main/Flint-Hills source declarations and comparator configuration; did not elaborate or kernel-check them.",
+    "Recomputed all 50 local scoped-source hashes, checked their exact baseline Git blobs, and checked 46 saved evidence paths; recomputed 21 group entries and 81 ordinary supplement core records.",
+    "Compared all 722 generated JSON records to inventory membership/title/abstract metadata, every exported CSV value to JSON, and all claim/scoped cross-reference IDs.",
+    "Inspected generated HTML data equivalence, safe dynamic text insertion, absence of executable third-party script includes, and the builder/structural verifier; root-rendered browser smoke receipt was inspected and bound to the current HTML hash.",
+    "Checked new file content for credential/private-key patterns, absence of papers/binaries/private handoffs, attribution, retained Apache2 license byte equality and exact branch/path scope."
+  ],
+  "resolved_findings": [
+    {
+      "severity": "minor",
+      "finding": "Learning-priority vocabularies differed across manuscript, major-claim and local-scoped records.",
+      "resolution": "SCHEMA.md now describes each vocabulary and avoids treating priority as reliability."
+    },
+    {
+      "severity": "minor",
+      "finding": "Taming formalization-to-active-version mismatch was only visible in source-audit material.",
+      "resolution": "Current family342 catalog row now explicitly flags September23 manifest versus corrected October6 manuscript correspondence risk."
+    }
+  ],
+  "browser_review": {
+    "method": "Root-executed actual Chromium smoke receipt independently inspected; this reviewer did not execute that successful browser run.",
+    "receipt": "browser-validation.json",
+    "html_sha256": "d8870aebe83a4dbe4a7e6a3da5018c8c854ea94b2de962f7fd339e83682d2d59",
+    "reported_javascript_errors": [],
+    "reported_external_requests": [],
+    "scenarios": 6
+  },
+  "remaining_limits": [
+    "All 719 active manuscript rows are metadata-only. The 25 targeted statement/scope/notice inspections are supplemental claim records, not full-paper proof reviews.",
+    "Four targeted claim records remain catalog-only. The broader selection omits many potentially important claims and does not exhaust the corpus.",
+    "Twenty-one local source/scope groups retain prior review receipts; a separate producer-side independent catalog spot review covered 8 groups, with 13 without a new spot review. These are not new universal proof audits.",
+    "No upstream mathematical proof, successful fresh Lean build, full axiom closure, famous-problem correspondence or established acceptance was independently certified in this organization round.",
+    "Three withdrawals and documented repairs are not an exhaustive issue count; author repair notices do not verify the repaired proofs.",
+    "Subfield and learning-priority labels are provisional editorial guidance. Empty dependencies/hypotheses gaps do not mean no hypotheses or prerequisites.",
+    "Final publication commit, push result and exact remote tree verification are the root publisher responsibility and are outside this pre-push catalog review."
+  ],
+  "artifact_sha256": {
+    "FIELD-MAP.md": "2f540a7e87941f2a128e0beb9effa675f8ab0c4d70221b5d9ce7bebb3d4105af",
+    "MAJOR-CLAIMS.md": "d7001be841ac70ccbd0bc07c19a15a13939da9e0e2ce5f86c9181911b386652c",
+    "README.md": "f354920e0ca12eb9cc925a6ab645cf0895eb271f579e8a791f2af4d57c5a39fe",
+    "SCHEMA.md": "088ca27b2e2a308fc1f3345c5c387db500e5bcf4afef7d7b5c55cbe46dd52aaa",
+    "SCOPED-RESULTS.md": "2b5a00a3a87abbed8b2350e449018ed62f89ccbb0aab8b2b87de077493ec77eb",
+    "SOURCES.md": "0073243ef67f7a6fe6c808e434bddf7bee417039c518cfd6024d2e062d1e6b98",
+    "TAXONOMY.md": "82c4ef82be3bbaac8f3c5442a232fd257c0fd83aefa8d684e21ced68d2bd80aa",
+    "build.py": "cccaa354c9fb2c748c39e377adaa3e4a7c3a2a81925a6d407eaa66f41bb5964d",
+    "catalog.csv": "e4cbb3730a3371d1ea8956363be920793e9097124d97c5bfa864a2469e1d0c28",
+    "catalog.json": "f5399a7329a267521c2e41564120e50013acf1ad87e215699fc6e52ff3f66a5f",
+    "coverage.json": "4b1f9f6dcde196c965bc35cd6396de3c19f3903174dd0fa0a3ae40b56d97a8cc",
+    "index.html": "d8870aebe83a4dbe4a7e6a3da5018c8c854ea94b2de962f7fd339e83682d2d59",
+    "major-claims.json": "6b05bac72bb805a42e4ad402b7f2af62a2a854acc7e64e74d09b2012c17a543d",
+    "schema.json": "b9d98e17f417df20ef3285707421f149705a407429476d80d5a202543fb18a9e",
+    "scoped-results.json": "e9b497972ba1825b458af17fb135ca26827e880c7b6ba0a6ffb631f5d0e29b29",
+    "source-audit.json": "86968f2f39e9e6163d62e7ff794eed853058116c8f551e3fd65b9e4b798f0a6d",
+    "taxonomy.json": "659b82fe17215479bb2997dff7d7fdcc312efb86f80f8f8fa166826b7a79f46e",
+    "upstream-inventory.json": "ae5674a93b45bcd37690dfc40195d3e4d18dac2163f58eef601db5126fb61263",
+    "verify.py": "d1c97cc25db56e3002757f967345910b793ab1df18d458bf5eba764d744668f7",
+    "version-history.json": "c1f402e37686d3eb3de03f0aaafc407caba2f4f9a521ab06075ac12f86a5de17"
+  },
+  "hash_scope_note": "Hashes bind substantive files at review. This report and its Markdown companion are excluded to avoid self-reference; final structural/browser receipts may be refreshed after adding the review without changing substantive artifacts. Any later substantive-byte change requires renewed review.",
+  "final_normalization_review": {
+    "reviewed_at_utc": "2026-10-13T04:35:53.791841Z",
+    "checks": {
+      "CSV_equals_staged_CRLF_to_LF": true,
+      "Fieldmap_equals_staged_rstrip_plus_newline": true
+    },
+    "builder_diff": "Only CSV writer explicit LF terminator and field-map rstrip plus final newline; exact old/new transformation independently checked.",
+    "semantic_change": false
+  }
+}

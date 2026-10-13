@@ -1,0 +1,2360 @@
+{
+  "schema": "research-map-scoped-results/v1",
+  "generated_at_utc": "2026-10-13T04:32:32.877147Z",
+  "source_baseline_commit": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+  "upstream_snapshot_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "scope": "Selected local reusable libraries and ordinary studies, not a corpus-wide proof audit or solved-problem list.",
+  "evidence_policy": {
+    "saved_receipts": "Receipts report earlier executed checks; reading them supplies no fresh Lean pass.",
+    "kernel_correspondence": "Kernel acceptance establishes the actual formal statement subject to its hypotheses and trusted dependencies; informal headline correspondence requires separate review.",
+    "ordinary_studies": "Ordinary review and exact finite checks remain distinct from Lean verification.",
+    "acceptance": "No external peer-review or established acceptance inferred from repository publication.",
+    "result_kind_full": "Full means the stated scoped result only; every entry excludes broader headline claims.",
+    "prerequisite_edges": "Pedagogical hints, not inferred theorem dependencies unless explicitly sourced."
+  },
+  "coverage": {
+    "scoped_result_groups": 21,
+    "library_groups_with_saved_formal_evidence": 11,
+    "ordinary_study_groups": 10,
+    "reviewed_supplement_core_records": 81,
+    "source_and_scope_catalog_review_groups": 21,
+    "independent_catalog_spot_review_groups": 8,
+    "groups_without_new_independent_spot_review": 13,
+    "fresh_Lean_checks": 0,
+    "newly_proved_universal_results": 0,
+    "corpus_headline_solutions_certified": 0
+  },
+  "independent_catalog_spot_review": {
+    "date_utc": "2026-10-13",
+    "result_ids": [
+      "scope-tangent-cubic",
+      "scope-mixed-moment-lean",
+      "scope-convex-lean",
+      "scope-positive-blocks-lean",
+      "scope-finite-field-lean",
+      "scope-transport-finite",
+      "scope-transport-measures",
+      "scope-lp-certificates"
+    ],
+    "scope": "Independent read-only comparison of high-impact summaries/hypotheses/status boundaries against baseline sources. All catalog source hashes and evidence path existence also checked. No proof reconstruction, compiler execution or acceptance survey.",
+    "verdict": "No blocking discrepancy reported; two precision recommendations about convex barrier/error wording and Gram deficit expansion implemented.",
+    "not_included": "Tangent-sharp production statements were not independently spot-reviewed in this map."
+  },
+  "results": [
+    {
+      "result_id": "scope-tangent-cubic",
+      "title": "Conditional cubic tangent decay and absolute summability",
+      "field": "Number theory",
+      "subfield": "Diophantine approximation and series",
+      "problem_family": "Conditional cubic tangent decay and absolute summability",
+      "upstream_family_id": "017",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "conditional",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "Under PiDiophantine, tan(n)/n^3 tends to zero along positive integers and sum(n>=1) abs(tan n)/n^3 is summable. Integer angles are in radians; nonpoles use mathlib pi irrationality.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "For every real nu>2, for all sufficiently large positive integers q and every integer p, abs(pi-p/q)>=q^(-nu). This PiDiophantine hypothesis is assumed, not proved here."
+      ],
+      "source_paths": [
+        "tangent-limit/README.md",
+        "tangent-limit/TangentLimit/Hypothesis.lean",
+        "tangent-limit/docs/theorem-statements.md"
+      ],
+      "sources": [
+        {
+          "path": "tangent-limit/README.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/tangent-limit/README.md",
+          "sha256": "5be38954d69d42c1a0fb6a109983574b728b88c361af32cc9cb0d48e627f295a",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "tangent-limit/TangentLimit/Hypothesis.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/tangent-limit/TangentLimit/Hypothesis.lean",
+          "sha256": "6f9fb3e7a25e2ba27fba29faf93e88add77a8c0aa3a8de59be72ae7b9ea2562a",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "tangent-limit/docs/theorem-statements.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/tangent-limit/docs/theorem-statements.md",
+          "sha256": "aeade1452a9747b370e4c9b67cdcdeba14a6fab9915f7716c18ffb869533ae34",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "saved_Lean_build",
+          "path": "tangent-limit/logs/final-build.log",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/tangent-limit/logs/final-build.log",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_statement_and_axiom_audit",
+          "path": "tangent-limit/logs/final-theorem-inventory.log",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/tangent-limit/logs/final-theorem-inventory.log",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "independent_local_review",
+          "path": "tangent-limit/docs/independent-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/tangent-limit/docs/independent-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "The irrationality exponent of pi is 2.",
+        "Unconditional Flint-Hills convergence."
+      ],
+      "verification_gaps": [
+        "No proof of PiDiophantine; no upstream proof imported or validated."
+      ],
+      "prerequisites": [
+        "Real limits and summability",
+        "Trigonometry",
+        "Rational approximation"
+      ],
+      "learning_priority": "medium",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {},
+      "repair_history_flags": [],
+      "primary_declarations": [],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "saved_compilation_and_statement_audit_receipts",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026/paper.pdf",
+          "path": "preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026/paper.pdf"
+        }
+      ],
+      "upstream_family_title": "The irrationality exponent of π is 2.",
+      "formal_statement_source_texts": [],
+      "independent_catalog_spot_review": "source_scope_spot_checked_no_blocking_discrepancy"
+    },
+    {
+      "result_id": "scope-tangent-sharp",
+      "title": "Sharp absolute tangent-series threshold",
+      "field": "Number theory",
+      "subfield": "Diophantine approximation and series",
+      "problem_family": "Sharp absolute tangent-series threshold",
+      "upstream_family_id": "017",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "conditional",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "For every real s, under PiDiophantine, sum(n>=1) abs(tan n)/n^s is summable iff s>1. The separate nonsummability theorem for s<=1 is unconditional and uses standard pi irrationality.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "For every real nu>2, for all sufficiently large positive integers q and every integer p, abs(pi-p/q)>=q^(-nu). This PiDiophantine hypothesis is assumed, not proved here.",
+        "s is real; necessity s<=1 uses no PiDiophantine premise."
+      ],
+      "source_paths": [
+        "tangent-sharp/README.md",
+        "tangent-sharp/TangentLimit/SharpSummability.lean",
+        "tangent-sharp/TangentLimit/Divergence.lean"
+      ],
+      "sources": [
+        {
+          "path": "tangent-sharp/README.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/tangent-sharp/README.md",
+          "sha256": "7ef4cf1e2754d23ae0aa7155cd39a37c52efff58c21fce5f6ff5ccc32c17f19f",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "tangent-sharp/TangentLimit/SharpSummability.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/tangent-sharp/TangentLimit/SharpSummability.lean",
+          "sha256": "70600b3724d7bc17b55a0fbe5ee5c51b762db7528d4579fd5c0db2e74456e1b0",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "tangent-sharp/TangentLimit/Divergence.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/tangent-sharp/TangentLimit/Divergence.lean",
+          "sha256": "6c3c2ca8bf67d07e29c1dbf4d845b214fac1cd905b81c00468065c32905e7158",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_review",
+          "path": "tangent-sharp/docs/sharp-independent-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/tangent-sharp/docs/sharp-independent-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_statement_and_axiom_audit",
+          "path": "tangent-sharp/logs/final-theorem-inventory.log",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/tangent-sharp/logs/final-theorem-inventory.log",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Proof of the pi-exponent headline.",
+        "Conditional convergence of the signed tangent series."
+      ],
+      "verification_gaps": [
+        "Sufficiency retains unproved PiDiophantine."
+      ],
+      "prerequisites": [
+        "Cubic tangent bridge",
+        "Finite harmonic packing",
+        "Dyadic summability"
+      ],
+      "learning_priority": "medium",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "audited_source_declarations": 78,
+        "exported_declarations": 76,
+        "private_helpers": 2
+      },
+      "repair_history_flags": [],
+      "primary_declarations": [
+        "TangentLimit.summable_abs_tan_div_rpow_positive_iff",
+        "TangentLimit.not_summable_abs_tan_div_rpow_positive"
+      ],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "saved_compilation_and_statement_audit_receipts",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026/paper.pdf",
+          "path": "preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026/paper.pdf"
+        }
+      ],
+      "upstream_family_title": "The irrationality exponent of π is 2.",
+      "formal_statement_source_texts": [
+        {
+          "declaration": "TangentLimit.summable_abs_tan_div_rpow_positive_iff",
+          "path": "tangent-sharp/TangentLimit/SharpSummability.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/tangent-sharp/TangentLimit/SharpSummability.lean",
+          "statement": "theorem summable_abs_tan_div_rpow_positive_iff (h : PiDiophantine) (s : ℝ) :\n    Summable (fun n : ℕ => |Real.tan ((n + 1 : ℕ) : ℝ)| /\n      ((n + 1 : ℕ) : ℝ) ^ s) ↔ 1 < s",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        },
+        {
+          "declaration": "TangentLimit.not_summable_abs_tan_div_rpow_positive",
+          "path": "tangent-sharp/TangentLimit/Divergence.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/tangent-sharp/TangentLimit/Divergence.lean",
+          "statement": "theorem not_summable_abs_tan_div_rpow_positive (s : ℝ) (hs : s ≤ 1) :\n    ¬ Summable (fun n : ℕ => |Real.tan ((n + 1 : ℕ) : ℝ)| /\n      ((n + 1 : ℕ) : ℝ) ^ s)",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        }
+      ],
+      "independent_catalog_spot_review": "not_independently_spot_checked_in_this_map"
+    },
+    {
+      "result_id": "scope-radial-lean",
+      "title": "Radial contact and sphere homeomorphism",
+      "field": "Functional analysis",
+      "subfield": "Normed-space geometry",
+      "problem_family": "Radial contact and sphere homeomorphism",
+      "upstream_family_id": "322",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "full",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "For an interior center c and unit direction v, there is a unique positive radius r with norm(c+r*v)=1, and 1-norm(c)<=r<=1+norm(c). Radius and contact have Lipschitz constants (1+norm(c))^2/(1-norm(c)) and 2*(1+norm(c))/(1-norm(c)); normalized direction is the inverse sphere homeomorphism.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "E is a real normed space (NormedAddCommGroup and NormedSpace real).",
+        "norm(c)<1; norm(v)=1.",
+        "No completeness, dimension, smoothness or strict-convexity premise; empty sphere is allowed."
+      ],
+      "source_paths": [
+        "radial-contact/README.md",
+        "radial-contact/ASSUMPTIONS.md",
+        "radial-contact/RadialContact/Basic.lean",
+        "radial-contact/RadialContact/Inverse.lean"
+      ],
+      "sources": [
+        {
+          "path": "radial-contact/README.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/radial-contact/README.md",
+          "sha256": "2cc8b37cfcbb4cb1f4fe2a4f08fbc9dc573faf60bdb8339b0c6bc89f01e32190",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "radial-contact/ASSUMPTIONS.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/radial-contact/ASSUMPTIONS.md",
+          "sha256": "fb40ec7c976801ebb2579521f4acb138c2440514a728b9a9f01dc5e58893eb33",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "radial-contact/RadialContact/Basic.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/radial-contact/RadialContact/Basic.lean",
+          "sha256": "0a25656d386d2d73735b771f193e51a946dd6d596d37502619c7d6a0fd2f20bf",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "radial-contact/RadialContact/Inverse.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/radial-contact/RadialContact/Inverse.lean",
+          "sha256": "f54a454b8fca904ad32fa48c49e8adea6ddc83e73e558e341592d1cdf43d7d6e",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "saved_Lean_build_and_audit",
+          "path": "radial-contact/evidence/validation.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/radial-contact/evidence/validation.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "independent_local_review",
+          "path": "radial-contact/evidence/formal-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/radial-contact/evidence/formal-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Tingley's sphere-isometry extension theorem."
+      ],
+      "verification_gaps": [
+        "Ordinary sharpness examples are not Lean theorems.",
+        "Original formalizers lacked starter bytes and independently reconstructed the specification; later retrieval does not certify historical source access or entire-study equivalence."
+      ],
+      "prerequisites": [
+        "Normed spaces",
+        "Intermediate value theorem",
+        "Convex combinations",
+        "Lipschitz maps"
+      ],
+      "learning_priority": "high",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "public_declarations": 47
+      },
+      "repair_history_flags": [],
+      "primary_declarations": [
+        "RadialContact.existsUnique_positive_contact",
+        "RadialContact.sphereHomeomorph"
+      ],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "saved_compilation_and_statement_audit_receipts",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/paper.pdf",
+          "path": "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/paper.pdf"
+        }
+      ],
+      "upstream_family_title": "Tingley’s sphere-isometry problem.",
+      "formal_statement_source_texts": [
+        {
+          "declaration": "RadialContact.existsUnique_positive_contact",
+          "path": "radial-contact/RadialContact/Basic.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/radial-contact/RadialContact/Basic.lean",
+          "statement": "theorem existsUnique_positive_contact {c v : E} (hc : ‖c‖ < 1) (hv : ‖v‖ = 1) :\n    ∃! r : ℝ, 0 < r ∧ ‖c + r • v‖ = 1",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        },
+        {
+          "declaration": "RadialContact.sphereHomeomorph",
+          "path": "radial-contact/RadialContact/Inverse.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/radial-contact/RadialContact/Inverse.lean",
+          "statement": "def sphereHomeomorph (c : InteriorCenter E) : UnitSphere E ≃ₜ UnitSphere E where\n  toFun",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        }
+      ],
+      "independent_catalog_spot_review": "not_independently_spot_checked_in_this_map"
+    },
+    {
+      "result_id": "scope-egyptian-lean",
+      "title": "Exact-length duplicate removal and marker padding",
+      "field": "Number theory",
+      "subfield": "Egyptian fractions",
+      "problem_family": "Exact-length duplicate removal and marker padding",
+      "upstream_family_id": "025",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "full",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "A list of positive natural denominators with reciprocal sum strictly between 0 and 1 has a distinct positive-denominator list with the same length and sum. Positive sorted fixed-length representations of every real value form a finite set. A distinct expansion of 1 of length at least 3 can gain one term while preserving one chosen denominator; input bound B yields output bound B*(B+1).",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "Cleanup: positive natural denominators and 0<reciprocalSum<1.",
+        "Padding: positive distinct list, sum=1, length>=3, chosen marker belongs to input; bounded padding assumes every input denominator<=B."
+      ],
+      "source_paths": [
+        "egyptian-exact/README.md",
+        "egyptian-exact/Egyptian/Cleanup.lean",
+        "egyptian-exact/Egyptian/Padding.lean"
+      ],
+      "sources": [
+        {
+          "path": "egyptian-exact/README.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/egyptian-exact/README.md",
+          "sha256": "00ffe31b12e63cfeb6fe8d25612585568811b99ec0f23420111d2df86061deec",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "egyptian-exact/Egyptian/Cleanup.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/egyptian-exact/Egyptian/Cleanup.lean",
+          "sha256": "9d13c692cd2cfdae5028ba6f2cffadb4d8cc166c169e9e644d9c1a842cd1a60b",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "egyptian-exact/Egyptian/Padding.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/egyptian-exact/Egyptian/Padding.lean",
+          "sha256": "ac907d1b76efd0eaafa3e715c9a56ef4b8cf16042213c363fef7a115ded8645b",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_statement_review",
+          "path": "egyptian-exact/review/AllStatementsAudit.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/egyptian-exact/review/AllStatementsAudit.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "independent_local_marker_review",
+          "path": "egyptian-exact/review/MarkerPaddingAudit.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/egyptian-exact/review/MarkerPaddingAudit.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_publication_Lean_checks",
+          "path": "publication/evidence/CURRENT-CHECKS.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/publication/evidence/CURRENT-CHECKS.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Global O(log log b) short-expansion theorem and optimal asymptotic constants."
+      ],
+      "verification_gaps": [
+        "Companion Python algorithm has no formal extraction/refinement theorem.",
+        "Cleanup does not preserve a marker or prove a sharp denominator bound.",
+        "Starter access history is distinct from later validated archival retrieval."
+      ],
+      "prerequisites": [
+        "Positive rational reciprocals",
+        "Finite-state termination",
+        "Well-founded relations"
+      ],
+      "learning_priority": "high",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "Lean_theorems_reported": 42
+      },
+      "repair_history_flags": [],
+      "primary_declarations": [
+        "Egyptian.exact_length_distinct",
+        "Egyptian.pad_one_preserving_denominator_bounded"
+      ],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "saved_compilation_and_statement_audit_receipts",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Short-Egyptian-fractions-September-25-2026/Short-Egyptian-fractions-September-25-2026.pdf",
+          "path": "preprints/Short-Egyptian-fractions-September-25-2026/Short-Egyptian-fractions-September-25-2026.pdf"
+        }
+      ],
+      "upstream_family_title": "Short Egyptian fractions.",
+      "formal_statement_source_texts": [
+        {
+          "declaration": "Egyptian.exact_length_distinct",
+          "path": "egyptian-exact/Egyptian/Cleanup.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/egyptian-exact/Egyptian/Cleanup.lean",
+          "statement": "theorem exact_length_distinct {input : List ℕ} (hp : ∀ d ∈ input, 0 < d)\n    (hx0 : 0 < reciprocalSum input) (hx1 : reciprocalSum input < 1) :\n    ∃ out : List ℕ, (∀ d ∈ out, 0 < d) ∧ out.Nodup ∧\n      out.length = input.length ∧ reciprocalSum out = reciprocalSum input",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        },
+        {
+          "declaration": "Egyptian.pad_one_preserving_denominator_bounded",
+          "path": "egyptian-exact/Egyptian/Padding.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/egyptian-exact/Egyptian/Padding.lean",
+          "statement": "theorem pad_one_preserving_denominator_bounded {input : List ℕ} {marker B : ℕ}\n    (hp : ∀ d ∈ input, 0 < d) (hn : input.Nodup) (hlen : 3 ≤ input.length)\n    (hv : reciprocalSum input = 1) (hm : marker ∈ input)\n    (hbound : ∀ d ∈ input, d ≤ B) :\n    ∃ out : List ℕ, (∀ d ∈ out, 0 < d) ∧ out.Nodup ∧\n      out.length = input.length + 1 ∧ reciprocalSum out = 1 ∧ marker ∈ out ∧\n      (∀ d ∈ out, d ≤ B * (B + 1))",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        }
+      ],
+      "independent_catalog_spot_review": "not_independently_spot_checked_in_this_map"
+    },
+    {
+      "result_id": "scope-positive-blocks-lean",
+      "title": "Positive-block inequalities, exact gaps and full equality classification",
+      "field": "Linear algebra and operator theory",
+      "subfield": "Positive semidefinite block matrices",
+      "problem_family": "Positive-block inequalities, exact gaps and full equality classification",
+      "upstream_family_id": "325",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "full",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "For a finite complex PSD block matrix [A B; B* C], the unnormalized Hilbert-Schmidt norms satisfy normHS(B)^2<=normHS(A)*normHS(C). For common-row Gram factors with A=X^H*X, B=X^H*Y, C=Y^H*Y, the sum deficit normHS(A)^2+normHS(C)^2-2*normHS(B)^2 equals normHS(X*X^H-Y*Y^H)^2. Product equality occurs iff a diagonal block is zero or a common positive-support normal form exists; existence and converse are proved.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "Finite complex matrix index types; rectangular B permitted.",
+        "Full block matrix is positive semidefinite.",
+        "Normalized nonzero equality criterion requires positive diagonal norms; zero cases have separate branches."
+      ],
+      "source_paths": [
+        "positive-blocks/README.md",
+        "positive-blocks/PositiveBlocks/Blocks.lean",
+        "positive-blocks/PositiveBlocks/Classification.lean"
+      ],
+      "sources": [
+        {
+          "path": "positive-blocks/README.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/positive-blocks/README.md",
+          "sha256": "91b873b517c34a52da38a9e2dfc0a8d204d1ca944d0e60e351a16931fd433378",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "positive-blocks/PositiveBlocks/Blocks.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/positive-blocks/PositiveBlocks/Blocks.lean",
+          "sha256": "36dddf5ca7c8eb43080728e1ef13e9ccb9cb938c76dc0a98b1d5e900c60d9cb9",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "positive-blocks/PositiveBlocks/Classification.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/positive-blocks/PositiveBlocks/Classification.lean",
+          "sha256": "90864094f9a16fba4ecf3e0087529f43e112069e832f38413f342478daf7a12d",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_final_review",
+          "path": "positive-blocks/reviews/final-source-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/positive-blocks/reviews/final-source-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_publication_Lean_checks",
+          "path": "publication/evidence/POSITIVE-BLOCK-CHECKS.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/publication/evidence/POSITIVE-BLOCK-CHECKS.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Complete Crouzeix conjecture or constant-two numerical-range theorem."
+      ],
+      "verification_gaps": [
+        "Optional ordinary corollaries outside exported source are not formally covered."
+      ],
+      "prerequisites": [
+        "Complex matrices",
+        "Gram factorizations",
+        "Hilbert-Schmidt norm",
+        "Cauchy-Schwarz"
+      ],
+      "learning_priority": "high",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "public_declarations": 142,
+        "public_theorems": 131,
+        "definitions": 11,
+        "private_helpers": 4
+      },
+      "repair_history_flags": [
+        "Historical supplied checkpoint had unfinished written verdict; separate final source review completed it without a core proof correction."
+      ],
+      "primary_declarations": [
+        "block_hsNorm_product_le",
+        "block_hsNorm_product_eq_iff_zero_or_commonSupportNormalForm"
+      ],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "saved_compilation_and_statement_audit_receipts",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/paper.pdf",
+          "path": "preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/paper.pdf"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-complete-Crouzeix-theorem-September-23-2026/paper.pdf",
+          "path": "preprints/The-complete-Crouzeix-theorem-September-23-2026/paper.pdf"
+        }
+      ],
+      "upstream_family_title": "The complete Crouzeix conjecture.",
+      "formal_statement_source_texts": [
+        {
+          "declaration": "block_hsNorm_product_le",
+          "path": "positive-blocks/PositiveBlocks/Blocks.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/positive-blocks/PositiveBlocks/Blocks.lean",
+          "statement": "theorem block_hsNorm_product_le\n    {A : Matrix m m ℂ} {B : Matrix m n ℂ} {C : Matrix n n ℂ}\n    (h : (fromBlocks A B Bᴴ C).PosSemidef) :\n    hsNorm B ^ 2 ≤ hsNorm A * hsNorm C",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        },
+        {
+          "declaration": "block_hsNorm_product_eq_iff_zero_or_commonSupportNormalForm",
+          "path": "positive-blocks/PositiveBlocks/Classification.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/positive-blocks/PositiveBlocks/Classification.lean",
+          "statement": "theorem block_hsNorm_product_eq_iff_zero_or_commonSupportNormalForm\n    {A : Matrix m m ℂ} {B : Matrix m n ℂ} {C : Matrix n n ℂ}\n    (h : (Matrix.fromBlocks A B Bᴴ C).PosSemidef) :\n    (hsNorm B ^ 2 = hsNorm A * hsNorm C) ↔\n      A = 0 ∨ C = 0 ∨ HasCommonSupportNormalForm A B C",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        }
+      ],
+      "independent_catalog_spot_review": "source_scope_spot_checked_no_blocking_discrepancy"
+    },
+    {
+      "result_id": "scope-convex-lean",
+      "title": "Smooth quantitative convex outer approximation and actual nesting",
+      "field": "Geometry and analysis",
+      "subfield": "Finite-dimensional convex approximation",
+      "problem_family": "Smooth quantitative convex outer approximation and actual nesting",
+      "upstream_family_id": "325",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "full",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "For nonempty compact convex K, a finite unit-direction delta-net gives a smooth exponential support barrier with strictly convex compact outer sublevels. Outer distance and Hausdorff error are <=(epsilon+delta*sqrt(1-delta^2/4)*diam(K))/(1-delta^2/2); there is a recursively selected compactly nested sequence with vanishing Hausdorff error and intersection K. Smoothness is of the barrier; analytic boundary charts remain deferred.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "Finite-dimensional nontrivial real inner-product space; K nonempty compact convex.",
+        "0<=delta<sqrt(2); epsilon>0; t>0; N*exp(-t*epsilon)<1.",
+        "No ambient interior assumption on K; singleton and lower-dimensional examples are included."
+      ],
+      "source_paths": [
+        "convex-approximation/README.md",
+        "convex-approximation/ConvexApprox/Approximation.lean",
+        "convex-approximation/ConvexApprox/Nesting.lean"
+      ],
+      "sources": [
+        {
+          "path": "convex-approximation/README.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/convex-approximation/README.md",
+          "sha256": "b475a7a08d5fd0efa79a3dbe02d0e95f2822ad47110e1999e9bb09cf7a104157",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "convex-approximation/ConvexApprox/Approximation.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/convex-approximation/ConvexApprox/Approximation.lean",
+          "sha256": "03fb55cef6fcd918ccc5afb2600999100536a3a705732b451b1e96e5772b0b96",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "convex-approximation/ConvexApprox/Nesting.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/convex-approximation/ConvexApprox/Nesting.lean",
+          "sha256": "8cbe72a7fbe85c4f58befaa1a1556e068d404b21e35abec2c81debe3aa29b3a9",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_review",
+          "path": "convex-approximation/notes/independent-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/convex-approximation/notes/independent-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_publication_Lean_checks",
+          "path": "publication/evidence/CONVEX-APPROX-CHECKS.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/publication/evidence/CONVEX-APPROX-CHECKS.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Complete Crouzeix conjecture.",
+        "Full analytic boundary charts and sphere/Jordan parametrizations."
+      ],
+      "verification_gaps": [
+        "Analytic boundary charts and sphere/Jordan parametrizations deferred.",
+        "No globally uniform strong-convexity modulus, curvature bound or optimal net size."
+      ],
+      "prerequisites": [
+        "Support functions",
+        "Finite nets",
+        "Multivariable differentiation",
+        "Compact convex sets"
+      ],
+      "learning_priority": "medium",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "explicit_named_declarations": 146,
+        "theorem_lemma_statements": 124,
+        "supplied_inventory_entries": 145,
+        "separately_audited_abbreviation": 1
+      },
+      "repair_history_flags": [
+        "Earlier failed printer audit remains failed; corrected historical and fresh checks are separate."
+      ],
+      "primary_declarations": [
+        "supportBarrier_outer_approximation",
+        "nestedBarrierData_compactly_nested",
+        "nestedBarrierData_hausdorff_tendsto"
+      ],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "saved_compilation_and_statement_audit_receipts",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/paper.pdf",
+          "path": "preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/paper.pdf"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-complete-Crouzeix-theorem-September-23-2026/paper.pdf",
+          "path": "preprints/The-complete-Crouzeix-theorem-September-23-2026/paper.pdf"
+        }
+      ],
+      "upstream_family_title": "The complete Crouzeix conjecture.",
+      "formal_statement_source_texts": [
+        {
+          "declaration": "supportBarrier_outer_approximation",
+          "path": "convex-approximation/ConvexApprox/Approximation.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/convex-approximation/ConvexApprox/Approximation.lean",
+          "statement": "theorem supportBarrier_outer_approximation [FiniteDimensional ℝ E] [Nontrivial E]\n    {K : Set E} {D : Finset E} {δ ε t : ℝ}\n    (hK : IsCompact K) (hne : K.Nonempty) (hconv : Convex ℝ K)\n    (hnet : IsChordalNet D δ) (hδ₀ : 0 ≤ δ) (hδ : δ < Real.sqrt 2)\n    (hε : 0 < ε) (ht : 0 < t) (hmargin : (D.card : ℝ) * Real.exp (-t * ε) < 1) :\n    ContDiff ℝ ∞ (supportBarrier K D ε t) ∧\n    StrictConvexOn ℝ Set.univ (supportBarrier K D ε t) ∧\n    IsOpen {x : E | supportBarrier K D ε t x < 1} ∧\n    K ⊆ {x : E | supportBarrier K D ε t x < 1} ∧\n    IsCompact {x : E | supportBarrier K D ε t x ≤ 1} ∧\n    closure {x : E | supportBarrier K D ε t x < 1} =\n      {x : E | supportBarrier K D ε t x ≤ 1} ∧\n    frontier {x : E | supportBarrier K D ε t x < 1} =\n      {x : E | supportBarrier K D ε t x = 1} ∧\n    (∀ x : E, supportBarrier K D ε t x = 1 →\n      fderiv ℝ (supportBarrier K D ε t) x ≠ 0) ∧\n    Metric.hausdorffDist {x : E | supportBarrier K D ε t x ≤ 1} K ≤\n      (ε + δ * Real.sqrt (1 - δ ^ 2 / 4) * Metric.diam K) / (1 - δ ^ 2 / 2)",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        },
+        {
+          "declaration": "nestedBarrierData_compactly_nested",
+          "path": "convex-approximation/ConvexApprox/Nesting.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/convex-approximation/ConvexApprox/Nesting.lean",
+          "statement": "theorem nestedBarrierData_compactly_nested [FiniteDimensional ℝ E] [Nontrivial E]\n    {K : Set E} (hK : IsCompact K) (hne : K.Nonempty) (hconv : Convex ℝ K) (n : ℕ) :\n    (nestedBarrierData K (n+1)).closedSet ⊆ (nestedBarrierData K n).openSet",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        },
+        {
+          "declaration": "nestedBarrierData_hausdorff_tendsto",
+          "path": "convex-approximation/ConvexApprox/Nesting.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/convex-approximation/ConvexApprox/Nesting.lean",
+          "statement": "theorem nestedBarrierData_hausdorff_tendsto [FiniteDimensional ℝ E] [Nontrivial E]\n    {K : Set E} (hK : IsCompact K) (hne : K.Nonempty) (hconv : Convex ℝ K) :\n    Filter.Tendsto (fun n => Metric.hausdorffDist (nestedBarrierData K n).closedSet K)\n      Filter.atTop (nhds 0)",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        }
+      ],
+      "independent_catalog_spot_review": "source_scope_spot_checked_no_blocking_discrepancy"
+    },
+    {
+      "result_id": "scope-mixed-moment-lean",
+      "title": "Actual-integral Taylor-contact cancellation",
+      "field": "Number theory and analysis",
+      "subfield": "Mixed moments and special constants",
+      "problem_family": "Actual-integral Taylor-contact cancellation",
+      "upstream_family_id": "005",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "full",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "For rational polynomials P,D, natural L,j with j<L, one-sided or two-sided contact x*P(x)/sqrt(1-x^2)-D(x)=O(x^L) at zero implies Analysis.polynomialColumn(P,j)-(3/2)*Zeta.polynomialColumn(D,j)=a+b*G with explicit rational witnesses a,b. The first column is the integral of abs(t)*P(t)*s^j/(sqrt(1-t^2)*(1-t*s)) over (-1,1)x(0,1); the second is the integral of D(t)*s^j/(1-t*s) over (0,1)^2. Integrability, moment recurrences and boundary evaluations are proved.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "P,D in Q[t]; L,j natural; j<L.",
+        "Contact at zero in the right-sided or two-sided neighborhood filter.",
+        "Integrals are the defined actual Lebesgue product-measure columns, not merely formal coordinates."
+      ],
+      "source_paths": [
+        "mixed-moment/README.md",
+        "mixed-moment/docs/final-proof-scope.md",
+        "mixed-moment/MixedMoments/Applications.lean"
+      ],
+      "sources": [
+        {
+          "path": "mixed-moment/README.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/mixed-moment/README.md",
+          "sha256": "24e8d4fc6df956252a055509b79227792b043dbdf85067a542f5e89cacaa7092",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "mixed-moment/docs/final-proof-scope.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/mixed-moment/docs/final-proof-scope.md",
+          "sha256": "a30f2046cf35f689f69e09aa99fad2d492fb35d7559a8f247df06164b8e380e0",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "mixed-moment/MixedMoments/Applications.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/mixed-moment/MixedMoments/Applications.lean",
+          "sha256": "6b2de7509ddb9c78b6ef5cbc5e147ebd031bef8521ff855b2c4451350bc550de",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_statement_review",
+          "path": "mixed-moment/docs/final-statement-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/mixed-moment/docs/final-statement-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "independent_local_publication_review",
+          "path": "mixed-moment/docs/publication-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/mixed-moment/docs/publication-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_publication_Lean_checks",
+          "path": "publication/evidence/MIXED-MOMENT-CHECKS.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/publication/evidence/MIXED-MOMENT-CHECKS.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Catalan's constant is irrational.",
+        "Arithmetic independence or nonmembership in Q+QG from a nonzero formal zeta coefficient."
+      ],
+      "verification_gaps": [
+        "Evaluation of formal coordinates into reals is not assumed injective.",
+        "Tail theorem only for 2<=i+N, excluding i=0,N=1.",
+        "Broader analytic clauses and optional pi/Basel evaluation deferred."
+      ],
+      "prerequisites": [
+        "Measure theory",
+        "Dominated or nonnegative exchanges",
+        "Rational recurrences",
+        "Polynomial Taylor contact"
+      ],
+      "learning_priority": "advanced",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "modules": 17,
+        "public_named_declarations": 513,
+        "public_theorems": 429,
+        "project_origin_constants": 835
+      },
+      "repair_history_flags": [
+        "Failed/interrupted historical printer and supplement attempts stay failed; 111-theorem audit is a subset, not complete coverage.",
+        "Earlier archive transfer failure is historical; later direct verified intake does not change the ordinary-study Lean status."
+      ],
+      "primary_declarations": [
+        "MixedMoments.integral_cancellation_of_analyticContact",
+        "MixedMoments.integral_cancellation_of_analyticContact_nhds"
+      ],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "saved_compilation_and_statement_audit_receipts",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Catalans-constant-is-irrational-September-24-2026/paper.pdf",
+          "path": "preprints/Catalans-constant-is-irrational-September-24-2026/paper.pdf"
+        }
+      ],
+      "upstream_family_title": "Irrationality of Catalan’s constant.",
+      "formal_statement_source_texts": [
+        {
+          "declaration": "MixedMoments.integral_cancellation_of_analyticContact",
+          "path": "mixed-moment/MixedMoments/Applications.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/mixed-moment/MixedMoments/Applications.lean",
+          "statement": "theorem integral_cancellation_of_analyticContact (P D : Polynomial ℚ) (L j : ℕ)\n    (hcontact : analyticContactFunction P D =O[𝓝[>] 0] (fun x => x ^ L))\n    (hj : j < L) :\n    Analysis.polynomialColumn P j - (3 / 2 : ℝ) * Zeta.polynomialColumn D j =\n      (rationalWitness P D j : ℝ) + (catalanWitness P j : ℝ) * Constants.catalan",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        },
+        {
+          "declaration": "MixedMoments.integral_cancellation_of_analyticContact_nhds",
+          "path": "mixed-moment/MixedMoments/Applications.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/mixed-moment/MixedMoments/Applications.lean",
+          "statement": "theorem integral_cancellation_of_analyticContact_nhds (P D : Polynomial ℚ) (L j : ℕ)\n    (hcontact : analyticContactFunction P D =O[𝓝 0] (fun x => x ^ L))\n    (hj : j < L) :\n    Analysis.polynomialColumn P j - (3 / 2 : ℝ) * Zeta.polynomialColumn D j =\n      (rationalWitness P D j : ℝ) + (catalanWitness P j : ℝ) * Constants.catalan",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        }
+      ],
+      "independent_catalog_spot_review": "source_scope_spot_checked_no_blocking_discrepancy"
+    },
+    {
+      "result_id": "scope-finite-field-lean",
+      "title": "Finite-field Fourier mixing, four products and local divisor lift",
+      "field": "Number theory",
+      "subfield": "Additive combinatorics over finite fields",
+      "problem_family": "Finite-field Fourier mixing, four products and local divisor lift",
+      "upstream_family_id": "025",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "full",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "For prime p and nonempty A,B in F_p, the normalized nonzero Fourier coefficient of independent uniform XY is bounded by sqrt(p/(|A|*|B|)). If |H|^4>=p^3, each residue has four-product probability at least 1/p^2 and is a sum of four products of H elements. A local positive-divisor rational four-summand lift is also compiled.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "p prime; independent uniform samples.",
+        "A,B nonempty; four-product density condition implies H nonempty.",
+        "Ordered tuples with multiplicities; repetitions and zero elements allowed."
+      ],
+      "source_paths": [
+        "finite-field-product-mixing/README.md",
+        "finite-field-product-mixing/evidence/formal-scope.json",
+        "finite-field-product-mixing/FiniteFieldMixing/Mixing.lean",
+        "finite-field-product-mixing/FiniteFieldMixing/DivisorLift.lean"
+      ],
+      "sources": [
+        {
+          "path": "finite-field-product-mixing/README.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/finite-field-product-mixing/README.md",
+          "sha256": "8f8ef4ce044d04470ed051c6e950d13747235d5effa955a79f8e6c0285229aef",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "finite-field-product-mixing/evidence/formal-scope.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/finite-field-product-mixing/evidence/formal-scope.json",
+          "sha256": "8325c382dda907018a0b9ebdc0c5f10fa68bdaa8f782d7f55c760eb9a87a976c",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "finite-field-product-mixing/FiniteFieldMixing/Mixing.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/finite-field-product-mixing/FiniteFieldMixing/Mixing.lean",
+          "sha256": "b1c3bf778f67944a379d1718dd4ea09337b5f4e63cb1de5e86906fef27217a8f",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "finite-field-product-mixing/FiniteFieldMixing/DivisorLift.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/finite-field-product-mixing/FiniteFieldMixing/DivisorLift.lean",
+          "sha256": "b71a6f8759dd1b262e9d884b6459f784d505b18dbd6711e9ba96e0f0e1681bf0",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "supplied_saved_Lean_build_and_audit",
+          "path": "finite-field-product-mixing/evidence/final-independent-audit.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/finite-field-product-mixing/evidence/final-independent-audit.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_statement_inventory",
+          "path": "finite-field-product-mixing/evidence/final-theorem-inventory.log",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/finite-field-product-mixing/evidence/final-theorem-inventory.log",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Global short-Egyptian-fraction constant or full headline asymptotic theorem.",
+        "Distinct-sample or optimal product-count theorem."
+      ],
+      "verification_gaps": [
+        "Publication inspected unchanged source hashes and names; it did not rerun Lean or finite computations.",
+        "Heterogeneous set/coefficient/shift theorem, radical-free equivalences and arbitrary-k lift remain ordinary-only."
+      ],
+      "prerequisites": [
+        "Finite fields",
+        "Finite Fourier inversion",
+        "Character orthogonality",
+        "Cauchy-Schwarz"
+      ],
+      "learning_priority": "medium",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "audited_declarations": 85
+      },
+      "repair_history_flags": [],
+      "primary_declarations": [
+        "uniform_product_fourier_bound",
+        "four_products_cover",
+        "divisor_four_product_rational_lift"
+      ],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "saved_compilation_and_statement_audit_receipts",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Short-Egyptian-fractions-September-25-2026/Short-Egyptian-fractions-September-25-2026.pdf",
+          "path": "preprints/Short-Egyptian-fractions-September-25-2026/Short-Egyptian-fractions-September-25-2026.pdf"
+        }
+      ],
+      "upstream_family_title": "Short Egyptian fractions.",
+      "formal_statement_source_texts": [
+        {
+          "declaration": "uniform_product_fourier_bound",
+          "path": "finite-field-product-mixing/FiniteFieldMixing/Mixing.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/finite-field-product-mixing/FiniteFieldMixing/Mixing.lean",
+          "statement": "theorem uniform_product_fourier_bound\n    (A B : Finset (ZMod p)) (hA : A.Nonempty) (hB : B.Nonempty)\n    (r : ZMod p) (hr : r ≠ 0) :\n    ‖normalizedProductCoeff ZMod.stdAddChar A B r‖ ≤\n      Real.sqrt ((p : ℝ) / ((A.card : ℝ) * (B.card : ℝ)))",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        },
+        {
+          "declaration": "four_products_cover",
+          "path": "finite-field-product-mixing/FiniteFieldMixing/Mixing.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/finite-field-product-mixing/FiniteFieldMixing/Mixing.lean",
+          "statement": "theorem four_products_cover\n    (H : Finset (ZMod p)) (hsize : p ^ 3 ≤ H.card ^ 4) (z : ZMod p) :\n    ∃ a b : Fin 4 → ZMod p,\n      (∀ i, a i ∈ H) ∧ (∀ i, b i ∈ H) ∧ ∑ i, a i * b i = z",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        },
+        {
+          "declaration": "divisor_four_product_rational_lift",
+          "path": "finite-field-product-mixing/FiniteFieldMixing/DivisorLift.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/finite-field-product-mixing/FiniteFieldMixing/DivisorLift.lean",
+          "statement": "theorem divisor_four_product_rational_lift (Q : ℕ) (hQ : 0 < Q) (D : Finset ℕ)\n    (hD : ∀ d ∈ D, 0 < d ∧ d ∣ Q)\n    (hsize : p ^ 3 ≤ (D.image (Nat.cast : ℕ → ZMod p)).card ^ 4) :\n    ∃ (a b : Fin 4 → ℕ) (m : ℕ),\n      (∀ i, a i ∈ D) ∧ (∀ i, b i ∈ D) ∧ 0 < m ∧\n      (∑ i, a i * b i = p * m) ∧ (∀ i, a i * b i ∣ Q ^ 2) ∧\n      (p : ℚ) = ∑ i, ((a i * b i : ℕ) : ℚ) / (m : ℚ)",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        }
+      ],
+      "independent_catalog_spot_review": "source_scope_spot_checked_no_blocking_discrepancy"
+    },
+    {
+      "result_id": "scope-lp-certificates",
+      "title": "Original-real rational LP certificate soundness and checked exports",
+      "field": "Optimization",
+      "subfield": "Linear programming certificates",
+      "problem_family": "Original-real rational LP certificate soundness and checked exports",
+      "upstream_family_id": null,
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "technique",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "Rational Boolean acceptance of optimal, infeasible or unbounded certificates implies the corresponding result for all real feasible points. The typed original-input layer proves mixed-row and objective normalization sound. Per-input checked export regenerates trusted numeric Lean statements and requires fresh kernel acceptance; the deterministic witness finder is incomplete.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "Finite rational coefficients and witnesses; variables are unrestricted reals.",
+        "Nonstrict inequalities; equality multipliers are free signed rationals.",
+        "Acceptance hypotheses are explicit; input/output resource budgets apply to the external bridge."
+      ],
+      "source_paths": [
+        "lp-certificates/README.md",
+        "lp-certificates/LPCertificates/Rational.lean",
+        "lp-certificates/LPCertificates/Input.lean"
+      ],
+      "sources": [
+        {
+          "path": "lp-certificates/README.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/lp-certificates/README.md",
+          "sha256": "de13409c23f93cd66e0b555dbe7e8a25fbe4c27ce5ba8f37eb13d4f4f6da0ebf",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "lp-certificates/LPCertificates/Rational.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/lp-certificates/LPCertificates/Rational.lean",
+          "sha256": "be5b7bf5c286303fef192404ddb6d2e07f8c3c7a5b794548740382b0722f5f94",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "lp-certificates/LPCertificates/Input.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/lp-certificates/LPCertificates/Input.lean",
+          "sha256": "4bfbbd5058b142ad21657462963ccf80a6bdd1dbdfc9fa36ae78253ee605eae7",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_math_review",
+          "path": "lp-certificates/evidence/math-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/lp-certificates/evidence/math-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "independent_local_followup_formal_review",
+          "path": "lp-certificates/evidence/followup-formal-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/lp-certificates/evidence/followup-formal-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_followup_checks",
+          "path": "lp-certificates/evidence/followup-summary.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/lp-certificates/evidence/followup-summary.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Complete LP solver, certificate discovery completeness or strong duality."
+      ],
+      "verification_gaps": [
+        "Python/JSON parsing and literal generation have no formal refinement theorem.",
+        "Cached dependency OLeans and host runtime remain trusted; local replay uses the same kernel.",
+        "Git-status dependency check can miss index-hidden changes.",
+        "Coherently rehashed saved intake can admit malformed process metadata; saved intake is not a fresh Lean pass."
+      ],
+      "prerequisites": [
+        "Finite exact linear algebra",
+        "Weak duality",
+        "Rational arithmetic",
+        "Typed certificate interfaces"
+      ],
+      "learning_priority": "high",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "followup_audited_declarations": 78,
+        "definition_body_gates": 14,
+        "complete_type_gates": 6
+      },
+      "repair_history_flags": [
+        "Follow-up fixed large-integer formatting crash using budgets and fail-closed formatting; corrected weighted-slack interface note."
+      ],
+      "primary_declarations": [
+        "checkOptimal_sound_real",
+        "checkInfeasible_sound_real",
+        "checkUnbounded_sound_real"
+      ],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "saved_compilation_and_statement_audit_receipts",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [],
+      "formal_statement_source_texts": [
+        {
+          "declaration": "checkOptimal_sound_real",
+          "path": "lp-certificates/LPCertificates/Rational.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/lp-certificates/LPCertificates/Rational.lean",
+          "statement": "theorem checkOptimal_sound_real (P : Problem ℚ n m k) (x : Fin n → ℚ)\n    (w : Fin m → ℚ) (v : Fin k → ℚ) (h : checkOptimal P x w v = true) :\n    Feasible (realProblem P) (realVector x) ∧\n      ∀ y : Fin n → ℝ, Feasible (realProblem P) y →\n        dot (realProblem P).c y ≤ dot (realProblem P).c (realVector x)",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        },
+        {
+          "declaration": "checkInfeasible_sound_real",
+          "path": "lp-certificates/LPCertificates/Rational.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/lp-certificates/LPCertificates/Rational.lean",
+          "statement": "theorem checkInfeasible_sound_real (P : Problem ℚ n m k) (w : Fin m → ℚ)\n    (v : Fin k → ℚ) (h : checkInfeasible P w v = true) :\n    ¬ ∃ x : Fin n → ℝ, Feasible (realProblem P) x",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        },
+        {
+          "declaration": "checkUnbounded_sound_real",
+          "path": "lp-certificates/LPCertificates/Rational.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/lp-certificates/LPCertificates/Rational.lean",
+          "statement": "theorem checkUnbounded_sound_real (P : Problem ℚ n m k) (x d : Fin n → ℚ)\n    (h : checkUnbounded P x d = true) :\n    ∀ B : ℝ, ∃ y : Fin n → ℝ, Feasible (realProblem P) y ∧ B < dot (realProblem P).c y",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        }
+      ],
+      "independent_catalog_spot_review": "source_scope_spot_checked_no_blocking_discrepancy"
+    },
+    {
+      "result_id": "scope-transport-finite",
+      "title": "Finite/scalar transport exponent obstructions",
+      "field": "Analysis",
+      "subfield": "Optimal transport stability",
+      "problem_family": "Finite/scalar transport exponent obstructions",
+      "upstream_family_id": "374",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "counterexample",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "Finite arrays and scalar formulas certify target cost a*b^p and mapSize^2=b/2+a*b^2. Along b=a/2 shrinking a, every proposed constant is exceeded above exponent p/(2*(p+1)); fixed positive central mass gives the separate 1/2 ceiling. Interpretation as actual Brenier-map L2 quantities uses a separately reviewed ordinary measure proof.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "Ordinary cube model: d>=2, 0<b<a, a+b<1, uniform cube source.",
+        "Finite/scalar parameter hypotheses are explicit in each exported theorem; p>=1 for the ordinary probability transport reading.",
+        "Shrinking central mass is essential to the first ceiling."
+      ],
+      "source_paths": [
+        "transport-sharpness/README.md",
+        "transport-sharpness/TransportSharpness/Finite.lean",
+        "transport-sharpness/TransportSharpness/Obstruction.lean"
+      ],
+      "sources": [
+        {
+          "path": "transport-sharpness/README.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/transport-sharpness/README.md",
+          "sha256": "0ab929a2e0e4328cf887c78be049e8c184c95e507a898e7f65b10aa7bd35b678",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "transport-sharpness/TransportSharpness/Finite.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/transport-sharpness/TransportSharpness/Finite.lean",
+          "sha256": "2ca131e39877bb4ec3d0803de4b9bdfa21d7d2e2935f9777db0408aa3cadf18a",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "transport-sharpness/TransportSharpness/Obstruction.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/transport-sharpness/TransportSharpness/Obstruction.lean",
+          "sha256": "ebb8d5361a6dce5ebc7e436d59750a58581030ca1d351e420f9280dcf83df0e1",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_ordinary_review",
+          "path": "transport-sharpness/reviews/proof-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/transport-sharpness/reviews/proof-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "independent_local_Lean_review",
+          "path": "transport-sharpness/reviews/lean-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/transport-sharpness/reviews/lean-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_core_status",
+          "path": "transport-sharpness/STATUS.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/transport-sharpness/STATUS.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Positive global upper stability theorem or endpoint optimality."
+      ],
+      "verification_gaps": [
+        "Actual uniform-source maps, null ties, source integration and actual L2 norm identification remain deferred Lean obligations."
+      ],
+      "prerequisites": [
+        "Pushforward laws versus maps",
+        "Wasserstein coupling definition",
+        "Exact finite transport",
+        "Real powers"
+      ],
+      "learning_priority": "medium",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {},
+      "repair_history_flags": [],
+      "primary_declarations": [],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "saved_compilation_and_statement_audit_receipts",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/article.pdf",
+          "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/article.pdf"
+        }
+      ],
+      "upstream_family_title": "Sharp one-third stability of Brenier maps.",
+      "formal_statement_source_texts": [],
+      "independent_catalog_spot_review": "source_scope_spot_checked_no_blocking_discrepancy"
+    },
+    {
+      "result_id": "scope-transport-measures",
+      "title": "All-Borel-coupling atomic target-cost bridge",
+      "field": "Analysis",
+      "subfield": "Optimal transport stability",
+      "problem_family": "All-Borel-coupling atomic target-cost bridge",
+      "upstream_family_id": "374",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "full",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "In dimension two, actual target probabilities with masses ((1-a)/2,a,(1-a)/2) at (-1,0),(0,0),(1,0) and (-1,0),(0,b),(1,0) have attained infimal Euclidean p-cost a*b^p over all Borel couplings; its 1/p root is a^(1/p)*b. Cost is an explicit coordinate Euclidean formula.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "Probability specialization: 0<=a<=1, b>=0, p>=1.",
+        "More general equal-mass finite-measure cost identities assume a>=0,b>=0,p>0; a>1 must not be described as probability transport.",
+        "No atomic-form premise is imposed on the coupling domain."
+      ],
+      "source_paths": [
+        "transport-sharpness/docs/followup-measure-bridge.md",
+        "transport-sharpness/TransportSharpness/Measures.lean"
+      ],
+      "sources": [
+        {
+          "path": "transport-sharpness/docs/followup-measure-bridge.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/transport-sharpness/docs/followup-measure-bridge.md",
+          "sha256": "609496c45dfea3fad8ba0ace17356b389be53c9dc80be047c66582101e987b09",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "transport-sharpness/TransportSharpness/Measures.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/transport-sharpness/TransportSharpness/Measures.lean",
+          "sha256": "808199ba3c1db1829950488399a63037f4497fd6203cddb334ced85060d5529d",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_followup_math_review",
+          "path": "transport-sharpness/reviews/followup-proof-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/transport-sharpness/reviews/followup-proof-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "independent_local_followup_Lean_review",
+          "path": "transport-sharpness/reviews/followup-lean-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/transport-sharpness/reviews/followup-lean-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_followup_status",
+          "path": "transport-sharpness/FOLLOWUP-STATUS.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/transport-sharpness/FOLLOWUP-STATUS.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Original cube-source optimal-map stability headline.",
+        "Abstract Wasserstein metric axioms or broad optimal transport library."
+      ],
+      "verification_gaps": [
+        "No actual uniform-source map or L2-map identification.",
+        "Higher-dimensional actual-measure extension and target optimizer uniqueness deferred."
+      ],
+      "prerequisites": [
+        "Borel measures",
+        "Weighted Dirac integration",
+        "Map marginals",
+        "Nonnegative integral infima"
+      ],
+      "learning_priority": "advanced",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "new_definitions": 11,
+        "new_theorems": 19,
+        "combined_full_types": 78,
+        "combined_local_replayed_declarations": 113
+      },
+      "repair_history_flags": [],
+      "primary_declarations": [
+        "TransportSharpness.actual_probability_transport",
+        "TransportSharpness.actual_transportDistance_eq"
+      ],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "saved_compilation_and_statement_audit_receipts",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/article.pdf",
+          "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/article.pdf"
+        }
+      ],
+      "upstream_family_title": "Sharp one-third stability of Brenier maps.",
+      "formal_statement_source_texts": [
+        {
+          "declaration": "TransportSharpness.actual_probability_transport",
+          "path": "transport-sharpness/TransportSharpness/Measures.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/transport-sharpness/TransportSharpness/Measures.lean",
+          "statement": "theorem actual_probability_transport (a b p : ℝ) (ha : 0 ≤ a) (ha1 : a ≤ 1)\n    (hb : 0 ≤ b) (hp : 1 ≤ p) :\n    IsProbabilityMeasure (atomicMeasure a 0) ∧\n    IsProbabilityMeasure (atomicMeasure a b) ∧\n    IsMeasureCoupling a b (matchingMeasure a b) ∧\n    IsProbabilityMeasure (matchingMeasure a b) ∧\n    measureCost p (matchingMeasure a b) = ENNReal.ofReal (a*b^p) ∧\n    transportPowerInf a b p = ENNReal.ofReal (a*b^p)",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        },
+        {
+          "declaration": "TransportSharpness.actual_transportDistance_eq",
+          "path": "transport-sharpness/TransportSharpness/Measures.lean",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/transport-sharpness/TransportSharpness/Measures.lean",
+          "statement": "theorem actual_transportDistance_eq (a b p : ℝ) (ha : 0 ≤ a) (hb : 0 ≤ b)\n    (hp : 0 < p) :\n    (transportPowerInf a b p).toReal ^ (1/p) = targetDistance a b p",
+          "evidence_type": "exact_formal_source_statement; not a fresh compiler check"
+        }
+      ],
+      "independent_catalog_spot_review": "source_scope_spot_checked_no_blocking_discrepancy"
+    },
+    {
+      "result_id": "scope-lp-sparse",
+      "title": "Sparse exact LP certificate discovery study",
+      "field": "Optimization",
+      "subfield": "Linear programming certificate discovery",
+      "problem_family": "Sparse exact LP certificate discovery study",
+      "upstream_family_id": null,
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "technique",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "After exact consistency checking and elimination of E*x=f with im(N)=ker(E), let k=rank(A*N)=rank([A;E])-rank(E). A valid bound over a nonempty feasible set has a nonnegative inequality certificate supported on at most k rows; infeasibility may require k+1. Exhaustive appropriate independent-support enumeration is complete under the stated model; implemented code is a fixture experiment.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "Finite nonstrict linear inequalities and equalities; exact rational arithmetic for executable search.",
+        "Bound-certificate k-row reduction assumes a nonempty feasible set.",
+        "Equality inconsistency is checked separately; infeasibility uses lifted supports."
+      ],
+      "source_paths": [
+        "lp-sparse-discovery/README.md",
+        "lp-sparse-discovery/study.md"
+      ],
+      "sources": [
+        {
+          "path": "lp-sparse-discovery/README.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/lp-sparse-discovery/README.md",
+          "sha256": "b40a2f9ea16b8143f7a7ca8e8a517c79cfee40310dfcead6a56ef6c600cc5c03",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "lp-sparse-discovery/study.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/lp-sparse-discovery/study.md",
+          "sha256": "0a21eddb24f9325f8f2767d69cdcafde363774ef18b6f8b804b85c1aa2300f84",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_math_review",
+          "path": "lp-sparse-discovery/reviews/mathematical-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/lp-sparse-discovery/reviews/mathematical-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "independent_local_computational_review",
+          "path": "lp-sparse-discovery/reviews/computational-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/lp-sparse-discovery/reviews/computational-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Lean verification, general solver implementation or general performance advantage."
+      ],
+      "verification_gaps": [
+        "No general LP input interface or checked Lean bridge.",
+        "Truncated search exhaustion remains inconclusive; fixture subset counts are not timing comparisons."
+      ],
+      "prerequisites": [
+        "Gaussian elimination",
+        "Conic dependence reduction",
+        "Farkas certificates",
+        "Exact arithmetic"
+      ],
+      "learning_priority": "high",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {},
+      "repair_history_flags": [],
+      "primary_declarations": [],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "not_performed_for_this_ordinary_study",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [],
+      "formal_statement_source_texts": [],
+      "independent_catalog_spot_review": "not_independently_spot_checked_in_this_map"
+    },
+    {
+      "result_id": "scope-ordinary-affine",
+      "title": "Periodic-to-global affine avoidance reduction",
+      "field": "Real analysis",
+      "subfield": "Measure and affine avoidance",
+      "problem_family": "Periodic-to-global affine avoidance reduction",
+      "upstream_family_id": "084",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "conditional",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "Assuming small open 1-periodic sets hit every translated copy at normalized scale t in [1,2), a summably budgeted union over both signs and dyadic scales has small measure; its compact complement in [0,1] excludes every entire nonzero affine copy of the sequence.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "For every p in (0,1), one open periodic H_p works for all y and normalized t, with density<=C*p and a hit y+t*a_n.",
+        "0<eta<1; both signs of dilation included."
+      ],
+      "source_paths": [
+        "research/supplement/reviews/affine/research-notes.reviewed.txt",
+        "research/supplement/STUDY-INDEX.json"
+      ],
+      "sources": [
+        {
+          "path": "research/supplement/reviews/affine/research-notes.reviewed.txt",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/reviews/affine/research-notes.reviewed.txt",
+          "sha256": "b34ce726296afafb253f3661aeb7870cfa38c36eaf28bb696a37c147aba47a4e",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "research/supplement/STUDY-INDEX.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/STUDY-INDEX.json",
+          "sha256": "3b4838004e1c9e7e838324f0b3309f07de41e97755906d948a44359a0c8b3980",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_ordinary_review",
+          "path": "research/supplement/reviews/affine/independent-review.txt",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/reviews/affine/independent-review.txt",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_study_status",
+          "path": "research/supplement/STUDY-INDEX.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/STUDY-INDEX.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Original upstream manuscript headline."
+      ],
+      "verification_gaps": [
+        "No construction of normalized hitting sets; not a proof of the source geometric-progression headline.",
+        "No Lean compilation or kernel checking of these ordinary study records; related standalone libraries have separate, narrower contracts."
+      ],
+      "prerequisites": [
+        "Lebesgue measure",
+        "Periodic sets",
+        "Summable budgets"
+      ],
+      "learning_priority": "medium",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "ordinary_core_records": 5
+      },
+      "repair_history_flags": [
+        "Corrected limitation requires infinitely many distinct values, not pairwise distinct sequence terms."
+      ],
+      "primary_declarations": [],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "not_performed_for_this_ordinary_study",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/geometric-erdos-similarity.pdf",
+          "path": "preprints/The-geometric-case-of-the-Erdos-similarity-conjecture-October-5-2026/geometric-erdos-similarity.pdf"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/paper.pdf",
+          "path": "preprints/The-dyadic-case-of-the-Erdos-similarity-conjecture-September-25-2026/paper.pdf"
+        }
+      ],
+      "upstream_family_title": "The geometric case of the Erdős similarity conjecture.",
+      "formal_statement_source_texts": [],
+      "independent_catalog_spot_review": "not_independently_spot_checked_in_this_map"
+    },
+    {
+      "result_id": "scope-ordinary-egyptian",
+      "title": "Corrected ordinary Egyptian fraction core",
+      "field": "Number theory",
+      "subfield": "Egyptian fractions",
+      "problem_family": "Corrected ordinary Egyptian fraction core",
+      "upstream_family_id": "025",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "full",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "Six reviewed ordinary records give fixed-length duplicate removal, finite-state termination and marker-preserving padding. Corrected prose keeps runtime, denominator-size and evidence claims within the proof scope.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "Positive denominator invariant; cleanup sum strictly between zero and one.",
+        "Padding a distinct expansion of one requires at least three terms and one specified marker."
+      ],
+      "source_paths": [
+        "research/supplement/reviews/egyptian/corrected/study.md",
+        "research/supplement/STUDY-INDEX.json"
+      ],
+      "sources": [
+        {
+          "path": "research/supplement/reviews/egyptian/corrected/study.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/reviews/egyptian/corrected/study.md",
+          "sha256": "d55fa211f374f6e990d39b3fd0403a8583f467c0630ed31d99c8d302f228836e",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "research/supplement/STUDY-INDEX.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/STUDY-INDEX.json",
+          "sha256": "3b4838004e1c9e7e838324f0b3309f07de41e97755906d948a44359a0c8b3980",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_ordinary_review",
+          "path": "research/supplement/reviews/egyptian/review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/reviews/egyptian/review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_study_status",
+          "path": "research/supplement/STUDY-INDEX.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/STUDY-INDEX.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Original upstream manuscript headline."
+      ],
+      "verification_gaps": [
+        "Two optional coarse/iterated bound corollaries have no additional independent review.",
+        "No global short-expansion asymptotic theorem.",
+        "No Lean compilation or kernel checking of these ordinary study records; related standalone libraries have separate, narrower contracts."
+      ],
+      "prerequisites": [
+        "Finite-state termination",
+        "Rational arithmetic"
+      ],
+      "learning_priority": "high",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "ordinary_core_records": 6
+      },
+      "repair_history_flags": [
+        "Corrected scope/runtime/evidence/denominator-size wording; six statement IDs/hypotheses/conclusions retained."
+      ],
+      "primary_declarations": [],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "not_performed_for_this_ordinary_study",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Short-Egyptian-fractions-September-25-2026/Short-Egyptian-fractions-September-25-2026.pdf",
+          "path": "preprints/Short-Egyptian-fractions-September-25-2026/Short-Egyptian-fractions-September-25-2026.pdf"
+        }
+      ],
+      "upstream_family_title": "Short Egyptian fractions.",
+      "formal_statement_source_texts": [],
+      "independent_catalog_spot_review": "not_independently_spot_checked_in_this_map"
+    },
+    {
+      "result_id": "scope-ordinary-transport",
+      "title": "Ordinary uniform-cube optimal-map obstruction",
+      "field": "Analysis",
+      "subfield": "Optimal transport stability",
+      "problem_family": "Ordinary uniform-cube optimal-map obstruction",
+      "upstream_family_id": "374",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "counterexample",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "For uniform probability on [-1,1]^d with d>=2, 0<b<a and a+b<1, the quadratic optimal maps from max(-x1,a,x1) and max(-x1,a+b*x2,x1) yield W2^2=a*b^2 and map L2^2=b/2+a*b^2. The shrinking-mass path b=a/2 rules out uniform exponents above 1/3.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "d>=2; 0<b<a; a+b<1; uniform cube probability.",
+        "Quadratic optimal-map identification uses the ordinary measure proof, not finite arithmetic alone."
+      ],
+      "source_paths": [
+        "research/supplement/transport-stability/proof.md",
+        "research/supplement/STUDY-INDEX.json"
+      ],
+      "sources": [
+        {
+          "path": "research/supplement/transport-stability/proof.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/transport-stability/proof.md",
+          "sha256": "7d8445fc42103de171a2366da8f15a4cce3ddec37f5ea99d3b19738efea212cd",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "research/supplement/STUDY-INDEX.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/STUDY-INDEX.json",
+          "sha256": "3b4838004e1c9e7e838324f0b3309f07de41e97755906d948a44359a0c8b3980",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_ordinary_review",
+          "path": "research/supplement/reviews/transport/audit-report.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/reviews/transport/audit-report.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_study_status",
+          "path": "research/supplement/STUDY-INDEX.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/STUDY-INDEX.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Original upstream manuscript headline."
+      ],
+      "verification_gaps": [
+        "No positive global upper estimate or endpoint proof.",
+        "No Lean compilation or kernel checking of these ordinary study records; related standalone libraries have separate, narrower contracts."
+      ],
+      "prerequisites": [
+        "Convex affine maxima",
+        "Pushforward measures",
+        "Quadratic duality"
+      ],
+      "learning_priority": "medium",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "ordinary_core_records": 10
+      },
+      "repair_history_flags": [],
+      "primary_declarations": [],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "not_performed_for_this_ordinary_study",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/article.pdf",
+          "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/article.pdf"
+        }
+      ],
+      "upstream_family_title": "Sharp one-third stability of Brenier maps.",
+      "formal_statement_source_texts": [],
+      "independent_catalog_spot_review": "not_independently_spot_checked_in_this_map"
+    },
+    {
+      "result_id": "scope-ordinary-blocks",
+      "title": "Ordinary positive-block Gram study",
+      "field": "Linear algebra and operator theory",
+      "subfield": "Positive semidefinite block matrices",
+      "problem_family": "Ordinary positive-block Gram study",
+      "upstream_family_id": "325",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "full",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "Ten reviewed theorem/identity records derive Hilbert-Schmidt block comparisons from Gram factorization, exact sum/product deficits and equality conditions, including singular and zero cases.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "Finite complex PSD full block matrix; Hilbert-Schmidt normalization is unnormalized.",
+        "Positive diagonal norms required for normalized equality conditions."
+      ],
+      "source_paths": [
+        "research/supplement/positive-blocks/study.md",
+        "research/supplement/STUDY-INDEX.json"
+      ],
+      "sources": [
+        {
+          "path": "research/supplement/positive-blocks/study.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/positive-blocks/study.md",
+          "sha256": "fec0fdca335159320f13c572e34f77fa0dad3578ec76de4da6e4ae437a9c60af",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "research/supplement/STUDY-INDEX.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/STUDY-INDEX.json",
+          "sha256": "3b4838004e1c9e7e838324f0b3309f07de41e97755906d948a44359a0c8b3980",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_ordinary_review",
+          "path": "research/supplement/reviews/positive-blocks/parent-independent-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/reviews/positive-blocks/parent-independent-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_study_status",
+          "path": "research/supplement/STUDY-INDEX.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/STUDY-INDEX.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Original upstream manuscript headline."
+      ],
+      "verification_gaps": [
+        "Five background nodes are additional; the complete Crouzeix theorem is excluded.",
+        "No Lean compilation or kernel checking of these ordinary study records; related standalone libraries have separate, narrower contracts."
+      ],
+      "prerequisites": [
+        "Gram matrices",
+        "Trace identities",
+        "Cauchy-Schwarz"
+      ],
+      "learning_priority": "high",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "ordinary_core_records": 10
+      },
+      "repair_history_flags": [],
+      "primary_declarations": [],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "not_performed_for_this_ordinary_study",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/paper.pdf",
+          "path": "preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/paper.pdf"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-complete-Crouzeix-theorem-September-23-2026/paper.pdf",
+          "path": "preprints/The-complete-Crouzeix-theorem-September-23-2026/paper.pdf"
+        }
+      ],
+      "upstream_family_title": "The complete Crouzeix conjecture.",
+      "formal_statement_source_texts": [],
+      "independent_catalog_spot_review": "not_independently_spot_checked_in_this_map"
+    },
+    {
+      "result_id": "scope-ordinary-moments",
+      "title": "Ordinary mixed-moment foundations and cancellation",
+      "field": "Number theory and analysis",
+      "subfield": "Mixed moments and special constants",
+      "problem_family": "Ordinary mixed-moment foundations and cancellation",
+      "upstream_family_id": "005",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "full",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "Twenty-one reviewed records separate analytic integrability and exchanges from rational recurrence decompositions. Taylor contact of order L removes the displayed zeta2 coordinate for j<L, leaving rational-plus-rational-Catalan expressions.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "Rational polynomials and declared contact/order conventions.",
+        "Integrability and exchange proofs are separate from finite rational recurrence checks."
+      ],
+      "source_paths": [
+        "research/supplement/mixed-moments/study.md",
+        "research/supplement/STUDY-INDEX.json"
+      ],
+      "sources": [
+        {
+          "path": "research/supplement/mixed-moments/study.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/mixed-moments/study.md",
+          "sha256": "e8778fe759b0b50930c3a6fb4c58259aafe8d9276c0ceb00e95b3408d4603a00",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "research/supplement/STUDY-INDEX.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/STUDY-INDEX.json",
+          "sha256": "3b4838004e1c9e7e838324f0b3309f07de41e97755906d948a44359a0c8b3980",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_ordinary_review",
+          "path": "research/supplement/mixed-moments/audit.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/mixed-moments/audit.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_study_status",
+          "path": "research/supplement/STUDY-INDEX.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/STUDY-INDEX.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Original upstream manuscript headline."
+      ],
+      "verification_gaps": [
+        "No Catalan irrationality, independence or arithmetic nonmembership theorem.",
+        "Broader ordinary clauses are not all in the separate Lean core.",
+        "No Lean compilation or kernel checking of these ordinary study records; related standalone libraries have separate, narrower contracts."
+      ],
+      "prerequisites": [
+        "Lebesgue integration",
+        "Power series",
+        "Rational recurrences"
+      ],
+      "learning_priority": "advanced",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "ordinary_core_records": 21
+      },
+      "repair_history_flags": [],
+      "primary_declarations": [],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "not_performed_for_this_ordinary_study",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Catalans-constant-is-irrational-September-24-2026/paper.pdf",
+          "path": "preprints/Catalans-constant-is-irrational-September-24-2026/paper.pdf"
+        }
+      ],
+      "upstream_family_title": "Irrationality of Catalan’s constant.",
+      "formal_statement_source_texts": [],
+      "independent_catalog_spot_review": "not_independently_spot_checked_in_this_map"
+    },
+    {
+      "result_id": "scope-ordinary-convex",
+      "title": "Ordinary analytic convex approximation study",
+      "field": "Geometry and analysis",
+      "subfield": "Finite-dimensional convex approximation",
+      "problem_family": "Ordinary analytic convex approximation study",
+      "upstream_family_id": "325",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "full",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "Nineteen reviewed ordinary records use finite support directions and exponential barriers for analytic convex outer approximation, quantitative bounds and nesting. The ordinary scope extends beyond the separate smooth Lean core.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "Finite-dimensional inner-product ambient space; nonempty compact convex set.",
+        "Positive direction-net, slack and exponential-scale conditions are retained per theorem."
+      ],
+      "source_paths": [
+        "research/supplement/convex-approximation/study.md",
+        "research/supplement/STUDY-INDEX.json"
+      ],
+      "sources": [
+        {
+          "path": "research/supplement/convex-approximation/study.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/convex-approximation/study.md",
+          "sha256": "ba841acc62437708c36a28a5f8bad1cbf8d5104d0cc9af76c7fb1d27e6aa11e9",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "research/supplement/STUDY-INDEX.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/STUDY-INDEX.json",
+          "sha256": "3b4838004e1c9e7e838324f0b3309f07de41e97755906d948a44359a0c8b3980",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_ordinary_review",
+          "path": "research/supplement/convex-approximation/audit.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/convex-approximation/audit.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_study_status",
+          "path": "research/supplement/STUDY-INDEX.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/STUDY-INDEX.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Original upstream manuscript headline."
+      ],
+      "verification_gaps": [
+        "Rational checks and floating-point illustrations do not prove analytic conclusions.",
+        "No source headline theorem validation; no automatic Lean status transfer.",
+        "No Lean compilation or kernel checking of these ordinary study records; related standalone libraries have separate, narrower contracts."
+      ],
+      "prerequisites": [
+        "Support functions",
+        "Analytic implicit function theorem",
+        "Convex geometry"
+      ],
+      "learning_priority": "advanced",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "ordinary_core_records": 19
+      },
+      "repair_history_flags": [],
+      "primary_declarations": [],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "not_performed_for_this_ordinary_study",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/paper.pdf",
+          "path": "preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/paper.pdf"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-complete-Crouzeix-theorem-September-23-2026/paper.pdf",
+          "path": "preprints/The-complete-Crouzeix-theorem-September-23-2026/paper.pdf"
+        }
+      ],
+      "upstream_family_title": "The complete Crouzeix conjecture.",
+      "formal_statement_source_texts": [],
+      "independent_catalog_spot_review": "not_independently_spot_checked_in_this_map"
+    },
+    {
+      "result_id": "scope-ordinary-finite-field",
+      "title": "Ordinary finite-field mixing and local lifts",
+      "field": "Number theory",
+      "subfield": "Additive combinatorics over finite fields",
+      "problem_family": "Ordinary finite-field mixing and local lifts",
+      "upstream_family_id": "025",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "full",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "Ten reviewed records cover normalized Fourier mixing, sufficient four-product coverage and local positive-divisor lifting, including broader heterogeneous formulations outside the exported Lean core.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "Prime-field hypotheses, uniform independence and nonempty sampling sets where stated.",
+        "Ordered tuples and multiplicities are retained."
+      ],
+      "source_paths": [
+        "research/supplement/finite-field-mixing/study.md",
+        "research/supplement/STUDY-INDEX.json"
+      ],
+      "sources": [
+        {
+          "path": "research/supplement/finite-field-mixing/study.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/finite-field-mixing/study.md",
+          "sha256": "728c6161c88f252c61dff1e42284c29ea77a75921a76e3a2452f565de73f799d",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "research/supplement/STUDY-INDEX.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/STUDY-INDEX.json",
+          "sha256": "3b4838004e1c9e7e838324f0b3309f07de41e97755906d948a44359a0c8b3980",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_ordinary_review",
+          "path": "research/supplement/reviews/finite-field-mixing/independent-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/reviews/finite-field-mixing/independent-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        },
+        {
+          "type": "saved_study_status",
+          "path": "research/supplement/STUDY-INDEX.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/supplement/STUDY-INDEX.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Original upstream manuscript headline."
+      ],
+      "verification_gaps": [
+        "No optimal product count, distinctness theorem or global Egyptian-fraction constant.",
+        "No Lean compilation or kernel checking of these ordinary study records; related standalone libraries have separate, narrower contracts."
+      ],
+      "prerequisites": [
+        "Finite Fourier inversion",
+        "Character orthogonality"
+      ],
+      "learning_priority": "medium",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {
+        "ordinary_core_records": 10
+      },
+      "repair_history_flags": [],
+      "primary_declarations": [],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "not_performed_for_this_ordinary_study",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Short-Egyptian-fractions-September-25-2026/Short-Egyptian-fractions-September-25-2026.pdf",
+          "path": "preprints/Short-Egyptian-fractions-September-25-2026/Short-Egyptian-fractions-September-25-2026.pdf"
+        }
+      ],
+      "upstream_family_title": "Short Egyptian fractions.",
+      "formal_statement_source_texts": [],
+      "independent_catalog_spot_review": "not_independently_spot_checked_in_this_map"
+    },
+    {
+      "result_id": "scope-ordinary-radial",
+      "title": "Ordinary radial contact geometry",
+      "field": "Functional analysis",
+      "subfield": "Normed-space geometry",
+      "problem_family": "Ordinary radial contact geometry",
+      "upstream_family_id": "322",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "full",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "The reviewed ordinary study proves positive unique sphere contact from an interior center, quantitative radius/contact/inverse estimates, and parameter perturbation bounds. It contains additional examples and estimates beyond the formal core.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "Real normed space, norm(c)<1; unit direction for unit-direction bounds.",
+        "No completeness or finite-dimension requirement for contact existence."
+      ],
+      "source_paths": [
+        "research/starter/radial-maps/study.md",
+        "research/starter/radial-maps/provenance.json"
+      ],
+      "sources": [
+        {
+          "path": "research/starter/radial-maps/study.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/starter/radial-maps/study.md",
+          "sha256": "ff1ace66df5ff03b8e6ae2a1de7073339fd6338c670a96acce2c39228e7ebba5",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "research/starter/radial-maps/provenance.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/starter/radial-maps/provenance.json",
+          "sha256": "1a58e0722c12fe1ecb010cd3422f6fa125c2ffcb05a4c20be75ceb6b34cc7b10",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_ordinary_review",
+          "path": "research/starter/reviews/radial-review.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/starter/reviews/radial-review.json",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Tingley's sphere-isometry theorem."
+      ],
+      "verification_gaps": [
+        "Not every extra prose estimate or sharpness example is formalized.",
+        "Ordinary study itself has no Lean verification."
+      ],
+      "prerequisites": [
+        "Normed spaces",
+        "Scalar intermediate value theorem",
+        "Lipschitz estimates"
+      ],
+      "learning_priority": "high",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {},
+      "repair_history_flags": [],
+      "primary_declarations": [],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "not_performed_for_this_ordinary_study",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/paper.pdf",
+          "path": "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/paper.pdf"
+        }
+      ],
+      "upstream_family_title": "Tingley’s sphere-isometry problem.",
+      "formal_statement_source_texts": [],
+      "independent_catalog_spot_review": "not_independently_spot_checked_in_this_map"
+    },
+    {
+      "result_id": "scope-ordinary-pi-bridge",
+      "title": "Ordinary Diophantine-to-tangent bridge",
+      "field": "Number theory",
+      "subfield": "Diophantine approximation and series",
+      "problem_family": "Ordinary Diophantine-to-tangent bridge",
+      "upstream_family_id": "017",
+      "result_version": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "result_kind": "conditional",
+      "scope_relation": "supporting_or_reusable_result",
+      "statement": "A nearest odd-pole rational approximation and sine chord estimate convert PiDiophantine into eventual polynomial tangent growth, implying the cubic limit and absolute cubic series convergence.",
+      "statement_type": "carefully_sourced_short_summary",
+      "hypotheses": [
+        "For every real nu>2, for all sufficiently large positive integers q and every integer p, abs(pi-p/q)>=q^(-nu). This PiDiophantine hypothesis is assumed, not proved here."
+      ],
+      "source_paths": [
+        "research/starter/pi-bridge/study.md",
+        "research/starter/pi-bridge/sources.json"
+      ],
+      "sources": [
+        {
+          "path": "research/starter/pi-bridge/study.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/starter/pi-bridge/study.md",
+          "sha256": "8d24f900a83f41b8ec55e582531b814ccf755c7a7e90175cf1f81f0a160ec1d8",
+          "baseline_bytes_checked": true
+        },
+        {
+          "path": "research/starter/pi-bridge/sources.json",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/starter/pi-bridge/sources.json",
+          "sha256": "6282c78bdb576ed3ebbf442b5fd0418877e76c34b7f4910dc5dc261d13629e9b",
+          "baseline_bytes_checked": true
+        }
+      ],
+      "evidence": [
+        {
+          "type": "independent_local_ordinary_review",
+          "path": "research/starter/reviews/pi-review.md",
+          "url": "https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/starter/reviews/pi-review.md",
+          "nature": "saved_record_read; no fresh execution by this map"
+        }
+      ],
+      "excluded_headline_claims": [
+        "Proof of the irrationality exponent of pi.",
+        "Upstream comparator configuration as evidence of a successful compiler run."
+      ],
+      "verification_gaps": [
+        "Full source manuscript not reviewed.",
+        "Ordinary bridge records have no Lean status; standalone tangent projects provide separate scoped evidence."
+      ],
+      "prerequisites": [
+        "Trigonometry",
+        "Nearest poles",
+        "Rational approximation",
+        "p-series"
+      ],
+      "learning_priority": "medium",
+      "learning_priority_basis": "Editorial ordering by accessibility and reuse; informed by learning-guide/verified-techniques.md where applicable.",
+      "coverage_counts": {},
+      "repair_history_flags": [],
+      "primary_declarations": [],
+      "local_withdrawal_flag": false,
+      "upstream_withdrawal_review": "not_reassessed_in_this_scoped_slice",
+      "status": {
+        "author_claim": "Scoped result asserted by the local artifact; excludes original headline.",
+        "checked_formal_statement": "not_performed_for_this_ordinary_study",
+        "independent_mathematical_validation": "scoped_local_independent_review_recorded",
+        "established_acceptance": "external_peer_review_and_community_acceptance_not_established",
+        "upstream_headline_correspondence": "not_established",
+        "catalog_source_review": "statement_and_scope_sources_inspected",
+        "fresh_lean_check_in_this_map": false,
+        "fresh_universal_mathematical_proof_in_this_map": false
+      },
+      "upstream_sources": [
+        {
+          "type": "family_catalog",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/CONTENTS.md"
+        },
+        {
+          "type": "manuscript",
+          "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026/paper.pdf",
+          "path": "preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026/paper.pdf"
+        }
+      ],
+      "upstream_family_title": "The irrationality exponent of π is 2.",
+      "formal_statement_source_texts": [],
+      "independent_catalog_spot_review": "not_independently_spot_checked_in_this_map"
+    }
+  ]
+}

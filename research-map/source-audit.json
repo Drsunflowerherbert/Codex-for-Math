@@ -1,0 +1,537 @@
+{
+  "schema_version": "1.0",
+  "checked_at_utc": "2026-10-13T04:27:54Z",
+  "local_research_baseline": {
+    "repository": "https://github.com/Drsunflowerherbert/Codex-for-Math",
+    "commit": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f"
+  },
+  "official_upstream": {
+    "repository": "https://github.com/openai/math",
+    "repository_url_discovered_from": "research/starter/catalog/inventory.json:metadata.repository and inventory.md source links",
+    "remote_default_branch": "main",
+    "remote_head": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "commit_committed_at_utc": "2026-10-12T21:55:24Z",
+    "commit_tree": "45074722c918576d65b4c8be9686c76f508ba696",
+    "commit_url": "https://github.com/openai/math/commit/1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "commit_api_url": "https://api.github.com/repos/openai/math/commits/1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "remote_verification_method": "git ls-remote --symref https://github.com/openai/math.git HEAD refs/heads/main; GitHub commit API; pinned raw file retrieval",
+    "historical_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "historical_revision_committed_at_utc": "2026-10-08T05:20:00Z",
+    "initial_revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "comparison_url": "https://github.com/openai/math/compare/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb...1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "compare_api_url": "https://api.github.com/repos/openai/math/compare/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb...1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "comparison_status": "ahead",
+    "commits_since_historical": 2,
+    "changed_files_since_historical": [
+      {
+        "path": ".github/workflows/lock-prs.yml",
+        "status": "added"
+      }
+    ],
+    "corpus_change_since_historical": "No changed mathematical-corpus files reported by complete two-commit GitHub comparison; four key corpus files byte-identical."
+  },
+  "fresh_source_receipts": [
+    {
+      "path": "README.md",
+      "latest_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/README.md",
+      "raw_url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/README.md",
+      "raw_bytes": 4190,
+      "raw_sha256": "5e8878ee04866f52ec942852552b9c28db278f65691c7ab49a87c9e93a9199fd",
+      "byte_identical_to_historical_revision": true,
+      "historical_raw_sha256": "5e8878ee04866f52ec942852552b9c28db278f65691c7ab49a87c9e93a9199fd",
+      "saved_snapshot_bytes": 4191,
+      "saved_snapshot_sha256": "ee59ae9643b4314f8f92709814a5cd7a98a2242dfd134cd39ead853aa84a98a9",
+      "saved_snapshot_matches_raw_plus_one_newline": true
+    },
+    {
+      "path": "CONTENTS.md",
+      "latest_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/CONTENTS.md",
+      "raw_url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/CONTENTS.md",
+      "raw_bytes": 638727,
+      "raw_sha256": "cc7c0b8a1cdedd845a777e77cf682657308503daf8346c1349e06e9259d063c2",
+      "byte_identical_to_historical_revision": true,
+      "historical_raw_sha256": "cc7c0b8a1cdedd845a777e77cf682657308503daf8346c1349e06e9259d063c2",
+      "saved_snapshot_bytes": 638728,
+      "saved_snapshot_sha256": "af9cb8e0198e302fe4cdc109e0694da66f3f83cdab9c48a4a52b2f9df9e31a42",
+      "saved_snapshot_matches_raw_plus_one_newline": true
+    },
+    {
+      "path": "history.md",
+      "latest_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/history.md",
+      "raw_url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/history.md",
+      "raw_bytes": 2281,
+      "raw_sha256": "41c2a2d470014b3628695c7aabf5fd0c93f6f687621fca172062f22b59ed6a1e",
+      "byte_identical_to_historical_revision": true,
+      "historical_raw_sha256": "41c2a2d470014b3628695c7aabf5fd0c93f6f687621fca172062f22b59ed6a1e",
+      "saved_snapshot_bytes": 2282,
+      "saved_snapshot_sha256": "ea19da82a387c476bed00deda40463fe5a6c0745c6608d4d9166bca974cd173b",
+      "saved_snapshot_matches_raw_plus_one_newline": true
+    },
+    {
+      "path": "lean/formalization.yaml",
+      "latest_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/formalization.yaml",
+      "raw_url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/formalization.yaml",
+      "raw_bytes": 79482,
+      "raw_sha256": "5a8a164259591208886cd018416e61552665265ec9e20cff636f9d51117c2278",
+      "byte_identical_to_historical_revision": true,
+      "historical_raw_sha256": "5a8a164259591208886cd018416e61552665265ec9e20cff636f9d51117c2278",
+      "saved_snapshot_bytes": 79483,
+      "saved_snapshot_sha256": "6d4c4315b8201f0c2b4144d06ec77d67445b5144169da500c2e95af2729aed01",
+      "saved_snapshot_matches_raw_plus_one_newline": true
+    }
+  ],
+  "inventory_reconciliation": {
+    "family_heading_count": 372,
+    "unique_family_heading_count": 372,
+    "manuscript_pdf_link_count": 719,
+    "unique_manuscript_pdf_paths": 719,
+    "family_order_matches_saved_inventory": true,
+    "manuscript_path_order_matches_saved_inventory": true,
+    "active_manuscripts": 719,
+    "families": 372,
+    "discipline_groups": 17,
+    "withdrawn_manuscripts": 3,
+    "initial_release_manuscripts": 722,
+    "count_unit_warning": "A manuscript, family, problem, formal declaration, and comparator configuration are different units. No count is a solved-problem count.",
+    "discipline_assignments": "Inherited from saved inventory; upstream CONTENTS is byte-identical and only .github/workflows/lock-prs.yml changed."
+  },
+  "formalization_metadata_reconciliation": {
+    "sources": 173,
+    "main_result_declarations": 200,
+    "distinct_comparator_configs": 189,
+    "review_status": "unchecked",
+    "scope": "Partial progress.",
+    "source_paths_matching_active_catalog": 172,
+    "source_paths_missing_from_active_catalog": [
+      "preprints/Taming-implies-compatibility-on-four-manifolds-September-23-2026/paper.pdf"
+    ],
+    "families_with_scope_links": 242,
+    "upstream_claimed_top_line_formalizations": 300,
+    "upstream_claimed_denominator": 719,
+    "claimed_top_line_count_reconstructed": false,
+    "lean_compiled_or_kernel_checked_this_run": false,
+    "informal_formal_correspondence_validated_this_run": false
+  },
+  "withdrawals": [
+    {
+      "family_id": "032",
+      "title": "The rational Hodge conjecture for products of K3 surfaces",
+      "path": "preprints/The-rational-Hodge-conjecture-for-products-of-K3-surfaces-October-4-2026/hodge-conjecture-products-k3.pdf",
+      "abstract": "We prove the rational Hodge conjecture for every finite product of projective complex K3 surfaces: every rational Hodge class is algebraic. The factors may be distinct or repeated, with no restrictions on their Picard numbers, periods, or endomorphism fields.",
+      "catalog_status": "withdrawn",
+      "archived_pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-rational-Hodge-conjecture-for-products-of-K3-surfaces-October-4-2026/hodge-conjecture-products-k3.pdf",
+      "current_notice_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-rational-Hodge-conjecture-for-products-of-K3-surfaces-October-4-2026/README.md",
+      "withdrawn_notice_date": "2026-10-06",
+      "history_section_date": "2026-10-07",
+      "public_merge_utc": "2026-10-08T05:20:00Z",
+      "statement_truth_status": "withdrawal_invalidates_proof_not_statement",
+      "notice_sha256": "0710a6b9184f98504073991cbbbadb5bda375fb31d68911f1ec27f7333eb738c",
+      "notice_freshly_retrieved": true,
+      "gap_summary": "The proof uses an adaptation of the flawed stabilization-trace construction in the split abelian eightfold paper; the claimed theorem is left unproved."
+    },
+    {
+      "family_id": "032",
+      "title": "Algebraicity of Kuga–Satake Correspondences for K3 Surfaces",
+      "path": "preprints/Algebraicity-of-Kuga-Satake-Correspondences-for-K3-Surfaces-October-3-2026/manuscript.pdf",
+      "abstract": "We prove that the Kuga–Satake correspondence is algebraic for every smooth projective complex K3 surface. More precisely, the prescribed embedding of its transcendental cohomology into the cohomology of its Kuga–Satake abelian variety is induced by a rational algebraic cycle, with the fixed normalization and full even-Clifford target. The result also holds for isogenous Kuga–Satake models with the transported embedding.",
+      "catalog_status": "withdrawn",
+      "archived_pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Algebraicity-of-Kuga-Satake-Correspondences-for-K3-Surfaces-October-3-2026/manuscript.pdf",
+      "current_notice_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Algebraicity-of-Kuga-Satake-Correspondences-for-K3-Surfaces-October-3-2026/README.md",
+      "withdrawn_notice_date": "2026-10-06",
+      "history_section_date": "2026-10-07",
+      "public_merge_utc": "2026-10-08T05:20:00Z",
+      "statement_truth_status": "withdrawal_invalidates_proof_not_statement",
+      "notice_sha256": "55198a6e18aac60fc4da27cb82058d8f8c7a5d2918185b7e4033a7bf9503f69a",
+      "notice_freshly_retrieved": true,
+      "gap_summary": "The proof uses an adaptation of the flawed stabilization-trace construction in the split abelian eightfold paper; the claimed theorem is left unproved."
+    },
+    {
+      "family_id": "032",
+      "title": "Algebraicity of Weil classes on split abelian eightfolds",
+      "path": "preprints/Algebraicity-of-Weil-classes-on-split-abelian-eightfolds-September-18-2026/paper.pdf",
+      "abstract": "We prove that every rational Weil class on a split abelian eightfold of Weil type is algebraic. The result holds for every imaginary quadratic field, every compatible polarization type, and every member of the split family, including those with additional endomorphisms. Thus the full two-dimensional rational Weil space in codimension four is generated by algebraic cycle classes.",
+      "catalog_status": "withdrawn",
+      "archived_pdf_url": "https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Algebraicity-of-Weil-classes-on-split-abelian-eightfolds-September-18-2026/paper.pdf",
+      "current_notice_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Algebraicity-of-Weil-classes-on-split-abelian-eightfolds-September-18-2026/README.md",
+      "withdrawn_notice_date": "2026-10-06",
+      "history_section_date": "2026-10-07",
+      "public_merge_utc": "2026-10-08T05:20:00Z",
+      "statement_truth_status": "withdrawal_invalidates_proof_not_statement",
+      "notice_sha256": "7fa6fca8ca50bf94f5124c498fd1515736eeb8586751ed0bc56c40992cc684d4",
+      "notice_freshly_retrieved": true,
+      "gap_summary": "A stabilization-trace sign error prevents the required signed-double-point cancellation; the algebraicity construction is unsupported."
+    }
+  ],
+  "revision_history": {
+    "changed_directory_versions_from_initial_release": 27,
+    "citation_only": 13,
+    "proof_statement_hypothesis_or_citation_corrections": 14,
+    "freshly_retrieved_readmes": 30,
+    "saved_revision_notes_unchanged_except_trailing_newlines": 27,
+    "entries": [
+      {
+        "family_id": "001",
+        "title": "Milne's rationality conjecture for abelian varieties",
+        "previous_path": "preprints/Milnes-rationality-conjecture-for-abelian-varieties-September-23-2026/paper.pdf",
+        "current_path": "preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/paper.pdf",
+        "change_kind": "citation-only",
+        "version_note": "This version updates a citation to a revised manuscript in this collection; see the [previous version](../Milnes-rationality-conjecture-for-abelian-varieties-September-23-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Milnes-rationality-conjecture-for-abelian-varieties-October-7-2026/README.md",
+        "readme_sha256": "d395f54883fb66fa170b7dbbe5630769e1b81be5a54dd9799355a7e67d7c413f",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "002",
+        "title": "Exact Birch–Swinnerton-Dyer Formula from Low Selmer Corank",
+        "previous_path": "preprints/Exact-Birch-Swinnerton-Dyer-Formula-from-Low-Selmer-Corank-October-3-2026/exact-bsd-low-selmer-corank.pdf",
+        "current_path": "preprints/Exact-Birch-Swinnerton-Dyer-Formula-from-Low-Selmer-Corank-October-7-2026/exact-bsd-low-selmer-corank.pdf",
+        "change_kind": "proof_statement_hypothesis_or_citation_correction",
+        "version_note": "This version removes an obsolete supporting citation and updates citations to revised manuscripts in this collection; see the [previous version](../Exact-Birch-Swinnerton-Dyer-Formula-from-Low-Selmer-Corank-October-3-2026/exact-bsd-low-selmer-corank.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Exact-Birch-Swinnerton-Dyer-Formula-from-Low-Selmer-Corank-October-7-2026/README.md",
+        "readme_sha256": "d1526672c647f8fc5b5699473e8fb3fc36796530036d5e595d02e7e55e57c9e8",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "002",
+        "title": "The Selmer converse for elliptic curves at every prime",
+        "previous_path": "preprints/The-Selmer-converse-for-elliptic-curves-at-every-prime-September-24-2026/main.pdf",
+        "current_path": "preprints/The-Selmer-converse-for-elliptic-curves-at-every-prime-October-7-2026/main.pdf",
+        "change_kind": "citation-only",
+        "version_note": "This version updates a citation to a revised manuscript in this collection; see the [previous version](../The-Selmer-converse-for-elliptic-curves-at-every-prime-September-24-2026/main.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Selmer-converse-for-elliptic-curves-at-every-prime-October-7-2026/README.md",
+        "readme_sha256": "0a6fdc8a40429fe2c744f14c6de143deb6584b4e9590da01f3fbb9bc0706b45c",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "002",
+        "title": "The two-primary Birch–Swinnerton-Dyer formula in Selmer corank at most one",
+        "previous_path": "preprints/The-two-primary-Birch-Swinnerton-Dyer-formula-in-Selmer-corank-at-most-one-September-24-2026/paper.pdf",
+        "current_path": "preprints/The-two-primary-Birch-Swinnerton-Dyer-formula-in-Selmer-corank-at-most-one-October-6-2026/paper.pdf",
+        "change_kind": "citation-only",
+        "version_note": "This version updates citations to revised manuscripts in this collection; see the [previous version](../The-two-primary-Birch-Swinnerton-Dyer-formula-in-Selmer-corank-at-most-one-September-24-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-two-primary-Birch-Swinnerton-Dyer-formula-in-Selmer-corank-at-most-one-October-6-2026/README.md",
+        "readme_sha256": "9d12792b5b95fa773ba51b6292634d1057bdeaae6f1a37cd46aa9badf058d2e6",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "004",
+        "title": "Hilbert’s tenth problem over the rational numbers",
+        "previous_path": "preprints/Hilberts-tenth-problem-over-the-rational-numbers-September-24-2026/main.pdf",
+        "current_path": "preprints/Hilberts-tenth-problem-over-the-rational-numbers-October-6-2026/main.pdf",
+        "change_kind": "citation-only",
+        "version_note": "This version updates citations to revised manuscripts in this collection; see the [previous version](../Hilberts-tenth-problem-over-the-rational-numbers-September-24-2026/main.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Hilberts-tenth-problem-over-the-rational-numbers-October-6-2026/README.md",
+        "readme_sha256": "014b05b2393a6a5e4a1c6cdff91476b3eb6a17574f0fd4c52d8dcd277588c3bf",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "004",
+        "title": "A pointwise 2-converse for elliptic curves with rational two-torsion",
+        "previous_path": "preprints/A-pointwise-2-converse-for-elliptic-curves-with-rational-two-torsion-September-24-2026/paper.pdf",
+        "current_path": "preprints/A-pointwise-2-converse-for-elliptic-curves-with-rational-two-torsion-October-7-2026/paper.pdf",
+        "change_kind": "citation-only",
+        "version_note": "This version updates a citation to a revised manuscript in this collection; see the [previous version](../A-pointwise-2-converse-for-elliptic-curves-with-rational-two-torsion-September-24-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-pointwise-2-converse-for-elliptic-curves-with-rational-two-torsion-October-7-2026/README.md",
+        "readme_sha256": "726f9e1db1714770550bcca18ce068774986c4bad5dbd7a80667923aa1ae1547",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "006",
+        "title": "Goldfeld's analytic density conjecture and the 2-converse for elliptic curves",
+        "previous_path": "preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-September-23-2026/paper.pdf",
+        "current_path": "preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026/paper.pdf",
+        "change_kind": "citation-only",
+        "version_note": "This version updates citations to revised manuscripts in this collection; see the [previous version](../Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-September-23-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026/README.md",
+        "readme_sha256": "98fa24be409bb2117ffa48ab2aa0e0f39822a3651d716e4c50e755cb0154150c",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "006",
+        "title": "The mean analytic rank of quadratic twists of elliptic curves",
+        "previous_path": "preprints/The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-September-23-2026/paper.pdf",
+        "current_path": "preprints/The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-October-6-2026/paper.pdf",
+        "change_kind": "citation-only",
+        "version_note": "This version updates citations to revised manuscripts in this collection; see the [previous version](../The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-September-23-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-mean-analytic-rank-of-quadratic-twists-of-elliptic-curves-October-6-2026/README.md",
+        "readme_sha256": "3371966cbf268b5b510a93fcdd90b3806f3f68ecb8dd2cc1f69a4cb029ee1c92",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "010",
+        "title": "Unrestricted pro-modularity at the prime two",
+        "previous_path": "preprints/Unrestricted-pro-modularity-at-the-prime-two-October-4-2026/two-adic-promodularity.pdf",
+        "current_path": "preprints/Unrestricted-pro-modularity-at-the-prime-two-October-6-2026/two-adic-promodularity.pdf",
+        "change_kind": "citation-only",
+        "version_note": "This version updates citations to revised manuscripts in this collection; see the [previous version](../Unrestricted-pro-modularity-at-the-prime-two-October-4-2026/two-adic-promodularity.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Unrestricted-pro-modularity-at-the-prime-two-October-6-2026/README.md",
+        "readme_sha256": "379d40bff382023fa6ec16e551df3f634be1c48ff4c5163a66a0a7a52619e423",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "010",
+        "title": "Fontaine–Mazur modularity at the prime 2",
+        "previous_path": "preprints/Fontaine-Mazur-modularity-at-the-prime-2-September-23-2026/paper.pdf",
+        "current_path": "preprints/Fontaine-Mazur-modularity-at-the-prime-2-October-6-2026/paper.pdf",
+        "change_kind": "citation-only",
+        "version_note": "This version updates citations to revised manuscripts in this collection; see the [previous version](../Fontaine-Mazur-modularity-at-the-prime-2-September-23-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Fontaine-Mazur-modularity-at-the-prime-2-October-6-2026/README.md",
+        "readme_sha256": "510acf7d170c22e9b195ed97d605121d1d08df8bed318e31581ca97baedf5983",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "019",
+        "title": "The p-adic section conjecture",
+        "previous_path": "preprints/The-p-adic-section-conjecture-September-24-2026/main.pdf",
+        "current_path": "preprints/The-p-adic-section-conjecture-October-6-2026/main.pdf",
+        "change_kind": "citation-only",
+        "version_note": "This version updates citations to revised manuscripts in this collection; see the [previous version](../The-p-adic-section-conjecture-September-24-2026/main.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-p-adic-section-conjecture-October-6-2026/README.md",
+        "readme_sha256": "f2d065bc9dbc40c450f4059e634785f6e2e16238368dfd307090cb572b18e360",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "032",
+        "title": "The rational Hodge conjecture for CM abelian varieties",
+        "previous_path": "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-September-30-2026/paper.pdf",
+        "current_path": "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/paper.pdf",
+        "change_kind": "citation-only",
+        "version_note": "This version updates citations to revised manuscripts in this collection; see the [previous version](../The-rational-Hodge-conjecture-for-CM-abelian-varieties-September-30-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/README.md",
+        "readme_sha256": "142a2f0c5f48bbcc772c0dbd1f95b68876f9dc09ed5d580a2741d83551c8de5d",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "032",
+        "title": "Weil classes and Hodge classes on abelian powers",
+        "previous_path": "preprints/Weil-classes-and-Hodge-classes-on-abelian-powers-September-30-2026/paper.pdf",
+        "current_path": "preprints/Weil-classes-and-Hodge-classes-on-abelian-powers-October-6-2026/paper.pdf",
+        "change_kind": "citation-only",
+        "version_note": "This version updates citations to revised manuscripts in this collection; see the [previous version](../Weil-classes-and-Hodge-classes-on-abelian-powers-September-30-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Weil-classes-and-Hodge-classes-on-abelian-powers-October-6-2026/README.md",
+        "readme_sha256": "a6d147f6495168f93acd3edaca508a293b4fd4c9e1c6824640ab05fb6f9bb76a",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "032",
+        "title": "Abelian covers, Gale correspondences, and the Hodge conjecture for powers",
+        "previous_path": "preprints/Abelian-covers-Gale-correspondences-and-the-Hodge-conjecture-for-powers-September-30-2026/paper.pdf",
+        "current_path": "preprints/Abelian-covers-Gale-correspondences-and-the-Hodge-conjecture-for-powers-October-6-2026/paper.pdf",
+        "change_kind": "citation-only",
+        "version_note": "This version updates citations to revised manuscripts in this collection; see the [previous version](../Abelian-covers-Gale-correspondences-and-the-Hodge-conjecture-for-powers-September-30-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Abelian-covers-Gale-correspondences-and-the-Hodge-conjecture-for-powers-October-6-2026/README.md",
+        "readme_sha256": "4a2d98e458dc9a3b28304c4ddb61f87d8cb663e31afe7a8a8f0b5a37b44f16b9",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "034",
+        "title": "Log abundance for compact Kähler spaces under logarithmic Iitaka subadditivity",
+        "previous_path": "preprints/Log-abundance-for-compact-Kahler-spaces-under-logarithmic-Iitaka-subadditivity-October-4-2026/main.pdf",
+        "current_path": "preprints/Log-abundance-for-compact-Kahler-spaces-under-logarithmic-Iitaka-subadditivity-October-6-2026/main.pdf",
+        "change_kind": "proof_statement_hypothesis_or_citation_correction",
+        "version_note": "This version supplies base-presentation and multiplier-ideal arguments for the induction, including the adjoint pullback and contraction-descent steps; see the [previous version](../Log-abundance-for-compact-Kahler-spaces-under-logarithmic-Iitaka-subadditivity-October-4-2026/main.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Log-abundance-for-compact-Kahler-spaces-under-logarithmic-Iitaka-subadditivity-October-6-2026/README.md",
+        "readme_sha256": "2ccf77d2e8a84a6a84fe64df98faca451bff03ce183048a03c297067a968860d",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "034",
+        "title": "Conditional good minimal models for compact Kähler fourfolds",
+        "previous_path": "preprints/Conditional-good-minimal-models-for-compact-Kahler-fourfolds-October-5-2026/paper.pdf",
+        "current_path": "preprints/Conditional-good-minimal-models-for-compact-Kahler-fourfolds-October-6-2026/paper.pdf",
+        "change_kind": "proof_statement_hypothesis_or_citation_correction",
+        "version_note": "This version clarifies the independent ordinary-MMP input and states the remaining Iitaka-subadditivity and effective-abundance hypotheses explicitly; see the [previous version](../Conditional-good-minimal-models-for-compact-Kahler-fourfolds-October-5-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Conditional-good-minimal-models-for-compact-Kahler-fourfolds-October-6-2026/README.md",
+        "readme_sha256": "fb89776fe62af336d9da1c37598088a630c75bf7e6d0bc9eccf9a861e2d8e5e3",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "036",
+        "title": "Numerical semiampleness of nef adjoint classes on compact Kähler manifolds",
+        "previous_path": "preprints/Numerical-semiampleness-of-nef-adjoint-classes-on-compact-Kahler-manifolds-October-4-2026/numerical-generalized-abundance.pdf",
+        "current_path": "preprints/Numerical-semiampleness-of-nef-adjoint-classes-on-compact-Kahler-manifolds-October-6-2026/numerical-generalized-abundance.pdf",
+        "change_kind": "proof_statement_hypothesis_or_citation_correction",
+        "version_note": "This version states the Iitaka, model, and contraction inputs used in the divisorial-decomposition argument explicitly; see the [previous version](../Numerical-semiampleness-of-nef-adjoint-classes-on-compact-Kahler-manifolds-October-4-2026/numerical-generalized-abundance.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Numerical-semiampleness-of-nef-adjoint-classes-on-compact-Kahler-manifolds-October-6-2026/README.md",
+        "readme_sha256": "49add7b1ad29db17b3adce15639b544ecd8641125d921df2fe12698068294101",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "056",
+        "title": "Termination of generalized log canonical flips on compact Kähler fourfolds",
+        "previous_path": "preprints/Termination-of-generalized-log-canonical-flips-on-compact-Kahler-fourfolds-October-5-2026/termination-generalized-lc-kahler-fourfolds.pdf",
+        "current_path": "preprints/Termination-of-generalized-log-canonical-flips-on-compact-Kahler-fourfolds-October-7-2026/termination-generalized-lc-kahler-fourfolds.pdf",
+        "change_kind": "proof_statement_hypothesis_or_citation_correction",
+        "version_note": "This version clarifies the independent relative MMP and birational-comparison inputs used by the proof and updates citations to revised companion papers; see the [previous version](../Termination-of-generalized-log-canonical-flips-on-compact-Kahler-fourfolds-October-5-2026/termination-generalized-lc-kahler-fourfolds.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Termination-of-generalized-log-canonical-flips-on-compact-Kahler-fourfolds-October-7-2026/README.md",
+        "readme_sha256": "f81dc4454276c14e74393bb42d695ecb2951e07d2343479e074c6f9f211c9f82",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "056",
+        "title": "Termination of generalized-canonical flips on compact Kähler fourfolds",
+        "previous_path": "preprints/Termination-of-generalized-canonical-flips-on-compact-Kahler-fourfolds-October-5-2026/termination-generalized-terminal-flips-compact-kahler-fourfolds.pdf",
+        "current_path": "preprints/Termination-of-generalized-canonical-flips-on-compact-Kahler-fourfolds-October-6-2026/termination-generalized-terminal-flips-compact-kahler-fourfolds.pdf",
+        "change_kind": "proof_statement_hypothesis_or_citation_correction",
+        "version_note": "This version clarifies that only independent negativity, codimension-two smoothness, and cycle-comparison results are used from the companion fourfold paper; see the [previous version](../Termination-of-generalized-canonical-flips-on-compact-Kahler-fourfolds-October-5-2026/termination-generalized-terminal-flips-compact-kahler-fourfolds.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Termination-of-generalized-canonical-flips-on-compact-Kahler-fourfolds-October-6-2026/README.md",
+        "readme_sha256": "4e793a8f39a42f0d402e4bcd81a0c15fdce68aba29ac54077f50111c1ba902a0",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "056",
+        "title": "Finite ordinary minimal model programs on compact Kähler fourfolds",
+        "previous_path": "preprints/Finite-ordinary-minimal-model-programs-on-compact-Kahler-fourfolds-September-24-2026/paper.pdf",
+        "current_path": "preprints/Finite-ordinary-minimal-model-programs-on-compact-Kahler-fourfolds-October-6-2026/paper.pdf",
+        "change_kind": "proof_statement_hypothesis_or_citation_correction",
+        "version_note": "This version adds carrier-positivity and multiplier-ideal arguments and revises the contraction induction for ordinary negative-ray programs; see the [previous version](../Finite-ordinary-minimal-model-programs-on-compact-Kahler-fourfolds-October-5-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Finite-ordinary-minimal-model-programs-on-compact-Kahler-fourfolds-October-6-2026/README.md",
+        "readme_sha256": "6e5741508d84d043c0d62d5cbcf89ea34632621c662a45f588adee76619ab4bc",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "232",
+        "title": "Gaussian free-field limits of weighted integer Lipschitz heights",
+        "previous_path": "preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-September-25-2026/paper.pdf",
+        "current_path": "preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/paper.pdf",
+        "change_kind": "proof_statement_hypothesis_or_citation_correction",
+        "version_note": "This version supplies the annulus proof of the circuit estimate used in the discrete argument; see the [previous version](../Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-September-25-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Gaussian-free-field-limits-of-weighted-integer-Lipschitz-heights-October-6-2026/README.md",
+        "readme_sha256": "2c56b3c4a99c39cf3b579a9346f2ba478e3ecdd0bc4e00fe18c6995497bf52b7",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "232",
+        "title": "The Gaussian free field limit of integer Lipschitz heights with two-arc boundary data",
+        "previous_path": "preprints/The-Gaussian-free-field-limit-of-integer-Lipschitz-heights-with-two-arc-boundary-data-September-25-2026/paper.pdf",
+        "current_path": "preprints/The-Gaussian-free-field-limit-of-integer-Lipschitz-heights-with-two-arc-boundary-data-October-6-2026/paper.pdf",
+        "change_kind": "proof_statement_hypothesis_or_citation_correction",
+        "version_note": "This version derives the conditional cut and loop estimates from the companion weighted annulus circuit theorem at $x=1$; see the [previous version](../The-Gaussian-free-field-limit-of-integer-Lipschitz-heights-with-two-arc-boundary-data-September-25-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-integer-Lipschitz-heights-with-two-arc-boundary-data-October-6-2026/README.md",
+        "readme_sha256": "b795d595d961e0ef757f5090118cc6db2fec598fd8b08d8a71bb5afb44d0c23a",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "232",
+        "title": "Uniform real Lipschitz surfaces on the triangular lattice",
+        "previous_path": "preprints/Uniform-real-Lipschitz-surfaces-on-the-triangular-lattice-September-25-2026/paper.pdf",
+        "current_path": "preprints/Uniform-real-Lipschitz-surfaces-on-the-triangular-lattice-October-6-2026/paper.pdf",
+        "change_kind": "proof_statement_hypothesis_or_citation_correction",
+        "version_note": "This version repairs the boundary-attachment, landing-comparison, and multiscale separation arguments, including the conditional walk and hookup steps, and supplies terminal-side identification and harmonic-mass nonreturn for whole-curve convergence; see the [previous version](../Uniform-real-Lipschitz-surfaces-on-the-triangular-lattice-September-25-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Uniform-real-Lipschitz-surfaces-on-the-triangular-lattice-October-6-2026/README.md",
+        "readme_sha256": "7d0cf15dacd9d8b1339ec4c2fc54df2083f8cb8d301a241d78f3e1e4e2ac8e2f",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "233",
+        "title": "The joint scaling limit of critical Ashkin-Teller currents",
+        "previous_path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-September-25-2026/main.pdf",
+        "current_path": "preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/main.pdf",
+        "change_kind": "proof_statement_hypothesis_or_citation_correction",
+        "version_note": "This version corrects the transmission and boundary-collar arguments, replaces excursion convergence with a signed-loop-soup/GMC argument tied to the same limiting field, and updates the companion-paper citation; see the [previous version](../The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-September-25-2026/main.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-joint-scaling-limit-of-critical-Ashkin-Teller-currents-October-6-2026/README.md",
+        "readme_sha256": "c748c1e155fbcf824c8fa5eec3157ec35b717e8dc4f37e4dd9abc2b83681bb06",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "341",
+        "title": "Deforming hypersymplectic four-manifolds to hyperkähler triples",
+        "previous_path": "preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-September-23-2026/paper.pdf",
+        "current_path": "preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/paper.pdf",
+        "change_kind": "proof_statement_hypothesis_or_citation_correction",
+        "version_note": "This version clarifies the prescribed cohomology-class criterion used in the deformation argument, removes an unnecessary cone-comparison citation, and updates the companion-paper citation; see the [previous version](../Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-September-23-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/README.md",
+        "readme_sha256": "927c3c501e744c1c5d316ced35122509a11932879004143b06ce645eab0a6602",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "342",
+        "title": "Taming implies compatibility on four-manifolds",
+        "previous_path": "preprints/Taming-implies-compatibility-on-four-manifolds-September-23-2026/paper.pdf",
+        "current_path": "preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/paper.pdf",
+        "change_kind": "proof_statement_hypothesis_or_citation_correction",
+        "version_note": "This version characterizes the compatible cone by intersection positivity, restricts the cone-sum equality to $h_J^-=b_2^+-1$, and adds a four-torus example of strict inclusion; see the [previous version](../Taming-implies-compatibility-on-four-manifolds-September-23-2026/paper.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/README.md",
+        "readme_sha256": "45d1ab5ea22144beb58864d58bea5ad16a78b0b33929449c33ed9130213b069b",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      },
+      {
+        "family_id": "376",
+        "title": "Incompressible Box Transport and Finite Computation",
+        "previous_path": "preprints/Incompressible-Box-Transport-and-Finite-Computation-September-27-2026/manuscript.pdf",
+        "current_path": "preprints/Incompressible-Box-Transport-and-Finite-Computation-October-6-2026/manuscript.pdf",
+        "change_kind": "proof_statement_hypothesis_or_citation_correction",
+        "version_note": "This version supplies effective torus-projection and common-clock decay estimates, including the projected-force and pressure bounds; see the [previous version](../Incompressible-Box-Transport-and-Finite-Computation-September-27-2026/manuscript.pdf).",
+        "source_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Incompressible-Box-Transport-and-Finite-Computation-October-6-2026/README.md",
+        "readme_sha256": "4f1b4609cfb9220d75a919b21b8ef10b80a81e68accdf8813969eda007a38e1e",
+        "latest_note_matches_saved_except_trailing_newlines": true,
+        "proof_repair_independently_mathematically_validated_this_run": false
+      }
+    ],
+    "caveat": "These are documented changes and withdrawals, not an exhaustive issue count. Repairs are author-described and have not been mathematically validated by this source audit."
+  },
+  "licensing": {
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/LICENSE",
+    "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "root_notice_found": false,
+    "retained_license": "../publication/upstream/OpenAI-math-LICENSE.txt",
+    "modification_notice": "The research map reorganizes upstream manuscript metadata, adds source/status annotations, and repins current links after verifying corpus equivalence; it does not modify upstream proofs."
+  },
+  "verification_gaps": [
+    "No upstream Lean build, axiom audit or comparator check was executed in this audit.",
+    "No mathematical proof or informal/formal statement correspondence was independently validated in this audit.",
+    "No claim of external peer review, novelty, priority or established acceptance is made.",
+    "The ~42% top-line formalization headline was not independently reconstructed; manifest sources/declarations/configurations are different units.",
+    "The surviving five family032 manuscripts and their dependencies still require individual proof review.",
+    "Documented withdrawals and 14 corrections are not an exhaustive catalogue of possible issues."
+  ],
+  "findings": [
+    {
+      "severity": "high",
+      "finding": "Headline counts and family badges can be mistaken for solved-problem or whole-paper verification counts.",
+      "remediation": "Keep evidence stages and result scopes explicit in each catalog record."
+    },
+    {
+      "severity": "medium",
+      "finding": "Upstream metadata advanced after the saved October8 corpus revision.",
+      "remediation": "Pin current map to October12 commit while preserving historical revision provenance."
+    },
+    {
+      "severity": "low",
+      "finding": "Saved snapshot manifest hashes differ from fetched raw files by one additional terminal newline.",
+      "remediation": "Record both hashes and exact transformation; do not claim byte identity for saved snapshot versus raw upstream."
+    },
+    {
+      "severity": "medium",
+      "finding": "One formalization source path still uses the previous Taming manuscript edition.",
+      "remediation": "Flag the formalization-to-active-version correspondence gap; avoid transferring old-version proof evidence automatically."
+    }
+  ]
+}
