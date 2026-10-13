@@ -1,0 +1,91 @@
+{
+  "schema": "transport-sharpness-computation-hashes-v1",
+  "verified_starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+  "prior_records": [
+    {
+      "path": "research/supplement/transport-stability/proof.md",
+      "bytes": 19773,
+      "sha256": "7d8445fc42103de171a2366da8f15a4cce3ddec37f5ea99d3b19738efea212cd"
+    },
+    {
+      "path": "research/supplement/transport-stability/check_exact_cases.py",
+      "bytes": 7201,
+      "sha256": "0732cd6622461fa5dede09e87407ebe60a14290bd512854d4d41c366f2b4b3f5"
+    },
+    {
+      "path": "research/supplement/reviews/transport/audit-report.md",
+      "bytes": 14801,
+      "sha256": "ba51f131b4e71959bf20916bb1b29ad28811a830100006c10a8d8cf6e522fdd5"
+    },
+    {
+      "path": "research/supplement/reviews/transport/optional-refinements.md",
+      "bytes": 5797,
+      "sha256": "bc17006479c848ab9f3017dd72195dd488c4d0c253cb84c19815e69b28d895b7"
+    },
+    {
+      "path": "research/supplement/reviews/transport/review-record.json",
+      "bytes": 9539,
+      "sha256": "f63ef5e675478292136515245f4829c188f97c29d753d4f4ab143828e2696b4c"
+    },
+    {
+      "path": "publication/upstream/OpenAI-math-LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    }
+  ],
+  "new_computation_artifacts": [
+    {
+      "path": "transport-sharpness/data/exact-cases.json",
+      "bytes": 160723,
+      "sha256": "2f288083786720d116f4c3d7861a0beacb2d514613d1a428489f06894a113d1b"
+    },
+    {
+      "path": "transport-sharpness/data/exponent-regressions.json",
+      "bytes": 120522,
+      "sha256": "6f5730a11fe514c6f60e16268bce61795d98fce616e1741e58a262ad2a5de267"
+    },
+    {
+      "path": "transport-sharpness/data/isolated-rerun-stdout.txt",
+      "bytes": 412,
+      "sha256": "6d245146ace8b45cfd14ecb4dc95f10d77234eb219d68f7f612afe2abd475518"
+    },
+    {
+      "path": "transport-sharpness/data/isolated-tests-stdout.txt",
+      "bytes": 1823,
+      "sha256": "b37495d111e1b8d675a258d4fab0e889a3799d46f1b34d20811cd568eb9cd084"
+    },
+    {
+      "path": "transport-sharpness/data/regression-grid.json",
+      "bytes": 59359,
+      "sha256": "15f82ecb6b22e40b7d61bb59f622fbc47b0d60c2efcc6e38bcd4fd1f151ecee7"
+    },
+    {
+      "path": "transport-sharpness/data/tests-stdout.txt",
+      "bytes": 1823,
+      "sha256": "31ddd4f08760b35ffa9d615ba0d9258ed81b2fa90d48ad2e54e956e827e860ef"
+    },
+    {
+      "path": "transport-sharpness/data/verification-stdout.txt",
+      "bytes": 421,
+      "sha256": "782e4b5aa89206065f89c779868b68c8cd1953d33eed386752742130c8cd8f9b"
+    },
+    {
+      "path": "transport-sharpness/reviews/computation-review.md",
+      "bytes": 11068,
+      "sha256": "3abf93f47517e768d5f2cfefa197a1d3b175cb639545158649d92f713e0b337b"
+    },
+    {
+      "path": "transport-sharpness/scripts/check_exact.py",
+      "bytes": 26632,
+      "sha256": "11f61293fc2f2aa0f20741fcd489a43baa5ff12b86848531128ff31ffbdfd651"
+    },
+    {
+      "path": "transport-sharpness/tests/test_exact.py",
+      "bytes": 8375,
+      "sha256": "14a87d52350eceec6a173e210bccd9b6f827af964b213eba0e5713aa32a82e95"
+    }
+  ],
+  "isolated_source_copy_byte_identical": true,
+  "isolated_regenerated_mathematical_data_byte_identical": true,
+  "limitations": "Hash evidence identifies bytes; it is not a mathematical proof or a Lean acceptance certificate."
+}

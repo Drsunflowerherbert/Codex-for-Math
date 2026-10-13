@@ -1,0 +1,152 @@
+{
+  "assigned_branch": "codex/transport-sharpness-2026-10-13",
+  "baseline_inputs": [
+    {
+      "bytes": 19773,
+      "path": "research/starter/transport-stability/proof.md",
+      "sha256": "7d8445fc42103de171a2366da8f15a4cce3ddec37f5ea99d3b19738efea212cd",
+      "starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+    },
+    {
+      "bytes": 14861,
+      "path": "research/starter/transport-stability/theorems.json",
+      "sha256": "871d3f713d75b724afb5235d475432529a27755f603ae8e6f900b6a29695a50d",
+      "starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+    },
+    {
+      "bytes": 19773,
+      "path": "research/supplement/transport-stability/proof.md",
+      "sha256": "7d8445fc42103de171a2366da8f15a4cce3ddec37f5ea99d3b19738efea212cd",
+      "starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+    },
+    {
+      "bytes": 14861,
+      "path": "research/supplement/transport-stability/theorems.json",
+      "sha256": "871d3f713d75b724afb5235d475432529a27755f603ae8e6f900b6a29695a50d",
+      "starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+    },
+    {
+      "bytes": 7201,
+      "path": "research/supplement/transport-stability/check_exact_cases.py",
+      "sha256": "0732cd6622461fa5dede09e87407ebe60a14290bd512854d4d41c366f2b4b3f5",
+      "starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+    },
+    {
+      "bytes": 5318,
+      "path": "research/supplement/transport-stability/exact-cases.json",
+      "sha256": "988ad6e11f50bf92a518750a75233bdbb9df3e6ee08da01896d94a66d4592008",
+      "starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+    },
+    {
+      "bytes": 14801,
+      "path": "research/supplement/reviews/transport/audit-report.md",
+      "sha256": "ba51f131b4e71959bf20916bb1b29ad28811a830100006c10a8d8cf6e522fdd5",
+      "starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+    },
+    {
+      "bytes": 5797,
+      "path": "research/supplement/reviews/transport/optional-refinements.md",
+      "sha256": "bc17006479c848ab9f3017dd72195dd488c4d0c253cb84c19815e69b28d895b7",
+      "starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+    },
+    {
+      "bytes": 9539,
+      "path": "research/supplement/reviews/transport/review-record.json",
+      "sha256": "f63ef5e675478292136515245f4829c188f97c29d753d4f4ab143828e2696b4c",
+      "starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+    },
+    {
+      "bytes": 6371,
+      "path": "math-evidence/lean/EvidenceHarness.lean",
+      "sha256": "bb71282fcb088498a9c40b0460694f1663e8f3a145fc15469050b8ade2f390dc",
+      "starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+    },
+    {
+      "bytes": 3668,
+      "path": "math-evidence/toolchain-audit.py",
+      "sha256": "3034d1162c2fc34de7337d889373018bc8bfc0ec1133aab7a0f81621e03b5ce0",
+      "starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+    },
+    {
+      "bytes": 5088,
+      "path": "math-evidence/LEAN-RECEIPTS.md",
+      "sha256": "1bd66d6e91bac27994ade4e3dd73e98ab5e3c3ae34d882045e42bd9e9d153e5b",
+      "starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+    },
+    {
+      "bytes": 2718,
+      "path": "THIRD-PARTY.md",
+      "sha256": "fa53ca2a3d3c1fa9a73c36b9bb28b236e7aea1149286d10d667b568fb68e1342",
+      "starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+    },
+    {
+      "bytes": 11357,
+      "path": "publication/upstream/OpenAI-math-LICENSE.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+    }
+  ],
+  "development_cutoff_utc": "2026-10-13T04:05:00Z",
+  "development_frozen_utc": "2026-10-13T02:00:09Z",
+  "frozen_core_sha256": {
+    "TransportSharpness.lean": "f59964ae611a8e54f0d226c01bfbe5688ff4410de7c42cdc6da77e109f23d811",
+    "TransportSharpness/Finite.lean": "2ca131e39877bb4ec3d0803de4b9bdfa21d7d2e2935f9777db0408aa3cadf18a",
+    "TransportSharpness/Obstruction.lean": "ebb8d5361a6dce5ebc7e436d59750a58581030ca1d351e420f9280dcf83df0e1"
+  },
+  "instructions_inspection": {
+    "AGENTS.md": "absent at filesystem/workspace/repository roots and relevant subtrees",
+    "agents_skills": "no relevant files available; workspace .agents empty"
+  },
+  "license_scope": "existing third-party attribution retained; no new overall license assigned",
+  "original_saved_checkout_commit": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+  "original_saved_checkout_preserved": true,
+  "remote_before_publication": {
+    "assigned_branch": "absent",
+    "evidence": "evidence/remote-before.txt",
+    "exact_command": "git ls-remote --heads origin refs/heads/codex/research-2026-10-11 refs/heads/codex/tangent-limit refs/heads/codex/transport-sharpness-2026-10-13",
+    "research_branch": "b1d6c20e2f02b484d09c5285e67d842b369f9df0",
+    "tangent_branch": "d00a89dd9ce6c8ef782234d28c93e69cb712c947"
+  },
+  "repository": "https://github.com/Drsunflowerherbert/Codex-for-Math",
+  "repository_inspection": {
+    "archived": false,
+    "method": "existing authorized GitHub connector get_repo",
+    "no_credentials_exposed": true,
+    "push_permission": true,
+    "visibility": "public"
+  },
+  "restrictions_observed": [
+    "no Library intermediate",
+    "no account credential or security change",
+    "no usage purchase",
+    "no PR merge or force push",
+    "no shared publication manifest edit",
+    "only new transport-sharpness directory published"
+  ],
+  "round_deadline_utc": "2026-10-13T04:40:00Z",
+  "schema": "transport-sharpness-provenance/v1",
+  "upstream_refetch": {
+    "command": [
+      "curl",
+      "--fail",
+      "--silent",
+      "--show-error",
+      "--location",
+      "--max-time",
+      "30",
+      "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex",
+      "-o",
+      "/tmp/transport-sharpness-upstream.tex"
+    ],
+    "comparison_result": "retained bytes equal fetched bytes followed by one newline; cmp exited 1 due exactly this extra byte",
+    "exit_code": 0,
+    "fetched_bytes": 7662,
+    "fetched_sha256": "2c1682fe0dc4bd8da5883760a909271382ec2a63ef68e8334b5491bb0985c902",
+    "mathematical_text_differs": false,
+    "retained_bytes": 7663,
+    "retained_sha256": "f8732d68d0de8505d20f6c42aefce95d60b3e8363569681fa30632c997999590",
+    "revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "url": "https://raw.githubusercontent.com/openai/math/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex"
+  },
+  "verified_starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+}

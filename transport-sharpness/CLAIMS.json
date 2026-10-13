@@ -1,0 +1,72 @@
+{
+  "schema": "transport-sharpness-scoped-claims/v1",
+  "definitions": {
+    "ambient_geometry": "Euclidean R^d, fixed integer d>=2",
+    "source": "rho=2^-d 1_[-1,1]^d dx, uniform probability",
+    "source_density_on_cube": "lower=upper=2^-d, uniformly in a,b",
+    "target_density": "atomic and singular; no Lebesgue target density bounds",
+    "maps": "unique quadratic optimal maps from rho, even when comparison uses Wp with p!=2",
+    "Wp_domain": "fixed finite real p>=1",
+    "parameter_domain": "0<b<a and a+b<1"
+  },
+  "claims": [
+    {
+      "id": "TRP-001",
+      "statement": "mu=((1-a)/2)delta_-e1+a delta_0+((1-a)/2)delta_e1; nu has the same masses with center b e2",
+      "verification": "ordinary source-cell integration, exact rational polygon and independent slice checks; Lean proves finite mass positivity/normalization",
+      "lean_anchors": ["TransportSharpness.mass_positive", "TransportSharpness.mass_sum"],
+      "ordinary_bridge": "Borel selections, null tie hyperplanes, pushforward cell integration",
+      "evidence": ["docs/derivation.md", "reviews/proof-review.md", "data/exact-cases.json"]
+    },
+    {
+      "id": "TRP-002",
+      "statement": "Wp^p=a*b^p; Wp=a^(1/p)*b for finite real p>=1",
+      "verification": "finite p-cost lower bound and matching attainment kernel checked; finite-array representation of Borel couplings remains ordinary",
+      "lean_anchors": ["TransportSharpness.pCost_minimum", "TransportSharpness.targetDistance_power"],
+      "formal_domain_note": "pCost_minimum permits scalar p>0; metric interpretation only p>=1",
+      "evidence": ["docs/derivation.md", "reviews/lean-review.md", "scripts/ReviewHarness.lean"]
+    },
+    {
+      "id": "TRP-003",
+      "statement": "D^2=||T_mu-T_nu||_L2(rho)^2=b/2+a*b^2",
+      "verification": "candidate joint matrix coupling and quadratic weighted cost kernel checked; identification as actual source pushforward remains ordinary and exactly regressed",
+      "lean_anchors": ["TransportSharpness.commonSource_coupling", "TransportSharpness.commonSource_cost"],
+      "evidence": ["docs/derivation.md", "reviews/independent_slice_check.py", "data/regression-grid.json"]
+    },
+    {
+      "id": "TRP-004",
+      "statement": "For b=a/2 and 0<a<1/2, every alpha>p/[2(p+1)] and every finite proposed constant C admits a pair with D>C*Wp^alpha",
+      "verification": "all-real scalar quantifiers and real-power growth kernel checked; ordinary transport bridge uses TRP-001 through TRP-003",
+      "lean_anchors": ["TransportSharpness.shrinking_exceeds_constant", "TransportSharpness.W2_exceeds_constant"],
+      "mass_hypothesis": "central mass a shrinks to zero; no uniform positive lower target atom-mass bound",
+      "specializations": {"W2": "alpha>1/3 excluded", "W1": "alpha>1/4 excluded"},
+      "evidence": ["docs/derivation.md", "scripts/ReviewHarness.lean", "data/exponent-regressions.json"]
+    },
+    {
+      "id": "TRP-005",
+      "statement": "For any fixed a0 in (0,1), b shrinking in (0,min(a0,1-a0)) excludes every alpha>1/2 for each finite p>=1",
+      "verification": "all-real scalar quantifier kernel checked; fixed mass transport interpretation ordinary",
+      "lean_anchors": ["TransportSharpness.fixed_mass_exceeds_constant"],
+      "mass_hypothesis": "fixed positive masses ((1-a0)/2,a0,(1-a0)/2); lower bound min(a0,(1-a0)/2)",
+      "formal_domain_note": "formal p is an arbitrary scalar parameter; use p>=1 for Wasserstein interpretation",
+      "evidence": ["docs/derivation.md", "scripts/ReviewHarness.lean", "data/exponent-regressions.json"]
+    }
+  ],
+  "deferred_formal_obligations": [
+    "Lebesgue source normalization and density bounds",
+    "Borel map selections and null affine tie sets",
+    "quadratic source-to-target dual integration and unique optimal plan",
+    "actual pushforward identification with commonSource finite matrix",
+    "representation of Borel finite-supported couplings by finite arrays",
+    "higher-dimensional product integration",
+    "finite target optimizer uniqueness theorem"
+  ],
+  "nonclaims": [
+    "no global positive upper stability estimate or endpoint optimality theorem",
+    "no obstruction for bounded positive target densities",
+    "no transfer of shrinking-mass 1/3 ceiling to fixed-positive-mass classes",
+    "no mathematical novelty claim",
+    "no Lean acceptance of the deferred measure-theoretic bridge",
+    "no native Mac MRS integration or independent kernel implementation"
+  ]
+}

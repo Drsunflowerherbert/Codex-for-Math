@@ -1,0 +1,3512 @@
+{
+  "arithmetic": "fractions.Fraction; standard library; no floating-point roots",
+  "case_count": 100,
+  "cases": [
+    {
+      "L2_map_difference_squared": "29/448",
+      "W2_squared": "1/448",
+      "a": "1/7",
+      "atom_masses": [
+        "3/7",
+        "1/7",
+        "3/7"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "185/448",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "25/224",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "185/448"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "25/384",
+      "W2_squared": "1/384",
+      "a": "1/6",
+      "atom_masses": [
+        "5/12",
+        "1/6",
+        "5/12"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "77/192",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "13/96",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "77/192"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "11/147",
+      "W2_squared": "1/294",
+      "a": "1/6",
+      "atom_masses": [
+        "5/12",
+        "1/6",
+        "5/12"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "67/168",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "11/84",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "67/168"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "21/320",
+      "W2_squared": "1/320",
+      "a": "1/5",
+      "atom_masses": [
+        "2/5",
+        "1/5",
+        "2/5"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "123/320",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "27/160",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "123/320"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "37/490",
+      "W2_squared": "1/245",
+      "a": "1/5",
+      "atom_masses": [
+        "2/5",
+        "1/5",
+        "2/5"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "107/280",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "23/140",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "107/280"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "4/45",
+      "W2_squared": "1/180",
+      "a": "1/5",
+      "atom_masses": [
+        "2/5",
+        "1/5",
+        "2/5"
+      ],
+      "b": "1/6",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "91/240",
+          "1/48",
+          "0"
+        ],
+        [
+          "1/48",
+          "19/120",
+          "1/48"
+        ],
+        [
+          "0",
+          "1/48",
+          "91/240"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "17/256",
+      "W2_squared": "1/256",
+      "a": "1/4",
+      "atom_masses": [
+        "3/8",
+        "1/4",
+        "3/8"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "23/64",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "7/32",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "23/64"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "15/196",
+      "W2_squared": "1/196",
+      "a": "1/4",
+      "atom_masses": [
+        "3/8",
+        "1/4",
+        "3/8"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "5/14",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "3/14",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "5/14"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "13/144",
+      "W2_squared": "1/144",
+      "a": "1/4",
+      "atom_masses": [
+        "3/8",
+        "1/4",
+        "3/8"
+      ],
+      "b": "1/6",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "17/48",
+          "1/48",
+          "0"
+        ],
+        [
+          "1/48",
+          "5/24",
+          "1/48"
+        ],
+        [
+          "0",
+          "1/48",
+          "17/48"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "11/100",
+      "W2_squared": "1/100",
+      "a": "1/4",
+      "atom_masses": [
+        "3/8",
+        "1/4",
+        "3/8"
+      ],
+      "b": "1/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "7/20",
+          "1/40",
+          "0"
+        ],
+        [
+          "1/40",
+          "1/5",
+          "1/40"
+        ],
+        [
+          "0",
+          "1/40",
+          "7/20"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "15/224",
+      "W2_squared": "1/224",
+      "a": "2/7",
+      "atom_masses": [
+        "5/14",
+        "2/7",
+        "5/14"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "153/448",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "57/224",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "153/448"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "53/686",
+      "W2_squared": "2/343",
+      "a": "2/7",
+      "atom_masses": [
+        "5/14",
+        "2/7",
+        "5/14"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "19/56",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "1/4",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "19/56"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "23/252",
+      "W2_squared": "1/126",
+      "a": "2/7",
+      "atom_masses": [
+        "5/14",
+        "2/7",
+        "5/14"
+      ],
+      "b": "1/6",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "113/336",
+          "1/48",
+          "0"
+        ],
+        [
+          "1/48",
+          "41/168",
+          "1/48"
+        ],
+        [
+          "0",
+          "1/48",
+          "113/336"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "39/350",
+      "W2_squared": "2/175",
+      "a": "2/7",
+      "atom_masses": [
+        "5/14",
+        "2/7",
+        "5/14"
+      ],
+      "b": "1/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "93/280",
+          "1/40",
+          "0"
+        ],
+        [
+          "1/40",
+          "33/140",
+          "1/40"
+        ],
+        [
+          "0",
+          "1/40",
+          "93/280"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "1/7",
+      "W2_squared": "1/56",
+      "a": "2/7",
+      "atom_masses": [
+        "5/14",
+        "2/7",
+        "5/14"
+      ],
+      "b": "1/4",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "73/224",
+          "1/32",
+          "0"
+        ],
+        [
+          "1/32",
+          "25/112",
+          "1/32"
+        ],
+        [
+          "0",
+          "1/32",
+          "73/224"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "13/192",
+      "W2_squared": "1/192",
+      "a": "1/3",
+      "atom_masses": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "61/192",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "29/96",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "61/192"
+        ]
+      ],
+      "vertices_enumerated": 6
+    },
+    {
+      "L2_map_difference_squared": "23/294",
+      "W2_squared": "1/147",
+      "a": "1/3",
+      "atom_masses": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "53/168",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "25/84",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "53/168"
+        ]
+      ],
+      "vertices_enumerated": 6
+    },
+    {
+      "L2_map_difference_squared": "5/54",
+      "W2_squared": "1/108",
+      "a": "1/3",
+      "atom_masses": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "b": "1/6",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "5/16",
+          "1/48",
+          "0"
+        ],
+        [
+          "1/48",
+          "7/24",
+          "1/48"
+        ],
+        [
+          "0",
+          "1/48",
+          "5/16"
+        ]
+      ],
+      "vertices_enumerated": 6
+    },
+    {
+      "L2_map_difference_squared": "17/150",
+      "W2_squared": "1/75",
+      "a": "1/3",
+      "atom_masses": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "b": "1/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "37/120",
+          "1/40",
+          "0"
+        ],
+        [
+          "1/40",
+          "17/60",
+          "1/40"
+        ],
+        [
+          "0",
+          "1/40",
+          "37/120"
+        ]
+      ],
+      "vertices_enumerated": 6
+    },
+    {
+      "L2_map_difference_squared": "7/48",
+      "W2_squared": "1/48",
+      "a": "1/3",
+      "atom_masses": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "b": "1/4",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "29/96",
+          "1/32",
+          "0"
+        ],
+        [
+          "1/32",
+          "13/48",
+          "1/32"
+        ],
+        [
+          "0",
+          "1/32",
+          "29/96"
+        ]
+      ],
+      "vertices_enumerated": 6
+    },
+    {
+      "L2_map_difference_squared": "25/147",
+      "W2_squared": "4/147",
+      "a": "1/3",
+      "atom_masses": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "b": "2/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "25/84",
+          "1/28",
+          "0"
+        ],
+        [
+          "1/28",
+          "11/42",
+          "1/28"
+        ],
+        [
+          "0",
+          "1/28",
+          "25/84"
+        ]
+      ],
+      "vertices_enumerated": 6
+    },
+    {
+      "L2_map_difference_squared": "35/512",
+      "W2_squared": "3/512",
+      "a": "3/8",
+      "atom_masses": [
+        "5/16",
+        "3/8",
+        "5/16"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "19/64",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "11/32",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "19/64"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "31/392",
+      "W2_squared": "3/392",
+      "a": "3/8",
+      "atom_masses": [
+        "5/16",
+        "3/8",
+        "5/16"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "33/112",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "19/56",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "33/112"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "3/32",
+      "W2_squared": "1/96",
+      "a": "3/8",
+      "atom_masses": [
+        "5/16",
+        "3/8",
+        "5/16"
+      ],
+      "b": "1/6",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "7/24",
+          "1/48",
+          "0"
+        ],
+        [
+          "1/48",
+          "1/3",
+          "1/48"
+        ],
+        [
+          "0",
+          "1/48",
+          "7/24"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "23/200",
+      "W2_squared": "3/200",
+      "a": "3/8",
+      "atom_masses": [
+        "5/16",
+        "3/8",
+        "5/16"
+      ],
+      "b": "1/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "23/80",
+          "1/40",
+          "0"
+        ],
+        [
+          "1/40",
+          "13/40",
+          "1/40"
+        ],
+        [
+          "0",
+          "1/40",
+          "23/80"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "19/128",
+      "W2_squared": "3/128",
+      "a": "3/8",
+      "atom_masses": [
+        "5/16",
+        "3/8",
+        "5/16"
+      ],
+      "b": "1/4",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "9/32",
+          "1/32",
+          "0"
+        ],
+        [
+          "1/32",
+          "5/16",
+          "1/32"
+        ],
+        [
+          "0",
+          "1/32",
+          "9/32"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "17/98",
+      "W2_squared": "3/98",
+      "a": "3/8",
+      "atom_masses": [
+        "5/16",
+        "3/8",
+        "5/16"
+      ],
+      "b": "2/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "31/112",
+          "1/28",
+          "0"
+        ],
+        [
+          "1/28",
+          "17/56",
+          "1/28"
+        ],
+        [
+          "0",
+          "1/28",
+          "31/112"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "5/24",
+      "W2_squared": "1/24",
+      "a": "3/8",
+      "atom_masses": [
+        "5/16",
+        "3/8",
+        "5/16"
+      ],
+      "b": "1/3",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "13/48",
+          "1/24",
+          "0"
+        ],
+        [
+          "1/24",
+          "7/24",
+          "1/24"
+        ],
+        [
+          "0",
+          "1/24",
+          "13/48"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "11/160",
+      "W2_squared": "1/160",
+      "a": "2/5",
+      "atom_masses": [
+        "3/10",
+        "2/5",
+        "3/10"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "91/320",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "59/160",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "91/320"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "39/490",
+      "W2_squared": "2/245",
+      "a": "2/5",
+      "atom_masses": [
+        "3/10",
+        "2/5",
+        "3/10"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "79/280",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "51/140",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "79/280"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "17/180",
+      "W2_squared": "1/90",
+      "a": "2/5",
+      "atom_masses": [
+        "3/10",
+        "2/5",
+        "3/10"
+      ],
+      "b": "1/6",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "67/240",
+          "1/48",
+          "0"
+        ],
+        [
+          "1/48",
+          "43/120",
+          "1/48"
+        ],
+        [
+          "0",
+          "1/48",
+          "67/240"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "29/250",
+      "W2_squared": "2/125",
+      "a": "2/5",
+      "atom_masses": [
+        "3/10",
+        "2/5",
+        "3/10"
+      ],
+      "b": "1/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "11/40",
+          "1/40",
+          "0"
+        ],
+        [
+          "1/40",
+          "7/20",
+          "1/40"
+        ],
+        [
+          "0",
+          "1/40",
+          "11/40"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "3/20",
+      "W2_squared": "1/40",
+      "a": "2/5",
+      "atom_masses": [
+        "3/10",
+        "2/5",
+        "3/10"
+      ],
+      "b": "1/4",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "43/160",
+          "1/32",
+          "0"
+        ],
+        [
+          "1/32",
+          "27/80",
+          "1/32"
+        ],
+        [
+          "0",
+          "1/32",
+          "43/160"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "43/245",
+      "W2_squared": "8/245",
+      "a": "2/5",
+      "atom_masses": [
+        "3/10",
+        "2/5",
+        "3/10"
+      ],
+      "b": "2/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "37/140",
+          "1/28",
+          "0"
+        ],
+        [
+          "1/28",
+          "23/70",
+          "1/28"
+        ],
+        [
+          "0",
+          "1/28",
+          "37/140"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "19/90",
+      "W2_squared": "2/45",
+      "a": "2/5",
+      "atom_masses": [
+        "3/10",
+        "2/5",
+        "3/10"
+      ],
+      "b": "1/3",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "31/120",
+          "1/24",
+          "0"
+        ],
+        [
+          "1/24",
+          "19/60",
+          "1/24"
+        ],
+        [
+          "0",
+          "1/24",
+          "31/120"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "39/160",
+      "W2_squared": "9/160",
+      "a": "2/5",
+      "atom_masses": [
+        "3/10",
+        "2/5",
+        "3/10"
+      ],
+      "b": "3/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "81/320",
+          "3/64",
+          "0"
+        ],
+        [
+          "3/64",
+          "49/160",
+          "3/64"
+        ],
+        [
+          "0",
+          "3/64",
+          "81/320"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "31/448",
+      "W2_squared": "3/448",
+      "a": "3/7",
+      "atom_masses": [
+        "2/7",
+        "3/7",
+        "2/7"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "121/448",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "89/224",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "121/448"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "55/686",
+      "W2_squared": "3/343",
+      "a": "3/7",
+      "atom_masses": [
+        "2/7",
+        "3/7",
+        "2/7"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "15/56",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "11/28",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "15/56"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "2/21",
+      "W2_squared": "1/84",
+      "a": "3/7",
+      "atom_masses": [
+        "2/7",
+        "3/7",
+        "2/7"
+      ],
+      "b": "1/6",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "89/336",
+          "1/48",
+          "0"
+        ],
+        [
+          "1/48",
+          "65/168",
+          "1/48"
+        ],
+        [
+          "0",
+          "1/48",
+          "89/336"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "41/350",
+      "W2_squared": "3/175",
+      "a": "3/7",
+      "atom_masses": [
+        "2/7",
+        "3/7",
+        "2/7"
+      ],
+      "b": "1/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "73/280",
+          "1/40",
+          "0"
+        ],
+        [
+          "1/40",
+          "53/140",
+          "1/40"
+        ],
+        [
+          "0",
+          "1/40",
+          "73/280"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "17/112",
+      "W2_squared": "3/112",
+      "a": "3/7",
+      "atom_masses": [
+        "2/7",
+        "3/7",
+        "2/7"
+      ],
+      "b": "1/4",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "57/224",
+          "1/32",
+          "0"
+        ],
+        [
+          "1/32",
+          "41/112",
+          "1/32"
+        ],
+        [
+          "0",
+          "1/32",
+          "57/224"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "61/343",
+      "W2_squared": "12/343",
+      "a": "3/7",
+      "atom_masses": [
+        "2/7",
+        "3/7",
+        "2/7"
+      ],
+      "b": "2/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "1/4",
+          "1/28",
+          "0"
+        ],
+        [
+          "1/28",
+          "5/14",
+          "1/28"
+        ],
+        [
+          "0",
+          "1/28",
+          "1/4"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "3/14",
+      "W2_squared": "1/21",
+      "a": "3/7",
+      "atom_masses": [
+        "2/7",
+        "3/7",
+        "2/7"
+      ],
+      "b": "1/3",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "41/168",
+          "1/24",
+          "0"
+        ],
+        [
+          "1/24",
+          "29/84",
+          "1/24"
+        ],
+        [
+          "0",
+          "1/24",
+          "41/168"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "111/448",
+      "W2_squared": "27/448",
+      "a": "3/7",
+      "atom_masses": [
+        "2/7",
+        "3/7",
+        "2/7"
+      ],
+      "b": "3/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "107/448",
+          "3/64",
+          "0"
+        ],
+        [
+          "3/64",
+          "75/224",
+          "3/64"
+        ],
+        [
+          "0",
+          "3/64",
+          "107/448"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "47/175",
+      "W2_squared": "12/175",
+      "a": "3/7",
+      "atom_masses": [
+        "2/7",
+        "3/7",
+        "2/7"
+      ],
+      "b": "2/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "33/140",
+          "1/20",
+          "0"
+        ],
+        [
+          "1/20",
+          "23/70",
+          "1/20"
+        ],
+        [
+          "0",
+          "1/20",
+          "33/140"
+        ]
+      ],
+      "vertices_enumerated": 10
+    },
+    {
+      "L2_map_difference_squared": "9/128",
+      "W2_squared": "1/128",
+      "a": "1/2",
+      "atom_masses": [
+        "1/4",
+        "1/2",
+        "1/4"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "15/64",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "15/32",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "15/64"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "4/49",
+      "W2_squared": "1/98",
+      "a": "1/2",
+      "atom_masses": [
+        "1/4",
+        "1/2",
+        "1/4"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "13/56",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "13/28",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "13/56"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "7/72",
+      "W2_squared": "1/72",
+      "a": "1/2",
+      "atom_masses": [
+        "1/4",
+        "1/2",
+        "1/4"
+      ],
+      "b": "1/6",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "11/48",
+          "1/48",
+          "0"
+        ],
+        [
+          "1/48",
+          "11/24",
+          "1/48"
+        ],
+        [
+          "0",
+          "1/48",
+          "11/48"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "3/25",
+      "W2_squared": "1/50",
+      "a": "1/2",
+      "atom_masses": [
+        "1/4",
+        "1/2",
+        "1/4"
+      ],
+      "b": "1/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "9/40",
+          "1/40",
+          "0"
+        ],
+        [
+          "1/40",
+          "9/20",
+          "1/40"
+        ],
+        [
+          "0",
+          "1/40",
+          "9/40"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "5/32",
+      "W2_squared": "1/32",
+      "a": "1/2",
+      "atom_masses": [
+        "1/4",
+        "1/2",
+        "1/4"
+      ],
+      "b": "1/4",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "7/32",
+          "1/32",
+          "0"
+        ],
+        [
+          "1/32",
+          "7/16",
+          "1/32"
+        ],
+        [
+          "0",
+          "1/32",
+          "7/32"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "9/49",
+      "W2_squared": "2/49",
+      "a": "1/2",
+      "atom_masses": [
+        "1/4",
+        "1/2",
+        "1/4"
+      ],
+      "b": "2/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "3/14",
+          "1/28",
+          "0"
+        ],
+        [
+          "1/28",
+          "3/7",
+          "1/28"
+        ],
+        [
+          "0",
+          "1/28",
+          "3/14"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "2/9",
+      "W2_squared": "1/18",
+      "a": "1/2",
+      "atom_masses": [
+        "1/4",
+        "1/2",
+        "1/4"
+      ],
+      "b": "1/3",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "5/24",
+          "1/24",
+          "0"
+        ],
+        [
+          "1/24",
+          "5/12",
+          "1/24"
+        ],
+        [
+          "0",
+          "1/24",
+          "5/24"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "33/128",
+      "W2_squared": "9/128",
+      "a": "1/2",
+      "atom_masses": [
+        "1/4",
+        "1/2",
+        "1/4"
+      ],
+      "b": "3/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "13/64",
+          "3/64",
+          "0"
+        ],
+        [
+          "3/64",
+          "13/32",
+          "3/64"
+        ],
+        [
+          "0",
+          "3/64",
+          "13/64"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "7/25",
+      "W2_squared": "2/25",
+      "a": "1/2",
+      "atom_masses": [
+        "1/4",
+        "1/2",
+        "1/4"
+      ],
+      "b": "2/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "1/5",
+          "1/20",
+          "0"
+        ],
+        [
+          "1/20",
+          "2/5",
+          "1/20"
+        ],
+        [
+          "0",
+          "1/20",
+          "1/5"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "15/49",
+      "W2_squared": "9/98",
+      "a": "1/2",
+      "atom_masses": [
+        "1/4",
+        "1/2",
+        "1/4"
+      ],
+      "b": "3/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "11/56",
+          "3/56",
+          "0"
+        ],
+        [
+          "3/56",
+          "11/28",
+          "3/56"
+        ],
+        [
+          "0",
+          "3/56",
+          "11/56"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "1/14",
+      "W2_squared": "1/112",
+      "a": "4/7",
+      "atom_masses": [
+        "3/14",
+        "4/7",
+        "3/14"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "89/448",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "121/224",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "89/448"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "57/686",
+      "W2_squared": "4/343",
+      "a": "4/7",
+      "atom_masses": [
+        "3/14",
+        "4/7",
+        "3/14"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "11/56",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "15/28",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "11/56"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "25/252",
+      "W2_squared": "1/63",
+      "a": "4/7",
+      "atom_masses": [
+        "3/14",
+        "4/7",
+        "3/14"
+      ],
+      "b": "1/6",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "65/336",
+          "1/48",
+          "0"
+        ],
+        [
+          "1/48",
+          "89/168",
+          "1/48"
+        ],
+        [
+          "0",
+          "1/48",
+          "65/336"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "43/350",
+      "W2_squared": "4/175",
+      "a": "4/7",
+      "atom_masses": [
+        "3/14",
+        "4/7",
+        "3/14"
+      ],
+      "b": "1/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "53/280",
+          "1/40",
+          "0"
+        ],
+        [
+          "1/40",
+          "73/140",
+          "1/40"
+        ],
+        [
+          "0",
+          "1/40",
+          "53/280"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "9/56",
+      "W2_squared": "1/28",
+      "a": "4/7",
+      "atom_masses": [
+        "3/14",
+        "4/7",
+        "3/14"
+      ],
+      "b": "1/4",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "41/224",
+          "1/32",
+          "0"
+        ],
+        [
+          "1/32",
+          "57/112",
+          "1/32"
+        ],
+        [
+          "0",
+          "1/32",
+          "41/224"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "65/343",
+      "W2_squared": "16/343",
+      "a": "4/7",
+      "atom_masses": [
+        "3/14",
+        "4/7",
+        "3/14"
+      ],
+      "b": "2/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "5/28",
+          "1/28",
+          "0"
+        ],
+        [
+          "1/28",
+          "1/2",
+          "1/28"
+        ],
+        [
+          "0",
+          "1/28",
+          "5/28"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "29/126",
+      "W2_squared": "4/63",
+      "a": "4/7",
+      "atom_masses": [
+        "3/14",
+        "4/7",
+        "3/14"
+      ],
+      "b": "1/3",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "29/168",
+          "1/24",
+          "0"
+        ],
+        [
+          "1/24",
+          "41/84",
+          "1/24"
+        ],
+        [
+          "0",
+          "1/24",
+          "29/168"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "15/56",
+      "W2_squared": "9/112",
+      "a": "4/7",
+      "atom_masses": [
+        "3/14",
+        "4/7",
+        "3/14"
+      ],
+      "b": "3/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "75/448",
+          "3/64",
+          "0"
+        ],
+        [
+          "3/64",
+          "107/224",
+          "3/64"
+        ],
+        [
+          "0",
+          "3/64",
+          "75/448"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "51/175",
+      "W2_squared": "16/175",
+      "a": "4/7",
+      "atom_masses": [
+        "3/14",
+        "4/7",
+        "3/14"
+      ],
+      "b": "2/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "23/140",
+          "1/20",
+          "0"
+        ],
+        [
+          "1/20",
+          "33/70",
+          "1/20"
+        ],
+        [
+          "0",
+          "1/20",
+          "23/140"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "23/320",
+      "W2_squared": "3/320",
+      "a": "3/5",
+      "atom_masses": [
+        "1/5",
+        "3/5",
+        "1/5"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "59/320",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "91/160",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "59/320"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "41/490",
+      "W2_squared": "3/245",
+      "a": "3/5",
+      "atom_masses": [
+        "1/5",
+        "3/5",
+        "1/5"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "51/280",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "79/140",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "51/280"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "1/10",
+      "W2_squared": "1/60",
+      "a": "3/5",
+      "atom_masses": [
+        "1/5",
+        "3/5",
+        "1/5"
+      ],
+      "b": "1/6",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "43/240",
+          "1/48",
+          "0"
+        ],
+        [
+          "1/48",
+          "67/120",
+          "1/48"
+        ],
+        [
+          "0",
+          "1/48",
+          "43/240"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "31/250",
+      "W2_squared": "3/125",
+      "a": "3/5",
+      "atom_masses": [
+        "1/5",
+        "3/5",
+        "1/5"
+      ],
+      "b": "1/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "7/40",
+          "1/40",
+          "0"
+        ],
+        [
+          "1/40",
+          "11/20",
+          "1/40"
+        ],
+        [
+          "0",
+          "1/40",
+          "7/40"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "13/80",
+      "W2_squared": "3/80",
+      "a": "3/5",
+      "atom_masses": [
+        "1/5",
+        "3/5",
+        "1/5"
+      ],
+      "b": "1/4",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "27/160",
+          "1/32",
+          "0"
+        ],
+        [
+          "1/32",
+          "43/80",
+          "1/32"
+        ],
+        [
+          "0",
+          "1/32",
+          "27/160"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "47/245",
+      "W2_squared": "12/245",
+      "a": "3/5",
+      "atom_masses": [
+        "1/5",
+        "3/5",
+        "1/5"
+      ],
+      "b": "2/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "23/140",
+          "1/28",
+          "0"
+        ],
+        [
+          "1/28",
+          "37/70",
+          "1/28"
+        ],
+        [
+          "0",
+          "1/28",
+          "23/140"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "7/30",
+      "W2_squared": "1/15",
+      "a": "3/5",
+      "atom_masses": [
+        "1/5",
+        "3/5",
+        "1/5"
+      ],
+      "b": "1/3",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "19/120",
+          "1/24",
+          "0"
+        ],
+        [
+          "1/24",
+          "31/60",
+          "1/24"
+        ],
+        [
+          "0",
+          "1/24",
+          "19/120"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "87/320",
+      "W2_squared": "27/320",
+      "a": "3/5",
+      "atom_masses": [
+        "1/5",
+        "3/5",
+        "1/5"
+      ],
+      "b": "3/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "49/320",
+          "3/64",
+          "0"
+        ],
+        [
+          "3/64",
+          "81/160",
+          "3/64"
+        ],
+        [
+          "0",
+          "3/64",
+          "49/320"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "37/512",
+      "W2_squared": "5/512",
+      "a": "5/8",
+      "atom_masses": [
+        "3/16",
+        "5/8",
+        "3/16"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "11/64",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "19/32",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "11/64"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "33/392",
+      "W2_squared": "5/392",
+      "a": "5/8",
+      "atom_masses": [
+        "3/16",
+        "5/8",
+        "3/16"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "19/112",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "33/56",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "19/112"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "29/288",
+      "W2_squared": "5/288",
+      "a": "5/8",
+      "atom_masses": [
+        "3/16",
+        "5/8",
+        "3/16"
+      ],
+      "b": "1/6",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "1/6",
+          "1/48",
+          "0"
+        ],
+        [
+          "1/48",
+          "7/12",
+          "1/48"
+        ],
+        [
+          "0",
+          "1/48",
+          "1/6"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "1/8",
+      "W2_squared": "1/40",
+      "a": "5/8",
+      "atom_masses": [
+        "3/16",
+        "5/8",
+        "3/16"
+      ],
+      "b": "1/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "13/80",
+          "1/40",
+          "0"
+        ],
+        [
+          "1/40",
+          "23/40",
+          "1/40"
+        ],
+        [
+          "0",
+          "1/40",
+          "13/80"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "21/128",
+      "W2_squared": "5/128",
+      "a": "5/8",
+      "atom_masses": [
+        "3/16",
+        "5/8",
+        "3/16"
+      ],
+      "b": "1/4",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "5/32",
+          "1/32",
+          "0"
+        ],
+        [
+          "1/32",
+          "9/16",
+          "1/32"
+        ],
+        [
+          "0",
+          "1/32",
+          "5/32"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "19/98",
+      "W2_squared": "5/98",
+      "a": "5/8",
+      "atom_masses": [
+        "3/16",
+        "5/8",
+        "3/16"
+      ],
+      "b": "2/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "17/112",
+          "1/28",
+          "0"
+        ],
+        [
+          "1/28",
+          "31/56",
+          "1/28"
+        ],
+        [
+          "0",
+          "1/28",
+          "17/112"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "17/72",
+      "W2_squared": "5/72",
+      "a": "5/8",
+      "atom_masses": [
+        "3/16",
+        "5/8",
+        "3/16"
+      ],
+      "b": "1/3",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "7/48",
+          "1/24",
+          "0"
+        ],
+        [
+          "1/24",
+          "13/24",
+          "1/24"
+        ],
+        [
+          "0",
+          "1/24",
+          "7/48"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "7/96",
+      "W2_squared": "1/96",
+      "a": "2/3",
+      "atom_masses": [
+        "1/6",
+        "2/3",
+        "1/6"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "29/192",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "61/96",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "29/192"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "25/294",
+      "W2_squared": "2/147",
+      "a": "2/3",
+      "atom_masses": [
+        "1/6",
+        "2/3",
+        "1/6"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "25/168",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "53/84",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "25/168"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "11/108",
+      "W2_squared": "1/54",
+      "a": "2/3",
+      "atom_masses": [
+        "1/6",
+        "2/3",
+        "1/6"
+      ],
+      "b": "1/6",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "7/48",
+          "1/48",
+          "0"
+        ],
+        [
+          "1/48",
+          "5/8",
+          "1/48"
+        ],
+        [
+          "0",
+          "1/48",
+          "7/48"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "19/150",
+      "W2_squared": "2/75",
+      "a": "2/3",
+      "atom_masses": [
+        "1/6",
+        "2/3",
+        "1/6"
+      ],
+      "b": "1/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "17/120",
+          "1/40",
+          "0"
+        ],
+        [
+          "1/40",
+          "37/60",
+          "1/40"
+        ],
+        [
+          "0",
+          "1/40",
+          "17/120"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "1/6",
+      "W2_squared": "1/24",
+      "a": "2/3",
+      "atom_masses": [
+        "1/6",
+        "2/3",
+        "1/6"
+      ],
+      "b": "1/4",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "13/96",
+          "1/32",
+          "0"
+        ],
+        [
+          "1/32",
+          "29/48",
+          "1/32"
+        ],
+        [
+          "0",
+          "1/32",
+          "13/96"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "29/147",
+      "W2_squared": "8/147",
+      "a": "2/3",
+      "atom_masses": [
+        "1/6",
+        "2/3",
+        "1/6"
+      ],
+      "b": "2/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "11/84",
+          "1/28",
+          "0"
+        ],
+        [
+          "1/28",
+          "25/42",
+          "1/28"
+        ],
+        [
+          "0",
+          "1/28",
+          "11/84"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "33/448",
+      "W2_squared": "5/448",
+      "a": "5/7",
+      "atom_masses": [
+        "1/7",
+        "5/7",
+        "1/7"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "57/448",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "153/224",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "57/448"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "59/686",
+      "W2_squared": "5/343",
+      "a": "5/7",
+      "atom_masses": [
+        "1/7",
+        "5/7",
+        "1/7"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "1/8",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "19/28",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "1/8"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "13/126",
+      "W2_squared": "5/252",
+      "a": "5/7",
+      "atom_masses": [
+        "1/7",
+        "5/7",
+        "1/7"
+      ],
+      "b": "1/6",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "41/336",
+          "1/48",
+          "0"
+        ],
+        [
+          "1/48",
+          "113/168",
+          "1/48"
+        ],
+        [
+          "0",
+          "1/48",
+          "41/336"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "9/70",
+      "W2_squared": "1/35",
+      "a": "5/7",
+      "atom_masses": [
+        "1/7",
+        "5/7",
+        "1/7"
+      ],
+      "b": "1/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "33/280",
+          "1/40",
+          "0"
+        ],
+        [
+          "1/40",
+          "93/140",
+          "1/40"
+        ],
+        [
+          "0",
+          "1/40",
+          "33/280"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "19/112",
+      "W2_squared": "5/112",
+      "a": "5/7",
+      "atom_masses": [
+        "1/7",
+        "5/7",
+        "1/7"
+      ],
+      "b": "1/4",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "25/224",
+          "1/32",
+          "0"
+        ],
+        [
+          "1/32",
+          "73/112",
+          "1/32"
+        ],
+        [
+          "0",
+          "1/32",
+          "25/224"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "19/256",
+      "W2_squared": "3/256",
+      "a": "3/4",
+      "atom_masses": [
+        "1/8",
+        "3/4",
+        "1/8"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "7/64",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "23/32",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "7/64"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "17/196",
+      "W2_squared": "3/196",
+      "a": "3/4",
+      "atom_masses": [
+        "1/8",
+        "3/4",
+        "1/8"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "3/28",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "5/7",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "3/28"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "5/48",
+      "W2_squared": "1/48",
+      "a": "3/4",
+      "atom_masses": [
+        "1/8",
+        "3/4",
+        "1/8"
+      ],
+      "b": "1/6",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "5/48",
+          "1/48",
+          "0"
+        ],
+        [
+          "1/48",
+          "17/24",
+          "1/48"
+        ],
+        [
+          "0",
+          "1/48",
+          "5/48"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "13/100",
+      "W2_squared": "3/100",
+      "a": "3/4",
+      "atom_masses": [
+        "1/8",
+        "3/4",
+        "1/8"
+      ],
+      "b": "1/5",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "1/10",
+          "1/40",
+          "0"
+        ],
+        [
+          "1/40",
+          "7/10",
+          "1/40"
+        ],
+        [
+          "0",
+          "1/40",
+          "1/10"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "3/40",
+      "W2_squared": "1/80",
+      "a": "4/5",
+      "atom_masses": [
+        "1/10",
+        "4/5",
+        "1/10"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "27/320",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "123/160",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "27/320"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "43/490",
+      "W2_squared": "4/245",
+      "a": "4/5",
+      "atom_masses": [
+        "1/10",
+        "4/5",
+        "1/10"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "23/280",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "107/140",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "23/280"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "19/180",
+      "W2_squared": "1/45",
+      "a": "4/5",
+      "atom_masses": [
+        "1/10",
+        "4/5",
+        "1/10"
+      ],
+      "b": "1/6",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "19/240",
+          "1/48",
+          "0"
+        ],
+        [
+          "1/48",
+          "91/120",
+          "1/48"
+        ],
+        [
+          "0",
+          "1/48",
+          "19/240"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "29/384",
+      "W2_squared": "5/384",
+      "a": "5/6",
+      "atom_masses": [
+        "1/12",
+        "5/6",
+        "1/12"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "13/192",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "77/96",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "13/192"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "13/147",
+      "W2_squared": "5/294",
+      "a": "5/6",
+      "atom_masses": [
+        "1/12",
+        "5/6",
+        "1/12"
+      ],
+      "b": "1/7",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "11/168",
+          "1/56",
+          "0"
+        ],
+        [
+          "1/56",
+          "67/84",
+          "1/56"
+        ],
+        [
+          "0",
+          "1/56",
+          "11/168"
+        ]
+      ],
+      "vertices_enumerated": 7
+    },
+    {
+      "L2_map_difference_squared": "17/224",
+      "W2_squared": "3/224",
+      "a": "6/7",
+      "atom_masses": [
+        "1/14",
+        "6/7",
+        "1/14"
+      ],
+      "b": "1/8",
+      "checks_passed": true,
+      "even_p_values_certified": [
+        2,
+        4,
+        6
+      ],
+      "joint_matrix": [
+        [
+          "25/448",
+          "1/64",
+          "0"
+        ],
+        [
+          "1/64",
+          "185/224",
+          "1/64"
+        ],
+        [
+          "0",
+          "1/64",
+          "25/448"
+        ]
+      ],
+      "vertices_enumerated": 7
+    }
+  ],
+  "dimension_executed": 2,
+  "grid_definition": "distinct n/d, 2<=d<=8, 1<=n<d; all admissible ordered a,b",
+  "limitations": "Finite executable checks and explicit LP certificates. No Lean acceptance, all-real-parameter proof, real-p LP arithmetic, or higher-dimensional execution is claimed.",
+  "schema": "transport-sharpness-exact-arithmetic-v1",
+  "source": "uniform probability on [-1,1]^2; density 1/4 on the square and 0 outside",
+  "verified_starting_commit": "b1d6c20e2f02b484d09c5285e67d842b369f9df0"
+}

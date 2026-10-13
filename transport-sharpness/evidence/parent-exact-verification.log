@@ -1,0 +1,4 @@
+Verified exact-cases.json: sha256=2f288083786720d116f4c3d7861a0beacb2d514613d1a428489f06894a113d1b
+Verified regression-grid.json: sha256=15f82ecb6b22e40b7d61bb59f622fbc47b0d60c2efcc6e38bcd4fd1f151ecee7
+Verified exponent-regressions.json: sha256=6f5730a11fe514c6f60e16268bce61795d98fce616e1741e58a262ad2a5de267
+Passed 13 named fixtures, 100 rational-grid cases, 7 rejected inputs, and 48 exact Holder-constant violations.

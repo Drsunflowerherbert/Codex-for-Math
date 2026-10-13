@@ -1,0 +1,2864 @@
+{
+  "attempt": "20261013T020002583180Z",
+  "boundaries": {
+    "dependencyOleans": "trusted_pinned_cache",
+    "dependencySourceRebuild": "not_performed",
+    "hostRuntime": "trusted",
+    "independentKernel": "not_performed",
+    "measureTheoryBridge": "not_formalized",
+    "nativeMacMRS": "not_performed"
+  },
+  "compilerCommit": "797c613eb9b6d4ec95db23e3e00af9ac6657f24b",
+  "compilerMembers": {
+    "bin/lean": {
+      "bytes": 9024,
+      "sha256": "8fadc3ed92cc9decb94c96ee9c0876e91e03a3a5e69138f32114f02789e2766c"
+    },
+    "lib/lean/libInit_shared.so": {
+      "bytes": 6232,
+      "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+    },
+    "lib/lean/libleanshared.so": {
+      "bytes": 193479936,
+      "sha256": "8cc9858cc57c52015ba6dd948bdbf7f05926b9b5fcead69a964f0ad61ddd79dd"
+    },
+    "lib/lean/libleanshared_1.so": {
+      "bytes": 6232,
+      "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+    },
+    "lib/lean/libleanshared_2.so": {
+      "bytes": 6232,
+      "sha256": "6ce912e300ad305bb38a362404544602e2229d072b78d75b1dd71c637e453c2c"
+    }
+  },
+  "compilerVersion": "Lean (version 4.24.0, x86_64-unknown-linux-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "configuration": [
+    {
+      "bytes": 25,
+      "path": "lean-toolchain",
+      "sha256": "42779d67b81608af8a12aa4328d2ab47ca201925b3b2bd68369587b5340bb434"
+    },
+    {
+      "bytes": 300,
+      "path": "lakefile.toml",
+      "sha256": "90d34e0a63cc3a5c1112c054e8a063a2653807d47726991169682cf648bcf0b5"
+    },
+    {
+      "bytes": 3546,
+      "path": "lake-manifest.json",
+      "sha256": "5a9eddddf5194e64f6bcd0d8575a43948d13f110c2b2ada903efa22b1d7b47ad"
+    }
+  ],
+  "definitions": [
+    {
+      "axioms": [],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.Atom"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.Plan"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.mass"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.IsCoupling"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.cost"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.matching"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.sourcePoint"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.targetPoint"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.sqCost"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.projectedCost"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.commonSource"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.Admissible"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.mapSquared"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.pCost"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.projectedPCost"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.mapSize"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.targetDistance"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.ceiling"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definitionBodyMatching": "kernel_definitional_equality",
+      "status": "definition_value_matched_not_a_proof_of_the_predicate",
+      "target": "TransportSharpness.exponent"
+    }
+  ],
+  "finished": "2026-10-13T02:01:33.082860+00:00",
+  "invocation": {
+    "argv": [
+      "evidence/lean-review/verify.py",
+      "--lean",
+      "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+      "--lake",
+      "/workspace/Codex-for-Math/tangent-limit/.elan/bin/lake",
+      "--elan-home",
+      "/workspace/Codex-for-Math/tangent-limit/.elan",
+      "--toolkit",
+      "/workspace/transport-research/math-evidence"
+    ],
+    "guards": "explicit_require_not_assert",
+    "optimizationLevel": 0,
+    "pythonExecutable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3"
+  },
+  "lexicalSourceAudit": [
+    {
+      "path": "TransportSharpness/Finite.lean",
+      "status": "no_forbidden_code_tokens"
+    },
+    {
+      "path": "TransportSharpness/Obstruction.lean",
+      "status": "no_forbidden_code_tokens"
+    },
+    {
+      "path": "TransportSharpness.lean",
+      "status": "no_forbidden_code_tokens"
+    }
+  ],
+  "packages": [
+    {
+      "head": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+      "name": "mathlib",
+      "origin": "https://github.com/leanprover-community/mathlib4.git",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "dfd06ebfe8d0e8fa7faba9cb5e5a2e74e7bd2805",
+      "name": "plausible",
+      "origin": "https://github.com/leanprover-community/plausible",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "99657ad92e23804e279f77ea6dbdeebaa1317b98",
+      "name": "LeanSearchClient",
+      "origin": "https://github.com/leanprover-community/LeanSearchClient",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "d768126816be17600904726ca7976b185786e6b9",
+      "name": "importGraph",
+      "origin": "https://github.com/leanprover-community/import-graph",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "556caed0eadb7901e068131d1be208dd907d07a2",
+      "name": "proofwidgets",
+      "origin": "https://github.com/leanprover-community/ProofWidgets4",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "725ac8cd67acd70a7beaf47c3725e23484c1ef50",
+      "name": "aesop",
+      "origin": "https://github.com/leanprover-community/aesop",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "dea6a3361fa36d5a13f87333dc506ada582e025c",
+      "name": "Qq",
+      "origin": "https://github.com/leanprover-community/quote4",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "8da40b72fece29b7d3fe3d768bac4c8910ce9bee",
+      "name": "batteries",
+      "origin": "https://github.com/leanprover-community/batteries",
+      "trackedSourceClean": true
+    },
+    {
+      "head": "91c18fa62838ad0ab7384c03c9684d99d306e1da",
+      "name": "Cli",
+      "origin": "https://github.com/leanprover/lean4-cli",
+      "trackedSourceClean": true
+    }
+  ],
+  "phases": [
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--version"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.152444+00:00",
+      "name": "compiler-version",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/compiler-version.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 106,
+          "path": "evidence/lean-review/20261013T020002583180Z/compiler-version.stdout",
+          "sha256": "36c0bbaf090c97bc8217c6ff497ff9144fd83d9003f12cd505162b943aaaee77"
+        }
+      },
+      "started": "2026-10-13T02:00:03.086272+00:00"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--githash"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.215169+00:00",
+      "name": "compiler-commit",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/compiler-commit.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/compiler-commit.stdout",
+          "sha256": "67613f654eb78799d781efd2bd443e249842f1d20e08c153672e7822ae6850fa"
+        }
+      },
+      "started": "2026-10-13T02:00:03.152780+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/mathlib",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.225356+00:00",
+      "name": "package-mathlib-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-mathlib-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-mathlib-head.stdout",
+          "sha256": "cc49bfc965afbc1ef5877d1d1b12648323cb6d44f015d37593c63c2cd1d731c0"
+        }
+      },
+      "started": "2026-10-13T02:00:03.215616+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/mathlib",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.228726+00:00",
+      "name": "package-mathlib-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-mathlib-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 53,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-mathlib-origin.stdout",
+          "sha256": "03e534cb626b55a5210b43c74776926d0ef07ac36b774832c9934433ee3c9d4c"
+        }
+      },
+      "started": "2026-10-13T02:00:03.225653+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/mathlib",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.247844+00:00",
+      "name": "package-mathlib-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-mathlib-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-mathlib-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:00:03.229033+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/plausible",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.257251+00:00",
+      "name": "package-plausible-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-plausible-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-plausible-head.stdout",
+          "sha256": "5f4ae658966fdc18933fe008f0fa3170b7c00c9cbdb3dc61ae991accf4bab97f"
+        }
+      },
+      "started": "2026-10-13T02:00:03.248643+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/plausible",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.267307+00:00",
+      "name": "package-plausible-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-plausible-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 50,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-plausible-origin.stdout",
+          "sha256": "f9e157058f246ccb009bd17773f68233dd8dade976dbb829338d6c201cf8599f"
+        }
+      },
+      "started": "2026-10-13T02:00:03.257666+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/plausible",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.274537+00:00",
+      "name": "package-plausible-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-plausible-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-plausible-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:00:03.267849+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/LeanSearchClient",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.282068+00:00",
+      "name": "package-LeanSearchClient-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-LeanSearchClient-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-LeanSearchClient-head.stdout",
+          "sha256": "ee39bdbdf92107dc88a4ecc2220d30f32902373c6f0739c8492be44a294847a4"
+        }
+      },
+      "started": "2026-10-13T02:00:03.277677+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/LeanSearchClient",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.286236+00:00",
+      "name": "package-LeanSearchClient-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-LeanSearchClient-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 57,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-LeanSearchClient-origin.stdout",
+          "sha256": "619333dd697b0876afa6e558ee619ba42cc147c8ac9eb415d66d06cb3d13e196"
+        }
+      },
+      "started": "2026-10-13T02:00:03.282460+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/LeanSearchClient",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.291612+00:00",
+      "name": "package-LeanSearchClient-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-LeanSearchClient-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-LeanSearchClient-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:00:03.286742+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/importGraph",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.301835+00:00",
+      "name": "package-importGraph-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-importGraph-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-importGraph-head.stdout",
+          "sha256": "7f1b3a7459b33f77fb08847cc0be80357aa6fcfb8e846a3ffbdbb656fd08218b"
+        }
+      },
+      "started": "2026-10-13T02:00:03.292078+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/importGraph",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.307943+00:00",
+      "name": "package-importGraph-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-importGraph-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 53,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-importGraph-origin.stdout",
+          "sha256": "e1308c66f365e49e7b8c10bd874950ac425bcc14aefe9881baf03c4f65f25cf1"
+        }
+      },
+      "started": "2026-10-13T02:00:03.302727+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/importGraph",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.315571+00:00",
+      "name": "package-importGraph-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-importGraph-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-importGraph-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:00:03.310266+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/proofwidgets",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.323227+00:00",
+      "name": "package-proofwidgets-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-proofwidgets-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-proofwidgets-head.stdout",
+          "sha256": "a26e42b6270d4e50e6866efb9277ecf9d573be7d8f53baaac54b61c0a9e4c9b1"
+        }
+      },
+      "started": "2026-10-13T02:00:03.316094+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/proofwidgets",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.328151+00:00",
+      "name": "package-proofwidgets-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-proofwidgets-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 54,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-proofwidgets-origin.stdout",
+          "sha256": "d85a5cc11983798fb902072b68e0a279bae40189de64fe4ccaa3f969f8e7414c"
+        }
+      },
+      "started": "2026-10-13T02:00:03.323705+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/proofwidgets",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.332309+00:00",
+      "name": "package-proofwidgets-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-proofwidgets-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-proofwidgets-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:00:03.328670+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/aesop",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.335633+00:00",
+      "name": "package-aesop-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-aesop-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-aesop-head.stdout",
+          "sha256": "2ca5dc9099966d8b4d75f068570c8382e9b1743eb524d29dfd9c31f1b0357e68"
+        }
+      },
+      "started": "2026-10-13T02:00:03.332857+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/aesop",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.338948+00:00",
+      "name": "package-aesop-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-aesop-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 46,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-aesop-origin.stdout",
+          "sha256": "007ad2ffb6cd1115e54eb06162448481b6e57a2b38a5721fe9306aa73f377411"
+        }
+      },
+      "started": "2026-10-13T02:00:03.336488+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/aesop",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.343175+00:00",
+      "name": "package-aesop-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-aesop-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-aesop-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:00:03.339484+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/Qq",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.347081+00:00",
+      "name": "package-Qq-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-Qq-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-Qq-head.stdout",
+          "sha256": "b5c55d876bdd5b8f9c8f5c80247fd9a311a44e6be1ca930dff8fdac32763b3ef"
+        }
+      },
+      "started": "2026-10-13T02:00:03.343732+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/Qq",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.351372+00:00",
+      "name": "package-Qq-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-Qq-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 47,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-Qq-origin.stdout",
+          "sha256": "0edd7e60b5329aa479be59427897c3d131a4bed960e8a4faf0aaa6f3c176fe66"
+        }
+      },
+      "started": "2026-10-13T02:00:03.347664+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/Qq",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.355472+00:00",
+      "name": "package-Qq-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-Qq-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-Qq-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:00:03.352192+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/batteries",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.361801+00:00",
+      "name": "package-batteries-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-batteries-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-batteries-head.stdout",
+          "sha256": "7a7d1966b230b609b900348919460f414800232a58d0caa685a23bf7a41c2e73"
+        }
+      },
+      "started": "2026-10-13T02:00:03.356131+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/batteries",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.365478+00:00",
+      "name": "package-batteries-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-batteries-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 50,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-batteries-origin.stdout",
+          "sha256": "163e9977daaaf557a111a95edb87a473e4dabdef0c7ae0451d8d76ba9a6f1232"
+        }
+      },
+      "started": "2026-10-13T02:00:03.362850+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/batteries",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.369705+00:00",
+      "name": "package-batteries-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-batteries-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-batteries-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:00:03.366161+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/Cli",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.372922+00:00",
+      "name": "package-Cli-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-Cli-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-Cli-head.stdout",
+          "sha256": "8c4dfa759e1faa2e44986cb2e0a7df5843e2e4ed9587cc8c6db5730c7a517f02"
+        }
+      },
+      "started": "2026-10-13T02:00:03.370430+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/Cli",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.376055+00:00",
+      "name": "package-Cli-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-Cli-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 40,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-Cli-origin.stdout",
+          "sha256": "c0c02deff1a1a3fba1f471202c853e7ca2bda0764a0f6b3e95d0bf5e90c4ca79"
+        }
+      },
+      "started": "2026-10-13T02:00:03.373588+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/Cli",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:03.380217+00:00",
+      "name": "package-Cli-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-Cli-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/package-Cli-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:00:03.377159+00:00"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.elan/bin/lake",
+        "env",
+        "/usr/bin/printenv",
+        "LEAN_PATH"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:04.778996+00:00",
+      "name": "dependency-search-path",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/dependency-search-path.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 933,
+          "path": "evidence/lean-review/20261013T020002583180Z/dependency-search-path.stdout",
+          "sha256": "8603bd3f02608eca9c8f0ec991859ce1a9824374af63ff024eb2f6c186441c05"
+        }
+      },
+      "started": "2026-10-13T02:00:03.381030+00:00"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--json",
+        "--root=/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs",
+        "-o",
+        "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/cache/EvidenceHarness.olean",
+        "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs/EvidenceHarness.lean"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/cache:/workspace/Codex-for-Math/tangent-limit/.lake/packages/Cli/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean"
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:07.644125+00:00",
+      "name": "compile-EvidenceHarness",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/compile-EvidenceHarness.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/compile-EvidenceHarness.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:00:04.787170+00:00"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--json",
+        "--root=/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs",
+        "-o",
+        "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/cache/TransportSharpness/Finite.olean",
+        "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs/TransportSharpness/Finite.lean"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/cache:/workspace/Codex-for-Math/tangent-limit/.lake/packages/Cli/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean"
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:20.867295+00:00",
+      "name": "compile-TransportSharpness.Finite",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/compile-TransportSharpness.Finite.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/compile-TransportSharpness.Finite.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:00:07.647153+00:00"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--json",
+        "--root=/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs",
+        "-o",
+        "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/cache/TransportSharpness/Obstruction.olean",
+        "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs/TransportSharpness/Obstruction.lean"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/cache:/workspace/Codex-for-Math/tangent-limit/.lake/packages/Cli/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean"
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:28.678619+00:00",
+      "name": "compile-TransportSharpness.Obstruction",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/compile-TransportSharpness.Obstruction.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/compile-TransportSharpness.Obstruction.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:00:20.870310+00:00"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--json",
+        "--root=/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs",
+        "-o",
+        "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/cache/TransportSharpness.olean",
+        "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs/TransportSharpness.lean"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/cache:/workspace/Codex-for-Math/tangent-limit/.lake/packages/Cli/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean"
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:00:35.336708+00:00",
+      "name": "compile-TransportSharpness",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/compile-TransportSharpness.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/compile-TransportSharpness.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:00:28.680418+00:00"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--json",
+        "--root=/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs",
+        "-o",
+        "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/cache/ReviewHarness.olean",
+        "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs/ReviewHarness.lean"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/cache:/workspace/Codex-for-Math/tangent-limit/.lake/packages/Cli/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean"
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:03.767969+00:00",
+      "name": "compile-ReviewHarness",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/compile-ReviewHarness.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 43079,
+          "path": "evidence/lean-review/20261013T020002583180Z/compile-ReviewHarness.stdout",
+          "sha256": "1fca3ee00bc5e33c9c91aa15c6941f2a1fcf46ea9ab3fe1285448cbc790ab1c5"
+        }
+      },
+      "started": "2026-10-13T02:00:35.338360+00:00"
+    },
+    {
+      "argv": [
+        "/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/bin/lean",
+        "--json",
+        "--root=/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs",
+        "-o",
+        "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/cache/Replay.olean",
+        "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs/Replay.lean"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/inputs",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": "/workspace/transport-research/transport-sharpness/.cache/lean-review/20261013T020002583180Z/cache:/workspace/Codex-for-Math/tangent-limit/.lake/packages/Cli/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/batteries/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/Qq/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/aesop/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/proofwidgets/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/importGraph/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/plausible/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.lake/packages/mathlib/.lake/build/lib/lean:/workspace/Codex-for-Math/tangent-limit/.cache/onboarding/lean-dist/lean-4.24.0-linux/lib/lean"
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:32.579409+00:00",
+      "name": "compile-Replay",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/compile-Replay.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 2405,
+          "path": "evidence/lean-review/20261013T020002583180Z/compile-Replay.stdout",
+          "sha256": "d5a521e37009a536341b03ae6a4c18958ff8a2bfa08558a04cc45e74d1ef348d"
+        }
+      },
+      "started": "2026-10-13T02:01:03.775275+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/mathlib",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:32.929698+00:00",
+      "name": "post-package-mathlib-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-mathlib-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-mathlib-head.stdout",
+          "sha256": "cc49bfc965afbc1ef5877d1d1b12648323cb6d44f015d37593c63c2cd1d731c0"
+        }
+      },
+      "started": "2026-10-13T02:01:32.921469+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/mathlib",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:32.934928+00:00",
+      "name": "post-package-mathlib-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-mathlib-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 53,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-mathlib-origin.stdout",
+          "sha256": "03e534cb626b55a5210b43c74776926d0ef07ac36b774832c9934433ee3c9d4c"
+        }
+      },
+      "started": "2026-10-13T02:01:32.931246+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/mathlib",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:32.950514+00:00",
+      "name": "post-package-mathlib-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-mathlib-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-mathlib-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:01:32.935999+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/plausible",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:32.955383+00:00",
+      "name": "post-package-plausible-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-plausible-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-plausible-head.stdout",
+          "sha256": "5f4ae658966fdc18933fe008f0fa3170b7c00c9cbdb3dc61ae991accf4bab97f"
+        }
+      },
+      "started": "2026-10-13T02:01:32.951966+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/plausible",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:32.959676+00:00",
+      "name": "post-package-plausible-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-plausible-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 50,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-plausible-origin.stdout",
+          "sha256": "f9e157058f246ccb009bd17773f68233dd8dade976dbb829338d6c201cf8599f"
+        }
+      },
+      "started": "2026-10-13T02:01:32.956541+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/plausible",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:32.966319+00:00",
+      "name": "post-package-plausible-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-plausible-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-plausible-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:01:32.962155+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/LeanSearchClient",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:32.970942+00:00",
+      "name": "post-package-LeanSearchClient-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-LeanSearchClient-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-LeanSearchClient-head.stdout",
+          "sha256": "ee39bdbdf92107dc88a4ecc2220d30f32902373c6f0739c8492be44a294847a4"
+        }
+      },
+      "started": "2026-10-13T02:01:32.967582+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/LeanSearchClient",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:32.977052+00:00",
+      "name": "post-package-LeanSearchClient-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-LeanSearchClient-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 57,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-LeanSearchClient-origin.stdout",
+          "sha256": "619333dd697b0876afa6e558ee619ba42cc147c8ac9eb415d66d06cb3d13e196"
+        }
+      },
+      "started": "2026-10-13T02:01:32.973097+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/LeanSearchClient",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:32.981997+00:00",
+      "name": "post-package-LeanSearchClient-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-LeanSearchClient-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-LeanSearchClient-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:01:32.978232+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/importGraph",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:32.986634+00:00",
+      "name": "post-package-importGraph-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-importGraph-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-importGraph-head.stdout",
+          "sha256": "7f1b3a7459b33f77fb08847cc0be80357aa6fcfb8e846a3ffbdbb656fd08218b"
+        }
+      },
+      "started": "2026-10-13T02:01:32.983751+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/importGraph",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:32.991007+00:00",
+      "name": "post-package-importGraph-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-importGraph-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 53,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-importGraph-origin.stdout",
+          "sha256": "e1308c66f365e49e7b8c10bd874950ac425bcc14aefe9881baf03c4f65f25cf1"
+        }
+      },
+      "started": "2026-10-13T02:01:32.988209+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/importGraph",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:32.995856+00:00",
+      "name": "post-package-importGraph-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-importGraph-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-importGraph-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:01:32.992550+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/proofwidgets",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:33.000655+00:00",
+      "name": "post-package-proofwidgets-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-proofwidgets-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-proofwidgets-head.stdout",
+          "sha256": "a26e42b6270d4e50e6866efb9277ecf9d573be7d8f53baaac54b61c0a9e4c9b1"
+        }
+      },
+      "started": "2026-10-13T02:01:32.997500+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/proofwidgets",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:33.004945+00:00",
+      "name": "post-package-proofwidgets-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-proofwidgets-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 54,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-proofwidgets-origin.stdout",
+          "sha256": "d85a5cc11983798fb902072b68e0a279bae40189de64fe4ccaa3f969f8e7414c"
+        }
+      },
+      "started": "2026-10-13T02:01:33.002087+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/proofwidgets",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:33.009675+00:00",
+      "name": "post-package-proofwidgets-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-proofwidgets-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-proofwidgets-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:01:33.006428+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/aesop",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:33.014820+00:00",
+      "name": "post-package-aesop-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-aesop-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-aesop-head.stdout",
+          "sha256": "2ca5dc9099966d8b4d75f068570c8382e9b1743eb524d29dfd9c31f1b0357e68"
+        }
+      },
+      "started": "2026-10-13T02:01:33.011647+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/aesop",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:33.019557+00:00",
+      "name": "post-package-aesop-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-aesop-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 46,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-aesop-origin.stdout",
+          "sha256": "007ad2ffb6cd1115e54eb06162448481b6e57a2b38a5721fe9306aa73f377411"
+        }
+      },
+      "started": "2026-10-13T02:01:33.016177+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/aesop",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:33.026942+00:00",
+      "name": "post-package-aesop-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-aesop-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-aesop-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:01:33.022729+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/Qq",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:33.031987+00:00",
+      "name": "post-package-Qq-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-Qq-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-Qq-head.stdout",
+          "sha256": "b5c55d876bdd5b8f9c8f5c80247fd9a311a44e6be1ca930dff8fdac32763b3ef"
+        }
+      },
+      "started": "2026-10-13T02:01:33.028826+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/Qq",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:33.036926+00:00",
+      "name": "post-package-Qq-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-Qq-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 47,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-Qq-origin.stdout",
+          "sha256": "0edd7e60b5329aa479be59427897c3d131a4bed960e8a4faf0aaa6f3c176fe66"
+        }
+      },
+      "started": "2026-10-13T02:01:33.033406+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/Qq",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:33.041982+00:00",
+      "name": "post-package-Qq-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-Qq-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-Qq-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:01:33.038201+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/batteries",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:33.047011+00:00",
+      "name": "post-package-batteries-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-batteries-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-batteries-head.stdout",
+          "sha256": "7a7d1966b230b609b900348919460f414800232a58d0caa685a23bf7a41c2e73"
+        }
+      },
+      "started": "2026-10-13T02:01:33.044087+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/batteries",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:33.051725+00:00",
+      "name": "post-package-batteries-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-batteries-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 50,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-batteries-origin.stdout",
+          "sha256": "163e9977daaaf557a111a95edb87a473e4dabdef0c7ae0451d8d76ba9a6f1232"
+        }
+      },
+      "started": "2026-10-13T02:01:33.048948+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/batteries",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:33.059114+00:00",
+      "name": "post-package-batteries-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-batteries-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-batteries-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:01:33.053790+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/Cli",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:33.063750+00:00",
+      "name": "post-package-Cli-head",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-Cli-head.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 41,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-Cli-head.stdout",
+          "sha256": "8c4dfa759e1faa2e44986cb2e0a7df5843e2e4ed9587cc8c6db5730c7a517f02"
+        }
+      },
+      "started": "2026-10-13T02:01:33.060741+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "config",
+        "--get",
+        "remote.origin.url"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/Cli",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:33.068162+00:00",
+      "name": "post-package-Cli-origin",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-Cli-origin.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 40,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-Cli-origin.stdout",
+          "sha256": "c0c02deff1a1a3fba1f471202c853e7ca2bda0764a0f6b3e95d0bf5e90c4ca79"
+        }
+      },
+      "started": "2026-10-13T02:01:33.065365+00:00"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/workspace/transport-research/transport-sharpness/.lake/packages/Cli",
+      "environment": {
+        "ELAN_HOME": "/workspace/Codex-for-Math/tangent-limit/.elan",
+        "LEAN_PATH": null
+      },
+      "exitCode": 0,
+      "finished": "2026-10-13T02:01:33.076057+00:00",
+      "name": "post-package-Cli-clean",
+      "outputs": {
+        "stderr": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-Cli-clean.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "evidence/lean-review/20261013T020002583180Z/post-package-Cli-clean.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "started": "2026-10-13T02:01:33.070671+00:00"
+    }
+  ],
+  "postflight": "sources_config_helper_runner_compiler_products_outputs_packages_unchanged",
+  "products": [
+    {
+      "archived": false,
+      "bytes": 721080,
+      "module": "EvidenceHarness",
+      "sha256": "fda685d1a89f4054f857619837226a3c8e33dc236ed369409f847d32f0a23456"
+    },
+    {
+      "archived": false,
+      "bytes": 950456,
+      "module": "TransportSharpness.Finite",
+      "sha256": "ace92c0199e921d6e8af657f6da456eb8bdece823fa0ee195b74253c148c1a13"
+    },
+    {
+      "archived": false,
+      "bytes": 436840,
+      "module": "TransportSharpness.Obstruction",
+      "sha256": "334de50d9e6d394fb32822ffc9b8579a0dca55f279817c759d2dbf2b8ba089f4"
+    },
+    {
+      "archived": false,
+      "bytes": 38608,
+      "module": "TransportSharpness",
+      "sha256": "df157bb72119599a17929a81f0cea711ceed4d475e79502bcbce92ef56673695"
+    },
+    {
+      "archived": false,
+      "bytes": 39016,
+      "module": "ReviewHarness",
+      "sha256": "93053cb3bb08c2b40941476151fc280e1b1f1bdd5c50cdcbf903918de72e4fef"
+    },
+    {
+      "archived": false,
+      "bytes": 38936,
+      "module": "Replay",
+      "sha256": "588da720d5b2ef90d06382821042bc668141eccad46022c8464625038f2a41ab"
+    }
+  ],
+  "replay": {
+    "baseModules": [
+      "Mathlib",
+      "EvidenceHarness"
+    ],
+    "independentKernelReplay": "not_performed",
+    "replayedDeclarations": 75,
+    "scope": "local_declaration_closure_same_kernel_imported_dependency_baseline",
+    "targets": [
+      "TransportSharpness.Atom",
+      "TransportSharpness.Plan",
+      "TransportSharpness.mass",
+      "TransportSharpness.IsCoupling",
+      "TransportSharpness.cost",
+      "TransportSharpness.matching",
+      "TransportSharpness.sourcePoint",
+      "TransportSharpness.targetPoint",
+      "TransportSharpness.sqCost",
+      "TransportSharpness.projectedCost",
+      "TransportSharpness.commonSource",
+      "TransportSharpness.Admissible",
+      "TransportSharpness.mapSquared",
+      "TransportSharpness.pCost",
+      "TransportSharpness.projectedPCost",
+      "TransportSharpness.mapSize",
+      "TransportSharpness.targetDistance",
+      "TransportSharpness.ceiling",
+      "TransportSharpness.exponent",
+      "TransportSharpness.finite_dual_lower_bound",
+      "TransportSharpness.mass_positive",
+      "TransportSharpness.mass_sum",
+      "TransportSharpness.matching_coupling",
+      "TransportSharpness.sqCost_ge_projected",
+      "TransportSharpness.quadratic_lower_bound",
+      "TransportSharpness.matching_quadratic_cost",
+      "TransportSharpness.quadratic_minimum",
+      "TransportSharpness.commonSource_coupling",
+      "TransportSharpness.commonSource_cost",
+      "TransportSharpness.commonSource_strictly_costlier",
+      "TransportSharpness.shrinking_admissible",
+      "TransportSharpness.shrinking_costs",
+      "TransportSharpness.square_rpow_half",
+      "TransportSharpness.pCost_ge_projected",
+      "TransportSharpness.pCost_matching",
+      "TransportSharpness.pCost_minimum",
+      "TransportSharpness.exponent_negative",
+      "TransportSharpness.targetDistance_positive",
+      "TransportSharpness.targetDistance_power",
+      "TransportSharpness.targetDistance_shrinking",
+      "TransportSharpness.mapSize_shrinking_lower",
+      "TransportSharpness.shrinking_ratio_lower",
+      "TransportSharpness.ceiling_values",
+      "TransportSharpness.shrinking_exceeds_constant",
+      "TransportSharpness.W2_exceeds_constant",
+      "TransportSharpness.mapSize_fixed_lower",
+      "TransportSharpness.fixed_ratio_lower",
+      "TransportSharpness.fixed_mass_exceeds_constant"
+    ]
+  },
+  "runner": {
+    "bytes": 15352,
+    "sha256": "cd90ddc83f0b78b8ded197166f2b699200d713def91d7366d5d10c1795f0603a"
+  },
+  "schema": "scoped-independent-lean-review/v1",
+  "sourcePostflight": "original_and_copies_unchanged",
+  "sources": [
+    {
+      "bytes": 6371,
+      "module": "EvidenceHarness",
+      "original": "/workspace/transport-research/math-evidence/lean/EvidenceHarness.lean",
+      "sha256": "bb71282fcb088498a9c40b0460694f1663e8f3a145fc15469050b8ade2f390dc"
+    },
+    {
+      "bytes": 6786,
+      "module": "TransportSharpness.Finite",
+      "original": "/workspace/transport-research/transport-sharpness/TransportSharpness/Finite.lean",
+      "sha256": "2ca131e39877bb4ec3d0803de4b9bdfa21d7d2e2935f9777db0408aa3cadf18a"
+    },
+    {
+      "bytes": 6665,
+      "module": "TransportSharpness.Obstruction",
+      "original": "/workspace/transport-research/transport-sharpness/TransportSharpness/Obstruction.lean",
+      "sha256": "ebb8d5361a6dce5ebc7e436d59750a58581030ca1d351e420f9280dcf83df0e1"
+    },
+    {
+      "bytes": 71,
+      "module": "TransportSharpness",
+      "original": "/workspace/transport-research/transport-sharpness/TransportSharpness.lean",
+      "sha256": "f59964ae611a8e54f0d226c01bfbe5688ff4410de7c42cdc6da77e109f23d811"
+    },
+    {
+      "bytes": 8603,
+      "module": "ReviewHarness",
+      "original": "/workspace/transport-research/transport-sharpness/scripts/ReviewHarness.lean",
+      "sha256": "6ebc84014b1cd2b08dfc1817e996efe769adddd5a824343252a4b313c1bc52ad"
+    },
+    {
+      "bytes": 2153,
+      "module": "Replay",
+      "original": "/workspace/transport-research/transport-sharpness/scripts/Replay.lean",
+      "sha256": "9971da32d70cf9b9ae6efaa19ca216d9b96d1253039d91315fbe603946d3c93f"
+    }
+  ],
+  "started": "2026-10-13T02:00:02.583584+00:00",
+  "status": "passed",
+  "targets": [
+    {
+      "axioms": [],
+      "declarationKind": "definition",
+      "observedType": "Type",
+      "target": "TransportSharpness.Atom",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "Type",
+      "target": "TransportSharpness.Plan",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "\u211d \u2192 Atom \u2192 \u211d",
+      "target": "TransportSharpness.mass",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "\u211d \u2192 Plan \u2192 Prop",
+      "target": "TransportSharpness.IsCoupling",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "Plan \u2192 Plan \u2192 \u211d",
+      "target": "TransportSharpness.cost",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "\u211d \u2192 Plan",
+      "target": "TransportSharpness.matching",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "Atom \u2192 \u211d \u00d7 \u211d",
+      "target": "TransportSharpness.sourcePoint",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "\u211d \u2192 Atom \u2192 \u211d \u00d7 \u211d",
+      "target": "TransportSharpness.targetPoint",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "\u211d \u2192 Atom \u2192 Atom \u2192 \u211d",
+      "target": "TransportSharpness.sqCost",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "\u211d \u2192 Atom \u2192 \u211d",
+      "target": "TransportSharpness.projectedCost",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "\u211d \u2192 \u211d \u2192 Plan",
+      "target": "TransportSharpness.commonSource",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "\u211d \u2192 \u211d \u2192 Prop",
+      "target": "TransportSharpness.Admissible",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "\u211d \u2192 \u211d \u2192 \u211d",
+      "target": "TransportSharpness.mapSquared",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "\u211d \u2192 \u211d \u2192 Atom \u2192 Atom \u2192 \u211d",
+      "target": "TransportSharpness.pCost",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "\u211d \u2192 \u211d \u2192 Atom \u2192 \u211d",
+      "target": "TransportSharpness.projectedPCost",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "\u211d \u2192 \u211d \u2192 \u211d",
+      "target": "TransportSharpness.mapSize",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "\u211d \u2192 \u211d \u2192 \u211d \u2192 \u211d",
+      "target": "TransportSharpness.targetDistance",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "\u211d \u2192 \u211d",
+      "target": "TransportSharpness.ceiling",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "definition",
+      "observedType": "\u211d \u2192 \u211d \u2192 \u211d",
+      "target": "TransportSharpness.exponent",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a : \u211d) (\u03c0 c : Plan) (u v : Atom \u2192 \u211d),\n  IsCoupling a \u03c0 \u2192 (\u2200 (i j : Atom), u i + v j \u2264 c i j) \u2192 \u2211 i, mass a i * u i + \u2211 j, mass a j * v j \u2264 cost c \u03c0",
+      "target": "TransportSharpness.finite_dual_lower_bound",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a : \u211d), 0 < a \u2192 a < 1 \u2192 \u2200 (i : Atom), 0 < mass a i",
+      "target": "TransportSharpness.mass_positive",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a : \u211d), \u2211 i, mass a i = 1",
+      "target": "TransportSharpness.mass_sum",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a : \u211d), 0 \u2264 a \u2192 a \u2264 1 \u2192 IsCoupling a (matching a)",
+      "target": "TransportSharpness.matching_coupling",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (b : \u211d) (i j : Atom), projectedCost b j \u2264 sqCost b i j",
+      "target": "TransportSharpness.sqCost_ge_projected",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a b : \u211d) (\u03c0 : Plan), IsCoupling a \u03c0 \u2192 a * b ^ 2 \u2264 cost (sqCost b) \u03c0",
+      "target": "TransportSharpness.quadratic_lower_bound",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a b : \u211d), cost (sqCost b) (matching a) = a * b ^ 2",
+      "target": "TransportSharpness.matching_quadratic_cost",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a b : \u211d),\n  0 \u2264 a \u2192\n    a \u2264 1 \u2192\n      IsCoupling a (matching a) \u2227\n        cost (sqCost b) (matching a) = a * b ^ 2 \u2227 \u2200 (\u03c0 : Plan), IsCoupling a \u03c0 \u2192 a * b ^ 2 \u2264 cost (sqCost b) \u03c0",
+      "target": "TransportSharpness.quadratic_minimum",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a b : \u211d), Admissible a b \u2192 IsCoupling a (commonSource a b)",
+      "target": "TransportSharpness.commonSource_coupling",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a b : \u211d), cost (sqCost b) (commonSource a b) = mapSquared a b",
+      "target": "TransportSharpness.commonSource_cost",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a b : \u211d), 0 < b \u2192 cost (sqCost b) (matching a) < cost (sqCost b) (commonSource a b)",
+      "target": "TransportSharpness.commonSource_strictly_costlier",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a : \u211d), 0 < a \u2192 a < 1 / 2 \u2192 Admissible a (a / 2)",
+      "target": "TransportSharpness.shrinking_admissible",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a : \u211d), cost (sqCost (a / 2)) (matching a) = a ^ 3 / 4 \u2227 mapSquared a (a / 2) = (a + a ^ 3) / 4",
+      "target": "TransportSharpness.shrinking_costs",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (b p : \u211d), 0 \u2264 b \u2192 (b ^ 2) ^ (p / 2) = b ^ p",
+      "target": "TransportSharpness.square_rpow_half",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (b p : \u211d), 0 \u2264 b \u2192 0 < p \u2192 \u2200 (i j : Atom), projectedPCost b p j \u2264 pCost b p i j",
+      "target": "TransportSharpness.pCost_ge_projected",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a b p : \u211d), 0 \u2264 b \u2192 0 < p \u2192 cost (pCost b p) (matching a) = a * b ^ p",
+      "target": "TransportSharpness.pCost_matching",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a b p : \u211d),\n  0 \u2264 a \u2192\n    a \u2264 1 \u2192\n      0 \u2264 b \u2192\n        0 < p \u2192\n          IsCoupling a (matching a) \u2227\n            cost (pCost b p) (matching a) = a * b ^ p \u2227 \u2200 (\u03c0 : Plan), IsCoupling a \u03c0 \u2192 a * b ^ p \u2264 cost (pCost b p) \u03c0",
+      "target": "TransportSharpness.pCost_minimum",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (p \u03b1 : \u211d), 0 < p \u2192 ceiling p < \u03b1 \u2192 exponent p \u03b1 < 0",
+      "target": "TransportSharpness.exponent_negative",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a b p : \u211d), 0 < a \u2192 0 < b \u2192 0 < targetDistance a b p",
+      "target": "TransportSharpness.targetDistance_positive",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a b p : \u211d), 0 < a \u2192 0 \u2264 b \u2192 p \u2260 0 \u2192 targetDistance a b p ^ p = a * b ^ p",
+      "target": "TransportSharpness.targetDistance_power",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a p : \u211d), 0 < a \u2192 targetDistance a (a / 2) p = a ^ (1 + 1 / p) / 2",
+      "target": "TransportSharpness.targetDistance_shrinking",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a : \u211d), 0 < a \u2192 \u221aa / 2 \u2264 mapSize a (a / 2)",
+      "target": "TransportSharpness.mapSize_shrinking_lower",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a p \u03b1 : \u211d), 0 < a \u2192 2 ^ \u03b1 / 2 * a ^ exponent p \u03b1 \u2264 mapSize a (a / 2) / targetDistance a (a / 2) p ^ \u03b1",
+      "target": "TransportSharpness.shrinking_ratio_lower",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "ceiling 2 = 1 / 3 \u2227 ceiling 1 = 1 / 4",
+      "target": "TransportSharpness.ceiling_values",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (p \u03b1 C : \u211d),\n  1 \u2264 p \u2192\n    ceiling p < \u03b1 \u2192\n      \u2203 a, 0 < a \u2227 a < 1 / 2 \u2227 Admissible a (a / 2) \u2227 C * targetDistance a (a / 2) p ^ \u03b1 < mapSize a (a / 2)",
+      "target": "TransportSharpness.shrinking_exceeds_constant",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (\u03b1 C : \u211d),\n  1 / 3 < \u03b1 \u2192 \u2203 a, 0 < a \u2227 a < 1 / 2 \u2227 Admissible a (a / 2) \u2227 C * targetDistance a (a / 2) 2 ^ \u03b1 < mapSize a (a / 2)",
+      "target": "TransportSharpness.W2_exceeds_constant",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a b : \u211d), 0 \u2264 a \u2192 0 < b \u2192 \u221ab / \u221a2 \u2264 mapSize a b",
+      "target": "TransportSharpness.mapSize_fixed_lower",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a b p \u03b1 : \u211d), 0 < a \u2192 0 < b \u2192 (a ^ (1 / p)) ^ (-\u03b1) / \u221a2 * b ^ (1 / 2 - \u03b1) \u2264 mapSize a b / targetDistance a b p ^ \u03b1",
+      "target": "TransportSharpness.fixed_ratio_lower",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarationKind": "theorem",
+      "observedType": "\u2200 (a p \u03b1 C : \u211d), 0 < a \u2192 a < 1 \u2192 1 / 2 < \u03b1 \u2192 \u2203 b, Admissible a b \u2227 C * targetDistance a b p ^ \u03b1 < mapSize a b",
+      "target": "TransportSharpness.fixed_mass_exceeds_constant",
+      "targetKernelReplay": "separate_phase_required",
+      "typeMatching": "closed_whole_type_kernel_definitional_equality"
+    }
+  ]
+}
