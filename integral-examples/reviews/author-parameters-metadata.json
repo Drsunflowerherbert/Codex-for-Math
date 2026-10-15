@@ -1,0 +1,184 @@
+[
+  {
+    "id": "E05",
+    "title": "Two finite iterated sums and no signed double integral",
+    "file": "examples/E05-signed-fubini-counting.md",
+    "topics": [
+      "Lebesgue integration",
+      "product measure",
+      "double series",
+      "counterexamples"
+    ],
+    "prerequisites": [
+      "counting measure",
+      "positive and negative parts",
+      "Tonelli theorem",
+      "Fubini theorem"
+    ],
+    "techniques": [
+      "absolute-value test",
+      "explicit row and column sums",
+      "rectangular partial sums",
+      "counting-measure",
+      "signed-fubini",
+      "absolute-integrability",
+      "order-of-summation",
+      "counterexample"
+    ],
+    "measure": "Counting measure on N x N, N={1,2,...}",
+    "hypotheses": [
+      "a(n,m)=1 if m=n, -1 if m=n+1, and 0 otherwise",
+      "The product space is sigma-finite; a is measurable"
+    ],
+    "result": "Row-first sum 0; column-first sum 1; integral of |a| infinite; signed product integral undefined",
+    "source_ids": [
+      "hunter-measure"
+    ]
+  },
+  {
+    "id": "E06",
+    "title": "A logarithm from a positive double integral",
+    "file": "examples/E06-frullani-parameter-integral.md",
+    "topics": [
+      "Lebesgue integration",
+      "parameter integrals",
+      "Frullani integral"
+    ],
+    "prerequisites": [
+      "Tonelli theorem",
+      "dominated convergence theorem",
+      "mean value theorem"
+    ],
+    "techniques": [
+      "positive kernel representation",
+      "local derivative domination",
+      "endpoint estimates",
+      "frullani",
+      "tonelli",
+      "parameter-integral",
+      "differentiate-under-integral",
+      "cancellation"
+    ],
+    "measure": "Lebesgue measure on (0,infinity) and the finite parameter interval",
+    "hypotheses": [
+      "a>0 and b>0"
+    ],
+    "result": "Integral_0^infinity (exp(-a*x)-exp(-b*x))/x dx = log(b/a); derivative with respect to b is 1/b",
+    "source_ids": [
+      "hunter-measure",
+      "conrad-diff"
+    ]
+  },
+  {
+    "id": "E14",
+    "title": "Lost integral mass: concentration, escape, and dilution",
+    "file": "examples/E14-concentration-escape-atlas.md",
+    "topics": [
+      "convergence theorems",
+      "uniform integrability",
+      "counterexamples"
+    ],
+    "prerequisites": [
+      "Lebesgue integration",
+      "convergence in measure",
+      "absolute continuity of integral",
+      "Fatou lemma"
+    ],
+    "techniques": [
+      "shrinking-set test",
+      "disjoint-support test",
+      "value-tail test",
+      "spatial tightness",
+      "truncation",
+      "dominated-convergence",
+      "uniform-integrability",
+      "concentration",
+      "escape-to-infinity",
+      "tightness",
+      "counterexample"
+    ],
+    "measure": "Lebesgue measure on (0,1) or R as specified",
+    "hypotheses": [
+      "f_n=n*1_(0,1/n) on (0,1)",
+      "h_n=1_(n,n+1) on R",
+      "r_n=(1/n)*1_(0,n) on R",
+      "Sufficient convergence conditions distinguish finite measure from infinite measure"
+    ],
+    "result": "All three sequences tend pointwise to 0 with integral 1; their distinct failures of domination, value-tail uniform integrability, or tightness are proved",
+    "source_ids": [
+      "hunter-measure"
+    ]
+  },
+  {
+    "id": "E15",
+    "title": "A parameter derivative misses a concentrating boundary layer",
+    "file": "examples/E15-differentiation-concentration.md",
+    "topics": [
+      "parameter integrals",
+      "differentiate under integral",
+      "counterexamples"
+    ],
+    "prerequisites": [
+      "one-sided derivative",
+      "dominated convergence theorem",
+      "absolute continuity of integral"
+    ],
+    "techniques": [
+      "explicit antiderivative",
+      "difference-quotient analysis",
+      "shrinking-interval obstruction",
+      "local derivative domination",
+      "differentiate-under-integral",
+      "boundary-layer",
+      "concentration",
+      "dominated-convergence",
+      "counterexample"
+    ],
+    "measure": "Lebesgue measure on (0,1)",
+    "hypotheses": [
+      "t>=0",
+      "f(t,x)=t^2/(x^2+t^2) for t>0, f(0,x)=0",
+      "x in (0,1)"
+    ],
+    "result": "I(t)=t*arctan(1/t) for t>0; right derivative I at 0 is pi/2; integral of pointwise right derivative is 0",
+    "source_ids": [
+      "hunter-measure",
+      "conrad-diff"
+    ]
+  },
+  {
+    "id": "E16",
+    "title": "An exponential kernel retrieves a boundary value",
+    "file": "examples/E16-exponential-approximate-identity.md",
+    "topics": [
+      "approximate identities",
+      "Lebesgue integration",
+      "convergence theorems"
+    ],
+    "prerequisites": [
+      "dominated convergence theorem",
+      "linear substitution",
+      "right continuity"
+    ],
+    "techniques": [
+      "rescaling",
+      "epsilon-and-tail split",
+      "first-moment error estimate",
+      "approximate-identity",
+      "dominated-convergence",
+      "boundary-value",
+      "error-bound",
+      "laplace-kernel"
+    ],
+    "measure": "Lebesgue measure on [0,infinity)",
+    "hypotheses": [
+      "g:[0,infinity)->R is bounded and Borel measurable",
+      "g is right-continuous at 0",
+      "For the optional L/n bound, |g(x)-g(0)|<=L*x for every x>=0"
+    ],
+    "result": "Integral_0^infinity n*exp(-n*x)*g(x) dx tends to g(0); error <= L/n under the stated global Lipschitz-at-zero bound",
+    "source_ids": [
+      "hunter-measure"
+    ]
+  }
+]

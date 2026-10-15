@@ -1,0 +1,20 @@
+{
+  "repository": "Drsunflowerherbert/Codex-for-Math",
+  "branch": "codex/integral-examples-2026-10-15",
+  "base_commit": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+  "fetched_utc_date": "2026-10-15",
+  "existing_remote_refs_at_fetch": {
+    "origin": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+    "origin/codex/contest-library-2026-10-13": "ef8032ed20f05fb100e95fc287eefb5d3e431543",
+    "origin/codex/evidence-hardening-2026-10-13": "c2fe44833ceb577595028549cecdda87986f303e",
+    "origin/codex/lp-certificates-2026-10-13": "032db09354d41b58c2e9211ed7e69024a3e74010",
+    "origin/codex/lp-paper-2026-10-13": "16075fc88d1cec51dc3c8f137bca3fe70c6f9520",
+    "origin/codex/lp-sparse-discovery-2026-10-13": "5f723174d9ac2703000f685c8cb5814b9713b466",
+    "origin/codex/research-2026-10-11": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+    "origin/codex/research-map-2026-10-13": "34e3e11e4c37109bfc06f4f195a62a2cf992c5b0",
+    "origin/codex/tangent-limit": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+    "origin/codex/transport-sharpness-2026-10-13": "fa5cd40c36daa5373c0234bda0b9d09a49595ce6"
+  },
+  "scope": "All added or changed paths must start with integral-examples/.",
+  "AGENTS_md": "No AGENTS.md found in workspace/repository or base commit; checked before authoring."
+}

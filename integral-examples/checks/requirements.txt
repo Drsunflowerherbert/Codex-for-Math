@@ -1,0 +1,3 @@
+# Versions used for the recorded concrete-identity checks.
+sympy==1.14.0
+mpmath==1.3.0

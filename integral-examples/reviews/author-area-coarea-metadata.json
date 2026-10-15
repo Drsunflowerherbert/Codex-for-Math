@@ -1,0 +1,128 @@
+[
+  {
+    "id": "E11",
+    "title": "A fold counts the image twice",
+    "file": "examples/E11-fold-area-multiplicity.md",
+    "topics": [
+      "Hausdorff integration",
+      "area formula",
+      "noninjective parametrizations",
+      "orientation"
+    ],
+    "prerequisites": [
+      "Lebesgue integration",
+      "Tonelli theorem",
+      "Jacobian matrices",
+      "normalized Hausdorff measure"
+    ],
+    "techniques": [
+      "count fibres",
+      "absolute Jacobian",
+      "weighted area formula",
+      "choose an injective sheet",
+      "area-formula",
+      "multiplicity",
+      "fold",
+      "noninjective-parametrization",
+      "unsigned-jacobian",
+      "orientation"
+    ],
+    "measure": "L2 on parameter rectangle; normalized H2=L2 on target plane; H0 counting measure",
+    "hypotheses": [
+      "A=[-1,1]x[0,1] is Borel",
+      "F(u,v)=(u^2,v) is Lipschitz on A",
+      "h(x,y)=x+y is continuous nonnegative on Q"
+    ],
+    "result": "H2(F(A))=1; integral_A J2F=2; integral_A (u^2+v)J2F=2; integral_Q (x+y)=1",
+    "source_ids": [
+      "simon-gmt"
+    ]
+  },
+  {
+    "id": "E12",
+    "title": "Coarea for squared distance, including the critical value",
+    "file": "examples/E12-radial-coarea-critical-value.md",
+    "topics": [
+      "Hausdorff integration",
+      "coarea formula",
+      "radial integration",
+      "critical values",
+      "singular weights",
+      "pushforward measures"
+    ],
+    "prerequisites": [
+      "nonnegative Lebesgue integration",
+      "gradients",
+      "arc length",
+      "normalized Hausdorff measure"
+    ],
+    "techniques": [
+      "describe level sets",
+      "coarea",
+      "divide on the regular part",
+      "check power integrability",
+      "level-sets",
+      "radial-integral",
+      "critical-value",
+      "singular-weight",
+      "pushforward-measure"
+    ],
+    "measure": "L2 on closed unit disk; normalized H1 arc length on level circles; L1 on target",
+    "hypotheses": [
+      "g(x,y)=x^2+y^2 is smooth and locally Lipschitz",
+      "phi:[0,1]->[0,infinity] is Borel",
+      "signed extension requires integral_0^1 |phi| finite"
+    ],
+    "result": "integral_D phi(g)=pi integral_0^1 phi; integral_D |gradient g|=4pi/3; integral_D |z|^(2a)=pi/(a+1) for a>-1 and infinity for a<=-1",
+    "source_ids": [
+      "simon-gmt"
+    ]
+  },
+  {
+    "id": "E13",
+    "title": "A singular map loses all its increase under differentiation",
+    "file": "examples/E13-cantor-singular-map.md",
+    "topics": [
+      "Cantor function",
+      "singular maps",
+      "area formula",
+      "absolute continuity",
+      "limit exchange",
+      "uniform integrability"
+    ],
+    "prerequisites": [
+      "Lebesgue null sets",
+      "uniform convergence",
+      "monotone functions",
+      "absolute continuity",
+      "dominated convergence"
+    ],
+    "techniques": [
+      "piecewise linear approximation",
+      "count fibres",
+      "concentration",
+      "test absolute continuity",
+      "rule out an integrable dominator",
+      "singular-map",
+      "cantor-function",
+      "absolute-continuity",
+      "area-formula-failure",
+      "dominated-convergence-failure",
+      "uniform-integrability",
+      "derivative-limit",
+      "multiplicity"
+    ],
+    "measure": "L1=normalized H1 on domain and target lines; H0 counting measure for fibres",
+    "hypotheses": [
+      "C_n are specified absolutely continuous piecewise linear Cantor approximants",
+      "C is their continuous monotone uniform limit",
+      "C is not Lipschitz or absolutely continuous",
+      "undefined derivatives on the null Cantor set are assigned zero only as representatives"
+    ],
+    "result": "C'=0 almost everywhere but C(1)-C(0)=1; integral N(C,y)dy=1; q_n=(3/2)^n 1_Kn tends to zero almost everywhere with integral 1 and fails domination and uniform integrability",
+    "source_ids": [
+      "hunter-measure",
+      "simon-gmt"
+    ]
+  }
+]

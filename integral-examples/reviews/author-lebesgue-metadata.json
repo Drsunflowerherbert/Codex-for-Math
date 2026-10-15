@@ -1,0 +1,122 @@
+[
+  {
+    "id": "E01",
+    "title": "Change the order to create the missing derivative",
+    "file": "examples/E01-triangular-region.md",
+    "topics": [
+      "Lebesgue integration",
+      "measurable regions",
+      "iterated integrals"
+    ],
+    "prerequisites": [
+      "Borel measurability",
+      "one-variable substitution",
+      "Fubini theorem"
+    ],
+    "techniques": [
+      "region-sections",
+      "Fubini",
+      "Tonelli",
+      "indicator-extension",
+      "order-selection",
+      "power-series"
+    ],
+    "measure": "L^2 on the plane; L^1 on each coordinate",
+    "hypotheses": "D={0<x<y<1}; F=1_D exp(y^2) is Borel and 0<=F<=e 1_(0,1)^2.",
+    "result": "Integral over D of exp(y^2) equals (e-1)/2.",
+    "source_ids": [
+      "hunter-measure"
+    ]
+  },
+  {
+    "id": "E02",
+    "title": "A measurable region whose entire boundary has positive area",
+    "file": "examples/E02-positive-measure-boundary.md",
+    "topics": [
+      "Lebesgue integration",
+      "boundaries",
+      "Riemann integration",
+      "fat Cantor sets"
+    ],
+    "prerequisites": [
+      "countable additivity",
+      "continuity from above",
+      "product measure",
+      "Darboux sums"
+    ],
+    "techniques": [
+      "fat-Cantor-set",
+      "positive-boundary-measure",
+      "explicit-series",
+      "continuity-from-above",
+      "Fubini",
+      "Riemann-versus-Lebesgue"
+    ],
+    "measure": "L^1 on [0,1]; L^2 on [0,1]^2",
+    "hypotheses": "At stage n remove 2^(n-1) middle intervals of length 4^(-n); C is the remaining closed intersection; E=C x [0,1].",
+    "result": "L^1(C)=1/2; boundary(E)=E; L^2(boundary(E))=1/2; integral_E 2y=1/2; the zero extension is not Riemann integrable.",
+    "source_ids": [
+      "hunter-measure"
+    ]
+  },
+  {
+    "id": "E03",
+    "title": "A null measurable set with one nonmeasurable section",
+    "file": "examples/E03-exceptional-sections.md",
+    "topics": [
+      "Lebesgue integration",
+      "exceptional sections",
+      "completed measures",
+      "nonmeasurable sets"
+    ],
+    "prerequisites": [
+      "completeness",
+      "Borel regularity",
+      "Fubini theorem",
+      "axiom of choice"
+    ],
+    "techniques": [
+      "exceptional-sections",
+      "completion",
+      "Borel-representative",
+      "null-envelope",
+      "Fubini",
+      "Vitali-set"
+    ],
+    "measure": "Complete L^2 jointly; complete L^1 on sections",
+    "hypotheses": "V subset [0,1] is non-Lebesgue measurable; E={0} x V. General proof assumes A is Lebesgue measurable in R^(m+n).",
+    "result": "E is planar measurable and null, but E_0=V is nonmeasurable; arbitrary Lebesgue-measurable sets have measurable sections almost everywhere.",
+    "source_ids": [
+      "hunter-measure"
+    ]
+  },
+  {
+    "id": "E04",
+    "title": "Two finite iterated integrals, but no signed Lebesgue integral",
+    "file": "examples/E04-signed-fubini-trap.md",
+    "topics": [
+      "Lebesgue integration",
+      "signed integrals",
+      "Fubini counterexamples"
+    ],
+    "prerequisites": [
+      "positive and negative parts",
+      "fundamental theorem of calculus",
+      "absolute integrability"
+    ],
+    "techniques": [
+      "signed-Fubini-failure",
+      "absolute-integrability",
+      "positive-negative-parts",
+      "dyadic-rectangles",
+      "cancellation",
+      "truncation-dependence"
+    ],
+    "measure": "L^2 on (0,1)^2; L^1 on each coordinate",
+    "hypotheses": "f(x,y)=(x^2-y^2)/(x^2+y^2)^2 on (0,1)^2; every one-variable section is continuous and integrable.",
+    "result": "Integrating y first gives pi/4; integrating x first gives -pi/4; both joint sign parts have infinite integral, so the signed Lebesgue integral is undefined.",
+    "source_ids": [
+      "hunter-measure"
+    ]
+  }
+]

@@ -1,0 +1,3420 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  11pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=25mm]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Concrete Lebesgue and Hausdorff Integral Applications},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Concrete Lebesgue and Hausdorff Integral Applications}
+\author{}
+\date{15 October 2026}
+
+\begin{document}
+\maketitle
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+\section{Concrete Lebesgue and Hausdorff integral
+applications}\label{start}
+
+A first collection of \textbf{16 fully worked examples}, written for an
+analysis student. Start with the \hyperref[problems]{problem index},
+then open the separate solution that you want. The examples favor
+explicit computations, stated hypotheses, and direct arguments
+explaining why the integration theorem applies.
+
+\begin{itemize}
+\tightlist
+\item
+  \hyperref[conventions]{Measures and theorem conventions}: normalized
+  Hausdorff measure, completed-product sections, signed integrability,
+  area and coarea.
+\item
+  \hyperref[problems]{Problem index}: no computed answers.
+\item
+  \hyperref[atlas]{Counterexample atlas}: precise failures and
+  sufficient conditions for exchanging sums, limits, derivatives, and
+  integrals.
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/pdf/integral-examples.pdf}{Full
+  worked collection, PDF} and
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/pdf/integral-examples.tex}{editable
+  LaTeX}.
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/pdf/guide.pdf}{Compact
+  guide, PDF} and
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/pdf/guide.tex}{LaTeX}.
+\item
+  \hyperref[bibliography]{Source references},
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/checks/source-references.json}{source
+  snapshot hashes}, and \hyperref[verification]{verification ledger}.
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/index.json}{Machine-readable
+  index} without results, and
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/metadata.json}{full
+  metadata} with hypotheses, results, and review status.
+\end{itemize}
+
+\subsection{Find a technique again}\label{find-a-technique-again}
+
+From the repository root, using Python 3 with its standard library:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/find\_examples.py }\AttributeTok{{-}{-}topic}\NormalTok{ coarea}
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/find\_examples.py }\AttributeTok{{-}{-}technique}\NormalTok{ multiplicity}
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/find\_examples.py }\AttributeTok{{-}{-}prerequisite}\NormalTok{ dominated}
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/find\_examples.py }\AttributeTok{{-}{-}text}\NormalTok{ concentration}
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/find\_examples.py }\AttributeTok{{-}{-}list{-}tags}
+\end{Highlighting}
+\end{Shaded}
+
+Filters are case-insensitive substring matches and combine with AND.
+They print titles, tags, and paths relative to
+\texttt{integral-\allowbreak{}examples/\allowbreak{}}. The \texttt{-\/-text} filter searches IDs,
+titles, paths, topics, prerequisites, and techniques; it does not search
+solution prose or recorded hypotheses/results. Add
+\texttt{-\/-solutions} to print the recorded result. The files remain
+ordinary Markdown and JSON; retrieval needs no hosted service.
+
+\subsection{How to study with the
+collection}\label{how-to-study-with-the-collection}
+
+For each problem, identify the function, its domain, the measure, and
+the integrability question before computing. In a region problem, write
+the indicator and determine its sections. For signed integrals, examine
+the absolute value or the positive and negative parts. For a
+parametrization, compute the Jacobian and count preimages before
+identifying the answer with an integral over the image. For a parameter
+limit, write the proposed majorant explicitly.
+
+E01--E06 cover Lebesgue integration and iterated integrals; E07--E13
+cover curves, surfaces, area, coarea, and singular maps; E14--E16 cover
+limit and derivative exchanges and approximate identities. Cross-links
+in the atlas make failure cases easy to retrieve alongside their
+positive criteria.
+
+\subsection{Reproduce the checks and
+PDFs}\label{reproduce-the-checks-and-pdfs}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/checks/check\_examples.py}
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/checks/check\_collection.py}
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/build.py}
+\end{Highlighting}
+\end{Shaded}
+
+The concrete identity checker uses SymPy and mpmath. The collection
+checker and retrieval command use only the Python standard library. The
+build uses Pandoc and pdfLaTeX. See
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/checks/requirements.txt}{checks/requirements.txt}
+for the versions actually used. The checked-in PDF and LaTeX need no
+build tools to read.
+
+Independent model reviewers audited every example; the ledger records
+the scope, findings, and revisions. Symbolic and numerical checks
+supplement those reviews and are \textbf{not proofs of analytic
+hypotheses}. No Lean verification or human peer review is claimed.
+General measure-theoretic theorems are cited prerequisites; this
+collection does not reprove all of measure theory.
+
+All collection changes are confined to \texttt{integral-\allowbreak{}examples/\allowbreak{}} on
+branch \texttt{codex/\allowbreak{}integral-\allowbreak{}examples-\allowbreak{}2026-\allowbreak{}10-\allowbreak{}15}, based on the
+integrated research commit
+\texttt{e4f337c3\allowbreak{}aa52ec4c\allowbreak{}3f2aab07\allowbreak{}8d7c91b3\allowbreak{}2ee0015f}. Other research
+branches are independent. The earlier paper was not used or
+reconstructed. No third-party problem collection or source PDF is
+reproduced, and no license is assigned here to the cited sources or to
+unrelated repository work.
+
+\section{Problem index --- without computed answers}\label{problems}
+
+Each entry links to a separate full solution. Read
+\hyperref[conventions]{CONVENTIONS.md} first for measure normalization
+and the exact role of almost-everywhere sections. The JSON index and
+retrieval command described in \hyperref[start]{README.md} support
+search by topic, prerequisite, and technique without printing answers by
+default.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0700}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3700}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3100}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ID
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Task
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Main prerequisites
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Technique to look for
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\hyperref[E01]{E01} & Integrate \(e^{y^2}\) over \(0<x<y<1\). &
+Measurability, Tonelli & Change order on a measurable region \\
+\hyperref[E02]{E02} & Construct a region whose boundary has positive
+area; integrate \(2y\) over it. & Countable additivity, Tonelli &
+Explicit removed-interval sums \\
+\hyperref[E03]{E03} & Can every section of a Lebesgue-measurable null
+set be integrated? Prove the correct general statement. & Completion,
+Fubini & Borel representative and null envelope \\
+\hyperref[E04]{E04} & Compare the iterated integrals of
+\((x^2-y^2)/(x^2+y^2)^2\) on \((0,1)^2\). & Signed integrals, Fubini &
+Check positive and negative parts first \\
+\hyperref[E05]{E05} & Sum an explicit signed matrix by rows and by
+columns. & Counting measure, series & Detect infinite absolute mass \\
+\hyperref[E06]{E06} & Evaluate and differentiate a Frullani parameter
+integral. & Tonelli, dominated convergence & Replace a quotient by a
+parameter integral \\
+\hyperref[E07]{E07} & Integrate the first coordinate along a parabola
+with respect to length. & Derivatives, area formula & Compute the speed
+and pull back the weight \\
+\hyperref[E08]{E08} & Integrate a coordinate square on a twice-traversed
+circle. & Curve area formula & Count multiplicity; distinguish
+circulation \\
+\hyperref[E09]{E09} & Integrate height on a paraboloid graph over the
+unit disk. & Gram determinant, polar coordinates & Derive the graph area
+factor \\
+\hyperref[E10]{E10} & Integrate a coordinate square over a sphere of
+radius \(R\). & Surface area formula & Handle chart seams and pole
+exceptions \\
+\hyperref[E11]{E11} & Apply weighted area to a folded square
+parametrization. & Jacobian, area formula & Compare source integral and
+image multiplicity \\
+\hyperref[E12]{E12} & Turn an integral on a disk into integrals over
+circular level sets. & Gradient, coarea & Account for a critical point
+before division \\
+\hyperref[E13]{E13} & Explain why the Cantor staircase violates a
+proposed derivative-area identity. & Cantor set, absolute continuity &
+Locate the failed Lipschitz hypothesis \\
+\hyperref[E14]{E14} & Track mass in concentration and escape examples
+when taking limits under integrals. & Pointwise convergence, DCT &
+Uniform integrability and spatial tightness \\
+\hyperref[E15]{E15} & Compare a parameter derivative with the integral
+of pointwise derivatives. & Difference quotients, DCT & Test local
+domination; distinguish derivative limits \\
+\hyperref[E16]{E16} & Recover a boundary value from exponential
+averages. & Substitution, DCT & Approximate identity and an explicit
+tail estimate \\
+\end{longtable}
+
+Suggested routes: E01--E06 for Lebesgue integration and iterated
+integrals; E07--E13 for geometric integration; E14--E16 for exchanges of
+limits, derivatives, and integrals. E03 and E04 are useful safeguards
+before generalizing a successful calculation. The
+\hyperref[atlas]{counterexample atlas} maps the safeguards to precise
+sufficient conditions and contains some outcome spoilers.
+
+\section{Measures, functions, and theorems used in this
+library}\label{conventions}
+
+The examples are applications for an analysis student. Their proofs are
+written out; the general integration theorems below are prerequisites,
+with sources in \hyperref[bibliography]{SOURCES.md}. A computation check
+verifies an identity, not the measurability or integrability hypotheses
+that justify it.
+
+\subsection{Functions and values}\label{functions-and-values}
+
+A function is a map with a specified domain, codomain, and rule. For
+example, \(f:(0,1)^2\to\mathbb R\) is a function, \(f(x,y)\) is its
+value at \((x,y)\), and \(f_x:y\mapsto f(x,y)\) is a section function.
+With a fixed integrand and measure, the integral is a number (or an
+allowed extended value), not another notation for the function. A
+parameter integral defines a new function, for example
+\(F:t\mapsto\int f_t\,d\mu\); \(F(t)\) is its value. When a section
+integral is defined only almost everywhere, a measurable version is
+chosen before integrating that version in the outer variable.
+
+\subsection{Lebesgue and counting
+measures}\label{lebesgue-and-counting-measures}
+
+\(\mathcal L^n\) denotes complete \(n\)-dimensional Lebesgue measure on
+\(\mathbb R^n\). A restricted integral \(\int_E f\,d\mathcal L^n\) means
+integration over the measurable set \(E\) with the restricted measure.
+For finite-valued \(f\) defined on all of \(\mathbb R^n\), it equals
+\(\int f\mathbf1_E\,d\mathcal L^n\). Counting measure on
+\(\mathbb N=\{1,2,\ldots\}\) turns integration into an explicit sum. The
+Lebesgue and countable counting measure factors used in the product
+theorems here are sigma-finite. This does not assert sigma-finiteness of
+\(\mathcal H^k\) on all of \(\mathbb R^n\) when \(k<n\); our curve and
+surface examples use finite-measure or countably covered restrictions.
+
+For real measurable \(f\), set \(f^+=\max(f,0)\) and \(f^-=\max(-f,0)\).
+A finite Lebesgue integral requires
+
+\[
+\int |f|\,d\mu=\int f^+\,d\mu+\int f^-\,d\mu<\infty.
+\]
+
+An extended signed integral is defined if at least one of the two terms
+is finite. If both are infinite, their difference is undefined. An
+improper limit or principal value must be named separately; its
+existence does not supply a signed Lebesgue integral.
+
+\subsection{Normalized Hausdorff
+measure}\label{normalized-hausdorff-measure}
+
+For an integer \(k\geq1\), let \(\omega_k=\mathcal L^k(B(0,1))\). We use
+
+\[
+\mathcal H^k(E)=\lim_{\delta\downarrow0}\inf\left\{
+\sum_{i=1}^{\infty}\omega_k\left(\frac{\operatorname{diam}U_i}{2}\right)^k:
+E\subseteq\bigcup_{i=1}^{\infty}U_i,\quad
+\operatorname{diam}U_i\leq\delta\right\}.
+\]
+
+\(\mathcal H^0\) is counting measure. This normalization makes
+\(\mathcal H^k\) agree with \(\mathcal L^k\) on every \(k\)-plane, using
+an isometry to identify that plane with \(\mathbb R^k\). Thus
+\(\mathcal H^1\) measures length and \(\mathcal H^2\) measures surface
+area. In particular \(\omega_1=2\) and \(\omega_2=\pi\). Some books omit
+the factor \(\omega_k/2^k\); their numerical values must be rescaled
+before using these examples. All Hausdorff integrals in this library use
+the convention in this paragraph.
+
+\subsection{Tonelli and Fubini, including
+completion}\label{tonelli-and-fubini-including-completion}
+
+For a nonnegative product-measurable function on sigma-finite measure
+spaces, Tonelli permits either order of integration, including the value
+\(+\infty\). For a signed or complex product-measurable function, Fubini
+applies if the absolute value has finite integral. It then gives finite
+section integrals almost everywhere and equality of the two iterated
+integrals with the product integral.
+
+The product of two complete Lebesgue sigma-algebras need not be
+complete. For \(\mathcal L^{p+q}\)-measurable sets or functions on
+\(\mathbb R^{p+q}\), use the completed-product versions: sections need
+be measurable only for almost every parameter. A Borel set has Borel
+sections at every parameter; an arbitrary Lebesgue-measurable set need
+not have measurable sections at every parameter. The outer integral uses
+a measurable representative of the almost-everywhere section-integral
+function. E03 proves this distinction directly with a null envelope. No
+claim about all sections is inferred from completeness.
+
+\subsection{Area with multiplicity}\label{area-with-multiplicity}
+
+For a Lipschitz map \(F:\mathbb R^m\to\mathbb R^n\) with \(m\leq n\),
+write
+
+\[
+J_mF(x)=\sqrt{\det(DF(x)^TDF(x))},\qquad
+N(F,A,z)=\#\{x\in A:F(x)=z\}.
+\]
+
+The derivative and Jacobian exist almost everywhere; set the Jacobian to
+zero at the exceptional points where the derivative does not exist. For
+a measurable domain \(A\) and nonnegative Borel weight \(h\) on the
+source, the weighted area formula is
+
+\[
+\int_A h(x)J_mF(x)\,d\mathcal L^m(x)
+=\int_{\mathbb R^n}\left(\sum_{x\in A\cap F^{-1}(\{z\})}h(x)\right)
+\,d\mathcal H^m(z).
+\]
+
+The sum is an extended nonnegative sum. With \(h=1\) it counts
+multiplicity. With a nonnegative Borel \(w\) and \(h=w\circ F\) it
+becomes \(w(z)N(F,A,z)\), with the nonnegative-integration convention
+\(0\cdot\infty=0\). An injective parametrization therefore computes the
+geometric scalar integral once. If multiplicity is \(q\) almost
+everywhere, the parameter integral counts it \(q\) times. For signed
+weights require finite absolute integral with this multiplicity. A map
+on a bounded domain that is Lipschitz there can be extended to apply the
+formula; the geometric parametrizations to which we apply area are also
+Lipschitz on a suitable containing compact box. The Cantor staircase is
+an explicitly excluded counterexample.
+
+For a graph \(F(u)=(u,g(u))\) with a scalar \(C^1\) function \(g\),
+\(J_mF=\sqrt{1+|\nabla g|^2}\). This factor is derived in the graph
+example.
+
+\subsection{Coarea and division by a
+Jacobian}\label{coarea-and-division-by-a-jacobian}
+
+For a Lipschitz map \(G:\mathbb R^n\to\mathbb R^m\), \(n\geq m\), the
+coarea Jacobian is
+
+\[
+J_mG(x)=\sqrt{\det(DG(x)DG(x)^T)}.
+\]
+
+For nonnegative Borel \(h\), coarea says
+
+\[
+\int_{\mathbb R^n}h(x)J_mG(x)\,d\mathcal L^n(x)
+=\int_{\mathbb R^m}\left(\int_{G^{-1}(\{t\})}h(x)
+\,d\mathcal H^{n-m}(x)\right)\,d\mathcal L^m(t).
+\]
+
+Fiber statements and inner integrals have their usual almost-everywhere
+meaning. Here \(m=1\) gives \(J_1G=|\nabla G|\). To recover an
+unweighted volume integral, division by \(J_mG\) is legitimate only on
+its positive set. Any contribution from its zero set must be handled
+separately. E12 identifies and disposes of its critical point
+explicitly. E13 shows why a singular continuous map cannot be
+substituted into a Lipschitz area formula.
+
+\subsection{Scalar integration and
+orientation}\label{scalar-integration-and-orientation}
+
+\(\int_S w\,d\mathcal H^k\) has no orientation. A scalar curve
+parametrization uses speed \(|\gamma'(t)|\). A vector circulation uses
+\(\int F(\gamma(t))\cdot\gamma'(t)\,dt\); reversing traversal changes
+its sign. Flux through an oriented surface is
+\(\int_S F\cdot\nu\,d\mathcal H^{n-1}\) with a chosen unit normal
+\(\nu\). Changing \(\nu\) changes flux. Neither a tangent vector nor a
+normal vector is part of Hausdorff measure itself.
+
+\subsection{Convergence and
+differentiation}\label{convergence-and-differentiation}
+
+The version of monotone convergence used here concerns nonnegative
+increasing measurable functions. Dominated convergence concerns
+measurable functions and requires almost-everywhere convergence and one
+integrable majorant for the entire sequence. Pointwise convergence,
+boundedness of each individual function, or a uniform bound on the
+integrals alone is insufficient. E14 gives concentration and escape
+examples with explicit sufficient repairs. E15 states and proves a local
+domination criterion for differentiating an integral. E16 explains how
+concentration can instead be used deliberately as an approximate
+identity.
+
+\section{E01 --- Change the order to create the missing
+derivative}\label{E01}
+
+\subsection{Problem}\label{problem}
+
+Let
+
+\[
+D=\{(x,y)\in\mathbb R^2:0<x<y<1\}.
+\]
+
+Compute \(\int_D e^{y^2}\,d\mathcal L^2(x,y)\) without finding an
+antiderivative of \(y\mapsto e^{y^2}\).
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses}
+
+The measure is two-dimensional Lebesgue measure \(\mathcal L^2\); the
+one-dimensional integrals below use \(\mathcal L^1\). Define the
+function on the whole plane by
+
+\[
+F(x,y)=\mathbf 1_D(x,y)e^{y^2}.
+\]
+
+Here \(F\) is a function, whereas \(F(x,y)\) is its value at the point
+\((x,y)\). The region \(D\) is open and hence Borel measurable. The
+function \(F\) is Borel measurable, is nonnegative, and satisfies
+\(0\leq F\leq e\mathbf 1_{(0,1)^2}\). Consequently
+\(\int_{\mathbb R^2}|F|\,d\mathcal L^2\leq e<\infty\) before any
+interchange is made.
+
+\subsection{Solution}\label{solution}
+
+\textbf{1. Translate the region into sections.} Fix \(y\in(0,1)\). The
+permitted values of \(x\) are exactly \(0<x<y\), so the horizontal
+section has length \(y\). Fix \(x\in(0,1)\) instead. The permitted
+values of \(y\) are \(x<y<1\). Thus the two descriptions are
+
+\[
+D=\{(x,y):0<y<1,\ 0<x<y\}
+ =\{(x,y):0<x<1,\ x<y<1\}.
+\]
+
+These are descriptions of the same set, not a rule for swapping the
+symbols \(dx\) and \(dy\) while keeping the bounds unchanged.
+
+\textbf{2. Integrate in the useful direction.} Fubini's theorem,
+justified by the absolute-integrability bound above, gives
+
+\[
+\begin{aligned}
+\int_D e^{y^2}\,d\mathcal L^2(x,y)
+&=\int_0^1\left(\int_0^y e^{y^2}\,dx\right)dy\\
+&=\int_0^1 y e^{y^2}\,dy.
+\end{aligned}
+\]
+
+In the inner integral, \(y\) is fixed, so \(e^{y^2}\) is constant as a
+function of \(x\). Multiplying that value by the section length produces
+the factor \(y\).
+
+\textbf{3. Finish with a one-variable substitution.} Put \(u=y^2\), so
+\(du=2y\,dy\). Then
+
+\[
+\int_0^1 y e^{y^2}\,dy
+=\frac12\int_0^1e^u\,du
+=\boxed{\frac{e-1}{2}}.
+\]
+
+Equivalently, this also evaluates the nested expression
+
+\[
+\int_0^1\left(\int_x^1 e^{y^2}\,dy\right)dx
+=\frac{e-1}{2}.
+\]
+
+The inner integral in this last expression is perfectly well-defined;
+lacking an elementary antiderivative does not make a function
+nonintegrable.
+
+\textbf{4. A sum check.} Uniform convergence of the exponential power
+series on \([0,1]\) permits termwise integration here and gives
+
+\[
+\int_0^1 y e^{y^2}\,dy
+=\sum_{k=0}^{\infty}\frac{1}{k!}\int_0^1y^{2k+1}\,dy
+=\sum_{k=0}^{\infty}\frac{1}{2(k+1)k!}
+=\frac12\sum_{j=1}^{\infty}\frac1{j!}.
+\]
+
+The last series is \((e-1)/2\). Alternatively, the nonnegative partial
+sums and monotone convergence justify this same termwise calculation.
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies}
+
+Both factor measures are \(\sigma\)-finite. The region indicator makes
+the varying domain into a measurable function on a fixed product space.
+The bound \(|F|\leq e\mathbf 1_{(0,1)^2}\) verifies Fubini's
+absolute-integrability hypothesis independently of the answer. Because
+\(F\) is nonnegative, Tonelli also allows either order before finiteness
+is known. Every section in this example is Borel measurable; the weaker
+almost-everywhere assertion for arbitrary Lebesgue-measurable functions
+is discussed in E03.
+
+\subsection{Pitfalls}\label{pitfalls}
+
+\begin{itemize}
+\tightlist
+\item
+  Keeping \(x<y<1\) as the inner \(x\)-bounds is meaningless: the bounds
+  must describe the variable being integrated.
+\item
+  The integral \(\int_D e^{y^2}\,d\mathcal L^2\) integrates a function
+  over a set. It does not integrate the set or identify a function with
+  one of its values.
+\item
+  Replacing strict inequalities by non-strict ones is harmless here
+  because the added line segments have \(\mathcal L^2\)-measure zero.
+  E02 explains why such a boundary argument needs verification for a
+  general region.
+\end{itemize}
+
+\subsection{Reusable technique}\label{reusable-technique}
+
+\begingroup\small\raggedright Tags: \texttt{region-\allowbreak{}sections}, \texttt{Fubini}, \texttt{Tonelli},
+\texttt{indicator-\allowbreak{}extension}, \texttt{order-\allowbreak{}selection},
+\texttt{power-\allowbreak{}series}.\par\endgroup
+
+When an inner primitive looks unhelpful, write both section descriptions
+explicitly. Integrating in the other direction can supply the derivative
+factor needed for a substitution. First verify measurability and
+nonnegativity or absolute integrability.
+
+\subsection{Sources}\label{sources}
+
+\begin{itemize}
+\tightlist
+\item
+  John K. Hunter,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf}{\emph{Measure
+  Theory}}, Theorem 5.18 (Fubini), printed p.~61; Theorem 4.6 (monotone
+  convergence). Source ID: \texttt{hunter-\allowbreak{}measure}. The region,
+  computation, and sum check above are worked out directly.
+\end{itemize}
+
+\section{E02 --- A measurable region whose entire boundary has positive
+area}\label{E02}
+
+\subsection{Problem}\label{problem-1}
+
+Construct a closed set \(C\subset[0,1]\) with empty interior and
+\(\mathcal L^1(C)=1/2\). For \(E=C\times[0,1]\), determine its boundary
+and compute
+
+\[
+\int_E 2y\,d\mathcal L^2(x,y).
+\]
+
+Explain why simply discarding the boundary gives the wrong answer and
+why the zero extension of this integrand is not Riemann integrable on
+\([0,1]^2\).
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses-1}
+
+All measures are Lebesgue measures \(\mathcal L^1\) and
+\(\mathcal L^2\). Start with \(C_0=[0,1]\). At stage \(n\geq1\), remove
+from the middle of each of the \(2^{n-1}\) closed intervals in
+\(C_{n-1}\) one open interval of length \(4^{-n}\). Let \(C_n\) be the
+remaining union of \(2^n\) closed intervals and put
+
+\[
+C=\bigcap_{n=0}^{\infty}C_n.
+\]
+
+This is the Smith--Volterra construction specified by these exact
+lengths. The sets and integrands are explicit except for the infinite
+intersection defining \(C\); no nonmeasurable choice is involved.
+
+\subsection{Solution}\label{solution-1}
+
+\textbf{1. Check that every removal fits.} All component intervals of
+\(C_n\) have equal length
+
+\[
+\ell_n=2^{-n-1}+2^{-2n-1}.
+\]
+
+For \(n=0\) this is \(1\). If the formula holds at stage \(n-1\), the
+next component length is
+
+\[
+\frac{\ell_{n-1}-4^{-n}}2
+=2^{-n-1}+2^{-2n-1}>0.
+\]
+
+In particular the removed middle interval is strictly shorter than its
+parent, so the construction is possible at every stage.
+
+\textbf{2. Compute the measure by an explicit sum.} Removed intervals
+from different stages are disjoint. Their total length through stage
+\(n\) is
+
+\[
+\sum_{k=1}^{n}2^{k-1}4^{-k}
+=\frac12\sum_{k=1}^{n}2^{-k}
+=\frac12(1-2^{-n}).
+\]
+
+Therefore
+
+\[
+\mathcal L^1(C_n)=\frac12+2^{-n-1},\qquad
+\mathcal L^1(C)=\lim_{n\to\infty}\mathcal L^1(C_n)=\frac12.
+\]
+
+The limit follows from continuity from above of a measure, since \(C_n\)
+decreases and \(\mathcal L^1(C_0)=1<\infty\).
+
+\textbf{3. Prove the interior is empty.} Suppose \(C\) contained a
+nondegenerate interval \(J\). For every \(n\), the connected set \(J\)
+would lie in one component interval of \(C_n\), because distinct
+components are separated by a removed open interval. Hence the length of
+\(J\) would be at most \(\ell_n\) for every \(n\). But \(\ell_n\to0\), a
+contradiction. Since \(C\) is closed and has empty interior, its
+complement is dense in \(\mathbb R\).
+
+\textbf{4. Find the boundary of \(E\).} The set \(E=C\times[0,1]\) is
+closed. It has empty interior: every open ball about a point of \(E\)
+contains a point whose first coordinate lies outside \(C\). Thus
+
+\[
+\partial E=\overline E\setminus E^{\circ}=E,
+\qquad \mathcal L^2(\partial E)=\mathcal L^2(E)=\frac12.
+\]
+
+The last equality uses the measurable-rectangle formula
+\(\mathcal L^2(C\times[0,1])=\mathcal L^1(C)\mathcal L^1([0,1])\).
+
+\textbf{5. Integrate.} Extend the integrand to the square as
+\(F(x,y)=2y\mathbf 1_C(x)\). It is Borel measurable and
+\(0\leq F\leq2\), so Fubini applies:
+
+\[
+\begin{aligned}
+\int_E2y\,d\mathcal L^2(x,y)
+&=\int_0^1\mathbf 1_C(x)\left(\int_0^1 2y\,dy\right)dx\\
+&=\int_0^1\mathbf 1_C(x)\,dx
+=\boxed{\frac12}.
+\end{aligned}
+\]
+
+Deleting the boundary would leave the empty set
+\(E\setminus\partial E\), whose integral is \(0\), not \(1/2\).
+
+\textbf{6. Compare with Riemann integration directly.} Take any
+rectangular partition of \([0,1]^2\). Every subrectangle of positive
+width contains a point whose first coordinate is outside \(C\). Since
+\(F\geq0\), its infimum on each such rectangle is \(0\). Every lower
+Darboux sum is therefore \(0\). Every upper Darboux step function is at
+least \(F\), so its integral, equal to the corresponding upper sum, is
+at least \(\int F\,d\mathcal L^2=1/2\). Upper and lower sums cannot
+approach a common value. Thus \(F\) is not Riemann integrable on the
+square, although it is bounded and Lebesgue integrable.
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies-1}
+
+Closedness establishes Borel measurability. Continuity from above needs
+the finite measure of the initial set; that hypothesis was checked. For
+the integral, the bounded Borel function \(F\) on a finite-measure
+square is absolutely integrable, so Fubini applies. No assumption that
+the boundary is null is required by Lebesgue integration.
+
+\subsection{Pitfalls}\label{pitfalls-1}
+
+\begin{itemize}
+\tightlist
+\item
+  ``Boundary'' does not imply ``measure zero.'' Here the entire
+  positive-area set is its boundary.
+\item
+  Empty interior does not imply zero measure.
+\item
+  A bounded measurable function need not be Riemann integrable. The
+  direct Darboux argument identifies the actual obstruction in this
+  example.
+\item
+  The stage-\(n\) removal length \(4^{-n}\) is the length of
+  \textbf{each} of \(2^{n-1}\) gaps, not their combined length.
+\end{itemize}
+
+\subsection{Reusable technique}\label{reusable-technique-1}
+
+\begingroup\small\raggedright Tags: \texttt{fat-\allowbreak{}Cantor-\allowbreak{}set}, \texttt{positive-\allowbreak{}boundary-\allowbreak{}measure},
+\texttt{explicit-\allowbreak{}series}, \texttt{continuity-\allowbreak{}from-\allowbreak{}above},
+\texttt{Fubini}, \texttt{Riemann-\allowbreak{}versus-\allowbreak{}Lebesgue}.\par\endgroup
+
+For a complicated closed region, calculate removed measure with a
+disjoint sum, check interior separately, and integrate through an
+indicator. Treat a proposed boundary deletion as a measure claim that
+needs proof.
+
+\subsection{Sources}\label{sources-1}
+
+\begin{itemize}
+\tightlist
+\item
+  John K. Hunter,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf}{\emph{Measure
+  Theory}}, Proposition 1.12 (continuity of measures), Theorem 5.14
+  (product measure), and Theorem 5.18 (Fubini). Source ID:
+  \texttt{hunter-\allowbreak{}measure}. The construction, interval-length formula,
+  boundary proof, and Darboux argument are supplied here.
+\end{itemize}
+
+\section{E03 --- A null measurable set with one nonmeasurable
+section}\label{E03}
+
+\subsection{Problem}\label{problem-2}
+
+Find a Lebesgue-measurable set \(E\subset\mathbb R^2\) for which the
+vertical section
+
+\[
+E_x=\{y\in\mathbb R:(x,y)\in E\}
+\]
+
+is not Lebesgue measurable for one value of \(x\). Reconcile this with
+Fubini's theorem, and prove the correct almost-everywhere statement for
+sections of arbitrary Lebesgue-measurable sets.
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses-2}
+
+Use complete Lebesgue measures \(\mathcal L^1\) and \(\mathcal L^2\).
+Choose a non-Lebesgue-measurable set \(V\subset[0,1]\) and define
+
+\[
+E=\{0\}\times V.
+\]
+
+Such a \(V\) exists under the usual axiom of choice. For completeness,
+choose one representative from each equivalence class in \([0,1]\) under
+\(s\sim t\) when \(s-t\in\mathbb Q\). The translates \(V+q\), for
+\(q\in\mathbb Q\cap[-1,1]\), are disjoint, cover \([0,1]\), and lie in
+\([-1,2]\). If \(V\) were measurable with measure zero, their countable
+union could not cover \([0,1]\). If it had positive measure, countably
+many disjoint translates would have infinite measure inside \([-1,2]\).
+These two alternatives prove nonmeasurability.
+
+\subsection{Solution}\label{solution-2}
+
+\textbf{1. Joint measurability does hold.} The set \(E\) lies in the
+Borel set \(N=\{0\}\times[0,1]\). For every \(\varepsilon>0\),
+
+\[
+N\subset(-\varepsilon,\varepsilon)\times[0,1],
+\qquad \mathcal L^2(N)\leq2\varepsilon.
+\]
+
+Hence \(\mathcal L^2(N)=0\). Completeness of \(\mathcal L^2\) implies
+that its subset \(E\) is Lebesgue measurable and has measure zero. Thus
+the function \(\mathbf 1_E\) is Lebesgue measurable and belongs to
+\(L^1(\mathbb R^2)\), with integral \(0\).
+
+\textbf{2. Inspect each section.} At \(x=0\), the section is \(E_0=V\),
+which is not Lebesgue measurable. For every \(x\ne0\),
+\(E_x=\varnothing\), so its measure and the integral of its indicator
+are \(0\). In particular
+
+\[
+y\longmapsto\mathbf 1_E(0,y)=\mathbf 1_V(y)
+\]
+
+is a nonmeasurable section function. One must not write its Lebesgue
+integral as though it were defined.
+
+For comparison, every horizontal section is either \(\{0\}\) or
+\(\varnothing\), so it is measurable and has measure zero. In this
+direction the section-measure function is identically \(0\), even though
+deciding which of the two section sets occurs depends on membership in
+\(V\).
+
+\textbf{3. Interpret the iterated integral correctly.} On the
+full-measure set \(\mathbb R\setminus\{0\}\) the vertical inner integral
+exists and equals \(0\). Extend that outer integrand by the value \(0\)
+at the exceptional point. Its integral is \(0\), agreeing with
+\(\int\mathbf 1_E\,d\mathcal L^2=0\). This is an extension of an
+almost-everywhere defined inner integral; it is not an assertion that
+the original inner integral existed at \(x=0\).
+
+\textbf{4. Prove the general section statement.} Let
+\(A\subset\mathbb R^{m+n}\) be Lebesgue measurable. Borel regularity and
+completion provide Borel sets \(B,N\subset\mathbb R^{m+n}\) such that
+
+\[
+A\mathbin{\triangle}B\subset N,
+\qquad \mathcal L^{m+n}(N)=0.
+\]
+
+Here \(\triangle\) denotes symmetric difference. For every
+\(x\in\mathbb R^m\), the sets \(B_x\) and \(N_x\) are Borel subsets of
+\(\mathbb R^n\): the section is the preimage under the continuous map
+\(y\mapsto(x,y)\). Since \(\mathbf 1_N\in L^1\), Fubini applied to this
+Borel function gives
+
+\[
+\int_{\mathbb R^m}\mathcal L^n(N_x)\,d\mathcal L^m(x)=0.
+\]
+
+Its nonnegative integrand is therefore zero outside a measurable
+\(\mathcal L^m\)-null set \(Z\). For \(x\notin Z\),
+
+\[
+A_x\mathbin{\triangle}B_x\subset N_x,
+\qquad \mathcal L^n(N_x)=0.
+\]
+
+Completeness of \(\mathcal L^n\) now implies that \(A_x\) is Lebesgue
+measurable and has the same measure as \(B_x\). Thus \textbf{vertical
+sections are Lebesgue measurable for almost every \(x\)}. Interchanging
+the coordinate blocks proves the corresponding horizontal assertion.
+This argument does not prove measurability at parameters in \(Z\), and
+the example shows why it cannot.
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies-2}
+
+In Step 4, Fubini is applied to the Borel null envelope \(N\), whose
+indicator is absolutely integrable. It is not prematurely applied to a
+possibly nonmeasurable section of \(A\). For an \(L^1\)
+Lebesgue-measurable function, completed-measure Fubini similarly gives
+measurable, integrable sections almost everywhere and equality after the
+almost-everywhere defined outer integrand is extended on a null set.
+
+A set in the uncompleted product \(\sigma\)-algebra
+\(\mathcal L(\mathbb R^m)\otimes\mathcal L(\mathbb R^n)\) has measurable
+sections at \textbf{every} parameter. Indeed, sets with measurable
+sections form a \(\sigma\)-algebra containing all measurable rectangles.
+The example \(E\) therefore belongs to the completed planar Lebesgue
+\(\sigma\)-algebra but not to that uncompleted product
+\(\sigma\)-algebra.
+
+\subsection{Pitfalls}\label{pitfalls-2}
+
+\begin{itemize}
+\tightlist
+\item
+  ``Jointly Lebesgue measurable'' does not imply that every section is
+  Lebesgue measurable.
+\item
+  Completeness of each factor measure does not make the uncompleted
+  product measure complete.
+\item
+  Changing a jointly measurable function on a planar null set can damage
+  exceptional one-dimensional sections. It does not change the joint
+  Lebesgue integral.
+\item
+  This construction requires a nonmeasurable set; it is not an explicit
+  numerical algorithm for testing membership in \(V\).
+\end{itemize}
+
+\subsection{Reusable technique}\label{reusable-technique-2}
+
+\begingroup\small\raggedright Tags: \texttt{exceptional-\allowbreak{}sections}, \texttt{completion},
+\texttt{Borel-\allowbreak{}representative}, \texttt{null-\allowbreak{}envelope}, \texttt{Fubini},
+\texttt{Vitali-\allowbreak{}set}.\par\endgroup
+
+To justify a section argument for completed measures, replace the joint
+object by a Borel representative, control the difference inside a Borel
+null envelope, and use Fubini on that envelope. Record the exceptional
+parameter set rather than suppressing it.
+
+\subsection{Sources}\label{sources-2}
+
+\begin{itemize}
+\tightlist
+\item
+  John K. Hunter,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf}{\emph{Measure
+  Theory}}, Example 5.20 and Theorem 5.21, printed p.~62; Theorems
+  2.27--2.28 (Borel regularity and completion). Source ID:
+  \texttt{hunter-\allowbreak{}measure}. The null-set construction is the classical
+  completion example; the representative-and-envelope proof and its
+  integral interpretation are detailed above.
+\end{itemize}
+
+\section{E04 --- Two finite iterated integrals, but no signed Lebesgue
+integral}\label{E04}
+
+\subsection{Problem}\label{problem-3}
+
+On \(Q=(0,1)^2\), define the real-valued function
+
+\[
+f(x,y)=\frac{x^2-y^2}{(x^2+y^2)^2}.
+\]
+
+Compute both iterated integrals. Determine whether
+\(\int_Q f\,d\mathcal L^2\) exists as a signed Lebesgue integral, and
+explain exactly which hypothesis prevents use of signed Fubini.
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses-3}
+
+The measure on \(Q\) is the restriction of planar Lebesgue measure
+\(\mathcal L^2\). Inner and outer one-variable integrals use
+\(\mathcal L^1\). The function \(f\) is continuous on the open square,
+so it is Borel measurable. Its singularity is approached as
+\((x,y)\to(0,0)\), although that point is outside \(Q\).
+
+For a real-valued measurable function, put \(f^+=\max(f,0)\) and
+\(f^-=\max(-f,0)\). The signed Lebesgue integral is
+\(\int f^+-\int f^-\) only when these two quantities are not both
+infinite. A finite signed Lebesgue integral requires \(\int|f|<\infty\).
+
+\subsection{Solution}\label{solution-3}
+
+\textbf{1. Integrate with respect to \(y\) first.} Fix \(x\in(0,1)\). As
+a function of \(y\in[0,1]\), the formula extends continuously and is
+bounded, so this section is absolutely integrable. Direct
+differentiation gives
+
+\[
+\frac{\partial}{\partial y}\left(\frac{y}{x^2+y^2}\right)
+=\frac{x^2-y^2}{(x^2+y^2)^2}.
+\]
+
+Consequently
+
+\[
+\int_0^1 f(x,y)\,dy
+=\left[\frac{y}{x^2+y^2}\right]_{y=0}^{y=1}
+=\frac1{1+x^2},
+\]
+
+and the resulting outer function is integrable:
+
+\[
+\int_0^1\left(\int_0^1f(x,y)\,dy\right)dx
+=\int_0^1\frac{dx}{1+x^2}
+=\boxed{\frac\pi4}.
+\]
+
+\textbf{2. Integrate with respect to \(x\) first.} For each fixed
+\(y\in(0,1)\), the section is again continuous and bounded on \([0,1]\).
+This time
+
+\[
+\frac{\partial}{\partial x}\left(-\frac{x}{x^2+y^2}\right)
+=\frac{x^2-y^2}{(x^2+y^2)^2}.
+\]
+
+Thus
+
+\[
+\int_0^1 f(x,y)\,dx=-\frac1{1+y^2},
+\]
+
+and
+
+\[
+\int_0^1\left(\int_0^1f(x,y)\,dx\right)dy
+=-\int_0^1\frac{dy}{1+y^2}
+=\boxed{-\frac\pi4}.
+\]
+
+Every section used here is integrable, not just almost every section.
+That still does not establish joint absolute integrability.
+
+\textbf{3. Prove both sign parts have infinite integral by explicit
+disjoint rectangles.} If \(0<y<x/2\), then
+
+\[
+x^2-y^2\geq\frac34x^2,
+\qquad (x^2+y^2)^2\leq\frac{25}{16}x^4,
+\qquad f(x,y)\geq\frac{12}{25x^2}>0.
+\]
+
+For each integer \(n\geq0\), take
+
+\[
+R_n=\bigl(2^{-n-1},2^{-n}\bigr)
+\times\bigl(0,2^{-n-2}\bigr).
+\]
+
+These rectangles are pairwise disjoint and lie in \(\{0<y<x/2\}\cap Q\).
+On \(R_n\), \(x<2^{-n}\), so
+
+\[
+f^+(x,y)\geq\frac{12}{25}2^{2n},
+\qquad \mathcal L^2(R_n)=2^{-2n-3}.
+\]
+
+For every positive integer \(N\), monotonicity of the nonnegative
+integral yields
+
+\[
+\begin{aligned}
+\int_Qf^+\,d\mathcal L^2
+&\geq\sum_{n=0}^{N-1}
+\frac{12}{25}2^{2n}\mathcal L^2(R_n)\\
+&=\sum_{n=0}^{N-1}\frac3{50}
+=\frac{3N}{50}.
+\end{aligned}
+\]
+
+Letting \(N\to\infty\) proves \(\int_Qf^+=\infty\). Since
+\(f(y,x)=-f(x,y)\), the transposed rectangles give the identical bound
+for \(f^-\). Hence
+
+\[
+\int_Q f^+\,d\mathcal L^2
+=\int_Q f^-\,d\mathcal L^2=\infty,
+\qquad \int_Q|f|\,d\mathcal L^2=\infty.
+\]
+
+The expression \(\int_Qf\) is therefore \textbf{undefined as a signed
+Lebesgue integral}, rather than equal to either iterated value or to
+zero.
+
+\textbf{4. Identify another prescription, without confusing it with a
+Lebesgue integral.} On \((\varepsilon,1)^2\subset Q\), where
+\(0<\varepsilon<1\), the function is bounded and antisymmetric under
+exchanging coordinates. Fubini is valid on that truncated square, and
+
+\[
+\int_{(\varepsilon,1)^2}f\,d\mathcal L^2=0.
+\]
+
+Thus this particular symmetric limiting prescription gives zero. The
+disagreement with the two iterated values records dependence on the
+truncation procedure; it supplies no value for the undefined signed
+Lebesgue integral.
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies-3}
+
+The one-dimensional computations use the fundamental theorem of calculus
+on continuous sections. Fubini applies on each truncated square because
+the integrand is bounded there. It does \textbf{not} apply on \(Q\):
+joint absolute integrability fails by Step 3. Tonelli remains valid
+separately for the nonnegative functions \(f^+\), \(f^-\), and \(|f|\),
+with value \(\infty\) where indicated. It never legitimizes subtracting
+\(\infty-\infty\).
+
+\subsection{Pitfalls}\label{pitfalls-3}
+
+\begin{itemize}
+\tightlist
+\item
+  Finite iterated \textbf{signed} integrals do not replace the
+  hypothesis \(\int_Q|f|<\infty\).
+\item
+  Cancellation inside each section can conceal infinite joint positive
+  and negative masses.
+\item
+  Symmetry gives an integral of zero only after the existence of that
+  integral has been justified, or for a specifically stated finite
+  truncation.
+\item
+  Defining a value for \(f\) at the missing origin would not repair the
+  divergence in its neighborhood.
+\end{itemize}
+
+\subsection{Reusable technique}\label{reusable-technique-3}
+
+\begingroup\small\raggedright Tags: \texttt{signed-\allowbreak{}Fubini-\allowbreak{}failure}, \texttt{absolute-\allowbreak{}integrability},
+\texttt{positive-\allowbreak{}negative-\allowbreak{}parts}, \texttt{dyadic-\allowbreak{}rectangles},
+\texttt{cancellation}, \texttt{truncation-\allowbreak{}dependence}.\par\endgroup
+
+Before exchanging signed integrals, estimate \(|f|\) or its sign parts.
+A sequence of disjoint regions each carrying a fixed positive mass
+proves divergence with an explicit sum, even when direct polar
+integration is inconvenient. A sufficient repair is to impose
+\(f\in L^1(Q)\); local boundedness away from the singularity is
+insufficient.
+
+\subsection{Sources}\label{sources-3}
+
+\begin{itemize}
+\tightlist
+\item
+  John K. Hunter,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf}{\emph{Measure
+  Theory}}, Definition 4.8 (signed integral), Theorem 5.18 (Fubini), and
+  Theorem 5.21 (completed Lebesgue measures). Source ID:
+  \texttt{hunter-\allowbreak{}measure}. The primitive identities and dyadic-rectangle
+  lower bounds are checked directly above.
+\end{itemize}
+
+\section{E05 --- Two finite iterated sums and no signed double
+integral}\label{E05}
+
+\subsection{Problem}\label{problem-4}
+
+Let \(\mathbb N=\{1,2,\ldots\}\) and define the function
+\(a:\mathbb N^2\to\mathbb R\) by \[
+a(n,m)=\begin{cases}1&m=n,\\-1&m=n+1,\\0&\text{otherwise}.\end{cases}
+\] Compute both iterated sums. Explain exactly why their disagreement
+does not contradict Fubini's theorem, and what square partial sums do.
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses-4}
+
+Each copy of \(\mathbb N\) has the power-set \(\sigma\)-algebra and
+counting measure \(\#\); the product is counting measure on
+\(\mathbb N^2\). These spaces are \(\sigma\)-finite because
+\(\mathbb N\) is a countable union of finite sets. Every function here
+is measurable. Write \(a_{nm}=a(n,m)\) for a \textbf{value} of the
+function \(a\). A signed Lebesgue integral is defined only if at least
+one of \(\int a^+\,d(\#\otimes\#)\) and \(\int a^-\,d(\#\otimes\#)\) is
+finite; an integrable real-valued function must satisfy
+\(\int|a|<\infty\).
+
+\subsection{Solution}\label{solution-4}
+
+\textbf{1. Sum each row first.} For every fixed \(n\), only two entries
+are nonzero: \[
+\sum_{m=1}^{\infty}a_{nm}=a_{nn}+a_{n,n+1}=1-1=0.
+\] Consequently \[
+\sum_{n=1}^{\infty}\left(\sum_{m=1}^{\infty}a_{nm}\right)=\sum_{n=1}^{\infty}0=0.
+\] Every inner sum is absolutely convergent, and the resulting outer
+series is absolutely convergent.
+
+\textbf{2. Sum each column first.} Column \(m=1\) contains only
+\(a_{11}=1\). For every \(m\ge2\), its nonzero entries are \(a_{mm}=1\)
+and \(a_{m-1,m}=-1\). Thus \[
+\sum_{n=1}^{\infty}a_{n1}=1,\qquad
+\sum_{n=1}^{\infty}a_{nm}=0\quad(m\ge2),
+\] and \[
+\sum_{m=1}^{\infty}\left(\sum_{n=1}^{\infty}a_{nm}\right)=1+\sum_{m=2}^{\infty}0=1.
+\] Again, every inner sum and the resulting outer series converge
+absolutely. What fails is absolute summability \textbf{before}
+cancellation: \[
+\sum_{n=1}^{\infty}\sum_{m=1}^{\infty}|a_{nm}|
+=\sum_{n=1}^{\infty}2=+\infty.
+\] Indeed the positive diagonal and negative superdiagonal each contain
+infinitely many entries of magnitude \(1\), so
+\(\int a^+=\int a^-=+\infty\). The signed double integral
+\(\int a\,d(\#\otimes\#)\) is undefined; neither iterated answer can be
+identified with it.
+
+\textbf{3. Inspect finite rectangles.} For positive integers \(N,M\), \[
+S_{N,M}=\sum_{n=1}^{N}\sum_{m=1}^{M}a_{nm}
+=\min(N,M)-\min(N,M-1).
+\] Therefore \(S_{N,N}=1\), whereas \(S_{N,N+1}=0\). There is no limit
+as \(N,M\to\infty\) independently. Taking \(M\to\infty\) first gives
+\(0\); taking \(N\to\infty\) first gives \(1\). A square exhaustion
+happens to select the second value, but it does not define a signed
+Lebesgue integral.
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies-4}
+
+Tonelli's theorem applies to each of \(|a|\), \(a^+\) and \(a^-\),
+because they are nonnegative measurable functions on \(\sigma\)-finite
+product spaces. It correctly gives infinite integrals. Signed Fubini
+requires \(\sum_{n,m}|a_{nm}|<\infty\), which has explicitly failed. If
+instead a doubly indexed real or complex family \(b_{nm}\) satisfies
+that bound, Fubini permits interchanging its sums and identifies both
+with the product integral.
+
+\subsection{Pitfalls}\label{pitfalls-4}
+
+\begin{itemize}
+\tightlist
+\item
+  Absolute convergence of every row, every column, and even both series
+  of already-summed values does not establish
+  \(\sum_{n,m}|a_{nm}|<\infty\).
+\item
+  This is an iterated-summation counterexample, not a conditionally
+  Lebesgue-integrable function. For real or complex functions, Lebesgue
+  integrability entails absolute integrability. Ordinary conditionally
+  convergent series use an ordering, which counting-measure integration
+  does not supply.
+\item
+  Never replace the undefined expression \(+\infty-(+\infty)\) by zero
+  after pairing entries.
+\end{itemize}
+
+\subsection{Reusable technique}\label{reusable-technique-4}
+
+Before exchanging signed sums or integrals, apply Tonelli to the
+absolute value. If it diverges, inspect positive and negative parts and
+the actual limiting convention. Tags: \texttt{counting-\allowbreak{}measure},
+\texttt{signed-\allowbreak{}fubini}, \texttt{absolute-\allowbreak{}integrability},
+\texttt{order-\allowbreak{}of-\allowbreak{}summation}, \texttt{counterexample}.
+
+\subsection{Sources}\label{sources-4}
+
+\begin{itemize}
+\tightlist
+\item
+  John K. Hunter,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf}{\emph{Measure
+  Theory}}, Theorem 5.18 and Example 5.19 (Fubini and absolutely
+  convergent double series), and Chapter 4 (signed integration). Source
+  ID: \texttt{hunter-\allowbreak{}measure}.
+\item
+  The matrix, explicit rectangular calculation, and exposition above
+  were worked out for this collection; the source supports the theorem,
+  not a copied exercise.
+\end{itemize}
+
+\section{E06 --- A logarithm from a positive double integral}\label{E06}
+
+\subsection{Problem}\label{problem-5}
+
+For \(a,b>0\), calculate \[
+F(a,b)=\int_0^{\infty}\frac{e^{-ax}-e^{-bx}}{x}\,dx
+\] as a Lebesgue integral. Justify both the exchange of integrations and
+differentiation with respect to \(b\).
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses-5}
+
+The integration variable \(x\) carries one-dimensional Lebesgue measure
+\(\lambda^1\) on \((0,\infty)\). A parameter variable \(t\) carries
+\(\lambda^1\) on a finite interval. The expression
+\((e^{-ax}-e^{-bx})/x\) is the value at \(x\) of a continuous function
+on \((0,\infty)\). Positivity of both parameters is essential for the
+tail estimate below. No value at \(x=0\) is needed; assigning the
+limiting value \(b-a\) there would not change the integral.
+
+\subsection{Solution}\label{solution-5}
+
+\textbf{1. Represent the cancellation before integrating.} Suppose first
+\(a\le b\). The fundamental theorem of calculus in the parameter gives,
+for \(x>0\), \[
+\frac{e^{-ax}-e^{-bx}}{x}=\int_a^b e^{-tx}\,dt\ge0.
+\] The function \((x,t)\mapsto e^{-tx}\) is continuous and nonnegative.
+Tonelli therefore allows an exchange before finiteness has been
+established: \[
+\begin{aligned}
+F(a,b)&=\int_0^{\infty}\int_a^b e^{-tx}\,dt\,dx\\
+&=\int_a^b\int_0^{\infty}e^{-tx}\,dx\,dt
+=\int_a^b\frac{1}{t}\,dt
+=\log b-\log a.
+\end{aligned}
+\] The inner integral is \(1/t\) because \(t\ge a>0\). The resulting
+logarithm is finite, so this also proves integrability. If \(a>b\),
+apply this computation to \(F(b,a)\) and use the pointwise negative
+sign; if \(a=b\), the integrand is identically zero. In all cases, \[
+\boxed{F(a,b)=\log(b/a).}
+\]
+
+\textbf{2. Check absolute integrability directly.} Let \(c=\min(a,b)>0\)
+and \(d=|b-a|\). The same parameter representation with the endpoints
+ordered gives \[
+\left|\frac{e^{-ax}-e^{-bx}}{x}\right|
+\le d e^{-cx}\le d\qquad(x>0).
+\] Thus the integral of the absolute value on \((0,1)\) is at most
+\(d\). On \((1,\infty)\) one may also use \[
+\left|\frac{e^{-ax}-e^{-bx}}{x}\right|
+\le e^{-ax}+e^{-bx},
+\] whose integral is finite. This makes the endpoint hypotheses visible
+without relying on the final formula.
+
+\textbf{3. Differentiate under the integral with a local bound.} Fix
+\(a>0\) and \(b_0>0\), and write \(q_b(x)=(e^{-ax}-e^{-bx})/x\). Its
+parameter derivative is \[
+\partial_b q_b(x)=e^{-bx}.
+\] For \(b\in[b_0/2,3b_0/2]\), \[
+|\partial_b q_b(x)|\le e^{-b_0x/2},\qquad
+\int_0^{\infty}e^{-b_0x/2}\,dx=2/b_0<\infty.
+\] For sufficiently small nonzero \(h\), the ordinary mean value theorem
+bounds the difference quotient \((q_{b_0+h}(x)-q_{b_0}(x))/h\) by this
+same integrable function. These quotients converge pointwise to
+\(e^{-b_0x}\). Dominated convergence yields \[
+\partial_b F(a,b_0)=\int_0^{\infty}e^{-b_0x}\,dx=1/b_0,
+\] in agreement with the logarithm. This is a proof of the exchange,
+rather than a deduction from the already-known answer.
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies-5}
+
+Tonelli applies on the \(\sigma\)-finite Lebesgue product
+\((0,\infty)\times[a,b]\) to a nonnegative Borel function. Once its
+integral is finite, signed Fubini would also be available. For
+differentiation, the difference quotients are measurable, converge
+pointwise, and have a common \(L^1\) majorant on a neighborhood of the
+chosen positive parameter; Hunter's dominated convergence theorem
+applies. The same argument works near any \(b_0>0\); a uniform bound
+over all \(b>0\) is unnecessary.
+
+\subsection{Pitfalls}\label{pitfalls-5}
+
+\begin{itemize}
+\tightlist
+\item
+  The two terms \(e^{-ax}/x\) and \(e^{-bx}/x\) each have infinite
+  integrals near zero. Writing their separate integrals and subtracting
+  creates an undefined \(\infty-\infty\).
+\item
+  If \(a=0<b\), then \((1-e^{-bx})/x\) has a divergent tail, so the
+  stated finite formula does not extend to \(a=0\).
+\item
+  A bound on \(q_b\) alone does not justify differentiating it. The
+  proof controls its difference quotients through \(\partial_b q_b\).
+\end{itemize}
+
+\subsection{Reusable technique}\label{reusable-technique-5}
+
+Turn a difference quotient or cancellation into an integral over a
+positive parameter kernel. Apply Tonelli before evaluating, then use a
+local integrable derivative bound for parameter differentiation. Tags:
+\texttt{frullani}, \texttt{tonelli}, \texttt{parameter-\allowbreak{}integral},
+\texttt{differentiate-\allowbreak{}under-\allowbreak{}integral}, \texttt{cancellation}.
+
+\subsection{Sources}\label{sources-5}
+
+\begin{itemize}
+\tightlist
+\item
+  John K. Hunter,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf}{\emph{Measure
+  Theory}}, Theorem 4.24 (dominated convergence) and Chapter 5 (product
+  integration). Source ID: \texttt{hunter-\allowbreak{}measure}.
+\item
+  Keith Conrad,
+  \href{https://kconrad.math.uconn.edu/blurbs/analysis/diffunderint.pdf}{\emph{Differentiating
+  under the integral sign}}, Theorem 12.3, for a classical sufficient
+  differentiation theorem. The measurable version used here follows from
+  the displayed difference-quotient proof. Source ID:
+  \texttt{conrad-\allowbreak{}diff}.
+\end{itemize}
+
+\section{E07 --- A weighted integral on a parabolic arc}\label{E07}
+
+\subsection{Problem}\label{problem-6}
+
+Let \(C=\{(t,t^2):0\leq t\leq1\}\). Compute the integral of the
+coordinate function \(f:C\to\mathbb R\), defined by \(f(x,y)=x\), with
+respect to arc length. Also compute the length of \(C\).
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses-6}
+
+The parametrization is \(\gamma:[0,1]\to\mathbb R^2\),
+\(\gamma(t)=(t,t^2)\). The curve \(C\) is compact, and \(f\) is
+continuous and nonnegative on \(C\).
+
+Throughout, \(\mathcal L^k\) denotes Lebesgue measure. For an integer
+\(k\geq1\), use the normalized Hausdorff measure
+
+\[
+\mathcal H^k(A)=\lim_{\delta\downarrow0}\inf\left\{\sum_{j=1}^{\infty}\frac{\alpha_k}{2^k}(\operatorname{diam}U_j)^k:
+A\subseteq\bigcup_{j=1}^{\infty}U_j,\ \operatorname{diam}U_j<\delta\right\},
+\]
+
+where \(\alpha_k=\mathcal L^k(B^k(0,1))\). Thus \(\mathcal H^k\) on a
+\(k\)-plane agrees with \(k\)-dimensional Lebesgue measure, and
+\(\mathcal H^0\) is counting measure. In particular, \(\alpha_1=2\), so
+\(\mathcal H^1\) here is ordinary arc length. The measure being
+integrated is the restriction \(\mathcal H^1\mathbin{\vert}C\), not
+two-dimensional area measure.
+
+\subsection{Solution}\label{solution-6}
+
+Differentiate the parametrization:
+
+\[
+\gamma'(t)=(1,2t),\qquad J_1\gamma(t)=|\gamma'(t)|=\sqrt{1+4t^2}.
+\]
+
+The first coordinate proves injectivity: if \(\gamma(s)=\gamma(t)\),
+then \(s=t\). The weighted area formula therefore gives
+
+\[
+\int_C f\,d\mathcal H^1
+=\int_0^1 f(\gamma(t))|\gamma'(t)|\,dt
+=\int_0^1 t\sqrt{1+4t^2}\,dt.
+\]
+
+Here \(f\) is the function; \(f(\gamma(t))=t\) is its value at the point
+\(\gamma(t)\). With \(u=1+4t^2\) and \(du=8t\,dt\),
+
+\[
+\int_0^1 t\sqrt{1+4t^2}\,dt
+=\frac18\int_1^5 u^{1/2}\,du
+=\frac1{12}[u^{3/2}]_1^5
+=\boxed{\frac{5\sqrt5-1}{12}}.
+\]
+
+For length, replace \(f\) by the constant function \(1\):
+
+\[
+\mathcal H^1(C)=\int_0^1\sqrt{1+4t^2}\,dt.
+\]
+
+Put \(s=2t\). The identity
+
+\[
+\frac{d}{ds}\left(\frac12\bigl(s\sqrt{1+s^2}+\operatorname{arsinh}s\bigr)\right)
+=\sqrt{1+s^2}
+\]
+
+yields
+
+\[
+\mathcal H^1(C)
+=\frac{\sqrt5}{2}+\frac14\operatorname{arsinh}2
+=\boxed{\frac{\sqrt5}{2}+\frac14\log(2+\sqrt5)}.
+\]
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies-6}
+
+The map \(\gamma\) is \(C^1\) on a neighborhood of \([0,1]\) and has
+bounded derivative there, hence is Lipschitz on this interval. Its
+domain is Borel. Its multiplicity is exactly one on \(C\). The weighted
+area formula applies to the nonnegative Borel weight \(f\circ\gamma\);
+the explicit integral is finite since
+\(0\leq t\sqrt{1+4t^2}\leq\sqrt5\). Taking the constant weight also
+proves that \(C\) has finite \(\mathcal H^1\) measure.
+
+\subsection{Pitfalls}\label{pitfalls-6}
+
+\begin{itemize}
+\tightlist
+\item
+  Integrating \(t\,dt\) gives \(1/2\), but this uses horizontal distance
+  instead of arc length. The speed factor is necessary.
+\item
+  The expression \(\int_C f\,d\mathcal L^2\) would be zero: \(C\) has
+  two-dimensional Lebesgue measure zero. A Lipschitz arc can be covered
+  by \(N\) disks of radius proportional to \(1/N\), with total area
+  tending to zero.
+\item
+  Reversing the traversal leaves this scalar Hausdorff integral
+  unchanged. A vector circulation would include a signed tangent vector
+  and can change sign.
+\end{itemize}
+
+\subsection{Reusable technique}\label{reusable-technique-6}
+
+For an injective Lipschitz curve, compose the scalar weight with the
+parametrization, then multiply by speed. Coordinate weights often turn a
+square-root integral into a direct substitution.
+
+\begingroup\small\raggedright Tags: \texttt{hausdorff-\allowbreak{}normalization}, \texttt{weighted-\allowbreak{}arc-\allowbreak{}length},
+\texttt{injective-\allowbreak{}area-\allowbreak{}formula}, \texttt{substitution},
+\texttt{coordinate-\allowbreak{}moment}.\par\endgroup
+
+\subsection{Sources}\label{sources-6}
+
+\begin{itemize}
+\tightlist
+\item
+  Leon Simon,
+  \href{https://math.stanford.edu/~lms/ntu-gmt-text.pdf}{\emph{Introduction
+  to Geometric Measure Theory} (2018)}, Chapter 1, §2, definitions
+  2.1--2.2 and Theorem 2.6 (normalization); Chapter 2, §3, Theorem 3.3,
+  Remark 3.4(2), and Example 3.5(1) (weighted area formula and arc
+  length). The specific curve and computations above are worked out
+  here. Source ID: \texttt{simon-\allowbreak{}gmt}.
+\end{itemize}
+
+\section{E08 --- Traversing a circle twice: multiplicity and
+orientation}\label{E08}
+
+\subsection{Problem}\label{problem-7}
+
+Let \(C=\{(x,y)\in\mathbb R^2:x^2+y^2=1\}\) and let \(w:C\to\mathbb R\)
+be the function \(w(x,y)=x^2\). Compare
+
+\[
+\int_C w\,d\mathcal H^1
+\quad\hbox{and}\quad
+\int_0^{4\pi}w(\gamma(t))|\gamma'(t)|\,dt,
+\qquad \gamma(t)=(\cos t,\sin t).
+\]
+
+Then compare these scalar integrals with the circulation of the vector
+field \(F(x,y)=(-y,x)\).
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses-7}
+
+Use normalized Hausdorff measure: \(\mathcal H^k\) has covering cost
+\(\alpha_k(\operatorname{diam}U/2)^k\), where \(\alpha_k\) is the volume
+of the unit ball in \(\mathbb R^k\). It agrees with \(\mathcal L^k\) on
+\(k\)-planes; \(\mathcal H^0\) counts points. Thus
+\(\mathcal H^1\mathbin{\vert}C\) is ordinary length measure. The
+functions \(w\) and \(F\) are continuous, and \(0\leq w\leq1\) on \(C\).
+
+The map \(\gamma\) is Lipschitz on \(A=[0,4\pi]\). Its image is the
+geometric set \(C\), which has no record of how many times it was
+traversed.
+
+\subsection{Solution}\label{solution-7}
+
+First compute the parameter integral. Since
+
+\[
+\gamma'(t)=(-\sin t,\cos t),\qquad |\gamma'(t)|=1,
+\qquad w(\gamma(t))=\cos^2t,
+\]
+
+we obtain
+
+\[
+\int_0^{4\pi}w(\gamma(t))|\gamma'(t)|\,dt
+=\int_0^{4\pi}\frac{1+\cos(2t)}2\,dt
+=\boxed{2\pi}.
+\]
+
+This is a traversal integral. To understand its relation to the
+geometric integral, define
+
+\[
+N(q)=\mathcal H^0\bigl(\{t\in A:\gamma(t)=q\}\bigr).
+\]
+
+If \(q\in C\setminus\{(1,0)\}\), there are exactly two preimages, one in
+\((0,2\pi)\) and one in \((2\pi,4\pi)\). At \((1,0)\) the preimages are
+\(0,2\pi,4\pi\), so \(N(1,0)=3\). Off \(C\), \(N=0\). The single
+exceptional image point has \(\mathcal H^1\) measure zero. The weighted
+area formula therefore reads
+
+\[
+\begin{aligned}
+\int_0^{4\pi}w(\gamma(t))|\gamma'(t)|\,dt
+&=\int_C\sum_{t\in\gamma^{-1}(q)\cap A}w(q)\,d\mathcal H^1(q)\\
+&=\int_C w(q)N(q)\,d\mathcal H^1(q)
+=2\int_C w\,d\mathcal H^1.
+\end{aligned}
+\]
+
+Consequently,
+
+\[
+\boxed{\int_C w\,d\mathcal H^1=\pi}.
+\]
+
+A single traversal \(0\leq t\leq2\pi\) gives the same geometric answer
+directly: only the common endpoint is counted twice, and it is
+length-null.
+
+For circulation, the integrand includes the velocity vector rather than
+its norm:
+
+\[
+F(\gamma(t))=(-\sin t,\cos t)=\gamma'(t),
+\qquad F(\gamma(t))\cdot\gamma'(t)=1.
+\]
+
+Thus the double counterclockwise traversal has circulation
+
+\[
+\int_0^{4\pi}F(\gamma(t))\cdot\gamma'(t)\,dt=\boxed{4\pi},
+\]
+
+and a single counterclockwise traversal has circulation \(2\pi\). A
+reversed single traversal has circulation \(-2\pi\), whereas its scalar
+\(w\)-integral remains \(\pi\). These circulation values are not
+integrals of the scalar function \(w\).
+
+Flux requires a chosen unit normal: it has the form
+\(\int_C G\cdot n\,d\mathcal H^1\). For example, \(G(x,y)=(x,y)\) has
+outward flux \(2\pi\), since the outward normal is \(n(q)=q\) and
+\(G(q)\cdot n(q)=1\). Choosing the inward normal changes that flux to
+\(-2\pi\). The positive measure \(\mathcal H^1\) itself supplies neither
+a tangent orientation nor a normal orientation.
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies-7}
+
+The domain \(A\) is compact Borel and \(\gamma\) is \(C^1\) with bounded
+derivative. The nonnegative weight \(t\mapsto w(\gamma(t))\) is Borel.
+Hence the weighted area formula applies even though \(\gamma\) is not
+injective. Its fiber sum is explicit above. Integrability is also
+direct: the parameter integrand is bounded by \(1\) on a finite
+interval. The same formula with weight \(1\) shows
+\(\mathcal H^1(C)=2\pi\), which justifies all bounded scalar and flux
+integrals used here.
+
+\subsection{Pitfalls}\label{pitfalls-7}
+
+\begin{itemize}
+\tightlist
+\item
+  A parametrization's image alone does not determine its traversal
+  integral. Multiplicity must be included.
+\item
+  Multiplicity is a count, never a signed count in the scalar area
+  formula. Opposite traversals add for scalar length even when their
+  circulations cancel.
+\item
+  Endpoint multiplicity is genuinely three at \((1,0)\) for the stated
+  closed domain. Ignoring it is justified by its null image, not by
+  claiming it is two everywhere.
+\end{itemize}
+
+\subsection{Reusable technique}\label{reusable-technique-7}
+
+Before using a noninjective parametrization, count its fibers. The area
+formula converts a parameter integral into an integral of an explicit
+sum over preimages. Treat orientation separately whenever a vector field
+is present.
+
+\begingroup\small\raggedright Tags: \texttt{area-\allowbreak{}formula}, \texttt{multiplicity},
+\texttt{noninjective-\allowbreak{}parametrization}, \texttt{scalar-\allowbreak{}versus-\allowbreak{}vector},
+\texttt{circulation}, \texttt{flux}.\par\endgroup
+
+\subsection{Sources}\label{sources-7}
+
+\begin{itemize}
+\tightlist
+\item
+  Leon Simon,
+  \href{https://math.stanford.edu/~lms/ntu-gmt-text.pdf}{\emph{Introduction
+  to Geometric Measure Theory} (2018)}, Chapter 1, §2, definitions
+  2.1--2.2 and Theorem 2.6; Chapter 2, §3, Theorem 3.3 and Remark 3.4(2)
+  (weighted fiber sum). The fiber count and vector comparisons above are
+  direct computations. Source ID: \texttt{simon-\allowbreak{}gmt}.
+\end{itemize}
+
+\section{E09 --- Height integral over a paraboloid graph}\label{E09}
+
+\subsection{Problem}\label{problem-8}
+
+Let \(D=\{(x,y)\in\mathbb R^2:x^2+y^2\leq1\}\) and
+
+\[
+S=\{(x,y,x^2+y^2):(x,y)\in D\}.
+\]
+
+For the height function \(h:S\to\mathbb R\), \(h(x,y,z)=z\), compute
+\(\int_S h\,d\mathcal H^2\). Also compute the area of \(S\).
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses-8}
+
+All measures are positive scalar measures. The normalized Hausdorff
+measure has covering cost \(\alpha_k(\operatorname{diam}U/2)^k\), with
+\(\alpha_k=\mathcal L^k(B^k(0,1))\); it agrees with \(\mathcal L^k\) on
+\(k\)-planes. Thus the cost for \(\mathcal H^2\) is
+\((\pi/4)(\operatorname{diam}U)^2\), and \(\mathcal H^0\) is counting
+measure.
+
+Write \(u:D\to\mathbb R\), \(u(x,y)=x^2+y^2\), and
+\(\Phi:D\to\mathbb R^3\), \(\Phi(x,y)=(x,y,u(x,y))\). The domain \(D\)
+is compact Borel. The map \(\Phi\) is injective because its first two
+coordinates recover its input. The function \(h\) is continuous with
+\(0\leq h\leq1\) on \(S\).
+
+\subsection{Solution}\label{solution-8}
+
+Compute the derivative columns and their Gram matrix:
+
+\[
+\partial_x\Phi=(1,0,2x),\qquad
+\partial_y\Phi=(0,1,2y),
+\]
+
+\[
+(D\Phi)^T D\Phi=
+\begin{pmatrix}1+4x^2&4xy\\4xy&1+4y^2\end{pmatrix}.
+\]
+
+Its determinant is
+
+\[
+(1+4x^2)(1+4y^2)-16x^2y^2=1+4x^2+4y^2.
+\]
+
+Hence the two-dimensional area factor is
+
+\[
+J_2\Phi(x,y)=\sqrt{1+4x^2+4y^2}
+=\sqrt{1+|\nabla u(x,y)|^2}.
+\]
+
+Injectivity and the weighted area formula give
+
+\[
+\int_S h\,d\mathcal H^2
+=\int_D h(\Phi(x,y))J_2\Phi(x,y)\,d\mathcal L^2(x,y)
+=\int_D(x^2+y^2)\sqrt{1+4x^2+4y^2}\,dx\,dy.
+\]
+
+The function \(h\) is defined on \(S\); its pulled-back value is
+\(h(\Phi(x,y))=u(x,y)\). Now use polar coordinates in the planar disk,
+including their separate Jacobian factor \(r\):
+
+\[
+I=2\pi\int_0^1 r^3\sqrt{1+4r^2}\,dr.
+\]
+
+For \(v=1+4r^2\), we have \(r\,dr=dv/8\) and \(r^2=(v-1)/4\), so
+
+\[
+\begin{aligned}
+I&=\frac{\pi}{16}\int_1^5(v-1)v^{1/2}\,dv\\
+&=\frac{\pi}{16}\left[\frac25v^{5/2}-\frac23v^{3/2}\right]_1^5\\
+&=\frac{\pi}{16}\left(\frac{20\sqrt5}{3}+\frac4{15}\right)
+=\boxed{\frac{\pi(25\sqrt5+1)}{60}}.
+\end{aligned}
+\]
+
+Using weight \(1\) instead gives
+
+\[
+\begin{aligned}
+\mathcal H^2(S)
+&=2\pi\int_0^1r\sqrt{1+4r^2}\,dr\\
+&=\frac\pi4\int_1^5v^{1/2}\,dv
+=\boxed{\frac{\pi(5\sqrt5-1)}6}.
+\end{aligned}
+\]
+
+As a quick consistency check, \(0<I<\mathcal H^2(S)\), as expected
+because the height lies between \(0\) and \(1\) and is strictly between
+them on a set of positive area.
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies-8}
+
+On the convex disk, \(|\nabla u|\leq2\), so \(|u(p)-u(q)|\leq2|p-q|\)
+and \(|\Phi(p)-\Phi(q)|\leq\sqrt5|p-q|\). Thus \(\Phi\) is Lipschitz on
+\(D\). Its image is compact Borel, its multiplicity is one, and the
+weight is nonnegative Borel. The explicit area factor is bounded by
+\(\sqrt5\), so both pulled-back integrands are integrable on \(D\). The
+polar coordinate change is applied to a bounded, nonnegative measurable
+function; its seam and origin have planar measure zero. The area formula
+handles the closed disk directly, so there is no need to assume an open
+parameter domain or discard the boundary without explanation.
+
+\subsection{Pitfalls}\label{pitfalls-8}
+
+\begin{itemize}
+\tightlist
+\item
+  The projected integral \(\int_D u\,dx\,dy=\pi/2\) differs from the
+  surface integral. Projection omits the graph's area factor.
+\item
+  There are two distinct factors after the two changes of variables:
+  \(\sqrt{1+4r^2}\) comes from graph area; \(r\) comes from planar polar
+  coordinates.
+\item
+  The cross product \((-2x,-2y,1)\) can also compute the area factor,
+  but only its norm enters this scalar integral. A signed vector flux
+  would additionally require a chosen normal.
+\end{itemize}
+
+\subsection{Reusable technique}\label{reusable-technique-8}
+
+For a graph \(z=u(x,y)\) with one point above each base point, pull the
+scalar weight back and multiply by \(\sqrt{1+|\nabla u|^2}\). If the
+domain and pulled-back integrand are radial, use polar coordinates only
+after forming this graph factor.
+
+\begingroup\small\raggedright Tags: \texttt{graph-\allowbreak{}area}, \texttt{weighted-\allowbreak{}surface-\allowbreak{}integral},
+\texttt{gram-\allowbreak{}determinant}, \texttt{polar-\allowbreak{}coordinates},
+\texttt{injective-\allowbreak{}area-\allowbreak{}formula}, \texttt{substitution}.\par\endgroup
+
+\subsection{Sources}\label{sources-8}
+
+\begin{itemize}
+\tightlist
+\item
+  Leon Simon,
+  \href{https://math.stanford.edu/~lms/ntu-gmt-text.pdf}{\emph{Introduction
+  to Geometric Measure Theory} (2018)}, Chapter 1, §2, definitions
+  2.1--2.2 and Theorem 2.6; Chapter 2, §3, definition 3.2, Theorem 3.3,
+  Remark 3.4(2), and Example 3.5(3) (graph area factor). The Gram
+  determinant, substitutions, and numerical constants above are derived
+  here. Source ID: \texttt{simon-\allowbreak{}gmt}.
+\end{itemize}
+
+\section{E10 --- A sphere's second moment and a spherical
+cap}\label{E10}
+
+\subsection{Problem}\label{problem-9}
+
+For \(R>0\), let \(S_R=\{(x,y,z)\in\mathbb R^3:x^2+y^2+z^2=R^2\}\).
+Compute the scalar integral of the function \(h:S_R\to\mathbb R\),
+\(h(x,y,z)=z^2\):
+
+\[
+\int_{S_R}h\,d\mathcal H^2.
+\]
+
+As a related application, compute the area of a cap of height
+\(a\in[0,2R]\) defined by \(z\geq R-a\).
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses-9}
+
+Use normalized Hausdorff measure: the covering cost is
+\(\alpha_k(\operatorname{diam}U/2)^k\), where \(\alpha_k\) is the
+\(k\)-dimensional unit-ball volume. This makes \(\mathcal H^k\) equal to
+\(\mathcal L^k\) on \(k\)-planes; \(\mathcal H^0\) is counting measure.
+Thus \(\mathcal H^2\) has covering cost
+\((\pi/4)(\operatorname{diam}U)^2\) and is usual surface area on a
+smooth surface. The sphere and cap are compact Borel sets, and \(h\) is
+continuous and nonnegative.
+
+\subsection{Solution}\label{solution-9}
+
+Use the spherical map
+
+\[
+\Phi(\theta,\varphi)
+=(R\sin\theta\cos\varphi,R\sin\theta\sin\varphi,R\cos\theta),
+\]
+
+on \(D=(0,\pi)\times(0,2\pi)\). Its derivative columns are
+perpendicular, with lengths \(R\) and \(R\sin\theta\). Therefore
+
+\[
+J_2\Phi(\theta,\varphi)=R^2\sin\theta.
+\]
+
+The map is injective on \(D\): \(z/R\) determines \(\theta\in(0,\pi)\),
+and the first two coordinates then determine the unique
+\(\varphi\in(0,2\pi)\). Its image omits exactly the meridian
+
+\[
+M=\{(R\sin\theta,0,R\cos\theta):0\leq\theta\leq\pi\},
+\]
+
+including the poles. This omitted set is \(\mathcal H^2\)-null. Indeed,
+its displayed curve is \(R\)-Lipschitz; partitioning \([0,\pi]\) into
+\(N\) intervals covers \(M\) by \(N\) sets of diameter at most
+\(R\pi/N\). Their total normalized two-dimensional cost is at most
+\(\pi^3R^2/(4N)\), tending to zero, while their maximum diameter also
+tends to zero.
+
+The weighted area formula now gives
+
+\[
+\begin{aligned}
+\int_{S_R}h\,d\mathcal H^2
+&=\int_0^{2\pi}\int_0^\pi
+R^2\cos^2\theta\,R^2\sin\theta\,d\theta\,d\varphi\\
+&=2\pi R^4\int_0^\pi\cos^2\theta\sin\theta\,d\theta.
+\end{aligned}
+\]
+
+With \(v=\cos\theta\), \(dv=-\sin\theta\,d\theta\),
+
+\[
+\int_0^\pi\cos^2\theta\sin\theta\,d\theta
+=\int_{-1}^1v^2\,dv=\frac23,
+\]
+
+so
+
+\[
+\boxed{\int_{S_R}z^2\,d\mathcal H^2=\frac{4\pi R^4}{3}}.
+\]
+
+The same parametrization with weight \(1\) gives
+\(\mathcal H^2(S_R)=4\pi R^2\). A separate check uses coordinate
+symmetry: Hausdorff measure is unchanged by rotations, so the integrals
+of \(x^2\), \(y^2\), and \(z^2\) are equal. Their sum is
+
+\[
+\int_{S_R}(x^2+y^2+z^2)\,d\mathcal H^2
+=R^2\mathcal H^2(S_R)=4\pi R^4.
+\]
+
+For the cap, set \(\theta_0=\arccos(1-a/R)\). The condition
+\(z\geq R-a\) is \(0\leq\theta\leq\theta_0\). Thus
+
+\[
+\mathcal H^2(\{q\in S_R:z(q)\geq R-a\})
+=2\pi R^2\int_0^{\theta_0}\sin\theta\,d\theta
+=\boxed{2\pi Ra}.
+\]
+
+This includes \(a=0\) (a single point, area zero) and \(a=2R\) (the
+entire sphere).
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies-9}
+
+The map \(\Phi\) extends smoothly to the closed rectangle
+\([0,\pi]\times[0,2\pi]\), with bounded derivative, hence is Lipschitz
+there and on \(D\). The restricted domain \(D\) is Borel and has
+multiplicity one on its image. Its Jacobian is bounded by \(R^2\), while
+\(h\circ\Phi\) is bounded by \(R^2\) on a finite-measure rectangle. All
+scalar integrals are therefore finite. The missing meridian is null by
+the covering argument above. Nonnegative integrands justify the iterated
+integrations by Tonelli; finiteness also permits Fubini. Cap boundary
+latitudes are Lipschitz curves and hence \(\mathcal H^2\)-null by the
+same covering argument.
+
+\subsection{Pitfalls}\label{pitfalls-9}
+
+\begin{itemize}
+\tightlist
+\item
+  The factor \(R^2\sin\theta\) is essential. The angular parameter
+  rectangle carries planar measure, not surface measure.
+\item
+  The closed-rectangle parametrization is not injective at the seam or
+  poles. Restricting to \(D\) and proving that the omitted image is null
+  resolves this explicitly.
+\item
+  This scalar moment has no chosen orientation. For a vector field
+  \(G(q)=q\), the outward unit normal is \(n(q)=q/R\) and the outward
+  flux is
+  \(\int_{S_R}G\cdot n\,d\mathcal H^2=R\mathcal H^2(S_R)=4\pi R^3\). The
+  inward normal reverses that flux, while the \(z^2\) integral remains
+  unchanged.
+\end{itemize}
+
+\subsection{Reusable technique}\label{reusable-technique-9}
+
+Compute a surface Jacobian from the Gram determinant or perpendicular
+tangent vectors. Separate chart overlap/null-image issues from the
+calculation. Use rotation symmetry to check coordinate moments, and
+express caps through their polar angle or height.
+
+\begingroup\small\raggedright Tags: \texttt{sphere}, \texttt{surface-\allowbreak{}moment}, \texttt{spherical-\allowbreak{}cap},
+\texttt{area-\allowbreak{}formula}, \texttt{null-\allowbreak{}seam}, \texttt{rotation-\allowbreak{}symmetry},
+\texttt{scalar-\allowbreak{}versus-\allowbreak{}flux}.\par\endgroup
+
+\subsection{Sources}\label{sources-9}
+
+\begin{itemize}
+\tightlist
+\item
+  Leon Simon,
+  \href{https://math.stanford.edu/~lms/ntu-gmt-text.pdf}{\emph{Introduction
+  to Geometric Measure Theory} (2018)}, Chapter 1, §2, definitions
+  2.1--2.2 and Theorem 2.6; Chapter 2, §3, definition 3.2, Theorem 3.3,
+  Remark 3.4(2), and Example 3.5(2) (surface measure and area formula).
+  The chart, null-meridian proof, moment, cap computation, and symmetry
+  check above are derived here. Source ID: \texttt{simon-\allowbreak{}gmt}.
+\end{itemize}
+
+\section{E11 --- A fold counts the image twice}\label{E11}
+
+\subsection{Problem}\label{problem-10}
+
+Let \(A=[-1,1]\times[0,1]\) and define the map \(F:A\to\mathbb R^2\) by
+\[
+F(u,v)=(u^2,v).
+\] Compute the image area, the integral of the area Jacobian over \(A\),
+and the weighted integral \[
+\int_A (u^2+v)J_2F(u,v)\,d\mathcal L^2(u,v).
+\] Explain why an injective change-of-variables formula would give the
+wrong answer. Then recover the scalar integral of \(h(x,y)=x+y\) over
+the image, counted once.
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses-10}
+
+The domain and target measures are completed two-dimensional Lebesgue
+measure \(\mathcal L^2\). We use normalized Hausdorff measure \[
+\mathcal H^k(E)=\lim_{\delta\downarrow0}\inf\left\{
+\sum_j\frac{\alpha_k}{2^k}(\operatorname{diam}U_j)^k:
+E\subseteq\bigcup_jU_j,\ \operatorname{diam}U_j<\delta\right\},
+\] where \(\alpha_k\) is the volume of the unit ball in \(\mathbb R^k\).
+Thus \(\mathcal H^k\) agrees with \(\mathcal L^k\) on a \(k\)-plane;
+\(\mathcal H^0\) is counting measure.
+
+The set \(A\) is compact and Borel. The map \(F\) is the restriction of
+a smooth map, and is Lipschitz on \(A\): \(|u^2-s^2|\leq2|u-s|\) for
+\(u,s\in[-1,1]\) gives \(|F(u,v)-F(s,t)|\leq2|(u,v)-(s,t)|\). The scalar
+function \(h\) is continuous and nonnegative on the image. All integrals
+computed below are finite. The multiplicity is the function \[
+N(F,A,z)=\mathcal H^0\bigl(A\cap F^{-1}(\{z\})\bigr),
+\] not the map \(F\) itself and not a chosen inverse branch.
+
+\subsection{Solution}\label{solution-10}
+
+\textbf{1. Compute the image and every fibre.} The image is
+\(Q=[0,1]\times[0,1]\). For \(z=(x,y)\in Q\) with \(x>0\), the fibre
+consists of the two distinct points \[
+A\cap F^{-1}(\{(x,y)\})=\{(\sqrt x,y),(-\sqrt x,y)\}.
+\] At \(x=0\) it consists of the single point \((0,y)\), and outside
+\(Q\) it is empty. Consequently \(N=2\) on \((0,1]\times[0,1]\), \(N=1\)
+on \(\{0\}\times[0,1]\), and \(N=0\) elsewhere. In particular \(N=2\) at
+\(\mathcal L^2\)-almost every point of \(Q\).
+
+\textbf{2. Compute the area Jacobian.} Differentiating the map gives \[
+DF(u,v)=\begin{pmatrix}2u&0\\0&1\end{pmatrix},\qquad
+J_2F(u,v)=\sqrt{\det(DF^TDF)}=|\det DF|=2|u|.
+\] The critical set is \(\{0\}\times[0,1]\), where the rank drops to
+one. Its image is the left edge of \(Q\); both sets have
+\(\mathcal L^2\)-measure zero. We do not need to define an inverse
+derivative there.
+
+\textbf{3. Compare image area with the parameter integral.} The image
+area is \[
+\mathcal H^2(F(A))=\mathcal L^2(Q)=1.
+\] Direct integration, justified by Tonelli for the nonnegative Borel
+integrand, gives \[
+\int_A J_2F\,d\mathcal L^2
+=\int_{-1}^1\int_0^1 2|u|\,dv\,du
+=4\int_0^1u\,du=2.
+\] The area formula explains the factor: \[
+\int_A J_2F\,d\mathcal L^2
+=\int_{\mathbb R^2}N(F,A,z)\,d\mathcal H^2(z)=2\mathcal L^2(Q).
+\] The extra unit is an entire second sheet, not an error caused by a
+negligible boundary.
+
+\textbf{4. Keep the fibre sum in the weighted formula.} Write the source
+weight as \(h\circ F\), whose value at \((u,v)\) is \(u^2+v\). The
+weighted area formula gives \[
+\begin{aligned}
+\int_A(h\circ F)J_2F\,d\mathcal L^2
+&=\int_{\mathbb R^2}
+\sum_{(u,v)\in A\cap F^{-1}(\{z\})}h(F(u,v))\,d\mathcal H^2(z)\\
+&=\int_Qh(z)N(F,A,z)\,d\mathcal L^2(z)\\
+&=2\int_0^1\int_0^1(x+y)\,dy\,dx=2.
+\end{aligned}
+\] An independent direct calculation is \[
+\begin{aligned}
+\int_{-1}^1\int_0^1(u^2+v)2|u|\,dv\,du
+&=4\int_0^1\left(u^3+\frac u2\right)du\\
+&=4\left(\frac14+\frac14\right)=2.
+\end{aligned}
+\] Thus a substitution that simply writes this parameter integral as
+\(\int_Qh\) loses multiplicity.
+
+\textbf{5. Count the image once.} Restrict \(F\) to
+\(A_+=[0,1]\times[0,1]\). This restriction is injective, including its
+boundary. Its Jacobian may vanish at \(u=0\); injectivity and Lipschitz
+regularity are still enough for the area formula. It follows that \[
+\int_Qh\,d\mathcal H^2
+=\int_0^1\int_0^1(u^2+v)2u\,dv\,du=1.
+\] Alternatively, divide the original parameter integral by two:
+\(N(F,A,F(u,v))=2\) away from \(u=0\), and that exceptional line is
+null. For this particular map, \[
+\int_Qh\,d\mathcal H^2=\frac12\int_A(h\circ F)J_2F\,d\mathcal L^2=1.
+\] A constant divisor works here because the multiplicity is constant
+almost everywhere on the image. Variable multiplicity requires the
+actual fibre count.
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies-10}
+
+The area formula applies to a Lipschitz map on a Lebesgue-measurable
+domain, with nonnegative measurable weights. Its target integral
+contains the sum over all preimages in that domain. Those hypotheses
+hold here, so absolute integrability need not be assumed before
+obtaining the nonnegative identity. Finiteness then follows from the
+explicit computations. For a signed weight one must separately check
+integrability, for example \(\int_A|h\circ F|J_2F<\infty\), before
+subtracting positive and negative parts.
+
+\subsection{Pitfalls}\label{pitfalls-10}
+
+\begin{itemize}
+\tightlist
+\item
+  The unsigned Jacobian is \(2|u|\), not \(2u\). Indeed
+  \(\int_A\det DF\,d\mathcal L^2=0\) by oddness: opposite orientations
+  cancel. Scalar Hausdorff area is positive and does not cancel.
+\item
+  Scalar Hausdorff integration supplies no normal vector. Vector flux
+  requires an oriented normal and a dot product, in addition to the
+  surface measure.
+\item
+  Noninjectivity cannot be dismissed by deleting only the critical line:
+  the two regular sheets still have the same image.
+\item
+  The inverse branch \(x\mapsto\sqrt x\) has an unbounded derivative
+  near zero. That does not invalidate this forward Lipschitz area
+  calculation.
+\end{itemize}
+
+\subsection{Reusable technique}\label{reusable-technique-10}
+
+Find the fibres before changing variables. Compute \(J_kF\) using
+\(\sqrt{\det(DF^TDF)}\); keep the explicit preimage sum; then either
+choose an injective sheet or correct for verified multiplicity. Tags:
+\texttt{area-\allowbreak{}formula}, \texttt{multiplicity}, \texttt{fold},
+\texttt{noninjective-\allowbreak{}parametrization}, \texttt{unsigned-\allowbreak{}jacobian},
+\texttt{orientation}.
+
+\subsection{Sources}\label{sources-10}
+
+\begin{itemize}
+\tightlist
+\item
+  Leon Simon,
+  \href{https://math.stanford.edu/~lms/ntu-gmt-text.pdf}{\emph{Introduction
+  to Geometric Measure Theory}}, Chapter 2, §3, Theorem 3.3 and Remark
+  3.4(2), printed pp.~57--58; source ID \texttt{simon-\allowbreak{}gmt}. The
+  same-dimensional specialization used here has target measure
+  \(\mathcal H^2=\mathcal L^2\). The worked fold and calculations above
+  are original to this collection.
+\end{itemize}
+
+\section{E12 --- Coarea for squared distance, including the critical
+value}\label{E12}
+
+\subsection{Problem}\label{problem-11}
+
+Let \(D=\{(x,y)\in\mathbb R^2:x^2+y^2\leq1\}\) and define
+\(g:\mathbb R^2\to\mathbb R\) by \(g(x,y)=x^2+y^2\). For a nonnegative
+Borel function \(\phi:[0,1]\to[0,\infty]\), prove \[
+\int_D\phi(g(x,y))\,d\mathcal L^2(x,y)
+=\pi\int_0^1\phi(t)\,dt.
+\] Use coarea, making the treatment of \(g^{-1}(\{0\})\) explicit. Also
+compute \(\int_D|\nabla g|\,d\mathcal L^2\) and determine exactly when
+the radial singularity \((x^2+y^2)^a\) is integrable.
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses-11}
+
+Planar integration uses completed Lebesgue measure \(\mathcal L^2\). The
+level sets carry normalized \(\mathcal H^1\), so their measure is
+ordinary arc length. In general our normalization uses the covering cost
+\(\alpha_k(\operatorname{diam}U)^k/2^k\), with \(\alpha_k\) the unit
+\(k\)-ball volume; it gives \(\mathcal H^k=\mathcal L^k\) on a
+\(k\)-plane and \(\mathcal H^0\) equal to counting measure.
+
+The map \(g\) is smooth on \(\mathbb R^2\), the disk is Borel, and its
+one-dimensional coarea Jacobian is \[
+J_1g(x,y)=|\nabla g(x,y)|=2\sqrt{x^2+y^2}.
+\] The weight \(\phi\) may be unbounded, and either side of the
+requested formula may be \(+\infty\). No signed cancellation is
+permitted in this extended nonnegative statement. A value assigned to a
+function at the single point \((0,0)\) will not change its
+\(\mathcal L^2\) integral.
+
+\subsection{Solution}\label{solution-11}
+
+\textbf{1. Describe the levels and the critical set.} Put
+\(r=\sqrt{x^2+y^2}\). For \(0<t\leq1\) the level in \(D\) is the circle
+of radius \(\sqrt t\): \[
+D\cap g^{-1}(\{t\})=\{(\sqrt t\cos\theta,\sqrt t\sin\theta):0\leq\theta<2\pi\}.
+\] Its normalized \(\mathcal H^1\) measure is \(2\pi\sqrt t\). One can
+check this by the injective arc parametrization on \([0,2\pi)\): the
+speed is \(\sqrt t\), so its length is
+\(\int_0^{2\pi}\sqrt t\,d\theta\). At \(t=0\) the level is the singleton
+\(\{(0,0)\}\), whose \(\mathcal H^1\) measure is zero. Outside \([0,1]\)
+the level in \(D\) is empty.
+
+The only critical point is \((0,0)\) because \(\nabla g=(2x,2y)\). The
+only critical value is therefore \(0\). Here this is a direct
+calculation, requiring no appeal to Sard's theorem. The regular levels
+are circles; the exceptional level is a point. Treating it separately
+avoids a division by zero.
+
+\textbf{2. First apply coarea without dividing.} The weighted coarea
+formula for this smooth scalar map is \[
+\int_{\mathbb R^2}w(z)|\nabla g(z)|\,d\mathcal L^2(z)
+=\int_{\mathbb R}\left(\int_{g^{-1}(\{t\})}w(z)\,d\mathcal H^1(z)\right)dt
+\] for nonnegative Borel \(w\), with the usual convention that the
+product is zero where the Jacobian is zero. Taking \(w=\mathbf1_D\)
+gives \[
+\int_D|\nabla g|\,d\mathcal L^2
+=\int_0^1 2\pi\sqrt t\,dt
+=\frac{4\pi}{3}.
+\] The value of the inner integral at \(t=0\) is exactly zero. The value
+at the endpoint \(t=1\) does not affect its one-dimensional Lebesgue
+integral.
+
+\textbf{3. Divide only on the regular part.} Define a Borel function
+\(w:\mathbb R^2\to[0,\infty]\) by \[
+w(z)=
+\begin{cases}
+\displaystyle\frac{\phi(g(z))}{2|z|},&z\in D\setminus\{0\},\\[4pt]
+0,&z=0\text{ or }z\notin D.
+\end{cases}
+\] On \(D\setminus\{0\}\) one has \(wJ_1g=\phi\circ g\). At zero the two
+functions may have different values, but this is a \(\mathcal L^2\)-null
+set. Consequently their nonnegative Lebesgue integrals agree, even if
+\(\phi(0)=+\infty\).
+
+For \(0<t\leq1\), \(w\) is constant on the level circle, with value
+\(\phi(t)/(2\sqrt t)\). Hence the inner level integral is \[
+\int_{g^{-1}(\{t\})}w\,d\mathcal H^1
+=\frac{\phi(t)}{2\sqrt t}\,2\pi\sqrt t
+=\pi\phi(t).
+\] At \(t=0\), the definition \(w(0)=0\) makes the inner integral zero.
+Thus coarea proves \[
+\int_D\phi\circ g\,d\mathcal L^2
+=\int_{(0,1]}\pi\phi(t)\,dt
+=\pi\int_0^1\phi(t)\,dt.
+\] Only the integrals ignore the endpoints; no claim that
+\(1/|\nabla g|\) is defined at every point has been made.
+
+\textbf{4. Read off useful consequences.} For a real exponent \(a\),
+assign any finite value at the origin to the function
+\(z\mapsto|z|^{2a}\) if its literal formula is undefined there. On
+\((0,1]\) use \(\phi(t)=t^a\), and assign \(\phi(0)=0\). The preceding
+identity gives \[
+\int_D|z|^{2a}\,d\mathcal L^2(z)
+=\begin{cases}
+\displaystyle\frac{\pi}{a+1},&a>-1,\\[4pt]
++\infty,&a\leq-1.
+\end{cases}
+\] In particular \(|z|^{-1}\) is integrable on the disk, with integral
+\(2\pi\), whereas \(|z|^{-2}\) is not. The divergence occurs throughout
+arbitrarily small neighborhoods of zero; changing the value at zero
+cannot repair it.
+
+For \(0\leq a_0<b_0\leq1\), taking \(\phi=\mathbf1_{(a_0,b_0)}\) gives
+the annular area \(\pi(b_0-a_0)\) for \(a_0<|z|^2<b_0\). Equivalently,
+if a random point is uniform in \(D\) with probability measure
+\(\pi^{-1}\mathcal L^2|_D\), its squared radius is uniform on \([0,1]\).
+These are both consequences of the same pushforward identity, not
+additional assumptions about polar coordinates.
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies-11}
+
+The locally Lipschitz weighted coarea theorem applies to \(g\) on
+\(\mathbb R^2\), with the Borel weights above. Its Jacobian is the norm
+of the gradient because the target dimension is one. This polynomial is
+smooth and locally Lipschitz; global Lipschitz continuity on all of
+\(\mathbb R^2\) is unnecessary. If using a formulation requiring a
+globally Lipschitz map, use \(G(z)=\min\{|z|^2,4\}\). The function
+\(r\mapsto\min\{r^2,4\}\) is \(4\)-Lipschitz on \([0,\infty)\), and
+\(z\mapsto|z|\) is \(1\)-Lipschitz, so \(G\) is globally \(4\)-Lipschitz
+and agrees with \(g\) on a neighborhood of \(D\).
+
+For signed Borel \(\phi\) with \(\int_0^1|\phi(t)|\,dt<\infty\), first
+apply the nonnegative identity to \(|\phi|\). This proves absolute
+integrability on \(D\); applying the formula to \(\phi^+\) and
+\(\phi^-\) then gives the signed identity. If both sign parts have
+infinite integral, their difference is undefined.
+
+\subsection{Pitfalls}\label{pitfalls-11}
+
+\begin{itemize}
+\tightlist
+\item
+  Coarea gives a factor \(|\nabla g|=2r\), not its reciprocal. A
+  reciprocal appears only because we deliberately choose a compensating
+  weight on the regular part.
+\item
+  A critical level need not be a regular curve. Its contribution must be
+  checked, rather than parametrized as though its dimension were
+  unchanged.
+\item
+  The critical point being null does not by itself establish
+  integrability of a singular weight near it; the power computation
+  supplies the needed neighborhood estimate.
+\item
+  These are scalar integrals over levels. No orientation or vector flux
+  occurs.
+\end{itemize}
+
+\subsection{Reusable technique}\label{reusable-technique-11}
+
+For an integral depending on a scalar map \(g\), compute the geometry of
+\(g^{-1}(\{t\})\) and the coarea Jacobian, isolate the critical set, and
+choose a compensating weight only where the Jacobian is nonzero. Tags:
+\texttt{coarea}, \texttt{level-\allowbreak{}sets}, \texttt{radial-\allowbreak{}integral},
+\texttt{critical-\allowbreak{}value}, \texttt{singular-\allowbreak{}weight},
+\texttt{pushforward-\allowbreak{}measure}.
+
+\subsection{Sources}\label{sources-11}
+
+\begin{itemize}
+\tightlist
+\item
+  Leon Simon,
+  \href{https://math.stanford.edu/~lms/ntu-gmt-text.pdf}{\emph{Introduction
+  to Geometric Measure Theory}}, Chapter 2, §7, Theorem 7.3, Remark
+  7.4(1), and Theorem 7.5, printed pp.~76, 80; source ID
+  \texttt{simon-\allowbreak{}gmt}. The weighted coarea identity is the theorem used;
+  the critical point and all integrals in this example are computed
+  directly. Chapter 2, §3, Example 3.5(1) connects normalized
+  \(\mathcal H^1\) with arc length.
+\end{itemize}
+
+\section{E13 --- A singular map loses all its increase under
+differentiation}\label{E13}
+
+\subsection{Problem}\label{problem-12}
+
+Construct a continuous nondecreasing map \(C:[0,1]\to[0,1]\) with
+\(C(0)=0\), \(C(1)=1\), and \(C'=0\) almost everywhere. Compare \[
+\int_0^1|C'(x)|\,dx
+\quad\text{with}\quad
+\int_{\mathbb R}\mathcal H^0\bigl(C^{-1}(\{y\})\bigr)\,dy.
+\] Explain exactly why the Lipschitz area formula and the fundamental
+theorem for absolutely continuous functions cannot be applied to \(C\).
+Use the construction to exhibit concentration that prevents exchanging a
+derivative limit with an integral, even though the functions themselves
+converge uniformly.
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses-12}
+
+The source and target use completed one-dimensional Lebesgue measure
+\(\mathcal L^1\). Normalized \(\mathcal H^1\) equals \(\mathcal L^1\) on
+a line; the covering normalization in dimension \(k\geq1\) is
+\(\alpha_k(\operatorname{diam}U)^k/2^k\). The measure \(\mathcal H^0\)
+counts points, so an infinite fibre has value \(+\infty\).
+
+Derivatives will be used as almost-everywhere defined functions. Any
+undefined values on an explicitly identified null set may be assigned
+zero to obtain a measurable representative. This convention does not
+assert differentiability there. All finite-stage approximations below
+are piecewise linear and absolutely continuous; their limit will fail
+absolute continuity.
+
+\subsection{Solution}\label{solution-12}
+
+\textbf{1. Build the set and the approximations.} Let \(K_0=[0,1]\).
+Obtain \(K_{n+1}\) from \(K_n\) by removing the open middle third of
+each component interval. The set \(K_n\) has \(2^n\) disjoint closed
+component intervals, each of length \(3^{-n}\). Thus \[
+\mathcal L^1(K_n)=2^n3^{-n}=\left(\frac23\right)^n.
+\] The compact Cantor set \(K=\bigcap_{n=0}^{\infty}K_n\) is null by
+continuity of finite measure from above. It therefore has empty
+interior, because every nondegenerate interval has positive Lebesgue
+measure.
+
+Define \(C_n\) to be the continuous nondecreasing function that is
+constant on each gap removed by stage \(n\), rises linearly by
+\(2^{-n}\) on each component interval of \(K_n\), and satisfies
+\(C_n(0)=0\). These rules uniquely determine it, with \(C_n(1)=1\). For
+example \(C_0(x)=x\), while \(C_1\) rises from \(0\) to \(1/2\) on
+\([0,1/3]\), is constant \(1/2\) on \([1/3,2/3]\), and rises to \(1\) on
+\([2/3,1]\).
+
+All later approximations retain the endpoint values of every stage-\(n\)
+component interval. Within such an interval both \(C_m\) and \(C_n\),
+for \(m\geq n\), remain between endpoint values separated by \(2^{-n}\);
+on previously removed gaps they agree. Therefore \[
+\sup_{x\in[0,1]}|C_m(x)-C_n(x)|\leq2^{-n}\qquad(m\geq n).
+\] The sequence converges uniformly to a continuous nondecreasing
+function \(C\). The endpoint values persist, so \(C(0)=0\), \(C(1)=1\),
+and the intermediate value theorem gives \(C([0,1])=[0,1]\). This
+construction avoids all ambiguity of ternary expansions at interval
+endpoints.
+
+\textbf{2. Compute the almost-everywhere derivative.} Every
+\(x\in[0,1]\setminus K\) lies in an open gap removed at a finite stage.
+All sufficiently late \(C_n\), and hence \(C\), are constant on that
+gap. Thus \(C'(x)=0\) at every such \(x\). Since \(\mathcal L^1(K)=0\),
+\(C'=0\) almost everywhere. Assigning zero on \(K\) yields the zero
+function as a measurable representative, and therefore \[
+\int_0^1|C'|\,d\mathcal L^1=0,
+\qquad C(1)-C(0)=1.
+\] We do not claim that \(C'\) exists at every point of \(K\).
+
+\textbf{3. Compute the multiplicity on the target.} Let \(P\) be the set
+of constant values of \(C\) on its deleted open gaps. There are
+countably many gaps, so \(P\) is countable; these plateau values are
+dyadic rationals. If two points \(a<b\) satisfy \(C(a)=C(b)=y\),
+monotonicity forces \(C\) to be constant on \([a,b]\). Because \(K\) has
+empty interior, \((a,b)\) contains part of a deleted gap, so \(y\in P\).
+Consequently every \(y\in[0,1]\setminus P\) has exactly one preimage,
+using surjectivity for existence. Every \(y\in P\) has infinitely many
+preimages, including an entire gap. Thus the counting function \(N\) has
+values \[
+N(C,[0,1],y)=
+\begin{cases}
+1,&y\in[0,1]\setminus P,\\
++\infty,&y\in P,\\
+0,&y\notin[0,1].
+\end{cases}
+\] It is measurable, and the infinite values on the countable null set
+\(P\) do not change its nonnegative Lebesgue integral. Hence \[
+\int_{\mathbb R}N(C,[0,1],y)\,dy=1\ne0=\int_0^1|C'|\,dx.
+\] This is a failed extension of the Lipschitz area identity to a
+continuous, almost-everywhere differentiable map.
+
+\textbf{4. Identify the exact regularity failure.} On the leftmost
+stage-\(n\) interval, \(C(3^{-n})-C(0)=2^{-n}\). The corresponding
+difference quotient is \((3/2)^n\), so no finite Lipschitz constant
+exists.
+
+Absolute continuity fails directly as well. For the \(2^n\) basic
+intervals \([a_{n,j},b_{n,j}]\) at stage \(n\), \[
+\sum_{j=1}^{2^n}(b_{n,j}-a_{n,j})=(2/3)^n\longrightarrow0,
+\qquad
+\sum_{j=1}^{2^n}|C(b_{n,j})-C(a_{n,j})|
+=\sum_{j=1}^{2^n}2^{-n}=1.
+\] Taking \(\varepsilon=1/2\) contradicts the defining
+absolute-continuity condition for every proposed \(\delta>0\).
+
+There is also an image-of-null-set obstruction. Every plateau value has
+a preimage at a gap endpoint belonging to \(K\), while any preimage
+outside \(K\) lies in a gap. Together with surjectivity this proves
+\(C(K)=[0,1]\). Thus this map sends a null set to a set of measure one.
+In contrast, a Lipschitz map on a line sends null sets to null sets:
+cover the source null set by intervals of arbitrarily small total
+length, then cover their images by intervals whose lengths are at most
+the Lipschitz constant times those lengths. Discarding a source null set
+is therefore unsafe for this singular map.
+
+\textbf{5. See concentration in the derivatives.} At all but finitely
+many breakpoints, \[
+C_n'(x)=\left(\frac32\right)^n\mathbf1_{K_n}(x).
+\] Choose the displayed right side as an almost-everywhere
+representative, denoted \(q_n\). Then \[
+\int_0^1q_n(x)\,dx
+=\left(\frac32\right)^n\left(\frac23\right)^n=1,
+\qquad q_n\longrightarrow0\quad\mathcal L^1\text{-almost everywhere}.
+\] Thus \(\int\lim q_n=0\) while \(\lim\int q_n=1\). The mass stays
+inside a bounded interval and concentrates on the shrinking sets \(K_n\)
+containing the null set \(K\); it does not escape to infinity.
+
+There is no common integrable dominator. If \(q_n\leq G\) almost
+everywhere for \(G\in L^1\), then \(\int_{K_n}|G|\geq1\) for every
+\(n\). Dominated convergence applied to \(|G|\mathbf1_{K_n}\to0\) almost
+everywhere would instead give \(\int_{K_n}|G|\to0\), a contradiction.
+The sequence also fails uniform integrability, since
+\(\mathcal L^1(K_n)\to0\) but \(\int_{K_n}q_n=1\).
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies-12}
+
+The continuity-of-measure, uniform-limit, and nonnegative integration
+arguments used in the construction have their stated hypotheses. The
+area formula is used only as a comparison theorem: its Lipschitz
+hypothesis fails for \(C\), so its equality is not asserted. The
+absolute-continuity fundamental theorem similarly does not apply to
+\(C\).
+
+A useful positive replacement is the following. If \(F_n\) are
+absolutely continuous on \([0,1]\), \(F_n(0)\to a\), \(F_n'\to q\)
+almost everywhere, and \(|F_n'|\leq G\in L^1\) almost everywhere, then
+dominated convergence gives \[
+\sup_{x\in[0,1]}\left|F_n(x)-a-\int_0^xq(t)\,dt\right|
+\leq |F_n(0)-a|+\int_0^1|F_n'-q|\,dt\longrightarrow0.
+\] Here \(q\in L^1\) because \(|q|\leq G\) almost everywhere, and the
+limit is absolutely continuous with derivative \(q\) almost everywhere.
+This is a precise sufficient condition for retaining derivatives under
+the limit; the Cantor approximations violate the domination condition.
+
+\subsection{Pitfalls}\label{pitfalls-12}
+
+\begin{itemize}
+\tightlist
+\item
+  Uniform convergence of functions does not supply domination of their
+  derivatives.
+\item
+  An almost-everywhere zero derivative alone does not make a continuous
+  function constant. Absolute continuity restores that conclusion.
+\item
+  An infinite multiplicity at countably many target values is harmless
+  for this target integral; a null source set with a full-measure image
+  is a different issue.
+\item
+  This does not contradict a smooth Sard theorem: \(C\) is not a smooth
+  map, and the exceptional domain set cannot be removed while preserving
+  its image measure.
+\end{itemize}
+
+\subsection{Reusable technique}\label{reusable-technique-12}
+
+Track where derivative mass lives, not just the pointwise limit. Check
+absolute continuity or the actual regularity required by
+area/change-of-variables formulas; test whether null source sets can
+have large images. Tags: \texttt{singular-\allowbreak{}map},
+\texttt{cantor-\allowbreak{}function}, \texttt{absolute-\allowbreak{}continuity},
+\texttt{area-\allowbreak{}formula-\allowbreak{}failure}, \texttt{concentration},
+\texttt{dominated-\allowbreak{}convergence-\allowbreak{}failure}, \texttt{uniform-\allowbreak{}integrability},
+\texttt{derivative-\allowbreak{}limit}.
+
+\subsection{Sources}\label{sources-12}
+
+\begin{itemize}
+\tightlist
+\item
+  John K. Hunter,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf}{\emph{Measure
+  Theory}}, Example 2.14 (Cantor-set nullity), Example 2.37 (singular
+  Cantor measure), and the opening of Chapter 6, printed pp.~19, 31, 63;
+  source ID \texttt{hunter-\allowbreak{}measure}. These give background on the
+  standard set and the absolute-continuity obstruction; the construction
+  and calculations above are supplied explicitly.
+\item
+  Leon Simon,
+  \href{https://math.stanford.edu/~lms/ntu-gmt-text.pdf}{\emph{Introduction
+  to Geometric Measure Theory}}, Chapter 2, §3, Theorem 3.3 and Remark
+  3.4(2), printed pp.~57--58; source ID \texttt{simon-\allowbreak{}gmt}. The
+  Lipschitz area theorem is the precise formula whose unjustified
+  extension is disproved here.
+\end{itemize}
+
+\section{E14 --- Lost integral mass: concentration, escape, and
+dilution}\label{E14}
+
+\subsection{Problem}\label{problem-13}
+
+Compare the limits and integrals of these measurable functions: \[
+f_n(x)=n\mathbf1_{(0,1/n)}(x)\quad(x\in(0,1)),\qquad
+h_n(x)=\mathbf1_{(n,n+1)}(x)\quad(x\in\mathbb R).
+\] Explain why dominated convergence fails. Identify sufficient
+replacement hypotheses, keeping finite and infinite measure spaces
+distinct.
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses-13}
+
+All measures are one-dimensional Lebesgue measure. The symbol \(f_n\)
+denotes a function; \(f_n(x)\) denotes its value. All three sequences
+used below consist of nonnegative Borel functions. Convergence in
+measure on a measure space means \(\mu(\{|u_n-u|>\varepsilon\})\to0\)
+for each \(\varepsilon>0\). ``Locally in measure'' on \(\mathbb R\)
+means this on every bounded interval.
+
+We use \textbf{value-tail uniform integrability} to mean \[
+\lim_{K\to\infty}\sup_n\int_{\{|u_n|>K\}}|u_n|\,d\mu=0.
+\] On finite measure spaces this is the usual uniform-integrability
+criterion. On infinite measure spaces some definitions additionally
+require spatial tightness; here that condition will always be stated
+separately.
+
+\subsection{Solution}\label{solution-13}
+
+\textbf{1. Concentration on a shrinking set.} For each fixed
+\(x\in(0,1)\), eventually \(n>1/x\), so \(f_n(x)=0\). Nevertheless \[
+\int_0^1 f_n(x)\,dx=n\lambda^1((0,1/n))=1.
+\] Thus \(f_n\to0\) pointwise everywhere on its domain, while
+\(\int f_n\not\to\int0\). It also converges in measure since, for
+\(n>\varepsilon\), \[
+\lambda^1(\{f_n>\varepsilon\})=1/n\longrightarrow0.
+\] There is no common integrable majorant \(G\): if \(G\ge f_n\) almost
+everywhere for all \(n\), take a common full-measure set by removing the
+countable union of exceptional sets. Then \(\int_0^{1/n}G\ge1\) for
+every \(n\), contradicting absolute continuity of the integral of an
+\(L^1\) function as \(1/n\to0\). Its value-tail integrals also show
+precisely what fails: for any \(K\), choose an integer \(n>K\) to obtain
+\[
+\int_{\{f_n>K\}}f_n\,dx=1.
+\]
+
+\textbf{2. Escape to infinity without large values.} For each
+\(x\in\mathbb R\), \(h_n(x)=0\) eventually, but
+\(\int_{\mathbb R}h_n=1\). The functions are bounded by \(1\), which is
+not integrable on \(\mathbb R\). A common \(L^1\) majorant is impossible
+because the intervals \((n,n+1)\) are disjoint and \[
+\int_{\mathbb R}G\,dx\ge\sum_{n=1}^{\infty}\int_n^{n+1}G\,dx\ge\sum_{n=1}^{\infty}1=\infty.
+\] Here value-tail uniform integrability holds: for \(K\ge1\) every tail
+integral is zero. What fails is \textbf{spatial tightness}: \[
+\lim_{R\to\infty}\sup_n\int_{\{|x|>R\}}|h_n(x)|\,dx=1,
+\] not zero. Also \(h_n\to0\) locally in measure but not in measure on
+all of \(\mathbb R\), since \(\lambda^1(\{h_n>1/2\})=1\).
+
+\textbf{3. Even global convergence in measure is insufficient on an
+infinite space.} Set \(r_n(x)=n^{-1}\mathbf1_{(0,n)}(x)\) on
+\(\mathbb R\). Then \(r_n\to0\) pointwise and uniformly, hence in
+measure, and \(\int r_n=1\). Its values are at most \(1\), so it is
+value-tail uniformly integrable. But for fixed \(R>0\), \[
+\int_{\{|x|>R\}}r_n\,dx=\max(1-R/n,0),
+\] whose supremum over \(n\) is \(1\). Mass spreads out at smaller
+heights. This is why a finite-measure version of a theorem cannot
+silently be applied to \(\mathbb R\).
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies-13}
+
+Useful sufficient conditions are:
+
+\begin{itemize}
+\tightlist
+\item
+  On any measure space, if \(u_n\to u\) almost everywhere and
+  \(|u_n|\le G\) almost everywhere for one \(G\in L^1\), dominated
+  convergence gives \(\|u_n-u\|_1\to0\) and therefore convergence of
+  integrals.
+\item
+  On a \textbf{finite} measure space, if \(u_n\) and \(u\) are real
+  measurable functions, \(u_n\in L^1\), \(u_n\to u\) in measure, and the
+  sequence is value-tail uniformly integrable, then \(u\in L^1\) and
+  \(\|u_n-u\|_1\to0\).
+\item
+  On \(\mathbb R\), for real measurable \(u_n,u\) with \(u_n\in L^1\),
+  the same conclusion follows from local convergence in measure,
+  value-tail uniform integrability, and spatial tightness
+  \(\lim_{R\to\infty}\sup_n\int_{|x|>R}|u_n|=0\).
+\end{itemize}
+
+For completeness, the finite-measure assertion follows by truncation:
+let \(T_K(s)=\max(-K,\min(s,K))\) for real functions. On a finite space,
+convergence in measure gives \[
+\int|T_K(u_n)-T_K(u)|\le\varepsilon\mu(X)+2K\mu(\{|u_n-u|>\varepsilon\})\longrightarrow\text{at most }\varepsilon\mu(X).
+\] Uniform integrability controls \(\|u_n-T_K(u_n)\|_1\) uniformly. A
+subsequence converges almost everywhere (choose error probabilities
+summable); Fatou bounds the corresponding tail for \(u\) by the same
+uniform tail bound. Let \(K\to\infty\) and then \(\varepsilon\to0\). On
+\(\mathbb R\), apply this finite-space argument on \([-R,R]\) and
+control its complement by spatial tightness. To bound the tail of \(u\),
+choose a diagonal subsequence converging almost everywhere on each
+\([-m,m]\): at its \(j\)th step make the measure of the error set
+\(\{|u_{n_j}-u|>1/j\}\cap[-j,j]\) less than \(2^{-j}\). The
+summable-error argument gives almost-everywhere convergence on all of
+\(\mathbb R\), and Fatou then bounds \(\int_{|x|>R}|u|\) by the uniform
+tail bound. These are analytic hypotheses, not conclusions inferred from
+numerical samples.
+
+\subsection{Pitfalls}\label{pitfalls-13}
+
+Each \(\int u_n\) being finite, or their values being uniformly bounded,
+is insufficient. Uniform convergence alone does not control integrals
+over an infinite-measure domain. No example contradicts Fatou: it only
+asserts \(0=\int\liminf u_n\le\liminf\int u_n=1\) here.
+
+\subsection{Reusable technique}\label{reusable-technique-13}
+
+Before moving a limit inside an integral, inspect large values on small
+sets and mass outside large bounded sets separately. Tags:
+\texttt{dominated-\allowbreak{}convergence}, \texttt{uniform-\allowbreak{}integrability},
+\texttt{concentration}, \texttt{escape-\allowbreak{}to-\allowbreak{}infinity}, \texttt{tightness},
+\texttt{counterexample}.
+
+\subsection{Sources}\label{sources-13}
+
+\begin{itemize}
+\tightlist
+\item
+  John K. Hunter,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf}{\emph{Measure
+  Theory}}, Examples 4.18--4.20 (the standard concentration, dilution
+  and escape families), Theorem 4.24 (dominated convergence), the
+  following discussion of absolute continuity and uniform integrability,
+  and Chapter 4's Fatou lemma. The computations and additional
+  uniform-integrability/tightness analysis here are worked through
+  explicitly. Source ID: \texttt{hunter-\allowbreak{}measure}.
+\item
+  The uniform-integrability implications used here are proved in the
+  paragraph above; the source is not being cited as containing this
+  exact formulation or atlas.
+\end{itemize}
+
+\section{E15 --- A parameter derivative misses a concentrating boundary
+layer}\label{E15}
+
+\subsection{Problem}\label{problem-14}
+
+On \(x\in(0,1)\), for \(t\ge0\), define \[
+f(t,x)=\begin{cases}\dfrac{t^2}{x^2+t^2},&t>0,\\0,&t=0,\end{cases}
+\qquad I(t)=\int_0^1f(t,x)\,dx.
+\] Compare \(I'_+(0)\) with \(\int_0^1\partial_t^+f(0,x)\,dx\). Locate
+the precise missing hypothesis for differentiation under the integral
+sign.
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses-14}
+
+The measure is Lebesgue measure \(\lambda^1\) on \((0,1)\). For every
+\(t\), \(x\mapsto f(t,x)\) is Borel and satisfies \(0\le f(t,x)\le1\).
+For each fixed \(x>0\), \(t\mapsto f(t,x)\) has right derivative at
+zero. We ask about a derivative of the \textbf{integral-valued function}
+\(I\), not about a derivative of one fixed value \(f(t,x)\).
+
+\subsection{Solution}\label{solution-14}
+
+\textbf{1. Evaluate the integral before differentiating.} For \(t>0\),
+substitute \(x=tu\): \[
+I(t)=t\int_0^{1/t}\frac{1}{1+u^2}\,du=t\arctan(1/t),\qquad I(0)=0.
+\] It follows that \[
+I'_+(0)=\lim_{t\downarrow0}\frac{I(t)-I(0)}{t}
+=\lim_{t\downarrow0}\arctan(1/t)=\frac\pi2.
+\]
+
+\textbf{2. Differentiate each fixed section.} For every fixed \(x>0\),
+\[
+\partial_t^+f(0,x)=\lim_{t\downarrow0}\frac{f(t,x)-f(0,x)}{t}
+=\lim_{t\downarrow0}\frac{t}{x^2+t^2}=0.
+\] Thus \(\int_0^1\partial_t^+f(0,x)\,dx=0\), which differs from
+\(I'_+(0)\).
+
+\textbf{3. Find the boundary layer.} The difference-quotient functions
+are \[
+q_t(x)=\frac{t}{x^2+t^2}\ge0.
+\] They tend to zero at each fixed \(x>0\), but \[
+\int_0^1q_t(x)\,dx=\arctan(1/t)\longrightarrow\pi/2.
+\] For \(0<t\le1\) the interval \((0,t)\) already carries a fixed amount
+of mass: \[
+\int_0^t q_t(x)\,dx=\int_0^1\frac{du}{1+u^2}=\pi/4.
+\] This proves that the family of quotients has no common \(L^1(0,1)\)
+majorant on any neighborhood \(0<t<\delta\): otherwise absolute
+continuity of its integral would force the displayed integrals to tend
+to zero.
+
+The derivative family also has no local common integrable majorant. For
+\(t>0\), \[
+\partial_t f(t,x)=\frac{2tx^2}{(x^2+t^2)^2}.
+\] To avoid any uncountable exceptional-set issue, suppose \(G\in L^1\)
+bounds this derivative for almost every \(x\) for \textbf{each}
+\(t\in(0,\delta)\). Take \(t_j\downarrow0\) with \(2t_j<1\). On
+\((t_j,2t_j)\), put \(x=t_ju\) to obtain \[
+\int_{t_j}^{2t_j}\partial_t f(t_j,x)\,dx
+=\int_1^2\frac{2u^2}{(1+u^2)^2}\,du>0,
+\] independent of \(j\). Since \(G\) dominates the integrand at these
+countably many parameters, absolute continuity again gives a
+contradiction. This even rules out bounds whose null exceptional set was
+initially allowed to depend on the parameter.
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies-14}
+
+Ordinary dominated convergence \textbf{does} give \(I(t)\to0\):
+\(f(t,x)\to0\) and \(|f(t,x)|\le1\in L^1(0,1)\). It says nothing about
+the derivative unless the quotients are controlled.
+
+A precise sufficient differentiation rule is as follows. Let
+\((X,\mathcal A,\mu)\) be a measure space and \(J\) an open real
+interval containing \(t_0\). Assume \(F(t,\cdot)\) is measurable for
+every \(t\in J\), \(F(t_0,\cdot)\in L^1(\mu)\), and there is a
+\textbf{common} full-measure set on which \(t\mapsto F(t,x)\) is
+differentiable throughout \(J\) and \[
+|\partial_tF(t,x)|\le G(x)\quad(t\in J),\qquad G\in L^1(\mu).
+\] Then \(F(t,\cdot)\in L^1\) near \(t_0\) and \[
+\left.\frac{d}{dt}\right|_{t=t_0}\int_XF(t,x)\,d\mu(x)
+=\int_X\partial_tF(t_0,x)\,d\mu(x).
+\] Indeed the mean value theorem bounds the difference quotients by
+\(G\), and dominated convergence proves the identity along every
+sequence of nonzero increments tending to zero. The same proof works for
+a right derivative at a left endpoint, using a half-interval and right
+differentiability at the endpoint. In this example the required bound
+fails exactly where \(x\) and \(t\) approach zero together.
+
+\subsection{Pitfalls}\label{pitfalls-14}
+
+\begin{itemize}
+\tightlist
+\item
+  An integrable bound on \(f\) is not an integrable bound on its
+  parameter derivative or difference quotients.
+\item
+  Differentiability at every fixed \(x\) does not imply differentiation
+  can pass through integration.
+\item
+  A related warning for a different exchange is \(v_n(x)=\sin(nx)/n\) on
+  \([-1,1]\): \(v_n\to0\) uniformly, but \(v_n'(0)=1\) for all \(n\),
+  whereas the limit function has derivative \(0\). Uniform convergence
+  of functions alone does not justify exchanging a limit and a
+  derivative.
+\end{itemize}
+
+\subsection{Reusable technique}\label{reusable-technique-14}
+
+Write the actual difference quotients and search for a common integrable
+bound. When the quotient concentrates, integrate it over a
+parameter-dependent shrinking interval to prove that no such bound
+exists. Tags: \texttt{differentiate-\allowbreak{}under-\allowbreak{}integral},
+\texttt{boundary-\allowbreak{}layer}, \texttt{concentration},
+\texttt{dominated-\allowbreak{}convergence}, \texttt{counterexample}.
+
+\subsection{Sources}\label{sources-14}
+
+\begin{itemize}
+\tightlist
+\item
+  John K. Hunter,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf}{\emph{Measure
+  Theory}}, Theorem 4.24 (the DCT used in the proof). Source ID:
+  \texttt{hunter-\allowbreak{}measure}.
+\item
+  Keith Conrad,
+  \href{https://kconrad.math.uconn.edu/blurbs/analysis/diffunderint.pdf}{\emph{Differentiating
+  under the integral sign}}, Section 12 and Theorem 12.3, for classical
+  hypotheses and a warning example. The measurable sufficient rule here
+  is explicitly proved above; the present boundary-layer example is
+  independently worked. Source ID: \texttt{conrad-\allowbreak{}diff}.
+\end{itemize}
+
+\section{E16 --- An exponential kernel retrieves a boundary
+value}\label{E16}
+
+\subsection{Problem}\label{problem-15}
+
+Let \(g:[0,\infty)\to\mathbb R\) be bounded and Borel measurable, and
+suppose it is right-continuous at \(0\). Prove \[
+\lim_{n\to\infty}\int_0^{\infty}ne^{-nx}g(x)\,dx=g(0).
+\] Give a direct error estimate, and identify why applying dominated
+convergence in the original variable would be unsafe.
+
+\subsection{Data and hypotheses}\label{data-and-hypotheses-15}
+
+The measure is one-dimensional Lebesgue measure on \([0,\infty)\).
+Choose \(M\ge0\) with \(|g(x)|\le M\) for all \(x\ge0\). The kernel
+function is \(k_n:x\mapsto ne^{-nx}\); its value at \(x\) is \(k_n(x)\).
+It satisfies \[
+k_n\ge0,\qquad\int_0^{\infty}k_n(x)\,dx=1,\qquad
+\int_\delta^{\infty}k_n(x)\,dx=e^{-n\delta}\quad(\delta>0).
+\] Every displayed integral of \(k_ng\) is absolutely convergent because
+\(\int|k_ng|\le M\). The value \(g(0)\) is recoverable under the stated
+continuity assumption; Lebesgue integration by itself ignores a single
+point.
+
+\subsection{Solution}\label{solution-15}
+
+\textbf{1. Rescale the moving kernel.} The substitution \(u=nx\), with
+\(dx=du/n\), gives \[
+\int_0^{\infty}ne^{-nx}g(x)\,dx
+=\int_0^{\infty}e^{-u}g(u/n)\,du.
+\] For each fixed \(u\ge0\), right-continuity gives \(g(u/n)\to g(0)\).
+Moreover \[
+|e^{-u}g(u/n)|\le Me^{-u},\qquad
+\int_0^{\infty}Me^{-u}\,du=M<\infty.
+\] Dominated convergence now applies on the fixed \(u\)-domain and gives
+\[
+\lim_n\int_0^{\infty}e^{-u}g(u/n)\,du
+=g(0)\int_0^{\infty}e^{-u}\,du=g(0).
+\]
+
+\textbf{2. Obtain a direct epsilon and tail proof.} For any
+\(\varepsilon>0\), choose \(\delta>0\) such that
+\(|g(x)-g(0)|<\varepsilon\) when \(0\le x<\delta\). Normalization of
+\(k_n\) yields \[
+\begin{aligned}
+\left|\int_0^{\infty}k_n(x)g(x)\,dx-g(0)\right|
+&\le\int_0^\delta k_n(x)|g(x)-g(0)|\,dx
+ +\int_\delta^{\infty}k_n(x)|g(x)-g(0)|\,dx\\
+&\le\varepsilon+2M e^{-n\delta}.
+\end{aligned}
+\] For this fixed \(\delta\), the tail tends to zero. Then let
+\(\varepsilon\downarrow0\).
+
+\textbf{3. A useful convergence rate.} If, additionally,
+\(|g(x)-g(0)|\le Lx\) for every \(x\ge0\) (in particular if \(g\) is
+globally \(L\)-Lipschitz), then \[
+\left|\int_0^{\infty}k_n(x)g(x)\,dx-g(0)\right|
+\le L\int_0^{\infty}ne^{-nx}x\,dx
+=\frac Ln\int_0^{\infty}ue^{-u}\,du=\frac Ln.
+\] The last integral is \(1\) by integration by parts. If only a local
+Lipschitz bound holds for \(0\le x<\delta\), the same split gives the
+valid bound \(L/n+2Me^{-n\delta}\).
+
+\subsection{Why the theorem applies}\label{why-the-theorem-applies-15}
+
+The rescaled integrands \(u\mapsto e^{-u}g(u/n)\) are Borel, converge
+pointwise, and have the explicit common \(L^1\) majorant \(Me^{-u}\).
+These are precisely the dominated-convergence hypotheses. The
+substitution is a positive linear change of variables, so its Jacobian
+is \(1/n\); it is valid for these absolutely integrable measurable
+functions.
+
+In the original variable \(k_n(x)\to0\) for every \(x>0\), while
+\(\int k_n=1\). Hence no common \(L^1\) function dominates all \(k_n\).
+More directly, if \(G\ge k_n\) almost everywhere for all \(n\), then \[
+\int_0^{1/n}G\,dx\ge\int_0^{1/n}ne^{-nx}\,dx=1-e^{-1},
+\] contradicting absolute continuity of an \(L^1\) integral. Rescaling
+resolves the concentration instead of incorrectly ignoring it. In
+measure language the probability measures \(k_n(x)\,dx\) converge weakly
+against bounded continuous test functions on \([0,\infty)\) to the unit
+point mass at \(0\); they do not converge to the zero measure merely
+because their densities tend to zero almost everywhere.
+
+\subsection{Pitfalls}\label{pitfalls-15}
+
+\begin{itemize}
+\tightlist
+\item
+  Do not infer the limit integral is zero from \(ne^{-nx}g(x)\to0\) for
+  \(x>0\): a common integrable bound has not been supplied.
+\item
+  If right-continuity is removed, the answer need not equal the chosen
+  value at zero. For \(g(0)=1\) and \(g(x)=0\) for \(x>0\), every
+  integral is zero.
+\item
+  Boundedness and continuity at zero supply different parts of the
+  proof: boundedness controls the far tail, while continuity identifies
+  the limit near the boundary.
+\end{itemize}
+
+\subsection{Reusable technique}\label{reusable-technique-15}
+
+For a normalized concentrating kernel, either rescale to a fixed kernel
+and use DCT, or split into a small neighborhood and an exponentially
+small tail. Tags: \texttt{approximate-\allowbreak{}identity},
+\texttt{dominated-\allowbreak{}convergence}, \texttt{rescaling},
+\texttt{boundary-\allowbreak{}value}, \texttt{error-\allowbreak{}bound}, \texttt{laplace-\allowbreak{}kernel}.
+
+\subsection{Sources}\label{sources-15}
+
+\begin{itemize}
+\tightlist
+\item
+  John K. Hunter,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf}{\emph{Measure
+  Theory}}, Theorem 4.24 (dominated convergence) and Chapter 4's
+  absolute continuity of the integral. Source ID:
+  \texttt{hunter-\allowbreak{}measure}.
+\item
+  The exponential-kernel calculation, estimates, and rate are proved
+  directly above; no distributional formalism is required.
+\end{itemize}
+
+\section{A small atlas of failed exchanges}\label{atlas}
+
+This is a retrieval map to complete proofs, not a replacement for them.
+It gives outcomes; use \hyperref[problems]{PROBLEMS.md} for the
+problem-first route.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2800}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3600}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3600}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Exchange or tempting inference
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Example and failure mechanism
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Positive sufficient condition
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Integrate every section of a Lebesgue-measurable set & E03: a
+nonmeasurable set can sit in one exceptional section of a planar null
+set. & Borel measurability gives Borel sections everywhere; completed
+Lebesgue measurability gives measurable sections almost everywhere. \\
+Swap signed iterated integrals & E04: both signed parts have infinite
+integral near the origin. E05: the signed matrix has infinite absolute
+sum. & Joint measurability and finite integral of the absolute value
+give Fubini; nonnegativity gives Tonelli with extended values. \\
+Pass an almost-everywhere limit through an integral & E14: mass
+concentrates at a shrinking interval; its height grows. & DCT with one
+integrable majorant; on a finite measure space, convergence in measure
+plus uniform integrability gives convergence in \(L^1\). \\
+Treat bounded integral mass as sufficient on an infinite space & E14: a
+unit bump moves to infinity. Value-tail uniform integrability alone
+permits this. & Add spatial tightness to value-tail uniform
+integrability, together with convergence in measure on bounded sets (and
+an integrable limit). Precise versions are stated in E14. \\
+Differentiate a parameter integral at an endpoint & E15:
+difference-quotient mass concentrates near zero; pointwise derivatives
+miss that mass. & Measurability, pointwise differentiability almost
+everywhere, one integrable local bound on the parameter derivative, and
+one integrable parameter slice. See the exact interval and endpoint
+conditions in E15. \\
+Differentiate a uniform limit of differentiable functions & E15 related
+example: \(\sin(nx)/n\) tends uniformly to zero while its derivative is
+\(1\) at zero for every \(n\). & On a compact interval, uniform
+convergence of the derivatives and convergence of the function values at
+one point imply a differentiable limit with the expected derivative. The
+mean value theorem proves this for differentiable functions; for \(C^1\)
+functions one can also use the fundamental theorem of calculus. \\
+Replace geometric area by parameter area & E08/E11: repeated or folded
+parametrizations count the image more than once. & Injectivity outside
+sets whose contributions are zero, or explicit multiplicity in the area
+formula. \\
+Divide by a coarea Jacobian everywhere & E12: the gradient vanishes at
+the origin. & Restrict division to the positive-Jacobian set, then prove
+the zero set contributes zero or account for its contribution
+separately. \\
+Use the area formula for a merely continuous monotone map & E13: the
+Cantor staircase has derivative zero almost everywhere but maps onto an
+interval. & Lipschitz maps satisfy the area formula; in one dimension
+absolute continuity gives the fundamental theorem and the relevant
+change-of-variable identities. \\
+\end{longtable}
+
+Concentration is also a tool: E16 uses an approximate identity. There
+the integration variable is rescaled and a fixed integrable majorant
+becomes available. The conclusion is a boundary evaluation, with all its
+hypotheses stated, rather than an exchange based solely on pointwise
+convergence in the original variable.
+
+\section{Sources and conventions audit}\label{bibliography}
+
+All links below were opened and checked on \textbf{2026-10-15}. These
+are author-hosted teaching texts, used for theorem statements and
+conventions. The worked examples in this directory are original
+expositions; the linked texts' proofs and problem collections are not
+reproduced. PDF page numbers below count the cover as page 1. A PDF
+viewer may display a different logical page label. Online files can
+change.
+
+\subsection{\texorpdfstring{\texttt{hunter-\allowbreak{}measure}}{hunter-measure}}\label{hunter-measure}
+
+John K. Hunter, \emph{Measure Theory}, University of California, Davis,
+2011.
+\href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf}{Author's
+PDF}.
+
+\begin{itemize}
+\tightlist
+\item
+  Monotone convergence: Theorem 4.6, printed p.41, PDF p.45.
+\item
+  Dominated convergence: Theorem 4.24, printed p.49,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf\#page=53}{PDF
+  p.53}; a.e. versions are discussed in §4.6, printed p.50.
+\item
+  Product-measurable sections: §5.1, Proposition 5.2, printed p.55, PDF
+  p.59; function sections: Theorem 5.15, printed p.60.
+\item
+  Fubini with absolute integrability: Theorem 5.18, printed p.61,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf\#page=65}{PDF
+  p.65}.
+\item
+  Completion and exceptional sections: Example 5.20 and Theorem 5.21,
+  printed p.62,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf\#page=66}{PDF
+  p.66}.
+\end{itemize}
+
+The completed Lebesgue product statement guarantees measurable and
+integrable sections almost everywhere. It does not guarantee
+measurability of every section. Theorem 5.15's sentence defining complex
+section integrals suppresses existence hypotheses; use the explicit
+integrability hypotheses of 5.18/5.21.
+
+\subsection{\texorpdfstring{\texttt{axler-\allowbreak{}mira}}{axler-mira}}\label{axler-mira}
+
+Sheldon Axler, \emph{Measure, Integration \& Real Analysis}, Graduate
+Texts in Mathematics 282, Springer, 2020; author's online revision dated
+12 June 2026. \href{https://measure.axler.net/MIRA.pdf}{Author's PDF}.
+
+\begin{itemize}
+\tightlist
+\item
+  Tonelli: §5B, Theorem 5.28, printed p.129,
+  \href{https://measure.axler.net/MIRA.pdf\#page=144}{PDF p.144}.
+\item
+  Nonnegative double sums: Corollary 5.31, printed p.131, PDF p.146.
+\item
+  Fubini: Theorem 5.32, printed p.132,
+  \href{https://measure.axler.net/MIRA.pdf\#page=147}{PDF p.147}, with
+  exceptional-parameter conventions immediately above and in the proof.
+\end{itemize}
+
+These product theorems assume sigma-finite factors. Tonelli accepts
+nonnegative product-measurable functions and permits the value infinity;
+Fubini requires a finite integral of the absolute value. This is an
+independent reference for the distinction used in the examples. For
+completed Lebesgue measurability rather than product measurability, also
+use \texttt{hunter-\allowbreak{}measure} §5.7.
+
+\subsection{\texorpdfstring{\texttt{simon-\allowbreak{}gmt}}{simon-gmt}}\label{simon-gmt}
+
+Leon Simon, \emph{Introduction to Geometric Measure Theory}, Stanford
+University, 2017/2018 NTU lecture draft; last-update line: 7 March 2018.
+\href{https://math.stanford.edu/~lms/ntu-gmt-text.pdf}{Author's PDF}.
+
+\begin{itemize}
+\tightlist
+\item
+  Normalization: Chapter 1, definitions 2.1--2.2, printed p.11,
+  \href{https://math.stanford.edu/~lms/ntu-gmt-text.pdf\#page=9}{PDF
+  p.9}; equality with Lebesgue outer measure: Theorem 2.6, printed p.12,
+  PDF p.10.
+\item
+  Area and multiplicity: Chapter 2, Theorem 3.3, printed p.57,
+  \href{https://math.stanford.edu/~lms/ntu-gmt-text.pdf\#page=32}{PDF
+  p.32}; weighted fiber sum: Remark 3.4(2), printed p.58, PDF p.33;
+  curves and submanifolds: Examples 3.5, printed pp.60--61, PDF
+  pp.34--35.
+\item
+  Coarea: Chapter 2, Theorem 7.3 and weighted Remark 7.4(1), printed
+  p.76,
+  \href{https://math.stanford.edu/~lms/ntu-gmt-text.pdf\#page=42}{PDF
+  p.42}.
+\item
+  Critical parts of fibers: Theorem 7.5, printed p.80, PDF p.44; the
+  stronger smooth Sard conclusion is distinguished in Remark 7.6.
+\end{itemize}
+
+The PDF has two printed pages per sheet. This version uses the factor
+\texttt{omega\_k\ /\ 2\^{}k} multiplying sums of diameter powers, where
+\texttt{omega\_k} is unit-ball volume. Consequently normalized Hausdorff
+measure agrees with Lebesgue measure on k-planes. Counting measure is
+the k=0 convention.
+
+\subsection{\texorpdfstring{\texttt{hajlasz-\allowbreak{}geometry}}{hajlasz-geometry}}\label{hajlasz-geometry}
+
+Piotr Hajłasz, \emph{Geometric Analysis}, University of Pittsburgh,
+undated author-hosted lecture notes.
+\href{https://www.pitt.edu/~hajlasz/Notatki/Analysis_4.pdf}{Author's
+PDF}.
+
+\begin{itemize}
+\tightlist
+\item
+  Normalization: §3.1, printed/PDF p.19; equality with Lebesgue measure:
+  Theorem 3.2, p.20.
+\item
+  Surface integration: Theorem 3.17 and following discussion, p.25.
+\item
+  Area and multiplicity with the Lusin N condition: Theorem 3.18 and
+  Remark 3.19, pp.26--27.
+\item
+  Coarea: §3.4, Theorem 3.23, pp.28--29; radial slicing and
+  projection/Fubini applications, p.29. Almost-everywhere
+  rectifiability: Theorem 3.24, p.29.
+\end{itemize}
+
+Normalization agrees with \texttt{simon-\allowbreak{}gmt}. Two evident dimensional
+misprints occur in §3.4: the coarea Jacobian should vanish when the
+derivative has rank less than \textbf{m}, not n; the area half of
+Theorem 3.23 needs outer measure \textbf{H\^{}n}, not H\^{}m. The coarea
+half uses the correct fiber and target dimensions. Our area statements
+use Simon's 2018 Theorem 3.3 and Remark 3.4(2), whose dimensions are
+correct.
+
+\subsection{\texorpdfstring{\texttt{hajlasz-\allowbreak{}analysis}}{hajlasz-analysis}}\label{hajlasz-analysis}
+
+Piotr Hajłasz, \emph{Analysis I}, University of Pittsburgh, undated
+author-hosted lecture notes.
+\href{https://www.pitt.edu/~hajlasz/Notatki/Analysis\%20I.pdf}{Author's
+PDF}.
+
+\begin{itemize}
+\tightlist
+\item
+  Theorem 103 and the Cantor staircase discussion, printed/PDF p.76: a
+  continuous increasing function can have derivative zero almost
+  everywhere while its endpoint increment is positive.
+\item
+  Absolute continuity and the fundamental theorem: §8.1, Theorem 106,
+  printed/PDF pp.77--78.
+\item
+  Convolution in L1: Theorem 87, pp.66--67; smooth approximate
+  identities: Theorem 92, pp.70--71.
+\end{itemize}
+
+The Cantor paragraph prints \texttt{f\textquotesingle{}(0)\ =\ 0\ a.e.};
+the variable should be x. The example in this library proves its needed
+staircase properties directly. Derivative values on its exceptional null
+set may be assigned arbitrarily for Lebesgue integration, but those
+assignments do not make the staircase absolutely continuous or
+Lipschitz.
+
+\subsection{\texorpdfstring{\texttt{conrad-\allowbreak{}diff}}{conrad-diff}}\label{conrad-diff}
+
+Keith Conrad, \emph{Differentiating Under the Integral Sign}, University
+of Connecticut, undated author-hosted expository notes.
+\href{https://kconrad.math.uconn.edu/blurbs/analysis/diffunderint.pdf}{Author's
+PDF}.
+
+\begin{itemize}
+\tightlist
+\item
+  A sufficient differentiation theorem: §12, Theorem 12.3, printed/PDF
+  p.16.
+\item
+  Local parameter bounds illustrating the theorem: Table 2, p.16, and
+  discussion on p.17.
+\end{itemize}
+
+Theorem 12.3 treats continuous integrands and parameter derivatives,
+dominated by parameter-independent integrable majorants near the
+parameter in question. Its infinite-interval integrals are stated as
+improper integrals. The library supplies Lebesgue proofs via dominated
+convergence of difference quotients; it does not silently equate
+conditional improper integration with Lebesgue integrability.
+
+\subsection{Reading formulas across
+versions}\label{reading-formulas-across-versions}
+
+Use the source IDs above, not a theorem number alone: Simon's 2014 and
+2018 drafts number area and coarea differently. The older
+\href{https://web.stanford.edu/class/math285/ts-gmt.pdf}{2014 course
+draft}, printed p.54, formula 3.4, also has the incorrect target
+dimension H\^{}m; the following weighted formula 3.5 has H\^{}n.~The
+library cites the corrected 2018 area statement.
+
+The convention in this directory is scalar integration against positive
+measures. A parametrization's area Jacobian is nonnegative and counts
+repeated coverings. An oriented vector flux additionally needs a chosen
+normal and a signed dot product; it is not determined by the scalar
+Hausdorff measure alone.
+
+No source access, symbolic calculation, numerical test, or review
+recorded here is a claim of proof-assistant verification.
+
+\section{Verification ledger}\label{verification}
+
+The collection contains 16 original worked expositions. Every example
+received an independent mathematical review by a model agent other than
+its author. These are recorded mathematical audits, with source and
+computation checks; \textbf{no human peer review or proof-assistant
+verification is claimed}.
+
+\subsection{Independent review of each
+example}\label{independent-review-of-each-example}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1800}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2200}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2200}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3800}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Examples
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Author role
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Independent reviewer role
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Evidence and disposition
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+E01--E04 & Lebesgue examples author & Geometry examples author &
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/reviews/review-E01-E04.md}{Review}:
+all pass; E04's symmetric truncation is explicitly a subset of its open
+domain. \\
+E05, E06, E14--E16 & Parameters/\allowbreak{}convergence author & Area/coarea author
+&
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/reviews/review-E05-E06-E14-E16.md}{Review}:
+all pass; E14's real-measurable assumptions, diagonal subsequence, and
+source references clarified. \\
+E07--E10 & Geometry examples author & Parameters/\allowbreak{}convergence author &
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/reviews/review-E07-E10.md}{Review}:
+all pass; no mathematical changes requested. \\
+E11--E13 & Area/coarea author & Lebesgue examples author &
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/reviews/review-E11-E13.md}{Review}:
+all pass; E13's empty-interior argument and description of shrinking
+sets clarified. \\
+\end{longtable}
+
+The reviewer checked analytic assumptions and derivations, not just
+final answers. The author signed off the recorded changes. Each review
+contains SHA256 hashes of the exact reviewed Markdown files; the
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/reviews/review-manifest.json}{review
+manifest} and collection checker detect changes after review. No
+reviewer reviewed their own examples.
+
+The
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/reviews/global-review.md}{global
+review} separately audits the guide, Hausdorff normalization, theorem
+dimensions and hypotheses, scalar versus oriented integration, source
+locators, counterexample atlas, and retrieval metadata. One repaired
+global statement now restricts sigma-finiteness to the Lebesgue/counting
+product factors: ambient lower-dimensional Hausdorff measure need not be
+sigma-finite. The source audit found dimensional misprints in older
+notes and selected the corrected Simon 2018 area statement.
+
+\subsection{Concrete computation
+checks}\label{concrete-computation-checks}
+
+Run \texttt{python3\ integral-examples/checks/check\_examples.py} from
+the repository root. The recorded run in
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/checks/check-results.json}{check-results.json}
+performed \textbf{92 concrete checks with zero failures}, using SymPy
+1.14.0 and mpmath 1.3.0. The JSON records every identity, method,
+expected value, result, input hash, package version, and computational
+limitation.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1200}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1400}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.7400}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Example
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Concrete checks
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What those checks support
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+E01 & 4 & Antiderivative, final value, series coefficient, quadrature in
+the original order \\
+E02 & 4 & Finite-stage length recurrence/sums and weighted product
+computation \\
+E03 & 0 & Proof-only: a nonmeasurable set and the null-envelope argument
+are not computationally verified \\
+E04 & 8 & Primitive identities, iterated values, finite rectangle bound,
+section quadratures \\
+E05 & 3 & Exact finite support sums and rectangular exhaustion
+identities \\
+E06 & 6 & Parameter derivatives, exponential integral,
+positive/reversed/equal parameter quadratures \\
+E07 & 5 & Speed, weighted length, unweighted length, quadratures \\
+E08 & 5 & Speed/circulation density and once/twice trigonometric
+integrals \\
+E09 & 5 & Gram determinant, height and area integrals, quadratures \\
+E10 & 5 & Spherical Gram determinant, moment, area, cap formulas \\
+E11 & 6 & Fold determinant, multiplicity-weighted and once-counted
+integrals \\
+E12 & 11 & Radial Jacobian integrals, power thresholds/formulas,
+selected quadratures \\
+E13 & 8 & Exact finite-stage Cantor lengths/slopes/masses; no
+infinite-stage theorem inferred \\
+E14 & 4 & Exact mass and finite tail/convergence-set identities \\
+E15 & 10 & Parameter derivative, antiderivative, symbolic endpoint
+expression, scaled quadratures \\
+E16 & 8 & Kernel mass, first moment, exponential test-function values,
+quadratures \\
+\end{longtable}
+
+The mpmath checks use 70 decimal digits and an absolute-or-relative
+comparison tolerance of \(10^{-50}\). This is a numerical consistency
+test, \textbf{not a certified quadrature error bound}. Exact symbolic
+checks are recorded separately.
+
+Neither symbolic integration nor finite numerical sampling proves
+measurability, absolute integrability, a limit exchange, a general fiber
+count, or an infinite-stage Cantor assertion. Those are justified by the
+written arguments and theorem hypotheses. E03 is explicitly marked
+proof-only; E13's checks concern finite stages only. No Lean files are
+supplied or Lean verification asserted for this collection.
+
+\subsection{Structural and document
+checks}\label{structural-and-document-checks}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/checks/check_collection.py}{check\_collection.py}
+  validates all 16 IDs, mandatory sections, source IDs, metadata arrays,
+  local file links, exact review hashes, computation-result hashes,
+  retrieval commands, required deliverables, and the restriction to
+  \texttt{integral-\allowbreak{}examples/\allowbreak{}} changes.
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/metadata.schema.json}{metadata.schema.json}
+  documents the retrieval schema. The standard-library checker validates
+  the required invariants directly; it does not claim to implement a
+  complete JSON Schema engine.
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/build.py}{build.py}
+  generates the retained LaTeX from the Markdown and compiles that exact
+  LaTeX with pdfLaTeX. The
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/checks/pdf-build.json}{build
+  record} identifies source/output hashes, tool versions, and any
+  remaining layout warnings.
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/checks/collection-check.json}{collection-check.json}
+  records structural verification and final PDF/LaTeX hashes. PDF text
+  and representative pages are also inspected during publication
+  preparation.
+\end{itemize}
+
+\subsection{Publication scope and remaining
+limits}\label{publication-scope-and-remaining-limits}
+
+The base and fetched public branch heads are recorded in
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/checks/repository-base.json}{repository-base.json}.
+The publication branch is \texttt{codex/\allowbreak{}integral-\allowbreak{}examples-\allowbreak{}2026-\allowbreak{}10-\allowbreak{}15},
+based on \texttt{e4f337c3\allowbreak{}aa52ec4c\allowbreak{}3f2aab07\allowbreak{}8d7c91b3\allowbreak{}2ee0015f}. All
+additions are under \texttt{integral-\allowbreak{}examples/\allowbreak{}}. Publication uses an
+ordinary push to the new branch, without a pull request, force push,
+merge, or modifications to other branches. The final task response
+identifies the actual published commit and verification of remote
+contents. This source document deliberately does not predict its own
+future commit hash.
+
+The earlier paper was not supplied or used. The collection is a checked
+first batch, not an exhaustive atlas of all integration theorems. Its
+general Lebesgue, area, and coarea theorems remain prerequisites, cited
+in \hyperref[bibliography]{SOURCES.md}. Source PDFs are linked rather
+than redistributed; online versions can change. Recorded review does not
+remove the value of checking a theorem's precise hypotheses when
+adapting an example to a new map, measure, signed weight, or unbounded
+domain.
+
+\end{document}

@@ -1,0 +1,786 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  11pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=25mm]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Integral Applications: Study Guide},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Integral Applications: Study Guide}
+\author{}
+\date{15 October 2026}
+
+\begin{document}
+\maketitle
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+\section{Concrete Lebesgue and Hausdorff integral
+applications}\label{start}
+
+A first collection of \textbf{16 fully worked examples}, written for an
+analysis student. Start with the \hyperref[problems]{problem index},
+then open the separate solution that you want. The examples favor
+explicit computations, stated hypotheses, and direct arguments
+explaining why the integration theorem applies.
+
+\begin{itemize}
+\tightlist
+\item
+  \hyperref[conventions]{Measures and theorem conventions}: normalized
+  Hausdorff measure, completed-product sections, signed integrability,
+  area and coarea.
+\item
+  \hyperref[problems]{Problem index}: no computed answers.
+\item
+  \hyperref[atlas]{Counterexample atlas}: precise failures and
+  sufficient conditions for exchanging sums, limits, derivatives, and
+  integrals.
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/pdf/integral-examples.pdf}{Full
+  worked collection, PDF} and
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/pdf/integral-examples.tex}{editable
+  LaTeX}.
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/pdf/guide.pdf}{Compact
+  guide, PDF} and
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/pdf/guide.tex}{LaTeX}.
+\item
+  \hyperref[bibliography]{Source references},
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/checks/source-references.json}{source
+  snapshot hashes}, and
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/VERIFICATION.md}{verification
+  ledger}.
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/index.json}{Machine-readable
+  index} without results, and
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/metadata.json}{full
+  metadata} with hypotheses, results, and review status.
+\end{itemize}
+
+\subsection{Find a technique again}\label{find-a-technique-again}
+
+From the repository root, using Python 3 with its standard library:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/find\_examples.py }\AttributeTok{{-}{-}topic}\NormalTok{ coarea}
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/find\_examples.py }\AttributeTok{{-}{-}technique}\NormalTok{ multiplicity}
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/find\_examples.py }\AttributeTok{{-}{-}prerequisite}\NormalTok{ dominated}
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/find\_examples.py }\AttributeTok{{-}{-}text}\NormalTok{ concentration}
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/find\_examples.py }\AttributeTok{{-}{-}list{-}tags}
+\end{Highlighting}
+\end{Shaded}
+
+Filters are case-insensitive substring matches and combine with AND.
+They print titles, tags, and paths relative to
+\texttt{integral-\allowbreak{}examples/\allowbreak{}}. The \texttt{-\/-text} filter searches IDs,
+titles, paths, topics, prerequisites, and techniques; it does not search
+solution prose or recorded hypotheses/results. Add
+\texttt{-\/-solutions} to print the recorded result. The files remain
+ordinary Markdown and JSON; retrieval needs no hosted service.
+
+\subsection{How to study with the
+collection}\label{how-to-study-with-the-collection}
+
+For each problem, identify the function, its domain, the measure, and
+the integrability question before computing. In a region problem, write
+the indicator and determine its sections. For signed integrals, examine
+the absolute value or the positive and negative parts. For a
+parametrization, compute the Jacobian and count preimages before
+identifying the answer with an integral over the image. For a parameter
+limit, write the proposed majorant explicitly.
+
+E01--E06 cover Lebesgue integration and iterated integrals; E07--E13
+cover curves, surfaces, area, coarea, and singular maps; E14--E16 cover
+limit and derivative exchanges and approximate identities. Cross-links
+in the atlas make failure cases easy to retrieve alongside their
+positive criteria.
+
+\subsection{Reproduce the checks and
+PDFs}\label{reproduce-the-checks-and-pdfs}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/checks/check\_examples.py}
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/checks/check\_collection.py}
+\ExtensionTok{python3}\NormalTok{ integral{-}examples/build.py}
+\end{Highlighting}
+\end{Shaded}
+
+The concrete identity checker uses SymPy and mpmath. The collection
+checker and retrieval command use only the Python standard library. The
+build uses Pandoc and pdfLaTeX. See
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/checks/requirements.txt}{checks/requirements.txt}
+for the versions actually used. The checked-in PDF and LaTeX need no
+build tools to read.
+
+Independent model reviewers audited every example; the ledger records
+the scope, findings, and revisions. Symbolic and numerical checks
+supplement those reviews and are \textbf{not proofs of analytic
+hypotheses}. No Lean verification or human peer review is claimed.
+General measure-theoretic theorems are cited prerequisites; this
+collection does not reprove all of measure theory.
+
+All collection changes are confined to \texttt{integral-\allowbreak{}examples/\allowbreak{}} on
+branch \texttt{codex/\allowbreak{}integral-\allowbreak{}examples-\allowbreak{}2026-\allowbreak{}10-\allowbreak{}15}, based on the
+integrated research commit
+\texttt{e4f337c3\allowbreak{}aa52ec4c\allowbreak{}3f2aab07\allowbreak{}8d7c91b3\allowbreak{}2ee0015f}. Other research
+branches are independent. The earlier paper was not used or
+reconstructed. No third-party problem collection or source PDF is
+reproduced, and no license is assigned here to the cited sources or to
+unrelated repository work.
+
+\section{Problem index --- without computed answers}\label{problems}
+
+Each entry links to a separate full solution. Read
+\hyperref[conventions]{CONVENTIONS.md} first for measure normalization
+and the exact role of almost-everywhere sections. The JSON index and
+retrieval command described in \hyperref[start]{README.md} support
+search by topic, prerequisite, and technique without printing answers by
+default.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0700}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3700}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3100}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ID
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Task
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Main prerequisites
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Technique to look for
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E01-triangular-region.md}{E01}
+& Integrate \(e^{y^2}\) over \(0<x<y<1\). & Measurability, Tonelli &
+Change order on a measurable region \\
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E02-positive-measure-boundary.md}{E02}
+& Construct a region whose boundary has positive area; integrate \(2y\)
+over it. & Countable additivity, Tonelli & Explicit removed-interval
+sums \\
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E03-exceptional-sections.md}{E03}
+& Can every section of a Lebesgue-measurable null set be integrated?
+Prove the correct general statement. & Completion, Fubini & Borel
+representative and null envelope \\
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E04-signed-fubini-trap.md}{E04}
+& Compare the iterated integrals of \((x^2-y^2)/(x^2+y^2)^2\) on
+\((0,1)^2\). & Signed integrals, Fubini & Check positive and negative
+parts first \\
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E05-signed-fubini-counting.md}{E05}
+& Sum an explicit signed matrix by rows and by columns. & Counting
+measure, series & Detect infinite absolute mass \\
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E06-frullani-parameter-integral.md}{E06}
+& Evaluate and differentiate a Frullani parameter integral. & Tonelli,
+dominated convergence & Replace a quotient by a parameter integral \\
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E07-parabola.md}{E07}
+& Integrate the first coordinate along a parabola with respect to
+length. & Derivatives, area formula & Compute the speed and pull back
+the weight \\
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E08-circle-multiplicity.md}{E08}
+& Integrate a coordinate square on a twice-traversed circle. & Curve
+area formula & Count multiplicity; distinguish circulation \\
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E09-paraboloid-graph.md}{E09}
+& Integrate height on a paraboloid graph over the unit disk. & Gram
+determinant, polar coordinates & Derive the graph area factor \\
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E10-sphere-moment.md}{E10}
+& Integrate a coordinate square over a sphere of radius \(R\). & Surface
+area formula & Handle chart seams and pole exceptions \\
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E11-fold-area-multiplicity.md}{E11}
+& Apply weighted area to a folded square parametrization. & Jacobian,
+area formula & Compare source integral and image multiplicity \\
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E12-radial-coarea-critical-value.md}{E12}
+& Turn an integral on a disk into integrals over circular level sets. &
+Gradient, coarea & Account for a critical point before division \\
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E13-cantor-singular-map.md}{E13}
+& Explain why the Cantor staircase violates a proposed derivative-area
+identity. & Cantor set, absolute continuity & Locate the failed
+Lipschitz hypothesis \\
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E14-concentration-escape-atlas.md}{E14}
+& Track mass in concentration and escape examples when taking limits
+under integrals. & Pointwise convergence, DCT & Uniform integrability
+and spatial tightness \\
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E15-differentiation-concentration.md}{E15}
+& Compare a parameter derivative with the integral of pointwise
+derivatives. & Difference quotients, DCT & Test local domination;
+distinguish derivative limits \\
+\href{https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15/integral-examples/examples/E16-exponential-approximate-identity.md}{E16}
+& Recover a boundary value from exponential averages. & Substitution,
+DCT & Approximate identity and an explicit tail estimate \\
+\end{longtable}
+
+Suggested routes: E01--E06 for Lebesgue integration and iterated
+integrals; E07--E13 for geometric integration; E14--E16 for exchanges of
+limits, derivatives, and integrals. E03 and E04 are useful safeguards
+before generalizing a successful calculation. The
+\hyperref[atlas]{counterexample atlas} maps the safeguards to precise
+sufficient conditions and contains some outcome spoilers.
+
+\section{Measures, functions, and theorems used in this
+library}\label{conventions}
+
+The examples are applications for an analysis student. Their proofs are
+written out; the general integration theorems below are prerequisites,
+with sources in \hyperref[bibliography]{SOURCES.md}. A computation check
+verifies an identity, not the measurability or integrability hypotheses
+that justify it.
+
+\subsection{Functions and values}\label{functions-and-values}
+
+A function is a map with a specified domain, codomain, and rule. For
+example, \(f:(0,1)^2\to\mathbb R\) is a function, \(f(x,y)\) is its
+value at \((x,y)\), and \(f_x:y\mapsto f(x,y)\) is a section function.
+With a fixed integrand and measure, the integral is a number (or an
+allowed extended value), not another notation for the function. A
+parameter integral defines a new function, for example
+\(F:t\mapsto\int f_t\,d\mu\); \(F(t)\) is its value. When a section
+integral is defined only almost everywhere, a measurable version is
+chosen before integrating that version in the outer variable.
+
+\subsection{Lebesgue and counting
+measures}\label{lebesgue-and-counting-measures}
+
+\(\mathcal L^n\) denotes complete \(n\)-dimensional Lebesgue measure on
+\(\mathbb R^n\). A restricted integral \(\int_E f\,d\mathcal L^n\) means
+integration over the measurable set \(E\) with the restricted measure.
+For finite-valued \(f\) defined on all of \(\mathbb R^n\), it equals
+\(\int f\mathbf1_E\,d\mathcal L^n\). Counting measure on
+\(\mathbb N=\{1,2,\ldots\}\) turns integration into an explicit sum. The
+Lebesgue and countable counting measure factors used in the product
+theorems here are sigma-finite. This does not assert sigma-finiteness of
+\(\mathcal H^k\) on all of \(\mathbb R^n\) when \(k<n\); our curve and
+surface examples use finite-measure or countably covered restrictions.
+
+For real measurable \(f\), set \(f^+=\max(f,0)\) and \(f^-=\max(-f,0)\).
+A finite Lebesgue integral requires
+
+\[
+\int |f|\,d\mu=\int f^+\,d\mu+\int f^-\,d\mu<\infty.
+\]
+
+An extended signed integral is defined if at least one of the two terms
+is finite. If both are infinite, their difference is undefined. An
+improper limit or principal value must be named separately; its
+existence does not supply a signed Lebesgue integral.
+
+\subsection{Normalized Hausdorff
+measure}\label{normalized-hausdorff-measure}
+
+For an integer \(k\geq1\), let \(\omega_k=\mathcal L^k(B(0,1))\). We use
+
+\[
+\mathcal H^k(E)=\lim_{\delta\downarrow0}\inf\left\{
+\sum_{i=1}^{\infty}\omega_k\left(\frac{\operatorname{diam}U_i}{2}\right)^k:
+E\subseteq\bigcup_{i=1}^{\infty}U_i,\quad
+\operatorname{diam}U_i\leq\delta\right\}.
+\]
+
+\(\mathcal H^0\) is counting measure. This normalization makes
+\(\mathcal H^k\) agree with \(\mathcal L^k\) on every \(k\)-plane, using
+an isometry to identify that plane with \(\mathbb R^k\). Thus
+\(\mathcal H^1\) measures length and \(\mathcal H^2\) measures surface
+area. In particular \(\omega_1=2\) and \(\omega_2=\pi\). Some books omit
+the factor \(\omega_k/2^k\); their numerical values must be rescaled
+before using these examples. All Hausdorff integrals in this library use
+the convention in this paragraph.
+
+\subsection{Tonelli and Fubini, including
+completion}\label{tonelli-and-fubini-including-completion}
+
+For a nonnegative product-measurable function on sigma-finite measure
+spaces, Tonelli permits either order of integration, including the value
+\(+\infty\). For a signed or complex product-measurable function, Fubini
+applies if the absolute value has finite integral. It then gives finite
+section integrals almost everywhere and equality of the two iterated
+integrals with the product integral.
+
+The product of two complete Lebesgue sigma-algebras need not be
+complete. For \(\mathcal L^{p+q}\)-measurable sets or functions on
+\(\mathbb R^{p+q}\), use the completed-product versions: sections need
+be measurable only for almost every parameter. A Borel set has Borel
+sections at every parameter; an arbitrary Lebesgue-measurable set need
+not have measurable sections at every parameter. The outer integral uses
+a measurable representative of the almost-everywhere section-integral
+function. E03 proves this distinction directly with a null envelope. No
+claim about all sections is inferred from completeness.
+
+\subsection{Area with multiplicity}\label{area-with-multiplicity}
+
+For a Lipschitz map \(F:\mathbb R^m\to\mathbb R^n\) with \(m\leq n\),
+write
+
+\[
+J_mF(x)=\sqrt{\det(DF(x)^TDF(x))},\qquad
+N(F,A,z)=\#\{x\in A:F(x)=z\}.
+\]
+
+The derivative and Jacobian exist almost everywhere; set the Jacobian to
+zero at the exceptional points where the derivative does not exist. For
+a measurable domain \(A\) and nonnegative Borel weight \(h\) on the
+source, the weighted area formula is
+
+\[
+\int_A h(x)J_mF(x)\,d\mathcal L^m(x)
+=\int_{\mathbb R^n}\left(\sum_{x\in A\cap F^{-1}(\{z\})}h(x)\right)
+\,d\mathcal H^m(z).
+\]
+
+The sum is an extended nonnegative sum. With \(h=1\) it counts
+multiplicity. With a nonnegative Borel \(w\) and \(h=w\circ F\) it
+becomes \(w(z)N(F,A,z)\), with the nonnegative-integration convention
+\(0\cdot\infty=0\). An injective parametrization therefore computes the
+geometric scalar integral once. If multiplicity is \(q\) almost
+everywhere, the parameter integral counts it \(q\) times. For signed
+weights require finite absolute integral with this multiplicity. A map
+on a bounded domain that is Lipschitz there can be extended to apply the
+formula; the geometric parametrizations to which we apply area are also
+Lipschitz on a suitable containing compact box. The Cantor staircase is
+an explicitly excluded counterexample.
+
+For a graph \(F(u)=(u,g(u))\) with a scalar \(C^1\) function \(g\),
+\(J_mF=\sqrt{1+|\nabla g|^2}\). This factor is derived in the graph
+example.
+
+\subsection{Coarea and division by a
+Jacobian}\label{coarea-and-division-by-a-jacobian}
+
+For a Lipschitz map \(G:\mathbb R^n\to\mathbb R^m\), \(n\geq m\), the
+coarea Jacobian is
+
+\[
+J_mG(x)=\sqrt{\det(DG(x)DG(x)^T)}.
+\]
+
+For nonnegative Borel \(h\), coarea says
+
+\[
+\int_{\mathbb R^n}h(x)J_mG(x)\,d\mathcal L^n(x)
+=\int_{\mathbb R^m}\left(\int_{G^{-1}(\{t\})}h(x)
+\,d\mathcal H^{n-m}(x)\right)\,d\mathcal L^m(t).
+\]
+
+Fiber statements and inner integrals have their usual almost-everywhere
+meaning. Here \(m=1\) gives \(J_1G=|\nabla G|\). To recover an
+unweighted volume integral, division by \(J_mG\) is legitimate only on
+its positive set. Any contribution from its zero set must be handled
+separately. E12 identifies and disposes of its critical point
+explicitly. E13 shows why a singular continuous map cannot be
+substituted into a Lipschitz area formula.
+
+\subsection{Scalar integration and
+orientation}\label{scalar-integration-and-orientation}
+
+\(\int_S w\,d\mathcal H^k\) has no orientation. A scalar curve
+parametrization uses speed \(|\gamma'(t)|\). A vector circulation uses
+\(\int F(\gamma(t))\cdot\gamma'(t)\,dt\); reversing traversal changes
+its sign. Flux through an oriented surface is
+\(\int_S F\cdot\nu\,d\mathcal H^{n-1}\) with a chosen unit normal
+\(\nu\). Changing \(\nu\) changes flux. Neither a tangent vector nor a
+normal vector is part of Hausdorff measure itself.
+
+\subsection{Convergence and
+differentiation}\label{convergence-and-differentiation}
+
+The version of monotone convergence used here concerns nonnegative
+increasing measurable functions. Dominated convergence concerns
+measurable functions and requires almost-everywhere convergence and one
+integrable majorant for the entire sequence. Pointwise convergence,
+boundedness of each individual function, or a uniform bound on the
+integrals alone is insufficient. E14 gives concentration and escape
+examples with explicit sufficient repairs. E15 states and proves a local
+domination criterion for differentiating an integral. E16 explains how
+concentration can instead be used deliberately as an approximate
+identity.
+
+\section{A small atlas of failed exchanges}\label{atlas}
+
+This is a retrieval map to complete proofs, not a replacement for them.
+It gives outcomes; use \hyperref[problems]{PROBLEMS.md} for the
+problem-first route.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2800}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3600}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3600}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Exchange or tempting inference
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Example and failure mechanism
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Positive sufficient condition
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Integrate every section of a Lebesgue-measurable set & E03: a
+nonmeasurable set can sit in one exceptional section of a planar null
+set. & Borel measurability gives Borel sections everywhere; completed
+Lebesgue measurability gives measurable sections almost everywhere. \\
+Swap signed iterated integrals & E04: both signed parts have infinite
+integral near the origin. E05: the signed matrix has infinite absolute
+sum. & Joint measurability and finite integral of the absolute value
+give Fubini; nonnegativity gives Tonelli with extended values. \\
+Pass an almost-everywhere limit through an integral & E14: mass
+concentrates at a shrinking interval; its height grows. & DCT with one
+integrable majorant; on a finite measure space, convergence in measure
+plus uniform integrability gives convergence in \(L^1\). \\
+Treat bounded integral mass as sufficient on an infinite space & E14: a
+unit bump moves to infinity. Value-tail uniform integrability alone
+permits this. & Add spatial tightness to value-tail uniform
+integrability, together with convergence in measure on bounded sets (and
+an integrable limit). Precise versions are stated in E14. \\
+Differentiate a parameter integral at an endpoint & E15:
+difference-quotient mass concentrates near zero; pointwise derivatives
+miss that mass. & Measurability, pointwise differentiability almost
+everywhere, one integrable local bound on the parameter derivative, and
+one integrable parameter slice. See the exact interval and endpoint
+conditions in E15. \\
+Differentiate a uniform limit of differentiable functions & E15 related
+example: \(\sin(nx)/n\) tends uniformly to zero while its derivative is
+\(1\) at zero for every \(n\). & On a compact interval, uniform
+convergence of the derivatives and convergence of the function values at
+one point imply a differentiable limit with the expected derivative. The
+mean value theorem proves this for differentiable functions; for \(C^1\)
+functions one can also use the fundamental theorem of calculus. \\
+Replace geometric area by parameter area & E08/E11: repeated or folded
+parametrizations count the image more than once. & Injectivity outside
+sets whose contributions are zero, or explicit multiplicity in the area
+formula. \\
+Divide by a coarea Jacobian everywhere & E12: the gradient vanishes at
+the origin. & Restrict division to the positive-Jacobian set, then prove
+the zero set contributes zero or account for its contribution
+separately. \\
+Use the area formula for a merely continuous monotone map & E13: the
+Cantor staircase has derivative zero almost everywhere but maps onto an
+interval. & Lipschitz maps satisfy the area formula; in one dimension
+absolute continuity gives the fundamental theorem and the relevant
+change-of-variable identities. \\
+\end{longtable}
+
+Concentration is also a tool: E16 uses an approximate identity. There
+the integration variable is rescaled and a fixed integrable majorant
+becomes available. The conclusion is a boundary evaluation, with all its
+hypotheses stated, rather than an exchange based solely on pointwise
+convergence in the original variable.
+
+\section{Sources and conventions audit}\label{bibliography}
+
+All links below were opened and checked on \textbf{2026-10-15}. These
+are author-hosted teaching texts, used for theorem statements and
+conventions. The worked examples in this directory are original
+expositions; the linked texts' proofs and problem collections are not
+reproduced. PDF page numbers below count the cover as page 1. A PDF
+viewer may display a different logical page label. Online files can
+change.
+
+\subsection{\texorpdfstring{\texttt{hunter-\allowbreak{}measure}}{hunter-measure}}\label{hunter-measure}
+
+John K. Hunter, \emph{Measure Theory}, University of California, Davis,
+2011.
+\href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf}{Author's
+PDF}.
+
+\begin{itemize}
+\tightlist
+\item
+  Monotone convergence: Theorem 4.6, printed p.41, PDF p.45.
+\item
+  Dominated convergence: Theorem 4.24, printed p.49,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf\#page=53}{PDF
+  p.53}; a.e. versions are discussed in §4.6, printed p.50.
+\item
+  Product-measurable sections: §5.1, Proposition 5.2, printed p.55, PDF
+  p.59; function sections: Theorem 5.15, printed p.60.
+\item
+  Fubini with absolute integrability: Theorem 5.18, printed p.61,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf\#page=65}{PDF
+  p.65}.
+\item
+  Completion and exceptional sections: Example 5.20 and Theorem 5.21,
+  printed p.62,
+  \href{https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf\#page=66}{PDF
+  p.66}.
+\end{itemize}
+
+The completed Lebesgue product statement guarantees measurable and
+integrable sections almost everywhere. It does not guarantee
+measurability of every section. Theorem 5.15's sentence defining complex
+section integrals suppresses existence hypotheses; use the explicit
+integrability hypotheses of 5.18/5.21.
+
+\subsection{\texorpdfstring{\texttt{axler-\allowbreak{}mira}}{axler-mira}}\label{axler-mira}
+
+Sheldon Axler, \emph{Measure, Integration \& Real Analysis}, Graduate
+Texts in Mathematics 282, Springer, 2020; author's online revision dated
+12 June 2026. \href{https://measure.axler.net/MIRA.pdf}{Author's PDF}.
+
+\begin{itemize}
+\tightlist
+\item
+  Tonelli: §5B, Theorem 5.28, printed p.129,
+  \href{https://measure.axler.net/MIRA.pdf\#page=144}{PDF p.144}.
+\item
+  Nonnegative double sums: Corollary 5.31, printed p.131, PDF p.146.
+\item
+  Fubini: Theorem 5.32, printed p.132,
+  \href{https://measure.axler.net/MIRA.pdf\#page=147}{PDF p.147}, with
+  exceptional-parameter conventions immediately above and in the proof.
+\end{itemize}
+
+These product theorems assume sigma-finite factors. Tonelli accepts
+nonnegative product-measurable functions and permits the value infinity;
+Fubini requires a finite integral of the absolute value. This is an
+independent reference for the distinction used in the examples. For
+completed Lebesgue measurability rather than product measurability, also
+use \texttt{hunter-\allowbreak{}measure} §5.7.
+
+\subsection{\texorpdfstring{\texttt{simon-\allowbreak{}gmt}}{simon-gmt}}\label{simon-gmt}
+
+Leon Simon, \emph{Introduction to Geometric Measure Theory}, Stanford
+University, 2017/2018 NTU lecture draft; last-update line: 7 March 2018.
+\href{https://math.stanford.edu/~lms/ntu-gmt-text.pdf}{Author's PDF}.
+
+\begin{itemize}
+\tightlist
+\item
+  Normalization: Chapter 1, definitions 2.1--2.2, printed p.11,
+  \href{https://math.stanford.edu/~lms/ntu-gmt-text.pdf\#page=9}{PDF
+  p.9}; equality with Lebesgue outer measure: Theorem 2.6, printed p.12,
+  PDF p.10.
+\item
+  Area and multiplicity: Chapter 2, Theorem 3.3, printed p.57,
+  \href{https://math.stanford.edu/~lms/ntu-gmt-text.pdf\#page=32}{PDF
+  p.32}; weighted fiber sum: Remark 3.4(2), printed p.58, PDF p.33;
+  curves and submanifolds: Examples 3.5, printed pp.60--61, PDF
+  pp.34--35.
+\item
+  Coarea: Chapter 2, Theorem 7.3 and weighted Remark 7.4(1), printed
+  p.76,
+  \href{https://math.stanford.edu/~lms/ntu-gmt-text.pdf\#page=42}{PDF
+  p.42}.
+\item
+  Critical parts of fibers: Theorem 7.5, printed p.80, PDF p.44; the
+  stronger smooth Sard conclusion is distinguished in Remark 7.6.
+\end{itemize}
+
+The PDF has two printed pages per sheet. This version uses the factor
+\texttt{omega\_k\ /\ 2\^{}k} multiplying sums of diameter powers, where
+\texttt{omega\_k} is unit-ball volume. Consequently normalized Hausdorff
+measure agrees with Lebesgue measure on k-planes. Counting measure is
+the k=0 convention.
+
+\subsection{\texorpdfstring{\texttt{hajlasz-\allowbreak{}geometry}}{hajlasz-geometry}}\label{hajlasz-geometry}
+
+Piotr Hajłasz, \emph{Geometric Analysis}, University of Pittsburgh,
+undated author-hosted lecture notes.
+\href{https://www.pitt.edu/~hajlasz/Notatki/Analysis_4.pdf}{Author's
+PDF}.
+
+\begin{itemize}
+\tightlist
+\item
+  Normalization: §3.1, printed/PDF p.19; equality with Lebesgue measure:
+  Theorem 3.2, p.20.
+\item
+  Surface integration: Theorem 3.17 and following discussion, p.25.
+\item
+  Area and multiplicity with the Lusin N condition: Theorem 3.18 and
+  Remark 3.19, pp.26--27.
+\item
+  Coarea: §3.4, Theorem 3.23, pp.28--29; radial slicing and
+  projection/Fubini applications, p.29. Almost-everywhere
+  rectifiability: Theorem 3.24, p.29.
+\end{itemize}
+
+Normalization agrees with \texttt{simon-\allowbreak{}gmt}. Two evident dimensional
+misprints occur in §3.4: the coarea Jacobian should vanish when the
+derivative has rank less than \textbf{m}, not n; the area half of
+Theorem 3.23 needs outer measure \textbf{H\^{}n}, not H\^{}m. The coarea
+half uses the correct fiber and target dimensions. Our area statements
+use Simon's 2018 Theorem 3.3 and Remark 3.4(2), whose dimensions are
+correct.
+
+\subsection{\texorpdfstring{\texttt{hajlasz-\allowbreak{}analysis}}{hajlasz-analysis}}\label{hajlasz-analysis}
+
+Piotr Hajłasz, \emph{Analysis I}, University of Pittsburgh, undated
+author-hosted lecture notes.
+\href{https://www.pitt.edu/~hajlasz/Notatki/Analysis\%20I.pdf}{Author's
+PDF}.
+
+\begin{itemize}
+\tightlist
+\item
+  Theorem 103 and the Cantor staircase discussion, printed/PDF p.76: a
+  continuous increasing function can have derivative zero almost
+  everywhere while its endpoint increment is positive.
+\item
+  Absolute continuity and the fundamental theorem: §8.1, Theorem 106,
+  printed/PDF pp.77--78.
+\item
+  Convolution in L1: Theorem 87, pp.66--67; smooth approximate
+  identities: Theorem 92, pp.70--71.
+\end{itemize}
+
+The Cantor paragraph prints \texttt{f\textquotesingle{}(0)\ =\ 0\ a.e.};
+the variable should be x. The example in this library proves its needed
+staircase properties directly. Derivative values on its exceptional null
+set may be assigned arbitrarily for Lebesgue integration, but those
+assignments do not make the staircase absolutely continuous or
+Lipschitz.
+
+\subsection{\texorpdfstring{\texttt{conrad-\allowbreak{}diff}}{conrad-diff}}\label{conrad-diff}
+
+Keith Conrad, \emph{Differentiating Under the Integral Sign}, University
+of Connecticut, undated author-hosted expository notes.
+\href{https://kconrad.math.uconn.edu/blurbs/analysis/diffunderint.pdf}{Author's
+PDF}.
+
+\begin{itemize}
+\tightlist
+\item
+  A sufficient differentiation theorem: §12, Theorem 12.3, printed/PDF
+  p.16.
+\item
+  Local parameter bounds illustrating the theorem: Table 2, p.16, and
+  discussion on p.17.
+\end{itemize}
+
+Theorem 12.3 treats continuous integrands and parameter derivatives,
+dominated by parameter-independent integrable majorants near the
+parameter in question. Its infinite-interval integrals are stated as
+improper integrals. The library supplies Lebesgue proofs via dominated
+convergence of difference quotients; it does not silently equate
+conditional improper integration with Lebesgue integrability.
+
+\subsection{Reading formulas across
+versions}\label{reading-formulas-across-versions}
+
+Use the source IDs above, not a theorem number alone: Simon's 2014 and
+2018 drafts number area and coarea differently. The older
+\href{https://web.stanford.edu/class/math285/ts-gmt.pdf}{2014 course
+draft}, printed p.54, formula 3.4, also has the incorrect target
+dimension H\^{}m; the following weighted formula 3.5 has H\^{}n.~The
+library cites the corrected 2018 area statement.
+
+The convention in this directory is scalar integration against positive
+measures. A parametrization's area Jacobian is nonnegative and counts
+repeated coverings. An oriented vector flux additionally needs a chosen
+normal and a signed dot product; it is not determined by the scalar
+Hausdorff measure alone.
+
+No source access, symbolic calculation, numerical test, or review
+recorded here is a claim of proof-assistant verification.
+
+\end{document}

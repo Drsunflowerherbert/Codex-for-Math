@@ -1,0 +1,707 @@
+{
+  "$schema": "./metadata.schema.json",
+  "schema_version": "1.0",
+  "collection": "Concrete Lebesgue and Hausdorff Integral Applications",
+  "language": "en",
+  "created": "2026-10-15",
+  "verification_note": "Independent model review and concrete identity checks; no Lean or human peer review claimed.",
+  "examples": [
+    {
+      "id": "E01",
+      "title": "Change the order to create the missing derivative",
+      "file": "examples/E01-triangular-region.md",
+      "topics": [
+        "Lebesgue integration",
+        "measurable regions",
+        "iterated integrals"
+      ],
+      "prerequisites": [
+        "Borel measurability",
+        "one-variable substitution",
+        "Fubini theorem"
+      ],
+      "techniques": [
+        "region-sections",
+        "Fubini",
+        "Tonelli",
+        "indicator-extension",
+        "order-selection",
+        "power-series"
+      ],
+      "measure": "L^2 on the plane; L^1 on each coordinate",
+      "hypotheses": [
+        "D={0<x<y<1}; F=1_D exp(y^2) is Borel and 0<=F<=e 1_(0,1)^2."
+      ],
+      "result": "Integral over D of exp(y^2) equals (e-1)/2.",
+      "source_ids": [
+        "hunter-measure"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E01-E04.md",
+        "reviewed_sha256": "8eed24ce89582d0de378801ce5fdbecdc46941edd3a35911d730ca2e51554beb",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    },
+    {
+      "id": "E02",
+      "title": "A measurable region whose entire boundary has positive area",
+      "file": "examples/E02-positive-measure-boundary.md",
+      "topics": [
+        "Lebesgue integration",
+        "boundaries",
+        "Riemann integration",
+        "fat Cantor sets"
+      ],
+      "prerequisites": [
+        "countable additivity",
+        "continuity from above",
+        "product measure",
+        "Darboux sums"
+      ],
+      "techniques": [
+        "fat-Cantor-set",
+        "positive-boundary-measure",
+        "explicit-series",
+        "continuity-from-above",
+        "Fubini",
+        "Riemann-versus-Lebesgue"
+      ],
+      "measure": "L^1 on [0,1]; L^2 on [0,1]^2",
+      "hypotheses": [
+        "At stage n remove 2^(n-1) middle intervals of length 4^(-n); C is the remaining closed intersection; E=C x [0,1]."
+      ],
+      "result": "L^1(C)=1/2; boundary(E)=E; L^2(boundary(E))=1/2; integral_E 2y=1/2; the zero extension is not Riemann integrable.",
+      "source_ids": [
+        "hunter-measure"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E01-E04.md",
+        "reviewed_sha256": "436c35e79a6dcae2cb1d5a5e3cf266f18c410addeb6ad16690e7cd31b34b2eae",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    },
+    {
+      "id": "E03",
+      "title": "A null measurable set with one nonmeasurable section",
+      "file": "examples/E03-exceptional-sections.md",
+      "topics": [
+        "Lebesgue integration",
+        "exceptional sections",
+        "completed measures",
+        "nonmeasurable sets"
+      ],
+      "prerequisites": [
+        "completeness",
+        "Borel regularity",
+        "Fubini theorem",
+        "axiom of choice"
+      ],
+      "techniques": [
+        "exceptional-sections",
+        "completion",
+        "Borel-representative",
+        "null-envelope",
+        "Fubini",
+        "Vitali-set"
+      ],
+      "measure": "Complete L^2 jointly; complete L^1 on sections",
+      "hypotheses": [
+        "V subset [0,1] is non-Lebesgue measurable; E={0} x V. General proof assumes A is Lebesgue measurable in R^(m+n)."
+      ],
+      "result": "E is planar measurable and null, but E_0=V is nonmeasurable; arbitrary Lebesgue-measurable sets have measurable sections almost everywhere.",
+      "source_ids": [
+        "hunter-measure"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E01-E04.md",
+        "reviewed_sha256": "dfd1ccec2c3cbd4047d70629d401140b1bf6d5830a3b6408181e89002e561ed0",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    },
+    {
+      "id": "E04",
+      "title": "Two finite iterated integrals, but no signed Lebesgue integral",
+      "file": "examples/E04-signed-fubini-trap.md",
+      "topics": [
+        "Lebesgue integration",
+        "signed integrals",
+        "Fubini counterexamples"
+      ],
+      "prerequisites": [
+        "positive and negative parts",
+        "fundamental theorem of calculus",
+        "absolute integrability"
+      ],
+      "techniques": [
+        "signed-Fubini-failure",
+        "absolute-integrability",
+        "positive-negative-parts",
+        "dyadic-rectangles",
+        "cancellation",
+        "truncation-dependence"
+      ],
+      "measure": "L^2 on (0,1)^2; L^1 on each coordinate",
+      "hypotheses": [
+        "f(x,y)=(x^2-y^2)/(x^2+y^2)^2 on (0,1)^2; every one-variable section is continuous and integrable."
+      ],
+      "result": "Integrating y first gives pi/4; integrating x first gives -pi/4; both joint sign parts have infinite integral, so the signed Lebesgue integral is undefined.",
+      "source_ids": [
+        "hunter-measure"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E01-E04.md",
+        "reviewed_sha256": "13492b6f8dcaf22028d8a31f96221e553b22d277ed3633850f0f54a40e6291f2",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    },
+    {
+      "id": "E05",
+      "title": "Two finite iterated sums and no signed double integral",
+      "file": "examples/E05-signed-fubini-counting.md",
+      "topics": [
+        "Lebesgue integration",
+        "product measure",
+        "double series",
+        "counterexamples"
+      ],
+      "prerequisites": [
+        "counting measure",
+        "positive and negative parts",
+        "Tonelli theorem",
+        "Fubini theorem"
+      ],
+      "techniques": [
+        "absolute-value test",
+        "explicit row and column sums",
+        "rectangular partial sums",
+        "counting-measure",
+        "signed-fubini",
+        "absolute-integrability",
+        "order-of-summation",
+        "counterexample"
+      ],
+      "measure": "Counting measure on N x N, N={1,2,...}",
+      "hypotheses": [
+        "a(n,m)=1 if m=n, -1 if m=n+1, and 0 otherwise",
+        "The product space is sigma-finite; a is measurable"
+      ],
+      "result": "Row-first sum 0; column-first sum 1; integral of |a| infinite; signed product integral undefined",
+      "source_ids": [
+        "hunter-measure"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E05-E06-E14-E16.md",
+        "reviewed_sha256": "6ec3c9aca8ae42e84506f3b809e2af3735d4dc513b6d8a28fd8469ce27471973",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    },
+    {
+      "id": "E06",
+      "title": "A logarithm from a positive double integral",
+      "file": "examples/E06-frullani-parameter-integral.md",
+      "topics": [
+        "Lebesgue integration",
+        "parameter integrals",
+        "Frullani integral"
+      ],
+      "prerequisites": [
+        "Tonelli theorem",
+        "dominated convergence theorem",
+        "mean value theorem"
+      ],
+      "techniques": [
+        "positive kernel representation",
+        "local derivative domination",
+        "endpoint estimates",
+        "frullani",
+        "tonelli",
+        "parameter-integral",
+        "differentiate-under-integral",
+        "cancellation"
+      ],
+      "measure": "Lebesgue measure on (0,infinity) and the finite parameter interval",
+      "hypotheses": [
+        "a>0 and b>0"
+      ],
+      "result": "Integral_0^infinity (exp(-a*x)-exp(-b*x))/x dx = log(b/a); derivative with respect to b is 1/b",
+      "source_ids": [
+        "hunter-measure",
+        "conrad-diff"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E05-E06-E14-E16.md",
+        "reviewed_sha256": "eab2e9eb88fba447a7876cc9e7980ce2e00cdcb436e578f945dbfdfdf1ff05c7",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    },
+    {
+      "id": "E07",
+      "title": "A weighted integral on a parabolic arc",
+      "file": "examples/E07-parabola.md",
+      "topics": [
+        "Hausdorff integration",
+        "curves",
+        "coordinate moments"
+      ],
+      "prerequisites": [
+        "normalized Hausdorff measure",
+        "Lipschitz maps",
+        "weighted area formula",
+        "one-variable substitution"
+      ],
+      "techniques": [
+        "hausdorff-normalization",
+        "weighted-arc-length",
+        "injective-area-formula",
+        "substitution",
+        "coordinate-moment"
+      ],
+      "measure": "Normalized H^1 restricted to C; L^1 on [0,1]; H^1 agrees with length, H^0 counts points.",
+      "hypotheses": [
+        "gamma(t)=(t,t^2) for 0<=t<=1 is injective and Lipschitz; f(x,y)=x is nonnegative continuous on C."
+      ],
+      "result": "Integral_C x dH^1=(5 sqrt(5)-1)/12; H^1(C)=sqrt(5)/2+log(2+sqrt(5))/4.",
+      "source_ids": [
+        "simon-gmt"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E07-E10.md",
+        "reviewed_sha256": "e564f66f4a78f93a3b199f51a70fbc1e751cf9c7e3d29b5319bd7398b9a10928",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    },
+    {
+      "id": "E08",
+      "title": "Traversing a circle twice: multiplicity and orientation",
+      "file": "examples/E08-circle-multiplicity.md",
+      "topics": [
+        "Hausdorff integration",
+        "area formula",
+        "multiplicity",
+        "orientation"
+      ],
+      "prerequisites": [
+        "normalized Hausdorff measure",
+        "weighted area formula",
+        "trigonometric integration",
+        "dot products"
+      ],
+      "techniques": [
+        "area-formula",
+        "multiplicity",
+        "noninjective-parametrization",
+        "scalar-versus-vector",
+        "circulation",
+        "flux"
+      ],
+      "measure": "Normalized H^1 restricted to the unit circle; L^1 on [0,4pi]; H^0 counts parameter preimages.",
+      "hypotheses": [
+        "gamma(t)=(cos(t),sin(t)) on [0,4pi] is Lipschitz; w(x,y)=x^2 is continuous nonnegative; multiplicity is two except at (1,0), where it is three."
+      ],
+      "result": "Integral_C x^2 dH^1=pi; parameter integral over two traversals=2pi; F=(-y,x) has circulation 4pi over two counterclockwise traversals and 2pi once; outward flux of G=(x,y) is 2pi.",
+      "source_ids": [
+        "simon-gmt"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E07-E10.md",
+        "reviewed_sha256": "e67be62b3a670a4747a08b9426fe5516fe6e8fec4ca5e0c5b10c6916efde0334",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    },
+    {
+      "id": "E09",
+      "title": "Height integral over a paraboloid graph",
+      "file": "examples/E09-paraboloid-graph.md",
+      "topics": [
+        "Hausdorff integration",
+        "graphs",
+        "surface integration",
+        "coordinate moments"
+      ],
+      "prerequisites": [
+        "normalized Hausdorff measure",
+        "weighted area formula",
+        "Gram determinant",
+        "polar coordinates"
+      ],
+      "techniques": [
+        "graph-area",
+        "weighted-surface-integral",
+        "gram-determinant",
+        "polar-coordinates",
+        "injective-area-formula",
+        "substitution"
+      ],
+      "measure": "Normalized H^2 restricted to S; L^2 on the closed unit disk; normalized H^2 equals plane area on 2-planes.",
+      "hypotheses": [
+        "Phi(x,y)=(x,y,x^2+y^2) on the closed unit disk is injective and sqrt(5)-Lipschitz; height h=z is bounded continuous nonnegative on S."
+      ],
+      "result": "Integral_S z dH^2=pi(25 sqrt(5)+1)/60; H^2(S)=pi(5 sqrt(5)-1)/6.",
+      "source_ids": [
+        "simon-gmt"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E07-E10.md",
+        "reviewed_sha256": "7607d6bf833da41ba662f8d3a97d76a12fd06ff3b3c666ef9922f679413c7f7b",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    },
+    {
+      "id": "E10",
+      "title": "A sphere's second moment and a spherical cap",
+      "file": "examples/E10-sphere-moment.md",
+      "topics": [
+        "Hausdorff integration",
+        "sphere",
+        "surface moments",
+        "spherical caps",
+        "orientation"
+      ],
+      "prerequisites": [
+        "normalized Hausdorff measure",
+        "weighted area formula",
+        "spherical coordinates",
+        "Hausdorff null-set coverings",
+        "rotation invariance"
+      ],
+      "techniques": [
+        "sphere",
+        "surface-moment",
+        "spherical-cap",
+        "area-formula",
+        "null-seam",
+        "rotation-symmetry",
+        "scalar-versus-flux"
+      ],
+      "measure": "Normalized H^2 restricted to sphere S_R; L^2 on the angular rectangle; H^2 equals surface area.",
+      "hypotheses": [
+        "R>0; spherical map is injective on (0,pi) x (0,2pi), with bounded derivatives; omitted meridian has H^2 measure zero; h=z^2 is continuous and bounded."
+      ],
+      "result": "Integral_(S_R) z^2 dH^2=4pi R^4/3; H^2(S_R)=4pi R^2; cap of height a in [0,2R] has area 2pi R a; outward flux of G(q)=q is 4pi R^3.",
+      "source_ids": [
+        "simon-gmt"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E07-E10.md",
+        "reviewed_sha256": "62d000a6322836d426260ab380e07051502fbcb303a65301f8a6bd46b39575f3",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    },
+    {
+      "id": "E11",
+      "title": "A fold counts the image twice",
+      "file": "examples/E11-fold-area-multiplicity.md",
+      "topics": [
+        "Hausdorff integration",
+        "area formula",
+        "noninjective parametrizations",
+        "orientation"
+      ],
+      "prerequisites": [
+        "Lebesgue integration",
+        "Tonelli theorem",
+        "Jacobian matrices",
+        "normalized Hausdorff measure"
+      ],
+      "techniques": [
+        "count fibres",
+        "absolute Jacobian",
+        "weighted area formula",
+        "choose an injective sheet",
+        "area-formula",
+        "multiplicity",
+        "fold",
+        "noninjective-parametrization",
+        "unsigned-jacobian",
+        "orientation"
+      ],
+      "measure": "L2 on parameter rectangle; normalized H2=L2 on target plane; H0 counting measure",
+      "hypotheses": [
+        "A=[-1,1]x[0,1] is Borel",
+        "F(u,v)=(u^2,v) is Lipschitz on A",
+        "h(x,y)=x+y is continuous nonnegative on Q"
+      ],
+      "result": "H2(F(A))=1; integral_A J2F=2; integral_A (u^2+v)J2F=2; integral_Q (x+y)=1",
+      "source_ids": [
+        "simon-gmt"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E11-E13.md",
+        "reviewed_sha256": "c0c22aece66be1e8361fc5dc5d5265a4e03ae85c4e82cc85953c3a844c90ea0d",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    },
+    {
+      "id": "E12",
+      "title": "Coarea for squared distance, including the critical value",
+      "file": "examples/E12-radial-coarea-critical-value.md",
+      "topics": [
+        "Hausdorff integration",
+        "coarea formula",
+        "radial integration",
+        "critical values",
+        "singular weights",
+        "pushforward measures"
+      ],
+      "prerequisites": [
+        "nonnegative Lebesgue integration",
+        "gradients",
+        "arc length",
+        "normalized Hausdorff measure"
+      ],
+      "techniques": [
+        "describe level sets",
+        "coarea",
+        "divide on the regular part",
+        "check power integrability",
+        "level-sets",
+        "radial-integral",
+        "critical-value",
+        "singular-weight",
+        "pushforward-measure"
+      ],
+      "measure": "L2 on closed unit disk; normalized H1 arc length on level circles; L1 on target",
+      "hypotheses": [
+        "g(x,y)=x^2+y^2 is smooth and locally Lipschitz",
+        "phi:[0,1]->[0,infinity] is Borel",
+        "signed extension requires integral_0^1 |phi| finite"
+      ],
+      "result": "integral_D phi(g)=pi integral_0^1 phi; integral_D |gradient g|=4pi/3; integral_D |z|^(2a)=pi/(a+1) for a>-1 and infinity for a<=-1",
+      "source_ids": [
+        "simon-gmt"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E11-E13.md",
+        "reviewed_sha256": "618495ccec0c97691557e2aafd0b25e561d84e59e8df59abf7682de62063319d",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    },
+    {
+      "id": "E13",
+      "title": "A singular map loses all its increase under differentiation",
+      "file": "examples/E13-cantor-singular-map.md",
+      "topics": [
+        "Cantor function",
+        "singular maps",
+        "area formula",
+        "absolute continuity",
+        "limit exchange",
+        "uniform integrability"
+      ],
+      "prerequisites": [
+        "Lebesgue null sets",
+        "uniform convergence",
+        "monotone functions",
+        "absolute continuity",
+        "dominated convergence"
+      ],
+      "techniques": [
+        "piecewise linear approximation",
+        "count fibres",
+        "concentration",
+        "test absolute continuity",
+        "rule out an integrable dominator",
+        "singular-map",
+        "cantor-function",
+        "absolute-continuity",
+        "area-formula-failure",
+        "dominated-convergence-failure",
+        "uniform-integrability",
+        "derivative-limit",
+        "multiplicity"
+      ],
+      "measure": "L1=normalized H1 on domain and target lines; H0 counting measure for fibres",
+      "hypotheses": [
+        "C_n are specified absolutely continuous piecewise linear Cantor approximants",
+        "C is their continuous monotone uniform limit",
+        "C is not Lipschitz or absolutely continuous",
+        "undefined derivatives on the null Cantor set are assigned zero only as representatives"
+      ],
+      "result": "C'=0 almost everywhere but C(1)-C(0)=1; integral N(C,y)dy=1; q_n=(3/2)^n 1_Kn tends to zero almost everywhere with integral 1 and fails domination and uniform integrability",
+      "source_ids": [
+        "hunter-measure",
+        "simon-gmt"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E11-E13.md",
+        "reviewed_sha256": "fc9c5677672449baa0ca88e3f90935238486bda657f13c23fc5b3e2a325da783",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    },
+    {
+      "id": "E14",
+      "title": "Lost integral mass: concentration, escape, and dilution",
+      "file": "examples/E14-concentration-escape-atlas.md",
+      "topics": [
+        "convergence theorems",
+        "uniform integrability",
+        "counterexamples"
+      ],
+      "prerequisites": [
+        "Lebesgue integration",
+        "convergence in measure",
+        "absolute continuity of integral",
+        "Fatou lemma"
+      ],
+      "techniques": [
+        "shrinking-set test",
+        "disjoint-support test",
+        "value-tail test",
+        "spatial tightness",
+        "truncation",
+        "dominated-convergence",
+        "uniform-integrability",
+        "concentration",
+        "escape-to-infinity",
+        "tightness",
+        "counterexample"
+      ],
+      "measure": "Lebesgue measure on (0,1) or R as specified",
+      "hypotheses": [
+        "f_n=n*1_(0,1/n) on (0,1)",
+        "h_n=1_(n,n+1) on R",
+        "r_n=(1/n)*1_(0,n) on R",
+        "Sufficient convergence conditions distinguish finite measure from infinite measure"
+      ],
+      "result": "All three sequences tend pointwise to 0 with integral 1; their distinct failures of domination, value-tail uniform integrability, or tightness are proved",
+      "source_ids": [
+        "hunter-measure"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E05-E06-E14-E16.md",
+        "reviewed_sha256": "5241b8901c9b047292714af5f8c8c8bb95728409336d6be63d50168a90c9f024",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    },
+    {
+      "id": "E15",
+      "title": "A parameter derivative misses a concentrating boundary layer",
+      "file": "examples/E15-differentiation-concentration.md",
+      "topics": [
+        "parameter integrals",
+        "differentiate under integral",
+        "counterexamples"
+      ],
+      "prerequisites": [
+        "one-sided derivative",
+        "dominated convergence theorem",
+        "absolute continuity of integral"
+      ],
+      "techniques": [
+        "explicit antiderivative",
+        "difference-quotient analysis",
+        "shrinking-interval obstruction",
+        "local derivative domination",
+        "differentiate-under-integral",
+        "boundary-layer",
+        "concentration",
+        "dominated-convergence",
+        "counterexample"
+      ],
+      "measure": "Lebesgue measure on (0,1)",
+      "hypotheses": [
+        "t>=0",
+        "f(t,x)=t^2/(x^2+t^2) for t>0, f(0,x)=0",
+        "x in (0,1)"
+      ],
+      "result": "I(t)=t*arctan(1/t) for t>0; right derivative I at 0 is pi/2; integral of pointwise right derivative is 0",
+      "source_ids": [
+        "hunter-measure",
+        "conrad-diff"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E05-E06-E14-E16.md",
+        "reviewed_sha256": "f41194163d0b97b3fb2c8a57def496c205cec72d534509fe08ebda51fed12718",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    },
+    {
+      "id": "E16",
+      "title": "An exponential kernel retrieves a boundary value",
+      "file": "examples/E16-exponential-approximate-identity.md",
+      "topics": [
+        "approximate identities",
+        "Lebesgue integration",
+        "convergence theorems"
+      ],
+      "prerequisites": [
+        "dominated convergence theorem",
+        "linear substitution",
+        "right continuity"
+      ],
+      "techniques": [
+        "rescaling",
+        "epsilon-and-tail split",
+        "first-moment error estimate",
+        "approximate-identity",
+        "dominated-convergence",
+        "boundary-value",
+        "error-bound",
+        "laplace-kernel"
+      ],
+      "measure": "Lebesgue measure on [0,infinity)",
+      "hypotheses": [
+        "g:[0,infinity)->R is bounded and Borel measurable",
+        "g is right-continuous at 0",
+        "For the optional L/n bound, |g(x)-g(0)|<=L*x for every x>=0"
+      ],
+      "result": "Integral_0^infinity n*exp(-n*x)*g(x) dx tends to g(0); error <= L/n under the stated global Lipschitz-at-zero bound",
+      "source_ids": [
+        "hunter-measure"
+      ],
+      "measure_normalization": "L^n is complete Lebesgue measure; H^0 is counting measure; H^k uses omega_k/2^k times diameter^k and agrees with L^k on k-planes.",
+      "verification": {
+        "status": "independently-reviewed",
+        "review_file": "reviews/review-E05-E06-E14-E16.md",
+        "reviewed_sha256": "ec42b351eb40b2486ac89578ac40b2e231a2147aa65b511d1ea154c41afb4d37",
+        "identity_checks": "checks/check-results.json",
+        "formal_verification": "none"
+      }
+    }
+  ]
+}

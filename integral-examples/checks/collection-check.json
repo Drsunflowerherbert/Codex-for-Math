@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "scope": "Structure, metadata, exact review hashes, retrieval smoke checks, local links and directory-only changes.",
+  "example_count": 16,
+  "local_links_checked": 52,
+  "identity_check_file_loaded": true,
+  "outputs": {
+    "pdf/guide.pdf": "f7a0010d91ac5a95cb7fc1df69109912296fb552f9bbcf6985cea91059d3e814",
+    "pdf/guide.tex": "ef58c83a810c3522338a08b7dc4dbd62137b3e003d85621667ebd24cefefa82c",
+    "pdf/integral-examples.pdf": "9d03d22882d87c4be3b40b2e7b21972bc159c5f15f3ed4522e4a0547a256f068",
+    "pdf/integral-examples.tex": "dc95796abd9fe3ff03a2997b8994641fdb0b81488a4a2ccdada8a14a4ce9cfc8"
+  }
+}

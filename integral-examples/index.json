@@ -1,0 +1,430 @@
+{
+  "schema_version": "1.0",
+  "contains_solutions": false,
+  "path_base": "integral-examples/",
+  "examples": [
+    {
+      "id": "E01",
+      "title": "Change the order to create the missing derivative",
+      "file": "examples/E01-triangular-region.md",
+      "topics": [
+        "Lebesgue integration",
+        "measurable regions",
+        "iterated integrals"
+      ],
+      "prerequisites": [
+        "Borel measurability",
+        "one-variable substitution",
+        "Fubini theorem"
+      ],
+      "techniques": [
+        "region-sections",
+        "Fubini",
+        "Tonelli",
+        "indicator-extension",
+        "order-selection",
+        "power-series"
+      ]
+    },
+    {
+      "id": "E02",
+      "title": "A measurable region whose entire boundary has positive area",
+      "file": "examples/E02-positive-measure-boundary.md",
+      "topics": [
+        "Lebesgue integration",
+        "boundaries",
+        "Riemann integration",
+        "fat Cantor sets"
+      ],
+      "prerequisites": [
+        "countable additivity",
+        "continuity from above",
+        "product measure",
+        "Darboux sums"
+      ],
+      "techniques": [
+        "fat-Cantor-set",
+        "positive-boundary-measure",
+        "explicit-series",
+        "continuity-from-above",
+        "Fubini",
+        "Riemann-versus-Lebesgue"
+      ]
+    },
+    {
+      "id": "E03",
+      "title": "A null measurable set with one nonmeasurable section",
+      "file": "examples/E03-exceptional-sections.md",
+      "topics": [
+        "Lebesgue integration",
+        "exceptional sections",
+        "completed measures",
+        "nonmeasurable sets"
+      ],
+      "prerequisites": [
+        "completeness",
+        "Borel regularity",
+        "Fubini theorem",
+        "axiom of choice"
+      ],
+      "techniques": [
+        "exceptional-sections",
+        "completion",
+        "Borel-representative",
+        "null-envelope",
+        "Fubini",
+        "Vitali-set"
+      ]
+    },
+    {
+      "id": "E04",
+      "title": "Two finite iterated integrals, but no signed Lebesgue integral",
+      "file": "examples/E04-signed-fubini-trap.md",
+      "topics": [
+        "Lebesgue integration",
+        "signed integrals",
+        "Fubini counterexamples"
+      ],
+      "prerequisites": [
+        "positive and negative parts",
+        "fundamental theorem of calculus",
+        "absolute integrability"
+      ],
+      "techniques": [
+        "signed-Fubini-failure",
+        "absolute-integrability",
+        "positive-negative-parts",
+        "dyadic-rectangles",
+        "cancellation",
+        "truncation-dependence"
+      ]
+    },
+    {
+      "id": "E05",
+      "title": "Two finite iterated sums and no signed double integral",
+      "file": "examples/E05-signed-fubini-counting.md",
+      "topics": [
+        "Lebesgue integration",
+        "product measure",
+        "double series",
+        "counterexamples"
+      ],
+      "prerequisites": [
+        "counting measure",
+        "positive and negative parts",
+        "Tonelli theorem",
+        "Fubini theorem"
+      ],
+      "techniques": [
+        "absolute-value test",
+        "explicit row and column sums",
+        "rectangular partial sums",
+        "counting-measure",
+        "signed-fubini",
+        "absolute-integrability",
+        "order-of-summation",
+        "counterexample"
+      ]
+    },
+    {
+      "id": "E06",
+      "title": "A logarithm from a positive double integral",
+      "file": "examples/E06-frullani-parameter-integral.md",
+      "topics": [
+        "Lebesgue integration",
+        "parameter integrals",
+        "Frullani integral"
+      ],
+      "prerequisites": [
+        "Tonelli theorem",
+        "dominated convergence theorem",
+        "mean value theorem"
+      ],
+      "techniques": [
+        "positive kernel representation",
+        "local derivative domination",
+        "endpoint estimates",
+        "frullani",
+        "tonelli",
+        "parameter-integral",
+        "differentiate-under-integral",
+        "cancellation"
+      ]
+    },
+    {
+      "id": "E07",
+      "title": "A weighted integral on a parabolic arc",
+      "file": "examples/E07-parabola.md",
+      "topics": [
+        "Hausdorff integration",
+        "curves",
+        "coordinate moments"
+      ],
+      "prerequisites": [
+        "normalized Hausdorff measure",
+        "Lipschitz maps",
+        "weighted area formula",
+        "one-variable substitution"
+      ],
+      "techniques": [
+        "hausdorff-normalization",
+        "weighted-arc-length",
+        "injective-area-formula",
+        "substitution",
+        "coordinate-moment"
+      ]
+    },
+    {
+      "id": "E08",
+      "title": "Traversing a circle twice: multiplicity and orientation",
+      "file": "examples/E08-circle-multiplicity.md",
+      "topics": [
+        "Hausdorff integration",
+        "area formula",
+        "multiplicity",
+        "orientation"
+      ],
+      "prerequisites": [
+        "normalized Hausdorff measure",
+        "weighted area formula",
+        "trigonometric integration",
+        "dot products"
+      ],
+      "techniques": [
+        "area-formula",
+        "multiplicity",
+        "noninjective-parametrization",
+        "scalar-versus-vector",
+        "circulation",
+        "flux"
+      ]
+    },
+    {
+      "id": "E09",
+      "title": "Height integral over a paraboloid graph",
+      "file": "examples/E09-paraboloid-graph.md",
+      "topics": [
+        "Hausdorff integration",
+        "graphs",
+        "surface integration",
+        "coordinate moments"
+      ],
+      "prerequisites": [
+        "normalized Hausdorff measure",
+        "weighted area formula",
+        "Gram determinant",
+        "polar coordinates"
+      ],
+      "techniques": [
+        "graph-area",
+        "weighted-surface-integral",
+        "gram-determinant",
+        "polar-coordinates",
+        "injective-area-formula",
+        "substitution"
+      ]
+    },
+    {
+      "id": "E10",
+      "title": "A sphere's second moment and a spherical cap",
+      "file": "examples/E10-sphere-moment.md",
+      "topics": [
+        "Hausdorff integration",
+        "sphere",
+        "surface moments",
+        "spherical caps",
+        "orientation"
+      ],
+      "prerequisites": [
+        "normalized Hausdorff measure",
+        "weighted area formula",
+        "spherical coordinates",
+        "Hausdorff null-set coverings",
+        "rotation invariance"
+      ],
+      "techniques": [
+        "sphere",
+        "surface-moment",
+        "spherical-cap",
+        "area-formula",
+        "null-seam",
+        "rotation-symmetry",
+        "scalar-versus-flux"
+      ]
+    },
+    {
+      "id": "E11",
+      "title": "A fold counts the image twice",
+      "file": "examples/E11-fold-area-multiplicity.md",
+      "topics": [
+        "Hausdorff integration",
+        "area formula",
+        "noninjective parametrizations",
+        "orientation"
+      ],
+      "prerequisites": [
+        "Lebesgue integration",
+        "Tonelli theorem",
+        "Jacobian matrices",
+        "normalized Hausdorff measure"
+      ],
+      "techniques": [
+        "count fibres",
+        "absolute Jacobian",
+        "weighted area formula",
+        "choose an injective sheet",
+        "area-formula",
+        "multiplicity",
+        "fold",
+        "noninjective-parametrization",
+        "unsigned-jacobian",
+        "orientation"
+      ]
+    },
+    {
+      "id": "E12",
+      "title": "Coarea for squared distance, including the critical value",
+      "file": "examples/E12-radial-coarea-critical-value.md",
+      "topics": [
+        "Hausdorff integration",
+        "coarea formula",
+        "radial integration",
+        "critical values",
+        "singular weights",
+        "pushforward measures"
+      ],
+      "prerequisites": [
+        "nonnegative Lebesgue integration",
+        "gradients",
+        "arc length",
+        "normalized Hausdorff measure"
+      ],
+      "techniques": [
+        "describe level sets",
+        "coarea",
+        "divide on the regular part",
+        "check power integrability",
+        "level-sets",
+        "radial-integral",
+        "critical-value",
+        "singular-weight",
+        "pushforward-measure"
+      ]
+    },
+    {
+      "id": "E13",
+      "title": "A singular map loses all its increase under differentiation",
+      "file": "examples/E13-cantor-singular-map.md",
+      "topics": [
+        "Cantor function",
+        "singular maps",
+        "area formula",
+        "absolute continuity",
+        "limit exchange",
+        "uniform integrability"
+      ],
+      "prerequisites": [
+        "Lebesgue null sets",
+        "uniform convergence",
+        "monotone functions",
+        "absolute continuity",
+        "dominated convergence"
+      ],
+      "techniques": [
+        "piecewise linear approximation",
+        "count fibres",
+        "concentration",
+        "test absolute continuity",
+        "rule out an integrable dominator",
+        "singular-map",
+        "cantor-function",
+        "absolute-continuity",
+        "area-formula-failure",
+        "dominated-convergence-failure",
+        "uniform-integrability",
+        "derivative-limit",
+        "multiplicity"
+      ]
+    },
+    {
+      "id": "E14",
+      "title": "Lost integral mass: concentration, escape, and dilution",
+      "file": "examples/E14-concentration-escape-atlas.md",
+      "topics": [
+        "convergence theorems",
+        "uniform integrability",
+        "counterexamples"
+      ],
+      "prerequisites": [
+        "Lebesgue integration",
+        "convergence in measure",
+        "absolute continuity of integral",
+        "Fatou lemma"
+      ],
+      "techniques": [
+        "shrinking-set test",
+        "disjoint-support test",
+        "value-tail test",
+        "spatial tightness",
+        "truncation",
+        "dominated-convergence",
+        "uniform-integrability",
+        "concentration",
+        "escape-to-infinity",
+        "tightness",
+        "counterexample"
+      ]
+    },
+    {
+      "id": "E15",
+      "title": "A parameter derivative misses a concentrating boundary layer",
+      "file": "examples/E15-differentiation-concentration.md",
+      "topics": [
+        "parameter integrals",
+        "differentiate under integral",
+        "counterexamples"
+      ],
+      "prerequisites": [
+        "one-sided derivative",
+        "dominated convergence theorem",
+        "absolute continuity of integral"
+      ],
+      "techniques": [
+        "explicit antiderivative",
+        "difference-quotient analysis",
+        "shrinking-interval obstruction",
+        "local derivative domination",
+        "differentiate-under-integral",
+        "boundary-layer",
+        "concentration",
+        "dominated-convergence",
+        "counterexample"
+      ]
+    },
+    {
+      "id": "E16",
+      "title": "An exponential kernel retrieves a boundary value",
+      "file": "examples/E16-exponential-approximate-identity.md",
+      "topics": [
+        "approximate identities",
+        "Lebesgue integration",
+        "convergence theorems"
+      ],
+      "prerequisites": [
+        "dominated convergence theorem",
+        "linear substitution",
+        "right continuity"
+      ],
+      "techniques": [
+        "rescaling",
+        "epsilon-and-tail split",
+        "first-moment error estimate",
+        "approximate-identity",
+        "dominated-convergence",
+        "boundary-value",
+        "error-bound",
+        "laplace-kernel"
+      ]
+    }
+  ]
+}

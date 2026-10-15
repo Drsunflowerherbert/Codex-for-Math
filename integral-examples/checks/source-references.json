@@ -1,0 +1,378 @@
+{
+  "schema_version": 1,
+  "scope": "Byte hashes of author-hosted PDFs actually downloaded during this audit; no third-party PDFs are committed. Hashes identify those downloaded versions, not immutable remote URLs. Printed and physical PDF pages can differ.",
+  "access_date": "2026-10-15",
+  "page_numbering": "Physical PDF pages are 1-based and include the cover; Simon PDFs contain two printed pages per physical sheet.",
+  "source_caveats_file": "SOURCES.md",
+  "sources": [
+    {
+      "source_id": "hunter-measure",
+      "author": "John K. Hunter",
+      "title": "Measure Theory",
+      "version_description": "2011",
+      "url": "https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf",
+      "resolved_url": "https://www.math.ucdavis.edu/~hunter/measure_theory/measure_notes.pdf",
+      "access_date": "2026-10-15",
+      "snapshot_downloaded_utc": "2026-10-15T05:38:21.804774+00:00",
+      "pdf_sha256": "d620b11690dbdca4cbf6fd84c695ab2ab22b69bc52990ad4dda879988750e0d2",
+      "pdf_bytes": 592859,
+      "pdf_page_count": 93,
+      "http_head_status": 200,
+      "content_type": "application/pdf",
+      "locators": [
+        {
+          "label": "Theorem 4.6, monotone convergence",
+          "printed_pages": [
+            41
+          ],
+          "pdf_pages": [
+            45
+          ]
+        },
+        {
+          "label": "Theorem 4.24, dominated convergence",
+          "printed_pages": [
+            49
+          ],
+          "pdf_pages": [
+            53
+          ]
+        },
+        {
+          "label": "Proposition 5.2, product-measurable sections",
+          "printed_pages": [
+            55
+          ],
+          "pdf_pages": [
+            59
+          ]
+        },
+        {
+          "label": "Theorem 5.18, Fubini",
+          "printed_pages": [
+            61
+          ],
+          "pdf_pages": [
+            65
+          ]
+        },
+        {
+          "label": "Example 5.20 and Theorem 5.21, completion and exceptional sections",
+          "printed_pages": [
+            62
+          ],
+          "pdf_pages": [
+            66
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "axler-mira",
+      "author": "Sheldon Axler",
+      "title": "Measure, Integration & Real Analysis",
+      "version_description": "Online revision 12 June 2026; copyright 2020",
+      "url": "https://measure.axler.net/MIRA.pdf",
+      "resolved_url": "https://measure.axler.net/MIRA.pdf",
+      "access_date": "2026-10-15",
+      "snapshot_downloaded_utc": "2026-10-15T05:46:36.447824+00:00",
+      "pdf_sha256": "7a7ab07fb74f5394c3180da51875ec467a0d89627321c8b2624b6b9b9585fb4e",
+      "pdf_bytes": 3539121,
+      "pdf_page_count": 426,
+      "http_head_status": 200,
+      "content_type": "application/pdf",
+      "locators": [
+        {
+          "label": "Section 5B, Theorem 5.28, Tonelli",
+          "printed_pages": [
+            129
+          ],
+          "pdf_pages": [
+            144
+          ]
+        },
+        {
+          "label": "Section 5B, Corollary 5.31, nonnegative double sums",
+          "printed_pages": [
+            131
+          ],
+          "pdf_pages": [
+            146
+          ]
+        },
+        {
+          "label": "Section 5B, Theorem 5.32, Fubini",
+          "printed_pages": [
+            132
+          ],
+          "pdf_pages": [
+            147
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "simon-gmt",
+      "author": "Leon Simon",
+      "title": "Introduction to Geometric Measure Theory",
+      "version_description": "NTU draft; copyright 2017/2018; last updated 7 March 2018",
+      "url": "https://math.stanford.edu/~lms/ntu-gmt-text.pdf",
+      "resolved_url": "https://math.stanford.edu/~lms/ntu-gmt-text.pdf",
+      "access_date": "2026-10-15",
+      "snapshot_downloaded_utc": "2026-10-15T05:38:18.518003+00:00",
+      "pdf_sha256": "ba7fd4a53bf0f1d0ac54aec50bb72c4bba196b8e784d65cd0a7fd85131a3bf03",
+      "pdf_bytes": 1234390,
+      "pdf_page_count": 137,
+      "http_head_status": 200,
+      "content_type": "application/pdf",
+      "locators": [
+        {
+          "label": "Chapter 1, definitions 2.1-2.2, normalized Hausdorff measure",
+          "printed_pages": [
+            11
+          ],
+          "pdf_pages": [
+            9
+          ]
+        },
+        {
+          "label": "Chapter 1, Theorem 2.6, H^n equals L^n",
+          "printed_pages": [
+            12
+          ],
+          "pdf_pages": [
+            10
+          ]
+        },
+        {
+          "label": "Chapter 2, Theorem 3.3, area formula",
+          "printed_pages": [
+            57
+          ],
+          "pdf_pages": [
+            32
+          ]
+        },
+        {
+          "label": "Chapter 2, Remark 3.4(2), weighted fiber sum",
+          "printed_pages": [
+            58
+          ],
+          "pdf_pages": [
+            33
+          ]
+        },
+        {
+          "label": "Chapter 2, Theorem 7.3 and Remark 7.4(1), coarea",
+          "printed_pages": [
+            76
+          ],
+          "pdf_pages": [
+            42
+          ]
+        },
+        {
+          "label": "Chapter 2, Theorem 7.5, critical parts of fibers",
+          "printed_pages": [
+            80
+          ],
+          "pdf_pages": [
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "hajlasz-geometry",
+      "author": "Piotr Hajlasz",
+      "title": "Geometric Analysis",
+      "version_description": "Undated author-hosted notes",
+      "url": "https://www.pitt.edu/~hajlasz/Notatki/Analysis_4.pdf",
+      "resolved_url": "https://sites.pitt.edu/~hajlasz/Notatki/Analysis_4.pdf",
+      "access_date": "2026-10-15",
+      "snapshot_downloaded_utc": "2026-10-15T05:38:19.773737+00:00",
+      "pdf_sha256": "cc8c58f78428271a74e4ccc2320f8d552613562bc0146d8dfa08164a58d3497d",
+      "pdf_bytes": 590278,
+      "pdf_page_count": 60,
+      "http_head_status": 200,
+      "content_type": "application/pdf",
+      "locators": [
+        {
+          "label": "Section 3.1; Theorem 3.2, normalization and equality with Lebesgue measure",
+          "printed_pages": [
+            19,
+            20
+          ],
+          "pdf_pages": [
+            19,
+            20
+          ]
+        },
+        {
+          "label": "Theorem 3.17, surface integration",
+          "printed_pages": [
+            25
+          ],
+          "pdf_pages": [
+            25
+          ]
+        },
+        {
+          "label": "Theorem 3.18 and Remark 3.19, area and the Lusin N condition",
+          "printed_pages": [
+            26,
+            27
+          ],
+          "pdf_pages": [
+            26,
+            27
+          ]
+        },
+        {
+          "label": "Section 3.4, Theorem 3.23, area/coarea (see source caveats)",
+          "printed_pages": [
+            28,
+            29
+          ],
+          "pdf_pages": [
+            28,
+            29
+          ]
+        },
+        {
+          "label": "Theorem 3.24, almost-everywhere rectifiable fibers",
+          "printed_pages": [
+            29
+          ],
+          "pdf_pages": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "hajlasz-analysis",
+      "author": "Piotr Hajlasz",
+      "title": "Analysis I",
+      "version_description": "Undated author-hosted notes",
+      "url": "https://www.pitt.edu/~hajlasz/Notatki/Analysis%20I.pdf",
+      "resolved_url": "https://sites.pitt.edu/~hajlasz/Notatki/Analysis%20I.pdf",
+      "access_date": "2026-10-15",
+      "snapshot_downloaded_utc": "2026-10-15T05:38:21.011335+00:00",
+      "pdf_sha256": "b0a0b163f097eea7f68e30f1d594f632e6e7ba5897f81817babe8f51cf299249",
+      "pdf_bytes": 605976,
+      "pdf_page_count": 100,
+      "http_head_status": 200,
+      "content_type": "application/pdf",
+      "locators": [
+        {
+          "label": "Theorem 103 and Cantor staircase discussion",
+          "printed_pages": [
+            76
+          ],
+          "pdf_pages": [
+            76
+          ]
+        },
+        {
+          "label": "Section 8.1, Theorem 106, absolute continuity and the fundamental theorem",
+          "printed_pages": [
+            77,
+            78
+          ],
+          "pdf_pages": [
+            77,
+            78
+          ]
+        },
+        {
+          "label": "Theorem 87, convolution in L1",
+          "printed_pages": [
+            66,
+            67
+          ],
+          "pdf_pages": [
+            66,
+            67
+          ]
+        },
+        {
+          "label": "Theorem 92, smooth approximate identities",
+          "printed_pages": [
+            70,
+            71
+          ],
+          "pdf_pages": [
+            70,
+            71
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "conrad-diff",
+      "author": "Keith Conrad",
+      "title": "Differentiating Under the Integral Sign",
+      "version_description": "Undated author-hosted notes",
+      "url": "https://kconrad.math.uconn.edu/blurbs/analysis/diffunderint.pdf",
+      "resolved_url": "https://kconrad.math.uconn.edu/blurbs/analysis/diffunderint.pdf",
+      "access_date": "2026-10-15",
+      "snapshot_downloaded_utc": "2026-10-15T05:39:13.934821+00:00",
+      "pdf_sha256": "985c826fa5624d855da8defdbb2acaefad0cefe5a777c0f964604b20dca31149",
+      "pdf_bytes": 1460860,
+      "pdf_page_count": 30,
+      "http_head_status": 200,
+      "content_type": "application/pdf",
+      "locators": [
+        {
+          "label": "Section 12, Theorem 12.3, sufficient differentiation hypotheses",
+          "printed_pages": [
+            16
+          ],
+          "pdf_pages": [
+            16
+          ]
+        },
+        {
+          "label": "Table 2 and following local-parameter discussion",
+          "printed_pages": [
+            16,
+            17
+          ],
+          "pdf_pages": [
+            16,
+            17
+          ]
+        }
+      ]
+    }
+  ],
+  "auxiliary_source_snapshots": [
+    {
+      "source_id": "simon-gmt-2014",
+      "author": "Leon Simon",
+      "title": "Introduction to Geometric Measure Theory",
+      "version_description": "2014 course draft, used only to verify the historical dimension typo",
+      "url": "https://web.stanford.edu/class/math285/ts-gmt.pdf",
+      "resolved_url": "https://web.stanford.edu/class/math285/ts-gmt.pdf",
+      "access_date": "2026-10-15",
+      "snapshot_downloaded_utc": "2026-10-15T05:40:37.867326+00:00",
+      "pdf_sha256": "e4e2367b5a0555feed16712061b39b534fe554f0c920bb609ab983f3e698b88d",
+      "pdf_bytes": 1113646,
+      "pdf_page_count": 122,
+      "http_head_status": 200,
+      "content_type": "application/pdf",
+      "locators": [
+        {
+          "label": "Chapter 2, formula 3.4 (incorrect target dimension), versus weighted formula 3.5",
+          "printed_pages": [
+            54
+          ],
+          "pdf_pages": [
+            31
+          ]
+        }
+      ]
+    }
+  ]
+}

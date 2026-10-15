@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Integral application library metadata version 1.0",
+  "type": "object",
+  "required": ["schema_version", "collection", "examples"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "collection": {"type": "string"},
+    "examples": {
+      "type": "array",
+      "minItems": 16,
+      "maxItems": 16,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "file", "topics", "prerequisites", "techniques", "measure", "measure_normalization", "hypotheses", "result", "source_ids", "verification"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^E(0[1-9]|1[0-6])$"},
+          "title": {"type": "string", "minLength": 1},
+          "file": {"type": "string", "pattern": "^examples/E[0-9]{2}-.+\\.md$"},
+          "topics": {"$ref": "#/$defs/tags"},
+          "prerequisites": {"$ref": "#/$defs/tags"},
+          "techniques": {"$ref": "#/$defs/tags"},
+          "measure": {"type": "string"},
+          "measure_normalization": {"type": "string"},
+          "hypotheses": {"$ref": "#/$defs/tags"},
+          "result": {"type": "string"},
+          "source_ids": {"$ref": "#/$defs/tags"},
+          "verification": {
+            "type": "object",
+            "required": ["status", "review_file", "reviewed_sha256", "identity_checks", "formal_verification"],
+            "properties": {
+              "status": {"const": "independently-reviewed"},
+              "review_file": {"type": "string"},
+              "reviewed_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "identity_checks": {"type": "string"},
+              "formal_verification": {"const": "none"}
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "tags": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+  }
+}

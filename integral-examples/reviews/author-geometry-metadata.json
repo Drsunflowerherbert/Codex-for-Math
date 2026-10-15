@@ -1,0 +1,127 @@
+[
+  {
+    "id": "E07",
+    "title": "A weighted integral on a parabolic arc",
+    "file": "examples/E07-parabola.md",
+    "topics": [
+      "Hausdorff integration",
+      "curves",
+      "coordinate moments"
+    ],
+    "prerequisites": [
+      "normalized Hausdorff measure",
+      "Lipschitz maps",
+      "weighted area formula",
+      "one-variable substitution"
+    ],
+    "techniques": [
+      "hausdorff-normalization",
+      "weighted-arc-length",
+      "injective-area-formula",
+      "substitution",
+      "coordinate-moment"
+    ],
+    "measure": "Normalized H^1 restricted to C; L^1 on [0,1]; H^1 agrees with length, H^0 counts points.",
+    "hypotheses": "gamma(t)=(t,t^2) for 0<=t<=1 is injective and Lipschitz; f(x,y)=x is nonnegative continuous on C.",
+    "result": "Integral_C x dH^1=(5 sqrt(5)-1)/12; H^1(C)=sqrt(5)/2+log(2+sqrt(5))/4.",
+    "source_ids": [
+      "simon-gmt"
+    ]
+  },
+  {
+    "id": "E08",
+    "title": "Traversing a circle twice: multiplicity and orientation",
+    "file": "examples/E08-circle-multiplicity.md",
+    "topics": [
+      "Hausdorff integration",
+      "area formula",
+      "multiplicity",
+      "orientation"
+    ],
+    "prerequisites": [
+      "normalized Hausdorff measure",
+      "weighted area formula",
+      "trigonometric integration",
+      "dot products"
+    ],
+    "techniques": [
+      "area-formula",
+      "multiplicity",
+      "noninjective-parametrization",
+      "scalar-versus-vector",
+      "circulation",
+      "flux"
+    ],
+    "measure": "Normalized H^1 restricted to the unit circle; L^1 on [0,4pi]; H^0 counts parameter preimages.",
+    "hypotheses": "gamma(t)=(cos(t),sin(t)) on [0,4pi] is Lipschitz; w(x,y)=x^2 is continuous nonnegative; multiplicity is two except at (1,0), where it is three.",
+    "result": "Integral_C x^2 dH^1=pi; parameter integral over two traversals=2pi; F=(-y,x) has circulation 4pi over two counterclockwise traversals and 2pi once; outward flux of G=(x,y) is 2pi.",
+    "source_ids": [
+      "simon-gmt"
+    ]
+  },
+  {
+    "id": "E09",
+    "title": "Height integral over a paraboloid graph",
+    "file": "examples/E09-paraboloid-graph.md",
+    "topics": [
+      "Hausdorff integration",
+      "graphs",
+      "surface integration",
+      "coordinate moments"
+    ],
+    "prerequisites": [
+      "normalized Hausdorff measure",
+      "weighted area formula",
+      "Gram determinant",
+      "polar coordinates"
+    ],
+    "techniques": [
+      "graph-area",
+      "weighted-surface-integral",
+      "gram-determinant",
+      "polar-coordinates",
+      "injective-area-formula",
+      "substitution"
+    ],
+    "measure": "Normalized H^2 restricted to S; L^2 on the closed unit disk; normalized H^2 equals plane area on 2-planes.",
+    "hypotheses": "Phi(x,y)=(x,y,x^2+y^2) on the closed unit disk is injective and sqrt(5)-Lipschitz; height h=z is bounded continuous nonnegative on S.",
+    "result": "Integral_S z dH^2=pi(25 sqrt(5)+1)/60; H^2(S)=pi(5 sqrt(5)-1)/6.",
+    "source_ids": [
+      "simon-gmt"
+    ]
+  },
+  {
+    "id": "E10",
+    "title": "A sphere's second moment and a spherical cap",
+    "file": "examples/E10-sphere-moment.md",
+    "topics": [
+      "Hausdorff integration",
+      "sphere",
+      "surface moments",
+      "spherical caps",
+      "orientation"
+    ],
+    "prerequisites": [
+      "normalized Hausdorff measure",
+      "weighted area formula",
+      "spherical coordinates",
+      "Hausdorff null-set coverings",
+      "rotation invariance"
+    ],
+    "techniques": [
+      "sphere",
+      "surface-moment",
+      "spherical-cap",
+      "area-formula",
+      "null-seam",
+      "rotation-symmetry",
+      "scalar-versus-flux"
+    ],
+    "measure": "Normalized H^2 restricted to sphere S_R; L^2 on the angular rectangle; H^2 equals surface area.",
+    "hypotheses": "R>0; spherical map is injective on (0,pi) x (0,2pi), with bounded derivatives; omitted meridian has H^2 measure zero; h=z^2 is continuous and bounded.",
+    "result": "Integral_(S_R) z^2 dH^2=4pi R^4/3; H^2(S_R)=4pi R^2; cap of height a in [0,2R] has area 2pi R a; outward flux of G(q)=q is 4pi R^3.",
+    "source_ids": [
+      "simon-gmt"
+    ]
+  }
+]

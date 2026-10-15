@@ -1,0 +1,56 @@
+{
+  "scope": "LaTeX/PDF compilation and source hashes; not mathematical proof.",
+  "pandoc": "pandoc 3.1.11.1",
+  "pdflatex": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "builds": [
+    {
+      "name": "guide",
+      "inputs": {
+        "README.md": "80dc2463768c7f992778896aa220ea41dfbb146a4b3b206489747b0356691c99",
+        "PROBLEMS.md": "c8983187d5f1831843e4d5903f6c30cddccb175a1723aa1e933444a18440a1f0",
+        "CONVENTIONS.md": "b689b92b558d2a940362b381f0109de3badadec953a0b208e5fc4be6e9c5045a",
+        "COUNTEREXAMPLES.md": "a94db2d8ad157c975c47b5ef1de17c62b00ad0569ace6b73eccb005b4824c0c3",
+        "SOURCES.md": "6687de2bd8f53220f205d724168bf2117fd1f55cbaddc9d3481c99ee791d3022"
+      },
+      "latex": "pdf/guide.tex",
+      "latex_sha256": "ef58c83a810c3522338a08b7dc4dbd62137b3e003d85621667ebd24cefefa82c",
+      "pdf": "pdf/guide.pdf",
+      "pdf_sha256": "f7a0010d91ac5a95cb7fc1df69109912296fb552f9bbcf6985cea91059d3e814",
+      "warnings": []
+    },
+    {
+      "name": "integral-examples",
+      "inputs": {
+        "README.md": "80dc2463768c7f992778896aa220ea41dfbb146a4b3b206489747b0356691c99",
+        "PROBLEMS.md": "c8983187d5f1831843e4d5903f6c30cddccb175a1723aa1e933444a18440a1f0",
+        "CONVENTIONS.md": "b689b92b558d2a940362b381f0109de3badadec953a0b208e5fc4be6e9c5045a",
+        "examples/E01-triangular-region.md": "8eed24ce89582d0de378801ce5fdbecdc46941edd3a35911d730ca2e51554beb",
+        "examples/E02-positive-measure-boundary.md": "436c35e79a6dcae2cb1d5a5e3cf266f18c410addeb6ad16690e7cd31b34b2eae",
+        "examples/E03-exceptional-sections.md": "dfd1ccec2c3cbd4047d70629d401140b1bf6d5830a3b6408181e89002e561ed0",
+        "examples/E04-signed-fubini-trap.md": "13492b6f8dcaf22028d8a31f96221e553b22d277ed3633850f0f54a40e6291f2",
+        "examples/E05-signed-fubini-counting.md": "6ec3c9aca8ae42e84506f3b809e2af3735d4dc513b6d8a28fd8469ce27471973",
+        "examples/E06-frullani-parameter-integral.md": "eab2e9eb88fba447a7876cc9e7980ce2e00cdcb436e578f945dbfdfdf1ff05c7",
+        "examples/E07-parabola.md": "e564f66f4a78f93a3b199f51a70fbc1e751cf9c7e3d29b5319bd7398b9a10928",
+        "examples/E08-circle-multiplicity.md": "e67be62b3a670a4747a08b9426fe5516fe6e8fec4ca5e0c5b10c6916efde0334",
+        "examples/E09-paraboloid-graph.md": "7607d6bf833da41ba662f8d3a97d76a12fd06ff3b3c666ef9922f679413c7f7b",
+        "examples/E10-sphere-moment.md": "62d000a6322836d426260ab380e07051502fbcb303a65301f8a6bd46b39575f3",
+        "examples/E11-fold-area-multiplicity.md": "c0c22aece66be1e8361fc5dc5d5265a4e03ae85c4e82cc85953c3a844c90ea0d",
+        "examples/E12-radial-coarea-critical-value.md": "618495ccec0c97691557e2aafd0b25e561d84e59e8df59abf7682de62063319d",
+        "examples/E13-cantor-singular-map.md": "fc9c5677672449baa0ca88e3f90935238486bda657f13c23fc5b3e2a325da783",
+        "examples/E14-concentration-escape-atlas.md": "5241b8901c9b047292714af5f8c8c8bb95728409336d6be63d50168a90c9f024",
+        "examples/E15-differentiation-concentration.md": "f41194163d0b97b3fb2c8a57def496c205cec72d534509fe08ebda51fed12718",
+        "examples/E16-exponential-approximate-identity.md": "ec42b351eb40b2486ac89578ac40b2e231a2147aa65b511d1ea154c41afb4d37",
+        "COUNTEREXAMPLES.md": "a94db2d8ad157c975c47b5ef1de17c62b00ad0569ace6b73eccb005b4824c0c3",
+        "SOURCES.md": "6687de2bd8f53220f205d724168bf2117fd1f55cbaddc9d3481c99ee791d3022",
+        "VERIFICATION.md": "a8d300b6b58f514ef02b4c2be2e44603c8698f056f5bc377c658ee57a3e2ff69"
+      },
+      "latex": "pdf/integral-examples.tex",
+      "latex_sha256": "dc95796abd9fe3ff03a2997b8994641fdb0b81488a4a2ccdada8a14a4ce9cfc8",
+      "pdf": "pdf/integral-examples.pdf",
+      "pdf_sha256": "9d03d22882d87c4be3b40b2e7b21972bc159c5f15f3ed4522e4a0547a256f068",
+      "warnings": [
+        "Underfull \\hbox (badness 1769) in paragraph at lines 2148--2154"
+      ]
+    }
+  ]
+}

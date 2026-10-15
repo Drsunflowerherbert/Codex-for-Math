@@ -1,0 +1,972 @@
+{
+  "schema_version": 1,
+  "run_utc": "2026-10-15T05:45:55.658332+00:00",
+  "scope": "Concrete identity checks only; not proofs of analytic hypotheses or formal verification.",
+  "not_checked": [
+    "measurability and nonmeasurability",
+    "Fubini/Tonelli/DCT hypotheses",
+    "area/coarea theorem applicability and Hausdorff normalization",
+    "all-parameter and infinite-stage assertions",
+    "independent mathematical review",
+    "Lean/formal verification"
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "mpmath_decimal_digits": 70
+  },
+  "script": {
+    "path": "checks/check_examples.py",
+    "sha256": "b94c294f0c60138f609a26747339be0ef83cfbba2781704483849ab09b19a7e2"
+  },
+  "summary": {
+    "examples": 16,
+    "performed_checks": 92,
+    "failed_checks": 0,
+    "status": "passed"
+  },
+  "examples": {
+    "E01": {
+      "checks": [
+        {
+          "name": "Useful antiderivative",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "y*exp(y**2)",
+          "expected": "y*exp(y**2)",
+          "difference": "0"
+        },
+        {
+          "name": "Triangle integral",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "-1/2 + E/2",
+          "expected": "-1/2 + E/2",
+          "difference": "0"
+        },
+        {
+          "name": "Power-series coefficient reindexing",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "1/((2*k + 2)*factorial(k))",
+          "expected": "1/(2*factorial(k + 1))",
+          "difference": "0"
+        },
+        {
+          "name": "Independent nested quadrature in original order",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "0.85914091422952261768014373567633124887862354684997978748348381386",
+          "expected": "0.85914091422952261768014373567633124887862354684997978748348381386",
+          "absolute_error": "9.0556791e-72",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        }
+      ],
+      "analytic_limitations": "Algebra and quadrature do not establish Fubini/Tonelli or the series-exchange hypotheses.",
+      "status": "passed",
+      "performed_check_count": 4,
+      "source_files": [
+        {
+          "path": "examples/E01-triangular-region.md",
+          "sha256": "8eed24ce89582d0de378801ce5fdbecdc46941edd3a35911d730ca2e51554beb"
+        }
+      ]
+    },
+    "E02": {
+      "checks": [
+        {
+          "name": "Component-length recurrence",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "2**(1 - 2*n)/2 - 1/(2*4**n) + 1/(2*2**n)",
+          "expected": "2**(-2*n - 1) + 2**(-n - 1)",
+          "difference": "0"
+        },
+        {
+          "name": "Removed length through stage n",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "1/2 - (1/2)**(n + 1)",
+          "expected": "1/2 - 1/(2*2**n)",
+          "difference": "0"
+        },
+        {
+          "name": "Remaining length through stage n",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "2**n*(2**(-2*n - 1) + 2**(-n - 1))",
+          "expected": "2**(-n - 1) + 1/2",
+          "difference": "0"
+        },
+        {
+          "name": "Weighted region integral from computed base measure",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "1/2",
+          "expected": "1/2",
+          "difference": "0"
+        }
+      ],
+      "analytic_limitations": "Finite-stage arithmetic does not prove the infinite intersection's measure, empty interior, boundary claim, or Riemann failure.",
+      "status": "passed",
+      "performed_check_count": 4,
+      "source_files": [
+        {
+          "path": "examples/E02-positive-measure-boundary.md",
+          "sha256": "436c35e79a6dcae2cb1d5a5e3cf266f18c410addeb6ad16690e7cd31b34b2eae"
+        }
+      ]
+    },
+    "E03": {
+      "checks": [],
+      "analytic_limitations": "No computational test can construct/test the nonmeasurable Vitali set or prove the completion and exceptional-section assertions. This example is proof-only.",
+      "status": "proof_only_no_computational_claim",
+      "performed_check_count": 0,
+      "source_files": [
+        {
+          "path": "examples/E03-exceptional-sections.md",
+          "sha256": "dfd1ccec2c3cbd4047d70629d401140b1bf6d5830a3b6408181e89002e561ed0"
+        }
+      ]
+    },
+    "E04": {
+      "checks": [
+        {
+          "name": "Primitive in y",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "-2*y**2/(x**2 + y**2)**2 + 1/(x**2 + y**2)",
+          "expected": "(x**2 - y**2)/(x**2 + y**2)**2",
+          "difference": "0"
+        },
+        {
+          "name": "Primitive in x",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "2*x**2/(x**2 + y**2)**2 - 1/(x**2 + y**2)",
+          "expected": "(x**2 - y**2)/(x**2 + y**2)**2",
+          "difference": "0"
+        },
+        {
+          "name": "Positive iterated value",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "pi/4",
+          "expected": "pi/4",
+          "difference": "0"
+        },
+        {
+          "name": "Negative iterated value",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "-pi/4",
+          "expected": "-pi/4",
+          "difference": "0"
+        },
+        {
+          "name": "Dyadic rectangle lower mass",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "12*2**(2*n)*2**(-2*n - 3)/25",
+          "expected": "3/50",
+          "difference": "0"
+        },
+        {
+          "name": "Antisymmetry",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "(-x**2 + y**2)/(x**2 + y**2)**2 + (x**2 - y**2)/(x**2 + y**2)**2",
+          "expected": "0",
+          "difference": "0"
+        },
+        {
+          "name": "Fixed-x section quadrature",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "0.87671232876712328767123287671232876712328767123287671232876712329",
+          "expected": "0.87671232876712328767123287671232876712328767123287671232876712329",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        },
+        {
+          "name": "Fixed-y section quadrature",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "-0.71910112359550561797752808988764044943820224719101123595505617978",
+          "expected": "-0.71910112359550561797752808988764044943820224719101123595505617978",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        }
+      ],
+      "analytic_limitations": "Primitive identities and finite lower-bound arithmetic do not by themselves prove sign-part divergence or permit signed Fubini.",
+      "status": "passed",
+      "performed_check_count": 8,
+      "source_files": [
+        {
+          "path": "examples/E04-signed-fubini-trap.md",
+          "sha256": "13492b6f8dcaf22028d8a31f96221e553b22d277ed3633850f0f54a40e6291f2"
+        }
+      ]
+    },
+    "E05": {
+      "checks": [
+        {
+          "name": "Rectangular partial-sum formula",
+          "method": "exact finite rational/integer arithmetic",
+          "passed": true,
+          "detail": "All N,M in {1,...,24}; S_NM=min(N,M)-min(N,M-1)."
+        },
+        {
+          "name": "Complete finite-support rows and columns",
+          "method": "exact finite rational/integer arithmetic",
+          "passed": true,
+          "detail": "Rows/columns 1,...,100, summing their entire known finite supports."
+        },
+        {
+          "name": "Square versus rectangular exhaustion samples",
+          "method": "exact finite rational/integer arithmetic",
+          "passed": true,
+          "detail": "S_NN=1 and S_N,N+1=0 at N=1,2,8,20."
+        }
+      ],
+      "analytic_limitations": "Finite rectangles illustrate the stated identities; no finite test establishes an infinite series result. Absolute divergence and the iterated limits require the written argument.",
+      "status": "passed",
+      "performed_check_count": 3,
+      "source_files": [
+        {
+          "path": "examples/E05-signed-fubini-counting.md",
+          "sha256": "6ec3c9aca8ae42e84506f3b809e2af3735d4dc513b6d8a28fd8469ce27471973"
+        }
+      ]
+    },
+    "E06": {
+      "checks": [
+        {
+          "name": "Parameter derivative of integrand",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "exp(-b*x)",
+          "expected": "exp(-b*x)",
+          "difference": "0"
+        },
+        {
+          "name": "Derivative of logarithmic answer",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "1/b",
+          "expected": "1/b",
+          "difference": "0"
+        },
+        {
+          "name": "Exponential inner integral",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "1/p",
+          "expected": "1/p",
+          "difference": "0"
+        },
+        {
+          "name": "Improper quadrature a=0.7, b=2.3",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "1.1895840668738363857014000883670163888052955852585745535392452275",
+          "expected": "1.1895840668738363857014000883670163888052955852585745535392452275",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        },
+        {
+          "name": "Improper quadrature a=2.3, b=0.7",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "-1.1895840668738363857014000883670163888052955852585745535392452275",
+          "expected": "-1.1895840668738363857014000883670163888052955852585745535392452275",
+          "absolute_error": "1.8111358e-71",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        },
+        {
+          "name": "Improper quadrature a=1.25, b=1.25",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "0.0",
+          "expected": "0.0",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        }
+      ],
+      "analytic_limitations": "Sample positive parameters do not prove the improper integral for all parameters or justify Tonelli/DCT. The local derivative majorant is checked in the written proof.",
+      "status": "passed",
+      "performed_check_count": 6,
+      "source_files": [
+        {
+          "path": "examples/E06-frullani-parameter-integral.md",
+          "sha256": "eab2e9eb88fba447a7876cc9e7980ce2e00cdcb436e578f945dbfdfdf1ff05c7"
+        }
+      ]
+    },
+    "E07": {
+      "checks": [
+        {
+          "name": "Squared speed",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "4*t**2 + 1",
+          "expected": "4*t**2 + 1",
+          "difference": "0"
+        },
+        {
+          "name": "Weighted arc integral",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "-1/12 + 5*sqrt(5)/12",
+          "expected": "-1/12 + 5*sqrt(5)/12",
+          "difference": "0"
+        },
+        {
+          "name": "Arc length",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "asinh(2)/4 + sqrt(5)/2",
+          "expected": "asinh(2)/4 + sqrt(5)/2",
+          "difference": "0"
+        },
+        {
+          "name": "Weighted-arc quadrature",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "0.84836165729157904017048902863803176476692431650480238511287385225",
+          "expected": "0.84836165729157904017048902863803176476692431650480238511287385225",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        },
+        {
+          "name": "Arc-length quadrature",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "1.4789428575445974338279060194339144350716974305950082518812122493",
+          "expected": "1.4789428575445974338279060194339144350716974305950082518812122493",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        }
+      ],
+      "analytic_limitations": "The Jacobian and integrals are checked; injectivity, Hausdorff normalization, and the area-formula hypotheses need the written proof.",
+      "status": "passed",
+      "performed_check_count": 5,
+      "source_files": [
+        {
+          "path": "examples/E07-parabola.md",
+          "sha256": "e564f66f4a78f93a3b199f51a70fbc1e751cf9c7e3d29b5319bd7398b9a10928"
+        }
+      ]
+    },
+    "E08": {
+      "checks": [
+        {
+          "name": "Squared speed and circulation density",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "sin(t)**2 + cos(t)**2",
+          "expected": "1",
+          "difference": "0"
+        },
+        {
+          "name": "Once-counted scalar circle integral",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "pi",
+          "expected": "pi",
+          "difference": "0"
+        },
+        {
+          "name": "Twice-traversed scalar integral",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "2*pi",
+          "expected": "2*pi",
+          "difference": "0"
+        },
+        {
+          "name": "Double-traversal circulation",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "4*pi",
+          "expected": "4*pi",
+          "difference": "0"
+        },
+        {
+          "name": "Twice-traversed scalar quadrature",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "6.2831853071795864769252867665590057683943387987502116419498891846",
+          "expected": "6.2831853071795864769252867665590057683943387987502116419498891846",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        }
+      ],
+      "analytic_limitations": "Trigonometric identities do not establish every fibre count or remove the endpoint exception; orientation and scalar integration are distinguished in the proof.",
+      "status": "passed",
+      "performed_check_count": 5,
+      "source_files": [
+        {
+          "path": "examples/E08-circle-multiplicity.md",
+          "sha256": "e67be62b3a670a4747a08b9426fe5516fe6e8fec4ca5e0c5b10c6916efde0334"
+        }
+      ]
+    },
+    "E09": {
+      "checks": [
+        {
+          "name": "Graph Gram determinant",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "4*x**2 + 4*y**2 + 1",
+          "expected": "4*x**2 + 4*y**2 + 1",
+          "difference": "0"
+        },
+        {
+          "name": "Graph height moment",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "2*pi*(1/120 + 5*sqrt(5)/24)",
+          "expected": "pi*(1 + 25*sqrt(5))/60",
+          "difference": "0"
+        },
+        {
+          "name": "Graph area",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "2*pi*(-1/12 + 5*sqrt(5)/12)",
+          "expected": "pi*(-1 + 5*sqrt(5))/6",
+          "difference": "0"
+        },
+        {
+          "name": "Height-moment quadrature",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "2.9793660154934658844562001577233645478476649846009194386786328375",
+          "expected": "2.9793660154934658844562001577233645478476649846009194386786328375",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        },
+        {
+          "name": "Graph-area quadrature",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "5.3304135002689731212198716387908285188558960893268177131622767564",
+          "expected": "5.3304135002689731212198716387908285188558960893268177131622767564",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        }
+      ],
+      "analytic_limitations": "The Gram determinant and radial integrals are checked. The graph area formula and planar polar substitution require the written regularity/measure arguments.",
+      "status": "passed",
+      "performed_check_count": 5,
+      "source_files": [
+        {
+          "path": "examples/E09-paraboloid-graph.md",
+          "sha256": "7607d6bf833da41ba662f8d3a97d76a12fd06ff3b3c666ef9922f679413c7f7b"
+        }
+      ]
+    },
+    "E10": {
+      "checks": [
+        {
+          "name": "Sphere angular moment",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "2/3",
+          "expected": "2/3",
+          "difference": "0"
+        },
+        {
+          "name": "Sphere area",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "4*pi*R**2",
+          "expected": "4*pi*R**2",
+          "difference": "0"
+        },
+        {
+          "name": "Sphere second coordinate moment",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "4*pi*R**4/3",
+          "expected": "4*pi*R**4/3",
+          "difference": "0"
+        },
+        {
+          "name": "Cap-area algebra",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "2*pi*R*a",
+          "expected": "2*pi*R*a",
+          "difference": "0"
+        },
+        {
+          "name": "Sphere moment quadrature R=1.7",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "34.985194669396416142618458401984981385470904720694428436486446306",
+          "expected": "34.985194669396416142618458401984981385470904720694428436486446306",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        }
+      ],
+      "analytic_limitations": "Angular identities do not prove chart injectivity or the missing meridian's Hausdorff nullity. The parameter constraints R>0, 0<=cap height<=2R are assumptions.",
+      "status": "passed",
+      "performed_check_count": 5,
+      "source_files": [
+        {
+          "path": "examples/E10-sphere-moment.md",
+          "sha256": "62d000a6322836d426260ab380e07051502fbcb303a65301f8a6bd46b39575f3"
+        }
+      ]
+    },
+    "E11": {
+      "checks": [
+        {
+          "name": "Squared area Jacobian",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "4*u**2",
+          "expected": "4*u**2",
+          "difference": "0"
+        },
+        {
+          "name": "Unsigned area factor integral",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "2",
+          "expected": "2",
+          "difference": "0"
+        },
+        {
+          "name": "Weighted two-sheet integral",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "2",
+          "expected": "2",
+          "difference": "0"
+        },
+        {
+          "name": "Once-counted image integral",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "1",
+          "expected": "1",
+          "difference": "0"
+        },
+        {
+          "name": "Signed determinant cancellation",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "0",
+          "expected": "0",
+          "difference": "0"
+        },
+        {
+          "name": "Two-sheet weighted quadrature",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "2.0",
+          "expected": "2.0",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        }
+      ],
+      "analytic_limitations": "Exact Jacobian and polynomial integrals do not prove the complete fibre classification or the weighted area theorem.",
+      "status": "passed",
+      "performed_check_count": 6,
+      "source_files": [
+        {
+          "path": "examples/E11-fold-area-multiplicity.md",
+          "sha256": "c0c22aece66be1e8361fc5dc5d5265a4e03ae85c4e82cc85953c3a844c90ea0d"
+        }
+      ]
+    },
+    "E12": {
+      "checks": [
+        {
+          "name": "Squared coarea Jacobian",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "4*x**2 + 4*y**2",
+          "expected": "4*x**2 + 4*y**2",
+          "difference": "0"
+        },
+        {
+          "name": "Gradient integral on disk",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "4*pi/3",
+          "expected": "4*pi/3",
+          "difference": "0"
+        },
+        {
+          "name": "Circle length divided by regular gradient",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "pi",
+          "expected": "pi",
+          "difference": "0"
+        },
+        {
+          "name": "Radial power a=-1/2",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "2*pi",
+          "expected": "2*pi",
+          "difference": "0"
+        },
+        {
+          "name": "Radial power a=0",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "pi",
+          "expected": "pi",
+          "difference": "0"
+        },
+        {
+          "name": "Radial power a=1",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "pi/2",
+          "expected": "pi/2",
+          "difference": "0"
+        },
+        {
+          "name": "Radial power a=3/2",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "2*pi/5",
+          "expected": "2*pi/5",
+          "difference": "0"
+        },
+        {
+          "name": "Borderline truncated power a=-1",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "-log(epsilon)",
+          "expected": "-log(epsilon)",
+          "difference": "0"
+        },
+        {
+          "name": "Annulus squared-radius interval [a,b]",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "pi*(-a + b)",
+          "expected": "pi*(-a + b)",
+          "difference": "0"
+        },
+        {
+          "name": "Gradient radial quadrature",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "4.1887902047863909846168578443726705122628925325001410946332594564",
+          "expected": "4.1887902047863909846168578443726705122628925325001410946332594564",
+          "absolute_error": "7.2445433e-71",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        },
+        {
+          "name": "Extra smooth pushforward check phi(t)=exp(-t)",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "1.985865303798871520552550199966806585076318376210690000475238057",
+          "expected": "1.985865303798871520552550199966806585076318376210690000475238057",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        }
+      ],
+      "analytic_limitations": "These check explicit radial identities only. The all-Borel-weight pushforward formula, the critical-level treatment, and coarea applicability are proved analytically.",
+      "status": "passed",
+      "performed_check_count": 11,
+      "source_files": [
+        {
+          "path": "examples/E12-radial-coarea-critical-value.md",
+          "sha256": "618495ccec0c97691557e2aafd0b25e561d84e59e8df59abf7682de62063319d"
+        }
+      ]
+    },
+    "E13": {
+      "checks": [
+        {
+          "name": "Cantor stage 1",
+          "method": "exact finite rational/integer arithmetic",
+          "passed": true,
+          "detail": "2 source intervals; source measure 2/3; total derivative mass 1; new plateaux are the expected odd dyadics."
+        },
+        {
+          "name": "Cantor stage 2",
+          "method": "exact finite rational/integer arithmetic",
+          "passed": true,
+          "detail": "4 source intervals; source measure 4/9; total derivative mass 1; new plateaux are the expected odd dyadics."
+        },
+        {
+          "name": "Cantor stage 3",
+          "method": "exact finite rational/integer arithmetic",
+          "passed": true,
+          "detail": "8 source intervals; source measure 8/27; total derivative mass 1; new plateaux are the expected odd dyadics."
+        },
+        {
+          "name": "Cantor stage 4",
+          "method": "exact finite rational/integer arithmetic",
+          "passed": true,
+          "detail": "16 source intervals; source measure 16/81; total derivative mass 1; new plateaux are the expected odd dyadics."
+        },
+        {
+          "name": "Cantor stage 5",
+          "method": "exact finite rational/integer arithmetic",
+          "passed": true,
+          "detail": "32 source intervals; source measure 32/243; total derivative mass 1; new plateaux are the expected odd dyadics."
+        },
+        {
+          "name": "Cantor stage 6",
+          "method": "exact finite rational/integer arithmetic",
+          "passed": true,
+          "detail": "64 source intervals; source measure 64/729; total derivative mass 1; new plateaux are the expected odd dyadics."
+        },
+        {
+          "name": "Cantor stage 7",
+          "method": "exact finite rational/integer arithmetic",
+          "passed": true,
+          "detail": "128 source intervals; source measure 128/2187; total derivative mass 1; new plateaux are the expected odd dyadics."
+        },
+        {
+          "name": "Cantor stage 8",
+          "method": "exact finite rational/integer arithmetic",
+          "passed": true,
+          "detail": "256 source intervals; source measure 256/6561; total derivative mass 1; new plateaux are the expected odd dyadics."
+        }
+      ],
+      "analytic_limitations": "Only exact finite Cantor stages are checked. No finite computation proves nullity, uniform convergence, the limit derivative, non-absolute-continuity, or the infinite fibre statement.",
+      "status": "passed",
+      "performed_check_count": 8,
+      "source_files": [
+        {
+          "path": "examples/E13-cantor-singular-map.md",
+          "sha256": "fc9c5677672449baa0ca88e3f90935238486bda657f13c23fc5b3e2a325da783"
+        }
+      ]
+    },
+    "E14": {
+      "checks": [
+        {
+          "name": "Shrinking-interval mass",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "1",
+          "expected": "1",
+          "difference": "0"
+        },
+        {
+          "name": "Escaping unit-interval mass",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "1",
+          "expected": "1",
+          "difference": "0"
+        },
+        {
+          "name": "Diluting-interval mass",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "1",
+          "expected": "1",
+          "difference": "0"
+        },
+        {
+          "name": "Diluting tail interval samples",
+          "method": "exact finite rational/integer arithmetic",
+          "passed": true,
+          "detail": "For n=1,2,10,100 and R=1,3,20, overlap length/n=max(1-R/n,0)."
+        }
+      ],
+      "analytic_limitations": "Finite interval arithmetic does not prove pointwise/in-measure convergence, lack of domination, uniform integrability, tightness failure, or the positive sufficient criteria.",
+      "status": "passed",
+      "performed_check_count": 4,
+      "source_files": [
+        {
+          "path": "examples/E14-concentration-escape-atlas.md",
+          "sha256": "5241b8901c9b047292714af5f8c8c8bb95728409336d6be63d50168a90c9f024"
+        }
+      ]
+    },
+    "E15": {
+      "checks": [
+        {
+          "name": "Parameter derivative",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "-2*p**3/(p**2 + x**2)**2 + 2*p/(p**2 + x**2)",
+          "expected": "2*p*x**2/(p**2 + x**2)**2",
+          "difference": "0"
+        },
+        {
+          "name": "Primitive of parameter function",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "1/(1 + x**2/p**2)",
+          "expected": "p**2/(p**2 + x**2)",
+          "difference": "0"
+        },
+        {
+          "name": "Primitive of difference quotient",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "1/(p*(1 + x**2/p**2))",
+          "expected": "p/(p**2 + x**2)",
+          "difference": "0"
+        },
+        {
+          "name": "Right derivative of integrated function",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "pi/2",
+          "expected": "pi/2",
+          "difference": "0"
+        },
+        {
+          "name": "Shrinking-interval quotient mass",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "pi/4",
+          "expected": "pi/4",
+          "difference": "0"
+        },
+        {
+          "name": "Derivative-layer mass",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "-pi/4 + 1/10 + atan(2)",
+          "expected": "-pi/4 + 1/10 + atan(2)",
+          "difference": "0"
+        },
+        {
+          "name": "Difference-quotient quadrature t=0.1",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "1.4711276743037345918528755717617308518553063771832382624719635193",
+          "expected": "1.4711276743037345918528755717617308518553063771832382624719635193",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        },
+        {
+          "name": "Difference-quotient quadrature t=0.01",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "1.560796660108231381024981575430471893537215347143176270859532878",
+          "expected": "1.560796660108231381024981575430471893537215347143176270859532878",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        },
+        {
+          "name": "Difference-quotient quadrature t=0.001",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "1.569796327128229752564797882004830898086963765133284897396041248",
+          "expected": "1.569796327128229752564797882004830898086963765133284897396041248",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        },
+        {
+          "name": "Rescaled derivative-layer quadrature",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "0.42175055439664219340140461435866131902075529555765619143280305936",
+          "expected": "0.42175055439664219340140461435866131902075529555765619143280305936",
+          "absolute_error": "4.5278395e-72",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        }
+      ],
+      "analytic_limitations": "Derivative/primitive algebra and numerical samples do not supply domination or justify differentiation under the integral. The failure of domination is proved using shrinking intervals.",
+      "status": "passed",
+      "performed_check_count": 10,
+      "source_files": [
+        {
+          "path": "examples/E15-differentiation-concentration.md",
+          "sha256": "f41194163d0b97b3fb2c8a57def496c205cec72d534509fe08ebda51fed12718"
+        }
+      ]
+    },
+    "E16": {
+      "checks": [
+        {
+          "name": "Kernel normalization",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "1",
+          "expected": "1",
+          "difference": "0"
+        },
+        {
+          "name": "Kernel first moment",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "1/p",
+          "expected": "1/p",
+          "difference": "0"
+        },
+        {
+          "name": "Kernel tail",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "exp(-delta*p)",
+          "expected": "exp(-delta*p)",
+          "difference": "0"
+        },
+        {
+          "name": "Kernel mass on shrinking interval",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "1 - exp(-1)",
+          "expected": "1 - exp(-1)",
+          "difference": "0"
+        },
+        {
+          "name": "Test function g(x)=exp(-x)",
+          "method": "exact SymPy simplification",
+          "passed": true,
+          "actual": "p/(p + 1)",
+          "expected": "p/(p + 1)",
+          "difference": "0"
+        },
+        {
+          "name": "Rescaled test-function quadrature n=1",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "0.5",
+          "expected": "0.5",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        },
+        {
+          "name": "Rescaled test-function quadrature n=7",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "0.875",
+          "expected": "0.875",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        },
+        {
+          "name": "Rescaled test-function quadrature n=100",
+          "method": "mpmath quadrature, 70 decimal digits",
+          "passed": true,
+          "actual": "0.9900990099009900990099009900990099009900990099009900990099009901",
+          "expected": "0.9900990099009900990099009900990099009900990099009900990099009901",
+          "absolute_error": "0.0",
+          "relative_or_absolute_tolerance": "1.0e-50"
+        }
+      ],
+      "analytic_limitations": "Kernel identities and one test function do not prove recovery for every bounded Borel function continuous at zero. The DCT and epsilon-tail proofs establish that result.",
+      "status": "passed",
+      "performed_check_count": 8,
+      "source_files": [
+        {
+          "path": "examples/E16-exponential-approximate-identity.md",
+          "sha256": "ec42b351eb40b2486ac89578ac40b2e231a2147aa65b511d1ea154c41afb4d37"
+        }
+      ]
+    }
+  }
+}
