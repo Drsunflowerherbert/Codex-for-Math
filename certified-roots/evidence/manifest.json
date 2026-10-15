@@ -1,0 +1,103 @@
+{
+  "baseline_commit": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+  "exclusions": [
+    "evidence/manifest.json (this manifest)",
+    "ignored Python bytecode"
+  ],
+  "files": {
+    ".gitignore": {
+      "bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    "EXAMPLES.md": {
+      "bytes": 7464,
+      "sha256": "9b7954535b74f8dbb6099b2c59091a186ddc8792d1b6bc0886878c414250445a"
+    },
+    "README.md": {
+      "bytes": 3652,
+      "sha256": "e4b2469d2f6ab731df6ac39f26f4c78f3ba455c49b629841cfd071595447aac8"
+    },
+    "SCHEMA.md": {
+      "bytes": 5462,
+      "sha256": "3225926fb8d3e2824b3ac99f44d37d8c597115a1e640d092b5f10c365a4ba9b8"
+    },
+    "STUDY.md": {
+      "bytes": 12797,
+      "sha256": "e116be25ba4683dbea8e23648dfb1ee28c8b00e1fb74a889a5303b5b655d529b"
+    },
+    "STUDY.pdf": {
+      "bytes": 73606,
+      "sha256": "cb7471fb6dfd7cd7e09e328a5aafc3666a22988af413048c3f9d5ff4e33dd451"
+    },
+    "VERIFICATION.md": {
+      "bytes": 7034,
+      "sha256": "028b230f28f1e1e91208a7bf8e72e4741aa10a369ef874decb198ffe7306d5e2"
+    },
+    "certificate.schema.json": {
+      "bytes": 1706,
+      "sha256": "a3d8541e689a0de5d4150a3ffc107aae78941c2b75adcdfe31ec913a16e1a04f"
+    },
+    "evidence/example-results.json": {
+      "bytes": 7791,
+      "sha256": "099befd14e711f87087c885727f5f3b6810c031c3985ab3aa14cc66298025f20"
+    },
+    "evidence/independent-results.txt": {
+      "bytes": 175,
+      "sha256": "f3e18ca50cbcf94afdf666182c99dd4d73d427e29e1b4fc4adb06ba38e75bd65"
+    },
+    "evidence/remote-before.json": {
+      "bytes": 914,
+      "sha256": "45f95adfa3a4969b8889339998e75969df8ce9660b70cd6bf7373bc2381701e6"
+    },
+    "evidence/test-results.txt": {
+      "bytes": 6223,
+      "sha256": "a5fa4310cfabb40a9e308053f20f31a01099007bdba82c856079c5170e68496b"
+    },
+    "evidence/verification.json": {
+      "bytes": 4398,
+      "sha256": "969e0ce39032186cb5930a452064835ce9c98d172aed7f74baa40a2c842bdc92"
+    },
+    "examples/circle-line.json": {
+      "bytes": 514,
+      "sha256": "904ef6da1c413ba0a686bdc3cde0d911883895013e3f7dca248bb2bfe9fb5293"
+    },
+    "examples/circle-parabola.json": {
+      "bytes": 518,
+      "sha256": "3528298bfd450555079b9d49468429dd8b931de44d66f383423ed6a9c6928cdd"
+    },
+    "examples/tiny-residual-no-root.json": {
+      "bytes": 476,
+      "sha256": "20588a667c8700a37faa7f8ea0f4294e9abeba1213249706d57ec20e7f578e2d"
+    },
+    "examples/tiny-residual-two-roots.json": {
+      "bytes": 485,
+      "sha256": "52083e36e8ad1258bb1ff79884fdabd7a463e2deb2a1637170516e8d9b54367f"
+    },
+    "reviews/checker-review.md": {
+      "bytes": 9934,
+      "sha256": "da357861fa611bf883efaf2d81b83d5ddf0545385f4f34f45da595c2d5c6d575"
+    },
+    "reviews/independent_check.py": {
+      "bytes": 12102,
+      "sha256": "82e8f9841314cbb862f1d79414a2ea38503d5a578e347b72bad3e3e25ba1bde5"
+    },
+    "reviews/mathematics-review.md": {
+      "bytes": 8989,
+      "sha256": "891caf91be5bf5155c752249339ebfb5f0f3a6fc05bfdab3c085a4b80baebf1a"
+    },
+    "reviews/publication-review.md": {
+      "bytes": 6532,
+      "sha256": "8a729241bbee279de0fa13597dc6b0c83625e6f1e3143292255d5737c392fcb0"
+    },
+    "tests/test_verify.py": {
+      "bytes": 26277,
+      "sha256": "295848feee8cf6b023863d9a8f96abcf2a34c78558c0cfbf27694863a4c2c5c9"
+    },
+    "verify.py": {
+      "bytes": 17270,
+      "sha256": "e99f15513430c980e2c5dd0ab2a09c0e1c41963007125491df8f11d7f9940264"
+    }
+  },
+  "schema_version": 1,
+  "scope": "certified-roots/ only"
+}

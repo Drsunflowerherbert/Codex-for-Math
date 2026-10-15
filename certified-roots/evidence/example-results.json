@@ -1,0 +1,466 @@
+{
+  "circle-line.json": {
+    "exit_code": 0,
+    "report": {
+      "E": [
+        [
+          [
+            "-1/140",
+            "1/140"
+          ],
+          [
+            "-1/140",
+            "1/140"
+          ]
+        ],
+        [
+          [
+            "-1/140",
+            "1/140"
+          ],
+          [
+            "-1/140",
+            "1/140"
+          ]
+        ]
+      ],
+      "J": [
+        [
+          [
+            "69/50",
+            "71/50"
+          ],
+          [
+            "69/50",
+            "71/50"
+          ]
+        ],
+        [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "-1",
+            "-1"
+          ]
+        ]
+      ],
+      "M": [
+        [
+          "1/140",
+          "1/140"
+        ],
+        [
+          "1/140",
+          "1/140"
+        ]
+      ],
+      "box": [
+        [
+          "69/100",
+          "71/100"
+        ],
+        [
+          "69/100",
+          "71/100"
+        ]
+      ],
+      "center": [
+        "7/10",
+        "7/10"
+      ],
+      "certified": true,
+      "contraction": true,
+      "coordinate_error_bounds": [
+        "1/138",
+        "1/138"
+      ],
+      "d": [
+        "1/140",
+        "1/140"
+      ],
+      "eta": "5/7",
+      "failure_reasons": [],
+      "name": "Circle and line: positive intersection",
+      "preconditioner_invertible": true,
+      "q": "1/70",
+      "radii": [
+        "1/100",
+        "1/100"
+      ],
+      "residual": [
+        "-1/50",
+        "0"
+      ],
+      "schema_version": 1,
+      "self_map": true,
+      "selfmap_lhs": [
+        "51/7000",
+        "51/7000"
+      ],
+      "slack": [
+        "19/7000",
+        "19/7000"
+      ],
+      "status": "certified",
+      "step": [
+        "-1/140",
+        "-1/140"
+      ],
+      "variables": [
+        "x",
+        "y"
+      ],
+      "weighted_error_bound": "50/69"
+    }
+  },
+  "circle-parabola.json": {
+    "exit_code": 0,
+    "report": {
+      "E": [
+        [
+          [
+            "-1/16",
+            "1/16"
+          ],
+          [
+            "-5/176",
+            "5/176"
+          ]
+        ],
+        [
+          [
+            "-1/11",
+            "1/11"
+          ],
+          [
+            "-1/22",
+            "1/22"
+          ]
+        ]
+      ],
+      "J": [
+        [
+          [
+            "3/2",
+            "17/10"
+          ],
+          [
+            "11/10",
+            "13/10"
+          ]
+        ],
+        [
+          [
+            "3/2",
+            "17/10"
+          ],
+          [
+            "-1",
+            "-1"
+          ]
+        ]
+      ],
+      "M": [
+        [
+          "1/16",
+          "5/176"
+        ],
+        [
+          "1/11",
+          "1/22"
+        ]
+      ],
+      "box": [
+        [
+          "3/4",
+          "17/20"
+        ],
+        [
+          "11/20",
+          "13/20"
+        ]
+      ],
+      "center": [
+        "4/5",
+        "3/5"
+      ],
+      "certified": true,
+      "contraction": true,
+      "coordinate_error_bounds": [
+        "2/95",
+        "2/95"
+      ],
+      "d": [
+        "3/220",
+        "1/55"
+      ],
+      "eta": "4/11",
+      "failure_reasons": [],
+      "name": "Circle and parabola: positive intersection",
+      "preconditioner_invertible": true,
+      "q": "3/22",
+      "radii": [
+        "1/20",
+        "1/20"
+      ],
+      "residual": [
+        "0",
+        "1/25"
+      ],
+      "schema_version": 1,
+      "self_map": true,
+      "selfmap_lhs": [
+        "1/55",
+        "1/40"
+      ],
+      "slack": [
+        "7/220",
+        "1/40"
+      ],
+      "status": "certified",
+      "step": [
+        "3/220",
+        "-1/55"
+      ],
+      "variables": [
+        "x",
+        "y"
+      ],
+      "weighted_error_bound": "8/19"
+    }
+  },
+  "tiny-residual-no-root.json": {
+    "exit_code": 1,
+    "report": {
+      "E": [
+        [
+          [
+            "499/500",
+            "501/500"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "J": [
+        [
+          [
+            "-1/500",
+            "1/500"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-1",
+            "-1"
+          ],
+          [
+            "1",
+            "1"
+          ]
+        ]
+      ],
+      "M": [
+        [
+          "501/500",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "box": [
+        [
+          "-1/1000",
+          "1/1000"
+        ],
+        [
+          "-1/1000",
+          "1/1000"
+        ]
+      ],
+      "center": [
+        "0",
+        "0"
+      ],
+      "certified": false,
+      "contraction": false,
+      "coordinate_error_bounds": null,
+      "d": [
+        "1/1000000000000",
+        "0"
+      ],
+      "eta": "1/1000000000",
+      "failure_reasons": [
+        "contraction test failed: q must be strictly less than 1",
+        "self-map test failed in coordinate 0: d + M r exceeds r"
+      ],
+      "name": "Tiny residual at a singular center: no real root",
+      "preconditioner_invertible": true,
+      "q": "501/500",
+      "radii": [
+        "1/1000",
+        "1/1000"
+      ],
+      "residual": [
+        "1/1000000000000",
+        "0"
+      ],
+      "schema_version": 1,
+      "self_map": false,
+      "selfmap_lhs": [
+        "1002000001/1000000000000",
+        "1/1000"
+      ],
+      "slack": [
+        "-2000001/1000000000000",
+        "0"
+      ],
+      "status": "not_certified",
+      "step": [
+        "1/1000000000000",
+        "0"
+      ],
+      "variables": [
+        "x",
+        "y"
+      ],
+      "weighted_error_bound": null
+    }
+  },
+  "tiny-residual-two-roots.json": {
+    "exit_code": 1,
+    "report": {
+      "E": [
+        [
+          [
+            "499/500",
+            "501/500"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "J": [
+        [
+          [
+            "-1/500",
+            "1/500"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-1",
+            "-1"
+          ],
+          [
+            "1",
+            "1"
+          ]
+        ]
+      ],
+      "M": [
+        [
+          "501/500",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "box": [
+        [
+          "-1/1000",
+          "1/1000"
+        ],
+        [
+          "-1/1000",
+          "1/1000"
+        ]
+      ],
+      "center": [
+        "0",
+        "0"
+      ],
+      "certified": false,
+      "contraction": false,
+      "coordinate_error_bounds": null,
+      "d": [
+        "1/1000000000000",
+        "0"
+      ],
+      "eta": "1/1000000000",
+      "failure_reasons": [
+        "contraction test failed: q must be strictly less than 1",
+        "self-map test failed in coordinate 0: d + M r exceeds r"
+      ],
+      "name": "Tiny residual at a singular center: two roots in the box",
+      "preconditioner_invertible": true,
+      "q": "501/500",
+      "radii": [
+        "1/1000",
+        "1/1000"
+      ],
+      "residual": [
+        "-1/1000000000000",
+        "0"
+      ],
+      "schema_version": 1,
+      "self_map": false,
+      "selfmap_lhs": [
+        "1002000001/1000000000000",
+        "1/1000"
+      ],
+      "slack": [
+        "-2000001/1000000000000",
+        "0"
+      ],
+      "status": "not_certified",
+      "step": [
+        "-1/1000000000000",
+        "0"
+      ],
+      "variables": [
+        "x",
+        "y"
+      ],
+      "weighted_error_bound": null
+    }
+  }
+}

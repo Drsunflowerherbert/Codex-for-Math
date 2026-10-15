@@ -1,0 +1,50 @@
+test_cli_accepts_verified_boundary_certificate (test_verify.FileAndCommandLineTests.test_cli_accepts_verified_boundary_certificate) ... ok
+test_cli_reports_invalid_input (test_verify.FileAndCommandLineTests.test_cli_reports_invalid_input) ... ok
+test_cli_reports_valid_but_uncertified (test_verify.FileAndCommandLineTests.test_cli_reports_valid_but_uncertified) ... ok
+test_duplicate_json_keys_at_multiple_depths_are_rejected (test_verify.FileAndCommandLineTests.test_duplicate_json_keys_at_multiple_depths_are_rejected) ... ok
+test_file_at_exact_size_limit_is_accepted (test_verify.FileAndCommandLineTests.test_file_at_exact_size_limit_is_accepted) ... ok
+test_json_nonfinite_and_floating_literals_are_rejected (test_verify.FileAndCommandLineTests.test_json_nonfinite_and_floating_literals_are_rejected) ... ok
+test_load_round_trip (test_verify.FileAndCommandLineTests.test_load_round_trip) ... ok
+test_malformed_json_invalid_utf8_and_missing_file (test_verify.FileAndCommandLineTests.test_malformed_json_invalid_utf8_and_missing_file) ... ok
+test_oversized_file_is_rejected (test_verify.FileAndCommandLineTests.test_oversized_file_is_rejected) ... ok
+test_allowed_leading_numerator_zeros_remain_exact (test_verify.InputValidationTests.test_allowed_leading_numerator_zeros_remain_exact) ... ok
+test_dimension_mismatches (test_verify.InputValidationTests.test_dimension_mismatches) ... ok
+test_invalid_exponents (test_verify.InputValidationTests.test_invalid_exponents) ... ok
+test_missing_top_level_keys (test_verify.InputValidationTests.test_missing_top_level_keys) ... ok
+test_name_and_variable_types_and_duplicates (test_verify.InputValidationTests.test_name_and_variable_types_and_duplicates) ... ok
+test_non_object_top_level_values (test_verify.InputValidationTests.test_non_object_top_level_values) ... ok
+test_noncanonical_rational_syntax_is_rejected (test_verify.InputValidationTests.test_noncanonical_rational_syntax_is_rejected) ... ok
+test_nonpositive_radii_are_rejected (test_verify.InputValidationTests.test_nonpositive_radii_are_rejected) ... ok
+test_rationals_must_be_strings_not_float_bool_or_int (test_verify.InputValidationTests.test_rationals_must_be_strings_not_float_bool_or_int) ... ok
+test_resource_limits_allow_their_exact_boundary (test_verify.InputValidationTests.test_resource_limits_allow_their_exact_boundary) ... ok
+test_resource_limits_before_expensive_arithmetic (test_verify.InputValidationTests.test_resource_limits_before_expensive_arithmetic) ... ok
+test_schema_version_is_exact_integer_one (test_verify.InputValidationTests.test_schema_version_is_exact_integer_one) ... ok
+test_singular_preconditioners_are_invalid (test_verify.InputValidationTests.test_singular_preconditioners_are_invalid) ... ok
+test_term_schema_is_strict (test_verify.InputValidationTests.test_term_schema_is_strict) ... ok
+test_unknown_or_forged_derived_fields (test_verify.InputValidationTests.test_unknown_or_forged_derived_fields) ... ok
+test_valid_input_can_serialize_rationals_beyond_python_digit_limit (test_verify.InputValidationTests.test_valid_input_can_serialize_rationals_beyond_python_digit_limit) ... ok
+test_zero_dimension_is_rejected (test_verify.InputValidationTests.test_zero_dimension_is_rejected) ... ok
+test_computed_jacobian_and_defect_enclose_exact_derivatives (test_verify.IntervalArithmeticTests.test_computed_jacobian_and_defect_enclose_exact_derivatives) ... ok
+test_invalid_intervals_and_exponents_are_rejected (test_verify.IntervalArithmeticTests.test_invalid_intervals_and_exponents_are_rejected) ... ok
+test_negative_and_zero_crossing_power_endpoints (test_verify.IntervalArithmeticTests.test_negative_and_zero_crossing_power_endpoints) ... ok
+test_operations_enclose_independent_fraction_samples (test_verify.IntervalArithmeticTests.test_operations_enclose_independent_fraction_samples) ... ok
+test_powers_enclose_independent_fraction_samples (test_verify.IntervalArithmeticTests.test_powers_enclose_independent_fraction_samples) ... ok
+test_rational_multiplication_and_subtraction_with_mixed_signs (test_verify.IntervalArithmeticTests.test_rational_multiplication_and_subtraction_with_mixed_signs) ... ok
+test_componentwise_self_map_is_stronger_than_scalar_shortcut (test_verify.MathematicalPremisesTests.test_componentwise_self_map_is_stronger_than_scalar_shortcut) ... ok
+test_duplicate_monomials_and_zero_coefficients_are_valid (test_verify.MathematicalPremisesTests.test_duplicate_monomials_and_zero_coefficients_are_valid) ... ok
+test_nonlinear_success_and_rigorous_error_bound (test_verify.MathematicalPremisesTests.test_nonlinear_success_and_rigorous_error_bound) ... ok
+test_nonstrict_self_map_accepts_a_boundary_root (test_verify.MathematicalPremisesTests.test_nonstrict_self_map_accepts_a_boundary_root) ... ok
+test_q_equal_one_is_rejected_despite_a_unique_root (test_verify.MathematicalPremisesTests.test_q_equal_one_is_rejected_despite_a_unique_root) ... ok
+test_q_just_below_one_uses_exact_rationals (test_verify.MathematicalPremisesTests.test_q_just_below_one_uses_exact_rationals) ... ok
+test_repository_examples_have_the_documented_status (test_verify.MathematicalPremisesTests.test_repository_examples_have_the_documented_status) ... ok
+test_row_swap_invertible_preconditioner_is_accepted (test_verify.MathematicalPremisesTests.test_row_swap_invertible_preconditioner_is_accepted) ... ok
+test_self_map_alone_does_not_certify_a_zero_polynomial (test_verify.MathematicalPremisesTests.test_self_map_alone_does_not_certify_a_zero_polynomial) ... ok
+test_tampered_polynomial_cannot_reuse_an_old_claim (test_verify.MathematicalPremisesTests.test_tampered_polynomial_cannot_reuse_an_old_claim) ... ok
+test_weighted_unequal_radii_and_asymmetric_preconditioner (test_verify.MathematicalPremisesTests.test_weighted_unequal_radii_and_asymmetric_preconditioner) ... ok
+test_zero_lipschitz_constant_does_not_replace_self_map (test_verify.MathematicalPremisesTests.test_zero_lipschitz_constant_does_not_replace_self_map) ... ok
+test_zero_residual_at_singular_root_is_insufficient (test_verify.MathematicalPremisesTests.test_zero_residual_at_singular_root_is_insufficient) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 0.184s
+
+OK

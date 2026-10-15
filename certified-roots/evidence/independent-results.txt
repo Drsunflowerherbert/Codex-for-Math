@@ -1,0 +1,1 @@
+{"counts": {"affine_cases": 604, "hand_example_cases": 4, "long_output_cases": 6, "parser_boundary_cli_cases": 18, "power_cases": 924, "rank_cases": 681}, "status": "passed"}

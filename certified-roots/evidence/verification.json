@@ -1,0 +1,119 @@
+{
+  "baseline_commit": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+  "branch": "codex/certified-roots-2026-10-15",
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "certified-roots/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "tests": 45,
+      "transcript": "test-results.txt"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "certified-roots/reviews/independent_check.py"
+      ],
+      "cases": 2237,
+      "counts": {
+        "affine_cases": 604,
+        "hand_example_cases": 4,
+        "long_output_cases": 6,
+        "parser_boundary_cli_cases": 18,
+        "power_cases": 924,
+        "rank_cases": 681
+      },
+      "exit_code": 0,
+      "transcript": "independent-results.txt"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "certified-roots/verify.py",
+        "certified-roots/examples/circle-line.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "certified-roots/verify.py",
+        "certified-roots/examples/circle-parabola.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "certified-roots/verify.py",
+        "certified-roots/examples/tiny-residual-no-root.json"
+      ],
+      "exit_code": 1
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "certified-roots/verify.py",
+        "certified-roots/examples/tiny-residual-two-roots.json"
+      ],
+      "exit_code": 1
+    }
+  ],
+  "environment": {
+    "implementation": "CPython",
+    "machine": "x86_64",
+    "platform": "Linux",
+    "python": "3.12.14"
+  },
+  "formal_verification": "No Lean or other theorem prover run for this toolkit.",
+  "independent_audit": {
+    "counts": {
+      "affine_cases": 604,
+      "hand_example_cases": 4,
+      "long_output_cases": 6,
+      "parser_boundary_cli_cases": 18,
+      "power_cases": 924,
+      "rank_cases": 681
+    },
+    "status": "passed"
+  },
+  "recorded_at_utc": "2026-10-15T05:45:56.636599+00:00",
+  "remote_verification": "Performed after publication; see final commit-pinned delivery report.",
+  "scope": "Only certified-roots/ added; tracked baseline files outside it unchanged.",
+  "source_sha256": {
+    ".gitignore": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+    "EXAMPLES.md": "9b7954535b74f8dbb6099b2c59091a186ddc8792d1b6bc0886878c414250445a",
+    "README.md": "e4b2469d2f6ab731df6ac39f26f4c78f3ba455c49b629841cfd071595447aac8",
+    "SCHEMA.md": "3225926fb8d3e2824b3ac99f44d37d8c597115a1e640d092b5f10c365a4ba9b8",
+    "STUDY.md": "e116be25ba4683dbea8e23648dfb1ee28c8b00e1fb74a889a5303b5b655d529b",
+    "STUDY.pdf": "cb7471fb6dfd7cd7e09e328a5aafc3666a22988af413048c3f9d5ff4e33dd451",
+    "VERIFICATION.md": "028b230f28f1e1e91208a7bf8e72e4741aa10a369ef874decb198ffe7306d5e2",
+    "certificate.schema.json": "a3d8541e689a0de5d4150a3ffc107aae78941c2b75adcdfe31ec913a16e1a04f",
+    "examples/circle-line.json": "904ef6da1c413ba0a686bdc3cde0d911883895013e3f7dca248bb2bfe9fb5293",
+    "examples/circle-parabola.json": "3528298bfd450555079b9d49468429dd8b931de44d66f383423ed6a9c6928cdd",
+    "examples/tiny-residual-no-root.json": "20588a667c8700a37faa7f8ea0f4294e9abeba1213249706d57ec20e7f578e2d",
+    "examples/tiny-residual-two-roots.json": "52083e36e8ad1258bb1ff79884fdabd7a463e2deb2a1637170516e8d9b54367f",
+    "reviews/checker-review.md": "da357861fa611bf883efaf2d81b83d5ddf0545385f4f34f45da595c2d5c6d575",
+    "reviews/independent_check.py": "82e8f9841314cbb862f1d79414a2ea38503d5a578e347b72bad3e3e25ba1bde5",
+    "reviews/mathematics-review.md": "891caf91be5bf5155c752249339ebfb5f0f3a6fc05bfdab3c085a4b80baebf1a",
+    "tests/test_verify.py": "295848feee8cf6b023863d9a8f96abcf2a34c78558c0cfbf27694863a4c2c5c9",
+    "verify.py": "e99f15513430c980e2c5dd0ab2a09c0e1c41963007125491df8f11d7f9940264"
+  },
+  "unit_tests": {
+    "count": 45,
+    "status": "passed"
+  }
+}

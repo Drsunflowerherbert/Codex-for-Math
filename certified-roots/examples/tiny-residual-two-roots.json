@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "name": "Tiny residual at a singular center: two roots in the box",
+  "variables": ["x", "y"],
+  "polynomials": [
+    [
+      {"coefficient": "1", "powers": [2, 0]},
+      {"coefficient": "-1/1000000000000", "powers": [0, 0]}
+    ],
+    [
+      {"coefficient": "1", "powers": [0, 1]},
+      {"coefficient": "-1", "powers": [1, 0]}
+    ]
+  ],
+  "center": ["0", "0"],
+  "radii": ["1/1000", "1/1000"],
+  "preconditioner": [
+    ["1", "0"],
+    ["0", "1"]
+  ]
+}
