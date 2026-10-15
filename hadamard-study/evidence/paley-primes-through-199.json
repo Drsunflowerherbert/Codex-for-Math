@@ -1,0 +1,247 @@
+{
+  "complete_for_primes_p_at_most": 199,
+  "family": "Paley type I over prime field, fixed sign convention",
+  "prime_congruence_mod_4": 3,
+  "results": [
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "3b3e498d4bde84932a3c9c20f1d69c73ee0280a28772b020323b52918ac121f3",
+      "diagonal_norm_squared": 4,
+      "entries": 16,
+      "order": 4,
+      "prime": 3,
+      "unordered_row_pairs_checked": 6
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "36adda03b3049e6f7f7fa8d5a77372df176a9a9a030bc30ccc1ecf76225fdced",
+      "diagonal_norm_squared": 8,
+      "entries": 64,
+      "order": 8,
+      "prime": 7,
+      "unordered_row_pairs_checked": 28
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "70e90eda8c1a3b54e825f1dfda40666a5de5f45a10dabcdda49ee5c9c2d687e5",
+      "diagonal_norm_squared": 12,
+      "entries": 144,
+      "order": 12,
+      "prime": 11,
+      "unordered_row_pairs_checked": 66
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "825733c4a0184e9c215fd1188c764977ceff9c2bb300721658a87c019bee918c",
+      "diagonal_norm_squared": 20,
+      "entries": 400,
+      "order": 20,
+      "prime": 19,
+      "unordered_row_pairs_checked": 190
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "da07e267a2b0129d794bba0bf3df9804d9c5e07fb7f1f2db2a37d5c9414cad05",
+      "diagonal_norm_squared": 24,
+      "entries": 576,
+      "order": 24,
+      "prime": 23,
+      "unordered_row_pairs_checked": 276
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "229ccac953839835879567190e12bd9c9db47c70185243c691d44f58b194d6fc",
+      "diagonal_norm_squared": 32,
+      "entries": 1024,
+      "order": 32,
+      "prime": 31,
+      "unordered_row_pairs_checked": 496
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "2f52b42a3970207af3a5656211070d708b81af6561d0904fe29a949b229adef7",
+      "diagonal_norm_squared": 44,
+      "entries": 1936,
+      "order": 44,
+      "prime": 43,
+      "unordered_row_pairs_checked": 946
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "1cefc7d8ce5438d29e7e9bb53a6a959dad3fe0eb7a6ce9f209a884d9f1cd1038",
+      "diagonal_norm_squared": 48,
+      "entries": 2304,
+      "order": 48,
+      "prime": 47,
+      "unordered_row_pairs_checked": 1128
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "85cee9b45c8313027e89d362ec690e7f92f1b1da02457d3aee40c8bae1e53192",
+      "diagonal_norm_squared": 60,
+      "entries": 3600,
+      "order": 60,
+      "prime": 59,
+      "unordered_row_pairs_checked": 1770
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "f566562a31adb39c8ebf3fb4446b38276df6f7672bb9331629f76faadae3fb60",
+      "diagonal_norm_squared": 68,
+      "entries": 4624,
+      "order": 68,
+      "prime": 67,
+      "unordered_row_pairs_checked": 2278
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "578797011b8ed63c1c14af1462f00ff382a4584aa5d2d1bb66413566adbee75c",
+      "diagonal_norm_squared": 72,
+      "entries": 5184,
+      "order": 72,
+      "prime": 71,
+      "unordered_row_pairs_checked": 2556
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "6b911f6aa4b936004afd8eea03d4e99f865b121a0450266521bfa8998639a012",
+      "diagonal_norm_squared": 80,
+      "entries": 6400,
+      "order": 80,
+      "prime": 79,
+      "unordered_row_pairs_checked": 3160
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "feeb7bbcbfcea08c45c92ec2ab25ab9eabd8fe8a0d61a61eb01a8d4a65a2ce85",
+      "diagonal_norm_squared": 84,
+      "entries": 7056,
+      "order": 84,
+      "prime": 83,
+      "unordered_row_pairs_checked": 3486
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "4a7830a7b04a2afa19fe00158c57ac39f44c3fbbe2126f0e157ac2f8dd953466",
+      "diagonal_norm_squared": 104,
+      "entries": 10816,
+      "order": 104,
+      "prime": 103,
+      "unordered_row_pairs_checked": 5356
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "93f318bbd9fec6e99879d428696e63e7ca0f7a981e46608f3be4cc7c2e08d86e",
+      "diagonal_norm_squared": 108,
+      "entries": 11664,
+      "order": 108,
+      "prime": 107,
+      "unordered_row_pairs_checked": 5778
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "6b5a1da4ec3abefaa3d8a5016cc127a0095ae9accc688617ec89719a55f8d7c7",
+      "diagonal_norm_squared": 128,
+      "entries": 16384,
+      "order": 128,
+      "prime": 127,
+      "unordered_row_pairs_checked": 8128
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "caefb3ea0f3dca19a63f2d64ce6e822059eee0e96c5bab2f1b3be6104a68331d",
+      "diagonal_norm_squared": 132,
+      "entries": 17424,
+      "order": 132,
+      "prime": 131,
+      "unordered_row_pairs_checked": 8646
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "27b4bb783d24d4261d0bb23d2198e81c79df59515499f3bfd59d34ec52aacefe",
+      "diagonal_norm_squared": 140,
+      "entries": 19600,
+      "order": 140,
+      "prime": 139,
+      "unordered_row_pairs_checked": 9730
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "fad5e759d6b65333ff393cd4bb8fe5b79c32a75ccfabfb448bf15602356d7374",
+      "diagonal_norm_squared": 152,
+      "entries": 23104,
+      "order": 152,
+      "prime": 151,
+      "unordered_row_pairs_checked": 11476
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "5b2e082cd133dfae17f3be71c3c5f8f38e0d01794a1505599ec8577a322c49c1",
+      "diagonal_norm_squared": 164,
+      "entries": 26896,
+      "order": 164,
+      "prime": 163,
+      "unordered_row_pairs_checked": 13366
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "c65d03ea6f48842194af9d8c8685630f1a19019b204334798a5caed7be2327e9",
+      "diagonal_norm_squared": 168,
+      "entries": 28224,
+      "order": 168,
+      "prime": 167,
+      "unordered_row_pairs_checked": 14028
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "b4e01d3d841cdb44c5d549d73c604e8137f89f6ef22540b7d3c040f01169ae95",
+      "diagonal_norm_squared": 180,
+      "entries": 32400,
+      "order": 180,
+      "prime": 179,
+      "unordered_row_pairs_checked": 16110
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "4368cbc700af8672b2b07651223d08cb8e39a498d2853e8190b201484ea36933",
+      "diagonal_norm_squared": 192,
+      "entries": 36864,
+      "order": 192,
+      "prime": 191,
+      "unordered_row_pairs_checked": 18336
+    },
+    {
+      "all_off_diagonal_dot_products_zero": true,
+      "arithmetic": "exact Python integers, XOR Hamming distances",
+      "canonical_sign_bytes_sha256": "1437f83d1f9e3abe865d7bba4d9a3e5865be9e7914a483292aae09f802e660cf",
+      "diagonal_norm_squared": 200,
+      "entries": 40000,
+      "order": 200,
+      "prime": 199,
+      "unordered_row_pairs_checked": 19900
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "files": [
+    {
+      "bytes": 9034,
+      "path": "hadamard-study/README.md",
+      "sha256": "b97c00dfbdc727ad7d2a9abf12fbcb31495e959d4c3bb169d05f69992293b008"
+    },
+    {
+      "bytes": 15327,
+      "path": "hadamard-study/PROOFS.md",
+      "sha256": "e7eb73ca48c99f160ea8372e7838391be7eac1ba3ad87cfc1b180408ec01df4c"
+    },
+    {
+      "bytes": 11479,
+      "path": "hadamard-study/SOURCES.md",
+      "sha256": "be9d510ce0819f20b5e2114d6bac4333627ce633b0aa41ec32d478fb9d8e5341"
+    },
+    {
+      "bytes": 6668,
+      "path": "hadamard-study/PROVENANCE.md",
+      "sha256": "79fa76f158ca499f352044560a067c3406432a1f02724b7361e8c91a78d52979"
+    },
+    {
+      "bytes": 3958,
+      "path": "hadamard-study/LESSONS.md",
+      "sha256": "782f65e951512588d7f4ea930f150cfff5fd40e0592963d65715c666690cfec4"
+    },
+    {
+      "bytes": 5227,
+      "path": "hadamard-study/EXPERIMENT_LOG.md",
+      "sha256": "87d7e2e5263f950bb3dcfd725f113559698634fc3ef45b83d8ab84eebc6ed631"
+    },
+    {
+      "bytes": 5913,
+      "path": "hadamard-study/scripts/hadamard.py",
+      "sha256": "5f0aef757b9a3e5a297606838d0376f973825174659cb30c9c2d851820afa1e1"
+    },
+    {
+      "bytes": 4034,
+      "path": "hadamard-study/scripts/enumerate_williamson.py",
+      "sha256": "b09b5a3491c5760691d1aa535bcce4e6f9430a3e558c635a51f90f511f2b2fda"
+    },
+    {
+      "bytes": 1789,
+      "path": "hadamard-study/scripts/run_experiments.py",
+      "sha256": "1a2bb9d4b83ea35cd6970eb42b4dc0c0e2997ff3344313c3ee7cbce066abf4bc"
+    },
+    {
+      "bytes": 5022,
+      "path": "hadamard-study/tests/test_exact.py",
+      "sha256": "31f6ca04df8e8900205e871f437cd14137b6cbb802ccf3075148132f021d5171"
+    },
+    {
+      "bytes": 13801,
+      "path": "hadamard-study/data/williamson-odd-through-15.json",
+      "sha256": "c94226662e8875d68ebbf0c593d5c06759961fda03bbac79f836de1faab4cd2e"
+    },
+    {
+      "bytes": 450,
+      "path": "hadamard-study/evidence/order-668-exact.json",
+      "sha256": "1e04a0200fc44935cb3090307f2fc55fb35dc06a78f2b92cb5ab7e9ca1c52bad"
+    },
+    {
+      "bytes": 449,
+      "path": "hadamard-study/evidence/order-668-primary-csv.json",
+      "sha256": "86a8164fe9b6b58b2ec7325df781998f5f27d8481e112168f1394c9a89b50a99"
+    },
+    {
+      "bytes": 461,
+      "path": "hadamard-study/evidence/order-2060-exact.json",
+      "sha256": "5e155b0ff0454315f2d510fb779ed4103dace41bc3b635cfe6a1b964b8ae4bbf"
+    },
+    {
+      "bytes": 9163,
+      "path": "hadamard-study/evidence/paley-primes-through-199.json",
+      "sha256": "5aa5323f0c75bef4e8045497c23a6b9f5213c1cd040450c6968795484aa22890"
+    },
+    {
+      "bytes": 1267,
+      "path": "hadamard-study/evidence/tests.log",
+      "sha256": "8ca21d36885408bc198adaba4a187a4e6523d6d2c6e42a6cc84ad89af98927d5"
+    },
+    {
+      "bytes": 394,
+      "path": "hadamard-study/evidence/experiments.log",
+      "sha256": "c05947819bca56226407ef7c79ceade78b4f8874c9ab5a30368f4de2d7960091"
+    }
+  ],
+  "purpose": "Identities of the final study files examined by the independent reviewer before publication metadata",
+  "review_date_utc": "2026-10-15"
+}

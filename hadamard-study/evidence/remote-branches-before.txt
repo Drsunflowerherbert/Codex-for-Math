@@ -1,0 +1,12 @@
+5da47dc49651af44faf96ecc8604c180600bdc72	refs/heads/codex/certified-roots-2026-10-15
+ef8032ed20f05fb100e95fc287eefb5d3e431543	refs/heads/codex/contest-library-2026-10-13
+40ebeb0f4583659a195d77ced27a91d4084ae75f	refs/heads/codex/critical-points-2026-10-15
+c2fe44833ceb577595028549cecdda87986f303e	refs/heads/codex/evidence-hardening-2026-10-13
+dafa2d2c35b425ca510def9aae3bb17839e67aa5	refs/heads/codex/integral-examples-2026-10-15
+032db09354d41b58c2e9211ed7e69024a3e74010	refs/heads/codex/lp-certificates-2026-10-13
+16075fc88d1cec51dc3c8f137bca3fe70c6f9520	refs/heads/codex/lp-paper-2026-10-13
+5f723174d9ac2703000f685c8cb5814b9713b466	refs/heads/codex/lp-sparse-discovery-2026-10-13
+e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f	refs/heads/codex/research-2026-10-11
+34e3e11e4c37109bfc06f4f195a62a2cf992c5b0	refs/heads/codex/research-map-2026-10-13
+d00a89dd9ce6c8ef782234d28c93e69cb712c947	refs/heads/codex/tangent-limit
+fa5cd40c36daa5373c0234bda0b9d09a49595ce6	refs/heads/codex/transport-sharpness-2026-10-13

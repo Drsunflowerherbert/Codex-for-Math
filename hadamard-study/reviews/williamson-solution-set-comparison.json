@@ -1,0 +1,46 @@
+{
+  "comparison": "full sorted solution tuple sets, after independent direct brute force; every odd m<=15",
+  "results": [
+    {
+      "core_order": 1,
+      "exact_solution_multiset_equality": true,
+      "solution_count": 1
+    },
+    {
+      "core_order": 3,
+      "exact_solution_multiset_equality": true,
+      "solution_count": 1
+    },
+    {
+      "core_order": 5,
+      "exact_solution_multiset_equality": true,
+      "solution_count": 1
+    },
+    {
+      "core_order": 7,
+      "exact_solution_multiset_equality": true,
+      "solution_count": 4
+    },
+    {
+      "core_order": 9,
+      "exact_solution_multiset_equality": true,
+      "solution_count": 7
+    },
+    {
+      "core_order": 11,
+      "exact_solution_multiset_equality": true,
+      "solution_count": 5
+    },
+    {
+      "core_order": 13,
+      "exact_solution_multiset_equality": true,
+      "solution_count": 15
+    },
+    {
+      "core_order": 15,
+      "exact_solution_multiset_equality": true,
+      "solution_count": 14
+    }
+  ],
+  "status": "passed"
+}

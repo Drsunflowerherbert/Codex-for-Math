@@ -1,0 +1,20 @@
+{
+  "arithmetic": "exact Python integers; dot = n - 2|P_i| - 2|P_j| + 4|P_i intersection P_j|",
+  "canonical_sign_sha256": "c7a145d86210740dd3f8ea21ca896a54d6916007a042638f17c8c47f097200f7",
+  "claim": "H H^T = 2060 I_2060 for the supplied literal sign data",
+  "data_file": "/tmp/hadamard-2060-data.py",
+  "distinct_row_pair_checks": 2120770,
+  "elapsed_seconds": 1.333736,
+  "entries_checked": 4243600,
+  "external_file_was_executed_or_imported": false,
+  "order": 2060,
+  "raw_bytes": 14882482,
+  "raw_sha256": "8c81090db76e2b503561ba82598b514e0c2e39940a3703783c5b1b2c6b80a37a",
+  "row_norms_implied_by_literal_signs": 2060,
+  "self_tests": {
+    "nonliteral_inputs": "rejected",
+    "single_sign_corruption": "rejected",
+    "valid_4_by_4": "passed"
+  },
+  "status": "passed"
+}

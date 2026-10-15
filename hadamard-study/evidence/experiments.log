@@ -1,0 +1,10 @@
+Verified 24 Paley matrices; 147240 row pairs
+Complete normalized symmetric Williamson enumeration for odd m=1,...,15
+m=1: 1 multisets; 1 row-sum types
+m=3: 1 multisets; 1 row-sum types
+m=5: 1 multisets; 1 row-sum types
+m=7: 4 multisets; 2 row-sum types
+m=9: 7 multisets; 2 row-sum types
+m=11: 5 multisets; 1 row-sum types
+m=13: 15 multisets; 3 row-sum types
+m=15: 14 multisets; 2 row-sum types

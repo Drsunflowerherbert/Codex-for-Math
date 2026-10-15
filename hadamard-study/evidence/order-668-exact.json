@@ -1,0 +1,12 @@
+{
+  "all_off_diagonal_dot_products_zero": true,
+  "arithmetic": "exact Python integers, XOR Hamming distances",
+  "bytes": 446892,
+  "canonical_sign_bytes_sha256": "bdeb5059d77e2703211082627b60441b8c888c928a55cc6f295e011941a387b0",
+  "diagonal_norm_squared": 668,
+  "entries": 446224,
+  "input_format": "signs",
+  "order": 668,
+  "sha256": "bdeb5059d77e2703211082627b60441b8c888c928a55cc6f295e011941a387b0",
+  "unordered_row_pairs_checked": 222778
+}

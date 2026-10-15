@@ -1,0 +1,12 @@
+{
+  "all_off_diagonal_dot_products_zero": true,
+  "arithmetic": "exact Python integers, XOR Hamming distances",
+  "bytes": 14882482,
+  "canonical_sign_bytes_sha256": "c7a145d86210740dd3f8ea21ca896a54d6916007a042638f17c8c47f097200f7",
+  "diagonal_norm_squared": 2060,
+  "entries": 4243600,
+  "input_format": "h2060-data",
+  "order": 2060,
+  "sha256": "8c81090db76e2b503561ba82598b514e0c2e39940a3703783c5b1b2c6b80a37a",
+  "unordered_row_pairs_checked": 2120770
+}

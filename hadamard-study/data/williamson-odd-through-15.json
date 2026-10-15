@@ -1,0 +1,562 @@
+{
+  "arithmetic": "exact Python integers; all complementary PAF pair buckets",
+  "complete_for_odd_core_orders": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15
+  ],
+  "family": "symmetric circulant Williamson; s[0]=+1; block multiset",
+  "results": [
+    {
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "core_order": 1,
+      "count_is_not_equivalence_classes": true,
+      "hadamard_order": 4,
+      "normalized_sequence_multisets_solving_PAF": 1,
+      "normalized_sequences": 1,
+      "realized_types_with_one_verified_witness_each": [
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "matrix_verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 4,
+            "entries": 16,
+            "order": 4,
+            "unordered_row_pairs_checked": 6
+          },
+          "normalized_sequence_indices": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "sequences": [
+            "+",
+            "+",
+            "+",
+            "+"
+          ]
+        }
+      ],
+      "unordered_sequence_pairs_with_repetition": 1,
+      "unrealized_row_sum_types_in_this_family": []
+    },
+    {
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          1,
+          1,
+          3
+        ]
+      ],
+      "core_order": 3,
+      "count_is_not_equivalence_classes": true,
+      "hadamard_order": 12,
+      "normalized_sequence_multisets_solving_PAF": 1,
+      "normalized_sequences": 2,
+      "realized_types_with_one_verified_witness_each": [
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "matrix_verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 12,
+            "entries": 144,
+            "order": 12,
+            "unordered_row_pairs_checked": 66
+          },
+          "normalized_sequence_indices": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "sequences": [
+            "+++",
+            "+--",
+            "+--",
+            "+--"
+          ]
+        }
+      ],
+      "unordered_sequence_pairs_with_repetition": 3,
+      "unrealized_row_sum_types_in_this_family": []
+    },
+    {
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          1,
+          3,
+          3
+        ]
+      ],
+      "core_order": 5,
+      "count_is_not_equivalence_classes": true,
+      "hadamard_order": 20,
+      "normalized_sequence_multisets_solving_PAF": 1,
+      "normalized_sequences": 4,
+      "realized_types_with_one_verified_witness_each": [
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "matrix_verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 20,
+            "entries": 400,
+            "order": 20,
+            "unordered_row_pairs_checked": 190
+          },
+          "normalized_sequence_indices": [
+            1,
+            2,
+            3,
+            3
+          ],
+          "sequences": [
+            "+-++-",
+            "++--+",
+            "+----",
+            "+----"
+          ]
+        }
+      ],
+      "unordered_sequence_pairs_with_repetition": 10,
+      "unrealized_row_sum_types_in_this_family": []
+    },
+    {
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          1,
+          1,
+          5
+        ],
+        [
+          1,
+          3,
+          3,
+          3
+        ]
+      ],
+      "core_order": 7,
+      "count_is_not_equivalence_classes": true,
+      "hadamard_order": 28,
+      "normalized_sequence_multisets_solving_PAF": 4,
+      "normalized_sequences": 8,
+      "realized_types_with_one_verified_witness_each": [
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            1,
+            5
+          ],
+          "matrix_verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 28,
+            "entries": 784,
+            "order": 28,
+            "unordered_row_pairs_checked": 378
+          },
+          "normalized_sequence_indices": [
+            3,
+            5,
+            6,
+            7
+          ],
+          "sequences": [
+            "+--++--",
+            "+-+--+-",
+            "++----+",
+            "+------"
+          ]
+        },
+        {
+          "absolute_row_sums": [
+            1,
+            3,
+            3,
+            3
+          ],
+          "matrix_verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 28,
+            "entries": 784,
+            "order": 28,
+            "unordered_row_pairs_checked": 378
+          },
+          "normalized_sequence_indices": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "sequences": [
+            "+-++++-",
+            "+-++++-",
+            "+--++--",
+            "+++--++"
+          ]
+        }
+      ],
+      "unordered_sequence_pairs_with_repetition": 36,
+      "unrealized_row_sum_types_in_this_family": []
+    },
+    {
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          1,
+          3,
+          5
+        ],
+        [
+          3,
+          3,
+          3,
+          3
+        ]
+      ],
+      "core_order": 9,
+      "count_is_not_equivalence_classes": true,
+      "hadamard_order": 36,
+      "normalized_sequence_multisets_solving_PAF": 7,
+      "normalized_sequences": 16,
+      "realized_types_with_one_verified_witness_each": [
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            3,
+            5
+          ],
+          "matrix_verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 36,
+            "entries": 1296,
+            "order": 36,
+            "unordered_row_pairs_checked": 630
+          },
+          "normalized_sequence_indices": [
+            1,
+            3,
+            7,
+            10
+          ],
+          "sequences": [
+            "+-++++++-",
+            "+--++++--",
+            "+---++---",
+            "++-+--+-+"
+          ]
+        },
+        {
+          "absolute_row_sums": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "matrix_verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 36,
+            "entries": 1296,
+            "order": 36,
+            "unordered_row_pairs_checked": 630
+          },
+          "normalized_sequence_indices": [
+            7,
+            11,
+            13,
+            14
+          ],
+          "sequences": [
+            "+---++---",
+            "+--+--+--",
+            "+-+----+-",
+            "++------+"
+          ]
+        }
+      ],
+      "unordered_sequence_pairs_with_repetition": 136,
+      "unrealized_row_sum_types_in_this_family": []
+    },
+    {
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          3,
+          3,
+          5
+        ]
+      ],
+      "core_order": 11,
+      "count_is_not_equivalence_classes": true,
+      "hadamard_order": 44,
+      "normalized_sequence_multisets_solving_PAF": 5,
+      "normalized_sequences": 32,
+      "realized_types_with_one_verified_witness_each": [
+        {
+          "absolute_row_sums": [
+            1,
+            3,
+            3,
+            5
+          ],
+          "matrix_verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 44,
+            "entries": 1936,
+            "order": 44,
+            "unordered_row_pairs_checked": 946
+          },
+          "normalized_sequence_indices": [
+            3,
+            5,
+            15,
+            22
+          ],
+          "sequences": [
+            "+--++++++--",
+            "+-+-++++-+-",
+            "+----++----",
+            "++--+--+--+"
+          ]
+        }
+      ],
+      "unordered_sequence_pairs_with_repetition": 528,
+      "unrealized_row_sum_types_in_this_family": []
+    },
+    {
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          1,
+          1,
+          7
+        ],
+        [
+          1,
+          1,
+          5,
+          5
+        ],
+        [
+          3,
+          3,
+          3,
+          5
+        ]
+      ],
+      "core_order": 13,
+      "count_is_not_equivalence_classes": true,
+      "hadamard_order": 52,
+      "normalized_sequence_multisets_solving_PAF": 15,
+      "normalized_sequences": 64,
+      "realized_types_with_one_verified_witness_each": [
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            1,
+            7
+          ],
+          "matrix_verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          },
+          "normalized_sequence_indices": [
+            7,
+            13,
+            26,
+            47
+          ],
+          "sequences": [
+            "+---++++++---",
+            "+-+--++++--+-",
+            "++-+--++--+-+",
+            "+----+--+----"
+          ]
+        },
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            5,
+            5
+          ],
+          "matrix_verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          },
+          "normalized_sequence_indices": [
+            3,
+            20,
+            25,
+            49
+          ],
+          "sequences": [
+            "+--++++++++--",
+            "+++-+-++-+-++",
+            "+-++--++--++-",
+            "+-+++----+++-"
+          ]
+        },
+        {
+          "absolute_row_sums": [
+            3,
+            3,
+            3,
+            5
+          ],
+          "matrix_verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          },
+          "normalized_sequence_indices": [
+            6,
+            23,
+            23,
+            57
+          ],
+          "sequences": [
+            "++--++++++--+",
+            "+---+-++-+---",
+            "+---+-++-+---",
+            "+-++------++-"
+          ]
+        }
+      ],
+      "unordered_sequence_pairs_with_repetition": 2080,
+      "unrealized_row_sum_types_in_this_family": []
+    },
+    {
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          1,
+          3,
+          7
+        ],
+        [
+          1,
+          3,
+          5,
+          5
+        ]
+      ],
+      "core_order": 15,
+      "count_is_not_equivalence_classes": true,
+      "hadamard_order": 60,
+      "normalized_sequence_multisets_solving_PAF": 14,
+      "normalized_sequences": 128,
+      "realized_types_with_one_verified_witness_each": [
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            3,
+            7
+          ],
+          "matrix_verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          },
+          "normalized_sequence_indices": [
+            6,
+            37,
+            46,
+            114
+          ],
+          "sequences": [
+            "++--++++++++--+",
+            "+-+-++-++-++-+-",
+            "++---+-++-+---+",
+            "++-++------++-+"
+          ]
+        },
+        {
+          "absolute_row_sums": [
+            1,
+            3,
+            5,
+            5
+          ],
+          "matrix_verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          },
+          "normalized_sequence_indices": [
+            19,
+            61,
+            61,
+            108
+          ],
+          "sequences": [
+            "+--++-++++-++--",
+            "+-+----++----+-",
+            "+-+----++----+-",
+            "+++--+----+--++"
+          ]
+        }
+      ],
+      "unordered_sequence_pairs_with_repetition": 8256,
+      "unrealized_row_sum_types_in_this_family": []
+    }
+  ]
+}

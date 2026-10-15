@@ -1,0 +1,667 @@
+{
+  "counts_are_equivalence_classes": false,
+  "elapsed_seconds": 5.403765,
+  "method": "direct enumeration of every four-element multiset and full nonzero-lag integer autocorrelations",
+  "results": [
+    {
+      "all_nonzero_lags_checked": [],
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "core_order": 1,
+      "four_element_multisets_considered": 1,
+      "normalized_sequences": 1,
+      "realized_absolute_row_sum_types": [
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "solution_multisets": 1
+        }
+      ],
+      "solving_multisets": 1,
+      "solving_sequence_index_multisets": [
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "unrealized_absolute_row_sum_types": []
+    },
+    {
+      "all_nonzero_lags_checked": [
+        1,
+        2
+      ],
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          1,
+          1,
+          3
+        ]
+      ],
+      "core_order": 3,
+      "four_element_multisets_considered": 5,
+      "normalized_sequences": 2,
+      "realized_absolute_row_sum_types": [
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            1,
+            3
+          ],
+          "solution_multisets": 1
+        }
+      ],
+      "solving_multisets": 1,
+      "solving_sequence_index_multisets": [
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "unrealized_absolute_row_sum_types": []
+    },
+    {
+      "all_nonzero_lags_checked": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          1,
+          3,
+          3
+        ]
+      ],
+      "core_order": 5,
+      "four_element_multisets_considered": 35,
+      "normalized_sequences": 4,
+      "realized_absolute_row_sum_types": [
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            3,
+            3
+          ],
+          "solution_multisets": 1
+        }
+      ],
+      "solving_multisets": 1,
+      "solving_sequence_index_multisets": [
+        [
+          1,
+          2,
+          3,
+          3
+        ]
+      ],
+      "unrealized_absolute_row_sum_types": []
+    },
+    {
+      "all_nonzero_lags_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          1,
+          1,
+          5
+        ],
+        [
+          1,
+          3,
+          3,
+          3
+        ]
+      ],
+      "core_order": 7,
+      "four_element_multisets_considered": 330,
+      "normalized_sequences": 8,
+      "realized_absolute_row_sum_types": [
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            1,
+            5
+          ],
+          "solution_multisets": 1
+        },
+        {
+          "absolute_row_sums": [
+            1,
+            3,
+            3,
+            3
+          ],
+          "solution_multisets": 3
+        }
+      ],
+      "solving_multisets": 4,
+      "solving_sequence_index_multisets": [
+        [
+          1,
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          2,
+          6
+        ],
+        [
+          2,
+          4,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6,
+          7
+        ]
+      ],
+      "unrealized_absolute_row_sum_types": []
+    },
+    {
+      "all_nonzero_lags_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          1,
+          3,
+          5
+        ],
+        [
+          3,
+          3,
+          3,
+          3
+        ]
+      ],
+      "core_order": 9,
+      "four_element_multisets_considered": 3876,
+      "normalized_sequences": 16,
+      "realized_absolute_row_sum_types": [
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            3,
+            5
+          ],
+          "solution_multisets": 6
+        },
+        {
+          "absolute_row_sums": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "solution_multisets": 1
+        }
+      ],
+      "solving_multisets": 7,
+      "solving_sequence_index_multisets": [
+        [
+          1,
+          3,
+          7,
+          10
+        ],
+        [
+          1,
+          9,
+          9,
+          14
+        ],
+        [
+          2,
+          3,
+          3,
+          13
+        ],
+        [
+          2,
+          9,
+          10,
+          14
+        ],
+        [
+          3,
+          8,
+          9,
+          13
+        ],
+        [
+          7,
+          8,
+          10,
+          10
+        ],
+        [
+          7,
+          11,
+          13,
+          14
+        ]
+      ],
+      "unrealized_absolute_row_sum_types": []
+    },
+    {
+      "all_nonzero_lags_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          3,
+          3,
+          5
+        ]
+      ],
+      "core_order": 11,
+      "four_element_multisets_considered": 52360,
+      "normalized_sequences": 32,
+      "realized_absolute_row_sum_types": [
+        {
+          "absolute_row_sums": [
+            1,
+            3,
+            3,
+            5
+          ],
+          "solution_multisets": 5
+        }
+      ],
+      "solving_multisets": 5,
+      "solving_sequence_index_multisets": [
+        [
+          3,
+          5,
+          15,
+          22
+        ],
+        [
+          6,
+          20,
+          23,
+          26
+        ],
+        [
+          7,
+          9,
+          12,
+          29
+        ],
+        [
+          10,
+          18,
+          25,
+          30
+        ],
+        [
+          13,
+          17,
+          24,
+          27
+        ]
+      ],
+      "unrealized_absolute_row_sum_types": []
+    },
+    {
+      "all_nonzero_lags_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          1,
+          1,
+          7
+        ],
+        [
+          1,
+          1,
+          5,
+          5
+        ],
+        [
+          3,
+          3,
+          3,
+          5
+        ]
+      ],
+      "core_order": 13,
+      "four_element_multisets_considered": 766480,
+      "normalized_sequences": 64,
+      "realized_absolute_row_sum_types": [
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            1,
+            7
+          ],
+          "solution_multisets": 6
+        },
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            5,
+            5
+          ],
+          "solution_multisets": 3
+        },
+        {
+          "absolute_row_sums": [
+            3,
+            3,
+            3,
+            5
+          ],
+          "solution_multisets": 6
+        }
+      ],
+      "solving_multisets": 15,
+      "solving_sequence_index_multisets": [
+        [
+          3,
+          20,
+          25,
+          49
+        ],
+        [
+          6,
+          23,
+          23,
+          57
+        ],
+        [
+          6,
+          45,
+          46,
+          58
+        ],
+        [
+          7,
+          10,
+          22,
+          36
+        ],
+        [
+          7,
+          13,
+          26,
+          47
+        ],
+        [
+          11,
+          49,
+          50,
+          55
+        ],
+        [
+          13,
+          25,
+          31,
+          52
+        ],
+        [
+          13,
+          35,
+          44,
+          61
+        ],
+        [
+          15,
+          17,
+          23,
+          54
+        ],
+        [
+          17,
+          46,
+          57,
+          57
+        ],
+        [
+          22,
+          37,
+          50,
+          62
+        ],
+        [
+          23,
+          40,
+          46,
+          46
+        ],
+        [
+          24,
+          33,
+          42,
+          44
+        ],
+        [
+          28,
+          42,
+          50,
+          59
+        ],
+        [
+          29,
+          40,
+          51,
+          57
+        ]
+      ],
+      "unrealized_absolute_row_sum_types": []
+    },
+    {
+      "all_nonzero_lags_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "arithmetically_feasible_absolute_row_sum_types": [
+        [
+          1,
+          1,
+          3,
+          7
+        ],
+        [
+          1,
+          3,
+          5,
+          5
+        ]
+      ],
+      "core_order": 15,
+      "four_element_multisets_considered": 11716640,
+      "normalized_sequences": 128,
+      "realized_absolute_row_sum_types": [
+        {
+          "absolute_row_sums": [
+            1,
+            1,
+            3,
+            7
+          ],
+          "solution_multisets": 10
+        },
+        {
+          "absolute_row_sums": [
+            1,
+            3,
+            5,
+            5
+          ],
+          "solution_multisets": 4
+        }
+      ],
+      "solving_multisets": 14,
+      "solving_sequence_index_multisets": [
+        [
+          6,
+          37,
+          46,
+          114
+        ],
+        [
+          9,
+          25,
+          29,
+          114
+        ],
+        [
+          15,
+          17,
+          44,
+          77
+        ],
+        [
+          15,
+          24,
+          37,
+          77
+        ],
+        [
+          18,
+          99,
+          100,
+          106
+        ],
+        [
+          19,
+          61,
+          61,
+          108
+        ],
+        [
+          26,
+          101,
+          118,
+          118
+        ],
+        [
+          29,
+          33,
+          39,
+          100
+        ],
+        [
+          29,
+          38,
+          40,
+          108
+        ],
+        [
+          29,
+          66,
+          82,
+          114
+        ],
+        [
+          38,
+          80,
+          99,
+          106
+        ],
+        [
+          39,
+          61,
+          61,
+          88
+        ],
+        [
+          44,
+          68,
+          101,
+          114
+        ],
+        [
+          46,
+          81,
+          118,
+          118
+        ]
+      ],
+      "unrealized_absolute_row_sum_types": []
+    }
+  ],
+  "scope": "symmetric sign sequences of odd length 1 through 15, first coordinate +1; sorted block multisets",
+  "status": "passed"
+}

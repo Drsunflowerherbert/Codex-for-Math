@@ -1,0 +1,11 @@
+{
+  "canonical_sign_bytes": 446892,
+  "canonical_sign_sha256": "bdeb5059d77e2703211082627b60441b8c888c928a55cc6f295e011941a387b0",
+  "columns": 668,
+  "csv_bytes": 1115894,
+  "csv_sha256": "5eaef5f4c814469a1f0815756876b83e8c4944ff7ccf4f023ee479de5e8f9a8b",
+  "equal_to_independently_verified_sign_matrix": true,
+  "method": "independent ASCII comma splitting with literal token validation; byte-for-byte canonical sign comparison",
+  "rows": 668,
+  "status": "passed"
+}

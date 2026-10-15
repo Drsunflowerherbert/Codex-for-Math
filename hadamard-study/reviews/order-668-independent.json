@@ -1,0 +1,18 @@
+{
+  "claim": "H H^T = n I_n by explicit integer row dot products",
+  "distinct_row_pair_checks": 222778,
+  "elapsed_seconds": 5.764247,
+  "entries_checked": 446224,
+  "implementation": "Python standard library; explicit integer multiplication and summation; no study-code imports",
+  "matrix_byte_count": 446892,
+  "matrix_file": "/tmp/hadamard-668.txt",
+  "matrix_sha256": "bdeb5059d77e2703211082627b60441b8c888c928a55cc6f295e011941a387b0",
+  "order": 668,
+  "row_norm_checks": 668,
+  "self_tests": {
+    "malformed_inputs": "rejected",
+    "single_sign_corruption": "rejected",
+    "valid_4_by_4": "passed"
+  },
+  "status": "passed"
+}
