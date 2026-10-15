@@ -1,0 +1,3209 @@
+{
+  "all_cases_have_identical_solution_sets_within_each_core": true,
+  "cores": [
+    3,
+    15,
+    19,
+    21
+  ],
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "logical_cpus_visible": 5,
+  "machine": "x86_64",
+  "measured_sources_unchanged_during_run": true,
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "protocol": "sequential fresh Linux worker processes; deterministic rotated method order; all preprocessing charged; external wall includes startup and JSON output; entire-process peak RSS, not incremental allocations",
+  "python": "3.12.14",
+  "raw_runs": [
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 3,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 3,
+        "pair_after_order3_energy": 3,
+        "pair_after_row_square_feasibility": 3,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 3
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": 0.02966474599998037,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "baseline-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 2.114100016115117e-05,
+        "search": 1.765699994393799e-05,
+        "total_in_process": 3.879800010508916e-05
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": 0.02959010499989745,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 2.6890000071944087e-05,
+        "search": 2.07420000606362e-05,
+        "total_in_process": 4.763200013258029e-05
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": 0.03027421499996308,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 3.203799997208989e-05,
+        "search": 2.0691000145234284e-05,
+        "total_in_process": 5.2729000117324176e-05
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.02931180299992775,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 4.039100008412788e-05,
+        "search": 1.9819999806713895e-05,
+        "total_in_process": 6.0210999890841777e-05
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.02992014400001608,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm-product-key",
+      "process_peak_rss_kib": 13568,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 4.443700004230777e-05,
+        "search": 2.243399990220496e-05,
+        "total_in_process": 6.687099994451273e-05
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "after_forced_fourth_mask_and_order": 2,
+        "after_pair_energy_tests": 1,
+        "after_quadruple_row_square_sum": 1,
+        "full_PAF_quadruples_tested": 1,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 0,
+        "triples_visited": 4
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.03431288799993126,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "product-triples",
+      "process_peak_rss_kib": 13568,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 4.680999995798629e-05,
+        "search": 1.8116999854100868e-05,
+        "total_in_process": 6.492699981208716e-05
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": 0.028788893999944776,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 2.6871000045503024e-05,
+        "search": 1.913799997055321e-05,
+        "total_in_process": 4.6009000016056234e-05
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": 0.028402590000041528,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 3.304000006210117e-05,
+        "search": 1.9878999864886282e-05,
+        "total_in_process": 5.291899992698745e-05
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.03496828000015739,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 9.827799999584386e-05,
+        "search": 2.0970999912606203e-05,
+        "total_in_process": 0.00011924899990845006
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.03177958600008424,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm-product-key",
+      "process_peak_rss_kib": 13568,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 5.297999996400904e-05,
+        "search": 5.820700016556657e-05,
+        "total_in_process": 0.00011118700012957561
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "after_forced_fourth_mask_and_order": 2,
+        "after_pair_energy_tests": 1,
+        "after_quadruple_row_square_sum": 1,
+        "full_PAF_quadruples_tested": 1,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 0,
+        "triples_visited": 4
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.030246953999949255,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "product-triples",
+      "process_peak_rss_kib": 13568,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 6.667000002380519e-05,
+        "search": 1.800700010790024e-05,
+        "total_in_process": 8.467700013170543e-05
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 3,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 3,
+        "pair_after_order3_energy": 3,
+        "pair_after_row_square_feasibility": 3,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 3
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": 0.02955331499993008,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "baseline-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 2.222400007667602e-05,
+        "search": 1.7365999838148127e-05,
+        "total_in_process": 3.958999991482415e-05
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": 0.028917170999875452,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 3.085599996666133e-05,
+        "search": 1.9919999886042206e-05,
+        "total_in_process": 5.0775999852703535e-05
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.02781552000010379,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 4.180300015832472e-05,
+        "search": 1.979900002879731e-05,
+        "total_in_process": 6.160200018712203e-05
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.02987761499980479,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm-product-key",
+      "process_peak_rss_kib": 13568,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 4.2474000110814814e-05,
+        "search": 2.178199997615593e-05,
+        "total_in_process": 6.425600008697074e-05
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "after_forced_fourth_mask_and_order": 2,
+        "after_pair_energy_tests": 1,
+        "after_quadruple_row_square_sum": 1,
+        "full_PAF_quadruples_tested": 1,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 0,
+        "triples_visited": 4
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.028308008000067275,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "product-triples",
+      "process_peak_rss_kib": 13568,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 4.1322000015497906e-05,
+        "search": 1.701500013950863e-05,
+        "total_in_process": 5.8337000155006535e-05
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 3,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 3,
+        "pair_after_order3_energy": 3,
+        "pair_after_row_square_feasibility": 3,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 3
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": 0.028748748999987583,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "baseline-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 2.227300001322874e-05,
+        "search": 1.7877000118460273e-05,
+        "total_in_process": 4.015000013168901e-05
+      }
+    },
+    {
+      "core_order": 3,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": 0.03095866099988598,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "timing_seconds": {
+        "preprocessing": 2.9222999955891282e-05,
+        "search": 2.1342000081858714e-05,
+        "total_in_process": 5.0565000037749996e-05
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 7952,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 8256,
+        "pair_after_order3_energy": 8256,
+        "pair_after_row_square_feasibility": 8256,
+        "pairs_considered_after_single_filters": 8256,
+        "raw_normalized_sequences": 128,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 8256
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": 0.04598432100010541,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "baseline-mitm",
+      "process_peak_rss_kib": 13952,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0010361730001022806,
+        "search": 0.014720543000066755,
+        "total_in_process": 0.015756716000169035
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 4854,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 5026,
+        "pair_after_order3_energy": 5026,
+        "pair_after_row_square_feasibility": 5026,
+        "pairs_considered_after_single_filters": 6328,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 112,
+        "single_after_order3_energy": 112,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 5026
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": 0.04792208000003484,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0011763029999656283,
+        "search": 0.011998183000059726,
+        "total_in_process": 0.013174486000025354
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 4167,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 4325,
+        "pair_after_order3_energy": 4325,
+        "pair_after_row_square_feasibility": 4325,
+        "pairs_considered_after_single_filters": 5565,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 105,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 4325
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": 0.043136213000025236,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0012570050000704214,
+        "search": 0.010605094000084136,
+        "total_in_process": 0.011862099000154558
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 969,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 1061,
+        "pair_after_order3_energy": 2356,
+        "pair_after_row_square_feasibility": 2356,
+        "pairs_considered_after_single_filters": 3321,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 1061
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.04515795299994352,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0023546190000161005,
+        "search": 0.0053253020000738616,
+        "total_in_process": 0.007679921000089962
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 969,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 1061,
+        "pair_after_order3_energy": 2356,
+        "pair_after_row_square_feasibility": 2356,
+        "pairs_considered_after_single_filters": 3321,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 1061
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.04310303300007945,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm-product-key",
+      "process_peak_rss_kib": 13568,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.002163161999988006,
+        "search": 0.004410801000176434,
+        "total_in_process": 0.00657396300016444
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "after_forced_fourth_mask_and_order": 15072,
+        "after_pair_energy_tests": 370,
+        "after_quadruple_row_square_sum": 2176,
+        "full_PAF_quadruples_tested": 370,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 0,
+        "triples_visited": 91881
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.05440426100017248,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "product-triples",
+      "process_peak_rss_kib": 13568,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0019730970000182424,
+        "search": 0.01915324700007659,
+        "total_in_process": 0.021126344000094832
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 4854,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 5026,
+        "pair_after_order3_energy": 5026,
+        "pair_after_row_square_feasibility": 5026,
+        "pairs_considered_after_single_filters": 6328,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 112,
+        "single_after_order3_energy": 112,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 5026
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": 0.0439838529998724,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.001352486999849134,
+        "search": 0.01219205300003523,
+        "total_in_process": 0.013544539999884364
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 4167,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 4325,
+        "pair_after_order3_energy": 4325,
+        "pair_after_row_square_feasibility": 4325,
+        "pairs_considered_after_single_filters": 5565,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 105,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 4325
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": 0.03978328700009115,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0011938390000523214,
+        "search": 0.009987469999941823,
+        "total_in_process": 0.011181308999994144
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 969,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 1061,
+        "pair_after_order3_energy": 2356,
+        "pair_after_row_square_feasibility": 2356,
+        "pairs_considered_after_single_filters": 3321,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 1061
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.03649375700001656,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0018262569999478728,
+        "search": 0.005080054000018208,
+        "total_in_process": 0.006906310999966081
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 969,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 1061,
+        "pair_after_order3_energy": 2356,
+        "pair_after_row_square_feasibility": 2356,
+        "pairs_considered_after_single_filters": 3321,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 1061
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.03987716799997543,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm-product-key",
+      "process_peak_rss_kib": 13568,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0020574729999225383,
+        "search": 0.004725634000124046,
+        "total_in_process": 0.006783107000046584
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "after_forced_fourth_mask_and_order": 15072,
+        "after_pair_energy_tests": 370,
+        "after_quadruple_row_square_sum": 2176,
+        "full_PAF_quadruples_tested": 370,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 0,
+        "triples_visited": 91881
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.050788862999979756,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "product-triples",
+      "process_peak_rss_kib": 13568,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0021401369999693998,
+        "search": 0.01817877700000281,
+        "total_in_process": 0.02031891399997221
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 7952,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 8256,
+        "pair_after_order3_energy": 8256,
+        "pair_after_row_square_feasibility": 8256,
+        "pairs_considered_after_single_filters": 8256,
+        "raw_normalized_sequences": 128,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 8256
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": 0.04868098299994017,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "baseline-mitm",
+      "process_peak_rss_kib": 13952,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0011511949999203352,
+        "search": 0.014388406000080067,
+        "total_in_process": 0.015539601000000403
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 4167,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 4325,
+        "pair_after_order3_energy": 4325,
+        "pair_after_row_square_feasibility": 4325,
+        "pairs_considered_after_single_filters": 5565,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 105,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 4325
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": 0.04355738399999609,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0016172539999388391,
+        "search": 0.010944905000087601,
+        "total_in_process": 0.01256215900002644
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 969,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 1061,
+        "pair_after_order3_energy": 2356,
+        "pair_after_row_square_feasibility": 2356,
+        "pairs_considered_after_single_filters": 3321,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 1061
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.03625991600006273,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0019219710000015766,
+        "search": 0.004345413000010012,
+        "total_in_process": 0.006267384000011589
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 969,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 1061,
+        "pair_after_order3_energy": 2356,
+        "pair_after_row_square_feasibility": 2356,
+        "pairs_considered_after_single_filters": 3321,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 1061
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.03683632000002035,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm-product-key",
+      "process_peak_rss_kib": 13568,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.002061259999891263,
+        "search": 0.004664911999952892,
+        "total_in_process": 0.006726171999844155
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "after_forced_fourth_mask_and_order": 15072,
+        "after_pair_energy_tests": 370,
+        "after_quadruple_row_square_sum": 2176,
+        "full_PAF_quadruples_tested": 370,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 0,
+        "triples_visited": 91881
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.0537875970001096,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "product-triples",
+      "process_peak_rss_kib": 13568,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0019213900000067952,
+        "search": 0.019454988999996203,
+        "total_in_process": 0.021376379000003
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 7952,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 8256,
+        "pair_after_order3_energy": 8256,
+        "pair_after_row_square_feasibility": 8256,
+        "pairs_considered_after_single_filters": 8256,
+        "raw_normalized_sequences": 128,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 8256
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": 0.04271317400002772,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "baseline-mitm",
+      "process_peak_rss_kib": 13952,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0013293019999309763,
+        "search": 0.013313423999989027,
+        "total_in_process": 0.014642725999920003
+      }
+    },
+    {
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 4854,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 5026,
+        "pair_after_order3_energy": 5026,
+        "pair_after_row_square_feasibility": 5026,
+        "pairs_considered_after_single_filters": 6328,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 112,
+        "single_after_order3_energy": 112,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 5026
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": 0.044590176999918185,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 13568,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0012537289999272616,
+        "search": 0.011749796000003698,
+        "total_in_process": 0.01300352499993096
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 131328,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 131328,
+        "pair_after_order3_energy": 131328,
+        "pair_after_row_square_feasibility": 131328,
+        "pairs_considered_after_single_filters": 131328,
+        "raw_normalized_sequences": 512,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 131328
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": 0.3396834580000814,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "baseline-mitm",
+      "process_peak_rss_kib": 62680,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.0063645489999544225,
+        "search": 0.30151692000004005,
+        "total_in_process": 0.30788146899999447
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 58380,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 58380,
+        "pair_after_order3_energy": 58380,
+        "pair_after_row_square_feasibility": 58380,
+        "pairs_considered_after_single_filters": 88410,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 420,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 58380
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": 0.19760833099985575,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 35648,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.007635961000005409,
+        "search": 0.15921647099980873,
+        "total_in_process": 0.16685243199981414
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 58380,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 58380,
+        "pair_after_order3_energy": 58380,
+        "pair_after_row_square_feasibility": 58380,
+        "pairs_considered_after_single_filters": 88410,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 420,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 58380
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": 0.19398452200016436,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 35644,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.007125665000103254,
+        "search": 0.15487076499994146,
+        "total_in_process": 0.1619964300000447
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 6798,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 6798,
+        "pair_after_order3_energy": 24189,
+        "pair_after_row_square_feasibility": 24189,
+        "pairs_considered_after_single_filters": 35778,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 267,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 6798
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.07754348499997832,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 14208,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.010010832000034497,
+        "search": 0.038848765000011554,
+        "total_in_process": 0.04885959700004605
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 6798,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 6798,
+        "pair_after_order3_energy": 24189,
+        "pair_after_row_square_feasibility": 24189,
+        "pairs_considered_after_single_filters": 35778,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 267,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 6798
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.081605350000018,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm-product-key",
+      "process_peak_rss_kib": 14336,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.009670400999993944,
+        "search": 0.041752919999908045,
+        "total_in_process": 0.05142332099990199
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "after_forced_fourth_mask_and_order": 426612,
+        "after_pair_energy_tests": 5134,
+        "after_quadruple_row_square_sum": 66963,
+        "full_PAF_quadruples_tested": 5134,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 267,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 0,
+        "triples_visited": 3208094
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.654442827000139,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "product-triples",
+      "process_peak_rss_kib": 13696,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.00980290999996214,
+        "search": 0.6140025709999009,
+        "total_in_process": 0.623805480999863
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 58380,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 58380,
+        "pair_after_order3_energy": 58380,
+        "pair_after_row_square_feasibility": 58380,
+        "pairs_considered_after_single_filters": 88410,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 420,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 58380
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": 0.21873843699995632,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 35648,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.0089106109999193,
+        "search": 0.17621265799994035,
+        "total_in_process": 0.18512326899985965
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 58380,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 58380,
+        "pair_after_order3_energy": 58380,
+        "pair_after_row_square_feasibility": 58380,
+        "pairs_considered_after_single_filters": 88410,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 420,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 58380
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": 0.19434915399983765,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 35648,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.006794959999979255,
+        "search": 0.15863207500001408,
+        "total_in_process": 0.16542703499999334
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 6798,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 6798,
+        "pair_after_order3_energy": 24189,
+        "pair_after_row_square_feasibility": 24189,
+        "pairs_considered_after_single_filters": 35778,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 267,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 6798
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.08463626000002478,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 14208,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.010533395000038581,
+        "search": 0.04294814299987593,
+        "total_in_process": 0.05348153799991451
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 6798,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 6798,
+        "pair_after_order3_energy": 24189,
+        "pair_after_row_square_feasibility": 24189,
+        "pairs_considered_after_single_filters": 35778,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 267,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 6798
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.08163355300007424,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm-product-key",
+      "process_peak_rss_kib": 14336,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.00989311600005749,
+        "search": 0.040703837000137355,
+        "total_in_process": 0.050596953000194844
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "after_forced_fourth_mask_and_order": 426612,
+        "after_pair_energy_tests": 5134,
+        "after_quadruple_row_square_sum": 66963,
+        "full_PAF_quadruples_tested": 5134,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 267,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 0,
+        "triples_visited": 3208094
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.8633433210000021,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "product-triples",
+      "process_peak_rss_kib": 13696,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.011341766999976244,
+        "search": 0.8194084350000139,
+        "total_in_process": 0.8307502019999902
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 131328,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 131328,
+        "pair_after_order3_energy": 131328,
+        "pair_after_row_square_feasibility": 131328,
+        "pairs_considered_after_single_filters": 131328,
+        "raw_normalized_sequences": 512,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 131328
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": 0.3595508650000738,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "baseline-mitm",
+      "process_peak_rss_kib": 62644,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.006850533000033465,
+        "search": 0.3201295060000575,
+        "total_in_process": 0.326980039000091
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 58380,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 58380,
+        "pair_after_order3_energy": 58380,
+        "pair_after_row_square_feasibility": 58380,
+        "pairs_considered_after_single_filters": 88410,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 420,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 58380
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": 0.20839596799987703,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 35652,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.007320547000063016,
+        "search": 0.17069403799996508,
+        "total_in_process": 0.1780145850000281
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 6798,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 6798,
+        "pair_after_order3_energy": 24189,
+        "pair_after_row_square_feasibility": 24189,
+        "pairs_considered_after_single_filters": 35778,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 267,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 6798
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.07711585800007015,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 14208,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.010118001999899207,
+        "search": 0.03767223099998773,
+        "total_in_process": 0.04779023299988694
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 6798,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 6798,
+        "pair_after_order3_energy": 24189,
+        "pair_after_row_square_feasibility": 24189,
+        "pairs_considered_after_single_filters": 35778,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 267,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 6798
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.08900928299999578,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm-product-key",
+      "process_peak_rss_kib": 14336,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.0110303000001295,
+        "search": 0.04501235799989445,
+        "total_in_process": 0.05604265800002395
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "after_forced_fourth_mask_and_order": 426612,
+        "after_pair_energy_tests": 5134,
+        "after_quadruple_row_square_sum": 66963,
+        "full_PAF_quadruples_tested": 5134,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 267,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 0,
+        "triples_visited": 3208094
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.6592038579999553,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "product-triples",
+      "process_peak_rss_kib": 13696,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.010950419999971928,
+        "search": 0.6185222350000004,
+        "total_in_process": 0.6294726549999723
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 131328,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 131328,
+        "pair_after_order3_energy": 131328,
+        "pair_after_row_square_feasibility": 131328,
+        "pairs_considered_after_single_filters": 131328,
+        "raw_normalized_sequences": 512,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 131328
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": 0.32103110799994283,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "baseline-mitm",
+      "process_peak_rss_kib": 62640,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.006118850000120801,
+        "search": 0.28671082300002126,
+        "total_in_process": 0.29282967300014207
+      }
+    },
+    {
+      "core_order": 19,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 58380,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 58380,
+        "pair_after_order3_energy": 58380,
+        "pair_after_row_square_feasibility": 58380,
+        "pairs_considered_after_single_filters": 88410,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 420,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 58380
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": 0.18999194000002717,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 35648,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "timing_seconds": {
+        "preprocessing": 0.006497448000118311,
+        "search": 0.15543055300008746,
+        "total_in_process": 0.16192800100020577
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 518750,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 524800,
+        "pair_after_order3_energy": 524800,
+        "pair_after_row_square_feasibility": 524800,
+        "pairs_considered_after_single_filters": 524800,
+        "raw_normalized_sequences": 1024,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 524800
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": 1.531867469999952,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "baseline-mitm",
+      "process_peak_rss_kib": 220376,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.015531887999941318,
+        "search": 1.4860798930001238,
+        "total_in_process": 1.501611781000065
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 312248,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 314853,
+        "pair_after_order3_energy": 314853,
+        "pair_after_row_square_feasibility": 314853,
+        "pairs_considered_after_single_filters": 416328,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 912,
+        "single_after_order3_energy": 912,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 314853
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": 1.0132251019999785,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 143016,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.040212656999983665,
+        "search": 0.9379527060000328,
+        "total_in_process": 0.9781653630000164
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 272114,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 274295,
+        "pair_after_order3_energy": 274295,
+        "pair_after_row_square_feasibility": 285789,
+        "pairs_considered_after_single_filters": 383250,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 875,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 274295
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": 0.9013669339999524,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 126984,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.015302032999898074,
+        "search": 0.856473952999977,
+        "total_in_process": 0.871775985999875
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 24664,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 24985,
+        "pair_after_order3_energy": 103649,
+        "pair_after_row_square_feasibility": 112602,
+        "pairs_considered_after_single_filters": 157080,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 24985
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.21214057599991065,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 21852,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.023648559999855934,
+        "search": 0.15862823199995546,
+        "total_in_process": 0.1822767919998114
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 24664,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 24985,
+        "pair_after_order3_energy": 103649,
+        "pair_after_row_square_feasibility": 112602,
+        "pairs_considered_after_single_filters": 157080,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 24985
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.2205716029998257,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm-product-key",
+      "process_peak_rss_kib": 22548,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.023363732000007076,
+        "search": 0.16794474199991782,
+        "total_in_process": 0.1913084739999249
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "after_forced_fourth_mask_and_order": 4058702,
+        "after_pair_energy_tests": 24904,
+        "after_quadruple_row_square_sum": 498704,
+        "full_PAF_quadruples_tested": 24904,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 0,
+        "triples_visited": 29426320
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 5.816816759999938,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "product-triples",
+      "process_peak_rss_kib": 13696,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.02315023200003452,
+        "search": 5.764566830000149,
+        "total_in_process": 5.787717062000183
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 312248,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 314853,
+        "pair_after_order3_energy": 314853,
+        "pair_after_row_square_feasibility": 314853,
+        "pairs_considered_after_single_filters": 416328,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 912,
+        "single_after_order3_energy": 912,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 314853
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": 1.117496736000021,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 143012,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.01620654800012744,
+        "search": 1.0676275819998864,
+        "total_in_process": 1.0838341300000138
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 272114,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 274295,
+        "pair_after_order3_energy": 274295,
+        "pair_after_row_square_feasibility": 285789,
+        "pairs_considered_after_single_filters": 383250,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 875,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 274295
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": 0.9575405719999708,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 126992,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.016221651000023485,
+        "search": 0.9080419859999438,
+        "total_in_process": 0.9242636369999673
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 24664,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 24985,
+        "pair_after_order3_energy": 103649,
+        "pair_after_row_square_feasibility": 112602,
+        "pairs_considered_after_single_filters": 157080,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 24985
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.23697655700016185,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 21868,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.027686659999972107,
+        "search": 0.17653643600010582,
+        "total_in_process": 0.20422309600007793
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 24664,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 24985,
+        "pair_after_order3_energy": 103649,
+        "pair_after_row_square_feasibility": 112602,
+        "pairs_considered_after_single_filters": 157080,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 24985
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.23803040699999656,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm-product-key",
+      "process_peak_rss_kib": 22548,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.025531107999995584,
+        "search": 0.17936727000005703,
+        "total_in_process": 0.20489837800005262
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "after_forced_fourth_mask_and_order": 4058702,
+        "after_pair_energy_tests": 24904,
+        "after_quadruple_row_square_sum": 498704,
+        "full_PAF_quadruples_tested": 24904,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 0,
+        "triples_visited": 29426320
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 5.87616022300017,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "product-triples",
+      "process_peak_rss_kib": 13696,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.025095475999933115,
+        "search": 5.820559431999982,
+        "total_in_process": 5.845654907999915
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 518750,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 524800,
+        "pair_after_order3_energy": 524800,
+        "pair_after_row_square_feasibility": 524800,
+        "pairs_considered_after_single_filters": 524800,
+        "raw_normalized_sequences": 1024,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 524800
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": 1.482325666999941,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "baseline-mitm",
+      "process_peak_rss_kib": 220376,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.01460299100017437,
+        "search": 1.4388017109999964,
+        "total_in_process": 1.4534047020001708
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 272114,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 274295,
+        "pair_after_order3_energy": 274295,
+        "pair_after_row_square_feasibility": 285789,
+        "pairs_considered_after_single_filters": 383250,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 875,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 274295
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": 0.8990082610000627,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 126988,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.015292624000039723,
+        "search": 0.8538880730000074,
+        "total_in_process": 0.8691806970000471
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 24664,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 24985,
+        "pair_after_order3_energy": 103649,
+        "pair_after_row_square_feasibility": 112602,
+        "pairs_considered_after_single_filters": 157080,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 24985
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.2481174929998815,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 21868,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.029863707999993494,
+        "search": 0.18643400899986773,
+        "total_in_process": 0.21629771699986122
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 24664,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 24985,
+        "pair_after_order3_energy": 103649,
+        "pair_after_row_square_feasibility": 112602,
+        "pairs_considered_after_single_filters": 157080,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 24985
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 0.22142095100002734,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm-product-key",
+      "process_peak_rss_kib": 22548,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.023273439000149665,
+        "search": 0.1700641889999588,
+        "total_in_process": 0.19333762800010845
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "after_forced_fourth_mask_and_order": 4058702,
+        "after_pair_energy_tests": 24904,
+        "after_quadruple_row_square_sum": 498704,
+        "full_PAF_quadruples_tested": 24904,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 0,
+        "triples_visited": 29426320
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": 5.648212350999984,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "product-triples",
+      "process_peak_rss_kib": 13824,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.023327639999934036,
+        "search": 5.597206015999973,
+        "total_in_process": 5.620533655999907
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 518750,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 524800,
+        "pair_after_order3_energy": 524800,
+        "pair_after_row_square_feasibility": 524800,
+        "pairs_considered_after_single_filters": 524800,
+        "raw_normalized_sequences": 1024,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 524800
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": 1.6942899739999575,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "baseline-mitm",
+      "process_peak_rss_kib": 220376,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.016875128000037876,
+        "search": 1.64180317499995,
+        "total_in_process": 1.6586783029999879
+      }
+    },
+    {
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 312248,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 314853,
+        "pair_after_order3_energy": 314853,
+        "pair_after_row_square_feasibility": 314853,
+        "pairs_considered_after_single_filters": 416328,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 912,
+        "single_after_order3_energy": 912,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 314853
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": 1.0753760729999158,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 143016,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.0150098330000219,
+        "search": 1.0285106819999328,
+        "total_in_process": 1.0435205149999547
+      }
+    }
+  ],
+  "repetitions_per_case": 3,
+  "source_sha256_after": {
+    "round2/scripts/benchmark.py": "47062e11c3264bca3da0a0983e9817b6f044179342304c1036d3353885b17541",
+    "round2/scripts/search.py": "9916799153e83c265be7cce8ae32337f7a667cfba7ebd88bf91bacb0d0cfb583",
+    "scripts/enumerate_williamson.py": "b09b5a3491c5760691d1aa535bcce4e6f9430a3e558c635a51f90f511f2b2fda",
+    "scripts/hadamard.py": "5f0aef757b9a3e5a297606838d0376f973825174659cb30c9c2d851820afa1e1"
+  },
+  "source_sha256_before": {
+    "round2/scripts/benchmark.py": "47062e11c3264bca3da0a0983e9817b6f044179342304c1036d3353885b17541",
+    "round2/scripts/search.py": "9916799153e83c265be7cce8ae32337f7a667cfba7ebd88bf91bacb0d0cfb583",
+    "scripts/enumerate_williamson.py": "b09b5a3491c5760691d1aa535bcce4e6f9430a3e558c635a51f90f511f2b2fda",
+    "scripts/hadamard.py": "5f0aef757b9a3e5a297606838d0376f973825174659cb30c9c2d851820afa1e1"
+  },
+  "summary": [
+    {
+      "core_order": 3,
+      "counts": {
+        "bucket_keys": 3,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 3,
+        "pair_after_order3_energy": 3,
+        "pair_after_row_square_feasibility": 3,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 3
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": {
+        "max": 0.02966474599998037,
+        "median": 0.02955331499993008,
+        "min": 0.028748748999987583
+      },
+      "in_process_total_seconds": {
+        "max": 4.015000013168901e-05,
+        "median": 3.958999991482415e-05,
+        "min": 3.879800010508916e-05
+      },
+      "method": "baseline-mitm",
+      "preprocessing_seconds": {
+        "max": 2.227300001322874e-05,
+        "median": 2.222400007667602e-05,
+        "min": 2.114100016115117e-05
+      },
+      "process_peak_rss_kib": {
+        "max": 13568,
+        "median": 13568,
+        "min": 13568
+      },
+      "search_seconds": {
+        "max": 1.7877000118460273e-05,
+        "median": 1.765699994393799e-05,
+        "min": 1.7365999838148127e-05
+      },
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db"
+    },
+    {
+      "core_order": 3,
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": {
+        "max": 0.03095866099988598,
+        "median": 0.02959010499989745,
+        "min": 0.028788893999944776
+      },
+      "in_process_total_seconds": {
+        "max": 5.0565000037749996e-05,
+        "median": 4.763200013258029e-05,
+        "min": 4.6009000016056234e-05
+      },
+      "method": "filtered-mitm",
+      "preprocessing_seconds": {
+        "max": 2.9222999955891282e-05,
+        "median": 2.6890000071944087e-05,
+        "min": 2.6871000045503024e-05
+      },
+      "process_peak_rss_kib": {
+        "max": 13568,
+        "median": 13568,
+        "min": 13568
+      },
+      "search_seconds": {
+        "max": 2.1342000081858714e-05,
+        "median": 2.07420000606362e-05,
+        "min": 1.913799997055321e-05
+      },
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db"
+    },
+    {
+      "core_order": 3,
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": {
+        "max": 0.03027421499996308,
+        "median": 0.028917170999875452,
+        "min": 0.028402590000041528
+      },
+      "in_process_total_seconds": {
+        "max": 5.291899992698745e-05,
+        "median": 5.2729000117324176e-05,
+        "min": 5.0775999852703535e-05
+      },
+      "method": "filtered-mitm",
+      "preprocessing_seconds": {
+        "max": 3.304000006210117e-05,
+        "median": 3.203799997208989e-05,
+        "min": 3.085599996666133e-05
+      },
+      "process_peak_rss_kib": {
+        "max": 13568,
+        "median": 13568,
+        "min": 13568
+      },
+      "search_seconds": {
+        "max": 2.0691000145234284e-05,
+        "median": 1.9919999886042206e-05,
+        "min": 1.9878999864886282e-05
+      },
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db"
+    },
+    {
+      "core_order": 3,
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": {
+        "max": 0.03496828000015739,
+        "median": 0.02931180299992775,
+        "min": 0.02781552000010379
+      },
+      "in_process_total_seconds": {
+        "max": 0.00011924899990845006,
+        "median": 6.160200018712203e-05,
+        "min": 6.0210999890841777e-05
+      },
+      "method": "filtered-mitm",
+      "preprocessing_seconds": {
+        "max": 9.827799999584386e-05,
+        "median": 4.180300015832472e-05,
+        "min": 4.039100008412788e-05
+      },
+      "process_peak_rss_kib": {
+        "max": 13568,
+        "median": 13568,
+        "min": 13568
+      },
+      "search_seconds": {
+        "max": 2.0970999912606203e-05,
+        "median": 1.9819999806713895e-05,
+        "min": 1.979900002879731e-05
+      },
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db"
+    },
+    {
+      "core_order": 3,
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": {
+        "max": 0.03177958600008424,
+        "median": 0.02992014400001608,
+        "min": 0.02987761499980479
+      },
+      "in_process_total_seconds": {
+        "max": 0.00011118700012957561,
+        "median": 6.687099994451273e-05,
+        "min": 6.425600008697074e-05
+      },
+      "method": "filtered-mitm-product-key",
+      "preprocessing_seconds": {
+        "max": 5.297999996400904e-05,
+        "median": 4.443700004230777e-05,
+        "min": 4.2474000110814814e-05
+      },
+      "process_peak_rss_kib": {
+        "max": 13568,
+        "median": 13568,
+        "min": 13568
+      },
+      "search_seconds": {
+        "max": 5.820700016556657e-05,
+        "median": 2.243399990220496e-05,
+        "min": 2.178199997615593e-05
+      },
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db"
+    },
+    {
+      "core_order": 3,
+      "counts": {
+        "after_forced_fourth_mask_and_order": 2,
+        "after_pair_energy_tests": 1,
+        "after_quadruple_row_square_sum": 1,
+        "full_PAF_quadruples_tested": 1,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 0,
+        "triples_visited": 4
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": {
+        "max": 0.03431288799993126,
+        "median": 0.030246953999949255,
+        "min": 0.028308008000067275
+      },
+      "in_process_total_seconds": {
+        "max": 8.467700013170543e-05,
+        "median": 6.492699981208716e-05,
+        "min": 5.8337000155006535e-05
+      },
+      "method": "product-triples",
+      "preprocessing_seconds": {
+        "max": 6.667000002380519e-05,
+        "median": 4.680999995798629e-05,
+        "min": 4.1322000015497906e-05
+      },
+      "process_peak_rss_kib": {
+        "max": 13568,
+        "median": 13568,
+        "min": 13568
+      },
+      "search_seconds": {
+        "max": 1.8116999854100868e-05,
+        "median": 1.800700010790024e-05,
+        "min": 1.701500013950863e-05
+      },
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db"
+    },
+    {
+      "core_order": 15,
+      "counts": {
+        "bucket_keys": 7952,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 8256,
+        "pair_after_order3_energy": 8256,
+        "pair_after_row_square_feasibility": 8256,
+        "pairs_considered_after_single_filters": 8256,
+        "raw_normalized_sequences": 128,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 8256
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": {
+        "max": 0.04868098299994017,
+        "median": 0.04598432100010541,
+        "min": 0.04271317400002772
+      },
+      "in_process_total_seconds": {
+        "max": 0.015756716000169035,
+        "median": 0.015539601000000403,
+        "min": 0.014642725999920003
+      },
+      "method": "baseline-mitm",
+      "preprocessing_seconds": {
+        "max": 0.0013293019999309763,
+        "median": 0.0011511949999203352,
+        "min": 0.0010361730001022806
+      },
+      "process_peak_rss_kib": {
+        "max": 13952,
+        "median": 13952,
+        "min": 13952
+      },
+      "search_seconds": {
+        "max": 0.014720543000066755,
+        "median": 0.014388406000080067,
+        "min": 0.013313423999989027
+      },
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243"
+    },
+    {
+      "core_order": 15,
+      "counts": {
+        "bucket_keys": 4854,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 5026,
+        "pair_after_order3_energy": 5026,
+        "pair_after_row_square_feasibility": 5026,
+        "pairs_considered_after_single_filters": 6328,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 112,
+        "single_after_order3_energy": 112,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 5026
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": {
+        "max": 0.04792208000003484,
+        "median": 0.044590176999918185,
+        "min": 0.0439838529998724
+      },
+      "in_process_total_seconds": {
+        "max": 0.013544539999884364,
+        "median": 0.013174486000025354,
+        "min": 0.01300352499993096
+      },
+      "method": "filtered-mitm",
+      "preprocessing_seconds": {
+        "max": 0.001352486999849134,
+        "median": 0.0012537289999272616,
+        "min": 0.0011763029999656283
+      },
+      "process_peak_rss_kib": {
+        "max": 13568,
+        "median": 13568,
+        "min": 13568
+      },
+      "search_seconds": {
+        "max": 0.01219205300003523,
+        "median": 0.011998183000059726,
+        "min": 0.011749796000003698
+      },
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243"
+    },
+    {
+      "core_order": 15,
+      "counts": {
+        "bucket_keys": 4167,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 4325,
+        "pair_after_order3_energy": 4325,
+        "pair_after_row_square_feasibility": 4325,
+        "pairs_considered_after_single_filters": 5565,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 105,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 4325
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": {
+        "max": 0.04355738399999609,
+        "median": 0.043136213000025236,
+        "min": 0.03978328700009115
+      },
+      "in_process_total_seconds": {
+        "max": 0.01256215900002644,
+        "median": 0.011862099000154558,
+        "min": 0.011181308999994144
+      },
+      "method": "filtered-mitm",
+      "preprocessing_seconds": {
+        "max": 0.0016172539999388391,
+        "median": 0.0012570050000704214,
+        "min": 0.0011938390000523214
+      },
+      "process_peak_rss_kib": {
+        "max": 13568,
+        "median": 13568,
+        "min": 13568
+      },
+      "search_seconds": {
+        "max": 0.010944905000087601,
+        "median": 0.010605094000084136,
+        "min": 0.009987469999941823
+      },
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243"
+    },
+    {
+      "core_order": 15,
+      "counts": {
+        "bucket_keys": 969,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 1061,
+        "pair_after_order3_energy": 2356,
+        "pair_after_row_square_feasibility": 2356,
+        "pairs_considered_after_single_filters": 3321,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 1061
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": {
+        "max": 0.04515795299994352,
+        "median": 0.03649375700001656,
+        "min": 0.03625991600006273
+      },
+      "in_process_total_seconds": {
+        "max": 0.007679921000089962,
+        "median": 0.006906310999966081,
+        "min": 0.006267384000011589
+      },
+      "method": "filtered-mitm",
+      "preprocessing_seconds": {
+        "max": 0.0023546190000161005,
+        "median": 0.0019219710000015766,
+        "min": 0.0018262569999478728
+      },
+      "process_peak_rss_kib": {
+        "max": 13568,
+        "median": 13568,
+        "min": 13568
+      },
+      "search_seconds": {
+        "max": 0.0053253020000738616,
+        "median": 0.005080054000018208,
+        "min": 0.004345413000010012
+      },
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243"
+    },
+    {
+      "core_order": 15,
+      "counts": {
+        "bucket_keys": 969,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 1061,
+        "pair_after_order3_energy": 2356,
+        "pair_after_row_square_feasibility": 2356,
+        "pairs_considered_after_single_filters": 3321,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 1061
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": {
+        "max": 0.04310303300007945,
+        "median": 0.03987716799997543,
+        "min": 0.03683632000002035
+      },
+      "in_process_total_seconds": {
+        "max": 0.006783107000046584,
+        "median": 0.006726171999844155,
+        "min": 0.00657396300016444
+      },
+      "method": "filtered-mitm-product-key",
+      "preprocessing_seconds": {
+        "max": 0.002163161999988006,
+        "median": 0.002061259999891263,
+        "min": 0.0020574729999225383
+      },
+      "process_peak_rss_kib": {
+        "max": 13568,
+        "median": 13568,
+        "min": 13568
+      },
+      "search_seconds": {
+        "max": 0.004725634000124046,
+        "median": 0.004664911999952892,
+        "min": 0.004410801000176434
+      },
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243"
+    },
+    {
+      "core_order": 15,
+      "counts": {
+        "after_forced_fourth_mask_and_order": 15072,
+        "after_pair_energy_tests": 370,
+        "after_quadruple_row_square_sum": 2176,
+        "full_PAF_quadruples_tested": 370,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 0,
+        "triples_visited": 91881
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": {
+        "max": 0.05440426100017248,
+        "median": 0.0537875970001096,
+        "min": 0.050788862999979756
+      },
+      "in_process_total_seconds": {
+        "max": 0.021376379000003,
+        "median": 0.021126344000094832,
+        "min": 0.02031891399997221
+      },
+      "method": "product-triples",
+      "preprocessing_seconds": {
+        "max": 0.0021401369999693998,
+        "median": 0.0019730970000182424,
+        "min": 0.0019213900000067952
+      },
+      "process_peak_rss_kib": {
+        "max": 13568,
+        "median": 13568,
+        "min": 13568
+      },
+      "search_seconds": {
+        "max": 0.019454988999996203,
+        "median": 0.01915324700007659,
+        "min": 0.01817877700000281
+      },
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243"
+    },
+    {
+      "core_order": 19,
+      "counts": {
+        "bucket_keys": 131328,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 131328,
+        "pair_after_order3_energy": 131328,
+        "pair_after_row_square_feasibility": 131328,
+        "pairs_considered_after_single_filters": 131328,
+        "raw_normalized_sequences": 512,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 131328
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": {
+        "max": 0.3595508650000738,
+        "median": 0.3396834580000814,
+        "min": 0.32103110799994283
+      },
+      "in_process_total_seconds": {
+        "max": 0.326980039000091,
+        "median": 0.30788146899999447,
+        "min": 0.29282967300014207
+      },
+      "method": "baseline-mitm",
+      "preprocessing_seconds": {
+        "max": 0.006850533000033465,
+        "median": 0.0063645489999544225,
+        "min": 0.006118850000120801
+      },
+      "process_peak_rss_kib": {
+        "max": 62680,
+        "median": 62644,
+        "min": 62640
+      },
+      "search_seconds": {
+        "max": 0.3201295060000575,
+        "median": 0.30151692000004005,
+        "min": 0.28671082300002126
+      },
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36"
+    },
+    {
+      "core_order": 19,
+      "counts": {
+        "bucket_keys": 58380,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 58380,
+        "pair_after_order3_energy": 58380,
+        "pair_after_row_square_feasibility": 58380,
+        "pairs_considered_after_single_filters": 88410,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 420,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 58380
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": {
+        "max": 0.21873843699995632,
+        "median": 0.19760833099985575,
+        "min": 0.18999194000002717
+      },
+      "in_process_total_seconds": {
+        "max": 0.18512326899985965,
+        "median": 0.16685243199981414,
+        "min": 0.16192800100020577
+      },
+      "method": "filtered-mitm",
+      "preprocessing_seconds": {
+        "max": 0.0089106109999193,
+        "median": 0.007635961000005409,
+        "min": 0.006497448000118311
+      },
+      "process_peak_rss_kib": {
+        "max": 35648,
+        "median": 35648,
+        "min": 35648
+      },
+      "search_seconds": {
+        "max": 0.17621265799994035,
+        "median": 0.15921647099980873,
+        "min": 0.15543055300008746
+      },
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36"
+    },
+    {
+      "core_order": 19,
+      "counts": {
+        "bucket_keys": 58380,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 58380,
+        "pair_after_order3_energy": 58380,
+        "pair_after_row_square_feasibility": 58380,
+        "pairs_considered_after_single_filters": 88410,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 420,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 58380
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": {
+        "max": 0.20839596799987703,
+        "median": 0.19434915399983765,
+        "min": 0.19398452200016436
+      },
+      "in_process_total_seconds": {
+        "max": 0.1780145850000281,
+        "median": 0.16542703499999334,
+        "min": 0.1619964300000447
+      },
+      "method": "filtered-mitm",
+      "preprocessing_seconds": {
+        "max": 0.007320547000063016,
+        "median": 0.007125665000103254,
+        "min": 0.006794959999979255
+      },
+      "process_peak_rss_kib": {
+        "max": 35652,
+        "median": 35648,
+        "min": 35644
+      },
+      "search_seconds": {
+        "max": 0.17069403799996508,
+        "median": 0.15863207500001408,
+        "min": 0.15487076499994146
+      },
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36"
+    },
+    {
+      "core_order": 19,
+      "counts": {
+        "bucket_keys": 6798,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 6798,
+        "pair_after_order3_energy": 24189,
+        "pair_after_row_square_feasibility": 24189,
+        "pairs_considered_after_single_filters": 35778,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 267,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 6798
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": {
+        "max": 0.08463626000002478,
+        "median": 0.07754348499997832,
+        "min": 0.07711585800007015
+      },
+      "in_process_total_seconds": {
+        "max": 0.05348153799991451,
+        "median": 0.04885959700004605,
+        "min": 0.04779023299988694
+      },
+      "method": "filtered-mitm",
+      "preprocessing_seconds": {
+        "max": 0.010533395000038581,
+        "median": 0.010118001999899207,
+        "min": 0.010010832000034497
+      },
+      "process_peak_rss_kib": {
+        "max": 14208,
+        "median": 14208,
+        "min": 14208
+      },
+      "search_seconds": {
+        "max": 0.04294814299987593,
+        "median": 0.038848765000011554,
+        "min": 0.03767223099998773
+      },
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36"
+    },
+    {
+      "core_order": 19,
+      "counts": {
+        "bucket_keys": 6798,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 6798,
+        "pair_after_order3_energy": 24189,
+        "pair_after_row_square_feasibility": 24189,
+        "pairs_considered_after_single_filters": 35778,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 267,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 6798
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": {
+        "max": 0.08900928299999578,
+        "median": 0.08163355300007424,
+        "min": 0.081605350000018
+      },
+      "in_process_total_seconds": {
+        "max": 0.05604265800002395,
+        "median": 0.05142332099990199,
+        "min": 0.050596953000194844
+      },
+      "method": "filtered-mitm-product-key",
+      "preprocessing_seconds": {
+        "max": 0.0110303000001295,
+        "median": 0.00989311600005749,
+        "min": 0.009670400999993944
+      },
+      "process_peak_rss_kib": {
+        "max": 14336,
+        "median": 14336,
+        "min": 14336
+      },
+      "search_seconds": {
+        "max": 0.04501235799989445,
+        "median": 0.041752919999908045,
+        "min": 0.040703837000137355
+      },
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36"
+    },
+    {
+      "core_order": 19,
+      "counts": {
+        "after_forced_fourth_mask_and_order": 426612,
+        "after_pair_energy_tests": 5134,
+        "after_quadruple_row_square_sum": 66963,
+        "full_PAF_quadruples_tested": 5134,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 267,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 0,
+        "triples_visited": 3208094
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": {
+        "max": 0.8633433210000021,
+        "median": 0.6592038579999553,
+        "min": 0.654442827000139
+      },
+      "in_process_total_seconds": {
+        "max": 0.8307502019999902,
+        "median": 0.6294726549999723,
+        "min": 0.623805480999863
+      },
+      "method": "product-triples",
+      "preprocessing_seconds": {
+        "max": 0.011341766999976244,
+        "median": 0.010950419999971928,
+        "min": 0.00980290999996214
+      },
+      "process_peak_rss_kib": {
+        "max": 13696,
+        "median": 13696,
+        "min": 13696
+      },
+      "search_seconds": {
+        "max": 0.8194084350000139,
+        "median": 0.6185222350000004,
+        "min": 0.6140025709999009
+      },
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36"
+    },
+    {
+      "core_order": 21,
+      "counts": {
+        "bucket_keys": 518750,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 524800,
+        "pair_after_order3_energy": 524800,
+        "pair_after_row_square_feasibility": 524800,
+        "pairs_considered_after_single_filters": 524800,
+        "raw_normalized_sequences": 1024,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 524800
+      },
+      "enabled_filters": "none",
+      "external_process_wall_seconds": {
+        "max": 1.6942899739999575,
+        "median": 1.531867469999952,
+        "min": 1.482325666999941
+      },
+      "in_process_total_seconds": {
+        "max": 1.6586783029999879,
+        "median": 1.501611781000065,
+        "min": 1.4534047020001708
+      },
+      "method": "baseline-mitm",
+      "preprocessing_seconds": {
+        "max": 0.016875128000037876,
+        "median": 0.015531887999941318,
+        "min": 0.01460299100017437
+      },
+      "process_peak_rss_kib": {
+        "max": 220376,
+        "median": 220376,
+        "min": 220376
+      },
+      "search_seconds": {
+        "max": 1.64180317499995,
+        "median": 1.4860798930001238,
+        "min": 1.4388017109999964
+      },
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651"
+    },
+    {
+      "core_order": 21,
+      "counts": {
+        "bucket_keys": 312248,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 314853,
+        "pair_after_order3_energy": 314853,
+        "pair_after_row_square_feasibility": 314853,
+        "pairs_considered_after_single_filters": 416328,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 912,
+        "single_after_order3_energy": 912,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 314853
+      },
+      "enabled_filters": "row",
+      "external_process_wall_seconds": {
+        "max": 1.117496736000021,
+        "median": 1.0753760729999158,
+        "min": 1.0132251019999785
+      },
+      "in_process_total_seconds": {
+        "max": 1.0838341300000138,
+        "median": 1.0435205149999547,
+        "min": 0.9781653630000164
+      },
+      "method": "filtered-mitm",
+      "preprocessing_seconds": {
+        "max": 0.040212656999983665,
+        "median": 0.01620654800012744,
+        "min": 0.0150098330000219
+      },
+      "process_peak_rss_kib": {
+        "max": 143016,
+        "median": 143016,
+        "min": 143012
+      },
+      "search_seconds": {
+        "max": 1.0676275819998864,
+        "median": 1.0285106819999328,
+        "min": 0.9379527060000328
+      },
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651"
+    },
+    {
+      "core_order": 21,
+      "counts": {
+        "bucket_keys": 272114,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 274295,
+        "pair_after_order3_energy": 274295,
+        "pair_after_row_square_feasibility": 285789,
+        "pairs_considered_after_single_filters": 383250,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 875,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 274295
+      },
+      "enabled_filters": "row-order3",
+      "external_process_wall_seconds": {
+        "max": 0.9575405719999708,
+        "median": 0.9013669339999524,
+        "min": 0.8990082610000627
+      },
+      "in_process_total_seconds": {
+        "max": 0.9242636369999673,
+        "median": 0.871775985999875,
+        "min": 0.8691806970000471
+      },
+      "method": "filtered-mitm",
+      "preprocessing_seconds": {
+        "max": 0.016221651000023485,
+        "median": 0.015302032999898074,
+        "min": 0.015292624000039723
+      },
+      "process_peak_rss_kib": {
+        "max": 126992,
+        "median": 126988,
+        "min": 126984
+      },
+      "search_seconds": {
+        "max": 0.9080419859999438,
+        "median": 0.856473952999977,
+        "min": 0.8538880730000074
+      },
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651"
+    },
+    {
+      "core_order": 21,
+      "counts": {
+        "bucket_keys": 24664,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 24985,
+        "pair_after_order3_energy": 103649,
+        "pair_after_row_square_feasibility": 112602,
+        "pairs_considered_after_single_filters": 157080,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 24985
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": {
+        "max": 0.2481174929998815,
+        "median": 0.23697655700016185,
+        "min": 0.21214057599991065
+      },
+      "in_process_total_seconds": {
+        "max": 0.21629771699986122,
+        "median": 0.20422309600007793,
+        "min": 0.1822767919998114
+      },
+      "method": "filtered-mitm",
+      "preprocessing_seconds": {
+        "max": 0.029863707999993494,
+        "median": 0.027686659999972107,
+        "min": 0.023648559999855934
+      },
+      "process_peak_rss_kib": {
+        "max": 21868,
+        "median": 21868,
+        "min": 21852
+      },
+      "search_seconds": {
+        "max": 0.18643400899986773,
+        "median": 0.17653643600010582,
+        "min": 0.15862823199995546
+      },
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651"
+    },
+    {
+      "core_order": 21,
+      "counts": {
+        "bucket_keys": 24664,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 24985,
+        "pair_after_order3_energy": 103649,
+        "pair_after_row_square_feasibility": 112602,
+        "pairs_considered_after_single_filters": 157080,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 24985
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": {
+        "max": 0.23803040699999656,
+        "median": 0.22142095100002734,
+        "min": 0.2205716029998257
+      },
+      "in_process_total_seconds": {
+        "max": 0.20489837800005262,
+        "median": 0.19333762800010845,
+        "min": 0.1913084739999249
+      },
+      "method": "filtered-mitm-product-key",
+      "preprocessing_seconds": {
+        "max": 0.025531107999995584,
+        "median": 0.023363732000007076,
+        "min": 0.023273439000149665
+      },
+      "process_peak_rss_kib": {
+        "max": 22548,
+        "median": 22548,
+        "min": 22548
+      },
+      "search_seconds": {
+        "max": 0.17936727000005703,
+        "median": 0.1700641889999588,
+        "min": 0.16794474199991782
+      },
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651"
+    },
+    {
+      "core_order": 21,
+      "counts": {
+        "after_forced_fourth_mask_and_order": 4058702,
+        "after_pair_energy_tests": 24904,
+        "after_quadruple_row_square_sum": 498704,
+        "full_PAF_quadruples_tested": 24904,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 0,
+        "triples_visited": 29426320
+      },
+      "enabled_filters": "all",
+      "external_process_wall_seconds": {
+        "max": 5.87616022300017,
+        "median": 5.816816759999938,
+        "min": 5.648212350999984
+      },
+      "in_process_total_seconds": {
+        "max": 5.845654907999915,
+        "median": 5.787717062000183,
+        "min": 5.620533655999907
+      },
+      "method": "product-triples",
+      "preprocessing_seconds": {
+        "max": 0.025095475999933115,
+        "median": 0.023327639999934036,
+        "min": 0.02315023200003452
+      },
+      "process_peak_rss_kib": {
+        "max": 13824,
+        "median": 13696,
+        "min": 13696
+      },
+      "search_seconds": {
+        "max": 5.820559431999982,
+        "median": 5.764566830000149,
+        "min": 5.597206015999973
+      },
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651"
+    }
+  ]
+}

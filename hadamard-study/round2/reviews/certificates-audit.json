@@ -1,0 +1,69 @@
+{
+  "direct_integer_row_pairs_checked": 293808,
+  "method": "independent sequence decoding, explicit matrix dot products, direct convolution energy and arithmetic certificate reconstruction; no study-module imports",
+  "output_arrays_checked": 124,
+  "rejection_certificates_checked": 33,
+  "results": [
+    {
+      "core_order": 1,
+      "direct_integer_row_pairs_checked": 6,
+      "output_arrays_checked": 1,
+      "rejection_certificates_checked": 0
+    },
+    {
+      "core_order": 3,
+      "direct_integer_row_pairs_checked": 66,
+      "output_arrays_checked": 1,
+      "rejection_certificates_checked": 1
+    },
+    {
+      "core_order": 5,
+      "direct_integer_row_pairs_checked": 190,
+      "output_arrays_checked": 1,
+      "rejection_certificates_checked": 2
+    },
+    {
+      "core_order": 7,
+      "direct_integer_row_pairs_checked": 1512,
+      "output_arrays_checked": 4,
+      "rejection_certificates_checked": 3
+    },
+    {
+      "core_order": 9,
+      "direct_integer_row_pairs_checked": 4410,
+      "output_arrays_checked": 7,
+      "rejection_certificates_checked": 4
+    },
+    {
+      "core_order": 11,
+      "direct_integer_row_pairs_checked": 4730,
+      "output_arrays_checked": 5,
+      "rejection_certificates_checked": 4
+    },
+    {
+      "core_order": 13,
+      "direct_integer_row_pairs_checked": 19890,
+      "output_arrays_checked": 15,
+      "rejection_certificates_checked": 4
+    },
+    {
+      "core_order": 15,
+      "direct_integer_row_pairs_checked": 24780,
+      "output_arrays_checked": 14,
+      "rejection_certificates_checked": 5
+    },
+    {
+      "core_order": 19,
+      "direct_integer_row_pairs_checked": 119700,
+      "output_arrays_checked": 42,
+      "rejection_certificates_checked": 4
+    },
+    {
+      "core_order": 21,
+      "direct_integer_row_pairs_checked": 118524,
+      "output_arrays_checked": 34,
+      "rejection_certificates_checked": 6
+    }
+  ],
+  "status": "passed"
+}

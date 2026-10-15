@@ -1,0 +1,1474 @@
+{
+  "all_benchmarked_solution_digests_match": true,
+  "all_false_negative_checks_use_complete_baselines": true,
+  "baseline": "first-edition independent direct exhaustive four-multisets for odd m<=15; independent unfiltered full-lag MITM for m19,21",
+  "results": [
+    {
+      "benchmark_case_count_compared": 0,
+      "core_order": 1,
+      "counts": {
+        "bucket_keys": 1,
+        "joined_pair_combinations_before_sorted_order_test": 1,
+        "pair_after_integer_probes": 1,
+        "pair_after_order3_energy": 1,
+        "pair_after_row_square_feasibility": 1,
+        "pairs_considered_after_single_filters": 1,
+        "raw_normalized_sequences": 1,
+        "single_after_integer_probes": 1,
+        "single_after_order3_energy": 1,
+        "single_after_row_square_feasibility": 1,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 1
+      },
+      "every_output_array_exactly_verified": true,
+      "exact_independent_solution_set_equality": true,
+      "matrix_row_pairs_checked": 6,
+      "pair_rejection_examples": {},
+      "single_rejection_examples": {},
+      "solution_tuple_json_sha256": "caabbb05e50b139bc67a57c149f60dc2dbe724317241bf9b13cd73b4f124abf2",
+      "solutions": [
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "benchmark_case_count_compared": 6,
+      "core_order": 3,
+      "counts": {
+        "bucket_keys": 2,
+        "joined_pair_combinations_before_sorted_order_test": 2,
+        "pair_after_integer_probes": 2,
+        "pair_after_order3_energy": 2,
+        "pair_after_row_square_feasibility": 2,
+        "pairs_considered_after_single_filters": 3,
+        "raw_normalized_sequences": 2,
+        "single_after_integer_probes": 2,
+        "single_after_order3_energy": 2,
+        "single_after_row_square_feasibility": 2,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 2
+      },
+      "every_output_array_exactly_verified": true,
+      "exact_independent_solution_set_equality": true,
+      "matrix_row_pairs_checked": 66,
+      "pair_rejection_examples": {
+        "row": {
+          "masks": [
+            0,
+            0
+          ],
+          "not_in_two_square_set": true,
+          "remaining_square_sum": -6
+        }
+      },
+      "single_rejection_examples": {},
+      "solution_tuple_json_sha256": "01c41a8ce078d86b6bc98bbd43d48be533964bb4f164a06989fcdd8f1c4f76db",
+      "solutions": [
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "benchmark_case_count_compared": 0,
+      "core_order": 5,
+      "counts": {
+        "bucket_keys": 4,
+        "joined_pair_combinations_before_sorted_order_test": 4,
+        "pair_after_integer_probes": 4,
+        "pair_after_order3_energy": 6,
+        "pair_after_row_square_feasibility": 6,
+        "pairs_considered_after_single_filters": 6,
+        "raw_normalized_sequences": 4,
+        "single_after_integer_probes": 3,
+        "single_after_order3_energy": 3,
+        "single_after_row_square_feasibility": 3,
+        "solving_normalized_multisets": 1,
+        "stored_pairs": 4
+      },
+      "every_output_array_exactly_verified": true,
+      "exact_independent_solution_set_equality": true,
+      "matrix_row_pairs_checked": 190,
+      "pair_rejection_examples": {
+        "integer_probe": {
+          "bound": 22400,
+          "energy": 23040,
+          "frequency_label": 2,
+          "integer_vector": [
+            24,
+            -16,
+            4,
+            4,
+            -16
+          ],
+          "masks": [
+            1,
+            1
+          ]
+        }
+      },
+      "single_rejection_examples": {
+        "row": {
+          "mask": 0,
+          "not_in_three_square_set": true,
+          "remaining_square_sum": -5,
+          "row_sum": 5
+        }
+      },
+      "solution_tuple_json_sha256": "a8518cc36999108ea93393517da9c3c23bebe110abad68f262b2de3d9a3077e6",
+      "solutions": [
+        [
+          1,
+          2,
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "benchmark_case_count_compared": 0,
+      "core_order": 7,
+      "counts": {
+        "bucket_keys": 18,
+        "joined_pair_combinations_before_sorted_order_test": 18,
+        "pair_after_integer_probes": 18,
+        "pair_after_order3_energy": 24,
+        "pair_after_row_square_feasibility": 24,
+        "pairs_considered_after_single_filters": 28,
+        "raw_normalized_sequences": 8,
+        "single_after_integer_probes": 7,
+        "single_after_order3_energy": 7,
+        "single_after_row_square_feasibility": 7,
+        "solving_normalized_multisets": 4,
+        "stored_pairs": 18
+      },
+      "every_output_array_exactly_verified": true,
+      "exact_independent_solution_set_equality": true,
+      "matrix_row_pairs_checked": 1512,
+      "pair_rejection_examples": {
+        "integer_probe": {
+          "bound": 163072,
+          "energy": 189952,
+          "frequency_label": 3,
+          "integer_vector": [
+            48,
+            -36,
+            20,
+            -8,
+            -8,
+            20,
+            -36
+          ],
+          "masks": [
+            1,
+            5
+          ]
+        },
+        "row": {
+          "masks": [
+            1,
+            7
+          ],
+          "not_in_two_square_set": true,
+          "remaining_square_sum": -6
+        }
+      },
+      "single_rejection_examples": {
+        "row": {
+          "mask": 0,
+          "not_in_three_square_set": true,
+          "remaining_square_sum": -21,
+          "row_sum": 7
+        }
+      },
+      "solution_tuple_json_sha256": "64c164a26e87f0b72373bf136157e64bc47dcd363a5ea916d8561cb781a20ab7",
+      "solutions": [
+        [
+          1,
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          2,
+          6
+        ],
+        [
+          2,
+          4,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "benchmark_case_count_compared": 0,
+      "core_order": 9,
+      "counts": {
+        "bucket_keys": 48,
+        "joined_pair_combinations_before_sorted_order_test": 36,
+        "pair_after_integer_probes": 51,
+        "pair_after_order3_energy": 84,
+        "pair_after_row_square_feasibility": 95,
+        "pairs_considered_after_single_filters": 105,
+        "raw_normalized_sequences": 16,
+        "single_after_integer_probes": 14,
+        "single_after_order3_energy": 14,
+        "single_after_row_square_feasibility": 14,
+        "solving_normalized_multisets": 7,
+        "stored_pairs": 51
+      },
+      "every_output_array_exactly_verified": true,
+      "exact_independent_solution_set_equality": true,
+      "matrix_row_pairs_checked": 4410,
+      "pair_rejection_examples": {
+        "integer_probe": {
+          "bound": 725760,
+          "energy": 938880,
+          "frequency_label": 4,
+          "integer_vector": [
+            80,
+            -64,
+            44,
+            -28,
+            8,
+            8,
+            -28,
+            44,
+            -64
+          ],
+          "masks": [
+            1,
+            5
+          ]
+        },
+        "order3": {
+          "bound": 36,
+          "energy": 40,
+          "masks": [
+            1,
+            11
+          ]
+        },
+        "row": {
+          "masks": [
+            1,
+            1
+          ],
+          "not_in_two_square_set": true,
+          "remaining_square_sum": -14
+        }
+      },
+      "single_rejection_examples": {
+        "row": {
+          "mask": 0,
+          "not_in_three_square_set": true,
+          "remaining_square_sum": -45,
+          "row_sum": 9
+        }
+      },
+      "solution_tuple_json_sha256": "af6568cc49259d3b44607f0639ab68cec56012c3060a106f9444d3d47c84727d",
+      "solutions": [
+        [
+          1,
+          3,
+          7,
+          10
+        ],
+        [
+          1,
+          9,
+          9,
+          14
+        ],
+        [
+          2,
+          3,
+          3,
+          13
+        ],
+        [
+          2,
+          9,
+          10,
+          14
+        ],
+        [
+          3,
+          8,
+          9,
+          13
+        ],
+        [
+          7,
+          8,
+          10,
+          10
+        ],
+        [
+          7,
+          11,
+          13,
+          14
+        ]
+      ]
+    },
+    {
+      "benchmark_case_count_compared": 0,
+      "core_order": 11,
+      "counts": {
+        "bucket_keys": 75,
+        "joined_pair_combinations_before_sorted_order_test": 30,
+        "pair_after_integer_probes": 75,
+        "pair_after_order3_energy": 180,
+        "pair_after_row_square_feasibility": 180,
+        "pairs_considered_after_single_filters": 210,
+        "raw_normalized_sequences": 32,
+        "single_after_integer_probes": 20,
+        "single_after_order3_energy": 25,
+        "single_after_row_square_feasibility": 25,
+        "solving_normalized_multisets": 5,
+        "stored_pairs": 75
+      },
+      "every_output_array_exactly_verified": true,
+      "exact_independent_solution_set_equality": true,
+      "matrix_row_pairs_checked": 4730,
+      "pair_rejection_examples": {
+        "integer_probe": {
+          "bound": 2400640,
+          "energy": 2739968,
+          "frequency_label": 1,
+          "integer_vector": [
+            120,
+            76,
+            32,
+            -12,
+            -56,
+            -100,
+            -100,
+            -56,
+            -12,
+            32,
+            76
+          ],
+          "masks": [
+            3,
+            3
+          ]
+        },
+        "row": {
+          "masks": [
+            7,
+            7
+          ],
+          "not_in_two_square_set": true,
+          "remaining_square_sum": 42
+        }
+      },
+      "single_rejection_examples": {
+        "integer_probe": {
+          "bound": 2400640,
+          "energy": 2652672,
+          "frequency_label": 4,
+          "integer_vector": [
+            120,
+            -56,
+            -12,
+            76,
+            -100,
+            32,
+            32,
+            -100,
+            76,
+            -12,
+            -56
+          ],
+          "mask": 11
+        },
+        "row": {
+          "mask": 0,
+          "not_in_three_square_set": true,
+          "remaining_square_sum": -77,
+          "row_sum": 11
+        }
+      },
+      "solution_tuple_json_sha256": "44a98aabbf1671a97fb55ff85617055e9cf2df70d356f10086bfb4e657b5dd2d",
+      "solutions": [
+        [
+          3,
+          5,
+          15,
+          22
+        ],
+        [
+          6,
+          20,
+          23,
+          26
+        ],
+        [
+          7,
+          9,
+          12,
+          29
+        ],
+        [
+          10,
+          18,
+          25,
+          30
+        ],
+        [
+          13,
+          17,
+          24,
+          27
+        ]
+      ]
+    },
+    {
+      "benchmark_case_count_compared": 0,
+      "core_order": 13,
+      "counts": {
+        "bucket_keys": 345,
+        "joined_pair_combinations_before_sorted_order_test": 84,
+        "pair_after_integer_probes": 345,
+        "pair_after_order3_energy": 699,
+        "pair_after_row_square_feasibility": 699,
+        "pairs_considered_after_single_filters": 990,
+        "raw_normalized_sequences": 64,
+        "single_after_integer_probes": 44,
+        "single_after_order3_energy": 56,
+        "single_after_row_square_feasibility": 56,
+        "solving_normalized_multisets": 15,
+        "stored_pairs": 345
+      },
+      "every_output_array_exactly_verified": true,
+      "exact_independent_solution_set_equality": true,
+      "matrix_row_pairs_checked": 19890,
+      "pair_rejection_examples": {
+        "integer_probe": {
+          "bound": 6511232,
+          "energy": 8369920,
+          "frequency_label": 1,
+          "integer_vector": [
+            168,
+            116,
+            64,
+            12,
+            -40,
+            -92,
+            -144,
+            -144,
+            -92,
+            -40,
+            12,
+            64,
+            116
+          ],
+          "masks": [
+            3,
+            3
+          ]
+        },
+        "row": {
+          "masks": [
+            3,
+            31
+          ],
+          "not_in_two_square_set": true,
+          "remaining_square_sum": -22
+        }
+      },
+      "single_rejection_examples": {
+        "integer_probe": {
+          "bound": 6511232,
+          "energy": 8491392,
+          "frequency_label": 2,
+          "integer_vector": [
+            168,
+            64,
+            -40,
+            -144,
+            -92,
+            12,
+            116,
+            116,
+            12,
+            -92,
+            -144,
+            -40,
+            64
+          ],
+          "mask": 14
+        },
+        "row": {
+          "mask": 0,
+          "not_in_three_square_set": true,
+          "remaining_square_sum": -117,
+          "row_sum": 13
+        }
+      },
+      "solution_tuple_json_sha256": "fb2249f24955a8102baaf82739499ce84f1d77db9a2d188029bc5b5148356621",
+      "solutions": [
+        [
+          3,
+          20,
+          25,
+          49
+        ],
+        [
+          6,
+          23,
+          23,
+          57
+        ],
+        [
+          6,
+          45,
+          46,
+          58
+        ],
+        [
+          7,
+          10,
+          22,
+          36
+        ],
+        [
+          7,
+          13,
+          26,
+          47
+        ],
+        [
+          11,
+          49,
+          50,
+          55
+        ],
+        [
+          13,
+          25,
+          31,
+          52
+        ],
+        [
+          13,
+          35,
+          44,
+          61
+        ],
+        [
+          15,
+          17,
+          23,
+          54
+        ],
+        [
+          17,
+          46,
+          57,
+          57
+        ],
+        [
+          22,
+          37,
+          50,
+          62
+        ],
+        [
+          23,
+          40,
+          46,
+          46
+        ],
+        [
+          24,
+          33,
+          42,
+          44
+        ],
+        [
+          28,
+          42,
+          50,
+          59
+        ],
+        [
+          29,
+          40,
+          51,
+          57
+        ]
+      ]
+    },
+    {
+      "benchmark_case_count_compared": 6,
+      "core_order": 15,
+      "counts": {
+        "bucket_keys": 969,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 1061,
+        "pair_after_order3_energy": 2356,
+        "pair_after_row_square_feasibility": 2356,
+        "pairs_considered_after_single_filters": 3321,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 1061
+      },
+      "every_output_array_exactly_verified": true,
+      "exact_independent_solution_set_equality": true,
+      "matrix_row_pairs_checked": 24780,
+      "pair_rejection_examples": {
+        "integer_probe": {
+          "bound": 15321600,
+          "energy": 24574080,
+          "frequency_label": 1,
+          "integer_vector": [
+            224,
+            164,
+            104,
+            44,
+            -16,
+            -76,
+            -136,
+            -196,
+            -196,
+            -136,
+            -76,
+            -16,
+            44,
+            104,
+            164
+          ],
+          "masks": [
+            3,
+            7
+          ]
+        },
+        "row": {
+          "masks": [
+            3,
+            3
+          ],
+          "not_in_two_square_set": true,
+          "remaining_square_sum": -38
+        }
+      },
+      "single_rejection_examples": {
+        "integer_probe": {
+          "bound": 15321600,
+          "energy": 21047040,
+          "frequency_label": 7,
+          "integer_vector": [
+            224,
+            -196,
+            164,
+            -136,
+            104,
+            -76,
+            44,
+            -16,
+            -16,
+            44,
+            -76,
+            104,
+            -136,
+            164,
+            -196
+          ],
+          "mask": 21
+        },
+        "order3": {
+          "bound": 60,
+          "energy": 64,
+          "mask": 27
+        },
+        "row": {
+          "mask": 0,
+          "not_in_three_square_set": true,
+          "remaining_square_sum": -165,
+          "row_sum": 15
+        }
+      },
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "solutions": [
+        [
+          6,
+          37,
+          46,
+          114
+        ],
+        [
+          9,
+          25,
+          29,
+          114
+        ],
+        [
+          15,
+          17,
+          44,
+          77
+        ],
+        [
+          15,
+          24,
+          37,
+          77
+        ],
+        [
+          18,
+          99,
+          100,
+          106
+        ],
+        [
+          19,
+          61,
+          61,
+          108
+        ],
+        [
+          26,
+          101,
+          118,
+          118
+        ],
+        [
+          29,
+          33,
+          39,
+          100
+        ],
+        [
+          29,
+          38,
+          40,
+          108
+        ],
+        [
+          29,
+          66,
+          82,
+          114
+        ],
+        [
+          38,
+          80,
+          99,
+          106
+        ],
+        [
+          39,
+          61,
+          61,
+          88
+        ],
+        [
+          44,
+          68,
+          101,
+          114
+        ],
+        [
+          46,
+          81,
+          118,
+          118
+        ]
+      ]
+    },
+    {
+      "benchmark_case_count_compared": 6,
+      "core_order": 19,
+      "counts": {
+        "bucket_keys": 6798,
+        "joined_pair_combinations_before_sorted_order_test": 234,
+        "pair_after_integer_probes": 6798,
+        "pair_after_order3_energy": 24189,
+        "pair_after_row_square_feasibility": 24189,
+        "pairs_considered_after_single_filters": 35778,
+        "raw_normalized_sequences": 512,
+        "single_after_integer_probes": 267,
+        "single_after_order3_energy": 420,
+        "single_after_row_square_feasibility": 420,
+        "solving_normalized_multisets": 42,
+        "stored_pairs": 6798
+      },
+      "every_output_array_exactly_verified": true,
+      "exact_independent_solution_set_equality": true,
+      "matrix_row_pairs_checked": 119700,
+      "pair_rejection_examples": {
+        "integer_probe": {
+          "bound": 63073920,
+          "energy": 98478976,
+          "frequency_label": 1,
+          "integer_vector": [
+            360,
+            284,
+            208,
+            132,
+            56,
+            -20,
+            -96,
+            -172,
+            -248,
+            -324,
+            -324,
+            -248,
+            -172,
+            -96,
+            -20,
+            56,
+            132,
+            208,
+            284
+          ],
+          "masks": [
+            11,
+            27
+          ]
+        },
+        "row": {
+          "masks": [
+            11,
+            11
+          ],
+          "not_in_two_square_set": true,
+          "remaining_square_sum": -22
+        }
+      },
+      "single_rejection_examples": {
+        "integer_probe": {
+          "bound": 63073920,
+          "energy": 68217600,
+          "frequency_label": 1,
+          "integer_vector": [
+            360,
+            284,
+            208,
+            132,
+            56,
+            -20,
+            -96,
+            -172,
+            -248,
+            -324,
+            -324,
+            -248,
+            -172,
+            -96,
+            -20,
+            56,
+            132,
+            208,
+            284
+          ],
+          "mask": 7
+        },
+        "row": {
+          "mask": 0,
+          "not_in_three_square_set": true,
+          "remaining_square_sum": -285,
+          "row_sum": 19
+        }
+      },
+      "solution_tuple_json_sha256": "f714efa1fe1dab73c584ef988731c2e6e460be78160507a4ef87871f8a147a36",
+      "solutions": [
+        [
+          11,
+          116,
+          177,
+          305
+        ],
+        [
+          19,
+          346,
+          369,
+          455
+        ],
+        [
+          22,
+          29,
+          178,
+          326
+        ],
+        [
+          22,
+          53,
+          78,
+          402
+        ],
+        [
+          26,
+          413,
+          433,
+          457
+        ],
+        [
+          26,
+          422,
+          422,
+          485
+        ],
+        [
+          27,
+          57,
+          140,
+          337
+        ],
+        [
+          29,
+          100,
+          141,
+          267
+        ],
+        [
+          38,
+          233,
+          250,
+          458
+        ],
+        [
+          38,
+          348,
+          348,
+          473
+        ],
+        [
+          44,
+          143,
+          234,
+          438
+        ],
+        [
+          47,
+          134,
+          221,
+          395
+        ],
+        [
+          57,
+          296,
+          332,
+          418
+        ],
+        [
+          59,
+          59,
+          235,
+          276
+        ],
+        [
+          59,
+          111,
+          133,
+          302
+        ],
+        [
+          63,
+          266,
+          339,
+          409
+        ],
+        [
+          67,
+          157,
+          157,
+          444
+        ],
+        [
+          67,
+          314,
+          348,
+          474
+        ],
+        [
+          77,
+          108,
+          142,
+          336
+        ],
+        [
+          77,
+          177,
+          193,
+          450
+        ],
+        [
+          84,
+          236,
+          243,
+          436
+        ],
+        [
+          87,
+          123,
+          242,
+          289
+        ],
+        [
+          89,
+          163,
+          193,
+          452
+        ],
+        [
+          104,
+          157,
+          214,
+          476
+        ],
+        [
+          104,
+          407,
+          433,
+          433
+        ],
+        [
+          109,
+          109,
+          119,
+          392
+        ],
+        [
+          109,
+          276,
+          359,
+          481
+        ],
+        [
+          112,
+          139,
+          166,
+          418
+        ],
+        [
+          115,
+          321,
+          372,
+          441
+        ],
+        [
+          133,
+          242,
+          242,
+          378
+        ],
+        [
+          137,
+          283,
+          391,
+          490
+        ],
+        [
+          138,
+          323,
+          326,
+          368
+        ],
+        [
+          151,
+          327,
+          392,
+          423
+        ],
+        [
+          164,
+          275,
+          394,
+          450
+        ],
+        [
+          172,
+          178,
+          240,
+          273
+        ],
+        [
+          174,
+          220,
+          224,
+          365
+        ],
+        [
+          184,
+          269,
+          296,
+          354
+        ],
+        [
+          208,
+          303,
+          327,
+          327
+        ],
+        [
+          208,
+          316,
+          422,
+          437
+        ],
+        [
+          222,
+          289,
+          458,
+          458
+        ],
+        [
+          228,
+          259,
+          332,
+          340
+        ],
+        [
+          244,
+          304,
+          350,
+          357
+        ]
+      ]
+    },
+    {
+      "benchmark_case_count_compared": 6,
+      "core_order": 21,
+      "counts": {
+        "bucket_keys": 24664,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 24985,
+        "pair_after_order3_energy": 103649,
+        "pair_after_row_square_feasibility": 112602,
+        "pairs_considered_after_single_filters": 157080,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 24985
+      },
+      "every_output_array_exactly_verified": true,
+      "exact_independent_solution_set_equality": true,
+      "matrix_row_pairs_checked": 118524,
+      "pair_rejection_examples": {
+        "integer_probe": {
+          "bound": 114871680,
+          "energy": 209368320,
+          "frequency_label": 1,
+          "integer_vector": [
+            440,
+            356,
+            272,
+            188,
+            104,
+            20,
+            -64,
+            -148,
+            -232,
+            -316,
+            -400,
+            -400,
+            -316,
+            -232,
+            -148,
+            -64,
+            20,
+            104,
+            188,
+            272,
+            356
+          ],
+          "masks": [
+            11,
+            55
+          ]
+        },
+        "order3": {
+          "bound": 84,
+          "energy": 100,
+          "masks": [
+            11,
+            295
+          ]
+        },
+        "row": {
+          "masks": [
+            11,
+            11
+          ],
+          "not_in_two_square_set": true,
+          "remaining_square_sum": -78
+        }
+      },
+      "single_rejection_examples": {
+        "integer_probe": {
+          "bound": 114871680,
+          "energy": 124782336,
+          "frequency_label": 1,
+          "integer_vector": [
+            440,
+            356,
+            272,
+            188,
+            104,
+            20,
+            -64,
+            -148,
+            -232,
+            -316,
+            -400,
+            -400,
+            -316,
+            -232,
+            -148,
+            -64,
+            20,
+            104,
+            188,
+            272,
+            356
+          ],
+          "mask": 7
+        },
+        "order3": {
+          "bound": 84,
+          "energy": 100,
+          "mask": 91
+        },
+        "row": {
+          "mask": 0,
+          "not_in_three_square_set": true,
+          "remaining_square_sum": -357,
+          "row_sum": 21
+        }
+      },
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "solutions": [
+        [
+          25,
+          94,
+          465,
+          617
+        ],
+        [
+          39,
+          222,
+          298,
+          556
+        ],
+        [
+          39,
+          278,
+          459,
+          773
+        ],
+        [
+          46,
+          46,
+          332,
+          691
+        ],
+        [
+          46,
+          339,
+          492,
+          878
+        ],
+        [
+          54,
+          351,
+          428,
+          826
+        ],
+        [
+          54,
+          805,
+          826,
+          982
+        ],
+        [
+          101,
+          332,
+          368,
+          934
+        ],
+        [
+          101,
+          801,
+          801,
+          922
+        ],
+        [
+          139,
+          183,
+          505,
+          570
+        ],
+        [
+          151,
+          523,
+          750,
+          909
+        ],
+        [
+          151,
+          637,
+          664,
+          909
+        ],
+        [
+          154,
+          826,
+          905,
+          982
+        ],
+        [
+          180,
+          278,
+          396,
+          977
+        ],
+        [
+          180,
+          556,
+          599,
+          816
+        ],
+        [
+          183,
+          302,
+          389,
+          995
+        ],
+        [
+          183,
+          389,
+          505,
+          820
+        ],
+        [
+          183,
+          570,
+          657,
+          995
+        ],
+        [
+          187,
+          564,
+          564,
+          836
+        ],
+        [
+          228,
+          317,
+          354,
+          836
+        ],
+        [
+          228,
+          424,
+          424,
+          795
+        ],
+        [
+          233,
+          404,
+          502,
+          884
+        ],
+        [
+          263,
+          263,
+          354,
+          669
+        ],
+        [
+          263,
+          366,
+          375,
+          737
+        ],
+        [
+          295,
+          637,
+          808,
+          909
+        ],
+        [
+          298,
+          396,
+          417,
+          760
+        ],
+        [
+          351,
+          531,
+          826,
+          905
+        ],
+        [
+          359,
+          604,
+          801,
+          997
+        ],
+        [
+          368,
+          404,
+          404,
+          655
+        ],
+        [
+          417,
+          619,
+          773,
+          816
+        ],
+        [
+          424,
+          493,
+          500,
+          590
+        ],
+        [
+          436,
+          750,
+          808,
+          909
+        ],
+        [
+          451,
+          598,
+          642,
+          744
+        ],
+        [
+          466,
+          564,
+          869,
+          892
+        ]
+      ]
+    }
+  ],
+  "status": "passed"
+}

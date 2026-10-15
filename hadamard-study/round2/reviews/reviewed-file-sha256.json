@@ -1,0 +1,126 @@
+{
+  "files": [
+    {
+      "bytes": 5164,
+      "path": "hadamard-study/round2/EXPERIMENT_LOG.md",
+      "sha256": "8d2aea7f131d6ff1336f98fd907a5f6e85425bbc784f377234e109de8b78ded8"
+    },
+    {
+      "bytes": 3462,
+      "path": "hadamard-study/round2/LESSONS.md",
+      "sha256": "1edfbd4c819e8ee05fbe6a94a1f2efc043357a1d81da1aa92b0cb6dc49da8950"
+    },
+    {
+      "bytes": 18950,
+      "path": "hadamard-study/round2/PROOFS.md",
+      "sha256": "c781431f00db5cfbafe1e8699a1dff0545c44e7040f7364ad85c7fc45463f156"
+    },
+    {
+      "bytes": 12327,
+      "path": "hadamard-study/round2/README.md",
+      "sha256": "b07d9f4af60ad58d22499a68f863a3a8a341320a2b6ffaae06787f75ff7cf1d3"
+    },
+    {
+      "bytes": 8233,
+      "path": "hadamard-study/round2/SOURCES.md",
+      "sha256": "4df975658ba9356e8776a5e21629a0e99d669b44ccf39d8b29f099f3130c6936"
+    },
+    {
+      "bytes": 28824,
+      "path": "hadamard-study/round2/data/validated-solutions.json",
+      "sha256": "c9a2d77c75f4c8a30db66a6af2fdcd506e923b685f4dc2a910973ec992e9cb4d"
+    },
+    {
+      "bytes": 127788,
+      "path": "hadamard-study/round2/evidence/benchmark.json",
+      "sha256": "02d9bca67b93ded308095c0b3a00557651ad109781364cdafe629df9246e873a"
+    },
+    {
+      "bytes": 1267,
+      "path": "hadamard-study/round2/evidence/original-tests.log",
+      "sha256": "8ca21d36885408bc198adaba4a187a4e6523d6d2c6e42a6cc84ad89af98927d5"
+    },
+    {
+      "bytes": 1087,
+      "path": "hadamard-study/round2/evidence/remote-branches-before.txt",
+      "sha256": "b95c1ab9edc21a7cbe6c9042fcbf49052df7f656cedd5d6d0340907e3155847b"
+    },
+    {
+      "bytes": 1416,
+      "path": "hadamard-study/round2/evidence/tests.log",
+      "sha256": "e85265f9fe9c68262a9d4b0d428e25b066e1ca1c1c227dde792147c4b3ac4620"
+    },
+    {
+      "bytes": 7738,
+      "path": "hadamard-study/round2/reviews/audit_benchmark.py",
+      "sha256": "4b015e92ef7f13a8bb671e0f863993d1a9cedd20cdcaeadfbd0b42435898aa9f"
+    },
+    {
+      "bytes": 4414,
+      "path": "hadamard-study/round2/reviews/audit_certificates.py",
+      "sha256": "298c565db4b50848fb2f94ca360c5e84f48952541fbe63e182498ce3310b7a0a"
+    },
+    {
+      "bytes": 1985,
+      "path": "hadamard-study/round2/reviews/benchmark-audit.json",
+      "sha256": "657e4e10d22401bf2c0d32af3aab4f2f12812db91e60e62afd480ecdbc0e8daa"
+    },
+    {
+      "bytes": 1940,
+      "path": "hadamard-study/round2/reviews/certificates-audit.json",
+      "sha256": "dd29c9371c82d9fc21b0a70e1f54d891e89c3d6a785eed5a9933709c4c82d441"
+    },
+    {
+      "bytes": 5317,
+      "path": "hadamard-study/round2/reviews/first-edition-preservation.json",
+      "sha256": "7238e9830f2b2d8ae1637ec6fe5678ea44cb0e2b4fd9c846514a1a5f52e640bd"
+    },
+    {
+      "bytes": 10917,
+      "path": "hadamard-study/round2/reviews/independent-review.md",
+      "sha256": "e1f18f00a1a9461a995f92f2ad2053c2f9eb26174b18a4a68e6e5a218895d714"
+    },
+    {
+      "bytes": 3652,
+      "path": "hadamard-study/round2/reviews/independent_moderate.py",
+      "sha256": "6e423c84782b01d87018169826c710846c82386ae4b538a8777bd4d9e7b2935e"
+    },
+    {
+      "bytes": 10335,
+      "path": "hadamard-study/round2/reviews/independent_reductions.py",
+      "sha256": "8977798c29cd09fbb71c33f519831fe42fbdcd1d64cd6899da31b90e6b7e3a50"
+    },
+    {
+      "bytes": 6803,
+      "path": "hadamard-study/round2/reviews/moderate-independent.json",
+      "sha256": "358f889980c822c7943e4c5ff73971afff4db13b616aef97206fac6e62522b2e"
+    },
+    {
+      "bytes": 4067,
+      "path": "hadamard-study/round2/reviews/reductions-independent.json",
+      "sha256": "e63b2a4ffe5fb573cbc17fa0973ee64ffe1e89365fb0bf301196054c2d1844f7"
+    },
+    {
+      "bytes": 5888,
+      "path": "hadamard-study/round2/scripts/benchmark.py",
+      "sha256": "47062e11c3264bca3da0a0983e9817b6f044179342304c1036d3353885b17541"
+    },
+    {
+      "bytes": 9765,
+      "path": "hadamard-study/round2/scripts/search.py",
+      "sha256": "9916799153e83c265be7cce8ae32337f7a667cfba7ebd88bf91bacb0d0cfb583"
+    },
+    {
+      "bytes": 5098,
+      "path": "hadamard-study/round2/scripts/validate.py",
+      "sha256": "113963e8c3ee328bd1d5cee7367b3ef5dababd6e758c91220927f015d14a6e0e"
+    },
+    {
+      "bytes": 5138,
+      "path": "hadamard-study/round2/tests/test_reductions.py",
+      "sha256": "374225ff20a033d549c6c5907b7dcd6b110ed8550fa605838e25c256e9126a13"
+    }
+  ],
+  "purpose": "File identities at independent round-two review acceptance; manifest itself and subsequent publication/package metadata excluded",
+  "review_date_utc": "2026-10-15"
+}

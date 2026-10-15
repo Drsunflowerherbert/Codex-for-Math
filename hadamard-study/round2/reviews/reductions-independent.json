@@ -1,0 +1,126 @@
+{
+  "adversarial_cases": {
+    "m1_empty_profiles_and_probe_pool": "passed",
+    "m3_repeated_blocks_and_remaining_square_1_plus_1": "retained",
+    "m3_wrong_XOR_target_zero": "would reject valid tuple (0,1,1,1)",
+    "m5_filtered_rank_XOR": "would reject valid original tuple (1,2,3,3)",
+    "m7_full_PSD_but_no_completion": {
+      "forced_fourth_mask": 0,
+      "forced_fourth_row_square": 49,
+      "masks": [
+        1,
+        2,
+        4
+      ],
+      "required_remaining_row_square": 1,
+      "residual": "8 I - J; eigenvalues 1,8",
+      "sum_Gram": "20 I + J"
+    },
+    "m9_mask11_frequency3_integer_probe_at_exact_threshold": "retained",
+    "m9_tuple_7_11_13_14_order3_energies": [
+      0,
+      36,
+      0,
+      0
+    ],
+    "positive_signed_row_sum_only": "would reject m3 normalized negative-row-sum blocks",
+    "simultaneous_mask_order_and_absolute_row_sum_order": "would reject valid m3 tuple",
+    "zero_energy_and_zero_test_vector": "retained"
+  },
+  "baseline": "/workspace/Codex-for-Math/hadamard-study/reviews/williamson-independent.json",
+  "baseline_domain": "all first-edition raw sorted normalized symmetric multisets, odd m<=15",
+  "integer_probe_formula_checks_against_direct_convolution": 1538,
+  "results": [
+    {
+      "after_integer_probes": 1,
+      "after_order3": 1,
+      "after_row": 1,
+      "core_order": 1,
+      "exact_solution_sets_match_all_four_methods": true,
+      "exact_solution_sets_match_all_three_filter_ablations": true,
+      "join_count_all_three_MITM_methods": 1,
+      "raw_sequences": 1,
+      "solutions": 1
+    },
+    {
+      "after_integer_probes": 2,
+      "after_order3": 2,
+      "after_row": 2,
+      "core_order": 3,
+      "exact_solution_sets_match_all_four_methods": true,
+      "exact_solution_sets_match_all_three_filter_ablations": true,
+      "join_count_all_three_MITM_methods": 2,
+      "raw_sequences": 2,
+      "solutions": 1
+    },
+    {
+      "after_integer_probes": 3,
+      "after_order3": 3,
+      "after_row": 3,
+      "core_order": 5,
+      "exact_solution_sets_match_all_four_methods": true,
+      "exact_solution_sets_match_all_three_filter_ablations": true,
+      "join_count_all_three_MITM_methods": 4,
+      "raw_sequences": 4,
+      "solutions": 1
+    },
+    {
+      "after_integer_probes": 7,
+      "after_order3": 7,
+      "after_row": 7,
+      "core_order": 7,
+      "exact_solution_sets_match_all_four_methods": true,
+      "exact_solution_sets_match_all_three_filter_ablations": true,
+      "join_count_all_three_MITM_methods": 18,
+      "raw_sequences": 8,
+      "solutions": 4
+    },
+    {
+      "after_integer_probes": 14,
+      "after_order3": 14,
+      "after_row": 14,
+      "core_order": 9,
+      "exact_solution_sets_match_all_four_methods": true,
+      "exact_solution_sets_match_all_three_filter_ablations": true,
+      "join_count_all_three_MITM_methods": 36,
+      "raw_sequences": 16,
+      "solutions": 7
+    },
+    {
+      "after_integer_probes": 20,
+      "after_order3": 25,
+      "after_row": 25,
+      "core_order": 11,
+      "exact_solution_sets_match_all_four_methods": true,
+      "exact_solution_sets_match_all_three_filter_ablations": true,
+      "join_count_all_three_MITM_methods": 30,
+      "raw_sequences": 32,
+      "solutions": 5
+    },
+    {
+      "after_integer_probes": 44,
+      "after_order3": 56,
+      "after_row": 56,
+      "core_order": 13,
+      "exact_solution_sets_match_all_four_methods": true,
+      "exact_solution_sets_match_all_three_filter_ablations": true,
+      "join_count_all_three_MITM_methods": 84,
+      "raw_sequences": 64,
+      "solutions": 15
+    },
+    {
+      "after_integer_probes": 81,
+      "after_order3": 105,
+      "after_row": 112,
+      "core_order": 15,
+      "exact_solution_sets_match_all_four_methods": true,
+      "exact_solution_sets_match_all_three_filter_ablations": true,
+      "join_count_all_three_MITM_methods": 76,
+      "raw_sequences": 128,
+      "solutions": 14
+    }
+  ],
+  "status": "passed",
+  "total_original_solutions": 48,
+  "unit_multiplier_solution_closure_checks": 415
+}

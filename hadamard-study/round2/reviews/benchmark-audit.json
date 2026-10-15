@@ -1,0 +1,41 @@
+{
+  "benchmark_file": "hadamard-study/round2/evidence/benchmark.json",
+  "checks": "exact independent tuple digests; source hashes; repetitions; candidate-domain counts; stage monotonicity; all summary min/median/max arithmetic; preprocessing and search accounting",
+  "measurement_scope": "Linux worker ru_maxrss observed after search includes interpreter and preparation/search; external wall includes startup and output; timing ratios are observations, not portable guarantees",
+  "raw_runs_audited": 72,
+  "results": [
+    {
+      "all_six_cases_have_independently_verified_exact_tuple_digest": true,
+      "baseline_over_filtered_median_external_wall_ratio": 1.0082394112707065,
+      "baseline_over_filtered_median_peak_RSS_ratio": 1.0,
+      "core_order": 3,
+      "full_profile_join_combinations_all_MITM_cases": 2,
+      "independent_solution_count": 1
+    },
+    {
+      "all_six_cases_have_independently_verified_exact_tuple_digest": true,
+      "baseline_over_filtered_median_external_wall_ratio": 1.260059932993047,
+      "baseline_over_filtered_median_peak_RSS_ratio": 1.028301886792453,
+      "core_order": 15,
+      "full_profile_join_combinations_all_MITM_cases": 76,
+      "independent_solution_count": 14
+    },
+    {
+      "all_six_cases_have_independently_verified_exact_tuple_digest": true,
+      "baseline_over_filtered_median_external_wall_ratio": 4.380554446323587,
+      "baseline_over_filtered_median_peak_RSS_ratio": 4.409065315315315,
+      "core_order": 19,
+      "full_profile_join_combinations_all_MITM_cases": 234,
+      "independent_solution_count": 42
+    },
+    {
+      "all_six_cases_have_independently_verified_exact_tuple_digest": true,
+      "baseline_over_filtered_median_external_wall_ratio": 6.464215234585022,
+      "baseline_over_filtered_median_peak_RSS_ratio": 10.077556246570332,
+      "core_order": 21,
+      "full_profile_join_combinations_all_MITM_cases": 192,
+      "independent_solution_count": 34
+    }
+  ],
+  "status": "passed"
+}
