@@ -1,0 +1,101 @@
+{
+  "grouped_filter_false_positive": {
+    "all_four_free_color_completions_fail": [
+      {
+        "forced_signs": [
+          -1,
+          -1,
+          1,
+          1,
+          -1
+        ],
+        "full_correlation_passes": false,
+        "is_canonical_RGS_extension": true,
+        "last_color": 0
+      },
+      {
+        "forced_signs": [
+          1,
+          -1,
+          1,
+          1,
+          1
+        ],
+        "full_correlation_passes": false,
+        "is_canonical_RGS_extension": true,
+        "last_color": 1
+      },
+      {
+        "forced_signs": [
+          -1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "full_correlation_passes": false,
+        "is_canonical_RGS_extension": true,
+        "last_color": 2
+      },
+      {
+        "forced_signs": [
+          -1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "full_correlation_passes": false,
+        "is_canonical_RGS_extension": false,
+        "last_color": 3
+      }
+    ],
+    "core_order": 11,
+    "each_expanded_lag_sumset_contains_zero": true,
+    "exact_relaxed_row_target_distance": 1,
+    "partial_colors": [
+      0,
+      0,
+      0,
+      1,
+      -1
+    ]
+  },
+  "method": "independent monomial-set algebra and increasing-cardinality vertex-subset enumeration; no subject imports",
+  "results": [
+    {
+      "core_order": 15,
+      "minimum_cover_size_histogram": {
+        "4": 14,
+        "5": 14
+      },
+      "phase_pairs_checked": 28
+    },
+    {
+      "core_order": 19,
+      "minimum_cover_size_histogram": {
+        "5": 9,
+        "6": 36
+      },
+      "phase_pairs_checked": 45
+    },
+    {
+      "core_order": 21,
+      "minimum_cover_size_histogram": {
+        "6": 40,
+        "7": 15
+      },
+      "phase_pairs_checked": 55
+    },
+    {
+      "core_order": 23,
+      "minimum_cover_size_histogram": {
+        "6": 11,
+        "7": 55
+      },
+      "phase_pairs_checked": 66
+    }
+  ],
+  "scope": "quadratic-cover obstruction concerns formal residual ANF equality under free four-color completion, not every logical pruning criterion",
+  "status": "passed"
+}

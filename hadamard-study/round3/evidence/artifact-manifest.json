@@ -1,0 +1,201 @@
+{
+  "files": [
+    {
+      "bytes": 12780,
+      "path": "hadamard-study/round3/DISCOVERY_LOG.md",
+      "sha256": "8fe6307123e16af546f6be299be901c85ceb7acddb5a9a99796f19b84d9e8cd1"
+    },
+    {
+      "bytes": 8291,
+      "path": "hadamard-study/round3/DISK_LESSONS.md",
+      "sha256": "0c505ba0bdc6546d03f80589ea951a4760619b408cf88e314b00ba78abcf2daa"
+    },
+    {
+      "bytes": 11056,
+      "path": "hadamard-study/round3/EXPERIMENT_LOG.md",
+      "sha256": "b1f4392317fba2a0a44d05476fc6bffdecbccbc1ade1fe9b54f172b8d046bfc8"
+    },
+    {
+      "bytes": 6319,
+      "path": "hadamard-study/round3/LESSONS.md",
+      "sha256": "f591d15a1ffd01862b6534d55f1bdb92c3b91dad1f9793a6c77c94dc822d5cbc"
+    },
+    {
+      "bytes": 34974,
+      "path": "hadamard-study/round3/PROOFS.md",
+      "sha256": "75972c90340ea3bdd16f7acdf9c7923f86d63906d7b95ec72126426ed186e4b1"
+    },
+    {
+      "bytes": 9367,
+      "path": "hadamard-study/round3/README.md",
+      "sha256": "7959172ccda362e37ccbbccb7a89b3312e3a92fe78f3222c2a50ce77a38ef925"
+    },
+    {
+      "bytes": 11964,
+      "path": "hadamard-study/round3/SOURCES.md",
+      "sha256": "dbd82694054cda5efa7feb952f437caf2eed8bd59d59791ca9d75a8563b22968"
+    },
+    {
+      "bytes": 104937,
+      "path": "hadamard-study/round3/data/validated-solutions.json",
+      "sha256": "3217ca2217b6f8fe820c71e2d2f3955099efd3e81377568a41fccba2b1bbd0a5"
+    },
+    {
+      "bytes": 189565,
+      "path": "hadamard-study/round3/evidence/benchmark.json",
+      "sha256": "c66de607ca690cd488bd75c4a72e21cad6677a51f79a5a7335dffce629dc87d3"
+    },
+    {
+      "bytes": 10786,
+      "path": "hadamard-study/round3/evidence/earlier-editions-integrity.json",
+      "sha256": "cb82c94a0196fe5f626efc25344826c796c4c2608a7df0ad0d2bb6dcdcc0dc50"
+    },
+    {
+      "bytes": 1267,
+      "path": "hadamard-study/round3/evidence/first-edition-tests.log",
+      "sha256": "443ba91903276f1d1b34bc7aa14a114f6a3e24c7d39e74e9b5af1c8bd5164e31"
+    },
+    {
+      "bytes": 146079,
+      "path": "hadamard-study/round3/evidence/partial-single-validation.json",
+      "sha256": "1efe4fc6708baa6258fda44a0bca8b452df09f1914feca08521b9c8bab077299"
+    },
+    {
+      "bytes": 112916,
+      "path": "hadamard-study/round3/evidence/quadratic-obstruction.json",
+      "sha256": "397058a377a57fbb72dc0ee53fb72ceb0b203dfc19162df3a27e8041beb5fcef"
+    },
+    {
+      "bytes": 1087,
+      "path": "hadamard-study/round3/evidence/remote-branches-before.txt",
+      "sha256": "751eef705ce5ccf0e30794e0179f778184f81808b8d69dafb7befc09d47296ea"
+    },
+    {
+      "bytes": 1416,
+      "path": "hadamard-study/round3/evidence/second-edition-tests.log",
+      "sha256": "9f4bff55d03c9698f73e073e72484729a842063f4bbc1037811eb5ad211a17e3"
+    },
+    {
+      "bytes": 2038,
+      "path": "hadamard-study/round3/evidence/tests.log",
+      "sha256": "06cb2e63836cb349ea187c49721878457e532e6a841ccc6f30ec416a2349c723"
+    },
+    {
+      "bytes": 10618,
+      "path": "hadamard-study/round3/reviews/REVIEW.md",
+      "sha256": "d3f3500b2adf8f43807bdcac9fe2b9dd87c40a6e7e6a1dcc5421277e56b80c93"
+    },
+    {
+      "bytes": 1676,
+      "path": "hadamard-study/round3/reviews/anf-independent.json",
+      "sha256": "ce0ef25a5f8946c158e14ee60c180286624f9fac2f51f691716b6d88e337431d"
+    },
+    {
+      "bytes": 9659,
+      "path": "hadamard-study/round3/reviews/audit_final.py",
+      "sha256": "27944582e42d1ea1b68dc41c30eb7420218dfb391d55459412b521dbd4828a33"
+    },
+    {
+      "bytes": 7904,
+      "path": "hadamard-study/round3/reviews/audit_subject.py",
+      "sha256": "d03d97b875aceb74d4d3e9076e0e4dbc9f6b66e94d20d412df0335283fc12392"
+    },
+    {
+      "bytes": 2124,
+      "path": "hadamard-study/round3/reviews/diagnostic-independent.json",
+      "sha256": "8e75b141483e8d763cfc4fea5fd3eb043e0d47c83262c26f684a98fc8f122c00"
+    },
+    {
+      "bytes": 810,
+      "path": "hadamard-study/round3/reviews/final-independent.json",
+      "sha256": "753125c2a36440d58f73c9471dc48f075fd741f3903d061ef4f2dd573efd2c57"
+    },
+    {
+      "bytes": 5703,
+      "path": "hadamard-study/round3/reviews/independent_anf.py",
+      "sha256": "ec43680899072c8377b98a906ca031e1d73317bd3f9e2d4e4ed2da10b7d46d1c"
+    },
+    {
+      "bytes": 5266,
+      "path": "hadamard-study/round3/reviews/independent_diagnostic.py",
+      "sha256": "c96c17e9aa04d7eb096eb0bf72acbc5fdd05f7b97672b00e707d447aebbeadb4"
+    },
+    {
+      "bytes": 7853,
+      "path": "hadamard-study/round3/reviews/independent_prefix.py",
+      "sha256": "995ae20a414e099dcf78993a189a2e2e008cd9bec7008c36ea011e9a44cce856"
+    },
+    {
+      "bytes": 4795,
+      "path": "hadamard-study/round3/reviews/independent_structure.py",
+      "sha256": "c34c04567d6083c1ba7a77b2a4f64ebb38f8775d8314a1b62cddf37c0f58e0de"
+    },
+    {
+      "bytes": 252,
+      "path": "hadamard-study/round3/reviews/m23-preserved-comparison.json",
+      "sha256": "795239a6b22a7b96bd2a0b7a3fed3a25ac811f2db1dd1e5bcc5dfdfe5b1b4c4a"
+    },
+    {
+      "bytes": 6677,
+      "path": "hadamard-study/round3/reviews/prefix-independent.json",
+      "sha256": "7bb63206b5004e70d0f666a091bb57bd3b55f14597036cce058ca29d724c63b5"
+    },
+    {
+      "bytes": 4655,
+      "path": "hadamard-study/round3/reviews/reviewed-files.sha256",
+      "sha256": "54a4ec1015a400912a14123c4808523f9f34a96517f7dad2e56f205b36c65238"
+    },
+    {
+      "bytes": 12997,
+      "path": "hadamard-study/round3/reviews/structure-independent.json",
+      "sha256": "62d19b1bad65b06f9fceb79c548ada61524789d3e06a589a63f25b51b30265cc"
+    },
+    {
+      "bytes": 55587,
+      "path": "hadamard-study/round3/reviews/subject-audit.json",
+      "sha256": "deed9dd481a2985884d0feab8e7cbd936c053ab846a8796200f81edfd80c9a83"
+    },
+    {
+      "bytes": 9322,
+      "path": "hadamard-study/round3/scripts/benchmark.py",
+      "sha256": "b1b66e55bd3d2ddbbc72ced7a8656e2b555afc6d61502a5625924bb5fde582f4"
+    },
+    {
+      "bytes": 13149,
+      "path": "hadamard-study/round3/scripts/partial_singles.py",
+      "sha256": "91327ae7d1775f3c5497031cd206aa53e42d5a01882cb28aed4c75fac5e2a399"
+    },
+    {
+      "bytes": 6566,
+      "path": "hadamard-study/round3/scripts/phase_search.py",
+      "sha256": "8e4e252a49285026427f83439ddbca0661742da22a859124817201f565a20198"
+    },
+    {
+      "bytes": 7297,
+      "path": "hadamard-study/round3/scripts/phases.py",
+      "sha256": "297cac40d6c4bea899fe2335acb35e4ce84873fcd4483c5262c64a01f0a1cfa2"
+    },
+    {
+      "bytes": 2574,
+      "path": "hadamard-study/round3/scripts/quadratic_diagnostic.py",
+      "sha256": "2ad71a96d62eb46b08927b6f288ebf4cc999133981bad9a3e3ef94fafcb6c700"
+    },
+    {
+      "bytes": 9403,
+      "path": "hadamard-study/round3/scripts/structure.py",
+      "sha256": "241d473be823496ddac0dc99e9364861c74af6c55df4e313fedc0b9862654423"
+    },
+    {
+      "bytes": 7312,
+      "path": "hadamard-study/round3/scripts/validate.py",
+      "sha256": "d03451a303b0f78ba87f1ef8768ee7238327fd469787f6e61ed277b9cdc404d9"
+    },
+    {
+      "bytes": 13450,
+      "path": "hadamard-study/round3/tests/test_structure.py",
+      "sha256": "95256b9000ee6f1457694355d917004c7306b6546112b997c8d99c9c5def21b9"
+    }
+  ],
+  "review_binding_sha256": "54a4ec1015a400912a14123c4808523f9f34a96517f7dad2e56f205b36c65238",
+  "scope": "Every new round3 file except this manifest itself; earlier59 files checked separately in earlier-editions-integrity.json"
+}

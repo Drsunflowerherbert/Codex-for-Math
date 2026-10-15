@@ -1,0 +1,81 @@
+{
+  "ANF_identity_checks_over_all_small_color_completions_and_prefixes": 49798,
+  "all_valid_solution_prefixes_preserved": 1230,
+  "method": "independent idempotent-monomial Boolean polynomial algebra; shared phase coefficients grouped before independent-phase relaxation; no subject imports",
+  "opposite_constant_sign_grouping_example": {
+    "constant_signs": [
+      1,
+      -1
+    ],
+    "core_order": 15,
+    "exact_sum_of_these_two_signs": 0,
+    "prefix_colors": [
+      0,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "same_residual_monomial_masks": [
+      8192
+    ],
+    "valid_tuple": [
+      19,
+      61,
+      61,
+      108
+    ],
+    "vertices": [
+      2,
+      6
+    ]
+  },
+  "results": [
+    {
+      "core_order": 1,
+      "valid_solution_prefixes_preserved": true
+    },
+    {
+      "core_order": 3,
+      "valid_solution_prefixes_preserved": true
+    },
+    {
+      "core_order": 5,
+      "valid_solution_prefixes_preserved": true
+    },
+    {
+      "core_order": 7,
+      "valid_solution_prefixes_preserved": true
+    },
+    {
+      "core_order": 9,
+      "valid_solution_prefixes_preserved": true
+    },
+    {
+      "core_order": 11,
+      "valid_solution_prefixes_preserved": true
+    },
+    {
+      "core_order": 13,
+      "valid_solution_prefixes_preserved": true
+    },
+    {
+      "core_order": 15,
+      "valid_solution_prefixes_preserved": true
+    },
+    {
+      "core_order": 19,
+      "valid_solution_prefixes_preserved": true
+    },
+    {
+      "core_order": 21,
+      "valid_solution_prefixes_preserved": true
+    },
+    {
+      "core_order": 23,
+      "valid_solution_prefixes_preserved": true
+    }
+  ],
+  "status": "passed"
+}

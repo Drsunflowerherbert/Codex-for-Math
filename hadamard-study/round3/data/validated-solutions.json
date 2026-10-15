@@ -1,0 +1,3850 @@
+{
+  "arithmetic": "Python integers; full tuple equality and every unordered matrix row pair",
+  "core_orders": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    19,
+    21,
+    23
+  ],
+  "count_domain": "sorted multisets of four original normalized symmetric sequence masks; repetitions allowed",
+  "independent_reference": {
+    "method": "independent physical-edge quotient, parity-forced column signs, unpruned restricted-growth colorings; no study-module imports",
+    "path": "round3/reviews/structure-independent.json",
+    "sha256": "62d19b1bad65b06f9fceb79c548ada61524789d3e06a589a63f25b51b30265cc"
+  },
+  "matrix_constructor_and_verifier": "first edition scripts/hadamard.py williamson/verify",
+  "purpose": "exact validation; not a comparative timing benchmark",
+  "results": [
+    {
+      "all_constructed_matrices_verified": true,
+      "coordinate_visit_order_one_based": [],
+      "core_order": 1,
+      "exact_sorted_tuple_list_equals_independent_reference": true,
+      "hadamard_order": 4,
+      "matrix_checks": [
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "f0008bc4f2d407adb61eb44ecdb7feb3ab3daceded505e5a376add7a1dc6d7e0",
+          "normalized_sequence_masks": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 4,
+            "entries": 16,
+            "order": 4,
+            "unordered_row_pairs_checked": 6
+          }
+        }
+      ],
+      "matrix_entries_checked": 16,
+      "search_coverage_counts": {
+        "complete_color_assignments_entered": 1,
+        "full_correlation_checks_after_row_identity": 1,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0
+        ],
+        "nodes_by_depth": [
+          1
+        ],
+        "nodes_entered": 1,
+        "output_row_masks_constructed_including_repetitions": 4,
+        "raw_RGS_color_leaves": 1,
+        "row_rejections_by_depth": [
+          0
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0
+        ],
+        "solutions": 1,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "solutions": [
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "solving_normalized_multisets": 1,
+      "unordered_matrix_row_pairs_checked": 6
+    },
+    {
+      "all_constructed_matrices_verified": true,
+      "coordinate_visit_order_one_based": [
+        1
+      ],
+      "core_order": 3,
+      "exact_sorted_tuple_list_equals_independent_reference": true,
+      "hadamard_order": 12,
+      "matrix_checks": [
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "efae45191e999b94049f61898f3367d2f6fd46f83a3ce4466d01766234665b77",
+          "normalized_sequence_masks": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 12,
+            "entries": 144,
+            "order": 12,
+            "unordered_row_pairs_checked": 66
+          }
+        }
+      ],
+      "matrix_entries_checked": 144,
+      "search_coverage_counts": {
+        "complete_color_assignments_entered": 1,
+        "full_correlation_checks_after_row_identity": 1,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1
+        ],
+        "nodes_entered": 2,
+        "output_row_masks_constructed_including_repetitions": 4,
+        "raw_RGS_color_leaves": 1,
+        "row_rejections_by_depth": [
+          0,
+          0
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0
+        ],
+        "solutions": 1,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "solutions": [
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "solving_normalized_multisets": 1,
+      "unordered_matrix_row_pairs_checked": 66
+    },
+    {
+      "all_constructed_matrices_verified": true,
+      "coordinate_visit_order_one_based": [
+        1,
+        2
+      ],
+      "core_order": 5,
+      "exact_sorted_tuple_list_equals_independent_reference": true,
+      "hadamard_order": 20,
+      "matrix_checks": [
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "1f1f4633610b3d3d038c6338496b6d7760b054364042f36066e0aacdda4db96f",
+          "normalized_sequence_masks": [
+            1,
+            2,
+            3,
+            3
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 20,
+            "entries": 400,
+            "order": 20,
+            "unordered_row_pairs_checked": 190
+          }
+        }
+      ],
+      "matrix_entries_checked": 400,
+      "search_coverage_counts": {
+        "complete_color_assignments_entered": 2,
+        "full_correlation_checks_after_row_identity": 1,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2
+        ],
+        "nodes_entered": 4,
+        "output_row_masks_constructed_including_repetitions": 4,
+        "raw_RGS_color_leaves": 2,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          1
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0
+        ],
+        "solutions": 1,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "solutions": [
+        [
+          1,
+          2,
+          3,
+          3
+        ]
+      ],
+      "solving_normalized_multisets": 1,
+      "unordered_matrix_row_pairs_checked": 190
+    },
+    {
+      "all_constructed_matrices_verified": true,
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3
+      ],
+      "core_order": 7,
+      "exact_sorted_tuple_list_equals_independent_reference": true,
+      "hadamard_order": 28,
+      "matrix_checks": [
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "018cf95eaf9030f16fd0630a54076e9690175a0a56b3a0031110d62460c9e854",
+          "normalized_sequence_masks": [
+            1,
+            1,
+            3,
+            4
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 28,
+            "entries": 784,
+            "order": 28,
+            "unordered_row_pairs_checked": 378
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "4e7f8d7ce1f1b9ae41629c4e26bde5a60b6c17f5a50ffab013b8c585b4cdeed4",
+          "normalized_sequence_masks": [
+            1,
+            2,
+            2,
+            6
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 28,
+            "entries": 784,
+            "order": 28,
+            "unordered_row_pairs_checked": 378
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "72e9ec1ae8bdf3877fa30a9f441b366e444e406e7a8a8277ffdc67274a7c2f62",
+          "normalized_sequence_masks": [
+            2,
+            4,
+            4,
+            5
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 28,
+            "entries": 784,
+            "order": 28,
+            "unordered_row_pairs_checked": 378
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "5902c680c290dd352678a850e2ec86a90d3b1c2d9b1bdcbd59f5d881d5e03e70",
+          "normalized_sequence_masks": [
+            3,
+            5,
+            6,
+            7
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 28,
+            "entries": 784,
+            "order": 28,
+            "unordered_row_pairs_checked": 378
+          }
+        }
+      ],
+      "matrix_entries_checked": 3136,
+      "search_coverage_counts": {
+        "complete_color_assignments_entered": 5,
+        "full_correlation_checks_after_row_identity": 4,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5
+        ],
+        "nodes_entered": 9,
+        "output_row_masks_constructed_including_repetitions": 16,
+        "raw_RGS_color_leaves": 5,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "solutions": 4,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "solutions": [
+        [
+          1,
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          2,
+          6
+        ],
+        [
+          2,
+          4,
+          4,
+          5
+        ],
+        [
+          3,
+          5,
+          6,
+          7
+        ]
+      ],
+      "solving_normalized_multisets": 4,
+      "unordered_matrix_row_pairs_checked": 1512
+    },
+    {
+      "all_constructed_matrices_verified": true,
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        4,
+        3
+      ],
+      "core_order": 9,
+      "exact_sorted_tuple_list_equals_independent_reference": true,
+      "hadamard_order": 36,
+      "matrix_checks": [
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "a9c1839a66a6ef13a01d10fef5ebc826b564024c0d6c1f595a2eb6177530e03c",
+          "normalized_sequence_masks": [
+            1,
+            3,
+            7,
+            10
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 36,
+            "entries": 1296,
+            "order": 36,
+            "unordered_row_pairs_checked": 630
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "2fbc90ee6034dad27c3d757f329357bc22d3052b1c5253d43f6e771a4151e2a3",
+          "normalized_sequence_masks": [
+            1,
+            9,
+            9,
+            14
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 36,
+            "entries": 1296,
+            "order": 36,
+            "unordered_row_pairs_checked": 630
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "536a6d75b9dd46466105520a66de866bafc3161f5bcd00f4e859addc4c8c92d3",
+          "normalized_sequence_masks": [
+            2,
+            3,
+            3,
+            13
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 36,
+            "entries": 1296,
+            "order": 36,
+            "unordered_row_pairs_checked": 630
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "990627db5d210a61058fb41d1dfd71be4f82e7b4671a60c6419a0d4a3bb6dfdf",
+          "normalized_sequence_masks": [
+            2,
+            9,
+            10,
+            14
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 36,
+            "entries": 1296,
+            "order": 36,
+            "unordered_row_pairs_checked": 630
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "2bb5a5887b96e9a27109b5e9bcbf35f75867f123b8aa907f0ced74e3e0e09a0b",
+          "normalized_sequence_masks": [
+            3,
+            8,
+            9,
+            13
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 36,
+            "entries": 1296,
+            "order": 36,
+            "unordered_row_pairs_checked": 630
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "c40e323d2bea8b927ee8d8f150bbbd75c90ce5d883acdae355c5a7e198b30803",
+          "normalized_sequence_masks": [
+            7,
+            8,
+            10,
+            10
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 36,
+            "entries": 1296,
+            "order": 36,
+            "unordered_row_pairs_checked": 630
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "806b1a53c0aae460891d23c5fc0b40e0cb1848ee808d45f0798f16cabd1be0be",
+          "normalized_sequence_masks": [
+            7,
+            11,
+            13,
+            14
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 36,
+            "entries": 1296,
+            "order": 36,
+            "unordered_row_pairs_checked": 630
+          }
+        }
+      ],
+      "matrix_entries_checked": 9072,
+      "search_coverage_counts": {
+        "complete_color_assignments_entered": 13,
+        "full_correlation_checks_after_row_identity": 7,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          13
+        ],
+        "nodes_entered": 22,
+        "output_row_masks_constructed_including_repetitions": 28,
+        "raw_RGS_color_leaves": 15,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          1,
+          6
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "solutions": 7,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 2
+      },
+      "solutions": [
+        [
+          1,
+          3,
+          7,
+          10
+        ],
+        [
+          1,
+          9,
+          9,
+          14
+        ],
+        [
+          2,
+          3,
+          3,
+          13
+        ],
+        [
+          2,
+          9,
+          10,
+          14
+        ],
+        [
+          3,
+          8,
+          9,
+          13
+        ],
+        [
+          7,
+          8,
+          10,
+          10
+        ],
+        [
+          7,
+          11,
+          13,
+          14
+        ]
+      ],
+      "solving_normalized_multisets": 7,
+      "unordered_matrix_row_pairs_checked": 4410
+    },
+    {
+      "all_constructed_matrices_verified": true,
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "core_order": 11,
+      "exact_sorted_tuple_list_equals_independent_reference": true,
+      "hadamard_order": 44,
+      "matrix_checks": [
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "b37f5498049fddddf0ae487b21dba6ca477351644577c40c474ac12f87270058",
+          "normalized_sequence_masks": [
+            3,
+            5,
+            15,
+            22
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 44,
+            "entries": 1936,
+            "order": 44,
+            "unordered_row_pairs_checked": 946
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "73f2a86a4be4e13498be867b476193511d3df8759c24052fd109eca4d951c661",
+          "normalized_sequence_masks": [
+            6,
+            20,
+            23,
+            26
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 44,
+            "entries": 1936,
+            "order": 44,
+            "unordered_row_pairs_checked": 946
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "cd14575d05a7f2cab1ab23e741dadb1ac30f1ba52f5e9651c09a8b225fda06e9",
+          "normalized_sequence_masks": [
+            7,
+            9,
+            12,
+            29
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 44,
+            "entries": 1936,
+            "order": 44,
+            "unordered_row_pairs_checked": 946
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "973f1dc967c85124f3202142c32bec8bc178fc35fb9e752e931c9c1e0402d0de",
+          "normalized_sequence_masks": [
+            10,
+            18,
+            25,
+            30
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 44,
+            "entries": 1936,
+            "order": 44,
+            "unordered_row_pairs_checked": 946
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "82ad8048c05e6d076184e00794cf12aab6397bd9af84089b7e201b063719e503",
+          "normalized_sequence_masks": [
+            13,
+            17,
+            24,
+            27
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 44,
+            "entries": 1936,
+            "order": 44,
+            "unordered_row_pairs_checked": 946
+          }
+        }
+      ],
+      "matrix_entries_checked": 9680,
+      "search_coverage_counts": {
+        "complete_color_assignments_entered": 40,
+        "full_correlation_checks_after_row_identity": 5,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          5
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          40
+        ],
+        "nodes_entered": 64,
+        "output_row_masks_constructed_including_repetitions": 20,
+        "raw_RGS_color_leaves": 51,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          4,
+          30
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          11,
+          0
+        ],
+        "solutions": 5,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 11
+      },
+      "solutions": [
+        [
+          3,
+          5,
+          15,
+          22
+        ],
+        [
+          6,
+          20,
+          23,
+          26
+        ],
+        [
+          7,
+          9,
+          12,
+          29
+        ],
+        [
+          10,
+          18,
+          25,
+          30
+        ],
+        [
+          13,
+          17,
+          24,
+          27
+        ]
+      ],
+      "solving_normalized_multisets": 5,
+      "unordered_matrix_row_pairs_checked": 4730
+    },
+    {
+      "all_constructed_matrices_verified": true,
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        5,
+        4,
+        6
+      ],
+      "core_order": 13,
+      "exact_sorted_tuple_list_equals_independent_reference": true,
+      "hadamard_order": 52,
+      "matrix_checks": [
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "53d22903995966733f0925742a04336536a1e5bd0cc6df57638055e0dc9fc751",
+          "normalized_sequence_masks": [
+            3,
+            20,
+            25,
+            49
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "a0d828ef3a8eefea72c48c1c60c7412ae21abe7630aacf9a8ac9ad519a79ebc0",
+          "normalized_sequence_masks": [
+            6,
+            23,
+            23,
+            57
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "fdc9ddaa2544827ed1ebe9d0962fd2097cd08233da2a74d699b1fb9ea2da3316",
+          "normalized_sequence_masks": [
+            6,
+            45,
+            46,
+            58
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "1c3912c12d81d8ce83f8547e31a6eba23221be0026b2b88c9105a597f424b949",
+          "normalized_sequence_masks": [
+            7,
+            10,
+            22,
+            36
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "0122d081135c2d850f779a5c0f0309162fcaa4b2816bd84e676ad5b2cc191486",
+          "normalized_sequence_masks": [
+            7,
+            13,
+            26,
+            47
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "2c8d0f083cbff8c53620ee1c5138414f4d73f6e092edd6ea2136bbbcb9e20e27",
+          "normalized_sequence_masks": [
+            11,
+            49,
+            50,
+            55
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "b90b40cbbe624dcc0e49ac35f351cffd1a22c96d426df0904807ac13dec780f0",
+          "normalized_sequence_masks": [
+            13,
+            25,
+            31,
+            52
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "890d2ac4ef359cf19498faa6927da39c0e7a143ed8cf484db3f64a29a1b44251",
+          "normalized_sequence_masks": [
+            13,
+            35,
+            44,
+            61
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "75c43fb85e18643bb939ffe84b9e26e6659adddd5457f2fc92678de15580ddae",
+          "normalized_sequence_masks": [
+            15,
+            17,
+            23,
+            54
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "29d6d9344a9e305986d092a30a81ee7c26f94499189cda0c00f7551ed237e294",
+          "normalized_sequence_masks": [
+            17,
+            46,
+            57,
+            57
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "c93fed5efe2cc5cbff1265b9adfe558d8c0eff0fd5d8e141240c37d36934ba7d",
+          "normalized_sequence_masks": [
+            22,
+            37,
+            50,
+            62
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "6695c8e751e47986c00380bab2a8e8c190ad3c0affcf84e62e55cf9fbd9d3b3c",
+          "normalized_sequence_masks": [
+            23,
+            40,
+            46,
+            46
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "c2cf172e5333bed35ba12e6ad02ebae08687d250a6d1f06d70ebce5e83a068e6",
+          "normalized_sequence_masks": [
+            24,
+            33,
+            42,
+            44
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "4b48c7096851f1f188c2ef9cf392feb330920009d1b58bd9a9f5a1008f1e99b9",
+          "normalized_sequence_masks": [
+            28,
+            42,
+            50,
+            59
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "dfdd85476766b4945da825705b1f6b61424cd9ea74a0247433ce4b50c421a7f4",
+          "normalized_sequence_masks": [
+            29,
+            40,
+            51,
+            57
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 52,
+            "entries": 2704,
+            "order": 52,
+            "unordered_row_pairs_checked": 1326
+          }
+        }
+      ],
+      "matrix_entries_checked": 40560,
+      "search_coverage_counts": {
+        "complete_color_assignments_entered": 167,
+        "full_correlation_checks_after_row_identity": 15,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          25
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          167
+        ],
+        "nodes_entered": 242,
+        "output_row_masks_constructed_including_repetitions": 60,
+        "raw_RGS_color_leaves": 187,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          127
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          20,
+          0
+        ],
+        "solutions": 15,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 20
+      },
+      "solutions": [
+        [
+          3,
+          20,
+          25,
+          49
+        ],
+        [
+          6,
+          23,
+          23,
+          57
+        ],
+        [
+          6,
+          45,
+          46,
+          58
+        ],
+        [
+          7,
+          10,
+          22,
+          36
+        ],
+        [
+          7,
+          13,
+          26,
+          47
+        ],
+        [
+          11,
+          49,
+          50,
+          55
+        ],
+        [
+          13,
+          25,
+          31,
+          52
+        ],
+        [
+          13,
+          35,
+          44,
+          61
+        ],
+        [
+          15,
+          17,
+          23,
+          54
+        ],
+        [
+          17,
+          46,
+          57,
+          57
+        ],
+        [
+          22,
+          37,
+          50,
+          62
+        ],
+        [
+          23,
+          40,
+          46,
+          46
+        ],
+        [
+          24,
+          33,
+          42,
+          44
+        ],
+        [
+          28,
+          42,
+          50,
+          59
+        ],
+        [
+          29,
+          40,
+          51,
+          57
+        ]
+      ],
+      "solving_normalized_multisets": 15,
+      "unordered_matrix_row_pairs_checked": 19890
+    },
+    {
+      "all_constructed_matrices_verified": true,
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        5
+      ],
+      "core_order": 15,
+      "exact_sorted_tuple_list_equals_independent_reference": true,
+      "hadamard_order": 60,
+      "matrix_checks": [
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "f868687a909fe38992d2540ed13f657b8c2e8998d1c604ec612a0d0022d21166",
+          "normalized_sequence_masks": [
+            6,
+            37,
+            46,
+            114
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "4f7a675d2411c261b60cdc771d74f7918855389f3967d6bbccb6d479410e2a29",
+          "normalized_sequence_masks": [
+            9,
+            25,
+            29,
+            114
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "2bc30bd446bfa5d503ceec9b0cd2d81505b6392c363d8127eb386b7446d39f79",
+          "normalized_sequence_masks": [
+            15,
+            17,
+            44,
+            77
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "3cb900b9b11855785b7cc1e57583555935e6158a82d28666eeb7238aa5a1301b",
+          "normalized_sequence_masks": [
+            15,
+            24,
+            37,
+            77
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "9b7b253ea03619a14f6ce07d17ad6638d5f4115b9ce786eb6e42997ce12ab055",
+          "normalized_sequence_masks": [
+            18,
+            99,
+            100,
+            106
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "89d98d0e897a202cd82e651eb7d165a207d5325c995a36a5762d5cd98b5d0d58",
+          "normalized_sequence_masks": [
+            19,
+            61,
+            61,
+            108
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "138494b36af01e2bc2b79b9e7be2b4842ca66ee9b49ed0146bb36aeeb0a8145f",
+          "normalized_sequence_masks": [
+            26,
+            101,
+            118,
+            118
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "b16c5a549aedc9d887d23a2a4e40146bb81b7f451b4c95b8ddd5b5c9e1490429",
+          "normalized_sequence_masks": [
+            29,
+            33,
+            39,
+            100
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "432cc44719289430c28a91c737c174b2ed61ae204e5975fea6715a4cd36296bd",
+          "normalized_sequence_masks": [
+            29,
+            38,
+            40,
+            108
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "6d7c370f3e087b236d09f4f784c047ae143e4de44beee7704849028588ceb8a2",
+          "normalized_sequence_masks": [
+            29,
+            66,
+            82,
+            114
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "9fd6b578354b0ce68b40200c93099407fe642a0e6f6d044652c7e8f75d3486ef",
+          "normalized_sequence_masks": [
+            38,
+            80,
+            99,
+            106
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "fa60e16a2436213638f9b0625e99ac5183de78107e95a2e7c28041ede210babf",
+          "normalized_sequence_masks": [
+            39,
+            61,
+            61,
+            88
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "a864796d03507abaa1df68bc5121715709ef87e61c4b79cae603a8f280c9dfad",
+          "normalized_sequence_masks": [
+            44,
+            68,
+            101,
+            114
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "5552a3fc4d48f6886d6b78b3e9b2db44b29f1ab76b05642d05ebd1b7f82655ff",
+          "normalized_sequence_masks": [
+            46,
+            81,
+            118,
+            118
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 60,
+            "entries": 3600,
+            "order": 60,
+            "unordered_row_pairs_checked": 1770
+          }
+        }
+      ],
+      "matrix_entries_checked": 50400,
+      "search_coverage_counts": {
+        "complete_color_assignments_entered": 216,
+        "full_correlation_checks_after_row_identity": 14,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          108,
+          74
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          216
+        ],
+        "nodes_entered": 478,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23,
+          128
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          499,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 499
+      },
+      "solutions": [
+        [
+          6,
+          37,
+          46,
+          114
+        ],
+        [
+          9,
+          25,
+          29,
+          114
+        ],
+        [
+          15,
+          17,
+          44,
+          77
+        ],
+        [
+          15,
+          24,
+          37,
+          77
+        ],
+        [
+          18,
+          99,
+          100,
+          106
+        ],
+        [
+          19,
+          61,
+          61,
+          108
+        ],
+        [
+          26,
+          101,
+          118,
+          118
+        ],
+        [
+          29,
+          33,
+          39,
+          100
+        ],
+        [
+          29,
+          38,
+          40,
+          108
+        ],
+        [
+          29,
+          66,
+          82,
+          114
+        ],
+        [
+          38,
+          80,
+          99,
+          106
+        ],
+        [
+          39,
+          61,
+          61,
+          88
+        ],
+        [
+          44,
+          68,
+          101,
+          114
+        ],
+        [
+          46,
+          81,
+          118,
+          118
+        ]
+      ],
+      "solving_normalized_multisets": 14,
+      "unordered_matrix_row_pairs_checked": 24780
+    },
+    {
+      "all_constructed_matrices_verified": true,
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "core_order": 19,
+      "exact_sorted_tuple_list_equals_independent_reference": true,
+      "hadamard_order": 76,
+      "matrix_checks": [
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "1369dd27e876ffb039cc5d8accbb85ab33ba81d772c9729efd6f88f994537b0c",
+          "normalized_sequence_masks": [
+            11,
+            116,
+            177,
+            305
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "3679ed31796ce9f9185bd3db88ca9053785d465bbc7b310bfb828bf84e64b7c9",
+          "normalized_sequence_masks": [
+            19,
+            346,
+            369,
+            455
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "83085cf1aa5f68041a73879b18a9ac62cf59c1ca8264314e0490cba8c641f2b7",
+          "normalized_sequence_masks": [
+            22,
+            29,
+            178,
+            326
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "24c205f27f60258bbdbbf27d9247be7ad749f6b251dd39782a41e3d31ae9995c",
+          "normalized_sequence_masks": [
+            22,
+            53,
+            78,
+            402
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "b8912b67e520865b10436ea107961f4e244caffcecbca71b6bf5af479045a828",
+          "normalized_sequence_masks": [
+            26,
+            413,
+            433,
+            457
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "63c985f2a41df27e0ec32c63009364ac1914172183594e7c1d6cc954b10aa4bf",
+          "normalized_sequence_masks": [
+            26,
+            422,
+            422,
+            485
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "4ff4a94cc26035ecac85bc861ae5df9ed23c79d49366422d99cd3ccc1c00dddf",
+          "normalized_sequence_masks": [
+            27,
+            57,
+            140,
+            337
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "8a76298d8dc23003201d51513888cb3a3587bbb2f832a0638dd2485eecc55203",
+          "normalized_sequence_masks": [
+            29,
+            100,
+            141,
+            267
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "f2206b05770649696628b3813e7184ce1e4eaa5bba13139ea1346a2116977449",
+          "normalized_sequence_masks": [
+            38,
+            233,
+            250,
+            458
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "5e4b54007a16f0746bf00de7a0eb564026fab832f680eded65c071b248f2f18d",
+          "normalized_sequence_masks": [
+            38,
+            348,
+            348,
+            473
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "18614b4479928cb20239bf5c70a059d2efaacf0963800613004e51f4a2ee5ba5",
+          "normalized_sequence_masks": [
+            44,
+            143,
+            234,
+            438
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "1d0c31c7571be0c1ae26f3d02f289768e596026f4a34b5300bb0cdf80cde6c47",
+          "normalized_sequence_masks": [
+            47,
+            134,
+            221,
+            395
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "f74508c2fa4395c7b9c23d111144a4ff012984b05b5a29b964d11b683181a276",
+          "normalized_sequence_masks": [
+            57,
+            296,
+            332,
+            418
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "2863225e02b5663dd5ee6b2145ed4c98b8705bc6147432115c5f13a49911ae75",
+          "normalized_sequence_masks": [
+            59,
+            59,
+            235,
+            276
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "530e9f622e584fb54c6f63cd256b8967513a075ad0fa554e0e8ecb536db0d7b7",
+          "normalized_sequence_masks": [
+            59,
+            111,
+            133,
+            302
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "759c7e233065842bab234044febf78bd5f0cbb94d003c3caf75638ab6954aa59",
+          "normalized_sequence_masks": [
+            63,
+            266,
+            339,
+            409
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "1cb8c087dabe8df579763c9c18f91d1e525b942cf1b030a47f731782cafa1277",
+          "normalized_sequence_masks": [
+            67,
+            157,
+            157,
+            444
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "34b4b1b17a30f88924942537a4cf36fb07b4aadc801218a308e2db62a0d2aea7",
+          "normalized_sequence_masks": [
+            67,
+            314,
+            348,
+            474
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "963fcb2acd301b31e93727ac8704543177ba1343a455198f5d637b4392ccdf5a",
+          "normalized_sequence_masks": [
+            77,
+            108,
+            142,
+            336
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "4785aa70428fe92121e3bcba6ce0f73e6cb561e61df1389afdfb784c6575e196",
+          "normalized_sequence_masks": [
+            77,
+            177,
+            193,
+            450
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "7741ce8b192d76d833eb31cc1418826a17d338a82df1e689d134e130c20ba68a",
+          "normalized_sequence_masks": [
+            84,
+            236,
+            243,
+            436
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "e5c15bd9b7cae6dacde8f49e24f7ff82c598e87c4e994edec379bbd3aa17b0cc",
+          "normalized_sequence_masks": [
+            87,
+            123,
+            242,
+            289
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "ad6c7acc27313e3eb758c3a765f6d900d3f9dacb90f0d06208f2fca99707fc5c",
+          "normalized_sequence_masks": [
+            89,
+            163,
+            193,
+            452
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "05794f8bcdd64391be3bf16f7fb048e33820da2f314727d83a93502289c16740",
+          "normalized_sequence_masks": [
+            104,
+            157,
+            214,
+            476
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "0c731ca294b416826756a0e50e64ca05a6ec13e6a401e12796c4dfcca2451ce7",
+          "normalized_sequence_masks": [
+            104,
+            407,
+            433,
+            433
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "9965f958cdf1f352366c0537c302e221d733e9e5b63de50c1d2bea85d78e8ba1",
+          "normalized_sequence_masks": [
+            109,
+            109,
+            119,
+            392
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "95edd7b69129d2359e7082c238f3d9d5a032248f1808cd40d5837a526e941c12",
+          "normalized_sequence_masks": [
+            109,
+            276,
+            359,
+            481
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "c99c97256f04a9170d3f10cd4d9b01d2394c0004a550a4ab91a8026bf31d91ed",
+          "normalized_sequence_masks": [
+            112,
+            139,
+            166,
+            418
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "36cfd5046292a30f1a30d8c4aa13a492d04acc3a50ce5668d87c5fc37c36abcc",
+          "normalized_sequence_masks": [
+            115,
+            321,
+            372,
+            441
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "43fdbcc8403e9f6b97612936f0f895b23a5add8f5c4aec48b710b9be3ff1d62c",
+          "normalized_sequence_masks": [
+            133,
+            242,
+            242,
+            378
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "0b922303c9dd84555b76e1945899b60bc560533c1d5e905909531c9e077097b6",
+          "normalized_sequence_masks": [
+            137,
+            283,
+            391,
+            490
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "edc04f6dbc93255f7375ea573bb52e0cb618fe143a853ce3e98244275f52797f",
+          "normalized_sequence_masks": [
+            138,
+            323,
+            326,
+            368
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "b1ee1c674f3f62bf4ecb41c08939580fdfb3e562c54bbec1847c52adffbdad5f",
+          "normalized_sequence_masks": [
+            151,
+            327,
+            392,
+            423
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "dd5678e0c8dffc9a3254968e881bf974662c46b8f00d0c2af0a8e860c49ceb26",
+          "normalized_sequence_masks": [
+            164,
+            275,
+            394,
+            450
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "c36357a6f406ca117670ee9d44ad42cef12a494b32735e312121c6b980f44bc1",
+          "normalized_sequence_masks": [
+            172,
+            178,
+            240,
+            273
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "64b69dd5553936cbdb545b982b9faa4b54096baf242912d399b08940d6dd9f52",
+          "normalized_sequence_masks": [
+            174,
+            220,
+            224,
+            365
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "0529c5a7e6f60eb88a59880de287ac9714971cd2086612cbbb49765fd7127e2e",
+          "normalized_sequence_masks": [
+            184,
+            269,
+            296,
+            354
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "d2de5f6deaea07a45c123b783cedc4bc27eb073308de07af253c5bc54cfde820",
+          "normalized_sequence_masks": [
+            208,
+            303,
+            327,
+            327
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "907f861d49e50e05605863544d50a3cb48d8abbceb834015029b8e72e0d85e74",
+          "normalized_sequence_masks": [
+            208,
+            316,
+            422,
+            437
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "a0ee9f6c8917ec211445cebe7f0e317a97d46863175ca1683851cc2978d8929b",
+          "normalized_sequence_masks": [
+            222,
+            289,
+            458,
+            458
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "7e6cddda58d29165a4bbe9f89f56e6d8b0fe7b5a0e6ed6eb0cf2877375705256",
+          "normalized_sequence_masks": [
+            228,
+            259,
+            332,
+            340
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "4b0b00c8220f151954a921505563da4dabadecd720fc27d8615ee098bedba6d5",
+          "normalized_sequence_masks": [
+            244,
+            304,
+            350,
+            357
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 76,
+            "entries": 5776,
+            "order": 76,
+            "unordered_row_pairs_checked": 2850
+          }
+        }
+      ],
+      "matrix_entries_checked": 242592,
+      "search_coverage_counts": {
+        "complete_color_assignments_entered": 8916,
+        "full_correlation_checks_after_row_identity": 42,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          482,
+          1325
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          8916
+        ],
+        "nodes_entered": 12688,
+        "output_row_masks_constructed_including_repetitions": 168,
+        "raw_RGS_color_leaves": 11051,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          72,
+          7549
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2135,
+          0
+        ],
+        "solutions": 42,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 2135
+      },
+      "solutions": [
+        [
+          11,
+          116,
+          177,
+          305
+        ],
+        [
+          19,
+          346,
+          369,
+          455
+        ],
+        [
+          22,
+          29,
+          178,
+          326
+        ],
+        [
+          22,
+          53,
+          78,
+          402
+        ],
+        [
+          26,
+          413,
+          433,
+          457
+        ],
+        [
+          26,
+          422,
+          422,
+          485
+        ],
+        [
+          27,
+          57,
+          140,
+          337
+        ],
+        [
+          29,
+          100,
+          141,
+          267
+        ],
+        [
+          38,
+          233,
+          250,
+          458
+        ],
+        [
+          38,
+          348,
+          348,
+          473
+        ],
+        [
+          44,
+          143,
+          234,
+          438
+        ],
+        [
+          47,
+          134,
+          221,
+          395
+        ],
+        [
+          57,
+          296,
+          332,
+          418
+        ],
+        [
+          59,
+          59,
+          235,
+          276
+        ],
+        [
+          59,
+          111,
+          133,
+          302
+        ],
+        [
+          63,
+          266,
+          339,
+          409
+        ],
+        [
+          67,
+          157,
+          157,
+          444
+        ],
+        [
+          67,
+          314,
+          348,
+          474
+        ],
+        [
+          77,
+          108,
+          142,
+          336
+        ],
+        [
+          77,
+          177,
+          193,
+          450
+        ],
+        [
+          84,
+          236,
+          243,
+          436
+        ],
+        [
+          87,
+          123,
+          242,
+          289
+        ],
+        [
+          89,
+          163,
+          193,
+          452
+        ],
+        [
+          104,
+          157,
+          214,
+          476
+        ],
+        [
+          104,
+          407,
+          433,
+          433
+        ],
+        [
+          109,
+          109,
+          119,
+          392
+        ],
+        [
+          109,
+          276,
+          359,
+          481
+        ],
+        [
+          112,
+          139,
+          166,
+          418
+        ],
+        [
+          115,
+          321,
+          372,
+          441
+        ],
+        [
+          133,
+          242,
+          242,
+          378
+        ],
+        [
+          137,
+          283,
+          391,
+          490
+        ],
+        [
+          138,
+          323,
+          326,
+          368
+        ],
+        [
+          151,
+          327,
+          392,
+          423
+        ],
+        [
+          164,
+          275,
+          394,
+          450
+        ],
+        [
+          172,
+          178,
+          240,
+          273
+        ],
+        [
+          174,
+          220,
+          224,
+          365
+        ],
+        [
+          184,
+          269,
+          296,
+          354
+        ],
+        [
+          208,
+          303,
+          327,
+          327
+        ],
+        [
+          208,
+          316,
+          422,
+          437
+        ],
+        [
+          222,
+          289,
+          458,
+          458
+        ],
+        [
+          228,
+          259,
+          332,
+          340
+        ],
+        [
+          244,
+          304,
+          350,
+          357
+        ]
+      ],
+      "solving_normalized_multisets": 42,
+      "unordered_matrix_row_pairs_checked": 119700
+    },
+    {
+      "all_constructed_matrices_verified": true,
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        7
+      ],
+      "core_order": 21,
+      "exact_sorted_tuple_list_equals_independent_reference": true,
+      "hadamard_order": 84,
+      "matrix_checks": [
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "00ee55c59460f6983d7d2be85e406a4e4b5720f246047c0673b07ff90ffbd3f1",
+          "normalized_sequence_masks": [
+            25,
+            94,
+            465,
+            617
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "8687d21aa5cf13868190e09976e222a5686011a8870ac866b8fdd51e40117dec",
+          "normalized_sequence_masks": [
+            39,
+            222,
+            298,
+            556
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "41ea551c5bd9072b72f3dbd5c49b17d61fa5112f6767d90b1b994eea0c340778",
+          "normalized_sequence_masks": [
+            39,
+            278,
+            459,
+            773
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "9ade5c6846128b9f3faeb6bed251f8cfb02b9bdcc261e21ab47ef6fa998d3e5c",
+          "normalized_sequence_masks": [
+            46,
+            46,
+            332,
+            691
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "19ba6fec157ac20d708606acab3fe416d4404fabcd66f51a5a94a50ff93b5838",
+          "normalized_sequence_masks": [
+            46,
+            339,
+            492,
+            878
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "dfae0e53b0d5fe5423de95ed0d08d97715236b4895fb7d7c27e07578c2a8228e",
+          "normalized_sequence_masks": [
+            54,
+            351,
+            428,
+            826
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "499cb4363df06d0aabb278dac0c7ee4cad032182bae202364f71b0302b7ac472",
+          "normalized_sequence_masks": [
+            54,
+            805,
+            826,
+            982
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "db743993d5710bcdcdff79596ef602eb1a52a967527f1124414292d9089648be",
+          "normalized_sequence_masks": [
+            101,
+            332,
+            368,
+            934
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "3a346fea2e1ef2a4cb03ea314da92caeb31d1177de17eb0af46d1776c99e6b20",
+          "normalized_sequence_masks": [
+            101,
+            801,
+            801,
+            922
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "c2e939f79c56ef93d34bbdf696a777a46bec19416bbb1ac0f0a6562d45052fdf",
+          "normalized_sequence_masks": [
+            139,
+            183,
+            505,
+            570
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "1230250d6ef373e10724e2fc6cf74229b2bac7feefc21dee8761c3c1c4e08a7d",
+          "normalized_sequence_masks": [
+            151,
+            523,
+            750,
+            909
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "899943a1ec178533b17114bccc395742f13bdd193d5ad4cf9158d072175ab32a",
+          "normalized_sequence_masks": [
+            151,
+            637,
+            664,
+            909
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "604f68c2146c92ad36af09cbf523443ced5aa71e5c66ea22ad6be22e4c674f66",
+          "normalized_sequence_masks": [
+            154,
+            826,
+            905,
+            982
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "058f2580aa3d5d501527d8ced2ecbd74890598601ddda2f62ba681efc8836fd7",
+          "normalized_sequence_masks": [
+            180,
+            278,
+            396,
+            977
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "36c7c1c34a084fa1bfa2cdec11395272e7b387ca3deb4e86db010eb3367e43a3",
+          "normalized_sequence_masks": [
+            180,
+            556,
+            599,
+            816
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "135773787bb9044512383ea2c339b4fad5ffeec0e5348ae8aa8a785d16bb5ef0",
+          "normalized_sequence_masks": [
+            183,
+            302,
+            389,
+            995
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "0a2e970828b8853c05e5444058d44b483d1a5a4e5bd8ab3558686295b426319c",
+          "normalized_sequence_masks": [
+            183,
+            389,
+            505,
+            820
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "17336e7923faff5eeed07bd8f64640dc7db3f2234b37de61045afe07cbe0a51b",
+          "normalized_sequence_masks": [
+            183,
+            570,
+            657,
+            995
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "7b3f8e958295a9436efa9a2d473cc90ec13435267ecb1aef45d7f04efa8ff766",
+          "normalized_sequence_masks": [
+            187,
+            564,
+            564,
+            836
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "9202e7fda123410a11008cd8a26afeae9794f6591e2c1118484a3241cce69a0f",
+          "normalized_sequence_masks": [
+            228,
+            317,
+            354,
+            836
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "eed3545deb41db7100cd0b3be9883e1f4cbf1f14a3e1ac871012ec605d1c1169",
+          "normalized_sequence_masks": [
+            228,
+            424,
+            424,
+            795
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "9f3604dc26c6d68baadc4eb2a8bc8b94c13d8980e07476d002a22573bbbc173a",
+          "normalized_sequence_masks": [
+            233,
+            404,
+            502,
+            884
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "1137b830025e0d988e78fc6a17afcd9b4c7f98b7263865207deb7f47adfb27ab",
+          "normalized_sequence_masks": [
+            263,
+            263,
+            354,
+            669
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "8984703c1d6761f2614bee607f3601558bbdd6ab7106cabe1f7a8dc469d70884",
+          "normalized_sequence_masks": [
+            263,
+            366,
+            375,
+            737
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "23b98a50e8251bcb32317379600cf4fde2c5ffcdaaa1265f5131e273f1ce2fa2",
+          "normalized_sequence_masks": [
+            295,
+            637,
+            808,
+            909
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "f029c887f10f2299c0ae86b8fab970305b36c13357319ec296d9521bdca765e9",
+          "normalized_sequence_masks": [
+            298,
+            396,
+            417,
+            760
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "22b54c09dde9f6e104ac9248e08dbf16c022f68635f1c1bb4d8cee7207a07481",
+          "normalized_sequence_masks": [
+            351,
+            531,
+            826,
+            905
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "4c2809a0f987d9546ff9d10ef0fca1ce419a6c3f3f8121d6fe8abd7866437b4b",
+          "normalized_sequence_masks": [
+            359,
+            604,
+            801,
+            997
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "bf502d47a7a96bcfb1470e85297206750937b25c14acf745b01cda5dc46793dc",
+          "normalized_sequence_masks": [
+            368,
+            404,
+            404,
+            655
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "3c6d906aa5b8180fdee9d86f593c05277ee00e7a8a1282d411760c5e6847bd8c",
+          "normalized_sequence_masks": [
+            417,
+            619,
+            773,
+            816
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "bd42066e3a6dd6d2727a12850d59941db9eed4724d067302d35d6a7142e8bb5a",
+          "normalized_sequence_masks": [
+            424,
+            493,
+            500,
+            590
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "ea8efde83174c5041656b2709a057829ca2c25ed285e1cfe541ee41f90ce6153",
+          "normalized_sequence_masks": [
+            436,
+            750,
+            808,
+            909
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "8bccfe4fd66fb63664b4016b3eb5acc0280940a74ef09960e26569f737cc10c3",
+          "normalized_sequence_masks": [
+            451,
+            598,
+            642,
+            744
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "3ccfd65b0f55db9797058acec5b67e59c06e3afae001f85f7fbd0128f3df0d1d",
+          "normalized_sequence_masks": [
+            466,
+            564,
+            869,
+            892
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 84,
+            "entries": 7056,
+            "order": 84,
+            "unordered_row_pairs_checked": 3486
+          }
+        }
+      ],
+      "matrix_entries_checked": 239904,
+      "search_coverage_counts": {
+        "complete_color_assignments_entered": 5454,
+        "full_correlation_checks_after_row_identity": 34,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          8333,
+          938
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11013,
+          5454
+        ],
+        "nodes_entered": 20239,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1315,
+          4482
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          141,
+          38352,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 38493
+      },
+      "solutions": [
+        [
+          25,
+          94,
+          465,
+          617
+        ],
+        [
+          39,
+          222,
+          298,
+          556
+        ],
+        [
+          39,
+          278,
+          459,
+          773
+        ],
+        [
+          46,
+          46,
+          332,
+          691
+        ],
+        [
+          46,
+          339,
+          492,
+          878
+        ],
+        [
+          54,
+          351,
+          428,
+          826
+        ],
+        [
+          54,
+          805,
+          826,
+          982
+        ],
+        [
+          101,
+          332,
+          368,
+          934
+        ],
+        [
+          101,
+          801,
+          801,
+          922
+        ],
+        [
+          139,
+          183,
+          505,
+          570
+        ],
+        [
+          151,
+          523,
+          750,
+          909
+        ],
+        [
+          151,
+          637,
+          664,
+          909
+        ],
+        [
+          154,
+          826,
+          905,
+          982
+        ],
+        [
+          180,
+          278,
+          396,
+          977
+        ],
+        [
+          180,
+          556,
+          599,
+          816
+        ],
+        [
+          183,
+          302,
+          389,
+          995
+        ],
+        [
+          183,
+          389,
+          505,
+          820
+        ],
+        [
+          183,
+          570,
+          657,
+          995
+        ],
+        [
+          187,
+          564,
+          564,
+          836
+        ],
+        [
+          228,
+          317,
+          354,
+          836
+        ],
+        [
+          228,
+          424,
+          424,
+          795
+        ],
+        [
+          233,
+          404,
+          502,
+          884
+        ],
+        [
+          263,
+          263,
+          354,
+          669
+        ],
+        [
+          263,
+          366,
+          375,
+          737
+        ],
+        [
+          295,
+          637,
+          808,
+          909
+        ],
+        [
+          298,
+          396,
+          417,
+          760
+        ],
+        [
+          351,
+          531,
+          826,
+          905
+        ],
+        [
+          359,
+          604,
+          801,
+          997
+        ],
+        [
+          368,
+          404,
+          404,
+          655
+        ],
+        [
+          417,
+          619,
+          773,
+          816
+        ],
+        [
+          424,
+          493,
+          500,
+          590
+        ],
+        [
+          436,
+          750,
+          808,
+          909
+        ],
+        [
+          451,
+          598,
+          642,
+          744
+        ],
+        [
+          466,
+          564,
+          869,
+          892
+        ]
+      ],
+      "solving_normalized_multisets": 34,
+      "unordered_matrix_row_pairs_checked": 118524
+    },
+    {
+      "all_constructed_matrices_verified": true,
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "core_order": 23,
+      "exact_sorted_tuple_list_equals_independent_reference": true,
+      "hadamard_order": 92,
+      "matrix_checks": [
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "b970b00b99c19ef18fd1becb0601a4658bf78d7ceffb82bc41703d761451f5dd",
+          "normalized_sequence_masks": [
+            43,
+            339,
+            412,
+            1819
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 92,
+            "entries": 8464,
+            "order": 92,
+            "unordered_row_pairs_checked": 4186
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "18ceba9bb0044e1e7d7e560c0ec92b7174c43f69ce2aa280db986940a7afe7c1",
+          "normalized_sequence_masks": [
+            167,
+            596,
+            799,
+            1555
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 92,
+            "entries": 8464,
+            "order": 92,
+            "unordered_row_pairs_checked": 4186
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "dade022249fc0fd12248b9c52c0a6c59602f1758b8dfa2ceec543657409f0683",
+          "normalized_sequence_masks": [
+            174,
+            1076,
+            1417,
+            1772
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 92,
+            "entries": 8464,
+            "order": 92,
+            "unordered_row_pairs_checked": 4186
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "f6c13ef75edbebd6485b109200ff08c2cc5fbd4ebaba14888b1f2e423ce88af2",
+          "normalized_sequence_masks": [
+            201,
+            668,
+            750,
+            1860
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 92,
+            "entries": 8464,
+            "order": 92,
+            "unordered_row_pairs_checked": 4186
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "0208ac05076c46b8f3ee364e177eeffdb0bc9b175d77078cc1fb00121b524987",
+          "normalized_sequence_masks": [
+            211,
+            1256,
+            1509,
+            1569
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 92,
+            "entries": 8464,
+            "order": 92,
+            "unordered_row_pairs_checked": 4186
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "650ef5b5ed813122bfea44404285ccbda6e0f0861a058e1e71eba5351ec287a6",
+          "normalized_sequence_masks": [
+            309,
+            450,
+            740,
+            1516
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 92,
+            "entries": 8464,
+            "order": 92,
+            "unordered_row_pairs_checked": 4186
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "5d9568cc504e2ee077934ef1f81bc9bfb717ad1c649a2c3f4b941f4f75cc6706",
+          "normalized_sequence_masks": [
+            344,
+            1380,
+            1521,
+            1586
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 92,
+            "entries": 8464,
+            "order": 92,
+            "unordered_row_pairs_checked": 4186
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "0ee9184d08503d731fd3393b88b05b0d7e875e026e3a11d7486ecb805907e1b1",
+          "normalized_sequence_masks": [
+            527,
+            702,
+            804,
+            1130
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 92,
+            "entries": 8464,
+            "order": 92,
+            "unordered_row_pairs_checked": 4186
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "87d67efcf54a493735189244daef0b4fa8b1c13aa82fac193e0b0f39b2a943bd",
+          "normalized_sequence_masks": [
+            671,
+            752,
+            794,
+            1162
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 92,
+            "entries": 8464,
+            "order": 92,
+            "unordered_row_pairs_checked": 4186
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "b27e7bfe74938d3cc785d010f6dc2f5595335adaa85f62b0d83697b0a534a54b",
+          "normalized_sequence_masks": [
+            842,
+            1031,
+            1395,
+            1473
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 92,
+            "entries": 8464,
+            "order": 92,
+            "unordered_row_pairs_checked": 4186
+          }
+        },
+        {
+          "matrix_sha256_ascii_sign_rows_final_lf": "e4d7723b5590df67368ee1dbfd2684bbd5fe5b0436fbcb11f1794a7fffb7b467",
+          "normalized_sequence_masks": [
+            912,
+            1329,
+            1549,
+            1875
+          ],
+          "verification": {
+            "all_off_diagonal_dot_products_zero": true,
+            "arithmetic": "exact Python integers, XOR Hamming distances",
+            "diagonal_norm_squared": 92,
+            "entries": 8464,
+            "order": 92,
+            "unordered_row_pairs_checked": 4186
+          }
+        }
+      ],
+      "matrix_entries_checked": 93104,
+      "search_coverage_counts": {
+        "complete_color_assignments_entered": 127102,
+        "full_correlation_checks_after_row_identity": 11,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          10351,
+          14850
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43937,
+          127102
+        ],
+        "nodes_entered": 185862,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1787,
+          112241
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          37,
+          48136,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 48173
+      },
+      "solutions": [
+        [
+          43,
+          339,
+          412,
+          1819
+        ],
+        [
+          167,
+          596,
+          799,
+          1555
+        ],
+        [
+          174,
+          1076,
+          1417,
+          1772
+        ],
+        [
+          201,
+          668,
+          750,
+          1860
+        ],
+        [
+          211,
+          1256,
+          1509,
+          1569
+        ],
+        [
+          309,
+          450,
+          740,
+          1516
+        ],
+        [
+          344,
+          1380,
+          1521,
+          1586
+        ],
+        [
+          527,
+          702,
+          804,
+          1130
+        ],
+        [
+          671,
+          752,
+          794,
+          1162
+        ],
+        [
+          842,
+          1031,
+          1395,
+          1473
+        ],
+        [
+          912,
+          1329,
+          1549,
+          1875
+        ]
+      ],
+      "solving_normalized_multisets": 11,
+      "unordered_matrix_row_pairs_checked": 46046
+    }
+  ],
+  "schema_version": 1,
+  "search_configuration": {
+    "mode": "expanded",
+    "order_strategy": "collisions"
+  },
+  "totals": {
+    "core_orders_checked": 11,
+    "matrices_verified": 135,
+    "matrix_entries_checked": 689008,
+    "unordered_matrix_row_pairs_checked": 339854
+  },
+  "validation": "passed"
+}

@@ -1,0 +1,7896 @@
+{
+  "all_exact_tuple_lists_match_independent_unpruned_baseline": true,
+  "cores": [
+    15,
+    21,
+    23
+  ],
+  "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+  "logical_cpus_visible": 5,
+  "measured_sources_unchanged": true,
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "protocol": "sequential fresh Linux processes; rotated case order; all preparation charged; external wall includes imports/startup/JSON; RSS observed immediately after search, includes interpreter/preparation/caches and excludes later output serialization peak; no overlapping benchmark workers",
+  "python": "3.12.14",
+  "raw_runs": [
+    {
+      "case": "round2-filtered",
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 969,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 1061,
+        "pair_after_order3_energy": 2356,
+        "pair_after_row_square_feasibility": 2356,
+        "pairs_considered_after_single_filters": 3321,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 1061
+      },
+      "enabled_filters": "all",
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.050407084000198665,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 14336,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0023548610001853376,
+        "search": 0.004769793999912508,
+        "total_in_process": 0.007124655000097846
+      }
+    },
+    {
+      "case": "structural-leaf",
+      "core_order": 15,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 715,
+        "full_correlation_checks_after_row_identity": 204,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715
+        ],
+        "nodes_entered": 977,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.045798192000347626,
+      "method": "structural-colors",
+      "mode": "leaf",
+      "process_peak_rss_kib_observed_after_search": 13824,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.00018871300017053727,
+        "search": 0.003703674000007595,
+        "total_in_process": 0.0038923870001781324
+      }
+    },
+    {
+      "case": "structural-basic",
+      "core_order": 15,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 710,
+        "full_correlation_checks_after_row_identity": 14,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          190
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          710
+        ],
+        "nodes_entered": 972,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          506
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 5
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.06333123700005672,
+      "method": "structural-colors",
+      "mode": "all",
+      "process_peak_rss_kib_observed_after_search": 13824,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.00026735099982033717,
+        "search": 0.018687505000343663,
+        "total_in_process": 0.018954856000164
+      }
+    },
+    {
+      "case": "phase-natural",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "core_order": 15,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 635,
+        "full_correlation_checks_after_row_identity": 14,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          18,
+          171
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          635
+        ],
+        "nodes_entered": 897,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          450
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          80,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 80
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 190,
+          "hits": 2035,
+          "maxsize": 4096,
+          "misses": 190
+        },
+        "row": {
+          "currsize": 402,
+          "hits": 495,
+          "maxsize": 4096,
+          "misses": 402
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.07959710000022824,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "natural",
+      "process_peak_rss_kib_observed_after_search": 14336,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.000445256999682897,
+        "search": 0.0318685130000631,
+        "total_in_process": 0.032313769999746
+      }
+    },
+    {
+      "case": "phase-collisions",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        5
+      ],
+      "core_order": 15,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 216,
+        "full_correlation_checks_after_row_identity": 14,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          108,
+          74
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          216
+        ],
+        "nodes_entered": 478,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23,
+          128
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          499,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 499
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 130,
+          "hits": 1463,
+          "maxsize": 4096,
+          "misses": 130
+        },
+        "row": {
+          "currsize": 224,
+          "hits": 254,
+          "maxsize": 4096,
+          "misses": 224
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.06330803700029719,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "collisions",
+      "process_peak_rss_kib_observed_after_search": 14080,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.00045691599962083274,
+        "search": 0.01859565700033272,
+        "total_in_process": 0.019052572999953554
+      }
+    },
+    {
+      "case": "structural-leaf",
+      "core_order": 15,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 715,
+        "full_correlation_checks_after_row_identity": 204,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715
+        ],
+        "nodes_entered": 977,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.048808827999891946,
+      "method": "structural-colors",
+      "mode": "leaf",
+      "process_peak_rss_kib_observed_after_search": 13824,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.00018330500006413786,
+        "search": 0.0038563130001421086,
+        "total_in_process": 0.0040396180002062465
+      }
+    },
+    {
+      "case": "structural-basic",
+      "core_order": 15,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 710,
+        "full_correlation_checks_after_row_identity": 14,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          190
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          710
+        ],
+        "nodes_entered": 972,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          506
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 5
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.06984834200011392,
+      "method": "structural-colors",
+      "mode": "all",
+      "process_peak_rss_kib_observed_after_search": 13824,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.00017807700032790308,
+        "search": 0.018801998000071762,
+        "total_in_process": 0.018980075000399665
+      }
+    },
+    {
+      "case": "phase-natural",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "core_order": 15,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 635,
+        "full_correlation_checks_after_row_identity": 14,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          18,
+          171
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          635
+        ],
+        "nodes_entered": 897,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          450
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          80,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 80
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 190,
+          "hits": 2035,
+          "maxsize": 4096,
+          "misses": 190
+        },
+        "row": {
+          "currsize": 402,
+          "hits": 495,
+          "maxsize": 4096,
+          "misses": 402
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.08026079699993716,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "natural",
+      "process_peak_rss_kib_observed_after_search": 14336,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.00033474199972260976,
+        "search": 0.03253796800026976,
+        "total_in_process": 0.03287270999999237
+      }
+    },
+    {
+      "case": "phase-collisions",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        5
+      ],
+      "core_order": 15,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 216,
+        "full_correlation_checks_after_row_identity": 14,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          108,
+          74
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          216
+        ],
+        "nodes_entered": 478,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23,
+          128
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          499,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 499
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 130,
+          "hits": 1463,
+          "maxsize": 4096,
+          "misses": 130
+        },
+        "row": {
+          "currsize": 224,
+          "hits": 254,
+          "maxsize": 4096,
+          "misses": 224
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.06636979499990048,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "collisions",
+      "process_peak_rss_kib_observed_after_search": 14080,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0006227040003068396,
+        "search": 0.018648156999915955,
+        "total_in_process": 0.019270861000222794
+      }
+    },
+    {
+      "case": "round2-filtered",
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 969,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 1061,
+        "pair_after_order3_energy": 2356,
+        "pair_after_row_square_feasibility": 2356,
+        "pairs_considered_after_single_filters": 3321,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 1061
+      },
+      "enabled_filters": "all",
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.05428613399999449,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 14336,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0021044459999757237,
+        "search": 0.005095312000321428,
+        "total_in_process": 0.007199758000297152
+      }
+    },
+    {
+      "case": "structural-basic",
+      "core_order": 15,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 710,
+        "full_correlation_checks_after_row_identity": 14,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          190
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          710
+        ],
+        "nodes_entered": 972,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          506
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 5
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.06569827800012717,
+      "method": "structural-colors",
+      "mode": "all",
+      "process_peak_rss_kib_observed_after_search": 13824,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.00017716599995765137,
+        "search": 0.01643455700013874,
+        "total_in_process": 0.01661172300009639
+      }
+    },
+    {
+      "case": "phase-natural",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "core_order": 15,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 635,
+        "full_correlation_checks_after_row_identity": 14,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          18,
+          171
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          635
+        ],
+        "nodes_entered": 897,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          450
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          80,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 80
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 190,
+          "hits": 2035,
+          "maxsize": 4096,
+          "misses": 190
+        },
+        "row": {
+          "currsize": 402,
+          "hits": 495,
+          "maxsize": 4096,
+          "misses": 402
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.07460389900006703,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "natural",
+      "process_peak_rss_kib_observed_after_search": 14208,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.00035449200004222803,
+        "search": 0.025952291000066907,
+        "total_in_process": 0.026306783000109135
+      }
+    },
+    {
+      "case": "phase-collisions",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        5
+      ],
+      "core_order": 15,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 216,
+        "full_correlation_checks_after_row_identity": 14,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          108,
+          74
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          216
+        ],
+        "nodes_entered": 478,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23,
+          128
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          499,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 499
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 130,
+          "hits": 1463,
+          "maxsize": 4096,
+          "misses": 130
+        },
+        "row": {
+          "currsize": 224,
+          "hits": 254,
+          "maxsize": 4096,
+          "misses": 224
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.0704370939997716,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "collisions",
+      "process_peak_rss_kib_observed_after_search": 14080,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0004863489998570003,
+        "search": 0.02634872099997665,
+        "total_in_process": 0.02683506999983365
+      }
+    },
+    {
+      "case": "round2-filtered",
+      "core_order": 15,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 969,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 1061,
+        "pair_after_order3_energy": 2356,
+        "pair_after_row_square_feasibility": 2356,
+        "pairs_considered_after_single_filters": 3321,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 1061
+      },
+      "enabled_filters": "all",
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.05069630500020139,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 14336,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.0021175660003791563,
+        "search": 0.004873077999945963,
+        "total_in_process": 0.006990644000325119
+      }
+    },
+    {
+      "case": "structural-leaf",
+      "core_order": 15,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 715,
+        "full_correlation_checks_after_row_identity": 204,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715
+        ],
+        "nodes_entered": 977,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.047835549999945215,
+      "method": "structural-colors",
+      "mode": "leaf",
+      "process_peak_rss_kib_observed_after_search": 13824,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "16e4cb6c2c7e6e8839e1e879d512c412f1820e862c2957a0789c2ef9627bd243",
+      "timing_seconds": {
+        "preprocessing": 0.00017866799998955685,
+        "search": 0.00400265300004321,
+        "total_in_process": 0.004181321000032767
+      }
+    },
+    {
+      "case": "round2-filtered",
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 24664,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 24985,
+        "pair_after_order3_energy": 103649,
+        "pair_after_row_square_feasibility": 112602,
+        "pairs_considered_after_single_filters": 157080,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 24985
+      },
+      "enabled_filters": "all",
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.23445891900018978,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 24552,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.02426738399981332,
+        "search": 0.16567325200003324,
+        "total_in_process": 0.18994063599984656
+      }
+    },
+    {
+      "case": "structural-leaf",
+      "core_order": 21,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 43947,
+        "full_correlation_checks_after_row_identity": 7590,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43947
+        ],
+        "nodes_entered": 58770,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.368957182000031,
+      "method": "structural-colors",
+      "mode": "leaf",
+      "process_peak_rss_kib_observed_after_search": 13952,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.00032228300005954225,
+        "search": 0.32640265800000634,
+        "total_in_process": 0.3267249410000659
+      }
+    },
+    {
+      "case": "structural-basic",
+      "core_order": 21,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 43877,
+        "full_correlation_checks_after_row_identity": 34,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          7554
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43877
+        ],
+        "nodes_entered": 58700,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          36289
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          70,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 70
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 1.5680997320000643,
+      "method": "structural-colors",
+      "mode": "all",
+      "process_peak_rss_kib_observed_after_search": 13952,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.0003259689997321402,
+        "search": 1.5265803649999725,
+        "total_in_process": 1.5269063339997047
+      }
+    },
+    {
+      "case": "phase-natural",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "core_order": 21,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 34468,
+        "full_correlation_checks_after_row_identity": 34,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2341,
+          6123
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          34468
+        ],
+        "nodes_entered": 49291,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          70,
+          28311
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9479,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 9479
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 1393,
+          "hits": 150234,
+          "maxsize": 4096,
+          "misses": 1393
+        },
+        "row": {
+          "currsize": 4096,
+          "hits": 36762,
+          "maxsize": 4096,
+          "misses": 12529
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 2.0092843259999427,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "natural",
+      "process_peak_rss_kib_observed_after_search": 20864,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.0008881819999260188,
+        "search": 1.935449134999999,
+        "total_in_process": 1.936337316999925
+      }
+    },
+    {
+      "case": "phase-collisions",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        7
+      ],
+      "core_order": 21,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 5454,
+        "full_correlation_checks_after_row_identity": 34,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          8333,
+          938
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11013,
+          5454
+        ],
+        "nodes_entered": 20239,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1315,
+          4482
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          141,
+          38352,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 38493
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 1415,
+          "hits": 90430,
+          "maxsize": 4096,
+          "misses": 1415
+        },
+        "row": {
+          "currsize": 3657,
+          "hits": 16582,
+          "maxsize": 4096,
+          "misses": 3657
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 1.1325627559999702,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "collisions",
+      "process_peak_rss_kib_observed_after_search": 19712,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.0009338510003544798,
+        "search": 1.0567415969999274,
+        "total_in_process": 1.057675448000282
+      }
+    },
+    {
+      "case": "structural-leaf",
+      "core_order": 21,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 43947,
+        "full_correlation_checks_after_row_identity": 7590,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43947
+        ],
+        "nodes_entered": 58770,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.3523389599999973,
+      "method": "structural-colors",
+      "mode": "leaf",
+      "process_peak_rss_kib_observed_after_search": 13952,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.0003439350002736319,
+        "search": 0.3104818520000663,
+        "total_in_process": 0.3108257870003399
+      }
+    },
+    {
+      "case": "structural-basic",
+      "core_order": 21,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 43877,
+        "full_correlation_checks_after_row_identity": 34,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          7554
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43877
+        ],
+        "nodes_entered": 58700,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          36289
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          70,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 70
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 1.6628303130000859,
+      "method": "structural-colors",
+      "mode": "all",
+      "process_peak_rss_kib_observed_after_search": 13952,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.0004512769996836141,
+        "search": 1.6149139930003003,
+        "total_in_process": 1.6153652699999839
+      }
+    },
+    {
+      "case": "phase-natural",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "core_order": 21,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 34468,
+        "full_correlation_checks_after_row_identity": 34,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2341,
+          6123
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          34468
+        ],
+        "nodes_entered": 49291,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          70,
+          28311
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9479,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 9479
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 1393,
+          "hits": 150234,
+          "maxsize": 4096,
+          "misses": 1393
+        },
+        "row": {
+          "currsize": 4096,
+          "hits": 36762,
+          "maxsize": 4096,
+          "misses": 12529
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 2.088050062000093,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "natural",
+      "process_peak_rss_kib_observed_after_search": 20864,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.0006912369999554357,
+        "search": 2.0273189489998913,
+        "total_in_process": 2.0280101859998467
+      }
+    },
+    {
+      "case": "phase-collisions",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        7
+      ],
+      "core_order": 21,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 5454,
+        "full_correlation_checks_after_row_identity": 34,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          8333,
+          938
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11013,
+          5454
+        ],
+        "nodes_entered": 20239,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1315,
+          4482
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          141,
+          38352,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 38493
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 1415,
+          "hits": 90430,
+          "maxsize": 4096,
+          "misses": 1415
+        },
+        "row": {
+          "currsize": 3657,
+          "hits": 16582,
+          "maxsize": 4096,
+          "misses": 3657
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 1.1742866999998114,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "collisions",
+      "process_peak_rss_kib_observed_after_search": 19712,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.0010172150000471447,
+        "search": 1.1099624580001546,
+        "total_in_process": 1.1109796730002017
+      }
+    },
+    {
+      "case": "round2-filtered",
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 24664,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 24985,
+        "pair_after_order3_energy": 103649,
+        "pair_after_row_square_feasibility": 112602,
+        "pairs_considered_after_single_filters": 157080,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 24985
+      },
+      "enabled_filters": "all",
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.26906640000015614,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 24552,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.025440051999794377,
+        "search": 0.19443847100001221,
+        "total_in_process": 0.2198785229998066
+      }
+    },
+    {
+      "case": "structural-basic",
+      "core_order": 21,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 43877,
+        "full_correlation_checks_after_row_identity": 34,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          7554
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43877
+        ],
+        "nodes_entered": 58700,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          36289
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          70,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 70
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 1.6498829810002462,
+      "method": "structural-colors",
+      "mode": "all",
+      "process_peak_rss_kib_observed_after_search": 13952,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.00032687000020814594,
+        "search": 1.602138341999762,
+        "total_in_process": 1.60246521199997
+      }
+    },
+    {
+      "case": "phase-natural",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "core_order": 21,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 34468,
+        "full_correlation_checks_after_row_identity": 34,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2341,
+          6123
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          34468
+        ],
+        "nodes_entered": 49291,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          70,
+          28311
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9479,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 9479
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 1393,
+          "hits": 150234,
+          "maxsize": 4096,
+          "misses": 1393
+        },
+        "row": {
+          "currsize": 4096,
+          "hits": 36762,
+          "maxsize": 4096,
+          "misses": 12529
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 1.9677491319998808,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "natural",
+      "process_peak_rss_kib_observed_after_search": 20864,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.0006401599998753227,
+        "search": 1.899139598000147,
+        "total_in_process": 1.8997797580000224
+      }
+    },
+    {
+      "case": "phase-collisions",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        7
+      ],
+      "core_order": 21,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 5454,
+        "full_correlation_checks_after_row_identity": 34,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          8333,
+          938
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11013,
+          5454
+        ],
+        "nodes_entered": 20239,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1315,
+          4482
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          141,
+          38352,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 38493
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 1415,
+          "hits": 90430,
+          "maxsize": 4096,
+          "misses": 1415
+        },
+        "row": {
+          "currsize": 3657,
+          "hits": 16582,
+          "maxsize": 4096,
+          "misses": 3657
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 1.1138867730001039,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "collisions",
+      "process_peak_rss_kib_observed_after_search": 19712,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.0009279420000893879,
+        "search": 1.0656283539997276,
+        "total_in_process": 1.066556295999817
+      }
+    },
+    {
+      "case": "round2-filtered",
+      "core_order": 21,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 24664,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 24985,
+        "pair_after_order3_energy": 103649,
+        "pair_after_row_square_feasibility": 112602,
+        "pairs_considered_after_single_filters": 157080,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 24985
+      },
+      "enabled_filters": "all",
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.24641490100020746,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 24552,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.026950908999879175,
+        "search": 0.17314369600035207,
+        "total_in_process": 0.20009460500023124
+      }
+    },
+    {
+      "case": "structural-leaf",
+      "core_order": 21,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 43947,
+        "full_correlation_checks_after_row_identity": 7590,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43947
+        ],
+        "nodes_entered": 58770,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.3880581200000961,
+      "method": "structural-colors",
+      "mode": "leaf",
+      "process_peak_rss_kib_observed_after_search": 13952,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "cd6b1807e5c786cff4519118c08bf9c874d690fc47f4c105aa89d717f1371651",
+      "timing_seconds": {
+        "preprocessing": 0.00036646900025516516,
+        "search": 0.33902276599974357,
+        "total_in_process": 0.33938923499999873
+      }
+    },
+    {
+      "case": "round2-filtered",
+      "core_order": 23,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 58982,
+        "joined_pair_combinations_before_sorted_order_test": 66,
+        "pair_after_integer_probes": 58982,
+        "pair_after_order3_energy": 305712,
+        "pair_after_row_square_feasibility": 305712,
+        "pairs_considered_after_single_filters": 468996,
+        "raw_normalized_sequences": 2048,
+        "single_after_integer_probes": 968,
+        "single_after_order3_energy": 1749,
+        "single_after_row_square_feasibility": 1749,
+        "solving_normalized_multisets": 11,
+        "stored_pairs": 58982
+      },
+      "enabled_filters": "all",
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.6202511169999525,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 39680,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "ae3904664d4eaa0a0fcdfd31fa46fda43f4b2c32a4bb0c62cbedfd69639e6ec2",
+      "timing_seconds": {
+        "preprocessing": 0.06377884899984565,
+        "search": 0.5053804350000064,
+        "total_in_process": 0.569159283999852
+      }
+    },
+    {
+      "case": "structural-leaf",
+      "core_order": 23,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 175275,
+        "full_correlation_checks_after_row_identity": 19217,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43947,
+          175275
+        ],
+        "nodes_entered": 234045,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 1.5687526229999094,
+      "method": "structural-colors",
+      "mode": "leaf",
+      "process_peak_rss_kib_observed_after_search": 14080,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "ae3904664d4eaa0a0fcdfd31fa46fda43f4b2c32a4bb0c62cbedfd69639e6ec2",
+      "timing_seconds": {
+        "preprocessing": 0.0003392189996702655,
+        "search": 1.521271495000292,
+        "total_in_process": 1.5216107139999622
+      }
+    },
+    {
+      "case": "structural-basic",
+      "core_order": 23,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 173908,
+        "full_correlation_checks_after_row_identity": 11,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          18,
+          19203
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43945,
+          173908
+        ],
+        "nodes_entered": 232676,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          326,
+          154694
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          1362,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 1367
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 5.612398836000011,
+      "method": "structural-colors",
+      "mode": "all",
+      "process_peak_rss_kib_observed_after_search": 14080,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "ae3904664d4eaa0a0fcdfd31fa46fda43f4b2c32a4bb0c62cbedfd69639e6ec2",
+      "timing_seconds": {
+        "preprocessing": 0.0008059490000960068,
+        "search": 5.553164336000009,
+        "total_in_process": 5.553970285000105
+      }
+    },
+    {
+      "case": "phase-natural",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "core_order": 23,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 127102,
+        "full_correlation_checks_after_row_identity": 11,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          10351,
+          14850
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43937,
+          127102
+        ],
+        "nodes_entered": 185862,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1787,
+          112241
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          37,
+          48136,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 48173
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 2690,
+          "hits": 606830,
+          "maxsize": 4096,
+          "misses": 2690
+        },
+        "row": {
+          "currsize": 4096,
+          "hits": 132341,
+          "maxsize": 4096,
+          "misses": 53521
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 8.327629841000089,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "natural",
+      "process_peak_rss_kib_observed_after_search": 22268,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "ae3904664d4eaa0a0fcdfd31fa46fda43f4b2c32a4bb0c62cbedfd69639e6ec2",
+      "timing_seconds": {
+        "preprocessing": 0.0008742710001570231,
+        "search": 8.271408341000097,
+        "total_in_process": 8.272282612000254
+      }
+    },
+    {
+      "case": "phase-collisions",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "core_order": 23,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 127102,
+        "full_correlation_checks_after_row_identity": 11,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          10351,
+          14850
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43937,
+          127102
+        ],
+        "nodes_entered": 185862,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1787,
+          112241
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          37,
+          48136,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 48173
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 2690,
+          "hits": 606830,
+          "maxsize": 4096,
+          "misses": 2690
+        },
+        "row": {
+          "currsize": 4096,
+          "hits": 132341,
+          "maxsize": 4096,
+          "misses": 53521
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 8.513735773999997,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "collisions",
+      "process_peak_rss_kib_observed_after_search": 22272,
+      "repetition": 1,
+      "solution_tuple_json_sha256": "ae3904664d4eaa0a0fcdfd31fa46fda43f4b2c32a4bb0c62cbedfd69639e6ec2",
+      "timing_seconds": {
+        "preprocessing": 0.0010571049997452064,
+        "search": 8.459309905999817,
+        "total_in_process": 8.460367010999562
+      }
+    },
+    {
+      "case": "structural-leaf",
+      "core_order": 23,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 175275,
+        "full_correlation_checks_after_row_identity": 19217,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43947,
+          175275
+        ],
+        "nodes_entered": 234045,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 1.5120826229999693,
+      "method": "structural-colors",
+      "mode": "leaf",
+      "process_peak_rss_kib_observed_after_search": 14080,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "ae3904664d4eaa0a0fcdfd31fa46fda43f4b2c32a4bb0c62cbedfd69639e6ec2",
+      "timing_seconds": {
+        "preprocessing": 0.0003439360002630565,
+        "search": 1.4685134729998026,
+        "total_in_process": 1.4688574090000657
+      }
+    },
+    {
+      "case": "structural-basic",
+      "core_order": 23,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 173908,
+        "full_correlation_checks_after_row_identity": 11,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          18,
+          19203
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43945,
+          173908
+        ],
+        "nodes_entered": 232676,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          326,
+          154694
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          1362,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 1367
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 5.95175931599988,
+      "method": "structural-colors",
+      "mode": "all",
+      "process_peak_rss_kib_observed_after_search": 14080,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "ae3904664d4eaa0a0fcdfd31fa46fda43f4b2c32a4bb0c62cbedfd69639e6ec2",
+      "timing_seconds": {
+        "preprocessing": 0.00033585399978619535,
+        "search": 5.907479061000231,
+        "total_in_process": 5.907814915000017
+      }
+    },
+    {
+      "case": "phase-natural",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "core_order": 23,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 127102,
+        "full_correlation_checks_after_row_identity": 11,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          10351,
+          14850
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43937,
+          127102
+        ],
+        "nodes_entered": 185862,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1787,
+          112241
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          37,
+          48136,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 48173
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 2690,
+          "hits": 606830,
+          "maxsize": 4096,
+          "misses": 2690
+        },
+        "row": {
+          "currsize": 4096,
+          "hits": 132341,
+          "maxsize": 4096,
+          "misses": 53521
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 9.098417272000006,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "natural",
+      "process_peak_rss_kib_observed_after_search": 22264,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "ae3904664d4eaa0a0fcdfd31fa46fda43f4b2c32a4bb0c62cbedfd69639e6ec2",
+      "timing_seconds": {
+        "preprocessing": 0.0010656280001057894,
+        "search": 9.025177907999932,
+        "total_in_process": 9.026243536000038
+      }
+    },
+    {
+      "case": "phase-collisions",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "core_order": 23,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 127102,
+        "full_correlation_checks_after_row_identity": 11,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          10351,
+          14850
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43937,
+          127102
+        ],
+        "nodes_entered": 185862,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1787,
+          112241
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          37,
+          48136,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 48173
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 2690,
+          "hits": 606830,
+          "maxsize": 4096,
+          "misses": 2690
+        },
+        "row": {
+          "currsize": 4096,
+          "hits": 132341,
+          "maxsize": 4096,
+          "misses": 53521
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 8.678690739000103,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "collisions",
+      "process_peak_rss_kib_observed_after_search": 22272,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "ae3904664d4eaa0a0fcdfd31fa46fda43f4b2c32a4bb0c62cbedfd69639e6ec2",
+      "timing_seconds": {
+        "preprocessing": 0.0013507349999599683,
+        "search": 8.618265916999917,
+        "total_in_process": 8.619616651999877
+      }
+    },
+    {
+      "case": "round2-filtered",
+      "core_order": 23,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 58982,
+        "joined_pair_combinations_before_sorted_order_test": 66,
+        "pair_after_integer_probes": 58982,
+        "pair_after_order3_energy": 305712,
+        "pair_after_row_square_feasibility": 305712,
+        "pairs_considered_after_single_filters": 468996,
+        "raw_normalized_sequences": 2048,
+        "single_after_integer_probes": 968,
+        "single_after_order3_energy": 1749,
+        "single_after_row_square_feasibility": 1749,
+        "solving_normalized_multisets": 11,
+        "stored_pairs": 58982
+      },
+      "enabled_filters": "all",
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.5889721290000125,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 39680,
+      "repetition": 2,
+      "solution_tuple_json_sha256": "ae3904664d4eaa0a0fcdfd31fa46fda43f4b2c32a4bb0c62cbedfd69639e6ec2",
+      "timing_seconds": {
+        "preprocessing": 0.055750611999883404,
+        "search": 0.48823206299994126,
+        "total_in_process": 0.5439826749998247
+      }
+    },
+    {
+      "case": "structural-basic",
+      "core_order": 23,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 173908,
+        "full_correlation_checks_after_row_identity": 11,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          18,
+          19203
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43945,
+          173908
+        ],
+        "nodes_entered": 232676,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          326,
+          154694
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          1362,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 1367
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 5.773086303000127,
+      "method": "structural-colors",
+      "mode": "all",
+      "process_peak_rss_kib_observed_after_search": 14080,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "ae3904664d4eaa0a0fcdfd31fa46fda43f4b2c32a4bb0c62cbedfd69639e6ec2",
+      "timing_seconds": {
+        "preprocessing": 0.00037232199974823743,
+        "search": 5.725208889999976,
+        "total_in_process": 5.7255812119997245
+      }
+    },
+    {
+      "case": "phase-natural",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "core_order": 23,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 127102,
+        "full_correlation_checks_after_row_identity": 11,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          10351,
+          14850
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43937,
+          127102
+        ],
+        "nodes_entered": 185862,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1787,
+          112241
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          37,
+          48136,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 48173
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 2690,
+          "hits": 606830,
+          "maxsize": 4096,
+          "misses": 2690
+        },
+        "row": {
+          "currsize": 4096,
+          "hits": 132341,
+          "maxsize": 4096,
+          "misses": 53521
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 8.680590772999949,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "natural",
+      "process_peak_rss_kib_observed_after_search": 22272,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "ae3904664d4eaa0a0fcdfd31fa46fda43f4b2c32a4bb0c62cbedfd69639e6ec2",
+      "timing_seconds": {
+        "preprocessing": 0.0008714170003258914,
+        "search": 8.604350169999634,
+        "total_in_process": 8.60522158699996
+      }
+    },
+    {
+      "case": "phase-collisions",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "core_order": 23,
+      "count_semantics": "same sorted normalized row-mask multisets as editions1/2; phases grouped only as a necessary relaxation",
+      "counts": {
+        "complete_color_assignments_entered": 127102,
+        "full_correlation_checks_after_row_identity": 11,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          10351,
+          14850
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43937,
+          127102
+        ],
+        "nodes_entered": 185862,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1787,
+          112241
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          37,
+          48136,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 48173
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 2690,
+          "hits": 606830,
+          "maxsize": 4096,
+          "misses": 2690
+        },
+        "row": {
+          "currsize": 4096,
+          "hits": 132341,
+          "maxsize": 4096,
+          "misses": 53521
+        }
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 8.674294200000077,
+      "method": "structural-phases",
+      "mode": "expanded",
+      "order_strategy": "collisions",
+      "process_peak_rss_kib_observed_after_search": 22272,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "ae3904664d4eaa0a0fcdfd31fa46fda43f4b2c32a4bb0c62cbedfd69639e6ec2",
+      "timing_seconds": {
+        "preprocessing": 0.0010603099999570986,
+        "search": 8.6171435440001,
+        "total_in_process": 8.618203854000058
+      }
+    },
+    {
+      "case": "round2-filtered",
+      "core_order": 23,
+      "count_domain": "original first-entry-positive symmetric sequence masks; sorted four-multisets; repetition allowed",
+      "counts": {
+        "bucket_keys": 58982,
+        "joined_pair_combinations_before_sorted_order_test": 66,
+        "pair_after_integer_probes": 58982,
+        "pair_after_order3_energy": 305712,
+        "pair_after_row_square_feasibility": 305712,
+        "pairs_considered_after_single_filters": 468996,
+        "raw_normalized_sequences": 2048,
+        "single_after_integer_probes": 968,
+        "single_after_order3_energy": 1749,
+        "single_after_row_square_feasibility": 1749,
+        "solving_normalized_multisets": 11,
+        "stored_pairs": 58982
+      },
+      "enabled_filters": "all",
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 0.6098869359998389,
+      "memory_measurement": "Linux ru_maxrss, entire fresh worker process including interpreter and preprocessing",
+      "method": "filtered-mitm",
+      "process_peak_rss_kib": 39680,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "ae3904664d4eaa0a0fcdfd31fa46fda43f4b2c32a4bb0c62cbedfd69639e6ec2",
+      "timing_seconds": {
+        "preprocessing": 0.0530026600004021,
+        "search": 0.5144562379996387,
+        "total_in_process": 0.5674588980000408
+      }
+    },
+    {
+      "case": "structural-leaf",
+      "core_order": 23,
+      "count_semantics": "sorted original normalized symmetric row-mask multisets; RGS quotients exactly row permutations, with repetitions allowed",
+      "counts": {
+        "complete_color_assignments_entered": 175275,
+        "full_correlation_checks_after_row_identity": 19217,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43947,
+          175275
+        ],
+        "nodes_entered": 234045,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "exact_independent_tuple_list_equality": true,
+      "external_process_wall_seconds": 1.538409195999975,
+      "method": "structural-colors",
+      "mode": "leaf",
+      "process_peak_rss_kib_observed_after_search": 14080,
+      "repetition": 3,
+      "solution_tuple_json_sha256": "ae3904664d4eaa0a0fcdfd31fa46fda43f4b2c32a4bb0c62cbedfd69639e6ec2",
+      "timing_seconds": {
+        "preprocessing": 0.0003646760001174698,
+        "search": 1.4932204659999115,
+        "total_in_process": 1.493585142000029
+      }
+    }
+  ],
+  "repetitions": 3,
+  "single_comparator_scope": "eligible row generation only; round2 preparation also builds full row profiles for later pair search, prefix comparators do not; these are not equal-work quadruple runtimes",
+  "single_generation_raw_runs": [
+    {
+      "case": "round2-preparation",
+      "core_order": 15,
+      "counts": {
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112
+      },
+      "elapsed_seconds": 0.0027744600001824438,
+      "eligible_mask_json_sha256": "b8beb3d7217cbc68ea85b4cc94744623b3e536d96f41510dbd4acc0907e3a84d",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.04545486400002119,
+      "process_peak_rss_kib_observed_after_search": 13952,
+      "repetition": 1
+    },
+    {
+      "case": "prefix-row",
+      "core_order": 15,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 81,
+        "leaf_checks_reached": 112,
+        "leaf_rejected_by_stage": {
+          "order3": 7,
+          "row": 0,
+          "triangular": 24
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          124
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 14,
+          "triangular": 0
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            12
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 251,
+          "triangular": 0
+        },
+        "nodes_visited": 251,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 16,
+          "triangular": 0
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 2,
+          "triangular": 0
+        },
+        "raw_original_masks": 128,
+        "unpruned_full_binary_tree_nodes": 255
+      },
+      "elapsed_seconds": 0.021766293999917252,
+      "eligible_mask_json_sha256": "b8beb3d7217cbc68ea85b4cc94744623b3e536d96f41510dbd4acc0907e3a84d",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.06744486800016603,
+      "process_peak_rss_kib_observed_after_search": 14464,
+      "repetition": 1
+    },
+    {
+      "case": "prefix-all",
+      "core_order": 15,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 81,
+        "leaf_checks_reached": 81,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 0
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          62,
+          116
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 6,
+          "row": 14,
+          "triangular": 20
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            5
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            12
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            18
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 227,
+          "order3": 227,
+          "row": 241,
+          "triangular": 221
+        },
+        "nodes_visited": 241,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 7,
+          "row": 16,
+          "triangular": 24
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 1,
+          "row": 2,
+          "triangular": 2
+        },
+        "raw_original_masks": 128,
+        "unpruned_full_binary_tree_nodes": 255
+      },
+      "elapsed_seconds": 0.029010568000103376,
+      "eligible_mask_json_sha256": "b8beb3d7217cbc68ea85b4cc94744623b3e536d96f41510dbd4acc0907e3a84d",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.07469175500000347,
+      "process_peak_rss_kib_observed_after_search": 14976,
+      "repetition": 1
+    },
+    {
+      "case": "prefix-row",
+      "core_order": 15,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 81,
+        "leaf_checks_reached": 112,
+        "leaf_rejected_by_stage": {
+          "order3": 7,
+          "row": 0,
+          "triangular": 24
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          124
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 14,
+          "triangular": 0
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            12
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 251,
+          "triangular": 0
+        },
+        "nodes_visited": 251,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 16,
+          "triangular": 0
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 2,
+          "triangular": 0
+        },
+        "raw_original_masks": 128,
+        "unpruned_full_binary_tree_nodes": 255
+      },
+      "elapsed_seconds": 0.020158291999905487,
+      "eligible_mask_json_sha256": "b8beb3d7217cbc68ea85b4cc94744623b3e536d96f41510dbd4acc0907e3a84d",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.06795254000007844,
+      "process_peak_rss_kib_observed_after_search": 14464,
+      "repetition": 2
+    },
+    {
+      "case": "prefix-all",
+      "core_order": 15,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 81,
+        "leaf_checks_reached": 81,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 0
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          62,
+          116
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 6,
+          "row": 14,
+          "triangular": 20
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            5
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            12
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            18
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 227,
+          "order3": 227,
+          "row": 241,
+          "triangular": 221
+        },
+        "nodes_visited": 241,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 7,
+          "row": 16,
+          "triangular": 24
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 1,
+          "row": 2,
+          "triangular": 2
+        },
+        "raw_original_masks": 128,
+        "unpruned_full_binary_tree_nodes": 255
+      },
+      "elapsed_seconds": 0.027909276000173122,
+      "eligible_mask_json_sha256": "b8beb3d7217cbc68ea85b4cc94744623b3e536d96f41510dbd4acc0907e3a84d",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.07414129099970523,
+      "process_peak_rss_kib_observed_after_search": 14976,
+      "repetition": 2
+    },
+    {
+      "case": "round2-preparation",
+      "core_order": 15,
+      "counts": {
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112
+      },
+      "elapsed_seconds": 0.0029866989998481586,
+      "eligible_mask_json_sha256": "b8beb3d7217cbc68ea85b4cc94744623b3e536d96f41510dbd4acc0907e3a84d",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.04359190500008481,
+      "process_peak_rss_kib_observed_after_search": 13952,
+      "repetition": 2
+    },
+    {
+      "case": "prefix-all",
+      "core_order": 15,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 81,
+        "leaf_checks_reached": 81,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 0
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          62,
+          116
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 6,
+          "row": 14,
+          "triangular": 20
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            5
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            12
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            18
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 227,
+          "order3": 227,
+          "row": 241,
+          "triangular": 221
+        },
+        "nodes_visited": 241,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 7,
+          "row": 16,
+          "triangular": 24
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 1,
+          "row": 2,
+          "triangular": 2
+        },
+        "raw_original_masks": 128,
+        "unpruned_full_binary_tree_nodes": 255
+      },
+      "elapsed_seconds": 0.029944398000225192,
+      "eligible_mask_json_sha256": "b8beb3d7217cbc68ea85b4cc94744623b3e536d96f41510dbd4acc0907e3a84d",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.07697973699987415,
+      "process_peak_rss_kib_observed_after_search": 14976,
+      "repetition": 3
+    },
+    {
+      "case": "round2-preparation",
+      "core_order": 15,
+      "counts": {
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112
+      },
+      "elapsed_seconds": 0.0026455369998075184,
+      "eligible_mask_json_sha256": "b8beb3d7217cbc68ea85b4cc94744623b3e536d96f41510dbd4acc0907e3a84d",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.0436370329998681,
+      "process_peak_rss_kib_observed_after_search": 13952,
+      "repetition": 3
+    },
+    {
+      "case": "prefix-row",
+      "core_order": 15,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 81,
+        "leaf_checks_reached": 112,
+        "leaf_rejected_by_stage": {
+          "order3": 7,
+          "row": 0,
+          "triangular": 24
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          124
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 14,
+          "triangular": 0
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            12
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 251,
+          "triangular": 0
+        },
+        "nodes_visited": 251,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 16,
+          "triangular": 0
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 2,
+          "triangular": 0
+        },
+        "raw_original_masks": 128,
+        "unpruned_full_binary_tree_nodes": 255
+      },
+      "elapsed_seconds": 0.019765612999890436,
+      "eligible_mask_json_sha256": "b8beb3d7217cbc68ea85b4cc94744623b3e536d96f41510dbd4acc0907e3a84d",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.06960814100011703,
+      "process_peak_rss_kib_observed_after_search": 14464,
+      "repetition": 3
+    },
+    {
+      "case": "round2-preparation",
+      "core_order": 21,
+      "counts": {
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912
+      },
+      "elapsed_seconds": 0.02594105399975888,
+      "eligible_mask_json_sha256": "9c9e51f1c876f07b6c0525ec76554fe10c8ad23aaed59828c0bdbf56cec67109",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.07817104900004779,
+      "process_peak_rss_kib_observed_after_search": 14592,
+      "repetition": 1
+    },
+    {
+      "case": "prefix-row",
+      "core_order": 21,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 560,
+        "leaf_checks_reached": 912,
+        "leaf_rejected_by_stage": {
+          "order3": 37,
+          "row": 0,
+          "triangular": 315
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          508,
+          984
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 90,
+          "triangular": 0
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            16,
+            72
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 2003,
+          "triangular": 0
+        },
+        "nodes_visited": 2003,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 112,
+          "triangular": 0
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 18,
+          "triangular": 0
+        },
+        "raw_original_masks": 1024,
+        "unpruned_full_binary_tree_nodes": 2047
+      },
+      "elapsed_seconds": 0.29372240900011093,
+      "eligible_mask_json_sha256": "9c9e51f1c876f07b6c0525ec76554fe10c8ad23aaed59828c0bdbf56cec67109",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.341809898000065,
+      "process_peak_rss_kib_observed_after_search": 14720,
+      "repetition": 1
+    },
+    {
+      "case": "prefix-all",
+      "core_order": 21,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 560,
+        "leaf_checks_reached": 560,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 0
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          254,
+          494,
+          868
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 29,
+          "row": 90,
+          "triangular": 257
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            21
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            16,
+            72
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            5,
+            36,
+            215
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 1781,
+          "order3": 1781,
+          "row": 1871,
+          "triangular": 1752
+        },
+        "nodes_visited": 1871,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 37,
+          "row": 112,
+          "triangular": 315
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 8,
+          "row": 18,
+          "triangular": 42
+        },
+        "raw_original_masks": 1024,
+        "unpruned_full_binary_tree_nodes": 2047
+      },
+      "elapsed_seconds": 0.3548205879997113,
+      "eligible_mask_json_sha256": "9c9e51f1c876f07b6c0525ec76554fe10c8ad23aaed59828c0bdbf56cec67109",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.4030583110002226,
+      "process_peak_rss_kib_observed_after_search": 15232,
+      "repetition": 1
+    },
+    {
+      "case": "prefix-row",
+      "core_order": 21,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 560,
+        "leaf_checks_reached": 912,
+        "leaf_rejected_by_stage": {
+          "order3": 37,
+          "row": 0,
+          "triangular": 315
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          508,
+          984
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 90,
+          "triangular": 0
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            16,
+            72
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 2003,
+          "triangular": 0
+        },
+        "nodes_visited": 2003,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 112,
+          "triangular": 0
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 18,
+          "triangular": 0
+        },
+        "raw_original_masks": 1024,
+        "unpruned_full_binary_tree_nodes": 2047
+      },
+      "elapsed_seconds": 0.31565317899958245,
+      "eligible_mask_json_sha256": "9c9e51f1c876f07b6c0525ec76554fe10c8ad23aaed59828c0bdbf56cec67109",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.3635802660000991,
+      "process_peak_rss_kib_observed_after_search": 14720,
+      "repetition": 2
+    },
+    {
+      "case": "prefix-all",
+      "core_order": 21,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 560,
+        "leaf_checks_reached": 560,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 0
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          254,
+          494,
+          868
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 29,
+          "row": 90,
+          "triangular": 257
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            21
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            16,
+            72
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            5,
+            36,
+            215
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 1781,
+          "order3": 1781,
+          "row": 1871,
+          "triangular": 1752
+        },
+        "nodes_visited": 1871,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 37,
+          "row": 112,
+          "triangular": 315
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 8,
+          "row": 18,
+          "triangular": 42
+        },
+        "raw_original_masks": 1024,
+        "unpruned_full_binary_tree_nodes": 2047
+      },
+      "elapsed_seconds": 0.37243005699974674,
+      "eligible_mask_json_sha256": "9c9e51f1c876f07b6c0525ec76554fe10c8ad23aaed59828c0bdbf56cec67109",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.42095426900004895,
+      "process_peak_rss_kib_observed_after_search": 15232,
+      "repetition": 2
+    },
+    {
+      "case": "round2-preparation",
+      "core_order": 21,
+      "counts": {
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912
+      },
+      "elapsed_seconds": 0.029331008999633923,
+      "eligible_mask_json_sha256": "9c9e51f1c876f07b6c0525ec76554fe10c8ad23aaed59828c0bdbf56cec67109",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.08154006599988861,
+      "process_peak_rss_kib_observed_after_search": 14592,
+      "repetition": 2
+    },
+    {
+      "case": "prefix-all",
+      "core_order": 21,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 560,
+        "leaf_checks_reached": 560,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 0
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          254,
+          494,
+          868
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 29,
+          "row": 90,
+          "triangular": 257
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            21
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            16,
+            72
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            5,
+            36,
+            215
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 1781,
+          "order3": 1781,
+          "row": 1871,
+          "triangular": 1752
+        },
+        "nodes_visited": 1871,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 37,
+          "row": 112,
+          "triangular": 315
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 8,
+          "row": 18,
+          "triangular": 42
+        },
+        "raw_original_masks": 1024,
+        "unpruned_full_binary_tree_nodes": 2047
+      },
+      "elapsed_seconds": 0.3814650879999135,
+      "eligible_mask_json_sha256": "9c9e51f1c876f07b6c0525ec76554fe10c8ad23aaed59828c0bdbf56cec67109",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.42926431299974865,
+      "process_peak_rss_kib_observed_after_search": 15232,
+      "repetition": 3
+    },
+    {
+      "case": "round2-preparation",
+      "core_order": 21,
+      "counts": {
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912
+      },
+      "elapsed_seconds": 0.030006991999925958,
+      "eligible_mask_json_sha256": "9c9e51f1c876f07b6c0525ec76554fe10c8ad23aaed59828c0bdbf56cec67109",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.08065700199995263,
+      "process_peak_rss_kib_observed_after_search": 14592,
+      "repetition": 3
+    },
+    {
+      "case": "prefix-row",
+      "core_order": 21,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 560,
+        "leaf_checks_reached": 912,
+        "leaf_rejected_by_stage": {
+          "order3": 37,
+          "row": 0,
+          "triangular": 315
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          508,
+          984
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 90,
+          "triangular": 0
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            16,
+            72
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 2003,
+          "triangular": 0
+        },
+        "nodes_visited": 2003,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 112,
+          "triangular": 0
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 18,
+          "triangular": 0
+        },
+        "raw_original_masks": 1024,
+        "unpruned_full_binary_tree_nodes": 2047
+      },
+      "elapsed_seconds": 0.26821580600017114,
+      "eligible_mask_json_sha256": "9c9e51f1c876f07b6c0525ec76554fe10c8ad23aaed59828c0bdbf56cec67109",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.31296319400007633,
+      "process_peak_rss_kib_observed_after_search": 14720,
+      "repetition": 3
+    },
+    {
+      "case": "round2-preparation",
+      "core_order": 23,
+      "counts": {
+        "raw_normalized_sequences": 2048,
+        "single_after_integer_probes": 968,
+        "single_after_order3_energy": 1749,
+        "single_after_row_square_feasibility": 1749
+      },
+      "elapsed_seconds": 0.05659565299993119,
+      "eligible_mask_json_sha256": "1fb8f98a805edb0fc1788c3c4ef4b666b2ca28f92dab5b9f60aeeec1e46b47b3",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.10315181099986148,
+      "process_peak_rss_kib_observed_after_search": 15488,
+      "repetition": 1
+    },
+    {
+      "case": "prefix-row",
+      "core_order": 23,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 968,
+        "leaf_checks_reached": 1749,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 781
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          510,
+          1002,
+          1914
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 220,
+          "triangular": 0
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            9,
+            45,
+            165
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 3937,
+          "triangular": 0
+        },
+        "nodes_visited": 3937,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 299,
+          "triangular": 0
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 55,
+          "triangular": 0
+        },
+        "raw_original_masks": 2048,
+        "unpruned_full_binary_tree_nodes": 4095
+      },
+      "elapsed_seconds": 0.6685061660000429,
+      "eligible_mask_json_sha256": "1fb8f98a805edb0fc1788c3c4ef4b666b2ca28f92dab5b9f60aeeec1e46b47b3",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.7118447960001504,
+      "process_peak_rss_kib_observed_after_search": 14720,
+      "repetition": 1
+    },
+    {
+      "case": "prefix-all",
+      "core_order": 23,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 968,
+        "leaf_checks_reached": 968,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 0
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          254,
+          502,
+          956,
+          1612
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 210,
+          "triangular": 612
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            9,
+            45,
+            155
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            15,
+            105,
+            489
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 3369,
+          "order3": 0,
+          "row": 3579,
+          "triangular": 3369
+        },
+        "nodes_visited": 3579,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 289,
+          "triangular": 791
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 55,
+          "triangular": 123
+        },
+        "raw_original_masks": 2048,
+        "unpruned_full_binary_tree_nodes": 4095
+      },
+      "elapsed_seconds": 0.7102366260000963,
+      "eligible_mask_json_sha256": "1fb8f98a805edb0fc1788c3c4ef4b666b2ca28f92dab5b9f60aeeec1e46b47b3",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.7536757060001946,
+      "process_peak_rss_kib_observed_after_search": 15360,
+      "repetition": 1
+    },
+    {
+      "case": "prefix-row",
+      "core_order": 23,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 968,
+        "leaf_checks_reached": 1749,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 781
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          510,
+          1002,
+          1914
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 220,
+          "triangular": 0
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            9,
+            45,
+            165
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 3937,
+          "triangular": 0
+        },
+        "nodes_visited": 3937,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 299,
+          "triangular": 0
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 55,
+          "triangular": 0
+        },
+        "raw_original_masks": 2048,
+        "unpruned_full_binary_tree_nodes": 4095
+      },
+      "elapsed_seconds": 0.6844706250003583,
+      "eligible_mask_json_sha256": "1fb8f98a805edb0fc1788c3c4ef4b666b2ca28f92dab5b9f60aeeec1e46b47b3",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.7357377790003738,
+      "process_peak_rss_kib_observed_after_search": 14720,
+      "repetition": 2
+    },
+    {
+      "case": "prefix-all",
+      "core_order": 23,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 968,
+        "leaf_checks_reached": 968,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 0
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          254,
+          502,
+          956,
+          1612
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 210,
+          "triangular": 612
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            9,
+            45,
+            155
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            15,
+            105,
+            489
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 3369,
+          "order3": 0,
+          "row": 3579,
+          "triangular": 3369
+        },
+        "nodes_visited": 3579,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 289,
+          "triangular": 791
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 55,
+          "triangular": 123
+        },
+        "raw_original_masks": 2048,
+        "unpruned_full_binary_tree_nodes": 4095
+      },
+      "elapsed_seconds": 0.6936830750000809,
+      "eligible_mask_json_sha256": "1fb8f98a805edb0fc1788c3c4ef4b666b2ca28f92dab5b9f60aeeec1e46b47b3",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.7407346939999115,
+      "process_peak_rss_kib_observed_after_search": 15360,
+      "repetition": 2
+    },
+    {
+      "case": "round2-preparation",
+      "core_order": 23,
+      "counts": {
+        "raw_normalized_sequences": 2048,
+        "single_after_integer_probes": 968,
+        "single_after_order3_energy": 1749,
+        "single_after_row_square_feasibility": 1749
+      },
+      "elapsed_seconds": 0.05884521799998765,
+      "eligible_mask_json_sha256": "1fb8f98a805edb0fc1788c3c4ef4b666b2ca28f92dab5b9f60aeeec1e46b47b3",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.10309753000001365,
+      "process_peak_rss_kib_observed_after_search": 15488,
+      "repetition": 2
+    },
+    {
+      "case": "prefix-all",
+      "core_order": 23,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 968,
+        "leaf_checks_reached": 968,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 0
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          254,
+          502,
+          956,
+          1612
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 210,
+          "triangular": 612
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            9,
+            45,
+            155
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            15,
+            105,
+            489
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 3369,
+          "order3": 0,
+          "row": 3579,
+          "triangular": 3369
+        },
+        "nodes_visited": 3579,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 289,
+          "triangular": 791
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 55,
+          "triangular": 123
+        },
+        "raw_original_masks": 2048,
+        "unpruned_full_binary_tree_nodes": 4095
+      },
+      "elapsed_seconds": 0.6980993719998878,
+      "eligible_mask_json_sha256": "1fb8f98a805edb0fc1788c3c4ef4b666b2ca28f92dab5b9f60aeeec1e46b47b3",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.7422996649997913,
+      "process_peak_rss_kib_observed_after_search": 15360,
+      "repetition": 3
+    },
+    {
+      "case": "round2-preparation",
+      "core_order": 23,
+      "counts": {
+        "raw_normalized_sequences": 2048,
+        "single_after_integer_probes": 968,
+        "single_after_order3_energy": 1749,
+        "single_after_row_square_feasibility": 1749
+      },
+      "elapsed_seconds": 0.054903402000036294,
+      "eligible_mask_json_sha256": "1fb8f98a805edb0fc1788c3c4ef4b666b2ca28f92dab5b9f60aeeec1e46b47b3",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.09732785000005606,
+      "process_peak_rss_kib_observed_after_search": 15488,
+      "repetition": 3
+    },
+    {
+      "case": "prefix-row",
+      "core_order": 23,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 968,
+        "leaf_checks_reached": 1749,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 781
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          510,
+          1002,
+          1914
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 220,
+          "triangular": 0
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            9,
+            45,
+            165
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 3937,
+          "triangular": 0
+        },
+        "nodes_visited": 3937,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 299,
+          "triangular": 0
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 55,
+          "triangular": 0
+        },
+        "raw_original_masks": 2048,
+        "unpruned_full_binary_tree_nodes": 4095
+      },
+      "elapsed_seconds": 0.6469451769999068,
+      "eligible_mask_json_sha256": "1fb8f98a805edb0fc1788c3c4ef4b666b2ca28f92dab5b9f60aeeec1e46b47b3",
+      "exact_single_mask_list_equality": true,
+      "external_process_wall_seconds": 0.6925810269999602,
+      "process_peak_rss_kib_observed_after_search": 14720,
+      "repetition": 3
+    }
+  ],
+  "single_generation_summary": [
+    {
+      "case": "round2-preparation",
+      "core_order": 15,
+      "counts": {
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112
+      },
+      "external_process_wall_seconds": {
+        "max": 0.04545486400002119,
+        "median": 0.0436370329998681,
+        "min": 0.04359190500008481
+      },
+      "process_peak_rss_kib": {
+        "max": 13952,
+        "median": 13952,
+        "min": 13952
+      },
+      "total_in_process_seconds": {
+        "max": 0.0029866989998481586,
+        "median": 0.0027744600001824438,
+        "min": 0.0026455369998075184
+      }
+    },
+    {
+      "case": "prefix-row",
+      "core_order": 15,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 81,
+        "leaf_checks_reached": 112,
+        "leaf_rejected_by_stage": {
+          "order3": 7,
+          "row": 0,
+          "triangular": 24
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          124
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 14,
+          "triangular": 0
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            12
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 251,
+          "triangular": 0
+        },
+        "nodes_visited": 251,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 16,
+          "triangular": 0
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 2,
+          "triangular": 0
+        },
+        "raw_original_masks": 128,
+        "unpruned_full_binary_tree_nodes": 255
+      },
+      "external_process_wall_seconds": {
+        "max": 0.06960814100011703,
+        "median": 0.06795254000007844,
+        "min": 0.06744486800016603
+      },
+      "process_peak_rss_kib": {
+        "max": 14464,
+        "median": 14464,
+        "min": 14464
+      },
+      "total_in_process_seconds": {
+        "max": 0.021766293999917252,
+        "median": 0.020158291999905487,
+        "min": 0.019765612999890436
+      }
+    },
+    {
+      "case": "prefix-all",
+      "core_order": 15,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 81,
+        "leaf_checks_reached": 81,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 0
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          62,
+          116
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 6,
+          "row": 14,
+          "triangular": 20
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            5
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            12
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            18
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 227,
+          "order3": 227,
+          "row": 241,
+          "triangular": 221
+        },
+        "nodes_visited": 241,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 7,
+          "row": 16,
+          "triangular": 24
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 1,
+          "row": 2,
+          "triangular": 2
+        },
+        "raw_original_masks": 128,
+        "unpruned_full_binary_tree_nodes": 255
+      },
+      "external_process_wall_seconds": {
+        "max": 0.07697973699987415,
+        "median": 0.07469175500000347,
+        "min": 0.07414129099970523
+      },
+      "process_peak_rss_kib": {
+        "max": 14976,
+        "median": 14976,
+        "min": 14976
+      },
+      "total_in_process_seconds": {
+        "max": 0.029944398000225192,
+        "median": 0.029010568000103376,
+        "min": 0.027909276000173122
+      }
+    },
+    {
+      "case": "round2-preparation",
+      "core_order": 21,
+      "counts": {
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912
+      },
+      "external_process_wall_seconds": {
+        "max": 0.08154006599988861,
+        "median": 0.08065700199995263,
+        "min": 0.07817104900004779
+      },
+      "process_peak_rss_kib": {
+        "max": 14592,
+        "median": 14592,
+        "min": 14592
+      },
+      "total_in_process_seconds": {
+        "max": 0.030006991999925958,
+        "median": 0.029331008999633923,
+        "min": 0.02594105399975888
+      }
+    },
+    {
+      "case": "prefix-row",
+      "core_order": 21,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 560,
+        "leaf_checks_reached": 912,
+        "leaf_rejected_by_stage": {
+          "order3": 37,
+          "row": 0,
+          "triangular": 315
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          508,
+          984
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 90,
+          "triangular": 0
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            16,
+            72
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 2003,
+          "triangular": 0
+        },
+        "nodes_visited": 2003,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 112,
+          "triangular": 0
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 18,
+          "triangular": 0
+        },
+        "raw_original_masks": 1024,
+        "unpruned_full_binary_tree_nodes": 2047
+      },
+      "external_process_wall_seconds": {
+        "max": 0.3635802660000991,
+        "median": 0.341809898000065,
+        "min": 0.31296319400007633
+      },
+      "process_peak_rss_kib": {
+        "max": 14720,
+        "median": 14720,
+        "min": 14720
+      },
+      "total_in_process_seconds": {
+        "max": 0.31565317899958245,
+        "median": 0.29372240900011093,
+        "min": 0.26821580600017114
+      }
+    },
+    {
+      "case": "prefix-all",
+      "core_order": 21,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 560,
+        "leaf_checks_reached": 560,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 0
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          254,
+          494,
+          868
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 29,
+          "row": 90,
+          "triangular": 257
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            21
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            16,
+            72
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            5,
+            36,
+            215
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 1781,
+          "order3": 1781,
+          "row": 1871,
+          "triangular": 1752
+        },
+        "nodes_visited": 1871,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 37,
+          "row": 112,
+          "triangular": 315
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 8,
+          "row": 18,
+          "triangular": 42
+        },
+        "raw_original_masks": 1024,
+        "unpruned_full_binary_tree_nodes": 2047
+      },
+      "external_process_wall_seconds": {
+        "max": 0.42926431299974865,
+        "median": 0.42095426900004895,
+        "min": 0.4030583110002226
+      },
+      "process_peak_rss_kib": {
+        "max": 15232,
+        "median": 15232,
+        "min": 15232
+      },
+      "total_in_process_seconds": {
+        "max": 0.3814650879999135,
+        "median": 0.37243005699974674,
+        "min": 0.3548205879997113
+      }
+    },
+    {
+      "case": "round2-preparation",
+      "core_order": 23,
+      "counts": {
+        "raw_normalized_sequences": 2048,
+        "single_after_integer_probes": 968,
+        "single_after_order3_energy": 1749,
+        "single_after_row_square_feasibility": 1749
+      },
+      "external_process_wall_seconds": {
+        "max": 0.10315181099986148,
+        "median": 0.10309753000001365,
+        "min": 0.09732785000005606
+      },
+      "process_peak_rss_kib": {
+        "max": 15488,
+        "median": 15488,
+        "min": 15488
+      },
+      "total_in_process_seconds": {
+        "max": 0.05884521799998765,
+        "median": 0.05659565299993119,
+        "min": 0.054903402000036294
+      }
+    },
+    {
+      "case": "prefix-row",
+      "core_order": 23,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 968,
+        "leaf_checks_reached": 1749,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 781
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          510,
+          1002,
+          1914
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 220,
+          "triangular": 0
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            9,
+            45,
+            165
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 3937,
+          "triangular": 0
+        },
+        "nodes_visited": 3937,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 299,
+          "triangular": 0
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 55,
+          "triangular": 0
+        },
+        "raw_original_masks": 2048,
+        "unpruned_full_binary_tree_nodes": 4095
+      },
+      "external_process_wall_seconds": {
+        "max": 0.7357377790003738,
+        "median": 0.7118447960001504,
+        "min": 0.6925810269999602
+      },
+      "process_peak_rss_kib": {
+        "max": 14720,
+        "median": 14720,
+        "min": 14720
+      },
+      "total_in_process_seconds": {
+        "max": 0.6844706250003583,
+        "median": 0.6685061660000429,
+        "min": 0.6469451769999068
+      }
+    },
+    {
+      "case": "prefix-all",
+      "core_order": 23,
+      "counts": {
+        "bound_audit_nodes": 0,
+        "bound_audit_probe_comparisons": 0,
+        "eligible_single_masks": 968,
+        "leaf_checks_reached": 968,
+        "leaf_rejected_by_stage": {
+          "order3": 0,
+          "row": 0,
+          "triangular": 0
+        },
+        "nodes_by_depth": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          254,
+          502,
+          956,
+          1612
+        ],
+        "nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 210,
+          "triangular": 612
+        },
+        "nodes_pruned_by_stage_and_depth": {
+          "constant": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "order3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "row": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            9,
+            45,
+            155
+          ],
+          "triangular": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            15,
+            105,
+            489
+          ]
+        },
+        "nodes_reaching_stage": {
+          "constant": 3369,
+          "order3": 0,
+          "row": 3579,
+          "triangular": 3369
+        },
+        "nodes_visited": 3579,
+        "original_masks_covered_by_pruning_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 289,
+          "triangular": 791
+        },
+        "partial_nodes_pruned_by_stage": {
+          "constant": 0,
+          "order3": 0,
+          "row": 55,
+          "triangular": 123
+        },
+        "raw_original_masks": 2048,
+        "unpruned_full_binary_tree_nodes": 4095
+      },
+      "external_process_wall_seconds": {
+        "max": 0.7536757060001946,
+        "median": 0.7422996649997913,
+        "min": 0.7407346939999115
+      },
+      "process_peak_rss_kib": {
+        "max": 15360,
+        "median": 15360,
+        "min": 15360
+      },
+      "total_in_process_seconds": {
+        "max": 0.7102366260000963,
+        "median": 0.6980993719998878,
+        "min": 0.6936830750000809
+      }
+    }
+  ],
+  "source_sha256_after": {
+    "round2/scripts/search.py": "9916799153e83c265be7cce8ae32337f7a667cfba7ebd88bf91bacb0d0cfb583",
+    "round3/scripts/benchmark.py": "b1b66e55bd3d2ddbbc72ced7a8656e2b555afc6d61502a5625924bb5fde582f4",
+    "round3/scripts/partial_singles.py": "91327ae7d1775f3c5497031cd206aa53e42d5a01882cb28aed4c75fac5e2a399",
+    "round3/scripts/phase_search.py": "8e4e252a49285026427f83439ddbca0661742da22a859124817201f565a20198",
+    "round3/scripts/phases.py": "297cac40d6c4bea899fe2335acb35e4ce84873fcd4483c5262c64a01f0a1cfa2",
+    "round3/scripts/structure.py": "241d473be823496ddac0dc99e9364861c74af6c55df4e313fedc0b9862654423",
+    "scripts/enumerate_williamson.py": "b09b5a3491c5760691d1aa535bcce4e6f9430a3e558c635a51f90f511f2b2fda",
+    "scripts/hadamard.py": "5f0aef757b9a3e5a297606838d0376f973825174659cb30c9c2d851820afa1e1"
+  },
+  "source_sha256_before": {
+    "round2/scripts/search.py": "9916799153e83c265be7cce8ae32337f7a667cfba7ebd88bf91bacb0d0cfb583",
+    "round3/scripts/benchmark.py": "b1b66e55bd3d2ddbbc72ced7a8656e2b555afc6d61502a5625924bb5fde582f4",
+    "round3/scripts/partial_singles.py": "91327ae7d1775f3c5497031cd206aa53e42d5a01882cb28aed4c75fac5e2a399",
+    "round3/scripts/phase_search.py": "8e4e252a49285026427f83439ddbca0661742da22a859124817201f565a20198",
+    "round3/scripts/phases.py": "297cac40d6c4bea899fe2335acb35e4ce84873fcd4483c5262c64a01f0a1cfa2",
+    "round3/scripts/structure.py": "241d473be823496ddac0dc99e9364861c74af6c55df4e313fedc0b9862654423",
+    "scripts/enumerate_williamson.py": "b09b5a3491c5760691d1aa535bcce4e6f9430a3e558c635a51f90f511f2b2fda",
+    "scripts/hadamard.py": "5f0aef757b9a3e5a297606838d0376f973825174659cb30c9c2d851820afa1e1"
+  },
+  "summary": [
+    {
+      "case": "round2-filtered",
+      "core_order": 15,
+      "counts": {
+        "bucket_keys": 969,
+        "joined_pair_combinations_before_sorted_order_test": 76,
+        "pair_after_integer_probes": 1061,
+        "pair_after_order3_energy": 2356,
+        "pair_after_row_square_feasibility": 2356,
+        "pairs_considered_after_single_filters": 3321,
+        "raw_normalized_sequences": 128,
+        "single_after_integer_probes": 81,
+        "single_after_order3_energy": 105,
+        "single_after_row_square_feasibility": 112,
+        "solving_normalized_multisets": 14,
+        "stored_pairs": 1061
+      },
+      "external_process_wall_seconds": {
+        "max": 0.05428613399999449,
+        "median": 0.05069630500020139,
+        "min": 0.050407084000198665
+      },
+      "preprocessing_seconds": {
+        "max": 0.0023548610001853376,
+        "median": 0.0021175660003791563,
+        "min": 0.0021044459999757237
+      },
+      "process_peak_rss_kib": {
+        "max": 14336,
+        "median": 14336,
+        "min": 14336
+      },
+      "search_seconds": {
+        "max": 0.005095312000321428,
+        "median": 0.004873077999945963,
+        "min": 0.004769793999912508
+      },
+      "total_in_process_seconds": {
+        "max": 0.007199758000297152,
+        "median": 0.007124655000097846,
+        "min": 0.006990644000325119
+      }
+    },
+    {
+      "case": "structural-leaf",
+      "core_order": 15,
+      "counts": {
+        "complete_color_assignments_entered": 715,
+        "full_correlation_checks_after_row_identity": 204,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715
+        ],
+        "nodes_entered": 977,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "external_process_wall_seconds": {
+        "max": 0.048808827999891946,
+        "median": 0.047835549999945215,
+        "min": 0.045798192000347626
+      },
+      "preprocessing_seconds": {
+        "max": 0.00018871300017053727,
+        "median": 0.00018330500006413786,
+        "min": 0.00017866799998955685
+      },
+      "process_peak_rss_kib": {
+        "max": 13824,
+        "median": 13824,
+        "min": 13824
+      },
+      "search_seconds": {
+        "max": 0.00400265300004321,
+        "median": 0.0038563130001421086,
+        "min": 0.003703674000007595
+      },
+      "total_in_process_seconds": {
+        "max": 0.004181321000032767,
+        "median": 0.0040396180002062465,
+        "min": 0.0038923870001781324
+      }
+    },
+    {
+      "case": "structural-basic",
+      "core_order": 15,
+      "counts": {
+        "complete_color_assignments_entered": 710,
+        "full_correlation_checks_after_row_identity": 14,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          190
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          710
+        ],
+        "nodes_entered": 972,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          506
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 5
+      },
+      "external_process_wall_seconds": {
+        "max": 0.06984834200011392,
+        "median": 0.06569827800012717,
+        "min": 0.06333123700005672
+      },
+      "preprocessing_seconds": {
+        "max": 0.00026735099982033717,
+        "median": 0.00017807700032790308,
+        "min": 0.00017716599995765137
+      },
+      "process_peak_rss_kib": {
+        "max": 13824,
+        "median": 13824,
+        "min": 13824
+      },
+      "search_seconds": {
+        "max": 0.018801998000071762,
+        "median": 0.018687505000343663,
+        "min": 0.01643455700013874
+      },
+      "total_in_process_seconds": {
+        "max": 0.018980075000399665,
+        "median": 0.018954856000164,
+        "min": 0.01661172300009639
+      }
+    },
+    {
+      "case": "phase-natural",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "core_order": 15,
+      "counts": {
+        "complete_color_assignments_entered": 635,
+        "full_correlation_checks_after_row_identity": 14,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          18,
+          171
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          635
+        ],
+        "nodes_entered": 897,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          450
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          80,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 80
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 190,
+          "hits": 2035,
+          "maxsize": 4096,
+          "misses": 190
+        },
+        "row": {
+          "currsize": 402,
+          "hits": 495,
+          "maxsize": 4096,
+          "misses": 402
+        }
+      },
+      "external_process_wall_seconds": {
+        "max": 0.08026079699993716,
+        "median": 0.07959710000022824,
+        "min": 0.07460389900006703
+      },
+      "preprocessing_seconds": {
+        "max": 0.000445256999682897,
+        "median": 0.00035449200004222803,
+        "min": 0.00033474199972260976
+      },
+      "process_peak_rss_kib": {
+        "max": 14336,
+        "median": 14336,
+        "min": 14208
+      },
+      "search_seconds": {
+        "max": 0.03253796800026976,
+        "median": 0.0318685130000631,
+        "min": 0.025952291000066907
+      },
+      "total_in_process_seconds": {
+        "max": 0.03287270999999237,
+        "median": 0.032313769999746,
+        "min": 0.026306783000109135
+      }
+    },
+    {
+      "case": "phase-collisions",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        5
+      ],
+      "core_order": 15,
+      "counts": {
+        "complete_color_assignments_entered": 216,
+        "full_correlation_checks_after_row_identity": 14,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          108,
+          74
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          216
+        ],
+        "nodes_entered": 478,
+        "output_row_masks_constructed_including_repetitions": 56,
+        "raw_RGS_color_leaves": 715,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23,
+          128
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          499,
+          0
+        ],
+        "solutions": 14,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 499
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 130,
+          "hits": 1463,
+          "maxsize": 4096,
+          "misses": 130
+        },
+        "row": {
+          "currsize": 224,
+          "hits": 254,
+          "maxsize": 4096,
+          "misses": 224
+        }
+      },
+      "external_process_wall_seconds": {
+        "max": 0.0704370939997716,
+        "median": 0.06636979499990048,
+        "min": 0.06330803700029719
+      },
+      "preprocessing_seconds": {
+        "max": 0.0006227040003068396,
+        "median": 0.0004863489998570003,
+        "min": 0.00045691599962083274
+      },
+      "process_peak_rss_kib": {
+        "max": 14080,
+        "median": 14080,
+        "min": 14080
+      },
+      "search_seconds": {
+        "max": 0.02634872099997665,
+        "median": 0.018648156999915955,
+        "min": 0.01859565700033272
+      },
+      "total_in_process_seconds": {
+        "max": 0.02683506999983365,
+        "median": 0.019270861000222794,
+        "min": 0.019052572999953554
+      }
+    },
+    {
+      "case": "round2-filtered",
+      "core_order": 21,
+      "counts": {
+        "bucket_keys": 24664,
+        "joined_pair_combinations_before_sorted_order_test": 192,
+        "pair_after_integer_probes": 24985,
+        "pair_after_order3_energy": 103649,
+        "pair_after_row_square_feasibility": 112602,
+        "pairs_considered_after_single_filters": 157080,
+        "raw_normalized_sequences": 1024,
+        "single_after_integer_probes": 560,
+        "single_after_order3_energy": 875,
+        "single_after_row_square_feasibility": 912,
+        "solving_normalized_multisets": 34,
+        "stored_pairs": 24985
+      },
+      "external_process_wall_seconds": {
+        "max": 0.26906640000015614,
+        "median": 0.24641490100020746,
+        "min": 0.23445891900018978
+      },
+      "preprocessing_seconds": {
+        "max": 0.026950908999879175,
+        "median": 0.025440051999794377,
+        "min": 0.02426738399981332
+      },
+      "process_peak_rss_kib": {
+        "max": 24552,
+        "median": 24552,
+        "min": 24552
+      },
+      "search_seconds": {
+        "max": 0.19443847100001221,
+        "median": 0.17314369600035207,
+        "min": 0.16567325200003324
+      },
+      "total_in_process_seconds": {
+        "max": 0.2198785229998066,
+        "median": 0.20009460500023124,
+        "min": 0.18994063599984656
+      }
+    },
+    {
+      "case": "structural-leaf",
+      "core_order": 21,
+      "counts": {
+        "complete_color_assignments_entered": 43947,
+        "full_correlation_checks_after_row_identity": 7590,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43947
+        ],
+        "nodes_entered": 58770,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "external_process_wall_seconds": {
+        "max": 0.3880581200000961,
+        "median": 0.368957182000031,
+        "min": 0.3523389599999973
+      },
+      "preprocessing_seconds": {
+        "max": 0.00036646900025516516,
+        "median": 0.0003439350002736319,
+        "min": 0.00032228300005954225
+      },
+      "process_peak_rss_kib": {
+        "max": 13952,
+        "median": 13952,
+        "min": 13952
+      },
+      "search_seconds": {
+        "max": 0.33902276599974357,
+        "median": 0.32640265800000634,
+        "min": 0.3104818520000663
+      },
+      "total_in_process_seconds": {
+        "max": 0.33938923499999873,
+        "median": 0.3267249410000659,
+        "min": 0.3108257870003399
+      }
+    },
+    {
+      "case": "structural-basic",
+      "core_order": 21,
+      "counts": {
+        "complete_color_assignments_entered": 43877,
+        "full_correlation_checks_after_row_identity": 34,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          7554
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43877
+        ],
+        "nodes_entered": 58700,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          36289
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          70,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 70
+      },
+      "external_process_wall_seconds": {
+        "max": 1.6628303130000859,
+        "median": 1.6498829810002462,
+        "min": 1.5680997320000643
+      },
+      "preprocessing_seconds": {
+        "max": 0.0004512769996836141,
+        "median": 0.00032687000020814594,
+        "min": 0.0003259689997321402
+      },
+      "process_peak_rss_kib": {
+        "max": 13952,
+        "median": 13952,
+        "min": 13952
+      },
+      "search_seconds": {
+        "max": 1.6149139930003003,
+        "median": 1.602138341999762,
+        "min": 1.5265803649999725
+      },
+      "total_in_process_seconds": {
+        "max": 1.6153652699999839,
+        "median": 1.60246521199997,
+        "min": 1.5269063339997047
+      }
+    },
+    {
+      "case": "phase-natural",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "core_order": 21,
+      "counts": {
+        "complete_color_assignments_entered": 34468,
+        "full_correlation_checks_after_row_identity": 34,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2341,
+          6123
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          34468
+        ],
+        "nodes_entered": 49291,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          70,
+          28311
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9479,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 9479
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 1393,
+          "hits": 150234,
+          "maxsize": 4096,
+          "misses": 1393
+        },
+        "row": {
+          "currsize": 4096,
+          "hits": 36762,
+          "maxsize": 4096,
+          "misses": 12529
+        }
+      },
+      "external_process_wall_seconds": {
+        "max": 2.088050062000093,
+        "median": 2.0092843259999427,
+        "min": 1.9677491319998808
+      },
+      "preprocessing_seconds": {
+        "max": 0.0008881819999260188,
+        "median": 0.0006912369999554357,
+        "min": 0.0006401599998753227
+      },
+      "process_peak_rss_kib": {
+        "max": 20864,
+        "median": 20864,
+        "min": 20864
+      },
+      "search_seconds": {
+        "max": 2.0273189489998913,
+        "median": 1.935449134999999,
+        "min": 1.899139598000147
+      },
+      "total_in_process_seconds": {
+        "max": 2.0280101859998467,
+        "median": 1.936337316999925,
+        "min": 1.8997797580000224
+      }
+    },
+    {
+      "case": "phase-collisions",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        7
+      ],
+      "core_order": 21,
+      "counts": {
+        "complete_color_assignments_entered": 5454,
+        "full_correlation_checks_after_row_identity": 34,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          11,
+          8333,
+          938
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11013,
+          5454
+        ],
+        "nodes_entered": 20239,
+        "output_row_masks_constructed_including_repetitions": 136,
+        "raw_RGS_color_leaves": 43947,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1315,
+          4482
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          141,
+          38352,
+          0
+        ],
+        "solutions": 34,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 38493
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 1415,
+          "hits": 90430,
+          "maxsize": 4096,
+          "misses": 1415
+        },
+        "row": {
+          "currsize": 3657,
+          "hits": 16582,
+          "maxsize": 4096,
+          "misses": 3657
+        }
+      },
+      "external_process_wall_seconds": {
+        "max": 1.1742866999998114,
+        "median": 1.1325627559999702,
+        "min": 1.1138867730001039
+      },
+      "preprocessing_seconds": {
+        "max": 0.0010172150000471447,
+        "median": 0.0009338510003544798,
+        "min": 0.0009279420000893879
+      },
+      "process_peak_rss_kib": {
+        "max": 19712,
+        "median": 19712,
+        "min": 19712
+      },
+      "search_seconds": {
+        "max": 1.1099624580001546,
+        "median": 1.0656283539997276,
+        "min": 1.0567415969999274
+      },
+      "total_in_process_seconds": {
+        "max": 1.1109796730002017,
+        "median": 1.066556295999817,
+        "min": 1.057675448000282
+      }
+    },
+    {
+      "case": "round2-filtered",
+      "core_order": 23,
+      "counts": {
+        "bucket_keys": 58982,
+        "joined_pair_combinations_before_sorted_order_test": 66,
+        "pair_after_integer_probes": 58982,
+        "pair_after_order3_energy": 305712,
+        "pair_after_row_square_feasibility": 305712,
+        "pairs_considered_after_single_filters": 468996,
+        "raw_normalized_sequences": 2048,
+        "single_after_integer_probes": 968,
+        "single_after_order3_energy": 1749,
+        "single_after_row_square_feasibility": 1749,
+        "solving_normalized_multisets": 11,
+        "stored_pairs": 58982
+      },
+      "external_process_wall_seconds": {
+        "max": 0.6202511169999525,
+        "median": 0.6098869359998389,
+        "min": 0.5889721290000125
+      },
+      "preprocessing_seconds": {
+        "max": 0.06377884899984565,
+        "median": 0.055750611999883404,
+        "min": 0.0530026600004021
+      },
+      "process_peak_rss_kib": {
+        "max": 39680,
+        "median": 39680,
+        "min": 39680
+      },
+      "search_seconds": {
+        "max": 0.5144562379996387,
+        "median": 0.5053804350000064,
+        "min": 0.48823206299994126
+      },
+      "total_in_process_seconds": {
+        "max": 0.569159283999852,
+        "median": 0.5674588980000408,
+        "min": 0.5439826749998247
+      }
+    },
+    {
+      "case": "structural-leaf",
+      "core_order": 23,
+      "counts": {
+        "complete_color_assignments_entered": 175275,
+        "full_correlation_checks_after_row_identity": 19217,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43947,
+          175275
+        ],
+        "nodes_entered": 234045,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 0
+      },
+      "external_process_wall_seconds": {
+        "max": 1.5687526229999094,
+        "median": 1.538409195999975,
+        "min": 1.5120826229999693
+      },
+      "preprocessing_seconds": {
+        "max": 0.0003646760001174698,
+        "median": 0.0003439360002630565,
+        "min": 0.0003392189996702655
+      },
+      "process_peak_rss_kib": {
+        "max": 14080,
+        "median": 14080,
+        "min": 14080
+      },
+      "search_seconds": {
+        "max": 1.521271495000292,
+        "median": 1.4932204659999115,
+        "min": 1.4685134729998026
+      },
+      "total_in_process_seconds": {
+        "max": 1.5216107139999622,
+        "median": 1.493585142000029,
+        "min": 1.4688574090000657
+      }
+    },
+    {
+      "case": "structural-basic",
+      "core_order": 23,
+      "counts": {
+        "complete_color_assignments_entered": 173908,
+        "full_correlation_checks_after_row_identity": 11,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          18,
+          19203
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43945,
+          173908
+        ],
+        "nodes_entered": 232676,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          326,
+          154694
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          1362,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 1367
+      },
+      "external_process_wall_seconds": {
+        "max": 5.95175931599988,
+        "median": 5.773086303000127,
+        "min": 5.612398836000011
+      },
+      "preprocessing_seconds": {
+        "max": 0.0008059490000960068,
+        "median": 0.00037232199974823743,
+        "min": 0.00033585399978619535
+      },
+      "process_peak_rss_kib": {
+        "max": 14080,
+        "median": 14080,
+        "min": 14080
+      },
+      "search_seconds": {
+        "max": 5.907479061000231,
+        "median": 5.725208889999976,
+        "min": 5.553164336000009
+      },
+      "total_in_process_seconds": {
+        "max": 5.907814915000017,
+        "median": 5.7255812119997245,
+        "min": 5.553970285000105
+      }
+    },
+    {
+      "case": "phase-natural",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "core_order": 23,
+      "counts": {
+        "complete_color_assignments_entered": 127102,
+        "full_correlation_checks_after_row_identity": 11,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          10351,
+          14850
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43937,
+          127102
+        ],
+        "nodes_entered": 185862,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1787,
+          112241
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          37,
+          48136,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 48173
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 2690,
+          "hits": 606830,
+          "maxsize": 4096,
+          "misses": 2690
+        },
+        "row": {
+          "currsize": 4096,
+          "hits": 132341,
+          "maxsize": 4096,
+          "misses": 53521
+        }
+      },
+      "external_process_wall_seconds": {
+        "max": 9.098417272000006,
+        "median": 8.680590772999949,
+        "min": 8.327629841000089
+      },
+      "preprocessing_seconds": {
+        "max": 0.0010656280001057894,
+        "median": 0.0008742710001570231,
+        "min": 0.0008714170003258914
+      },
+      "process_peak_rss_kib": {
+        "max": 22272,
+        "median": 22268,
+        "min": 22264
+      },
+      "search_seconds": {
+        "max": 9.025177907999932,
+        "median": 8.604350169999634,
+        "min": 8.271408341000097
+      },
+      "total_in_process_seconds": {
+        "max": 9.026243536000038,
+        "median": 8.60522158699996,
+        "min": 8.272282612000254
+      }
+    },
+    {
+      "case": "phase-collisions",
+      "coordinate_visit_order_one_based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "core_order": 23,
+      "counts": {
+        "complete_color_assignments_entered": 127102,
+        "full_correlation_checks_after_row_identity": 11,
+        "individual_sequence_pool_generated": 0,
+        "lag_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          10351,
+          14850
+        ],
+        "nodes_by_depth": [
+          1,
+          1,
+          2,
+          5,
+          15,
+          51,
+          187,
+          715,
+          2795,
+          11051,
+          43937,
+          127102
+        ],
+        "nodes_entered": 185862,
+        "output_row_masks_constructed_including_repetitions": 44,
+        "raw_RGS_color_leaves": 175275,
+        "row_rejections_by_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1787,
+          112241
+        ],
+        "skipped_leaves_by_prefix_depth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          37,
+          48136,
+          0
+        ],
+        "solutions": 11,
+        "stored_pairs": 0,
+        "structural_leaves_skipped_before_completion": 48173
+      },
+      "decision_caches": {
+        "lag": {
+          "currsize": 2690,
+          "hits": 606830,
+          "maxsize": 4096,
+          "misses": 2690
+        },
+        "row": {
+          "currsize": 4096,
+          "hits": 132341,
+          "maxsize": 4096,
+          "misses": 53521
+        }
+      },
+      "external_process_wall_seconds": {
+        "max": 8.678690739000103,
+        "median": 8.674294200000077,
+        "min": 8.513735773999997
+      },
+      "preprocessing_seconds": {
+        "max": 0.0013507349999599683,
+        "median": 0.0010603099999570986,
+        "min": 0.0010571049997452064
+      },
+      "process_peak_rss_kib": {
+        "max": 22272,
+        "median": 22272,
+        "min": 22272
+      },
+      "search_seconds": {
+        "max": 8.618265916999917,
+        "median": 8.6171435440001,
+        "min": 8.459309905999817
+      },
+      "total_in_process_seconds": {
+        "max": 8.619616651999877,
+        "median": 8.618203854000058,
+        "min": 8.460367010999562
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "comparison_uses_no_new_round3_subject_code": true,
+  "core_order": 23,
+  "exact_tuple_set_equality_with_preserved_round2_filtered_MITM": true,
+  "solving_sorted_normalized_multisets": 11,
+  "status": "passed",
+  "unpruned_RGS_colorings": 175275
+}

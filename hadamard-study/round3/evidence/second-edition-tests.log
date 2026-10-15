@@ -1,0 +1,14 @@
+test_complete_solution_sets_against_unfiltered_baseline (test_reductions.ReductionTests.test_complete_solution_sets_against_unfiltered_baseline) ... ok
+test_each_filter_ablation_preserves_full_solution_sets (test_reductions.ReductionTests.test_each_filter_ablation_preserves_full_solution_sets) ... ok
+test_every_true_single_and_pair_passes_every_filter (test_reductions.ReductionTests.test_every_true_single_and_pair_passes_every_filter) ... ok
+test_exact_order3_energy_and_equality_survives (test_reductions.ReductionTests.test_exact_order3_energy_and_equality_survives) ... ok
+test_integer_probe_formula_against_direct_matrix_vector_energy (test_reductions.ReductionTests.test_integer_probe_formula_against_direct_matrix_vector_energy) ... ok
+test_pair_baseline_matches_first_edition (test_reductions.ReductionTests.test_pair_baseline_matches_first_edition) ... ok
+test_product_and_row_sum_are_not_sufficient (test_reductions.ReductionTests.test_product_and_row_sum_are_not_sufficient) ... ok
+test_product_does_not_improve_full_correlation_join_count (test_reductions.ReductionTests.test_product_does_not_improve_full_correlation_join_count) ... ok
+test_squares_allow_repetition_and_negative_normalized_row_sums (test_reductions.ReductionTests.test_squares_allow_repetition_and_negative_normalized_row_sums) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.259s
+
+OK

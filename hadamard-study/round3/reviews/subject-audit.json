@@ -1,0 +1,2279 @@
+{
+  "basic_predicates_compared_with_independent_sets": 4062,
+  "cache_signature_adversarial_cases": "passed: constants, one-sided domains, repeated coefficients, cross-vector whole-sign versus coordinatewise normalization",
+  "independent_ANF_polynomials_compared": 30383,
+  "results": [
+    {
+      "core_order": 1,
+      "exact_tuple_sets_match": true,
+      "phase_generation_counts": {
+        "collisions/expanded": {
+          "complete_color_assignments_entered": 1,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0
+          ],
+          "nodes_by_depth": [
+            1
+          ],
+          "nodes_entered": 1,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 1,
+          "row_rejections_by_depth": [
+            0
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "collisions/relations": {
+          "complete_color_assignments_entered": 1,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0
+          ],
+          "nodes_by_depth": [
+            1
+          ],
+          "nodes_entered": 1,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 1,
+          "row_rejections_by_depth": [
+            0
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "collisions/row": {
+          "complete_color_assignments_entered": 1,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0
+          ],
+          "nodes_by_depth": [
+            1
+          ],
+          "nodes_entered": 1,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 1,
+          "row_rejections_by_depth": [
+            0
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "natural/expanded": {
+          "complete_color_assignments_entered": 1,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0
+          ],
+          "nodes_by_depth": [
+            1
+          ],
+          "nodes_entered": 1,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 1,
+          "row_rejections_by_depth": [
+            0
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "natural/relations": {
+          "complete_color_assignments_entered": 1,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0
+          ],
+          "nodes_by_depth": [
+            1
+          ],
+          "nodes_entered": 1,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 1,
+          "row_rejections_by_depth": [
+            0
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "natural/row": {
+          "complete_color_assignments_entered": 1,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0
+          ],
+          "nodes_by_depth": [
+            1
+          ],
+          "nodes_entered": 1,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 1,
+          "row_rejections_by_depth": [
+            0
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        }
+      },
+      "phase_modes_checked": [
+        "row",
+        "relations",
+        "expanded"
+      ]
+    },
+    {
+      "core_order": 3,
+      "exact_tuple_sets_match": true,
+      "phase_generation_counts": {
+        "collisions/expanded": {
+          "complete_color_assignments_entered": 1,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1
+          ],
+          "nodes_entered": 2,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 1,
+          "row_rejections_by_depth": [
+            0,
+            0
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "collisions/relations": {
+          "complete_color_assignments_entered": 1,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1
+          ],
+          "nodes_entered": 2,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 1,
+          "row_rejections_by_depth": [
+            0,
+            0
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "collisions/row": {
+          "complete_color_assignments_entered": 1,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1
+          ],
+          "nodes_entered": 2,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 1,
+          "row_rejections_by_depth": [
+            0,
+            0
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "natural/expanded": {
+          "complete_color_assignments_entered": 1,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1
+          ],
+          "nodes_entered": 2,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 1,
+          "row_rejections_by_depth": [
+            0,
+            0
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "natural/relations": {
+          "complete_color_assignments_entered": 1,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1
+          ],
+          "nodes_entered": 2,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 1,
+          "row_rejections_by_depth": [
+            0,
+            0
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "natural/row": {
+          "complete_color_assignments_entered": 1,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1
+          ],
+          "nodes_entered": 2,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 1,
+          "row_rejections_by_depth": [
+            0,
+            0
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        }
+      },
+      "phase_modes_checked": [
+        "row",
+        "relations",
+        "expanded"
+      ]
+    },
+    {
+      "core_order": 5,
+      "exact_tuple_sets_match": true,
+      "phase_generation_counts": {
+        "collisions/expanded": {
+          "complete_color_assignments_entered": 2,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2
+          ],
+          "nodes_entered": 4,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 2,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            1
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "collisions/relations": {
+          "complete_color_assignments_entered": 2,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2
+          ],
+          "nodes_entered": 4,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 2,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            1
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "collisions/row": {
+          "complete_color_assignments_entered": 2,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2
+          ],
+          "nodes_entered": 4,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 2,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            1
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "natural/expanded": {
+          "complete_color_assignments_entered": 2,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2
+          ],
+          "nodes_entered": 4,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 2,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            1
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "natural/relations": {
+          "complete_color_assignments_entered": 2,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2
+          ],
+          "nodes_entered": 4,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 2,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            1
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "natural/row": {
+          "complete_color_assignments_entered": 2,
+          "full_correlation_checks_after_row_identity": 1,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2
+          ],
+          "nodes_entered": 4,
+          "output_row_masks_constructed_including_repetitions": 4,
+          "raw_RGS_color_leaves": 2,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            1
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0
+          ],
+          "solutions": 1,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        }
+      },
+      "phase_modes_checked": [
+        "row",
+        "relations",
+        "expanded"
+      ]
+    },
+    {
+      "core_order": 7,
+      "exact_tuple_sets_match": true,
+      "phase_generation_counts": {
+        "collisions/expanded": {
+          "complete_color_assignments_entered": 5,
+          "full_correlation_checks_after_row_identity": 4,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5
+          ],
+          "nodes_entered": 9,
+          "output_row_masks_constructed_including_repetitions": 16,
+          "raw_RGS_color_leaves": 5,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "solutions": 4,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "collisions/relations": {
+          "complete_color_assignments_entered": 5,
+          "full_correlation_checks_after_row_identity": 4,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5
+          ],
+          "nodes_entered": 9,
+          "output_row_masks_constructed_including_repetitions": 16,
+          "raw_RGS_color_leaves": 5,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "solutions": 4,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "collisions/row": {
+          "complete_color_assignments_entered": 5,
+          "full_correlation_checks_after_row_identity": 4,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5
+          ],
+          "nodes_entered": 9,
+          "output_row_masks_constructed_including_repetitions": 16,
+          "raw_RGS_color_leaves": 5,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "solutions": 4,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "natural/expanded": {
+          "complete_color_assignments_entered": 5,
+          "full_correlation_checks_after_row_identity": 4,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5
+          ],
+          "nodes_entered": 9,
+          "output_row_masks_constructed_including_repetitions": 16,
+          "raw_RGS_color_leaves": 5,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "solutions": 4,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "natural/relations": {
+          "complete_color_assignments_entered": 5,
+          "full_correlation_checks_after_row_identity": 4,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5
+          ],
+          "nodes_entered": 9,
+          "output_row_masks_constructed_including_repetitions": 16,
+          "raw_RGS_color_leaves": 5,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "solutions": 4,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "natural/row": {
+          "complete_color_assignments_entered": 5,
+          "full_correlation_checks_after_row_identity": 4,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5
+          ],
+          "nodes_entered": 9,
+          "output_row_masks_constructed_including_repetitions": 16,
+          "raw_RGS_color_leaves": 5,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "solutions": 4,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        }
+      },
+      "phase_modes_checked": [
+        "row",
+        "relations",
+        "expanded"
+      ]
+    },
+    {
+      "core_order": 9,
+      "exact_tuple_sets_match": true,
+      "phase_generation_counts": {
+        "collisions/expanded": {
+          "complete_color_assignments_entered": 13,
+          "full_correlation_checks_after_row_identity": 7,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            13
+          ],
+          "nodes_entered": 22,
+          "output_row_masks_constructed_including_repetitions": 28,
+          "raw_RGS_color_leaves": 15,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            1,
+            6
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "solutions": 7,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 2
+        },
+        "collisions/relations": {
+          "complete_color_assignments_entered": 13,
+          "full_correlation_checks_after_row_identity": 7,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            13
+          ],
+          "nodes_entered": 22,
+          "output_row_masks_constructed_including_repetitions": 28,
+          "raw_RGS_color_leaves": 15,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            1,
+            6
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "solutions": 7,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 2
+        },
+        "collisions/row": {
+          "complete_color_assignments_entered": 13,
+          "full_correlation_checks_after_row_identity": 7,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            13
+          ],
+          "nodes_entered": 22,
+          "output_row_masks_constructed_including_repetitions": 28,
+          "raw_RGS_color_leaves": 15,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            1,
+            6
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "solutions": 7,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 2
+        },
+        "natural/expanded": {
+          "complete_color_assignments_entered": 15,
+          "full_correlation_checks_after_row_identity": 7,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15
+          ],
+          "nodes_entered": 24,
+          "output_row_masks_constructed_including_repetitions": 28,
+          "raw_RGS_color_leaves": 15,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            8
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "solutions": 7,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "natural/relations": {
+          "complete_color_assignments_entered": 15,
+          "full_correlation_checks_after_row_identity": 7,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15
+          ],
+          "nodes_entered": 24,
+          "output_row_masks_constructed_including_repetitions": 28,
+          "raw_RGS_color_leaves": 15,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            8
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "solutions": 7,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        },
+        "natural/row": {
+          "complete_color_assignments_entered": 15,
+          "full_correlation_checks_after_row_identity": 7,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15
+          ],
+          "nodes_entered": 24,
+          "output_row_masks_constructed_including_repetitions": 28,
+          "raw_RGS_color_leaves": 15,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            8
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "solutions": 7,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 0
+        }
+      },
+      "phase_modes_checked": [
+        "row",
+        "relations",
+        "expanded"
+      ]
+    },
+    {
+      "core_order": 11,
+      "exact_tuple_sets_match": true,
+      "phase_generation_counts": {
+        "collisions/expanded": {
+          "complete_color_assignments_entered": 40,
+          "full_correlation_checks_after_row_identity": 5,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            40
+          ],
+          "nodes_entered": 64,
+          "output_row_masks_constructed_including_repetitions": 20,
+          "raw_RGS_color_leaves": 51,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            4,
+            30
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            11,
+            0
+          ],
+          "solutions": 5,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 11
+        },
+        "collisions/relations": {
+          "complete_color_assignments_entered": 40,
+          "full_correlation_checks_after_row_identity": 5,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            40
+          ],
+          "nodes_entered": 64,
+          "output_row_masks_constructed_including_repetitions": 20,
+          "raw_RGS_color_leaves": 51,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            4,
+            30
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            11,
+            0
+          ],
+          "solutions": 5,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 11
+        },
+        "collisions/row": {
+          "complete_color_assignments_entered": 40,
+          "full_correlation_checks_after_row_identity": 10,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            40
+          ],
+          "nodes_entered": 64,
+          "output_row_masks_constructed_including_repetitions": 20,
+          "raw_RGS_color_leaves": 51,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            4,
+            30
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            11,
+            0
+          ],
+          "solutions": 5,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 11
+        },
+        "natural/expanded": {
+          "complete_color_assignments_entered": 40,
+          "full_correlation_checks_after_row_identity": 5,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            40
+          ],
+          "nodes_entered": 64,
+          "output_row_masks_constructed_including_repetitions": 20,
+          "raw_RGS_color_leaves": 51,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            4,
+            30
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            11,
+            0
+          ],
+          "solutions": 5,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 11
+        },
+        "natural/relations": {
+          "complete_color_assignments_entered": 40,
+          "full_correlation_checks_after_row_identity": 5,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            40
+          ],
+          "nodes_entered": 64,
+          "output_row_masks_constructed_including_repetitions": 20,
+          "raw_RGS_color_leaves": 51,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            4,
+            30
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            11,
+            0
+          ],
+          "solutions": 5,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 11
+        },
+        "natural/row": {
+          "complete_color_assignments_entered": 40,
+          "full_correlation_checks_after_row_identity": 10,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            40
+          ],
+          "nodes_entered": 64,
+          "output_row_masks_constructed_including_repetitions": 20,
+          "raw_RGS_color_leaves": 51,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            4,
+            30
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            11,
+            0
+          ],
+          "solutions": 5,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 11
+        }
+      },
+      "phase_modes_checked": [
+        "row",
+        "relations",
+        "expanded"
+      ]
+    },
+    {
+      "core_order": 13,
+      "exact_tuple_sets_match": true,
+      "phase_generation_counts": {
+        "collisions/expanded": {
+          "complete_color_assignments_entered": 167,
+          "full_correlation_checks_after_row_identity": 15,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            25
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            167
+          ],
+          "nodes_entered": 242,
+          "output_row_masks_constructed_including_repetitions": 60,
+          "raw_RGS_color_leaves": 187,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            127
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            20,
+            0
+          ],
+          "solutions": 15,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 20
+        },
+        "collisions/relations": {
+          "complete_color_assignments_entered": 182,
+          "full_correlation_checks_after_row_identity": 15,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            26
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            182
+          ],
+          "nodes_entered": 257,
+          "output_row_masks_constructed_including_repetitions": 60,
+          "raw_RGS_color_leaves": 187,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            141
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            0
+          ],
+          "solutions": 15,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 5
+        },
+        "collisions/row": {
+          "complete_color_assignments_entered": 185,
+          "full_correlation_checks_after_row_identity": 42,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            185
+          ],
+          "nodes_entered": 260,
+          "output_row_masks_constructed_including_repetitions": 60,
+          "raw_RGS_color_leaves": 187,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            143
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "solutions": 15,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 2
+        },
+        "natural/expanded": {
+          "complete_color_assignments_entered": 167,
+          "full_correlation_checks_after_row_identity": 15,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            25
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            167
+          ],
+          "nodes_entered": 242,
+          "output_row_masks_constructed_including_repetitions": 60,
+          "raw_RGS_color_leaves": 187,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            127
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            20,
+            0
+          ],
+          "solutions": 15,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 20
+        },
+        "natural/relations": {
+          "complete_color_assignments_entered": 182,
+          "full_correlation_checks_after_row_identity": 15,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            26
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            182
+          ],
+          "nodes_entered": 257,
+          "output_row_masks_constructed_including_repetitions": 60,
+          "raw_RGS_color_leaves": 187,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            141
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            0
+          ],
+          "solutions": 15,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 5
+        },
+        "natural/row": {
+          "complete_color_assignments_entered": 185,
+          "full_correlation_checks_after_row_identity": 42,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            185
+          ],
+          "nodes_entered": 260,
+          "output_row_masks_constructed_including_repetitions": 60,
+          "raw_RGS_color_leaves": 187,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            143
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "solutions": 15,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 2
+        }
+      },
+      "phase_modes_checked": [
+        "row",
+        "relations",
+        "expanded"
+      ]
+    },
+    {
+      "core_order": 15,
+      "exact_tuple_sets_match": true,
+      "phase_generation_counts": {
+        "collisions/expanded": {
+          "complete_color_assignments_entered": 216,
+          "full_correlation_checks_after_row_identity": 14,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            108,
+            74
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            187,
+            216
+          ],
+          "nodes_entered": 478,
+          "output_row_masks_constructed_including_repetitions": 56,
+          "raw_RGS_color_leaves": 715,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            23,
+            128
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            499,
+            0
+          ],
+          "solutions": 14,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 499
+        },
+        "collisions/relations": {
+          "complete_color_assignments_entered": 340,
+          "full_correlation_checks_after_row_identity": 14,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            76,
+            110
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            187,
+            340
+          ],
+          "nodes_entered": 602,
+          "output_row_masks_constructed_including_repetitions": 56,
+          "raw_RGS_color_leaves": 715,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            23,
+            216
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            375,
+            0
+          ],
+          "solutions": 14,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 375
+        },
+        "collisions/row": {
+          "complete_color_assignments_entered": 631,
+          "full_correlation_checks_after_row_identity": 204,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            187,
+            631
+          ],
+          "nodes_entered": 893,
+          "output_row_masks_constructed_including_repetitions": 56,
+          "raw_RGS_color_leaves": 715,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            23,
+            427
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            84,
+            0
+          ],
+          "solutions": 14,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 84
+        },
+        "natural/expanded": {
+          "complete_color_assignments_entered": 635,
+          "full_correlation_checks_after_row_identity": 14,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            18,
+            171
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            187,
+            635
+          ],
+          "nodes_entered": 897,
+          "output_row_masks_constructed_including_repetitions": 56,
+          "raw_RGS_color_leaves": 715,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            450
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            80,
+            0
+          ],
+          "solutions": 14,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 80
+        },
+        "natural/relations": {
+          "complete_color_assignments_entered": 698,
+          "full_correlation_checks_after_row_identity": 14,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            190
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            187,
+            698
+          ],
+          "nodes_entered": 960,
+          "output_row_masks_constructed_including_repetitions": 56,
+          "raw_RGS_color_leaves": 715,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            494
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            17,
+            0
+          ],
+          "solutions": 14,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 17
+        },
+        "natural/row": {
+          "complete_color_assignments_entered": 701,
+          "full_correlation_checks_after_row_identity": 204,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            187,
+            701
+          ],
+          "nodes_entered": 963,
+          "output_row_masks_constructed_including_repetitions": 56,
+          "raw_RGS_color_leaves": 715,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            497
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14,
+            0
+          ],
+          "solutions": 14,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 14
+        }
+      },
+      "phase_modes_checked": [
+        "row",
+        "relations",
+        "expanded"
+      ]
+    },
+    {
+      "core_order": 19,
+      "exact_tuple_sets_match": true,
+      "phase_generation_counts": {
+        "collisions/expanded": {
+          "complete_color_assignments_entered": 8916,
+          "full_correlation_checks_after_row_identity": 42,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            482,
+            1325
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            187,
+            715,
+            2795,
+            8916
+          ],
+          "nodes_entered": 12688,
+          "output_row_masks_constructed_including_repetitions": 168,
+          "raw_RGS_color_leaves": 11051,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            72,
+            7549
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2135,
+            0
+          ],
+          "solutions": 42,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 2135
+        },
+        "natural/expanded": {
+          "complete_color_assignments_entered": 8916,
+          "full_correlation_checks_after_row_identity": 42,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            482,
+            1325
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            187,
+            715,
+            2795,
+            8916
+          ],
+          "nodes_entered": 12688,
+          "output_row_masks_constructed_including_repetitions": 168,
+          "raw_RGS_color_leaves": 11051,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            72,
+            7549
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2135,
+            0
+          ],
+          "solutions": 42,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 2135
+        }
+      },
+      "phase_modes_checked": [
+        "expanded"
+      ]
+    },
+    {
+      "core_order": 21,
+      "exact_tuple_sets_match": true,
+      "phase_generation_counts": {
+        "collisions/expanded": {
+          "complete_color_assignments_entered": 5454,
+          "full_correlation_checks_after_row_identity": 34,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            11,
+            8333,
+            938
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            187,
+            715,
+            2795,
+            11013,
+            5454
+          ],
+          "nodes_entered": 20239,
+          "output_row_masks_constructed_including_repetitions": 136,
+          "raw_RGS_color_leaves": 43947,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1315,
+            4482
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            141,
+            38352,
+            0
+          ],
+          "solutions": 34,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 38493
+        },
+        "natural/expanded": {
+          "complete_color_assignments_entered": 34468,
+          "full_correlation_checks_after_row_identity": 34,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2341,
+            6123
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            187,
+            715,
+            2795,
+            11051,
+            34468
+          ],
+          "nodes_entered": 49291,
+          "output_row_masks_constructed_including_repetitions": 136,
+          "raw_RGS_color_leaves": 43947,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            70,
+            28311
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9479,
+            0
+          ],
+          "solutions": 34,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 9479
+        }
+      },
+      "phase_modes_checked": [
+        "expanded"
+      ]
+    },
+    {
+      "core_order": 23,
+      "exact_tuple_sets_match": true,
+      "phase_generation_counts": {
+        "collisions/expanded": {
+          "complete_color_assignments_entered": 127102,
+          "full_correlation_checks_after_row_identity": 11,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            10351,
+            14850
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            187,
+            715,
+            2795,
+            11051,
+            43937,
+            127102
+          ],
+          "nodes_entered": 185862,
+          "output_row_masks_constructed_including_repetitions": 44,
+          "raw_RGS_color_leaves": 175275,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1787,
+            112241
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            37,
+            48136,
+            0
+          ],
+          "solutions": 11,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 48173
+        },
+        "natural/expanded": {
+          "complete_color_assignments_entered": 127102,
+          "full_correlation_checks_after_row_identity": 11,
+          "individual_sequence_pool_generated": 0,
+          "lag_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            10351,
+            14850
+          ],
+          "nodes_by_depth": [
+            1,
+            1,
+            2,
+            5,
+            15,
+            51,
+            187,
+            715,
+            2795,
+            11051,
+            43937,
+            127102
+          ],
+          "nodes_entered": 185862,
+          "output_row_masks_constructed_including_repetitions": 44,
+          "raw_RGS_color_leaves": 175275,
+          "row_rejections_by_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1787,
+            112241
+          ],
+          "skipped_leaves_by_prefix_depth": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            37,
+            48136,
+            0
+          ],
+          "solutions": 11,
+          "stored_pairs": 0,
+          "structural_leaves_skipped_before_completion": 48173
+        }
+      },
+      "phase_modes_checked": [
+        "expanded"
+      ]
+    }
+  ],
+  "scope": "all small natural prefixes through15; every valid prefix through23 in both orders; smallallmodes and moderateexpanded bothorders versus complete independent unpruned baselines",
+  "status": "passed",
+  "valid_tuple_prefixes_checked_against_grouped_and_expanded_filters": 2460
+}

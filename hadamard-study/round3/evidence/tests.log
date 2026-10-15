@@ -1,0 +1,17 @@
+test_full_anf_evaluation_matches_graph_signs_exhaustively (test_structure.BooleanPhaseTests.test_full_anf_evaluation_matches_graph_signs_exhaustively) ... ok
+test_grouped_prefix_filters_can_pass_without_any_completion (test_structure.BooleanPhaseTests.test_grouped_prefix_filters_can_pass_without_any_completion) ... ok
+test_repeated_edges_keep_integer_multiplicity_but_cancel_mod_two (test_structure.BooleanPhaseTests.test_repeated_edges_keep_integer_multiplicity_but_cancel_mod_two) ... ok
+test_shared_residual_with_opposite_constants_cancels (test_structure.BooleanPhaseTests.test_shared_residual_with_opposite_constants_cancels) ... ok
+test_substitution_respects_arbitrary_assigned_coordinate_sets (test_structure.BooleanPhaseTests.test_substitution_respects_arbitrary_assigned_coordinate_sets) ... ok
+test_zero_fill_would_reject_an_actual_williamson_member (test_structure.CancellationBoundTests.test_zero_fill_would_reject_an_actual_williamson_member) ... ok
+test_rgs_has_one_representative_per_row_multiset_in_both_orders (test_structure.CanonicalCoverageTests.test_rgs_has_one_representative_per_row_multiset_in_both_orders) ... ok
+test_search_outputs_match_preserved_independent_baseline (test_structure.CanonicalCoverageTests.test_search_outputs_match_preserved_independent_baseline) ... ok
+test_valid_solution_survives_nonprefix_phase_assignment (test_structure.CanonicalCoverageTests.test_valid_solution_survives_nonprefix_phase_assignment) ... ok
+test_row_cache_ignores_phase_names_and_whole_group_signs (test_structure.DecisionCacheTests.test_row_cache_ignores_phase_names_and_whole_group_signs) ... ok
+test_signed_sum_cache_ignores_sign_order_and_domain_duplicates (test_structure.DecisionCacheTests.test_signed_sum_cache_ignores_sign_order_and_domain_duplicates) ... ok
+test_signed_sum_decisions_equal_direct_integer_sumsets (test_structure.DecisionCacheTests.test_signed_sum_decisions_equal_direct_integer_sumsets) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.055s
+
+OK
