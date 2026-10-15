@@ -1,0 +1,67 @@
+[
+  {
+    "bound": "bezout",
+    "bound_order": 10,
+    "classification": "unresolved",
+    "computed_order": 7,
+    "degree": 4,
+    "id": "quartic_minus",
+    "input_hessian": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "2"
+      ]
+    ],
+    "isolated_complex_critical_point": null,
+    "milnor_number": null,
+    "neighborhood_radius": null,
+    "normalized_leading_coefficient": null,
+    "normalized_terms": [
+      [
+        0,
+        2,
+        "1"
+      ],
+      [
+        0,
+        4,
+        "-1"
+      ],
+      [
+        2,
+        1,
+        "-2"
+      ],
+      [
+        4,
+        0,
+        "1"
+      ]
+    ],
+    "phi_coefficients": {
+      "2": "1",
+      "6": "2"
+    },
+    "positive_transverse_second_derivative": "2",
+    "residual_coefficients": {},
+    "residual_identically_zero": null,
+    "residual_order": null,
+    "schema_version": 1,
+    "sigma": 1,
+    "transform_matrix": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "value_at_origin": "0"
+  }
+]

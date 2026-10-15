@@ -1,0 +1,27 @@
+{
+  "other_checks": [
+    "degree-three hidden negative quartic",
+    "zero residual with positive nonconstant unit"
+  ],
+  "status": "passed",
+  "stress_cases": [
+    {
+      "case": "(y-x^2)^2+y^4",
+      "checks": "exact symbolic coefficient and resultant identities passed",
+      "critical_equation_remainder_first_order": 22,
+      "phi_through_order_18": "880*x**18 - 96*x**14 + 12*x**10 - 2*x**6 + x**2",
+      "residual_through_order_18": "24*x**16 - 4*x**12 + x**8",
+      "resultant_divided_by_16": "16*x**12 - 48*x**8*z + x**8 + 48*x**4*z**2 - 20*x**4*z - 16*z**3 - 8*z**2 - z"
+    },
+    {
+      "case": "(y-x^2)^2-y^4",
+      "checks": "exact symbolic coefficient and resultant identities passed",
+      "critical_equation_remainder_first_order": 22,
+      "phi_through_order_18": "880*x**18 + 96*x**14 + 12*x**10 + 2*x**6 + x**2",
+      "residual_through_order_18": "-24*x**16 - 4*x**12 - x**8",
+      "resultant_divided_by_16": "16*x**12 - 48*x**8*z - x**8 + 48*x**4*z**2 + 20*x**4*z - 16*z**3 + 8*z**2 - z"
+    }
+  ],
+  "tool": "SymPy",
+  "version": "1.14.0"
+}

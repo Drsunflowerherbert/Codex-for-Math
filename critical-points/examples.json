@@ -1,0 +1,669 @@
+{
+  "schema_version": 1,
+  "examples": [
+    {
+      "id": "quartic_plus",
+      "expression": "(y-x^2)^2+y^4",
+      "terms": [
+        [
+          0,
+          2,
+          "1"
+        ],
+        [
+          0,
+          4,
+          "1"
+        ],
+        [
+          2,
+          1,
+          "-2"
+        ],
+        [
+          4,
+          0,
+          "1"
+        ]
+      ],
+      "expected": {
+        "classification": "strict_local_minimum",
+        "residual_order": 8,
+        "normalized_leading_coefficient": "1"
+      },
+      "notes": "Degree four, residual order eight. Independently: sum of two squares, with a common zero only at the origin."
+    },
+    {
+      "id": "quartic_minus",
+      "expression": "(y-x^2)^2-y^4",
+      "terms": [
+        [
+          0,
+          2,
+          "1"
+        ],
+        [
+          0,
+          4,
+          "-1"
+        ],
+        [
+          2,
+          1,
+          "-2"
+        ],
+        [
+          4,
+          0,
+          "1"
+        ]
+      ],
+      "expected": {
+        "classification": "saddle",
+        "residual_order": 8,
+        "normalized_leading_coefficient": "-1"
+      },
+      "notes": "Degree four, residual order eight. Values on y=x^2 are -x^8; values on x=0 are y^2-y^4, positive for small nonzero y."
+    },
+    {
+      "id": "quartic_plus_negated",
+      "expression": "-(y-x^2)^2-y^4",
+      "terms": [
+        [
+          0,
+          2,
+          "-1"
+        ],
+        [
+          0,
+          4,
+          "-1"
+        ],
+        [
+          2,
+          1,
+          "2"
+        ],
+        [
+          4,
+          0,
+          "-1"
+        ]
+      ],
+      "expected": {
+        "classification": "strict_local_maximum",
+        "residual_order": 8,
+        "normalized_leading_coefficient": "1"
+      },
+      "notes": "Negative Hessian eigenvalue. Normalization multiplies by -1, giving quartic_plus and positive normalized residual coefficient."
+    },
+    {
+      "id": "quartic_minus_negated",
+      "expression": "-(y-x^2)^2+y^4",
+      "terms": [
+        [
+          0,
+          2,
+          "-1"
+        ],
+        [
+          0,
+          4,
+          "1"
+        ],
+        [
+          2,
+          1,
+          "2"
+        ],
+        [
+          4,
+          0,
+          "-1"
+        ]
+      ],
+      "expected": {
+        "classification": "saddle",
+        "residual_order": 8,
+        "normalized_leading_coefficient": "-1"
+      },
+      "notes": "Negative Hessian eigenvalue. Normalization gives quartic_minus; negation preserves saddle classification."
+    },
+    {
+      "id": "parabolic_zero_min",
+      "expression": "(y-x^2)^2",
+      "terms": [
+        [
+          0,
+          2,
+          "1"
+        ],
+        [
+          2,
+          1,
+          "-2"
+        ],
+        [
+          4,
+          0,
+          "1"
+        ]
+      ],
+      "expected": {
+        "classification": "non_strict_local_minimum",
+        "residual_order": null,
+        "normalized_leading_coefficient": null
+      },
+      "notes": "The residual vanishes identically. Equality holds along the full critical parabola y=x^2."
+    },
+    {
+      "id": "parabolic_zero_max",
+      "expression": "-(y-x^2)^2",
+      "terms": [
+        [
+          0,
+          2,
+          "-1"
+        ],
+        [
+          2,
+          1,
+          "2"
+        ],
+        [
+          4,
+          0,
+          "-1"
+        ]
+      ],
+      "expected": {
+        "classification": "non_strict_local_maximum",
+        "residual_order": null,
+        "normalized_leading_coefficient": null
+      },
+      "notes": "Negative of parabolic_zero_min; normalized residual vanishes identically."
+    },
+    {
+      "id": "algebraic_zero_min",
+      "expression": "(y+y^2-x^2)^2",
+      "terms": [
+        [
+          0,
+          2,
+          "1"
+        ],
+        [
+          0,
+          3,
+          "2"
+        ],
+        [
+          0,
+          4,
+          "1"
+        ],
+        [
+          2,
+          1,
+          "-2"
+        ],
+        [
+          2,
+          2,
+          "-2"
+        ],
+        [
+          4,
+          0,
+          "1"
+        ]
+      ],
+      "expected": {
+        "classification": "non_strict_local_minimum",
+        "residual_order": null,
+        "normalized_leading_coefficient": null
+      },
+      "notes": "Identically zero residual with nonpolynomial algebraic critical branch phi=(sqrt(1+4x^2)-1)/2. A finite polynomial phi must not be required."
+    },
+    {
+      "id": "algebraic_zero_max",
+      "expression": "-(y+y^2-x^2)^2",
+      "terms": [
+        [
+          0,
+          2,
+          "-1"
+        ],
+        [
+          0,
+          3,
+          "-2"
+        ],
+        [
+          0,
+          4,
+          "-1"
+        ],
+        [
+          2,
+          1,
+          "2"
+        ],
+        [
+          2,
+          2,
+          "2"
+        ],
+        [
+          4,
+          0,
+          "-1"
+        ]
+      ],
+      "expected": {
+        "classification": "non_strict_local_maximum",
+        "residual_order": null,
+        "normalized_leading_coefficient": null
+      },
+      "notes": "Negative of algebraic_zero_min; normalization preserves its infinite power-series critical branch."
+    },
+    {
+      "id": "shifted_quartic_plus",
+      "expression": "7+(y-x^2)^2+y^4",
+      "terms": [
+        [
+          0,
+          0,
+          "7"
+        ],
+        [
+          0,
+          2,
+          "1"
+        ],
+        [
+          0,
+          4,
+          "1"
+        ],
+        [
+          2,
+          1,
+          "-2"
+        ],
+        [
+          4,
+          0,
+          "1"
+        ]
+      ],
+      "expected": {
+        "classification": "strict_local_minimum",
+        "residual_order": 8,
+        "normalized_leading_coefficient": "1"
+      },
+      "notes": "Nonzero critical value f(0,0)=7. The constant must be subtracted before computing the residual order."
+    },
+    {
+      "id": "mixed_hessian_min",
+      "expression": "(2x+3y)^2+x^6",
+      "terms": [
+        [
+          0,
+          2,
+          "9"
+        ],
+        [
+          1,
+          1,
+          "12"
+        ],
+        [
+          2,
+          0,
+          "4"
+        ],
+        [
+          6,
+          0,
+          "1"
+        ]
+      ],
+      "expected": {
+        "classification": "strict_local_minimum",
+        "residual_order": 6,
+        "normalized_leading_coefficient": "1"
+      },
+      "notes": "Hessian [[8,12],[12,18]]. Rational shear old y=Y-(2/3)X gives 9Y^2+X^6 exactly."
+    },
+    {
+      "id": "mixed_hessian_max",
+      "expression": "-(2x+3y)^2-x^6",
+      "terms": [
+        [
+          0,
+          2,
+          "-9"
+        ],
+        [
+          1,
+          1,
+          "-12"
+        ],
+        [
+          2,
+          0,
+          "-4"
+        ],
+        [
+          6,
+          0,
+          "-1"
+        ]
+      ],
+      "expected": {
+        "classification": "strict_local_maximum",
+        "residual_order": 6,
+        "normalized_leading_coefficient": "1"
+      },
+      "notes": "Hessian [[-8,-12],[-12,-18]]. Sign normalization and the same rational shear give 9Y^2+X^6."
+    },
+    {
+      "id": "mixed_negative_eigenvalue_saddle",
+      "expression": "-(2x+3y)^2+x^6",
+      "terms": [
+        [
+          0,
+          2,
+          "-9"
+        ],
+        [
+          1,
+          1,
+          "-12"
+        ],
+        [
+          2,
+          0,
+          "-4"
+        ],
+        [
+          6,
+          0,
+          "1"
+        ]
+      ],
+      "expected": {
+        "classification": "saddle",
+        "residual_order": 6,
+        "normalized_leading_coefficient": "-1"
+      },
+      "notes": "The normalized residual is -X^6. Original f is positive along 2x+3y=0 and negative along x=0."
+    },
+    {
+      "id": "swapped_hessian_min",
+      "expression": "x^2+y^4",
+      "terms": [
+        [
+          0,
+          4,
+          "1"
+        ],
+        [
+          2,
+          0,
+          "1"
+        ]
+      ],
+      "expected": {
+        "classification": "strict_local_minimum",
+        "residual_order": 4,
+        "normalized_leading_coefficient": "1"
+      },
+      "notes": "Original f_yy(0)=0. The prescribed swap old x=Y, old y=X gives Y^2+X^4."
+    },
+    {
+      "id": "swapped_hessian_max",
+      "expression": "-x^2-y^4",
+      "terms": [
+        [
+          0,
+          4,
+          "-1"
+        ],
+        [
+          2,
+          0,
+          "-1"
+        ]
+      ],
+      "expected": {
+        "classification": "strict_local_maximum",
+        "residual_order": 4,
+        "normalized_leading_coefficient": "1"
+      },
+      "notes": "Requires both the coordinate swap and negative-eigenvalue sign normalization."
+    },
+    {
+      "id": "odd_saddle",
+      "expression": "y^2+x^3",
+      "terms": [
+        [
+          0,
+          2,
+          "1"
+        ],
+        [
+          3,
+          0,
+          "1"
+        ]
+      ],
+      "expected": {
+        "classification": "saddle",
+        "residual_order": 3,
+        "normalized_leading_coefficient": "1"
+      },
+      "notes": "Residual X^3 changes sign. On y=0 the original values are x^3."
+    },
+    {
+      "id": "hidden_cubic_saddle",
+      "expression": "y^2+2x^2y",
+      "terms": [
+        [
+          0,
+          2,
+          "1"
+        ],
+        [
+          2,
+          1,
+          "2"
+        ]
+      ],
+      "expected": {
+        "classification": "saddle",
+        "residual_order": 4,
+        "normalized_leading_coefficient": "-1"
+      },
+      "notes": "A degree-three polynomial with residual -X^4. phi=-X^2; f(X,0)=0 would give the wrong answer if used as a residual."
+    },
+    {
+      "id": "delayed_degree_six_even",
+      "expression": "(y-x^3)^2+y^4",
+      "terms": [
+        [
+          0,
+          2,
+          "1"
+        ],
+        [
+          0,
+          4,
+          "1"
+        ],
+        [
+          3,
+          1,
+          "-2"
+        ],
+        [
+          6,
+          0,
+          "1"
+        ]
+      ],
+      "expected": {
+        "classification": "strict_local_minimum",
+        "residual_order": 12,
+        "normalized_leading_coefficient": "1"
+      },
+      "notes": "Degree six, residual order twelve. The critical equation is phi+2phi^3=X^3; independent strictness follows from the sum of squares."
+    },
+    {
+      "id": "delayed_degree_six_odd",
+      "expression": "(y-x^3)^2+y^3",
+      "terms": [
+        [
+          0,
+          2,
+          "1"
+        ],
+        [
+          0,
+          3,
+          "1"
+        ],
+        [
+          3,
+          1,
+          "-2"
+        ],
+        [
+          6,
+          0,
+          "1"
+        ]
+      ],
+      "expected": {
+        "classification": "saddle",
+        "residual_order": 9,
+        "normalized_leading_coefficient": "1"
+      },
+      "notes": "Degree six, residual order nine. The critical equation is phi+(3/2)phi^2=X^3; along y=x^3, f=x^9 changes sign."
+    },
+    {
+      "id": "tiny_rational_saddle",
+      "expression": "y^2-x^4/10^100",
+      "terms": [
+        [
+          0,
+          2,
+          "1"
+        ],
+        [
+          4,
+          0,
+          "-1/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ]
+      ],
+      "expected": {
+        "classification": "saddle",
+        "residual_order": 4,
+        "normalized_leading_coefficient": "-1/10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "notes": "The exact negative coefficient must survive; a magnitude tolerance cannot certify its sign or make it zero."
+    },
+    {
+      "id": "rational_coefficients_min",
+      "expression": "(y-x^2/3)^2+x^6/7",
+      "terms": [
+        [
+          0,
+          2,
+          "1"
+        ],
+        [
+          2,
+          1,
+          "-2/3"
+        ],
+        [
+          4,
+          0,
+          "1/9"
+        ],
+        [
+          6,
+          0,
+          "1/7"
+        ]
+      ],
+      "expected": {
+        "classification": "strict_local_minimum",
+        "residual_order": 6,
+        "normalized_leading_coefficient": "1/7"
+      },
+      "notes": "Nonintegral rational input. phi=X^2/3 and g=X^6/7 exactly; positivity follows from the displayed sum."
+    },
+    {
+      "id": "quadratic_only_min",
+      "expression": "y^2",
+      "terms": [
+        [
+          0,
+          2,
+          "1"
+        ]
+      ],
+      "expected": {
+        "classification": "non_strict_local_minimum",
+        "residual_order": null,
+        "normalized_leading_coefficient": null
+      },
+      "notes": "Degree two and identically zero residual. The full line y=0 consists of equality and critical points."
+    },
+    {
+      "id": "local_isolation_with_distant_critical_line",
+      "expression": "(1+x)^2*(y^2+x^3)",
+      "terms": [
+        [
+          0,
+          2,
+          "1"
+        ],
+        [
+          1,
+          2,
+          "2"
+        ],
+        [
+          2,
+          2,
+          "1"
+        ],
+        [
+          3,
+          0,
+          "1"
+        ],
+        [
+          4,
+          0,
+          "2"
+        ],
+        [
+          5,
+          0,
+          "1"
+        ]
+      ],
+      "expected": {
+        "classification": "saddle",
+        "residual_order": 3,
+        "normalized_leading_coefficient": "1"
+      },
+      "notes": "Degree five. phi=0 and g=X^3+2X^4+X^5. The origin is an isolated complex critical point with Milnor number 2, while both gradients have common factor 1+x and the entire distant line x=-1 is critical. On y=0, x^3(1+x)^2 has both signs near zero."
+    }
+  ]
+}

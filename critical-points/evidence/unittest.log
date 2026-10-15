@@ -1,0 +1,23 @@
+test_all_sign_parity_and_flat_cases (test_classifier.ClassificationTests.test_all_sign_parity_and_flat_cases) ... ok
+test_cap_before_and_at_first_nonzero_term (test_classifier.ClassificationTests.test_cap_before_and_at_first_nonzero_term) ... ok
+test_curved_valley_with_nonconstant_unit (test_classifier.ClassificationTests.test_curved_valley_with_nonconstant_unit) ... ok
+test_degree_four_stress_has_order_eight (test_classifier.ClassificationTests.test_degree_four_stress_has_order_eight) ... ok
+test_duplicate_terms_and_exact_cancellation (test_classifier.ClassificationTests.test_duplicate_terms_and_exact_cancellation) ... ok
+test_example_catalog (test_classifier.ClassificationTests.test_example_catalog) ... ok
+test_global_critical_component_does_not_prevent_local_isolation (test_classifier.ClassificationTests.test_global_critical_component_does_not_prevent_local_isolation) ... ok
+test_order_zero_series_is_an_exact_zero_jet (test_classifier.ClassificationTests.test_order_zero_series_is_an_exact_zero_jet) ... ok
+test_partial_zero_jet_does_not_claim_an_extremum (test_classifier.ClassificationTests.test_partial_zero_jet_does_not_claim_an_extremum) ... ok
+test_rational_linear_changes_and_sign_flips (test_classifier.ClassificationTests.test_rational_linear_changes_and_sign_flips) ... ok
+test_repeated_factor_is_non_strict (test_classifier.ClassificationTests.test_repeated_factor_is_non_strict) ... ok
+test_stress_formal_series_to_order_eighteen (test_classifier.ClassificationTests.test_stress_formal_series_to_order_eighteen) ... ok
+test_very_small_exact_coefficient_is_not_rounded_away (test_classifier.ClassificationTests.test_very_small_exact_coefficient_is_not_rounded_away) ... ok
+test_exact_json_success_and_inexact_json_failure (test_classifier.CommandLineTests.test_exact_json_success_and_inexact_json_failure) ... ok
+test_float_and_invalid_exponents_are_rejected (test_classifier.RejectedInputTests.test_float_and_invalid_exponents_are_rejected) ... ok
+test_series_requires_normalized_terms_and_integer_order (test_classifier.RejectedInputTests.test_series_requires_normalized_terms_and_integer_order) ... ok
+test_stationarity_and_hessian_rank_are_required (test_classifier.RejectedInputTests.test_stationarity_and_hessian_rank_are_required) ... ok
+test_unknown_bound_and_invalid_cap_are_rejected (test_classifier.RejectedInputTests.test_unknown_bound_and_invalid_cap_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.165s
+
+OK

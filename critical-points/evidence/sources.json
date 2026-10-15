@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "arxiv_id": "1305.5102v1",
+      "title": "A bound for the Milnor number of plane curve singularities",
+      "authors": [
+        "Arkadiusz Płoski"
+      ],
+      "abstract_url": "https://arxiv.org/abs/1305.5102v1",
+      "pdf_url": "https://arxiv.org/pdf/1305.5102v1",
+      "pdf_sha256": "55f5ee9c01cb7f4ff3a8031129a1e4034edaee27c3c912956b2bd8f2f2300d49",
+      "pdf_bytes": 125696,
+      "inspected_locations": [
+        "Introduction, p.1",
+        "Theorem 1.1, p.2",
+        "Theorem 1.4 and Remark 1.5, p.2"
+      ],
+      "accessed_date": "2026-10-15",
+      "source_retained_in_repository": false
+    },
+    {
+      "arxiv_id": "1303.7114v3",
+      "title": "The Classification of Real Singularities Using SINGULAR. Part I: Splitting Lemma and Simple Singularities",
+      "authors": [
+        "Magdaleen S. Marais",
+        "Andreas Steenpass"
+      ],
+      "abstract_url": "https://arxiv.org/abs/1303.7114v3",
+      "pdf_url": "https://arxiv.org/pdf/1303.7114v3",
+      "pdf_sha256": "6b69136f9c54f07232bb130b36f593c58c35330429e215e1d0c8fc26da7d7593",
+      "pdf_bytes": 583884,
+      "inspected_locations": [
+        "Theorem 11, pp.5–6",
+        "Algorithm 2, p.7",
+        "Section 4.2, p.8"
+      ],
+      "accessed_date": "2026-10-15",
+      "source_retained_in_repository": false
+    }
+  ]
+}
