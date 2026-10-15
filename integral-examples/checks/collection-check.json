@@ -2,7 +2,7 @@
   "status": "passed",
   "scope": "Structure, metadata, exact review hashes, retrieval smoke checks, local links and directory-only changes.",
   "example_count": 16,
-  "local_links_checked": 52,
+  "local_links_checked": 59,
   "identity_check_file_loaded": true,
   "outputs": {
     "pdf/guide.pdf": "f7a0010d91ac5a95cb7fc1df69109912296fb552f9bbcf6985cea91059d3e814",

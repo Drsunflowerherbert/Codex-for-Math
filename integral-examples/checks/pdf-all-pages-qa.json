@@ -1,0 +1,526 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-15",
+  "scope": "Actual individual-page model visual inspection; coverage validation is not itself visual or mathematical verification.",
+  "summary": "No rendering defects observed; no repair or rebuild required.",
+  "renderer": "pdftoppm -scale-to 1800 -png",
+  "rendered_image_dimensions_px": [
+    1391,
+    1800
+  ],
+  "rendered_images_retained_in_repository": false,
+  "original_publication_commit": "f64a1b0133ee8fdf3843469e703f09b9cae494c4",
+  "total_pages_visually_inspected": 62,
+  "artifacts": [
+    {
+      "pdf": "pdf/integral-examples.pdf",
+      "page_count": 52,
+      "pdf_sha256": "9d03d22882d87c4be3b40b2e7b21972bc159c5f15f3ed4522e4a0547a256f068",
+      "pages": [
+        {
+          "page": 1,
+          "disposition": "pass",
+          "reviewer_role": "geometry author",
+          "review_file": "reviews/pdf-full-pages-01-13.md",
+          "rendered_image": "full-01.png",
+          "rendered_image_sha256": "49979a665bb6444be8b708c46025eecf93b2d45fa7bfd1456d04371e297b260b"
+        },
+        {
+          "page": 2,
+          "disposition": "pass",
+          "reviewer_role": "geometry author",
+          "review_file": "reviews/pdf-full-pages-01-13.md",
+          "rendered_image": "full-02.png",
+          "rendered_image_sha256": "1ef4c3ec8097867c1ece672101d5cb3ef76d08a42706b8c102fc9bd3b575f925"
+        },
+        {
+          "page": 3,
+          "disposition": "pass",
+          "reviewer_role": "geometry author",
+          "review_file": "reviews/pdf-full-pages-01-13.md",
+          "rendered_image": "full-03.png",
+          "rendered_image_sha256": "9b218ef1b3dfb3406bd52ab50db3323fa173cd71f3d83c7233517588d40c63dc"
+        },
+        {
+          "page": 4,
+          "disposition": "pass",
+          "reviewer_role": "geometry author",
+          "review_file": "reviews/pdf-full-pages-01-13.md",
+          "rendered_image": "full-04.png",
+          "rendered_image_sha256": "c9ae5336777c6c138be0b0b30364074f67bbe98196d6d5b8ab43d2317ca0eb28"
+        },
+        {
+          "page": 5,
+          "disposition": "pass",
+          "reviewer_role": "geometry author",
+          "review_file": "reviews/pdf-full-pages-01-13.md",
+          "rendered_image": "full-05.png",
+          "rendered_image_sha256": "d589e1dc5b84a767f84b294f0326f3a652f1790d21cee363ad8a8178699d75ff"
+        },
+        {
+          "page": 6,
+          "disposition": "pass",
+          "reviewer_role": "geometry author",
+          "review_file": "reviews/pdf-full-pages-01-13.md",
+          "rendered_image": "full-06.png",
+          "rendered_image_sha256": "08a9618fc3529db4d12050f8e461d4e23f39c0dbc2fbb45da12f4f35b1142c8d"
+        },
+        {
+          "page": 7,
+          "disposition": "pass",
+          "reviewer_role": "geometry author",
+          "review_file": "reviews/pdf-full-pages-01-13.md",
+          "rendered_image": "full-07.png",
+          "rendered_image_sha256": "dc3e70358822225623ced6c4d84a364de75385b6f4c06873a48bf48437cb66b6"
+        },
+        {
+          "page": 8,
+          "disposition": "pass",
+          "reviewer_role": "geometry author",
+          "review_file": "reviews/pdf-full-pages-01-13.md",
+          "rendered_image": "full-08.png",
+          "rendered_image_sha256": "eb5a2b40c57def7e93fef196770053995a4b16d60c6deaddd69ee7d92f67e350"
+        },
+        {
+          "page": 9,
+          "disposition": "pass",
+          "reviewer_role": "geometry author",
+          "review_file": "reviews/pdf-full-pages-01-13.md",
+          "rendered_image": "full-09.png",
+          "rendered_image_sha256": "b8301cdd9a901cf1c56f1e9ef90076cde6da9e3d4ef46fde2f963db6879a4321"
+        },
+        {
+          "page": 10,
+          "disposition": "pass",
+          "reviewer_role": "geometry author",
+          "review_file": "reviews/pdf-full-pages-01-13.md",
+          "rendered_image": "full-10.png",
+          "rendered_image_sha256": "6e360ecdc6e58fe01e0cc485cc506fb17f88243fe1bc5799ff639c4d2f0edc6d"
+        },
+        {
+          "page": 11,
+          "disposition": "pass",
+          "reviewer_role": "geometry author",
+          "review_file": "reviews/pdf-full-pages-01-13.md",
+          "rendered_image": "full-11.png",
+          "rendered_image_sha256": "7cf7fa0eff937d30045468304b8c5f85f8fcb55de83fdcaf242e3d25caa29b76"
+        },
+        {
+          "page": 12,
+          "disposition": "pass",
+          "reviewer_role": "geometry author",
+          "review_file": "reviews/pdf-full-pages-01-13.md",
+          "rendered_image": "full-12.png",
+          "rendered_image_sha256": "d58f62826988de5b7642bff5e08bc8ea30e7d15b34fb6dbecf82ccaf5fd5dcee"
+        },
+        {
+          "page": 13,
+          "disposition": "pass",
+          "reviewer_role": "geometry author",
+          "review_file": "reviews/pdf-full-pages-01-13.md",
+          "rendered_image": "full-13.png",
+          "rendered_image_sha256": "c4bfc1d0b11bd8fba6f7a72af5d27fab029dbb7d42b68e5345cb8c54d0075812"
+        },
+        {
+          "page": 14,
+          "disposition": "pass",
+          "reviewer_role": "source auditor",
+          "review_file": "reviews/pdf-full-pages-14-26.md",
+          "rendered_image": "full-14.png",
+          "rendered_image_sha256": "014909d910cdf7eec82b974692fba16b96daf069bf3c5ae4c59140a2fb8b5a7b"
+        },
+        {
+          "page": 15,
+          "disposition": "pass",
+          "reviewer_role": "source auditor",
+          "review_file": "reviews/pdf-full-pages-14-26.md",
+          "rendered_image": "full-15.png",
+          "rendered_image_sha256": "8ffb7fe2a02c6cfc0360febec8386dfb9eec76199a738598bc340d2dd79e0217"
+        },
+        {
+          "page": 16,
+          "disposition": "pass",
+          "reviewer_role": "source auditor",
+          "review_file": "reviews/pdf-full-pages-14-26.md",
+          "rendered_image": "full-16.png",
+          "rendered_image_sha256": "fb367160ba5c3631eb8a3ffcf15b668cf97c65c36c95dc8bead21eddc6c35e4e"
+        },
+        {
+          "page": 17,
+          "disposition": "pass",
+          "reviewer_role": "source auditor",
+          "review_file": "reviews/pdf-full-pages-14-26.md",
+          "rendered_image": "full-17.png",
+          "rendered_image_sha256": "70fa3c7522536af37d248e3589740b89eb98578418e76f9bf892b6db46c7f4b6"
+        },
+        {
+          "page": 18,
+          "disposition": "pass",
+          "reviewer_role": "source auditor",
+          "review_file": "reviews/pdf-full-pages-14-26.md",
+          "rendered_image": "full-18.png",
+          "rendered_image_sha256": "897bb1f3c59188cecbf3586d31d4e42a6b2e4a112b48ed63bc79409b780bda1c"
+        },
+        {
+          "page": 19,
+          "disposition": "pass",
+          "reviewer_role": "source auditor",
+          "review_file": "reviews/pdf-full-pages-14-26.md",
+          "rendered_image": "full-19.png",
+          "rendered_image_sha256": "f6bd8fa5df97ca6d37c5a26ac71bbc010fe54487797447ee71a306f26fc1d37b"
+        },
+        {
+          "page": 20,
+          "disposition": "pass",
+          "reviewer_role": "source auditor",
+          "review_file": "reviews/pdf-full-pages-14-26.md",
+          "rendered_image": "full-20.png",
+          "rendered_image_sha256": "a3c735992c66a9e4aecd581d85ff8fb2b8110cbdd4256ae9380df1a83907f29d"
+        },
+        {
+          "page": 21,
+          "disposition": "pass",
+          "reviewer_role": "source auditor",
+          "review_file": "reviews/pdf-full-pages-14-26.md",
+          "rendered_image": "full-21.png",
+          "rendered_image_sha256": "23b4ca33818392ad7091721f48e18beea3dcad61bee7c44f72dd6fb1fe1ebbe4"
+        },
+        {
+          "page": 22,
+          "disposition": "pass",
+          "reviewer_role": "source auditor",
+          "review_file": "reviews/pdf-full-pages-14-26.md",
+          "rendered_image": "full-22.png",
+          "rendered_image_sha256": "2ba534e0aafe0c18a2333f1a899254167c1e874f301672349346def2e323d4e3"
+        },
+        {
+          "page": 23,
+          "disposition": "pass",
+          "reviewer_role": "source auditor",
+          "review_file": "reviews/pdf-full-pages-14-26.md",
+          "rendered_image": "full-23.png",
+          "rendered_image_sha256": "419aa3c5e73cdabe6c936ea5bbe24b58a6bef35729bd5752f5044f865594b165"
+        },
+        {
+          "page": 24,
+          "disposition": "pass",
+          "reviewer_role": "source auditor",
+          "review_file": "reviews/pdf-full-pages-14-26.md",
+          "rendered_image": "full-24.png",
+          "rendered_image_sha256": "0f96c1d26b8f3feb12e17955c131b71eb48adb32cea8b54bdb8b52a1c2cadcab"
+        },
+        {
+          "page": 25,
+          "disposition": "pass",
+          "reviewer_role": "source auditor",
+          "review_file": "reviews/pdf-full-pages-14-26.md",
+          "rendered_image": "full-25.png",
+          "rendered_image_sha256": "e1f477f658a31533c633b5d1c84ee6e07e72029244c44361219c765e94a9477b"
+        },
+        {
+          "page": 26,
+          "disposition": "pass",
+          "reviewer_role": "source auditor",
+          "review_file": "reviews/pdf-full-pages-14-26.md",
+          "rendered_image": "full-26.png",
+          "rendered_image_sha256": "196b53f08185352e0a0baa17eaec7a47d7fa0dc0a8f4d30b153c52455a36e961"
+        },
+        {
+          "page": 27,
+          "disposition": "pass",
+          "reviewer_role": "Lebesgue author",
+          "review_file": "reviews/pdf-full-pages-27-39.md",
+          "rendered_image": "full-27.png",
+          "rendered_image_sha256": "67ed8772d83aee39fe84e0cbf3dec39da0afc163578efcb570efb15b9962b819"
+        },
+        {
+          "page": 28,
+          "disposition": "pass",
+          "reviewer_role": "Lebesgue author",
+          "review_file": "reviews/pdf-full-pages-27-39.md",
+          "rendered_image": "full-28.png",
+          "rendered_image_sha256": "4abbcf104746bf83ee288164ca9d21291d81143aca6af02747bdba99161bf879"
+        },
+        {
+          "page": 29,
+          "disposition": "pass",
+          "reviewer_role": "Lebesgue author",
+          "review_file": "reviews/pdf-full-pages-27-39.md",
+          "rendered_image": "full-29.png",
+          "rendered_image_sha256": "da5695ce8fa6eada1275bf75fb77ab10d0292b631f30ec22b5489c8b90a6198e"
+        },
+        {
+          "page": 30,
+          "disposition": "pass",
+          "reviewer_role": "Lebesgue author",
+          "review_file": "reviews/pdf-full-pages-27-39.md",
+          "rendered_image": "full-30.png",
+          "rendered_image_sha256": "3e0aab48f6968cf0221af2990e9f37b425b29243c70a09a5352a59bb8aa1754b"
+        },
+        {
+          "page": 31,
+          "disposition": "pass",
+          "reviewer_role": "Lebesgue author",
+          "review_file": "reviews/pdf-full-pages-27-39.md",
+          "rendered_image": "full-31.png",
+          "rendered_image_sha256": "0020132f207fcc5abc3293a1fb0c685e389f1320f478dceca5d46599112cc9b9"
+        },
+        {
+          "page": 32,
+          "disposition": "pass",
+          "reviewer_role": "Lebesgue author",
+          "review_file": "reviews/pdf-full-pages-27-39.md",
+          "rendered_image": "full-32.png",
+          "rendered_image_sha256": "3587f57cfadb669939bc818ccd3a65de9b5ca3c32e80fa1b0b3ef062577d9b3b"
+        },
+        {
+          "page": 33,
+          "disposition": "pass",
+          "reviewer_role": "Lebesgue author",
+          "review_file": "reviews/pdf-full-pages-27-39.md",
+          "rendered_image": "full-33.png",
+          "rendered_image_sha256": "ff2a18b9942aa1072878a62a48ef02641118926df50673b37d5d097f2400f3dc"
+        },
+        {
+          "page": 34,
+          "disposition": "pass",
+          "reviewer_role": "Lebesgue author",
+          "review_file": "reviews/pdf-full-pages-27-39.md",
+          "rendered_image": "full-34.png",
+          "rendered_image_sha256": "e4622b49e5267edff04bfa5ab099be4ec3e23850680e738e1d3f5c45f8733acd"
+        },
+        {
+          "page": 35,
+          "disposition": "pass",
+          "reviewer_role": "Lebesgue author",
+          "review_file": "reviews/pdf-full-pages-27-39.md",
+          "rendered_image": "full-35.png",
+          "rendered_image_sha256": "bebeeb4a55f7afe5165388c97d8c142502e639242c40967d9b82050335eadf04"
+        },
+        {
+          "page": 36,
+          "disposition": "pass",
+          "reviewer_role": "Lebesgue author",
+          "review_file": "reviews/pdf-full-pages-27-39.md",
+          "rendered_image": "full-36.png",
+          "rendered_image_sha256": "b7fadd9203b3fcdc7b973d71979257d0c683b82151473589c4f8e8f7eaddffe0"
+        },
+        {
+          "page": 37,
+          "disposition": "pass",
+          "reviewer_role": "Lebesgue author",
+          "review_file": "reviews/pdf-full-pages-27-39.md",
+          "rendered_image": "full-37.png",
+          "rendered_image_sha256": "83d08c51f0528537bcf490835c4e6d153ce14c1c508e14eba26f65fd88bb2c00"
+        },
+        {
+          "page": 38,
+          "disposition": "pass",
+          "reviewer_role": "Lebesgue author",
+          "review_file": "reviews/pdf-full-pages-27-39.md",
+          "rendered_image": "full-38.png",
+          "rendered_image_sha256": "a8131d7061500dc27bdaa5bf19c89b514335552f9899a45e1723f0059ef649fe"
+        },
+        {
+          "page": 39,
+          "disposition": "pass",
+          "reviewer_role": "Lebesgue author",
+          "review_file": "reviews/pdf-full-pages-27-39.md",
+          "rendered_image": "full-39.png",
+          "rendered_image_sha256": "5aa6d7a9c1a4f25bee12122cef80cf0b39f3e2fabb54f56272d83f9e45ba9ff1"
+        },
+        {
+          "page": 40,
+          "disposition": "pass",
+          "reviewer_role": "parameters author",
+          "review_file": "reviews/pdf-full-pages-40-52.md",
+          "rendered_image": "full-40.png",
+          "rendered_image_sha256": "884367c9eb3ad3ab696c279765fa4215594e4158439eebadc217f84bb785ba82"
+        },
+        {
+          "page": 41,
+          "disposition": "pass",
+          "reviewer_role": "parameters author",
+          "review_file": "reviews/pdf-full-pages-40-52.md",
+          "rendered_image": "full-41.png",
+          "rendered_image_sha256": "ba5d1fa6e28d7d5a168742dca46bcaf824d68b2a88e178436a8e392bc5940e92"
+        },
+        {
+          "page": 42,
+          "disposition": "pass",
+          "reviewer_role": "parameters author",
+          "review_file": "reviews/pdf-full-pages-40-52.md",
+          "rendered_image": "full-42.png",
+          "rendered_image_sha256": "2c517ac1d3398d0c5f5729280cd4f5ae58996d431cf9ffc83ea4e266d34ac486"
+        },
+        {
+          "page": 43,
+          "disposition": "pass",
+          "reviewer_role": "parameters author",
+          "review_file": "reviews/pdf-full-pages-40-52.md",
+          "rendered_image": "full-43.png",
+          "rendered_image_sha256": "0de54ed2a49941063cb370c916a5aed5f36ec22ccdeea42e8036ec5f306c13bd"
+        },
+        {
+          "page": 44,
+          "disposition": "pass",
+          "reviewer_role": "parameters author",
+          "review_file": "reviews/pdf-full-pages-40-52.md",
+          "rendered_image": "full-44.png",
+          "rendered_image_sha256": "cd4535faafe90ff1e8ee6fca67ac58a6e65f4d8d783b98890a2bbdf52e652bc1"
+        },
+        {
+          "page": 45,
+          "disposition": "pass",
+          "reviewer_role": "parameters author",
+          "review_file": "reviews/pdf-full-pages-40-52.md",
+          "rendered_image": "full-45.png",
+          "rendered_image_sha256": "f8ee1bbd78a9b89b53de3ff5e8d71754570c5b84b0418f1d62343c2cd1119666"
+        },
+        {
+          "page": 46,
+          "disposition": "pass",
+          "reviewer_role": "parameters author",
+          "review_file": "reviews/pdf-full-pages-40-52.md",
+          "rendered_image": "full-46.png",
+          "rendered_image_sha256": "0a4610389f9aa04dc36abdc1a50c65cd3a5caa3a3442c451b576f6dc6605dc82"
+        },
+        {
+          "page": 47,
+          "disposition": "pass",
+          "reviewer_role": "parameters author",
+          "review_file": "reviews/pdf-full-pages-40-52.md",
+          "rendered_image": "full-47.png",
+          "rendered_image_sha256": "b5ee96b351cd6cc2540d6d107479c4ffde1115077b21f7da0b234cd16c29c2b8"
+        },
+        {
+          "page": 48,
+          "disposition": "pass",
+          "reviewer_role": "parameters author",
+          "review_file": "reviews/pdf-full-pages-40-52.md",
+          "rendered_image": "full-48.png",
+          "rendered_image_sha256": "471afea50cd9f638e7f99ab43a487609190ffd4e42c4595f970ecdc92319fbc4"
+        },
+        {
+          "page": 49,
+          "disposition": "pass",
+          "reviewer_role": "parameters author",
+          "review_file": "reviews/pdf-full-pages-40-52.md",
+          "rendered_image": "full-49.png",
+          "rendered_image_sha256": "a108c90536315fba212eb165e4a43961af27faeadf8a9d237bd1f97e71e6ee65"
+        },
+        {
+          "page": 50,
+          "disposition": "pass",
+          "reviewer_role": "parameters author",
+          "review_file": "reviews/pdf-full-pages-40-52.md",
+          "rendered_image": "full-50.png",
+          "rendered_image_sha256": "018a7715891edac0776a2086d84fdbdbc0216087b148165bc8d47c02ac14c13c"
+        },
+        {
+          "page": 51,
+          "disposition": "pass",
+          "reviewer_role": "parameters author",
+          "review_file": "reviews/pdf-full-pages-40-52.md",
+          "rendered_image": "full-51.png",
+          "rendered_image_sha256": "26ee0c7ee907d61e20dbb0f564266aea9cd9fef4a5821eb902979c2b46ebb379"
+        },
+        {
+          "page": 52,
+          "disposition": "pass",
+          "reviewer_role": "parameters author",
+          "review_file": "reviews/pdf-full-pages-40-52.md",
+          "rendered_image": "full-52.png",
+          "rendered_image_sha256": "4aeaa67a94b0ac2c401b68d10c5594a45292bf395fa183d9ee5610857c4324a9"
+        }
+      ]
+    },
+    {
+      "pdf": "pdf/guide.pdf",
+      "page_count": 10,
+      "pdf_sha256": "f7a0010d91ac5a95cb7fc1df69109912296fb552f9bbcf6985cea91059d3e814",
+      "pages": [
+        {
+          "page": 1,
+          "disposition": "pass",
+          "reviewer_role": "primary collection agent",
+          "review_file": "reviews/pdf-full-guide-01-10.md",
+          "rendered_image": "guide-01.png",
+          "rendered_image_sha256": "c06f1d05eb794045c1b7b613d8b03e0936e06b096be3e483fed80e650b37e898"
+        },
+        {
+          "page": 2,
+          "disposition": "pass",
+          "reviewer_role": "primary collection agent",
+          "review_file": "reviews/pdf-full-guide-01-10.md",
+          "rendered_image": "guide-02.png",
+          "rendered_image_sha256": "755c476c45824d72b3317108ebc2c3a4fa23d250d33d02a9ae0420727279e512"
+        },
+        {
+          "page": 3,
+          "disposition": "pass",
+          "reviewer_role": "primary collection agent",
+          "review_file": "reviews/pdf-full-guide-01-10.md",
+          "rendered_image": "guide-03.png",
+          "rendered_image_sha256": "2e3fd48595b757d1771335d7ea1588d5cb0dadd672e7258c27d14593c7e9c192"
+        },
+        {
+          "page": 4,
+          "disposition": "pass",
+          "reviewer_role": "primary collection agent",
+          "review_file": "reviews/pdf-full-guide-01-10.md",
+          "rendered_image": "guide-04.png",
+          "rendered_image_sha256": "5e52a41ad0591cb71467b23adb136fe0d9d79f689e983346051047a7c88e9d0a"
+        },
+        {
+          "page": 5,
+          "disposition": "pass",
+          "reviewer_role": "primary collection agent",
+          "review_file": "reviews/pdf-full-guide-01-10.md",
+          "rendered_image": "guide-05.png",
+          "rendered_image_sha256": "1b821c86f7a6316ceccc37d25c779052f236d44f02251daa2a668b1e129550c7"
+        },
+        {
+          "page": 6,
+          "disposition": "pass",
+          "reviewer_role": "primary collection agent",
+          "review_file": "reviews/pdf-full-guide-01-10.md",
+          "rendered_image": "guide-06.png",
+          "rendered_image_sha256": "740e653671fe1ed503594a2507052d53ec612b1fa96eeea102c87c58842fb1b9"
+        },
+        {
+          "page": 7,
+          "disposition": "pass",
+          "reviewer_role": "primary collection agent",
+          "review_file": "reviews/pdf-full-guide-01-10.md",
+          "rendered_image": "guide-07.png",
+          "rendered_image_sha256": "3f2ba79350fb308ae7798b1f25e855031ac2f577da2f62f9b80be9637a1584d3"
+        },
+        {
+          "page": 8,
+          "disposition": "pass",
+          "reviewer_role": "primary collection agent",
+          "review_file": "reviews/pdf-full-guide-01-10.md",
+          "rendered_image": "guide-08.png",
+          "rendered_image_sha256": "241d5aef50874ff21ba3275236386b28479ad57c63c3760a282abff0b06a4820"
+        },
+        {
+          "page": 9,
+          "disposition": "pass",
+          "reviewer_role": "primary collection agent",
+          "review_file": "reviews/pdf-full-guide-01-10.md",
+          "rendered_image": "guide-09.png",
+          "rendered_image_sha256": "52e753b38ea032fe5bf6359605936b2a909a07e415501d5e7c6f086ffdbaf619"
+        },
+        {
+          "page": 10,
+          "disposition": "pass",
+          "reviewer_role": "primary collection agent",
+          "review_file": "reviews/pdf-full-guide-01-10.md",
+          "rendered_image": "guide-10.png",
+          "rendered_image_sha256": "d2973af21bf00d89ef151805ac827d6f3b044558b281c617d6b9554b16ec7dfa"
+        }
+      ]
+    }
+  ]
+}
