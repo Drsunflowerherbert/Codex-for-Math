@@ -1,0 +1,45 @@
+{
+  "step": "exact-definitions-01",
+  "command": [
+    "$VERIFY_ROOT/toolchains/lean-4.35.0-rc1-linux/bin/lake",
+    "--no-ansi",
+    "--no-cache",
+    "env",
+    "$VERIFY_ROOT/toolchains/lean-4.35.0-rc1-linux/bin/lean",
+    "$VERIFY_ROOT/checks/VerifyDefinitions.lean"
+  ],
+  "cwd": "$VERIFY_ROOT/build",
+  "started_at_utc": "2026-10-16T03:10:32.268762+00:00",
+  "duration_seconds": 9.005,
+  "exit_code": 1,
+  "resource_stop": false,
+  "cgroup_peak_observed_bytes": 16329977856,
+  "cgroup_anon_peak_observed_bytes": 1148792832,
+  "resource_guard": "Stop only if task anonymous memory exceeds12GiB; file cache is reclaimable",
+  "resource_sample_interval_seconds": 1,
+  "cgroup_memory_scope": "whole task environment, not exclusively the child",
+  "settings": {
+    "LEAN_NUM_THREADS": "2",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1",
+    "MATHLIB_CACHE_DIR": "$VERIFY_ROOT/cache/mathlib",
+    "inherited_cache_endpoint_overrides_removed": true,
+    "source_dependency_lockfile_preserved": true
+  },
+  "log": "exact-definitions-01.log",
+  "original_log_sha256": "6774783364151e003b30c1c03c5a4170243fb729b9bbc52d139d7099a2ebac19",
+  "published_normalized_log_sha256": "f8174a4ef4baeffad179c7f14ddedcfeda7899f4e5d2bc1300f024222495ff65",
+  "_publication": {
+    "copy_kind": "normalized public copy; original record retained privately",
+    "original_record_sha256": "cba6688994120ec5a663c11259d10010f4585bc8fd78ba956e556612b5519f23",
+    "normalization": "absolute private prefixes replaced by documented placeholders",
+    "original_log_hash_fields_relabelled": true,
+    "related_logs": [
+      {
+        "role": "combined_output",
+        "path": "logs/exact-definitions-01.log",
+        "original_sha256": "6774783364151e003b30c1c03c5a4170243fb729b9bbc52d139d7099a2ebac19",
+        "published_normalized_sha256": "f8174a4ef4baeffad179c7f14ddedcfeda7899f4e5d2bc1300f024222495ff65"
+      }
+    ]
+  }
+}

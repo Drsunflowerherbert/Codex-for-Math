@@ -1,0 +1,488 @@
+$VERIFY_ROOT/checks/VerifyDefinitions.lean:123:0: error: Unknown option `pp.width`
+@[reducible] def HolomorphicAnosov.ComplexModel : ℕ → Type :=
+fun d => Fin d → ℂ
+@[reducible] def HolomorphicAnosov.complexModel : (d : ℕ) →
+  ModelWithCorners.{0, 0, 0} ℂ (HolomorphicAnosov.ComplexModel d) (HolomorphicAnosov.ComplexModel d) :=
+fun d => modelWithCornersSelf.{0, 0} ℂ (HolomorphicAnosov.ComplexModel d)
+@[reducible] def HolomorphicAnosov.realModel : (d : ℕ) →
+  ModelWithCorners.{0, 0, 0} ℝ (HolomorphicAnosov.ComplexModel d) (HolomorphicAnosov.ComplexModel d) :=
+fun d => modelWithCornersSelf.{0, 0} ℝ (HolomorphicAnosov.ComplexModel d)
+class HolomorphicAnosov.IsCompactComplexManifold.{u} (d : ℕ) (X : Type u) [TopologicalSpace.{u} X]
+  [ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X] : Prop
+number of parameters: 4
+parents:
+  HolomorphicAnosov.IsCompactComplexManifold.toT2Space.{u} : T2Space.{u} X
+  HolomorphicAnosov.IsCompactComplexManifold.toSecondCountableTopology.{u} : SecondCountableTopology.{u} X
+  HolomorphicAnosov.IsCompactComplexManifold.toCompactSpace.{u} : CompactSpace.{u} X
+  HolomorphicAnosov.IsCompactComplexManifold.toConnectedSpace.{u} : ConnectedSpace.{u} X
+  HolomorphicAnosov.IsCompactComplexManifold.toIsManifold.{u} : IsManifold.{0, 0, 0, u}
+    (HolomorphicAnosov.complexModel d) ∞ X
+fields:
+  T2Space.t2.{u} : Pairwise.{u} fun x y =>
+      ∃ u v, IsOpen.{u} u ∧ IsOpen.{u} v ∧ Membership.mem.{u, u} u x ∧ Membership.mem.{u, u} v y ∧ Disjoint.{u} u v
+  SecondCountableTopology.is_open_generated_countable.{u} : ∃ b,
+      Set.Countable.{u} b ∧ Eq.{u + 1} inst✝¹ (TopologicalSpace.generateFrom.{u} b)
+  CompactSpace.isCompact_univ.{u_1} : IsCompact.{u} Set.univ.{u}
+  PreconnectedSpace.isPreconnected_univ.{u} : IsPreconnected.{u} Set.univ.{u}
+  ConnectedSpace.toNonempty.{u} : Nonempty.{u + 1} X
+  HasGroupoid.compatible.{u_5,
+    u_6} : ∀ {e e' : OpenPartialHomeomorph.{u, 0} X (HolomorphicAnosov.ComplexModel d)},
+      Membership.mem.{u, u} (atlas.{0, u} (HolomorphicAnosov.ComplexModel d) X) e →
+        Membership.mem.{u, u} (atlas.{0, u} (HolomorphicAnosov.ComplexModel d) X) e' →
+          Membership.mem.{0, 0} (contDiffGroupoid.{0, 0, 0} ∞ (HolomorphicAnosov.complexModel d))
+            (OpenPartialHomeomorph.trans.{0, u, 0} (OpenPartialHomeomorph.symm.{u, 0} e) e')
+constructor:
+  HolomorphicAnosov.IsCompactComplexManifold.mk.{u} {d : ℕ} {X : Type u} [TopologicalSpace.{u} X]
+    [ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X] [toT2Space : T2Space.{u} X]
+    [toSecondCountableTopology : SecondCountableTopology.{u} X] [toCompactSpace : CompactSpace.{u} X]
+    [toConnectedSpace : ConnectedSpace.{u} X]
+    [toIsManifold : IsManifold.{0, 0, 0, u} (HolomorphicAnosov.complexModel d) ∞ X] :
+    HolomorphicAnosov.IsCompactComplexManifold.{u} d X
+field notation resolution order:
+  HolomorphicAnosov.IsCompactComplexManifold.{u}, T2Space.{u}, SecondCountableTopology.{u}, CompactSpace.{u_1}, ConnectedSpace.{u}, IsManifold.{u_1,
+    u_2, u_3, u_4}, PreconnectedSpace.{u}, HasGroupoid.{u_5, u_6}
+@[reducible] def HolomorphicAnosov.Biholomorph.{u, v} : (d e : ℕ) →
+  (X : Type u) →
+    (Y : Type v) →
+      [inst : TopologicalSpace.{u} X] →
+        [ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X] →
+          [inst : TopologicalSpace.{v} Y] →
+            [ChartedSpace.{0, v} (HolomorphicAnosov.ComplexModel e) Y] → Type (max v u) :=
+fun d e X Y [TopologicalSpace.{u} X] [ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X] [TopologicalSpace.{v} Y]
+    [ChartedSpace.{0, v} (HolomorphicAnosov.ComplexModel e) Y] =>
+  Diffeomorph.{0, 0, 0, 0, 0, u, v} (HolomorphicAnosov.complexModel d) (HolomorphicAnosov.complexModel e) X Y ∞
+structure HolomorphicAnosov.ContinuousRealTangentSubbundle.{u_1, u_2, u_3} {E : Type u_1} [NormedAddCommGroup.{u_1} E]
+  [NormedSpace.{0, u_1} ℝ E] {H : Type u_2} [TopologicalSpace.{u_2} H] (I : ModelWithCorners.{0, u_1, u_2} ℝ E H)
+  (X : Type u_3) [TopologicalSpace.{u_3} X] [ChartedSpace.{u_2, u_3} H X] [IsManifold.{0, u_1, u_2, u_3} I ∞ X] :
+  Type (max u_1 u_3)
+number of parameters: 10
+fields:
+  HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{u_1, u_2,
+    u_3} : HolomorphicAnosov.RealTangentDistribution.{u_1, u_2, u_3} I X
+  HolomorphicAnosov.ContinuousRealTangentSubbundle.locally_trivial.{u_1, u_2,
+    u_3} : ∀ (x : X),
+      ∃ r e,
+        Membership.mem.{u_3, u_3} (Bundle.Trivialization.baseSet.{u_3, 0, max u_1 u_3} e) x ∧
+          Bundle.Trivialization.IsLinear.{0, u_3, 0, u_1} ℝ e
+constructor:
+  HolomorphicAnosov.ContinuousRealTangentSubbundle.mk.{u_1, u_2, u_3} {E : Type u_1} [NormedAddCommGroup.{u_1} E]
+    [NormedSpace.{0, u_1} ℝ E] {H : Type u_2} [TopologicalSpace.{u_2} H] {I : ModelWithCorners.{0, u_1, u_2} ℝ E H}
+    {X : Type u_3} [TopologicalSpace.{u_3} X] [ChartedSpace.{u_2, u_3} H X] [IsManifold.{0, u_1, u_2, u_3} I ∞ X]
+    (toDistribution : HolomorphicAnosov.RealTangentDistribution.{u_1, u_2, u_3} I X)
+    (locally_trivial :
+      ∀ (x : X),
+        ∃ r e,
+          Membership.mem.{u_3, u_3} (Bundle.Trivialization.baseSet.{u_3, 0, max u_1 u_3} e) x ∧
+            Bundle.Trivialization.IsLinear.{0, u_3, 0, u_1} ℝ e) :
+    HolomorphicAnosov.ContinuousRealTangentSubbundle.{u_1, u_2, u_3} I X
+structure HolomorphicAnosov.InvariantRealTangentSplitting.{u_1, u_2, u_3} {E : Type u_1} [NormedAddCommGroup.{u_1} E]
+  [NormedSpace.{0, u_1} ℝ E] {H : Type u_2} [TopologicalSpace.{u_2} H] {I : ModelWithCorners.{0, u_1, u_2} ℝ E H}
+  {X : Type u_3} [TopologicalSpace.{u_3} X] [ChartedSpace.{u_2, u_3} H X] [IsManifold.{0, u_1, u_2, u_3} I ∞ X]
+  (g : Diffeomorph.{0, u_1, u_1, u_2, u_2, u_3, u_3} I I X X ∞) : Type (max u_1 u_3)
+number of parameters: 11
+fields:
+  HolomorphicAnosov.InvariantRealTangentSplitting.stable.{u_1, u_2,
+    u_3} : HolomorphicAnosov.ContinuousRealTangentSubbundle.{u_1, u_2, u_3} I X
+  HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{u_1, u_2,
+    u_3} : HolomorphicAnosov.ContinuousRealTangentSubbundle.{u_1, u_2, u_3} I X
+  HolomorphicAnosov.InvariantRealTangentSplitting.isCompl.{u_1, u_2,
+    u_3} : ∀ (x : X),
+      IsCompl.{u_1}
+        (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{u_1, u_2, u_3}
+          (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{u_1, u_2, u_3} self) x)
+        (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{u_1, u_2, u_3}
+          (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{u_1, u_2, u_3} self) x)
+  HolomorphicAnosov.InvariantRealTangentSplitting.stable_map.{u_1, u_2,
+    u_3} : ∀ (x : X),
+      Eq.{u_1 + 1}
+        (Submodule.map.{0, 0, u_1, u_1} (↑(mfderiv% ⇑g x))
+          (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{u_1, u_2, u_3}
+            (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{u_1, u_2, u_3} self) x))
+        (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{u_1, u_2, u_3}
+          (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{u_1, u_2, u_3} self) (g x))
+  HolomorphicAnosov.InvariantRealTangentSplitting.unstable_map.{u_1, u_2,
+    u_3} : ∀ (x : X),
+      Eq.{u_1 + 1}
+        (Submodule.map.{0, 0, u_1, u_1} (↑(mfderiv% ⇑g x))
+          (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{u_1, u_2, u_3}
+            (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{u_1, u_2, u_3} self) x))
+        (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{u_1, u_2, u_3}
+          (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{u_1, u_2, u_3} self) (g x))
+constructor:
+  HolomorphicAnosov.InvariantRealTangentSplitting.mk.{u_1, u_2, u_3} {E : Type u_1} [NormedAddCommGroup.{u_1} E]
+    [NormedSpace.{0, u_1} ℝ E] {H : Type u_2} [TopologicalSpace.{u_2} H] {I : ModelWithCorners.{0, u_1, u_2} ℝ E H}
+    {X : Type u_3} [TopologicalSpace.{u_3} X] [ChartedSpace.{u_2, u_3} H X] [IsManifold.{0, u_1, u_2, u_3} I ∞ X]
+    {g : Diffeomorph.{0, u_1, u_1, u_2, u_2, u_3, u_3} I I X X ∞}
+    (stable unstable : HolomorphicAnosov.ContinuousRealTangentSubbundle.{u_1, u_2, u_3} I X)
+    (isCompl :
+      ∀ (x : X),
+        IsCompl.{u_1} (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{u_1, u_2, u_3} stable x)
+          (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{u_1, u_2, u_3} unstable x))
+    (stable_map :
+      ∀ (x : X),
+        Eq.{u_1 + 1}
+          (Submodule.map.{0, 0, u_1, u_1} (↑(mfderiv% ⇑g x))
+            (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{u_1, u_2, u_3} stable x))
+          (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{u_1, u_2, u_3} stable (g x)))
+    (unstable_map :
+      ∀ (x : X),
+        Eq.{u_1 + 1}
+          (Submodule.map.{0, 0, u_1, u_1} (↑(mfderiv% ⇑g x))
+            (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{u_1, u_2, u_3} unstable x))
+          (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{u_1, u_2, u_3} unstable (g x))) :
+    HolomorphicAnosov.InvariantRealTangentSplitting.{u_1, u_2, u_3} g
+def HolomorphicAnosov.restrictedIterateDerivative.{u_1, u_2, u_3} : {E : Type u_1} →
+  [inst : NormedAddCommGroup.{u_1} E] →
+    [inst_1 : NormedSpace.{0, u_1} ℝ E] →
+      {H : Type u_2} →
+        [inst_2 : TopologicalSpace.{u_2} H] →
+          {I : ModelWithCorners.{0, u_1, u_2} ℝ E H} →
+            {X : Type u_3} →
+              [inst_3 : TopologicalSpace.{u_3} X] →
+                [inst_4 : ChartedSpace.{u_2, u_3} H X] →
+                  (g : Diffeomorph.{0, u_1, u_1, u_2, u_2, u_3, u_3} I I X X ∞) →
+                    (P : HolomorphicAnosov.RealTangentDistribution.{u_1, u_2, u_3} I X) →
+                      (∀ (x : X), Eq.{u_1 + 1} (Submodule.map.{0, 0, u_1, u_1} (↑(mfderiv% ⇑g x)) (P x)) (P (g x))) →
+                        (n : ℕ) →
+                          (x : X) →
+                            ContinuousLinearEquiv.{0, 0, u_1, u_1} (RingHom.id.{0} ℝ) ↥(P x)
+                              ↥(P (Nat.iterate.{u_3 + 1} (⇑g) n x)) :=
+fun {E} [NormedAddCommGroup.{u_1} E] [NormedSpace.{0, u_1} ℝ E] {H} [TopologicalSpace.{u_2} H] {I} {X}
+    [TopologicalSpace.{u_3} X] [ChartedSpace.{u_2, u_3} H X] g P hP n x =>
+  ContinuousLinearEquiv.ofSubmodules.{0, 0, u_1, u_1}
+    (Diffeomorph.mfderivToContinuousLinearEquiv.{0, u_1, u_1, u_2, u_2, u_3, u_3}
+      (HolomorphicAnosov.realIterate.{u_1, u_2, u_3} I g n) HolomorphicAnosov.restrictedIterateDerivative._proof_3 x)
+    (P x) (P (Nat.iterate.{u_3 + 1} (⇑g) n x)) ⋯
+structure HolomorphicAnosov.AnosovDatum.{u_1} {d : ℕ} {X : Type u_1} [TopologicalSpace.{u_1} X]
+  [ChartedSpace.{0, u_1} (HolomorphicAnosov.ComplexModel d) X]
+  [IsManifold.{0, 0, 0, u_1} (HolomorphicAnosov.complexModel d) ∞ X]
+  (f : HolomorphicAnosov.Biholomorph.{u_1, u_1} d d X X) : Type u_1
+number of parameters: 6
+fields:
+  HolomorphicAnosov.AnosovDatum.metric.{u_1} : Bundle.ContMDiffRiemannianMetric.{0, 0, u_1, 0, 0}
+      (HolomorphicAnosov.realModel d) ∞ (HolomorphicAnosov.ComplexModel d) fun x =>
+      TangentSpace.{0, 0, 0, u_1} (HolomorphicAnosov.realModel d) x
+  HolomorphicAnosov.AnosovDatum.splitting.{u_1} : HolomorphicAnosov.InvariantRealTangentSplitting.{0, 0, u_1}
+      (HolomorphicAnosov.Biholomorph.toReal.{u_1, u_1} f)
+  HolomorphicAnosov.AnosovDatum.k.{u_1} : ℕ
+  HolomorphicAnosov.AnosovDatum.one_le_k.{u_1} : LE.le.{0} 1 (HolomorphicAnosov.AnosovDatum.k.{u_1} self)
+  HolomorphicAnosov.AnosovDatum.stable_contracting.{u_1} : ∀ (x : X),
+      LT.lt.{0}
+        (Norm.norm.{0}
+          ↑(HolomorphicAnosov.restrictedIterateDerivative.{0, 0, u_1}
+              (HolomorphicAnosov.Biholomorph.toReal.{u_1, u_1} f)
+              (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+                (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u_1}
+                  (HolomorphicAnosov.AnosovDatum.splitting.{u_1} self)))
+              ⋯ (HolomorphicAnosov.AnosovDatum.k.{u_1} self) x))
+        1
+  HolomorphicAnosov.AnosovDatum.unstable_contracting.{u_1} : ∀ (x : X),
+      LT.lt.{0}
+        (Norm.norm.{0}
+          ↑(ContinuousLinearEquiv.symm.{0, 0, 0, 0}
+              (HolomorphicAnosov.restrictedIterateDerivative.{0, 0, u_1}
+                (HolomorphicAnosov.Biholomorph.toReal.{u_1, u_1} f)
+                (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+                  (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{0, 0, u_1}
+                    (HolomorphicAnosov.AnosovDatum.splitting.{u_1} self)))
+                ⋯ (HolomorphicAnosov.AnosovDatum.k.{u_1} self) x)))
+        1
+constructor:
+  HolomorphicAnosov.AnosovDatum.mk.{u_1} {d : ℕ} {X : Type u_1} [TopologicalSpace.{u_1} X]
+    [ChartedSpace.{0, u_1} (HolomorphicAnosov.ComplexModel d) X]
+    [IsManifold.{0, 0, 0, u_1} (HolomorphicAnosov.complexModel d) ∞ X]
+    {f : HolomorphicAnosov.Biholomorph.{u_1, u_1} d d X X}
+    (metric :
+      Bundle.ContMDiffRiemannianMetric.{0, 0, u_1, 0, 0} (HolomorphicAnosov.realModel d) ∞
+        (HolomorphicAnosov.ComplexModel d) fun x => TangentSpace.{0, 0, 0, u_1} (HolomorphicAnosov.realModel d) x)
+    (splitting :
+      HolomorphicAnosov.InvariantRealTangentSplitting.{0, 0, u_1} (HolomorphicAnosov.Biholomorph.toReal.{u_1, u_1} f))
+    (k : ℕ) (one_le_k : LE.le.{0} 1 k)
+    (stable_contracting :
+      ∀ (x : X),
+        LT.lt.{0}
+          (Norm.norm.{0}
+            ↑(HolomorphicAnosov.restrictedIterateDerivative.{0, 0, u_1}
+                (HolomorphicAnosov.Biholomorph.toReal.{u_1, u_1} f)
+                (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+                  (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u_1} splitting))
+                ⋯ k x))
+          1)
+    (unstable_contracting :
+      ∀ (x : X),
+        LT.lt.{0}
+          (Norm.norm.{0}
+            ↑(ContinuousLinearEquiv.symm.{0, 0, 0, 0}
+                (HolomorphicAnosov.restrictedIterateDerivative.{0, 0, u_1}
+                  (HolomorphicAnosov.Biholomorph.toReal.{u_1, u_1} f)
+                  (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+                    (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{0, 0, u_1} splitting))
+                  ⋯ k x)))
+          1) :
+    HolomorphicAnosov.AnosovDatum.{u_1} f
+def HolomorphicAnosov.complexTangentToReal.{u} : (d : ℕ) →
+  {X : Type u} →
+    [inst : TopologicalSpace.{u} X] →
+      [inst_1 : ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X] →
+        (x : X) →
+          ContinuousLinearEquiv.{0, 0, 0, 0} (RingHom.id.{0} ℝ)
+            (TangentSpace.{0, 0, 0, u} (HolomorphicAnosov.complexModel d) x)
+            (TangentSpace.{0, 0, 0, u} (HolomorphicAnosov.realModel d) x) :=
+fun d {X} [TopologicalSpace.{u} X] [ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X] x =>
+  let e := tangentSpaceCastModel.{0, 0, 0, u} (HolomorphicAnosov.complexModel d) x;
+  have eReal :=
+    let __LinearEquiv := LinearEquiv.restrictScalars.{0, 0, 0, 0} ℝ ↑e;
+    ContinuousLinearEquiv.mk.{0, 0, 0, 0} __LinearEquiv ⋯ ⋯;
+  ContinuousLinearEquiv.trans.{0, 0, 0, 0, 0, 0} eReal
+    (ContinuousLinearEquiv.symm.{0, 0, 0, 0} (tangentSpaceCastModel.{0, 0, 0, u} (HolomorphicAnosov.realModel d) x))
+def HolomorphicAnosov.HasComplexRankOne.{u} : {d : ℕ} →
+  {X : Type u} →
+    [inst : TopologicalSpace.{u} X] →
+      [inst_1 : ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X] →
+        HolomorphicAnosov.RealTangentDistribution.{0, 0, u} (HolomorphicAnosov.realModel d) X → Prop :=
+fun {d} {X} [TopologicalSpace.{u} X] [ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X] S =>
+  ∀ (x : X),
+    ∃ K,
+      Eq.{1} (Module.finrank.{0, 0} ℂ ↥K) 1 ∧
+        Eq.{1}
+          (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u} d x))
+            (Submodule.restrictScalars.{0, 0, 0} ℝ K))
+          (S x)
+def HolomorphicAnosov.IsHolomorphicTangentFrame.{u} : {d r : ℕ} →
+  {X : Type u} →
+    [inst : TopologicalSpace.{u} X] →
+      [inst_1 : ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X] →
+        [IsManifold.{0, 0, 0, u} (HolomorphicAnosov.complexModel d) ∞ X] →
+          Set.{u} X → (Fin r → (y : X) → TangentSpace.{0, 0, 0, u} (HolomorphicAnosov.complexModel d) y) → Prop :=
+fun {d r} {X} [TopologicalSpace.{u} X] [ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X]
+    [IsManifold.{0, 0, 0, u} (HolomorphicAnosov.complexModel d) ∞ X] U s =>
+  IsOpen.{u} U ∧
+    (∀ (i : Fin r),
+        ContMDiffOn.{0, 0, 0, u, 0, 0, u} (HolomorphicAnosov.complexModel d)
+          (ModelWithCorners.tangent.{0, 0, 0} (HolomorphicAnosov.complexModel d)) ∞ (fun y => ⟨y, s i y⟩) U) ∧
+      ∀ (y : X), Membership.mem.{u, u} U y → LinearIndependent.{0, 0, 0} ℂ fun i => s i y
+def HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u} : {d : ℕ} →
+  {X : Type u} →
+    [inst : TopologicalSpace.{u} X] →
+      [inst_1 : ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X] →
+        [IsManifold.{0, 0, 0, u} (HolomorphicAnosov.complexModel d) ∞ X] →
+          ℕ → ((x : X) → Submodule.{0, 0} ℂ (TangentSpace.{0, 0, 0, u} (HolomorphicAnosov.complexModel d) x)) → Prop :=
+fun {d} {X} [TopologicalSpace.{u} X] [ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X]
+    [IsManifold.{0, 0, 0, u} (HolomorphicAnosov.complexModel d) ∞ X] r P =>
+  ∀ (x : X),
+    ∃ U s,
+      Membership.mem.{u, u} U x ∧
+        HolomorphicAnosov.IsHolomorphicTangentFrame.{u} U s ∧
+          ∀ (y : X),
+            Membership.mem.{u, u} U y → Eq.{1} (Submodule.span.{0, 0} ℂ (Set.range.{0, 1} fun i => s i y)) (P y)
+structure HolomorphicAnosov.FullComplexLattice (d : ℕ) : Type
+number of parameters: 1
+fields:
+  HolomorphicAnosov.FullComplexLattice.lattice : Submodule.{0, 0} ℤ (HolomorphicAnosov.ComplexModel d)
+  HolomorphicAnosov.FullComplexLattice.discrete : DiscreteTopology.{0} ↥self.lattice
+  HolomorphicAnosov.FullComplexLattice.full : IsZLattice.{0, 0} ℝ self.lattice
+constructor:
+  HolomorphicAnosov.FullComplexLattice.mk {d : ℕ} (lattice : Submodule.{0, 0} ℤ (HolomorphicAnosov.ComplexModel d))
+    (discrete : DiscreteTopology.{0} ↥lattice) (full : IsZLattice.{0, 0} ℝ lattice) :
+    HolomorphicAnosov.FullComplexLattice d
+@[reducible] def HolomorphicAnosov.ComplexTorus : {d : ℕ} → HolomorphicAnosov.FullComplexLattice d → Type :=
+fun {d} L => HasQuotient.Quotient.{0, 0} (HolomorphicAnosov.ComplexModel d) (Submodule.toAddSubgroup.{0, 0} L.lattice)
+@[instance_reducible] def HolomorphicAnosov.complexTorusChartedSpace : {d : ℕ} →
+  (L : HolomorphicAnosov.FullComplexLattice d) →
+    ChartedSpace.{0, 0} (HolomorphicAnosov.ComplexModel d) (HolomorphicAnosov.ComplexTorus L) :=
+fun {d} L => IsLocalHomeomorph.chartedSpace.{0, 0, 0} ⋯ ⋯
+structure HolomorphicAnosov.LatticeLinearEquiv {d : ℕ} (L : HolomorphicAnosov.FullComplexLattice d) : Type
+number of parameters: 2
+fields:
+  HolomorphicAnosov.LatticeLinearEquiv.linear : LinearEquiv.{0, 0, 0, 0} (RingHom.id.{0} ℂ)
+      (HolomorphicAnosov.ComplexModel d) (HolomorphicAnosov.ComplexModel d)
+  HolomorphicAnosov.LatticeLinearEquiv.map_lattice : Eq.{1}
+      (AddSubgroup.map.{0, 0} (AddEquiv.toAddMonoidHom.{0, 0} (LinearEquiv.toAddEquiv.{0, 0, 0, 0} self.linear))
+        (Submodule.toAddSubgroup.{0, 0} L.lattice))
+      (Submodule.toAddSubgroup.{0, 0} L.lattice)
+constructor:
+  HolomorphicAnosov.LatticeLinearEquiv.mk {d : ℕ} {L : HolomorphicAnosov.FullComplexLattice d}
+    (linear :
+      LinearEquiv.{0, 0, 0, 0} (RingHom.id.{0} ℂ) (HolomorphicAnosov.ComplexModel d) (HolomorphicAnosov.ComplexModel d))
+    (map_lattice :
+      Eq.{1}
+        (AddSubgroup.map.{0, 0} (AddEquiv.toAddMonoidHom.{0, 0} (LinearEquiv.toAddEquiv.{0, 0, 0, 0} linear))
+          (Submodule.toAddSubgroup.{0, 0} L.lattice))
+        (Submodule.toAddSubgroup.{0, 0} L.lattice)) :
+    HolomorphicAnosov.LatticeLinearEquiv L
+def HolomorphicAnosov.quotientLinearEquiv : {d : ℕ} →
+  {L : HolomorphicAnosov.FullComplexLattice d} →
+    HolomorphicAnosov.LatticeLinearEquiv L →
+      AddEquiv.{0, 0} (HolomorphicAnosov.ComplexTorus L) (HolomorphicAnosov.ComplexTorus L) :=
+fun {d} {L} A =>
+  QuotientAddGroup.congr.{0, 0} (Submodule.toAddSubgroup.{0, 0} L.lattice) (Submodule.toAddSubgroup.{0, 0} L.lattice)
+    (LinearEquiv.toAddEquiv.{0, 0, 0, 0} A.linear) ⋯
+def HolomorphicAnosov.ComplexLinearHyperbolic : {d : ℕ} →
+  Module.End.{0, 0} ℂ (HolomorphicAnosov.ComplexModel d) → Prop :=
+fun {d} A => ∀ (μ : ℂ), Module.End.HasEigenvalue.{0, 0} A μ → Ne.{1} (Norm.norm.{0} μ) 1
+def HolomorphicAnosov.integralToralMap : {n : ℕ} →
+  Matrix.GeneralLinearGroup.{0, 0} (Fin n) ℤ → UnitAddTorus.{0} (Fin n) → UnitAddTorus.{0} (Fin n) :=
+fun {n} A x i => ∑ j, HSMul.hSMul.{0, 0, 0} (↑A i j) (x j)
+def HolomorphicAnosov.HyperbolicRealToralConjugacy.{u} : ℕ → (X : Type u) → [TopologicalSpace.{u} X] → (X → X) → Prop :=
+fun n X [TopologicalSpace.{u} X] f =>
+  ∃ A h,
+    (∀ (μ : ℂ),
+        Module.End.HasEigenvalue.{0, 0} (Matrix.mulVecLin.{0, 0, 0} fun i j => ↑(↑A i j)) μ →
+          Ne.{1} (Norm.norm.{0} μ) 1) ∧
+      ∀ (x : X), Eq.{1} (h (f x)) (HolomorphicAnosov.integralToralMap A (h x))
+def HolomorphicAnosov.HasHyperbolicComplexTorusModel.{u} : {d : ℕ} →
+  {X : Type u} →
+    [inst : TopologicalSpace.{u} X] → [ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X] → (X → X) → Prop :=
+fun {d} {X} [TopologicalSpace.{u} X] [ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X] f =>
+  ∃ L A h,
+    HolomorphicAnosov.ComplexLinearHyperbolic ↑A.linear ∧
+      Function.Semiconj.{u, 0} (fun x => h x) f fun t => (HolomorphicAnosov.quotientLinearEquiv A) t
+class HolomorphicAnosov.ClosedSmoothRealManifold.{u} (n : outParam.{1} ℕ) (M : Type u) [TopologicalSpace.{u} M]
+  [ChartedSpace.{0, u} (EuclideanSpace.{0, 0} ℝ (Fin n)) M] : Prop
+number of parameters: 4
+fields:
+  HolomorphicAnosov.ClosedSmoothRealManifold.compactSpace.{u} : CompactSpace.{u} M
+  HolomorphicAnosov.ClosedSmoothRealManifold.t2Space.{u} : T2Space.{u} M
+  HolomorphicAnosov.ClosedSmoothRealManifold.secondCountableTopology.{u} : SecondCountableTopology.{u} M
+  HolomorphicAnosov.ClosedSmoothRealManifold.isManifold.{u} : IsManifold.{0, 0, 0, u}
+      (modelWithCornersSelf.{0, 0} ℝ (EuclideanSpace.{0, 0} ℝ (Fin n))) ∞ M
+constructor:
+  HolomorphicAnosov.ClosedSmoothRealManifold.mk.{u} {n : outParam.{1} ℕ} {M : Type u} [TopologicalSpace.{u} M]
+    [ChartedSpace.{0, u} (EuclideanSpace.{0, 0} ℝ (Fin n)) M] [compactSpace : CompactSpace.{u} M]
+    [t2Space : T2Space.{u} M] [secondCountableTopology : SecondCountableTopology.{u} M]
+    [isManifold : IsManifold.{0, 0, 0, u} (modelWithCornersSelf.{0, 0} ℝ (EuclideanSpace.{0, 0} ℝ (Fin n))) ∞ M] :
+    HolomorphicAnosov.ClosedSmoothRealManifold.{u} n M
+def HolomorphicAnosov.HomotopyTorusRigidity.{u} : Prop :=
+∀ (n : ℕ),
+  LE.le.{0} 5 n →
+    ∀ (M : Type u) [inst : TopologicalSpace.{u} M] [inst_1 : ChartedSpace.{0, u} (EuclideanSpace.{0, 0} ℝ (Fin n)) M],
+      HolomorphicAnosov.ClosedSmoothRealManifold.{u} n M →
+        Nonempty.{max 1 (u + 1)} (ContinuousMap.HomotopyEquiv.{u, 0} M (UnitAddTorus.{0} (Fin n))) →
+          Nonempty.{max 1 (u + 1)} (Homeomorph.{u, 0} M (UnitAddTorus.{0} (Fin n)))
+class IsZLattice.{u_1, u_2} (K : Type u_1) [NormedField.{u_1} K] {E : Type u_2} [NormedAddCommGroup.{u_2} E]
+  [NormedSpace.{u_1, u_2} K E] (L : Submodule.{0, u_2} ℤ E) [DiscreteTopology.{u_2} ↥L] : Prop
+number of parameters: 7
+fields:
+  IsZLattice.span_top.{u_1, u_2} : Eq.{u_2 + 1} (Submodule.span.{u_1, u_2} K ↑L) Top.top.{u_2}
+constructor:
+  IsZLattice.mk.{u_1, u_2} {K : Type u_1} [NormedField.{u_1} K] {E : Type u_2} [NormedAddCommGroup.{u_2} E]
+    [NormedSpace.{u_1, u_2} K E] {L : Submodule.{0, u_2} ℤ E} [DiscreteTopology.{u_2} ↥L]
+    (span_top : Eq.{u_2 + 1} (Submodule.span.{u_1, u_2} K ↑L) Top.top.{u_2}) : IsZLattice.{u_1, u_2} K L
+structure Bundle.RiemannianMetric.{u_4, u_6} {B : Type u_4} (E : B → Type u_6) [(b : B) → TopologicalSpace.{u_6} (E b)]
+  [(b : B) → AddCommGroup.{u_6} (E b)] [(b : B) → Module.{0, u_6} ℝ (E b)] : Type (max u_4 u_6)
+number of parameters: 5
+fields:
+  Bundle.RiemannianMetric.inner.{u_4,
+    u_6} : (b : B) →
+      ContinuousLinearMap.{0, 0, u_6, u_6} (RingHom.id.{0} ℝ) (E b)
+        (ContinuousLinearMap.{0, 0, u_6, 0} (RingHom.id.{0} ℝ) (E b) ℝ)
+  Bundle.RiemannianMetric.symm.{u_4,
+    u_6} : ∀ (b : B) (v w : E b),
+      Eq.{1} (((Bundle.RiemannianMetric.inner.{u_4, u_6} self b) v) w)
+        (((Bundle.RiemannianMetric.inner.{u_4, u_6} self b) w) v)
+  Bundle.RiemannianMetric.pos.{u_4,
+    u_6} : ∀ (b : B) (v : E b), Ne.{u_6 + 1} v 0 → LT.lt.{0} 0 (((Bundle.RiemannianMetric.inner.{u_4, u_6} self b) v) v)
+  Bundle.RiemannianMetric.continuousAt.{u_4,
+    u_6} : ∀ (b : B), ContinuousAt.{u_6, 0} (fun v => ((Bundle.RiemannianMetric.inner.{u_4, u_6} self b) v) v) 0
+  Bundle.RiemannianMetric.isVonNBounded.{u_4,
+    u_6} : ∀ (b : B),
+      Bornology.IsVonNBounded.{0, u_6} ℝ
+        (Set.ofPred.{u_6} fun v => LT.lt.{0} (((Bundle.RiemannianMetric.inner.{u_4, u_6} self b) v) v) 1)
+constructor:
+  Bundle.RiemannianMetric.mk.{u_4, u_6} {B : Type u_4} {E : B → Type u_6} [(b : B) → TopologicalSpace.{u_6} (E b)]
+    [(b : B) → AddCommGroup.{u_6} (E b)] [(b : B) → Module.{0, u_6} ℝ (E b)]
+    (inner :
+      (b : B) →
+        ContinuousLinearMap.{0, 0, u_6, u_6} (RingHom.id.{0} ℝ) (E b)
+          (ContinuousLinearMap.{0, 0, u_6, 0} (RingHom.id.{0} ℝ) (E b) ℝ))
+    (symm : ∀ (b : B) (v w : E b), Eq.{1} (((inner b) v) w) (((inner b) w) v))
+    (pos : ∀ (b : B) (v : E b), Ne.{u_6 + 1} v 0 → LT.lt.{0} 0 (((inner b) v) v))
+    (continuousAt : ∀ (b : B), ContinuousAt.{u_6, 0} (fun v => ((inner b) v) v) 0)
+    (isVonNBounded :
+      ∀ (b : B), Bornology.IsVonNBounded.{0, u_6} ℝ (Set.ofPred.{u_6} fun v => LT.lt.{0} (((inner b) v) v) 1)) :
+    Bundle.RiemannianMetric.{u_4, u_6} E
+class Bundle.RiemannianBundle.{u_4, u_6} {B : Type u_4} (E : B → Type u_6) [(b : B) → TopologicalSpace.{u_6} (E b)]
+  [(b : B) → AddCommGroup.{u_6} (E b)] [(b : B) → Module.{0, u_6} ℝ (E b)] : Type (max u_4 u_6)
+number of parameters: 5
+fields:
+  Bundle.RiemannianBundle.g.{u_4, u_6} : Bundle.RiemannianMetric.{u_4, u_6} E
+constructor:
+  Bundle.RiemannianBundle.mk.{u_4, u_6} {B : Type u_4} {E : B → Type u_6} [(b : B) → TopologicalSpace.{u_6} (E b)]
+    [(b : B) → AddCommGroup.{u_6} (E b)] [(b : B) → Module.{0, u_6} ℝ (E b)]
+    (g : Bundle.RiemannianMetric.{u_4, u_6} E) : Bundle.RiemannianBundle.{u_4, u_6} E
+structure ContinuousMap.HomotopyEquiv.{u, v} (X : Type u) (Y : Type v) [TopologicalSpace.{u} X]
+  [TopologicalSpace.{v} Y] : Type (max u v)
+number of parameters: 4
+fields:
+  ContinuousMap.HomotopyEquiv.toFun.{u, v} : ContinuousMap.{u, v} X Y
+  ContinuousMap.HomotopyEquiv.invFun.{u, v} : ContinuousMap.{v, u} Y X
+  ContinuousMap.HomotopyEquiv.left_inv.{u,
+    v} : ContinuousMap.Homotopic.{u, u}
+      (ContinuousMap.comp.{u, v, u} (ContinuousMap.HomotopyEquiv.invFun.{u, v} self)
+        (ContinuousMap.HomotopyEquiv.toFun.{u, v} self))
+      (ContinuousMap.id.{u} X)
+  ContinuousMap.HomotopyEquiv.right_inv.{u,
+    v} : ContinuousMap.Homotopic.{v, v}
+      (ContinuousMap.comp.{v, u, v} (ContinuousMap.HomotopyEquiv.toFun.{u, v} self)
+        (ContinuousMap.HomotopyEquiv.invFun.{u, v} self))
+      (ContinuousMap.id.{v} Y)
+constructor:
+  ContinuousMap.HomotopyEquiv.mk.{u, v} {X : Type u} {Y : Type v} [TopologicalSpace.{u} X] [TopologicalSpace.{v} Y]
+    (toFun : ContinuousMap.{u, v} X Y) (invFun : ContinuousMap.{v, u} Y X)
+    (left_inv : ContinuousMap.Homotopic.{u, u} (ContinuousMap.comp.{u, v, u} invFun toFun) (ContinuousMap.id.{u} X))
+    (right_inv : ContinuousMap.Homotopic.{v, v} (ContinuousMap.comp.{v, u, v} toFun invFun) (ContinuousMap.id.{v} Y)) :
+    ContinuousMap.HomotopyEquiv.{u, v} X Y
+structure Diffeomorph.{u_1, u_2, u_3, u_5, u_6, u_9, u_10} {𝕜 : Type u_1} [NontriviallyNormedField.{u_1} 𝕜]
+  {E : Type u_2} [NormedAddCommGroup.{u_2} E] [NormedSpace.{u_1, u_2} 𝕜 E] {E' : Type u_3} [NormedAddCommGroup.{u_3} E']
+  [NormedSpace.{u_1, u_3} 𝕜 E'] {H : Type u_5} [TopologicalSpace.{u_5} H] {H' : Type u_6} [TopologicalSpace.{u_6} H']
+  (I : ModelWithCorners.{u_1, u_2, u_5} 𝕜 E H) (I' : ModelWithCorners.{u_1, u_3, u_6} 𝕜 E' H') (M : Type u_9)
+  [TopologicalSpace.{u_9} M] [ChartedSpace.{u_5, u_9} H M] (M' : Type u_10) [TopologicalSpace.{u_10} M']
+  [ChartedSpace.{u_6, u_10} H' M'] (n : WithTop.{0} ℕ∞) : Type (max u_10 u_9)
+number of parameters: 21
+parents:
+  Diffeomorph.toEquiv.{u_1, u_2, u_3, u_5, u_6, u_9, u_10} : Equiv.{u_9 + 1, u_10 + 1} M M'
+fields:
+  Equiv.toFun.{u_1, u_2} : M → M'
+  Equiv.invFun.{u_1, u_2} : M' → M
+  Equiv.left_inv.{u_1,
+    u_2} : Function.LeftInverse.{u_9 + 1, u_10 + 1}
+      (Equiv.invFun.{u_9 + 1, u_10 + 1} (Diffeomorph.toEquiv.{u_1, u_2, u_3, u_5, u_6, u_9, u_10} self))
+      (Equiv.toFun.{u_9 + 1, u_10 + 1} (Diffeomorph.toEquiv.{u_1, u_2, u_3, u_5, u_6, u_9, u_10} self)) := by
+    intro;
+      first
+      | rfl
+      | ext <;> rfl
+  Equiv.right_inv.{u_1,
+    u_2} : Function.RightInverse.{u_9 + 1, u_10 + 1}
+      (Equiv.invFun.{u_9 + 1, u_10 + 1} (Diffeomorph.toEquiv.{u_1, u_2, u_3, u_5, u_6, u_9, u_10} self))
+      (Equiv.toFun.{u_9 + 1, u_10 + 1} (Diffeomorph.toEquiv.{u_1, u_2, u_3, u_5, u_6, u_9, u_10} self)) := by
+    intro;
+      first
+      | rfl
+      | ext <;> rfl
+  Diffeomorph.contMDiff_toFun.{u_1, u_2, u_3, u_5, u_6, u_9,
+    u_10} : ContMDiff.{u_1, u_2, u_5, u_9, u_3, u_6, u_10} I I' n
+      ⇑(Diffeomorph.toEquiv.{u_1, u_2, u_3, u_5, u_6, u_9, u_10} self)
+  Diffeomorph.contMDiff_invFun.{u_1, u_2, u_3, u_5, u_6, u_9,
+    u_10} : ContMDiff.{u_1, u_3, u_6, u_10, u_2, u_5, u_9} I' I n
+      ⇑(Equiv.symm.{u_9 + 1, u_10 + 1} (Diffeomorph.toEquiv.{u_1, u_2, u_3, u_5, u_6, u_9, u_10} self))
+constructor:
+  Diffeomorph.mk.{u_1, u_2, u_3, u_5, u_6, u_9, u_10} {𝕜 : Type u_1} [NontriviallyNormedField.{u_1} 𝕜] {E : Type u_2}
+    [NormedAddCommGroup.{u_2} E] [NormedSpace.{u_1, u_2} 𝕜 E] {E' : Type u_3} [NormedAddCommGroup.{u_3} E']
+    [NormedSpace.{u_1, u_3} 𝕜 E'] {H : Type u_5} [TopologicalSpace.{u_5} H] {H' : Type u_6} [TopologicalSpace.{u_6} H']
+    {I : ModelWithCorners.{u_1, u_2, u_5} 𝕜 E H} {I' : ModelWithCorners.{u_1, u_3, u_6} 𝕜 E' H'} {M : Type u_9}
+    [TopologicalSpace.{u_9} M] [ChartedSpace.{u_5, u_9} H M] {M' : Type u_10} [TopologicalSpace.{u_10} M']
+    [ChartedSpace.{u_6, u_10} H' M'] {n : WithTop.{0} ℕ∞} (toEquiv : Equiv.{u_9 + 1, u_10 + 1} M M')
+    (contMDiff_toFun : ContMDiff.{u_1, u_2, u_5, u_9, u_3, u_6, u_10} I I' n ⇑toEquiv)
+    (contMDiff_invFun :
+      ContMDiff.{u_1, u_3, u_6, u_10, u_2, u_5, u_9} I' I n ⇑(Equiv.symm.{u_9 + 1, u_10 + 1} toEquiv)) :
+    Diffeomorph.{u_1, u_2, u_3, u_5, u_6, u_9, u_10} I I' M M' n
+field notation resolution order:
+  Diffeomorph.{u_1, u_2, u_3, u_5, u_6, u_9, u_10}, Equiv.{u_1, u_2}
+def Function.Semiconj.{u_1, u_2} : {α : Type u_1} → {β : Type u_2} → (α → β) → (α → α) → (β → β) → Prop :=
+fun {α} {β} f ga gb => ∀ (x : α), Eq.{u_2 + 1} (f (ga x)) (gb (f x))
+@[reducible] def Module.End.HasEigenvalue.{v, w} : {R : Type v} →
+  {M : Type w} →
+    [inst : CommRing.{v} R] →
+      [inst_1 : AddCommGroup.{w} M] → [inst_2 : Module.{v, w} R M] → Module.End.{v, w} R M → R → Prop :=
+fun {R} {M} [CommRing.{v} R] [AddCommGroup.{w} M] [Module.{v, w} R M] f a => Module.End.HasUnifEigenvalue.{v, w} f a 1

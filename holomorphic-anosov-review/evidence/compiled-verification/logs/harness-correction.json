@@ -1,0 +1,12 @@
+{
+  "step": "audit-harness-printing-correction",
+  "original_failed_steps": [
+    "exact-statements-01",
+    "exact-definitions-01"
+  ],
+  "cause": "Unknown pretty-printing option pp.width in audit-owned files; no upstream source failure",
+  "change": "Remove only set_option pp.width120; retain all expected types, definition equalities and axiom queries",
+  "original_files_retained": "checks/initial/",
+  "upstream_sources_changed": false,
+  "axiom_output_note": "Universes were intentionally printed; normalize trailing universe annotations when comparing canonical axiom names to config while retaining exact printed names."
+}

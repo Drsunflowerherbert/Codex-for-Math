@@ -1,5 +1,7 @@
 # Independent adversarial semantic check of the Lean statements
 
+> Historical source-review track. The later [compiled follow-up](../evidence/compiled-verification/deliverables/verification-method.md) built the pinned solution and checked full types, selected definitions and axiom lists. Statements below about no Lean execution describe this earlier track. The explicit HS qualification and original cited-source audit limits remain.
+
 *Publication note: any `extension/evidence/`, `working-reference/`, or source-copy filenames in these notes identify excluded working references. Third-party PDFs, scans, OCR and raw article-response logs are not bundled. Included search/access metadata is under `../evidence/`; use the primary-source URLs for original texts.*
 
 

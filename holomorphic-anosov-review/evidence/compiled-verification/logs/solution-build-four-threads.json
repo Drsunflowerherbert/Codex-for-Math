@@ -1,0 +1,45 @@
+{
+  "step": "solution-build-four-threads",
+  "command": [
+    "$VERIFY_ROOT/toolchains/lean-4.35.0-rc1-linux/bin/lake",
+    "--no-ansi",
+    "--no-cache",
+    "--fail-fast",
+    "build",
+    "+Comparator.Solution:olean"
+  ],
+  "cwd": "$VERIFY_ROOT/build",
+  "started_at_utc": "2026-10-16T02:08:13.025755+00:00",
+  "duration_seconds": 3713.487,
+  "exit_code": 0,
+  "resource_stop": false,
+  "cgroup_peak_observed_bytes": 17179811840,
+  "cgroup_anon_peak_observed_bytes": 6947663872,
+  "resource_guard": "Stop only if task anonymous memory exceeds12GiB; file cache is reclaimable",
+  "resource_sample_interval_seconds": 1,
+  "cgroup_memory_scope": "whole task environment, not exclusively the child",
+  "settings": {
+    "LEAN_NUM_THREADS": "4",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1",
+    "MATHLIB_CACHE_DIR": "$VERIFY_ROOT/cache/mathlib",
+    "inherited_cache_endpoint_overrides_removed": true,
+    "source_dependency_lockfile_preserved": true
+  },
+  "log": "solution-build-four-threads.log",
+  "original_log_sha256": "14de693a2b1dea5c332c09d0b911d218d82b412fd2bf6dacf4d11545cdeb9d12",
+  "published_normalized_log_sha256": "14de693a2b1dea5c332c09d0b911d218d82b412fd2bf6dacf4d11545cdeb9d12",
+  "_publication": {
+    "copy_kind": "normalized public copy; original record retained privately",
+    "original_record_sha256": "a1bf3a0a2aba044053acadc42e42791b65dfe38dadce7ef1780498c0a44fd5de",
+    "normalization": "absolute private prefixes replaced by documented placeholders",
+    "original_log_hash_fields_relabelled": true,
+    "related_logs": [
+      {
+        "role": "combined_output",
+        "path": "logs/solution-build-four-threads.log",
+        "original_sha256": "14de693a2b1dea5c332c09d0b911d218d82b412fd2bf6dacf4d11545cdeb9d12",
+        "published_normalized_sha256": "14de693a2b1dea5c332c09d0b911d218d82b412fd2bf6dacf4d11545cdeb9d12"
+      }
+    ]
+  }
+}

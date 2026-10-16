@@ -1,0 +1,401 @@
+$VERIFY_ROOT/checks/VerifyStatements.lean:33:5: warning: Variable name `hcodim` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hcodim
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+$VERIFY_ROOT/checks/VerifyStatements.lean:35:5: warning: Variable name `HS` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _HS
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+$VERIFY_ROOT/checks/VerifyStatements.lean:43:5: warning: Variable name `hd` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hd
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+$VERIFY_ROOT/checks/VerifyStatements.lean:44:5: warning: Variable name `hstable` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hstable
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+$VERIFY_ROOT/checks/VerifyStatements.lean:45:5: warning: Variable name `HS` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _HS
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+$VERIFY_ROOT/checks/VerifyStatements.lean:54:5: warning: Variable name `hStable` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hStable
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+$VERIFY_ROOT/checks/VerifyStatements.lean:59:5: warning: Variable name `hUnstable` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hUnstable
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+$VERIFY_ROOT/checks/VerifyStatements.lean:64:5: warning: Variable name `hT` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hT
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+$VERIFY_ROOT/checks/VerifyStatements.lean:76:5: warning: Variable name `hstable` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hstable
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+$VERIFY_ROOT/checks/VerifyStatements.lean:77:5: warning: Variable name `HS` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _HS
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+$VERIFY_ROOT/checks/VerifyStatements.lean:118:0: error: Unknown option `pp.width`
+@HolomorphicAnosov.theorem_A.{u_1} : ∀ {d : ℕ} {X : Type u_1} [inst : TopologicalSpace.{u_1} X]
+  [inst_1 : ChartedSpace.{0, u_1} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u_1} d X] (f : HolomorphicAnosov.Biholomorph.{u_1, u_1} d d X X)
+  (a : HolomorphicAnosov.AnosovDatum.{u_1} f),
+  HolomorphicAnosov.HasComplexRankOne.{u_1}
+        (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+          (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u_1}
+            (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))) ∨
+      HolomorphicAnosov.HasComplexRankOne.{u_1}
+        (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+          (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{0, 0, u_1}
+            (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))) →
+    HolomorphicAnosov.HomotopyTorusRigidity.{u_1} → HolomorphicAnosov.HasHyperbolicComplexTorusModel.{u_1} fun x => f x
+@HolomorphicAnosov.theorem_1_1.{u_1} : ∀ {d : ℕ} {X : Type u_1} [inst : TopologicalSpace.{u_1} X]
+  [inst_1 : ChartedSpace.{0, u_1} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u_1} d X],
+  LE.le.{0} 2 d →
+    ∀ (f : HolomorphicAnosov.Biholomorph.{u_1, u_1} d d X X) (a : HolomorphicAnosov.AnosovDatum.{u_1} f),
+      HolomorphicAnosov.HasComplexRankOne.{u_1}
+          (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+            (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u_1}
+              (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))) →
+        HolomorphicAnosov.HomotopyTorusRigidity.{u_1} →
+          HolomorphicAnosov.HyperbolicRealToralConjugacy.{u_1} (HMul.hMul.{0, 0, 0} 2 d) X fun x => f x
+@HolomorphicAnosov.theorem_1_2.{u_1} : ∀ {d : ℕ} {X : Type u_1} [inst : TopologicalSpace.{u_1} X]
+  [inst_1 : ChartedSpace.{0, u_1} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u_1} d X] (f : HolomorphicAnosov.Biholomorph.{u_1, u_1} d d X X)
+  (a : HolomorphicAnosov.AnosovDatum.{u_1} f),
+  (∃ r P,
+      HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u_1} r P ∧
+        ∀ (x : X),
+          Eq.{1}
+            (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u_1} d x))
+              (Submodule.restrictScalars.{0, 0, 0} ℝ (P x)))
+            (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+              (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u_1}
+                (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))
+              x)) →
+    (∃ r P,
+        HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u_1} r P ∧
+          ∀ (x : X),
+            Eq.{1}
+              (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u_1} d x))
+                (Submodule.restrictScalars.{0, 0, 0} ℝ (P x)))
+              (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+                (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{0, 0, u_1}
+                  (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))
+                x)) →
+      (∃ n, Nonempty.{u_1 + 1} (Homeomorph.{u_1, 0} X (UnitAddTorus.{0} (Fin n)))) →
+        ∃ L A h,
+          Function.Semiconj.{u_1, 0} (fun x => h x) (fun x => f x) fun t => (HolomorphicAnosov.quotientLinearEquiv A) t
+@HolomorphicAnosov.theorem_1_3.{u_1} : ∀ {d : ℕ} {X : Type u_1} [inst : TopologicalSpace.{u_1} X]
+  [inst_1 : ChartedSpace.{0, u_1} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u_1} d X] (f : HolomorphicAnosov.Biholomorph.{u_1, u_1} d d X X)
+  (a : HolomorphicAnosov.AnosovDatum.{u_1} f),
+  HolomorphicAnosov.HasComplexRankOne.{u_1}
+      (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+        (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u_1}
+          (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))) →
+    HolomorphicAnosov.HomotopyTorusRigidity.{u_1} →
+      ∃ S U,
+        (∀ (x : X),
+            Eq.{1}
+              (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u_1} d x))
+                (Submodule.restrictScalars.{0, 0, 0} ℝ (S x)))
+              (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+                (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u_1}
+                  (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))
+                x)) ∧
+          (∀ (x : X),
+              Eq.{1}
+                (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u_1} d x))
+                  (Submodule.restrictScalars.{0, 0, 0} ℝ (U x)))
+                (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+                  (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{0, 0, u_1}
+                    (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))
+                  x)) ∧
+            HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u_1} 1 S ∧
+              HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u_1} (HSub.hSub.{0, 0, 0} d 1) U
+@HolomorphicAnosov.zhang_theorem_A.{u_1} : ∀ {d : ℕ} {X : Type u_1} [inst : TopologicalSpace.{u_1} X]
+  [inst_1 : ChartedSpace.{0, u_1} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u_1} d X] (f : HolomorphicAnosov.Biholomorph.{u_1, u_1} d d X X)
+  (a : HolomorphicAnosov.AnosovDatum.{u_1} f),
+  HolomorphicAnosov.HasComplexRankOne.{u_1}
+        (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+          (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u_1}
+            (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))) ∨
+      HolomorphicAnosov.HasComplexRankOne.{u_1}
+        (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+          (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{0, 0, u_1}
+            (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))) →
+    HolomorphicAnosov.HomotopyTorusRigidity.{u_1} → HolomorphicAnosov.HasHyperbolicComplexTorusModel.{u_1} fun x => f x
+@HolomorphicAnosov.zhang_theorem_1_1.{u_1} : ∀ {d : ℕ} {X : Type u_1} [inst : TopologicalSpace.{u_1} X]
+  [inst_1 : ChartedSpace.{0, u_1} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u_1} d X],
+  LE.le.{0} 2 d →
+    ∀ (f : HolomorphicAnosov.Biholomorph.{u_1, u_1} d d X X) (a : HolomorphicAnosov.AnosovDatum.{u_1} f),
+      HolomorphicAnosov.HasComplexRankOne.{u_1}
+          (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+            (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u_1}
+              (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))) →
+        HolomorphicAnosov.HomotopyTorusRigidity.{u_1} →
+          HolomorphicAnosov.HyperbolicRealToralConjugacy.{u_1} (HMul.hMul.{0, 0, 0} 2 d) X fun x => f x
+@HolomorphicAnosov.zhang_theorem_1_2.{u_1} : ∀ {d : ℕ} {X : Type u_1} [inst : TopologicalSpace.{u_1} X]
+  [inst_1 : ChartedSpace.{0, u_1} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u_1} d X] (f : HolomorphicAnosov.Biholomorph.{u_1, u_1} d d X X)
+  (a : HolomorphicAnosov.AnosovDatum.{u_1} f),
+  (∃ r P,
+      HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u_1} r P ∧
+        ∀ (x : X),
+          Eq.{1}
+            (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u_1} d x))
+              (Submodule.restrictScalars.{0, 0, 0} ℝ (P x)))
+            (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+              (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u_1}
+                (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))
+              x)) →
+    (∃ r P,
+        HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u_1} r P ∧
+          ∀ (x : X),
+            Eq.{1}
+              (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u_1} d x))
+                (Submodule.restrictScalars.{0, 0, 0} ℝ (P x)))
+              (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+                (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{0, 0, u_1}
+                  (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))
+                x)) →
+      (∃ n, Nonempty.{u_1 + 1} (Homeomorph.{u_1, 0} X (UnitAddTorus.{0} (Fin n)))) →
+        ∃ L A h,
+          Function.Semiconj.{u_1, 0} (fun x => h x) (fun x => f x) fun t => (HolomorphicAnosov.quotientLinearEquiv A) t
+@HolomorphicAnosov.zhang_theorem_1_3.{u_1} : ∀ {d : ℕ} {X : Type u_1} [inst : TopologicalSpace.{u_1} X]
+  [inst_1 : ChartedSpace.{0, u_1} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u_1} d X] (f : HolomorphicAnosov.Biholomorph.{u_1, u_1} d d X X)
+  (a : HolomorphicAnosov.AnosovDatum.{u_1} f),
+  HolomorphicAnosov.HasComplexRankOne.{u_1}
+      (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+        (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u_1}
+          (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))) →
+    HolomorphicAnosov.HomotopyTorusRigidity.{u_1} →
+      ∃ S U,
+        (∀ (x : X),
+            Eq.{1}
+              (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u_1} d x))
+                (Submodule.restrictScalars.{0, 0, 0} ℝ (S x)))
+              (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+                (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u_1}
+                  (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))
+                x)) ∧
+          (∀ (x : X),
+              Eq.{1}
+                (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u_1} d x))
+                  (Submodule.restrictScalars.{0, 0, 0} ℝ (U x)))
+                (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u_1}
+                  (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{0, 0, u_1}
+                    (HolomorphicAnosov.AnosovDatum.splitting.{u_1} a))
+                  x)) ∧
+            HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u_1} 1 S ∧
+              HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u_1} (HSub.hSub.{0, 0, 0} d 1) U
+def HolomorphicAnosovAudit.StatementA.{u} : Prop :=
+∀ {d : ℕ} {X : Type u} [inst : TopologicalSpace.{u} X]
+  [inst_1 : ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u} d X] (f : HolomorphicAnosov.Biholomorph.{u, u} d d X X)
+  (a : HolomorphicAnosov.AnosovDatum.{u} f),
+  HolomorphicAnosov.HasComplexRankOne.{u}
+        (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+          (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u}
+            (HolomorphicAnosov.AnosovDatum.splitting.{u} a))) ∨
+      HolomorphicAnosov.HasComplexRankOne.{u}
+        (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+          (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{0, 0, u}
+            (HolomorphicAnosov.AnosovDatum.splitting.{u} a))) →
+    HolomorphicAnosov.HomotopyTorusRigidity.{u} → HolomorphicAnosov.HasHyperbolicComplexTorusModel.{u} fun x => f x
+def HolomorphicAnosovAudit.Statement11.{u} : Prop :=
+∀ {d : ℕ} {X : Type u} [inst : TopologicalSpace.{u} X]
+  [inst_1 : ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u} d X],
+  LE.le.{0} 2 d →
+    ∀ (f : HolomorphicAnosov.Biholomorph.{u, u} d d X X) (a : HolomorphicAnosov.AnosovDatum.{u} f),
+      HolomorphicAnosov.HasComplexRankOne.{u}
+          (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+            (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u}
+              (HolomorphicAnosov.AnosovDatum.splitting.{u} a))) →
+        HolomorphicAnosov.HomotopyTorusRigidity.{u} →
+          HolomorphicAnosov.HyperbolicRealToralConjugacy.{u} (HMul.hMul.{0, 0, 0} 2 d) X fun x => f x
+def HolomorphicAnosovAudit.Statement12.{u} : Prop :=
+∀ {d : ℕ} {X : Type u} [inst : TopologicalSpace.{u} X]
+  [inst_1 : ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u} d X] (f : HolomorphicAnosov.Biholomorph.{u, u} d d X X)
+  (a : HolomorphicAnosov.AnosovDatum.{u} f),
+  (∃ r P,
+      HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u} r P ∧
+        ∀ (x : X),
+          Eq.{1}
+            (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u} d x))
+              (Submodule.restrictScalars.{0, 0, 0} ℝ (P x)))
+            (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+              (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u}
+                (HolomorphicAnosov.AnosovDatum.splitting.{u} a))
+              x)) →
+    (∃ r P,
+        HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u} r P ∧
+          ∀ (x : X),
+            Eq.{1}
+              (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u} d x))
+                (Submodule.restrictScalars.{0, 0, 0} ℝ (P x)))
+              (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+                (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{0, 0, u}
+                  (HolomorphicAnosov.AnosovDatum.splitting.{u} a))
+                x)) →
+      (∃ n, Nonempty.{max 1 (u + 1)} (Homeomorph.{u, 0} X (UnitAddTorus.{0} (Fin n)))) →
+        ∃ L A h,
+          Function.Semiconj.{u, 0} (fun x => h x) (fun x => f x) fun t => (HolomorphicAnosov.quotientLinearEquiv A) t
+def HolomorphicAnosovAudit.Statement13.{u} : Prop :=
+∀ {d : ℕ} {X : Type u} [inst : TopologicalSpace.{u} X]
+  [inst_1 : ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u} d X] (f : HolomorphicAnosov.Biholomorph.{u, u} d d X X)
+  (a : HolomorphicAnosov.AnosovDatum.{u} f),
+  HolomorphicAnosov.HasComplexRankOne.{u}
+      (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+        (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u}
+          (HolomorphicAnosov.AnosovDatum.splitting.{u} a))) →
+    HolomorphicAnosov.HomotopyTorusRigidity.{u} →
+      ∃ S U,
+        (∀ (x : X),
+            Eq.{1}
+              (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u} d x))
+                (Submodule.restrictScalars.{0, 0, 0} ℝ (S x)))
+              (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+                (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u}
+                  (HolomorphicAnosov.AnosovDatum.splitting.{u} a))
+                x)) ∧
+          (∀ (x : X),
+              Eq.{1}
+                (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u} d x))
+                  (Submodule.restrictScalars.{0, 0, 0} ℝ (U x)))
+                (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+                  (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{0, 0, u}
+                    (HolomorphicAnosov.AnosovDatum.splitting.{u} a))
+                  x)) ∧
+            HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u} 1 S ∧
+              HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u} (HSub.hSub.{0, 0, 0} d 1) U
+theorem HolomorphicAnosov.zhang_theorem_A.{u} : ∀ {d : ℕ} {X : Type u} [inst : TopologicalSpace.{u} X]
+  [inst_1 : ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u} d X] (f : HolomorphicAnosov.Biholomorph.{u, u} d d X X)
+  (a : HolomorphicAnosov.AnosovDatum.{u} f),
+  HolomorphicAnosov.HasComplexRankOne.{u}
+        (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+          (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u}
+            (HolomorphicAnosov.AnosovDatum.splitting.{u} a))) ∨
+      HolomorphicAnosov.HasComplexRankOne.{u}
+        (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+          (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{0, 0, u}
+            (HolomorphicAnosov.AnosovDatum.splitting.{u} a))) →
+    HolomorphicAnosov.HomotopyTorusRigidity.{u} → HolomorphicAnosov.HasHyperbolicComplexTorusModel.{u} fun x => f x :=
+⋯
+theorem HolomorphicAnosov.zhang_theorem_1_1.{u} : ∀ {d : ℕ} {X : Type u} [inst : TopologicalSpace.{u} X]
+  [inst_1 : ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u} d X],
+  LE.le.{0} 2 d →
+    ∀ (f : HolomorphicAnosov.Biholomorph.{u, u} d d X X) (a : HolomorphicAnosov.AnosovDatum.{u} f),
+      HolomorphicAnosov.HasComplexRankOne.{u}
+          (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+            (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u}
+              (HolomorphicAnosov.AnosovDatum.splitting.{u} a))) →
+        HolomorphicAnosov.HomotopyTorusRigidity.{u} →
+          HolomorphicAnosov.HyperbolicRealToralConjugacy.{u} (HMul.hMul.{0, 0, 0} 2 d) X fun x => f x :=
+⋯
+theorem HolomorphicAnosov.zhang_theorem_1_2.{u} : ∀ {d : ℕ} {X : Type u} [inst : TopologicalSpace.{u} X]
+  [inst_1 : ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u} d X] (f : HolomorphicAnosov.Biholomorph.{u, u} d d X X)
+  (a : HolomorphicAnosov.AnosovDatum.{u} f),
+  (∃ r P,
+      HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u} r P ∧
+        ∀ (x : X),
+          Eq.{1}
+            (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u} d x))
+              (Submodule.restrictScalars.{0, 0, 0} ℝ (P x)))
+            (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+              (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u}
+                (HolomorphicAnosov.AnosovDatum.splitting.{u} a))
+              x)) →
+    (∃ r P,
+        HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u} r P ∧
+          ∀ (x : X),
+            Eq.{1}
+              (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u} d x))
+                (Submodule.restrictScalars.{0, 0, 0} ℝ (P x)))
+              (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+                (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{0, 0, u}
+                  (HolomorphicAnosov.AnosovDatum.splitting.{u} a))
+                x)) →
+      (∃ n, Nonempty.{max 1 (u + 1)} (Homeomorph.{u, 0} X (UnitAddTorus.{0} (Fin n)))) →
+        ∃ L A h,
+          Function.Semiconj.{u, 0} (fun x => h x) (fun x => f x) fun t => (HolomorphicAnosov.quotientLinearEquiv A) t :=
+⋯
+theorem HolomorphicAnosov.zhang_theorem_1_3.{u} : ∀ {d : ℕ} {X : Type u} [inst : TopologicalSpace.{u} X]
+  [inst_1 : ChartedSpace.{0, u} (HolomorphicAnosov.ComplexModel d) X]
+  [inst_2 : HolomorphicAnosov.IsCompactComplexManifold.{u} d X] (f : HolomorphicAnosov.Biholomorph.{u, u} d d X X)
+  (a : HolomorphicAnosov.AnosovDatum.{u} f),
+  HolomorphicAnosov.HasComplexRankOne.{u}
+      (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+        (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u}
+          (HolomorphicAnosov.AnosovDatum.splitting.{u} a))) →
+    HolomorphicAnosov.HomotopyTorusRigidity.{u} →
+      ∃ S U,
+        (∀ (x : X),
+            Eq.{1}
+              (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u} d x))
+                (Submodule.restrictScalars.{0, 0, 0} ℝ (S x)))
+              (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+                (HolomorphicAnosov.InvariantRealTangentSplitting.stable.{0, 0, u}
+                  (HolomorphicAnosov.AnosovDatum.splitting.{u} a))
+                x)) ∧
+          (∀ (x : X),
+              Eq.{1}
+                (Submodule.map.{0, 0, 0, 0} (↑↑(HolomorphicAnosov.complexTangentToReal.{u} d x))
+                  (Submodule.restrictScalars.{0, 0, 0} ℝ (U x)))
+                (HolomorphicAnosov.ContinuousRealTangentSubbundle.toDistribution.{0, 0, u}
+                  (HolomorphicAnosov.InvariantRealTangentSplitting.unstable.{0, 0, u}
+                    (HolomorphicAnosov.AnosovDatum.splitting.{u} a))
+                  x)) ∧
+            HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u} 1 S ∧
+              HolomorphicAnosov.IsHolomorphicTangentSubbundle.{u} (HSub.hSub.{0, 0, 0} d 1) U :=
+⋯
+'HolomorphicAnosov.theorem_A' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'HolomorphicAnosov.theorem_1_1' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'HolomorphicAnosov.theorem_1_2' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'HolomorphicAnosov.theorem_1_3' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'HolomorphicAnosov.zhang_theorem_A' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'HolomorphicAnosov.zhang_theorem_1_1' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'HolomorphicAnosov.zhang_theorem_1_2' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'HolomorphicAnosov.zhang_theorem_1_3' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'HolomorphicAnosovAudit.target_A_matches' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'HolomorphicAnosovAudit.target_11_matches' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'HolomorphicAnosovAudit.target_12_matches' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'HolomorphicAnosovAudit.target_13_matches' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'HolomorphicAnosovAudit.wrapper_A_matches' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'HolomorphicAnosovAudit.wrapper_11_matches' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'HolomorphicAnosovAudit.wrapper_12_matches' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'HolomorphicAnosovAudit.wrapper_13_matches' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]

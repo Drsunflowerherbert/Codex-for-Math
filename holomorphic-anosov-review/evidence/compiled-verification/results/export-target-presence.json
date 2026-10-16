@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "audit": "selected-theorem-presence-only; not kernel or axiom verification",
+  "export": {
+    "path": "$VERIFY_ROOT/exports/selected-targets.ndjson",
+    "bytes": 2385351648,
+    "sha256": "2864d2b33f4020c69b5093af94e365da0866c5add9a3d580ef16421a2ab17276",
+    "expected_bytes": 2385351648,
+    "expected_sha256": "2864d2b33f4020c69b5093af94e365da0866c5add9a3d580ef16421a2ab17276",
+    "size_matches": true,
+    "sha256_matches": true,
+    "stat_unchanged_during_scan": true,
+    "lines": 43834694,
+    "metadata": {
+      "exporter": {
+        "name": "lean4export",
+        "version": "3.1.0"
+      },
+      "format": {
+        "version": "3.1.0"
+      },
+      "lean": {
+        "githash": "86c6347c75e39ec18c40e25ed2143b71a6e04a0a",
+        "version": "4.35.0-rc1"
+      }
+    }
+  },
+  "targets": [
+    {
+      "name": "HolomorphicAnosov.theorem_A",
+      "theorem_declarations": [
+        {
+          "name": "HolomorphicAnosov.theorem_A",
+          "kind": "thm",
+          "declaration_line": 43834694,
+          "name_id": 901414,
+          "type_expression_id": 42795641,
+          "proof_expression_id": 42796955
+        }
+      ],
+      "exactly_one_present": true
+    },
+    {
+      "name": "HolomorphicAnosov.theorem_1_1",
+      "theorem_declarations": [
+        {
+          "name": "HolomorphicAnosov.theorem_1_1",
+          "kind": "thm",
+          "declaration_line": 41936957,
+          "name_id": 757848,
+          "type_expression_id": 40910232,
+          "proof_expression_id": 40921536
+        }
+      ],
+      "exactly_one_present": true
+    },
+    {
+      "name": "HolomorphicAnosov.theorem_1_2",
+      "theorem_declarations": [
+        {
+          "name": "HolomorphicAnosov.theorem_1_2",
+          "kind": "thm",
+          "declaration_line": 43801446,
+          "name_id": 897489,
+          "type_expression_id": 42686643,
+          "proof_expression_id": 42764068
+        }
+      ],
+      "exactly_one_present": true
+    },
+    {
+      "name": "HolomorphicAnosov.theorem_1_3",
+      "theorem_declarations": [
+        {
+          "name": "HolomorphicAnosov.theorem_1_3",
+          "kind": "thm",
+          "declaration_line": 43407030,
+          "name_id": 881695,
+          "type_expression_id": 42367426,
+          "proof_expression_id": 42373650
+        }
+      ],
+      "exactly_one_present": true
+    }
+  ],
+  "all_targets_present_as_theorems": true,
+  "non_theorem_target_declarations": [],
+  "relevant_name_errors": [],
+  "scan_counts": {
+    "name_records": 901440,
+    "theorem_records": 102217,
+    "retained_name_prefixes_including_anonymous": 6
+  },
+  "accepted": true
+}

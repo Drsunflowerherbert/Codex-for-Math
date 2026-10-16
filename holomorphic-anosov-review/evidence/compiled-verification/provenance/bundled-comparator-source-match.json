@@ -1,0 +1,37 @@
+[
+  {
+    "source_path": "src/lake/Lake/CLI/Help.lean",
+    "url": "https://raw.githubusercontent.com/leanprover/lean4/86c6347c75e39ec18c40e25ed2143b71a6e04a0a/src/lake/Lake/CLI/Help.lean",
+    "official_sha256": "438d26afbdef9dfb234ddd3bda9d08f5694af982cd24c4b050750c07f6755301",
+    "installed_sha256": "438d26afbdef9dfb234ddd3bda9d08f5694af982cd24c4b050750c07f6755301",
+    "identical": true
+  },
+  {
+    "source_path": "src/lake/Lake/CLI/Main.lean",
+    "url": "https://raw.githubusercontent.com/leanprover/lean4/86c6347c75e39ec18c40e25ed2143b71a6e04a0a/src/lake/Lake/CLI/Main.lean",
+    "official_sha256": "3e0dd82bf00d7958b11c432ac4d70a7951751276fe970c459a7d1c34ecd7868a",
+    "installed_sha256": "3e0dd82bf00d7958b11c432ac4d70a7951751276fe970c459a7d1c34ecd7868a",
+    "identical": true
+  },
+  {
+    "source_path": "src/lake/Lake/CLI/Check.lean",
+    "url": "https://raw.githubusercontent.com/leanprover/lean4/86c6347c75e39ec18c40e25ed2143b71a6e04a0a/src/lake/Lake/CLI/Check.lean",
+    "official_sha256": "0b27599383a5a49d461d946429a70e67431b9fc8fdbdd922a06b01eacc7a1d93",
+    "installed_sha256": "0b27599383a5a49d461d946429a70e67431b9fc8fdbdd922a06b01eacc7a1d93",
+    "identical": true
+  },
+  {
+    "source_path": "src/lake/Lake/Check/Axioms.lean",
+    "url": "https://raw.githubusercontent.com/leanprover/lean4/86c6347c75e39ec18c40e25ed2143b71a6e04a0a/src/lake/Lake/Check/Axioms.lean",
+    "official_sha256": "261fa54494a6a17c23b8588d788ab1080e5c39af2143948f8e140cfa295560d1",
+    "installed_sha256": "261fa54494a6a17c23b8588d788ab1080e5c39af2143948f8e140cfa295560d1",
+    "identical": true
+  },
+  {
+    "source_path": "src/lake/Lake/Check/Compare.lean",
+    "url": "https://raw.githubusercontent.com/leanprover/lean4/86c6347c75e39ec18c40e25ed2143b71a6e04a0a/src/lake/Lake/Check/Compare.lean",
+    "official_sha256": "0281630a33b8f08a9f3f40f229cd843c02441a0cd4d8a6d8548dc2bb8ded4c68",
+    "installed_sha256": "0281630a33b8f08a9f3f40f229cd843c02441a0cd4d8a6d8548dc2bb8ded4c68",
+    "identical": true
+  }
+]

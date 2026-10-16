@@ -1,0 +1,9 @@
+{
+  "date_utc": "2026-10-16T03:14:41.293024+00:00",
+  "step": "selected-targets-replay",
+  "discarded": true,
+  "reason": "Replay was inadvertently launched before exporter termination and final hash confirmation; no result from this attempt counts as verification",
+  "owned_running_checker_groups_stopped": 1,
+  "exporter_stopped": false,
+  "next_step": "selected-targets-replay-02 after explicit successful exporter-status and SHA checks"
+}

@@ -131,5 +131,7 @@
   "executed_repository_scripts": false,
   "installed_new_tools": false,
   "build_reproduced": false,
-  "build_limitation": "Only existing Lean4.24.0 found; pinned Lean4.35.0-rc1 and matching Mathlib/cache not installed."
+  "build_limitation": "Only existing Lean4.24.0 found; pinned Lean4.35.0-rc1 and matching Mathlib/cache not installed.",
+  "record_scope": "Historical initial source-only audit; source/configuration pins remain valid and unchanged. Execution booleans below describe that phase only.",
+  "superseded_execution_record": "compiled-verification/results/verification-summary.json"
 }

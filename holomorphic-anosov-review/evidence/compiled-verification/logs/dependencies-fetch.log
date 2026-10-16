@@ -1,0 +1,189 @@
+$ git -c core.hooksPath=/dev/null init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in $VERIFY_ROOT/build/.lake/packages/mathlib/.git/
+$ git remote add origin https://github.com/leanprover-community/mathlib4.git
+$ git -c core.hooksPath=/dev/null fetch --depth=1 origin c32e1ec0d1eb5237ba344eee50162f45d5b0fc76
+From https://github.com/leanprover-community/mathlib4
+ * branch            c32e1ec0d1eb5237ba344eee50162f45d5b0fc76 -> FETCH_HEAD
+$ git -c core.hooksPath=/dev/null checkout --detach FETCH_HEAD
+HEAD is now at c32e1ec chore: bump toolchain to v4.35.0-rc1 (#43843)
+$ git -c core.hooksPath=/dev/null init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in $VERIFY_ROOT/build/.lake/packages/plausible/.git/
+$ git remote add origin https://github.com/leanprover-community/plausible
+$ git -c core.hooksPath=/dev/null fetch --depth=1 origin 16fe28ca7c2e01b71856f7a0a801ea844580f2d5
+From https://github.com/leanprover-community/plausible
+ * branch            16fe28ca7c2e01b71856f7a0a801ea844580f2d5 -> FETCH_HEAD
+$ git -c core.hooksPath=/dev/null checkout --detach FETCH_HEAD
+HEAD is now at 16fe28c chore: bump toolchain to v4.35.0-rc1 (#101)
+$ git -c core.hooksPath=/dev/null init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in $VERIFY_ROOT/build/.lake/packages/LeanSearchClient/.git/
+$ git remote add origin https://github.com/leanprover-community/LeanSearchClient
+$ git -c core.hooksPath=/dev/null fetch --depth=1 origin b43172c7f62b95ecd6daa0951602b83eb35182a1
+From https://github.com/leanprover-community/LeanSearchClient
+ * branch            b43172c7f62b95ecd6daa0951602b83eb35182a1 -> FETCH_HEAD
+$ git -c core.hooksPath=/dev/null checkout --detach FETCH_HEAD
+HEAD is now at b43172c chore: bump toolchain to v4.35.0-rc1 (#40)
+$ git -c core.hooksPath=/dev/null init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in $VERIFY_ROOT/build/.lake/packages/importGraph/.git/
+$ git remote add origin https://github.com/leanprover-community/import-graph
+$ git -c core.hooksPath=/dev/null fetch --depth=1 origin 0b9118a4a6d4c752e51f4f731edc09f4cc135f4c
+From https://github.com/leanprover-community/import-graph
+ * branch            0b9118a4a6d4c752e51f4f731edc09f4cc135f4c -> FETCH_HEAD
+$ git -c core.hooksPath=/dev/null checkout --detach FETCH_HEAD
+HEAD is now at 0b9118a chore: bump toolchain to v4.35.0-rc1 (#152)
+$ git -c core.hooksPath=/dev/null init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in $VERIFY_ROOT/build/.lake/packages/proofwidgets/.git/
+$ git remote add origin https://github.com/leanprover-community/ProofWidgets4
+$ git -c core.hooksPath=/dev/null fetch --depth=1 origin af0c1665a9cdb1c90409b52a183113efbb5a4480
+From https://github.com/leanprover-community/ProofWidgets4
+ * branch            af0c1665a9cdb1c90409b52a183113efbb5a4480 -> FETCH_HEAD
+$ git -c core.hooksPath=/dev/null checkout --detach FETCH_HEAD
+HEAD is now at af0c166 chore: bump toolchain to v4.35.0-rc1 (#195)
+$ git -c core.hooksPath=/dev/null init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in $VERIFY_ROOT/build/.lake/packages/aesop/.git/
+$ git remote add origin https://github.com/leanprover-community/aesop
+$ git -c core.hooksPath=/dev/null fetch --depth=1 origin 7938bfd115516f80b260d43faf630c8520471a00
+From https://github.com/leanprover-community/aesop
+ * branch            7938bfd115516f80b260d43faf630c8520471a00 -> FETCH_HEAD
+$ git -c core.hooksPath=/dev/null checkout --detach FETCH_HEAD
+HEAD is now at 7938bfd chore: bump toolchain to v4.35.0-rc1 (#346)
+$ git -c core.hooksPath=/dev/null init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in $VERIFY_ROOT/build/.lake/packages/Qq/.git/
+$ git remote add origin https://github.com/leanprover-community/quote4
+$ git -c core.hooksPath=/dev/null fetch --depth=1 origin 21558817bf8b77bab8f4c3081e0062201fd974d2
+From https://github.com/leanprover-community/quote4
+ * branch            21558817bf8b77bab8f4c3081e0062201fd974d2 -> FETCH_HEAD
+$ git -c core.hooksPath=/dev/null checkout --detach FETCH_HEAD
+HEAD is now at 2155881 chore: bump toolchain to v4.35.0-rc1 (#161)
+$ git -c core.hooksPath=/dev/null init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in $VERIFY_ROOT/build/.lake/packages/batteries/.git/
+$ git remote add origin https://github.com/leanprover-community/batteries
+$ git -c core.hooksPath=/dev/null fetch --depth=1 origin 2a71587431553220d08be069a144b8215350e1d6
+From https://github.com/leanprover-community/batteries
+ * branch            2a71587431553220d08be069a144b8215350e1d6 -> FETCH_HEAD
+$ git -c core.hooksPath=/dev/null checkout --detach FETCH_HEAD
+HEAD is now at 2a71587 chore: bump toolchain to v4.35.0-rc1 (#1966)
+$ git -c core.hooksPath=/dev/null init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in $VERIFY_ROOT/build/.lake/packages/Cli/.git/
+$ git remote add origin https://github.com/leanprover/lean4-cli
+$ git -c core.hooksPath=/dev/null fetch --depth=1 origin 3c7ccd7060887fa478a55e555fae61bbf466c3ba
+From https://github.com/leanprover/lean4-cli
+ * branch            3c7ccd7060887fa478a55e555fae61bbf466c3ba -> FETCH_HEAD
+$ git -c core.hooksPath=/dev/null checkout --detach FETCH_HEAD
+HEAD is now at 3c7ccd7 chore: bump toolchain to v4.35.0-rc1 (#98)

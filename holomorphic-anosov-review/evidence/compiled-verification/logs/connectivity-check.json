@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-16T02:28:04.857634+00:00",
+  "execution_available": true,
+  "existing_lake_process_confirmed_running": true,
+  "log_bytes": 123521,
+  "latest_log_mtime_utc": "2026-10-16T02:28:04.842095+00:00",
+  "source_checkout_clean": true,
+  "restart_or_duplicate_build_performed": false,
+  "note": "Platform disconnect notification did not terminate the observed existing build; logs and partial artifacts remained accessible.",
+  "compiled_modules_in_initial_recovery_observation": 1401
+}

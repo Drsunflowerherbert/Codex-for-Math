@@ -1,0 +1,42 @@
+{
+  "step": "selected-targets-replay-02",
+  "command": [
+    "$VERIFY_ROOT/toolchains/lean-4.35.0-rc1-linux/bin/leanchecker",
+    "--from-export",
+    "$VERIFY_ROOT/exports/selected-targets.ndjson"
+  ],
+  "cwd": "$VERIFY_ROOT/build",
+  "started_at_utc": "2026-10-16T03:20:06.158568+00:00",
+  "duration_seconds": 722.322,
+  "exit_code": 0,
+  "resource_stop": false,
+  "cgroup_peak_observed_bytes": 16613183488,
+  "cgroup_anon_peak_observed_bytes": 3581079552,
+  "resource_guard": "Stop only if task anonymous memory exceeds12GiB; file cache is reclaimable",
+  "resource_sample_interval_seconds": 1,
+  "cgroup_memory_scope": "whole task environment, not exclusively the child",
+  "settings": {
+    "LEAN_NUM_THREADS": "4",
+    "MATHLIB_NO_CACHE_ON_UPDATE": "1",
+    "MATHLIB_CACHE_DIR": "$VERIFY_ROOT/cache/mathlib",
+    "inherited_cache_endpoint_overrides_removed": true,
+    "source_dependency_lockfile_preserved": true
+  },
+  "log": "selected-targets-replay-02.log",
+  "original_log_sha256": "b4a5a2119e1d34b46527d63317f417c74261b65eeb93f14026389da2519c2ead",
+  "published_normalized_log_sha256": "b4a5a2119e1d34b46527d63317f417c74261b65eeb93f14026389da2519c2ead",
+  "_publication": {
+    "copy_kind": "normalized public copy; original record retained privately",
+    "original_record_sha256": "e704a08634576bb1dc36511434b509cd892e9232f32f35c2004da543e56fee8f",
+    "normalization": "absolute private prefixes replaced by documented placeholders",
+    "original_log_hash_fields_relabelled": true,
+    "related_logs": [
+      {
+        "role": "combined_output",
+        "path": "logs/selected-targets-replay-02.log",
+        "original_sha256": "b4a5a2119e1d34b46527d63317f417c74261b65eeb93f14026389da2519c2ead",
+        "published_normalized_sha256": "b4a5a2119e1d34b46527d63317f417c74261b65eeb93f14026389da2519c2ead"
+      }
+    ]
+  }
+}

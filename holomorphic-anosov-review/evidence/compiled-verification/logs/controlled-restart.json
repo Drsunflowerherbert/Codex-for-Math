@@ -1,0 +1,9 @@
+{
+  "date_utc": "2026-10-16T02:08:12.697878+00:00",
+  "step": "solution-build",
+  "action": "controlled SIGTERM of owned verified build process group",
+  "reason": "Increase LEAN_NUM_THREADS from2to4 within allocated4CPUquota after observed anonymous memory below1GiB; preserve incremental artifacts",
+  "not_a_source_compilation_error": true,
+  "next_step": "solution-build-four-threads",
+  "earlier_control_attempt": "Conservative /proc cwd selection guard found no match; no signal sent; attempted new runner did not exist and exited2; original build continued until this successful controlled stop."
+}

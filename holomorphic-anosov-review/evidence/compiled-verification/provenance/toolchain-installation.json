@@ -1,0 +1,15 @@
+{
+  "official_release_url": "https://github.com/leanprover/lean4/releases/tag/v4.35.0-rc1",
+  "tag": "v4.35.0-rc1",
+  "asset": "lean-4.35.0-rc1-linux.tar.zst",
+  "official_download_url": "https://github.com/leanprover/lean4/releases/download/v4.35.0-rc1/lean-4.35.0-rc1-linux.tar.zst",
+  "expected_bytes": 594218389,
+  "actual_bytes": 594218389,
+  "api_supplied_sha256": "a299763401c3b9b8e19bcca26f8443b40ae24962c3c3ddee73b5c72194877f65",
+  "actual_sha256": "a299763401c3b9b8e19bcca26f8443b40ae24962c3c3ddee73b5c72194877f65",
+  "digest_match": true,
+  "safe_extraction_filter": "Python tarfile data filter; required single expected prefix; no devices",
+  "extracted_members": 18534,
+  "duration_seconds": 22.493,
+  "repository_setup_scripts_executed": false
+}

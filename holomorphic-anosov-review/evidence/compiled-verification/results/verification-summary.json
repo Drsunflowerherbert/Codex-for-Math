@@ -1,0 +1,118 @@
+{
+  "recorded_at_utc": "2026-10-16T03:32:14.708166+00:00",
+  "source_repository": "https://github.com/frenzymath/HolomorphicAnosov",
+  "source_commit": "65f2b33a7309de661a8500e4642e5609a537a8ff",
+  "manuscript": {
+    "version": "arXiv:2609.37695v3, 13 October 2026",
+    "pages": 19,
+    "bytes": 371989,
+    "sha256": "3c8287bf41d153c7f0d0950b8a4b477546229333ee66ba7e9ae60e6a387920c6"
+  },
+  "toolchain": {
+    "version": "4.35.0-rc1",
+    "commit": "86c6347c75e39ec18c40e25ed2143b71a6e04a0a",
+    "official_archive_sha256": "a299763401c3b9b8e19bcca26f8443b40ae24962c3c3ddee73b5c72194877f65",
+    "archive_matches_official_release_API_digest": true,
+    "independent_signature_verification": false
+  },
+  "solution_build": {
+    "status": "passed",
+    "exit_code": 0,
+    "local_modules": 4230,
+    "lake_successful_jobs": 13157,
+    "challenge_built": false,
+    "duration_seconds_final_resumed_run": 3713.487,
+    "dependency_artifacts": "Official pinned Mathlib cache; not all Mathlib recompiled"
+  },
+  "compiled_harnesses": {
+    "full_expected_type_assignments": 8,
+    "selected_definition_expansions": true,
+    "statement_exit_code": 0,
+    "definition_exit_code": 0,
+    "source_files_modified": false,
+    "not_recursive_challenge_solution_comparison": true
+  },
+  "axiom_lists": {
+    "queried_declarations": 16,
+    "all_exactly_standard_three": true,
+    "standard_names": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "axiom_types_recursively_compared_to_challenge": false,
+    "HS_explicit_in": [
+      "A",
+      "1.1",
+      "1.3"
+    ],
+    "HS_not_a_premise_of": [
+      "1.2"
+    ],
+    "HS_discharged": false
+  },
+  "official_comparator": {
+    "status": "blocked_before_comparison",
+    "exit_code": 1,
+    "reason": "bwrap: setting up uid map: Read-only file system",
+    "verdict": null,
+    "sandbox_bypassed": false,
+    "additional_unapproved_executable_installed": false
+  },
+  "selected_export": {
+    "exit_code": 0,
+    "bytes": 2385351648,
+    "sha256": "2864d2b33f4020c69b5093af94e365da0866c5add9a3d580ef16421a2ab17276",
+    "all_four_target_theorems_present_once": true,
+    "presence_evidence": "export-target-presence.json",
+    "large_NDJSON_published": false
+  },
+  "raw_kernel_replay": {
+    "status": "passed",
+    "step": "selected-targets-replay-02",
+    "exit_code": 0,
+    "duration_seconds": 722.322,
+    "resource_stop": false,
+    "environment": "Fresh environment reconstructed from finalized selected proof export",
+    "kernel": "Official default Lean kernel, same implementation as compiler",
+    "independent_kernel_implementation": false,
+    "comparator_equivalent": false,
+    "axiom_allowlist_enforced_by_replay": false,
+    "recursive_challenge_comparison": false,
+    "original_log_sha256": "b4a5a2119e1d34b46527d63317f417c74261b65eeb93f14026389da2519c2ead",
+    "published_normalized_log_sha256": "b4a5a2119e1d34b46527d63317f417c74261b65eeb93f14026389da2519c2ead"
+  },
+  "preservation": {
+    "all_4232_source_hashes_match_initial_audit": true,
+    "tracked_project_sources_unchanged": true,
+    "all_nine_dependency_heads_and_tracked_sources_unchanged": true,
+    "root_lockfile_sha256": "de4af5f055b3b05d3a4a43c624db2a70381c762e18542f4e66bc3c71a02ebb1c",
+    "local_olean_files_hashed": 4230
+  },
+  "failed_or_discarded_audit_attempts": [
+    "Controlled SIGTERM of initial two-thread build to resume same closure with four threads",
+    "Initial audit harnesses failed solely on unsupported pp.width; corrected external files passed as -02",
+    "Premature raw replay stopped and discarded; only replay-02 counts"
+  ],
+  "connectivity_recovery": "Existing original build and artifacts confirmed intact after platform disconnect; no duplicate restart",
+  "remaining_limits": [
+    "No official comparator verdict because host cannot establish runner user namespace",
+    "HomotopyTorusRigidity remains explicit premise in A,1.1,1.3",
+    "Compiled checks do not prove ordinary mathematical interpretation of definitions",
+    "Original Ghys surface-case inference and inaccessible Manning1974 recurrence proof remain source-audit limits",
+    "No independent kernel implementation or exhaustive foundational/dependency audit"
+  ],
+  "_publication": {
+    "copy_kind": "normalized public copy; original summary retained privately",
+    "original_record_sha256": "eddafd03f157e158238458970cb831ba258c2d89d7b5c238f4f1888aacc441f9",
+    "normalization": "private prefixes replaced; nested raw_kernel_replay.log_sha256 explicitly relabelled",
+    "related_logs": [
+      {
+        "role": "raw_kernel_replay.log",
+        "path": "logs/selected-targets-replay-02.log",
+        "original_sha256": "b4a5a2119e1d34b46527d63317f417c74261b65eeb93f14026389da2519c2ead",
+        "published_normalized_sha256": "b4a5a2119e1d34b46527d63317f417c74261b65eeb93f14026389da2519c2ead"
+      }
+    ]
+  }
+}

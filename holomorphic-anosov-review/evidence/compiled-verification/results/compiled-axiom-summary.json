@@ -1,0 +1,264 @@
+{
+  "source_commit": "65f2b33a7309de661a8500e4642e5609a537a8ff",
+  "permitted_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "declarations": [
+    {
+      "declaration": "HolomorphicAnosov.theorem_A",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    },
+    {
+      "declaration": "HolomorphicAnosov.theorem_1_1",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    },
+    {
+      "declaration": "HolomorphicAnosov.theorem_1_2",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    },
+    {
+      "declaration": "HolomorphicAnosov.theorem_1_3",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    },
+    {
+      "declaration": "HolomorphicAnosov.zhang_theorem_A",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    },
+    {
+      "declaration": "HolomorphicAnosov.zhang_theorem_1_1",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    },
+    {
+      "declaration": "HolomorphicAnosov.zhang_theorem_1_2",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    },
+    {
+      "declaration": "HolomorphicAnosov.zhang_theorem_1_3",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    },
+    {
+      "declaration": "HolomorphicAnosovAudit.target_A_matches",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    },
+    {
+      "declaration": "HolomorphicAnosovAudit.target_11_matches",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    },
+    {
+      "declaration": "HolomorphicAnosovAudit.target_12_matches",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    },
+    {
+      "declaration": "HolomorphicAnosovAudit.target_13_matches",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    },
+    {
+      "declaration": "HolomorphicAnosovAudit.wrapper_A_matches",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    },
+    {
+      "declaration": "HolomorphicAnosovAudit.wrapper_11_matches",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    },
+    {
+      "declaration": "HolomorphicAnosovAudit.wrapper_12_matches",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    },
+    {
+      "declaration": "HolomorphicAnosovAudit.wrapper_13_matches",
+      "reported_axioms": [
+        "propext",
+        "Classical.choice.{u}",
+        "Quot.sound.{u}"
+      ],
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "forbidden_axioms": [],
+      "whitelist_pass": true
+    }
+  ],
+  "all_whitelist_pass": true,
+  "exact_full_type_assignments_compiled": true,
+  "definition_expansion_checks_compiled": true,
+  "theorems_A_11_13_retain_explicit_HS_premise": true,
+  "theorem_12_has_no_HS_premise": true,
+  "semantic_limit": "Axiom closure excludes universally quantified hypotheses; HS remains a substantive explicit premise. Harness uses copied complete interface types and imported definitions; it is not the blocked comparator.",
+  "execution_steps": {
+    "statements": "exact-statements-02",
+    "definitions": "exact-definitions-02"
+  },
+  "harness_sha256": {
+    "VerifyStatements.lean": "15806db0fbf002baccc39470692053d99422ef0358bfc2d44baf628cc013276d",
+    "VerifyDefinitions.lean": "5f9b307e3497fa7c345447202799f9e00a22091b41f2b5a0dc6e4f5c827531da"
+  }
+}

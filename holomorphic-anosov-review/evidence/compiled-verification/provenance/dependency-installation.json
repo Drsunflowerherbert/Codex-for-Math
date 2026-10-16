@@ -1,0 +1,98 @@
+{
+  "root_source_commit": "65f2b33a7309de661a8500e4642e5609a537a8ff",
+  "manifest_sha256": "de4af5f055b3b05d3a4a43c624db2a70381c762e18542f4e66bc3c71a02ebb1c",
+  "manifest_unchanged": true,
+  "method": "Git fetch depth1 exact lockfile revisions; detached checkouts; no update/setup hooks",
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "url": "https://github.com/leanprover-community/mathlib4.git",
+      "expected_revision": "c32e1ec0d1eb5237ba344eee50162f45d5b0fc76",
+      "actual_revision": "c32e1ec0d1eb5237ba344eee50162f45d5b0fc76",
+      "matches": true,
+      "config_file": "lakefile.lean",
+      "config_sha256": "29309ff821952761f76b6810488eecf2ad6b962658c423440a02a7a16750f8e5",
+      "elapsed_seconds": 8.702
+    },
+    {
+      "name": "plausible",
+      "url": "https://github.com/leanprover-community/plausible",
+      "expected_revision": "16fe28ca7c2e01b71856f7a0a801ea844580f2d5",
+      "actual_revision": "16fe28ca7c2e01b71856f7a0a801ea844580f2d5",
+      "matches": true,
+      "config_file": "lakefile.toml",
+      "config_sha256": "4147957012320a3afe8f041662202b7a3453c8a0df4311c1698da029a3b4834f",
+      "elapsed_seconds": 0.484
+    },
+    {
+      "name": "LeanSearchClient",
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "expected_revision": "b43172c7f62b95ecd6daa0951602b83eb35182a1",
+      "actual_revision": "b43172c7f62b95ecd6daa0951602b83eb35182a1",
+      "matches": true,
+      "config_file": "lakefile.toml",
+      "config_sha256": "cb5d6c80c4ffd4b3be99294a911ebf2f6a2fee4eb9f840d96f0f813bd484c05d",
+      "elapsed_seconds": 0.55
+    },
+    {
+      "name": "importGraph",
+      "url": "https://github.com/leanprover-community/import-graph",
+      "expected_revision": "0b9118a4a6d4c752e51f4f731edc09f4cc135f4c",
+      "actual_revision": "0b9118a4a6d4c752e51f4f731edc09f4cc135f4c",
+      "matches": true,
+      "config_file": "lakefile.toml",
+      "config_sha256": "b4943bbe46e189d7db992d3361ab7ff6a297d28a83c60c4b6a6ba596973de896",
+      "elapsed_seconds": 0.553
+    },
+    {
+      "name": "proofwidgets",
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "expected_revision": "af0c1665a9cdb1c90409b52a183113efbb5a4480",
+      "actual_revision": "af0c1665a9cdb1c90409b52a183113efbb5a4480",
+      "matches": true,
+      "config_file": "lakefile.lean",
+      "config_sha256": "0a319fffbf511dab4c3307dc105f8e8fdb4f6160020995cef5f442061cc0abca",
+      "elapsed_seconds": 0.938
+    },
+    {
+      "name": "aesop",
+      "url": "https://github.com/leanprover-community/aesop",
+      "expected_revision": "7938bfd115516f80b260d43faf630c8520471a00",
+      "actual_revision": "7938bfd115516f80b260d43faf630c8520471a00",
+      "matches": true,
+      "config_file": "lakefile.toml",
+      "config_sha256": "2db1a4b8ce2032ac92e9f6378e62077da1fa6138a2c816fcec6ba269b7cba134",
+      "elapsed_seconds": 0.603
+    },
+    {
+      "name": "Qq",
+      "url": "https://github.com/leanprover-community/quote4",
+      "expected_revision": "21558817bf8b77bab8f4c3081e0062201fd974d2",
+      "actual_revision": "21558817bf8b77bab8f4c3081e0062201fd974d2",
+      "matches": true,
+      "config_file": "lakefile.toml",
+      "config_sha256": "42826e4e06221f41fcd863e19d937a0a68be7d54df90abd7800a3c09f4557a15",
+      "elapsed_seconds": 0.303
+    },
+    {
+      "name": "batteries",
+      "url": "https://github.com/leanprover-community/batteries",
+      "expected_revision": "2a71587431553220d08be069a144b8215350e1d6",
+      "actual_revision": "2a71587431553220d08be069a144b8215350e1d6",
+      "matches": true,
+      "config_file": "lakefile.toml",
+      "config_sha256": "acadcd8beb13a53a4ac9399e6706c829309d2380f338d13b037886666f978015",
+      "elapsed_seconds": 0.738
+    },
+    {
+      "name": "Cli",
+      "url": "https://github.com/leanprover/lean4-cli",
+      "expected_revision": "3c7ccd7060887fa478a55e555fae61bbf466c3ba",
+      "actual_revision": "3c7ccd7060887fa478a55e555fae61bbf466c3ba",
+      "matches": true,
+      "config_file": "lakefile.toml",
+      "config_sha256": "188aaec6ddb57f411c11b95c3ece85ff26ab9ae8085371fee47e1dc855c4e186",
+      "elapsed_seconds": 0.429
+    }
+  ]
+}

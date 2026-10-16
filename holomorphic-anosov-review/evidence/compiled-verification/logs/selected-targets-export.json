@@ -1,0 +1,50 @@
+{
+  "role": "Standalone selected-proof export, not comparator",
+  "command": [
+    "$VERIFY_ROOT/toolchains/lean-4.35.0-rc1-linux/bin/lake",
+    "env",
+    "$VERIFY_ROOT/toolchains/lean-4.35.0-rc1-linux/bin/leanexport",
+    "HolomorphicAnosov.Targets.TheoremA",
+    "--",
+    "HolomorphicAnosov.theorem_A",
+    "HolomorphicAnosov.theorem_1_1",
+    "HolomorphicAnosov.theorem_1_2",
+    "HolomorphicAnosov.theorem_1_3"
+  ],
+  "source_commit": "65f2b33a7309de661a8500e4642e5609a537a8ff",
+  "module": "HolomorphicAnosov.Targets.TheoremA",
+  "selected_targets": [
+    "HolomorphicAnosov.theorem_A",
+    "HolomorphicAnosov.theorem_1_1",
+    "HolomorphicAnosov.theorem_1_2",
+    "HolomorphicAnosov.theorem_1_3"
+  ],
+  "started_at_utc": "2026-10-16T03:13:13.560112+00:00",
+  "duration_seconds": 140.375,
+  "exit_code": 0,
+  "resource_stop": null,
+  "cgroup_peak_observed_bytes": 17179869184,
+  "cgroup_anon_peak_observed_bytes": 4129226752,
+  "ndjson_bytes": 2385351648,
+  "ndjson_sha256": "2864d2b33f4020c69b5093af94e365da0866c5add9a3d580ef16421a2ab17276",
+  "stderr_log": "selected-targets-export.stderr.log",
+  "stdout_stderr_kept_separate": true,
+  "comparator_sandbox_bypassed": false,
+  "limits": "No challenge/type/definition comparison, permitted-axiom enforcement, or independent-kernel implementation is supplied by this export.",
+  "original_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "published_normalized_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "_publication": {
+    "copy_kind": "normalized public copy; original record retained privately",
+    "original_record_sha256": "c9d5d51e2da05728e9e21ce5e3fe58441af6f602970fd61806a859b2e906af8a",
+    "normalization": "absolute private prefixes replaced by documented placeholders",
+    "original_log_hash_fields_relabelled": true,
+    "related_logs": [
+      {
+        "role": "stderr",
+        "path": "logs/selected-targets-export.stderr.log",
+        "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "published_normalized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  }
+}

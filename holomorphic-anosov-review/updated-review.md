@@ -12,7 +12,7 @@ lang: en
 
 1. Ghys's 1995 Lemma 4.3, Fact 1, p. 596 contains a false disk-containment strengthening. An elementary counterexample and an independently checked repair of its needed weaker consequence are given below. This does not refute Ghys's classification theorem or Zhang's result.
 2. The Lean statements of Theorem A, Theorem 1.1, and Theorem 1.3 explicitly assume an unproved `HomotopyTorusRigidity` proposition. Theorem 1.2 does not. The README discloses this. The actual formal statements are therefore conditional on that classical topological input.
-3. The inspected Lean definitions otherwise faithfully express the manuscript's geometry and conclusions. No hidden transitivity hypothesis, vacuous geometric input, replacement of complex rank one by real rank one, or weakened conjugacy conclusion was found. This is a bounded source audit, not a reproduced kernel verification.
+3. The inspected Lean definitions otherwise faithfully express the manuscript's geometry and conclusions. No hidden transitivity hypothesis, vacuous geometric input, replacement of complex rank one by real rank one, or weakened conjugacy conclusion was found. The pinned solution import closure now builds, and compiled full-type, definition-expansion and axiom checks support this correspondence. Their scope and the blocked comparator are recorded below.
 4. A particular inference in Ghys's original Schwarzian/Markov proof remains unclosed by this audit. It remains on Zhang's cited complex-surface base-case path. The original Manning 1974 recurrence proof also remains inaccessible and independently unverified here.
 5. The initial review's closed-disk clarification for Zhang Lemma 2.10 remains appropriate. Its global conclusion can independently be reconstructed from the flat connection and complete stable coordinates, without transitivity.
 
@@ -34,9 +34,15 @@ The formal source is [frenzymath/HolomorphicAnosov](https://github.com/frenzymat
 
 This commit is dated 13 October 2026. The checked `lean-toolchain` requires **Lean 4.35.0-rc1**. The lockfile pins Mathlib to **c32e1ec0d1eb5237ba344eee50162f45d5b0fc76**, and the remote Mathlib tag was checked to resolve to that commit. Every other dependency revision is recorded in `evidence/formalisation-manifest.json`.
 
-Only an existing Lean 4.24.0 distribution was available. Lean 4.35.0-rc1 and the matching Mathlib build/cache were not installed. No new tools were installed, no repository setup scripts or Lean code were executed, and no build, comparator run, or `#print axioms` check was reproduced. The official compiler and locked dependencies would be required for that further check. Even a successful build would not by itself establish correspondence with the manuscript.
+The initial source-only audit was followed by an explicitly authorized compiled audit in an isolated checkout at the same commit. The official **Lean 4.35.0-rc1** Linux release was installed; its 594,218,389-byte archive matched the SHA-256 published by the official GitHub release API:
 
-The repository's README claims successful checking and a standard-axiom-only result. Those claims were read as assertions, not treated as independent verification. A read-only GitHub Actions query returned zero visible workflow runs at the time of this audit; this does not disprove that checking was performed elsewhere.
+```text
+a299763401c3b9b8e19bcca26f8443b40ae24962c3c3ddee73b5c72194877f65
+```
+
+The compiler reports release commit `86c6347c75e39ec18c40e25ed2143b71a6e04a0a`. All nine dependencies were fetched at their existing lockfile revisions. The official Mathlib cache supplied dependency artifacts; this was not a rebuild of every Mathlib theorem from source. No unknown setup script, extra third-party executable, or source/lockfile change was introduced. Archive digest agreement over official HTTPS metadata is not independent signature verification. Detailed commands, release metadata, executable hashes, logs, source/artifact hashes and results are in `evidence/compiled-verification/`. Build success alone does not establish manuscript correspondence.
+
+The repository's README claims successful checking and a standard-axiom-only result. This audit now has its own build and compiled axiom evidence for the selected targets, rather than relying on that assertion. The initial read-only GitHub Actions query returned zero visible workflow runs; that historical observation does not disprove checking elsewhere.
 
 # Claim and dependency map
 
@@ -212,13 +218,45 @@ The supplied reproducible scanner erases nested comments and strings, then scans
 
 The four challenge theorem bodies are expected specification placeholders. The solution separately imports and applies the actual target proofs. The challenge's `run_cmd` clears an auxiliary-lemma cache; it is outside the solution import closure. The comparator configuration lists the four target names and permits `propext`, `Quot.sound`, and `Classical.choice`.
 
-**These are lexical and source-graph results.** They do not establish successful elaboration, declaration-level transitive proof dependencies, compiled axiom dependencies, comparator acceptance, integrity of prebuilt artifacts, or the correctness of every imported Mathlib theorem. All manifest dependency revisions are pinned, but their code and build products were not exhaustively audited. No claim of formal verification by this review is made.
+**These remain lexical and source-graph results.** They are supplemented by the following executed checks, not promoted into stronger claims by themselves.
+
+## Compiled checks at the pinned source
+
+The actual `Comparator.Solution` import closure built successfully with the official compiler: **4,230 local module artifacts**, comprising 4,229 `HolomorphicAnosov` modules and `Comparator.Solution`. The final Lake build reported 13,157 successful jobs. The intentionally incomplete challenge was not imported or built by this command. The resumed four-thread build took about 62 minutes, following a deliberately stopped two-thread run; the task's anonymous-memory sample stayed below 6.5 GiB during the successful build. File-cache-inclusive cgroup totals are not exclusive compiler memory measurements.
+
+External audit files import the built solution and assign each actual theorem and each solution wrapper to its **complete expected type**. Both the statement harness and selected definition-expansion checks compiled successfully. This verifies the displayed interfaces using Lean's definitional equality; it is not the official comparator's challenge/solution dependency comparison. The semantic interpretation of the imported definitions still depends on the separate source review.
+
+| Target and corresponding `zhang_` wrapper | Full-type assignment | Compiled `#print axioms` | Explicit HS premise |
+|---|---|---|---|
+| Theorem A | Passed | Standard three names only | Yes |
+| Theorem 1.1 | Passed | Standard three names only | Yes |
+| Theorem 1.2 | Passed | Standard three names only | No |
+| Theorem 1.3 | Passed | Standard three names only | Yes |
+
+The three reported logical axioms are `propext`, `Classical.choice` and `Quot.sound`. All eight target/wrapper declarations and eight typed audit bindings have exactly this axiom set. There is no reported `sorryAx` or additional global axiom in these closures. Universe annotations are preserved in the raw logs and normalized only for name comparison. **A universally quantified premise is not a global axiom:** these results leave `HomotopyTorusRigidity` explicit in A, 1.1 and 1.3. They do not turn those conditional declarations into unconditional formalizations.
+
+## Comparator and separate proof replay
+
+The official bundled command `lake comparator --config Comparator/config.json` was attempted. It exited with status 1 before comparison because existing Bubblewrap could not establish its user namespace:
+
+```text
+bwrap: setting up uid map: Read-only file system
+error: Child exited with 1
+```
+
+This is an environment startup failure, not a statement/proof rejection. **There is no comparator verdict.** Its recursive challenge/solution comparison, including comparison of the declarations behind permitted axiom names, has not been reproduced. The separate name whitelist is not that comparison. No sandbox bypass, replacement runner or additional unapproved executable was used. Completing that operation requires an environment permitting the official runner's user-namespace setup.
+
+A separate export of all four actual target proof terms and their recursive dependencies completed successfully. Its 2,385,351,648-byte NDJSON has SHA-256 `2864d2b33f4020c69b5093af94e365da0866c5add9a3d580ef16421a2ab17276`. A streaming presence audit confirmed that each selected target occurs exactly once as a theorem. Only after export exit 0 and final hash verification, the official `leanchecker --from-export` replay **passed**, exiting 0 in 722.322 seconds and reporting `Lean default kernel accepts the solution`. This reconstructs a fresh environment from the exported proof closure and checks it with the **same default Lean kernel implementation**. It is additional compiled proof evidence, not an independently implemented kernel or an official comparator verdict. Raw replay does not enforce the axiom whitelist or compare challenge statements/definition dependencies; those limits remain distinct from the successful type and axiom-name harnesses. The large proof export is retained privately and identified by hash; it is excluded from the public evidence package.
+
+The original build restart, the platform-disconnect recovery check, and unsuccessful audit attempts are retained. The first statement/definition harness runs failed on an unsupported pretty-printing option in the audit files; removing that option alone produced the successful runs labelled `02`. An early replay was launched before export completion, stopped, and discarded; only a later replay against the finalized export can count. None of those harness/orchestration issues was a source proof failure. The recovery check confirmed the original build was still running after a platform disconnect and did not restart or duplicate it.
+
+A post-build manifest confirms **all 4,232 original Lean source hashes**, the source commit, all nine dependency revisions and tracked files, and the root lockfile are unchanged. It hashes all 4,230 local `.olean` artifacts. A digest of a local artifact is an identity record, not authentication of its mathematical correctness. Pinned dependency code and build products were not exhaustively audited. The compiled results supplement the bounded semantic and mathematical review; they do not establish an unconditional formal proof of the whole manuscript or close the original cited-source proof limits. No independent kernel implementation was used.
 
 The evidence bundle includes the scanner and complete results, repository/configuration hashes, dependency pins, proof/citation ledgers, bounded search/access logs, the exact auxiliary counterexample and repair, independent challenge notes, and PDF rendering checks. It excludes the supplied paper, cited-source PDFs, scans, source OCR transcriptions, private file/task identifiers, and credentials.
 
 # Remaining limits and recommended disposition
 
-The new mathematical argument in complex dimension at least three remains supported by the independent reconstruction, including global holonomy. The final example remains consistent. The expanded review does not establish that every cited proof or every formal proof has been fully verified.
+The new mathematical argument in complex dimension at least three remains supported by the independent reconstruction, including global holonomy. The final example remains consistent. The expanded review, including the compiled follow-up, does not establish that every cited proof or every formal proof has been fully verified.
 
 All 19 manuscript pages were read. The three proof sections, introduction's hypotheses and quantifiers, final example, and bibliography were covered. Historical/contextual results of Smale, Newhouse, Catanese and Catanese–Oguiso–Peternell, Xu–Zhang, and the separate Zhang preprint were not independently proof-audited; they are not needed in the reconstructed new proof. The initial notes document their role and the distinction from critical dependencies. Errata searches were bounded and sometimes noisy; a negative search is not evidence that no correction exists.
 
@@ -226,8 +264,8 @@ The most material remaining items are:
 
 - obtain and inspect the original Manning 1974 recurrence proof, and the inaccessible Franks 1970 treatment, or complete an independent substitute for the required recurrence/injectivity step;
 - close the specific source-level inference in Ghys Lemma 4.3 on the surface-case path, without mistaking a generic acim assertion for the special statement needed;
-- install the exact official toolchain and locked dependencies only with the required authorization, then reproduce the build/comparator and compiled axiom audit;
+- rerun the official comparator in an environment that permits its user-namespace setup; the build, full-type and compiled axiom checks are complete;
 - retain the semantic comparison even after such a build, and discharge or explicitly carry the homotopy-torus rigidity premise;
 - retain the mapped foundational boundaries in HPS, Markov coding, quasiconformal compactness, complex analysis and surgery theory.
 
-The justified verdict is **supportive but incomplete verification**, with one repaired cited-source overstatement and one explicit formalisation qualification. Neither the cited error nor the undischarged Lean premise supplies a counterexample to Zhang's theorem. The remaining unchecked steps should remain visible rather than being converted into assertions of correctness or allegations of falsehood.
+The justified verdict is **supportive but incomplete verification**, now supported by the successful pinned build and compiled interface/axiom checks, with one repaired cited-source overstatement and one explicit formalisation qualification. Neither the cited error nor the undischarged Lean premise supplies a counterexample to Zhang's theorem. The remaining unchecked steps should remain visible rather than being converted into assertions of correctness or allegations of falsehood.

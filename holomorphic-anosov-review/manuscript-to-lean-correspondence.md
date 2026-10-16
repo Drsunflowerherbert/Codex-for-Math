@@ -1,5 +1,7 @@
 # Lean semantic correspondence audit
 
+> Historical source-review track. The later [compiled follow-up](evidence/compiled-verification/deliverables/verification-method.md) built the pinned solution and checked full types, selected definitions and axiom lists. Statements below about no Lean execution describe this earlier track. The explicit HS qualification and original cited-source audit limits remain.
+
 ## Scope and verdict
 
 This is a source-level audit of the theorem statements and their underlying definitions at repository commit **65f2b33a7309de661a8500e4642e5609a537a8ff**, compared with the exact supplied manuscript **arXiv:2609.37695v3, 13 October 2026**, SHA-256 **3c8287bf41d153c7f0d0950b8a4b477546229333ee66ba7e9ae60e6a387920c6**. All source paths below refer to the [pinned public source](https://github.com/frenzymath/HolomorphicAnosov/tree/65f2b33a7309de661a8500e4642e5609a537a8ff).

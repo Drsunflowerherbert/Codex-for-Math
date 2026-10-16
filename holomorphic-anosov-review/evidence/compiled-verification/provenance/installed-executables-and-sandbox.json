@@ -1,0 +1,29 @@
+{
+  "version_outputs": {
+    "lean": "Lean (version 4.35.0-rc1, x86_64-unknown-linux-gnu, commit 86c6347c75e39ec18c40e25ed2143b71a6e04a0a, Release)",
+    "lake": "Lake version 5.0.0-src+86c6347 (Lean version 4.35.0-rc1)"
+  },
+  "executables_sha256": {
+    "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "leanexport": "c5bc1a10a21e22cbb3671d65987cdef2076833b14182d823ccb2153adf2fa954",
+    "leanchecker": "9e36e955a251b1313c8eb5b7fa101282d51df109d34d8bb7c1cfdf51985aba29",
+    "leantar": "06d613dffd2a6fd996b095bfd835c2bb720886f9eb7e13ed2adddd7df4507bf3"
+  },
+  "sandbox_probe": {
+    "command": [
+      "bwrap",
+      "--ro-bind",
+      "/",
+      "/",
+      "--unshare-all",
+      "--die-with-parent",
+      "--",
+      "/bin/true"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "bwrap: setting up uid map: Read-only file system\n",
+    "bypass_attempted": false
+  }
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "package": "mathlib",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/c32e1ec0d1eb5237ba344eee50162f45d5b0fc76/lakefile.lean",
+    "sha256": "29309ff821952761f76b6810488eecf2ad6b962658c423440a02a7a16750f8e5",
+    "bytes": 8101
+  },
+  {
+    "package": "plausible",
+    "url": "https://raw.githubusercontent.com/leanprover-community/plausible/16fe28ca7c2e01b71856f7a0a801ea844580f2d5/lakefile.toml",
+    "sha256": "4147957012320a3afe8f041662202b7a3453c8a0df4311c1698da029a3b4834f",
+    "bytes": 167
+  },
+  {
+    "package": "LeanSearchClient",
+    "url": "https://raw.githubusercontent.com/leanprover-community/LeanSearchClient/b43172c7f62b95ecd6daa0951602b83eb35182a1/lakefile.toml",
+    "sha256": "cb5d6c80c4ffd4b3be99294a911ebf2f6a2fee4eb9f840d96f0f813bd484c05d",
+    "bytes": 184
+  },
+  {
+    "package": "importGraph",
+    "url": "https://raw.githubusercontent.com/leanprover-community/import-graph/0b9118a4a6d4c752e51f4f731edc09f4cc135f4c/lakefile.toml",
+    "sha256": "b4943bbe46e189d7db992d3361ab7ff6a297d28a83c60c4b6a6ba596973de896",
+    "bytes": 952
+  },
+  {
+    "package": "proofwidgets",
+    "url": "https://raw.githubusercontent.com/leanprover-community/ProofWidgets4/af0c1665a9cdb1c90409b52a183113efbb5a4480/lakefile.lean",
+    "sha256": "0a319fffbf511dab4c3307dc105f8e8fdb4f6160020995cef5f442061cc0abca",
+    "bytes": 3486
+  },
+  {
+    "package": "aesop",
+    "url": "https://raw.githubusercontent.com/leanprover-community/aesop/7938bfd115516f80b260d43faf630c8520471a00/lakefile.toml",
+    "sha256": "2db1a4b8ce2032ac92e9f6378e62077da1fa6138a2c816fcec6ba269b7cba134",
+    "bytes": 402
+  },
+  {
+    "package": "Qq",
+    "url": "https://raw.githubusercontent.com/leanprover-community/quote4/21558817bf8b77bab8f4c3081e0062201fd974d2/lakefile.toml",
+    "sha256": "42826e4e06221f41fcd863e19d937a0a68be7d54df90abd7800a3c09f4557a15",
+    "bytes": 135
+  },
+  {
+    "package": "batteries",
+    "url": "https://raw.githubusercontent.com/leanprover-community/batteries/2a71587431553220d08be069a144b8215350e1d6/lakefile.toml",
+    "sha256": "acadcd8beb13a53a4ac9399e6706c829309d2380f338d13b037886666f978015",
+    "bytes": 424
+  },
+  {
+    "package": "Cli",
+    "url": "https://raw.githubusercontent.com/leanprover/lean4-cli/3c7ccd7060887fa478a55e555fae61bbf466c3ba/lakefile.toml",
+    "sha256": "188aaec6ddb57f411c11b95c3ece85ff26ab9ae8085371fee47e1dc855c4e186",
+    "bytes": 182
+  },
+  {
+    "package": "mathlib Cache/Main.lean",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/c32e1ec0d1eb5237ba344eee50162f45d5b0fc76/Cache/Main.lean",
+    "sha256": "e7d3c1e5e83675bdeeaea08bab6d11d4b388897235dbc4b5f20621daa5559251",
+    "bytes": 14631
+  },
+  {
+    "package": "mathlib Cache/IO.lean",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/c32e1ec0d1eb5237ba344eee50162f45d5b0fc76/Cache/IO.lean",
+    "sha256": "b4a0c1385a46e82e71ad1f7c29cee1eb9a9007161a29720b910fd7a1bb5ce494",
+    "bytes": 27999
+  },
+  {
+    "package": "mathlib Cache/Requests.lean",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/c32e1ec0d1eb5237ba344eee50162f45d5b0fc76/Cache/Requests.lean",
+    "sha256": "bf2fc8f305b34526862798e3bc5a5ee88e412fe7f5e22b742b285359d4844764",
+    "bytes": 56409
+  },
+  {
+    "package": "mathlib Cache/Infra.lean",
+    "url": "https://raw.githubusercontent.com/leanprover-community/mathlib4/c32e1ec0d1eb5237ba344eee50162f45d5b0fc76/Cache/Infra.lean",
+    "sha256": "40d1c316c9b77f495e91383462280163a989a8e7c2432c7e0cfe2983458d572e",
+    "bytes": 10136
+  }
+]

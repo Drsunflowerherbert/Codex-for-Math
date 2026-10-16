@@ -1,0 +1,35 @@
+{
+  "method": "PyMuPDF page rendering and text-span boundary check. Human/model visual review recorded separately after inspection. Presentation check, not mathematical verification.",
+  "files": [
+    {
+      "file": "updated-review.pdf",
+      "pages": 9,
+      "rendered_pages": 9,
+      "text_spans_outside_page": []
+    },
+    {
+      "file": "initial-limited-review.pdf",
+      "pages": 10,
+      "rendered_pages": 10,
+      "text_spans_outside_page": []
+    }
+  ],
+  "visual_review": {
+    "date_utc": "2026-10-16",
+    "all_pages_contact_sheets_inspected": true,
+    "full_size_pages": {
+      "updated-review.pdf": [
+        3,
+        5,
+        6,
+        7,
+        9
+      ],
+      "initial-limited-review.pdf": [
+        5,
+        7
+      ]
+    },
+    "result": "No clipping, missing glyphs, overlapping text, or unreadable table/figure observed. Expanded report 9 pages; initial archive 10 pages."
+  }
+}

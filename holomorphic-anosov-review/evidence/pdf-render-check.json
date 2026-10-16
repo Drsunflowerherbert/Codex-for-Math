@@ -3,33 +3,22 @@
   "files": [
     {
       "file": "updated-review.pdf",
-      "pages": 9,
-      "rendered_pages": 9,
-      "text_spans_outside_page": []
-    },
-    {
-      "file": "initial-limited-review.pdf",
-      "pages": 10,
-      "rendered_pages": 10,
+      "pages": 11,
+      "rendered_pages": 11,
       "text_spans_outside_page": []
     }
   ],
   "visual_review": {
     "date_utc": "2026-10-16",
-    "all_pages_contact_sheets_inspected": true,
-    "full_size_pages": {
-      "updated-review.pdf": [
-        3,
-        5,
-        6,
-        7,
-        9
-      ],
-      "initial-limited-review.pdf": [
-        5,
-        7
-      ]
-    },
-    "result": "No clipping, missing glyphs, overlapping text, or unreadable table/figure observed. Expanded report 9 pages; initial archive 10 pages."
-  }
+    "all_11_pages_contact_sheets_inspected": true,
+    "full_size_pages": [
+      2,
+      9,
+      10
+    ],
+    "result": "No clipping, missing glyphs, overlapping text or unreadable table/figure observed. Formula/counterexample pages also checked in contact sheets.",
+    "pdf_sha256": "cdbca4fced1f276c62e0464c95fbbfe18cb48afb0cf436fd59de3087e4814404"
+  },
+  "historical_initial_publication_check": "pdf-render-check-initial-publication.json",
+  "unchanged_initial_archive_pdf_sha256": "79d0329a129c20ef065597eba63dc9e799c4a5f2135d1fdb04ca4657bc915068"
 }
