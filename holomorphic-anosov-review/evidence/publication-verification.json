@@ -1,0 +1,383 @@
+{
+  "repository": "Drsunflowerherbert/Codex-for-Math",
+  "commit": "e12d12ebcb70e26ddf913a66ff2628d179897a67",
+  "method": "HTTPS download of immutable raw files; SHA-256 comparison with manifest",
+  "manifest_sha256": "88c7177057c700b0fa04424649f0f144719cf8510524ae9a7a157287089f8510",
+  "checked_files": 46,
+  "all_match": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2133,
+      "expected_sha256": "9c17a1a170104603115626d748cc605af47aba5b08c380998f10419f92e21870",
+      "actual_sha256": "9c17a1a170104603115626d748cc605af47aba5b08c380998f10419f92e21870",
+      "match": true
+    },
+    {
+      "path": "citation-dependency-ledger.csv",
+      "bytes": 11866,
+      "expected_sha256": "065316975f74f8d8288c3e1bcba8afc26181ba2353fa9a06361707f46e8f9e3e",
+      "actual_sha256": "065316975f74f8d8288c3e1bcba8afc26181ba2353fa9a06361707f46e8f9e3e",
+      "match": true
+    },
+    {
+      "path": "citation-dependency-ledger.json",
+      "bytes": 15993,
+      "expected_sha256": "a9685f3d489a77d202ecb9ccd6a67ed2656454f77f984cd542bd44ed372818f7",
+      "actual_sha256": "a9685f3d489a77d202ecb9ccd6a67ed2656454f77f984cd542bd44ed372818f7",
+      "match": true
+    },
+    {
+      "path": "citation-dependency-ledger.md",
+      "bytes": 15747,
+      "expected_sha256": "b8b9fe1f88a03090cdafd0829eda79cd6cdd3088e3e5eeefcb28b5e458eb0fdf",
+      "actual_sha256": "b8b9fe1f88a03090cdafd0829eda79cd6cdd3088e3e5eeefcb28b5e458eb0fdf",
+      "match": true
+    },
+    {
+      "path": "evidence/README.md",
+      "bytes": 3242,
+      "expected_sha256": "1132be71cfacecdf27b13b5944732f318d01b81e5c29d9fd89b9a38a2257f3d4",
+      "actual_sha256": "1132be71cfacecdf27b13b5944732f318d01b81e5c29d9fd89b9a38a2257f3d4",
+      "match": true
+    },
+    {
+      "path": "evidence/classification-fetch-01.json",
+      "bytes": 1608,
+      "expected_sha256": "5c3a6d5c58ee98b04f1f8a35bf01e1fb403628024cf2dd43d0d305a70970b474",
+      "actual_sha256": "5c3a6d5c58ee98b04f1f8a35bf01e1fb403628024cf2dd43d0d305a70970b474",
+      "match": true
+    },
+    {
+      "path": "evidence/classification-fetch-02.json",
+      "bytes": 1198,
+      "expected_sha256": "b56f0a961b0d4dd443b4327e77732fbcbcfa0fc796927ec903a3703c8e9d522d",
+      "actual_sha256": "b56f0a961b0d4dd443b4327e77732fbcbcfa0fc796927ec903a3703c8e9d522d",
+      "match": true
+    },
+    {
+      "path": "evidence/classification-ledger.json",
+      "bytes": 5657,
+      "expected_sha256": "e489fba28ba09dce89fe30729e90b10ebca67a0bb0a465bd7a51e5cabe8fec27",
+      "actual_sha256": "e489fba28ba09dce89fe30729e90b10ebca67a0bb0a465bd7a51e5cabe8fec27",
+      "match": true
+    },
+    {
+      "path": "evidence/classification-search-log.md",
+      "bytes": 8764,
+      "expected_sha256": "46adf96046b5c6e86feeb8cb38eb4891ae725aa3e63520e394ef82a0282bfc7c",
+      "actual_sha256": "46adf96046b5c6e86feeb8cb38eb4891ae725aa3e63520e394ef82a0282bfc7c",
+      "match": true
+    },
+    {
+      "path": "evidence/formalisation-actions.json",
+      "bytes": 36,
+      "expected_sha256": "a2790a384d7d281e7395679000c35d27768d89dbd7052f725b8f4688beb59915",
+      "actual_sha256": "a2790a384d7d281e7395679000c35d27768d89dbd7052f725b8f4688beb59915",
+      "match": true
+    },
+    {
+      "path": "evidence/formalisation-manifest.json",
+      "bytes": 4702,
+      "expected_sha256": "2704d5b42ed4dc259c288a89d9818cff68d403093f43532d6055e427aafe5497",
+      "actual_sha256": "2704d5b42ed4dc259c288a89d9818cff68d403093f43532d6055e427aafe5497",
+      "match": true
+    },
+    {
+      "path": "evidence/ghys-citation-ledger.csv",
+      "bytes": 3854,
+      "expected_sha256": "1f1a549d672920a2f1d7fa000ab5d385def41c7c6f963ab666b2aeb993423cf0",
+      "actual_sha256": "1f1a549d672920a2f1d7fa000ab5d385def41c7c6f963ab666b2aeb993423cf0",
+      "match": true
+    },
+    {
+      "path": "evidence/ghys-fact1-coordinate-check.json",
+      "bytes": 578,
+      "expected_sha256": "6da3d4deb5e5e701cd231074e173a4608ef204f148b57fa4c6557b8a1de002c4",
+      "actual_sha256": "6da3d4deb5e5e701cd231074e173a4608ef204f148b57fa4c6557b8a1de002c4",
+      "match": true
+    },
+    {
+      "path": "evidence/ghys-fact1-counterexample-and-repair.md",
+      "bytes": 4107,
+      "expected_sha256": "53942c254c72912597330ccef35d2664210fee07c904759a29acf19ef4586887",
+      "actual_sha256": "53942c254c72912597330ccef35d2664210fee07c904759a29acf19ef4586887",
+      "match": true
+    },
+    {
+      "path": "evidence/ghys-fact1-counterexample.png",
+      "bytes": 48145,
+      "expected_sha256": "0b5b652de40b2fb2b6ae0957e32b57c96900929f5642e4460b15f0c214c3aaa4",
+      "actual_sha256": "0b5b652de40b2fb2b6ae0957e32b57c96900929f5642e4460b15f0c214c3aaa4",
+      "match": true
+    },
+    {
+      "path": "evidence/ghys-fact1-counterexample.svg",
+      "bytes": 27069,
+      "expected_sha256": "aa09ab0129dc4297d3cb2dd28ce625e9511008be32cf72288c19f15e4e79e23c",
+      "actual_sha256": "aa09ab0129dc4297d3cb2dd28ce625e9511008be32cf72288c19f15e4e79e23c",
+      "match": true
+    },
+    {
+      "path": "evidence/ghys-search-log.md",
+      "bytes": 2857,
+      "expected_sha256": "2489db4891309fe8135a568cdaf4d125690620ee152f76ce9e27a61006b3ff69",
+      "actual_sha256": "2489db4891309fe8135a568cdaf4d125690620ee152f76ce9e27a61006b3ff69",
+      "match": true
+    },
+    {
+      "path": "evidence/hps-searchlog.md",
+      "bytes": 5250,
+      "expected_sha256": "f217e9748788c87c1993ecba4eb3fe3d6519b51647a1ad2e76fabe05bc7ad3f4",
+      "actual_sha256": "f217e9748788c87c1993ecba4eb3fe3d6519b51647a1ad2e76fabe05bc7ad3f4",
+      "match": true
+    },
+    {
+      "path": "evidence/mathlib-tag-pin.txt",
+      "bytes": 29,
+      "expected_sha256": "5699bbbd7db4601365371c8b0c9bf463d07d747b5f4d8aedabce9eb067dfc150",
+      "actual_sha256": "5699bbbd7db4601365371c8b0c9bf463d07d747b5f4d8aedabce9eb067dfc150",
+      "match": true
+    },
+    {
+      "path": "evidence/pdf-render-check.json",
+      "bytes": 920,
+      "expected_sha256": "12c6fa68d3e2941c57ace09b080d7f1e9c8b0b52ba4180f4c9b00d32eb3c34a8",
+      "actual_sha256": "12c6fa68d3e2941c57ace09b080d7f1e9c8b0b52ba4180f4c9b00d32eb3c34a8",
+      "match": true
+    },
+    {
+      "path": "evidence/plot_ghys_counterexample.py",
+      "bytes": 1643,
+      "expected_sha256": "f52a7ded9a08bc9471384af76cfdf56a442be544f8eb4c12e0d8ed1ff496519e",
+      "actual_sha256": "f52a7ded9a08bc9471384af76cfdf56a442be544f8eb4c12e0d8ed1ff496519e",
+      "match": true
+    },
+    {
+      "path": "evidence/publication-remote-heads-before.txt",
+      "bytes": 1133,
+      "expected_sha256": "42224157138d5cf19e9a415054c5b61fb7f5cfcd05ac008ae94f434afd7d4a77",
+      "actual_sha256": "42224157138d5cf19e9a415054c5b61fb7f5cfcd05ac008ae94f434afd7d4a77",
+      "match": true
+    },
+    {
+      "path": "evidence/regularity-searchlog.md",
+      "bytes": 2755,
+      "expected_sha256": "395e1a3d2de6b283850d4772dc8463d89b288f9dee2ffb780e6a1cf431293dd5",
+      "actual_sha256": "395e1a3d2de6b283850d4772dc8463d89b288f9dee2ffb780e6a1cf431293dd5",
+      "match": true
+    },
+    {
+      "path": "evidence/source-and-preservation.json",
+      "bytes": 1284,
+      "expected_sha256": "e34572dd88f66908e96bf0441eb5e48f6500048536495ebe530d32c273fe428f",
+      "actual_sha256": "e34572dd88f66908e96bf0441eb5e48f6500048536495ebe530d32c273fe428f",
+      "match": true
+    },
+    {
+      "path": "evidence/static-lean-audit-summary.json",
+      "bytes": 1271,
+      "expected_sha256": "0e7c0afd7eb376a156af4bcaaf23cd1c7593087a9dceffba7e3ad21a676a7539",
+      "actual_sha256": "0e7c0afd7eb376a156af4bcaaf23cd1c7593087a9dceffba7e3ad21a676a7539",
+      "match": true
+    },
+    {
+      "path": "evidence/static-lean-audit.json",
+      "bytes": 7156663,
+      "expected_sha256": "52eb7f7ff396a01ff553ad7179243ee276d465221381cdaf403aa55e1afa6a12",
+      "actual_sha256": "52eb7f7ff396a01ff553ad7179243ee276d465221381cdaf403aa55e1afa6a12",
+      "match": true
+    },
+    {
+      "path": "evidence/static_lean_audit.py",
+      "bytes": 5302,
+      "expected_sha256": "9528d4185f93b183d42c93462f58339b4850f9c75fccb52e3f1b8879e73fc5e0",
+      "actual_sha256": "9528d4185f93b183d42c93462f58339b4850f9c75fccb52e3f1b8879e73fc5e0",
+      "match": true
+    },
+    {
+      "path": "evidence/verify_published_files.py",
+      "bytes": 1948,
+      "expected_sha256": "c65d131563c409ac83f1a5b885c11225440216f523e0a3d1c78bf47bc7db5a4d",
+      "actual_sha256": "c65d131563c409ac83f1a5b885c11225440216f523e0a3d1c78bf47bc7db5a4d",
+      "match": true
+    },
+    {
+      "path": "initial-limited-notes.md",
+      "bytes": 75416,
+      "expected_sha256": "cff60b2bc284aa71ba8961b83f8e3c5baabf40a09bfbe550b67f8fa12c7cc2d3",
+      "actual_sha256": "cff60b2bc284aa71ba8961b83f8e3c5baabf40a09bfbe550b67f8fa12c7cc2d3",
+      "match": true
+    },
+    {
+      "path": "initial-limited-review.md",
+      "bytes": 30916,
+      "expected_sha256": "3884d2bc082c99c3c85257267c62af0a55299d27a85d06b11f51f8264dfb2720",
+      "actual_sha256": "3884d2bc082c99c3c85257267c62af0a55299d27a85d06b11f51f8264dfb2720",
+      "match": true
+    },
+    {
+      "path": "initial-limited-review.pdf",
+      "bytes": 97140,
+      "expected_sha256": "79d0329a129c20ef065597eba63dc9e799c4a5f2135d1fdb04ca4657bc915068",
+      "actual_sha256": "79d0329a129c20ef065597eba63dc9e799c4a5f2135d1fdb04ca4657bc915068",
+      "match": true
+    },
+    {
+      "path": "lean-definition-correspondence.csv",
+      "bytes": 5666,
+      "expected_sha256": "5ef0ac09d0691145cbd82c5448a1dcafbf30425226762ddb67ea7e684bb956fc",
+      "actual_sha256": "5ef0ac09d0691145cbd82c5448a1dcafbf30425226762ddb67ea7e684bb956fc",
+      "match": true
+    },
+    {
+      "path": "manuscript-to-lean-correspondence.csv",
+      "bytes": 2203,
+      "expected_sha256": "ca5e8476c1b45f8bd8531874e684d48f1c4a7158b26c1cdbf936fe6d80c1041a",
+      "actual_sha256": "ca5e8476c1b45f8bd8531874e684d48f1c4a7158b26c1cdbf936fe6d80c1041a",
+      "match": true
+    },
+    {
+      "path": "manuscript-to-lean-correspondence.md",
+      "bytes": 16722,
+      "expected_sha256": "3828ddbbcfcd69b7165b0a2d1d1e680918b2faac22f4a20c4e995593372d430c",
+      "actual_sha256": "3828ddbbcfcd69b7165b0a2d1d1e680918b2faac22f4a20c4e995593372d430c",
+      "match": true
+    },
+    {
+      "path": "notes/classification-proof-audit.md",
+      "bytes": 19824,
+      "expected_sha256": "fd7eb22498821cd55df1126d29a59ff9c89156ec9ba826987ee65e38d995ffd9",
+      "actual_sha256": "fd7eb22498821cd55df1126d29a59ff9c89156ec9ba826987ee65e38d995ffd9",
+      "match": true
+    },
+    {
+      "path": "notes/ghys-fact1-adversarial-check.md",
+      "bytes": 3583,
+      "expected_sha256": "412e717fec2d4052091f6d98f2494046edb3c850354555d6015a5d9ae16ad7d0",
+      "actual_sha256": "412e717fec2d4052091f6d98f2494046edb3c850354555d6015a5d9ae16ad7d0",
+      "match": true
+    },
+    {
+      "path": "notes/ghys-proof-audit.md",
+      "bytes": 20294,
+      "expected_sha256": "7c0fb91ee2cc88c88ceedd032adbd3ae6de12b52d592deec33d559b25e3d522d",
+      "actual_sha256": "7c0fb91ee2cc88c88ceedd032adbd3ae6de12b52d592deec33d559b25e3d522d",
+      "match": true
+    },
+    {
+      "path": "notes/hps-foundations.md",
+      "bytes": 18144,
+      "expected_sha256": "e8604694345059fb5cc1922c320e560dd7d4f1ce092430853e63ba3f699046d7",
+      "actual_sha256": "e8604694345059fb5cc1922c320e560dd7d4f1ce092430853e63ba3f699046d7",
+      "match": true
+    },
+    {
+      "path": "notes/lean-adversarial.md",
+      "bytes": 14063,
+      "expected_sha256": "2414638ceb569c0e53961b3fe9715512acadd0e9cd0b8f38d2e697ff859a5711",
+      "actual_sha256": "2414638ceb569c0e53961b3fe9715512acadd0e9cd0b8f38d2e697ff859a5711",
+      "match": true
+    },
+    {
+      "path": "notes/lean-ghys-schwarzian-adversarial.md",
+      "bytes": 11032,
+      "expected_sha256": "430d3f4cac5f7aeaffe26a66e0b1ff6d5001a6e7756dbfaa9de7dfad93d84ada",
+      "actual_sha256": "430d3f4cac5f7aeaffe26a66e0b1ff6d5001a6e7756dbfaa9de7dfad93d84ada",
+      "match": true
+    },
+    {
+      "path": "notes/lean-ghys-schwarzian-followup.md",
+      "bytes": 12176,
+      "expected_sha256": "eac948c9af8d132b4c97eb49e1a2f00de72ffb45260701d584ab6e6ba4bcddd1",
+      "actual_sha256": "eac948c9af8d132b4c97eb49e1a2f00de72ffb45260701d584ab6e6ba4bcddd1",
+      "match": true
+    },
+    {
+      "path": "notes/lean-proof-bridges.md",
+      "bytes": 18295,
+      "expected_sha256": "62fbc10af45970744c39f18237483e4ed603f25a2ab0aafe5625cc44df4b414d",
+      "actual_sha256": "62fbc10af45970744c39f18237483e4ed603f25a2ab0aafe5625cc44df4b414d",
+      "match": true
+    },
+    {
+      "path": "notes/lean-semantic-correspondence.md",
+      "bytes": 16948,
+      "expected_sha256": "61265a2f6207b369e683c4542c9b7d72d919bac49d6db631779a12f8de3d3ea4",
+      "actual_sha256": "61265a2f6207b369e683c4542c9b7d72d919bac49d6db631779a12f8de3d3ea4",
+      "match": true
+    },
+    {
+      "path": "notes/regularity-proof-audit.md",
+      "bytes": 13036,
+      "expected_sha256": "63edaa4195e30a929a68b3c2b6808ee3a379f4e764163741360ed4faa7fc70c9",
+      "actual_sha256": "63edaa4195e30a929a68b3c2b6808ee3a379f4e764163741360ed4faa7fc70c9",
+      "match": true
+    },
+    {
+      "path": "updated-review.md",
+      "bytes": 28174,
+      "expected_sha256": "eb09f83e4c2b60a58a1605c8b2dc58241f152db8f4e610dcfd0fdcc94ae5029c",
+      "actual_sha256": "eb09f83e4c2b60a58a1605c8b2dc58241f152db8f4e610dcfd0fdcc94ae5029c",
+      "match": true
+    },
+    {
+      "path": "updated-review.pdf",
+      "bytes": 127873,
+      "expected_sha256": "8f962192568eb44127a722a1e257f6d2697c0817edfeaa0041eb6ac16f06a134",
+      "actual_sha256": "8f962192568eb44127a722a1e257f6d2697c0817edfeaa0041eb6ac16f06a134",
+      "match": true
+    }
+  ],
+  "local_manifest_sha256": "88c7177057c700b0fa04424649f0f144719cf8510524ae9a7a157287089f8510",
+  "remote_manifest_matches_local": true,
+  "all_local_manifest_files_match_remote": true,
+  "branch_and_prior_work_check": {
+    "date_utc": "2026-10-16",
+    "base_commit": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+    "content_commit": "e12d12ebcb70e26ddf913a66ff2628d179897a67",
+    "branch": "codex/holomorphic-anosov-review-2026-10-16",
+    "original_branch_heads_checked": 13,
+    "all_original_refs_unchanged": true,
+    "new_refs": [
+      "refs/heads/codex/holomorphic-anosov-review-2026-10-16"
+    ],
+    "prior_files_unchanged": true,
+    "only_changes": "47 added files under holomorphic-anosov-review/",
+    "force_push_merge_or_pr_performed": false,
+    "remote_refs_before": {
+      "HEAD": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+      "refs/heads/codex/certified-roots-2026-10-15": "5da47dc49651af44faf96ecc8604c180600bdc72",
+      "refs/heads/codex/contest-library-2026-10-13": "ef8032ed20f05fb100e95fc287eefb5d3e431543",
+      "refs/heads/codex/critical-points-2026-10-15": "40ebeb0f4583659a195d77ced27a91d4084ae75f",
+      "refs/heads/codex/evidence-hardening-2026-10-13": "c2fe44833ceb577595028549cecdda87986f303e",
+      "refs/heads/codex/hadamard-study-2026-10-15": "2834fea31fb4ca7203531ca220e55a2fb7640119",
+      "refs/heads/codex/integral-examples-2026-10-15": "dafa2d2c35b425ca510def9aae3bb17839e67aa5",
+      "refs/heads/codex/lp-certificates-2026-10-13": "032db09354d41b58c2e9211ed7e69024a3e74010",
+      "refs/heads/codex/lp-paper-2026-10-13": "16075fc88d1cec51dc3c8f137bca3fe70c6f9520",
+      "refs/heads/codex/lp-sparse-discovery-2026-10-13": "5f723174d9ac2703000f685c8cb5814b9713b466",
+      "refs/heads/codex/research-2026-10-11": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "refs/heads/codex/research-map-2026-10-13": "34e3e11e4c37109bfc06f4f195a62a2cf992c5b0",
+      "refs/heads/codex/tangent-limit": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+      "refs/heads/codex/transport-sharpness-2026-10-13": "fa5cd40c36daa5373c0234bda0b9d09a49595ce6"
+    },
+    "remote_refs_after": {
+      "HEAD": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+      "refs/heads/codex/certified-roots-2026-10-15": "5da47dc49651af44faf96ecc8604c180600bdc72",
+      "refs/heads/codex/contest-library-2026-10-13": "ef8032ed20f05fb100e95fc287eefb5d3e431543",
+      "refs/heads/codex/critical-points-2026-10-15": "40ebeb0f4583659a195d77ced27a91d4084ae75f",
+      "refs/heads/codex/evidence-hardening-2026-10-13": "c2fe44833ceb577595028549cecdda87986f303e",
+      "refs/heads/codex/hadamard-study-2026-10-15": "2834fea31fb4ca7203531ca220e55a2fb7640119",
+      "refs/heads/codex/holomorphic-anosov-review-2026-10-16": "e12d12ebcb70e26ddf913a66ff2628d179897a67",
+      "refs/heads/codex/integral-examples-2026-10-15": "dafa2d2c35b425ca510def9aae3bb17839e67aa5",
+      "refs/heads/codex/lp-certificates-2026-10-13": "032db09354d41b58c2e9211ed7e69024a3e74010",
+      "refs/heads/codex/lp-paper-2026-10-13": "16075fc88d1cec51dc3c8f137bca3fe70c6f9520",
+      "refs/heads/codex/lp-sparse-discovery-2026-10-13": "5f723174d9ac2703000f685c8cb5814b9713b466",
+      "refs/heads/codex/research-2026-10-11": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "refs/heads/codex/research-map-2026-10-13": "34e3e11e4c37109bfc06f4f195a62a2cf992c5b0",
+      "refs/heads/codex/tangent-limit": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+      "refs/heads/codex/transport-sharpness-2026-10-13": "fa5cd40c36daa5373c0234bda0b9d09a49595ce6"
+    }
+  },
+  "scope": "Verifies the initial content commit. Subsequent evidence-only commit adds this record and updates the manifest; the report/PDF and all other prior payload files remain unchanged."
+}
