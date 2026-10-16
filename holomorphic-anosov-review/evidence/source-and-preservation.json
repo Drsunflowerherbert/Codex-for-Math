@@ -1,0 +1,29 @@
+{
+  "date_utc": "2026-10-16",
+  "source": {
+    "version": "arXiv:2609.37695v3, 13 October 2026",
+    "filename": "2609.37695.pdf",
+    "pages": 19,
+    "bytes": 371989,
+    "sha256": "3c8287bf41d153c7f0d0950b8a4b477546229333ee66ba7e9ae60e6a387920c6",
+    "unchanged_after_audit": true
+  },
+  "private_initial_review_unchanged_sha256": {
+    "correctness-review.md": "d9ef949392655c06a09d372f0f099b80f60b31d128f09acd8af588e1896f0c4e",
+    "correctness-review.pdf": "be380eb91d186db7908c8d2788d0fc96da110b727938d8d80802fb9ecdf024eb",
+    "detailed-review-notes.md": "f52c0a97dbc842d704713ed615800cda6fe43bfc69580e0d7ffd26384bf7a548"
+  },
+  "public_derivatives": "Initial review files are labelled superseded; private identifiers removed and public PDF regenerated. Original private files remain unchanged.",
+  "excluded": [
+    "supplied paper",
+    "third-party source PDFs/scans/OCR/full article responses",
+    "private attachment, task, page and approval identifiers",
+    "credentials",
+    "absolute workspace paths"
+  ],
+  "verification_limits": [
+    "No Lean build, comparator or compiled axiom check performed",
+    "Static lexical and source-graph results do not establish kernel verification",
+    "Two critical source-proof audit steps remain explicitly unresolved"
+  ]
+}

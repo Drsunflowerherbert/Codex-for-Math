@@ -1,0 +1,42 @@
+[
+  {
+    "name": "manning1972-thesis.pdf",
+    "url": "https://wrap.warwick.ac.uk/id/eprint/71348/1/WRAP_Thesis_Manning_1972.pdf",
+    "timestamp_utc": "2026-10-16T01:17:30.472843+00:00",
+    "status": 200,
+    "content_type": "application/pdf",
+    "bytes": 1803517,
+    "final_url": "https://wrap.warwick.ac.uk/id/eprint/71348/1/WRAP_Thesis_Manning_1972.pdf",
+    "sha256": "7a53fb4d266c50bbaf2d292c75cdeeb0cf9c40ea0d6ce4d7b69b93a292a87cd8",
+    "pdf": true
+  },
+  {
+    "name": "hsiang-wall1969.pdf",
+    "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/hsiawall2.pdf",
+    "timestamp_utc": "2026-10-16T01:17:30.473328+00:00",
+    "status": 200,
+    "content_type": "application/pdf",
+    "bytes": 167250,
+    "final_url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/hsiawall2.pdf",
+    "sha256": "1974d9cda6de52a0bdb63127e4ceea4f78a50257a4705005cd9e917c1824a9a0",
+    "pdf": true
+  },
+  {
+    "name": "franks1969-ams.pdf",
+    "url": "https://www.ams.org/journals/tran/1969-145-00/S0002-9947-1969-0253352-7/S0002-9947-1969-0253352-7.pdf",
+    "timestamp_utc": "2026-10-16T01:17:30.473730+00:00",
+    "error": "HTTPError",
+    "message": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "manning1977-survey.pdf",
+    "url": "https://www.numdam.org/item/AST_1977__50__273_0.pdf",
+    "timestamp_utc": "2026-10-16T01:17:30.474140+00:00",
+    "status": 200,
+    "content_type": "application/pdf",
+    "bytes": 680887,
+    "final_url": "https://www.numdam.org/item/AST_1977__50__273_0.pdf",
+    "sha256": "95f0c82543f19d9a19c7829823283bdb7ff32535fc43662c1212429d3cf74890",
+    "pdf": true
+  }
+]

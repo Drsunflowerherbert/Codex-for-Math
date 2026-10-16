@@ -1,0 +1,31 @@
+[
+  {
+    "name": "franks1969.pdf",
+    "url": "https://scispace.com/pdf/anosov-diffeomorphisms-on-tori-gkxjeli14m.pdf",
+    "timestamp_utc": "2026-10-16T01:18:33.677222+00:00",
+    "status": 202,
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 0,
+    "final_url": "https://scispace.com/pdf/anosov-diffeomorphisms-on-tori-gkxjeli14m.pdf",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pdf": false
+  },
+  {
+    "name": "manning1974.pdf",
+    "url": "https://scispace.com/pdf/there-are-no-new-anosov-diffeomorphisms-on-tori-4m3bf6v576.pdf",
+    "timestamp_utc": "2026-10-16T01:18:33.677721+00:00",
+    "status": 202,
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 0,
+    "final_url": "https://scispace.com/pdf/there-are-no-new-anosov-diffeomorphisms-on-tori-4m3bf6v576.pdf",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pdf": false
+  },
+  {
+    "name": "hsiang-wall1969-part1.pdf",
+    "url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/walltorus.pdf",
+    "timestamp_utc": "2026-10-16T01:18:33.679369+00:00",
+    "error": "HTTPError",
+    "message": "HTTP Error 404: Not Found"
+  }
+]

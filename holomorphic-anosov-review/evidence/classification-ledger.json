@@ -1,0 +1,122 @@
+[
+  {
+    "id": "CL-01",
+    "paper_location": "Zhang p.12, Section3 (Theorem1.2)",
+    "claim": "Anosov diffeomorphism on a smooth manifold homeomorphic to a torus is topologically conjugate to a hyperbolic affine toral automorphism",
+    "status": "PARTIALLY_VERIFIED",
+    "originals_checked": [
+      "Franks1969 conditional proof"
+    ],
+    "independent_checks": [
+      "Homological hyperbolicity under finite Markov coding",
+      "Proper semiconjugacy by convergent series",
+      "Unique fixed points of lifts by degree and index",
+      "Conditional argument tolerates exotic smooth structure"
+    ],
+    "unverified_dependencies": [
+      "Manning1974 regional recurrence/full nonwandering set",
+      "Franks1970 original proof",
+      "Foundational finite Markov coding theorem not reproved"
+    ],
+    "source_url": "https://jfdavis.pages.iu.edu/papers/fksd.pdf",
+    "source_location": "Fisher\u2013Kalinin\u2013Spatzier JAMS26(2013), p.169",
+    "disposition": "No demonstrated defect; do not count classical proof as fully checked"
+  },
+  {
+    "id": "CL-02",
+    "paper_location": "Zhang p.12 Franks\u2013Manning invocation",
+    "claim": "Franks1969 alone removes all nonwandering-set and homological hypotheses",
+    "status": "FALSE_IF_ATTRIBUTED_TO_FRANKS1969_ALONE",
+    "originals_checked": [
+      "Franks1969 pp.117\u2013124"
+    ],
+    "unverified_dependencies": [],
+    "source_url": "https://scispace.com/pdf/anosov-diffeomorphisms-on-tori-gkxjeli14m.pdf",
+    "source_location": "Theorem1 p.117",
+    "disposition": "Zhang cites Franks together with Manning, so this is a dependency clarification, not an error in Zhang"
+  },
+  {
+    "id": "CL-03",
+    "paper_location": "Zhang p.12 hyperbolic linear model",
+    "claim": "The homology action has no eigenvalue on the unit circle",
+    "status": "INDEPENDENTLY_RECONSTRUCTED_CONDITIONAL_ON_MARKOV_CODING",
+    "originals_checked": [
+      "Franks1969 excludes roots of unity"
+    ],
+    "independent_checks": [
+      "Periodic-count exponential comparability",
+      "Lefschetz determinant identity",
+      "Compact-group simultaneous recurrence contradiction"
+    ],
+    "unverified_dependencies": [
+      "Finite Markov coding existence and uniform fiber multiplicity accepted as standard input",
+      "Original Manning1974 proof unavailable"
+    ],
+    "source_url": "https://wrap.warwick.ac.uk/id/eprint/71348/1/WRAP_Thesis_Manning_1972.pdf",
+    "source_location": "Chapter1 finite coding; Chapter4 roots of unity",
+    "disposition": "Supports this particular implication; does not prove full classification"
+  },
+  {
+    "id": "CL-04",
+    "paper_location": "Zhang p.12; topological stage invoking Ghys",
+    "claim": "The required full-nonwandering-set/regional-recurrence step is valid by original Manning1974 proof",
+    "status": "UNVERIFIED",
+    "originals_checked": [],
+    "unverified_dependencies": [
+      "Manning1974 original unavailable",
+      "Independent recurrence proof not completed"
+    ],
+    "source_url": "https://www.jstor.org/stable/pdf/2373551.pdf",
+    "access_result": "HTML/client challenge, not article pages; SciSpace has no accessible PDF link",
+    "disposition": "Original-proof access limit; no counterexample or error inferred",
+    "excluded_private_working_evidence_files": [
+      "classification-web-open-02.json",
+      "classification-web-open-03.json",
+      "classification-web-open-04.json",
+      "classification-web-open-07.json"
+    ],
+    "included_access_evidence": "classification-search-log.md; classification-fetch-01.json; classification-fetch-02.json"
+  },
+  {
+    "id": "CL-05",
+    "paper_location": "Ghys reduction used for Zhang Theorem1.1, realdimension>=6",
+    "claim": "Closed smooth manifold homotopy equivalent to T^n, n>=5, is homeomorphic to T^n",
+    "status": "ORIGINAL_PROOF_SOURCE_CHECKED_WITH_DEEP_INPUTS_UNVERIFIED",
+    "originals_checked": [
+      "Hsiang\u2013Wall1969 both pages",
+      "Hsiang\u2013Shaneson1969 PNAS proof outline"
+    ],
+    "independent_checks": [
+      "Smooth implies available PL structure",
+      "Marked/unmarked distinction",
+      "Dimension threshold",
+      "Mod2 cover pullback zero and integral pullback injective",
+      "Coefficient injection H4(Z2)->H4(Z24) for torus homology"
+    ],
+    "unverified_dependencies": [
+      "Kirby\u2013Siebenmann Top/PL and PL-structure classification",
+      "PL surgery classification and compatibility of invariants",
+      "Whiteheadgroup Wh(Z^n)=0",
+      "Wall surgery-obstruction calculations and Rohlin input not reproved"
+    ],
+    "source_url": "https://webhomes.maths.ed.ac.uk/~v1ranick/papers/hsiawall2.pdf",
+    "source_location": "BLMS1(1969)341\u2013342, especially final paragraph",
+    "source_sha256": "1974d9cda6de52a0bdb63127e4ceea4f78a50257a4705005cd9e917c1824a9a0",
+    "disposition": "Correct scope; do not claim surgery theory independently verified"
+  },
+  {
+    "id": "CL-06",
+    "paper_location": "Ghys1995 p.596 Lemma4.3 Fact1",
+    "claim": "Diameter equality gives containing disks with disjoint interiors and collinear centers",
+    "status": "CONFIRMED_FALSE_REPAIRABLE_SOURCE_OVERSTATEMENT",
+    "independent_checks": [
+      "Filled equilateral triangle between [0,1] and [2,3] satisfies hypotheses but refutes disks",
+      "Needed no-triple consequence proved via intersection graph"
+    ],
+    "unverified_dependencies": [],
+    "source_url": "https://perso.ens-lyon.fr/ghys/articles/holomorphicanosov.pdf",
+    "source_location": "Fact1 p.596",
+    "disposition": "Do not propagate as fatal: weaker needed consequence holds",
+    "note_file": "ghys-fact1-adversarial-check.md"
+  }
+]

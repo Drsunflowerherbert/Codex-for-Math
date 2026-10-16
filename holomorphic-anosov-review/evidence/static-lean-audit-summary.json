@@ -1,0 +1,58 @@
+{
+  "files": 4232,
+  "lines": 527770,
+  "noteworthy": [
+    {
+      "path": "Comparator/Challenge.lean",
+      "line": 134,
+      "token": "run_cmd"
+    },
+    {
+      "path": "Comparator/Challenge.lean",
+      "line": 433,
+      "token": "sorry"
+    },
+    {
+      "path": "Comparator/Challenge.lean",
+      "line": 445,
+      "token": "sorry"
+    },
+    {
+      "path": "Comparator/Challenge.lean",
+      "line": 469,
+      "token": "sorry"
+    },
+    {
+      "path": "Comparator/Challenge.lean",
+      "line": 488,
+      "token": "sorry"
+    }
+  ],
+  "closures": {
+    "Comparator.Solution": {
+      "local_module_count": 4230,
+      "noteworthy": [],
+      "imports_challenge": false
+    },
+    "HolomorphicAnosov.Targets.TheoremA": {
+      "local_module_count": 4229,
+      "noteworthy": [],
+      "imports_challenge": false
+    },
+    "HolomorphicAnosov.Targets.Theorem11": {
+      "local_module_count": 4033,
+      "noteworthy": [],
+      "imports_challenge": false
+    },
+    "HolomorphicAnosov.Targets.Theorem12": {
+      "local_module_count": 2162,
+      "noteworthy": [],
+      "imports_challenge": false
+    },
+    "HolomorphicAnosov.Targets.Theorem13": {
+      "local_module_count": 4138,
+      "noteworthy": [],
+      "imports_challenge": false
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "method": "Elementary coordinate computation; no formal theorem prover used.",
+  "vertices": {
+    "0": [
+      0.0,
+      0.0
+    ],
+    "1": [
+      1.0,
+      0.0
+    ],
+    "2": [
+      2.0,
+      0.0
+    ],
+    "3": [
+      3.0,
+      0.0
+    ],
+    "apex": [
+      1.5,
+      0.8660254037844386
+    ]
+  },
+  "diameter_squared_each": {
+    "K1": 1.0,
+    "K2": 1.0,
+    "K3": 1.0
+  },
+  "diameter_squared_union": 9.0,
+  "forced_middle_disk_center": [
+    1.5,
+    0
+  ],
+  "forced_middle_disk_radius_squared": 0.25,
+  "apex_distance_squared_from_forced_center": 0.75
+}
