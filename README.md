@@ -1,6 +1,6 @@
 # Holomorphic Anosov paper review
 
-Branch: `codex/holomorphic-anosov-review-2026-10-16`. This branch's addition is an expanded correctness and source-correspondence review of arXiv:2609.37695v3, with pinned Lean audit evidence.
+Branch: `research/holomorphic-anosov-review`. This branch's addition is an expanded correctness and source-correspondence review of arXiv:2609.37695v3, with pinned Lean audit evidence.
 
 Status: recorded build, full-type/axiom checks and same-kernel proof replay passed. The official comparator has **no verdict**. Theorems A, 1.1 and 1.3 retain an explicit homotopy-torus rigidity premise; this is not an unconditional formal proof of the manuscript. The expanded report supersedes the initial limited review.
 
@@ -15,8 +15,8 @@ Status: recorded build, full-type/axiom checks and same-kernel proof replay pass
 
 ## Repository navigation
 
-- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/CATALOG.md) — topic-based entry points and evidence limits.
-- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/BRANCHES.md) — current entry points and earlier checkpoints.
+- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/CATALOG.md) — topic-based entry points and evidence limits.
+- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/BRANCHES.md) — current entry points and earlier checkpoints.
 - [Research snapshot before the navigation update](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/2d6f543fcfe182c3df7d5316c0fba0279eebfe4f/README.md) (`2d6f543fcfe182c3df7d5316c0fba0279eebfe4f`).
 - [Original tangent baseline](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/tangent-limit/README.md) (`d00a89dd9ce6c8ef782234d28c93e69cb712c947`).
 
