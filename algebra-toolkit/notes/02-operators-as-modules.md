@@ -196,9 +196,13 @@ a_j-a_{j-1}&=\#\{\lambda\text{-blocks of size at least }j\},\\
 2a_j-a_{j-1}-a_{j+1}&=\#\{\lambda\text{-blocks of size exactly }j\}.
 \end{aligned}$$
 
-For example, nullities $0,3,5,6,6$ give three blocks, two of size at least
+For example, nullities $0,3,5,6,6$ give three $\lambda$-blocks, two of size at least
 $2$, one of size at least $3$, and none of size at least $4$: the sizes
-are $3,2,1$. This gives uniqueness and a practical reconstruction procedure.
+are $3,2,1$. These are all the blocks if $\dim_kV=6$; otherwise another
+primary summand can remain invisible to these kernels. Even saying that
+$\lambda$ is the only eigenvalue in $k$ does not exclude a nonsplitting
+summand. This gives uniqueness of the $\lambda$-block sizes and a practical
+reconstruction procedure.
 More generally a $p^b$-block contributes
 $\deg(p)\min(j,b)$ to $\dim_k\ker p(T)^j$, so these filtrations recover
 the elementary divisors over a nonsplitting field as well.

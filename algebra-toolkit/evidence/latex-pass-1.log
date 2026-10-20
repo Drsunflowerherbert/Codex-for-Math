@@ -6,8 +6,7 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size11.cloFontconfig error: No writable cache directories
-))
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -81,18 +80,22 @@ For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def))
 (/usr/share/texlive/texmf-dist/tex/latex/xurl/xurl.sty)
-(.build/algebra-structural-toolkit.aux)
+No file algebra-structural-toolkit.aux.
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg)
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 (/usr/share/texmf/tex/latex/lm/omllmm.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)
-(.build/algebra-structural-toolkit.toc
+No file algebra-structural-toolkit.toc.
+
 [1]
-[2])
+[2]
 [3]
 [4]
 [5]
@@ -139,17 +142,17 @@ For additional information on amsmath, use the `?' option.
 [46]
 [47]
 [48]
-[49] [50]
+[49]
+[50]
 [51]
-[52]
-[53]
-[54] [55]
+[52] [53]
+[54]
+[55]
 [56]
-[57]
-[58] (.build/algebra-structural-toolkit.aux)
+[57] (.build/algebra-structural-toolkit.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  )
-Output written on .build/algebra-structural-toolkit.pdf (58 pages).
+Output written on .build/algebra-structural-toolkit.pdf (57 pages).
 Transcript written on .build/algebra-structural-toolkit.log.

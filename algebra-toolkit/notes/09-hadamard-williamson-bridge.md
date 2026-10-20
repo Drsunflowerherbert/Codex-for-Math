@@ -303,11 +303,22 @@ $$v_c^{\mathsf T}v_d=4[c=d],\qquad
 \mathbf1^{\mathsf T}v_c=2.$$
 
 Thus each nonzero column has a color $\kappa_j$ and sign
-$\varepsilon_j$, reflected at opposite indices. For a nonzero shift $t$,
-pair the correlation terms indexed by $j$ and $-t-j$. The pair involving
-zero contributes $4\varepsilon_t$; the unique fixed term contributes
-$4$. The remaining $h-1$ pairs define edges $E_t$ on the opposite-index
-classes. Each contributes
+$\varepsilon_j$, reflected at opposite indices. Write $[j]=\{j,-j\}$
+for a nonzero opposite-index class, represented in $\{1,\ldots,h\}$.
+For a nonzero shift $t$, define $E_t$ as follows, with indices modulo $m$.
+Partition $j\in\mathbb Z/m\mathbb Z$ into the orbits of the involution
+$j\mapsto-t-j$. Remove the two-element orbit $\{0,-t\}$ and the
+unique fixed point solving $2j=-t$. For each remaining two-element orbit,
+choose either member $j$ and include one unordered edge
+$\{[j],[j+t]\}$ in $E_t$, retaining one edge per orbit. Replacing
+$j$ by $-t-j$ swaps the endpoints, so the definition is independent of
+the representative. Both endpoints are nonzero and distinct; equality of
+the classes would force either $t=0$ or the removed fixed point. There are
+$h-1$ edges, counted with their orbit multiplicities.
+
+In the correlation sum, the removed pair involving zero contributes
+$4\varepsilon_t$; the fixed term contributes $4$. Each remaining pair
+with endpoint classes $u,v$ contributes
 $8\varepsilon_u\varepsilon_v[\kappa_u=\kappa_v]$. Hence exact
 correlation is equivalent to
 

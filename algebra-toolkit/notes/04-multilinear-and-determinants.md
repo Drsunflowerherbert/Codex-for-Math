@@ -203,7 +203,7 @@ Multiplication of invariants across an exact sequence does not imply splitting.
 
 ## Contraction and reconstruction
 
-For $\lambda\in V^*$ define contraction
+For $\lambda\in V^*$ and $r\ge1$ define contraction
 $\iota_\lambda:\Lambda^rV\to\Lambda^{r-1}V$ by
 
 $$\iota_\lambda(v_1\wedge\cdots\wedge v_r)
@@ -211,7 +211,9 @@ $$\iota_\lambda(v_1\wedge\cdots\wedge v_r)
 v_1\wedge\cdots\widehat v_j\cdots\wedge v_r.$$
 
 The right side is alternating and multilinear in the $v_j$, so the
-universal property makes it well defined. Splitting the sum into the positions
+universal property makes it well defined. Set contraction on $\Lambda^0V=k$
+to zero; together these maps define a degree $-1$ operator on the exterior
+algebra. Splitting the sum into the positions
 of $\alpha$ and $\beta$ gives
 
 $$\iota_\lambda(\alpha\wedge\beta)

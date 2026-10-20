@@ -18,9 +18,9 @@ The rest of the toolkit should be reconstructible from them.
 6. Coprime annihilator factors produce polynomial idempotents by Bézout.
 7. Tensor products represent bilinear or balanced maps. A formula on pure
    tensors must respect the defining relations.
-8. $W\otimes V^*\cong\operatorname{Hom}(V,W)$ when $V$ is
-   finite-dimensional. Trace is evaluation; not every infinite-rank operator
-   is an algebraic tensor.
+8. $W\otimes V^*$ identifies canonically with the finite-rank maps
+   $V\to W$, hence with all of $\operatorname{Hom}(V,W)$ if either $V$
+   or $W$ is finite-dimensional. Trace is evaluation in finite dimension.
 9. Tensor, symmetric and exterior algebras are free constructions with specified
    relations. $\Lambda^r$ transports alternating data; the top exterior
    power gives a determinant line.
@@ -100,15 +100,18 @@ rebuilt, not to begin the later difficult problem-set campaign.
 3. **Recover a projection.** Assuming $T^2(T-I)^2=0$, derive the projector
    $3T^2-2T^3$ from polynomial congruences. Check the argument in
    characteristics $2$ and $3$ without dividing by those integers.
-4. **Recover Jordan data.** An operator has only eigenvalue $\lambda$ and
-   successive kernel dimensions $0,4,7,9,10,10$. Find all its block sizes,
+4. **Recover Jordan data.** Let $T:V\to V$ with $\dim_kV=10$ and
+   $\lambda\in k$. The dimensions of $\ker(T-\lambda1_V)^j$ for
+   $j=0,1,\ldots,5$ are $0,4,7,9,10,10$. Find all its block sizes,
    minimal polynomial, and the dimension of its commutant.
 5. **Nonsplitting field.** Classify multiplication by $t$ on
    $\mathbb R[t]/(t^2+1)$ as a real module and after complexification.
    Explain which use of “semisimple” is valid before extension.
-6. **Tensor universality.** Construct the currying bijection and
-   $W\otimes V^*\to\operatorname{Hom}(V,W)$, specifying precisely which
-   one needs finite-dimensional $V$. Prove the finite-rank obstruction.
+6. **Tensor universality.** Construct the currying bijection and the canonical
+   map $W\otimes V^*\to\operatorname{Hom}(V,W)$. Identify the image of
+   the latter and prove injectivity. Explain why finite dimension of either
+   $V$ or $W$ suffices for surjectivity, and give a failure when both are
+   infinite-dimensional.
 7. **Determinants from wedges.** Derive the minors formula for
    $\Lambda^2f$ and the $2\times2$ Cauchy–Binet identity for a
    $2\times3$ matrix times a $3\times2$ matrix.
@@ -138,14 +141,18 @@ to be zero modulo $t^2$ and one modulo $(t-1)^2$; the integer identity
 remains valid after any reduction of characteristic.
 
 For 4, the differences are $4,3,2,1,0$, so the sizes are $4,3,2,1$.
+Since the kernels reach $\dim_kV=10$, there is no other primary summand.
 The minimal polynomial is $(t-\lambda)^4$ and the commutant dimension is
 $\sum_{i,j}\min(i,j)=30$ for $i,j=1,2,3,4$. For 5, the real module
 is simple; after complexification it is the direct sum of the $i$ and $-i$
 eigenspaces. It is semisimple over $\mathbb R[t]$ but not real
 diagonalizable.
 
-For 6, currying needs no finite dimension, while surjectivity of the indicated
-Hom/tensor map does. For 7, sum the three intermediate $2$-subsets.
+For 6, currying needs no finite dimension. The canonical Hom/tensor map is
+always injective, with image exactly the finite-rank maps. Thus it is onto
+precisely when every map $V\to W$ has finite rank; finite dimension of
+either space suffices. For $V=W$ infinite-dimensional, the identity is
+outside its image. For 7, sum the three intermediate $2$-subsets.
 For 8, $I$ and $2I$ suffice, and $h(x,y)=\bar x^{\mathsf T}Hy$ is
 the convention used here. For 9, $H_1$ is the $z$-axis and $H_0=0$;
 the $(x,y)$ coordinates map isomorphically to $k^2$.

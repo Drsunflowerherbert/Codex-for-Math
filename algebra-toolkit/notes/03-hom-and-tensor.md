@@ -179,6 +179,12 @@ to a finite-rank operator, and every finite-rank operator arises this way.
 The canonical map is injective: express a tensor with linearly independent
 $W$-components and use coordinate functionals to show its coefficients vanish
 if the operator vanishes. Thus its image is exactly the finite-rank maps.
+In particular, finite-dimensional $W$ also makes $\Theta$ surjective,
+even for infinite-dimensional $V$: for a basis $w_i$ of $W$ with
+coordinate functionals $w^i$, write
+$f(v)=\sum_i(w^i\circ f)(v)w_i$. The exact surjectivity criterion is that
+every linear map $V\to W$ have finite rank; finite dimension of either
+space is sufficient.
 When $V=W$ is infinite-dimensional the identity is a concrete obstruction to
 surjectivity.
 

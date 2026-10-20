@@ -5,6 +5,11 @@ The intended reader has undergraduate analysis and some abstract algebra. The
 question guiding the notes is: **which properties of a construction let us
 reconstruct its other uses, even after the formulas have been forgotten?**
 
+The [review record](LOCAL-REVIEW.md) describes the focused corrections
+to the completed edition, their exact checks, and the rebuilt 59-page PDF.
+Publication of this reviewed revision on the existing public
+`research/algebra-structural-toolkit` branch is authorized.
+
 Start with the [return guide](READING-GUIDE.md), then the
 [architecture and prerequisite map](notes/00-architecture.md). The
 [complete PDF](algebra-structural-toolkit.pdf) and its

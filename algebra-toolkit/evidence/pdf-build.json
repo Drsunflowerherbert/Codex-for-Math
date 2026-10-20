@@ -1,9 +1,9 @@
 {
-  "timestamp_utc": "2026-10-20T04:52:44.361996+00:00",
-  "pdf_pages": 58,
-  "pdf_bytes": 319427,
-  "pdf_sha256": "0bb2aa04f644fe53c83eb8edda8e58faf147d7ee4353233a4c1a028f26cfbeba",
-  "tex_sha256": "60e59551a78bbaa84179284f2a73c866623704062e5222404b33c6026c271f55",
-  "pages_with_text": 58,
+  "timestamp_utc": "2026-10-20T06:07:46.859850+00:00",
+  "pdf_pages": 59,
+  "pdf_bytes": 323993,
+  "pdf_sha256": "b9be4e4c5caf882b49c10ad031a1b611a93459b2cede60de900bf37b89056bd9",
+  "tex_sha256": "1f98cadfb70bf334b08799a3b77918a3df945026aa8671317735d91b7e3a55b4",
+  "pages_with_text": 59,
   "note": "Successful LaTeX compilation is layout evidence, not mathematical proof."
 }

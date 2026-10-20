@@ -8,6 +8,7 @@ and Boolean truth tables. The script writes its stated finite scope as JSON.
 from __future__ import annotations
 
 import itertools as it
+import hashlib
 import json
 import platform
 from datetime import datetime, timezone
@@ -86,8 +87,18 @@ def algebra_checks():
     equations = s.kronecker_product(s.eye(10), a) - s.kronecker_product(a.T, s.eye(10))
     actual = 100 - equations.rank()
     assert actual == sum(min(i,j) for i in range(1,5) for j in range(1,5)) == 30
+    # Over R, adjoining the irreducible t^2+1 block leaves 0 as the only real
+    # eigenvalue and preserves these kernels, despite increasing dim V to 12.
+    nonsplitting = s.Matrix([[0,-1],[1,0]])
+    enlarged = s.diag(a, nonsplitting)
+    hidden_nullities = [12-(enlarged**j).rank() for j in range(6)]
+    assert hidden_nullities == nullities and nonsplitting.det() == 1
+    assert nonsplitting.charpoly(t).as_expr() == t**2+1
     record("Jordan reconstruction and centralizer", nullities=nullities,
-           commutant_dimension=actual, independent_equation_matrix=[100,100])
+           commutant_dimension=actual, independent_equation_matrix=[100,100],
+           hidden_nonsplitting_summand={"field":"R","polynomial":"t^2+1",
+             "total_dimension":12,"unchanged_nullities":hidden_nullities},
+           scope="Full block list and commutant dimension 30 use dim V=10.")
 
     # Direct intertwiner equations independently check the cyclic gcd formula.
     fixtures = [t**2, t**3, (t-1)**2, t**2+1]
@@ -240,7 +251,75 @@ def williamson_checks():
     for a,b in it.product(range(2),repeat=2):
         assert (-1)**((a+b)%2)==(-1)**a*(-1)**b
     record("Boolean color equality and exact phase relations", equality_inputs=16,
-           coefficient_ring="F2 for exponents; Z for correlation coefficients")
+           coefficient_ring="F2 for exponents; Z for correlation coefficients",
+           **four_color_identity_checks())
+
+
+def four_color_identity_checks():
+    """Compare the explicit edge construction with direct integer correlations.
+
+    This checks a bounded identity on small color domains, not a new search
+    for Williamson solutions. It does not count or classify solutions.
+    """
+    colorings = 0
+    assignments = 0
+    for m in [3,5,7,9,11]:
+        h = (m-1)//2
+        def opposite_class(j):
+            j %= m
+            assert j != 0
+            return min(j, m-j)-1  # zero-based class label
+        edges = {}
+        for t in range(1,m):
+            unseen = set(range(m))
+            edge_list = []
+            fixed_points = 0
+            zero_pairs = 0
+            while unseen:
+                j = min(unseen)
+                partner = (-t-j)%m
+                orbit = {j,partner}
+                unseen.difference_update(orbit)
+                if orbit == {0,(-t)%m}:
+                    zero_pairs += 1
+                elif len(orbit) == 1:
+                    assert (2*j+t)%m == 0
+                    fixed_points += 1
+                else:
+                    u,v = opposite_class(j),opposite_class(j+t)
+                    assert u != v
+                    assert (opposite_class(partner),opposite_class(partner+t)) == (v,u)
+                    edge_list.append((u,v))
+            assert fixed_points == zero_pairs == 1
+            assert len(edge_list) == h-1
+            edges[t] = edge_list
+        vectors = [tuple(1-2*int(i==c) for i in range(4)) for c in range(4)]
+        for colors in it.product(range(4),repeat=h):
+            colorings += 1
+            forced = []
+            for t in range(1,h+1):
+                count = sum(colors[u]==colors[v] for u,v in edges[t])
+                forced.append(-(-1)**count)
+            # Test arbitrary fixed signs as well as the parity-forced signs.
+            for signs in [(1,)*h,tuple((-1)**i for i in range(h)),tuple(forced)]:
+                assignments += 1
+                rows = [[1] for _ in range(4)]
+                for j in range(1,m):
+                    label = opposite_class(j)
+                    for r in range(4):
+                        rows[r].append(signs[label]*vectors[colors[label]][r])
+                direct = total_paf(rows)
+                assert direct[0] == 4*m
+                for t in range(1,m):
+                    reduced = 1+signs[opposite_class(t)]+2*sum(
+                        signs[u]*signs[v]*int(colors[u]==colors[v]) for u,v in edges[t])
+                    assert direct[t] == 4*reduced
+                    if signs == tuple(forced):
+                        assert reduced%4 == 0
+    assert colorings == 1364 and assignments == 4092
+    return {"edge_identity_core_orders":[3,5,7,9,11],
+            "colorings_checked":colorings,"sign_assignments_checked":assignments,
+            "identity_scope":"All four-color labelings at these cores; three sign fixtures each, including parity-forced signs. No solution search."}
 
 
 def main():
@@ -248,6 +327,7 @@ def main():
     paley_checks();williamson_checks()
     result={"timestamp_utc":datetime.now(timezone.utc).isoformat(),
       "python":platform.python_version(),"sympy":s.__version__,
+      "script_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
       "status":"pass","checks":RESULTS,
       "scope":"Exact finite examples and adversarial fixtures; not formal or general theorem verification."}
     output=ROOT/"evidence"/"exact-checks.json"

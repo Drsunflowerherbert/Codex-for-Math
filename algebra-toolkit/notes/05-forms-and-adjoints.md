@@ -34,7 +34,7 @@ the convention rather than copying an adjoint formula unchanged.
 
 **A decisive example.** Over $\mathbb R$, $I_2$ and $2I_2$ are
 congruent via $S=\sqrt2 I_2$, but are not similar because they have different
-eigenvalues. Conversely the real symmetric matrices
+eigenvalues. Similarly the real symmetric matrices
 $\operatorname{diag}(1,-1)$ and $\operatorname{diag}(2,-2)$ have the same
 inertia but different similarity classes. A theorem about Jordan form cannot
 replace a theorem about forms.

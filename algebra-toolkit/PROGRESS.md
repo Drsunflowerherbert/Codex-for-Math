@@ -1,6 +1,25 @@
 # Completed foundational edition
 
-The requested foundational edition is complete in the separate worktree
+## Reviewed continuation, 20 October 2026
+
+The six supplied review corrections are complete in
+`/workspace/Codex-for-Math/algebra-toolkit`, local branch
+`local/algebra-review-corrections`, based on published commit
+`68324e92a5d637139a536692df473a4aef7b791a`. The PDF is rebuilt to 59 pages;
+all 18 exact check groups and the deliverable audit pass. The changed passages
+on PDF pages 5, 6, 16, 20, 24, 25, 33, 45 and 57 were visually inspected.
+See [the review record](LOCAL-REVIEW.md) for changes and evidence.
+After the local review, the user authorized publication of these corrections
+on the existing public `research/algebra-structural-toolkit` branch. This
+record accompanies that publication candidate; the remote commit is checked
+after pushing. No repository creation, visibility change, or source-book
+upload is part of the publication.
+Source PDFs, scans, substantial extracts and source-page renders are excluded
+from GitHub repositories, public or private; use Library/private reading storage.
+
+## Original edition history
+
+The original requested foundational edition was completed in the separate worktree
 `/workspace/algebra-structural-toolkit`, branch
 `research/algebra-structural-toolkit`, based on current remote main
 `eb38f83bc65cad287541a1fb2b3b139c81ec3515`.

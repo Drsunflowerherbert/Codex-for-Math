@@ -1,7 +1,8 @@
 {
-  "timestamp_utc": "2026-10-20T04:46:23.364976+00:00",
+  "timestamp_utc": "2026-10-20T06:23:52.202767+00:00",
   "python": "3.12.14",
   "sympy": "1.14.0",
+  "script_sha256": "da4d9221f0acd064fd477adccec89b8368d14deb260317ed43dcb877b0adddc2",
   "status": "pass",
   "checks": [
     {
@@ -37,7 +38,21 @@
       "independent_equation_matrix": [
         100,
         100
-      ]
+      ],
+      "hidden_nonsplitting_summand": {
+        "field": "R",
+        "polynomial": "t^2+1",
+        "total_dimension": 12,
+        "unchanged_nullities": [
+          0,
+          4,
+          7,
+          9,
+          10,
+          10
+        ]
+      },
+      "scope": "Full block list and commutant dimension 30 use dim V=10."
     },
     {
       "name": "Cyclic Hom gcd formula",
@@ -207,7 +222,17 @@
       "name": "Boolean color equality and exact phase relations",
       "status": "pass",
       "equality_inputs": 16,
-      "coefficient_ring": "F2 for exponents; Z for correlation coefficients"
+      "coefficient_ring": "F2 for exponents; Z for correlation coefficients",
+      "edge_identity_core_orders": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "colorings_checked": 1364,
+      "sign_assignments_checked": 4092,
+      "identity_scope": "All four-color labelings at these cores; three sign fixtures each, including parity-forced signs. No solution search."
     }
   ],
   "scope": "Exact finite examples and adversarial fixtures; not formal or general theorem verification."

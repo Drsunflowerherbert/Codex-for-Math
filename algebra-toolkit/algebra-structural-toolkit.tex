@@ -147,9 +147,10 @@ every map. The rest of the toolkit should be reconstructible from them.
   Tensor products represent bilinear or balanced maps. A formula on pure
   tensors must respect the defining relations.
 \item
-  \(W\otimes V^*\cong\operatorname{Hom}(V,W)\) when \(V\) is
-  finite-dimensional. Trace is evaluation; not every infinite-rank
-  operator is an algebraic tensor.
+  \(W\otimes V^*\) identifies canonically with the finite-rank maps
+  \(V\to W\), hence with all of \(\operatorname{Hom}(V,W)\) if either
+  \(V\) or \(W\) is finite-dimensional. Trace is evaluation in finite
+  dimension.
 \item
   Tensor, symmetric and exterior algebras are free constructions with
   specified relations. \(\Lambda^r\) transports alternating data; the
@@ -252,18 +253,20 @@ can be rebuilt, not to begin the later difficult problem-set campaign.
   argument in characteristics \(2\) and \(3\) without dividing by those
   integers.
 \item
-  \textbf{Recover Jordan data.} An operator has only eigenvalue
-  \(\lambda\) and successive kernel dimensions \(0,4,7,9,10,10\). Find
-  all its block sizes, minimal polynomial, and the dimension of its
-  commutant.
+  \textbf{Recover Jordan data.} Let \(T:V\to V\) with \(\dim_kV=10\) and
+  \(\lambda\in k\). The dimensions of \(\ker(T-\lambda1_V)^j\) for
+  \(j=0,1,\ldots,5\) are \(0,4,7,9,10,10\). Find all its block sizes,
+  minimal polynomial, and the dimension of its commutant.
 \item
   \textbf{Nonsplitting field.} Classify multiplication by \(t\) on
   \(\mathbb R[t]/(t^2+1)\) as a real module and after complexification.
   Explain which use of ``semisimple'' is valid before extension.
 \item
-  \textbf{Tensor universality.} Construct the currying bijection and
-  \(W\otimes V^*\to\operatorname{Hom}(V,W)\), specifying precisely which
-  one needs finite-dimensional \(V\). Prove the finite-rank obstruction.
+  \textbf{Tensor universality.} Construct the currying bijection and the
+  canonical map \(W\otimes V^*\to\operatorname{Hom}(V,W)\). Identify the
+  image of the latter and prove injectivity. Explain why finite
+  dimension of either \(V\) or \(W\) suffices for surjectivity, and give
+  a failure when both are infinite-dimensional.
 \item
   \textbf{Determinants from wedges.} Derive the minors formula for
   \(\Lambda^2f\) and the \(2\times2\) Cauchy--Binet identity for a
@@ -301,14 +304,18 @@ to be zero modulo \(t^2\) and one modulo \((t-1)^2\); the integer
 identity remains valid after any reduction of characteristic.
 
 For 4, the differences are \(4,3,2,1,0\), so the sizes are \(4,3,2,1\).
-The minimal polynomial is \((t-\lambda)^4\) and the commutant dimension
-is \(\sum_{i,j}\min(i,j)=30\) for \(i,j=1,2,3,4\). For 5, the real
-module is simple; after complexification it is the direct sum of the
-\(i\) and \(-i\) eigenspaces. It is semisimple over \(\mathbb R[t]\) but
-not real diagonalizable.
+Since the kernels reach \(\dim_kV=10\), there is no other primary
+summand. The minimal polynomial is \((t-\lambda)^4\) and the commutant
+dimension is \(\sum_{i,j}\min(i,j)=30\) for \(i,j=1,2,3,4\). For 5, the
+real module is simple; after complexification it is the direct sum of
+the \(i\) and \(-i\) eigenspaces. It is semisimple over \(\mathbb R[t]\)
+but not real diagonalizable.
 
-For 6, currying needs no finite dimension, while surjectivity of the
-indicated Hom/tensor map does. For 7, sum the three intermediate
+For 6, currying needs no finite dimension. The canonical Hom/tensor map
+is always injective, with image exactly the finite-rank maps. Thus it is
+onto precisely when every map \(V\to W\) has finite rank; finite
+dimension of either space suffices. For \(V=W\) infinite-dimensional,
+the identity is outside its image. For 7, sum the three intermediate
 \(2\)-subsets. For 8, \(I\) and \(2I\) suffice, and
 \(h(x,y)=\bar x^{\mathsf T}Hy\) is the convention used here. For 9,
 \(H_1\) is the \(z\)-axis and \(H_0=0\); the \((x,y)\) coordinates map
@@ -987,12 +994,16 @@ a_j-a_{j-1}&=\#\{\lambda\text{-blocks of size at least }j\},\\
 2a_j-a_{j-1}-a_{j+1}&=\#\{\lambda\text{-blocks of size exactly }j\}.
 \end{aligned}\]
 
-For example, nullities \(0,3,5,6,6\) give three blocks, two of size at
-least \(2\), one of size at least \(3\), and none of size at least
-\(4\): the sizes are \(3,2,1\). This gives uniqueness and a practical
-reconstruction procedure. More generally a \(p^b\)-block contributes
-\(\deg(p)\min(j,b)\) to \(\dim_k\ker p(T)^j\), so these filtrations
-recover the elementary divisors over a nonsplitting field as well.
+For example, nullities \(0,3,5,6,6\) give three \(\lambda\)-blocks, two
+of size at least \(2\), one of size at least \(3\), and none of size at
+least \(4\): the sizes are \(3,2,1\). These are all the blocks if
+\(\dim_kV=6\); otherwise another primary summand can remain invisible to
+these kernels. Even saying that \(\lambda\) is the only eigenvalue in
+\(k\) does not exclude a nonsplitting summand. This gives uniqueness of
+the \(\lambda\)-block sizes and a practical reconstruction procedure.
+More generally a \(p^b\)-block contributes \(\deg(p)\min(j,b)\) to
+\(\dim_k\ker p(T)^j\), so these filtrations recover the elementary
+divisors over a nonsplitting field as well.
 
 The primary subspaces and block-size multiset are intrinsic. Individual
 cyclic summands, Jordan chains, their ordering, and a conjugating matrix
@@ -1266,8 +1277,13 @@ maps to a finite-rank operator, and every finite-rank operator arises
 this way. The canonical map is injective: express a tensor with linearly
 independent \(W\)-components and use coordinate functionals to show its
 coefficients vanish if the operator vanishes. Thus its image is exactly
-the finite-rank maps. When \(V=W\) is infinite-dimensional the identity
-is a concrete obstruction to surjectivity.
+the finite-rank maps. In particular, finite-dimensional \(W\) also makes
+\(\Theta\) surjective, even for infinite-dimensional \(V\): for a basis
+\(w_i\) of \(W\) with coordinate functionals \(w^i\), write
+\(f(v)=\sum_i(w^i\circ f)(v)w_i\). The exact surjectivity criterion is
+that every linear map \(V\to W\) have finite rank; finite dimension of
+either space is sufficient. When \(V=W\) is infinite-dimensional the
+identity is a concrete obstruction to surjectivity.
 
 This also exposes the issue in Xi II's remark after Theorem 6.19,
 printed p.~278 (PDF p.~284). The preceding definition uses \textbf{all}
@@ -1555,7 +1571,7 @@ not imply splitting.
 \subsection{Contraction and
 reconstruction}\label{contraction-and-reconstruction}
 
-For \(\lambda\in V^*\) define contraction
+For \(\lambda\in V^*\) and \(r\ge1\) define contraction
 \(\iota_\lambda:\Lambda^rV\to\Lambda^{r-1}V\) by
 
 \[\iota_\lambda(v_1\wedge\cdots\wedge v_r)
@@ -1563,8 +1579,10 @@ For \(\lambda\in V^*\) define contraction
 v_1\wedge\cdots\widehat v_j\cdots\wedge v_r.\]
 
 The right side is alternating and multilinear in the \(v_j\), so the
-universal property makes it well defined. Splitting the sum into the
-positions of \(\alpha\) and \(\beta\) gives
+universal property makes it well defined. Set contraction on
+\(\Lambda^0V=k\) to zero; together these maps define a degree \(-1\)
+operator on the exterior algebra. Splitting the sum into the positions
+of \(\alpha\) and \(\beta\) gives
 
 \[\iota_\lambda(\alpha\wedge\beta)
 =(\iota_\lambda\alpha)\wedge\beta
@@ -1620,7 +1638,7 @@ than copying an adjoint formula unchanged.
 
 \textbf{A decisive example.} Over \(\mathbb R\), \(I_2\) and \(2I_2\)
 are congruent via \(S=\sqrt2 I_2\), but are not similar because they
-have different eigenvalues. Conversely the real symmetric matrices
+have different eigenvalues. Similarly the real symmetric matrices
 \(\operatorname{diag}(1,-1)\) and \(\operatorname{diag}(2,-2)\) have the
 same inertia but different similarity classes. A theorem about Jordan
 form cannot replace a theorem about forms.
@@ -2123,7 +2141,8 @@ invariant complement. Hence every finite-dimensional representation is a
 direct sum of irreducibles.
 
 \textbf{Proof.} Let \(U\subseteq V\) be invariant. Choose an ordinary
-linear projection \(P:V\to U\) with \(P|_U=1_U\). Define
+linear projection \(P:V\to V\) with image \(U\) and \(P(u)=u\) for every
+\(u\in U\). Define the endomorphism
 
 \[\overline P=\frac1{|G|}\sum_{g\in G}\rho(g)P\rho(g)^{-1}.\]
 
@@ -2860,11 +2879,23 @@ four-entry sign columns with product \(-1\) are uniquely
 \mathbf1^{\mathsf T}v_c=2.\]
 
 Thus each nonzero column has a color \(\kappa_j\) and sign
-\(\varepsilon_j\), reflected at opposite indices. For a nonzero shift
-\(t\), pair the correlation terms indexed by \(j\) and \(-t-j\). The
-pair involving zero contributes \(4\varepsilon_t\); the unique fixed
-term contributes \(4\). The remaining \(h-1\) pairs define edges \(E_t\)
-on the opposite-index classes. Each contributes
+\(\varepsilon_j\), reflected at opposite indices. Write \([j]=\{j,-j\}\)
+for a nonzero opposite-index class, represented in \(\{1,\ldots,h\}\).
+For a nonzero shift \(t\), define \(E_t\) as follows, with indices
+modulo \(m\). Partition \(j\in\mathbb Z/m\mathbb Z\) into the orbits of
+the involution \(j\mapsto-t-j\). Remove the two-element orbit
+\(\{0,-t\}\) and the unique fixed point solving \(2j=-t\). For each
+remaining two-element orbit, choose either member \(j\) and include one
+unordered edge \(\{[j],[j+t]\}\) in \(E_t\), retaining one edge per
+orbit. Replacing \(j\) by \(-t-j\) swaps the endpoints, so the
+definition is independent of the representative. Both endpoints are
+nonzero and distinct; equality of the classes would force either \(t=0\)
+or the removed fixed point. There are \(h-1\) edges, counted with their
+orbit multiplicities.
+
+In the correlation sum, the removed pair involving zero contributes
+\(4\varepsilon_t\); the fixed term contributes \(4\). Each remaining
+pair with endpoint classes \(u,v\) contributes
 \(8\varepsilon_u\varepsilon_v[\kappa_u=\kappa_v]\). Hence exact
 correlation is equivalent to
 
@@ -3632,9 +3663,10 @@ spaces distinguished from chosen cyclic summands \\
 Cyclic Hom and commutant dimensions & Computed from the image of \(1\)
 and divisibility; no unjustified extension to two-variable polynomial
 rings \\
-Hom--tensor formulas & Currying needs no finite dimension; Hom as a
-tensor needs finite-dimensional source; noncommutative module sides
-specified \\
+Hom--tensor formulas & Currying needs no finite dimension; the canonical
+tensor map identifies its domain with finite-rank maps, and finite
+dimension of either source or target suffices for all Hom;
+noncommutative module sides specified \\
 Symmetric/exterior constructions & Quotient universal properties;
 alternation includes repeated-vector vanishing in characteristic \(2\);
 averaging needs invertible factorial \\
@@ -3681,7 +3713,10 @@ verification code. Its 18 check groups include:
 \item
   Kernel-growth block reconstruction, and the commutant dimension
   independently computed as the nullity of a \(100\times100\) commutator
-  equation matrix.
+  equation matrix. A real nonsplitting \(t^2+1\) summand preserves the
+  kernel data while increasing the dimension from ten to twelve,
+  exhibiting the missing-hypothesis failure excluded by the corrected
+  exercise.
 \item
   Sixteen cyclic-Hom dimension comparisons using direct intertwiner
   equations rather than the gcd formula being checked.
@@ -3707,7 +3742,11 @@ verification code. Its 18 check groups include:
 \item
   The core-seven positive spectral residual with no fourth Williamson
   row; all 16 two-color-bit equality inputs and the exact Boolean phase
-  identity.
+  identity. The explicit edge-orbit correlation formula is also compared
+  with direct integer correlations for all 1,364 four-color labelings at
+  cores \(3,5,7,9,11\), using three sign fixtures per labeling (4,092
+  assignments), including the parity-forced signs. This is a bounded
+  identity check, not a search for or classification of solutions.
 \end{itemize}
 
 Finite checks can catch sign, transpose, coefficient and characteristic
@@ -3715,6 +3754,22 @@ errors in these examples. They do not prove the universal theorems or
 classify all Hadamard matrices. The infinite-dimensional tensor
 counterexample is proved by unbounded rank, not established by a finite
 truncation test.
+
+\subsection{Corrections incorporated in the local
+continuation}\label{corrections-incorporated-in-the-local-continuation}
+
+The continuation review supplied six focused corrections. Exercise 4 now
+specifies \(\dim_kV=10\), and the chapter's parallel example identifies
+only the \(\lambda\)-primary blocks until a total dimension is known.
+Exercise 6, its answer, and the Hom/tensor summary use the exact
+finite-rank image criterion; finite dimension of either space suffices.
+Maschke's projection is explicitly an endomorphism of \(V\). The second
+congruence example begins ``Similarly.'' Contraction is defined for
+\(r\ge1\) and set to zero on \(\Lambda^0V\). Finally, \(E_t\) is defined
+from the involution orbits, with the zero pair and fixed point removed
+before passing to opposite-index classes. The original source findings
+below are retained; this continuation did not rematerialize or
+independently reread the source books.
 
 \subsection{Cited results, distinguished from complete proofs
 here}\label{cited-results-distinguished-from-complete-proofs-here}

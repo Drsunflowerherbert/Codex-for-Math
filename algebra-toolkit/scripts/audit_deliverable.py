@@ -21,6 +21,8 @@ for path in root.rglob('*.md'):
 exact=json.loads((root/'evidence/exact-checks.json').read_text())
 if exact['status']!='pass' or len(exact['checks'])!=18:
     errors.append('Exact-check evidence missing or unsuccessful')
+if exact.get('script_sha256')!=hashlib.sha256((root/'scripts/check_examples.py').read_bytes()).hexdigest():
+    errors.append('Exact-check script differs from executed evidence')
 build=json.loads((root/'evidence/pdf-build.json').read_text())
 pdf=root/'algebra-structural-toolkit.pdf'
 if hashlib.sha256(pdf.read_bytes()).hexdigest()!=build['pdf_sha256']:

@@ -1,0 +1,112 @@
+{
+  "timestamp_utc": "2026-10-20T06:10:01.385751+00:00",
+  "status": "pass",
+  "base_commit": "68324e92a5d637139a536692df473a4aef7b791a",
+  "git_head": "68324e92a5d637139a536692df473a4aef7b791a",
+  "branch": "local/algebra-review-corrections",
+  "repository": "Drsunflowerherbert/Codex-for-Math",
+  "working_directory": "/workspace/Codex-for-Math/algebra-toolkit",
+  "publication_authorized": true,
+  "source_material_uploaded": false,
+  "task_url": null,
+  "task_url_note": "No verified user-facing task URL was exposed by the available tools.",
+  "check_groups": 18,
+  "exact_checks_script_sha256": "da4d9221f0acd064fd477adccec89b8368d14deb260317ed43dcb877b0adddc2",
+  "pdf_pages": 59,
+  "pdf_sha256": "b9be4e4c5caf882b49c10ad031a1b611a93459b2cede60de900bf37b89056bd9",
+  "commands": [
+    {
+      "command": "python3 scripts/check_examples.py",
+      "result": "pass; 18 groups"
+    },
+    {
+      "command": "XDG_CACHE_HOME=/tmp/algebra-review-cache TEXMFVAR=/tmp/algebra-review-texmf-var bash scripts/build.sh",
+      "result": "pass; three LaTeX passes; 59 pages"
+    },
+    {
+      "command": "python3 scripts/audit_deliverable.py",
+      "result": "pass; no errors or final-pass diagnostics"
+    },
+    {
+      "command": "git diff --check",
+      "result": "pass"
+    }
+  ],
+  "visual_inspection": {
+    "pdf_pages": [
+      5,
+      6,
+      16,
+      20,
+      24,
+      25,
+      33,
+      45,
+      57
+    ],
+    "method": "PyMuPDF rendering at scale 1.4 and actual view_image inspection",
+    "result": "Modified prose and formulas legible; no clipping or collisions observed.",
+    "render_directory": ".build/local-review-pages/",
+    "render_sha256": {
+      "page-05.png": "fe4b3fedb411bc9ea14b92dabb96c333c5a87a95ab63713eee9fb49409925ffd",
+      "page-06.png": "5cb5c6f05d05dcbbc00ec0615eba98844e421ecb2918c8322212ed89a0964034",
+      "page-16.png": "a68e80e192bbfdc54e6adc108ebd465480bbea3e0612191ee7bf4a54ff2f91bb",
+      "page-20.png": "ef5822df352473de4c415df568684f004a22afcbe89f692bb3bd64b71e03bb1b",
+      "page-24.png": "e98037e5fd4d55bb0628e249593c19d51c48f26f0dac49fd9539389b820f26c2",
+      "page-25.png": "91f1e2827d3e00de949d47b437d6260a25d905b746d7bd1c35223042964db06b",
+      "page-33.png": "6e791cc0588d8b6642dfca12217621b65882b3d2da4a7e5f758dbcd90993496b",
+      "page-45.png": "e064015b3eac658b17ed5e3176550b59af428affbb918799d994e97b14e6d04f",
+      "page-57.png": "ffb5fe6e6ad09ec8fcf43235da7eaedbbc1970f9f2fbdd220b36379e56dc6da6"
+    }
+  },
+  "file_sha256": {
+    "LOCAL-REVIEW.md": "aab23cd7adab55abf7bd4338c9ae6f809b3934b3201b95a7bfe906d3a96b6c32",
+    "PROGRESS.md": "9a06b343669037ed34ec590a3725e58ffca6fa0887f8c7b1d677e08f0229b60a",
+    "READING-GUIDE.md": "abf62fe4ac1ca1c48105a111c44e1d569d7da2e17b92153fad66fad9a8a0420b",
+    "README.md": "5af0d147b5835d70f1e84dc032b65bd16bbe2f26104d149729f32b78c8c56575",
+    "VERIFICATION.md": "f5b1f9ca93edefac932e554bb0c5c737f3d38d3e2b6af569e67899ca920fc309",
+    "algebra-structural-toolkit.pdf": "b9be4e4c5caf882b49c10ad031a1b611a93459b2cede60de900bf37b89056bd9",
+    "algebra-structural-toolkit.tex": "1f98cadfb70bf334b08799a3b77918a3df945026aa8671317735d91b7e3a55b4",
+    "evidence/deliverable-audit.json": "d7a1bd4b555e71bd2422958ebec32a9b7e31739332e6e3f3e9f0b65aab7dca38",
+    "evidence/environment.json": "4ed8b00df84bb059e293653a18e963ac4d27e45e9295a3d3343f7685f258112a",
+    "evidence/exact-checks.json": "16c36664ad6f0f1a3e410abd508d7ce450b64d436abacdc766599811dbf1bba0",
+    "evidence/latex-pass-1.log": "0be3ebe47cb49398ee7b9a8155e3ed42cb58d866dacf32eb38cec94d108040ea",
+    "evidence/latex-pass-2.log": "59430d01ef21e0bce1b172d522e2c92dec87332011602436506eda647dc789f6",
+    "evidence/latex-pass-3.log": "f7ad5374df6c9aa8927bc92e890acccfcd35e000716e864658e78a2be36150c4",
+    "evidence/pdf-build.json": "c2ddd9dc792cd5fe3a682b1a8325d917fcfa4e5a4d733a4e09611acfb9a34a5d",
+    "evidence/source-fingerprints.json": "eeb4b6a392b344a9c8d4bab0edc620a8ccd2450a0f1c2dd1571e75c201b15829",
+    "notes/00-architecture.md": "61a59d7718e171bc8a67850b8dd2bb1f29c7dcbe9194a52aeed0d467bfaca6dd",
+    "notes/01-quotients-duality-splitting.md": "ebcc4d0d1ee877c1aa6449b8e39a0c8c945ec7620d0faf9cb5417ee5d26333ca",
+    "notes/02-operators-as-modules.md": "4905db61a3140bb55cb28aedb6aeec51798505629241f1acc9fbfef43607d319",
+    "notes/03-hom-and-tensor.md": "2d34abf01e129613acd00f091bbe9f7bef0054179f047ed2266c0bb5a1a6c274",
+    "notes/04-multilinear-and-determinants.md": "081f3871e692ac7b45a28d9b017cb221eee5895ccfb797abaa19f84c4032d3f4",
+    "notes/05-forms-and-adjoints.md": "16bfe2566e9fb8b3110fc329af74a35c60d41de897551cbc81968082a6eeb0bd",
+    "notes/06-exactness-and-homology.md": "0db05178371b1aa57f378aa4d9233a89f465c948816f5c803d2ae51e97b318ec",
+    "notes/07-representations.md": "ff2d6d9c73e7d4a04d5ee7a438e0f97038cdeedd031d341dd1ef3f0b88b20019",
+    "notes/08-bridges.md": "12f6877def72577b4fe55a228d0690d0677f3d1cf72bcc2d1f6675280d427579",
+    "notes/09-hadamard-williamson-bridge.md": "90224e5162b639209bcdd38ba85e309a6eeb4c1b3a3777e861e4f2e8b8af1951",
+    "scripts/audit_deliverable.py": "9226f08d210dd3d69c645c30e005d22f5e88e94bc29916e70009056f32445314",
+    "scripts/build.sh": "ab3c215172db6edad8117aeca3339fb2ae853d03b4b11a9caa7781ca0334e442",
+    "scripts/check_examples.py": "da4d9221f0acd064fd477adccec89b8368d14deb260317ed43dcb877b0adddc2",
+    "scripts/header.tex": "bf2ede25c4805c2f617a13152cce23d9fca75403eca7739ac05e86f64149fc6d"
+  },
+  "limits": [
+    "Finite exact fixtures and visual/mechanical checks, not formal theorem verification.",
+    "Original Library source findings retained; no new source-PDF reread claimed.",
+    "No open-problem search restarted; color enumeration is a bounded identity check.",
+    "This pre-commit record accompanies the authorized publication candidate; it does not assert a remote push outcome."
+  ],
+  "record_stage": "Pre-publication verification; remote publication is checked separately after committing and pushing.",
+  "publication_target_branch": "research/algebra-structural-toolkit",
+  "prepublication_verification": {
+    "timestamp_utc": "2026-10-20T06:24:24.744377+00:00",
+    "remote_branch_head_before": "68324e92a5d637139a536692df473a4aef7b791a",
+    "pdf_byte_identical_to_visually_reviewed_copy": true,
+    "exact_checks": "pass; 18 groups",
+    "audit": "pass",
+    "whitespace": "pass",
+    "toolkit_file_count": 34,
+    "source_separation": "Only the original toolkit PDF; no source books or image renders in the Git file set.",
+    "private_identifiers_and_credentials_scan": "No matching private identifiers or credential patterns."
+  }
+}

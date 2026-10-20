@@ -30,7 +30,8 @@ complement. Hence every finite-dimensional representation is a direct sum of
 irreducibles.
 
 **Proof.** Let $U\subseteq V$ be invariant. Choose an ordinary linear
-projection $P:V\to U$ with $P|_U=1_U$. Define
+projection $P:V\to V$ with image $U$ and $P(u)=u$ for every $u\in U$.
+Define the endomorphism
 
 $$\overline P=\frac1{|G|}\sum_{g\in G}\rho(g)P\rho(g)^{-1}.$$
 

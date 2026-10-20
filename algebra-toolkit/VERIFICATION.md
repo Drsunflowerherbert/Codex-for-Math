@@ -26,7 +26,7 @@ listed in the source ledger, including image inspection where required.
 | Canonical forms | Nonzero annihilator obtained without Cayley–Hamilton; Euclidean Smith mechanism explained; arbitrary PID version cited; splitting-field hypothesis retained for Jordan form |
 | Polynomial projectors | Congruences, image/kernel identification, and independence from Bézout representative checked; canonical primary spaces distinguished from chosen cyclic summands |
 | Cyclic Hom and commutant dimensions | Computed from the image of $1$ and divisibility; no unjustified extension to two-variable polynomial rings |
-| Hom–tensor formulas | Currying needs no finite dimension; Hom as a tensor needs finite-dimensional source; noncommutative module sides specified |
+| Hom–tensor formulas | Currying needs no finite dimension; the canonical tensor map identifies its domain with finite-rank maps, and finite dimension of either source or target suffices for all Hom; noncommutative module sides specified |
 | Symmetric/exterior constructions | Quotient universal properties; alternation includes repeated-vector vanishing in characteristic $2$; averaging needs invertible factorial |
 | Determinants and minors | Exterior basis proof precedes determinant definition; rank test, Cauchy–Binet and characteristic coefficients derived; determinant of a map between different spaces is a line map |
 | Forms and spectral theorem | Congruence versus similarity; Hermitian convention explicit; positive-definite complex finite-dimensional hypotheses retained; real and indefinite failures exhibited |
@@ -49,6 +49,9 @@ Its 18 check groups include:
   a conjugated mixed Jordan fixture checks the actual operator projections.
 - Kernel-growth block reconstruction, and the commutant dimension independently
   computed as the nullity of a $100\times100$ commutator equation matrix.
+  A real nonsplitting $t^2+1$ summand preserves the kernel data while
+  increasing the dimension from ten to twelve, exhibiting the missing-hypothesis
+  failure excluded by the corrected exercise.
 - Sixteen cyclic-Hom dimension comparisons using direct intertwiner equations
   rather than the gcd formula being checked.
 - Exterior minors, rectangular Cauchy–Binet, and characteristic coefficients;
@@ -65,11 +68,30 @@ Its 18 check groups include:
   This is a bounded adversarial-fixture replay, not an expanded search campaign.
 - The core-seven positive spectral residual with no fourth Williamson row;
   all 16 two-color-bit equality inputs and the exact Boolean phase identity.
+  The explicit edge-orbit correlation formula is also compared with direct
+  integer correlations for all 1,364 four-color labelings at cores
+  $3,5,7,9,11$, using three sign fixtures per labeling (4,092 assignments),
+  including the parity-forced signs. This is a bounded identity check,
+  not a search for or classification of solutions.
 
 Finite checks can catch sign, transpose, coefficient and characteristic errors
 in these examples. They do not prove the universal theorems or classify all
 Hadamard matrices. The infinite-dimensional tensor counterexample is proved by
 unbounded rank, not established by a finite truncation test.
+
+## Corrections incorporated in the local continuation
+
+The continuation review supplied six focused corrections. Exercise 4 now
+specifies $\dim_kV=10$, and the chapter's parallel example identifies only
+the $\lambda$-primary blocks until a total dimension is known. Exercise 6,
+its answer, and the Hom/tensor summary use the exact finite-rank image
+criterion; finite dimension of either space suffices. Maschke's projection
+is explicitly an endomorphism of $V$. The second congruence example begins
+“Similarly.” Contraction is defined for $r\ge1$ and set to zero on
+$\Lambda^0V$. Finally, $E_t$ is defined from the involution orbits, with
+the zero pair and fixed point removed before passing to opposite-index
+classes. The original source findings below are retained; this continuation
+did not rematerialize or independently reread the source books.
 
 ## Cited results, distinguished from complete proofs here
 
