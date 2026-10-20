@@ -1,6 +1,6 @@
 # Sparse LP discovery — original study checkpoint
 
-Branch: `codex/lp-sparse-discovery-2026-10-13`. This branch's addition is an ordinary sparse-certificate support study after equality elimination, with exact fixture experiments.
+Branch: `archive/lp-sparse-discovery-source`. This branch's addition is an ordinary sparse-certificate support study after equality elimination, with exact fixture experiments.
 
 Status: reviewed ordinary proofs and exact finite experiments; no Lean verification or general solver interface. This sibling study was later copied into the integration branch. The separate LP certificate toolkit is not present on this checkpoint branch.
 
@@ -14,8 +14,8 @@ Status: reviewed ordinary proofs and exact finite experiments; no Lean verificat
 
 ## Repository navigation
 
-- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/CATALOG.md) — topic-based entry points and evidence limits.
-- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/BRANCHES.md) — current entry points and earlier checkpoints.
+- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/CATALOG.md) — topic-based entry points and evidence limits.
+- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/BRANCHES.md) — current entry points and earlier checkpoints.
 - [Research snapshot before the navigation update](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/5f723174d9ac2703000f685c8cb5814b9713b466/README.md) (`5f723174d9ac2703000f685c8cb5814b9713b466`).
 - [Research baseline](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/b1d6c20e2f02b484d09c5285e67d842b369f9df0/research/README.md) (`b1d6c20e2f02b484d09c5285e67d842b369f9df0`).
 
