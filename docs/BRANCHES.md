@@ -1,31 +1,49 @@
-# Branch roles and research snapshots
+# Branch roles and rename map
 
-[Repository home](../README.md) · [Project catalog](CATALOG.md)
+[Repository home](../README.md) · [Project catalog](CATALOG.md) · [Migration](MIGRATION.md)
 
-All 14 public branches were fetched and inspected on 20 October 2026. This map
-records the research heads **before** the documentation cleanup. Branch-name
-links follow future work; full-commit links identify the audited edition.
-The cleanup updates root navigation only, plus this catalog on the existing
-default branch. It preserves branch names, research history and project bytes.
+The repository default is now **`main`**, a small directory branch. The 14
+research branches use stable topic names. `research/` identifies recommended
+project branches; `archive/` identifies earlier source checkpoints. Paused,
+conditional and ordinary-proof status remains explicit in the catalog.
 
-## Complete branch map
+## Complete old-to-new mapping
 
-| Branch (moving tip) | Purpose / unique addition | Status and recommended use | Audited research head |
+The final column records each retained head immediately before this rename
+round. Renames preserve those commits exactly; later topic-root edits change
+navigation only. Original research editions remain pinned in the catalog.
+
+| Current branch | Former branch | Purpose and status | Retained pre-rename head |
 | --- | --- | --- | --- |
-| [`codex/tangent-limit`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/tangent-limit) | Repository landing page; original tangent project | Conditional formal tangent result; navigation lives here | [d00a89dd9c](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/d00a89dd9ce6c8ef782234d28c93e69cb712c947/README.md) |
-| [`codex/research-2026-10-11`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/research-2026-10-11) | Integrated collection through the reviewed 13 October additions | Recommended shared baseline; ordinary studies and scoped formal libraries remain distinct | [e4f337c3aa](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/README.md) |
-| [`codex/evidence-hardening-2026-10-13`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/evidence-hardening-2026-10-13) | Original hardening source checkpoint from the 11 October baseline | Earlier sibling; prefer reviewed integrated publication copy | [c2fe44833c](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/c2fe44833ceb577595028549cecdda87986f303e/README.md) |
-| [`codex/transport-sharpness-2026-10-13`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/transport-sharpness-2026-10-13) | Original finite obstruction and actual target-cost follow-up | Source checkpoint; prefer integrated publication copy; map formalization deferred | [fa5cd40c36](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/fa5cd40c36daa5373c0234bda0b9d09a49595ce6/README.md) |
-| [`codex/lp-certificates-2026-10-13`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/lp-certificates-2026-10-13) | Original LP toolkit and per-input bridge | Earlier checkpoint; later executable-binding hardening is in the integration branch | [032db09354](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/032db09354d41b58c2e9211ed7e69024a3e74010/README.md) |
-| [`codex/lp-sparse-discovery-2026-10-13`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/lp-sparse-discovery-2026-10-13) | Original ordinary support study and fixture benchmark | Earlier sibling; integrated copy available; no Lean/general solver | [5f723174d9](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/5f723174d9ac2703000f685c8cb5814b9713b466/README.md) |
-| [`codex/lp-paper-2026-10-13`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/lp-paper-2026-10-13) | Adds only lp-paper/ to the integrated baseline | Separate reviewed exposition; PDF is the paper entry point | [16075fc88d](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/16075fc88d1cec51dc3c8f137bca3fe70c6f9520/README.md) |
-| [`codex/integral-examples-2026-10-15`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/integral-examples-2026-10-15) | Adds only integral-examples/ to the integrated baseline | 16 reviewed worked examples; ordinary/educational | [dafa2d2c35](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/dafa2d2c35b425ca510def9aae3bb17839e67aa5/README.md) |
-| [`codex/critical-points-2026-10-15`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/critical-points-2026-10-15) | Adds only critical-points/ to the integrated baseline | Ordinary proof and exact local classifier; no Lean | [40ebeb0f45](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/40ebeb0f4583659a195d77ced27a91d4084ae75f/README.md) |
-| [`codex/certified-roots-2026-10-15`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/certified-roots-2026-10-15) | Adds only certified-roots/ to the integrated baseline | Ordinary contraction proof and exact rational checker; no Lean | [5da47dc496](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/5da47dc49651af44faf96ecc8604c180600bdc72/README.md) |
-| [`codex/hadamard-study-2026-10-15`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/hadamard-study-2026-10-15) | Adds only hadamard-study/, with three sequential rounds | Paused after round 3; bounded experiments, no general conjecture proof | [2834fea31f](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/2834fea31fb4ca7203531ca220e55a2fb7640119/README.md) |
-| [`codex/contest-library-2026-10-13`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/contest-library-2026-10-13) | Adds only contest-library/ to the integrated baseline | Bounded learning collection; provisional sources identified | [ef8032ed20](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/ef8032ed20f05fb100e95fc287eefb5d3e431543/README.md) |
-| [`codex/research-map-2026-10-13`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/research-map-2026-10-13) | Adds only research-map/ to the integrated baseline | Reference/metadata and partial scope audit | [34e3e11e4c](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/34e3e11e4c37109bfc06f4f195a62a2cf992c5b0/README.md) |
-| [`codex/holomorphic-anosov-review-2026-10-16`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/holomorphic-anosov-review-2026-10-16) | Adds only holomorphic-anosov-review/ to original tangent baseline | Expanded review and compiled audit; conditional targets and no comparator verdict | [2d6f543fcf](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/2d6f543fcfe182c3df7d5316c0fba0279eebfe4f/README.md) |
+| [`research/certified-roots`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/certified-roots) | `codex/certified-roots-2026-10-15` | Ordinary contraction proof and exact rational checker; no Lean claim. | [94be4cea79](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/94be4cea7925cdd2c027a40b968c7380d3cf6b27/README.md) |
+| [`research/contest-library`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/contest-library) | `codex/contest-library-2026-10-13` | Bounded practice library; provisional source coverage remains identified. | [ce6041879a](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/ce6041879a80c230da5f8d98a25154ded5f1b852/README.md) |
+| [`research/critical-points`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/critical-points) | `codex/critical-points-2026-10-15` | Ordinary proof and exact rank-one local classifier; no Lean claim. | [a35e088c65](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/a35e088c655fa5b5877124c7dcc4c95f7dc1f94f/README.md) |
+| [`archive/evidence-hardening-source`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/archive/evidence-hardening-source) | `codex/evidence-hardening-2026-10-13` | Earlier hardening companion source checkpoint; prefer integrated copy. | [0a5c28b3e9](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/0a5c28b3e9cf8c48911ff363a5e491763a84c196/README.md) |
+| [`research/hadamard-study`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/hadamard-study) | `codex/hadamard-study-2026-10-15` | Three cumulative bounded rounds; explicitly paused after round 3. | [e444609e39](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e444609e39ccd6c6715ea804cf76fd2fb2fb0ddf/README.md) |
+| [`research/holomorphic-anosov-review`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/holomorphic-anosov-review) | `codex/holomorphic-anosov-review-2026-10-16` | Expanded paper review; explicit rigidity premise and no comparator verdict. | [54633c5947](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/54633c594792df75a09f2f6d69a8de31d4275a7b/README.md) |
+| [`research/integral-examples`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/integral-examples) | `codex/integral-examples-2026-10-15` | 16 worked analysis examples; reviewed ordinary educational material. | [e82f957239](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e82f957239980cb78034c95664bbc6daf47c7775/README.md) |
+| [`archive/lp-certificates-source`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/archive/lp-certificates-source) | `codex/lp-certificates-2026-10-13` | Earlier LP toolkit; later executable-binding hardening is in the integrated edition. | [208af16989](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/208af169896a30552bd3962cd317d31ebcb6dfa8/README.md) |
+| [`research/lp-paper`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/lp-paper) | `codex/lp-paper-2026-10-13` | Reviewed standalone LP exposition, not a new solver. | [53db69cbda](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/53db69cbdad205b18d1054536018bcd182654395/README.md) |
+| [`archive/lp-sparse-discovery-source`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/archive/lp-sparse-discovery-source) | `codex/lp-sparse-discovery-2026-10-13` | Original ordinary support study and fixture experiments; integrated copy available. | [ef3ad84022](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/ef3ad840222ce27b1d0112642fa7b5405041144b/README.md) |
+| [`research/integrated`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/integrated) | `codex/research-2026-10-11` | Shared integrated collection; recommended LP/transport/evidence publication copies. | [51fb9a3e2f](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/51fb9a3e2facd03d8c1116510723b65443009985/README.md) |
+| [`research/research-map`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/research-map) | `codex/research-map-2026-10-13` | Source-pinned reference/metadata map and partial scope audit. | [aef3c10ae3](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/aef3c10ae3c33a805b0eceb1a16e598eb7eb8744/README.md) |
+| [`research/tangent-limit`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/tangent-limit) | `codex/tangent-limit` | Original conditional cubic tangent project; the sharp extension is separate. | [6b660e717c](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/6b660e717c4afca52b173cfe040037f3e695910c/README.md) |
+| [`archive/transport-sharpness-source`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/archive/transport-sharpness-source) | `codex/transport-sharpness-2026-10-13` | Scoped transport source checkpoint; prefer integrated publication copy. | [766be27fa6](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/766be27fa6bb76772aaa0c6b59d7c73fcd4d2bd3/README.md) |
+
+Machine-readable mapping: [branch-map.json](branch-map.json).
+
+## Directory history
+
+`main` is a single-parent descendant of the previous default head
+`6b660e717c4afca52b173cfe040037f3e695910c`. It is connected to the existing history, not an orphan branch,
+and it does not merge unrelated research branches. Its current tree contains
+only `README.md` and four navigation files in `docs/`.
+
+Relative to its parent, the new main tree no longer includes `tangent-limit/`.
+That complete project tree stays byte-identical on `research/tangent-limit`,
+and its original commits remain in main's ancestry. No research is removed
+from a topic branch or erased from Git history. The former tangent branch's
+catalog paths are retained as compatibility pointers to main.
 
 ## Ancestry and shared files
 
@@ -55,33 +73,21 @@ The research starter's affine/Egyptian snapshots are historical; the research
 README points to the corrected ordinary studies. Original tangent and extended
 sharp-tangent scope remain separately accessible.
 
-## Documentation and historical integrity
+Branch dates described in older project prose are provenance, not the current
+naming convention. Use the mapping above to resolve an old branch name. Source
+files, substantive project documentation, evidence, PDFs, datasets, manifests
+and toolchain pins remain untouched on topic branches.
 
-Before cleanup, the default homepage showed only the tangent project. Twelve
-specialized branches had an inherited root README that omitted their own
-deliverable. Their roots now identify the branch's purpose, current reading
-entry points, evidence limits and inherited baseline. The integrated branch's
-root is organized by topic; this default branch provides repository navigation.
+## Evidence and snapshot integrity
 
-Only root `README.md` changes are made on nondefault branches. The default branch
-changes `README.md` and adds `docs/CATALOG.md` and `docs/BRANCHES.md`. Substantive
-project READMEs, Lean/Python/Node sources, PDFs, data, receipts, manifests and
-dependency pins are preserved byte-for-byte. No research scripts were run as
-part of this documentation inspection. No branch was created, renamed, deleted
-or merged, and the existing default-branch setting is retained.
+The organization update does not rerun research scripts, experiments or Lean.
+Whole-tree manifests apply to their own recorded source/baseline, which can
+predate a branch's later added directory. Root navigation edits add a documented
+difference; no historical manifest is rewritten to imply fresh verification.
+Use the catalog's exact research links and project notices for original inputs
+and scope. Inherited directories should be counted once rather than as new
+results on every branch.
 
-Some publication manifests cover an older root README and a complete path set.
-They apply to their own recorded source/baseline, not every descendant that
-inherits them. A specialized branch may already contain extra project files
-outside an inherited whole-tree manifest, even at its audited research head.
-The root navigation edit adds a further documented difference. To reproduce
-a historical snapshot, consult the relevant publication record or project
-notice and use its recorded full source/baseline commit in a separate checkout.
-Do not rewrite historical manifests to make a navigation revision look like
-fresh research verification.
-
-New navigation targets are checked against the actual tree of their branch or
-pinned commit. Existing historical documents retain their original context and
-evidence claims. Future research updates should update the relevant project
-README and catalog entry, keep assumptions visible, and identify any superseded
-edition explicitly.
+The preflight found no pull requests, protected branches, rulesets or repository
+workflows. GitHub's supported branch-rename API preserves browser redirects.
+Raw URLs and local tracking need the updates in [MIGRATION.md](MIGRATION.md).

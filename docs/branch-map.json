@@ -1,0 +1,106 @@
+{
+  "format_version": 1,
+  "updated": "2026-10-20",
+  "default_branch": "main",
+  "directory_parent": "6b660e717c4afca52b173cfe040037f3e695910c",
+  "mapping": [
+    {
+      "old": "codex/certified-roots-2026-10-15",
+      "new": "research/certified-roots",
+      "before": "94be4cea7925cdd2c027a40b968c7380d3cf6b27",
+      "research_snapshot": "5da47dc49651af44faf96ecc8604c180600bdc72",
+      "role": "recommended-research"
+    },
+    {
+      "old": "codex/contest-library-2026-10-13",
+      "new": "research/contest-library",
+      "before": "ce6041879a80c230da5f8d98a25154ded5f1b852",
+      "research_snapshot": "ef8032ed20f05fb100e95fc287eefb5d3e431543",
+      "role": "recommended-research"
+    },
+    {
+      "old": "codex/critical-points-2026-10-15",
+      "new": "research/critical-points",
+      "before": "a35e088c655fa5b5877124c7dcc4c95f7dc1f94f",
+      "research_snapshot": "40ebeb0f4583659a195d77ced27a91d4084ae75f",
+      "role": "recommended-research"
+    },
+    {
+      "old": "codex/evidence-hardening-2026-10-13",
+      "new": "archive/evidence-hardening-source",
+      "before": "0a5c28b3e9cf8c48911ff363a5e491763a84c196",
+      "research_snapshot": "c2fe44833ceb577595028549cecdda87986f303e",
+      "role": "source-checkpoint"
+    },
+    {
+      "old": "codex/hadamard-study-2026-10-15",
+      "new": "research/hadamard-study",
+      "before": "e444609e39ccd6c6715ea804cf76fd2fb2fb0ddf",
+      "research_snapshot": "2834fea31fb4ca7203531ca220e55a2fb7640119",
+      "role": "recommended-research"
+    },
+    {
+      "old": "codex/holomorphic-anosov-review-2026-10-16",
+      "new": "research/holomorphic-anosov-review",
+      "before": "54633c594792df75a09f2f6d69a8de31d4275a7b",
+      "research_snapshot": "2d6f543fcfe182c3df7d5316c0fba0279eebfe4f",
+      "role": "recommended-research"
+    },
+    {
+      "old": "codex/integral-examples-2026-10-15",
+      "new": "research/integral-examples",
+      "before": "e82f957239980cb78034c95664bbc6daf47c7775",
+      "research_snapshot": "dafa2d2c35b425ca510def9aae3bb17839e67aa5",
+      "role": "recommended-research"
+    },
+    {
+      "old": "codex/lp-certificates-2026-10-13",
+      "new": "archive/lp-certificates-source",
+      "before": "208af169896a30552bd3962cd317d31ebcb6dfa8",
+      "research_snapshot": "032db09354d41b58c2e9211ed7e69024a3e74010",
+      "role": "source-checkpoint"
+    },
+    {
+      "old": "codex/lp-paper-2026-10-13",
+      "new": "research/lp-paper",
+      "before": "53db69cbdad205b18d1054536018bcd182654395",
+      "research_snapshot": "16075fc88d1cec51dc3c8f137bca3fe70c6f9520",
+      "role": "recommended-research"
+    },
+    {
+      "old": "codex/lp-sparse-discovery-2026-10-13",
+      "new": "archive/lp-sparse-discovery-source",
+      "before": "ef3ad840222ce27b1d0112642fa7b5405041144b",
+      "research_snapshot": "5f723174d9ac2703000f685c8cb5814b9713b466",
+      "role": "source-checkpoint"
+    },
+    {
+      "old": "codex/research-2026-10-11",
+      "new": "research/integrated",
+      "before": "51fb9a3e2facd03d8c1116510723b65443009985",
+      "research_snapshot": "e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f",
+      "role": "recommended-research"
+    },
+    {
+      "old": "codex/research-map-2026-10-13",
+      "new": "research/research-map",
+      "before": "aef3c10ae3c33a805b0eceb1a16e598eb7eb8744",
+      "research_snapshot": "34e3e11e4c37109bfc06f4f195a62a2cf992c5b0",
+      "role": "recommended-research"
+    },
+    {
+      "old": "codex/tangent-limit",
+      "new": "research/tangent-limit",
+      "before": "6b660e717c4afca52b173cfe040037f3e695910c",
+      "research_snapshot": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
+      "role": "recommended-research"
+    },
+    {
+      "old": "codex/transport-sharpness-2026-10-13",
+      "new": "archive/transport-sharpness-source",
+      "before": "766be27fa6bb76772aaa0c6b59d7c73fcd4d2bd3",
+      "research_snapshot": "fa5cd40c36daa5373c0234bda0b9d09a49595ce6",
+      "role": "source-checkpoint"
+    }
+  ]
+}

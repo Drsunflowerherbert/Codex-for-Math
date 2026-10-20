@@ -1,2 +1,0 @@
-PASS: 37 final-source declarations audited. Observed axioms: ['Classical.choice', 'Quot.sound', 'propext']
-PASS: no nonstandard axiom or sorryAx observed.
