@@ -1,6 +1,6 @@
 # Hadamard and Williamson study — paused
 
-Branch: `codex/hadamard-study-2026-10-15`. This branch's addition is a three-round bounded construction and search study, with ordinary proofs and exact finite checks.
+Branch: `research/hadamard-study`. This branch's addition is a three-round bounded construction and search study, with ordinary proofs and exact finite checks.
 
 Status: explicitly paused after round 3. Results are replications, bounded observations and reviewed ordinary arguments, not a Lean proof or a proof of the general Hadamard conjecture. The round-1 README describes the first round; use round 3 for the latest checkpoint.
 
@@ -14,8 +14,8 @@ Status: explicitly paused after round 3. Results are replications, bounded obser
 
 ## Repository navigation
 
-- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/CATALOG.md) — topic-based entry points and evidence limits.
-- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/BRANCHES.md) — current entry points and earlier checkpoints.
+- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/CATALOG.md) — topic-based entry points and evidence limits.
+- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/BRANCHES.md) — current entry points and earlier checkpoints.
 - [Research snapshot before the navigation update](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/2834fea31fb4ca7203531ca220e55a2fb7640119/README.md) (`2834fea31fb4ca7203531ca220e55a2fb7640119`).
 - [Research baseline](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/README.md) (`e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f`).
 
