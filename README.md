@@ -1,6 +1,6 @@
 # Lebesgue and Hausdorff integral examples
 
-Branch: `codex/integral-examples-2026-10-15`. This branch's addition is a collection of 16 worked analysis examples with separate problems, solutions and reading guides.
+Branch: `research/integral-examples`. This branch's addition is a collection of 16 worked analysis examples with separate problems, solutions and reading guides.
 
 Status: reviewed ordinary mathematics and educational material, with saved computational and PDF checks; no Lean verification is claimed.
 
@@ -15,8 +15,8 @@ Status: reviewed ordinary mathematics and educational material, with saved compu
 
 ## Repository navigation
 
-- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/CATALOG.md) — topic-based entry points and evidence limits.
-- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/BRANCHES.md) — current entry points and earlier checkpoints.
+- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/CATALOG.md) — topic-based entry points and evidence limits.
+- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/BRANCHES.md) — current entry points and earlier checkpoints.
 - [Research snapshot before the navigation update](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/dafa2d2c35b425ca510def9aae3bb17839e67aa5/README.md) (`dafa2d2c35b425ca510def9aae3bb17839e67aa5`).
 - [Research baseline](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/README.md) (`e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f`).
 
