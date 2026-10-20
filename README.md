@@ -1,6 +1,6 @@
 # Transport exponent obstruction — source checkpoint
 
-Branch: `codex/transport-sharpness-2026-10-13`. This branch's addition is the scoped transport continuation: finite/scalar exponent obstructions and an actual two-dimensional Borel target-coupling cost bridge.
+Branch: `archive/transport-sharpness-source`. This branch's addition is the scoped transport continuation: finite/scalar exponent obstructions and an actual two-dimensional Borel target-coupling cost bridge.
 
 Status: original sibling checkpoint with recorded scoped Lean evidence, later incorporated in the research integration branch. Cube-source optimal-map construction and actual L2 map-norm identification remain deferred. Do not read the finite/scalar result as a full formal transport-map theorem.
 
@@ -15,8 +15,8 @@ Status: original sibling checkpoint with recorded scoped Lean evidence, later in
 
 ## Repository navigation
 
-- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/CATALOG.md) — topic-based entry points and evidence limits.
-- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/BRANCHES.md) — current entry points and earlier checkpoints.
+- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/CATALOG.md) — topic-based entry points and evidence limits.
+- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/BRANCHES.md) — current entry points and earlier checkpoints.
 - [Research snapshot before the navigation update](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/fa5cd40c36daa5373c0234bda0b9d09a49595ce6/README.md) (`fa5cd40c36daa5373c0234bda0b9d09a49595ce6`).
 - [Research baseline](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/b1d6c20e2f02b484d09c5285e67d842b369f9df0/research/README.md) (`b1d6c20e2f02b484d09c5285e67d842b369f9df0`).
 
