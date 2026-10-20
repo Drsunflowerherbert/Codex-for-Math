@@ -1,6 +1,6 @@
 # Exact root certification toolkit
 
-Branch: `codex/certified-roots-2026-10-15`. This branch's addition is an exact rational interval checker and an ordinary contraction argument for rational polynomial systems.
+Branch: `research/certified-roots`. This branch's addition is an exact rational interval checker and an ordinary contraction argument for rational polynomial systems.
 
 Status: reviewed ordinary proof and exact computation, not a Lean development. Acceptance certifies a unique root in the specified closed box under the documented criterion. Failed certification does not prove nonexistence; a small residual alone is insufficient.
 
@@ -14,8 +14,8 @@ Status: reviewed ordinary proof and exact computation, not a Lean development. A
 
 ## Repository navigation
 
-- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/CATALOG.md) — topic-based entry points and evidence limits.
-- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/BRANCHES.md) — current entry points and earlier checkpoints.
+- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/CATALOG.md) — topic-based entry points and evidence limits.
+- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/BRANCHES.md) — current entry points and earlier checkpoints.
 - [Research snapshot before the navigation update](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/5da47dc49651af44faf96ecc8604c180600bdc72/README.md) (`5da47dc49651af44faf96ecc8604c180600bdc72`).
 - [Research baseline](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/README.md) (`e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f`).
 
