@@ -1,9 +1,7 @@
 # Codex for Math
 
-**Directory branch: `main`.** The repository default is still `codex/tangent-limit`:
-GitHub rejected the integration's default-change request with HTTP 403.
-Thirteen topic renames are complete; the original tangent branch's rename
-remains pending. See [remaining actions](docs/MIGRATION.md#remaining-administration-actions).
+**Default branch: `main`.** All 14 topic branch names now use the consistent
+`research/<topic>` or `archive/<topic>-source` format.
 
 A directory of mathematical studies, scoped Lean libraries, exact-computation
 tools and learning materials. Research files live on the topic branches;
@@ -31,16 +29,15 @@ exact research links, evidence and limitations. Use the
 - [LP paper](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/research/lp-paper/lp-paper/README.md): exposition before the support study and certificate toolkit.
 - [Competition practice](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/research/contest-library/contest-library/PROBLEMS.md): spoiler-free problem retrieval.
 - [Field map](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/research/research-map/research-map/FIELD-MAP.md): subject-based research retrieval.
-- [Original tangent project](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/tangent-limit/README.md): conditional cubic limit and absolute summability.
+- [Original tangent project](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/research/tangent-limit/tangent-limit/README.md): conditional cubic limit and absolute summability.
 
 ## Branch conventions and evidence
 
-- `main`: repository directory and catalog; default switch pending.
+- `main`: repository default, directory and catalog.
 - `research/<topic>`: recommended project branches or integrated collection.
 - `archive/<topic>-source`: earlier source checkpoints whose reviewed publication copies appear in `research/integrated`.
 
-The tangent branch is the one pending naming exception. The new names are
-stable and use lowercase words separated by hyphens; dates remain in
+Names are stable and use lowercase words separated by hyphens; dates remain in
 the project records and commit history. A `research/` name does not imply that
 a project is active, unconditional or formally verified. The catalog preserves
 the distinctions between scoped formal results, conditional proofs, ordinary

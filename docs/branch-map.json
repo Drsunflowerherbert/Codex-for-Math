@@ -2,15 +2,18 @@
   "format_version": 1,
   "updated": "2026-10-20",
   "directory_branch": "main",
-  "default_branch": "codex/tangent-limit",
+  "default_branch": "main",
   "requested_default_branch": "main",
   "initial_directory_commit": "d8abb9562967b8455a4aaf4fdeb715c0cf74eabf",
   "directory_parent": "6b660e717c4afca52b173cfe040037f3e695910c",
-  "completed_renames": 13,
+  "completed_renames": 14,
   "default_change": {
-    "status": "denied",
-    "http_status": 403,
-    "reason": "Resource not accessible by integration"
+    "status": "confirmed",
+    "default_branch": "main",
+    "verified_by": [
+      "GitHub repository API",
+      "Git remote HEAD"
+    ]
   },
   "mapping": [
     {
@@ -124,11 +127,11 @@
     {
       "old": "codex/tangent-limit",
       "new": "research/tangent-limit",
-      "before": "6b660e717c4afca52b173cfe040037f3e695910c",
+      "before": "06ca2e188ba3e1f3c59ad38f1d2ea897e602aa8a",
       "research_snapshot": "d00a89dd9ce6c8ef782234d28c93e69cb712c947",
       "role": "recommended-research",
-      "current": "codex/tangent-limit",
-      "status": "pending-administration-permission"
+      "current": "research/tangent-limit",
+      "status": "renamed"
     },
     {
       "old": "codex/transport-sharpness-2026-10-13",
@@ -139,5 +142,6 @@
       "current": "archive/transport-sharpness-source",
       "status": "renamed"
     }
-  ]
+  ],
+  "migration_status": "complete"
 }
