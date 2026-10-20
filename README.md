@@ -1,6 +1,6 @@
 # Rational LP certificates — earlier checkpoint
 
-Branch: `codex/lp-certificates-2026-10-13`. This branch's addition is the original exact certificate checker, Lean soundness development, per-input export bridge and incomplete finder.
+Branch: `archive/lp-certificates-source`. This branch's addition is the original exact certificate checker, Lean soundness development, per-input export bridge and incomplete finder.
 
 Status: earlier source checkpoint. The integrated toolkit contains later executable-binding fixes and confirmation evidence absent here. Lean statements cover certificate soundness over the original real problem; the finder is incomplete, and parser/cache trust limits remain explicit.
 
@@ -15,8 +15,8 @@ Status: earlier source checkpoint. The integrated toolkit contains later executa
 
 ## Repository navigation
 
-- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/CATALOG.md) — topic-based entry points and evidence limits.
-- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/BRANCHES.md) — current entry points and earlier checkpoints.
+- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/CATALOG.md) — topic-based entry points and evidence limits.
+- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/BRANCHES.md) — current entry points and earlier checkpoints.
 - [Research snapshot before the navigation update](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/032db09354d41b58c2e9211ed7e69024a3e74010/README.md) (`032db09354d41b58c2e9211ed7e69024a3e74010`).
 - [Research baseline](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/b1d6c20e2f02b484d09c5285e67d842b369f9df0/research/README.md) (`b1d6c20e2f02b484d09c5285e67d842b369f9df0`).
 
