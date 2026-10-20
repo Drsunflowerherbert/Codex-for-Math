@@ -1,6 +1,6 @@
 # Linear Programming by Sparse Certificates
 
-Branch: `codex/lp-paper-2026-10-13`. This branch's addition is a standalone expository paper synthesizing the sparse-certificate study and rational LP toolkit.
+Branch: `research/lp-paper`. This branch's addition is a standalone expository paper synthesizing the sparse-certificate study and rational LP toolkit.
 
 Status: reviewed exposition with ordinary proofs, an exact hand algorithm and examples. The underlying Lean results establish selected certificate-soundness statements. This paper introduces no new general LP solver or performance claim over simplex.
 
@@ -14,8 +14,8 @@ Status: reviewed exposition with ordinary proofs, an exact hand algorithm and ex
 
 ## Repository navigation
 
-- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/CATALOG.md) — topic-based entry points and evidence limits.
-- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/BRANCHES.md) — current entry points and earlier checkpoints.
+- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/CATALOG.md) — topic-based entry points and evidence limits.
+- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/BRANCHES.md) — current entry points and earlier checkpoints.
 - [Research snapshot before the navigation update](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/16075fc88d1cec51dc3c8f137bca3fe70c6f9520/README.md) (`16075fc88d1cec51dc3c8f137bca3fe70c6f9520`).
 - [Research baseline](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/README.md) (`e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f`).
 
