@@ -1,6 +1,6 @@
 # Rank-one critical-point classifier
 
-Branch: `codex/critical-points-2026-10-15`. This branch's addition is an exact rational classifier for bivariate polynomial stationary points at the origin with Hessian rank exactly one.
+Branch: `research/critical-points`. This branch's addition is an exact rational classifier for bivariate polynomial stationary points at the origin with Hessian rank exactly one.
 
 Status: reviewed ordinary proofs and exact computations; no Lean verification. The tool classifies the supported local germ, not global extrema or every critical point. Coefficient budgets may return unresolved.
 
@@ -14,8 +14,8 @@ Status: reviewed ordinary proofs and exact computations; no Lean verification. T
 
 ## Repository navigation
 
-- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/CATALOG.md) — topic-based entry points and evidence limits.
-- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/BRANCHES.md) — current entry points and earlier checkpoints.
+- [Repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/CATALOG.md) — topic-based entry points and evidence limits.
+- [All branches and their roles](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/BRANCHES.md) — current entry points and earlier checkpoints.
 - [Research snapshot before the navigation update](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/40ebeb0f4583659a195d77ced27a91d4084ae75f/README.md) (`40ebeb0f4583659a195d77ced27a91d4084ae75f`).
 - [Research baseline](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f/research/README.md) (`e4f337c3aa52ec4c3f2aab078d7c91b32ee0015f`).
 
