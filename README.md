@@ -1,11 +1,11 @@
 # Codex for Math — integrated research collection
 
-Branch: `codex/research-2026-10-11`. This is the shared integrated research baseline,
+Branch: `research/integrated`. This is the shared integrated research baseline,
 including the reviewed 11 October projects and 13 October LP, transport and
-evidence continuations. Its name records its start date, not its final scope.
+evidence continuations. Its former dated name recorded its start date, not its final scope.
 
-Use the [repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/CATALOG.md) to find later standalone
-deliverables, and the [branch map](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/codex/tangent-limit/docs/BRANCHES.md) to distinguish those additions
+Use the [repository project catalog](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/CATALOG.md) to find later standalone
+deliverables, and the [branch map](https://github.com/Drsunflowerherbert/Codex-for-Math/blob/main/docs/BRANCHES.md) to distinguish those additions
 from inherited copies of this collection.
 
 ## Read by topic
