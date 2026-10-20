@@ -97,7 +97,7 @@ refs can be pruned later after you have checked the new names and upstreams.
 
 ## Preservation boundary
 
-The new main directory is a connected single-parent child of the previous
+The new main directory is a connected single-parent descendant of the previous
 default commit. Its current tree omits research files to keep the homepage
 small. The original tangent tree remains byte-identical on `codex/tangent-limit`; every other project stays on its own renamed branch. No topic history
 is rewritten and no unrelated projects are merged. Topic follow-up commits
