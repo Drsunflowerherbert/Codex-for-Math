@@ -1,5 +1,12 @@
 # Returning to algebra: a compact working guide
 
+For the continuation, use the [reconstructive map](RECONSTRUCTION-MAP.md)
+after these foundational exercises. It connects invariant-complement
+obstructions, averaging, integral spectral reconstruction, and common
+sign lifts, with explicit hypotheses and stopping tests. The two expanded
+proof comparisons identify what can actually be shortened in the inspected
+parts of Xi, Hungerford, and Grillet.
+
 ## The essential memory spine
 
 Retain the following statements with their hypotheses and the type of every map.

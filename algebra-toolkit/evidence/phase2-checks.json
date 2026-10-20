@@ -1,0 +1,435 @@
+{
+  "timestamp_utc": "2026-10-20T07:13:12.605302+00:00",
+  "status": "pass",
+  "runner_sha256": "f6993a38ed5e200f8b7ba991bb30d8def485441697fcee9bfba4fab17452fe6a",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "chapter_check_groups": 28,
+  "source_erratum_check_groups": 1,
+  "checks": [
+    {
+      "script": "scripts/check_sylvester.py",
+      "groups": 7,
+      "script_sha256": "9a40ec3350dfc58764c65c6372c41c74293e3b818d6de841a456e9b70acf18d5",
+      "log": "evidence/check_sylvester.log",
+      "detail": {
+        "summary": [
+          "PASS section-change sign, endpoint-equivalence sign, rectangular trace adjoint",
+          "PASS free-resolution telescoping identity (18 cases)",
+          "PASS both sides of constructive Bezout inverse (16 cases)",
+          "PASS finite geometric inverse and characteristic-independent nilpotent formula (16 cases)",
+          "PASS all J2/J2 quotient classes, witness coordinates, and Jordan ranks over F2/F3 (97 cases)",
+          "PASS cyclic primary Smith factors and explicit unimodular reduction (188 cases)",
+          "PASS determinant/resultant identity, integral cokernel orders, and index-two example (6 cases)",
+          "All 7 exact-check groups passed."
+        ]
+      }
+    },
+    {
+      "script": "scripts/check_averaging.py",
+      "groups": 5,
+      "script_sha256": "1b912386b63208be9339ed7bfbd72e02feed762ea2541f1b5a726267d8164b81",
+      "log": "evidence/check_averaging.log",
+      "detail": {
+        "description": "Exact finite checks supporting the averaging chapter",
+        "scope": "Examples and counterexamples; not formal verification",
+        "passed": true,
+        "groups": 5,
+        "polynomial_tensor_cases": [
+          {
+            "polynomial": "t**2 - 1",
+            "field": "Q",
+            "tensor_coefficients": [
+              "1/2",
+              "0",
+              "0",
+              "1/2"
+            ],
+            "rectangular_hom_shape": [
+              4,
+              2
+            ]
+          },
+          {
+            "polynomial": "t**2 + 1",
+            "field": "Q",
+            "tensor_coefficients": [
+              "1/2",
+              "0",
+              "0",
+              "-1/2"
+            ],
+            "rectangular_hom_shape": [
+              4,
+              2
+            ]
+          },
+          {
+            "polynomial": "t**3 - 2",
+            "field": "Q",
+            "tensor_coefficients": [
+              "1/3",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/6",
+              "0",
+              "1/6",
+              "0"
+            ],
+            "rectangular_hom_shape": [
+              6,
+              3
+            ]
+          },
+          {
+            "polynomial": "t**3 - t",
+            "field": "F_5",
+            "tensor_coefficients": [
+              "1",
+              "0",
+              "4",
+              "0",
+              "3",
+              "0",
+              "4",
+              "0",
+              "4"
+            ],
+            "rectangular_hom_shape": [
+              6,
+              3
+            ]
+          },
+          {
+            "polynomial": "t**2 + t + 1",
+            "field": "F_2",
+            "tensor_coefficients": [
+              "1",
+              "1",
+              "1",
+              "0"
+            ],
+            "rectangular_hom_shape": [
+              4,
+              2
+            ]
+          }
+        ],
+        "nonexistence_by_linear_rank": [
+          {
+            "polynomial": "t**2",
+            "field": "Q",
+            "constraint_rank": 3,
+            "augmented_rank": 4
+          },
+          {
+            "polynomial": "(t - 1)**2*(t + 2)",
+            "field": "Q",
+            "constraint_rank": 8,
+            "augmented_rank": 9
+          },
+          {
+            "polynomial": "t**2 - 1",
+            "field": "F_2",
+            "constraint_rank": 2,
+            "augmented_rank": 3
+          }
+        ],
+        "invariant_projection_and_section": {
+          "projection": [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "section": [
+            -1,
+            1
+          ]
+        },
+        "nonmultiplicativity_and_nonpreservation_of_idempotence": true,
+        "matrix_algebra_cases": [
+          {
+            "matrix_size": 2,
+            "characteristic_checked": 2
+          },
+          {
+            "matrix_size": 3,
+            "characteristic_checked": 3
+          }
+        ]
+      }
+    },
+    {
+      "script": "scripts/check_integral_crt.py",
+      "groups": 12,
+      "script_sha256": "367a45e529e6ef4b0a7ad2d50d1c18a22754051f71789c22e4106d1a7ae7433d",
+      "log": "evidence/check_integral_crt.log",
+      "detail": {
+        "status": "passed",
+        "groups": 12,
+        "sympy_version": "1.14.0",
+        "results": {
+          "test_resultants_and_defects": {
+            "resultant_cases": 5,
+            "noncyclic_defect": [
+              2,
+              2
+            ]
+          },
+          "test_prime_reconstruction": {
+            "prime_reconstruction_cases": 129,
+            "primes": [
+              2,
+              3,
+              5,
+              7,
+              11
+            ]
+          },
+          "test_prime_parity": {
+            "bounded_coefficient_vectors": 150,
+            "p2_exception_verified": true
+          },
+          "test_general_trace_and_indices": {
+            "integral_indices": {
+              "1": 1,
+              "2": 2,
+              "3": 3,
+              "4": 8,
+              "5": 5,
+              "6": 72,
+              "8": 128,
+              "9": 81,
+              "10": 800,
+              "11": 11,
+              "12": 41472
+            },
+            "all_component_basis_traces_checked": true
+          },
+          "test_order_four": {
+            "index": 8,
+            "smith": [
+              1,
+              1,
+              2,
+              4
+            ],
+            "mod4_cases": 81
+          },
+          "test_order_nine": {
+            "index": 81,
+            "smith": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              3,
+              3,
+              9
+            ]
+          },
+          "test_prime_power_jets": {
+            "stage_probe_cases": 66,
+            "ordinary_derivative_failure": true
+          },
+          "test_energy_example": {
+            "augmentation": 3,
+            "energy": 11,
+            "spectral_interval": [
+              -5,
+              4
+            ]
+          },
+          "test_gram_counterexamples": {
+            "normalized_m3_integral_nonsign": true,
+            "even_m4_affine_failure": true,
+            "odd_m3_gluing_failure": true
+          },
+          "test_nonsymmetric_array": {
+            "nonzero_gram_block_12": [
+              [
+                "0",
+                "-4",
+                "4"
+              ],
+              [
+                "4",
+                "0",
+                "-4"
+              ],
+              [
+                "-4",
+                "4",
+                "0"
+              ]
+            ]
+          },
+          "test_affine_certificate_examples": {
+            "valid_symmetric_sign_examples": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "test_exercises_and_hypothesis_examples": {
+            "exercise_and_hypothesis_examples": "passed"
+          }
+        }
+      }
+    },
+    {
+      "script": "scripts/check_lifting.py",
+      "groups": 4,
+      "script_sha256": "04a7e45eeeaecfdf61440dd8d434229eeb3669e38237364282fc11c7963edb66",
+      "log": "evidence/check_lifting.log",
+      "detail": {
+        "status": "pass",
+        "script_sha256": "04a7e45eeeaecfdf61440dd8d434229eeb3669e38237364282fc11c7963edb66",
+        "scope": "Fixed exact regressions, not formal verification or an existence search.",
+        "checks": [
+          {
+            "name": "individual_lift_counts",
+            "compressed_rows": 227,
+            "orders": [
+              1,
+              3,
+              5,
+              9,
+              15
+            ]
+          },
+          {
+            "name": "rational_orthogonal_projector",
+            "cases": 6
+          },
+          {
+            "name": "fixed_core_nine_residual",
+            "labelled_lifts": 27,
+            "product_survivors": 6,
+            "full_solutions": 0,
+            "surviving_defects": [
+              {
+                "p": 4,
+                "q": 2,
+                "k": 1,
+                "gram": [
+                  36,
+                  -8,
+                  0,
+                  0,
+                  8,
+                  8,
+                  0,
+                  0,
+                  -8
+                ]
+              },
+              {
+                "p": 4,
+                "q": 1,
+                "k": 2,
+                "gram": [
+                  36,
+                  0,
+                  -8,
+                  0,
+                  8,
+                  8,
+                  0,
+                  -8,
+                  0
+                ]
+              },
+              {
+                "p": 2,
+                "q": 4,
+                "k": 1,
+                "gram": [
+                  36,
+                  -8,
+                  8,
+                  0,
+                  0,
+                  0,
+                  0,
+                  8,
+                  -8
+                ]
+              },
+              {
+                "p": 2,
+                "q": 1,
+                "k": 4,
+                "gram": [
+                  36,
+                  0,
+                  8,
+                  0,
+                  -8,
+                  -8,
+                  0,
+                  8,
+                  0
+                ]
+              },
+              {
+                "p": 1,
+                "q": 4,
+                "k": 2,
+                "gram": [
+                  36,
+                  8,
+                  -8,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -8,
+                  8
+                ]
+              },
+              {
+                "p": 1,
+                "q": 2,
+                "k": 4,
+                "gram": [
+                  36,
+                  8,
+                  0,
+                  0,
+                  -8,
+                  -8,
+                  0,
+                  0,
+                  8
+                ]
+              }
+            ]
+          },
+          {
+            "name": "unrestricted_real_lift",
+            "order": 9,
+            "preserves_compression_and_full_gram": true,
+            "is_sign_lift": false
+          }
+        ]
+      }
+    }
+  ],
+  "source_erratum": {
+    "statement": "Disc(t^3+p*t+q)=-4*p^3-27*q^2",
+    "resultant": "4*p**3 + 27*q**2",
+    "specialization_p1_q0": -4
+  },
+  "scope": "Exact fixed examples and finite identity checks, not formal verification or a search campaign."
+}

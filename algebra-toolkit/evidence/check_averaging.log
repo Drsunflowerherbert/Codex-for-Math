@@ -1,0 +1,135 @@
+{
+  "description": "Exact finite checks supporting the averaging chapter",
+  "scope": "Examples and counterexamples; not formal verification",
+  "passed": true,
+  "groups": 5,
+  "polynomial_tensor_cases": [
+    {
+      "polynomial": "t**2 - 1",
+      "field": "Q",
+      "tensor_coefficients": [
+        "1/2",
+        "0",
+        "0",
+        "1/2"
+      ],
+      "rectangular_hom_shape": [
+        4,
+        2
+      ]
+    },
+    {
+      "polynomial": "t**2 + 1",
+      "field": "Q",
+      "tensor_coefficients": [
+        "1/2",
+        "0",
+        "0",
+        "-1/2"
+      ],
+      "rectangular_hom_shape": [
+        4,
+        2
+      ]
+    },
+    {
+      "polynomial": "t**3 - 2",
+      "field": "Q",
+      "tensor_coefficients": [
+        "1/3",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/6",
+        "0",
+        "1/6",
+        "0"
+      ],
+      "rectangular_hom_shape": [
+        6,
+        3
+      ]
+    },
+    {
+      "polynomial": "t**3 - t",
+      "field": "F_5",
+      "tensor_coefficients": [
+        "1",
+        "0",
+        "4",
+        "0",
+        "3",
+        "0",
+        "4",
+        "0",
+        "4"
+      ],
+      "rectangular_hom_shape": [
+        6,
+        3
+      ]
+    },
+    {
+      "polynomial": "t**2 + t + 1",
+      "field": "F_2",
+      "tensor_coefficients": [
+        "1",
+        "1",
+        "1",
+        "0"
+      ],
+      "rectangular_hom_shape": [
+        4,
+        2
+      ]
+    }
+  ],
+  "nonexistence_by_linear_rank": [
+    {
+      "polynomial": "t**2",
+      "field": "Q",
+      "constraint_rank": 3,
+      "augmented_rank": 4
+    },
+    {
+      "polynomial": "(t - 1)**2*(t + 2)",
+      "field": "Q",
+      "constraint_rank": 8,
+      "augmented_rank": 9
+    },
+    {
+      "polynomial": "t**2 - 1",
+      "field": "F_2",
+      "constraint_rank": 2,
+      "augmented_rank": 3
+    }
+  ],
+  "invariant_projection_and_section": {
+    "projection": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "section": [
+      -1,
+      1
+    ]
+  },
+  "nonmultiplicativity_and_nonpreservation_of_idempotence": true,
+  "matrix_algebra_cases": [
+    {
+      "matrix_size": 2,
+      "characteristic_checked": 2
+    },
+    {
+      "matrix_size": 3,
+      "characteristic_checked": 3
+    }
+  ]
+}

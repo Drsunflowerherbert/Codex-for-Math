@@ -1,0 +1,132 @@
+{
+  "status": "pass",
+  "script_sha256": "04a7e45eeeaecfdf61440dd8d434229eeb3669e38237364282fc11c7963edb66",
+  "scope": "Fixed exact regressions, not formal verification or an existence search.",
+  "checks": [
+    {
+      "name": "individual_lift_counts",
+      "compressed_rows": 227,
+      "orders": [
+        1,
+        3,
+        5,
+        9,
+        15
+      ]
+    },
+    {
+      "name": "rational_orthogonal_projector",
+      "cases": 6
+    },
+    {
+      "name": "fixed_core_nine_residual",
+      "labelled_lifts": 27,
+      "product_survivors": 6,
+      "full_solutions": 0,
+      "surviving_defects": [
+        {
+          "p": 4,
+          "q": 2,
+          "k": 1,
+          "gram": [
+            36,
+            -8,
+            0,
+            0,
+            8,
+            8,
+            0,
+            0,
+            -8
+          ]
+        },
+        {
+          "p": 4,
+          "q": 1,
+          "k": 2,
+          "gram": [
+            36,
+            0,
+            -8,
+            0,
+            8,
+            8,
+            0,
+            -8,
+            0
+          ]
+        },
+        {
+          "p": 2,
+          "q": 4,
+          "k": 1,
+          "gram": [
+            36,
+            -8,
+            8,
+            0,
+            0,
+            0,
+            0,
+            8,
+            -8
+          ]
+        },
+        {
+          "p": 2,
+          "q": 1,
+          "k": 4,
+          "gram": [
+            36,
+            0,
+            8,
+            0,
+            -8,
+            -8,
+            0,
+            8,
+            0
+          ]
+        },
+        {
+          "p": 1,
+          "q": 4,
+          "k": 2,
+          "gram": [
+            36,
+            8,
+            -8,
+            0,
+            0,
+            0,
+            0,
+            -8,
+            8
+          ]
+        },
+        {
+          "p": 1,
+          "q": 2,
+          "k": 4,
+          "gram": [
+            36,
+            8,
+            0,
+            0,
+            -8,
+            -8,
+            0,
+            0,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unrestricted_real_lift",
+      "order": 9,
+      "preserves_compression_and_full_gram": true,
+      "is_sign_lift": false
+    }
+  ]
+}

@@ -1,5 +1,28 @@
 # Completed foundational edition
 
+## Substantive expansion, 20 October 2026
+
+The corrected baseline at `a4a28796bdd63c5cbddbfba698c95d34728bd94c`
+has been continued with four chapters: Sylvester/extension obstructions,
+separability and averaging, integral spectral gluing, and common-lift
+obstructions. Two expanded source comparisons and
+[a reconstructive map](RECONSTRUCTION-MAP.md) give a smaller coherent
+reading route with exact prerequisites and stopping tests.
+
+Independent AI-agent reviews checked the main proofs; the identified
+sign/order, cubic-expansion, and hypothesis wording corrections are
+incorporated. The 28 new chapter check groups and one source-erratum
+check pass. The baseline's 18 checks also pass again. The final PDF has
+125 pages, the mechanical audit passes without LaTeX warnings, and
+eleven representative pages were inspected visually. The
+[continuation review](PHASE2-REVIEW.md) separates mathematical derivation,
+source evidence, finite tests, and remaining access limits.
+
+This reviewed edition is prepared for authorized publication on the existing
+`research/algebra-structural-toolkit` branch. No new brute-force search,
+visibility change, repository creation, or source-book upload is part of it.
+The historical sections below describe earlier editions.
+
 ## Reviewed continuation, 20 October 2026
 
 The six supplied review corrections are complete in

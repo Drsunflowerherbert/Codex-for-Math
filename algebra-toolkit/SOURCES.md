@@ -2,6 +2,14 @@
 
 ## Evidence levels
 
+The expanded edition adds contiguous proof readings documented in
+[the operator supplement](PROOF-COMPARISON-OPERATORS.md) and
+[the arithmetic supplement](PROOF-COMPARISON-ARITHMETIC.md).
+Their ending ledgers give the new page ranges and distinguish extracted
+proof reading from rendered-page verification. The original selected
+readings below remain part of the baseline evidence, not a claim to have
+read every intervening page.
+
 **P** means the specified text, theorem, construction, or proof was inspected in
 this task. **V** means a rendered source page was inspected, necessary for scans
 or a suspected extraction problem. **T** means a contents or introductory
@@ -55,7 +63,9 @@ are not treated as authoritative edition statements.
   polynomials and invariance under ordering roots.
 - **P:** §7.6 opening, printed p. 190 (PDF p. 196): resultant matrix and
   criterion, with the leading-coefficient degeneracy explicitly visible.
-  The complete resultant proof and exercise collection were not audited.
+  This was an opening-page sample in the baseline. The continuation inspected
+  the full proof sequence on PDF pp. 196–199 and its visible exercises;
+  see the arithmetic supplement, including the narrow cubic-example erratum.
 - Quotients of sets (§2.4, printed p. 30, PDF p. 36) and matrix-map
   organization (Chapter 3, starting p. 40, PDF p. 46) were located and sampled.
 

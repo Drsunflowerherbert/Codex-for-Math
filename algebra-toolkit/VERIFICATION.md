@@ -2,6 +2,15 @@
 
 ## What the evidence means
 
+The expanded edition adds four chapters and two proof comparisons to the
+corrected baseline. Separate AI agents reviewed the new chapter proofs,
+and independent exact calculations checked their most delicate examples.
+The [continuation review](PHASE2-REVIEW.md) records the findings and
+corrections. The additional runner `scripts/check_phase2.py` records
+28 chapter check groups and one symbolic cubic-discriminant check in
+`evidence/phase2-checks.json`, with hashes of the executed scripts.
+These supplement the baseline's 18 groups; they are not formal verification.
+
 The notes contain ordinary written proofs and explicitly cited structural
 theorems. They have undergone a separate self-review for hypotheses, notation,
 and failure cases, plus exact computational spot checks written independently
@@ -90,8 +99,10 @@ is explicitly an endomorphism of $V$. The second congruence example begins
 “Similarly.” Contraction is defined for $r\ge1$ and set to zero on
 $\Lambda^0V$. Finally, $E_t$ is defined from the involution orbits, with
 the zero pair and fixed point removed before passing to opposite-index
-classes. The original source findings below are retained; this continuation
-did not rematerialize or independently reread the source books.
+classes. The original source findings below are retained. That focused
+six-fix revision did not rematerialize or independently reread the source
+books; the later substantive expansion did inspect additional proof
+passages, as documented in the two new source-comparison ledgers.
 
 ## Cited results, distinguished from complete proofs here
 
@@ -116,7 +127,18 @@ did not rematerialize or independently reread the source books.
   fixtures listed above were newly executed. No current worldwide open-problem
   status or smallest unresolved order is certified.
 
-## Confirmed source correction
+## Confirmed source corrections
+
+**Xi I, Example 7.80, printed p. 193 / PDF p. 199.** The supplied scan
+prints $-2p^3-27q^2$ for the discriminant of $x^3+px+q$.
+The correct coefficient is $-4$. Two independent image inspections
+confirmed the displayed formula; the preceding general cubic exercise
+on printed p. 190 / PDF p. 196 has the correct term.
+Direct symbolic calculation gives
+$\operatorname{Res}(f,f')=4p^3+27q^2$, and the monic cubic
+discriminant is its negative. The specialization $f=x^3+x$ gives
+$-4$ directly. This is a narrow example typo, not a defect in the
+resultant criterion or its inspected proof.
 
 **Xi II, Theorem 6.19's following remark, printed p. 278 / PDF p. 284.**
 The remark extends the finite-dimensional identification

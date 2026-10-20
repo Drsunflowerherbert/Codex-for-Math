@@ -1,12 +1,26 @@
 {
-  "timestamp_utc": "2026-10-20T06:24:25.022574+00:00",
+  "timestamp_utc": "2026-10-20T07:14:31.952931+00:00",
   "status": "pass",
   "errors": [],
-  "pdf_pages": 59,
-  "required_sections_present": 11,
+  "pdf_pages": 125,
+  "required_sections_present": 18,
   "local_file_links": "checked",
   "exact_check_groups": 18,
   "latex_final_pass_diagnostics": [],
+  "continuation_check_groups": 29,
+  "visually_inspected_pdf_pages": [
+    9,
+    62,
+    68,
+    73,
+    84,
+    86,
+    95,
+    96,
+    101,
+    109,
+    111
+  ],
   "distributed_pdfs": [
     "algebra-structural-toolkit.pdf"
   ],

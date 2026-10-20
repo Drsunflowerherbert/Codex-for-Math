@@ -1,0 +1,115 @@
+{
+  "status": "passed",
+  "groups": 12,
+  "sympy_version": "1.14.0",
+  "results": {
+    "test_resultants_and_defects": {
+      "resultant_cases": 5,
+      "noncyclic_defect": [
+        2,
+        2
+      ]
+    },
+    "test_prime_reconstruction": {
+      "prime_reconstruction_cases": 129,
+      "primes": [
+        2,
+        3,
+        5,
+        7,
+        11
+      ]
+    },
+    "test_prime_parity": {
+      "bounded_coefficient_vectors": 150,
+      "p2_exception_verified": true
+    },
+    "test_general_trace_and_indices": {
+      "integral_indices": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 8,
+        "5": 5,
+        "6": 72,
+        "8": 128,
+        "9": 81,
+        "10": 800,
+        "11": 11,
+        "12": 41472
+      },
+      "all_component_basis_traces_checked": true
+    },
+    "test_order_four": {
+      "index": 8,
+      "smith": [
+        1,
+        1,
+        2,
+        4
+      ],
+      "mod4_cases": 81
+    },
+    "test_order_nine": {
+      "index": 81,
+      "smith": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        3,
+        9
+      ]
+    },
+    "test_prime_power_jets": {
+      "stage_probe_cases": 66,
+      "ordinary_derivative_failure": true
+    },
+    "test_energy_example": {
+      "augmentation": 3,
+      "energy": 11,
+      "spectral_interval": [
+        -5,
+        4
+      ]
+    },
+    "test_gram_counterexamples": {
+      "normalized_m3_integral_nonsign": true,
+      "even_m4_affine_failure": true,
+      "odd_m3_gluing_failure": true
+    },
+    "test_nonsymmetric_array": {
+      "nonzero_gram_block_12": [
+        [
+          "0",
+          "-4",
+          "4"
+        ],
+        [
+          "4",
+          "0",
+          "-4"
+        ],
+        [
+          "-4",
+          "4",
+          "0"
+        ]
+      ]
+    },
+    "test_affine_certificate_examples": {
+      "valid_symmetric_sign_examples": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "test_exercises_and_hypothesis_examples": {
+      "exercise_and_hypothesis_examples": "passed"
+    }
+  }
+}

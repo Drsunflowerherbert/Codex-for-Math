@@ -1,5 +1,13 @@
 # Selective comparison: what can be reorganized, what must be retained
 
+The continuation adds two proof-level supplements:
+[operators and multilinear constructions](PROOF-COMPARISON-OPERATORS.md)
+and [arithmetic and representations](PROOF-COMPARISON-ARITHMETIC.md).
+They broaden the actual proof reading behind this initial overview and
+give precise substitution boundaries, dependency risks, and stopping tests.
+In particular, Xi supplies two Jordan constructions and both Maschke proofs;
+the supplements distinguish those methods from the graduate texts' routes.
+
 ## How to read the comparison
 
 The criterion is the user's intended use: rebuilding algebra around reusable

@@ -1,0 +1,34 @@
+digraph Reconstruction {
+  graph [rankdir=TB, bgcolor="white", pad=0.15, nodesep=0.28, ranksep=0.4];
+  node [shape=box, style="rounded,filled", fillcolor="#eef4fa",
+        color="#43617e", fontname="DejaVu Sans", fontsize=11, margin="0.12,0.08"];
+  edge [color="#65717d", arrowsize=0.65, fontname="DejaVu Sans", fontsize=9];
+  relations [label="Quotients and\nrelations"];
+  bezout [label="Polynomial actions\nand Bezout"];
+  dual [label="Finite-dimensional\nduality"];
+  smith [label="Presentations and\nSmith form"];
+  average [label="Projectors and\nseparability tensors"];
+  ext [label="Sylvester equations\nand extension classes"];
+  lattice [label="Integral CRT\nand its defect lattice"];
+  compression [label="Compression and\nresidual Gram equations"];
+  parity [label="Odd coefficients\nand exact energy"];
+  certificates [label="Explicit witnesses,\nreconstructions, and failed lifts",
+                fillcolor="#e7f1e7", color="#4c7050"];
+  {rank=same; relations; bezout; dual;}
+  {rank=same; smith; average; ext;}
+  {rank=same; lattice; compression; parity;}
+  relations -> smith;
+  relations -> compression;
+  bezout -> average;
+  bezout -> ext;
+  dual -> ext;
+  smith -> ext;
+  smith -> lattice;
+  bezout -> lattice;
+  average -> compression;
+  lattice -> parity;
+  ext -> certificates;
+  lattice -> certificates;
+  compression -> certificates;
+  parity -> certificates;
+}

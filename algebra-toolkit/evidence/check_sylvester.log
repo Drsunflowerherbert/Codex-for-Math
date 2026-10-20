@@ -1,0 +1,8 @@
+PASS section-change sign, endpoint-equivalence sign, rectangular trace adjoint
+PASS free-resolution telescoping identity (18 cases)
+PASS both sides of constructive Bezout inverse (16 cases)
+PASS finite geometric inverse and characteristic-independent nilpotent formula (16 cases)
+PASS all J2/J2 quotient classes, witness coordinates, and Jordan ranks over F2/F3 (97 cases)
+PASS cyclic primary Smith factors and explicit unimodular reduction (188 cases)
+PASS determinant/resultant identity, integral cokernel orders, and index-two example (6 cases)
+All 7 exact-check groups passed.

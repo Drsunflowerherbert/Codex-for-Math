@@ -1,0 +1,106 @@
+{
+  "timestamp_utc": "2026-10-20T07:14:29.816605+00:00",
+  "status": "complete_reviewed",
+  "baseline_commit": "a4a28796bdd63c5cbddbfba698c95d34728bd94c",
+  "local_branch": "local/algebra-review-corrections",
+  "pdf": {
+    "path": "algebra-structural-toolkit.pdf",
+    "pages": 125,
+    "sha256": "141db06c3c29804c4dd42917b4e201876928d0468b164f35b4dc7985201c01c0"
+  },
+  "checks": {
+    "baseline_groups": 18,
+    "continuation_chapter_groups": 28,
+    "source_erratum_groups": 1,
+    "total_primary_groups": 47,
+    "status": "pass"
+  },
+  "independent_sylvester_check": {
+    "script": "scripts/check_sylvester_review.py",
+    "script_sha256": "e0e44206017287dd53e2e3fd93e3eb1bfcb3ae124a1cf1070c8c77b8fce9ed1c",
+    "status": "pass",
+    "endpoint_pairs": 819,
+    "extension_blocks": 8761,
+    "resultant_identities": 819,
+    "square_zero_bezout_basis_cases": 2888
+  },
+  "adversarial_reviews": [
+    {
+      "topic": "Sylvester and extensions",
+      "result": "passed after correcting signed resultant/order wording"
+    },
+    {
+      "topic": "Averaging and separability",
+      "result": "passed after correcting cubic telescoping expansion and coherent-repair wording"
+    },
+    {
+      "topic": "Integral spectral gluing",
+      "result": "passed, including affine-lattice theorem and even-order boundary"
+    },
+    {
+      "topic": "Compression and common lifts",
+      "result": "passed, including independent reconstruction of all 27 fixed lifts"
+    },
+    {
+      "topic": "Source comparison and reconstruction map",
+      "result": "passed after six local hypothesis/notation refinements; selected Xi III passages independently inspected visually"
+    }
+  ],
+  "visual_inspection": {
+    "physical_pdf_pages": [
+      9,
+      62,
+      68,
+      73,
+      84,
+      86,
+      95,
+      96,
+      101,
+      109,
+      111
+    ],
+    "result": "clear formulas, tables and diagram; no clipping or missing glyphs observed",
+    "pdf_sha256": "141db06c3c29804c4dd42917b4e201876928d0468b164f35b4dc7985201c01c0",
+    "publication_rebuild_equivalence": {
+      "reviewed_pdf_sha256": "9f919a786dde0a19fc27a70f920e2fd7c2d94a06bffc546385fb7f8a0d98c6b2",
+      "compared_pages": 125,
+      "comparison": "Extracted text and RGB pixels at 72 dpi identical on every page after removing one source trailing space."
+    }
+  },
+  "remaining_blockers": [],
+  "bounded_evidence_limit": {
+    "action": "New visual verification of selected Xi II formula glyphs",
+    "outcome": "not completed",
+    "reason": "Prescribed Library helper unavailable; reader supplied no usable rendered images",
+    "effect": "New proof readings are marked P, not V; no full scan audit is claimed",
+    "permission_denial": false
+  },
+  "original_manuscript_sha256": {
+    "notes/10-sylvester-extensions.md": "07abe5a44fd9e0ee1b930077150c4c596ed60baf2b50fed9d69eb8465e0787c8",
+    "notes/11-averaging-separability.md": "0dfc2f224b5fa945977bb740498f084a4565d599fcebf079ac0f1325d7da97e3",
+    "notes/12-integral-spectral-gluing.md": "d7c6452ec1f981564ed70059f693f3599169e5634a02ad65ab2036aa98f20def",
+    "notes/13-compression-and-common-lifts.md": "3fd78b128fb9f25bb883441f0afe24a6da893f793901ad15cf19a529eb6c74e4"
+  },
+  "guide_and_review_sha256": {
+    "README.md": "a74417f0f00cd301190ae244990efe6ff27711e18b32124076e63c2e05a87be4",
+    "RECONSTRUCTION-MAP.md": "8b46a7dbea4f41689eb72698e87aabe116e23bdd8bb020c17f2c235ecfab4671",
+    "PROOF-COMPARISON-OPERATORS.md": "ea8608120e502aa1901a3d25628b7a545a805e2737d667d237182e201f75d8ef",
+    "PROOF-COMPARISON-ARITHMETIC.md": "2a85cb0940173165b6910f0a2d389f66088fc78236a2549e6e9e3d5df1939d76",
+    "PHASE2-REVIEW.md": "e13f429202ea4fb56ff55e6e17a34730f10ab7f98bab3cd60a80e61a8f382288"
+  },
+  "scope": "Ordinary written proofs, selected source comparisons and exact finite checks; no novelty, search speedup, formal verification, or universal existence claim.",
+  "actions_during_local_review": {
+    "new_commit": false,
+    "push": false,
+    "pull_request": false,
+    "visibility_change": false,
+    "source_book_upload": false
+  },
+  "publication_candidate": {
+    "authorized": true,
+    "repository": "Drsunflowerherbert/Codex-for-Math",
+    "branch": "research/algebra-structural-toolkit",
+    "scope": "Reviewed original notes, original scripts, generated study PDF and sanitized evidence; source books and source-page images excluded."
+  }
+}
