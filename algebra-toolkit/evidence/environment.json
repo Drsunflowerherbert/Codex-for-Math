@@ -1,0 +1,9 @@
+{
+  "pandoc": "pandoc 3.1.11.1",
+  "xelatex": "XeTeX 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian)",
+  "python": "3.12.14",
+  "base_commit": "eb38f83bc65cad287541a1fb2b3b139c81ec3515",
+  "prior_study": "2834fea31fb4ca7203531ca220e55a2fb7640119",
+  "ordinary_exposition": true,
+  "formal_verification": false
+}

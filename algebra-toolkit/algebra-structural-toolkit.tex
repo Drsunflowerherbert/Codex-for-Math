@@ -1,0 +1,3852 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  11pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Latin Modern Roman}
+  \setsansfont[]{Latin Modern Sans}
+  \setmonofont[]{DejaVu Sans Mono}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=24mm]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Chinese names/titles are short and explicitly wrapped by the build script.
+% This avoids requiring the optional xeCJK package in a minimal TeX install.
+\newfontfamily\cjkfont{Noto Serif CJK SC}
+\newcommand{\CJKtext}[1]{{\cjkfont #1}}
+\usepackage{amssymb,booktabs,longtable,array}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Algebra as a structural toolkit}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\headheight}{15pt}
+\setlength{\emergencystretch}{3em}
+\setlength{\tabcolsep}{4pt}
+\AtBeginEnvironment{longtable}{\small}
+\makeatletter
+\renewcommand*\l@subsection{\@dottedtocline{2}{1.5em}{3.4em}}
+\makeatother
+\let\originaltableofcontents\tableofcontents
+\renewcommand{\tableofcontents}{\originaltableofcontents\clearpage}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Algebra as a structural toolkit},
+  pdfauthor={Research notes for returning to algebra},
+  colorlinks=true,
+  linkcolor={blue!45!black},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue!55!black},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Algebra as a structural toolkit}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Foundations, source comparisons, and a Hadamard/Williamson
+bridge}
+\author{Research notes for returning to algebra}
+\date{20 October 2026}
+
+\begin{document}
+\maketitle
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\section{Returning to algebra: a compact working
+guide}\label{returning-to-algebra-a-compact-working-guide}
+
+\subsection{The essential memory
+spine}\label{the-essential-memory-spine}
+
+Retain the following statements with their hypotheses and the type of
+every map. The rest of the toolkit should be reconstructible from them.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  A map \(V/U\to X\) is a map \(V\to X\) that kills \(U\).
+\item
+  Dualization is precomposition; evaluation gives \(V\cong V^{**}\) in
+  finite dimension. An identification with \(V^*\) needs extra data.
+\item
+  A direct sum is encoded by projections, and \(P^2=P\) gives
+  \(V=\operatorname{im}P\oplus\ker P\).
+\item
+  A split exact sequence has a section. Sections differ by a map from
+  the quotient to the kernel; existence does not imply a preferred
+  choice.
+\item
+  An operator is a \(k[t]\)-module. The PID structure theorem classifies
+  finite-dimensional operators through invariant factors; Jordan form
+  needs splitting of the minimal polynomial.
+\item
+  Coprime annihilator factors produce polynomial idempotents by Bézout.
+\item
+  Tensor products represent bilinear or balanced maps. A formula on pure
+  tensors must respect the defining relations.
+\item
+  \(W\otimes V^*\cong\operatorname{Hom}(V,W)\) when \(V\) is
+  finite-dimensional. Trace is evaluation; not every infinite-rank
+  operator is an algebraic tensor.
+\item
+  Tensor, symmetric and exterior algebras are free constructions with
+  specified relations. \(\Lambda^r\) transports alternating data; the
+  top exterior power gives a determinant line.
+\item
+  Forms transform by congruence, operators by similarity. A positive
+  metric supplies adjoints, orthogonal projections, and the normal
+  spectral theorem.
+\item
+  Exactness is image equals kernel. Over a field short exact sequences
+  split and positive Ext/Tor vanish; homology of an arbitrary complex
+  need not.
+\item
+  A representation is a module over a group algebra. Maschke needs
+  invertible group order; Schur's scalar conclusion needs finite
+  dimension and an algebraically closed field.
+\end{enumerate}
+
+For Hadamard/Williamson add five facts: Gram orthogonality is an
+integral identity; tensors multiply valid orders; cyclic Fourier
+coordinates are CRT coordinates; compression loses lifting information;
+and equality of Boolean phases must be distinguished from independence
+of their signs.
+
+\subsection{A selective route, with stopping
+tests}\label{a-selective-route-with-stopping-tests}
+
+\textbf{First return: regain the language.} Read the
+quotient/duality/splitting chapter, with Xi II §§1.4--1.6 and 2.4 beside
+it. Stop when you can construct the quotient map and its dual, describe
+the affine space of sections, and explain why an invariant complement is
+an additional demand. Xi I can be a reference for matrix maps and
+determinant characterizations rather than a sequential restart.
+
+\textbf{Second return: recover operator theory from one theorem.} Choose
+Grillet VIII.6--7 or Hungerford IV.6 then VII.4--5 as the principal
+module route. Read Xi II §2.5's actual Bézout and quotient-induction
+proofs as a comparison, not a second complete linear algebra course.
+Stop when you can obtain primary projections, invariant factors, Jordan
+blocks under the field hypothesis, and the block counts from kernel
+growth.
+
+\textbf{Third return: turn multilinearity into maps.} Read Xi II §6.2,
+especially Theorem 6.15 and the Hom/scalar-extension examples. Then use
+Grillet XI.5--6 and XIII.2--4 for balanced products, quotient
+constructions, and characteristic issues. Read Mac Lane III.1--2 and
+IV.1 when the universal examples are already familiar. Stop when you can
+define tensor-induced maps without a basis and derive Cauchy--Binet from
+\(\Lambda^r(gf)\).
+
+\textbf{Keep a metric branch active.} Read Xi II §§1.7, 3.3--3.5 and 3.8
+as needed for forms, adjoints, normal operators, and projections. This
+is central for Hadamard Gram matrices. Defer the rest of
+affine/projective geometry only according to current goals, without
+concluding that the content was replaced.
+
+\textbf{Introduce homology at its first real obstruction.} Read the
+exactness chapter here, then Hilton--Stammbach III.1--4 and IV.1--3 if
+you want the general construction. Grillet X.1, X.3 and XII are an
+alternative. Stop the first pass after computing the \(k[t]/(t^2)\)
+extension and explaining nonzero field-complex homology. Spectral
+sequences and derived categories are not prerequisites for the current
+Hadamard bridge.
+
+\textbf{For the confirmed problem direction.} Read the Hadamard bridge
+in order: Gram matrices and tensor closure; Xi III §5.6 finite fields;
+the character-sum proof and Paley blocks; cyclic group algebra and
+Fourier CRT; then the pinned third-round proofs with their color and
+Boolean equations. Use Xi III Chapter 3 or Grillet IX.7 for group
+algebras and representations, keeping Grillet's initial
+indecomposable/irreducible convention visible. Read the prior
+limitations before proposing a larger search. The essential stopping
+test is being able to say exactly which implication is necessary,
+sufficient, or only a relaxation.
+
+Hall's further Lie theory, Lang's local arithmetic, Hartshorne's
+scheme/sheaf theory, and Hirsch's transversality/bundle development can
+then be pursued as separate branches. Their prerequisite bridges are
+recorded, not placed in front of every use of linear algebra.
+
+\subsection{Reconstruction exercises}\label{reconstruction-exercises}
+
+These are deliberately small. Their purpose is to test whether a tool
+can be rebuilt, not to begin the later difficult problem-set campaign.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Quotient versus complement.} For \(U\subseteq V\), construct
+  \((V/U)^*\cong U^\circ\) and show why no complement is needed. Then
+  describe all sections of \(V\to V/U\) once one has been chosen.
+\item
+  \textbf{One invariant line.} In \(k[t]/(t^2)\), list the subspace
+  killed by \(t\). Prove it has no \(t\)-invariant complement, and
+  identify the associated nonzero Ext class.
+\item
+  \textbf{Recover a projection.} Assuming \(T^2(T-I)^2=0\), derive the
+  projector \(3T^2-2T^3\) from polynomial congruences. Check the
+  argument in characteristics \(2\) and \(3\) without dividing by those
+  integers.
+\item
+  \textbf{Recover Jordan data.} An operator has only eigenvalue
+  \(\lambda\) and successive kernel dimensions \(0,4,7,9,10,10\). Find
+  all its block sizes, minimal polynomial, and the dimension of its
+  commutant.
+\item
+  \textbf{Nonsplitting field.} Classify multiplication by \(t\) on
+  \(\mathbb R[t]/(t^2+1)\) as a real module and after complexification.
+  Explain which use of ``semisimple'' is valid before extension.
+\item
+  \textbf{Tensor universality.} Construct the currying bijection and
+  \(W\otimes V^*\to\operatorname{Hom}(V,W)\), specifying precisely which
+  one needs finite-dimensional \(V\). Prove the finite-rank obstruction.
+\item
+  \textbf{Determinants from wedges.} Derive the minors formula for
+  \(\Lambda^2f\) and the \(2\times2\) Cauchy--Binet identity for a
+  \(2\times3\) matrix times a \(3\times2\) matrix.
+\item
+  \textbf{Forms versus operators.} Give two congruent real symmetric
+  matrices that are not similar. Derive \(H^{-1}A^*H\) from the defining
+  adjoint identity, stating the Hermitian linearity convention.
+\item
+  \textbf{Homology survives.} For \(d:k^3\to k^2\), \(d(x,y,z)=(x,y)\),
+  compute the two homology groups of the two-term complex, and write an
+  explicit contractible/homology decomposition.
+\item
+  \textbf{The right group action.} Verify the inverse in the dual
+  action, and differentiate it to obtain the minus sign in the Lie
+  algebra dual action.
+\item
+  \textbf{Character sum.} Reproduce the count of \(y^2=x(x+a)\) over an
+  odd finite field. Identify every use of \(a\ne0\) and \(2\ne0\), then
+  check one Paley block multiplication.
+\item
+  \textbf{Compression and phase dependence.} Check the core-nine
+  compressed autocorrelation example. Explain why failure of its chosen
+  lifts alone cannot prove absence of all lifts. Separately give a
+  numerical assignment to three formally independent signs that violates
+  \(\xi_{p+q}=\xi_p\xi_q\).
+\end{enumerate}
+
+\subsection{Brief answer checks}\label{brief-answer-checks}
+
+For Exercise 1, pull back along the quotient, and use \(s'=s+i h\). For
+2, the killed subspace is \(kt\) and the class is \(1\in k\) under
+\(\operatorname{Ext}^1_{k[t]}(k,k)\cong k\). For 3, require a polynomial
+to be zero modulo \(t^2\) and one modulo \((t-1)^2\); the integer
+identity remains valid after any reduction of characteristic.
+
+For 4, the differences are \(4,3,2,1,0\), so the sizes are \(4,3,2,1\).
+The minimal polynomial is \((t-\lambda)^4\) and the commutant dimension
+is \(\sum_{i,j}\min(i,j)=30\) for \(i,j=1,2,3,4\). For 5, the real
+module is simple; after complexification it is the direct sum of the
+\(i\) and \(-i\) eigenspaces. It is semisimple over \(\mathbb R[t]\) but
+not real diagonalizable.
+
+For 6, currying needs no finite dimension, while surjectivity of the
+indicated Hom/tensor map does. For 7, sum the three intermediate
+\(2\)-subsets. For 8, \(I\) and \(2I\) suffice, and
+\(h(x,y)=\bar x^{\mathsf T}Hy\) is the convention used here. For 9,
+\(H_1\) is the \(z\)-axis and \(H_0=0\); the \((x,y)\) coordinates map
+isomorphically to \(k^2\). For 10, transpose reverses products and
+differentiation of an inverse at the identity contributes a minus sign.
+For 11, the count is \(q-1\). For 12, choose all three phase signs
+negative: the product of the first two is positive, contradicting the
+third. These checks indicate the target, while the chapters provide the
+proofs to reconstruct.
+
+\subsection{What can be deferred}\label{what-can-be-deferred}
+
+Defer a formula once its map or universal property can be reconstructed.
+Defer a subject when it has no role in the current destination. Do not
+defer the hypotheses, the equivalence relation, or a known failure case.
+For this collection, an effective memory sheet contains definitions and
+four or five counterexamples, with links back to proofs, rather than a
+long inventory of named theorems.
+
+\section{Architecture: structures, maps, and
+obstructions}\label{architecture-structures-maps-and-obstructions}
+
+\subsection{The organizing claim}\label{the-organizing-claim}
+
+Much ordinary linear algebra is the study of finite-dimensional vector
+spaces with additional structure. The most reusable move is to identify
+that structure, declare which maps preserve it, and then ask which
+familiar constructions remain available. An abstract tool earns its
+place when it preserves information or exposes an obstruction that a
+coordinate calculation conceals.
+
+Four layers organize the collection:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Linear structure.} Kernels, images, quotients, duals, direct
+  sums, and tensor products describe how linear information is
+  discarded, tested, assembled, and transported.
+\item
+  \textbf{An action or a multiplication.} An endomorphism makes a vector
+  space a \(k[t]\)-module. A group action makes it a \(k[G]\)-module. A
+  bilinear multiplication is a map \(V\otimes V\to V\) satisfying
+  specified identities.
+\item
+  \textbf{Decomposition and its obstructions.} Idempotents encode direct
+  sums; coprime annihilators produce idempotents; semisimplicity
+  guarantees invariant complements. Extensions measure ways in which
+  complements fail to exist.
+\item
+  \textbf{Variation and locality.} Families of vector spaces introduce
+  bundles and sheaves; changing coefficients introduces localization,
+  integrality, and arithmetic. A theorem about each individual vector
+  space need not control a family or an integral lattice.
+\end{enumerate}
+
+These layers are connected, but none erases the others. A classification
+up to arbitrary linear isomorphism does not solve a problem about
+lengths, positive forms, an integral lattice, or smooth variation.
+
+\subsection{The prerequisite map}\label{the-prerequisite-map}
+
+The following arrows mean a useful prerequisite for the stated
+destination, not a claim that every possible approach must take this
+route.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Foundation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Construction or theorem it supports
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Destination and extra bridge
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Equivalence relations, linear maps, subspaces & Quotients, kernels,
+first isomorphism theorem & Exact sequences; then modules and abelian
+categories if needed \\
+Bases, linear functionals, quotients & Dual exact sequences,
+annihilators, evaluation & Adjoints after choosing a form; trace duality
+after separability \\
+Direct sums, polynomial division, Bézout & Coprime primary decomposition
+& \(k[t]\)-modules, rational/Jordan forms, commuting operators \\
+PID ideals and presentations & Smith normal form, cyclic module
+decomposition & Integral abelian groups and operator classification;
+higher-dimensional polynomial rings need different tools \\
+Bilinear maps and quotients & Tensor products and Hom--tensor adjunction
+& Scalar extension, representations, multilinear algebra \\
+Tensor algebra and relations & Symmetric and exterior algebras &
+Polynomial coordinate rings, determinants, differential forms after
+smoothness \\
+Splitting and projective presentations & \(\operatorname{Ext}^1\),
+\(\operatorname{Tor}_1\) & Extension obstructions; derived functors
+after complexes and homotopies \\
+Groups, invariant subspaces, duals, tensors & Group representations,
+Maschke, Schur & Matrix Lie groups after topology and the exponential
+map; Lie algebra representations after differentiation \\
+Finite field extensions and multiplication maps & Norm, trace, separable
+trace pairing & Lang: integral closure, Dedekind ideals, valuations,
+completions, ramification \\
+Commutative rings, modules, localization & Affine coordinate rings,
+local rings, tangent spaces & Hartshorne: sheaves, schemes, locally free
+sheaves, cohomology \\
+Real linear maps, inner products, multivariable calculus & Tangent
+spaces, normal spaces, quadratic forms & Hirsch: manifolds,
+function-space topology, approximation, transversality, bundles \\
+\end{longtable}
+
+An economical order for this study is
+
+\[
+\text{maps and quotients}\longrightarrow
+\begin{cases}
+\text{duality and splitting},\\
+\text{polynomials and modules},\\
+\text{bilinear maps and tensors}.
+\end{cases}
+\]
+
+These three paths rejoin at invariant decompositions, determinant lines,
+forms, and representations. Exactness becomes useful as soon as a
+construction stops preserving injections or an invariant complement
+fails. There is no need to put spectral sequences in front of that first
+obstruction.
+
+\subsection{What the collection actually
+contributes}\label{what-the-collection-actually-contributes}
+
+Xi's \CJKtext{基础代数} I develops the concrete languages of equations,
+matrix maps, determinants, polynomial division, roots, symmetric
+polynomials, and resultants. Volume II develops vector spaces and
+operators, but also the metric and geometric meaning of those objects.
+Volume III adds transformation groups, representations, modules, Lie
+algebra examples, and Galois theory. This is a connected course, not
+merely three fragments awaiting replacement by a graduate book.
+
+Grillet is particularly well aligned with the present structural route:
+VIII.6--7 connects PID modules to Jordan form, X handles splitting and
+projectivity, XI develops Hom and tensors, XII introduces Ext/Tor, and
+XIII builds free algebras and their quotients. Hungerford independently
+recommends PID torsion modules before his linear algebra chapter
+(printed p.~xviii, PDF p.~15). This is strong evidence that the module
+viewpoint is a sound organizational choice, rather than a gratuitous
+modernization of the user's plan.
+
+Mac Lane supplies a language for recognizing the same construction in
+different categories. His universal arrows and representability are
+useful after several concrete examples have been worked through. They do
+not by themselves provide Jordan bases, a spectral theorem, or a
+treatment of Euclidean geometry.
+
+Hilton--Stammbach supplies the next layer when exactness fails:
+projective presentations, extension classes, complexes, and derived
+functors. Its route through extensions before general derived functors
+is especially compatible with a reader coming from linear algebra. Hall
+turns familiar matrix groups and the exponential into systematic Lie
+theory and develops representation theory beyond the initial
+\(\mathfrak{sl}_2\) example.
+
+Hartshorne and Lang are destinations requiring new bridges. Neither
+should be mistaken for an interchangeable abstract-algebra text. Hirsch
+is a different destination again: his preface (printed p.~vii, PDF p.~8)
+deliberately avoids tensors and differential forms, and largely avoids
+algebraic topology. The relevant foundations for his approach are
+geometry, analysis, and topology as well as linear algebra.
+
+\subsection{The memory hierarchy}\label{the-memory-hierarchy}
+
+There are three different things to retain.
+
+\textbf{Definitions that reconstruct maps.} Remember the quotient
+factorization property, tensor universality, evaluation, and the
+equations defining a split sequence or an idempotent. Each tells you how
+a new map must be defined and what must be checked for it to exist.
+
+\textbf{Theorems whose hypotheses control classification.} Remember
+finite generation and the PID hypothesis in the module structure
+theorem; splitting of the minimal polynomial for Jordan form; positivity
+and the base field in the spectral theorem; invertibility of \(|G|\) in
+Maschke's theorem; separability in trace duality. The missing hypothesis
+often explains the entire difficulty.
+
+\textbf{Geometric or computational interpretations.} A quotient is not a
+preferred complement. A dual is not an inner-product identification. A
+tensor is not usually a pure tensor. A canonical form is not a canonical
+basis. A fiber is not a smooth bundle, and a finite-dimensional vector
+space over a number field is not its integral lattice. These
+distinctions protect the structural tools from misuse.
+
+\subsection{What this architecture does not
+promise}\label{what-this-architecture-does-not-promise}
+
+Two commuting operators give a module over \(k[s,t]\), which is
+generally not a PID. The one-operator classification therefore does not
+automatically extend to pairs. Likewise, finite-dimensionality over
+\(k\) does not make a \(k[G]\)-module semisimple, and a bundle of rank
+\(n\) does not automatically possess a global frame. These are
+productive boundaries, not reasons to abandon abstraction.
+
+The existing algebra direction has been confirmed as the
+Hadamard/Williamson study. Its dedicated bridge locates its Gram
+matrices, integral cyclic group algebras, finite-field characters,
+symmetry quotients, and Boolean constraints within this map. The other
+subject bridges retain their independent value; they are not presented
+as prerequisites for that particular problem.
+
+\section{Quotients, duality, and
+splitting}\label{quotients-duality-and-splitting}
+
+\subsection{Conventions and the type of a
+map}\label{conventions-and-the-type-of-a-map}
+
+Throughout the core, \(k\) is a field and vector spaces are
+finite-dimensional unless a paragraph explicitly removes that
+hypothesis. Rings are associative with identity, modules are unital, and
+modules are left modules unless sides are specified. A commutative ring
+is stated when tensor products are themselves used as modules over that
+ring. The zero vector space is allowed.
+
+For a linear map \(f:V\to W\), \(f\) is the map and \(f(v)\) is its
+value at \(v\in V\). Write \(\operatorname{im}f\subseteq W\) and
+\(\ker f\subseteq V\). Composition \(g\circ f\) first applies \(f\). An
+equality between maps includes their domains and codomains; when a
+subspace is identified with its image, the inclusion will be stated.
+This matters especially when comparing an operator on a quotient with a
+restriction to a complement.
+
+\subsection{Quotients: impose relations
+once}\label{quotients-impose-relations-once}
+
+Let \(U\subseteq V\) be a subspace. Define \(v\sim w\) if \(v-w\in U\)
+and \(V/U=\{v+U:v\in V\}\). Addition and scalar multiplication of cosets
+are well defined because replacing representatives changes the result by
+an element of \(U\). Let \(q:V\to V/U\), \(q(v)=v+U\).
+
+\textbf{Quotient principle.} For any vector space \(X\) and linear map
+\(f:V\to X\), there is a unique linear map \(\bar f:V/U\to X\) with
+\(\bar f\circ q=f\) if and only if \(U\subseteq\ker f\).
+
+\textbf{Proof.} Necessity follows from \(q(u)=0\) for \(u\in U\).
+Conversely set \(\bar f(v+U)=f(v)\). If \(v-w\in U\), then
+\(f(v)=f(w)\); hence this is well defined. It is linear by the coset
+operations. Surjectivity of \(q\) forces uniqueness. \(\square\)
+
+The construction has a concrete description, but its reusable content is
+the factorization property. When constructing a map from a quotient,
+specify its value on a representative and prove it annihilates the
+relations. When proving two maps from the quotient equal, precompose
+with \(q\).
+
+\textbf{First isomorphism theorem.} If \(f:V\to W\) is linear, then
+
+\[V/\ker f\xrightarrow{\ \widetilde f\ }\operatorname{im}f,
+\qquad \widetilde f(v+\ker f)=f(v)
+\]
+
+is a canonical isomorphism. It is surjective by definition of the image;
+its kernel is zero by definition of \(\ker f\). Thus rank--nullity
+follows from dimension of a quotient, rather than being an isolated
+formula.
+
+\textbf{Why universal objects are unique.} If \((Q,q)\) and \((Q',q')\)
+have the same quotient property for \(U\subseteq V\), there are unique
+maps \(a:Q\to Q'\) and \(b:Q'\to Q\) satisfying \(a q=q'\) and
+\(b q'=q\). Then \(baq=q\), so uniqueness gives \(ba=1_Q\); similarly
+\(ab=1_{Q'}\). Uniqueness means a unique isomorphism preserving the
+specified structure, not a unique bare vector-space isomorphism.
+
+Two useful reconstructions are
+
+\[
+U/(U\cap W)\cong (U+W)/W,
+\qquad (V/U)/(W/U)\cong V/W\quad(U\subseteq W\subseteq V).
+\]
+
+For the first, restrict the quotient map \(V\to V/W\) to \(U\) and
+compute its kernel. For the second, send \((v+U)+(W/U)\) to \(v+W\) and
+apply the quotient principle twice. These proofs explain the maps as
+well as the dimensions.
+
+\textbf{Recognition signal.} Whenever a problem says ``modulo,''
+identifies choices, or asserts that a quantity depends only on an
+equivalence class, a quotient factorization is present. If an operation
+is not compatible with the relation, the quotient does not inherit that
+operation. For example, \(T:V\to V\) induces \(\bar T:V/U\to V/U\)
+precisely when \(T(U)\subseteq U\).
+
+\subsection{Duality: test vectors by scalar-valued
+maps}\label{duality-test-vectors-by-scalar-valued-maps}
+
+Define \(V^*=\operatorname{Hom}_k(V,k)\). For \(f:V\to W\) define
+
+\[f^*:W^*\to V^*,\qquad f^*(\lambda)=\lambda\circ f.\]
+
+Then \((g\circ f)^*=f^*\circ g^*\) and \(1_V^*=1_{V^*}\). The reversal
+is forced by the domains. In dual bases the matrix of \(f^*\) is the
+transpose of the matrix of \(f\); complex conjugation is absent here.
+
+The evaluation map is
+
+\[\epsilon_V:V\to V^{**},\qquad
+\epsilon_V(v)(\lambda)=\lambda(v).\]
+
+If \(e_1,\ldots,e_n\) is a basis with dual basis \(e^1,\ldots,e^n\),
+then \(\epsilon_V(e_i)\) is the corresponding dual basis of \(V^{**}\).
+Thus \(\epsilon_V\) is an isomorphism. It is natural: for \(f:V\to W\),
+
+\[f^{**}\circ\epsilon_V=\epsilon_W\circ f.\]
+
+Indeed, evaluate either side at \(v\in V\) and \(\lambda\in W^*\); both
+give \(\lambda(f(v))\). The proof uses a basis to establish
+invertibility, but the map itself uses no chosen basis.
+
+There is generally no such preferred identification \(V\cong V^*\). A
+basis or a nondegenerate bilinear form provides one, and different
+choices provide different maps. Naturality of the double dual should not
+be confused with a metric on \(V\).
+
+For \(U\subseteq V\) define its annihilator
+
+\[U^\circ=\{\lambda\in V^*: \lambda(u)=0\text{ for every }u\in U\}.\]
+
+The quotient principle identifies \((V/U)^*\) canonically with
+\(U^\circ\): pull back along \(q\). Restriction to \(U\) gives an exact
+sequence
+
+\[0\longrightarrow(V/U)^*\xrightarrow{q^*}V^*
+\xrightarrow{\mathrm{res}}U^*\longrightarrow0.\]
+
+To prove surjectivity of restriction, extend a basis of \(U\) to one of
+\(V\), and prescribe zero on the added vectors. The extension exists; it
+is usually not unique. The sequence is canonical even though a chosen
+splitting is not.
+
+It follows that \(\dim U^\circ=\dim V-\dim U\). Under \(V\cong V^{**}\),
+\((U^\circ)^\circ=U\): inclusion is immediate, and the dimensions agree.
+For \(f:V\to W\),
+
+\[\ker f^*=(\operatorname{im}f)^\circ,
+\qquad \operatorname{im}f^*=(\ker f)^\circ.\]
+
+The second identity follows by factoring a functional vanishing on
+\(\ker f\) through \(\operatorname{im}f\) and extending it to \(W\).
+Consequently \(\operatorname{rank}f^*=\operatorname{rank}f\) and row
+rank equals column rank. These are manifestations of testing a map by
+functionals.
+
+\textbf{Boundary.} For infinite-dimensional algebraic vector spaces,
+dualization of short exact sequences is still exact when bases and their
+usual choice principles are available. But \(V\to V^{**}\) need not be
+surjective and \(V^*\otimes W\to\operatorname{Hom}(V,W)\) generally has
+only finite-rank maps in its image. Continuous duals in analysis form a
+different theory; the algebraic extension argument need not preserve
+continuity.
+
+\subsection{Direct sums and
+idempotents}\label{direct-sums-and-idempotents}
+
+The external direct sum \(A\oplus C\) has inclusions \(i_A,i_C\) and
+projections \(p_A,p_C\) satisfying
+
+\[p_Ai_A=1_A,\quad p_Ci_C=1_C,\quad p_Ai_C=p_Ci_A=0,
+\quad i_Ap_A+i_Cp_C=1_{A\oplus C}.\]
+
+These equations are more useful than the ordered-pair notation: they
+allow block matrices and maps to be reconstructed without coordinates. A
+finite direct sum is both a product and a coproduct. For infinite
+families, the direct sum consists of finitely supported tuples, whereas
+the product includes all tuples; they are different constructions.
+
+\textbf{Idempotent principle.} For an endomorphism \(P:V\to V\), the
+equation \(P^2=P\) is equivalent to a decomposition
+
+\[V=\operatorname{im}P\oplus\ker P\]
+
+in which \(P\) is projection onto the first summand.
+
+\textbf{Proof.} Write \(v=P(v)+(v-P(v))\); the second term lies in
+\(\ker P\). If \(x=P(y)\) and \(P(x)=0\), then \(x=P^2(y)=P(y)=0\).
+Conversely projection in a direct sum plainly satisfies \(P^2=P\).
+\(\square\)
+
+This works for modules over any ring. If \(P\) commutes with an operator
+\(T\), both summands are \(T\)-invariant. Conversely a decomposition
+into \(T\)-invariant summands gives a projection commuting with \(T\).
+Thus finding a decomposition can be translated into finding idempotents
+in a commutant.
+
+\textbf{Failure of a tempting test.} Pairwise zero intersection of three
+subspaces does not imply their sum is direct. In \(k^2\), the lines
+spanned by \(e_1\), \(e_2\), and \(e_1+e_2\) have pairwise intersection
+zero, but satisfy a nontrivial three-term relation. The right test is
+that the addition map \(\bigoplus_i U_i\to V\) be injective, or that
+\(U_i\cap\sum_{j\ne i}U_j=0\) for each \(i\).
+
+\subsection{Splitting: existence versus
+choice}\label{splitting-existence-versus-choice}
+
+A short exact sequence
+
+\[0\longrightarrow A\xrightarrow{i}B\xrightarrow{p}C\longrightarrow0\]
+
+means that \(i\) is injective, \(p\) is surjective, and
+\(\ker p=\operatorname{im}i\). It splits if there exists a linear
+section \(s:C\to B\) with \(p\circ s=1_C\). In that case
+
+\[F:A\oplus C\to B,\qquad F(a,c)=i(a)+s(c)\]
+
+is an isomorphism preserving the inclusion and quotient maps.
+
+\textbf{Proof.} If \(F(a,c)=0\), apply \(p\) to get \(c=0\), then
+injectivity of \(i\) gives \(a=0\). For \(b\in B\), the element
+\(b-s(p(b))\) lies in \(\ker p\), so is \(i(a)\) for a unique \(a\).
+This also describes \(F^{-1}\). A retraction \(r:B\to A\), \(r i=1_A\),
+is equivalent: its kernel is a complement to \(i(A)\) and restricts
+under \(p\) isomorphically to \(C\). \(\square\)
+
+Over a field, lift a basis of \(C\) to \(B\) to obtain \(s\). Over a
+general ring, the lifts may violate relations in \(C\); that is the
+first source of extension obstructions.
+
+The set of sections, if nonempty, is an affine space under
+\(\operatorname{Hom}(C,A)\). For sections \(s,s'\), \(p(s'-s)=0\), so
+uniquely \(s'-s=i\circ h\) for \(h:C\to A\). Conversely \(s+i h\) is a
+section for any \(h\). This statement holds in module categories with
+the indicated Hom group. It precisely locates the ambiguity.
+
+There is no natural complement in general. In the split model
+\(B=A\oplus C\), the automorphism
+
+\[u_h(a,c)=(a+h(c),c)\]
+
+preserves \(i\) and \(p\) but sends the section \(c\mapsto(0,c)\) to
+\(c\mapsto(h(c),c)\). Whenever \(h\ne0\), no distinguished section can
+be invariant under all such structure-preserving automorphisms. A chosen
+positive inner product changes the problem: the orthogonal complement
+then becomes canonical relative to that extra data.
+
+\subsection{What to reconstruct and
+when}\label{what-to-reconstruct-and-when}
+
+For an ordinary rank problem, first factor through the image. For
+constraints on functionals, take annihilators. For a proposed
+decomposition, construct its projections and check their equations. For
+an invariant subspace, ask explicitly whether the desired complement
+must preserve an operator or a group action. The underlying vector-space
+splitting proves less than an equivariant one.
+
+The main source anchors are Xi II §§1.4--1.6 and 2.4 (printed
+pp.~14--24, 67--71; PDF pp.~20--30, 73--77), Grillet VIII.2--5 and X.1
+(especially X.1.5, printed p.~395, PDF p.~407), and Mac Lane III.1--2
+for the broader universal-property language. Proofs above are written
+out independently rather than inferred from those references.
+
+\section{Operators as modules and polynomial
+projections}\label{operators-as-modules-and-polynomial-projections}
+
+\subsection{Put the operator into the scalar
+ring}\label{put-the-operator-into-the-scalar-ring}
+
+Let \(T:V\to V\) be \(k\)-linear. Define an action of \(R=k[t]\) on
+\(V\) by
+
+\[p\cdot v=p(T)(v),\qquad
+p(T)=a_0 1_V+a_1T+\cdots+a_dT^d
+\quad\text{if }p(t)=\sum_{j=0}^d a_jt^j.\]
+
+Polynomial evaluation is a unital \(k\)-algebra homomorphism
+\(k[t]\to\operatorname{End}_k(V)\), because the powers of a single
+operator commute. Denote the resulting module by \(V_T\).
+
+For another operator \(S:W\to W\), a map \(f:V\to W\) is \(k[t]\)-linear
+exactly when it is \(k\)-linear and
+
+\[f\circ T=S\circ f.\]
+
+The forward implication follows by applying \(f\) to \(t\cdot v\); the
+reverse follows first for powers, then for polynomials. Thus operators
+and intertwining maps form the same category as \(k[t]\)-modules whose
+underlying \(k\)-spaces lie in the chosen dimension class. In
+particular, finite-dimensional operators correspond to modules
+finite-dimensional over \(k\), a smaller class than all finitely
+generated \(k[t]\)-modules. Invariant subspaces are submodules,
+invariant quotient operators are quotient modules, and similarity means
+module isomorphism. This translation preserves the maps, not merely the
+list of isomorphism classes.
+
+If \(n=\dim_k V<\infty\), a \(k\)-basis generates \(V_T\) over \(R\).
+Moreover, \(1_V,T,\ldots,T^{n^2}\) are linearly dependent in
+\(\operatorname{End}_k(V)\), so some nonzero polynomial annihilates
+\(V_T\). Its annihilator ideal has a unique monic generator \(m_T\), the
+minimal polynomial. For \(V=0\), set \(m_T=1\). This argument avoids
+using Cayley--Hamilton before proving it.
+
+\subsection{The PID structure theorem and its
+mechanism}\label{the-pid-structure-theorem-and-its-mechanism}
+
+\textbf{Structure theorem.} If \(R\) is a principal ideal domain and
+\(M\) is a finitely generated \(R\)-module, then
+
+\[M\cong R^r\oplus\bigoplus_{i=1}^s R/(d_i),
+\qquad d_1\mid d_2\mid\cdots\mid d_s,\]
+
+where the \(d_i\) are nonzero nonunits. The free rank and the
+invariant-factor ideals \((d_i)\) are unique. Over \(k[t]\), choose the
+\(d_i\) monic. The isomorphism and its cyclic generators are generally
+not canonical.
+
+Here is the construction in the Euclidean rings relevant to ordinary
+linear algebra, \(k[t]\) and \(\mathbb Z\). Write \(M\) as a cokernel of
+a matrix \(A:R^a\to R^b\). Such a finite presentation exists: a
+submodule of a finite free module over a PID is finite free. Invertible
+row and column operations change the bases of the target and source and
+preserve its cokernel.
+
+If \(A\ne0\), move a nonzero entry into the first position. Divide
+entries in its column and row by this pivot. A nonzero remainder can be
+moved to the pivot and has smaller Euclidean size. Repetition ends with
+a pivot dividing its entire row and column, which can then be cleared.
+If the pivot fails to divide an entry of the remaining block, add the
+corresponding row to the first row; a subsequent column division
+produces a smaller nonzero pivot. Thus this stage also terminates. The
+pivot now divides the remaining block. Repeat on that block to obtain a
+diagonal matrix with \(d_i\mid d_{i+1}\), including units and zero
+entries as appropriate. Taking cokernels gives the theorem's existence
+statement in these Euclidean cases.
+
+For uniqueness, let \(I_j(A)\) be the ideal generated by all
+\(j\times j\) minors. These ideals are unchanged by invertible row or
+column operations; multilinearity of minors gives containment in one
+direction and the inverse operation gives the other. For Smith diagonal
+form,
+
+\[I_j(A)=(d_1d_2\cdots d_j)\]
+
+for the nonzero diagonal positions, including unit positions. Thus the
+successive products, and hence the factors up to units, are determined.
+For arbitrary module presentations, invariance of the corresponding
+presentation ideals is a further theorem; alternatively uniqueness of
+the abstract decomposition follows from primary filtrations below. We
+are not identifying matrices of different presentation sizes without
+that extra argument.
+
+For a general PID there need not be a Euclidean norm, so the specific
+descent algorithm above is not a proof in that generality. Grillet
+VIII.6.1--6.3 (printed pp.~336--342, PDF pp.~348--354) gives the general
+proof using principal ideals and a basis theorem. This is a cited
+extension of the construction just explained.
+
+\textbf{Why finite-dimensional operator modules have no free summand.}
+The \(k\)-dimension of \(k[t]\) is infinite, whereas \(\dim_k V\) is
+finite. Hence
+
+\[V_T\cong\bigoplus_{i=1}^s k[t]/(d_i),\qquad d_1\mid\cdots\mid d_s.\]
+
+Every block \(k[t]/(d)\) has basis \(1,t,\ldots,t^{d_0-1}\) if
+\(d_0=\deg d>0\). Multiplication by \(t\) has companion matrix
+
+\[C(d)=\begin{pmatrix}
+0&0&\cdots&0&-a_0\\
+1&0&\cdots&0&-a_1\\
+0&1&\cdots&0&-a_2\\
+\vdots&\vdots&\ddots&\vdots&\vdots\\
+0&0&\cdots&1&-a_{d_0-1}
+\end{pmatrix},\quad
+d(t)=t^{d_0}+a_{d_0-1}t^{d_0-1}+\cdots+a_0.
+\]
+
+The subdiagonal entries are all \(1\) and unspecified entries are \(0\);
+for \(d_0=1\) this is the one-entry matrix \((-a_0)\). The defining
+relation \(d(t)=0\) explains the last column. Expansion of
+\(\det(xI-C(d))\) along the last column gives \(d(x)\); equivalently the
+cofactor of its \(j\)th last-column entry is the appropriate power of
+\(x\). The invariant-factor blocks give the rational canonical form over
+any field. Consequently
+
+\[\chi_T=\prod_i d_i,\qquad m_T=d_s\quad(V\ne0).\]
+
+In particular \(m_T\mid\chi_T\), so \(\chi_T(T)=0\). This derives
+Cayley--Hamilton from the structure theorem, rather than assuming it in
+the proof that the module is torsion. For \(V=0\) the empty product is
+\(1\).
+
+There is also a useful presentation that makes contact with matrices:
+
+\[V_T\cong\operatorname{coker}\bigl(tI-A:R^n\to R^n\bigr),\]
+
+where \(A\) is the matrix of \(T\) in a chosen basis. Send a vector
+polynomial \(p(t)=\sum_j t^jv_j\) to \(\sum_j A^jv_j\). The relation
+\(t v\equiv Av\) reduces every class modulo \((tI-A)R^n\) to a constant.
+It also shows that a constant class maps to itself in \(k^n\), so no
+nonzero constant is killed. Thus the induced map is bijective. Computing
+Smith form of \(tI-A\) therefore computes similarity invariants of
+\(A\); this is not the same as applying arbitrary left and right
+equivalence to \(A\) over \(k\).
+
+\subsection{Bézout and Chinese remainder
+projections}\label{buxe9zout-and-chinese-remainder-projections}
+
+Suppose \(f_1,\ldots,f_r\in k[t]\) are pairwise coprime and
+\(m=f_1\cdots f_r\) annihilates \(T\). Set \(g_i=m/f_i\). Bézout gives
+\(a_i g_i\equiv1\pmod{f_i}\). Let \(e_i=a_i g_i\) in \(k[t]/(m)\). Its
+residues are \(1\) modulo \(f_i\) and \(0\) modulo every other factor.
+The Chinese remainder theorem, or divisibility by each coprime factor,
+gives
+
+\[e_i^2=e_i,\qquad e_ie_j=0\ (i\ne j),\qquad\sum_i e_i=1
+\quad\pmod m.\]
+
+Evaluate at \(T\) to obtain projections \(P_i=e_i(T)\) satisfying these
+same identities in \(\operatorname{End}_k(V)\). Their images are exactly
+\(\ker f_i(T)\): first \(f_i e_i\) is divisible by \(m\), so the image
+lies there; conversely \(e_i-1\) is divisible by \(f_i\), so \(e_i(T)\)
+fixes that kernel. Hence
+
+\[V=\bigoplus_i\ker f_i(T).\]
+
+The polynomials \(a_i\) are not unique, but the projections are uniquely
+determined by the specified factors and the action. If \(m\) is the
+minimal polynomial and the factors are its primary powers, these are the
+canonical primary summands. Any operator commuting with \(T\) commutes
+with all the \(P_i\), and thus preserves these summands.
+
+\textbf{Small example.} If \(T^2(T-1_V)=0\), take \(P_1=T^2\) and
+\(P_0=1_V-T^2\). Indeed \(T^3=T^2\) implies \(T^4=T^2\), so
+\(P_1^2=P_1\), and
+
+\[V=\ker T^2\oplus\ker(T-1_V).\]
+
+With \(T^2(T-1_V)^2=0\) instead, one may take
+
+\[P_1=3T^2-2T^3,\qquad P_0=1_V-3T^2+2T^3.\]
+
+These integer-coefficient formulas work in every characteristic: their
+defining congruences are polynomial identities over \(\mathbb Z\). There
+is no division by \(2\) or \(3\). Only the distinctness of \(0\) and
+\(1\) is used.
+
+\textbf{What fails without coprimality.} Take \(R/(t^2)\). Its submodule
+\(tR/(t^2)\) and quotient \(R/(t)\) are both one-dimensional over \(k\).
+They do not give an invariant direct sum: the only vectors killed by
+\(t\) are in \(tR/(t^2)\). Dividing one repeated primary factor into
+smaller pieces does not create Bézout projectors.
+
+\subsection{Jordan form and what is actually
+canonical}\label{jordan-form-and-what-is-actually-canonical}
+
+Factor the invariant factors into monic irreducibles. Chinese
+remaindering gives blocks \(k[t]/(p^a)\). This elementary-divisor
+decomposition exists over every field. If the minimal polynomial splits
+over \(k\), each \(p=t-\lambda\). Writing \(N=T-\lambda1_V\) on a block
+of size \(a\), choose a cyclic vector \(v\) with \(N^{a-1}v\ne0\) and
+\(N^av=0\). The ordered basis
+
+\[N^{a-1}v,N^{a-2}v,\ldots,Nv,v\]
+
+gives the Jordan block \(J_a(\lambda)\) with \(1\) on the superdiagonal.
+Thus Jordan form requires splitting of \(m_T\) over \(k\), not
+necessarily that \(k\) itself be algebraically closed.
+
+To recover block sizes without choosing chains, put
+\(a_j=\dim\ker(T-\lambda1_V)^j\) and \(a_0=0\). Every \(\lambda\)-block
+of size \(b\) contributes \(\min(j,b)\); other primary blocks contribute
+zero because \(T-\lambda1_V\) is invertible there. Therefore
+
+\[\begin{aligned}
+a_j-a_{j-1}&=\#\{\lambda\text{-blocks of size at least }j\},\\
+2a_j-a_{j-1}-a_{j+1}&=\#\{\lambda\text{-blocks of size exactly }j\}.
+\end{aligned}\]
+
+For example, nullities \(0,3,5,6,6\) give three blocks, two of size at
+least \(2\), one of size at least \(3\), and none of size at least
+\(4\): the sizes are \(3,2,1\). This gives uniqueness and a practical
+reconstruction procedure. More generally a \(p^b\)-block contributes
+\(\deg(p)\min(j,b)\) to \(\dim_k\ker p(T)^j\), so these filtrations
+recover the elementary divisors over a nonsplitting field as well.
+
+The primary subspaces and block-size multiset are intrinsic. Individual
+cyclic summands, Jordan chains, their ordering, and a conjugating matrix
+are choices. Conflating a canonical list of invariants with a canonical
+basis leads to many false naturality claims.
+
+\textbf{Diagonalizability and semisimplicity.} \(T\) is diagonalizable
+over \(k\) if and only if \(m_T\) is a product of distinct linear
+factors. The \(k[t]\)-module \(V_T\) is semisimple if and only if
+\(m_T\) is a product of distinct monic irreducible factors. These differ
+when the field does not split \(m_T\). A real plane rotation through a
+nonzero angle other than \(\pi\) can be a simple \(\mathbb R[t]\)-module
+without having a real eigenvector.
+
+\subsection{Hom spaces and the
+commutant}\label{hom-spaces-and-the-commutant}
+
+A module map \(R/(f)\to R/(g)\) is determined by the image \(y\) of
+\(1\), and its well-definedness condition is \(f y=0\) in \(R/(g)\). For
+monic \(d=\gcd(f,g)\) write \(f=d f_0\), \(g=d g_0\) with
+\(\gcd(f_0,g_0)=1\). The condition \(g\mid f y\) is equivalent to
+\(g_0\mid y\). Thus
+
+\[\operatorname{Hom}_R(R/(f),R/(g))
+\cong R/(d),\qquad h\bmod d\longmapsto
+\bigl(1\longmapsto g_0h\bmod g\bigr).\]
+
+Cancellation here takes place in the domain \(k[t]\). In particular
+
+\[\dim_k\operatorname{Hom}_R(R/(f),R/(g))=\deg\gcd(f,g).\]
+
+The commutant of \(T\) is \(\operatorname{End}_{k[t]}(V_T)\). If the
+elementary divisors are \((t-\lambda)^{b_{\lambda,i}}\), then
+
+\[\dim_k\{S:ST=TS\}
+=\sum_\lambda\sum_{i,j}\min(b_{\lambda,i},b_{\lambda,j}).\]
+
+This computes the number of independent commuting maps without solving
+all matrix-entry equations. For a single cyclic block its commutant is
+\(k[T]\). For multiple identical blocks there are extra intertwiners, so
+a commuting operator need not be a polynomial in \(T\).
+
+\subsection{Fitting decomposition and the boundary of the
+method}\label{fitting-decomposition-and-the-boundary-of-the-method}
+
+For \(N\ge\dim V\), both the kernels and images of powers of \(T\) have
+stabilized. Then
+
+\[V=\ker T^N\oplus\operatorname{im}T^N.\]
+
+If \(v=T^Nw\) lies in the intersection, then \(T^{2N}w=0\);
+stabilization gives \(w\in\ker T^N\), so \(v=0\). Rank--nullity gives
+the direct sum. The restriction to the first summand is nilpotent and to
+the second is bijective. These subspaces are canonical, though a basis
+for either is not. This is the primary split into the factor \(t\) and
+the factors coprime to it, obtained without explicitly factoring the
+minimal polynomial.
+
+For two commuting operators the ring is \(k[s,t]\). It is not a PID: the
+ideal \((s,t)\) is not principal. A simultaneous eigenbasis exists for a
+finite family of commuting diagonalizable operators over a common
+splitting field: decompose into eigenspaces of one operator and note
+that the others preserve them. Their restrictions remain diagonalizable
+because their minimal polynomials divide the original square-free split
+minimal polynomials, so induction applies. Without diagonalizability,
+the one-variable module classification does not provide simultaneous
+Jordan form.
+
+\textbf{Source route.} Xi II Theorems 2.51--2.57 and the
+existence/uniqueness proofs (printed pp.~72--77; PDF pp.~78--83) already
+contain Bézout decomposition, quotient induction, and intrinsic block
+counts. Grillet VIII.6--7 supplies the module derivation (printed
+pp.~336--346; PDF pp.~348--358); Hungerford IV.6 and VII.4--5 supplies
+another module-first route. The presentation, centralizer, and Fitting
+arguments above are included so the route is operational rather than a
+list of references.
+
+\section{Hom and tensor products}\label{hom-and-tensor-products}
+
+\subsection{Hom records maps and
+variance}\label{hom-records-maps-and-variance}
+
+\(\operatorname{Hom}_k(V,W)\) is a vector space under pointwise
+operations. Maps \(a:V'\to V\) and \(b:W\to W'\) induce
+
+\[\operatorname{Hom}(V,W)\to\operatorname{Hom}(V',W'),
+\qquad f\longmapsto b\circ f\circ a.\]
+
+The source variable reverses arrows and the target variable preserves
+them. For modules over a noncommutative ring,
+\(\operatorname{Hom}_R(M,N)\) is always an abelian group but generally
+has no natural left \(R\)-module structure. Commutativity or specified
+bimodule actions must be supplied before treating it as one.
+
+The kernel universal property gives left exactness. For a short exact
+sequence \(0\to A\xrightarrow{i}B\xrightarrow{p}C\to0\) of
+\(R\)-modules,
+
+\[0\to\operatorname{Hom}_R(X,A)\xrightarrow{i\circ-}
+\operatorname{Hom}_R(X,B)\xrightarrow{p\circ-}
+\operatorname{Hom}_R(X,C)\]
+
+is exact. A map \(X\to B\) killed by \(p\) factors uniquely through
+\(i\). There need not be surjectivity at the right: lifting the identity
+of \(C\) would be a section of \(p\). Dually,
+
+\[0\to\operatorname{Hom}_R(C,X)\to\operatorname{Hom}_R(B,X)
+\to\operatorname{Hom}_R(A,X)\]
+
+is exact. A map on the submodule \(A\) need not extend to \(B\). Over a
+field both failures disappear, by choosing a splitting. The resulting
+exactness is canonical; its proof need not make a canonical choice.
+
+\subsection{Tensor universality and a
+construction}\label{tensor-universality-and-a-construction}
+
+A tensor product of vector spaces \(V,W\) is a vector space
+\(V\otimes_k W\) together with a bilinear map
+\(\tau:V\times W\to V\otimes_k W\) such that every bilinear map
+\(\beta:V\times W\to X\) factors uniquely as
+
+\[\beta=\widetilde\beta\circ\tau,
+\qquad \widetilde\beta:V\otimes_k W\to X\text{ linear}.\]
+
+Write \(v\otimes w=\tau(v,w)\). The pair, not the bare vector space, is
+the universal object.
+
+For existence, take the free vector space on symbols \([v,w]\) and
+quotient by the span of all bilinearity relations:
+
+\[\begin{gathered}
+\relax[v+v',w]-[v,w]-[v',w],\quad
+[v,w+w']-[v,w]-[v,w'],\\
+[av,w]-a[v,w],\quad[v,aw]-a[v,w].
+\end{gathered}\]
+
+Every bilinear \(\beta\) extends linearly from the symbols and
+annihilates these relations, hence factors through the quotient. The
+symbols span, giving uniqueness. Universal uniqueness is proved by
+composing the two comparison maps, as for quotients.
+
+If \((e_i)\) and \((f_j)\) are bases, then \((e_i\otimes f_j)\) is a
+basis. Spanning follows by expansion. For independence, the coefficient
+maps \(\beta_{ij}(v,w)=e^i(v)f^j(w)\) induce linear functionals on the
+tensor product extracting each coefficient of a finite relation. This
+proof works for infinite algebraic bases too, because each vector and
+tensor uses only finite sums. It does not assert that dual bases span
+the whole algebraic dual in that case.
+
+\textbf{Recognition signal.} A bilinear expression should usually be
+turned into a linear map on a tensor product before choosing
+coordinates. A formula on pure tensors defines a linear map only after
+its bilinearity or balancing has been checked. Pure tensors span; they
+are not generally all the elements.
+
+For instance, \(e_1\otimes f_1+e_2\otimes f_2\) is not pure when the two
+displayed pairs are independent. Under coefficient matrices it has rank
+\(2\), whereas a pure tensor has entries \(v_iw_j\) and rank at most
+\(1\).
+
+\subsection{Functorial maps, symmetry, and
+associativity}\label{functorial-maps-symmetry-and-associativity}
+
+For \(a:V\to V'\) and \(b:W\to W'\), bilinearity gives the unique linear
+map
+
+\[a\otimes b:V\otimes W\to V'\otimes W',\qquad
+(a\otimes b)(v\otimes w)=a(v)\otimes b(w).\]
+
+Checking on pure tensors proves
+\((a'\otimes b')\circ(a\otimes b)=(a'\circ a)\otimes(b'\circ b)\). The
+same method gives canonical isomorphisms
+
+\[\begin{gathered}
+V\otimes W\cong W\otimes V,\qquad
+(U\otimes V)\otimes W\cong U\otimes(V\otimes W),\\
+k\otimes V\cong V,\qquad
+(U\oplus V)\otimes W\cong(U\otimes W)\oplus(V\otimes W).
+\end{gathered}\]
+
+These identify objects by specified maps; they are not literal
+equalities of set-theoretic constructions. Associativity is especially
+transparent by observing that both iterated tensor products represent
+trilinear maps.
+
+In chosen product bases, the matrix of \(a\otimes b\) is the Kronecker
+product. If \(A\) is \(n\times n\) and \(B\) is \(m\times m\),
+
+\[\operatorname{tr}(A\otimes B)=\operatorname{tr}(A)\operatorname{tr}(B),
+\quad \det(A\otimes B)=\det(A)^m\det(B)^n.\]
+
+For trace, sum the diagonal entries \(a_{ii}b_{jj}\). For determinant,
+write \(A\otimes B=(A\otimes I_m)(I_n\otimes B)\); the second factor is
+a direct sum of \(n\) copies of \(B\), and the first is conjugate by the
+basis permutation \(e_i\otimes f_j\mapsto f_j\otimes e_i\) to a direct
+sum of \(m\) copies of \(A\). This proves the identity over every field
+and also over commutative rings. No diagonalization hypothesis is
+required.
+
+\subsection{Currying and the Hom--tensor
+adjunction}\label{currying-and-the-homtensor-adjunction}
+
+There is a canonical isomorphism, with no finite-dimensional hypothesis,
+
+\[\operatorname{Hom}_k(U\otimes V,W)
+\cong\operatorname{Hom}_k(U,\operatorname{Hom}_k(V,W)).\]
+
+It sends \(F\) to the map \(u\mapsto(v\mapsto F(u\otimes v))\).
+Conversely a linear \(g:U\to\operatorname{Hom}(V,W)\) yields the
+bilinear map \((u,v)\mapsto g(u)(v)\), hence a unique \(F\). These
+operations are inverse, and pre/postcomposition proves naturality in all
+variables.
+
+One can remember this as: ``a linear map out of a tensor is a bilinear
+map, and a bilinear map is a linear family of linear maps.'' The
+adjunction is the precise version of that sentence, not an extra theorem
+to memorize separately.
+
+For modules over a commutative ring \(R\) the same formulas work. Over a
+noncommutative ring one uses a right module and a left module and tracks
+the remaining bimodule actions. A correct underlying abelian-group
+version is
+
+\[\operatorname{Hom}_{\mathbb Z}(M\otimes_R N,A)
+\cong\operatorname{Hom}_{R^{\mathrm{op}}}
+\bigl(M,\operatorname{Hom}_{\mathbb Z}(N,A)\bigr),\]
+
+where \(M\) is right \(R\), \(N\) is left \(R\), and
+\((\phi\cdot r)(n)=\phi(rn)\) gives the Hom group its right action. The
+tensor represents biadditive maps satisfying
+\(\beta(mr,n)=\beta(m,rn)\), called balanced maps. Two arbitrary left
+modules over a noncommutative ring cannot simply be tensored over \(R\)
+using the commutative formulas.
+
+\subsection{Finite-dimensional Hom as a tensor and trace as
+evaluation}\label{finite-dimensional-hom-as-a-tensor-and-trace-as-evaluation}
+
+Define
+
+\[\Theta:W\otimes V^*\to\operatorname{Hom}(V,W),\qquad
+\Theta(w\otimes\lambda)(v)=\lambda(v)w.\]
+
+If \(V\) is finite-dimensional, its inverse sends \(f\) to
+\(\sum_i f(e_i)\otimes e^i\). Indeed evaluation at
+\(v=\sum_i e^i(v)e_i\) recovers \(f(v)\). Conversely applying the
+inverse to a pure tensor recovers it. The inverse expression is
+basis-independent because it is the inverse of a specified canonical
+map. \(W\) need not be finite-dimensional for this result.
+
+For \(W=V\), compose \(\Theta^{-1}\) with the evaluation contraction
+\(v\otimes\lambda\mapsto\lambda(v)\). This defines trace invariantly,
+and the basis formula is \(\operatorname{tr}T=\sum_i e^i(T(e_i))\). The
+tensor corresponding to \(1_V\) is \(\sum_i e_i\otimes e^i\); it is
+basis-independent even though each summand is not.
+
+Composition of rank-one maps is
+
+\[\Theta(v\otimes\lambda)\circ\Theta(w\otimes\mu)
+=\lambda(w)\Theta(v\otimes\mu).\]
+
+Taking traces gives \(\lambda(w)\mu(v)\) in either order. Rank-one maps
+span all endomorphisms, so
+\(\operatorname{tr}(ST)=\operatorname{tr}(TS)\). This is an evaluation
+identity, which explains why trace is invariant under similarity and why
+every commutator has trace zero. The converse is not needed here, and in
+positive characteristic trace of the identity can be zero without the
+identity being zero.
+
+For infinite-dimensional \(V\), every tensor in \(W\otimes V^*\) still
+maps to a finite-rank operator, and every finite-rank operator arises
+this way. The canonical map is injective: express a tensor with linearly
+independent \(W\)-components and use coordinate functionals to show its
+coefficients vanish if the operator vanishes. Thus its image is exactly
+the finite-rank maps. When \(V=W\) is infinite-dimensional the identity
+is a concrete obstruction to surjectivity.
+
+This also exposes the issue in Xi II's remark after Theorem 6.19,
+printed p.~278 (PDF p.~284). The preceding definition uses \textbf{all}
+multilinear forms on \(V^p\times(V^*)^q\). For \(p=q=1\), evaluation
+\((v,\lambda)\mapsto\lambda(v)\) is such a form, but it cannot be a
+finite sum \(\sum_i\alpha_i(v)\lambda(w_i)\): that would represent
+\(1_V\) as a finite-rank map. The finite-dimensional theorem is sound;
+its unqualified infinite-dimensional extension needs to be withdrawn or
+the tensor space restricted. The printed remark and definition were both
+checked as page images, so this is a mathematical correction, not an OCR
+inference.
+
+\subsection{Exactness, quotients, and change of
+scalars}\label{exactness-quotients-and-change-of-scalars}
+
+Over a field, tensoring is exact. One proof chooses a splitting of a
+short exact sequence and uses distribution over direct sums.
+Alternatively a basis of \(W\) identifies \(-\otimes W\) with a direct
+sum of copies of the original map. These are proofs of a canonical
+exactness statement, not canonical splittings.
+
+Over a commutative ring, tensoring is always right exact:
+
+\[A\xrightarrow{f}B\longrightarrow C\longrightarrow0
+\quad\Longrightarrow\quad
+A\otimes N\xrightarrow{f\otimes1}B\otimes N
+\longrightarrow C\otimes N\longrightarrow0.\]
+
+To see the kernel, take the quotient of \(B\otimes N\) by the image of
+\(A\otimes N\). Bilinear maps from \(B\times N\) vanishing on that image
+are precisely the ones factoring through \(C\times N\). The quotient and
+\(C\otimes N\) therefore satisfy the same universal property. In
+particular
+
+\[(M/U)\otimes_R N\cong
+(M\otimes_R N)/\operatorname{im}(U\otimes_R N).\]
+
+The word ``image'' matters: the induced map
+\(U\otimes_R N\to M\otimes_R N\) need not be injective. For
+\(0\to\mathbb Z\xrightarrow{\times2}
+\mathbb Z\to\mathbb Z/2\to0\), tensoring with \(\mathbb Z/2\) turns the
+first displayed map into zero. Thus a tensor product does not always
+preserve subobjects. A module for which tensoring preserves all short
+exact sequences is called flat.
+
+If \(L/k\) is a field extension, \(L\otimes_k V\) has an \(L\)-action
+\(a(b\otimes v)=ab\otimes v\). A \(k\)-basis \((e_i)\) gives an
+\(L\)-basis \((1\otimes e_i)\), so dimension over the \textbf{new} field
+remains \(\dim_k V\). The map \(v\mapsto1\otimes v\) is injective, and
+scalar extension is exact. A real operator may acquire eigenvectors
+after extending to \(\mathbb C\); its complexified invariant
+decomposition need not descend to real one-dimensional subspaces. The
+coefficient field is part of every classification statement.
+
+\textbf{Sources.} Xi II §6.2, especially Definition 6.11, Theorem 6.15,
+and Examples 6.13--6.14 (printed pp.~273--278; PDF pp.~279--284),
+contains actual tensor universality and its applications. Grillet
+XI.5--8 (printed pp.~434--456; PDF pp.~446--468) supplies balanced
+products, general exactness, dual modules, and flatness. The concrete
+calculations here show why that extra generality matters.
+
+\section{Free algebras, exterior powers, determinants, and
+minors}\label{free-algebras-exterior-powers-determinants-and-minors}
+
+\subsection{Free constructions remember their extension
+property}\label{free-constructions-remember-their-extension-property}
+
+The tensor algebra of a vector space is
+
+\[T(V)=\bigoplus_{r\ge0}V^{\otimes r},\qquad V^{\otimes0}=k,\]
+
+with multiplication by concatenation of tensors. Each element has
+finitely many nonzero degree components. The inclusions of \(k\) and
+\(V\) are part of the construction. For any unital associative
+\(k\)-algebra \(A\), a linear map \(f:V\to A\) extends uniquely to an
+algebra homomorphism
+
+\[\widehat f:T(V)\to A,\qquad
+\widehat f(v_1\otimes\cdots\otimes v_r)=f(v_1)\cdots f(v_r).\]
+
+The product on the right is multilinear, giving a map on each tensor
+power; concatenation proves multiplicativity, and generation by \(V\)
+proves uniqueness. An algebra generated by a specified copy or image of
+\(V\) is therefore a quotient of \(T(V)\) by its relations. The quotient
+has to impose exactly the intended identities; it cannot be guessed from
+a superficial resemblance of formulas.
+
+The symmetric algebra is
+
+\[\operatorname{Sym}(V)=T(V)/\langle v\otimes w-w\otimes v:v,w\in V\rangle.\]
+
+It is the free \textbf{commutative} unital algebra on \(V\). The
+extension above factors precisely when the images \(f(v)\) commute. With
+a basis \(e_1,\ldots,e_n\), sending \(e_i\) to a variable \(x_i\)
+identifies it with \(k[x_1,\ldots,x_n]\). The variables and monomial
+basis depend on the chosen basis, while the free property does not.
+
+The homogeneous degree-\(r\) part \(\operatorname{Sym}^r(V)\) represents
+symmetric \(r\)-linear maps from \(V^r\). Notice the variance:
+polynomial expressions on a space \(V\) belong to
+\(\operatorname{Sym}(V^*)\), not \(\operatorname{Sym}(V)\), once its
+vectors are regarded as points. Over a finite field, formal polynomials
+are not determined by their values on all points: \(x^q-x\) vanishes on
+\(\mathbb F_q\) but is a nonzero polynomial. Thus a coordinate ring
+should not silently be replaced by the ring of set functions on its
+rational points.
+
+\subsection{Exterior algebra: alternation is the
+relation}\label{exterior-algebra-alternation-is-the-relation}
+
+Define
+
+\[\Lambda(V)=T(V)/\langle v\otimes v:v\in V\rangle.\]
+
+The product is denoted \(\wedge\). Expanding \((v+w)\wedge(v+w)=0\)
+gives \(v\wedge w=-w\wedge v\), and exchanging blocks gives
+\(\alpha\wedge\beta=(-1)^{rs}\beta\wedge\alpha\) for homogeneous degrees
+\(r,s\). The defining equation \(v\wedge v=0\) remains necessary in
+characteristic \(2\): a sign rule alone does not imply it there.
+
+The degree-\(r\) piece \(\Lambda^r(V)\) represents alternating
+\(r\)-linear maps: an alternating map vanishes whenever two arguments
+are equal. Its unique factorization through \(V^{\otimes r}\) kills the
+repeated-vector relations; conversely the wedge map is alternating. This
+construction works over any commutative ring, not only in characteristic
+zero.
+
+With an ordered basis \(e_1,\ldots,e_n\), the wedges
+
+\[e_{i_1}\wedge\cdots\wedge e_{i_r},\qquad
+1\le i_1<\cdots<i_r\le n\]
+
+form a basis. Reordering and removing repetitions proves spanning. For
+independence, for each ordered subset \(I=(i_1,\ldots,i_r)\) define on
+vectors with coordinates \(v_{ab}\) the alternating coefficient form
+
+\[\beta_I(v_1,\ldots,v_r)
+=\sum_{\sigma\in S_r}\operatorname{sgn}(\sigma)
+\prod_{a=1}^r v_{i_a,\sigma(a)}.\]
+
+When two columns coincide, pair the permutations exchanging those
+columns; their terms sum to zero, in characteristic \(2\) as well. Thus
+\(\beta_I\) factors through \(\Lambda^r(V)\) and takes value \(1\) on
+the \(I\) basis wedge and \(0\) on the other ascending ones. This proves
+independence without dividing by \(r!\). Therefore
+
+\[\dim\Lambda^r(V)=\binom nr,\qquad\Lambda^r(V)=0\ (r>n).\]
+
+For \(r=0\), \(\Lambda^0(V)=k\). The zero-dimensional top exterior power
+is therefore a line too.
+
+\subsection{Antisymmetrizing tensors is a model with extra
+hypotheses}\label{antisymmetrizing-tensors-is-a-model-with-extra-hypotheses}
+
+If \(r!\) is invertible in \(k\), the operator
+
+\[\operatorname{Alt}_r
+=\frac1{r!}\sum_{\sigma\in S_r}\operatorname{sgn}(\sigma)\sigma
+:V^{\otimes r}\to V^{\otimes r}\]
+
+is idempotent. Its image identifies with \(\Lambda^r(V)\): the quotient
+map restricted to that image is inverse to the map induced by
+\(\operatorname{Alt}_r\). With this normalization, exterior
+multiplication in the image is
+\(\alpha\wedge\beta=\operatorname{Alt}_{r+s}(\alpha\otimes\beta)\).
+Other common conventions place factorial factors in the identification,
+so one must check which model a formula uses.
+
+The analogous averaging operator without signs models symmetric powers
+when \(r!\) is invertible. In small characteristic the quotient
+definitions remain valid but these normalized projectors do not.
+Symmetric powers (coinvariants) and invariant symmetric tensors must not
+be identified using a nonexistent \(1/r!\). Polarization formulas with
+factorial denominators have the same limitation. Xi II §6.4 explicitly
+assumes characteristic zero for its antisymmetric-tensor model (printed
+p.~292, PDF p.~298); Grillet XIII.4 uses the quotient construction over
+a commutative ring (printed pp.~523--527, PDF pp.~535--539). These are
+related constructions with different stated scope.
+
+\subsection{Functoriality, rank, and
+determinants}\label{functoriality-rank-and-determinants}
+
+For \(f:V\to W\), the alternating map
+\((v_1,\ldots,v_r)\mapsto f(v_1)\wedge\cdots\wedge f(v_r)\) induces
+
+\[\Lambda^r f:\Lambda^r V\to\Lambda^r W.\]
+
+Checking decomposable wedges gives
+\(\Lambda^r(g\circ f)=\Lambda^r g\circ\Lambda^r f\) and
+\(\Lambda^r1_V=1_{\Lambda^rV}\). For \(r>0\),
+
+\[\Lambda^r f\ne0\quad\Longleftrightarrow\quad\operatorname{rank}f\ge r.\]
+
+If the image has dimension less than \(r\), every image wedge is zero.
+If the rank is at least \(r\), choose \(r\) vectors whose images are
+independent and extend those images to a basis of \(W\); their wedge is
+nonzero by the basis theorem. This is the intrinsic meaning of testing
+rank by minors.
+
+For \(n=\dim V\) define the determinant line \(\det V=\Lambda^nV\). It
+is one-dimensional. An endomorphism \(T:V\to V\) therefore acts on it by
+a unique scalar:
+
+\[\Lambda^n T=(\det T)1_{\det V}.\]
+
+This scalar is the determinant. Functoriality immediately gives
+\(\det(ST)=\det S\det T\), and \(\det T\ne0\) precisely when \(T\) is
+invertible. For \(V=0\) the determinant is \(1\) by the degree-zero
+convention. Expanding \(T(e_1)\wedge\cdots\wedge T(e_n)\) gives the
+usual signed permutation formula. Thus elimination formulas can be
+reconstructed from alternation and the chosen volume basis.
+
+If \(f:V\to W\) maps two different \(n\)-dimensional spaces, it
+determines a map \(\det V\to\det W\). There is no preferred scalar
+determinant until trivializations of both lines are chosen. This
+distinction is useful in coordinate changes, orientation, and families
+of vector spaces.
+
+\subsection{Minors and Cauchy--Binet from
+composition}\label{minors-and-cauchybinet-from-composition}
+
+Let \(A\) be the matrix of \(f:k^n\to k^m\). In ascending wedge bases,
+the entry of \(\Lambda^r f\) in row subset \(I\) and column subset \(J\)
+is the minor \(\det A_{I,J}\). This follows by expanding the image of
+\(e_{j_1}\wedge\cdots\wedge e_{j_r}\) and collecting the \(I\)
+coefficient.
+
+For a second matrix \(B:k^m\to k^\ell\), functoriality gives
+
+\[\det(BA)_{I,J}
+=\sum_{\substack{K\subseteq\{1,\ldots,m\}\\|K|=r}}
+\det B_{I,K}\det A_{K,J}.\]
+
+This is the full minors version of Cauchy--Binet. The familiar
+determinant formula for a rectangular product is the case \(r=n=\ell\).
+The same proof works over commutative rings using finite free modules
+and the exterior basis theorem. A rank interpretation over a field
+should not be carried unchanged to rings with zero divisors.
+
+Expanding \(\det(xI-T)\) by the columns in which \(-T\) is selected
+gives
+
+\[\chi_T(x)=\sum_{r=0}^n(-1)^r
+\operatorname{tr}(\Lambda^rT)x^{n-r}.\]
+
+The trace of \(\Lambda^rT\) is the sum of principal \(r\)-minors. In
+particular \(\operatorname{tr}T\) and \(\det T\) are the first and last
+nontrivial elementary symmetric coefficients. This works without
+eigenvalues in \(k\). In positive characteristic, recovering these
+coefficients from power traces via Newton identities can require
+division by a nonunit integer; the exterior-power formula itself does
+not.
+
+\subsection{Determinant lines of exact
+sequences}\label{determinant-lines-of-exact-sequences}
+
+For a short exact sequence of finite-dimensional vector spaces
+\(0\to A\xrightarrow{i}B\xrightarrow{p}C\to0\), put \(a=\dim A\) and
+\(c=\dim C\). There is a canonical isomorphism
+
+\[\det A\otimes\det C\xrightarrow{\ \sim\ }\det B.\]
+
+Send a decomposable tensor to
+
+\[(a_1\wedge\cdots\wedge a_a)\otimes(c_1\wedge\cdots\wedge c_c)
+\longmapsto
+i(a_1)\wedge\cdots\wedge i(a_a)
+\wedge\widetilde c_1\wedge\cdots\wedge\widetilde c_c,\]
+
+where \(p(\widetilde c_j)=c_j\). Changing a lift adds a vector of
+\(i(A)\), whose extra occurrence makes that term zero. Multilinearity
+and alternation give a map on the determinant lines, and lifting a basis
+of \(C\) gives a basis of \(B\), so it is an isomorphism. It is
+independent of the chosen lifts, although the splitting of the original
+sequence is not. The order ``\(A\) then \(C\)'' is part of the
+convention; reversing it contributes \((-1)^{ac}\).
+
+An operator preserving \(A\) therefore satisfies
+\(\det T_B=\det T_A\det T_C\). Applied to \(xI-T\) over \(k(x)\), or
+directly to its block triangular matrix, this gives
+\(\chi_{T_B}=\chi_{T_A}\chi_{T_C}\) even without an invariant
+complement. Multiplication of invariants across an exact sequence does
+not imply splitting.
+
+\subsection{Contraction and
+reconstruction}\label{contraction-and-reconstruction}
+
+For \(\lambda\in V^*\) define contraction
+\(\iota_\lambda:\Lambda^rV\to\Lambda^{r-1}V\) by
+
+\[\iota_\lambda(v_1\wedge\cdots\wedge v_r)
+=\sum_{j=1}^r(-1)^{j-1}\lambda(v_j)
+v_1\wedge\cdots\widehat v_j\cdots\wedge v_r.\]
+
+The right side is alternating and multilinear in the \(v_j\), so the
+universal property makes it well defined. Splitting the sum into the
+positions of \(\alpha\) and \(\beta\) gives
+
+\[\iota_\lambda(\alpha\wedge\beta)
+=(\iota_\lambda\alpha)\wedge\beta
++(-1)^r\alpha\wedge\iota_\lambda\beta
+\quad(\deg\alpha=r).\]
+
+This supplies a controlled introduction to signs in graded
+constructions. Exterior powers, contractions, and determinant lines are
+useful now; differential forms additionally require a manifold and
+smooth variation. They should not be identified merely because the same
+wedge symbol appears.
+
+The core memory is short: free algebra extends linear maps, quotient
+imposes relations, exterior power transports alternating data, and the
+top exterior power is a line. Minors, rank tests, determinant
+multiplication, and Cauchy--Binet can be rebuilt from those principles.
+
+\section{Forms, adjoints, and the correct equivalence
+relation}\label{forms-adjoints-and-the-correct-equivalence-relation}
+
+\subsection{Similarity, equivalence, and congruence classify different
+data}\label{similarity-equivalence-and-congruence-classify-different-data}
+
+For an endomorphism \(T:V\to V\), changing the basis by columns \(S\)
+changes its matrix from \(A\) to \(S^{-1}AS\). The source and target are
+the same space and use the same changed basis: this is similarity.
+
+For a map \(f:V\to W\) with independently changed source and target
+bases, the matrix becomes \(Q^{-1}AP\). This is matrix equivalence; over
+a field its only invariant is rank.
+
+For a bilinear form \(b:V\times V\to k\) with matrix \(B\),
+\(b(x,y)=x^{\mathsf T}By\). The same change of vector basis in both
+arguments gives \(B\mapsto S^{\mathsf T}BS\), called congruence. It is
+not similarity. The associated map
+
+\[b^\flat:V\to V^*,\qquad b^\flat(v)(w)=b(v,w)\]
+
+has a dual space as target; the two basis changes are linked by duality.
+A nondegenerate form is exactly one for which this map is an
+isomorphism. This identification depends on \(b\).
+
+For a Hermitian form over \(\mathbb C\), this study uses the convention
+
+\[h(x,y)=\overline{x}^{\mathsf T}Hy,\]
+
+conjugate-linear in the first argument and linear in the second, with
+\(H=\overline H^{\mathsf T}\). The matrix changes by \(H\mapsto S^*HS\)
+where \(S^*=\overline S^{\mathsf T}\). The map \(v\mapsto h(v,-)\) into
+the algebraic dual is conjugate-linear. Xi's inner-product convention is
+linear in the first argument instead; translate the convention rather
+than copying an adjoint formula unchanged.
+
+\textbf{A decisive example.} Over \(\mathbb R\), \(I_2\) and \(2I_2\)
+are congruent via \(S=\sqrt2 I_2\), but are not similar because they
+have different eigenvalues. Conversely the real symmetric matrices
+\(\operatorname{diag}(1,-1)\) and \(\operatorname{diag}(2,-2)\) have the
+same inertia but different similarity classes. A theorem about Jordan
+form cannot replace a theorem about forms.
+
+\subsection{Symmetric forms and quadratic
+forms}\label{symmetric-forms-and-quadratic-forms}
+
+Assume \(\operatorname{char}k\ne2\). A symmetric bilinear form
+determines \(q(v)=b(v,v)\), and
+
+\[b(v,w)=\frac{q(v+w)-q(v)-q(w)}2.\]
+
+Thus symmetric forms and quadratic forms encode the same data in this
+characteristic. In characteristic \(2\), \(b(v,v)\) can be identically
+zero for a nonzero alternating form, and a quadratic form needs its own
+definition and polarization theory. Dividing by \(2\) conceals an
+essential hypothesis.
+
+Every symmetric bilinear form over a field of characteristic different
+from \(2\) has a diagonal matrix in some basis. If \(b\ne0\),
+polarization shows there is \(v\) with \(b(v,v)\ne0\). Then for any
+\(w\),
+
+\[w=\frac{b(v,w)}{b(v,v)}v+
+\left(w-\frac{b(v,w)}{b(v,v)}v\right)\]
+
+is a decomposition into \(kv\) and its \(b\)-orthogonal complement. The
+sum is direct since \(b(v,v)\ne0\). Induct on dimension. If the
+remaining restriction is zero, it contributes a radical summand. This
+proof explains both diagonalization and its field dependence: nonzero
+diagonal entries can be rescaled only by squares available in \(k\).
+
+Over \(\mathbb R\), rescale the nonzero coefficients to \(+1\) or
+\(-1\). The numbers \((p,q,r)\) of positive, negative, and zero
+coefficients are unique (Sylvester's law of inertia). To see uniqueness
+of \(p\), the diagonal form has a positive-definite subspace of
+dimension \(p\). Any subspace of dimension greater than \(p\) meets the
+span of the negative and zero coordinate vectors nontrivially by the
+dimension inequality, and hence cannot be positive definite. Thus \(p\)
+is the maximal dimension of a positive-definite subspace, an intrinsic
+number. The same argument gives \(q\), and \(r\) is the dimension of the
+radical.
+
+Over an algebraically closed field of characteristic different from
+\(2\), every nonzero coefficient is a square, so rank classifies
+symmetric forms up to congruence. Over \(\mathbb Q\) or a number field,
+rank alone does not: square classes and further arithmetic invariants
+matter. ``Diagonal'' is not the same as ``classified.''
+
+\subsection{Alternating forms and symplectic
+pairs}\label{alternating-forms-and-symplectic-pairs}
+
+A bilinear form is alternating if \(b(v,v)=0\) for all \(v\). This
+implies \(b(v,w)=-b(w,v)\) in every characteristic. Conversely
+skew-symmetry implies alternation only when \(2\ne0\).
+
+If \(b\ne0\), choose \(u,v\) with \(b(u,v)\ne0\) and rescale to
+\(b(u,v)=1\). The span \(P=\langle u,v\rangle\) has matrix
+\(\begin{pmatrix}0&1\\-1&0\end{pmatrix}\) and is nondegenerate. For any
+\(w\) define
+
+\[w'=w+b(v,w)u-b(u,w)v.\]
+
+Then \(b(u,w')=b(v,w')=0\), so \(V=P\oplus P^\perp\). Induction
+decomposes an alternating form into symplectic pairs and a zero radical.
+Its rank is even, and a nondegenerate alternating space has even
+dimension. This argument works in characteristic \(2\) with the
+definition of alternation retained.
+
+The essential memory is the nondegenerate two-dimensional pair and the
+orthogonal-complement induction, not a special sequence of row
+operations.
+
+\subsection{Adjoint operators require a chosen
+form}\label{adjoint-operators-require-a-chosen-form}
+
+Let \(h\) be a nondegenerate Hermitian form on a finite-dimensional
+complex space. There is a unique \(T^\dagger\) such that
+
+\[h(Tv,w)=h(v,T^\dagger w)\qquad(v,w\in V).\]
+
+In a basis with Gram matrix \(H\), its matrix is
+
+\[[T^\dagger]=H^{-1}[T]^*H.\]
+
+This proves existence and uniqueness and shows explicitly why the
+adjoint is ordinary conjugate transpose only in an orthonormal basis. It
+also gives
+
+\[\begin{gathered}
+(ST)^\dagger=T^\dagger S^\dagger,\qquad
+(aS+bT)^\dagger=\bar aS^\dagger+\bar bT^\dagger,\\
+(T^\dagger)^\dagger=T.
+\end{gathered}\]
+
+For a nondegenerate real symmetric form the analogous formula is
+\(H^{-1}A^{\mathsf T}H\). The algebraic dual map \(T^*\) is defined
+without a form and has a different type; the adjoint uses the form to
+return to \(V\).
+
+If \(h\) is positive definite, every subspace has a canonical orthogonal
+complement relative to \(h\). Moreover
+
+\[U\text{ is }T\text{-invariant}
+\quad\Longleftrightarrow\quad
+U^\perp\text{ is }T^\dagger\text{-invariant}.\]
+
+For example, if \(u\in U\) and \(w\in U^\perp\),
+\(h(u,T^\dagger w)=h(Tu,w)=0\). This is the mechanism behind invariant
+orthogonal decompositions. For an indefinite nondegenerate form a
+subspace can intersect its own orthogonal complement: the isotropic line
+\(\mathbb R(1,1)\) for \(\operatorname{diag}(1,-1)\) does. Nondegeneracy
+of the ambient form alone does not give a direct sum with every
+orthogonal complement.
+
+\subsection{The finite-dimensional spectral theorem, with the hypotheses
+visible}\label{the-finite-dimensional-spectral-theorem-with-the-hypotheses-visible}
+
+\textbf{Theorem.} On a finite-dimensional positive-definite complex
+inner-product space, \(T\) has an orthonormal eigenbasis if and only if
+\(TT^\dagger=T^\dagger T\).
+
+\textbf{Proof.} One direction follows from a diagonal matrix and its
+conjugate transpose. For the other, call \(T\) normal. Any
+\(N=T-\lambda1_V\) is normal and
+
+\[\|Nv\|^2=h(v,N^\dagger Nv)
+=h(v,NN^\dagger v)=\|N^\dagger v\|^2.\]
+
+Hence \(Tv=\lambda v\) implies \(T^\dagger v=\bar\lambda v\). The
+complex characteristic polynomial has a root, so choose a unit
+eigenvector \(v\). The line \(kv\) is invariant under both \(T\) and
+\(T^\dagger\); its orthogonal complement is therefore also invariant
+under both. The restrictions commute and are adjoints there, so
+induction gives the orthonormal eigenbasis. \(\square\)
+
+A self-adjoint operator has real eigenvalues: if \(Tv=\lambda v\), then
+\(h(v,Tv)=\lambda\|v\|^2\) is real. A unitary operator has eigenvalues
+of modulus \(1\) by norm preservation. Real self-adjoint operators admit
+real orthonormal eigenbases, for instance by complexifying and observing
+that real eigenvalues yield real eigenspaces of the required dimensions.
+A real normal operator need not have real eigenvectors: a planar
+rotation gives a \(2\times2\) real block instead. The field and the
+positive metric are doing actual work.
+
+The nonzero nilpotent matrix \(\begin{pmatrix}0&1\\0&0\end{pmatrix}\)
+has a Jordan basis, but no orthonormal eigenbasis. It is not normal
+under the standard positive inner product. A purely module-theoretic
+classification does not replace the spectral theorem's metric
+conclusion.
+
+\subsection{Gram matrices, least squares, and determinant
+bounds}\label{gram-matrices-least-squares-and-determinant-bounds}
+
+For vectors \(v_1,\ldots,v_r\) in a positive inner-product space, their
+Gram matrix is \(G=(h(v_i,v_j))\). If \(X\) is the matrix with these
+vectors as columns in an orthonormal basis, then \(G=X^*X\). Thus
+
+\[c^*Gc=\left\|\sum_jc_jv_j\right\|^2\ge0,\]
+
+and \(G\) is positive definite exactly when the vectors are independent.
+This is the correct reason the normal-equations matrix \(X^*X\) is
+invertible for a full-column-rank least-squares problem. If \(X\) is
+rank deficient, the minimizer in coefficient space need not be unique,
+though the orthogonal projection of the target onto
+\(\operatorname{im}X\) is unique.
+
+Gram--Schmidt writes independent vectors as \(X=QR\) with orthonormal
+columns of \(Q\) and upper triangular \(R\). Its diagonal entries are
+the lengths of successive orthogonal residuals, so
+
+\[\det G=\prod_j|r_{jj}|^2\le\prod_j\|v_j\|^2.\]
+
+Dependent vectors give determinant zero, so the inequality holds in
+general. Equality for nonzero vectors occurs precisely when all
+projections onto earlier vectors vanish, equivalently the vectors are
+pairwise orthogonal. For a square real matrix this yields Hadamard's
+determinant inequality \(|\det X|\le\prod_j\|v_j\|\). A sign matrix with
+orthogonal rows attains the bound, linking metric geometry directly to
+the intended Hadamard problem without using an unnecessary abstraction.
+
+\subsection{Affine and projective information that must be
+retained}\label{affine-and-projective-information-that-must-be-retained}
+
+For an affine quadratic polynomial \(q(x)=b(x,x)+\ell(x)+c\) in
+characteristic different from \(2\), a translation \(x=y+a\) changes its
+linear part to \(\ell+2b(a,-)\). If \(b\) is nondegenerate one can
+choose a unique \(a\) to cancel that part. If \(b\) is degenerate, the
+component of \(\ell\) on the radical cannot be removed this way and
+controls further geometric types. The constant and the permitted
+transformations also matter. Similarity invariants of a coefficient
+matrix do not classify affine quadrics.
+
+Projectivizing identifies nonzero scalar multiples of a vector, and
+homogeneous quadratic equations are themselves defined up to nonzero
+scale. Real points, signature, isotropic directions, and the distinction
+between affine and projective transformations are information a general
+algebra text may not teach in the same way as Xi II Chapters 4--5. Those
+chapters are selectively deferable for the operator route; their
+geometric content is not thereby proved replaceable.
+
+\textbf{Source anchors.} Xi II §1.7 (printed pp.~25--43), Chapter 3
+(pp.~85--160), and Chapters 4--5 (pp.~161--262) supply forms, adjoints,
+metric examples, orthogonal projection, and geometry. The normal
+spectral theorem is Theorem 3.62 (printed pp.~126--128; PDF
+pp.~132--134). The book comparison distinguishes these substantial
+results from the graduate books' module and category-theoretic
+strengths.
+
+\section{Exact sequences, extensions, and calibrated homological
+algebra}\label{exact-sequences-extensions-and-calibrated-homological-algebra}
+
+\subsection{Exactness records how pieces
+fit}\label{exactness-records-how-pieces-fit}
+
+A sequence \(A\xrightarrow{f}B\xrightarrow{g}C\) is exact at \(B\) if
+\(\operatorname{im}f=\ker g\). The weaker condition \(g\circ f=0\) only
+gives containment. The quotient \(\ker g/\operatorname{im}f\) measures
+the difference. For a short exact sequence of finite-dimensional vector
+spaces, \(\dim B=\dim A+\dim C\); the dimension identity alone does not
+specify the maps or prove exactness.
+
+An exact sequence of modules splits when its quotient map has a
+module-linear section. A module \(P\) is projective if every map
+\(P\to C\) lifts across every surjection \(B\to C\). Equivalently every
+short exact sequence ending in \(P\) splits: apply the lifting property
+to \(1_P\), or form the pullback of a proposed map along the surjection.
+A module is projective if and only if it is a direct summand of a free
+module. For the nontrivial direction, choose a free surjection
+\(F\to P\) and split it; for the converse, lift basis vectors of a free
+module and restrict the lift to the summand.
+
+All vector spaces over \(k\) are free, hence projective. They are also
+injective: a map defined on a subspace extends by a basis extension.
+Consequently
+
+\[\operatorname{Ext}^j_k(V,W)=0,\qquad
+\operatorname{Tor}^k_j(V,W)=0\qquad(j>0).\]
+
+One may use the projective resolution concentrated in degree \(0\) to
+see both vanishings. They are statements about the coefficient ring
+\(k\) and its module category. They do not imply that every complex of
+vector spaces is exact, nor that \(\operatorname{Ext}_{k[t]}\) or
+\(\operatorname{Ext}_{k[G]}\) vanishes.
+
+\subsection{The smallest equivariant nonsplitting
+example}\label{the-smallest-equivariant-nonsplitting-example}
+
+Let \(R=k[t]\), \(M=R/(t^2)\), and \(K=R/(t)\). Define
+
+\[0\longrightarrow K\xrightarrow{i}M\xrightarrow{p}K\longrightarrow0,
+\qquad i(a\bmod t)=at\bmod t^2,\quad
+p(f\bmod t^2)=f\bmod t.\]
+
+The maps are well defined and \(R\)-linear; the image of \(i\) is
+exactly the kernel of \(p\). As vector spaces, the sequence splits via
+\(s(a)=a\bmod t^2\). As modules, it does not split. Any lift of
+\(1\in K\) has the form \(1+ct\) in \(M\), and
+
+\[t(1+ct)=t\ne0,\]
+
+whereas \(t\cdot1=0\) in \(K\). Thus no module-linear section exists. In
+the vector basis \((t,1)\), multiplication by \(t\) has matrix
+\(\begin{pmatrix}0&1\\0&0\end{pmatrix}\). Its invariant line \(kt\) has
+no invariant complement. This is the exact same obstruction expressed as
+a module extension, a failure of equivariant splitting, or a Jordan
+block.
+
+The underlying vector-space splitting is useful, but forgetting the
+action has discarded the information responsible for the obstruction.
+
+\subsection{Extensions and the first Ext group, with an explicit
+computation}\label{extensions-and-the-first-ext-group-with-an-explicit-computation}
+
+An extension of \(M\) by \(N\) is a short exact sequence
+\(0\to N\to E\to M\to0\). Two extensions are equivalent when an
+isomorphism of their middle terms commutes with the specified inclusion
+and quotient maps and is the identity on \(N\) and \(M\). Merely having
+isomorphic middle modules is a weaker relation. The equivalence classes
+form \(\operatorname{Ext}^1_R(M,N)\) under Baer sum, with the split
+extension as zero. The general equivalence with the derived-functor
+definition is cited from Hilton--Stammbach III.1--2; we can construct
+the important cyclic case directly.
+
+Let \(R\) be a commutative domain, \(0\ne f\in R\), and \(N\) an
+\(R\)-module. The free resolution
+
+\[0\longrightarrow R\xrightarrow{\times f}R
+\longrightarrow R/(f)\longrightarrow0\]
+
+is exact. Apply \(\operatorname{Hom}_R(-,N)\). Evaluation at \(1\)
+identifies the two Hom modules with \(N\), and the induced map is
+multiplication by \(f\). Hence
+
+\[\operatorname{Hom}_R(R/(f),N)=\ker(f:N\to N),
+\qquad\operatorname{Ext}^1_R(R/(f),N)\cong N/fN,\]
+
+and the positive Ext groups of degree greater than \(1\) vanish for this
+first argument. The injectivity of \(\times f\) uses both the domain and
+\(f\ne0\) hypotheses; over a ring with zero divisors this two-term
+complex may not be a resolution.
+
+The extension meaning of \(N/fN\) can be seen without the
+derived-functor terminology. For an extension, choose \(e\in E\) over
+\(1\bmod f\). Then \(fe=i(n)\) for a unique \(n\in N\). Replacing \(e\)
+by \(e+i(n_0)\) changes \(n\) by \(fn_0\). Conversely, for \(n\in N\)
+define
+
+\[E_n=(N\oplus Re)/R(-n,fe),\]
+
+meaning the relation \(fe=n\). The copy of \(N\) injects because
+\(rf=0\) forces \(r=0\). The quotient is \(R/(f)\); every extension has
+this form by expressing its elements using \(N\) and a lift of \(1\).
+Changes of the lift give precisely the equivalences \(n\sim n+fn_0\).
+The zero class permits a lift killed by \(f\), and therefore a section.
+Pullback followed by addition of the two copies of \(N\) sends classes
+\([n],[n']\) to \([n+n']\), explaining the addition law.
+
+For \(R=k[t]\) and \(N=K=R/(t)\) this gives
+
+\[\operatorname{Ext}^1_{k[t]}(K,K)\cong k.\]
+
+The class \(a\in k\) has generators \(u,e\) and relations \(tu=0\),
+\(te=au\). If \(a=0\) it is split. For every \(a\ne0\), the middle
+module is isomorphic to \(R/(t^2)\), but the extension classes for
+different \(a\) remain different with the endpoints fixed. Thus an
+extension invariant contains more information than an isomorphism class
+of a single operator.
+
+\subsection{Tor detects lost
+injections}\label{tor-detects-lost-injections}
+
+Tensor the same free resolution with \(N\). Its positive homology is
+
+\[\operatorname{Tor}^R_1(R/(f),N)=\ker(f:N\to N),\qquad
+R/(f)\otimes_R N\cong N/fN.\]
+
+The groups of degree greater than \(1\) vanish for this first argument.
+For \(R=\mathbb Z\), \(f=m\ne0\), and \(N=\mathbb Z/n\),
+
+\[\mathbb Z/m\otimes\mathbb Z/n\cong\mathbb Z/\gcd(m,n),
+\qquad
+\operatorname{Tor}^{\mathbb Z}_1(\mathbb Z/m,\mathbb Z/n)
+\cong\mathbb Z/\gcd(m,n).\]
+
+For the kernel, multiplication by \(m\) on \(\mathbb Z/n\) kills the
+subgroup generated by \(n/\gcd(m,n)\), which has that order. This
+supplies a simple nonzero Tor example and explains the injection failure
+after tensoring the multiplication-by-\(m\) sequence.
+
+An obstruction in Ext asks whether maps can lift or extend; an
+obstruction in Tor asks what tensoring has collapsed. They are useful
+descriptions only when the coefficient ring and the relevant sequence
+are retained.
+
+\subsection{Complexes and homology over a
+field}\label{complexes-and-homology-over-a-field}
+
+A chain complex is a sequence of maps \(d_n:C_n\to C_{n-1}\) satisfying
+\(d_{n-1}\circ d_n=0\). Define
+
+\[Z_n=\ker d_n,\qquad B_n=\operatorname{im}d_{n+1},\qquad
+H_n(C)=Z_n/B_n.\]
+
+A chain map \(f:C\to D\) satisfies
+\(d_n^D\circ f_n=f_{n-1}\circ d_n^C\). It carries cycles to cycles and
+boundaries to boundaries, hence induces \(H_n(f)\). The quotient
+property constructs that map, and composition makes homology a functor.
+
+\textbf{Why the field does not force zero homology.} The complex with a
+single nonzero term \(C_0=k\) has \(H_0=k\). In a two-term complex
+\(0\to k^2\xrightarrow{d}k^2\to0\) with \(d(x,y)=(x,0)\), both \(H_1\)
+and \(H_0\) have dimension \(1\). All vector-space short exact sequences
+involved split; the map \(d\) still need not have maximal rank or have
+image equal to a prescribed cycle space.
+
+In fact splitting gives a normal description of a complex. Choose
+complements
+
+\[Z_n=B_n\oplus\mathcal H_n,\qquad
+C_n=Z_n\oplus L_n.\]
+
+Then \(\mathcal H_n\cong H_n(C)\) and \(d_n:L_n\to B_{n-1}\) is an
+isomorphism: it is injective because \(L_n\cap\ker d_n=0\), and its
+image is all \(B_{n-1}\). Thus
+
+\[C_n=B_n\oplus\mathcal H_n\oplus L_n,\]
+
+with differential zero on \(B_n\oplus\mathcal H_n\) and an isomorphism
+from \(L_n\) onto \(B_{n-1}\). A complex is therefore a direct sum of
+its homology with zero differential and two-term contractible pieces,
+after choices. The decomposition does not say the homology summands are
+zero.
+
+More explicitly let \(j:\mathcal H\to C\) and \(q:C\to\mathcal H\) be
+inclusion and projection. Define \(s_n:C_n\to C_{n+1}\) as the inverse
+of \(d_{n+1}:L_{n+1}\to B_n\) on \(B_n\), and zero on
+\(\mathcal H_n\oplus L_n\). Then
+
+\[d_{n+1}s_n+s_{n-1}d_n=1_{C_n}-j_nq_n.\]
+
+This is a chain homotopy from the identity to the projection onto chosen
+homology representatives. In particular an acyclic complex of vector
+spaces is contractible. Neither the contraction nor representatives are
+generally natural. Over \(k[t]\), the required invariant complements can
+fail, so the same decomposition need not exist in that module category.
+
+\subsection{A connecting homomorphism is a controlled lifting
+construction}\label{a-connecting-homomorphism-is-a-controlled-lifting-construction}
+
+Let \(0\to A\xrightarrow{i}B\xrightarrow{p}C\to0\) be a short exact
+sequence of chain complexes, exact in every degree. If \(c\in C_n\) is a
+cycle, lift it to \(b\in B_n\). Then \(p(d b)=d c=0\), so uniquely
+\(d b=i(a)\) for \(a\in A_{n-1}\). Since \(i(d a)=d^2b=0\), injectivity
+gives \(d a=0\). Define
+
+\[\delta:H_n(C)\to H_{n-1}(A),\qquad\delta([c])=[a].\]
+
+A different lift changes \(b\) by \(i(a_0)\) and therefore changes \(a\)
+by \(d a_0\), a boundary. Changing \(c\) by a boundary and lifting its
+primitive changes \(b\) by a boundary in \(B\), which does not alter
+\(a\) except for the preceding lift ambiguity. Thus \(\delta\) is well
+defined and linear.
+
+The resulting sequence
+
+\[\cdots\to H_n(A)\to H_n(B)\to H_n(C)
+\xrightarrow{\delta}H_{n-1}(A)\to H_{n-1}(B)\to\cdots\]
+
+is exact. For example, \(\delta([c])=0\) means \(a=d a_0\); replacing
+\(b\) by \(b-i(a_0)\) gives a cycle lifting \(c\), so \([c]\) comes from
+\(H_n(B)\). Conversely a cycle lift plainly gives \(\delta([c])=0\). At
+\(H_{n-1}(A)\), a cycle \(a\) dies in \(B\) precisely when \(i(a)=d b\);
+then \(p(b)\) is a cycle and maps under \(\delta\) to \([a]\). At
+\(H_n(B)\), if \(p(b)=d c'\) lift \(c'\) to \(b'\) and observe that
+\(b-d b'\) lies in \(i(A)\) and is a cycle. These checks prove exactness
+at all three kinds of position.
+
+This explains why exact sequences are not decorative notation: the
+connecting map measures the obstruction to lifting a cycle as a cycle.
+
+\subsection{A sensible stopping point for the homological
+toolkit}\label{a-sensible-stopping-point-for-the-homological-toolkit}
+
+For ordinary finite-dimensional linear algebra, retain exactness,
+splitting, the explicit \(k[t]/(t^2)\) example, complexes, and the
+one-step resolution calculations. Derived functors become worthwhile
+when a concrete functor fails to be exact or an equivariant extension
+remains nonsplit. General spectral sequences, derived categories, and
+long resolutions can be deferred until a specific problem needs them.
+
+For the Hadamard/Williamson direction, a common-lift obstruction is not
+automatically an Ext class: sign constraints define a nonlinear finite
+set, not a module extension with an identified coefficient category.
+Calling it ``homological'' without constructing that category and
+obstruction would add a label without mathematical content.
+
+\textbf{Sources.} Grillet X.1, X.3, XI.2, XI.6, and XII.1--5 give the
+general framework. Hilton--Stammbach III.1--4 (printed pp.~84--99; PDF
+pp.~95--110) is especially useful for extension equivalence and
+computations; IV.1--4 (printed pp.~117--130; PDF pp.~128--141) supplies
+complexes, connecting maps, homotopy, and resolutions. The cyclic
+extension construction and field-complex decomposition above are fully
+derived so the reader can use the ideas before reading a whole
+homological algebra text.
+
+\section{Representations and
+semisimplicity}\label{representations-and-semisimplicity}
+
+\subsection{An action becomes a
+module}\label{an-action-becomes-a-module}
+
+A representation of a group \(G\) on a \(k\)-vector space is a
+homomorphism \(\rho:G\to\operatorname{GL}(V)\). Extend linearly to the
+group algebra \(k[G]\), whose elements are finite sums \(\sum_g a_g g\)
+and whose product extends the group law bilinearly. Then
+
+\[\left(\sum_g a_g g\right)\cdot v=\sum_g a_g\rho(g)(v)\]
+
+makes \(V\) a \(k[G]\)-module. Conversely such a module restricts to a
+group action because \(g^{-1}\) supplies the inverse operator.
+Intertwining maps are exactly module maps, invariant subspaces are
+submodules, and irreducible representations are nonzero simple modules.
+
+For the infinite cyclic group, \(k[G]\cong k[t,t^{-1}]\); this describes
+an invertible operator. For a cyclic group of order \(m\),
+\(k[G]\cong k[t]/(t^m-1)\); its representations are operators satisfying
+\(T^m=1_V\). If \(\operatorname{char}k\) does not divide \(m\), the
+polynomial \(t^m-1\) is square-free, since its derivative is
+\(mt^{m-1}\). Over a field containing its roots, such operators are
+diagonalizable. Both separability and the splitting field enter this
+elementary representation example.
+
+\subsection{Maschke's averaging
+argument}\label{maschkes-averaging-argument}
+
+\textbf{Theorem.} If \(G\) is finite and \(|G|\) is invertible in \(k\),
+every invariant subspace of a finite-dimensional representation has an
+invariant complement. Hence every finite-dimensional representation is a
+direct sum of irreducibles.
+
+\textbf{Proof.} Let \(U\subseteq V\) be invariant. Choose an ordinary
+linear projection \(P:V\to U\) with \(P|_U=1_U\). Define
+
+\[\overline P=\frac1{|G|}\sum_{g\in G}\rho(g)P\rho(g)^{-1}.\]
+
+Each summand has image in \(U\) and is the identity on \(U\), so the
+average does too; in particular \(\overline P^2=\overline P\).
+Reindexing the sum proves that \(\overline P\) commutes with every
+\(\rho(h)\). Therefore \(\ker\overline P\) is an invariant complement.
+If \(V\) is not irreducible, split it and repeat, decreasing dimensions.
+\(\square\)
+
+The averaged projection depends on the original projection; the theorem
+asserts existence, not a preferred decomposition. Over \(\mathbb R\) or
+\(\mathbb C\), one can instead average a positive inner product. It
+remains positive because a nonzero vector has a positive contribution in
+each summand. Its invariant orthogonal complements prove complete
+reducibility with a geometric meaning.
+
+\textbf{Characteristic failure.} In characteristic \(p\), let a
+generator of \(C_p\) act on \(k^2\) by \(1+N\), where
+\(N=\begin{pmatrix}0&1\\0&0\end{pmatrix}\). Since \(N^2=0\),
+\((1+N)^p=1\) in characteristic \(p\) (also when \(p=2\)). This is a
+representation with invariant line \(ke_1\) and no invariant complement,
+exactly as in the \(k[t]/(t^2)\) example. Averaging would require
+\(1/p\).
+
+Finite-dimensional representations of infinite groups need not be
+semisimple even over \(\mathbb C\): send \(n\in\mathbb Z\) to \(1+nN\).
+The same invariant line fails to split. Finite-dimensionality alone does
+not remove extensions.
+
+\subsection{Schur's lemma and the role of the
+field}\label{schurs-lemma-and-the-role-of-the-field}
+
+If \(S,T\) are irreducible representations, any intertwiner \(f:S\to T\)
+is either zero or an isomorphism. Its kernel and image are invariant,
+and irreducibility forces the result. Thus \(\operatorname{End}_G(S)\)
+is a division algebra over \(k\).
+
+If \(k\) is algebraically closed and \(S\) is finite-dimensional, every
+endomorphism \(f\) has an eigenvalue \(\lambda\). The intertwiner
+\(f-\lambda1_S\) has nonzero kernel, so it is zero. Therefore
+\(\operatorname{End}_G(S)=k1_S\). Neither the algebraic-closure nor
+finite-dimensional hypothesis should be suppressed.
+
+Over \(\mathbb R\), let \(C_4\) act on the plane by a quarter-turn
+\(J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}\). There is no real invariant
+line, so the representation is irreducible, but its commuting
+endomorphisms include all \(aI+bJ\), a copy of \(\mathbb C\). Thus
+``irreducible implies scalar commutant'' is false over \(\mathbb R\).
+
+For a finite-dimensional semisimple representation over an algebraically
+closed field, let \(S_i\) represent the distinct simple types occurring
+in \(V\). The evaluation map gives the canonical isotypic description
+
+\[\bigoplus_i S_i\otimes_k\operatorname{Hom}_G(S_i,V)
+\xrightarrow{\ \sim\ }V,\qquad s\otimes f\longmapsto f(s).\]
+
+The group acts only on the first factor. To prove the map is an
+isomorphism, choose a decomposition \(V\cong\bigoplus_i S_i^{m_i}\) and
+use Schur's lemma: the Hom space for \(S_i\) is \(k^{m_i}\) and
+contributes exactly that summand. The map was specified without this
+decomposition, so invertibility does not make the chosen copies
+canonical. The isotypic subspaces are intrinsic; a basis of each
+multiplicity space is not. Their commutant is a product of matrix
+algebras \(\prod_i M_{m_i}(k)\) after choosing those bases.
+
+\subsection{Duals and tensors of
+representations}\label{duals-and-tensors-of-representations}
+
+Define the dual action by
+
+\[\rho^\vee(g)(\lambda)=\lambda\circ\rho(g^{-1}).\]
+
+The inverse compensates for reversal under duality, ensuring
+\(\rho^\vee(gh)=\rho^\vee(g)\rho^\vee(h)\). Plain transpose without the
+inverse would reverse the group multiplication. In dual bases its matrix
+is \(\rho(g^{-1})^{\mathsf T}\), without complex conjugation.
+
+For two representations, the diagonal tensor action is
+
+\[g\cdot(v\otimes w)=\rho(g)(v)\otimes\sigma(g)(w).\]
+
+Functoriality proves the group law. The canonical identification
+\(W\otimes V^*\cong\operatorname{Hom}(V,W)\) carries the action to
+\(f\mapsto\sigma(g)f\rho(g)^{-1}\). Its invariant vectors are the
+intertwiners. This is a practical use of tensor variance, not merely an
+alternative notation.
+
+Characters are traces \(\chi_V(g)=\operatorname{tr}\rho(g)\). Direct
+sums and tensor products satisfy
+
+\[\chi_{V\oplus W}=\chi_V+\chi_W,\qquad
+\chi_{V\otimes W}=\chi_V\chi_W.\]
+
+For finite groups over \(\mathbb C\), characters determine isomorphism
+classes; the full orthogonality theorem proving that statement is a
+cited next step, not required to prove the two formulas. In modular
+characteristic the ordinary complex character package cannot be copied
+without changes.
+
+\subsection{From groups to Lie algebras: a short concrete
+bridge}\label{from-groups-to-lie-algebras-a-short-concrete-bridge}
+
+For a differentiable representation of a matrix Lie group,
+differentiation at the identity yields a Lie algebra representation
+\(d\rho:\mathfrak g\to\operatorname{End}(V)\) preserving brackets.
+Tensor actions differentiate according to the product rule:
+
+\[X\cdot(v\otimes w)=(X\cdot v)\otimes w+v\otimes(X\cdot w).\]
+
+Thus the Lie algebra operator is \(A\otimes I+I\otimes B\), whereas the
+group operator is \(\rho(g)\otimes\sigma(g)\). Confusing these two
+formulas changes the representation. Dualization differentiates to
+\(X\cdot\lambda=-\lambda\circ d\rho(X)\).
+
+Here is an explicit algebraic example over a characteristic-zero field.
+On homogeneous polynomials of degree \(m\) in \(x,y\), set
+
+\[E=x\frac{\partial}{\partial y},\qquad
+F=y\frac{\partial}{\partial x},\qquad
+H=x\frac{\partial}{\partial x}-y\frac{\partial}{\partial y}.\]
+
+On the basis \(v_j=x^{m-j}y^j\), \(0\le j\le m\),
+
+\[Ev_j=jv_{j-1},\qquad Fv_j=(m-j)v_{j+1},\qquad Hv_j=(m-2j)v_j,\]
+
+with missing endpoint vectors interpreted as zero. Direct calculation
+gives \([H,E]=2E\), \([H,F]=-2F\), and \([E,F]=H\). This defines a
+representation of \(\mathfrak{sl}_2\).
+
+It is irreducible. The distinct eigenvalues \(m-2j\) of \(H\) allow
+polynomial projections onto its individual weight spaces by
+interpolation. A nonzero invariant subspace therefore contains some
+\(v_j\). Repeated application of \(E\) reaches \(v_0\), since the
+intervening integers are nonzero in characteristic zero; repeated
+application of \(F\) then reaches every \(v_j\). The argument explicitly
+explains where small positive characteristic can fail.
+
+Over \(\mathbb C\), these are all finite-dimensional irreducible
+\(\mathfrak{sl}_2\) representations. Hall §4.6 proves this
+classification using a highest-weight vector and the commutator identity
+\(E F^jv=j(m-j+1)F^{j-1}v\) (printed pp.~96--101, PDF pp.~109--114). The
+notes above prove the model and its irreducibility, while the exhaustion
+statement is cited.
+
+The associated \(SU(2)\) representation is
+\(\operatorname{Sym}^m\mathbb C^2\). The element \(-I\) acts by
+\((-1)^m\), so it descends through \(SU(2)\to SO(3)\) exactly when \(m\)
+is even. Integrating a Lie algebra representation and descending through
+a covering are extra global questions; Lie algebra isomorphisms alone do
+not identify the corresponding groups or their representations. Hall's
+group-versus-Lie-algebra sections and Xi III §3.6 are useful precisely
+at this boundary.
+
+\textbf{Selective sources.} Xi III §3.2 gives an actual averaging proof
+(Theorem 3.20, printed pp.~109--111, PDF pp.~115--117), §3.7 constructs
+dual and tensor representations (pp.~152--162, PDF pp.~158--168), and
+§4.6 introduces \(\mathfrak{sl}_2\) modules (starting p.~215, PDF
+p.~221). Grillet IX.2 and IX.7 place these in semisimple module theory.
+Hall §§4.3--4.7 gives the finite-dimensional Lie-theoretic version.
+Compact-group averaging requires integration and continuity, whereas the
+finite-group proof above requires only an invertible group order.
+
+\textbf{Terminology warning.} Grillet IX.7 initially uses
+``irreducible'' to mean indecomposable, that is, admitting no nontrivial
+invariant direct-sum decomposition (printed p.~381, PDF p.~393). He
+explicitly relates that definition to indecomposable modules on p.~383
+(PDF p.~395). This study and Xi/Hall use the standard invariant-subspace
+definition, corresponding to a simple module. They coincide in a
+semisimple setting, but not for a nontrivial Jordan block. Thus Grillet
+IX.7.1, asserting a decomposition of every finite-dimensional
+representation into his ``irreducibles,'' is not the
+complete-reducibility theorem with the terminology of these notes. This
+is a verified convention difference, not a mathematical counterexample
+to his stated definition.
+
+\section{Bridges to arithmetic, algebraic geometry, and differential
+topology}\label{bridges-to-arithmetic-algebraic-geometry-and-differential-topology}
+
+These sections explain how the same constructions lead outward. They are
+selective derivations and prerequisite diagnoses, not compressed
+substitutes for the destination books. The Hadamard/Williamson bridge
+follows separately and uses only the directions that have a concrete
+role there.
+
+\subsection{Finite extensions as linear algebra: trace and
+norm}\label{finite-extensions-as-linear-algebra-trace-and-norm}
+
+Let \(L/k\) be a finite field extension of degree \(n\). Every
+\(a\in L\) defines the \(k\)-linear multiplication map
+
+\[m_a:L\to L,\qquad m_a(x)=ax.\]
+
+Define \(\operatorname{Tr}_{L/k}(a)=\operatorname{tr}(m_a)\) and
+\(N_{L/k}(a)=\det(m_a)\). Since \(m_{ab}=m_a\circ m_b\) and
+\(m_{a+b}=m_a+m_b\), norm is multiplicative and trace is \(k\)-linear.
+For \(c\in k\), \(m_c=c1_L\), so trace is \(nc\) and norm is \(c^n\).
+The map \(a\mapsto m_a\) is faithful: evaluate at \(1\) to recover
+\(a\).
+
+For \(L=k(\alpha)\) with monic minimal polynomial
+\(f(t)=t^n+a_{n-1}t^{n-1}+\cdots+a_0\), multiplication by \(\alpha\) has
+the companion matrix of \(f\). Hence
+
+\[\operatorname{Tr}_{L/k}(\alpha)=-a_{n-1},\qquad
+N_{L/k}(\alpha)=(-1)^n a_0.\]
+
+If \(L/k\) is separable, let \(\Omega\) be an algebraic closure of
+\(k\). The primitive-element theorem writes \(L=k(\alpha)\); it is cited
+here, not assumed for inseparable extensions. The polynomial \(f\) has
+distinct roots \(\alpha_1,\ldots,\alpha_n\), and
+
+\[\Omega\otimes_k L\cong\Omega[t]/(f)
+\cong\prod_{i=1}^n\Omega\]
+
+by scalar extension and Chinese remaindering. Multiplication by \(a\)
+becomes diagonal with entries \(\sigma_i(a)\) for the \(n\) embeddings
+\(\sigma_i:L\to\Omega\). Trace and determinant are unchanged by scalar
+extension of the matrix, so
+
+\[\operatorname{Tr}_{L/k}(a)=\sum_i\sigma_i(a),\qquad
+N_{L/k}(a)=\prod_i\sigma_i(a).\]
+
+This is the same polynomial-splitting mechanism used for operators. The
+new content is that the regular representation comes from a field
+multiplication.
+
+The trace pairing \(b(a,b)=\operatorname{Tr}_{L/k}(ab)\) is
+nondegenerate for finite separable extensions. In the power basis its
+Gram matrix is \(V^{\mathsf T}V\), where \(V_{ij}=\alpha_i^{j-1}\). The
+Vandermonde determinant is nonzero because the roots are distinct;
+therefore its square, the determinant of the trace Gram matrix, is
+nonzero. This proves nondegeneracy even in positive characteristic when
+the extension is separable; positivity has no role.
+
+For a finite purely inseparable counterexample, take
+\(k=\mathbb F_p(s)\) and \(L=k(\alpha)\) with \(\alpha^p=s\). In the
+basis \(1,\alpha,\ldots,\alpha^{p-1}\), multiplication by
+\(\sum_{j=0}^{p-1}a_j\alpha^j\) has every diagonal entry \(a_0\); the
+other powers produce cyclic shifts. Thus its trace is \(pa_0=0\). The
+trace pairing is identically zero although \([L:k]=p\). A field
+extension being finite does not suffice for trace duality.
+
+Xi III §5.8 (printed pp.~272--278, PDF pp.~278--284) is the immediate
+Galois-theoretic source. Lang III.1 (printed pp.~57--62, PDF pp.~71--76)
+uses the separable trace pairing to define complementary integral
+modules. The latter retains an integral lattice, which is extra
+information beyond the \(k\)-vector space and its nondegenerate pairing.
+
+\subsection{Why arithmetic needs more than field
+extensions}\label{why-arithmetic-needs-more-than-field-extensions}
+
+In a number field, the ring of integers is a \(\mathbb Z\)-module inside
+a \(\mathbb Q\)-vector space. Tensoring with \(\mathbb Q\) recovers the
+ambient vector space but loses torsion and integral index. For example
+\(2\mathbb Z\subset\mathbb Z\) becomes an isomorphism after tensoring
+with \(\mathbb Q\), while its cokernel is \(\mathbb Z/2\) before
+tensoring. Integral bases and discriminants cannot be read from the
+rational vector space alone.
+
+Localizing a commutative ring \(R\) at a multiplicative set \(S\)
+produces \(S^{-1}R\) with a map from \(R\) making all elements of \(S\)
+invertible. It is universal for that property. For modules,
+\(S^{-1}M\cong S^{-1}R\otimes_R M\) and localization is exact. For
+instance if a localized element maps to zero, some denominator in \(S\)
+annihilates its original image; multiplying the numerator by that
+denominator reduces the kernel assertion to the original exact sequence.
+This proves the middle exactness directly, with surjectivity obtained by
+lifting numerators.
+
+A finitely generated torsion-free module over a Dedekind domain is
+projective (Lang I.9, Proposition 26, printed p.~29, PDF p.~43). It need
+not be free: a nonprincipal invertible ideal is a rank-one example. Its
+scalar extension to the fraction field is one-dimensional, so
+vector-space dimension misses its ideal class. Over a PID, this
+distinction vanishes for finitely generated torsion-free modules. That
+is the arithmetic boundary of the elementary structure theorem.
+
+To read Lang efficiently, the missing bridges are integral dependence
+and integral closure, prime ideal factorization in Dedekind domains,
+discrete valuations, completions, and local ramification. Some algebraic
+ingredients appear in Hungerford VIII and Grillet's commutative algebra
+chapters; their existence in a table of contents does not establish
+complete preparation for Lang's local and analytic arguments. Lang I.9
+explicitly says it is not used later in that book, so projectivity
+should be read for this conceptual bridge, not falsely advertised as a
+prerequisite for all his subsequent chapters.
+
+\subsection{Affine geometry: symmetric algebra, ideals, and tangent
+vectors}\label{affine-geometry-symmetric-algebra-ideals-and-tangent-vectors}
+
+For a finite-dimensional vector space \(V\), the affine coordinate
+algebra is \(\operatorname{Sym}(V^*)\). Imposing polynomial equations
+amounts to taking a quotient by an ideal. Over an algebraically closed
+field, passage between radical ideals and algebraic sets requires the
+Nullstellensatz; it is a substantial theorem, not an immediate
+consequence of the quotient property. Nonradical ideals retain nilpotent
+information invisible to a set of points.
+
+For a finitely generated \(k\)-algebra \(A\) and a \(k\)-rational point
+\(x:A\to k\), put \(\mathfrak m=\ker x\). A tangent vector at \(x\) can
+be defined as a \(k\)-linear derivation \(D:A\to k\) satisfying
+
+\[D(ab)=x(a)D(b)+x(b)D(a).\]
+
+It vanishes on constants and on \(\mathfrak m^2\). Conversely every
+functional \(\ell:\mathfrak m/\mathfrak m^2\to k\) defines
+\(D(a)=\ell((a-x(a))\bmod\mathfrak m^2)\). Expanding a product proves
+the derivation law, and these assignments are inverse. Thus
+
+\[T_x\operatorname{Spec}A\cong
+\operatorname{Hom}_k(\mathfrak m/\mathfrak m^2,k).\]
+
+This statement uses a rational point, so its residue field is \(k\). At
+a general scheme point the residue field and the relative differential
+module must be tracked.
+
+For \(A=k[x_1,\ldots,x_n]/I\) at a rational point \(a\), expand every
+\(f\in I\) modulo the square of the maximal ideal:
+
+\[f(a+u)\equiv f(a)+\sum_i
+\frac{\partial f}{\partial x_i}(a)u_i\pmod{(u)^2}.\]
+
+The tangent space is the common kernel of these linear equations. For
+the cusp \(y^2=x^3\) at the origin, there is no nonzero linear equation
+from its defining polynomial, so the tangent space is two-dimensional
+even though the curve has dimension one. For
+\(A=k[\varepsilon]/(\varepsilon^2)\), the point has a one-dimensional
+tangent space despite its underlying point set having one point.
+Nilpotents store infinitesimal directions.
+
+Tensor products now do geometric work: affine fiber products are
+represented by \(A\otimes_R B\). Fibers of a module use
+\(M\otimes_R\kappa(\mathfrak p)\). Because this tensor operation may
+fail to preserve injections, flatness is needed to control families. The
+finite-dimensional vector-space version of exactness is insufficient
+once the coefficient ring varies.
+
+\subsection{What the scheme and sheaf bridge
+adds}\label{what-the-scheme-and-sheaf-bridge-adds}
+
+Hartshorne II.1--2 introduces sheaves and schemes; II.5 develops sheaves
+of modules, and II.8 introduces differentials. These topics add local
+data and gluing, not just new names for global vector spaces. A locally
+free sheaf is locally a finite direct sum of the structure sheaf; a
+global free basis is an extra condition. On an affine scheme, finite
+locally free sheaves correspond to finitely generated projective
+modules, a theorem requiring the module--sheaf correspondence and its
+local criteria.
+
+Global sections form a left-exact functor; their higher derived functors
+are sheaf cohomology. The obstruction here concerns sheaves and gluing
+even when the ground field is a field. It is not contradicted by
+\(\operatorname{Ext}^j_k(V,W)=0\): these are different categories and
+different functors. Hartshorne III.1--3 develops that transition. His
+introduction marks externally cited commutative-algebra and homological
+results with an ``A'' instead of proving them all in place (printed
+pp.~xv--xvi, PDF pp.~14--15). The collection provides many algebraic
+ingredients, but a reader still needs localization, local rings, sheaves
+and stalks, and substantial commutative-algebra fluency before this
+becomes a comfortable route.
+
+\subsection{Differential topology: linear algebra varies
+smoothly}\label{differential-topology-linear-algebra-varies-smoothly}
+
+For a smooth map \(F:M\to N\), differentiation gives maps
+\(dF_x:T_xM\to T_{F(x)}N\). The chain rule makes differentiation
+functorial. At a regular point of a level set \(F^{-1}(y)\), the
+implicit-function theorem identifies
+
+\[T_xF^{-1}(y)=\ker dF_x.\]
+
+For a smooth embedded submanifold \(M\subset N\), there is an exact
+sequence of vector bundles over \(M\),
+
+\[0\to TM\to TN|_M\to\nu\to0,\]
+
+where \(\nu\) is the quotient normal bundle. A Riemannian metric on
+\(N\) identifies it with the orthogonal normal bundle. On a paracompact
+smooth base, a smooth positive bundle metric exists by partitions of
+unity, so every short exact sequence of smooth vector bundles splits.
+The splitting need not be natural without the chosen metric or other
+extra data.
+
+This is stronger than choosing complements separately at each point:
+arbitrary pointwise choices need not vary continuously. Conversely
+splitting does not make either summand trivial. A nontrivial line bundle
+can be a direct summand of a trivial higher-rank bundle. Smooth
+variation and a global frame are different requirements.
+
+Hirsch proves the bundle splitting theorem as IV.2.2 (printed p.~95, PDF
+p.~105), using partitions of unity, and defines the orthogonal structure
+immediately afterward. This is actual proof coverage, not an analogy
+inferred from the chapter title. The necessary new bridges for his
+development are multivariable calculus, the inverse/implicit-function
+theorems, general topology, manifolds, partitions of unity, and then
+approximation and transversality.
+
+The Hessian of a smooth real function at a critical point is a symmetric
+bilinear form on the tangent space. Its inertia survives coordinate
+change, which explains why Sylvester's law underlies the Morse index.
+The Morse lemma and Morse theory additionally require analytic and
+topological arguments; diagonalization alone does not prove their local
+normal form or global conclusions. Hirsch VI is a destination for those
+arguments.
+
+Exterior algebra can build differential forms once smooth bundles exist,
+but Hirsch's preface expressly chooses a route without tensors or
+differential forms. It would be misleading to force homological algebra,
+algebraic geometry, or tensor calculus into his prerequisite chain. The
+common foundation is careful linear geometry; the subsequent methods are
+genuinely additional.
+
+\section{A concrete destination: Hadamard and Williamson
+foundations}\label{a-concrete-destination-hadamard-and-williamson-foundations}
+
+\subsection{Scope and the exact
+question}\label{scope-and-the-exact-question}
+
+The confirmed existing direction is the paused Hadamard/Williamson
+project in this repository. Its general existence question asks whether,
+for every positive integer \(k\), there is a matrix
+
+\[H\in\{-1,1\}^{4k\times4k},\qquad HH^{\mathsf T}=4kI_{4k}.\]
+
+The prior work at commit
+\texttt{2834fea31fb4ca7203531ca220e55a2fb7640119} records three rounds
+of bounded research in a restricted family. Its proofs and limitations
+are read here as the starting point. No prior benchmark is presented as
+a fresh run, and no historical claim about the smallest missing order or
+the worldwide current status is imported without a separate literature
+audit. This chapter does not restart the computational search.
+
+The structural chain actually needed is
+
+\[\text{Gram matrices}\longrightarrow\text{tensor constructions},
+\qquad
+\text{finite fields}\longrightarrow\text{quadratic characters},
+\]
+
+\[\text{cyclic group algebras}\longrightarrow\text{Fourier decomposition}
+\longrightarrow\text{correlation equations and lifting constraints}.
+\]
+
+It makes direct use of Xi II's metric and tensor material and Xi III's
+groups, representations, and finite fields. General Ext theory, schemes,
+and differential topology have no established role in this chain.
+
+\subsection{Gram matrices and the order
+restriction}\label{gram-matrices-and-the-order-restriction}
+
+The identity \(HH^{\mathsf T}=nI\) says precisely that the rows are
+mutually orthogonal in the usual positive real inner product and have
+squared length \(n\). It also gives \(H^{-1}=n^{-1}H^{\mathsf T}\) and
+\(|\det H|=n^{n/2}\), attaining the determinant bound proved in the
+forms chapter. Orthogonality alone does not enforce sign entries; both
+conditions are essential.
+
+Multiplying rows or columns by signs and permuting them preserves the
+Hadamard condition. Normalize the first row to all \(+1\). A second row
+must have equally many signs, so \(n\) is even. When \(n>2\), permute
+its positive entries into the first half and let a third row have \(a\)
+positives in the first half and \(b\) in the second. Its products with
+the first two rows give
+
+\[2(a+b)=n,\qquad2(a-b)=0.\]
+
+Hence \(n=4a\). This proves the necessary orders \(1,2\), or a multiple
+of \(4\). It supplies no construction at each admissible order. The
+proof is over the integers or reals; reducing the equation modulo \(2\)
+would collapse all signs and lose the argument.
+
+\subsection{Tensor closure and what it leaves
+unsolved}\label{tensor-closure-and-what-it-leaves-unsolved}
+
+If \(H\) and \(K\) have orders \(a,b\), functoriality of the tensor
+product and transpose gives
+
+\[(H\otimes K)(H\otimes K)^{\mathsf T}
+=(HH^{\mathsf T})\otimes(KK^{\mathsf T})=abI_{ab}.\]
+
+Its entries remain signs. Tensoring with
+\(S=\begin{pmatrix}1&1\\1&-1\end{pmatrix}\) gives
+\(\begin{pmatrix}H&H\\H&-H\end{pmatrix}\) and yields all powers-of-two
+orders from \([1]\). This is a genuine infinite construction theorem. It
+does not produce all multiples of four without additional seeds or
+constructions. The universal tensor identities explain why the
+construction transports orthogonality, while the sign-entry requirement
+explains why arbitrary orthogonal matrices are not sufficient seeds.
+
+\subsection{Finite fields and a character identity proved by
+counting}\label{finite-fields-and-a-character-identity-proved-by-counting}
+
+Let \(\mathbb F_q\) be a finite field of odd order. Its nonzero squares
+form an index-two subgroup: the squaring map has exactly two preimages
+\(x,-x\) for each nonzero square. Define the quadratic character
+\(\chi:\mathbb F_q\to\{0,\pm1\}\) with \(\chi(0)=0\), \(+1\) on nonzero
+squares, and \(-1\) on nonsquares. The quotient-group description proves
+multiplicativity, and equal coset sizes prove \(\sum_x\chi(x)=0\).
+
+The multiplicative group of a finite field is cyclic. One short proof
+lets \(e\) be the least common multiple of its element orders. In a
+finite abelian group, combine elements of maximal prime-power orders to
+obtain an element of order \(e\). Every nonzero field element is a root
+of \(X^e-1\), so there are at most \(e\) of them, whereas Lagrange gives
+\(e\le q-1\). Thus \(e=q-1\). It follows that
+\(\chi(-1)=(-1)^{(q-1)/2}\).
+
+For \(a\ne0\), the crucial correlation identity is
+
+\[\sum_x\chi(x)\chi(x+a)=-1.\]
+
+Count pairs \((x,y)\) with \(y^2=x(x+a)\). For fixed \(x\), their number
+is \(1+\chi(x(x+a))\), so the total is \(q\) plus the displayed sum.
+Scale \(x=az\), \(y=aw\) and rewrite as
+
+\[(2z+1-2w)(2z+1+2w)=1.\]
+
+Since \(2\) is invertible, each nonzero first factor determines a unique
+second factor and a unique \((z,w)\). There are \(q-1\) pairs, proving
+the sum. For \(a=0\) the corresponding sum is \(q-1\). This argument
+uses a finite field of odd order, not the special fact that its elements
+are residue classes modulo a prime.
+
+\subsection{Paley constructions with explicit
+signs}\label{paley-constructions-with-explicit-signs}
+
+Index \(Q\) by \(x,y\in\mathbb F_q\) and put \(Q_{xy}=\chi(y-x)\). The
+character identities give
+
+\[Q\mathbf1=0,\qquad QQ^{\mathsf T}=qI-J,
+\qquad Q^{\mathsf T}=\chi(-1)Q.\]
+
+If \(q\equiv3\pmod4\), set
+
+\[H=\begin{pmatrix}1&\mathbf1^{\mathsf T}\\
+\mathbf1&Q-I\end{pmatrix}.\]
+
+Its entries are signs, its top row is orthogonal to every lower row
+because \(1+(Q-I)\mathbf1=0\), and its lower Gram block is
+
+\[J+(Q-I)(Q^{\mathsf T}-I)
+=J+qI-J-Q-Q^{\mathsf T}+I=(q+1)I.\]
+
+Therefore \(HH^{\mathsf T}=(q+1)I\). The prior study used the equivalent
+sign convention with lower first column \(-\mathbf1\) and core \(Q+I\).
+The conventions have been derived separately here so a copied sign does
+not silently spoil orthogonality.
+
+For \(q\equiv1\pmod4\), define the symmetric conference matrix
+
+\[C=\begin{pmatrix}0&\mathbf1^{\mathsf T}\\\mathbf1&Q\end{pmatrix}.\]
+
+It has zero diagonal, off-diagonal signs, and \(C^2=qI\). The block
+matrix
+
+\[\mathcal H=\begin{pmatrix}C+I&C-I\\C-I&-C-I\end{pmatrix}\]
+
+has only sign entries. The diagonal Gram block is
+\((C+I)^2+(C-I)^2=2(q+1)I\) and the off-diagonal block vanishes by
+commutation. It is Hadamard of order \(2(q+1)\).
+
+These proofs add a short prime-power and conference-matrix development
+to the prior study's prime, \(q\equiv3\pmod4\) proof. They are classical
+constructions, not new results or claims that the earlier scripts
+implemented them. Finite fields of every prime-power order exist (Xi III
+Theorems 5.40--5.45, printed pp.~260--261, PDF pp.~266--267); these
+pages and their proofs were inspected visually. Small exact instances
+are checked separately in this deliverable, without resuming an
+enumeration campaign.
+
+\subsection{Circulants as an integral group
+algebra}\label{circulants-as-an-integral-group-algebra}
+
+Fix \(m\ge1\) and let \(P\) be the cyclic shift with \(P_{ij}=1\) when
+\(j=i+1\pmod m\). The map
+
+\[\mathbb Z[z]/(z^m-1)\longrightarrow M_m(\mathbb Z),
+\qquad f\longmapsto f(P)\]
+
+is injective: the first row of \(\sum_{j=0}^{m-1}a_jP^j\) is its
+coefficient vector. Its image is the circulant algebra, so circulants
+commute. Define \(f^\iota(z)=f(z^{-1})\). Transpose corresponds to this
+involution. For a real sequence \(x\) with polynomial
+\(X(z)=\sum_jx_jz^j\), the coefficient of \(z^s\) in \(XX^\iota\) is
+
+\[\operatorname{PAF}_x(s)=\sum_jx_jx_{j+s}.\]
+
+This follows by collecting terms with exponent difference \(s\);
+autocorrelation is even in \(s\). It is convolution with the reversed
+sequence, so the group algebra retains the integral coefficients needed
+for exact verification.
+
+If \(x_j=x_{-j}\), then \(X=X^\iota\) and the circulant is symmetric.
+Four such sign sequences form a Williamson quadruple when
+
+\[AA^{\mathsf T}+BB^{\mathsf T}+CC^{\mathsf T}+DD^{\mathsf T}
+=4mI_m,\]
+
+equivalently their four autocorrelations sum to zero at every nonzero
+shift. Symmetry permits replacing the four Gram matrices by
+\(A^2,B^2,C^2,D^2\). Commutation and symmetry then make
+
+\[W=\begin{pmatrix}
+A&B&C&D\\-B&A&-D&C\\-C&D&A&-B\\-D&-C&B&A
+\end{pmatrix}\]
+
+Hadamard of order \(4m\). Multiplying blocks, every diagonal Gram block
+is the sum of the four squares, while an off-diagonal block has terms
+such as \(-AB+BA-CD+DC=0\). Transpose and commutation hypotheses are
+indispensable in that cancellation. Existence in the Williamson family
+is sufficient for a Hadamard matrix of that order; it is not a necessary
+characterization of all Hadamard matrices.
+
+\subsection{Fourier characters are Chinese remainder
+coordinates}\label{fourier-characters-are-chinese-remainder-coordinates}
+
+Let \(k\) have characteristic not dividing \(m\) and contain a primitive
+\(m\)th root \(\zeta\). The roots of \(z^m-1\) are distinct, so
+
+\[k[z]/(z^m-1)\xrightarrow{\ \sim\ }k^m,
+\qquad f\longmapsto(f(1),f(\zeta),\ldots,f(\zeta^{m-1}))\]
+
+is a Chinese remainder isomorphism. Its inverse is the finite Fourier
+formula
+
+\[a_j=\frac1m\sum_{r=0}^{m-1}f(\zeta^r)\zeta^{-rj}.\]
+
+To verify it, the geometric sum \(\sum_r\zeta^{r\ell}\) equals \(m\)
+when \(m\mid\ell\) and \(0\) otherwise. In the regular representation,
+the vector \((1,\zeta^r,\ldots,\zeta^{(m-1)r})\) is an eigenvector of
+\(P\) with eigenvalue \(\zeta^r\). Thus all circulants diagonalize in
+the same basis; this is the group representation decomposition into
+characters.
+
+Over \(\mathbb C\), divide these vectors by \(\sqrt m\) to get a unitary
+basis. A real symmetric circulant then has real eigenvalues, since
+\(X(\zeta^{-r})=X(\zeta^r)=\overline{X(\zeta^r)}\). The correlation
+identity becomes
+
+\[\sum_{X\in\{A,B,C,D\}}|X(\zeta^r)|^2=4m\qquad(0\le r<m).\]
+
+The frequency-zero equation is the row-sum identity
+\(r_a^2+r_b^2+r_c^2+r_d^2=4m\). A single row or partial tuple must
+satisfy the corresponding upper bounds, but separate feasible spectral
+values need not come from any common sign coefficients.
+
+The field assumptions explain failures: over \(\mathbb Q\) the algebra
+need not split into one-dimensional factors, although it splits after
+adjoining \(\zeta\); if the characteristic divides \(m\), \(z^m-1\) has
+repeated roots and this semisimple Fourier argument breaks. Positivity
+and absolute-square inequalities require the real/complex setting; they
+have no automatic meaning over a finite field.
+
+\subsection{A quotient test is not a lift
+theorem}\label{a-quotient-test-is-not-a-lift-theorem}
+
+For \(d\mid m\), the group homomorphism \(C_m\to C_d\) gives an algebra
+quotient sending \(z\) to the generator of order \(d\). The compressed
+coefficient is \(y_r=\sum_{j\equiv r\ (d)}x_j\). Applying the quotient
+to the four correlation identity gives
+
+\[\sum_x C_{y_x}C_{y_x}^{\mathsf T}=4mI_d.\]
+
+The right side remains \(4m\), not \(4d\), and compressed coefficients
+are integer sums rather than signs. This is a necessary consequence of a
+full solution. The quotient discards coefficients, so its converse needs
+a separate common-lift theorem.
+
+The prior proof gives an exact illustrative failure at \(m=9\). The
+normalized symmetric masks \((2,10,10,13)\), where bit \(j-1\) negates
+positions \(\pm j\), compress at \(d=3\) to
+
+\[(3,1,1),\quad(3,-1,-1),\quad(3,-1,-1),\quad(-1,-1,-1).\]
+
+Their total compressed autocorrelation is \((36,0,0)\) and their
+row-square sum is \(36\), so both proper cyclic quotients of \(C_9\)
+pass. But their uncompressed autocorrelation at shift \(1\) sums to
+\(-8\). This shows that these particular lifts fail; it alone would not
+prove that every other lift of the compressed multiset fails. The prior
+independent review separately records a stronger no-common-lift fixture:
+the compressed multiset
+
+\[(-1,-1,-1),\quad(-1,1,1),\quad(-1,3,3),\quad(3,-1,-1).\]
+
+It too has total compressed autocorrelation \((36,0,0)\). There are 16
+normalized symmetric sign rows at core nine; among their four-row
+multisets, exactly 27 map to this specified compressed multiset. The new
+exact checker independently reconstructs and rejects all 27 by their
+full autocorrelations. Thus no common lift exists \textbf{in this
+normalized symmetric Williamson family}. That is stronger evidence than
+one failed lift, and still says nothing about nonexistence of arbitrary
+Hadamard matrices of order 36.
+
+Even positive spectral residuals need not have a sign lift. At \(m=7\),
+let three sequences have negative positions \(\{\pm1\}\), \(\{\pm2\}\),
+and \(\{\pm3\}\). Their squared circulants sum to \(20I+J\), leaving
+\(8I-J\) toward the target \(28I\). This residual is positive definite:
+its eigenvalues are \(1\) on constants and \(8\) on their orthogonal
+complement. Nevertheless the odd Williamson product constraint below
+forces the fourth sequence to be all positive; its row-sum square is
+\(49\), while the remaining row-square budget is \(1\). No fourth
+Williamson row exists. A positive real Gram factor does not necessarily
+satisfy the required discrete sign pattern.
+
+\subsection{Why four colors appear in the prior
+reduction}\label{why-four-colors-appear-in-the-prior-reduction}
+
+Now let \(m=2h+1\) be odd and normalize every sequence by \(x_0=1\).
+Write \(T(z)=\sum_{j=0}^{m-1}z^j\) and \(N_x(z)=\sum_{x_j=-1}z^j\), so
+\(X=T-2N_x\). The identities \(T^2=mT\) and \(TN_x=|N_x|T\), substituted
+into the Williamson equation and divided coefficientwise by \(4\) in the
+integral group algebra, give
+
+\[\sum_xN_x^2+(m-R)T=m,\qquad R=\sum_x|N_x|.\]
+
+Each \(|N_x|\) is even by symmetry and normalization. Modulo \(2\),
+squaring removes cross terms and sends \(z^j\) to \(z^{2j}\). Since
+doubling permutes residues modulo odd \(m\), each nonzero position
+contains an odd number of negative entries among the four rows.
+Equivalently
+
+\[a_jb_jc_jd_j=-1\qquad(j\ne0).\]
+
+This is the odd Williamson product theorem in the prior proof. Its
+hypotheses are structural restrictions; it is not a constraint on
+arbitrary Hadamard matrices.
+
+Let \(v_c=\mathbf1-2e_c\in\mathbb Z^4\), \(c=1,2,3,4\). The eight
+four-entry sign columns with product \(-1\) are uniquely
+\(\varepsilon v_c\) with \(\varepsilon=\pm1\), and
+
+\[v_c^{\mathsf T}v_d=4[c=d],\qquad
+\mathbf1^{\mathsf T}v_c=2.\]
+
+Thus each nonzero column has a color \(\kappa_j\) and sign
+\(\varepsilon_j\), reflected at opposite indices. For a nonzero shift
+\(t\), pair the correlation terms indexed by \(j\) and \(-t-j\). The
+pair involving zero contributes \(4\varepsilon_t\); the unique fixed
+term contributes \(4\). The remaining \(h-1\) pairs define edges \(E_t\)
+on the opposite-index classes. Each contributes
+\(8\varepsilon_u\varepsilon_v[\kappa_u=\kappa_v]\). Hence exact
+correlation is equivalent to
+
+\[\varepsilon_t+1+
+2\sum_{\{u,v\}\in E_t}\varepsilon_u\varepsilon_v
+[\kappa_u=\kappa_v]=0.\]
+
+If \(c_t\) counts its monochromatic edges, reducing this equation modulo
+\(4\) gives \(\varepsilon_t=-(-1)^{c_t}\). All signs are therefore
+forced by a complete coloring. The full integer equations still have to
+hold; the parity consequence alone is insufficient.
+
+Permuting the four block rows merely permutes color names. Naming colors
+in order of first appearance, with at most four colors, gives a unique
+restricted-growth representative of each orbit. This is a quotient by
+block permutations, including repeated blocks. It is not classification
+up to all Hadamard matrix equivalences, nor a quotient by arbitrary
+coordinate changes.
+
+\subsection{Boolean polynomials and the precise relaxation
+boundary}\label{boolean-polynomials-and-the-precise-relaxation-boundary}
+
+Encode each color minus one by two bits \(a_i,b_i\). In the Boolean
+algebra
+
+\[B=\mathbb F_2[a_i,b_i\ (1\le i\le h)]/
+(a_i^2-a_i,b_i^2-b_i),\]
+
+every function on the bit cube has a unique squarefree polynomial.
+Induct on the last bit: any function is \(f_0+x(f_1-f_0)\), which proves
+existence and uniqueness recursively. Equality of colors has polynomial
+
+\[\delta_{uv}=(1+a_u+a_v)(1+b_u+b_v).\]
+
+It is \(1\) exactly when both bits agree. Therefore
+
+\[n_t=1+\sum_{\{u,v\}\in E_t}\delta_{uv},\qquad
+\varepsilon_t=(-1)^{n_t}\]
+
+has degree at most two in the bits. Substituting a partial assignment
+preserves this degree bound. Write a residual \(n_i=\alpha_i+p_i\) with
+constant \(\alpha_i\) and zero-constant polynomial \(p_i\), and put
+\(\eta_i=(-1)^{\alpha_i}\), \(\xi_p=(-1)^p\). Then
+
+\[\varepsilon_i=\eta_i\xi_{p_i},\qquad
+\varepsilon_u\varepsilon_v=\eta_u\eta_v\xi_{p_u+p_v}.\]
+
+These are exact identities of functions. Equal residual polynomials
+therefore represent the same unknown phase even before its sign is
+known. Summing their integer coefficients first can reveal cancellation
+that separate sign ranges miss. Constants and linear terms must be
+included when deciding equality; equal quadratic parts alone do not
+suffice.
+
+The exponents are computed in \(B\), of characteristic two. The
+correlation coefficients and their sums are computed in \(\mathbb Z\).
+The map \(p\mapsto(-1)^p\) converts addition of Boolean functions into
+multiplication of signs; it is not a ring map allowing integer
+coefficients to be reduced modulo two.
+
+After grouping, a lag expression can have the exact form
+\(K+\sum_pc_p\xi_p\). Treating distinct \(\xi_p\) as independent signs
+gives a safe superset of its attainable values, hence a sound rejection
+test when zero is absent. Presence of zero is only a necessary
+condition. Relations such as \(\xi_{p+q}=\xi_p\xi_q\) remain; even
+preserving all such linear phase relations need not enforce the
+quadratic origin. For example, the values of \(a,b,ab\) cannot be
+\((0,0,1)\), though these three polynomials are linearly independent
+over \(\mathbb F_2\). A prospective stronger method must specify which
+extra dependencies it keeps and prove its rejection rule.
+
+The prior work's core-11 false-positive prefix is a concrete warning
+that separately feasible row and lag relaxations can lack a common
+completion. Its existing audit, not a new run here, supports that
+bounded observation. Neither the algebraic reduction nor the word
+``exact'' makes every downstream relaxation complete.
+
+\subsection{What to learn next for this
+direction}\label{what-to-learn-next-for-this-direction}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Tool needed for the study
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source in the collection
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Supplement supplied or still needed
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Orthogonality, Gram matrices, positive residuals & Xi II §§3.1--3.5, 3.8
+& Gram-factor versus sign-factor distinction; examples above \\
+Kronecker products and tensor identities & Xi II §6.2; Hungerford IV.5;
+Grillet XI.5--6 & Sylvester closure proof above \\
+Cyclic groups, quotient rings, polynomial actions & Xi III §§1.2,
+4.2--4.4; Hungerford III--IV; Grillet III, VIII & Integral
+cyclic-algebra involution and correlation dictionary above \\
+Finite fields and multiplicative characters & Xi III §5.6; Hungerford
+V.5; Grillet IV.1.6 and V.1.3 & Quadratic-character sum and both Paley
+block proofs above \\
+Character decomposition and invariant splitting & Xi III §§3.1--3.5;
+Grillet IX.2, IX.7--9 & Fourier inversion as CRT, with
+splitting/characteristic hypotheses above \\
+Compression and common lifting & Quotients and maps throughout the core
+& A real additional theorem would have to couple sign lifts; none is
+assumed \\
+Quadratic Boolean constraints & Polynomial rings, quotients, functions
+on finite fields & Boolean normal form and phase dependence above;
+algorithmic feasibility remains a separate subject \\
+\end{longtable}
+
+The strongest useful next reading task is to reconstruct each displayed
+dictionary and counterexample, then read the pinned prior proofs with
+the coefficient rings visible. A later research proposal should target a
+specific lost dependency, a genuinely wider construction family, or a
+proved lift criterion. Such proposals are prospective; no improvement in
+search complexity or progress toward universal existence is claimed by
+this foundational chapter.
+
+\section{Selective comparison: what can be reorganized, what must be
+retained}\label{selective-comparison-what-can-be-reorganized-what-must-be-retained}
+
+\subsection{How to read the
+comparison}\label{how-to-read-the-comparison}
+
+The criterion is the user's intended use: rebuilding algebra around
+reusable principles, then returning to linear algebra and the
+Hadamard/Williamson study. ``Covered'' has several meanings. A theorem
+may be stated, proved through a different construction, left as an
+exercise, or illustrated geometrically. These are distinct
+contributions. A chapter list can establish where to look; it cannot
+establish that two books are interchangeable.
+
+Evidence levels and edition/page conversions are in the source ledger.
+The comparisons below are selective, and pedagogical judgments are
+identified as judgments based on the inspected material. No global
+difficulty ranking or exercise-by-exercise replacement audit is claimed.
+
+\subsection{Xi I versus the graduate algebra
+books}\label{xi-i-versus-the-graduate-algebra-books}
+
+Xi I starts with equations and low-order determinants, develops sets and
+maps, then connects vector rows/columns, rank, and linear maps before
+abstract group/ring/field language. Its Chapter 4 does more than provide
+a determinant formula: oriented-volume motivation and multilinearity
+appear on printed pp.~75--76 (PDF pp.~81--82), and §4.4 gives multiple
+characterizations on p.~93 (PDF p.~99). The surrounding exercises
+include minor identities. That material has structural value even when
+its elementary calculations are already familiar.
+
+Hungerford III and Grillet III give a broader ring-theoretic
+organization of polynomial division and factorization; their later
+module chapters explain why a PID is the right setting for one-operator
+structure. The present study therefore reorganizes the \textbf{use} of
+Xi I's polynomial arithmetic into Bézout, Chinese remainder, and
+annihilator arguments. It does not infer that Xi I's derivations,
+examples, or root-location exercises are redundant.
+
+Xi I §7.4 starts with symmetry in roots and elementary symmetric
+polynomials (p.~177, PDF p.~183); §7.6 makes common-factor detection
+into a resultant matrix (p.~190, PDF p.~196). These are useful links
+from coefficient calculations to invariant expressions and elimination.
+Grillet IV.7's resultant/discriminant location is verified from contents
+(p.~176, PDF p.~188), but its entire proof and exercise treatment was
+not compared against Xi's. No preference about replacement follows from
+that heading alone.
+
+For a returning reader who can prove quotient factorization,
+rank--nullity, determinant multilinearity, Euclidean division, and
+Bézout, much of Xi I can be used as a reference rather than reread
+sequentially. That is a competence criterion for selective study, not a
+judgment that introductory material lacks content.
+
+\subsection{Xi II and two routes to Jordan
+form}\label{xi-ii-and-two-routes-to-jordan-form}
+
+There is substantial, verified theorem overlap. Xi II Theorem 2.51
+(printed pp.~72--73, PDF pp.~78--79) proves the coprime-annihilator
+split using Bézout. Theorems 2.52--2.53 build the generalized
+eigenspaces. Theorems 2.56--2.57 then establish Jordan form under the
+actual hypothesis that the characteristic polynomial splits in the base
+field. Existence is proved by quotient induction for nilpotent
+operators; uniqueness comes from dimensions of images of powers
+(pp.~75--77, PDF pp.~81--83). These proof pages were read, not inferred
+from the section title.
+
+Grillet VIII.6 proves the PID structure theorem (pp.~336--342, PDF
+pp.~348--354) and VIII.7 makes \(V\) a \(k[t]\)-module, proves its
+annihilator has a monic generator, and derives primary cyclic blocks and
+Jordan bases (pp.~342--346, PDF pp.~354--358). Its sampled proof gives a
+real alternative construction, with rational canonical forms and general
+coefficient rings naturally close at hand. Hungerford's suggested
+linear-algebra course explicitly takes torsion PID modules before
+VII.1--5 (printed p.~xviii, PDF p.~15); his IV.6 and VII.4--5 locations
+support the same broad organization. A detailed proof-by-proof audit of
+Hungerford VII was not made.
+
+For the user's purpose, the module route is an efficient
+\textbf{structural spine}: one remembers a module and its annihilator,
+then recovers the canonical forms. Xi's route retains pedagogical value:
+it shows what the projections do inside the actual vector space and
+constructs chains through quotients. A reader who knows only the
+abstract theorem should still reconstruct one chain and the
+kernel-growth count. The two proofs illuminate different failure cases.
+
+\subsection{Xi II tensor constructions versus Grillet and Mac
+Lane}\label{xi-ii-tensor-constructions-versus-grillet-and-mac-lane}
+
+Xi II Definition 6.11 constructs tensor products from a basis criterion,
+proves uniqueness, and \textbf{proves the universal property} in Theorem
+6.15 (pp.~273--275, PDF pp.~279--281). It is inaccurate to say that this
+book has only coordinates or no universal-property treatment. Its Hom
+identification, scalar extension, functorial maps, Kronecker products,
+contraction as trace, and contraction as operator composition are
+explicit examples (pp.~274--283, PDF pp.~280--289).
+
+Grillet XI.5 constructs tensor products by generators and relations for
+a right module and a left module, proving the balanced universal
+property (pp.~434--437, PDF pp.~446--449). XI.6--8 adds right exactness,
+dual modules, and flatness. This is a genuine extension of scope:
+vector-space bases do not exist for arbitrary modules, and tensoring can
+destroy injections. The simplest \(\mathbb Z/2\) counterexample explains
+why that generality matters.
+
+Mac Lane III.1--2 (pp.~55--62, PDF pp.~68--75) identifies universal
+arrows, universal elements, and representability, and proves Yoneda.
+IV.1 (pp.~79--80, PDF pp.~92--93) formulates adjunction, including the
+Hom--tensor example. Its contribution is a common recognition language,
+with careful naturality. It does not replace tensor calculations or tell
+the reader which finite-dimensionality hypotheses can be forgotten.
+
+There is one confirmed scope error: the remark after Xi II Theorem 6.19
+(p.~278, PDF p.~284) extends its identification of \textbf{all} mixed
+multilinear forms to infinite-dimensional spaces. The
+identity-operator/finite-rank counterexample in the Hom chapter
+disproves that extension for the preceding definition (p.~263, PDF
+p.~269). This local correction does not invalidate the
+finite-dimensional construction, its universality theorem, or the
+chapter's examples. The definition and remark were checked as images.
+
+\subsection{Exterior algebra: a real change in construction and
+scope}\label{exterior-algebra-a-real-change-in-construction-and-scope}
+
+Xi II §6.4 begins by explicitly assuming characteristic zero and models
+exterior powers inside antisymmetric tensors (p.~292, PDF p.~298). Its
+exterior product uses the alternation operator. This model naturally
+continues the chapter's tensor calculations and geometric language.
+
+Grillet XIII.2--4 builds tensor, symmetric, and exterior algebras by
+universal properties and quotient ideals over a commutative ring; the
+exterior relation is \(v\otimes v=0\) (pp.~518--527, PDF pp.~530--539).
+The basis and alternating-map arguments were sampled in the actual proof
+pages. This quotient construction is better suited to retaining
+characteristic \(2\) and avoiding factorial denominators. In
+characteristic zero, the models are connected by normalized alternation;
+normalizations must be translated.
+
+For determinants and minors, Xi I's characterizations and Xi II's
+geometric motivation remain helpful. The notes choose the quotient
+exterior construction so the rank and Cauchy--Binet arguments work in
+arbitrary field characteristic. That is a decision about the desired
+scope, not an assertion that Xi's stated characteristic-zero treatment
+is incomplete on its own terms.
+
+\subsection{Metric and geometric material is not superseded by module
+theory}\label{metric-and-geometric-material-is-not-superseded-by-module-theory}
+
+Xi II Chapter 3 develops real and Hermitian inner products,
+self-adjoint, isometric and normal operators, complexification,
+orthogonal expansion, projections, least squares, and
+orthogonal-polynomial examples. The normal spectral theorem, Theorem
+3.62 (pp.~126--128, PDF pp.~132--134), was read with its proof. This
+supplies an orthonormal conclusion under a positive metric; Jordan form
+supplies a different conclusion under arbitrary basis changes.
+
+The inspected metric exercises include dual-basis transformations and
+norm comparisons, providing practice that is not supplied by merely
+knowing the module structure theorem. Xi's Chapters 4--5 add affine and
+Euclidean geometry, transformation groups, indefinite spaces, quadrics,
+and projective geometry. Only their contents and selected contextual
+passages were audited here, so no claim that a graduate algebra book
+covers all their proofs or exercises is warranted. Their relevance is
+already concrete in the Hadamard direction: positive real Gram matrices
+and exact sign constraints are central, while similarity alone discards
+the metric problem.
+
+\subsection{Xi III, Grillet, and Hall: symmetry with a terminology
+trap}\label{xi-iii-grillet-and-hall-symmetry-with-a-terminology-trap}
+
+Xi III has an actual averaging proof for finite complex representations
+(Theorem 3.20, pp.~109--111, PDF pp.~115--117), followed by examples and
+remarks about compact groups. Its §3.7 gives dual and tensor
+representations (pp.~152--162, PDF pp.~158--168). Its module definitions
+in §4.4 (pp.~186--188, PDF pp.~192--194) connect groups, algebras and
+actions. The rendered pages show substantive construction coverage.
+
+Grillet IX.7 proves the group-algebra correspondence and Maschke under
+the field-characteristic condition (pp.~380--384, PDF pp.~392--396). It
+initially calls a representation ``irreducible'' when it is
+\textbf{indecomposable} (p.~381, PDF p.~393), explicitly making that
+correspondence on p.~383. These notes, Xi and Hall use irreducible to
+mean a nonzero representation with no proper nonzero invariant subspace.
+Outside a semisimple setting, Grillet IX.7.1 must therefore not be read
+as an unconditional complete reducibility theorem in the latter
+terminology. This is a convention difference verified against a rendered
+page, not an OCR mistake or a false theorem under his definition.
+
+Hall §§4.3--4.7 proves unitary splitting, Schur's lemma, and the
+\(\mathfrak{sl}_2\) classification (pp.~90--101, PDF pp.~103--114). Its
+unipotent representation of \(\mathbb R\) demonstrates failure of
+complete reducibility even over \(\mathbb C\). Xi III's §4.6 starts from
+Lie module conditions and explicitly points outside that section for
+enveloping algebra and PBW theory (pp.~215--216, PDF pp.~221--222).
+Hall's later PBW, root-system and highest-weight chapters are verified
+destinations from contents; their full proofs were not compared against
+Xi's later examples or appendix. Thus ``Hall develops a systematic
+further theory'' is supported, while ``all Xi representation examples
+are replaced'' is not established.
+
+For Hadamard/Williamson, the immediately useful representation theory is
+finite cyclic characters and simultaneous splitting of the shift
+operator. Full compact Lie theory and \(\mathfrak{sl}_2\) are enriching
+branches that can be deferred for that project.
+
+\subsection{Homological and geometric graduate books: bridges, not
+substitutes}\label{homological-and-geometric-graduate-books-bridges-not-substitutes}
+
+Hilton--Stammbach III.1--4 carefully distinguishes extension equivalence
+from middle-module isomorphism and computes cyclic Ext groups
+(pp.~84--99, PDF pp.~95--110). Its introduction explains why extensions
+precede general derived functors. This is the right added construction
+when invariant splitting fails. Over the field alone, positive Ext/Tor
+vanish; complex homology remains meaningful. No need for advanced
+homological machinery has been demonstrated in the sign-lifting
+constraints of the Hadamard study.
+
+Hartshorne II.5 and II.8 develop local module data and differential
+universal properties (pp.~108--111, 172--174; PDF pp.~123--126,
+187--189). They require sheaves, localization and local rings beyond
+one-vector-space arguments. His ``A'' references make clear that some
+algebra is cited rather than rederived. Lang I.9 and III.1 add
+projectivity over Dedekind rings and integral trace duality (pp.~29, 57;
+PDF pp.~43, 71). They require integral and local arithmetic information
+that scalar extension forgets.
+
+Hirsch IV.2.2 proves splitting for vector bundles on a paracompact base
+using partitions of unity (p.~95, PDF p.~105). This is an important
+extension of the linear splitting discussion, while his preface
+deliberately chooses not to use tensors or differential forms (printed
+p.~vii, PDF p.~8). An algebraic prerequisite ladder that makes him
+depend on those subjects would misrepresent the actual book.
+
+The practical decision is selective: use Xi for the concrete, metric,
+and geometric language; choose Grillet or Hungerford for the module
+spine; use Mac Lane to sharpen universal reasoning and Hilton--Stammbach
+when a real exactness obstruction appears. Enter Hall, Lang, Hartshorne,
+and Hirsch along their particular missing bridges. This is a branching
+reading plan, not eleven sequential complete readings.
+
+\section{Source ledger and page
+conventions}\label{source-ledger-and-page-conventions}
+
+\subsection{Evidence levels}\label{evidence-levels}
+
+\textbf{P} means the specified text, theorem, construction, or proof was
+inspected in this task. \textbf{V} means a rendered source page was
+inspected, necessary for scans or a suspected extraction problem.
+\textbf{T} means a contents or introductory description was inspected;
+it establishes a location and stated scope, not that every theorem or
+exercise was audited. \textbf{C} means a theorem is cited as a standard
+result and is not fully reproved or source-audited here. The comparison
+uses these distinctions rather than treating an index hit as proof
+coverage.
+
+PDF page numbers are \textbf{one-based physical page positions in the
+supplied file}; printed pages are the numbers visible on the book pages.
+The offsets below apply to the ordinary Arabic-numbered body at the
+checked locations, not to Roman frontmatter. A section range is a
+reading destination; a list of inspected pages is the actual evidence,
+and should not be expanded into a full-book audit.
+
+\subsection{Editions and physical
+files}\label{editions-and-physical-files}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2308}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2308}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3077}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2308}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Key
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Supplied source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+File pages
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Body page conversion
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Xi I & \CJKtext{席南华}, \CJKtext{基础代数} \CJKtext{第一卷}, Science
+Press, 2016 & 207, local metadata & PDF = printed + 6 \\
+Xi II & \CJKtext{席南华}, \CJKtext{基础代数} \CJKtext{第二卷}, Science
+Press, 2018 & 334, local metadata & PDF = printed + 6 \\
+Xi III & \CJKtext{席南华}, \CJKtext{基础代数} \CJKtext{第三卷}, Science
+Press, 2021, second printing visible & 361, local metadata & PDF =
+printed + 6 \\
+Hungerford & Thomas W. Hungerford, Algebra, Springer edition/reprint of
+the 1974 text; 1980 Springer preface and 2003 printing note & 523, local
+metadata & PDF = printed + 19 \\
+Grillet & Pierre Antoine Grillet, Abstract Algebra, second edition, 2007
+& 684, local metadata & PDF = printed + 12 \\
+Mac Lane & Saunders Mac Lane, Categories for the Working Mathematician,
+second edition & 331, local metadata & PDF = printed + 13 \\
+Hilton--Stammbach & Peter J. Hilton and Urs Stammbach, A Course in
+Homological Algebra, second edition & 376, local metadata & PDF =
+printed + 11 \\
+Hall & Brian C. Hall, Lie Groups, Lie Algebras, and Representations,
+second edition, 2015 & 452, local metadata & PDF = printed + 13 \\
+Hartshorne & Robin Hartshorne, Algebraic Geometry, Springer & 511, local
+metadata & PDF = printed + 15 \\
+Lang & Serge Lang, Algebraic Number Theory, second edition; supplied
+reprint identifies 1986 edition with later copyright information & 372,
+local metadata & PDF = printed + 14 \\
+Hirsch & Morris W. Hirsch, Differential Topology, 1976/reprint & 230
+reported by Library reader; no local byte audit & PDF = printed + 10 at
+checked body pages \\
+\end{longtable}
+
+Local SHA-256 fingerprints and byte sizes for the ten materialized files
+are saved in \texttt{evidence/source-fingerprints.json}. They identify
+which supplied editions underlie the references; they are not a
+distribution of source bytes. The original Library filenames, which
+sometimes have OCR-like punctuation, are not treated as authoritative
+edition statements.
+
+\subsection{Xi I: concrete foundations and determinant
+characterizations}\label{xi-i-concrete-foundations-and-determinant-characterizations}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{P/T:} title/edition and preface, PDF pp.~3--4; contents,
+  pp.~5--6. The preface connects the course to Kostrikin's framework and
+  names several other references, including Hungerford. This supports
+  pedagogical context, not a claim that the books have identical proof
+  coverage.
+\item
+  \textbf{P:} Chapter 4 opening, printed pp.~75--76 (PDF pp.~81--82):
+  oriented volume, multilinearity, and vanishing on dependent vectors.
+\item
+  \textbf{P:} §4.4, printed p.~93 (PDF p.~99): several characterizations
+  of the determinant, with the preceding exercises including
+  Cauchy--Binet/Laplace identities. This is actual structural content,
+  not merely a chapter title.
+\item
+  \textbf{P/T:} §6.3 opening, printed p.~133 (PDF p.~139): factorization
+  and examples whose irreducibility changes with the coefficient ring.
+\item
+  \textbf{P/T:} §7.4 opening, printed p.~177 (PDF p.~183): elementary
+  symmetric polynomials and invariance under ordering roots.
+\item
+  \textbf{P:} §7.6 opening, printed p.~190 (PDF p.~196): resultant
+  matrix and criterion, with the leading-coefficient degeneracy
+  explicitly visible. The complete resultant proof and exercise
+  collection were not audited.
+\item
+  Quotients of sets (§2.4, printed p.~30, PDF p.~36) and matrix-map
+  organization (Chapter 3, starting p.~40, PDF p.~46) were located and
+  sampled.
+\end{itemize}
+
+\subsection{Xi II: the principal source
+comparison}\label{xi-ii-the-principal-source-comparison}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{P:} §1.4--1.6 samples, printed pp.~16, 19--24 (PDF pp.~22,
+  25--30): independent subspaces, complements versus quotients, duals
+  and evaluation.
+\item
+  \textbf{P:} §2.4, printed pp.~67--71 (PDF pp.~73--77), selected text:
+  quotient operator and induced-map diagram; characteristic-polynomial
+  factorization; Cayley--Hamilton statement and dual operator
+  discussion.
+\item
+  \textbf{P:} §2.5, printed pp.~72--77 (PDF pp.~78--83), consecutive
+  proof reading: Theorem 2.51 uses Bézout to split annihilated spaces;
+  2.52--2.53 gives generalized eigenspaces; 2.56--2.57 gives Jordan
+  form; the proof constructs chains by quotient induction and proves
+  uniqueness by dimensions of images of powers.
+\item
+  \textbf{P:} §3.1 opening, printed p.~85 (PDF p.~91), and §3.3 opening,
+  printed p.~109 (PDF p.~115), with examples/exercises from metric
+  linear algebra. \textbf{P:} Theorem 3.62 and its normal-operator
+  argument, printed pp.~126--128 (PDF pp.~132--134).
+\item
+  \textbf{T:} Chapters 4--5, printed pp.~161--262 (PDF pp.~167--268):
+  affine and Euclidean geometry, transformations, convexity, indefinite
+  spaces, quadrics, projective geometry. Their complete proofs were not
+  audited; no blanket replacement claim about them is made.
+\item
+  \textbf{P/V:} tensor Definition 6.1, printed p.~263 (PDF p.~269),
+  defines all multilinear scalar functions on the indicated product
+  spaces.
+\item
+  \textbf{P:} tensor Definition 6.11 and Theorem 6.15, printed
+  pp.~273--275 (PDF pp.~279--281): basis construction, uniqueness, and
+  universal property \textbf{with a proof}. Subsequent maps,
+  associativity, distributivity, scalar extension, and Kronecker
+  formulas were read on PDF pp.~280--284.
+\item
+  \textbf{P:} §6.3 examples of contraction as trace/composition and
+  structural tensors, printed pp.~280--283 (PDF pp.~286--289).
+\item
+  \textbf{P/V:} Theorem 6.19 and following remark, printed p.~278 (PDF
+  p.~284). The finite-dimensional theorem is correct; the unrestricted
+  infinite-dimensional extension fails for the definition on p.~263. See
+  \texttt{VERIFICATION.md} for the explicit counterexample and its
+  scope.
+\item
+  \textbf{P:} §6.4 opening and definition, printed pp.~292--293 (PDF
+  pp.~298--299): characteristic-zero assumption and exterior product via
+  alternation.
+\end{itemize}
+
+\subsection{Xi III: selected scanned pages, not unreliable
+extraction}\label{xi-iii-selected-scanned-pages-not-unreliable-extraction}
+
+The Library extraction's earlier 150-page report is not the physical
+file length. PyMuPDF counted \textbf{361 pages}. The scan's extracted
+text is extremely sparse. The following evidence comes from rendered
+pages, not OCR guesses.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{V/T:} contents, PDF pp.~5--6: group actions and structure,
+  one-parameter groups (§2.5, p.~79), matrix Lie groups (§2.6, p.~85),
+  representations (Chapter 3, p.~97), modules (§4.4, p.~186), algebras
+  (§4.5, p.~197), \(\mathfrak{sl}_2\) (§4.6, p.~215), Galois theory
+  (Chapter 5, p.~224), and the representations appendix (p.~317).
+\item
+  \textbf{V/P:} §3.2, printed pp.~109--111 (PDF pp.~115--117): complex
+  Hermitian-form convention and Theorem 3.20's explicit finite-group
+  averaging proof, with the compact-group integration comment
+  distinguished from it.
+\item
+  \textbf{V/P:} §3.7, printed pp.~152--153 (PDF pp.~158--159): dual
+  action with inverse, transpose formula, and tensor action.
+\item
+  \textbf{V/P:} §4.4, printed pp.~186--188 (PDF pp.~192--194): module
+  motivation, unital left-module definition, examples, submodules,
+  quotients and maps.
+\item
+  \textbf{V/P:} §4.6, printed pp.~215--216 (PDF pp.~221--222): Lie
+  module conditions and discussion of the enveloping algebra. The page
+  explicitly sends the reader elsewhere for the PBW theory; the notes do
+  not claim that this section proves PBW.
+\item
+  \textbf{V/P:} §5.6, printed pp.~260--262 (PDF pp.~266--268): cyclic
+  multiplicative group, finite-field existence and uniqueness, subfields
+  and Frobenius. This supplies the finite-field prerequisites for the
+  Paley bridge.
+\item
+  \textbf{V/P:} §5.8, printed pp.~272--273, 275--277 (PDF pp.~278--279,
+  281--283): Noether/Hilbert 90 constructions, norm/trace examples and
+  trace-pairing and coefficient-formula exercises. The trace pairing on
+  p.~277 is an exercise, not a full proof at that location.
+\item
+  \textbf{V/P:} §5.11 opening, printed p.~286 (PDF p.~292): the
+  normal-basis theorem and beginning of its interpolation construction.
+  The rest of that proof, full Galois computations/inverse questions,
+  and the representation appendix remain selective reading destinations,
+  not audited proofs here.
+\end{itemize}
+
+\subsection{Graduate sources: where the extra structure is actually
+built}\label{graduate-sources-where-the-extra-structure-is-actually-built}
+
+\textbf{Grillet.} Title/preface and contents were inspected. The
+detailed samples include VIII.6--7 (printed pp.~336--344, PDF
+pp.~348--350, 354--356), X.1 and X.3 (pp.~393--395, 401--402; PDF
+pp.~405--407, 413--414), XI.5--7 (pp.~434--437, 441--443, 447--448; PDF
+pp.~446--449, 453--455, 459--460), XII.4--5 (pp.~487--489, 493--494; PDF
+pp.~499--501, 505--506), and XIII.2--4 (pp.~518--526; PDF pp.~530--531,
+533--538). These support the module, splitting, balanced tensor,
+Ext/Tor, and free-algebra comparisons. The general PID proof's key basis
+and invariant-factor arguments were read; not every ancillary exercise
+was checked. IX.7, printed pp.~380--385 (PDF pp.~392--397), was
+inspected for the group-algebra correspondence, Maschke proof, and its
+nonstandard initial use of ``irreducible'' for indecomposable. The
+p.~381 definition was checked as an image. IV.1.6 (printed p.~157, PDF
+p.~169) was read for cyclic multiplicative subgroups, and V.1.3 (printed
+pp.~192--193, PDF pp.~204--205) for the finite-field
+existence/uniqueness proof and field-table exercises. The other IV--VI
+destinations for norm/trace, orders/valuations and completions are
+\textbf{T}, not a proof audit.
+
+\textbf{Hungerford.} Prefaces, contents, and course suggestions were
+read, especially printed p.~xviii (PDF p.~15), which explicitly places
+torsion PID modules before VII.1--5 in the proposed linear-algebra
+course. IV.6 begins at printed p.~218 (PDF p.~237); selected text on
+torsion/cyclic modules and the structure statements was read at PDF
+pp.~239--241. VII.4 starts at p.~355 (PDF p.~374), VII.5 at p.~366 (PDF
+p.~385). The route and theorem locations are verified, but a
+line-by-line comparison of all proofs in VII was not completed. IV.4
+(p.~199, PDF p.~218), IV.5 (p.~207, PDF p.~226), are selective
+destinations grounded in contents. V.5's finite-field proofs were then
+read at printed pp.~279--281 (PDF pp.~298--300), including Theorem 5.3,
+Proposition 5.6, Corollary 5.7, Frobenius, and the explicit exercise
+constructing fields of orders 9 and 25.
+
+\textbf{Mac Lane.} III.1 (printed pp.~55--58, PDF pp.~68--71), III.2
+(pp.~60--62, PDF pp.~73--75), IV.1 (pp.~79--80, PDF pp.~92--93), and
+IV.2's duality example (pp.~88--89, PDF pp.~101--102) were read. These
+are actual definitions, examples, and proofs of universality,
+representability/Yoneda, and adjunction. VIII's abelian-category
+treatment and later monads/Kan extensions are \textbf{T/C} in this
+study.
+
+\textbf{Hilton--Stammbach.} Edition, contents, and introduction were
+read; III.1--2 and III.4 were sampled in detail (printed pp.~84--86,
+89--90, 97--98; PDF pp.~95--97, 100--101, 108--109). IV.1's definitions
+and homology construction were read at pp.~117--118 (PDF pp.~128--129).
+The introduction explicitly motivates the extension-first route before
+general derived functors. The complete comparison theorem for
+resolutions and the full general Ext classification are \textbf{C} here;
+our one-step cyclic cases are proved directly.
+
+\textbf{Hall.} The supplied book is the second edition. §§4.3--4.7 were
+sampled at printed pp.~90--101 (PDF pp.~103--114), including the
+unipotent nonsemisimple example, unitary splitting proof, Schur
+argument, and \(\mathfrak{sl}_2\) classification proof. Later root
+systems, PBW, highest-weight theory, and topology are \textbf{T}, not
+compared proof by proof against Xi.
+
+\textbf{Hartshorne.} Contents and introduction, Chapter II opening,
+II.5, II.8, and Chapter III opening were read at PDF pp.~9--10, 14--15,
+74--75, 123--126, 187--189, 216. In printed pages these include II.5 at
+pp.~108--111, II.8 at pp.~172--174, and III's opening at p.~201. The
+algebraic differential universal property and the rational-residue-field
+cotangent calculation are visible at these locations. The ``A'' notation
+distinguishes externally referenced theorems. Affine finite projectivity
+and general cohomological theorems are cited rather than re-audited in
+full.
+
+\textbf{Lang.} Title/edition and contents were read. I.1 opening
+(printed p.~3, PDF p.~17), I.9 Proposition 26 and its local-to-global
+proof (p.~29, PDF p.~43), and III.1's complementary-module
+definition/proposition (p.~57, PDF p.~71) were inspected. Full
+valuation, completion, ramification and class field arguments remain
+\textbf{T/C}. A route to them is identified without claiming that the
+current notes replace them.
+
+\textbf{Hirsch.} Located by title in Library. Preface/contents, PDF
+pp.~8--10; Chapter IV.1--2 samples, PDF pp.~96--105 (printed
+pp.~86--95). The preface's declared avoidance of tensors/forms and
+IV.2.2's partition-of-unity splitting proof are \textbf{P}. Local
+download via the Library helper returned HTTP 401; no local
+physical-file metadata or fingerprint is claimed. The read-only Library
+content route succeeded. The full transversality/Morse proofs are not
+audited here.
+
+\subsection{Existing Hadamard/Williamson
+research}\label{existing-hadamardwilliamson-research}
+
+The reference edition is pinned to repository commit
+\texttt{2834fea31fb4ca7203531ca220e55a2fb7640119}, not a moving branch
+tip:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/blob/2834fea31fb4ca7203531ca220e55a2fb7640119/hadamard-study/README.md}{Study
+  and original scope}.
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/blob/2834fea31fb4ca7203531ca220e55a2fb7640119/hadamard-study/PROOFS.md}{Original
+  constructions and exact sign conventions}.
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/blob/2834fea31fb4ca7203531ca220e55a2fb7640119/hadamard-study/round2/PROOFS.md}{Second-round
+  structural and spectral proofs}.
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/blob/2834fea31fb4ca7203531ca220e55a2fb7640119/hadamard-study/round3/PROOFS.md}{Third-round
+  proofs, especially §§1--4, 9, 11--13}.
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/blob/2834fea31fb4ca7203531ca220e55a2fb7640119/hadamard-study/round3/LESSONS.md}{Third-round
+  limitations}.
+\item
+  \href{https://github.com/Drsunflowerherbert/Codex-for-Math/blob/2834fea31fb4ca7203531ca220e55a2fb7640119/hadamard-study/round3/reviews/REVIEW.md}{Prior
+  independent adversarial review}.
+\end{itemize}
+
+Those documents and the relevant exact fixture descriptions were read
+from Git objects. The new foundation chapter gives its own derivations,
+identifies where it extends the scope of the earlier prime Paley proof,
+and retains the distinction between previous audit evidence and newly
+executed finite checks. Numerical historical/status claims and whole
+prior benchmark campaigns were not rerun for this foundational task.
+
+\section{Verification record, corrections, and
+limits}\label{verification-record-corrections-and-limits}
+
+\subsection{What the evidence means}\label{what-the-evidence-means}
+
+The notes contain ordinary written proofs and explicitly cited
+structural theorems. They have undergone a separate self-review for
+hypotheses, notation, and failure cases, plus exact computational spot
+checks written independently of the earlier repository search
+implementations. There is no claim of a separate human reviewer,
+Lean/kernel verification, a full-book audit, or a new result about
+universal Hadamard existence.
+
+\texttt{evidence/exact-checks.json} records the actually executed finite
+checks, software versions and their scope.
+\texttt{evidence/pdf-build.json} and the LaTeX logs record compilation;
+compilation verifies neither mathematical correctness nor source
+fidelity. Source fidelity is supported by the specific inspected pages
+listed in the source ledger, including image inspection where required.
+
+\subsection{Central statements checked by written
+derivation}\label{central-statements-checked-by-written-derivation}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Statement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Hypotheses and check
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Quotient factorization and first isomorphism theorem & Maps, domains,
+kernels and representative independence are explicit; no complement is
+assumed \\
+Dual exactness and annihilator identities & Algebraic dual; finite
+dimension for the double-dual isomorphism and dimension arguments; basis
+extension for restriction surjectivity \\
+Direct sums and splitting & Idempotent equations proved for modules;
+vector-space splitting distinguished from module/equivariant splitting;
+sections form an affine Hom space \\
+Operator/module correspondence & Intertwiner equation checked;
+finite-dimensional operator modules distinguished from all finitely
+generated \(k[t]\)-modules \\
+Canonical forms & Nonzero annihilator obtained without Cayley--Hamilton;
+Euclidean Smith mechanism explained; arbitrary PID version cited;
+splitting-field hypothesis retained for Jordan form \\
+Polynomial projectors & Congruences, image/kernel identification, and
+independence from Bézout representative checked; canonical primary
+spaces distinguished from chosen cyclic summands \\
+Cyclic Hom and commutant dimensions & Computed from the image of \(1\)
+and divisibility; no unjustified extension to two-variable polynomial
+rings \\
+Hom--tensor formulas & Currying needs no finite dimension; Hom as a
+tensor needs finite-dimensional source; noncommutative module sides
+specified \\
+Symmetric/exterior constructions & Quotient universal properties;
+alternation includes repeated-vector vanishing in characteristic \(2\);
+averaging needs invertible factorial \\
+Determinants and minors & Exterior basis proof precedes determinant
+definition; rank test, Cauchy--Binet and characteristic coefficients
+derived; determinant of a map between different spaces is a line map \\
+Forms and spectral theorem & Congruence versus similarity; Hermitian
+convention explicit; positive-definite complex finite-dimensional
+hypotheses retained; real and indefinite failures exhibited \\
+Ext/Tor and homology & One-step resolution requires a nonzero element of
+a domain; explicit nonsplit \(k[t]\) extension; field Ext/Tor vanishing
+separated from arbitrary complex homology \\
+Representations & Maschke needs finite group and invertible order;
+Schur's scalar result needs algebraic closure and finite dimension; dual
+action has inverse; Lie tensor action has a sum \\
+Trace pairing & Finite separable extension for nondegeneracy;
+scalar-extension/CRT proof and purely inseparable counterexample
+included \\
+Bundles and sheaves & Smooth paracompact bundle splitting distinguished
+from arbitrary pointwise choices and algebraic sheaf extensions; no
+category-independent Ext vanishing claim \\
+Hadamard bridge & Integer/real Gram equations; odd finite fields for
+character sum; exact Paley signs; cyclic Fourier
+splitting/characteristic hypotheses; compression and phase relaxation
+retain only necessary implications \\
+\end{longtable}
+
+The proofs are inspectable in the chapters. The table is a review index,
+not an independent formal certificate.
+
+\subsection{Independently computed finite
+checks}\label{independently-computed-finite-checks}
+
+The script \texttt{scripts/check\_examples.py} reconstructs fixtures
+directly and does not import the previous Hadamard project's search or
+verification code. Its 18 check groups include:
+
+\begin{itemize}
+\tightlist
+\item
+  Polynomial CRT idempotents over \(\mathbb Q\) and characteristics
+  \(2,3,5,7\); a conjugated mixed Jordan fixture checks the actual
+  operator projections.
+\item
+  Kernel-growth block reconstruction, and the commutant dimension
+  independently computed as the nullity of a \(100\times100\) commutator
+  equation matrix.
+\item
+  Sixteen cyclic-Hom dimension comparisons using direct intertwiner
+  equations rather than the gcd formula being checked.
+\item
+  Exterior minors, rectangular Cauchy--Binet, and characteristic
+  coefficients; Kronecker determinant/trace; adjoints for a
+  nonorthonormal Hermitian form.
+\item
+  Explicit module-section failure over four small prime fields; a
+  nonzero field-complex homology example with chain-homotopy equations;
+  the \(\mathfrak{sl}_2\) polynomial commutators for highest weights
+  zero through six.
+\item
+  Quadratic-character sums and both Paley block constructions for six
+  small primes, plus an actual nonprime-field fixture
+  \(\mathbb F_9=\mathbb F_3[u]/(u^2+1)\) producing order 20.
+\item
+  Williamson block signs at core three, the core-nine proper-quotient
+  false positive, and all 27 possible normalized symmetric lifts of the
+  \textbf{fixed} stronger compressed multiset from the prior audit. None
+  is a Williamson lift. This is a bounded adversarial-fixture replay,
+  not an expanded search campaign.
+\item
+  The core-seven positive spectral residual with no fourth Williamson
+  row; all 16 two-color-bit equality inputs and the exact Boolean phase
+  identity.
+\end{itemize}
+
+Finite checks can catch sign, transpose, coefficient and characteristic
+errors in these examples. They do not prove the universal theorems or
+classify all Hadamard matrices. The infinite-dimensional tensor
+counterexample is proved by unbounded rank, not established by a finite
+truncation test.
+
+\subsection{Cited results, distinguished from complete proofs
+here}\label{cited-results-distinguished-from-complete-proofs-here}
+
+\begin{itemize}
+\tightlist
+\item
+  The full finitely generated module structure theorem over an arbitrary
+  PID (Grillet VIII.6; Hungerford IV.6). The notes give the Euclidean
+  matrix construction and derive the operator consequences; they do not
+  pretend every PID is Euclidean.
+\item
+  General derived-functor theory, independence of resolutions, and the
+  complete Ext/extension correspondence (Hilton--Stammbach III--IV;
+  Grillet XII). The cyclic class calculation and its extension
+  interpretation are proved directly in the notes.
+\item
+  Exhaustion of finite-dimensional complex \(\mathfrak{sl}_2\)
+  irreducibles (Hall §4.6). The polynomial models and their
+  irreducibility are proved here; the exhaustion proof was read but is
+  cited rather than reproduced fully.
+\item
+  Primitive-element theorem for finite separable extensions;
+  finite-field existence; the general commutative-algebra/sheaf
+  correspondence; finite projectivity on affine schemes;
+  implicit-function, partition-of-unity and other geometric
+  prerequisites. Their uses and sources are stated, without implying all
+  are reproved in this study.
+\item
+  Prior study benchmarks, search completeness records, and historical
+  matrix witnesses remain attributed to their pinned source edition.
+  Only the small fixtures listed above were newly executed. No current
+  worldwide open-problem status or smallest unresolved order is
+  certified.
+\end{itemize}
+
+\subsection{Confirmed source
+correction}\label{confirmed-source-correction}
+
+\textbf{Xi II, Theorem 6.19's following remark, printed p.~278 / PDF
+p.~284.} The remark extends the finite-dimensional identification
+\(\mathcal T_q^p(V)\cong(V^*)^{\otimes p}\otimes V^{\otimes q}\) to
+infinite-dimensional spaces. Definition 6.1 on printed p.~263 / PDF
+p.~269 defines the left side as all multilinear functions on
+\(V^p\times(V^*)^q\). Both pages were rendered and inspected.
+
+For \(p=q=1\), evaluation \((v,\lambda)\mapsto\lambda(v)\) belongs to
+that function space. If it were a finite tensor sum, there would be
+\(\alpha_i\in V^*\) and \(w_i\in V\) such that
+
+\[\lambda(v)=\sum_{i=1}^r\alpha_i(v)\lambda(w_i)
+\qquad\text{for every }v,\lambda.\]
+
+Functionals separate vectors, so \(v=\sum_i\alpha_i(v)w_i\) for every
+\(v\). This puts an infinite-dimensional space in a finite-dimensional
+span, a contradiction. The corrected statement retains
+finite-dimensionality, or restricts the multilinear function space to
+the image of finite tensor sums. The finite-dimensional theorem and the
+tensor universal property are unaffected. This is one local confirmed
+overstatement, not a blanket judgment of the text.
+
+\subsection{Convention differences and missing hypotheses, not source
+mistakes}\label{convention-differences-and-missing-hypotheses-not-source-mistakes}
+
+\begin{itemize}
+\tightlist
+\item
+  Grillet IX.7's initial ``irreducible'' means indecomposable (printed
+  pp.~381, 383; PDF pp.~393, 395). It differs from the simple-module
+  convention in these notes, Xi and Hall. The apparent unconditional
+  complete-reducibility statement must be translated using his
+  definition, not declared false.
+\item
+  Xi's Hermitian convention is linear in the first argument; these notes
+  use conjugate-linearity in the first. Adjoint and coordinate formulas
+  are translated explicitly.
+\item
+  Xi II's alternating-tensor model explicitly assumes characteristic
+  zero. Its factorial denominators are valid there; moving the model to
+  arbitrary characteristic without that assumption would be our error,
+  not its theorem.
+\item
+  A Jordan form needs a splitting minimal polynomial; semisimple
+  \(k[t]\)-modules need square-free irreducible factors and can lack
+  eigenvectors over the base field. Commuting operators require
+  individual diagonalizability before the simultaneous eigenbasis
+  argument.
+\item
+  A positive spectral residual and individually feasible compressed rows
+  need not have one common discrete lift. No linear splitting theorem
+  supplies it.
+\item
+  Fourier eigenvalues over \(\mathbb C\) are exact algebraic values in
+  the proof; floating-point approximations are not used to certify sign
+  matrices.
+\end{itemize}
+
+\subsection{OCR issues and unverified
+comparisons}\label{ocr-issues-and-unverified-comparisons}
+
+Xi III's local PDF has 361 pages, whereas its earlier Library extraction
+reported 150. Sparse extraction and corrupted symbols are source-access
+limitations, not mathematical errors. The key cited pages were read as
+images. Xi I--II also have corrupted extracted signs and indices, so
+suspected substantive claims were checked against the intended notation
+and, where material, images. The exact source fingerprints allow later
+reinspection.
+
+The following comparisons remain deliberately limited: the entire
+exercises of any two books; Xi II Chapters 4--5 versus a putative
+replacement; the whole Xi III appendix or Galois computations against
+Hall/Lang; complete Hungerford VII proof alternatives; and the
+destination books' full advanced prerequisite coverage. They are not
+promoted from contents evidence into proven replacement claims. No
+source book is called filler or wholly replaceable here.
+
+\subsection{Remaining access
+limitation}\label{remaining-access-limitation}
+
+The exact failed action was local materialization of the Library item
+titled \texttt{Differential\ Topology\ (Morris\ W.\ Hirsch).pdf} using
+the provided download helper. It returned
+\texttt{hosted\ apps\ tools/list\ request\ failed\ with\ HTTP\ status\ 401}.
+This is a failed local-download action, not a successful or uncertain
+transfer and not an automatic sandbox-approval denial. The same source's
+read-only Library pages were successfully read afterward. Consequently
+the Hirsch content needed here is sourced, but no physical local PDF
+page count, byte hash, or full local-PDF audit is claimed.
+
+There is no pending mathematical/source blocker to using the present
+notes. Completing the optional unverified comparisons would be a new,
+larger audit; recovering a local Hirsch copy is only necessary for that
+sort of byte-level or full visual audit.
+
+\end{document}

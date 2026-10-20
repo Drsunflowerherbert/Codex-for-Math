@@ -1,0 +1,9 @@
+{
+  "timestamp_utc": "2026-10-20T04:52:44.361996+00:00",
+  "pdf_pages": 58,
+  "pdf_bytes": 319427,
+  "pdf_sha256": "0bb2aa04f644fe53c83eb8edda8e58faf147d7ee4353233a4c1a028f26cfbeba",
+  "tex_sha256": "60e59551a78bbaa84179284f2a73c866623704062e5222404b33c6026c271f55",
+  "pages_with_text": 58,
+  "note": "Successful LaTeX compilation is layout evidence, not mathematical proof."
+}

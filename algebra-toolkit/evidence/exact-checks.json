@@ -1,0 +1,214 @@
+{
+  "timestamp_utc": "2026-10-20T04:46:23.364976+00:00",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "Bezout/CRT projectors",
+      "status": "pass",
+      "fields": [
+        "Q",
+        "F2",
+        "F3",
+        "F5",
+        "F7"
+      ],
+      "polynomial": "3t^2-2t^3",
+      "annihilator": "t^2(t-1)^2"
+    },
+    {
+      "name": "Polynomial projections on a conjugated mixed Jordan fixture",
+      "status": "pass",
+      "dimension": 4
+    },
+    {
+      "name": "Jordan reconstruction and centralizer",
+      "status": "pass",
+      "nullities": [
+        0,
+        4,
+        7,
+        9,
+        10,
+        10
+      ],
+      "commutant_dimension": 30,
+      "independent_equation_matrix": [
+        100,
+        100
+      ]
+    },
+    {
+      "name": "Cyclic Hom gcd formula",
+      "status": "pass",
+      "ordered_polynomial_pairs": 16
+    },
+    {
+      "name": "Exterior powers, rectangular Cauchy-Binet, and characteristic coefficients",
+      "status": "pass",
+      "exterior_degrees": [
+        1,
+        2,
+        3
+      ],
+      "characteristic_dimension": 4
+    },
+    {
+      "name": "Kronecker trace and determinant",
+      "status": "pass",
+      "dimensions": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Adjoint under a nonorthonormal Hermitian Gram matrix",
+      "status": "pass",
+      "convention": "conjugate-linear first"
+    },
+    {
+      "name": "Finite-rank obstruction illustrations",
+      "status": "pass",
+      "note": "The infinite-dimensional conclusion has a written proof, not a finite test."
+    },
+    {
+      "name": "No equivariant section of k[t]/t^2",
+      "status": "pass",
+      "tested_prime_fields": [
+        2,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "name": "Nonzero field-complex homology and explicit contraction of complement",
+      "status": "pass",
+      "H1": 1,
+      "H0": 0
+    },
+    {
+      "name": "sl2 polynomial-model commutation relations",
+      "status": "pass",
+      "highest_weights": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "Quadratic character sums and both Paley sign conventions",
+      "status": "pass",
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        19
+      ]
+    },
+    {
+      "name": "Nonprime finite-field Paley fixture",
+      "status": "pass",
+      "field": "F3[u]/(u^2+1)",
+      "order": 20
+    },
+    {
+      "name": "Williamson block signs",
+      "status": "pass",
+      "core_order": 3,
+      "normalized_masks": [
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Passing proper quotients with a failing chosen lift",
+      "status": "pass",
+      "core_order": 9,
+      "masks": [
+        2,
+        10,
+        10,
+        13
+      ],
+      "compressed_rows": [
+        [
+          3,
+          1,
+          1
+        ],
+        [
+          3,
+          -1,
+          -1
+        ],
+        [
+          3,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "original_shift_one": -8
+    },
+    {
+      "name": "Prior fixed compressed multiset has no common normalized symmetric lift",
+      "status": "pass",
+      "core_order": 9,
+      "compressed_rows": [
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          -1,
+          3,
+          3
+        ],
+        [
+          3,
+          -1,
+          -1
+        ]
+      ],
+      "candidate_lifts_checked": 27,
+      "candidate_domain": "16 normalized symmetric rows; fixed target only",
+      "scope": "Williamson family, not all Hadamard matrices"
+    },
+    {
+      "name": "Positive residual without a fourth Williamson sign lift",
+      "status": "pass",
+      "core_order": 7,
+      "residual_eigenvalues": {
+        "1": 1,
+        "8": 6
+      }
+    },
+    {
+      "name": "Boolean color equality and exact phase relations",
+      "status": "pass",
+      "equality_inputs": 16,
+      "coefficient_ring": "F2 for exponents; Z for correlation coefficients"
+    }
+  ],
+  "scope": "Exact finite examples and adversarial fixtures; not formal or general theorem verification."
+}

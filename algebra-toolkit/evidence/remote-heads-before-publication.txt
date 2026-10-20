@@ -1,0 +1,15 @@
+0f57d8e154e2a209038596d64d429141ae40d7d5	refs/heads/archive/evidence-hardening-source
+9e34f17ba739966b3fa4d806e69ae20ff522c511	refs/heads/archive/lp-certificates-source
+68ca77e5a945be2814f6d0eecd86c8651d354981	refs/heads/archive/lp-sparse-discovery-source
+8255c7e0c76d9b50843da03d19ad7d0cd67a3def	refs/heads/archive/transport-sharpness-source
+eb38f83bc65cad287541a1fb2b3b139c81ec3515	refs/heads/main
+8be23104aa451935468650b4a398767775777795	refs/heads/research/certified-roots
+3e123b790632e609e98b5fa28985416157fa2647	refs/heads/research/contest-library
+6258fb31d928ae4ba6f783d037330228c7fedb12	refs/heads/research/critical-points
+da618990c018d60c3aeacbd65d922b770e0636ab	refs/heads/research/hadamard-study
+e7ee695080af372536e651c95c13b718dd43617e	refs/heads/research/holomorphic-anosov-review
+a9662e04f74291649f99ec7c9d56783792b737a6	refs/heads/research/integral-examples
+3fa75d842578fa82428b18414d573f6c7d5d208d	refs/heads/research/integrated
+85ac764db3389715063cdcd09494ee7a52c5cdbe	refs/heads/research/lp-paper
+993ea4f3d470c8ef0bb4b23982d3227fc4f99310	refs/heads/research/research-map
+d045c7a1d9d82e77c7b1b2806438e8aaa195e931	refs/heads/research/tangent-limit

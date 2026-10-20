@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-10-20T04:52:59.695187+00:00",
+  "status": "pass",
+  "errors": [],
+  "pdf_pages": 58,
+  "required_sections_present": 11,
+  "local_file_links": "checked",
+  "exact_check_groups": 18,
+  "latex_final_pass_diagnostics": [],
+  "distributed_pdfs": [
+    "algebra-structural-toolkit.pdf"
+  ],
+  "scope": "Mechanical completeness and layout diagnostics, not mathematical theorem verification."
+}

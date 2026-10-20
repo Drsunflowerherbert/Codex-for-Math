@@ -1,0 +1,62 @@
+[
+  {
+    "key": "grillet",
+    "pdf_pages": 684,
+    "size_bytes": 7379363,
+    "sha256": "6383bf52c4073d77333caf11bfc34146565b44e7c9a56481f661cfbb8368f5ee"
+  },
+  {
+    "key": "hall",
+    "pdf_pages": 452,
+    "size_bytes": 6966044,
+    "sha256": "62b1050937c59300d4e10ccb57189efcd2aa0ffdb6651dd8a27486f8d38e402c"
+  },
+  {
+    "key": "hartshorne",
+    "pdf_pages": 511,
+    "size_bytes": 26134205,
+    "sha256": "91e966d8a5781e291aeb2f924f17903226845e963e03f9c0cae8bec1d1d10b8d"
+  },
+  {
+    "key": "hilton-stammbach",
+    "pdf_pages": 376,
+    "size_bytes": 28499060,
+    "sha256": "9185c44d1d9f4a5515774db9b9df2d10a93ef34d11b6cece388c4fd5c0f4bf35"
+  },
+  {
+    "key": "hungerford",
+    "pdf_pages": 523,
+    "size_bytes": 36105900,
+    "sha256": "243e751eaa654af358976bcdefab6d16cfe276f600fdc234070cd93a25f1fda8"
+  },
+  {
+    "key": "lang-ant",
+    "pdf_pages": 372,
+    "size_bytes": 23374721,
+    "sha256": "cac969fa7d8be98872ae5947b069f9eb1de61c4483e933c84d2949a4a05f4c6b"
+  },
+  {
+    "key": "mac-lane",
+    "pdf_pages": 331,
+    "size_bytes": 6028100,
+    "sha256": "14ef9b9cbf60b81aa058ac92955a40d1a2172b0e0041dd2ce829436d35b6734a"
+  },
+  {
+    "key": "xi-i",
+    "pdf_pages": 207,
+    "size_bytes": 52023350,
+    "sha256": "526dd81fedd1e48e26a9e7bd9b898c85bce245ea6ed61ae52f38d6ce814d2e9b"
+  },
+  {
+    "key": "xi-ii",
+    "pdf_pages": 334,
+    "size_bytes": 92257219,
+    "sha256": "452f6140f06c12fbd7f08dcadf7db90913b9b36fa9661b0929c2b253cdfce177"
+  },
+  {
+    "key": "xi-iii",
+    "pdf_pages": 361,
+    "size_bytes": 135498139,
+    "sha256": "ce333092b39cfa489213fc8fa3bc1f38c087e19adcaaedf80b9ec1d104940a7d"
+  }
+]

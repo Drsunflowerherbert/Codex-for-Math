@@ -1,0 +1,21 @@
+% Chinese names/titles are short and explicitly wrapped by the build script.
+% This avoids requiring the optional xeCJK package in a minimal TeX install.
+\newfontfamily\cjkfont{Noto Serif CJK SC}
+\newcommand{\CJKtext}[1]{{\cjkfont #1}}
+\usepackage{amssymb,booktabs,longtable,array}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Algebra as a structural toolkit}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\headheight}{15pt}
+\setlength{\emergencystretch}{3em}
+\setlength{\tabcolsep}{4pt}
+\AtBeginEnvironment{longtable}{\small}
+\makeatletter
+\renewcommand*\l@subsection{\@dottedtocline{2}{1.5em}{3.4em}}
+\makeatother
+\let\originaltableofcontents\tableofcontents
+\renewcommand{\tableofcontents}{\originaltableofcontents\clearpage}
