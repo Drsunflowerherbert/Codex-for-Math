@@ -2,37 +2,39 @@
 
 [Repository home](../README.md) · [Branch roles](BRANCHES.md) · [Project catalog](CATALOG.md)
 
-The default branch is `main`. Topic branches now have stable names: recommended
+The directory is on `main`; the default branch is still `codex/tangent-limit`
+because the integration's default-change request was denied by GitHub. Thirteen
+topic branches now have stable names: recommended
 branches use `research/<topic>` and earlier source checkpoints use
 `archive/<topic>-source`. All previous heads and research snapshots remain
 accessible through their full commit IDs.
 
 ## Old-to-new names
 
-| Old name | New name |
-| --- | --- |
-| `codex/certified-roots-2026-10-15` | [`research/certified-roots`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/certified-roots) |
-| `codex/contest-library-2026-10-13` | [`research/contest-library`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/contest-library) |
-| `codex/critical-points-2026-10-15` | [`research/critical-points`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/critical-points) |
-| `codex/evidence-hardening-2026-10-13` | [`archive/evidence-hardening-source`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/archive/evidence-hardening-source) |
-| `codex/hadamard-study-2026-10-15` | [`research/hadamard-study`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/hadamard-study) |
-| `codex/holomorphic-anosov-review-2026-10-16` | [`research/holomorphic-anosov-review`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/holomorphic-anosov-review) |
-| `codex/integral-examples-2026-10-15` | [`research/integral-examples`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/integral-examples) |
-| `codex/lp-certificates-2026-10-13` | [`archive/lp-certificates-source`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/archive/lp-certificates-source) |
-| `codex/lp-paper-2026-10-13` | [`research/lp-paper`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/lp-paper) |
-| `codex/lp-sparse-discovery-2026-10-13` | [`archive/lp-sparse-discovery-source`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/archive/lp-sparse-discovery-source) |
-| `codex/research-2026-10-11` | [`research/integrated`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/integrated) |
-| `codex/research-map-2026-10-13` | [`research/research-map`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/research-map) |
-| `codex/tangent-limit` | [`research/tangent-limit`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/tangent-limit) |
-| `codex/transport-sharpness-2026-10-13` | [`archive/transport-sharpness-source`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/archive/transport-sharpness-source) |
+| Old name | Current name | Status |
+| --- | --- | --- |
+| `codex/certified-roots-2026-10-15` | [`research/certified-roots`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/certified-roots) | Renamed |
+| `codex/contest-library-2026-10-13` | [`research/contest-library`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/contest-library) | Renamed |
+| `codex/critical-points-2026-10-15` | [`research/critical-points`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/critical-points) | Renamed |
+| `codex/evidence-hardening-2026-10-13` | [`archive/evidence-hardening-source`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/archive/evidence-hardening-source) | Renamed |
+| `codex/hadamard-study-2026-10-15` | [`research/hadamard-study`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/hadamard-study) | Renamed |
+| `codex/holomorphic-anosov-review-2026-10-16` | [`research/holomorphic-anosov-review`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/holomorphic-anosov-review) | Renamed |
+| `codex/integral-examples-2026-10-15` | [`research/integral-examples`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/integral-examples) | Renamed |
+| `codex/lp-certificates-2026-10-13` | [`archive/lp-certificates-source`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/archive/lp-certificates-source) | Renamed |
+| `codex/lp-paper-2026-10-13` | [`research/lp-paper`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/lp-paper) | Renamed |
+| `codex/lp-sparse-discovery-2026-10-13` | [`archive/lp-sparse-discovery-source`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/archive/lp-sparse-discovery-source) | Renamed |
+| `codex/research-2026-10-11` | [`research/integrated`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/integrated) | Renamed |
+| `codex/research-map-2026-10-13` | [`research/research-map`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/research/research-map) | Renamed |
+| `codex/tangent-limit` | [`codex/tangent-limit`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/codex/tangent-limit) | Rename to research/tangent-limit pending |
+| `codex/transport-sharpness-2026-10-13` | [`archive/transport-sharpness-source`](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/archive/transport-sharpness-source) | Renamed |
 
 Also available as [JSON](branch-map.json).
 
 ## Existing links
 
-The rename uses GitHub's supported mechanism. Old GitHub browser `tree` and
-`blob` URLs redirect to the renamed branch. The former tangent catalog paths
-remain as compatibility pointer pages on `research/tangent-limit`, leading to
+The 13 completed renames use GitHub's supported mechanism. Old GitHub browser `tree` and
+`blob` URLs redirect to the renamed branch. The tangent catalog paths
+remain as compatibility pointer pages on `codex/tangent-limit`, leading to
 the current catalog on main. Newly maintained navigation uses current names.
 
 Full commit-pinned research links are unchanged. Historical project prose may
@@ -76,11 +78,12 @@ If you already have a local topic branch, rename it and update its upstream.
 For example, when neither destination name already exists locally:
 
 ```sh
-git branch -m codex/tangent-limit research/tangent-limit
-git branch --set-upstream-to=origin/research/tangent-limit research/tangent-limit
+git branch -m codex/integral-examples-2026-10-15 research/integral-examples
+git branch --set-upstream-to=origin/research/integral-examples research/integral-examples
 ```
 
-Repeat with the relevant row from the table for your other local branches.
+Repeat with completed rows for your other local branches. Keep the tangent
+branch tracking `origin/codex/tangent-limit` until its pending rename exists.
 Commit or otherwise preserve local edits before switching. To create a local
 directory branch when no local `main` exists:
 
@@ -96,7 +99,30 @@ refs can be pruned later after you have checked the new names and upstreams.
 
 The new main directory is a connected single-parent child of the previous
 default commit. Its current tree omits research files to keep the homepage
-small. The original tangent tree remains byte-identical on its renamed topic
-branch; every other project stays on its own renamed branch. No topic history
+small. The original tangent tree remains byte-identical on `codex/tangent-limit`; every other project stays on its own renamed branch. No topic history
 is rewritten and no unrelated projects are merged. Topic follow-up commits
 edit root/navigation documentation only.
+
+## Remaining administration actions
+
+Completed: create the connected five-file main directory and rename 13 ordinary
+branches, preserving their heads and research contents.
+
+Denied by GitHub: `PATCH /repos/Drsunflowerherbert/Codex-for-Math` with
+`default_branch=main` returned HTTP 403, `Resource not accessible by integration`.
+Main was created successfully, but that settings request did not execute.
+The authenticated account is a repository administrator; the integration's
+authorization does not permit this settings action. No new credentials or
+permission expansion was attempted, and the denied action was not retried.
+
+A repository administrator with settings access still needs to:
+
+1. Select the existing `main` branch as the repository default in GitHub.
+2. Use GitHub's supported rename mechanism to rename `codex/tangent-limit` to
+   `research/tangent-limit` after it is no longer the default.
+3. Update this pending row and its moving tangent links, then refresh local
+   remote-default and upstream tracking as described above.
+
+The second rename was left unattempted because default-branch renaming requires
+administration permission too. All current navigation uses the existing tangent
+name so it remains usable while these actions are pending.
