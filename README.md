@@ -1,11 +1,7 @@
 # Conditional tangent-limit project
 
-Branch: `codex/tangent-limit`. This remains the repository default because the
-GitHub integration rejected changing the default to `main` (HTTP 403). The planned
-topic name `research/tangent-limit` is pending that administration step.
-
-This branch preserves the original standalone Lean project; repository-wide
-navigation is available on [main](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/main).
+Branch: `research/tangent-limit`. This branch preserves the original standalone
+Lean project. The repository default and directory are on [main](https://github.com/Drsunflowerherbert/Codex-for-Math/tree/main).
 
 The project proves `tan(n)/n³ → 0` over positive integers and convergence of
 `Σ |tan(n)|/n³`, **conditional on the explicit `PiDiophantine` approximation
